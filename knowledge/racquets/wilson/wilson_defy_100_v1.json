@@ -1,0 +1,414 @@
+{
+  "id": "wilson_defy_100_v1",
+
+  "brand": "Wilson",
+  "brand_cn": "威尔胜",
+
+  "model": "Defy 100 V1",
+  "model_cn": "Defy 100 V1",
+
+  "category": "racket",
+  "category_cn": "网球拍",
+
+  "series": "Defy",
+  "series_cn": "Defy 系列",
+
+  "generation": "V1",
+  "generation_cn": "第一代版本",
+
+
+  "release_information": {
+
+    "official": true,
+
+    "release_version": "V1",
+
+    "release_version_cn": "第一代正式版本"
+
+  },
+
+
+  "player_profile": {
+
+    "level": [
+      "intermediate",
+      "advanced amateur",
+      "club player"
+    ],
+
+    "level_cn": [
+      "中级球员",
+      "高级业余球员",
+      "俱乐部球员"
+    ],
+
+
+    "style": [
+      "power",
+      "spin",
+      "all court"
+    ],
+
+    "style_cn": [
+      "力量型打法",
+      "旋转型打法",
+      "全面型打法"
+    ]
+
+  },
+
+
+  "specifications": {
+
+    "head_size": {
+
+      "value": 100,
+
+      "unit": "sq in",
+
+      "cn": "100平方英寸"
+
+    },
+
+
+    "weight_unstrung": {
+
+      "value": 300,
+
+      "unit": "g",
+
+      "cn": "空拍重量300克"
+
+    },
+
+
+    "weight_strung": {
+
+      "value": 315,
+
+      "unit": "g approx",
+
+      "cn": "穿线后约315克"
+
+    },
+
+
+    "balance": {
+
+      "value": 320,
+
+      "unit": "mm",
+
+      "cn": "平衡点约320毫米"
+
+    },
+
+
+    "length": {
+
+      "value": 27,
+
+      "unit": "inch",
+
+      "cn": "27英寸"
+
+    },
+
+
+    "string_pattern": {
+
+      "value": "16x19",
+
+      "cn": "16×19开放式线床"
+
+    },
+
+
+    "beam": {
+
+      "value": "24 mm",
+
+      "cn": "中等厚度拍框"
+
+    }
+
+  },
+
+
+  "technology": [
+
+    {
+
+      "name": "Aeroslide",
+
+      "cn":
+      "空气动力学设计，提高挥拍速度"
+
+    },
+
+
+    {
+
+      "name": "StableFeel",
+
+      "cn":
+      "增强击球稳定性和反馈"
+
+    },
+
+
+    {
+
+      "name": "FortyFive",
+
+      "cn":
+      "45度碳纤维结构，提高球感和稳定性"
+
+    }
+
+  ],
+
+
+  "performance": {
+
+    "power": {
+
+      "rating": 8,
+
+      "cn": "力量输出：8/10"
+
+    },
+
+
+    "control": {
+
+      "rating": 7,
+
+      "cn": "控制性能：7/10"
+
+    },
+
+
+    "spin": {
+
+      "rating": 8,
+
+      "cn": "旋转能力：8/10"
+
+    },
+
+
+    "comfort": {
+
+      "rating": 8,
+
+      "cn": "舒适性：8/10"
+
+    },
+
+
+    "stability": {
+
+      "rating": 8,
+
+      "cn": "稳定性：8/10"
+
+    },
+
+
+    "maneuverability": {
+
+      "rating": 9,
+
+      "cn": "挥拍灵活性：9/10"
+
+    }
+
+  },
+
+
+  "advantages_cn": [
+
+    "100平方英寸拍面提供更高容错",
+
+    "相比98版本更容易产生力量",
+
+    "适合现代底线打法",
+
+    "挥拍速度快",
+
+    "适合长时间比赛和训练"
+
+  ],
+
+
+  "weaknesses_cn": [
+
+    "精准控制低于98版本",
+
+    "高级球员可能需要更高稳定性",
+
+    "进攻线路控制不如Defy 98 Pro"
+
+  ],
+
+
+  "recommended_player_profile": {
+
+    "suitable_for": [
+
+      "中高级业余球员",
+
+      "俱乐部玩家",
+
+      "希望提升力量和旋转的球员",
+
+      "从初级向竞技过渡的玩家"
+
+    ],
+
+
+    "not_recommended_for": [
+
+      "职业级控制型球员",
+
+      "喜欢98平方英寸精准反馈的玩家"
+
+    ]
+
+  },
+
+
+  "recommended_strings": {
+
+
+    "power_spin": [
+
+      "Wilson Revolve Spin",
+
+      "Luxilon ALU Power"
+
+    ],
+
+
+    "spin": [
+
+      "Solinco Hyper-G",
+
+      "Wilson Revolve"
+
+    ],
+
+
+    "comfort": [
+
+      "Wilson NXT",
+
+      "Natural Gut Hybrid"
+
+    ]
+
+  },
+
+
+  "recommended_tension": {
+
+    "range": {
+
+      "value": "22-25 kg",
+
+      "cn": "推荐穿线范围22-25公斤"
+
+    },
+
+
+    "power_player": {
+
+      "value": "22-23 kg",
+
+      "cn": "追求力量建议22-23公斤"
+
+    },
+
+
+    "control_player": {
+
+      "value": "24-25 kg",
+
+      "cn": "追求控制建议24-25公斤"
+
+    }
+
+  },
+
+
+  "comparison": {
+
+
+    "vs_wilson_defy_98_pro_v1": {
+
+      "cn":
+      "Defy 100 V1 比Defy 98 Pro拥有更大甜区、更高容错和更容易获得力量；Defy 98更偏竞技控制。"
+
+    },
+
+
+    "vs_wilson_rf01_pro_classic": {
+
+      "cn":
+      "Defy 100 V1 更现代、更容易产生旋转和力量；RF01 Pro Classic 更偏传统手感和稳定反馈。"
+
+    },
+
+
+    "vs_babolat_pure_drive_2026": {
+
+      "cn":
+      "Pure Drive 2026力量输出更直接，Defy 100 V1更强调现代挥拍速度和平衡性能。"
+
+    }
+
+  },
+
+
+  "ai_tags": [
+
+    "100拍面",
+
+    "力量",
+
+    "旋转",
+
+    "容错",
+
+    "Wilson",
+
+    "中高级球员",
+
+    "现代打法"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "Wilson Defy 100 V1 是Defy系列中更容易使用的100平方英寸版本。相比Defy 98 Pro V1，它提供更大的甜区、更高容错和更轻松的力量输出，适合中高级业余球员、俱乐部玩家以及希望提升旋转和进攻能力的球员。",
+
+
+  "variants": [],
+
+
+  "verification": {
+
+    "status": "official",
+
+    "verified": true,
+
+
+    "knowledge_path":
+
+    "knowledge/racquets/wilson/wilson_defy_100_v1.json"
+
+  }
+
+}
