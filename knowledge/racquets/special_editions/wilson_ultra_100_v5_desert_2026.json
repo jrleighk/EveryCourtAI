@@ -1,0 +1,438 @@
+{
+  "id": "wilson_ultra_100_v5_desert_2026",
+
+  "brand": "Wilson",
+  "brand_cn": "威尔胜",
+
+  "model": "Ultra 100 V5 Desert 2026",
+  "model_cn": "Ultra 100 V5 Desert 沙漠特别版2026",
+
+  "category": "special_edition_racket",
+  "category_cn": "特别版网球拍",
+
+  "series": "Ultra",
+  "series_cn": "Ultra 系列",
+
+  "generation": "V5",
+  "generation_cn": "第五代版本",
+
+
+  "edition": {
+
+    "type": "Special Color Edition",
+
+    "type_cn": "特别配色版本",
+
+    "edition_name": "Desert",
+
+    "edition_name_cn": "沙漠主题特别版",
+
+    "year": 2026
+
+  },
+
+
+  "product_type": {
+
+    "type": "retail_special",
+
+    "type_cn": "零售特别版本",
+
+    "description_cn":
+    "基于Wilson Ultra 100 V5平台打造的特殊视觉版本，保留Ultra系列力量型性能，同时增加设计收藏属性"
+
+  },
+
+
+  "base_model": {
+
+    "model": "Wilson Ultra 100 V5",
+
+    "cn":
+    "基于Ultra第五代100平方英寸标准型号"
+
+  },
+
+
+  "player_profile": {
+
+    "level": [
+
+      "beginner",
+      "intermediate",
+      "advanced amateur"
+
+    ],
+
+    "level_cn": [
+
+      "初学者",
+      "中级球员",
+      "高级业余球员"
+
+    ],
+
+
+    "style": [
+
+      "power",
+      "baseline",
+      "modern tennis"
+
+    ],
+
+    "style_cn": [
+
+      "力量型打法",
+      "底线打法",
+      "现代网球打法"
+
+    ]
+
+  },
+
+
+  "specifications": {
+
+    "head_size": {
+
+      "value": 100,
+
+      "unit": "sq in",
+
+      "cn": "100平方英寸"
+
+    },
+
+
+    "weight_unstrung": {
+
+      "value": 300,
+
+      "unit": "g",
+
+      "cn": "空拍重量300克"
+
+    },
+
+
+    "weight_strung": {
+
+      "value": 315,
+
+      "unit": "g approx",
+
+      "cn": "穿线后约315克"
+
+    },
+
+
+    "balance": {
+
+      "value": 320,
+
+      "unit": "mm",
+
+      "cn": "平衡点约320毫米"
+
+    },
+
+
+    "length": {
+
+      "value": 27,
+
+      "unit": "inch",
+
+      "cn": "27英寸"
+
+    },
+
+
+    "string_pattern": {
+
+      "value": "16x19",
+
+      "cn": "16×19开放式线床"
+
+    },
+
+
+    "beam": {
+
+      "value": "24-26 mm",
+
+      "cn": "力量型厚框设计"
+
+    }
+
+  },
+
+
+  "technology": [
+
+    {
+      "name": "FORTYFIVE",
+
+      "cn":
+      "45度碳纤维结构，提高稳定性和球感"
+
+    },
+
+
+    {
+      "name": "Crush Zone",
+
+      "cn":
+      "压缩缓冲结构，提高力量输出"
+
+    },
+
+
+    {
+      "name": "Power Profile Frame",
+
+      "cn":
+      "力量型拍框设计，提高爆发力"
+
+    }
+
+  ],
+
+
+  "performance": {
+
+    "power": {
+
+      "rating": 9,
+
+      "cn": "力量输出：9/10"
+
+    },
+
+
+    "control": {
+
+      "rating": 7,
+
+      "cn": "控制性能：7/10"
+
+    },
+
+
+    "spin": {
+
+      "rating": 8,
+
+      "cn": "旋转能力：8/10"
+
+    },
+
+
+    "comfort": {
+
+      "rating": 8,
+
+      "cn": "舒适性：8/10"
+
+    },
+
+
+    "stability": {
+
+      "rating": 8,
+
+      "cn": "稳定性：8/10"
+
+    },
+
+
+    "maneuverability": {
+
+      "rating": 8,
+
+      "cn": "挥拍灵活性：8/10"
+
+    }
+
+  },
+
+
+  "advantages_cn": [
+
+    "Ultra系列强大力量输出",
+
+    "100平方英寸甜区",
+
+    "适合现代底线进攻",
+
+    "沙漠主题设计具有视觉收藏价值",
+
+    "兼顾使用和个性化外观"
+
+  ],
+
+
+  "weaknesses_cn": [
+
+    "控制感低于Blade系列",
+
+    "高级控制型球员可能偏好98拍面",
+
+    "特别版主要提升视觉价值"
+
+  ],
+
+
+  "recommended_player_profile": {
+
+    "suitable_for": [
+
+      "中高级业余球员",
+
+      "喜欢力量型球拍玩家",
+
+      "现代底线打法球员",
+
+      "Wilson收藏用户",
+
+      "追求个性外观玩家"
+
+    ],
+
+
+    "not_recommended_for": [
+
+      "纯控制型高级球员",
+
+      "职业竞技球员",
+
+      "喜欢柔和传统手感玩家"
+
+    ]
+
+  },
+
+
+  "recommended_strings": {
+
+    "power_spin": [
+
+      "Luxilon ALU Power",
+
+      "Wilson Revolve Spin"
+
+    ],
+
+
+    "comfort": [
+
+      "Wilson NXT",
+
+      "Wilson Sensation"
+
+    ],
+
+
+    "hybrid": [
+
+      "Natural Gut + Polyester"
+
+    ]
+
+  },
+
+
+  "recommended_tension": {
+
+    "range": {
+
+      "value": "22-25 kg",
+
+      "cn": "推荐穿线范围22-25公斤"
+
+    }
+
+  },
+
+
+  "collector_value": {
+
+    "rating": 6,
+
+    "cn":
+    "属于设计特别版，收藏价值高于普通型号，但低于球员签名和大满贯限定版"
+
+  },
+
+
+  "comparison": {
+
+
+    "vs_wilson_ultra_100_v5": {
+
+      "cn":
+      "性能完全基于Ultra 100 V5，主要区别为Desert特别设计和视觉收藏属性"
+
+    },
+
+
+    "vs_wilson_ultra_100l_v5_roland_garros_2026": {
+
+      "cn":
+      "Ultra 100 V5 Desert强调设计美学；Roland Garros版本强调赛事文化"
+
+    },
+
+
+    "vs_wilson_blade_100_v10": {
+
+      "cn":
+      "Ultra 100 V5更偏力量和速度，Blade 100 V10更偏控制和平衡"
+
+    }
+
+  },
+
+
+  "ai_tags": [
+
+    "Ultra",
+
+    "100拍面",
+
+    "Power",
+
+    "Desert Edition",
+
+    "Special Color",
+
+    "Wilson",
+
+    "Lifestyle Tennis"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "Wilson Ultra 100 V5 Desert 2026 是Ultra第五代100平方英寸力量型球拍的特别配色版本。它保留Ultra系列高力量、高速度和现代底线性能，同时通过Desert主题设计增加视觉和收藏属性，适合希望兼顾竞技性能与网球生活方式审美的玩家。",
+
+
+  "variants": [],
+
+
+  "verification": {
+
+    "status": "official",
+
+    "verified": true,
+
+
+    "knowledge_path":
+
+    "knowledge/racquets/special_editions/wilson_ultra_100_v5_desert_2026.json"
+
+  }
+
+}
