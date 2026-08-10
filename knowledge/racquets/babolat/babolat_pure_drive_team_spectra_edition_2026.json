@@ -1,0 +1,172 @@
+{
+  "id": "babolat_pure_drive_team_spectra_edition_2026",
+
+  "brand": "Babolat",
+  "brand_cn": "百保力",
+
+  "model": "Pure Drive Team Spectra Edition 2026",
+  "model_cn": "Pure Drive Team 光谱特别版 2026",
+
+  "category": "racket",
+  "category_cn": "网球拍",
+
+  "series": "Pure Drive",
+  "series_cn": "Pure Drive 系列",
+
+  "release_year": 2026,
+
+  "player_level": [
+    "beginner",
+    "intermediate",
+    "club player"
+  ],
+
+  "player_level_cn": [
+    "初学者",
+    "中级球员",
+    "俱乐部业余球员"
+  ],
+
+  "playing_style": [
+    "power",
+    "easy depth",
+    "forgiveness"
+  ],
+
+  "playing_style_cn": [
+    "力量型",
+    "容易获得球深",
+    "容错性高"
+  ],
+
+  "specifications": {
+
+    "head_size": "100 sq in",
+    "head_size_cn": "100平方英寸",
+
+    "weight_unstrung": "285 g",
+    "weight_unstrung_cn": "空拍重量285克",
+
+    "weight_strung": "300 g approx",
+    "weight_strung_cn": "穿线后约300克",
+
+    "balance": "330 mm",
+    "balance_cn": "平衡点约330毫米",
+
+    "length": "27 inches",
+    "length_cn": "27英寸",
+
+    "string_pattern": "16x19",
+    "string_pattern_cn": "16×19线床",
+
+    "beam": "23-26-23 mm",
+    "beam_cn": "23-26-23毫米拍框"
+  },
+
+
+  "technology": [
+
+    {
+      "name": "FSI Power",
+      "description_cn": "优化线孔设计，提高甜区面积并增加击球力量"
+    },
+
+    {
+      "name": "Evo Beam",
+      "description_cn": "椭圆化拍框结构，提高稳定性与舒适性"
+    },
+
+    {
+      "name": "HTR System",
+      "description_cn": "增强高扭转稳定性，提高快速挥拍时控制"
+    },
+
+    {
+      "name": "SWX Pure Feel",
+      "description_cn": "提升击球反馈和减震表现"
+    }
+
+  ],
+
+
+  "recommended_strings": {
+
+    "power": [
+      "Babolat RPM Blast",
+      "Luxilon ALU Power"
+    ],
+
+    "comfort": [
+      "Babolat Xcel",
+      "Tecnifibre X-One Biphase"
+    ],
+
+    "hybrid": [
+      "Natural Gut + Polyester"
+    ]
+
+  },
+
+
+  "recommended_strings_cn": {
+
+    "力量": [
+      "Babolat RPM Blast",
+      "Luxilon ALU Power"
+    ],
+
+    "舒适": [
+      "Babolat Xcel",
+      "Tecnifibre X-One Biphase"
+    ],
+
+    "混合": [
+      "天然肠线 + 聚酯线"
+    ]
+
+  },
+
+
+  "recommended_tension": {
+
+    "range": "22-25 kg",
+
+    "range_cn": "推荐穿线磅数22-25公斤",
+
+    "beginner": "22-23 kg",
+
+    "intermediate": "23-24 kg",
+
+    "advanced": "24-25 kg"
+
+  },
+
+
+  "ai_summary_cn":
+
+  "Pure Drive Team Spectra Edition 2026 是Pure Drive系列中重量较轻、更容易挥动的版本。适合希望获得力量、旋转以及较高容错性的业余球员。相比标准Pure Drive，Team版本降低重量，更适合女性球员、年轻球员以及挥拍速度一般的中级球员。",
+
+
+  "comparison": {
+
+    "vs_pure_drive_2026_cn":
+    "Pure Drive Team Spectra Edition 2026 比标准Pure Drive更轻、更容易控制，但稳定性和穿透力略低。",
+
+    "vs_pure_drive_tour_cn":
+    "相比Pure Drive Tour，更适合普通业余玩家，而不是高水平力量型选手。"
+
+  },
+
+
+  "verification": {
+
+    "status": "official",
+
+    "verified": true,
+
+    "knowledge_path":
+    "knowledge/racquets/babolat/babolat_pure_drive_team_spectra_edition_2026.json"
+
+  }
+
+}
