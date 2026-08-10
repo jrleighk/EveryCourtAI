@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "EveryCourtAI Racquet Schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "brand": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "release_year": {
+      "type": "number"
+    },
+    "head_size": {
+      "type": "number",
+      "description": "Square inches"
+    },
+    "weight_unstrung": {
+      "type": "number",
+      "description": "grams"
+    },
+    "balance": {
+      "type": "number",
+      "description": "cm"
+    },
+    "length": {
+      "type": "number",
+      "description": "inches"
+    },
+    "string_pattern": {
+      "type": "string"
+    },
+    "beam_width": {
+      "type": "string"
+    },
+    "stiffness_ra": {
+      "type": "number"
+    },
+    "swing_weight": {
+      "type": "number"
+    },
+    "recommended_level": {
+      "type": "array"
+    },
+    "play_style": {
+      "type": "array"
+    },
+    "strengths": {
+      "type": "array"
+    },
+    "weaknesses": {
+      "type": "array"
+    },
+    "recommended_strings": {
+      "type": "array"
+    },
+    "recommended_tension": {
+      "type": "object"
+    },
+    "ai_notes": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "brand",
+    "model",
+    "weight_unstrung",
+    "head_size"
+  ]
+}
