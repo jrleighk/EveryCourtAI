@@ -1,0 +1,43 @@
+{
+  "brand": "Wilson",
+  "model": "RF 01 Pro Classic",
+  "category": "Tennis Racquet",
+  "specifications": {
+    "head_size": "98 sq in",
+    "weight_unstrung": "320g",
+    "balance": "31.5 cm",
+    "string_pattern": "16x19",
+    "beam": "23.2 mm",
+    "stiffness_ra": 68,
+    "length": "27 in"
+  },
+  "player_level": [
+    "Advanced",
+    "Tournament"
+  ],
+  "play_style": [
+    "Aggressive Baseliner",
+    "All Court"
+  ],
+  "strengths": [
+    "Precision",
+    "Stability",
+    "Plow Through",
+    "Control"
+  ],
+  "weaknesses": [
+    "High swing weight",
+    "Can cause fatigue during long sessions"
+  ],
+  "recommended_strings": [
+    "Natural Gut",
+    "Polyester",
+    "Hybrid"
+  ],
+  "recommended_tension": {
+    "natural_gut": "52-55 lbs",
+    "polyester": "45-50 lbs",
+    "hybrid": "48-52 lbs"
+  },
+  "notes": "Designed for advanced players seeking Federer-style control, stability and feel. Suitable for powerful players but may feel demanding because of 320g static weight."
+}
