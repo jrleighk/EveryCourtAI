@@ -1,0 +1,425 @@
+{
+  "id": "wilson_pro_staff_97_v14",
+
+  "brand": "Wilson",
+  "brand_cn": "威尔胜",
+
+  "model": "Pro Staff 97 V14",
+  "model_cn": "Pro Staff 97 V14",
+
+  "category": "racket",
+  "category_cn": "网球拍",
+
+  "series": "Pro Staff",
+  "series_cn": "Pro Staff 系列",
+
+  "generation": "V14",
+  "generation_cn": "第14代版本",
+
+
+  "product_type": {
+
+    "type": "player_performance",
+
+    "type_cn": "高级竞技版本",
+
+    "description_cn":
+    "Wilson Pro Staff经典控制系列第14代型号，融合传统精准反馈与现代稳定性，面向高级竞技球员"
+
+  },
+
+
+  "heritage": {
+
+    "series_history_cn":
+    "Pro Staff 是Wilson历史最具代表性的控制型球拍系列之一，曾被多代顶级球员使用",
+
+    "legacy_players_cn": [
+      "Roger Federer",
+      "Pete Sampras",
+      "Stefan Edberg"
+    ]
+
+  },
+
+
+  "player_profile": {
+
+    "level": [
+      "advanced",
+      "competitive amateur",
+      "professional training"
+    ],
+
+    "level_cn": [
+      "高级球员",
+      "竞技型业余球员",
+      "职业训练球员"
+    ],
+
+
+    "style": [
+      "control",
+      "precision",
+      "all court"
+    ],
+
+    "style_cn": [
+      "控制型打法",
+      "精准击球",
+      "全面型打法"
+    ]
+
+  },
+
+
+  "specifications": {
+
+
+    "head_size": {
+
+      "value": 97,
+
+      "unit": "sq in",
+
+      "cn": "97平方英寸"
+
+    },
+
+
+    "weight_unstrung": {
+
+      "value": 315,
+
+      "unit": "g",
+
+      "cn": "空拍重量315克"
+
+    },
+
+
+    "weight_strung": {
+
+      "value": 332,
+
+      "unit": "g approx",
+
+      "cn": "穿线后约332克"
+
+    },
+
+
+    "balance": {
+
+      "value": 310,
+
+      "unit": "mm",
+
+      "cn": "平衡点约310毫米（头轻）"
+
+    },
+
+
+    "length": {
+
+      "value": 27,
+
+      "unit": "inch",
+
+      "cn": "27英寸"
+
+    },
+
+
+    "string_pattern": {
+
+      "value": "16x19",
+
+      "cn": "16×19开放式线床"
+
+    },
+
+
+    "beam": {
+
+      "value": "21.5 mm",
+
+      "cn": "经典薄框设计"
+
+    },
+
+
+    "swing_weight": {
+
+      "value": "around 320",
+
+      "cn": "挥重约320"
+
+    }
+
+  },
+
+
+  "technology": [
+
+    {
+      "name": "Paradigm Bending",
+
+      "cn":
+      "优化拍框柔韧性，提高控制和舒适度"
+
+    },
+
+
+    {
+      "name": "String Mapping",
+
+      "cn":
+      "优化线床结构，提高精准反馈"
+
+    },
+
+
+    {
+      "name": "Perimeter Weighting",
+
+      "cn":
+      "外围配重，提高稳定性"
+
+    },
+
+
+    {
+      "name": "Braided Graphite",
+
+      "cn":
+      "经典Pro Staff编织石墨结构"
+
+    }
+
+  ],
+
+
+  "performance": {
+
+    "power": {
+
+      "rating": 6,
+
+      "cn": "力量输出：6/10"
+
+    },
+
+
+    "control": {
+
+      "rating": 10,
+
+      "cn": "控制性能：10/10"
+
+    },
+
+
+    "spin": {
+
+      "rating": 7,
+
+      "cn": "旋转能力：7/10"
+
+    },
+
+
+    "comfort": {
+
+      "rating": 9,
+
+      "cn": "舒适性：9/10"
+
+    },
+
+
+    "stability": {
+
+      "rating": 9,
+
+      "cn": "稳定性：9/10"
+
+    },
+
+
+    "maneuverability": {
+
+      "rating": 8,
+
+      "cn": "挥拍灵活性：8/10"
+
+    }
+
+  },
+
+
+  "advantages_cn": [
+
+    "Pro Staff经典精准手感",
+
+    "97平方英寸提供优秀控制",
+
+    "稳定性优秀",
+
+    "适合技术型球员",
+
+    "击球反馈清晰"
+
+  ],
+
+
+  "weaknesses_cn": [
+
+    "力量输出有限",
+
+    "甜区较小",
+
+    "需要较高技术水平",
+
+    "不适合初学者"
+
+  ],
+
+
+  "recommended_player_profile": {
+
+    "suitable_for": [
+
+      "高级业余比赛球员",
+
+      "传统控制型玩家",
+
+      "单反球员",
+
+      "喜欢Federer时代手感玩家",
+
+      "从100平方英寸升级用户"
+
+    ],
+
+
+    "not_recommended_for": [
+
+      "初学者",
+
+      "力量不足玩家",
+
+      "追求最大容错玩家"
+
+    ]
+
+  },
+
+
+  "recommended_strings": {
+
+    "control": [
+
+      "Luxilon ALU Power 1.25",
+
+      "Luxilon 4G"
+    ],
+
+
+    "comfort": [
+
+      "Wilson NXT",
+
+      "Natural Gut"
+    ],
+
+
+    "hybrid": [
+
+      "Natural Gut + Polyester"
+
+    ]
+
+  },
+
+
+  "recommended_tension": {
+
+    "range": {
+
+      "value": "22-25 kg",
+
+      "cn": "推荐穿线范围22-25公斤"
+
+    }
+
+  },
+
+
+  "comparison": {
+
+
+    "vs_wilson_rf_01_pro": {
+
+      "cn":
+      "RF 01 Pro更加现代和力量化；Pro Staff 97 V14更加传统控制"
+
+    },
+
+
+    "vs_wilson_blade_98_18x20_v10": {
+
+      "cn":
+      "Blade 98 18×20更偏现代控制；Pro Staff 97拥有更经典柔和反馈"
+
+    },
+
+
+    "vs_wilson_pro_staff_six_one_95_18x20_v14": {
+
+      "cn":
+      "Six.One 95更传统、更稳定；Pro Staff 97更容易挥动"
+
+    }
+
+  },
+
+
+  "ai_tags": [
+
+    "Pro Staff",
+
+    "V14",
+
+    "97拍面",
+
+    "Control",
+
+    "Classic Player Frame",
+
+    "Wilson"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "Wilson Pro Staff 97 V14 是Pro Staff系列第14代核心竞技型号。它采用97平方英寸拍面、315克重量和16×19线床，提供经典精准控制、稳定性和高级球感。相比RF 01 Pro，它更加传统；相比Six.One 95，它更加现代和容易使用。适合高级竞技球员和喜欢经典Wilson手感的用户。",
+
+
+  "variants": [],
+
+
+  "verification": {
+
+    "status": "official",
+
+    "verified": true,
+
+
+    "knowledge_path":
+    "knowledge/racquets/wilson/wilson_pro_staff_97_v14.json"
+
+  }
+
+}
