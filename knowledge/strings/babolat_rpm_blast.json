@@ -1,0 +1,41 @@
+{
+  "brand": "Babolat",
+  "model": "RPM Blast",
+  "type": "Polyester",
+
+  "gauge": "1.25mm",
+
+  "performance": {
+    "power": 6,
+    "spin": 10,
+    "control": 9,
+    "comfort": 5,
+    "durability": 9
+  },
+
+  "recommended_for": [
+    "Advanced players",
+    "Aggressive baseliners",
+    "Players seeking maximum spin"
+  ],
+
+  "characteristics": [
+    "Octagonal polyester structure",
+    "High spin potential",
+    "Firm response",
+    "Excellent durability"
+  ],
+
+  "best_match_racquets": [
+    "Babolat Pure Aero",
+    "Babolat Pure Drive",
+    "Wilson Blade"
+  ],
+
+  "recommended_tension": {
+    "spin_players": "48-52 lbs",
+    "control_players": "50-55 lbs"
+  },
+
+  "notes": "Designed for heavy topspin players. Provides strong spin production and control but requires sufficient racket speed and technique."
+}
