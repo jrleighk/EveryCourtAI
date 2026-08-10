@@ -1,0 +1,454 @@
+{
+  "id": "wilson_blade_98_16x19_v10_us_open_2026",
+
+  "brand": "Wilson",
+  "brand_cn": "威尔胜",
+
+  "model": "Blade 98 16x19 V10 US Open Edition",
+  "model_cn": "Blade 98 16x19 V10 美国公开赛特别版",
+
+  "category": "special_edition_racket",
+  "category_cn": "大满贯特别版网球拍",
+
+  "series": "Blade",
+  "series_cn": "Blade 系列",
+
+  "generation": "V10",
+  "generation_cn": "第十代版本",
+
+  "release_year": 2026,
+
+
+  "edition": {
+
+    "type": "Grand Slam Edition",
+
+    "type_cn": "大满贯特别版",
+
+    "name": "US Open Edition",
+
+    "name_cn": "美国公开赛特别版",
+
+    "theme_cn":
+    "以US Open美国公开赛文化和赛事视觉元素为设计主题"
+
+  },
+
+
+  "base_model": {
+
+    "model": "Wilson Blade 98 16x19 V10",
+
+    "cn":
+    "基于Blade 98 16x19 V10标准竞技型号"
+
+  },
+
+
+  "product_type": {
+
+    "type": "retail_special",
+
+    "type_cn": "零售特别版本",
+
+    "description_cn":
+    "Blade 98 16x19 V10 US Open版本，保持原型号竞技性能，增加美国公开赛主题设计和收藏属性"
+
+  },
+
+
+  "player_profile": {
+
+    "level": [
+      "advanced",
+      "competitive amateur",
+      "club player"
+    ],
+
+    "level_cn": [
+      "高级球员",
+      "竞技型业余球员",
+      "俱乐部比赛玩家"
+    ],
+
+
+    "style": [
+      "control",
+      "all court",
+      "spin"
+    ],
+
+    "style_cn": [
+      "控制型打法",
+      "全面型打法",
+      "旋转型打法"
+    ]
+
+  },
+
+
+  "specifications": {
+
+
+    "head_size": {
+
+      "value": 98,
+
+      "unit": "sq in",
+
+      "cn": "98平方英寸"
+
+    },
+
+
+    "weight_unstrung": {
+
+      "value": 305,
+
+      "unit": "g",
+
+      "cn": "空拍重量305克"
+
+    },
+
+
+    "weight_strung": {
+
+      "value": 320,
+
+      "unit": "g approx",
+
+      "cn": "穿线后约320克"
+
+    },
+
+
+    "balance": {
+
+      "value": 320,
+
+      "unit": "mm",
+
+      "cn": "平衡点约320毫米"
+
+    },
+
+
+    "length": {
+
+      "value": 27,
+
+      "unit": "inch",
+
+      "cn": "27英寸"
+
+    },
+
+
+    "string_pattern": {
+
+      "value": "16x19",
+
+      "cn": "16×19开放式线床"
+
+    },
+
+
+    "beam": {
+
+      "value": "21 mm",
+
+      "cn": "经典Blade薄框设计"
+
+    },
+
+
+    "swing_weight": {
+
+      "value": "around 320",
+
+      "cn": "挥重约320"
+
+    }
+
+  },
+
+
+  "technology": [
+
+    {
+      "name": "FortyFive",
+
+      "cn":
+      "45度碳纤维结构，提高稳定性和球感"
+    },
+
+
+    {
+      "name": "DirectConnect",
+
+      "cn":
+      "碳纤维手柄连接技术，提高力量传递"
+    },
+
+
+    {
+      "name": "StableFeel",
+
+      "cn":
+      "增强击球稳定性和反馈"
+    },
+
+
+    {
+      "name": "Sonic Boom",
+
+      "cn":
+      "改善击球声音和反馈体验"
+    }
+
+  ],
+
+
+  "performance": {
+
+    "power": {
+
+      "rating": 7,
+
+      "cn": "力量输出：7/10"
+
+    },
+
+
+    "control": {
+
+      "rating": 9,
+
+      "cn": "控制性能：9/10"
+
+    },
+
+
+    "spin": {
+
+      "rating": 9,
+
+      "cn": "旋转能力：9/10"
+
+    },
+
+
+    "comfort": {
+
+      "rating": 8,
+
+      "cn": "舒适性：8/10"
+
+    },
+
+
+    "stability": {
+
+      "rating": 9,
+
+      "cn": "稳定性：9/10"
+
+    },
+
+
+    "maneuverability": {
+
+      "rating": 8,
+
+      "cn": "挥拍灵活性：8/10"
+
+    }
+
+  },
+
+
+  "advantages_cn": [
+
+    "Blade系列经典控制感",
+
+    "16×19提供优秀旋转能力",
+
+    "98平方英寸精准反馈",
+
+    "适合现代全面型打法",
+
+    "US Open特别版具有收藏价值"
+
+  ],
+
+
+  "weaknesses_cn": [
+
+    "力量输出低于Ultra和Pure Drive",
+
+    "甜区小于100平方英寸型号",
+
+    "需要较好的击球技术"
+
+  ],
+
+
+  "recommended_player_profile": {
+
+    "suitable_for": [
+
+      "高级业余球员",
+
+      "俱乐部竞技玩家",
+
+      "喜欢控制和旋转结合玩家",
+
+      "US Open收藏爱好者",
+
+      "Blade系列用户"
+
+    ],
+
+
+    "not_recommended_for": [
+
+      "初学者",
+
+      "需要大量力量辅助玩家",
+
+      "追求最大容错玩家"
+
+    ]
+
+  },
+
+
+  "recommended_strings": {
+
+    "control": [
+
+      "Luxilon ALU Power 1.25",
+
+      "Wilson Revolve"
+    ],
+
+
+    "spin": [
+
+      "Solinco Hyper-G",
+
+      "RPM Blast"
+    ],
+
+
+    "hybrid": [
+
+      "Natural Gut + Polyester"
+
+    ]
+
+  },
+
+
+  "recommended_tension": {
+
+    "range": {
+
+      "value": "22-25 kg",
+
+      "cn":
+      "推荐穿线范围22-25公斤"
+
+    }
+
+  },
+
+
+  "collector_value": {
+
+    "rating": 8,
+
+    "cn":
+    "US Open大满贯主题版本，具备赛事收藏价值"
+
+  },
+
+
+  "comparison": {
+
+
+    "vs_wilson_blade_98_16x19_v10": {
+
+      "cn":
+      "性能基本一致，US Open版本增加外观和收藏属性"
+
+    },
+
+
+    "vs_wilson_blade_pro_98_16x19_v10": {
+
+      "cn":
+      "Blade Pro拥有更高定制化和竞技要求；US Open版本更适合普通高级玩家"
+
+    },
+
+
+    "vs_wilson_pro_staff_97_v14": {
+
+      "cn":
+      "Pro Staff更传统控制；Blade更现代旋转和速度"
+
+    },
+
+
+    "vs_babolat_pure_strike_98_2025": {
+
+      "cn":
+      "Pure Strike更强调精准击球；Blade更强调旋转和现代全面性"
+
+    }
+
+  },
+
+
+  "ai_tags": [
+
+    "Blade",
+
+    "98拍面",
+
+    "16x19",
+
+    "US Open",
+
+    "Grand Slam",
+
+    "Control",
+
+    "Wilson"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "Wilson Blade 98 16x19 V10 US Open Edition 2026 是Blade系列与美国公开赛主题结合的特别版本。它保留Blade 98 V10的精准控制、旋转能力和竞技稳定性，同时增加US Open赛事文化和收藏属性。适合高级业余球员、比赛型玩家以及Wilson大满贯系列收藏用户。",
+
+
+  "variants": [],
+
+
+  "verification": {
+
+    "status": "official",
+
+    "verified": true,
+
+
+    "knowledge_path":
+    "knowledge/racquets/special_editions/wilson_blade_98_16x19_v10_us_open_2026.json"
+
+  }
+
+}
