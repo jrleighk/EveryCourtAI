@@ -1,0 +1,460 @@
+{
+  "id": "wilson_rf_01_pro_classic",
+
+  "brand": "Wilson",
+  "brand_cn": "威尔胜",
+
+  "model": "RF 01 Pro Classic",
+  "model_cn": "RF 01 Pro Classic",
+
+  "category": "special_edition_racket",
+  "category_cn": "经典特别版竞技网球拍",
+
+  "series": "RF",
+  "series_cn": "RF费德勒系列",
+
+  "generation": "RF01",
+  "generation_cn": "RF系列第一代",
+
+
+  "product_type": {
+
+    "type": "heritage_performance",
+
+    "type_cn": "经典传承竞技版本",
+
+    "description_cn":
+    "RF系列中融合Roger Federer经典时代设计元素的高级竞技型号，在现代RF01平台基础上加入复古Pro Classic元素"
+
+  },
+
+
+  "heritage": {
+
+    "player": "Roger Federer",
+
+    "player_cn": "罗杰·费德勒",
+
+    "theme_cn":
+    "致敬Federer职业生涯经典Pro Staff时代的击球理念和设计语言"
+
+  },
+
+
+  "edition": {
+
+    "type": "Classic Edition",
+
+    "type_cn": "经典特别版本",
+
+    "collector_value":
+
+    "High",
+
+    "collector_value_cn":
+    "具备较高收藏价值"
+
+  },
+
+
+  "player_profile": {
+
+    "level": [
+
+      "advanced",
+      "competitive amateur",
+      "professional training"
+
+    ],
+
+    "level_cn": [
+
+      "高级球员",
+      "竞技型业余球员",
+      "职业训练球员"
+
+    ],
+
+
+    "style": [
+
+      "all court",
+      "precision",
+      "aggressive"
+
+    ],
+
+    "style_cn": [
+
+      "全面型打法",
+      "精准控制",
+      "攻击型打法"
+
+    ]
+
+  },
+
+
+  "specifications": {
+
+
+    "head_size": {
+
+      "value": 98,
+
+      "unit": "sq in",
+
+      "cn": "98平方英寸"
+
+    },
+
+
+    "weight_unstrung": {
+
+      "value": 320,
+
+      "unit": "g",
+
+      "cn": "空拍重量320克"
+
+    },
+
+
+    "weight_strung": {
+
+      "value": 340,
+
+      "unit": "g approx",
+
+      "cn": "穿线后约340克"
+
+    },
+
+
+    "balance": {
+
+      "value": 310,
+
+      "unit": "mm",
+
+      "cn": "平衡点约310毫米（头轻）"
+
+    },
+
+
+    "length": {
+
+      "value": 27,
+
+      "unit": "inch",
+
+      "cn": "27英寸"
+
+    },
+
+
+    "string_pattern": {
+
+      "value": "16x19",
+
+      "cn": "16×19开放式线床"
+
+    },
+
+
+    "beam": {
+
+      "value": "22.5 mm",
+
+      "cn": "竞技薄框设计"
+
+    },
+
+
+    "swing_weight": {
+
+      "value": "around 335",
+
+      "cn": "挥重约335"
+
+    }
+
+  },
+
+
+  "technology": [
+
+    {
+
+      "name": "Braid 45",
+
+      "cn":
+      "45度碳纤维编织结构，提高稳定性和反馈"
+
+    },
+
+
+    {
+
+      "name": "Feel Fill",
+
+      "cn":
+      "减震材料，提高击球舒适度"
+
+    },
+
+
+    {
+
+      "name": "SABR Inspired Design",
+
+      "cn":
+      "源自Federer快速进攻打法理念"
+
+    },
+
+
+    {
+
+      "name": "Terminal Taper",
+
+      "cn":
+      "优化拍框操控性能"
+
+    }
+
+  ],
+
+
+  "performance": {
+
+
+    "power": {
+
+      "rating": 8,
+
+      "cn": "力量输出：8/10"
+
+    },
+
+
+    "control": {
+
+      "rating": 9,
+
+      "cn": "控制性能：9/10"
+
+    },
+
+
+    "spin": {
+
+      "rating": 8,
+
+      "cn": "旋转能力：8/10"
+
+    },
+
+
+    "comfort": {
+
+      "rating": 8,
+
+      "cn": "舒适性：8/10"
+
+    },
+
+
+    "stability": {
+
+      "rating": 10,
+
+      "cn": "稳定性：10/10"
+
+    },
+
+
+    "maneuverability": {
+
+      "rating": 7,
+
+      "cn": "挥拍灵活性：7/10"
+
+    }
+
+  },
+
+
+  "advantages_cn": [
+
+    "Federer经典风格设计",
+
+    "320g高级竞技重量",
+
+    "稳定性极强",
+
+    "98拍面精准控制",
+
+    "收藏与实战兼备"
+
+  ],
+
+
+  "weaknesses_cn": [
+
+    "重量较高",
+
+    "挥拍要求高",
+
+    "长时间比赛容易疲劳",
+
+    "不适合初学者"
+
+  ],
+
+
+  "recommended_player_profile": {
+
+    "suitable_for": [
+
+      "Federer粉丝",
+
+      "高级比赛球员",
+
+      "传统控制型玩家",
+
+      "收藏级网球装备用户",
+
+      "喜欢Pro Staff手感玩家"
+
+    ],
+
+
+    "not_recommended_for": [
+
+      "初学者",
+
+      "力量不足玩家",
+
+      "需要轻量球拍用户"
+
+    ]
+
+  },
+
+
+  "recommended_strings": {
+
+
+    "control": [
+
+      "Luxilon ALU Power 1.25",
+
+      "Luxilon 4G"
+
+    ],
+
+
+    "comfort": [
+
+      "Natural Gut",
+
+      "Wilson NXT"
+
+    ],
+
+
+    "hybrid": [
+
+      "Natural Gut + Polyester"
+
+    ]
+
+  },
+
+
+  "recommended_tension": {
+
+    "range": {
+
+      "value": "22-25 kg",
+
+      "cn":
+      "推荐穿线范围22-25公斤"
+
+    }
+
+  },
+
+
+  "comparison": {
+
+
+    "vs_wilson_rf_01_pro": {
+
+      "cn":
+      "RF 01 Pro Classic增加复古收藏元素，重量和竞技性能接近RF 01 Pro"
+
+    },
+
+
+    "vs_wilson_rf_01_2024": {
+
+      "cn":
+      "RF 01标准版更容易使用，Pro Classic更加竞技和收藏化"
+
+    },
+
+
+    "vs_wilson_pro_staff_97_v14": {
+
+      "cn":
+      "Pro Staff更传统控制，RF 01 Pro Classic更现代、更偏力量"
+
+    }
+
+  },
+
+
+  "ai_tags": [
+
+    "RF",
+
+    "Federer",
+
+    "Classic",
+
+    "Heritage",
+
+    "98拍面",
+
+    "320g",
+
+    "Collector",
+
+    "Wilson"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "Wilson RF 01 Pro Classic 是RF系列中融合Federer经典时代设计理念的高级竞技收藏型号。它采用98平方英寸拍面、320克空拍重量和16×19线床，在现代力量、稳定性与经典控制感之间取得平衡。相比RF 01 Pro，它拥有更强收藏属性；相比Pro Staff系列，它更加现代化。适合高级竞技玩家和Federer收藏用户。",
+
+
+  "variants": [],
+
+
+  "verification": {
+
+    "status": "official",
+
+    "verified": true,
+
+
+    "knowledge_path":
+    "knowledge/racquets/special_editions/wilson_rf_01_pro_classic.json"
+
+  }
+
+}
