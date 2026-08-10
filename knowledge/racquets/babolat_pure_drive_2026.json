@@ -1,0 +1,62 @@
+{
+  "brand": "Babolat",
+  "model": "Pure Drive 2026",
+  "category": "Tennis Racquet",
+
+  "specifications": {
+    "head_size": "100 sq in",
+    "weight_unstrung": "300g",
+    "balance": "32 cm",
+    "string_pattern": "16x19",
+    "beam": "23-26-23 mm",
+    "stiffness_ra": 72,
+    "length": "27 in"
+  },
+
+  "player_level": [
+    "Intermediate",
+    "Advanced",
+    "Tournament"
+  ],
+
+  "play_style": [
+    "Aggressive Baseliner",
+    "Power Player",
+    "Modern All Court"
+  ],
+
+  "strengths": [
+    "Easy Power",
+    "Spin Generation",
+    "Large Sweet Spot",
+    "Serve Performance"
+  ],
+
+  "weaknesses": [
+    "Less Touch than Control Racquets",
+    "Higher Stiffness",
+    "Can Feel Powerful for Flat Hitters"
+  ],
+
+  "recommended_strings": [
+    "Babolat RPM Blast",
+    "Luxilon ALU Power",
+    "Natural Gut Hybrid"
+  ],
+
+  "recommended_tension": {
+    "polyester": "45-52 lbs",
+    "hybrid": "50-55 lbs",
+    "natural_gut": "52-58 lbs"
+  },
+
+  "comparison_with_wilson_rf01": {
+    "power": "Higher",
+    "spin": "Higher",
+    "control": "Lower",
+    "comfort": "Similar or slightly lower",
+    "fatigue": "Lower due to lighter static weight"
+  },
+
+  "notes": "A modern power-oriented racquet. Suitable for players moving away from heavier 320g control frames who want easier acceleration and less fatigue during long matches."
+}
