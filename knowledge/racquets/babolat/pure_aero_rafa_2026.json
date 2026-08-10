@@ -1,0 +1,174 @@
+{
+  "brand": "Babolat",
+  "品牌": "百保力",
+
+  "model": "Pure Aero Rafa 2026",
+  "型号": "Pure Aero Rafa 2026",
+
+  "series": "Pure Aero Rafa",
+  "系列": "Pure Aero Rafa 纳达尔系列",
+
+  "category": {
+    "primary": "spin",
+    "主要定位": "极致旋转"
+  },
+
+
+  "player_profile": {
+
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+
+    "style": [
+      "heavy_topspin",
+      "强上旋",
+      "clay_court",
+      "红土打法",
+      "aggressive_baseline",
+      "底线攻击"
+    ],
+
+    "swing_style": "medium_fast",
+    "挥拍特点": "主动型挥拍"
+  },
+
+
+  "specifications": {
+
+    "head_size": "100 sq.in",
+    "拍面": "100平方英寸",
+
+    "weight_unstrung": "300g",
+    "空拍重量": "300克",
+
+    "balance": "320mm",
+    "平衡点": "320毫米",
+
+    "length": "27 inch",
+    "长度": "27英寸",
+
+    "string_pattern": "16x19",
+    "线床": "16x19",
+
+    "beam": "23-26mm",
+    "拍框": "23-26毫米"
+  },
+
+
+  "player_reference": {
+
+    "professional_player": "Rafael Nadal",
+
+    "中文": "纳达尔使用Pure Aero系列创造了现代强上旋打法代表"
+  },
+
+
+  "advantages": [
+
+    "extreme topspin generation",
+    "极强上旋制造能力",
+
+    "easy access to spin",
+    "容易产生旋转",
+
+    "aggressive baseline performance",
+    "适合底线持续进攻",
+
+    "forgiving sweet spot",
+    "甜区较大"
+  ],
+
+
+  "weaknesses": [
+
+    "less control for flat hitters",
+    "平击打法控制不足",
+
+    "requires active swing",
+    "需要主动挥拍",
+
+    "not ideal for defensive players",
+    "不适合防守型球员"
+  ],
+
+
+  "recommended_player_profile": {
+
+    "suitable_for": [
+      "喜欢纳达尔打法",
+      "西方式握拍",
+      "喜欢高弧线上旋",
+      "红土场球员"
+    ],
+
+    "not_recommended_for": [
+      "喜欢费德勒式平击打法",
+      "追求极致控制",
+      "挥拍力量不足"
+    ]
+
+  },
+
+
+  "recommended_strings": [
+
+    {
+      "string": "Babolat RPM Blast",
+      "中文": "纳达尔经典旋转线"
+    },
+
+    {
+      "string": "Babolat RPM Power",
+      "中文": "力量与旋转结合"
+    },
+
+    {
+      "string": "Luxilon ALU Power Spin",
+      "中文": "竞技旋转线"
+    }
+
+  ],
+
+
+  "recommended_tension": {
+
+    "polyester": "48-52 lbs",
+
+    "聚酯线": "48-52磅"
+  },
+
+
+  "ai_tags": [
+    "Nadal打法",
+    "旋转",
+    "红土",
+    "底线",
+    "进攻型",
+    "中高级球员"
+  ],
+
+
+  "similar_rackets": [
+
+    {
+      "brand": "Yonex",
+      "model": "VCORE 100",
+      "中文关系": "现代旋转型竞争型号"
+    },
+
+    {
+      "brand": "HEAD",
+      "model": "Extreme MP",
+      "中文关系": "力量旋转路线类似"
+    }
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "Pure Aero Rafa 是针对纳达尔打法理念设计的旋转型球拍，适合希望增加上旋、提高击球安全性和底线攻击能力的球员。它不是简单的力量拍，而是一把帮助球员制造重球的现代旋转武器。"
+
+}
