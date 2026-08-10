@@ -1,1 +1,68 @@
+{
+  "brand": "Babolat",
+  "model": "Pure Drive 2026",
 
+  "category": "Power",
+
+  "specifications": {
+
+    "head_size": "100 sq in",
+
+    "weight_unstrung": "300g",
+
+    "balance": "320mm",
+
+    "beam": "23-26mm",
+
+    "string_pattern": "16x19",
+
+    "length": "27 inch"
+
+  },
+
+
+  "player_profile": {
+
+    "level": [
+      "Intermediate",
+      "Advanced"
+    ],
+
+    "style": [
+      "Baseline",
+      "Aggressive",
+      "Power player"
+    ]
+
+  },
+
+
+  "strengths": [
+    "Easy power",
+    "Large sweet spot",
+    "Good spin potential"
+  ],
+
+
+  "weaknesses": [
+    "Less precision than control rackets",
+    "Can produce higher launch angle"
+  ],
+
+
+  "recommended_strings": [
+    "Babolat RPM Blast",
+    "Luxilon ALU Power",
+    "Babolat RPM Power"
+  ],
+
+
+  "recommended_tension": {
+
+    "poly": "48-54 lbs",
+
+    "hybrid": "52-56 lbs"
+
+  }
+
+}
