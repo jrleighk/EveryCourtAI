@@ -1,0 +1,299 @@
+{
+  "id": "babolat_evo_aero_2nd_gen_2026",
+
+  "brand": "Babolat",
+  "brand_cn": "百保力",
+
+  "model": "EVO Aero 2nd Gen 2026",
+  "model_cn": "EVO Aero 第二代 2026",
+
+  "category": "racket",
+  "category_cn": "网球拍",
+
+  "series": "EVO Aero",
+  "series_cn": "EVO Aero 系列",
+
+  "release_year": 2026,
+
+
+  "player_profile": {
+
+    "level": [
+      "beginner",
+      "intermediate",
+      "recreational"
+    ],
+
+    "level_cn": [
+      "初学者",
+      "中级球员",
+      "休闲型球员"
+    ],
+
+
+    "style": [
+      "easy spin",
+      "easy power",
+      "baseline"
+    ],
+
+    "style_cn": [
+      "轻松旋转",
+      "容易获得力量",
+      "底线打法"
+    ]
+
+  },
+
+
+  "specifications": {
+
+    "head_size": {
+      "value": 102,
+      "unit": "sq in",
+      "cn": "102平方英寸"
+    },
+
+
+    "weight_unstrung": {
+      "value": 275,
+      "unit": "g",
+      "cn": "空拍重量275克"
+    },
+
+
+    "weight_strung": {
+      "value": 290,
+      "unit": "g approx",
+      "cn": "穿线后约290克"
+    },
+
+
+    "balance": {
+      "value": 330,
+      "unit": "mm",
+      "cn": "平衡点约330毫米"
+    },
+
+
+    "length": {
+      "value": 27,
+      "unit": "inch",
+      "cn": "27英寸"
+    },
+
+
+    "string_pattern": {
+      "value": "16x19",
+      "cn": "16×19开放式线床"
+    },
+
+
+    "beam": {
+      "value": "23-26 mm",
+      "cn": "23-26毫米拍框"
+    }
+
+  },
+
+
+  "technology": [
+
+    {
+      "name": "Aero Modular Design",
+      "cn": "空气动力学拍框设计，提高挥拍速度"
+    },
+
+    {
+      "name": "Woofer System",
+      "cn": "增加球线移动，提高旋转和舒适性"
+    },
+
+    {
+      "name": "EVO Feel",
+      "cn": "提升舒适度，减少震动"
+    }
+
+  ],
+
+
+  "performance": {
+
+    "power": {
+      "rating": 8,
+      "cn": "力量输出：8/10"
+    },
+
+
+    "control": {
+      "rating": 6,
+      "cn": "控制性能：6/10"
+    },
+
+
+    "spin": {
+      "rating": 8,
+      "cn": "旋转能力：8/10"
+    },
+
+
+    "comfort": {
+      "rating": 9,
+      "cn": "舒适性：9/10"
+    },
+
+
+    "maneuverability": {
+      "rating": 10,
+      "cn": "挥拍灵活性：10/10"
+    }
+
+  },
+
+
+  "advantages_cn": [
+
+    "重量轻，容易挥动",
+    "大拍面提供高容错",
+    "容易产生旋转",
+    "适合刚开始学习现代网球打法",
+    "长时间击球疲劳低"
+
+  ],
+
+
+  "weaknesses_cn": [
+
+    "稳定性低于Pure Aero系列",
+    "高级球员可能感觉力量和控制不足",
+    "高速击球时穿透力有限"
+
+  ],
+
+
+  "recommended_player_profile": {
+
+    "suitable_for": [
+
+      "初学者升级球拍",
+      "中级业余球员",
+      "女性球员",
+      "年轻球员",
+      "希望轻松制造旋转的玩家"
+
+    ],
+
+
+    "not_recommended_for": [
+
+      "高级竞技球员",
+      "高速挥拍球员",
+      "追求精准控制的选手"
+
+    ]
+
+  },
+
+
+  "recommended_strings": {
+
+
+    "comfort": [
+
+      "Babolat Xcel",
+      "Tecnifibre Multifeel"
+
+    ],
+
+
+    "spin": [
+
+      "Babolat RPM Soft",
+      "RPM Blast (低磅)"
+
+    ]
+
+  },
+
+
+  "recommended_tension": {
+
+    "range": {
+      "value": "22-24 kg",
+      "cn": "推荐穿线范围22-24公斤"
+    },
+
+
+    "beginner": {
+      "value": "22-23 kg",
+      "cn": "初学者建议22-23公斤"
+    },
+
+
+    "intermediate": {
+      "value": "23-24 kg",
+      "cn": "中级球员建议23-24公斤"
+    }
+
+  },
+
+
+  "comparison": {
+
+
+    "vs_pure_aero_team_2026": {
+
+      "cn":
+      "EVO Aero 2nd Gen 比Pure Aero Team更偏休闲和易用，力量和稳定性较低。"
+
+    },
+
+
+    "vs_pure_aero_2026": {
+
+      "cn":
+      "EVO Aero 2nd Gen 更容易使用，但Pure Aero 2026拥有更强旋转、稳定性和竞技表现。"
+
+    },
+
+
+    "vs_pure_drive_team_2026": {
+
+      "cn":
+      "EVO Aero更强调旋转，Pure Drive Team更强调力量和全面性。"
+
+    }
+
+  },
+
+
+  "ai_tags": [
+
+    "初学者",
+    "中级球员",
+    "轻量",
+    "高容错",
+    "旋转",
+    "舒适",
+    "女性球员"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "Babolat EVO Aero 2nd Gen 2026 是面向广大业余玩家的旋转型入门进阶球拍。相比Pure Aero系列，它降低了使用门槛，提高舒适性和容错率，适合希望学习现代上旋打法、但还没有足够挥拍力量的球员。",
+
+
+  "verification": {
+
+    "status": "official",
+
+    "verified": true,
+
+    "knowledge_path":
+    "knowledge/racquets/babolat/babolat_evo_aero_2nd_gen_2026.json"
+
+  }
+
+}
