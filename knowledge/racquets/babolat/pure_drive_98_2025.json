@@ -1,0 +1,335 @@
+{
+  "id": "babolat_pure_drive_98_2025",
+
+  "brand": "Babolat",
+  "brand_cn": "百保力",
+
+  "model": "Pure Drive 98",
+  "model_cn": "Pure Drive 98",
+
+  "category": "racket",
+  "category_cn": "网球拍",
+
+  "series": "Pure Drive",
+  "series_cn": "Pure Drive 力量系列",
+
+  "release_year": 2025,
+
+
+  "player_profile": {
+
+    "level": [
+      "advanced",
+      "competitive club player"
+    ],
+
+    "level_cn": [
+      "高级球员",
+      "竞技型俱乐部球员"
+    ],
+
+
+    "style": [
+      "power",
+      "aggressive baseline",
+      "all court"
+    ],
+
+    "style_cn": [
+      "力量型打法",
+      "主动进攻底线",
+      "全场型打法"
+    ]
+
+  },
+
+
+  "specifications": {
+
+    "head_size": {
+      "value": 98,
+      "unit": "sq in",
+      "cn": "98平方英寸"
+    },
+
+
+    "weight_unstrung": {
+      "value": 305,
+      "unit": "g",
+      "cn": "空拍重量305克"
+    },
+
+
+    "weight_strung": {
+      "value": 320,
+      "unit": "g approx",
+      "cn": "穿线后约320克"
+    },
+
+
+    "balance": {
+      "value": 325,
+      "unit": "mm",
+      "cn": "平衡点约325毫米"
+    },
+
+
+    "length": {
+      "value": 27,
+      "unit": "inch",
+      "cn": "27英寸"
+    },
+
+
+    "string_pattern": {
+      "value": "16x19",
+      "cn": "16×19开放式线床"
+    },
+
+
+    "beam": {
+      "value": "23-26 mm",
+      "cn": "23-26毫米拍框"
+    },
+
+
+    "swing_weight": {
+      "value": "around 320",
+      "cn": "挥重约320"
+    },
+
+
+    "stiffness": {
+      "value": "around 70 RA",
+      "cn": "硬度约70 RA"
+    }
+
+  },
+
+
+  "technology": [
+
+    {
+      "name": "FSI Power",
+      "cn": "优化线床结构，提高击球力量和甜区表现"
+    },
+
+
+    {
+      "name": "HTR System",
+      "cn": "高扭转稳定性设计，提高高速击球稳定性"
+    },
+
+
+    {
+      "name": "SWX Pure Feel",
+      "cn": "减少震动，提高击球反馈"
+    },
+
+
+    {
+      "name": "NF2 Tech",
+      "cn": "天然亚麻纤维减震技术"
+    }
+
+  ],
+
+
+  "performance": {
+
+    "power": {
+      "rating": 9,
+      "cn": "力量输出：9/10"
+    },
+
+
+    "control": {
+      "rating": 8,
+      "cn": "控制性能：8/10"
+    },
+
+
+    "spin": {
+      "rating": 8,
+      "cn": "旋转能力：8/10"
+    },
+
+
+    "comfort": {
+      "rating": 7,
+      "cn": "舒适性：7/10"
+    },
+
+
+    "stability": {
+      "rating": 9,
+      "cn": "稳定性：9/10"
+    },
+
+
+    "maneuverability": {
+      "rating": 7,
+      "cn": "挥拍灵活性：7/10"
+    }
+
+  },
+
+
+  "advantages_cn": [
+
+    "98拍面提供更精准控制",
+    "相比普通Pure Drive拥有更高稳定性",
+    "力量输出优秀",
+    "适合主动进攻型球员",
+    "高速击球表现突出"
+
+  ],
+
+
+  "weaknesses_cn": [
+
+    "对挥拍速度要求较高",
+    "甜区小于100平方英寸型号",
+    "长时间比赛容易产生疲劳",
+    "不适合初学者"
+
+  ],
+
+
+  "recommended_player_profile": {
+
+    "suitable_for": [
+
+      "NTRP 4.5以上球员",
+      "高级业余球员",
+      "竞技比赛球员",
+      "喜欢Pure Drive力量但需要更多控制的玩家"
+
+    ],
+
+
+    "not_recommended_for": [
+
+      "初学者",
+      "力量不足球员",
+      "希望轻松挥拍的玩家"
+
+    ]
+
+  },
+
+
+  "recommended_strings": {
+
+    "power_control": [
+
+      "Babolat RPM Blast 1.25",
+      "Luxilon ALU Power 1.25"
+
+    ],
+
+
+    "comfort": [
+
+      "Babolat VS Touch Natural Gut",
+      "Tecnifibre X-One Biphase"
+
+    ],
+
+
+    "hybrid": [
+
+      "Natural Gut + Polyester",
+      "RPM Blast + VS Touch"
+
+    ]
+
+  },
+
+
+  "recommended_tension": {
+
+    "range": {
+      "value": "22-25 kg",
+      "cn": "推荐穿线范围22-25公斤"
+    },
+
+
+    "power_player": {
+      "value": "24-25 kg",
+      "cn": "力量型球员建议24-25公斤"
+    },
+
+
+    "spin_player": {
+      "value": "22-23 kg",
+      "cn": "旋转型球员建议22-23公斤"
+    }
+
+  },
+
+
+  "comparison": {
+
+
+    "vs_pure_drive_2026": {
+
+      "cn":
+      "Pure Drive 98 2025 拍面更小、控制更强，Pure Drive 2026 更适合大众球员和力量需求。"
+
+    },
+
+
+    "vs_pure_aero_98_2026": {
+
+      "cn":
+      "Pure Drive 98 更强调力量和爆发，Pure Aero 98 更强调旋转和线路控制。"
+
+    },
+
+
+    "vs_wilson_rf01_pro_classic": {
+
+      "cn":
+      "Pure Drive 98 更容易产生力量，RF01 Pro Classic 提供更传统的精准反馈。"
+
+    }
+
+  },
+
+
+  "ai_tags": [
+
+    "98拍面",
+    "高级球员",
+    "力量",
+    "稳定",
+    "进攻",
+    "比赛",
+    "Pure Drive"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "Babolat Pure Drive 98 2025 是Pure Drive系列中面向高级球员的控制型力量球拍。相比标准Pure Drive，它采用更小98平方英寸拍面和更高稳定性设计，适合拥有较快挥拍速度、喜欢主动进攻和比赛强度的球员。",
+
+
+  "variants": [],
+
+
+  "verification": {
+
+    "status": "official",
+
+    "verified": true,
+
+    "product_year_checked": 2025,
+
+    "knowledge_path":
+    "knowledge/racquets/babolat/pure_drive_98_2025.json"
+
+  }
+
+}
