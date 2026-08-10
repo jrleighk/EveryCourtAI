@@ -1,0 +1,431 @@
+{
+  "id": "wilson_ultra_100l_v5_roland_garros_2026",
+
+  "brand": "Wilson",
+  "brand_cn": "威尔胜",
+
+  "model": "Ultra 100L V5 Roland Garros 2026",
+  "model_cn": "Ultra 100L V5 法网2026特别版",
+
+  "category": "special_edition_racket",
+  "category_cn": "大满贯特别版网球拍",
+
+  "series": "Ultra",
+  "series_cn": "Ultra 系列",
+
+  "generation": "V5",
+  "generation_cn": "第五代版本",
+
+
+  "edition": {
+
+    "type": "Grand Slam Edition",
+
+    "type_cn": "大满贯赛事特别版",
+
+    "event": "Roland Garros",
+
+    "event_cn": "法国网球公开赛（法网）",
+
+    "year": 2026
+
+  },
+
+
+  "product_type": {
+
+    "type": "retail",
+
+    "type_cn": "零售版本",
+
+    "description_cn":
+    "基于Wilson Ultra 100L V5打造的法网主题特别版，结合Ultra系列力量性能和Roland Garros赛事设计"
+
+  },
+
+
+  "base_model": {
+
+    "model": "Wilson Ultra 100L V5",
+
+    "cn":
+    "基于Ultra第五代100L轻量版本"
+
+  },
+
+
+  "player_profile": {
+
+    "level": [
+      "beginner",
+      "intermediate",
+      "club player"
+    ],
+
+    "level_cn": [
+      "初学者",
+      "中级球员",
+      "俱乐部球员"
+    ],
+
+
+    "style": [
+      "power",
+      "easy swing",
+      "baseline"
+    ],
+
+    "style_cn": [
+      "力量型打法",
+      "轻松挥拍",
+      "底线打法"
+    ]
+
+  },
+
+
+  "specifications": {
+
+    "head_size": {
+
+      "value": 100,
+
+      "unit": "sq in",
+
+      "cn": "100平方英寸"
+
+    },
+
+
+    "weight_unstrung": {
+
+      "value": 280,
+
+      "unit": "g",
+
+      "cn": "空拍重量280克"
+
+    },
+
+
+    "weight_strung": {
+
+      "value": 295,
+
+      "unit": "g approx",
+
+      "cn": "穿线后约295克"
+
+    },
+
+
+    "balance": {
+
+      "value": 325,
+
+      "unit": "mm",
+
+      "cn": "平衡点约325毫米"
+
+    },
+
+
+    "length": {
+
+      "value": 27,
+
+      "unit": "inch",
+
+      "cn": "27英寸"
+
+    },
+
+
+    "string_pattern": {
+
+      "value": "16x19",
+
+      "cn": "16×19开放式线床"
+
+    },
+
+
+    "beam": {
+
+      "value": "24-26 mm",
+
+      "cn": "较厚力量型拍框"
+
+    }
+
+  },
+
+
+  "technology": [
+
+    {
+
+      "name": "FORTYFIVE",
+
+      "cn":
+      "45度碳纤维结构，提高稳定性和球感"
+
+    },
+
+    {
+
+      "name": "Crush Zone",
+
+      "cn":
+      "压缩缓冲结构，提高击球力量和舒适度"
+
+    },
+
+    {
+
+      "name": "Power Profile Frame",
+
+      "cn":
+      "力量型拍框设计，提高爆发力"
+
+    }
+
+  ],
+
+
+  "performance": {
+
+    "power": {
+
+      "rating": 9,
+
+      "cn": "力量输出：9/10"
+
+    },
+
+
+    "control": {
+
+      "rating": 7,
+
+      "cn": "控制性能：7/10"
+
+    },
+
+
+    "spin": {
+
+      "rating": 8,
+
+      "cn": "旋转能力：8/10"
+
+    },
+
+
+    "comfort": {
+
+      "rating": 8,
+
+      "cn": "舒适性：8/10"
+
+    },
+
+
+    "stability": {
+
+      "rating": 7,
+
+      "cn": "稳定性：7/10"
+
+    },
+
+
+    "maneuverability": {
+
+      "rating": 10,
+
+      "cn": "挥拍灵活性：10/10"
+
+    }
+
+  },
+
+
+  "advantages_cn": [
+
+    "Ultra系列强大的力量输出",
+
+    "100平方英寸甜区大",
+
+    "280克重量容易挥动",
+
+    "适合快速提升球速",
+
+    "Roland Garros特别设计具有收藏属性"
+
+  ],
+
+
+  "weaknesses_cn": [
+
+    "控制能力低于Blade系列",
+
+    "高级球员可能觉得稳定不足",
+
+    "力量输出较依赖拍框辅助"
+
+  ],
+
+
+  "recommended_player_profile": {
+
+    "suitable_for": [
+
+      "初中级球员",
+
+      "女性球员",
+
+      "年轻球员",
+
+      "需要增加力量玩家",
+
+      "喜欢法网主题收藏者"
+
+    ],
+
+
+    "not_recommended_for": [
+
+      "职业竞技球员",
+
+      "控制型高级球员",
+
+      "追求精准线路玩家"
+
+    ]
+
+  },
+
+
+  "recommended_strings": {
+
+    "power": [
+
+      "Wilson NXT",
+
+      "Wilson Sensation"
+
+    ],
+
+
+    "spin": [
+
+      "Wilson Revolve Spin",
+
+      "Solinco Hyper-G Soft"
+
+    ],
+
+
+    "hybrid": [
+
+      "Multifilament + Polyester"
+
+    ]
+
+  },
+
+
+  "recommended_tension": {
+
+    "range": {
+
+      "value": "22-24 kg",
+
+      "cn": "推荐穿线范围22-24公斤"
+
+    }
+
+  },
+
+
+  "collector_value": {
+
+    "rating": 6,
+
+    "cn":
+    "具有Roland Garros赛事纪念价值，收藏等级属于中等"
+
+  },
+
+
+  "comparison": {
+
+
+    "vs_wilson_clash_100l_v3_roland_garros_2026": {
+
+      "cn":
+      "Ultra 100L V5更强调力量和速度，Clash 100L V3更强调舒适和柔和手感"
+
+    },
+
+
+    "vs_wilson_ultra_100l_v5": {
+
+      "cn":
+      "性能基础一致，主要区别是Roland Garros特别设计和收藏属性"
+
+    },
+
+
+    "vs_babolat_pure_drive_team_2026": {
+
+      "cn":
+      "Pure Drive Team力量输出更均衡，Ultra 100L更偏爆发和速度"
+
+    }
+
+  },
+
+
+  "ai_tags": [
+
+    "Roland Garros",
+
+    "French Open",
+
+    "Grand Slam",
+
+    "Ultra",
+
+    "轻量",
+
+    "力量",
+
+    "特别版"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "Wilson Ultra 100L V5 Roland Garros 2026 是基于Ultra第五代轻量型号打造的法网特别版球拍。它结合Ultra系列强大的力量输出、100平方英寸高容错拍面以及Roland Garros赛事文化元素，适合希望轻松获得球速、同时追求赛事收藏价值的业余球员。",
+
+
+  "variants": [],
+
+
+  "verification": {
+
+    "status": "official",
+
+    "verified": true,
+
+
+    "knowledge_path":
+
+    "knowledge/racquets/special_editions/wilson_ultra_100l_v5_roland_garros_2026.json"
+
+  }
+
+}
