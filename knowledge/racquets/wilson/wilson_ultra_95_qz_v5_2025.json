@@ -1,0 +1,398 @@
+{
+  "id": "wilson_ultra_95_qz_v5_2025",
+
+  "brand": "Wilson",
+  "brand_cn": "威尔胜",
+
+  "model": "Ultra 95 QZ V5 2025",
+  "model_cn": "Ultra 95 QZ V5 2025",
+
+  "category": "racket",
+  "category_cn": "网球拍",
+
+  "series": "Ultra",
+  "series_cn": "Ultra 系列",
+
+  "generation": "V5",
+  "generation_cn": "第五代版本",
+
+
+  "product_type": {
+
+    "type": "advanced performance",
+
+    "type_cn": "高级竞技版本",
+
+    "description_cn":
+    "Ultra系列中小拍面竞技型号，强调精准控制、稳定性和高级球员反馈"
+  },
+
+
+  "player_profile": {
+
+    "level": [
+      "advanced",
+      "professional",
+      "competitive amateur"
+    ],
+
+    "level_cn": [
+      "高级球员",
+      "职业竞技球员",
+      "比赛型业余球员"
+    ],
+
+
+    "style": [
+      "control",
+      "precision",
+      "aggressive baseline"
+    ],
+
+    "style_cn": [
+      "控制型打法",
+      "精准线路",
+      "攻击型底线"
+    ]
+
+  },
+
+
+  "specifications": {
+
+
+    "head_size": {
+
+      "value": 95,
+
+      "unit": "sq in",
+
+      "cn": "95平方英寸"
+
+    },
+
+
+    "weight_unstrung": {
+
+      "value": 315,
+
+      "unit": "g",
+
+      "cn": "空拍重量315克"
+
+    },
+
+
+    "weight_strung": {
+
+      "value": 330,
+
+      "unit": "g approx",
+
+      "cn": "穿线后约330克"
+
+    },
+
+
+    "balance": {
+
+      "value": 310,
+
+      "unit": "mm",
+
+      "cn": "平衡点约310毫米（偏头轻）"
+
+    },
+
+
+    "length": {
+
+      "value": 27,
+
+      "unit": "inch",
+
+      "cn": "27英寸"
+
+    },
+
+
+    "string_pattern": {
+
+      "value": "16x19",
+
+      "cn": "16×19开放式线床"
+
+    },
+
+
+    "beam": {
+
+      "value": "22 mm",
+
+      "cn": "竞技型薄框设计"
+
+    }
+
+  },
+
+
+  "technology": [
+
+    {
+      "name": "FORTYFIVE",
+
+      "cn":
+      "45度碳纤维结构，提高稳定性和反馈"
+    },
+
+
+    {
+      "name": "Crush Zone",
+
+      "cn":
+      "压缩缓冲结构，提高力量传递"
+    },
+
+
+    {
+      "name": "Power Profile Frame",
+
+      "cn":
+      "Ultra系列力量型框架设计"
+    }
+
+  ],
+
+
+  "performance": {
+
+    "power": {
+
+      "rating": 7,
+
+      "cn": "力量输出：7/10"
+
+    },
+
+
+    "control": {
+
+      "rating": 10,
+
+      "cn": "控制性能：10/10"
+
+    },
+
+
+    "spin": {
+
+      "rating": 8,
+
+      "cn": "旋转能力：8/10"
+
+    },
+
+
+    "comfort": {
+
+      "rating": 8,
+
+      "cn": "舒适性：8/10"
+
+    },
+
+
+    "stability": {
+
+      "rating": 10,
+
+      "cn": "稳定性：10/10"
+
+    },
+
+
+    "maneuverability": {
+
+      "rating": 7,
+
+      "cn": "挥拍灵活性：7/10"
+
+    }
+
+  },
+
+
+  "advantages_cn": [
+
+    "95平方英寸精准控制",
+
+    "竞技级稳定性",
+
+    "高速挥拍反馈清晰",
+
+    "适合攻击型球员",
+
+    "Ultra系列中少见的小拍面规格"
+
+  ],
+
+
+  "weaknesses_cn": [
+
+    "甜区较小",
+
+    "需要较高技术水平",
+
+    "力量输出低于100平方英寸Ultra",
+
+    "不适合初学者"
+
+  ],
+
+
+  "recommended_player_profile": {
+
+    "suitable_for": [
+
+      "高级比赛球员",
+
+      "职业训练球员",
+
+      "喜欢小拍面的传统玩家",
+
+      "精准击球型球员",
+
+      "单反球员"
+
+    ],
+
+
+    "not_recommended_for": [
+
+      "初学者",
+
+      "需要球拍辅助力量玩家",
+
+      "追求最大容错玩家"
+
+    ]
+
+  },
+
+
+  "recommended_strings": {
+
+    "control": [
+
+      "Luxilon ALU Power 1.25",
+
+      "Luxilon 4G"
+    ],
+
+
+    "spin": [
+
+      "Solinco Tour Bite",
+
+      "Wilson Revolve Spin"
+    ],
+
+
+    "hybrid": [
+
+      "Natural Gut + Polyester"
+    ]
+
+  },
+
+
+  "recommended_tension": {
+
+    "range": {
+
+      "value": "23-26 kg",
+
+      "cn":
+      "推荐穿线范围23-26公斤"
+
+    },
+
+
+    "control_player": {
+
+      "value": "25 kg",
+
+      "cn":
+      "控制型球员建议25公斤左右"
+
+    }
+
+  },
+
+
+  "comparison": {
+
+
+    "vs_wilson_ultra_100_v5": {
+
+      "cn":
+      "Ultra 95 QZ更偏竞技控制，Ultra 100 V5更偏力量和容错"
+
+    },
+
+
+    "vs_wilson_blade_98_18x20_v10": {
+
+      "cn":
+      "Blade 98更柔和传统，Ultra 95 QZ速度和爆发感更明显"
+
+    },
+
+
+    "vs_wilson_pro_staff_97": {
+
+      "cn":
+      "Pro Staff更强调经典控制，Ultra 95 QZ更偏现代力量控制"
+
+    }
+
+  },
+
+
+  "ai_tags": [
+
+    "Ultra",
+
+    "95拍面",
+
+    "竞技",
+
+    "控制",
+
+    "高级球员",
+
+    "Wilson"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "Wilson Ultra 95 QZ V5 2025 是Ultra系列中的高阶竞技型号。它采用95平方英寸拍面和315克重量，为高级球员提供精准控制、高稳定性和快速反馈。相比Ultra 100系列，它牺牲容错换取更强控制，更适合比赛型和技术成熟玩家。",
+
+
+  "variants": [],
+
+
+  "verification": {
+
+    "status": "official",
+
+    "verified": true,
+
+    "knowledge_path":
+    "knowledge/racquets/wilson/wilson_ultra_95_qz_v5_2025.json"
+
+  }
+
+}
