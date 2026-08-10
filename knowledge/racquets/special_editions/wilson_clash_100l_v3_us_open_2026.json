@@ -1,0 +1,438 @@
+{
+  "id": "wilson_clash_100l_v3_us_open_2026",
+
+  "brand": "Wilson",
+  "brand_cn": "威尔胜",
+
+  "model": "Clash 100L V3 US Open Edition",
+  "model_cn": "Clash 100L V3 美国公开赛特别版",
+
+  "category": "special_edition_racket",
+  "category_cn": "大满贯特别版网球拍",
+
+  "series": "Clash",
+  "series_cn": "Clash 系列",
+
+  "generation": "V3",
+  "generation_cn": "第三代版本",
+
+  "release_year": 2026,
+
+
+  "edition": {
+
+    "type": "Grand Slam Edition",
+
+    "type_cn": "大满贯特别版",
+
+    "name": "US Open Edition",
+
+    "name_cn": "美国公开赛特别版",
+
+    "theme_cn":
+    "以US Open美国公开赛赛事文化和纽约城市元素为设计灵感"
+
+  },
+
+
+  "base_model": {
+
+    "model": "Wilson Clash 100L V3",
+
+    "cn":
+    "基于Clash第三代100L轻量型号"
+
+  },
+
+
+  "product_type": {
+
+    "type": "retail_special",
+
+    "type_cn": "零售特别版本",
+
+    "description_cn":
+    "Clash 100L V3 US Open版本，保持轻量舒适性能，同时增加美国公开赛主题设计和收藏属性"
+
+  },
+
+
+  "player_profile": {
+
+    "level": [
+
+      "beginner",
+      "intermediate",
+      "club player"
+
+    ],
+
+    "level_cn": [
+
+      "进阶初学者",
+      "中级球员",
+      "俱乐部球员"
+
+    ],
+
+
+    "style": [
+
+      "comfort",
+      "easy swing",
+      "all court"
+
+    ],
+
+    "style_cn": [
+
+      "舒适型打法",
+      "轻松挥拍",
+      "全面型打法"
+
+    ]
+
+  },
+
+
+  "specifications": {
+
+
+    "head_size": {
+
+      "value": 100,
+
+      "unit": "sq in",
+
+      "cn": "100平方英寸"
+
+    },
+
+
+    "weight_unstrung": {
+
+      "value": 280,
+
+      "unit": "g",
+
+      "cn": "空拍重量280克"
+
+    },
+
+
+    "weight_strung": {
+
+      "value": 295,
+
+      "unit": "g approx",
+
+      "cn": "穿线后约295克"
+
+    },
+
+
+    "balance": {
+
+      "value": 325,
+
+      "unit": "mm",
+
+      "cn": "平衡点约325毫米"
+
+    },
+
+
+    "length": {
+
+      "value": 27,
+
+      "unit": "inch",
+
+      "cn": "27英寸"
+
+    },
+
+
+    "string_pattern": {
+
+      "value": "16x19",
+
+      "cn": "16×19开放式线床"
+
+    },
+
+
+    "beam": {
+
+      "value": "24.5 mm",
+
+      "cn": "Clash柔性框架"
+
+    }
+
+  },
+
+
+  "technology": [
+
+    {
+
+      "name": "FreeFlex",
+
+      "cn":
+      "三维碳纤维结构，提高拍框柔韧性"
+
+    },
+
+
+    {
+
+      "name": "FORTYFIVE",
+
+      "cn":
+      "45度碳纤维结构，提高稳定性和球感"
+
+    },
+
+
+    {
+
+      "name": "Click & Go Bumper",
+
+      "cn":
+      "可替换护框系统"
+
+    }
+
+  ],
+
+
+  "performance": {
+
+    "power": {
+
+      "rating": 7,
+
+      "cn": "力量输出：7/10"
+
+    },
+
+
+    "control": {
+
+      "rating": 7,
+
+      "cn": "控制性能：7/10"
+
+    },
+
+
+    "spin": {
+
+      "rating": 8,
+
+      "cn": "旋转能力：8/10"
+
+    },
+
+
+    "comfort": {
+
+      "rating": 10,
+
+      "cn": "舒适性：10/10"
+
+    },
+
+
+    "stability": {
+
+      "rating": 6,
+
+      "cn": "稳定性：6/10"
+
+    },
+
+
+    "maneuverability": {
+
+      "rating": 10,
+
+      "cn": "挥拍灵活性：10/10"
+
+    }
+
+  },
+
+
+  "advantages_cn": [
+
+    "Clash系列顶级舒适性",
+
+    "280克轻量设计",
+
+    "100平方英寸大甜区",
+
+    "非常容易挥动",
+
+    "US Open特别版具有收藏价值"
+
+  ],
+
+
+  "weaknesses_cn": [
+
+    "稳定性低于Clash 100和Pro版本",
+
+    "力量穿透不足",
+
+    "高级比赛球员可能需要更高重量"
+
+  ],
+
+
+  "recommended_player_profile": {
+
+    "suitable_for": [
+
+      "女性球员",
+
+      "青少年球员",
+
+      "初中级业余玩家",
+
+      "手臂保护需求玩家",
+
+      "US Open收藏用户"
+
+    ],
+
+
+    "not_recommended_for": [
+
+      "职业竞技球员",
+
+      "力量型底线玩家",
+
+      "追求极致控制玩家"
+
+    ]
+
+  },
+
+
+  "recommended_strings": {
+
+    "comfort": [
+
+      "Wilson NXT",
+
+      "Wilson Sensation"
+
+    ],
+
+
+    "spin": [
+
+      "Wilson Revolve Spin",
+
+      "Solinco Hyper-G Soft"
+
+    ]
+
+  },
+
+
+  "recommended_tension": {
+
+    "range": {
+
+      "value": "22-24 kg",
+
+      "cn":
+      "推荐穿线范围22-24公斤"
+
+    }
+
+  },
+
+
+  "collector_value": {
+
+    "rating": 8,
+
+    "cn":
+    "US Open大满贯主题版本，具有赛事收藏属性"
+
+  },
+
+
+  "comparison": {
+
+
+    "vs_wilson_clash_100_v3_us_open_2026": {
+
+      "cn":
+      "Clash 100L更轻、更容易挥动；Clash 100稳定性和力量更高"
+
+    },
+
+
+    "vs_wilson_clash_100l_v3_reverse_2026": {
+
+      "cn":
+      "两者性能基础接近，区别在于US Open赛事主题设计"
+
+    },
+
+
+    "vs_wilson_clash_100_pro_v3": {
+
+      "cn":
+      "Pro版本重量更高，适合竞技比赛；100L更适合轻松使用"
+
+    }
+
+  },
+
+
+  "ai_tags": [
+
+    "Clash",
+
+    "100L",
+
+    "US Open",
+
+    "Grand Slam",
+
+    "Lightweight",
+
+    "Comfort",
+
+    "Wilson"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "Wilson Clash 100L V3 US Open Edition 2026 是Clash第三代轻量型号与美国公开赛主题结合的特别版本。它采用100平方英寸拍面和280克空拍重量，保留Clash系列柔韧舒适、高容错特点，同时增加US Open赛事文化和收藏价值。适合女性、青少年、初中级玩家以及喜欢大满贯主题装备的用户。",
+
+
+  "variants": [],
+
+
+  "verification": {
+
+    "status": "official",
+
+    "verified": true,
+
+
+    "knowledge_path":
+    "knowledge/racquets/special_editions/wilson_clash_100l_v3_us_open_2026.json"
+
+  }
+
+}
