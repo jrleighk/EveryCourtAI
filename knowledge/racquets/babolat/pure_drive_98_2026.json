@@ -1,0 +1,48 @@
+{
+  "brand": "Babolat",
+  "品牌": "百保力",
+
+  "model": "Pure Drive 98",
+  "型号": "Pure Drive 98",
+
+  "series": "Pure Drive",
+  "系列": "Pure Drive",
+
+  "category": {
+    "primary": "control_power",
+    "主要定位": "控制与力量平衡"
+  },
+
+  "player_profile": {
+    "level": [
+      "advanced",
+      "高阶球员"
+    ],
+
+    "style": [
+      "aggressive_baseline",
+      "攻击型底线打法"
+    ]
+  },
+
+  "strengths": [
+    {
+      "en": "excellent precision",
+      "zh": "精准度高，适合主动进攻"
+    }
+  ],
+
+  "weaknesses": [
+    {
+      "en": "requires good technique",
+      "zh": "需要较好的技术基础"
+    }
+  ],
+
+  "ai_tags": [
+    "控制",
+    "力量",
+    "高级球员",
+    "快速挥拍"
+  ]
+}
