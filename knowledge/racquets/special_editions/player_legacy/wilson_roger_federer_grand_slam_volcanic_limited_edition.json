@@ -1,0 +1,308 @@
+{
+  "id": "wilson_roger_federer_grand_slam_volcanic_limited_edition",
+
+  "brand": "Wilson",
+  "brand_cn": "威尔胜",
+
+  "model": "Roger Federer Grand Slam Volcanic Limited Edition",
+  "model_cn": "Roger Federer 大满贯火山主题限量版网球拍",
+
+  "category": "collector_racket",
+  "category_cn": "收藏级网球拍",
+
+
+  "series": "Roger Federer Legacy",
+  "series_cn": "Roger Federer传奇系列",
+
+
+  "player": {
+
+    "name": "Roger Federer",
+
+    "name_cn": "罗杰·费德勒",
+
+    "legacy_cn":
+    "纪念Roger Federer职业生涯、大满贯成就以及与Wilson Pro Staff系列合作历史"
+
+  },
+
+
+  "edition": {
+
+    "type": "Grand Slam Tribute Limited Edition",
+
+    "type_cn": "大满贯致敬限量版",
+
+    "name": "Volcanic Edition",
+
+    "name_cn": "火山主题版",
+
+    "theme_cn":
+    "以Federer职业生涯重大胜利、大满贯荣耀和传奇旅程为设计灵感"
+
+  },
+
+
+  "product_type": {
+
+    "type": "collector_special",
+
+    "type_cn": "收藏特别版",
+
+    "description_cn":
+    "Wilson为纪念Roger Federer传奇职业生涯推出的限量收藏球拍，重点体现大满贯荣誉和个人传奇价值"
+
+  },
+
+
+  "base_model": {
+
+    "model":
+    "Wilson Pro Staff RF Series",
+
+    "cn":
+    "基于Roger Federer使用过的Pro Staff RF系列设计语言"
+
+  },
+
+
+  "heritage": {
+
+    "connection_cn":
+    "Federer长期使用Wilson Pro Staff系列，并以精准控制型打法成为网球历史代表人物"
+
+  },
+
+
+  "specifications": {
+
+
+    "head_size": {
+
+      "value": 97,
+
+      "unit": "sq in",
+
+      "cn":
+      "97平方英寸（参考RF系列规格）"
+
+    },
+
+
+    "weight": {
+
+      "value": null,
+
+      "unit": "g",
+
+      "cn":
+      "根据具体发行版本确认"
+
+    },
+
+
+    "balance": {
+
+      "value": null,
+
+      "unit": "mm",
+
+      "cn":
+      "根据具体发行版本确认"
+
+    },
+
+
+    "string_pattern": {
+
+      "value":
+      "16x19",
+
+      "cn":
+      "RF系列经典16×19布局"
+
+    }
+
+  },
+
+
+  "performance": {
+
+
+    "power": {
+
+      "rating": null,
+
+      "cn":
+      "取决于基础型号"
+
+    },
+
+
+    "control": {
+
+      "rating": null,
+
+      "cn":
+      "取决于基础型号"
+
+    },
+
+
+    "spin": {
+
+      "rating": null,
+
+      "cn":
+      "取决于基础型号"
+
+    },
+
+
+    "comfort": {
+
+      "rating": null,
+
+      "cn":
+      "取决于基础型号"
+
+    },
+
+
+    "stability": {
+
+      "rating": null,
+
+      "cn":
+      "取决于基础型号"
+
+    }
+
+  },
+
+
+  "collector_value": {
+
+    "rating": 10,
+
+    "cn":
+    "Federer大满贯传奇主题，具备顶级体育收藏价值"
+
+  },
+
+
+  "advantages_cn": [
+
+    "Federer传奇IP",
+
+    "大满贯主题收藏价值",
+
+    "Wilson历史意义",
+
+    "适合展示收藏",
+
+    "高端体育礼赠属性"
+
+  ],
+
+
+  "weaknesses_cn": [
+
+    "主要价值来自收藏而非性能",
+
+    "价格可能明显高于普通RF型号",
+
+    "不适合作为日常竞技首选"
+
+  ],
+
+
+  "recommended_user_profile": {
+
+
+    "suitable_for": [
+
+      "Federer收藏家",
+
+      "Wilson Pro Staff收藏用户",
+
+      "大满贯文化收藏者",
+
+      "高净值体育收藏客户"
+
+    ]
+
+  },
+
+
+  "comparison": {
+
+
+    "vs_wilson_pro_staff_rf97_limited_edition_box_set": {
+
+      "cn":
+      "RF97 Box Set强调Federer职业使用规格；Volcanic Edition更强调大满贯纪念主题"
+
+    },
+
+
+    "vs_wilson_rf_01_pro_classic": {
+
+      "cn":
+      "RF01 Pro Classic偏现代实战；Volcanic Edition偏传奇收藏"
+
+    },
+
+
+    "vs_wilson_roger_federer_20k_limited_set": {
+
+      "cn":
+      "20K Set属于顶级奢侈收藏；Volcanic Edition属于纪念级收藏"
+
+    }
+
+  },
+
+
+  "ai_tags": [
+
+    "Wilson",
+
+    "Roger Federer",
+
+    "Grand Slam",
+
+    "Volcanic",
+
+    "Limited Edition",
+
+    "Collector",
+
+    "RF Legacy"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "Wilson Roger Federer Grand Slam Volcanic Limited Edition 是Wilson为纪念Roger Federer大满贯传奇推出的收藏级网球拍。它的核心价值来自Federer历史地位、Grand Slam主题和Wilson品牌传承，而不是单纯竞技性能。适合高端网球收藏用户、Federer粉丝以及体育文化收藏市场。",
+
+
+  "variants": [],
+
+
+  "verification": {
+
+    "status":
+    "needs_exact_release_confirmation",
+
+    "verified":
+    false,
+
+
+    "knowledge_path":
+    "knowledge/racquets/collector_sets/player_legacy/wilson_roger_federer_grand_slam_volcanic_limited_edition.json"
+
+  }
+
+}
