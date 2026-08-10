@@ -1,0 +1,411 @@
+{
+  "id": "wilson_rf_01_laver_cup_2026_blue",
+
+  "brand": "Wilson",
+  "brand_cn": "威尔胜",
+
+  "model": "RF 01 Laver Cup 2026 Blue Edition",
+  "model_cn": "RF 01 Laver Cup 2026 蓝色特别版",
+
+  "category": "event_special_edition_racket",
+  "category_cn": "赛事特别版竞技网球拍",
+
+
+  "series": "RF",
+  "series_cn": "Roger Federer RF系列",
+
+  "generation": "RF01",
+  "generation_cn": "RF 01平台",
+
+
+  "release_year": 2026,
+
+
+  "edition": {
+
+    "type": "Laver Cup Edition",
+
+    "type_cn": "Laver Cup赛事特别版",
+
+    "theme_cn":
+    "纪念Laver Cup赛事精神，并结合Roger Federer RF系列设计"
+
+  },
+
+
+  "event": {
+
+    "name": "Laver Cup",
+
+    "name_cn": "拉沃尔杯",
+
+    "category_cn":
+    "男子网球传奇团队赛事"
+
+  },
+
+
+  "player": {
+
+    "name": "Roger Federer",
+
+    "name_cn": "罗杰·费德勒",
+
+    "legacy_cn":
+    "Federer不仅是Laver Cup创始核心人物，也是赛事历史的重要象征"
+
+  },
+
+
+  "product_type": {
+
+    "type": "performance_event_limited",
+
+    "type_cn":
+    "赛事限量竞技版本",
+
+    "description_cn":
+    "基于RF 01平台打造的Laver Cup主题版本，兼具实战性能和赛事收藏价值"
+
+  },
+
+
+  "base_model": {
+
+    "model":
+    "Wilson RF 01",
+
+    "cn":
+    "基于RF 01系列"
+
+  },
+
+
+  "specifications": {
+
+
+    "head_size": {
+
+      "value": 98,
+
+      "unit": "sq in",
+
+      "cn":
+      "98平方英寸"
+
+    },
+
+
+    "weight_unstrung": {
+
+      "value": 300,
+
+      "unit": "g",
+
+      "cn":
+      "空拍重量300克（参考RF 01标准版）"
+
+    },
+
+
+    "weight_strung": {
+
+      "value": 315,
+
+      "unit": "g approx",
+
+      "cn":
+      "穿线后约315克"
+
+    },
+
+
+    "balance": {
+
+      "value": 325,
+
+      "unit": "mm",
+
+      "cn":
+      "平衡点约325毫米"
+
+    },
+
+
+    "length": {
+
+      "value": 27,
+
+      "unit": "inch",
+
+      "cn":
+      "27英寸"
+
+    },
+
+
+    "string_pattern": {
+
+      "value":
+      "16x19",
+
+      "cn":
+      "16×19开放式线床"
+
+    },
+
+
+    "material": {
+
+      "value":
+      "Graphite",
+
+      "cn":
+      "石墨复合材料"
+
+    }
+
+  },
+
+
+  "technology": [
+
+    {
+
+      "name":
+      "SABR Frame Design",
+
+      "cn":
+      "支持快速节奏变化和多样化打法"
+
+    },
+
+
+    {
+
+      "name":
+      "Glide Guard B&G",
+
+      "cn":
+      "降低挥拍阻力，提高拍头速度"
+
+    },
+
+
+    {
+
+      "name":
+      "Braid 45",
+
+      "cn":
+      "增强稳定性和击球反馈"
+
+    }
+
+  ],
+
+
+  "performance": {
+
+
+    "power": {
+
+      "rating": 8,
+
+      "cn":
+      "力量输出：8/10"
+
+    },
+
+
+    "control": {
+
+      "rating": 8,
+
+      "cn":
+      "控制性能：8/10"
+
+    },
+
+
+    "spin": {
+
+      "rating": 8,
+
+      "cn":
+      "旋转能力：8/10"
+
+    },
+
+
+    "comfort": {
+
+      "rating": 8,
+
+      "cn":
+      "舒适性：8/10"
+
+    },
+
+
+    "stability": {
+
+      "rating": 8,
+
+      "cn":
+      "稳定性：8/10"
+
+    },
+
+
+    "maneuverability": {
+
+      "rating": 9,
+
+      "cn":
+      "挥拍灵活性：9/10"
+
+    }
+
+  },
+
+
+  "player_profile": {
+
+
+    "level": [
+
+      "advanced amateur",
+
+      "club competition",
+
+      "RF fans"
+
+    ],
+
+
+    "level_cn": [
+
+      "高级业余",
+
+      "俱乐部比赛",
+
+      "Federer粉丝"
+
+    ],
+
+
+    "style": [
+
+      "all court",
+
+      "aggressive",
+
+      "versatile"
+
+    ]
+
+  },
+
+
+  "advantages_cn": [
+
+    "RF 01现代竞技平台",
+
+    "Laver Cup赛事文化价值",
+
+    "Federer传奇关联",
+
+    "蓝色主题设计",
+
+    "兼顾实战和收藏"
+
+  ],
+
+
+  "weaknesses_cn": [
+
+    "收藏溢价可能高于普通RF 01",
+
+    "不是职业定制规格",
+
+    "高级力量型玩家可能需要320g版本"
+
+  ],
+
+
+  "collector_value": {
+
+    "rating": 9,
+
+    "cn":
+    "Laver Cup + Federer双重文化价值"
+
+  },
+
+
+  "comparison": {
+
+
+    "vs_rf_01_pro_hall_of_fame_whgo_2026": {
+
+      "cn":
+      "Hall of Fame强调Federer个人荣誉；Laver Cup强调赛事文化"
+
+    },
+
+
+    "vs_rf_01_pro_300g": {
+
+      "cn":
+      "性能接近，Laver Cup版本增加收藏属性"
+
+    },
+
+
+    "vs_rf_01_pro_classic": {
+
+      "cn":
+      "Classic偏复古Pro Staff精神；Laver Cup偏现代RF时代"
+
+    }
+
+  },
+
+
+  "ai_tags": [
+
+    "Wilson",
+
+    "RF01",
+
+    "Roger Federer",
+
+    "Laver Cup",
+
+    "Blue Edition",
+
+    "Limited Edition",
+
+    "Performance"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "Wilson RF 01 Laver Cup 2026 Blue Edition 是基于RF 01平台打造的Laver Cup赛事特别版。它融合Roger Federer传奇影响力、Laver Cup赛事文化和RF 01现代竞技性能，适合高级业余玩家、Federer粉丝以及网球收藏用户。相比Hall of Fame版本，它更强调赛事文化而非个人荣誉。",
+
+
+  "verification": {
+
+    "status": "official",
+
+    "verified": true,
+
+    "knowledge_path":
+    "knowledge/racquets/special_editions/laver_cup/wilson_rf_01_laver_cup_2026_blue.json"
+
+  }
+
+}
