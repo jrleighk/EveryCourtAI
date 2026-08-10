@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "id": "demo_user_001",
+      "age": 50,
+      "level": "advanced",
+      "style": "all_court",
+      "current_racket": "Wilson RF01 Pro Classic",
+      "racket_weight": "320g",
+      "problem": [
+        "fatigue_after_long_match",
+        "arm_load"
+      ],
+      "goal": [
+        "more_comfort",
+        "maintain_control"
+      ]
+    }
+  ]
+}
