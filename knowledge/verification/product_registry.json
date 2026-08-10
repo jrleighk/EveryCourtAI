@@ -6,6 +6,8 @@
   "products": [
 
     {
+      "id": "babolat_pure_drive_2026",
+
       "brand": "Babolat",
       "brand_cn": "百保力",
 
@@ -13,14 +15,17 @@
       "category": "racket",
       "category_cn": "网球拍",
 
+      "knowledge_path": "knowledge/racquets/babolat/pure_drive_2026.json",
+
       "status": "official",
       "verified": true,
-
       "available": true
     },
 
 
     {
+      "id": "babolat_pure_aero_2026",
+
       "brand": "Babolat",
       "brand_cn": "百保力",
 
@@ -28,14 +33,17 @@
       "category": "racket",
       "category_cn": "网球拍",
 
+      "knowledge_path": "knowledge/racquets/babolat/pure_aero_2026.json",
+
       "status": "official",
       "verified": true,
-
       "available": true
     },
 
 
     {
+      "id": "babolat_pure_strike_2025",
+
       "brand": "Babolat",
       "brand_cn": "百保力",
 
@@ -43,9 +51,10 @@
       "category": "racket",
       "category_cn": "网球拍",
 
+      "knowledge_path": "knowledge/racquets/babolat/pure_strike_2025.json",
+
       "status": "official",
       "verified": true,
-
       "available": true
     }
 
