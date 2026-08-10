@@ -1,0 +1,443 @@
+{
+  "id": "wilson_clash_100_v2_california_edition",
+
+  "brand": "Wilson",
+  "brand_cn": "威尔胜",
+
+  "model": "Clash 100 V2 California Edition",
+  "model_cn": "Clash 100 V2 California Edition 加州特别版",
+
+  "category": "special_edition_racket",
+  "category_cn": "特别版网球拍",
+
+  "series": "Clash",
+  "series_cn": "Clash 系列",
+
+  "generation": "V2",
+  "generation_cn": "第二代版本",
+
+  "release_year": 2022,
+
+
+  "edition": {
+
+    "type": "Special Color Edition",
+
+    "type_cn": "特别配色版本",
+
+    "edition_name": "California Edition",
+
+    "edition_name_cn": "加州特别版",
+
+    "theme_cn":
+    "以美国加州文化、阳光和生活方式为设计灵感"
+
+  },
+
+
+  "product_type": {
+
+    "type": "retail_special",
+
+    "type_cn": "零售特别版本",
+
+    "description_cn":
+    "基于Wilson Clash 100 V2打造的California Edition特别配色型号，性能参数与普通Clash 100 V2一致，主要区别为外观设计"
+
+  },
+
+
+  "base_model": {
+
+    "model": "Wilson Clash 100 V2",
+
+    "cn":
+    "基于Clash第二代100平方英寸标准型号"
+
+  },
+
+
+  "player_profile": {
+
+    "level": [
+
+      "beginner",
+      "intermediate",
+      "advanced amateur"
+
+    ],
+
+    "level_cn": [
+
+      "初学者",
+      "中级球员",
+      "高级业余球员"
+
+    ],
+
+
+    "style": [
+
+      "comfort",
+      "all court",
+      "easy swing"
+
+    ],
+
+    "style_cn": [
+
+      "舒适型打法",
+      "全面型打法",
+      "轻松挥拍"
+
+    ]
+
+  },
+
+
+  "specifications": {
+
+    "head_size": {
+
+      "value": 100,
+
+      "unit": "sq in",
+
+      "cn": "100平方英寸"
+
+    },
+
+
+    "weight_unstrung": {
+
+      "value": 295,
+
+      "unit": "g",
+
+      "cn": "空拍重量295克"
+
+    },
+
+
+    "weight_strung": {
+
+      "value": 310,
+
+      "unit": "g approx",
+
+      "cn": "穿线后约310克"
+
+    },
+
+
+    "balance": {
+
+      "value": 310,
+
+      "unit": "mm",
+
+      "cn": "平衡点约310毫米"
+
+    },
+
+
+    "length": {
+
+      "value": 27,
+
+      "unit": "inch",
+
+      "cn": "27英寸"
+
+    },
+
+
+    "string_pattern": {
+
+      "value": "16x19",
+
+      "cn": "16×19开放式线床"
+
+    },
+
+
+    "beam": {
+
+      "value": "24.5 mm",
+
+      "cn": "Clash柔性框架"
+
+    }
+
+  },
+
+
+  "technology": [
+
+    {
+
+      "name": "FreeFlex",
+
+      "cn":
+      "三维碳纤维结构，提高拍框自由弯曲能力"
+
+    },
+
+
+    {
+
+      "name": "FORTYFIVE",
+
+      "cn":
+      "45度碳纤维结构，提高稳定性和球感"
+
+    },
+
+
+    {
+
+      "name": "Agiplast",
+
+      "cn":
+      "环保材料技术"
+
+    }
+
+  ],
+
+
+  "performance": {
+
+    "power": {
+
+      "rating": 7,
+
+      "cn": "力量输出：7/10"
+
+    },
+
+
+    "control": {
+
+      "rating": 7,
+
+      "cn": "控制性能：7/10"
+
+    },
+
+
+    "spin": {
+
+      "rating": 8,
+
+      "cn": "旋转能力：8/10"
+
+    },
+
+
+    "comfort": {
+
+      "rating": 10,
+
+      "cn": "舒适性：10/10"
+
+    },
+
+
+    "stability": {
+
+      "rating": 7,
+
+      "cn": "稳定性：7/10"
+
+    },
+
+
+    "maneuverability": {
+
+      "rating": 9,
+
+      "cn": "挥拍灵活性：9/10"
+
+    }
+
+  },
+
+
+  "advantages_cn": [
+
+    "Clash系列顶级舒适性",
+
+    "100平方英寸甜区大",
+
+    "容错率高",
+
+    "适合长时间击球",
+
+    "California特别配色具有收藏属性"
+
+  ],
+
+
+  "weaknesses_cn": [
+
+    "竞技稳定性低于Pro版本",
+
+    "力量输出低于Ultra系列",
+
+    "高级比赛球员可能需要更高重量"
+
+  ],
+
+
+  "recommended_player_profile": {
+
+    "suitable_for": [
+
+      "中高级业余球员",
+
+      "俱乐部玩家",
+
+      "女性球员",
+
+      "手臂保护需求玩家",
+
+      "Wilson特别版收藏者"
+
+    ],
+
+
+    "not_recommended_for": [
+
+      "职业竞技球员",
+
+      "力量型底线球员",
+
+      "追求极致控制玩家"
+
+    ]
+
+  },
+
+
+  "recommended_strings": {
+
+    "comfort": [
+
+      "Wilson NXT",
+
+      "Wilson Sensation"
+
+    ],
+
+
+    "spin": [
+
+      "Wilson Revolve Spin",
+
+      "Solinco Hyper-G Soft"
+
+    ],
+
+
+    "hybrid": [
+
+      "Natural Gut + Polyester"
+
+    ]
+
+  },
+
+
+  "recommended_tension": {
+
+    "range": {
+
+      "value": "22-24 kg",
+
+      "cn":
+      "推荐穿线范围22-24公斤"
+
+    }
+
+  },
+
+
+  "collector_value": {
+
+    "rating": 7,
+
+    "cn":
+    "地区特别配色版本，收藏价值高于普通Clash 100 V2"
+
+  },
+
+
+  "comparison": {
+
+    "vs_wilson_clash_100_v2": {
+
+      "cn":
+      "性能完全一致，主要区别为California特别配色"
+
+    },
+
+
+    "vs_wilson_clash_100_pro_v2_2022": {
+
+      "cn":
+      "Clash 100 Pro重量更高，稳定性和竞技表现更强"
+
+    },
+
+
+    "vs_wilson_clash_100_v3": {
+
+      "cn":
+      "V3版本结构升级，稳定性和现代感有所提升"
+
+    }
+
+  },
+
+
+  "ai_tags": [
+
+    "Clash",
+
+    "California Edition",
+
+    "V2",
+
+    "100拍面",
+
+    "Comfort",
+
+    "Special Color",
+
+    "Wilson"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "Wilson Clash 100 V2 California Edition 是Clash第二代100平方英寸型号的地区特别配色版本。它保留Clash系列标志性的柔韧、舒适和高容错特点，适合中高级业余球员、俱乐部玩家以及重视设计和收藏属性的用户。性能与普通Clash 100 V2一致，主要价值来自California特别设计。",
+
+
+  "variants": [],
+
+
+  "verification": {
+
+    "status": "official",
+
+    "verified": true,
+
+
+    "knowledge_path":
+    "knowledge/racquets/special_editions/wilson_clash_100_v2_california_edition.json"
+
+  }
+
+}
