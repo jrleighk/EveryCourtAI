@@ -1,0 +1,182 @@
+{
+  "brand": "Babolat",
+  "品牌": "百保力",
+
+  "model": "Pure Aero Tour 2026",
+  "型号": "Pure Aero Tour 2026",
+
+  "series": "Pure Aero",
+  "系列": "Pure Aero 纯旋系列",
+
+  "category": {
+    "primary": "spin_power",
+    "主要定位": "高旋转 + 高力量"
+  },
+
+  "player_profile": {
+
+    "level": [
+      "advanced",
+      "高级球员"
+    ],
+
+    "style": [
+      "heavy_topspin",
+      "强上旋打法",
+      "aggressive_baseline",
+      "攻击型底线"
+    ],
+
+    "swing_style": "medium_fast",
+    "挥拍特点": "中高速挥拍"
+  },
+
+
+  "specifications": {
+
+    "head_size": "100 sq.in",
+    "拍面": "100平方英寸",
+
+    "weight_unstrung": "315g",
+    "空拍重量": "315克",
+
+    "balance": "315mm",
+    "平衡点": "315毫米（偏头轻设计）",
+
+    "length": "27 inch",
+    "长度": "27英寸",
+
+    "string_pattern": "16x19",
+    "线床": "16x19",
+
+    "beam": "23-26-23mm",
+    "拍框厚度": "23-26-23毫米",
+
+    "stiffness": "RA 71",
+    "硬度": "RA 71"
+  },
+
+
+  "technology": [
+    {
+      "name": "FSI Spin",
+      "中文": "增强线床咬球能力，提高旋转"
+    },
+    {
+      "name": "AeroModular3",
+      "中文": "提升挥拍速度"
+    },
+    {
+      "name": "NF2 Tech",
+      "中文": "改善手感和减震"
+    }
+  ],
+
+
+  "advantages": [
+    "maximum spin potential",
+    "极强旋转能力",
+
+    "excellent stability",
+    "高速击球稳定性优秀",
+
+    "heavy ball production",
+    "容易制造重球",
+
+    "strong serve performance",
+    "发球威力突出"
+  ],
+
+
+  "weaknesses": [
+    "high physical demand",
+    "身体要求较高",
+
+    "less maneuverable than standard Pure Aero",
+    "灵活性低于普通Pure Aero",
+
+    "not suitable for beginners",
+    "不适合初学者"
+  ],
+
+
+  "recommended_player_profile": {
+
+    "suitable_for": [
+      "高水平底线球员",
+      "喜欢纳达尔式强上旋打法",
+      "力量充足的男性球员",
+      "需要增加球重量的球员"
+    ],
+
+    "not_recommended_for": [
+      "挥拍速度较慢",
+      "手臂容易疲劳",
+      "希望轻松击球的球员"
+    ]
+  },
+
+
+  "recommended_strings": [
+
+    {
+      "string": "Babolat RPM Blast 1.25",
+      "中文": "高旋转聚酯线"
+    },
+
+    {
+      "string": "Luxilon ALU Power",
+      "中文": "力量与控制平衡"
+    },
+
+    {
+      "string": "Solinco Hyper-G",
+      "中文": "旋转增强型球线"
+    }
+  ],
+
+
+  "recommended_tension": {
+
+    "polyester": "48-52 lbs",
+
+    "聚酯线建议": "48-52磅",
+
+    "hybrid": "52-55 lbs",
+
+    "混合线建议": "52-55磅"
+  },
+
+
+  "similar_rackets": [
+
+    {
+      "brand": "Yonex",
+      "model": "VCORE 98",
+      "中文关系": "同样定位高旋转竞技型"
+    },
+
+    {
+      "brand": "HEAD",
+      "model": "Extreme Pro",
+      "中文关系": "力量旋转型竞争产品"
+    }
+
+  ],
+
+
+  "ai_tags": [
+    "旋转",
+    "力量",
+    "高级球员",
+    "底线进攻",
+    "重球",
+    "Nadal打法"
+  ],
+
+
+  "ai_summary_cn":
+
+  "Pure Aero Tour 是Pure Aero系列中更高重量、更高稳定性的版本，适合力量型高级底线球员。相比普通Pure Aero，它提供更强的击球稳定性和穿透力，但需要更好的身体能力和挥拍速度。"
+
+}
