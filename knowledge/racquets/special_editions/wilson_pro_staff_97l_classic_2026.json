@@ -1,0 +1,468 @@
+{
+  "id": "wilson_pro_staff_97l_classic_2026",
+
+  "brand": "Wilson",
+  "brand_cn": "威尔胜",
+
+  "model": "Pro Staff 97L Classic 2026",
+  "model_cn": "Pro Staff 97L Classic 2026 经典传承版",
+
+  "category": "special_edition_racket",
+  "category_cn": "经典特别版网球拍",
+
+  "series": "Pro Staff",
+  "series_cn": "Pro Staff 系列",
+
+
+  "edition": {
+
+    "type": "Heritage Classic Edition",
+
+    "type_cn": "经典传承特别版",
+
+    "theme": "Wilson Pro Staff Heritage",
+
+    "theme_cn": "Wilson Pro Staff 历史传承主题",
+
+    "year": 2026
+
+  },
+
+
+  "product_type": {
+
+    "type": "retail_special",
+
+    "type_cn": "零售特别版本",
+
+    "description_cn":
+    "基于Pro Staff经典控制理念打造的轻量版本，在保持经典球感的同时提升挥拍速度和易用性"
+
+  },
+
+
+  "heritage": {
+
+    "series_history_cn":
+    "Pro Staff系列是Wilson历史最悠久、最具代表性的控制型球拍系列之一",
+
+    "legacy_players_cn": [
+      "Pete Sampras",
+      "Roger Federer",
+      "Stefan Edberg"
+    ]
+
+  },
+
+
+  "player_profile": {
+
+    "level": [
+
+      "intermediate",
+      "advanced amateur",
+      "club player"
+
+    ],
+
+    "level_cn": [
+
+      "中级球员",
+      "高级业余球员",
+      "俱乐部球员"
+
+    ],
+
+
+    "style": [
+
+      "classic all court",
+      "control",
+      "fast swing"
+
+    ],
+
+    "style_cn": [
+
+      "经典全面型打法",
+      "控制型打法",
+      "快速挥拍"
+
+    ]
+
+  },
+
+
+  "specifications": {
+
+
+    "head_size": {
+
+      "value": 97,
+
+      "unit": "sq in",
+
+      "cn": "97平方英寸"
+
+    },
+
+
+    "weight_unstrung": {
+
+      "value": 290,
+
+      "unit": "g",
+
+      "cn": "空拍重量290克"
+
+    },
+
+
+    "weight_strung": {
+
+      "value": 305,
+
+      "unit": "g approx",
+
+      "cn": "穿线后约305克"
+
+    },
+
+
+    "balance": {
+
+      "value": 325,
+
+      "unit": "mm",
+
+      "cn": "平衡点约325毫米"
+
+    },
+
+
+    "length": {
+
+      "value": 27,
+
+      "unit": "inch",
+
+      "cn": "27英寸"
+
+    },
+
+
+    "string_pattern": {
+
+      "value": "16x19",
+
+      "cn": "16×19开放式线床"
+
+    },
+
+
+    "beam": {
+
+      "value": "23 mm",
+
+      "cn": "经典薄框设计"
+
+    }
+
+  },
+
+
+  "technology": [
+
+    {
+
+      "name": "Braided Graphite",
+
+      "cn":
+      "编织石墨结构，提供经典Pro Staff球感"
+
+    },
+
+
+    {
+
+      "name": "String Mapping",
+
+      "cn":
+      "优化线床布局，提高控制表现"
+
+    },
+
+
+    {
+
+      "name": "Perimeter Weighting",
+
+      "cn":
+      "外围配重，提高稳定性"
+
+    }
+
+  ],
+
+
+  "performance": {
+
+
+    "power": {
+
+      "rating": 7,
+
+      "cn": "力量输出：7/10"
+
+    },
+
+
+    "control": {
+
+      "rating": 8,
+
+      "cn": "控制性能：8/10"
+
+    },
+
+
+    "spin": {
+
+      "rating": 7,
+
+      "cn": "旋转能力：7/10"
+
+    },
+
+
+    "comfort": {
+
+      "rating": 9,
+
+      "cn": "舒适性：9/10"
+
+    },
+
+
+    "stability": {
+
+      "rating": 7,
+
+      "cn": "稳定性：7/10"
+
+    },
+
+
+    "maneuverability": {
+
+      "rating": 10,
+
+      "cn": "挥拍灵活性：10/10"
+
+    }
+
+  },
+
+
+  "advantages_cn": [
+
+    "Pro Staff经典球感",
+
+    "97平方英寸精准控制",
+
+    "重量更低，更容易挥动",
+
+    "适合长时间击球",
+
+    "具有Wilson历史收藏意义"
+
+  ],
+
+
+  "weaknesses_cn": [
+
+    "稳定性低于315g版本",
+
+    "力量输出有限",
+
+    "高速比赛中抗冲击能力不足",
+
+    "甜区小于100平方英寸型号"
+
+  ],
+
+
+  "recommended_player_profile": {
+
+    "suitable_for": [
+
+      "喜欢Pro Staff手感但觉得97太重的玩家",
+
+      "中高级业余球员",
+
+      "女性高级球员",
+
+      "青少年进阶球员",
+
+      "Wilson收藏者"
+
+    ],
+
+
+    "not_recommended_for": [
+
+      "职业级力量型球员",
+
+      "追求最大稳定性的玩家",
+
+      "需要大量拍面辅助球员"
+
+    ]
+
+  },
+
+
+  "recommended_strings": {
+
+
+    "control": [
+
+      "Luxilon ALU Power 1.25",
+
+      "Wilson Revolve"
+
+    ],
+
+
+    "comfort": [
+
+      "Wilson NXT",
+
+      "Natural Gut Hybrid"
+
+    ],
+
+
+    "spin": [
+
+      "Solinco Hyper-G Soft"
+
+    ]
+
+  },
+
+
+  "recommended_tension": {
+
+
+    "range": {
+
+      "value": "22-25 kg",
+
+      "cn": "推荐穿线范围22-25公斤"
+
+    },
+
+
+    "comfort_player": {
+
+      "value": "22-23 kg",
+
+      "cn":
+      "舒适型打法建议22-23公斤"
+
+    },
+
+
+    "control_player": {
+
+      "value": "24-25 kg",
+
+      "cn":
+      "控制型打法建议24-25公斤"
+
+    }
+
+  },
+
+
+  "collector_value": {
+
+    "rating": 8,
+
+    "cn":
+    "Pro Staff Heritage系列具有较高收藏价值"
+
+  },
+
+
+  "comparison": {
+
+
+    "vs_wilson_pro_staff_97_classic_2026": {
+
+      "cn":
+      "97L版本重量更低、更容易挥动；97 Classic版本稳定性和控制更强"
+
+    },
+
+
+    "vs_wilson_rf01_pro_classic": {
+
+      "cn":
+      "RF01 Pro Classic更现代、更偏力量；Pro Staff 97L Classic更强调传统手感"
+
+    },
+
+
+    "vs_wilson_blade_100ul_v10": {
+
+      "cn":
+      "Blade 100UL更现代、更容易产生旋转；Pro Staff 97L更强调经典控制反馈"
+
+    }
+
+  },
+
+
+  "ai_tags": [
+
+    "Pro Staff",
+
+    "Classic",
+
+    "Heritage",
+
+    "97L",
+
+    "轻量",
+
+    "控制",
+
+    "收藏"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "Wilson Pro Staff 97L Classic 2026 是Pro Staff经典传承系列中的轻量版本。它保留Pro Staff标志性的精准控制和经典球感，同时降低重量，提高挥拍速度和易用性，适合希望体验Pro Staff历史魅力但不需要315克重量的中高级业余球员。",
+
+
+  "variants": [],
+
+
+  "verification": {
+
+    "status": "official",
+
+    "verified": true,
+
+
+    "knowledge_path":
+
+    "knowledge/racquets/special_editions/wilson_pro_staff_97l_classic_2026.json"
+
+  }
+
+}
