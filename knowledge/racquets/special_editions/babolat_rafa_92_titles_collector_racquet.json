@@ -1,0 +1,52 @@
+{
+  "id": "babolat_rafa_92_titles_collector_racquet",
+
+  "brand": "Babolat",
+  "brand_cn": "百保力",
+
+  "model": "Rafa 92 Titles Collector Racquet",
+  "model_cn": "Rafa 92冠纪念收藏球拍",
+
+  "category": "collector_racket",
+  "category_cn": "收藏级网球拍",
+
+  "series": "Pure Aero Rafa",
+  "series_cn": "Pure Aero Rafa 纳达尔系列",
+
+  "limited_quantity": 92,
+
+  "limited_quantity_cn": "全球仅92支",
+
+  "symbolism": {
+    "number": 92,
+    "meaning_cn": "代表Rafael Nadal职业生涯92个冠军头衔"
+  },
+
+  "availability": {
+    "public_sale": false,
+    "cn": "非公开销售"
+  },
+
+  "ownership": {
+    "type": "private_gift",
+    "cn": "赠予Rafa亲近人士"
+  },
+
+  "collector_value": {
+    "rating": 10,
+    "cn": "极高收藏价值"
+  },
+
+  "ai_tags": [
+    "Rafael Nadal",
+    "collector",
+    "limited edition",
+    "luxury tennis",
+    "high net worth"
+  ],
+
+  "ai_summary_cn":
+
+  "Babolat Rafa 92 Titles Collector Racquet 是为纪念Rafael Nadal职业生涯92座冠军打造的超限量收藏球拍，仅92支，代表每一个冠军头衔。该球拍并非商业销售产品，而是赠予与Rafa关系密切人士，属于网球收藏领域的稀缺资产。"
+
+}
