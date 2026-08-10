@@ -1,0 +1,262 @@
+{
+  "id": "wilson_snake_year_limited_edition",
+
+  "brand": "Wilson",
+  "brand_cn": "威尔胜",
+
+  "model": "Snake Year Limited Edition",
+  "model_cn": "蛇年生肖限定版",
+
+  "category": "special_edition_racket",
+  "category_cn": "文化特别版网球拍",
+
+  "series": "Wilson Special Edition",
+  "series_cn": "Wilson特别版本系列",
+
+
+  "edition": {
+
+    "type": "Chinese Zodiac Edition",
+
+    "type_cn": "中国生肖特别版",
+
+    "name": "Snake Year",
+
+    "name_cn": "蛇年限定版",
+
+    "theme_cn":
+    "以中国生肖蛇年文化为设计主题，融合Wilson网球装备设计语言"
+
+  },
+
+
+  "product_type": {
+
+    "type": "collector_special",
+
+    "type_cn": "收藏特别版本",
+
+    "description_cn":
+    "Wilson蛇年限定版网球拍，以生肖文化和收藏价值为核心，性能参数取决于对应基础型号"
+
+  },
+
+
+  "base_model": {
+
+    "model": "Unknown Wilson Base Model",
+
+    "cn":
+    "需要根据官方产品信息确认基础型号"
+
+  },
+
+
+  "release_year": null,
+
+  "release_year_cn":
+  "需根据具体版本确认",
+
+
+  "player_profile": {
+
+    "level": [
+
+      "beginner",
+      "intermediate",
+      "collector"
+
+    ],
+
+    "level_cn": [
+
+      "初学者",
+      "中级玩家",
+      "收藏用户"
+
+    ],
+
+
+    "style": [
+
+      "lifestyle",
+      "collector"
+
+    ],
+
+    "style_cn": [
+
+      "生活方式",
+      "收藏"
+
+    ]
+
+  },
+
+
+  "performance": {
+
+    "power": {
+
+      "rating": null,
+
+      "cn":
+      "取决于基础型号"
+
+    },
+
+    "control": {
+
+      "rating": null,
+
+      "cn":
+      "取决于基础型号"
+
+    },
+
+    "spin": {
+
+      "rating": null,
+
+      "cn":
+      "取决于基础型号"
+
+    },
+
+    "comfort": {
+
+      "rating": null,
+
+      "cn":
+      "取决于基础型号"
+
+    },
+
+    "stability": {
+
+      "rating": null,
+
+      "cn":
+      "取决于基础型号"
+
+    }
+
+  },
+
+
+  "collector_value": {
+
+    "rating": 8,
+
+    "cn":
+    "中国生肖主题限定版本，具有文化收藏价值"
+
+  },
+
+
+  "advantages_cn": [
+
+    "生肖文化主题设计",
+
+    "适合中国市场收藏",
+
+    "具有礼赠价值",
+
+    "区别于普通零售型号"
+
+  ],
+
+
+  "weaknesses_cn": [
+
+    "性能不是独立研发",
+
+    "收藏价值取决于发行数量",
+
+    "二级市场价格波动较大"
+
+  ],
+
+
+  "recommended_user_profile": {
+
+    "suitable_for": [
+
+      "Wilson收藏用户",
+
+      "中国生肖文化收藏者",
+
+      "高端礼赠需求",
+
+      "网球文化爱好者"
+
+    ]
+
+  },
+
+
+  "comparison": {
+
+    "vs_wilson_year_of_the_horse": {
+
+      "cn":
+      "同属于Wilson中国生肖文化系列，区别在生肖年份"
+
+    },
+
+
+    "vs_wilson_us_open_edition": {
+
+      "cn":
+      "US Open强调赛事文化，Snake Year强调生肖文化"
+
+    },
+
+
+    "vs_wilson_rf_01_pro_classic": {
+
+      "cn":
+      "RF 01 Pro Classic同时具备性能和传奇球员价值；生肖版主要强调文化收藏"
+
+    }
+
+  },
+
+
+  "ai_tags": [
+
+    "Wilson",
+
+    "Chinese Zodiac",
+
+    "Snake Year",
+
+    "Limited Edition",
+
+    "Collector",
+
+    "Culture"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "Wilson Snake Year Limited Edition 是Wilson推出的中国生肖主题限定网球拍。该型号主要价值在于生肖文化设计、收藏属性和礼赠场景，而实际击球性能取决于其对应基础型号。适合中国市场收藏用户、高净值礼赠客户以及网球文化爱好者。",
+
+
+  "variants": [],
+
+
+  "verification": {
+
+    "status": "needs_base_model_confirmation",
+
+    "verified": false,
+
+    "knowledge_path":
+    "knowledge/racquets/special_editions/wilson_snake_year_limited_edition.json"
+
+  }
+
+}
