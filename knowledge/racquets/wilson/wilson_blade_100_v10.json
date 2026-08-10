@@ -1,0 +1,455 @@
+{
+  "id": "wilson_blade_100_v10",
+
+  "brand": "Wilson",
+  "brand_cn": "威尔胜",
+
+  "model": "Blade 100 V10",
+  "model_cn": "Blade 100 V10",
+
+  "category": "racket",
+  "category_cn": "网球拍",
+
+  "series": "Blade",
+  "series_cn": "Blade 系列",
+
+  "generation": "V10",
+  "generation_cn": "第10代版本",
+
+
+  "product_type": {
+
+    "type": "retail",
+
+    "type_cn": "零售版本",
+
+    "description_cn":
+    "Blade系列中100平方英寸版本，提供控制、旋转和容错之间的平衡，适合高级业余球员"
+  },
+
+
+  "player_profile": {
+
+    "level": [
+      "intermediate",
+      "advanced amateur",
+      "club player"
+    ],
+
+    "level_cn": [
+      "中级球员",
+      "高级业余球员",
+      "俱乐部球员"
+    ],
+
+
+    "style": [
+      "all court",
+      "baseline",
+      "spin"
+    ],
+
+    "style_cn": [
+      "全面型打法",
+      "底线打法",
+      "旋转型打法"
+    ]
+
+  },
+
+
+  "specifications": {
+
+    "head_size": {
+
+      "value": 100,
+
+      "unit": "sq in",
+
+      "cn": "100平方英寸"
+
+    },
+
+
+    "weight_unstrung": {
+
+      "value": 300,
+
+      "unit": "g",
+
+      "cn": "空拍重量300克"
+
+    },
+
+
+    "weight_strung": {
+
+      "value": 315,
+
+      "unit": "g approx",
+
+      "cn": "穿线后约315克"
+
+    },
+
+
+    "balance": {
+
+      "value": 320,
+
+      "unit": "mm",
+
+      "cn": "平衡点约320毫米"
+
+    },
+
+
+    "length": {
+
+      "value": 27,
+
+      "unit": "inch",
+
+      "cn": "27英寸"
+
+    },
+
+
+    "string_pattern": {
+
+      "value": "16x19",
+
+      "cn": "16×19开放式线床"
+
+    },
+
+
+    "beam": {
+
+      "value": "22 mm",
+
+      "cn": "22毫米拍框"
+
+    },
+
+
+    "swing_weight": {
+
+      "value": "around 315",
+
+      "cn": "挥重约315"
+
+    },
+
+
+    "stiffness": {
+
+      "value": "around 62 RA",
+
+      "cn": "硬度约62 RA"
+
+    }
+
+  },
+
+
+  "technology": [
+
+    {
+
+      "name": "FortyFive",
+
+      "cn":
+      "45度碳纤维结构，提高球感和稳定性"
+
+    },
+
+
+    {
+
+      "name": "DirectConnect",
+
+      "cn":
+      "拍柄连接技术，提高力量传递"
+
+    },
+
+
+    {
+
+      "name": "StableFeel",
+
+      "cn":
+      "增强稳定性和击球反馈"
+
+    },
+
+
+    {
+
+      "name": "Agiplast",
+
+      "cn":
+      "环保材料设计"
+
+    }
+
+  ],
+
+
+  "performance": {
+
+    "power": {
+
+      "rating": 8,
+
+      "cn": "力量输出：8/10"
+
+    },
+
+
+    "control": {
+
+      "rating": 8,
+
+      "cn": "控制性能：8/10"
+
+    },
+
+
+    "spin": {
+
+      "rating": 8,
+
+      "cn": "旋转能力：8/10"
+
+    },
+
+
+    "comfort": {
+
+      "rating": 8,
+
+      "cn": "舒适性：8/10"
+
+    },
+
+
+    "stability": {
+
+      "rating": 8,
+
+      "cn": "稳定性：8/10"
+
+    },
+
+
+    "maneuverability": {
+
+      "rating": 9,
+
+      "cn": "挥拍灵活性：9/10"
+
+    }
+
+  },
+
+
+  "advantages_cn": [
+
+    "100平方英寸甜区较大",
+
+    "比98系列更容易使用",
+
+    "Blade经典控制感",
+
+    "旋转和力量平衡优秀",
+
+    "适合长时间训练和比赛"
+
+  ],
+
+
+  "weaknesses_cn": [
+
+    "稳定性低于Blade Pro版本",
+
+    "控制精度低于98平方英寸型号",
+
+    "力量输出低于Pure Drive系列"
+
+  ],
+
+
+  "recommended_player_profile": {
+
+    "suitable_for": [
+
+      "高级业余球员",
+
+      "俱乐部比赛玩家",
+
+      "从100拍面升级的球员",
+
+      "希望兼顾控制和容错的玩家",
+
+      "现代底线球员"
+
+    ],
+
+
+    "not_recommended_for": [
+
+      "初学者",
+
+      "职业级控制型球员",
+
+      "追求极限稳定性的玩家"
+
+    ]
+
+  },
+
+
+  "recommended_strings": {
+
+    "spin": [
+
+      "Luxilon ALU Power 1.25",
+
+      "Solinco Hyper-G 1.25",
+
+      "Wilson Revolve Spin"
+
+    ],
+
+
+    "control": [
+
+      "Luxilon 4G",
+
+      "Wilson Revolve"
+
+    ],
+
+
+    "comfort": [
+
+      "Wilson NXT",
+
+      "Natural Gut Hybrid"
+
+    ]
+
+  },
+
+
+  "recommended_tension": {
+
+    "range": {
+
+      "value": "22-25 kg",
+
+      "cn": "推荐穿线范围22-25公斤"
+
+    },
+
+
+    "spin_player": {
+
+      "value": "22-23 kg",
+
+      "cn": "旋转型球员建议22-23公斤"
+
+    },
+
+
+    "control_player": {
+
+      "value": "24-25 kg",
+
+      "cn": "控制型球员建议24-25公斤"
+
+    }
+
+  },
+
+
+  "comparison": {
+
+
+    "vs_wilson_blade_100_pro_v10": {
+
+      "cn":
+      "Blade 100 V10 比Blade 100 Pro更轻、更容易挥动；Pro版本拥有更高稳定性和职业规格。"
+
+    },
+
+
+    "vs_wilson_blade_98_16x19_v10": {
+
+      "cn":
+      "Blade 100 V10 拥有更大甜区和容错，Blade 98拥有更精准控制。"
+
+    },
+
+
+    "vs_wilson_defy_100_v1": {
+
+      "cn":
+      "Defy 100更偏现代速度和力量，Blade 100更偏控制和球感。"
+
+    },
+
+
+    "vs_babolat_pure_drive_2026": {
+
+      "cn":
+      "Pure Drive力量输出更直接，Blade 100提供更柔和、更均衡的控制体验。"
+
+    }
+
+  },
+
+
+  "ai_tags": [
+
+    "Blade",
+
+    "100拍面",
+
+    "控制",
+
+    "旋转",
+
+    "高级业余",
+
+    "全面型",
+
+    "Wilson"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "Wilson Blade 100 V10 是Blade系列中更加容易使用的100平方英寸版本。它相比98系列提供更大的甜区和更高容错，同时保持Blade系列经典控制感，适合高级业余球员、俱乐部玩家以及希望在力量、旋转和控制之间取得平衡的现代网球选手。",
+
+
+  "variants": [],
+
+
+  "verification": {
+
+    "status": "official",
+
+    "verified": true,
+
+
+    "knowledge_path":
+
+    "knowledge/racquets/wilson/wilson_blade_100_v10.json"
+
+  }
+
+}
