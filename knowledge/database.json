@@ -1,0 +1,27 @@
+{
+  "project": "EveryCourtAI",
+  "version": "1.0",
+  "description": "AI tennis equipment recommendation database",
+
+  "categories": {
+    "racquets": {
+      "path": "knowledge/racquets/",
+      "description": "Tennis racket specifications"
+    },
+
+    "strings": {
+      "path": "knowledge/strings/",
+      "description": "Tennis string specifications"
+    },
+
+    "recommendations": {
+      "path": "knowledge/recommendations/",
+      "description": "Matching rules"
+    },
+
+    "profiles": {
+      "path": "knowledge/profiles/",
+      "description": "Player profiles"
+    }
+  }
+}
