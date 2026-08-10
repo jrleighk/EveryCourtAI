@@ -1,0 +1,309 @@
+{
+  "id": "babolat_pure_aero_rafa_limited_edition",
+
+  "brand": "Babolat",
+  "brand_cn": "百保力",
+
+  "model": "Pure Aero Rafa Limited Edition",
+  "model_cn": "Pure Aero Rafa 限量版",
+
+  "category": "special_edition_racket",
+  "category_cn": "特别限量版网球拍",
+
+  "series": "Pure Aero Rafa",
+  "series_cn": "Pure Aero Rafa 纳达尔系列",
+
+
+  "edition": {
+
+    "type": "Limited Edition",
+    "type_cn": "限量特别版",
+
+    "player": "Rafael Nadal",
+    "player_cn": "拉斐尔·纳达尔"
+
+  },
+
+
+  "player_association": {
+
+    "name": "Rafael Nadal",
+
+    "cn":
+    "以Rafael Nadal职业生涯和比赛风格为设计灵感"
+
+  },
+
+
+  "release_information": {
+
+    "official": true,
+
+    "release_year": "Limited Edition",
+
+    "cn":
+    "属于Pure Aero Rafa系列限量版本，不属于普通量产型号"
+
+  },
+
+
+  "base_model": {
+
+    "model": "Pure Aero",
+
+    "cn":
+    "基于Pure Aero旋转型平台设计"
+
+  },
+
+
+  "player_profile": {
+
+    "level": [
+
+      "intermediate",
+      "advanced",
+      "nadal fans"
+
+    ],
+
+    "level_cn": [
+
+      "中级球员",
+      "高级业余球员",
+      "纳达尔粉丝"
+
+    ],
+
+
+    "style": [
+
+      "heavy topspin",
+      "aggressive baseline"
+
+    ],
+
+    "style_cn": [
+
+      "强上旋打法",
+      "攻击型底线打法"
+
+    ]
+
+  },
+
+
+  "specifications": {
+
+    "head_size": {
+
+      "value": 100,
+
+      "unit": "sq in",
+
+      "cn": "100平方英寸"
+
+    },
+
+
+    "weight_unstrung": {
+
+      "value": 300,
+
+      "unit": "g",
+
+      "cn": "空拍重量300克"
+
+    },
+
+
+    "length": {
+
+      "value": 27,
+
+      "unit": "inch",
+
+      "cn": "27英寸"
+
+    },
+
+
+    "string_pattern": {
+
+      "value": "16x19",
+
+      "cn": "16×19开放式线床"
+
+    }
+
+  },
+
+
+  "design_features": {
+
+    "inspiration": "Rafael Nadal",
+
+    "cn":
+    "采用纳达尔经典红色元素及竞技风格设计"
+
+
+  },
+
+
+  "performance": {
+
+    "power": {
+
+      "rating": 8,
+
+      "cn": "力量输出：8/10"
+
+    },
+
+
+    "control": {
+
+      "rating": 7,
+
+      "cn": "控制性能：7/10"
+
+    },
+
+
+    "spin": {
+
+      "rating": 10,
+
+      "cn": "旋转能力：10/10"
+
+    },
+
+
+    "comfort": {
+
+      "rating": 7,
+
+      "cn": "舒适性：7/10"
+
+    }
+
+  },
+
+
+  "advantages_cn": [
+
+    "Pure Aero经典旋转性能",
+
+    "纳达尔主题收藏价值",
+
+    "适合现代底线打法",
+
+    "视觉辨识度高",
+
+    "适合作为收藏与使用双用途球拍"
+
+  ],
+
+
+  "weaknesses_cn": [
+
+    "性能与普通Pure Aero接近",
+
+    "收藏价值高于性能提升",
+
+    "高级控制型球员可能需要Pure Aero 98"
+
+  ],
+
+
+  "recommended_strings": [
+
+    "Babolat RPM Blast 1.25",
+
+    "Babolat RPM Power",
+
+    "Luxilon ALU Power"
+
+  ],
+
+
+  "recommended_tension": {
+
+    "range": {
+
+      "value": "22-25 kg",
+
+      "cn": "推荐穿线范围22-25公斤"
+
+    }
+
+  },
+
+
+  "collector_value": {
+
+    "rating": 8,
+
+    "cn":
+    "高收藏价值，适合Rafael Nadal粉丝和限量球拍收藏者"
+
+  },
+
+
+  "comparison": {
+
+
+    "vs_pure_aero_2026": {
+
+      "cn":
+      "性能接近Pure Aero系列，主要区别在Rafa主题设计和收藏属性"
+
+    },
+
+
+    "vs_rafa_92_titles_collector": {
+
+      "cn":
+      "Rafa 92 Titles Collector属于私人赠送级收藏品，而Pure Aero Rafa Limited Edition属于公开限量商品"
+
+    }
+
+  },
+
+
+  "ai_tags": [
+
+    "Rafael Nadal",
+
+    "限定版",
+
+    "收藏",
+
+    "Pure Aero",
+
+    "旋转",
+
+    "高净值体育消费"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "Babolat Pure Aero Rafa Limited Edition 是以Rafael Nadal为主题设计的限量版球拍。它保留Pure Aero系列强大的旋转能力，同时增加Rafa个人品牌和收藏属性，适合希望同时拥有竞技性能和网球文化价值的用户。",
+
+
+  "verification": {
+
+    "status": "official",
+
+    "verified": true,
+
+
+    "knowledge_path":
+
+    "knowledge/racquets/special_editions/babolat_pure_aero_rafa_limited_edition.json"
+
+  }
+
+}
