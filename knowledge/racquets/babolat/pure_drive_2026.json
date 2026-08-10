@@ -1,68 +1,108 @@
 {
   "brand": "Babolat",
-  "model": "Pure Drive 2026",
+  "brand_cn": "百保力",
 
-  "category": "Power",
+  "model": "Pure Aero 2026",
+  "model_cn": "Pure Aero 2026",
+
+  "series": "Pure Aero",
+  "series_cn": "纯旋系列",
+
+  "category": "Spin",
+  "category_cn": "旋转型",
+
+  "target_player": [
+    "Intermediate",
+    "Advanced"
+  ],
+
+  "style": [
+    "Baseline",
+    "Heavy Topspin",
+    "Aggressive"
+  ],
 
   "specifications": {
-
-    "head_size": "100 sq in",
-
-    "weight_unstrung": "300g",
-
+    "weight": "300g",
+    "head_size": "100 sq.in",
     "balance": "320mm",
-
+    "length": "27 inch",
+    "pattern": "16x19",
     "beam": "23-26mm",
-
-    "string_pattern": "16x19",
-
-    "length": "27 inch"
-
+    "stiffness": "RA 71"
   },
 
+  "technology": [
+    "AeroModular3",
+    "FSI Spin",
+    "NF2 Tech"
+  ],
 
-  "player_profile": {
+  "advantages_cn": [
+    "极强的旋转能力",
+    "适合西方式和半西方式握拍",
+    "底线击球容易制造高弧线",
+    "强烈上旋帮助控制深度",
+    "进攻型球员容易获得速度"
+  ],
 
-    "level": [
-      "Intermediate",
-      "Advanced"
+  "weakness_cn": [
+    "控制感不如Pure Strike",
+    "对于平击打法不是最佳选择",
+    "刚性较高，长时间使用需要注意手臂负担"
+  ],
+
+  "recommended_player_profile": {
+    "level_cn": "中高级球员",
+
+    "suitable_for": [
+      "喜欢纳达尔式上旋打法",
+      "底线持续进攻型球员",
+      "需要增加球速和旋转的球员"
     ],
 
-    "style": [
-      "Baseline",
-      "Aggressive",
-      "Power player"
+    "not_recommended_for": [
+      "初学者",
+      "纯控制型打法",
+      "手臂容易疲劳球员"
     ]
-
   },
 
-
-  "strengths": [
-    "Easy power",
-    "Large sweet spot",
-    "Good spin potential"
-  ],
-
-
-  "weaknesses": [
-    "Less precision than control rackets",
-    "Can produce higher launch angle"
-  ],
-
-
   "recommended_strings": [
-    "Babolat RPM Blast",
+    "Babolat RPM Blast 1.25",
+    "Babolat RPM Power",
     "Luxilon ALU Power",
-    "Babolat RPM Power"
+    "Natural Gut Hybrid"
   ],
-
 
   "recommended_tension": {
-
-    "poly": "48-54 lbs",
-
+    "poly": "48-52 lbs",
     "hybrid": "52-56 lbs"
+  },
 
-  }
+  "string_characteristics": {
+    "low_tension": "更多旋转和力量",
+    "medium_tension": "力量与控制平衡",
+    "high_tension": "增加控制"
+  },
 
+  "similar_rackets": [
+    {
+      "brand": "Wilson",
+      "model": "Shift 99",
+      "reason_cn": "旋转和现代底线打法接近"
+    },
+    {
+      "brand": "Yonex",
+      "model": "VCORE 100",
+      "reason_cn": "同属于旋转型球拍"
+    },
+    {
+      "brand": "Head",
+      "model": "Extreme MP",
+      "reason_cn": "高旋转力量型设计"
+    }
+  ],
+
+  "ai_summary_cn": "Pure Aero 是Babolat最具代表性的旋转型球拍，适合现代网球底线进攻球员。它能够帮助球员制造大量上旋，提高击球安全性和攻击性。"
 }
