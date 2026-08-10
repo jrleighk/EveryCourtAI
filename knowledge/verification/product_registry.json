@@ -1,0 +1,53 @@
+{
+  "project": "EveryCourtAI",
+  "version": "1.0",
+  "description": "Verified tennis equipment product registry",
+
+  "products": [
+
+    {
+      "brand": "Babolat",
+      "brand_cn": "百保力",
+
+      "model": "Pure Drive 2026",
+      "category": "racket",
+      "category_cn": "网球拍",
+
+      "status": "official",
+      "verified": true,
+
+      "available": true
+    },
+
+
+    {
+      "brand": "Babolat",
+      "brand_cn": "百保力",
+
+      "model": "Pure Aero 2026",
+      "category": "racket",
+      "category_cn": "网球拍",
+
+      "status": "official",
+      "verified": true,
+
+      "available": true
+    },
+
+
+    {
+      "brand": "Babolat",
+      "brand_cn": "百保力",
+
+      "model": "Pure Strike 2025",
+      "category": "racket",
+      "category_cn": "网球拍",
+
+      "status": "official",
+      "verified": true,
+
+      "available": true
+    }
+
+  ]
+}
