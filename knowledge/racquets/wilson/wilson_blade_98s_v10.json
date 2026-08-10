@@ -1,0 +1,450 @@
+{
+  "id": "wilson_blade_98s_v10",
+
+  "brand": "Wilson",
+  "brand_cn": "威尔胜",
+
+  "model": "Blade 98S V10",
+  "model_cn": "Blade 98S V10",
+
+  "category": "racket",
+  "category_cn": "网球拍",
+
+  "series": "Blade",
+  "series_cn": "Blade 系列",
+
+  "generation": "V10",
+  "generation_cn": "第10代版本",
+
+
+  "product_type": {
+
+    "type": "retail",
+    "type_cn": "零售版本",
+
+    "description_cn":
+    "Blade系列旋转取向型号，通过开放线床提高旋转能力，同时保持Blade系列控制特点"
+
+  },
+
+
+  "player_profile": {
+
+    "level": [
+      "intermediate",
+      "advanced amateur"
+    ],
+
+    "level_cn": [
+      "中高级球员",
+      "高级业余球员"
+    ],
+
+
+    "style": [
+      "spin",
+      "aggressive baseline",
+      "modern tennis"
+    ],
+
+    "style_cn": [
+      "旋转型打法",
+      "攻击型底线",
+      "现代网球打法"
+    ]
+
+  },
+
+
+  "specifications": {
+
+    "head_size": {
+
+      "value": 98,
+
+      "unit": "sq in",
+
+      "cn": "98平方英寸"
+
+    },
+
+
+    "weight_unstrung": {
+
+      "value": 295,
+
+      "unit": "g",
+
+      "cn": "空拍重量295克"
+
+    },
+
+
+    "weight_strung": {
+
+      "value": 310,
+
+      "unit": "g approx",
+
+      "cn": "穿线后约310克"
+
+    },
+
+
+    "balance": {
+
+      "value": 325,
+
+      "unit": "mm",
+
+      "cn": "平衡点约325毫米"
+
+    },
+
+
+    "length": {
+
+      "value": 27,
+
+      "unit": "inch",
+
+      "cn": "27英寸"
+
+    },
+
+
+    "string_pattern": {
+
+      "value": "16x19",
+
+      "cn": "16×19开放式旋转线床"
+
+    },
+
+
+    "beam": {
+
+      "value": "21 mm",
+
+      "cn": "21毫米薄框设计"
+
+    },
+
+
+    "swing_weight": {
+
+      "value": "around 320",
+
+      "cn": "挥重约320"
+
+    },
+
+
+    "stiffness": {
+
+      "value": "around 62 RA",
+
+      "cn": "硬度约62 RA"
+
+    }
+
+  },
+
+
+  "technology": [
+
+    {
+      "name": "FortyFive",
+
+      "cn":
+      "45度碳纤维结构，提高球感和稳定性"
+
+    },
+
+
+    {
+      "name": "DirectConnect",
+
+      "cn":
+      "拍柄连接技术，提高力量传递"
+
+    },
+
+
+    {
+      "name": "StableFeel",
+
+      "cn":
+      "增加稳定性和击球反馈"
+
+    },
+
+
+    {
+      "name": "Spin Effect Technology",
+
+      "cn":
+      "开放线床设计，提高旋转潜力"
+
+    }
+
+  ],
+
+
+  "performance": {
+
+    "power": {
+
+      "rating": 7,
+
+      "cn": "力量输出：7/10"
+
+    },
+
+
+    "control": {
+
+      "rating": 8,
+
+      "cn": "控制性能：8/10"
+
+    },
+
+
+    "spin": {
+
+      "rating": 10,
+
+      "cn": "旋转能力：10/10"
+
+    },
+
+
+    "comfort": {
+
+      "rating": 8,
+
+      "cn": "舒适性：8/10"
+
+    },
+
+
+    "stability": {
+
+      "rating": 8,
+
+      "cn": "稳定性：8/10"
+
+    },
+
+
+    "maneuverability": {
+
+      "rating": 9,
+
+      "cn": "挥拍灵活性：9/10"
+
+    }
+
+  },
+
+
+  "advantages_cn": [
+
+    "Blade系列中旋转能力最强型号之一",
+
+    "98拍面保持精准控制",
+
+    "开放线床容易制造上旋",
+
+    "比Blade Pro更容易挥动",
+
+    "适合现代高速旋转打法"
+
+  ],
+
+
+  "weaknesses_cn": [
+
+    "稳定性低于Blade Pro版本",
+
+    "控制感低于18×20型号",
+
+    "力量输出不如Pure Drive系列",
+
+    "不适合追求传统平击打法球员"
+
+  ],
+
+
+  "recommended_player_profile": {
+
+    "suitable_for": [
+
+      "现代底线攻击球员",
+
+      "喜欢重上旋打法玩家",
+
+      "高级业余球员",
+
+      "需要旋转和控制平衡的球员"
+
+    ],
+
+
+    "not_recommended_for": [
+
+      "初学者",
+
+      "纯平击打法球员",
+
+      "追求最大力量输出玩家"
+
+    ]
+
+  },
+
+
+  "recommended_strings": {
+
+    "spin": [
+
+      "Solinco Hyper-G 1.25",
+
+      "Luxilon ALU Power Spin",
+
+      "Wilson Revolve Spin"
+
+    ],
+
+
+    "control": [
+
+      "Luxilon 4G",
+
+      "Wilson Natural Gut Hybrid"
+
+    ],
+
+
+    "hybrid": [
+
+      "Natural Gut + Polyester"
+
+    ]
+
+  },
+
+
+  "recommended_tension": {
+
+    "range": {
+
+      "value": "21-24 kg",
+
+      "cn":
+      "推荐穿线范围21-24公斤"
+
+    },
+
+
+    "spin_player": {
+
+      "value": "21-22 kg",
+
+      "cn":
+      "追求旋转建议21-22公斤"
+
+    },
+
+
+    "control_player": {
+
+      "value": "23-24 kg",
+
+      "cn":
+      "追求控制建议23-24公斤"
+
+    }
+
+  },
+
+
+  "comparison": {
+
+
+    "vs_wilson_blade_98_16x19_v10": {
+
+      "cn":
+      "Blade 98S旋转能力更强，Blade 98 16×19控制和稳定性更均衡。"
+
+    },
+
+
+    "vs_wilson_blade_98_18x20_v10": {
+
+      "cn":
+      "Blade 98S更适合现代上旋打法，18×20更适合精准平击。"
+
+    },
+
+
+    "vs_wilson_blade_pro_98_16x19_v10": {
+
+      "cn":
+      "Blade Pro拥有更高稳定性和职业规格，Blade 98S更容易使用。"
+
+    },
+
+
+    "vs_babolat_pure_aero_98_2026": {
+
+      "cn":
+      "Pure Aero 98更极端强调旋转，Blade 98S在旋转和控制之间更平衡。"
+
+    }
+
+  },
+
+
+  "ai_tags": [
+
+    "Blade",
+
+    "98拍面",
+
+    "Spin",
+
+    "旋转",
+
+    "现代打法",
+
+    "高级业余",
+
+    "底线攻击"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "Wilson Blade 98S V10 是Blade系列中的旋转取向版本。它采用98平方英寸拍面和开放式线床设计，在保持Blade经典控制感的同时，提高上旋能力和挥拍速度，适合现代底线攻击型球员。相比Blade 98 18×20，它牺牲部分精准控制，换取更强旋转和更容易制造球速。",
+
+
+  "variants": [],
+
+
+  "verification": {
+
+    "status": "official",
+
+    "verified": true,
+
+
+    "knowledge_path":
+
+    "knowledge/racquets/wilson/wilson_blade_98s_v10.json"
+
+  }
+
+}
