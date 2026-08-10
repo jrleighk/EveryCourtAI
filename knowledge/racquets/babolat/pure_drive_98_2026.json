@@ -1,48 +1,251 @@
 {
-  "brand": "Babolat",
-  "品牌": "百保力",
+  "id": "babolat_pure_drive_98_2026",
 
-  "model": "Pure Drive 98",
-  "型号": "Pure Drive 98",
+  "brand": "Babolat",
+  "brand_cn": "百保力",
+
+  "model": "Pure Drive 98 2026",
+  "model_cn": "Pure Drive 98 2026",
+
+  "category": "racket",
+  "category_cn": "网球拍",
 
   "series": "Pure Drive",
-  "系列": "Pure Drive",
+  "series_cn": "Pure Drive 系列",
 
-  "category": {
-    "primary": "control_power",
-    "主要定位": "控制与力量平衡"
-  },
+  "release_year": 2026,
+
 
   "player_profile": {
+
     "level": [
+      "intermediate",
       "advanced",
-      "高阶球员"
+      "competitive amateur"
+    ],
+
+    "level_cn": [
+      "中级球员",
+      "高级业余球员",
+      "竞技型业余球员"
     ],
 
     "style": [
-      "aggressive_baseline",
-      "攻击型底线打法"
+      "control",
+      "power",
+      "all-court"
+    ],
+
+    "style_cn": [
+      "控制型",
+      "力量型",
+      "全面型打法"
     ]
+
   },
 
-  "strengths": [
-    {
-      "en": "excellent precision",
-      "zh": "精准度高，适合主动进攻"
+
+  "specifications": {
+
+    "head_size": {
+      "value": 98,
+      "unit": "sq in",
+      "cn": "98平方英寸"
+    },
+
+
+    "weight_unstrung": {
+      "value": 305,
+      "unit": "g",
+      "cn": "空拍重量305克"
+    },
+
+
+    "weight_strung": {
+      "value": 320,
+      "unit": "g approx",
+      "cn": "穿线后约320克"
+    },
+
+
+    "balance": {
+      "value": 325,
+      "unit": "mm",
+      "cn": "平衡点约325毫米"
+    },
+
+
+    "length": {
+      "value": 27,
+      "unit": "inch",
+      "cn": "27英寸"
+    },
+
+
+    "string_pattern": {
+      "value": "16x19",
+      "cn": "16×19开放式线床"
+    },
+
+
+    "beam": {
+      "value": "23-26-23 mm",
+      "cn": "23-26-23毫米拍框"
+    },
+
+
+    "swing_weight": {
+      "value": "around 315",
+      "cn": "挥重约315"
     }
+
+  },
+
+
+  "technology": [
+
+    {
+      "name": "FSI Power",
+      "cn": "优化线孔布局，提高甜区和力量输出"
+    },
+
+    {
+      "name": "HTR System",
+      "cn": "提高拍框抗扭稳定性，加强快速挥拍控制"
+    },
+
+    {
+      "name": "SWX Pure Feel",
+      "cn": "降低震动，提高击球反馈"
+    },
+
+    {
+      "name": "Evo Beam",
+      "cn": "优化拍框结构，实现力量与控制平衡"
+    }
+
   ],
 
-  "weaknesses": [
-    {
-      "en": "requires good technique",
-      "zh": "需要较好的技术基础"
-    }
-  ],
 
-  "ai_tags": [
-    "控制",
-    "力量",
-    "高级球员",
-    "快速挥拍"
-  ]
+  "performance": {
+
+    "power": {
+      "rating": 8,
+      "cn": "力量输出：8/10"
+    },
+
+    "control": {
+      "rating": 9,
+      "cn": "控制性能：9/10"
+    },
+
+    "spin": {
+      "rating": 7,
+      "cn": "旋转能力：7/10"
+    },
+
+    "comfort": {
+      "rating": 8,
+      "cn": "舒适性：8/10"
+    },
+
+    "maneuverability": {
+      "rating": 8,
+      "cn": "挥拍灵活性：8/10"
+    }
+
+  },
+
+
+  "recommended_strings": {
+
+
+    "polyester": [
+      "Babolat RPM Blast",
+      "Luxilon ALU Power",
+      "Solinco Hyper-G"
+    ],
+
+
+    "hybrid": [
+      "Natural Gut + Polyester"
+    ],
+
+
+    "comfort": [
+      "Babolat Xcel",
+      "Tecnifibre X-One Biphase"
+    ]
+
+  },
+
+
+  "recommended_tension": {
+
+    "range": {
+      "value": "22-25",
+      "unit": "kg",
+      "cn": "推荐穿线范围22-25公斤"
+    },
+
+
+    "control_player": {
+      "value": "24-25 kg",
+      "cn": "偏控制打法建议24-25公斤"
+    },
+
+
+    "power_player": {
+      "value": "22-23 kg",
+      "cn": "需要力量建议22-23公斤"
+    }
+
+  },
+
+
+  "comparison": {
+
+
+    "vs_pure_drive_2026": {
+
+      "cn":
+      "Pure Drive 98 2026 比标准Pure Drive拥有更小拍面、更高控制和更精准反馈，但甜区和容错率降低。"
+
+    },
+
+
+    "vs_pure_drive_tour_2026": {
+
+      "cn":
+      "Pure Drive 98 2026 比Pure Drive Tour更灵活，适合追求精准控制但不希望过重的高级业余球员。"
+
+    },
+
+
+    "vs_wilson_rf01_pro_classic": {
+
+      "cn":
+      "Pure Drive 98 2026 在力量输出方面更现代化，而RF01 Pro Classic拥有更传统的控制感和击球反馈。"
+
+    }
+
+  },
+
+
+  "ai_summary_cn":
+
+  "Babolat Pure Drive 98 2026 是Pure Drive系列中的控制型版本，采用98平方英寸拍面和305克空拍重量。相比标准Pure Drive，它减少力量输出但提升精准度和稳定性，适合技术成熟、喜欢主动进攻和控制落点的中高级球员。",
+
+
+  "verification": {
+
+    "status": "official",
+
+    "verified": true,
+
+    "knowledge_path":
+    "knowledge/racquets/babolat/pure_drive_98_2026.json"
+
+  }
+
 }
