@@ -1,5 +1,33 @@
 {
   "brand": "Wilson",
   "last_updated": "2026-08-10",
-  "racquets": []
+  "racquets": [
+    {
+      "id": "wilson_rf01_pro",
+      "name": "Wilson RF 01 Pro",
+      "head_size": 98,
+      "weight_unstrung": 320,
+      "balance": 31.5,
+      "string_pattern": "16x19",
+      "beam": "23.2mm",
+      "stiffness_ra": 68,
+      "length": 27,
+      "recommended_level": [
+        "Advanced",
+        "Tournament"
+      ],
+      "play_style": [
+        "Aggressive Baseliner",
+        "All Court"
+      ],
+      "strengths": [
+        "Precision",
+        "Plow Through",
+        "Stability"
+      ],
+      "recommended_strings": [],
+      "recommended_tension": [],
+      "notes": ""
+    }
+  ]
 }
