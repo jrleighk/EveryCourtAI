@@ -1,0 +1,116 @@
+{
+  "brand": "Babolat",
+  "brand_cn": "百保力",
+
+  "model": "Pure Aero 2026",
+  "model_cn": "Pure Aero 2026",
+
+  "series": "Pure Aero",
+  "series_cn": "纯旋系列",
+
+  "category": "Spin",
+  "category_cn": "旋转型",
+
+  "target_player": [
+    "Intermediate",
+    "Advanced"
+  ],
+
+  "style": [
+    "Baseline",
+    "Heavy Topspin",
+    "Aggressive"
+  ],
+
+  "specifications": {
+    "weight": "300g",
+    "head_size": "100 sq.in",
+    "balance": "320mm",
+    "length": "27 inch",
+    "pattern": "16x19",
+    "beam": "23-26mm",
+    "stiffness": "RA 71"
+  },
+
+  "technology": [
+    "AeroModular3",
+    "FSI Spin",
+    "NF2 Tech"
+  ],
+
+  "advantages_cn": [
+    "极强旋转能力",
+    "适合现代底线打法",
+    "容易制造高弧线和深球",
+    "适合强烈上旋"
+  ],
+
+  "weakness_cn": [
+    "控制感低于Pure Strike",
+    "平击打法优势较小",
+    "高刚性可能增加手臂压力"
+  ],
+
+  "recommended_player_profile": {
+
+    "level_cn": "中高级球员",
+
+    "suitable_for": [
+      "纳达尔式上旋打法",
+      "底线进攻型球员",
+      "喜欢主动制造旋转球员"
+    ],
+
+    "not_recommended_for": [
+      "初学者",
+      "纯控制型球员",
+      "手臂敏感球员"
+    ]
+  },
+
+
+  "recommended_strings": [
+    "Babolat RPM Blast 1.25",
+    "Babolat RPM Power",
+    "Luxilon ALU Power",
+    "Natural Gut Hybrid"
+  ],
+
+
+  "recommended_tension": {
+
+    "poly": "48-52 lbs",
+
+    "hybrid": "52-56 lbs"
+
+  },
+
+
+  "similar_rackets": [
+
+    {
+      "brand": "Wilson",
+      "model": "Shift 99",
+      "reason_cn": "现代旋转打法定位接近"
+    },
+
+    {
+      "brand": "Yonex",
+      "model": "VCORE 100",
+      "reason_cn": "同属于旋转型球拍"
+    },
+
+    {
+      "brand": "HEAD",
+      "model": "Extreme MP",
+      "reason_cn": "力量旋转型定位"
+    }
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "Pure Aero 是Babolat代表性的旋转型球拍，适合现代底线进攻球员，通过高旋转帮助提高击球稳定性和攻击性。"
+
+}
