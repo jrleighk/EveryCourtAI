@@ -1,0 +1,340 @@
+{
+  "id": "wilson_pro_staff_rf97_limited_edition_box_set",
+
+  "brand": "Wilson",
+  "brand_cn": "威尔胜",
+
+  "model": "Pro Staff RF97 Limited Edition Box Set",
+  "model_cn": "Pro Staff RF97 Federer 限量收藏套装",
+
+  "category": "collector_racket_set",
+  "category_cn": "收藏级网球拍套装",
+
+
+  "series": "Pro Staff RF",
+  "series_cn": "Pro Staff RF系列",
+
+
+  "player": {
+
+    "name": "Roger Federer",
+
+    "name_cn": "罗杰·费德勒",
+
+    "legacy_cn":
+    "纪念Roger Federer与Wilson Pro Staff系列长期合作关系"
+  },
+
+
+  "product_type": {
+
+    "type": "limited_edition_box_set",
+
+    "type_cn": "限量收藏套装",
+
+    "description_cn":
+    "Wilson推出的Roger Federer Pro Staff RF97限量收藏套装，以RF97 Autograph为核心，结合收藏包装和传奇球员纪念元素"
+
+  },
+
+
+  "base_model": {
+
+    "model":
+    "Wilson Pro Staff RF97 Autograph",
+
+    "cn":
+    "基于Pro Staff RF97 Autograph竞技型号"
+
+  },
+
+
+  "edition": {
+
+    "type": "Player Legacy Limited Edition",
+
+    "type_cn":
+    "球员传奇限量版",
+
+    "theme_cn":
+    "致敬Federer职业生涯和Pro Staff RF系列历史"
+
+  },
+
+
+  "specifications": {
+
+
+    "head_size": {
+
+      "value": 97,
+
+      "unit": "sq in",
+
+      "cn":
+      "97平方英寸"
+
+    },
+
+
+    "weight_unstrung": {
+
+      "value": 340,
+
+      "unit": "g",
+
+      "cn":
+      "空拍重量约340克"
+
+    },
+
+
+    "weight_strung": {
+
+      "value": 357,
+
+      "unit": "g approx",
+
+      "cn":
+      "穿线后约357克"
+
+    },
+
+
+    "balance": {
+
+      "value": 305,
+
+      "unit": "mm",
+
+      "cn":
+      "平衡点约305毫米"
+
+    },
+
+
+    "length": {
+
+      "value": 27,
+
+      "unit": "inch",
+
+      "cn":
+      "27英寸"
+
+    },
+
+
+    "string_pattern": {
+
+      "value": "16x19",
+
+      "cn":
+      "16×19开放式线床"
+
+    }
+
+  },
+
+
+  "performance": {
+
+
+    "power": {
+
+      "rating": 7,
+
+      "cn":
+      "力量输出：7/10"
+
+    },
+
+
+    "control": {
+
+      "rating": 10,
+
+      "cn":
+      "控制性能：10/10"
+
+    },
+
+
+    "spin": {
+
+      "rating": 7,
+
+      "cn":
+      "旋转能力：7/10"
+
+    },
+
+
+    "comfort": {
+
+      "rating": 7,
+
+      "cn":
+      "舒适性：7/10"
+
+    },
+
+
+    "stability": {
+
+      "rating": 10,
+
+      "cn":
+      "稳定性：10/10"
+
+    },
+
+
+    "maneuverability": {
+
+      "rating": 6,
+
+      "cn":
+      "挥拍灵活性：6/10"
+
+    }
+
+  },
+
+
+  "advantages_cn": [
+
+    "Federer职业传奇价值",
+
+    "RF97经典竞技规格",
+
+    "收藏包装设计",
+
+    "Pro Staff历史意义",
+
+    "高端网球收藏属性"
+
+  ],
+
+
+  "weaknesses_cn": [
+
+    "重量非常高",
+
+    "不适合普通业余玩家",
+
+    "收藏价值远高于实际使用需求",
+
+    "挥拍要求极高"
+
+  ],
+
+
+  "recommended_user_profile": {
+
+
+    "suitable_for": [
+
+      "Federer收藏者",
+
+      "Wilson Pro Staff收藏者",
+
+      "高端体育收藏用户",
+
+      "网球文化收藏投资者"
+
+    ],
+
+
+    "not_recommended_for": [
+
+      "初学者",
+
+      "普通休闲玩家",
+
+      "需要轻松挥拍用户"
+
+    ]
+
+  },
+
+
+  "collector_value": {
+
+    "rating": 10,
+
+    "cn":
+    "Roger Federer RF系列代表性收藏产品"
+
+  },
+
+
+  "comparison": {
+
+
+    "vs_wilson_rf_01_pro_classic": {
+
+      "cn":
+      "RF01 Pro Classic是现代RF竞技型号；RF97 Box Set代表Federer职业时代Pro Staff收藏价值"
+
+    },
+
+
+    "vs_wilson_rf_01_pro": {
+
+      "cn":
+      "RF01 Pro更加现代化；RF97更加接近Federer职业时期规格"
+
+    },
+
+
+    "vs_wilson_pro_staff_97_v14": {
+
+      "cn":
+      "Pro Staff 97 V14更容易使用；RF97重量和稳定性更接近职业规格"
+
+    }
+
+  },
+
+
+  "ai_tags": [
+
+    "Wilson",
+
+    "Roger Federer",
+
+    "RF97",
+
+    "Pro Staff",
+
+    "Limited Edition",
+
+    "Box Set",
+
+    "Collector"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "Wilson Pro Staff RF97 Limited Edition Box Set 是Roger Federer时代最具代表性的收藏级网球产品之一。它基于RF97 Autograph职业规格球拍，通过限量包装和Federer传奇元素提升收藏价值。虽然拥有顶级控制和稳定性，但超过350克的穿线重量使其更适合作为收藏品，而非普通业余玩家日常使用。",
+
+
+  "variants": [],
+
+
+  "verification": {
+
+    "status": "official",
+
+    "verified": true,
+
+
+    "knowledge_path":
+    "knowledge/racquets/special_editions/player_legacy/wilson_pro_staff_rf97_limited_edition_box_set.json"
+
+  }
+
+}
