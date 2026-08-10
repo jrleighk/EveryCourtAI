@@ -1,0 +1,429 @@
+{
+  "id": "wilson_pro_staff_97ul_v14",
+
+  "brand": "Wilson",
+  "brand_cn": "威尔胜",
+
+  "model": "Pro Staff 97UL V14",
+  "model_cn": "Pro Staff 97UL V14",
+
+  "category": "racket",
+  "category_cn": "网球拍",
+
+  "series": "Pro Staff",
+  "series_cn": "Pro Staff 系列",
+
+  "generation": "V14",
+  "generation_cn": "第14代版本",
+
+
+  "product_type": {
+
+    "type": "player_performance_light",
+
+    "type_cn": "超轻量竞技版本",
+
+    "description_cn":
+    "Pro Staff系列超轻量型号，在保持经典控制感的基础上，通过降低重量提高挥拍速度和易用性"
+
+  },
+
+
+  "player_profile": {
+
+    "level": [
+      "beginner",
+      "intermediate",
+      "junior advanced"
+    ],
+
+    "level_cn": [
+      "进阶初学者",
+      "中级球员",
+      "青少年进阶球员"
+    ],
+
+
+    "style": [
+      "control",
+      "fast swing",
+      "all court"
+    ],
+
+    "style_cn": [
+      "控制型打法",
+      "快速挥拍",
+      "全面型打法"
+    ]
+
+  },
+
+
+  "specifications": {
+
+
+    "head_size": {
+
+      "value": 97,
+
+      "unit": "sq in",
+
+      "cn": "97平方英寸"
+
+    },
+
+
+    "weight_unstrung": {
+
+      "value": 269,
+
+      "unit": "g",
+
+      "cn": "空拍重量269克"
+
+    },
+
+
+    "weight_strung": {
+
+      "value": 285,
+
+      "unit": "g approx",
+
+      "cn": "穿线后约285克"
+
+    },
+
+
+    "balance": {
+
+      "value": 330,
+
+      "unit": "mm",
+
+      "cn": "平衡点约330毫米"
+
+    },
+
+
+    "length": {
+
+      "value": 27,
+
+      "unit": "inch",
+
+      "cn": "27英寸"
+
+    },
+
+
+    "string_pattern": {
+
+      "value": "16x19",
+
+      "cn": "16×19开放式线床"
+
+    },
+
+
+    "beam": {
+
+      "value": "23 mm",
+
+      "cn": "经典Pro Staff薄框设计"
+
+    },
+
+
+    "swing_weight": {
+
+      "value": "around 300",
+
+      "cn": "挥重约300"
+
+    }
+
+  },
+
+
+  "technology": [
+
+    {
+
+      "name": "Paradigm Bending",
+
+      "cn":
+      "优化拍框柔韧性，提高控制和舒适度"
+
+    },
+
+
+    {
+
+      "name": "String Mapping",
+
+      "cn":
+      "优化线床设计，提高精准反馈"
+
+    },
+
+
+    {
+
+      "name": "Perimeter Weighting",
+
+      "cn":
+      "外围配重，提高稳定性"
+
+    },
+
+
+    {
+
+      "name": "Braided Graphite",
+
+      "cn":
+      "Pro Staff经典编织石墨结构"
+
+    }
+
+  ],
+
+
+  "performance": {
+
+    "power": {
+
+      "rating": 6,
+
+      "cn": "力量输出：6/10"
+
+    },
+
+
+    "control": {
+
+      "rating": 8,
+
+      "cn": "控制性能：8/10"
+
+    },
+
+
+    "spin": {
+
+      "rating": 7,
+
+      "cn": "旋转能力：7/10"
+
+    },
+
+
+    "comfort": {
+
+      "rating": 10,
+
+      "cn": "舒适性：10/10"
+
+    },
+
+
+    "stability": {
+
+      "rating": 6,
+
+      "cn": "稳定性：6/10"
+
+    },
+
+
+    "maneuverability": {
+
+      "rating": 10,
+
+      "cn": "挥拍灵活性：10/10"
+
+    }
+
+  },
+
+
+  "advantages_cn": [
+
+    "Pro Staff经典控制感",
+
+    "极佳挥拍速度",
+
+    "269克重量非常容易操控",
+
+    "适合快速学习技术动作",
+
+    "手臂负担较低"
+
+  ],
+
+
+  "weaknesses_cn": [
+
+    "稳定性明显低于97L和97",
+
+    "面对高速球容易不足",
+
+    "力量输出有限",
+
+    "高级比赛需要增加铅片优化"
+
+  ],
+
+
+  "recommended_player_profile": {
+
+    "suitable_for": [
+
+      "青少年球员",
+
+      "女性高级球员",
+
+      "力量不足但喜欢控制感玩家",
+
+      "从轻量拍升级用户",
+
+      "希望体验Pro Staff系列用户"
+
+    ],
+
+
+    "not_recommended_for": [
+
+      "职业比赛球员",
+
+      "力量型底线球员",
+
+      "追求高稳定性的高级玩家"
+
+    ]
+
+  },
+
+
+  "recommended_strings": {
+
+
+    "comfort": [
+
+      "Wilson NXT",
+
+      "Wilson Sensation"
+
+    ],
+
+
+    "control": [
+
+      "Wilson Revolve",
+
+      "Luxilon ALU Power Soft"
+
+    ],
+
+
+    "hybrid": [
+
+      "Multifilament + Polyester"
+
+    ]
+
+  },
+
+
+  "recommended_tension": {
+
+    "range": {
+
+      "value": "22-24 kg",
+
+      "cn":
+      "推荐穿线范围22-24公斤"
+
+    },
+
+
+    "comfort_player": {
+
+      "value": "22-23 kg",
+
+      "cn":
+      "舒适打法建议22-23公斤"
+
+    }
+
+  },
+
+
+  "comparison": {
+
+
+    "vs_wilson_pro_staff_97l_v14": {
+
+      "cn":
+      "97UL比97L轻21克，更容易挥动；97L稳定性和比赛适应性更强"
+
+    },
+
+
+    "vs_wilson_pro_staff_97_v14": {
+
+      "cn":
+      "97UL适合轻量玩家；97提供职业级稳定性和穿透力"
+
+    },
+
+
+    "vs_wilson_blade_100ul_v10": {
+
+      "cn":
+      "Blade 100UL拍面更友好；Pro Staff 97UL控制感更明显"
+
+    }
+
+  },
+
+
+  "ai_tags": [
+
+    "Pro Staff",
+
+    "97UL",
+
+    "V14",
+
+    "Ultra Light",
+
+    "Control",
+
+    "Wilson"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "Wilson Pro Staff 97UL V14 是Pro Staff系列中的超轻量控制型球拍。它采用97平方英寸拍面和269克空拍重量，在保持Pro Staff精准反馈的同时，大幅降低挥拍要求。适合青少年、女性高级球员以及希望体验经典Pro Staff手感但无法使用高重量型号的玩家。",
+
+
+  "variants": [],
+
+
+  "verification": {
+
+    "status": "official",
+
+    "verified": true,
+
+
+    "knowledge_path":
+    "knowledge/racquets/wilson/wilson_pro_staff_97ul_v14.json"
+
+  }
+
+}
