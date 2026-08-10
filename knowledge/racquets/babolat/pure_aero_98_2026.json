@@ -1,0 +1,349 @@
+{
+  "id": "babolat_pure_aero_98_2026",
+
+  "brand": "Babolat",
+  "brand_cn": "百保力",
+
+  "model": "Pure Aero 98 2026",
+  "model_cn": "Pure Aero 98 2026",
+
+  "category": "racket",
+  "category_cn": "网球拍",
+
+  "series": "Pure Aero",
+  "series_cn": "Pure Aero 纯旋系列",
+
+  "release_year": 2026,
+
+
+  "player_profile": {
+
+    "level": [
+      "advanced",
+      "professional",
+      "competitive amateur"
+    ],
+
+    "level_cn": [
+      "高级球员",
+      "职业竞技球员",
+      "竞技型业余球员"
+    ],
+
+
+    "style": [
+      "heavy topspin",
+      "aggressive baseline",
+      "fast swing"
+    ],
+
+    "style_cn": [
+      "强上旋打法",
+      "攻击型底线打法",
+      "快速挥拍打法"
+    ]
+
+  },
+
+
+  "specifications": {
+
+    "head_size": {
+      "value": 98,
+      "unit": "sq in",
+      "cn": "98平方英寸"
+    },
+
+
+    "weight_unstrung": {
+      "value": 305,
+      "unit": "g",
+      "cn": "空拍重量305克"
+    },
+
+
+    "weight_strung": {
+      "value": 320,
+      "unit": "g approx",
+      "cn": "穿线后约320克"
+    },
+
+
+    "balance": {
+      "value": 315,
+      "unit": "mm",
+      "cn": "平衡点约315毫米"
+    },
+
+
+    "length": {
+      "value": 27,
+      "unit": "inch",
+      "cn": "27英寸"
+    },
+
+
+    "string_pattern": {
+      "value": "16x20",
+      "cn": "16×20线床"
+    },
+
+
+    "beam": {
+      "value": "21-23-22 mm",
+      "cn": "较薄拍框设计"
+    },
+
+
+    "swing_weight": {
+      "value": "around 325",
+      "cn": "挥重约325"
+    }
+
+  },
+
+
+  "technology": [
+
+    {
+      "name": "AeroModular3",
+      "cn": "空气动力学拍框设计，提高挥拍速度"
+    },
+
+
+    {
+      "name": "FSI Spin",
+      "cn": "优化线床结构，提高旋转能力"
+    },
+
+
+    {
+      "name": "NF2 Tech",
+      "cn": "减少震动，提高击球反馈"
+    },
+
+
+    {
+      "name": "Woofer System",
+      "cn": "增加球线移动，提高旋转和舒适性"
+    }
+
+  ],
+
+
+  "performance": {
+
+    "power": {
+      "rating": 7,
+      "cn": "力量输出：7/10"
+    },
+
+
+    "control": {
+      "rating": 9,
+      "cn": "控制性能：9/10"
+    },
+
+
+    "spin": {
+      "rating": 10,
+      "cn": "旋转能力：10/10"
+    },
+
+
+    "comfort": {
+      "rating": 7,
+      "cn": "舒适性：7/10"
+    },
+
+
+    "maneuverability": {
+      "rating": 8,
+      "cn": "挥拍灵活性：8/10"
+    }
+
+  },
+
+
+  "advantages_cn": [
+
+    "98平方英寸拍面提供更精准控制",
+    "保持Pure Aero系列顶级旋转能力",
+    "适合高速挥拍球员",
+    "击球线路控制优秀",
+    "竞技比赛稳定性高"
+
+  ],
+
+
+  "weaknesses_cn": [
+
+    "甜区小于100平方英寸版本",
+    "需要更好的技术基础",
+    "力量辅助低于Pure Aero 100",
+    "不适合初学者"
+
+  ],
+
+
+  "recommended_player_profile": {
+
+    "suitable_for": [
+
+      "高级底线攻击球员",
+      "希望获得Pure Aero旋转但需要更多控制的球员",
+      "快速挥拍球员",
+      "喜欢精准线路控制的球员"
+
+    ],
+
+
+    "not_recommended_for": [
+
+      "初学者",
+      "挥拍速度较慢球员",
+      "依赖球拍提供力量的球员"
+
+    ]
+
+  },
+
+
+  "recommended_strings": {
+
+
+    "spin": [
+
+      "Babolat RPM Blast 1.25",
+      "Solinco Hyper-G 1.25"
+
+    ],
+
+
+    "control": [
+
+      "Luxilon ALU Power",
+      "Tecnifibre Razor Code"
+
+    ],
+
+
+    "hybrid": [
+
+      "Natural Gut + Polyester"
+
+    ]
+
+  },
+
+
+  "recommended_strings_cn": {
+
+
+    "旋转": [
+
+      "Babolat RPM Blast 1.25",
+      "Solinco Hyper-G 1.25"
+
+    ],
+
+
+    "控制": [
+
+      "Luxilon ALU Power",
+      "Tecnifibre Razor Code"
+
+    ],
+
+
+    "混合": [
+
+      "天然肠线 + 聚酯线"
+
+    ]
+
+  },
+
+
+  "recommended_tension": {
+
+    "range": {
+      "value": "22-25 kg",
+      "cn": "推荐穿线范围22-25公斤"
+    },
+
+
+    "spin_player": {
+      "value": "22-23 kg",
+      "cn": "追求旋转建议22-23公斤"
+    },
+
+
+    "control_player": {
+      "value": "24-25 kg",
+      "cn": "追求控制建议24-25公斤"
+    }
+
+  },
+
+
+  "comparison": {
+
+
+    "vs_pure_aero_2026": {
+
+      "cn":
+      "Pure Aero 98 2026 比Pure Aero 2026拥有更高控制和精准度，但甜区更小，对技术要求更高。"
+
+    },
+
+
+    "vs_pure_drive_98_2026": {
+
+      "cn":
+      "Pure Aero 98 2026 更强调旋转和进攻，而Pure Drive 98 2026 更强调力量和平衡。"
+
+    },
+
+
+    "vs_wilson_blade_98_2026": {
+
+      "cn":
+      "Pure Aero 98 2026 提供更多旋转和现代击球感，Blade 98 更偏传统控制和柔和反馈。"
+
+    }
+
+  },
+
+
+  "ai_tags": [
+
+    "旋转",
+    "控制",
+    "98拍面",
+    "高级球员",
+    "底线攻击",
+    "快速挥拍",
+    "现代网球"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "Babolat Pure Aero 98 2026 是Pure Aero系列中的竞技控制版本，采用98平方英寸拍面和305克空拍重量。它保留Pure Aero系列强大的旋转能力，同时提升精准度和线路控制，适合技术成熟、挥拍速度快、追求旋转与控制平衡的高级球员。",
+
+
+  "verification": {
+
+    "status": "official",
+
+    "verified": true,
+
+
+    "knowledge_path":
+    "knowledge/racquets/babolat/pure_aero_98_2026.json"
+
+  }
+
+}
