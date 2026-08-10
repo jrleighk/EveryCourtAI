@@ -1,0 +1,136 @@
+{
+  "id": "wilson_kith_shift_99_v1",
+
+  "brand": "Wilson",
+
+  "brand_cn":
+  "威尔胜",
+
+
+  "collaboration_brand":
+  "KITH",
+
+
+  "model":
+  "KITH x Wilson Shift 99 V1",
+
+
+  "model_cn":
+  "KITH x Wilson Shift 99 V1 联名版",
+
+
+  "category":
+  "collaboration_racket",
+
+
+  "category_cn":
+  "品牌联名网球拍",
+
+
+  "base_model":
+  "Wilson Shift 99 V1",
+
+
+  "series":
+  "Shift",
+
+
+  "series_cn":
+  "Shift 系列",
+
+
+  "generation":
+  "V1",
+
+
+  "collaboration": {
+
+    "type":
+    "fashion_collaboration",
+
+    "partner":
+    "KITH",
+
+    "theme_cn":
+    "现代网球性能与KITH城市运动美学结合"
+
+  },
+
+
+  "specifications": {
+
+
+    "head_size": {
+
+      "value":99,
+
+      "unit":"sq in",
+
+      "cn":"99平方英寸"
+
+    },
+
+
+    "weight_unstrung": {
+
+      "value":300,
+
+      "unit":"g",
+
+      "cn":"空拍重量300克"
+
+    },
+
+
+    "string_pattern": {
+
+      "value":"16x20",
+
+      "cn":"16×20线床"
+
+    }
+
+  },
+
+
+  "collector_value": {
+
+    "rating":9,
+
+    "cn":
+    "KITH联名系列具有较高收藏和时尚价值"
+
+  },
+
+
+  "ai_tags":[
+
+    "KITH",
+
+    "Wilson",
+
+    "Shift",
+
+    "Spin",
+
+    "Fashion Collaboration",
+
+    "Luxury Tennis"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "KITH x Wilson Shift 99 V1 是Wilson Shift系列与KITH合作推出的限定版本。它结合现代旋转型网球技术与高端街头运动美学，适合追求性能和潮流收藏价值的用户。",
+
+
+  "verification": {
+
+    "status":"official",
+
+    "verified":true
+
+  }
+
+}
