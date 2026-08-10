@@ -1,0 +1,441 @@
+{
+  "id": "babolat_pure_drive_team_autograph_130th_anniversary_limited_edition",
+
+  "brand": "Babolat",
+  "brand_cn": "百保力",
+
+  "model": "Pure Drive Team Autograph 130th Anniversary Limited Edition",
+  "model_cn": "Pure Drive Team Autograph 百保力130周年限量纪念版",
+
+  "category": "special_edition_racket",
+  "category_cn": "特别限量版网球拍",
+
+  "series": "Pure Drive Team",
+  "series_cn": "Pure Drive Team 系列",
+
+
+  "edition": {
+
+    "type": "Anniversary Limited Edition",
+    "type_cn": "周年限量纪念版",
+
+    "anniversary": "130 Years",
+    "anniversary_cn": "Babolat品牌130周年纪念"
+
+  },
+
+
+  "brand_history": {
+
+    "company": "Babolat",
+
+    "company_cn": "百保力",
+
+    "heritage_cn":
+    "纪念Babolat超过一个世纪的网球装备历史"
+
+  },
+
+
+  "special_features": {
+
+    "limited_edition": true,
+
+    "limited_edition_cn":
+    "限量发行特别版本",
+
+
+    "autograph": true,
+
+    "autograph_cn":
+    "Autograph纪念设计"
+
+
+  },
+
+
+  "base_model": {
+
+    "model": "Pure Drive Team",
+
+    "cn":
+    "基于Pure Drive Team轻量力量型平台"
+
+  },
+
+
+  "player_profile": {
+
+    "level": [
+
+      "beginner",
+      "intermediate",
+      "club player"
+
+    ],
+
+    "level_cn": [
+
+      "初学者",
+      "中级球员",
+      "俱乐部业余球员"
+
+    ],
+
+
+    "style": [
+
+      "power",
+      "easy swing",
+      "all court"
+
+    ],
+
+    "style_cn": [
+
+      "力量型打法",
+      "轻松挥拍",
+      "全面型打法"
+
+    ]
+
+  },
+
+
+  "specifications": {
+
+    "head_size": {
+
+      "value": 100,
+
+      "unit": "sq in",
+
+      "cn": "100平方英寸"
+
+    },
+
+
+    "weight_unstrung": {
+
+      "value": 285,
+
+      "unit": "g",
+
+      "cn": "空拍重量285克"
+
+    },
+
+
+    "weight_strung": {
+
+      "value": 300,
+
+      "unit": "g approx",
+
+      "cn": "穿线后约300克"
+
+    },
+
+
+    "balance": {
+
+      "value": 330,
+
+      "unit": "mm",
+
+      "cn": "平衡点约330毫米"
+
+    },
+
+
+    "length": {
+
+      "value": 27,
+
+      "unit": "inch",
+
+      "cn": "27英寸"
+
+    },
+
+
+    "string_pattern": {
+
+      "value": "16x19",
+
+      "cn": "16×19开放式线床"
+
+    }
+
+  },
+
+
+  "technology": [
+
+    {
+
+      "name": "FSI Power",
+
+      "cn":
+      "优化线孔设计，提高力量输出和甜区表现"
+
+    },
+
+    {
+
+      "name": "HTR System",
+
+      "cn":
+      "提高拍框稳定性，加强击球控制"
+
+    },
+
+    {
+
+      "name": "SWX Pure Feel",
+
+      "cn":
+      "减少震动，提高击球舒适度"
+
+    }
+
+  ],
+
+
+  "design_features": {
+
+    "theme":
+
+    "Babolat 130th Anniversary Heritage",
+
+
+    "theme_cn":
+
+    "百保力130周年品牌传承主题",
+
+
+    "design_cn":
+
+    "采用品牌历史元素与Pure Drive经典设计结合，突出百年网球文化传承"
+
+  },
+
+
+  "performance": {
+
+    "power": {
+
+      "rating": 8,
+
+      "cn": "力量输出：8/10"
+
+    },
+
+
+    "control": {
+
+      "rating": 7,
+
+      "cn": "控制性能：7/10"
+
+    },
+
+
+    "spin": {
+
+      "rating": 8,
+
+      "cn": "旋转能力：8/10"
+
+    },
+
+
+    "comfort": {
+
+      "rating": 9,
+
+      "cn": "舒适性：9/10"
+
+    },
+
+
+    "maneuverability": {
+
+      "rating": 10,
+
+      "cn": "挥拍灵活性：10/10"
+
+    }
+
+  },
+
+
+  "advantages_cn": [
+
+    "重量轻，容易挥动",
+
+    "Pure Drive经典力量表现",
+
+    "100平方英寸高容错",
+
+    "适合长时间击球",
+
+    "130周年品牌收藏意义"
+
+  ],
+
+
+  "weaknesses_cn": [
+
+    "稳定性低于300克以上型号",
+
+    "高级竞技球员可能需要Pure Drive 98或Tour",
+
+    "收藏价值高于性能提升"
+
+  ],
+
+
+  "recommended_player_profile": {
+
+
+    "suitable_for": [
+
+      "中级业余球员",
+
+      "女性球员",
+
+      "年轻球员",
+
+      "俱乐部玩家",
+
+      "Babolat收藏者"
+
+    ],
+
+
+    "not_recommended_for": [
+
+      "职业竞技球员",
+
+      "力量型高级球员",
+
+      "追求极致控制玩家"
+
+    ]
+
+  },
+
+
+  "recommended_strings": [
+
+    "Babolat RPM Blast",
+
+    "Babolat RPM Power",
+
+    "Babolat Xcel",
+
+    "Tecnifibre X-One Biphase"
+
+  ],
+
+
+  "recommended_tension": {
+
+    "range": {
+
+      "value": "22-24 kg",
+
+      "cn": "推荐穿线范围22-24公斤"
+
+    }
+
+  },
+
+
+  "collector_value": {
+
+    "rating": 9,
+
+    "cn":
+
+    "高收藏价值，适合Babolat品牌收藏者和限量球拍收藏市场"
+
+  },
+
+
+  "comparison": {
+
+
+    "vs_pure_drive_team_2026": {
+
+      "cn":
+
+      "性能基础接近Pure Drive Team，主要区别在130周年纪念设计和收藏属性"
+
+    },
+
+
+    "vs_pure_drive_30th_anniversary": {
+
+      "cn":
+
+      "Pure Drive 30周年属于系列纪念概念，而130周年版本纪念的是Babolat品牌历史"
+
+    },
+
+
+    "vs_pure_drive_2026": {
+
+      "cn":
+
+      "标准Pure Drive 2026更偏日常竞技使用，130周年版本增加收藏价值"
+
+    }
+
+  },
+
+
+  "ai_tags": [
+
+    "Babolat Heritage",
+
+    "130周年",
+
+    "Limited Edition",
+
+    "Autograph",
+
+    "收藏",
+
+    "Pure Drive Team",
+
+    "高净值体育消费"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "Babolat Pure Drive Team Autograph 130th Anniversary Limited Edition 是为了纪念Babolat品牌130年历史推出的限量收藏球拍。它基于Pure Drive Team轻量平台，结合易用性、品牌传承和收藏价值，适合希望拥有一件具有网球文化意义装备的收藏者和业余玩家。",
+
+
+  "verification": {
+
+    "status": "official",
+
+    "verified": true,
+
+
+    "product_year_checked":
+
+    "130th Anniversary Edition",
+
+
+    "knowledge_path":
+
+    "knowledge/racquets/special_editions/babolat_pure_drive_team_autograph_130th_anniversary_limited_edition.json"
+
+  }
+
+}
