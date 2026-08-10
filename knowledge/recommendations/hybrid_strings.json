@@ -1,0 +1,49 @@
+{
+  "last_updated": "2026-08-10",
+  "hybrids": [
+    {
+      "name": "Federer Style",
+      "main": "Babolat VS Touch",
+      "cross": "Luxilon ALU Power 125",
+      "benefits": [
+        "Power",
+        "Control",
+        "Comfort",
+        "Touch"
+      ],
+      "recommended_for": [
+        "Advanced",
+        "All Court",
+        "Serve & Volley"
+      ]
+    },
+    {
+      "name": "Nadal Style",
+      "main": "Babolat RPM Blast",
+      "cross": "Babolat RPM Blast",
+      "benefits": [
+        "Maximum Spin",
+        "Heavy Topspin",
+        "Aggressive Baseline"
+      ],
+      "recommended_for": [
+        "Advanced",
+        "Baseline"
+      ]
+    },
+    {
+      "name": "Senior Comfort",
+      "main": "Babolat VS Touch",
+      "cross": "Luxilon ALU Power 125",
+      "benefits": [
+        "Arm Friendly",
+        "Comfort",
+        "Control"
+      ],
+      "recommended_for": [
+        "45+",
+        "Advanced Club Player"
+      ]
+    }
+  ]
+}
