@@ -1,0 +1,440 @@
+{
+  "id": "wilson_pro_staff_six_one_95_18x20_v14",
+
+  "brand": "Wilson",
+  "brand_cn": "威尔胜",
+
+  "model": "Pro Staff Six.One 95 18x20 V14",
+  "model_cn": "Pro Staff Six.One 95 18x20 V14",
+
+  "category": "racket",
+  "category_cn": "网球拍",
+
+  "series": "Pro Staff Six.One",
+  "series_cn": "Pro Staff Six.One 系列",
+
+  "generation": "V14",
+  "generation_cn": "第14代版本",
+
+
+  "product_type": {
+
+    "type": "player_performance",
+
+    "type_cn": "高级竞技版本",
+
+    "description_cn":
+    "Wilson经典Six.One系列控制型球拍，采用95平方英寸拍面和18×20密线床，为高级球员提供精准控制和稳定反馈"
+
+  },
+
+
+  "player_profile": {
+
+    "level": [
+      "advanced",
+      "professional",
+      "competitive amateur"
+    ],
+
+    "level_cn": [
+      "高级球员",
+      "职业竞技球员",
+      "比赛型业余球员"
+    ],
+
+
+    "style": [
+      "control",
+      "precision",
+      "classic all court"
+    ],
+
+    "style_cn": [
+      "控制型打法",
+      "精准线路",
+      "经典全面型打法"
+    ]
+
+  },
+
+
+  "heritage": {
+
+    "series_history_cn":
+    "Six.One系列是Wilson历史上最经典的竞技控制系列之一，长期受到职业球员青睐",
+
+    "legacy_cn":
+    "代表Wilson传统小拍面、高稳定、高反馈球拍理念"
+
+  },
+
+
+  "specifications": {
+
+
+    "head_size": {
+
+      "value": 95,
+
+      "unit": "sq in",
+
+      "cn": "95平方英寸"
+
+    },
+
+
+    "weight_unstrung": {
+
+      "value": 313,
+
+      "unit": "g",
+
+      "cn": "空拍重量313克"
+
+    },
+
+
+    "weight_strung": {
+
+      "value": 332,
+
+      "unit": "g approx",
+
+      "cn": "穿线后约332克"
+
+    },
+
+
+    "balance": {
+
+      "value": 305,
+
+      "unit": "mm",
+
+      "cn": "平衡点约305毫米（头轻）"
+
+    },
+
+
+    "length": {
+
+      "value": 27,
+
+      "unit": "inch",
+
+      "cn": "27英寸"
+
+    },
+
+
+    "string_pattern": {
+
+      "value": "18x20",
+
+      "cn": "18×20密线床"
+
+    },
+
+
+    "beam": {
+
+      "value": "22 mm",
+
+      "cn": "经典薄框设计"
+
+    },
+
+
+    "swing_weight": {
+
+      "value": "around 330",
+
+      "cn": "挥重约330"
+
+    }
+
+  },
+
+
+  "technology": [
+
+    {
+
+      "name": "Braided Graphite",
+
+      "cn":
+      "编织石墨结构，提供经典Pro Staff反馈"
+
+    },
+
+
+    {
+
+      "name": "String Mapping",
+
+      "cn":
+      "优化线床结构，提高控制能力"
+
+    },
+
+
+    {
+
+      "name": "Perimeter Weighting",
+
+      "cn":
+      "外围重量分布，提高稳定性"
+
+    },
+
+
+    {
+
+      "name": "Paradigm Bending",
+
+      "cn":
+      "V14版本增强柔韧性和舒适性"
+
+    }
+
+  ],
+
+
+  "performance": {
+
+    "power": {
+
+      "rating": 5,
+
+      "cn": "力量输出：5/10"
+
+    },
+
+
+    "control": {
+
+      "rating": 10,
+
+      "cn": "控制性能：10/10"
+
+    },
+
+
+    "spin": {
+
+      "rating": 6,
+
+      "cn": "旋转能力：6/10"
+
+    },
+
+
+    "comfort": {
+
+      "rating": 8,
+
+      "cn": "舒适性：8/10"
+
+    },
+
+
+    "stability": {
+
+      "rating": 10,
+
+      "cn": "稳定性：10/10"
+
+    },
+
+
+    "maneuverability": {
+
+      "rating": 7,
+
+      "cn": "挥拍灵活性：7/10"
+
+    }
+
+  },
+
+
+  "advantages_cn": [
+
+    "极致精准控制",
+
+    "18×20线床线路稳定",
+
+    "95平方英寸提供高级反馈",
+
+    "击球扎实稳定",
+
+    "传统球员框架手感"
+
+  ],
+
+
+  "weaknesses_cn": [
+
+    "甜区较小",
+
+    "力量输出低",
+
+    "需要较高技术水平",
+
+    "不适合初学者"
+
+  ],
+
+
+  "recommended_player_profile": {
+
+    "suitable_for": [
+
+      "高级比赛球员",
+
+      "传统控制型玩家",
+
+      "单反球员",
+
+      "喜欢Prestige类手感用户",
+
+      "Wilson老玩家"
+
+    ],
+
+
+    "not_recommended_for": [
+
+      "初学者",
+
+      "需要球拍提供力量玩家",
+
+      "追求大量旋转玩家"
+
+    ]
+
+  },
+
+
+  "recommended_strings": {
+
+
+    "control": [
+
+      "Luxilon ALU Power 1.25",
+
+      "Luxilon 4G"
+    ],
+
+
+    "comfort": [
+
+      "Wilson NXT",
+
+      "Natural Gut"
+    ],
+
+
+    "hybrid": [
+
+      "Natural Gut + Polyester"
+
+    ]
+
+  },
+
+
+  "recommended_tension": {
+
+    "range": {
+
+      "value": "22-26 kg",
+
+      "cn":
+      "推荐穿线范围22-26公斤"
+
+    },
+
+
+    "control_player": {
+
+      "value": "24-26 kg",
+
+      "cn":
+      "控制型球员建议24-26公斤"
+
+    }
+
+  },
+
+
+  "comparison": {
+
+
+    "vs_wilson_pro_staff_97_v14": {
+
+      "cn":
+      "Six.One 95更加传统、更强调稳定；Pro Staff 97更现代、更容易使用"
+
+    },
+
+
+    "vs_wilson_rf_01_pro": {
+
+      "cn":
+      "RF 01 Pro拥有更多力量和现代性能；Six.One 95更纯粹控制"
+
+    },
+
+
+    "vs_wilson_blade_98_18x20_v10": {
+
+      "cn":
+      "Blade 98 18×20更现代、更容易产生旋转；Six.One 95拥有更经典硬朗反馈"
+
+    }
+
+  },
+
+
+  "ai_tags": [
+
+    "Pro Staff",
+
+    "Six.One",
+
+    "95拍面",
+
+    "18x20",
+
+    "Control",
+
+    "Classic Player Frame",
+
+    "Wilson"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "Wilson Pro Staff Six.One 95 18x20 V14 是Wilson经典控制型球拍的现代版本。它采用95平方英寸拍面、313克重量和18×20密线床，为高级球员提供极高精准度、稳定性和传统击球反馈。相比RF和现代Blade系列，它更加纯粹，更适合技术成熟、追求线路控制的比赛型玩家。",
+
+
+  "variants": [],
+
+
+  "verification": {
+
+    "status": "official",
+
+    "verified": true,
+
+
+    "knowledge_path":
+    "knowledge/racquets/wilson/wilson_pro_staff_six_one_95_18x20_v14.json"
+
+  }
+
+}
