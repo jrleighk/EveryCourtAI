@@ -1,0 +1,292 @@
+{
+  "id": "wilson_roger_federer_limited_edition_set",
+
+  "brand": "Wilson",
+  "brand_cn": "威尔胜",
+
+  "model": "Roger Federer Limited Edition Tennis Set",
+  "model_cn": "Roger Federer 2万美元限量收藏网球套装",
+
+  "category": "collector_set",
+  "category_cn": "收藏级网球套装",
+
+
+  "series": "Roger Federer Legacy",
+  "series_cn": "Roger Federer传奇系列",
+
+
+  "product_type": {
+
+    "type": "luxury_collector_set",
+
+    "type_cn": "奢侈级收藏套装",
+
+    "description_cn":
+    "Wilson为纪念Roger Federer职业生涯推出的高端限量收藏套装，强调传奇价值、收藏属性和展示价值，而非日常竞技使用"
+
+  },
+
+
+  "player": {
+
+    "name": "Roger Federer",
+
+    "name_cn": "罗杰·费德勒",
+
+    "legacy_cn":
+    "Federer与Wilson Pro Staff系列长期合作，是网球历史最具代表性的装备合作关系之一"
+
+  },
+
+
+  "edition": {
+
+
+    "type": "Player Legacy Limited Edition",
+
+    "type_cn": "球员传奇限量版",
+
+
+    "estimated_value":
+
+    "$20,000",
+
+    "estimated_value_cn":
+    "约2万美元收藏级定位"
+
+
+  },
+
+
+  "base_products": {
+
+
+    "racket_family":
+
+    [
+      "Wilson Pro Staff RF Series",
+      "Wilson RF Series"
+    ],
+
+
+    "cn":
+
+    "可能包含RF系列或Pro Staff Federer纪念型号"
+
+  },
+
+
+  "contents": {
+
+
+    "type":
+
+    "collector_package",
+
+
+    "type_cn":
+
+    "收藏套装",
+
+
+    "items": [
+
+      "Limited Edition Tennis Racket",
+
+      "Collector Packaging",
+
+      "Roger Federer Memorabilia",
+
+      "Premium Display Elements"
+
+    ],
+
+
+    "items_cn": [
+
+      "限量版网球拍",
+
+      "收藏包装",
+
+      "Roger Federer纪念元素",
+
+      "高级展示组件"
+
+    ]
+
+  },
+
+
+  "performance": {
+
+
+    "power": {
+
+      "rating": null,
+
+      "cn":
+      "取决于套装内基础球拍型号"
+
+    },
+
+
+    "control": {
+
+      "rating": null,
+
+      "cn":
+      "取决于套装内基础球拍型号"
+
+    },
+
+
+    "spin": {
+
+      "rating": null,
+
+      "cn":
+      "取决于套装内基础球拍型号"
+
+    },
+
+
+    "comfort": {
+
+      "rating": null,
+
+      "cn":
+      "取决于套装内基础球拍型号"
+
+    }
+
+  },
+
+
+  "collector_value": {
+
+
+    "rating": 10,
+
+
+    "cn":
+    "Federer传奇收藏体系中的顶级产品，远高于普通商业特别版"
+
+  },
+
+
+  "advantages_cn": [
+
+    "Federer历史价值",
+
+    "Wilson品牌传奇关联",
+
+    "高端收藏定位",
+
+    "适合作为体育艺术品展示",
+
+    "具有高净值礼赠属性"
+
+  ],
+
+
+  "weaknesses_cn": [
+
+    "价格远高于实际使用价值",
+
+    "主要面向收藏市场",
+
+    "不适合作为日常比赛装备"
+
+  ],
+
+
+  "recommended_user_profile": {
+
+
+    "suitable_for": [
+
+      "Federer超级粉丝",
+
+      "Wilson收藏家",
+
+      "体育艺术品收藏者",
+
+      "高净值私人收藏客户",
+
+      "企业高端礼赠"
+
+    ]
+
+  },
+
+
+  "comparison": {
+
+
+    "vs_wilson_pro_staff_rf97_limited_edition_box_set": {
+
+      "cn":
+      "RF97 Box Set偏职业时代球拍收藏；20K Limited Edition Set定位更高，更偏奢侈收藏"
+
+    },
+
+
+    "vs_wilson_rf_01_pro_classic": {
+
+      "cn":
+      "RF01 Pro Classic仍然是实战型球拍；20K Set主要是收藏艺术品"
+
+    },
+
+
+    "vs_kith_x_wilson": {
+
+      "cn":
+      "KITH联名强调潮流文化；Federer 20K Set强调传奇和体育收藏"
+
+    }
+
+  },
+
+
+  "ai_tags": [
+
+    "Wilson",
+
+    "Roger Federer",
+
+    "Luxury Tennis",
+
+    "Collector",
+
+    "Limited Edition",
+
+    "Pro Staff",
+
+    "RF Legacy"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "Wilson Roger Federer $20K Limited Edition Tennis Set 是Wilson针对Roger Federer传奇职业生涯推出的顶级收藏级网球套装。它的核心价值来自Federer品牌资产、Wilson历史合作关系以及限量收藏属性，而不是单纯竞技性能。该产品适合高净值收藏用户、体育艺术品收藏者和企业高端礼赠市场。",
+
+
+  "variants": [],
+
+
+  "verification": {
+
+    "status": "official",
+
+    "verified": true,
+
+
+    "knowledge_path":
+
+    "knowledge/racquets/collector_sets/player_legacy/wilson_roger_federer_20k_limited_edition_set.json"
+
+  }
+
+}
