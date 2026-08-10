@@ -1,0 +1,126 @@
+{
+  "id": "wilson_kith_blade_98_16x19_v9",
+
+  "brand": "Wilson",
+  "brand_cn": "威尔胜",
+
+  "collaboration_brand": "KITH",
+
+  "model": "KITH x Wilson Blade 98 16x19 V9",
+
+  "model_cn":
+  "KITH x Wilson Blade 98 16x19 V9 联名版",
+
+
+  "category": "collaboration_racket",
+
+  "category_cn":
+  "品牌联名网球拍",
+
+
+  "base_model":
+  "Wilson Blade 98 16x19 V9",
+
+
+  "series":
+  "Blade",
+
+  "series_cn":
+  "Blade 系列",
+
+
+  "generation":
+  "V9",
+
+
+  "collaboration": {
+
+    "type":
+    "fashion_collaboration",
+
+    "partner":
+    "KITH",
+
+    "theme_cn":
+    "KITH现代奢侈街头风格与Blade竞技网球文化结合"
+
+  },
+
+
+  "specifications": {
+
+
+    "head_size": {
+
+      "value":98,
+
+      "unit":"sq in",
+
+      "cn":"98平方英寸"
+
+    },
+
+
+    "weight_unstrung": {
+
+      "value":305,
+
+      "unit":"g",
+
+      "cn":"空拍重量305克"
+
+    },
+
+
+    "string_pattern": {
+
+      "value":"16x19",
+
+      "cn":"16×19开放式线床"
+
+    }
+
+  },
+
+
+  "collector_value": {
+
+    "rating":9,
+
+    "cn":
+    "KITH联名提升收藏和潮流价值"
+
+  },
+
+
+  "ai_tags":[
+
+    "KITH",
+
+    "Wilson",
+
+    "Blade",
+
+    "98",
+
+    "Fashion Collaboration",
+
+    "Collector"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "KITH x Wilson Blade 98 16x19 V9 将Blade系列竞技性能与KITH潮流文化结合。基础性能来自Blade 98 V9，适合高级玩家，同时具有明显的时尚收藏属性。",
+
+
+  "verification": {
+
+    "status":"official",
+
+    "verified":true
+
+  }
+
+}
