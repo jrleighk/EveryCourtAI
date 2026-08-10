@@ -1,0 +1,394 @@
+{
+  "id": "wilson_minions_clash_100_v2",
+
+  "brand": "Wilson",
+  "brand_cn": "威尔胜",
+
+  "collaboration_brand": "Minions",
+  "collaboration_brand_cn": "小黄人",
+
+  "model": "Minions Clash 100 V2 Limited Edition",
+  "model_cn": "小黄人 Clash 100 V2 联名限定版",
+
+  "category": "collaboration_racket",
+  "category_cn": "品牌联名网球拍",
+
+
+  "series": "Clash",
+  "series_cn": "Clash 系列",
+
+  "generation": "V2",
+  "generation_cn": "第二代版本",
+
+
+  "collaboration": {
+
+    "type": "character_collaboration",
+
+    "type_cn": "影视角色联名",
+
+    "partner": "Minions",
+
+    "partner_cn": "小黄人",
+
+    "theme_cn":
+    "结合Minions动画IP与Wilson Clash系列舒适型网球拍设计"
+
+  },
+
+
+  "base_model": {
+
+    "model": "Wilson Clash 100 V2",
+
+    "cn":
+    "基于Clash 100 V2标准型号"
+
+  },
+
+
+  "product_type": {
+
+    "type": "limited_collaboration",
+
+    "type_cn": "限定联名版本",
+
+    "description_cn":
+    "Clash 100 V2加入Minions主题设计，性能保持原型号特点，增加娱乐IP和收藏价值"
+
+  },
+
+
+  "player_profile": {
+
+    "level": [
+
+      "beginner",
+      "intermediate",
+      "club player"
+
+    ],
+
+    "level_cn": [
+
+      "初学者",
+      "中级球员",
+      "俱乐部玩家"
+
+    ],
+
+
+    "style": [
+
+      "comfort",
+      "easy swing",
+      "all court"
+
+    ],
+
+    "style_cn": [
+
+      "舒适型打法",
+      "容易挥动",
+      "全面型打法"
+
+    ]
+
+  },
+
+
+  "specifications": {
+
+
+    "head_size": {
+
+      "value": 100,
+
+      "unit": "sq in",
+
+      "cn": "100平方英寸"
+
+    },
+
+
+    "weight_unstrung": {
+
+      "value": 295,
+
+      "unit": "g",
+
+      "cn": "空拍重量295克"
+
+    },
+
+
+    "weight_strung": {
+
+      "value": 310,
+
+      "unit": "g approx",
+
+      "cn": "穿线后约310克"
+
+    },
+
+
+    "balance": {
+
+      "value": 310,
+
+      "unit": "mm",
+
+      "cn": "平衡点约310毫米"
+
+    },
+
+
+    "length": {
+
+      "value": 27,
+
+      "unit": "inch",
+
+      "cn": "27英寸"
+
+    },
+
+
+    "string_pattern": {
+
+      "value": "16x19",
+
+      "cn": "16×19开放式线床"
+
+    },
+
+
+    "beam": {
+
+      "value": "24.5 mm",
+
+      "cn":
+      "Clash柔性框架"
+
+    }
+
+  },
+
+
+  "technology": [
+
+    {
+
+      "name": "FreeFlex",
+
+      "cn":
+      "三维碳纤维结构，提高柔韧性"
+
+    },
+
+
+    {
+
+      "name": "FORTYFIVE",
+
+      "cn":
+      "45度碳纤维结构，提高稳定性"
+
+    }
+
+  ],
+
+
+  "performance": {
+
+    "power": {
+
+      "rating": 7,
+
+      "cn": "力量输出：7/10"
+
+    },
+
+
+    "control": {
+
+      "rating": 7,
+
+      "cn": "控制性能：7/10"
+
+    },
+
+
+    "spin": {
+
+      "rating": 8,
+
+      "cn": "旋转能力：8/10"
+
+    },
+
+
+    "comfort": {
+
+      "rating": 10,
+
+      "cn": "舒适性：10/10"
+
+    },
+
+
+    "stability": {
+
+      "rating": 7,
+
+      "cn": "稳定性：7/10"
+
+    },
+
+
+    "maneuverability": {
+
+      "rating": 9,
+
+      "cn": "挥拍灵活性：9/10"
+
+    }
+
+  },
+
+
+  "advantages_cn": [
+
+    "Clash系列极佳舒适性",
+
+    "100平方英寸高容错",
+
+    "Minions动画IP收藏价值",
+
+    "适合娱乐和礼赠场景",
+
+    "Wilson联名文化属性"
+
+  ],
+
+
+  "weaknesses_cn": [
+
+    "竞技性能不是旗舰级",
+
+    "收藏价值依赖IP热度",
+
+    "不适合职业竞技"
+
+  ],
+
+
+  "recommended_player_profile": {
+
+    "suitable_for": [
+
+      "初中级玩家",
+
+      "家庭娱乐用户",
+
+      "年轻球员",
+
+      "Minions粉丝",
+
+      "Wilson收藏用户"
+
+    ],
+
+
+    "not_recommended_for": [
+
+      "职业比赛玩家",
+
+      "追求极致控制玩家"
+
+    ]
+
+  },
+
+
+  "collector_value": {
+
+    "rating": 8,
+
+    "cn":
+    "热门影视IP联名，具有礼赠和收藏价值"
+
+  },
+
+
+  "comparison": {
+
+
+    "vs_wilson_clash_100_v2": {
+
+      "cn":
+      "性能基础一致，Minions版本增加IP收藏属性"
+
+    },
+
+
+    "vs_wilson_clash_100_v2_california": {
+
+      "cn":
+      "California强调生活方式；Minions强调娱乐IP"
+
+    },
+
+
+    "vs_kith_x_wilson": {
+
+      "cn":
+      "KITH偏高端潮流；Minions偏大众文化收藏"
+
+    }
+
+  },
+
+
+  "ai_tags": [
+
+    "Wilson",
+
+    "Clash",
+
+    "Minions",
+
+    "Collaboration",
+
+    "Limited Edition",
+
+    "Character",
+
+    "Collector"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "Wilson Minions Clash 100 V2 是Wilson Clash系列与Minions动画IP合作推出的限定版本。它保留Clash 100 V2舒适、高容错和易使用特点，同时增加娱乐角色文化和收藏属性。适合家庭用户、年轻球员、IP收藏者以及寻找特殊礼赠产品的消费者。",
+
+
+  "variants": [],
+
+
+  "verification": {
+
+    "status": "official",
+
+    "verified": true,
+
+
+    "knowledge_path":
+
+    "knowledge/racquets/collaborations/wilson_minions_clash_100_v2.json"
+
+  }
+
+}
