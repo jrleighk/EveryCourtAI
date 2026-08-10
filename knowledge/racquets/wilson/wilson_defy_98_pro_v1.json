@@ -1,0 +1,419 @@
+{
+  "id": "wilson_defy_98_pro_v1",
+
+  "brand": "Wilson",
+  "brand_cn": "威尔胜",
+
+  "model": "Defy 98 Pro V1",
+  "model_cn": "Defy 98 Pro V1",
+
+  "category": "racket",
+  "category_cn": "网球拍",
+
+  "series": "Defy",
+  "series_cn": "Defy 系列",
+
+  "generation": "V1",
+  "generation_cn": "第一代版本",
+
+
+  "release_information": {
+
+    "official": true,
+
+    "release_version": "V1",
+
+    "release_version_cn":
+    "第一代正式版本"
+
+  },
+
+
+  "player_profile": {
+
+    "level": [
+      "advanced",
+      "competitive amateur",
+      "professional"
+    ],
+
+    "level_cn": [
+      "高级球员",
+      "竞技型业余球员",
+      "职业竞技球员"
+    ],
+
+
+    "style": [
+      "control",
+      "precision",
+      "all court"
+    ],
+
+    "style_cn": [
+      "控制型打法",
+      "精准线路",
+      "全面型打法"
+    ]
+
+  },
+
+
+  "specifications": {
+
+    "head_size": {
+
+      "value": 98,
+
+      "unit": "sq in",
+
+      "cn": "98平方英寸"
+
+    },
+
+
+    "weight_unstrung": {
+
+      "value": 305,
+
+      "unit": "g",
+
+      "cn": "空拍重量305克"
+
+    },
+
+
+    "weight_strung": {
+
+      "value": 320,
+
+      "unit": "g approx",
+
+      "cn": "穿线后约320克"
+
+    },
+
+
+    "balance": {
+
+      "value": 320,
+
+      "unit": "mm",
+
+      "cn": "平衡点约320毫米"
+
+    },
+
+
+    "length": {
+
+      "value": 27,
+
+      "unit": "inch",
+
+      "cn": "27英寸"
+
+    },
+
+
+    "string_pattern": {
+
+      "value": "16x19",
+
+      "cn": "16×19线床"
+
+    },
+
+
+    "beam": {
+
+      "value": "22 mm",
+
+      "cn": "较薄拍框设计"
+
+    }
+
+  },
+
+
+  "technology": [
+
+    {
+
+      "name": "Aeroslide",
+
+      "cn":
+      "优化空气动力学设计，提高挥拍速度"
+
+    },
+
+
+    {
+
+      "name": "StableFeel",
+
+      "cn":
+      "增强击球稳定性，提高反馈"
+
+    },
+
+
+    {
+
+      "name": "FortyFive",
+
+      "cn":
+      "45度碳纤维结构，提高球感和控制"
+
+    }
+
+  ],
+
+
+  "performance": {
+
+    "power": {
+
+      "rating": 7,
+
+      "cn": "力量输出：7/10"
+
+    },
+
+
+    "control": {
+
+      "rating": 10,
+
+      "cn": "控制性能：10/10"
+
+    },
+
+
+    "spin": {
+
+      "rating": 8,
+
+      "cn": "旋转能力：8/10"
+
+    },
+
+
+    "comfort": {
+
+      "rating": 8,
+
+      "cn": "舒适性：8/10"
+
+    },
+
+
+    "stability": {
+
+      "rating": 9,
+
+      "cn": "稳定性：9/10"
+
+    },
+
+
+    "maneuverability": {
+
+      "rating": 8,
+
+      "cn": "挥拍灵活性：8/10"
+
+    }
+
+  },
+
+
+  "advantages_cn": [
+
+    "98平方英寸精准控制",
+
+    "高级球员需要的稳定反馈",
+
+    "快速挥拍表现优秀",
+
+    "适合全面型竞技打法",
+
+    "击球线路精准"
+
+  ],
+
+
+  "weaknesses_cn": [
+
+    "力量输出低于Pure Drive系列",
+
+    "甜区小于100平方英寸球拍",
+
+    "需要较好的技术基础",
+
+    "不适合初学者"
+
+  ],
+
+
+  "recommended_player_profile": {
+
+
+    "suitable_for": [
+
+      "高级业余球员",
+
+      "比赛型球员",
+
+      "喜欢控制线路的底线球员",
+
+      "喜欢传统98拍面的玩家"
+
+    ],
+
+
+    "not_recommended_for": [
+
+      "初学者",
+
+      "需要球拍提供大量力量的玩家",
+
+      "挥拍速度较慢球员"
+
+    ]
+
+  },
+
+
+  "recommended_strings": {
+
+
+    "control": [
+
+      "Luxilon ALU Power 1.25",
+
+      "Wilson Revolve Spin"
+
+    ],
+
+
+    "spin": [
+
+      "Solinco Hyper-G 1.25",
+
+      "Luxilon 4G"
+
+    ],
+
+
+    "hybrid": [
+
+      "Natural Gut + Polyester"
+
+    ]
+
+  },
+
+
+  "recommended_tension": {
+
+    "range": {
+
+      "value": "22-25 kg",
+
+      "cn":
+      "推荐穿线范围22-25公斤"
+
+    },
+
+
+    "control_player": {
+
+      "value": "24-25 kg",
+
+      "cn":
+      "控制型球员建议24-25公斤"
+
+    },
+
+
+    "power_player": {
+
+      "value": "22-23 kg",
+
+      "cn":
+      "需要更多弹性建议22-23公斤"
+
+    }
+
+  },
+
+
+  "comparison": {
+
+
+    "vs_wilson_blade_98_2025": {
+
+      "cn":
+      "Defy 98 Pro V1 更强调现代速度和稳定，Blade 98 更强调经典控制和柔和手感"
+
+    },
+
+
+    "vs_wilson_rf01_pro_classic": {
+
+      "cn":
+      "Defy 98 Pro V1 更偏竞技控制，RF01 Pro Classic 更偏传统全能和力量反馈"
+
+    },
+
+
+    "vs_babolat_pure_drive_98_2025": {
+
+      "cn":
+      "Pure Drive 98 更偏力量输出，Defy 98 Pro V1 更偏控制和精准"
+
+    }
+
+  },
+
+
+  "ai_tags": [
+
+    "98拍面",
+
+    "控制",
+
+    "高级球员",
+
+    "Wilson",
+
+    "竞技",
+
+    "精准"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "Wilson Defy 98 Pro V1 是Wilson面向高级球员推出的98平方英寸竞技型球拍。它强调精准控制、稳定反馈和快速挥拍能力，适合技术成熟、追求线路控制和比赛表现的球员。相比Pure Drive系列，它减少力量辅助，提升控制和竞技属性。",
+
+
+  "variants": [],
+
+
+  "verification": {
+
+    "status": "official",
+
+    "verified": true,
+
+
+    "knowledge_path":
+
+    "knowledge/racquets/wilson/wilson_defy_98_pro_v1.json"
+
+  }
+
+}
