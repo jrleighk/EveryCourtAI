@@ -1,0 +1,426 @@
+{
+  "id": "wilson_clash_100_pro_v3_2025",
+
+  "brand": "Wilson",
+  "brand_cn": "威尔胜",
+
+  "model": "Clash 100 Pro V3",
+  "model_cn": "Clash 100 Pro V3",
+
+  "category": "racket",
+  "category_cn": "网球拍",
+
+  "series": "Clash",
+  "series_cn": "Clash 系列",
+
+  "generation": "V3",
+  "generation_cn": "第三代版本",
+
+  "release_year": 2025,
+  "release_year_cn": "2025年发布",
+
+
+  "product_type": {
+
+    "type": "retail",
+
+    "type_cn": "零售版本",
+
+    "description_cn":
+    "Clash第三代Pro竞技版本，在保持Clash系列舒适性的同时，提高稳定性、控制能力和比赛适应性"
+
+  },
+
+
+  "player_profile": {
+
+    "level": [
+      "advanced amateur",
+      "competitive player",
+      "club player"
+    ],
+
+    "level_cn": [
+      "高级业余球员",
+      "竞技型球员",
+      "俱乐部球员"
+    ],
+
+
+    "style": [
+      "comfort",
+      "all court",
+      "control"
+    ],
+
+    "style_cn": [
+      "舒适型打法",
+      "全面型打法",
+      "控制型打法"
+    ]
+
+  },
+
+
+  "specifications": {
+
+
+    "head_size": {
+
+      "value": 100,
+
+      "unit": "sq in",
+
+      "cn": "100平方英寸"
+
+    },
+
+
+    "weight_unstrung": {
+
+      "value": 310,
+
+      "unit": "g",
+
+      "cn": "空拍重量310克"
+
+    },
+
+
+    "weight_strung": {
+
+      "value": 326,
+
+      "unit": "g approx",
+
+      "cn": "穿线后约326克"
+
+    },
+
+
+    "balance": {
+
+      "value": 306,
+
+      "unit": "mm",
+
+      "cn": "平衡点约306毫米（头轻）"
+
+    },
+
+
+    "length": {
+
+      "value": 27,
+
+      "unit": "inch",
+
+      "cn": "27英寸"
+
+    },
+
+
+    "string_pattern": {
+
+      "value": "16x20",
+
+      "cn": "16×20线床"
+
+    },
+
+
+    "beam": {
+
+      "value": "24.5 mm",
+
+      "cn": "Clash柔性框架"
+
+    },
+
+
+    "swing_weight": {
+
+      "value": "around 320",
+
+      "cn": "挥重约320"
+
+    }
+
+  },
+
+
+  "technology": [
+
+    {
+      "name": "FreeFlex",
+
+      "cn":
+      "三维碳纤维结构，提高拍框柔韧性和击球自由度"
+
+    },
+
+
+    {
+      "name": "FORTYFIVE",
+
+      "cn":
+      "45度碳纤维结构，提高稳定性和球感"
+
+    },
+
+
+    {
+      "name": "Click & Go Bumper",
+
+      "cn":
+      "可替换护框系统"
+
+    },
+
+
+    {
+      "name": "Agiplast",
+
+      "cn":
+      "环保材料技术"
+
+    }
+
+  ],
+
+
+  "performance": {
+
+    "power": {
+
+      "rating": 7,
+
+      "cn": "力量输出：7/10"
+
+    },
+
+
+    "control": {
+
+      "rating": 8,
+
+      "cn": "控制性能：8/10"
+
+    },
+
+
+    "spin": {
+
+      "rating": 8,
+
+      "cn": "旋转能力：8/10"
+
+    },
+
+
+    "comfort": {
+
+      "rating": 10,
+
+      "cn": "舒适性：10/10"
+
+    },
+
+
+    "stability": {
+
+      "rating": 9,
+
+      "cn": "稳定性：9/10"
+
+    },
+
+
+    "maneuverability": {
+
+      "rating": 8,
+
+      "cn": "挥拍灵活性：8/10"
+
+    }
+
+  },
+
+
+  "advantages_cn": [
+
+    "Clash系列旗舰舒适体验",
+
+    "Pro版本稳定性优秀",
+
+    "100平方英寸高容错",
+
+    "16×20线床控制更好",
+
+    "适合长期比赛使用"
+
+  ],
+
+
+  "weaknesses_cn": [
+
+    "力量输出低于Ultra和Pure Drive",
+
+    "击球反馈较柔和",
+
+    "挥重较高，需要一定力量"
+
+  ],
+
+
+  "recommended_player_profile": {
+
+    "suitable_for": [
+
+      "高级业余球员",
+
+      "俱乐部竞技玩家",
+
+      "手臂保护需求玩家",
+
+      "全面型打法球员",
+
+      "喜欢柔和手感玩家"
+
+    ],
+
+
+    "not_recommended_for": [
+
+      "初学者",
+
+      "追求极端力量玩家",
+
+      "喜欢硬朗爆发反馈玩家"
+
+    ]
+
+  },
+
+
+  "recommended_strings": {
+
+    "comfort": [
+
+      "Wilson NXT",
+
+      "Wilson Sensation"
+
+    ],
+
+
+    "control": [
+
+      "Luxilon ALU Power",
+
+      "Wilson Revolve"
+
+    ],
+
+
+    "hybrid": [
+
+      "Natural Gut + Polyester"
+
+    ]
+
+  },
+
+
+  "recommended_tension": {
+
+    "range": {
+
+      "value": "22-25 kg",
+
+      "cn":
+      "推荐穿线范围22-25公斤"
+
+    }
+
+  },
+
+
+  "comparison": {
+
+
+    "vs_wilson_clash_100_pro_v2_2022": {
+
+      "cn":
+      "V3版本进一步提升稳定性和现代竞技感，同时保持Clash柔软舒适特点"
+
+    },
+
+
+    "vs_wilson_clash_100_v3_2025": {
+
+      "cn":
+      "Pro版本重量更高，稳定性和比赛能力更强"
+
+    },
+
+
+    "vs_wilson_blade_100_pro_v10": {
+
+      "cn":
+      "Blade 100 Pro更偏控制反馈，Clash 100 Pro更偏舒适和容错"
+
+    },
+
+
+    "vs_wilson_ultra_100_v5_2025": {
+
+      "cn":
+      "Ultra 100力量更直接，Clash 100 Pro更舒适、更保护手臂"
+
+    }
+
+  },
+
+
+  "ai_tags": [
+
+    "Clash",
+
+    "100拍面",
+
+    "Pro",
+
+    "V3",
+
+    "Comfort",
+
+    "Control",
+
+    "Wilson"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "Wilson Clash 100 Pro V3 2025 是Clash第三代旗舰竞技型号。它采用310克空拍重量、100平方英寸拍面和16×20线床，在极高舒适性的基础上提供更好的稳定性和控制能力。相比Ultra系列，它更注重舒适和手臂保护；相比普通Clash 100，它更适合竞技比赛。",
+
+
+  "variants": [],
+
+
+  "verification": {
+
+    "status": "official",
+
+    "verified": true,
+
+
+    "knowledge_path":
+
+    "knowledge/racquets/wilson/wilson_clash_100_pro_v3_2025.json"
+
+  }
+
+}
