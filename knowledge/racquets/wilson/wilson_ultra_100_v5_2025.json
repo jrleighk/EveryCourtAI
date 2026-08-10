@@ -1,0 +1,438 @@
+{
+  "id": "wilson_ultra_100_v5_2025",
+
+  "brand": "Wilson",
+  "brand_cn": "威尔胜",
+
+  "model": "Ultra 100 V5 2025",
+  "model_cn": "Ultra 100 V5 2025",
+
+  "category": "racket",
+  "category_cn": "网球拍",
+
+  "series": "Ultra",
+  "series_cn": "Ultra 系列",
+
+  "generation": "V5",
+  "generation_cn": "第五代版本",
+
+
+  "product_type": {
+
+    "type": "retail",
+
+    "type_cn": "零售版本",
+
+    "description_cn":
+    "Wilson Ultra系列核心力量型型号，采用100平方英寸拍面设计，强调速度、力量和现代底线表现"
+
+  },
+
+
+  "player_profile": {
+
+    "level": [
+      "intermediate",
+      "advanced amateur",
+      "club player"
+    ],
+
+    "level_cn": [
+      "中级球员",
+      "高级业余球员",
+      "俱乐部球员"
+    ],
+
+
+    "style": [
+      "power",
+      "baseline",
+      "modern tennis"
+    ],
+
+    "style_cn": [
+      "力量型打法",
+      "底线攻击",
+      "现代网球打法"
+    ]
+
+  },
+
+
+  "specifications": {
+
+
+    "head_size": {
+
+      "value": 100,
+
+      "unit": "sq in",
+
+      "cn": "100平方英寸"
+
+    },
+
+
+    "weight_unstrung": {
+
+      "value": 300,
+
+      "unit": "g",
+
+      "cn": "空拍重量300克"
+
+    },
+
+
+    "weight_strung": {
+
+      "value": 315,
+
+      "unit": "g approx",
+
+      "cn": "穿线后约315克"
+
+    },
+
+
+    "balance": {
+
+      "value": 320,
+
+      "unit": "mm",
+
+      "cn": "平衡点约320毫米"
+
+    },
+
+
+    "length": {
+
+      "value": 27,
+
+      "unit": "inch",
+
+      "cn": "27英寸"
+
+    },
+
+
+    "string_pattern": {
+
+      "value": "16x19",
+
+      "cn": "16×19开放式线床"
+
+    },
+
+
+    "beam": {
+
+      "value": "24-26 mm",
+
+      "cn": "力量型厚框设计"
+
+    },
+
+
+    "swing_weight": {
+
+      "value": "around 320",
+
+      "cn": "挥重约320"
+
+    }
+
+  },
+
+
+  "technology": [
+
+    {
+
+      "name": "FORTYFIVE",
+
+      "cn":
+      "45度碳纤维结构，提高稳定性和击球反馈"
+
+    },
+
+
+    {
+
+      "name": "Crush Zone",
+
+      "cn":
+      "拍框压缩结构，提高力量输出和舒适度"
+
+    },
+
+
+    {
+
+      "name": "Power Profile Frame",
+
+      "cn":
+      "力量型框架设计，提高球速"
+
+    }
+
+  ],
+
+
+  "performance": {
+
+    "power": {
+
+      "rating": 9,
+
+      "cn": "力量输出：9/10"
+
+    },
+
+
+    "control": {
+
+      "rating": 7,
+
+      "cn": "控制性能：7/10"
+
+    },
+
+
+    "spin": {
+
+      "rating": 8,
+
+      "cn": "旋转能力：8/10"
+
+    },
+
+
+    "comfort": {
+
+      "rating": 8,
+
+      "cn": "舒适性：8/10"
+
+    },
+
+
+    "stability": {
+
+      "rating": 8,
+
+      "cn": "稳定性：8/10"
+
+    },
+
+
+    "maneuverability": {
+
+      "rating": 8,
+
+      "cn": "挥拍灵活性：8/10"
+
+    }
+
+  },
+
+
+  "advantages_cn": [
+
+    "Ultra系列标志性力量输出",
+
+    "100平方英寸高容错拍面",
+
+    "容易产生球速",
+
+    "适合现代底线攻击",
+
+    "比98型号更容易使用"
+
+  ],
+
+
+  "weaknesses_cn": [
+
+    "控制精度低于98平方英寸型号",
+
+    "手感不如Blade和Pro Staff传统",
+
+    "力量较大，需要控制线床和穿线",
+
+    "不适合追求极致精准玩家"
+
+  ],
+
+
+  "recommended_player_profile": {
+
+    "suitable_for": [
+
+      "中高级业余球员",
+
+      "底线攻击型玩家",
+
+      "喜欢主动进攻球员",
+
+      "希望获得更多球速玩家",
+
+      "从轻量球拍升级用户"
+
+    ],
+
+
+    "not_recommended_for": [
+
+      "纯控制型球员",
+
+      "喜欢传统柔和手感玩家",
+
+      "初学者"
+
+    ]
+
+  },
+
+
+  "recommended_strings": {
+
+
+    "spin_power": [
+
+      "Luxilon ALU Power 1.25",
+
+      "Solinco Hyper-G 1.25"
+
+    ],
+
+
+    "comfort": [
+
+      "Wilson NXT",
+
+      "Wilson Sensation"
+
+    ],
+
+
+    "hybrid": [
+
+      "Natural Gut + Polyester"
+
+    ]
+
+  },
+
+
+  "recommended_tension": {
+
+
+    "range": {
+
+      "value": "22-25 kg",
+
+      "cn": "推荐穿线范围22-25公斤"
+
+    },
+
+
+    "power_player": {
+
+      "value": "23-24 kg",
+
+      "cn":
+      "力量型球员建议23-24公斤"
+
+    },
+
+
+    "control_player": {
+
+      "value": "24-25 kg",
+
+      "cn":
+      "控制型球员建议24-25公斤"
+
+    }
+
+  },
+
+
+  "comparison": {
+
+
+    "vs_wilson_ultra_98_tour_v5_2025": {
+
+      "cn":
+      "Ultra 100 V5拥有更大甜区和更高力量；Ultra 98 Tour控制更精准"
+
+    },
+
+
+    "vs_wilson_ultra_95_qz_v5_2025": {
+
+      "cn":
+      "Ultra 100更容易使用，95 QZ更偏比赛控制"
+
+    },
+
+
+    "vs_wilson_blade_100_v10": {
+
+      "cn":
+      "Ultra 100更强调力量和速度，Blade 100更强调控制和球感"
+
+    },
+
+
+    "vs_babolat_pure_drive_2026": {
+
+      "cn":
+      "Pure Drive力量输出更直接，Ultra 100提供更现代、更快挥拍体验"
+
+    }
+
+  },
+
+
+  "ai_tags": [
+
+    "Ultra",
+
+    "100拍面",
+
+    "Power",
+
+    "Baseline",
+
+    "Modern Tennis",
+
+    "Wilson"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "Wilson Ultra 100 V5 2025 是Ultra系列最核心的力量型型号。它采用100平方英寸拍面、300克重量和16×19线床，在力量、旋转和容错之间提供现代网球所需的平衡。相比Ultra 98 Tour，它更容易产生球速；相比Blade 100，它更加直接强调攻击和爆发。适合现代底线进攻型业余球员。",
+
+
+  "variants": [],
+
+
+  "verification": {
+
+    "status": "official",
+
+    "verified": true,
+
+
+    "knowledge_path":
+
+    "knowledge/racquets/wilson/wilson_ultra_100_v5_2025.json"
+
+  }
+
+}
