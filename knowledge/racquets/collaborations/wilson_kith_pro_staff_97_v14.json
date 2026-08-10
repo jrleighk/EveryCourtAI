@@ -1,0 +1,98 @@
+{
+  "id": "wilson_kith_pro_staff_97_v14",
+
+  "brand": "Wilson",
+  "brand_cn": "威尔胜",
+
+  "collaboration_brand": "KITH",
+  "collaboration_brand_cn": "KITH",
+
+  "model": "KITH x Wilson Pro Staff 97 V14",
+  "model_cn": "KITH x Wilson Pro Staff 97 V14 联名版",
+
+  "category": "collaboration_racket",
+  "category_cn": "品牌联名网球拍",
+
+  "base_model": "Wilson Pro Staff 97 V14",
+
+  "series": "Pro Staff",
+  "series_cn": "Pro Staff 系列",
+
+  "generation": "V14",
+
+
+  "collaboration": {
+
+    "type": "fashion_collaboration",
+
+    "type_cn": "时尚品牌联名",
+
+    "partner": "KITH",
+
+    "theme_cn":
+    "结合KITH街头奢侈运动美学与Wilson经典Pro Staff文化"
+
+  },
+
+
+  "specifications": {
+
+    "head_size": {
+      "value": 97,
+      "unit": "sq in",
+      "cn": "97平方英寸"
+    },
+
+    "weight_unstrung": {
+      "value": 315,
+      "unit": "g",
+      "cn": "空拍重量315克"
+    },
+
+    "string_pattern": {
+      "value": "16x19",
+      "cn": "16×19开放式线床"
+    }
+
+  },
+
+
+  "collector_value": {
+
+    "rating": 9,
+
+    "cn":
+    "KITH作为高端街头品牌联名，收藏价值高于普通Pro Staff"
+
+  },
+
+
+  "ai_tags": [
+
+    "KITH",
+
+    "Wilson",
+
+    "Pro Staff",
+
+    "Fashion Collaboration",
+
+    "Luxury Tennis"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "KITH x Wilson Pro Staff 97 V14 是Wilson经典控制系列与纽约时尚品牌KITH合作推出的限定版本。性能基础来自Pro Staff 97 V14，但增加了高端潮流收藏属性，适合Wilson收藏用户和Luxury Tennis Lifestyle用户。",
+
+
+  "verification": {
+
+    "status": "official",
+
+    "verified": true
+
+  }
+
+}
