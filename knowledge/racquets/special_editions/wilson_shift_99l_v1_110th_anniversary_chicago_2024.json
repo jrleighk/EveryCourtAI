@@ -1,0 +1,412 @@
+{
+  "id": "wilson_shift_99l_v1_110th_anniversary_chicago_2024",
+
+  "brand": "Wilson",
+  "brand_cn": "威尔胜",
+
+  "model": "Shift 99L V1 110th Anniversary Chicago Limited Edition",
+  "model_cn": "Shift 99L V1 芝加哥110周年纪念限定版",
+
+  "category": "special_edition_racket",
+  "category_cn": "纪念特别版网球拍",
+
+  "series": "Shift",
+  "series_cn": "Shift 系列",
+
+  "generation": "V1",
+  "generation_cn": "第一代版本",
+
+  "release_year": 2024,
+
+
+  "edition": {
+
+    "type": "Heritage Anniversary Edition",
+
+    "type_cn": "品牌周年纪念版",
+
+    "name": "110th Anniversary Chicago Limited Edition",
+
+    "name_cn": "芝加哥110周年限定版",
+
+    "theme_cn":
+    "纪念Wilson品牌110周年，并致敬品牌诞生地芝加哥历史文化"
+
+  },
+
+
+  "heritage": {
+
+    "brand_history_cn":
+    "Wilson Sporting Goods成立于1913年，总部历史与芝加哥有深厚联系",
+
+    "theme_cn":
+    "结合Wilson百年网球文化、芝加哥城市精神和现代Shift系列设计"
+
+  },
+
+
+  "base_model": {
+
+    "model":
+    "Wilson Shift 99L V1",
+
+    "cn":
+    "基于Shift 99L V1轻量竞技型号"
+
+  },
+
+
+  "product_type": {
+
+    "type": "retail_special",
+
+    "type_cn": "零售限定版本",
+
+    "description_cn":
+    "Shift 99L V1的纪念特别配色版本，性能保持原型号特点，增加周年纪念和收藏属性"
+
+  },
+
+
+  "player_profile": {
+
+    "level": [
+
+      "intermediate",
+      "advanced amateur",
+      "club player"
+
+    ],
+
+    "level_cn": [
+
+      "中级球员",
+      "高级业余球员",
+      "俱乐部玩家"
+
+    ],
+
+
+    "style": [
+
+      "spin",
+      "modern baseline",
+      "fast swing"
+
+    ],
+
+    "style_cn": [
+
+      "旋转型打法",
+      "现代底线打法",
+      "快速挥拍"
+
+    ]
+
+  },
+
+
+  "specifications": {
+
+
+    "head_size": {
+
+      "value": 99,
+
+      "unit": "sq in",
+
+      "cn": "99平方英寸"
+
+    },
+
+
+    "weight_unstrung": {
+
+      "value": 285,
+
+      "unit": "g",
+
+      "cn": "空拍重量285克"
+
+    },
+
+
+    "weight_strung": {
+
+      "value": 300,
+
+      "unit": "g approx",
+
+      "cn": "穿线后约300克"
+
+    },
+
+
+    "balance": {
+
+      "value": 330,
+
+      "unit": "mm",
+
+      "cn": "平衡点约330毫米"
+
+    },
+
+
+    "length": {
+
+      "value": 27,
+
+      "unit": "inch",
+
+      "cn": "27英寸"
+
+    },
+
+
+    "string_pattern": {
+
+      "value": "16x20",
+
+      "cn": "16×20线床"
+
+    },
+
+
+    "beam": {
+
+      "value": "23.5 mm",
+
+      "cn": "现代竞技框架"
+
+    }
+
+  },
+
+
+  "technology": [
+
+    {
+
+      "name": "Slicing Geometry",
+
+      "cn":
+      "优化拍框结构，提高旋转能力"
+
+    },
+
+
+    {
+
+      "name": "Carbon Mapping",
+
+      "cn":
+      "优化碳纤维布局，提高稳定性"
+
+    },
+
+
+    {
+
+      "name": "DirectConnect",
+
+      "cn":
+      "增强手柄连接，提高力量传递"
+
+    }
+
+  ],
+
+
+  "performance": {
+
+    "power": {
+
+      "rating": 7,
+
+      "cn": "力量输出：7/10"
+
+    },
+
+
+    "control": {
+
+      "rating": 8,
+
+      "cn": "控制性能：8/10"
+
+    },
+
+
+    "spin": {
+
+      "rating": 9,
+
+      "cn": "旋转能力：9/10"
+
+    },
+
+
+    "comfort": {
+
+      "rating": 8,
+
+      "cn": "舒适性：8/10"
+
+    },
+
+
+    "stability": {
+
+      "rating": 7,
+
+      "cn": "稳定性：7/10"
+
+    },
+
+
+    "maneuverability": {
+
+      "rating": 10,
+
+      "cn": "挥拍灵活性：10/10"
+
+    }
+
+  },
+
+
+  "advantages_cn": [
+
+    "Shift系列优秀旋转能力",
+
+    "285克重量容易操控",
+
+    "芝加哥110周年主题设计",
+
+    "Wilson品牌历史收藏价值",
+
+    "适合日常使用和收藏"
+
+  ],
+
+
+  "weaknesses_cn": [
+
+    "稳定性低于Shift 99 Pro",
+
+    "力量输出有限",
+
+    "高级比赛球员可能需要更高重量"
+
+  ],
+
+
+  "recommended_player_profile": {
+
+    "suitable_for": [
+
+      "中高级业余球员",
+
+      "年轻球员",
+
+      "喜欢旋转打法用户",
+
+      "Wilson品牌收藏者",
+
+      "芝加哥文化收藏用户"
+
+    ],
+
+
+    "not_recommended_for": [
+
+      "职业竞技球员",
+
+      "追求极限稳定玩家"
+
+    ]
+
+  },
+
+
+  "collector_value": {
+
+    "rating": 8,
+
+    "cn":
+    "Wilson 110周年纪念和Chicago主题赋予额外收藏价值"
+
+  },
+
+
+  "comparison": {
+
+
+    "vs_wilson_shift_99l_v1": {
+
+      "cn":
+      "性能基础一致，110周年版本增加历史纪念价值"
+
+    },
+
+
+    "vs_wilson_shift_99l_v1_year_of_the_horse": {
+
+      "cn":
+      "马年版强调生肖文化；Chicago 110周年强调Wilson品牌历史"
+
+    },
+
+
+    "vs_kith_x_wilson_shift_99_v1": {
+
+      "cn":
+      "KITH强调潮流联名；Chicago Edition强调品牌传承"
+
+    }
+
+  },
+
+
+  "ai_tags": [
+
+    "Wilson",
+
+    "Shift",
+
+    "99L",
+
+    "Chicago",
+
+    "110 Anniversary",
+
+    "Heritage",
+
+    "Limited Edition"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "Wilson Shift 99L V1 110th Anniversary Chicago Limited Edition 是Wilson为纪念品牌110周年推出的特别版本。它以Shift 99L V1为基础，结合芝加哥品牌历史文化元素，在保持轻量、旋转和现代底线性能的同时，增加Wilson Heritage收藏价值。适合Wilson收藏者、品牌文化爱好者以及喜欢特别版装备的网球用户。",
+
+
+  "variants": [],
+
+
+  "verification": {
+
+    "status": "official",
+
+    "verified": true,
+
+
+    "knowledge_path":
+    "knowledge/racquets/special_editions/heritage/wilson_shift_99l_v1_110th_anniversary_chicago_2024.json"
+
+  }
+
+}
