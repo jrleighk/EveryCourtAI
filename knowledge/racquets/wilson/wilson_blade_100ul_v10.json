@@ -1,0 +1,442 @@
+{
+  "id": "wilson_blade_100ul_v10",
+
+  "brand": "Wilson",
+  "brand_cn": "威尔胜",
+
+  "model": "Blade 100UL V10",
+  "model_cn": "Blade 100UL V10",
+
+  "category": "racket",
+  "category_cn": "网球拍",
+
+  "series": "Blade",
+  "series_cn": "Blade 系列",
+
+  "generation": "V10",
+  "generation_cn": "第10代版本",
+
+
+  "product_type": {
+
+    "type": "retail",
+
+    "type_cn": "零售版本",
+
+    "description_cn":
+    "Blade系列轻量版本，通过降低重量提高挥拍速度和使用舒适性，适合更多业余球员"
+
+  },
+
+
+  "player_profile": {
+
+    "level": [
+      "beginner",
+      "intermediate",
+      "club player"
+    ],
+
+    "level_cn": [
+      "初学者",
+      "中级球员",
+      "俱乐部球员"
+    ],
+
+
+    "style": [
+      "easy swing",
+      "all court",
+      "spin"
+    ],
+
+    "style_cn": [
+      "轻松挥拍",
+      "全面型打法",
+      "旋转型打法"
+    ]
+
+  },
+
+
+  "specifications": {
+
+    "head_size": {
+
+      "value": 100,
+
+      "unit": "sq in",
+
+      "cn": "100平方英寸"
+
+    },
+
+
+    "weight_unstrung": {
+
+      "value": 285,
+
+      "unit": "g",
+
+      "cn": "空拍重量285克"
+
+    },
+
+
+    "weight_strung": {
+
+      "value": 300,
+
+      "unit": "g approx",
+
+      "cn": "穿线后约300克"
+
+    },
+
+
+    "balance": {
+
+      "value": 330,
+
+      "unit": "mm",
+
+      "cn": "平衡点约330毫米"
+
+    },
+
+
+    "length": {
+
+      "value": 27,
+
+      "unit": "inch",
+
+      "cn": "27英寸"
+
+    },
+
+
+    "string_pattern": {
+
+      "value": "16x19",
+
+      "cn": "16×19开放式线床"
+
+    },
+
+
+    "beam": {
+
+      "value": "22 mm",
+
+      "cn": "22毫米拍框"
+
+    },
+
+
+    "swing_weight": {
+
+      "value": "around 285-290",
+
+      "cn": "挥重约285-290"
+
+    },
+
+
+    "stiffness": {
+
+      "value": "around 62 RA",
+
+      "cn": "硬度约62 RA"
+
+    }
+
+  },
+
+
+  "technology": [
+
+    {
+      "name": "FortyFive",
+
+      "cn":
+      "45度碳纤维结构，提高球感和稳定性"
+
+    },
+
+
+    {
+      "name": "DirectConnect",
+
+      "cn":
+      "拍柄连接技术，提高力量传递"
+
+    },
+
+
+    {
+      "name": "StableFeel",
+
+      "cn":
+      "增强击球稳定性和反馈"
+
+    },
+
+
+    {
+      "name": "Agiplast",
+
+      "cn":
+      "环保材料技术"
+
+    }
+
+  ],
+
+
+  "performance": {
+
+    "power": {
+
+      "rating": 7,
+
+      "cn": "力量输出：7/10"
+
+    },
+
+
+    "control": {
+
+      "rating": 7,
+
+      "cn": "控制性能：7/10"
+
+    },
+
+
+    "spin": {
+
+      "rating": 8,
+
+      "cn": "旋转能力：8/10"
+
+    },
+
+
+    "comfort": {
+
+      "rating": 9,
+
+      "cn": "舒适性：9/10"
+
+    },
+
+
+    "stability": {
+
+      "rating": 6,
+
+      "cn": "稳定性：6/10"
+
+    },
+
+
+    "maneuverability": {
+
+      "rating": 10,
+
+      "cn": "挥拍灵活性：10/10"
+
+    }
+
+  },
+
+
+  "advantages_cn": [
+
+    "重量轻，非常容易挥动",
+
+    "100平方英寸甜区较大",
+
+    "Blade系列经典控制感",
+
+    "适合长时间击球",
+
+    "降低手臂负担"
+
+  ],
+
+
+  "weaknesses_cn": [
+
+    "稳定性低于300克以上型号",
+
+    "面对高速来球容易不足",
+
+    "进攻穿透力有限",
+
+    "高级球员可能觉得力量不足"
+
+  ],
+
+
+  "recommended_player_profile": {
+
+    "suitable_for": [
+
+      "女性球员",
+
+      "青少年球员",
+
+      "初中级业余球员",
+
+      "挥拍速度较慢球员",
+
+      "希望减少疲劳的玩家"
+
+    ],
+
+
+    "not_recommended_for": [
+
+      "职业竞技球员",
+
+      "力量型高级球员",
+
+      "高速比赛型玩家"
+
+    ]
+
+  },
+
+
+  "recommended_strings": {
+
+    "comfort": [
+
+      "Wilson NXT",
+
+      "Babolat Xcel"
+
+    ],
+
+
+    "spin": [
+
+      "Wilson Revolve Spin",
+
+      "Solinco Hyper-G Soft"
+
+    ],
+
+
+    "hybrid": [
+
+      "Multifilament + Polyester"
+
+    ]
+
+  },
+
+
+  "recommended_tension": {
+
+    "range": {
+
+      "value": "22-24 kg",
+
+      "cn": "推荐穿线范围22-24公斤"
+
+    },
+
+
+    "beginner": {
+
+      "value": "22-23 kg",
+
+      "cn": "初学者建议22-23公斤"
+
+    },
+
+
+    "intermediate": {
+
+      "value": "23-24 kg",
+
+      "cn": "中级球员建议23-24公斤"
+
+    }
+
+  },
+
+
+  "comparison": {
+
+
+    "vs_wilson_blade_100_v10": {
+
+      "cn":
+      "Blade 100UL V10 比Blade 100 V10轻约15克，更容易挥动，但稳定性和力量下降。"
+
+    },
+
+
+    "vs_wilson_blade_100_pro_v10": {
+
+      "cn":
+      "Blade 100 Pro拥有职业级稳定性，Blade 100UL强调轻松使用和舒适。"
+
+    },
+
+
+    "vs_babolat_pure_drive_team_2026": {
+
+      "cn":
+      "Pure Drive Team力量输出更明显，Blade 100UL更强调控制感和舒适性。"
+
+    }
+
+  },
+
+
+  "ai_tags": [
+
+    "Blade",
+
+    "100拍面",
+
+    "UL",
+
+    "轻量",
+
+    "高容错",
+
+    "女性球员",
+
+    "年轻球员"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "Wilson Blade 100UL V10 是Blade系列中的超轻量版本。它保留Blade系列的控制感，同时通过降低重量提高挥拍速度和舒适性，适合女性球员、青少年、中级业余玩家以及希望降低疲劳的使用者。相比Blade 100 V10，它更容易使用，但稳定性和攻击能力有所下降。",
+
+
+  "variants": [],
+
+
+  "verification": {
+
+    "status": "official",
+
+    "verified": true,
+
+
+    "knowledge_path":
+
+    "knowledge/racquets/wilson/wilson_blade_100ul_v10.json"
+
+  }
+
+}
