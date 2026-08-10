@@ -1,0 +1,449 @@
+{
+  "id": "wilson_rf_01_pro_hall_of_fame_whgo_2026",
+
+  "brand": "Wilson",
+  "brand_cn": "威尔胜",
+
+  "model": "RF 01 Pro Hall of Fame WHGO 2026",
+  "model_cn": "RF 01 Pro Hall of Fame 名人堂特别版 2026",
+
+  "category": "limited_performance_racket",
+  "category_cn": "限量竞技特别版网球拍",
+
+
+  "series": "RF",
+  "series_cn": "Roger Federer RF系列",
+
+  "generation": "RF01",
+
+
+  "edition": {
+
+    "type": "Hall Of Fame Special Edition",
+
+    "type_cn": "名人堂特别版",
+
+    "theme_cn":
+    "纪念Roger Federer传奇职业生涯，并致敬其职业末期使用理念"
+
+  },
+
+
+  "player": {
+
+    "name": "Roger Federer",
+
+    "name_cn": "罗杰·费德勒",
+
+    "legacy_cn":
+    "RF系列由Federer参与研发，延续其职业生涯最后阶段的击球理念"
+
+  },
+
+
+  "release": {
+
+    "year": 2026,
+
+    "date": "2026-08-13",
+
+    "status": "official_preorder",
+
+    "status_cn":
+    "官方预售"
+
+  },
+
+
+  "product_type": {
+
+    "type":
+    "performance_limited",
+
+    "type_cn":
+    "竞技限量版本",
+
+    "description_cn":
+    "RF 01系列最高重量版本，结合Federer传奇主题和高级竞技规格"
+
+  },
+
+
+  "specifications": {
+
+
+    "head_size": {
+
+      "value": 98,
+
+      "unit": "sq in",
+
+      "cn":
+      "98平方英寸"
+
+    },
+
+
+    "weight_unstrung": {
+
+      "value": 320,
+
+      "unit": "g",
+
+      "cn":
+      "空拍重量320克"
+
+    },
+
+
+    "weight_strung": {
+
+      "value": 340,
+
+      "unit": "g approx",
+
+      "cn":
+      "穿线后约340克"
+
+    },
+
+
+    "balance": {
+
+      "value":315,
+
+      "unit":"mm",
+
+      "cn":
+      "315毫米（空拍）"
+
+    },
+
+
+    "length": {
+
+      "value":27,
+
+      "unit":"inch",
+
+      "cn":
+      "27英寸"
+
+    },
+
+
+    "string_pattern": {
+
+      "value":"16x19",
+
+      "cn":
+      "16×19开放式线床"
+
+    },
+
+
+    "beam": {
+
+      "value":
+      "23-24-22 mm",
+
+      "cn":
+      "变截面框厚"
+
+    },
+
+
+    "stiffness": {
+
+      "value":67,
+
+      "unit":"RA",
+
+      "cn":
+      "刚度67 RA"
+
+    },
+
+
+    "material": {
+
+      "value":"Graphite",
+
+      "cn":
+      "石墨"
+
+    }
+
+  },
+
+
+  "technology": [
+
+    {
+
+      "name":"SABR Frame Design",
+
+      "cn":
+      "支持快速节奏变化、旋转和方向转换"
+
+    },
+
+
+    {
+
+      "name":"Glide Guard B&G",
+
+      "cn":
+      "减少挥拍阻力，提高拍头速度"
+
+    },
+
+
+    {
+
+      "name":"Braid 45",
+
+      "cn":
+      "提升球感、稳定性和击球包裹感"
+
+    }
+
+  ],
+
+
+  "performance": {
+
+
+    "power": {
+
+      "rating":8,
+
+      "cn":
+      "力量输出：8/10"
+
+    },
+
+
+    "control": {
+
+      "rating":9,
+
+      "cn":
+      "控制性能：9/10"
+
+    },
+
+
+    "spin": {
+
+      "rating":8,
+
+      "cn":
+      "旋转能力：8/10"
+
+    },
+
+
+    "comfort": {
+
+      "rating":8,
+
+      "cn":
+      "舒适性：8/10"
+
+    },
+
+
+    "stability": {
+
+      "rating":10,
+
+      "cn":
+      "稳定性：10/10"
+
+    },
+
+
+    "maneuverability": {
+
+      "rating":7,
+
+      "cn":
+      "挥拍灵活性：7/10"
+
+    }
+
+  },
+
+
+  "player_profile": {
+
+
+    "level": [
+
+      "advanced",
+
+      "competitive amateur",
+
+      "former tournament players"
+
+    ],
+
+
+    "level_cn": [
+
+      "高级球员",
+
+      "竞技业余",
+
+      "有比赛经验玩家"
+
+    ],
+
+
+    "style": [
+
+      "aggressive all court",
+
+      "fast swing",
+
+      "one hand backhand"
+
+    ]
+
+  },
+
+
+  "advantages_cn": [
+
+    "RF 01系列最高重量规格",
+
+    "稳定性极强",
+
+    "Federer职业末期风格",
+
+    "高级竞技性能",
+
+    "限量收藏价值"
+
+  ],
+
+
+  "weaknesses_cn": [
+
+    "320g重量要求较高",
+
+    "不适合初学者",
+
+    "需要较快挥拍速度",
+
+    "长时间比赛体能要求高"
+
+  ],
+
+
+  "recommended_strings": {
+
+
+    "control": [
+
+      "Luxilon ALU Power 1.25",
+
+      "Luxilon 4G"
+
+    ],
+
+
+    "hybrid": [
+
+      "Natural Gut + Polyester"
+
+    ]
+
+  },
+
+
+  "recommended_tension": {
+
+    "range":
+
+    "22-25 kg"
+
+  },
+
+
+  "collector_value": {
+
+    "rating":10,
+
+    "cn":
+    "Federer Hall of Fame主题 + RF系列旗舰重量版本"
+
+  },
+
+
+  "comparison": {
+
+
+    "vs_rf_01_pro_300g": {
+
+      "cn":
+      "300g版本更容易使用；320g版本稳定性和穿透力更强"
+
+    },
+
+
+    "vs_rf_01_pro_classic": {
+
+      "cn":
+      "Classic强调复古Pro Staff精神；Hall of Fame强调Federer传奇荣誉"
+
+    },
+
+
+    "vs_rf97_autograph": {
+
+      "cn":
+      "RF97更接近职业时代规格；RF01 Pro Hall of Fame更现代、更容易产生速度"
+
+    }
+
+  },
+
+
+  "ai_tags": [
+
+    "Wilson",
+
+    "RF01",
+
+    "Roger Federer",
+
+    "Hall Of Fame",
+
+    "320g",
+
+    "Limited Edition",
+
+    "Performance"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "Wilson RF 01 Pro Hall of Fame WHGO 2026 是RF 01系列最高重量版本，采用98平方英寸拍面、320克空拍重量和16×19线床。它结合Federer职业末期击球理念、SABR Frame Design和Braid 45技术，为高级球员提供更高稳定性和控制能力，同时具备Hall of Fame纪念收藏价值。",
+
+  
+  "verification": {
+
+    "status":"official",
+
+    "verified":true,
+
+    "knowledge_path":
+    "knowledge/racquets/special_editions/player_legacy/federer/wilson_rf_01_pro_hall_of_fame_whgo_2026.json"
+
+  }
+
+}
