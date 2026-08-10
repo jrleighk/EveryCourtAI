@@ -1,0 +1,452 @@
+{
+  "id": "wilson_blade_pro_98_18x20_v10",
+
+  "brand": "Wilson",
+  "brand_cn": "威尔胜",
+
+  "model": "Blade Pro 98 18x20 V10",
+  "model_cn": "Blade Pro 98 18×20 V10",
+
+  "category": "racket",
+  "category_cn": "网球拍",
+
+  "series": "Blade",
+  "series_cn": "Blade 系列",
+
+  "generation": "V10",
+  "generation_cn": "第10代版本",
+
+
+  "product_type": {
+
+    "type": "Pro Labs",
+    "type_cn": "专业版本 / Pro Labs系列",
+
+    "description_cn":
+    "Blade Pro系列采用职业球员规格设计，提供更高稳定性、控制和比赛级反馈"
+
+  },
+
+
+  "player_profile": {
+
+    "level": [
+      "advanced",
+      "professional",
+      "competitive amateur"
+    ],
+
+    "level_cn": [
+      "高级球员",
+      "职业竞技球员",
+      "竞技型业余球员"
+    ],
+
+
+    "style": [
+      "precision",
+      "control",
+      "flat hitting"
+    ],
+
+    "style_cn": [
+      "精准控制",
+      "控制型打法",
+      "平击进攻"
+    ]
+
+  },
+
+
+  "specifications": {
+
+    "head_size": {
+
+      "value": 98,
+
+      "unit": "sq in",
+
+      "cn": "98平方英寸"
+
+    },
+
+
+    "weight_unstrung": {
+
+      "value": 305,
+
+      "unit": "g",
+
+      "cn": "空拍重量305克"
+
+    },
+
+
+    "weight_strung": {
+
+      "value": 320,
+
+      "unit": "g approx",
+
+      "cn": "穿线后约320克"
+
+    },
+
+
+    "balance": {
+
+      "value": 325,
+
+      "unit": "mm",
+
+      "cn": "平衡点约325毫米"
+
+    },
+
+
+    "length": {
+
+      "value": 27,
+
+      "unit": "inch",
+
+      "cn": "27英寸"
+
+    },
+
+
+    "string_pattern": {
+
+      "value": "18x20",
+
+      "cn": "18×20密集式线床"
+
+    },
+
+
+    "beam": {
+
+      "value": "21 mm",
+
+      "cn": "21毫米薄框设计"
+
+    },
+
+
+    "swing_weight": {
+
+      "value": "around 330",
+
+      "cn": "挥重约330"
+
+    },
+
+
+    "stiffness": {
+
+      "value": "around 60-62 RA",
+
+      "cn": "硬度约60-62 RA"
+
+    }
+
+  },
+
+
+  "technology": [
+
+    {
+      "name": "FortyFive",
+
+      "cn":
+      "45度碳纤维结构，提高球感和稳定性"
+
+    },
+
+
+    {
+      "name": "DirectConnect",
+
+      "cn":
+      "碳纤维连接拍柄，提高力量传递和反馈"
+
+    },
+
+
+    {
+      "name": "StableFeel",
+
+      "cn":
+      "增强稳定性，提高击球精准度"
+
+    },
+
+
+    {
+      "name": "Agiplast",
+
+      "cn":
+      "环保材料设计"
+
+    }
+
+  ],
+
+
+  "performance": {
+
+    "power": {
+
+      "rating": 6,
+
+      "cn": "力量输出：6/10"
+
+    },
+
+
+    "control": {
+
+      "rating": 10,
+
+      "cn": "控制性能：10/10"
+
+    },
+
+
+    "spin": {
+
+      "rating": 7,
+
+      "cn": "旋转能力：7/10"
+
+    },
+
+
+    "comfort": {
+
+      "rating": 9,
+
+      "cn": "舒适性：9/10"
+
+    },
+
+
+    "stability": {
+
+      "rating": 10,
+
+      "cn": "稳定性：10/10"
+
+    },
+
+
+    "maneuverability": {
+
+      "rating": 7,
+
+      "cn": "挥拍灵活性：7/10"
+
+    }
+
+  },
+
+
+  "advantages_cn": [
+
+    "极高线路控制能力",
+
+    "18×20线床提供精准反馈",
+
+    "比赛级稳定性",
+
+    "适合平击和主动进攻",
+
+    "经典Blade柔和手感"
+
+  ],
+
+
+  "weaknesses_cn": [
+
+    "旋转能力低于16×19版本",
+
+    "需要较高击球水平",
+
+    "力量辅助较少",
+
+    "不适合初学者"
+
+  ],
+
+
+  "recommended_player_profile": {
+
+    "suitable_for": [
+
+      "职业竞技球员",
+
+      "高级业余比赛玩家",
+
+      "喜欢传统控制拍的球员",
+
+      "平击打法球员",
+
+      "单反球员"
+
+    ],
+
+
+    "not_recommended_for": [
+
+      "初学者",
+
+      "旋转型现代打法球员",
+
+      "需要球拍提供力量玩家"
+
+    ]
+
+  },
+
+
+  "recommended_strings": {
+
+    "control": [
+
+      "Luxilon ALU Power 1.25",
+
+      "Wilson Natural Gut"
+
+    ],
+
+
+    "spin": [
+
+      "Luxilon 4G",
+
+      "Solinco Tour Bite"
+
+    ],
+
+
+    "hybrid": [
+
+      "Natural Gut + Polyester"
+
+    ]
+
+  },
+
+
+  "recommended_tension": {
+
+    "range": {
+
+      "value": "22-25 kg",
+
+      "cn":
+      "推荐穿线范围22-25公斤"
+
+    },
+
+
+    "control_player": {
+
+      "value": "24-25 kg",
+
+      "cn":
+      "控制型球员建议24-25公斤"
+
+    },
+
+
+    "power_player": {
+
+      "value": "22-23 kg",
+
+      "cn":
+      "需要增加弹性建议22-23公斤"
+
+    }
+
+  },
+
+
+  "comparison": {
+
+
+    "vs_wilson_blade_pro_98_16x19_v10": {
+
+      "cn":
+      "18×20版本比16×19版本拥有更高控制、更低弹射和更精准线路；16×19版本更容易制造旋转。"
+
+    },
+
+
+    "vs_wilson_blade_98_18x20_v10": {
+
+      "cn":
+      "Blade Pro 98拥有更高重量和职业规格稳定性，普通Blade 98更容易使用。"
+
+    },
+
+
+    "vs_babolat_pure_strike_98": {
+
+      "cn":
+      "Pure Strike更偏现代攻击控制，Blade Pro 18×20更偏传统精准和手感。"
+
+    },
+
+
+    "vs_wilson_rf01_pro_classic": {
+
+      "cn":
+      "Blade Pro 18×20更偏控制比赛，RF01 Pro Classic更偏全面力量和经典反馈。"
+
+    }
+
+  },
+
+
+  "ai_tags": [
+
+    "Blade",
+
+    "18x20",
+
+    "控制",
+
+    "职业规格",
+
+    "高级球员",
+
+    "精准",
+
+    "传统手感"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "Wilson Blade Pro 98 18×20 V10 是Blade Pro系列中最高控制取向的型号。它采用98平方英寸拍面、18×20密集线床和职业级规格，为高级球员提供极致精准、稳定反馈和线路控制。相比16×19版本，它牺牲部分旋转能力，换取更强的方向控制和比赛稳定性。",
+
+
+  "variants": [],
+
+
+  "verification": {
+
+    "status": "official",
+
+    "verified": true,
+
+
+    "knowledge_path":
+
+    "knowledge/racquets/wilson/wilson_blade_pro_98_18x20_v10.json"
+
+  }
+
+}
