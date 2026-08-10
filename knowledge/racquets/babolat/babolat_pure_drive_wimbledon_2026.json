@@ -1,0 +1,257 @@
+{
+  "id": "babolat_pure_drive_wimbledon_2026",
+
+  "brand": "Babolat",
+  "brand_cn": "百保力",
+
+  "model": "Pure Drive Wimbledon 2026",
+  "model_cn": "Pure Drive Wimbledon Edition 2026",
+
+  "category": "racket",
+  "category_cn": "网球拍",
+
+  "series": "Pure Drive",
+  "series_cn": "Pure Drive 系列",
+
+  "edition": "Wimbledon Edition",
+  "edition_cn": "温布尔登特别版",
+
+  "release_year": 2026,
+
+
+  "special_collaboration": {
+
+    "event": "Wimbledon Championships",
+    "event_cn": "温布尔登网球锦标赛",
+
+    "type": "Grand Slam Edition",
+    "type_cn": "大满贯赛事特别版"
+
+  },
+
+
+  "base_model": {
+
+    "model": "Pure Drive 2026",
+
+    "cn":
+    "性能规格基于Pure Drive 2026标准型号"
+  },
+
+
+  "player_profile": {
+
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced amateur"
+    ],
+
+    "level_cn": [
+      "初学者",
+      "中级球员",
+      "高级业余球员"
+    ],
+
+
+    "style": [
+      "power",
+      "all court",
+      "modern baseline"
+    ],
+
+    "style_cn": [
+      "力量型",
+      "全面型打法",
+      "现代底线打法"
+    ]
+
+  },
+
+
+  "specifications": {
+
+    "head_size": {
+      "value": 100,
+      "unit": "sq in",
+      "cn": "100平方英寸"
+    },
+
+
+    "weight_unstrung": {
+      "value": 300,
+      "unit": "g",
+      "cn": "空拍重量300克"
+    },
+
+
+    "weight_strung": {
+      "value": 315,
+      "unit": "g approx",
+      "cn": "穿线后约315克"
+    },
+
+
+    "balance": {
+      "value": 320,
+      "unit": "mm",
+      "cn": "平衡点约320毫米"
+    },
+
+
+    "length": {
+      "value": 27,
+      "unit": "inch",
+      "cn": "27英寸"
+    },
+
+
+    "string_pattern": {
+      "value": "16x19",
+      "cn": "16×19开放式线床"
+    }
+
+  },
+
+
+  "design_features": {
+
+    "color": [
+      "Wimbledon green",
+      "white"
+    ],
+
+    "color_cn": [
+      "温网绿色",
+      "白色"
+    ],
+
+
+    "design_cn":
+    "采用Wimbledon传统绿色与白色视觉元素，强调经典草地网球文化"
+
+  },
+
+
+  "performance": {
+
+    "power": {
+      "rating": 9,
+      "cn": "力量输出：9/10"
+    },
+
+    "control": {
+      "rating": 7,
+      "cn": "控制性能：7/10"
+    },
+
+    "spin": {
+      "rating": 8,
+      "cn": "旋转能力：8/10"
+    },
+
+    "comfort": {
+      "rating": 8,
+      "cn": "舒适性：8/10"
+    },
+
+    "forgiveness": {
+      "rating": 9,
+      "cn": "容错性：9/10"
+    }
+
+  },
+
+
+  "advantages_cn": [
+
+    "Pure Drive经典力量输出",
+    "100平方英寸拍面，甜区较大",
+    "适合大众业余玩家",
+    "Wimbledon特别设计具有收藏属性",
+    "兼顾力量和旋转"
+
+  ],
+
+
+  "weaknesses_cn": [
+
+    "性能与普通Pure Drive 2026基本一致",
+    "收藏价值高于性能提升",
+    "高级控制型球员可能需要98平方英寸型号"
+
+  ],
+
+
+  "recommended_strings": [
+
+    "Babolat RPM Blast",
+    "Babolat RPM Power",
+    "Luxilon ALU Power",
+    "Babolat Xcel"
+
+  ],
+
+
+  "recommended_tension": {
+
+    "range": {
+      "value": "22-25 kg",
+      "cn": "推荐穿线范围22-25公斤"
+    }
+
+  },
+
+
+  "comparison": {
+
+
+    "vs_pure_drive_2026": {
+
+      "cn":
+      "性能基本一致，主要区别在Wimbledon特别设计和收藏价值。"
+
+    },
+
+
+    "vs_pure_drive_spectra_edition_2026": {
+
+      "cn":
+      "两者都是Pure Drive特别版本，Wimbledon Edition强调赛事文化，Spectra Edition强调现代视觉设计。"
+
+    }
+
+  },
+
+
+  "ai_tags": [
+
+    "特别版",
+    "Wimbledon",
+    "收藏",
+    "Pure Drive",
+    "力量",
+    "业余友好"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "Babolat Pure Drive Wimbledon Edition 2026 是基于Pure Drive 2026平台打造的大满贯主题特别版。它保留Pure Drive系列经典力量、旋转和高容错特点，同时加入温布尔登文化元素，适合希望兼顾使用价值和收藏属性的网球爱好者。",
+
+
+  "verification": {
+
+    "status": "official",
+
+    "verified": true,
+
+    "product_year_checked": 2026,
+
+    "knowledge_path":
+    "knowledge/racquets/special_editions/babolat_pure_drive_wimbledon_2026.json"
+
+  }
+
+}
