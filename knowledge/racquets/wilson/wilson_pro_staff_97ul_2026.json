@@ -1,0 +1,441 @@
+{
+  "id": "wilson_pro_staff_97ul_2026",
+
+  "brand": "Wilson",
+  "brand_cn": "威尔胜",
+
+  "model": "Pro Staff 97UL 2026",
+  "model_cn": "Pro Staff 97UL 2026",
+
+  "category": "racket",
+  "category_cn": "网球拍",
+
+  "series": "Pro Staff",
+  "series_cn": "Pro Staff 系列",
+
+
+  "generation": "2026",
+  "generation_cn": "2026版本",
+
+
+  "product_type": {
+
+    "type": "retail",
+
+    "type_cn": "零售版本",
+
+    "description_cn":
+    "Pro Staff系列轻量竞技型号，在保持经典控制感的同时，通过降低重量提高挥拍速度和易用性"
+
+  },
+
+
+  "player_profile": {
+
+    "level": [
+
+      "intermediate",
+      "advanced amateur",
+      "junior"
+
+    ],
+
+    "level_cn": [
+
+      "中级球员",
+      "高级业余球员",
+      "青少年进阶球员"
+
+    ],
+
+
+    "style": [
+
+      "control",
+      "all court",
+      "fast swing"
+
+    ],
+
+    "style_cn": [
+
+      "控制型打法",
+      "全面型打法",
+      "快速挥拍"
+
+    ]
+
+  },
+
+
+  "specifications": {
+
+
+    "head_size": {
+
+      "value": 97,
+
+      "unit": "sq in",
+
+      "cn": "97平方英寸"
+
+    },
+
+
+    "weight_unstrung": {
+
+      "value": 270,
+
+      "unit": "g",
+
+      "cn": "空拍重量270克"
+
+    },
+
+
+    "weight_strung": {
+
+      "value": 285,
+
+      "unit": "g approx",
+
+      "cn": "穿线后约285克"
+
+    },
+
+
+    "balance": {
+
+      "value": 330,
+
+      "unit": "mm",
+
+      "cn": "平衡点约330毫米"
+
+    },
+
+
+    "length": {
+
+      "value": 27,
+
+      "unit": "inch",
+
+      "cn": "27英寸"
+
+    },
+
+
+    "string_pattern": {
+
+      "value": "16x19",
+
+      "cn": "16×19开放式线床"
+
+    },
+
+
+    "beam": {
+
+      "value": "23 mm",
+
+      "cn": "经典Pro Staff薄框设计"
+
+    }
+
+  },
+
+
+  "technology": [
+
+    {
+
+      "name": "Braided Graphite",
+
+      "cn":
+      "编织石墨结构，提供Pro Staff经典球感"
+
+    },
+
+
+    {
+
+      "name": "String Mapping",
+
+      "cn":
+      "优化线床设计，提高控制和反馈"
+
+    },
+
+
+    {
+
+      "name": "Perimeter Weighting",
+
+      "cn":
+      "外围配重，提高击球稳定性"
+
+    }
+
+  ],
+
+
+  "performance": {
+
+
+    "power": {
+
+      "rating": 6,
+
+      "cn": "力量输出：6/10"
+
+    },
+
+
+    "control": {
+
+      "rating": 8,
+
+      "cn": "控制性能：8/10"
+
+    },
+
+
+    "spin": {
+
+      "rating": 7,
+
+      "cn": "旋转能力：7/10"
+
+    },
+
+
+    "comfort": {
+
+      "rating": 9,
+
+      "cn": "舒适性：9/10"
+
+    },
+
+
+    "stability": {
+
+      "rating": 6,
+
+      "cn": "稳定性：6/10"
+
+    },
+
+
+    "maneuverability": {
+
+      "rating": 10,
+
+      "cn": "挥拍灵活性：10/10"
+
+    }
+
+  },
+
+
+  "advantages_cn": [
+
+    "Pro Staff经典控制感",
+
+    "重量轻，挥拍速度快",
+
+    "97平方英寸精准拍面",
+
+    "适合快速挥拍球员",
+
+    "手臂负担较低"
+
+  ],
+
+
+  "weaknesses_cn": [
+
+    "稳定性低于290g以上Pro Staff",
+
+    "力量输出有限",
+
+    "甜区较小",
+
+    "不适合力量型高级比赛"
+
+  ],
+
+
+  "recommended_player_profile": {
+
+
+    "suitable_for": [
+
+      "青少年进阶球员",
+
+      "女性高级球员",
+
+      "喜欢Pro Staff手感但需要轻量的玩家",
+
+      "挥拍速度快但力量不足球员",
+
+      "控制型业余玩家"
+
+    ],
+
+
+    "not_recommended_for": [
+
+      "职业竞技球员",
+
+      "力量型底线球员",
+
+      "需要大量稳定性的玩家"
+
+    ]
+
+  },
+
+
+  "recommended_strings": {
+
+
+    "control": [
+
+      "Luxilon ALU Power 1.25",
+
+      "Wilson Revolve"
+
+    ],
+
+
+    "comfort": [
+
+      "Wilson NXT",
+
+      "Natural Gut Hybrid"
+
+    ],
+
+
+    "spin": [
+
+      "Solinco Hyper-G Soft"
+
+    ]
+
+  },
+
+
+  "recommended_tension": {
+
+
+    "range": {
+
+      "value": "22-24 kg",
+
+      "cn":
+      "推荐穿线范围22-24公斤"
+
+    },
+
+
+    "comfort_player": {
+
+      "value": "22-23 kg",
+
+      "cn":
+      "舒适打法建议22-23公斤"
+
+    },
+
+
+    "control_player": {
+
+      "value": "24 kg",
+
+      "cn":
+      "控制型打法建议24公斤"
+
+    }
+
+  },
+
+
+  "comparison": {
+
+
+    "vs_wilson_pro_staff_97l_classic_2026": {
+
+      "cn":
+      "97UL 2026更偏现代轻量竞技；97L Classic更强调复古设计和收藏价值"
+
+    },
+
+
+    "vs_wilson_pro_staff_97_classic_2026": {
+
+      "cn":
+      "97 Classic重量更高、稳定性更强；97UL更容易挥动"
+
+    },
+
+
+    "vs_wilson_blade_100ul_v10": {
+
+      "cn":
+      "Blade 100UL拍面更大、更容易使用；Pro Staff 97UL更强调精准控制"
+
+    },
+
+
+    "vs_babolat_pure_drive_team_2026": {
+
+      "cn":
+      "Pure Drive Team力量更强；Pro Staff 97UL更偏控制和手感"
+
+    }
+
+  },
+
+
+  "ai_tags": [
+
+    "Pro Staff",
+
+    "97UL",
+
+    "轻量",
+
+    "控制",
+
+    "快速挥拍",
+
+    "Wilson"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "Wilson Pro Staff 97UL 2026 是Pro Staff系列中的超轻量控制型球拍。它采用97平方英寸拍面和270克轻量设计，保留Pro Staff经典精准反馈，同时提高挥拍速度和易用性，适合希望体验Pro Staff控制感但不需要传统高重量球拍的中高级玩家。",
+
+
+  "variants": [],
+
+
+  "verification": {
+
+    "status": "official",
+
+    "verified": true,
+
+
+    "knowledge_path":
+
+    "knowledge/racquets/wilson/wilson_pro_staff_97ul_2026.json"
+
+  }
+
+}
