@@ -1,0 +1,437 @@
+{
+  "id": "wilson_shift_99l_v1_year_of_the_horse",
+
+  "brand": "Wilson",
+  "brand_cn": "威尔胜",
+
+  "model": "Shift 99L V1 Year Of The Horse Edition",
+  "model_cn": "Shift 99L V1 马年特别版",
+
+  "category": "special_edition_racket",
+  "category_cn": "文化特别版网球拍",
+
+  "series": "Shift",
+  "series_cn": "Shift 系列",
+
+  "generation": "V1",
+  "generation_cn": "第一代版本",
+
+  "release_year": 2025,
+
+
+  "edition": {
+
+    "type": "Chinese Zodiac Edition",
+
+    "type_cn": "中国生肖特别版",
+
+    "name": "Year Of The Horse",
+
+    "name_cn": "马年特别版",
+
+    "theme_cn":
+    "以中国生肖马文化为设计主题，结合Wilson Shift系列现代竞技理念"
+
+  },
+
+
+  "base_model": {
+
+    "model": "Wilson Shift 99L V1",
+
+    "cn":
+    "基于Shift 99L V1轻量竞技型号"
+
+  },
+
+
+  "product_type": {
+
+    "type": "retail_special",
+
+    "type_cn": "零售特别版本",
+
+    "description_cn":
+    "Shift 99L V1马年特别版，在保持原型号性能基础上增加生肖主题外观和收藏属性"
+
+  },
+
+
+  "player_profile": {
+
+    "level": [
+      "intermediate",
+      "advanced amateur",
+      "club player"
+    ],
+
+    "level_cn": [
+      "中级球员",
+      "高级业余球员",
+      "俱乐部玩家"
+    ],
+
+
+    "style": [
+      "spin",
+      "fast swing",
+      "modern baseline"
+    ],
+
+    "style_cn": [
+      "旋转型打法",
+      "快速挥拍",
+      "现代底线打法"
+    ]
+
+  },
+
+
+  "specifications": {
+
+
+    "head_size": {
+
+      "value": 99,
+
+      "unit": "sq in",
+
+      "cn": "99平方英寸"
+
+    },
+
+
+    "weight_unstrung": {
+
+      "value": 285,
+
+      "unit": "g",
+
+      "cn": "空拍重量285克"
+
+    },
+
+
+    "weight_strung": {
+
+      "value": 300,
+
+      "unit": "g approx",
+
+      "cn": "穿线后约300克"
+
+    },
+
+
+    "balance": {
+
+      "value": 330,
+
+      "unit": "mm",
+
+      "cn": "平衡点约330毫米"
+
+    },
+
+
+    "length": {
+
+      "value": 27,
+
+      "unit": "inch",
+
+      "cn": "27英寸"
+
+    },
+
+
+    "string_pattern": {
+
+      "value": "16x20",
+
+      "cn": "16×20线床"
+
+    },
+
+
+    "beam": {
+
+      "value": "23.5 mm",
+
+      "cn": "现代竞技框架"
+
+    }
+
+  },
+
+
+  "technology": [
+
+    {
+
+      "name": "Slicing Geometry",
+
+      "cn":
+      "优化拍框结构，提高旋转能力"
+
+    },
+
+
+    {
+
+      "name": "Carbon Mapping",
+
+      "cn":
+      "碳纤维布局优化，提高稳定性"
+
+    },
+
+
+    {
+
+      "name": "DirectConnect",
+
+      "cn":
+      "增强手柄连接，提高力量传递"
+
+    }
+
+  ],
+
+
+  "performance": {
+
+    "power": {
+
+      "rating": 7,
+
+      "cn": "力量输出：7/10"
+
+    },
+
+
+    "control": {
+
+      "rating": 8,
+
+      "cn": "控制性能：8/10"
+
+    },
+
+
+    "spin": {
+
+      "rating": 9,
+
+      "cn": "旋转能力：9/10"
+
+    },
+
+
+    "comfort": {
+
+      "rating": 8,
+
+      "cn": "舒适性：8/10"
+
+    },
+
+
+    "stability": {
+
+      "rating": 7,
+
+      "cn": "稳定性：7/10"
+
+    },
+
+
+    "maneuverability": {
+
+      "rating": 10,
+
+      "cn": "挥拍灵活性：10/10"
+
+    }
+
+  },
+
+
+  "advantages_cn": [
+
+    "99平方英寸黄金拍面",
+
+    "轻量化容易挥动",
+
+    "Shift系列旋转能力突出",
+
+    "16×20线床兼顾控制",
+
+    "马年生肖特别版具有收藏价值"
+
+  ],
+
+
+  "weaknesses_cn": [
+
+    "稳定性低于Shift 99 Pro",
+
+    "力量穿透有限",
+
+    "不适合力量型高级比赛玩家"
+
+  ],
+
+
+  "recommended_player_profile": {
+
+    "suitable_for": [
+
+      "中高级业余球员",
+
+      "喜欢旋转打法玩家",
+
+      "女性竞技球员",
+
+      "青少年球员",
+
+      "生肖网球拍收藏用户"
+
+    ],
+
+
+    "not_recommended_for": [
+
+      "职业竞技球员",
+
+      "追求极致稳定玩家",
+
+      "力量型底线暴力打法"
+
+    ]
+
+  },
+
+
+  "recommended_strings": {
+
+    "spin": [
+
+      "Luxilon ALU Power Spin",
+
+      "Solinco Hyper-G"
+
+    ],
+
+
+    "comfort": [
+
+      "Wilson NXT",
+
+      "Wilson Sensation"
+
+    ],
+
+
+    "hybrid": [
+
+      "Polyester + Multifilament"
+
+    ]
+
+  },
+
+
+  "recommended_tension": {
+
+    "range": {
+
+      "value": "22-24 kg",
+
+      "cn":
+      "推荐穿线范围22-24公斤"
+
+    }
+
+  },
+
+
+  "collector_value": {
+
+    "rating": 8,
+
+    "cn":
+    "中国生肖主题特别版，具备文化收藏价值"
+
+  },
+
+
+  "comparison": {
+
+
+    "vs_wilson_shift_99l_v1": {
+
+      "cn":
+      "性能基本一致，Year Of The Horse版本增加外观和收藏属性"
+
+    },
+
+
+    "vs_wilson_shift_99_pro_v1": {
+
+      "cn":
+      "99 Pro重量更高，稳定性和竞技能力更强"
+
+    },
+
+
+    "vs_wilson_blade_100_v10": {
+
+      "cn":
+      "Shift更偏旋转和现代速度，Blade更偏控制"
+
+    }
+
+  },
+
+
+  "ai_tags": [
+
+    "Shift",
+
+    "99L",
+
+    "Year Of The Horse",
+
+    "Chinese Zodiac",
+
+    "Spin",
+
+    "Special Edition",
+
+    "Wilson"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "Wilson Shift 99L V1 Year Of The Horse Edition 是Shift系列轻量型号的生肖特别版本。它采用99平方英寸拍面、285克重量和16×20线床，在保持Shift系列旋转和现代底线性能的同时，加入中国马年文化设计元素。适合中高级业余玩家、年轻球员以及收藏Wilson文化特别版装备的用户。",
+
+
+  "variants": [],
+
+
+  "verification": {
+
+    "status": "official",
+
+    "verified": true,
+
+
+    "knowledge_path":
+    "knowledge/racquets/special_editions/wilson_shift_99l_v1_year_of_the_horse.json"
+
+  }
+
+}
