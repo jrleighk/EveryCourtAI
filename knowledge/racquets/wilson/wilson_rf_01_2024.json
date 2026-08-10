@@ -1,0 +1,458 @@
+{
+  "id": "wilson_rf_01_2024",
+
+  "brand": "Wilson",
+  "brand_cn": "威尔胜",
+
+  "model": "RF 01",
+  "model_cn": "RF 01 2024",
+
+  "category": "racket",
+  "category_cn": "网球拍",
+
+  "series": "RF",
+  "series_cn": "RF费德勒系列",
+
+
+  "generation": "2024",
+  "generation_cn": "RF系列首发版本",
+
+
+  "product_type": {
+
+    "type": "signature_performance",
+
+    "type_cn": "签名竞技版本",
+
+    "description_cn":
+    "Roger Federer参与设计的RF系列标准版本，在职业级RF 01 Pro基础上降低重量，提高大众竞技使用体验"
+
+  },
+
+
+  "heritage": {
+
+    "player": "Roger Federer",
+
+    "player_cn": "罗杰·费德勒",
+
+    "legacy_cn":
+    "RF系列继承Federer对于精准控制、全面打法和优雅击球风格的理念"
+
+  },
+
+
+  "player_profile": {
+
+    "level": [
+
+      "intermediate",
+      "advanced amateur",
+      "club player"
+
+    ],
+
+    "level_cn": [
+
+      "中级球员",
+      "高级业余球员",
+      "俱乐部球员"
+
+    ],
+
+
+    "style": [
+
+      "all court",
+      "control",
+      "modern aggressive"
+
+    ],
+
+    "style_cn": [
+
+      "全面型打法",
+      "控制型打法",
+      "现代攻击型打法"
+
+    ]
+
+  },
+
+
+  "specifications": {
+
+
+    "head_size": {
+
+      "value": 98,
+
+      "unit": "sq in",
+
+      "cn": "98平方英寸"
+
+    },
+
+
+    "weight_unstrung": {
+
+      "value": 300,
+
+      "unit": "g",
+
+      "cn": "空拍重量300克"
+
+    },
+
+
+    "weight_strung": {
+
+      "value": 315,
+
+      "unit": "g approx",
+
+      "cn": "穿线后约315克"
+
+    },
+
+
+    "balance": {
+
+      "value": 320,
+
+      "unit": "mm",
+
+      "cn": "平衡点约320毫米"
+
+    },
+
+
+    "length": {
+
+      "value": 27,
+
+      "unit": "inch",
+
+      "cn": "27英寸"
+
+    },
+
+
+    "string_pattern": {
+
+      "value": "16x19",
+
+      "cn": "16×19开放式线床"
+
+    },
+
+
+    "beam": {
+
+      "value": "22.5 mm",
+
+      "cn": "竞技型薄框设计"
+
+    },
+
+
+    "swing_weight": {
+
+      "value": "around 315",
+
+      "cn": "挥重约315"
+
+    }
+
+  },
+
+
+  "technology": [
+
+    {
+
+      "name": "SABR Frame Design",
+
+      "cn":
+      "源自Federer快速进攻打法理念"
+
+    },
+
+
+    {
+
+      "name": "Braid 45",
+
+      "cn":
+      "45度碳纤维结构，提高稳定性"
+
+    },
+
+
+    {
+
+      "name": "Feel Fill",
+
+      "cn":
+      "减震材料，提高舒适度"
+
+    },
+
+
+    {
+
+      "name": "Terminal Taper",
+
+      "cn":
+      "优化拍框操控性能"
+
+    }
+
+  ],
+
+
+  "performance": {
+
+
+    "power": {
+
+      "rating": 8,
+
+      "cn": "力量输出：8/10"
+
+    },
+
+
+    "control": {
+
+      "rating": 8,
+
+      "cn": "控制性能：8/10"
+
+    },
+
+
+    "spin": {
+
+      "rating": 8,
+
+      "cn": "旋转能力：8/10"
+
+    },
+
+
+    "comfort": {
+
+      "rating": 8,
+
+      "cn": "舒适性：8/10"
+
+    },
+
+
+    "stability": {
+
+      "rating": 8,
+
+      "cn": "稳定性：8/10"
+
+    },
+
+
+    "maneuverability": {
+
+      "rating": 9,
+
+      "cn": "挥拍灵活性：9/10"
+
+    }
+
+  },
+
+
+  "advantages_cn": [
+
+    "Federer RF系列设计",
+
+    "98平方英寸精准控制",
+
+    "300克重量更容易使用",
+
+    "力量和控制平衡",
+
+    "比RF 01 Pro更适合业余球员"
+
+  ],
+
+
+  "weaknesses_cn": [
+
+    "稳定性低于320g Pro版本",
+
+    "极限控制低于Pro Staff",
+
+    "力量低于Pure Drive类型球拍"
+
+  ],
+
+
+  "recommended_player_profile": {
+
+    "suitable_for": [
+
+      "高级业余球员",
+
+      "俱乐部比赛玩家",
+
+      "喜欢Federer打法用户",
+
+      "从100平方英寸升级用户",
+
+      "希望拥有RF系列但不想使用320g玩家"
+
+    ],
+
+
+    "not_recommended_for": [
+
+      "职业级竞技玩家",
+
+      "力量型暴力底线球员",
+
+      "追求极限稳定性玩家"
+
+    ]
+
+  },
+
+
+  "recommended_strings": {
+
+
+    "control": [
+
+      "Luxilon ALU Power 1.25",
+
+      "Wilson Revolve"
+
+    ],
+
+
+    "comfort": [
+
+      "Wilson NXT",
+
+      "Natural Gut Hybrid"
+
+    ],
+
+
+    "spin": [
+
+      "Solinco Hyper-G Soft"
+
+    ]
+
+  },
+
+
+  "recommended_tension": {
+
+
+    "range": {
+
+      "value": "22-25 kg",
+
+      "cn":
+      "推荐穿线范围22-25公斤"
+
+    },
+
+
+    "balanced_player": {
+
+      "value": "23-24 kg",
+
+      "cn":
+      "综合型玩家建议23-24公斤"
+
+    }
+
+  },
+
+
+  "comparison": {
+
+
+    "vs_wilson_rf_01_pro": {
+
+      "cn":
+      "RF 01重量更低，更容易挥动；RF 01 Pro拥有更高稳定性和竞技性能"
+
+    },
+
+
+    "vs_wilson_rf_01_pro_classic": {
+
+      "cn":
+      "RF 01 Pro Classic强调复古收藏；RF 01强调现代使用体验"
+
+    },
+
+
+    "vs_wilson_pro_staff_97": {
+
+      "cn":
+      "Pro Staff更传统控制；RF 01更加现代和全面"
+
+    },
+
+
+    "vs_babolat_pure_drive_98_2025": {
+
+      "cn":
+      "Pure Drive 98力量更直接；RF 01控制和手感更突出"
+
+    }
+
+  },
+
+
+  "ai_tags": [
+
+    "RF",
+
+    "Federer",
+
+    "Signature",
+
+    "98拍面",
+
+    "All Court",
+
+    "Wilson"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "Wilson RF 01 2024 是Roger Federer RF系列首发标准型号。它采用98平方英寸拍面和300克重量，在控制、力量和挥拍速度之间取得平衡。相比RF 01 Pro，它更适合广大高级业余球员；相比传统Pro Staff，它拥有更现代的力量和容错表现。",
+
+
+  "variants": [],
+
+
+  "verification": {
+
+    "status": "official",
+
+    "verified": true,
+
+
+    "knowledge_path":
+    "knowledge/racquets/wilson/wilson_rf_01_2024.json"
+
+  }
+
+}
