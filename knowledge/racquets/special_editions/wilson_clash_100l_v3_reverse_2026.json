@@ -1,0 +1,454 @@
+{
+  "id": "wilson_clash_100l_v3_reverse_2026",
+
+  "brand": "Wilson",
+  "brand_cn": "威尔胜",
+
+  "model": "Clash 100L V3 Reverse 2026",
+  "model_cn": "Clash 100L V3 Reverse 2026 反转配色特别版",
+
+  "category": "special_edition_racket",
+  "category_cn": "特别版网球拍",
+
+  "series": "Clash",
+  "series_cn": "Clash 系列",
+
+  "generation": "V3",
+  "generation_cn": "第三代版本",
+
+
+  "edition": {
+
+    "type": "Special Color Edition",
+
+    "type_cn": "特别配色版本",
+
+    "edition_name": "Reverse",
+
+    "edition_name_cn": "反转配色",
+
+    "year": 2026
+
+  },
+
+
+  "product_type": {
+
+    "type": "retail_special",
+
+    "type_cn": "零售特别版本",
+
+    "description_cn":
+    "基于Wilson Clash 100L V3轻量型号打造的Reverse特别配色版本，保留Clash系列舒适和高容错特点，同时增加视觉设计属性"
+
+  },
+
+
+  "base_model": {
+
+    "model": "Wilson Clash 100L V3",
+
+    "cn":
+    "基于Clash第三代100L轻量标准型号"
+
+  },
+
+
+  "player_profile": {
+
+    "level": [
+
+      "beginner",
+      "intermediate",
+      "club player"
+
+    ],
+
+    "level_cn": [
+
+      "初学者",
+      "中级球员",
+      "俱乐部球员"
+
+    ],
+
+
+    "style": [
+
+      "comfort",
+      "easy swing",
+      "all court"
+
+    ],
+
+    "style_cn": [
+
+      "舒适型打法",
+      "轻松挥拍",
+      "全面型打法"
+
+    ]
+
+  },
+
+
+  "specifications": {
+
+    "head_size": {
+
+      "value": 100,
+
+      "unit": "sq in",
+
+      "cn": "100平方英寸"
+
+    },
+
+
+    "weight_unstrung": {
+
+      "value": 280,
+
+      "unit": "g",
+
+      "cn": "空拍重量280克"
+
+    },
+
+
+    "weight_strung": {
+
+      "value": 295,
+
+      "unit": "g approx",
+
+      "cn": "穿线后约295克"
+
+    },
+
+
+    "balance": {
+
+      "value": 325,
+
+      "unit": "mm",
+
+      "cn": "平衡点约325毫米"
+
+    },
+
+
+    "length": {
+
+      "value": 27,
+
+      "unit": "inch",
+
+      "cn": "27英寸"
+
+    },
+
+
+    "string_pattern": {
+
+      "value": "16x19",
+
+      "cn": "16×19开放式线床"
+
+    },
+
+
+    "beam": {
+
+      "value": "24.5 mm",
+
+      "cn": "Clash柔性拍框设计"
+
+    }
+
+  },
+
+
+  "technology": [
+
+    {
+
+      "name": "FreeFlex",
+
+      "cn":
+      "三维碳纤维结构，提高拍框柔韧性"
+
+    },
+
+
+    {
+
+      "name": "FORTYFIVE",
+
+      "cn":
+      "45度碳纤维结构，提高稳定性和球感"
+
+    },
+
+
+    {
+
+      "name": "Click & Go Bumper",
+
+      "cn":
+      "可替换护框设计"
+
+    }
+
+  ],
+
+
+  "performance": {
+
+    "power": {
+
+      "rating": 7,
+
+      "cn": "力量输出：7/10"
+
+    },
+
+
+    "control": {
+
+      "rating": 7,
+
+      "cn": "控制性能：7/10"
+
+    },
+
+
+    "spin": {
+
+      "rating": 8,
+
+      "cn": "旋转能力：8/10"
+
+    },
+
+
+    "comfort": {
+
+      "rating": 10,
+
+      "cn": "舒适性：10/10"
+
+    },
+
+
+    "stability": {
+
+      "rating": 6,
+
+      "cn": "稳定性：6/10"
+
+    },
+
+
+    "maneuverability": {
+
+      "rating": 10,
+
+      "cn": "挥拍灵活性：10/10"
+
+    }
+
+  },
+
+
+  "advantages_cn": [
+
+    "Clash系列极佳舒适性",
+
+    "280克轻量设计",
+
+    "100平方英寸大甜区",
+
+    "非常容易挥动",
+
+    "Reverse配色增加收藏和个性价值"
+
+  ],
+
+
+  "weaknesses_cn": [
+
+    "稳定性低于295g以上型号",
+
+    "面对高速来球容易不足",
+
+    "进攻穿透力有限",
+
+    "高级球员可能需要更重型号"
+
+  ],
+
+
+  "recommended_player_profile": {
+
+    "suitable_for": [
+
+      "女性球员",
+
+      "青少年球员",
+
+      "初中级业余玩家",
+
+      "挥拍速度较慢球员",
+
+      "手臂保护需求玩家",
+
+      "喜欢Wilson特别版用户"
+
+    ],
+
+
+    "not_recommended_for": [
+
+      "职业竞技球员",
+
+      "力量型高级球员",
+
+      "追求极致控制玩家"
+
+    ]
+
+  },
+
+
+  "recommended_strings": {
+
+    "comfort": [
+
+      "Wilson NXT",
+
+      "Wilson Sensation"
+
+    ],
+
+
+    "spin": [
+
+      "Wilson Revolve Spin",
+
+      "Solinco Hyper-G Soft"
+
+    ],
+
+
+    "hybrid": [
+
+      "Multifilament + Polyester"
+
+    ]
+
+  },
+
+
+  "recommended_tension": {
+
+    "range": {
+
+      "value": "22-24 kg",
+
+      "cn":
+      "推荐穿线范围22-24公斤"
+
+    }
+
+  },
+
+
+  "collector_value": {
+
+    "rating": 6,
+
+    "cn":
+    "属于特别配色版本，收藏价值主要来自外观设计"
+
+  },
+
+
+  "comparison": {
+
+
+    "vs_wilson_clash_100_v3_reverse_2026": {
+
+      "cn":
+      "Clash 100L V3 Reverse比Clash 100更轻、更容易挥动，但稳定性和力量下降"
+
+    },
+
+
+    "vs_wilson_clash_100_pro_v3_reverse_2026": {
+
+      "cn":
+      "Clash 100 Pro拥有更高重量和竞技稳定性，100L更适合轻松使用"
+
+    },
+
+
+    "vs_wilson_blade_100ul_v10": {
+
+      "cn":
+      "Blade 100UL更偏控制反馈，Clash 100L更强调舒适和容错"
+
+    },
+
+
+    "vs_wilson_ultra_100l_v5_desert_2026": {
+
+      "cn":
+      "Ultra 100L强调力量速度，Clash 100L强调柔和舒适"
+
+    }
+
+  },
+
+
+  "ai_tags": [
+
+    "Clash",
+
+    "100L",
+
+    "轻量",
+
+    "Comfort",
+
+    "Easy Swing",
+
+    "Reverse Edition",
+
+    "Wilson"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "Wilson Clash 100L V3 Reverse 2026 是Clash第三代轻量版本的特别配色型号。它采用100平方英寸拍面和280克轻量设计，结合Clash系列标志性的柔韧舒适特点，适合女性、青少年、初中级球员以及希望降低手臂负担的用户，同时具有Reverse特别配色的视觉收藏价值。",
+
+
+  "variants": [],
+
+
+  "verification": {
+
+    "status": "official",
+
+    "verified": true,
+
+
+    "knowledge_path":
+
+    "knowledge/racquets/special_editions/wilson_clash_100l_v3_reverse_2026.json"
+
+  }
+
+}
