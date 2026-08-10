@@ -1,0 +1,430 @@
+{
+  "id": "wilson_ultra_98_tour_v5_2025",
+
+  "brand": "Wilson",
+  "brand_cn": "威尔胜",
+
+  "model": "Ultra 98 Tour V5 2025",
+  "model_cn": "Ultra 98 Tour V5 2025",
+
+  "category": "racket",
+  "category_cn": "网球拍",
+
+  "series": "Ultra",
+  "series_cn": "Ultra 系列",
+
+  "generation": "V5",
+  "generation_cn": "第五代版本",
+
+
+  "product_type": {
+
+    "type": "Tour Performance",
+
+    "type_cn": "Tour竞技版本",
+
+    "description_cn":
+    "Ultra系列98平方英寸竞技型号，在力量输出、稳定性和控制之间取得平衡，面向高级业余和比赛型球员"
+
+  },
+
+
+  "player_profile": {
+
+    "level": [
+      "advanced",
+      "competitive amateur",
+      "professional training"
+    ],
+
+    "level_cn": [
+      "高级球员",
+      "竞技型业余球员",
+      "职业训练球员"
+    ],
+
+
+    "style": [
+      "aggressive baseline",
+      "all court",
+      "power control"
+    ],
+
+    "style_cn": [
+      "攻击型底线",
+      "全面型打法",
+      "力量控制结合"
+    ]
+
+  },
+
+
+  "specifications": {
+
+
+    "head_size": {
+
+      "value": 98,
+
+      "unit": "sq in",
+
+      "cn": "98平方英寸"
+
+    },
+
+
+    "weight_unstrung": {
+
+      "value": 305,
+
+      "unit": "g",
+
+      "cn": "空拍重量305克"
+
+    },
+
+
+    "weight_strung": {
+
+      "value": 320,
+
+      "unit": "g approx",
+
+      "cn": "穿线后约320克"
+
+    },
+
+
+    "balance": {
+
+      "value": 325,
+
+      "unit": "mm",
+
+      "cn": "平衡点约325毫米"
+
+    },
+
+
+    "length": {
+
+      "value": 27,
+
+      "unit": "inch",
+
+      "cn": "27英寸"
+
+    },
+
+
+    "string_pattern": {
+
+      "value": "16x19",
+
+      "cn": "16×19开放式线床"
+
+    },
+
+
+    "beam": {
+
+      "value": "22-24 mm",
+
+      "cn": "竞技型拍框设计"
+
+    }
+
+  },
+
+
+  "technology": [
+
+    {
+
+      "name": "FORTYFIVE",
+
+      "cn":
+      "45度碳纤维结构，提高稳定性和球感"
+
+    },
+
+
+    {
+
+      "name": "Crush Zone",
+
+      "cn":
+      "压缩缓冲结构，提高力量输出"
+
+    },
+
+
+    {
+
+      "name": "Power Profile Frame",
+
+      "cn":
+      "Ultra系列力量型框架设计"
+
+    }
+
+  ],
+
+
+  "performance": {
+
+
+    "power": {
+
+      "rating": 8,
+
+      "cn": "力量输出：8/10"
+
+    },
+
+
+    "control": {
+
+      "rating": 8,
+
+      "cn": "控制性能：8/10"
+
+    },
+
+
+    "spin": {
+
+      "rating": 8,
+
+      "cn": "旋转能力：8/10"
+
+    },
+
+
+    "comfort": {
+
+      "rating": 8,
+
+      "cn": "舒适性：8/10"
+
+    },
+
+
+    "stability": {
+
+      "rating": 9,
+
+      "cn": "稳定性：9/10"
+
+    },
+
+
+    "maneuverability": {
+
+      "rating": 8,
+
+      "cn": "挥拍灵活性：8/10"
+
+    }
+
+  },
+
+
+  "advantages_cn": [
+
+    "98平方英寸精准控制",
+
+    "比Ultra 100更适合高级球员",
+
+    "力量和控制平衡优秀",
+
+    "稳定性强",
+
+    "适合快速攻击型打法"
+
+  ],
+
+
+  "weaknesses_cn": [
+
+    "甜区小于100平方英寸",
+
+    "需要较快挥拍速度",
+
+    "力量辅助低于Ultra 100",
+
+    "不适合初学者"
+
+  ],
+
+
+  "recommended_player_profile": {
+
+    "suitable_for": [
+
+      "高级业余比赛球员",
+
+      "俱乐部竞技玩家",
+
+      "攻击型底线球员",
+
+      "喜欢现代力量控制球拍玩家",
+
+      "从100平方英寸升级玩家"
+
+    ],
+
+
+    "not_recommended_for": [
+
+      "初学者",
+
+      "需要最大容错玩家",
+
+      "喜欢传统柔和控制感玩家"
+
+    ]
+
+  },
+
+
+  "recommended_strings": {
+
+
+    "power_control": [
+
+      "Luxilon ALU Power 1.25",
+
+      "Wilson Revolve"
+
+    ],
+
+
+    "spin": [
+
+      "Solinco Hyper-G 1.25",
+
+      "Luxilon 4G"
+
+    ],
+
+
+    "hybrid": [
+
+      "Natural Gut + Polyester"
+
+    ]
+
+  },
+
+
+  "recommended_tension": {
+
+
+    "range": {
+
+      "value": "22-25 kg",
+
+      "cn":
+      "推荐穿线范围22-25公斤"
+
+    },
+
+
+    "power_player": {
+
+      "value": "22-23 kg",
+
+      "cn":
+      "力量型球员建议22-23公斤"
+
+    },
+
+
+    "control_player": {
+
+      "value": "24-25 kg",
+
+      "cn":
+      "控制型球员建议24-25公斤"
+
+    }
+
+  },
+
+
+  "comparison": {
+
+
+    "vs_wilson_ultra_100_v5": {
+
+      "cn":
+      "Ultra 98 Tour拍面更小、控制更强；Ultra 100力量和容错更高"
+
+    },
+
+
+    "vs_wilson_ultra_95_qz_v5_2025": {
+
+      "cn":
+      "Ultra 98 Tour比95 QZ更容易使用，拥有更大甜区；95 QZ控制更极致"
+
+    },
+
+
+    "vs_wilson_blade_98_16x19_v10": {
+
+      "cn":
+      "Blade 98更偏传统控制和球感，Ultra 98 Tour更偏现代力量和速度"
+
+    },
+
+
+    "vs_babolat_pure_strike_98_2025": {
+
+      "cn":
+      "Pure Strike 98更偏精准控制，Ultra 98 Tour力量输出更明显"
+
+    }
+
+  },
+
+
+  "ai_tags": [
+
+    "Ultra",
+
+    "98拍面",
+
+    "Tour",
+
+    "Power Control",
+
+    "高级球员",
+
+    "Wilson"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "Wilson Ultra 98 Tour V5 2025 是Ultra系列面向高级球员的98平方英寸竞技型号。它结合305克重量、16×19线床和现代力量型框架，在速度、力量、旋转和控制之间取得平衡，适合攻击型底线球员和竞技水平业余玩家。相比Ultra 100，它提供更精准控制；相比Ultra 95，它拥有更好的容错和易用性。",
+
+
+  "variants": [],
+
+
+  "verification": {
+
+    "status": "official",
+
+    "verified": true,
+
+
+    "knowledge_path":
+    "knowledge/racquets/wilson/wilson_ultra_98_tour_v5_2025.json"
+
+  }
+
+}
