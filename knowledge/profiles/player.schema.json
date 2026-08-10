@@ -1,0 +1,23 @@
+{
+  "player_profile": {
+    "age": "",
+    "gender": "",
+    "level": "",
+    "playing_style": "",
+    "forehand_style": "",
+    "backhand_style": "",
+    "racket_current": "",
+    "string_current": "",
+    "tension_current": "",
+    "physical_condition": {
+      "arm_comfort": "",
+      "strength_level": ""
+    },
+    "goal": [
+      "more_power",
+      "more_spin",
+      "more_control",
+      "more_comfort"
+    ]
+  }
+}
