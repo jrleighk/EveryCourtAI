@@ -1,0 +1,444 @@
+{
+  "id": "wilson_clash_100l_v3_roland_garros_2026",
+
+  "brand": "Wilson",
+  "brand_cn": "威尔胜",
+
+  "model": "Clash 100L V3 Roland Garros 2026",
+  "model_cn": "Clash 100L V3 法网2026特别版",
+
+  "category": "special_edition_racket",
+  "category_cn": "大满贯特别版网球拍",
+
+  "series": "Clash",
+  "series_cn": "Clash 系列",
+
+  "generation": "V3",
+  "generation_cn": "第三代版本",
+
+
+  "edition": {
+
+    "type": "Grand Slam Edition",
+
+    "type_cn": "大满贯赛事特别版",
+
+    "event": "Roland Garros",
+
+    "event_cn": "法国网球公开赛（法网）",
+
+    "year": 2026
+
+  },
+
+
+  "product_type": {
+
+    "type": "retail",
+
+    "type_cn": "零售版本",
+
+    "description_cn":
+    "基于Wilson Clash 100L V3打造的法网主题特别版，结合赛事文化元素与轻量易用性能"
+
+  },
+
+
+  "base_model": {
+
+    "model": "Wilson Clash 100L V3",
+
+    "cn":
+    "基于Clash第三代100L轻量版本"
+
+  },
+
+
+  "player_profile": {
+
+    "level": [
+
+      "beginner",
+      "intermediate",
+      "club player"
+
+    ],
+
+    "level_cn": [
+
+      "初学者",
+      "中级球员",
+      "俱乐部球员"
+
+    ],
+
+
+    "style": [
+
+      "comfort",
+      "all court",
+      "easy swing"
+
+    ],
+
+    "style_cn": [
+
+      "舒适型打法",
+      "全面型打法",
+      "轻松挥拍"
+
+    ]
+
+  },
+
+
+  "specifications": {
+
+
+    "head_size": {
+
+      "value": 100,
+
+      "unit": "sq in",
+
+      "cn": "100平方英寸"
+
+    },
+
+
+    "weight_unstrung": {
+
+      "value": 280,
+
+      "unit": "g",
+
+      "cn": "空拍重量280克"
+
+    },
+
+
+    "weight_strung": {
+
+      "value": 295,
+
+      "unit": "g approx",
+
+      "cn": "穿线后约295克"
+
+    },
+
+
+    "balance": {
+
+      "value": 325,
+
+      "unit": "mm",
+
+      "cn": "平衡点约325毫米"
+
+    },
+
+
+    "length": {
+
+      "value": 27,
+
+      "unit": "inch",
+
+      "cn": "27英寸"
+
+    },
+
+
+    "string_pattern": {
+
+      "value": "16x19",
+
+      "cn": "16×19开放式线床"
+
+    },
+
+
+    "beam": {
+
+      "value": "24.5 mm",
+
+      "cn": "较厚拍框设计"
+
+    }
+
+  },
+
+
+  "technology": [
+
+    {
+
+      "name": "FreeFlex",
+
+      "cn":
+      "三维碳纤维结构，提高柔韧性和击球自由度"
+
+    },
+
+
+    {
+
+      "name": "StableSmart",
+
+      "cn":
+      "优化拍框结构，提高稳定性"
+
+    },
+
+
+    {
+
+      "name": "FORTYFIVE",
+
+      "cn":
+      "45度碳纤维技术，提高球感"
+
+    }
+
+  ],
+
+
+  "performance": {
+
+
+    "power": {
+
+      "rating": 7,
+
+      "cn": "力量输出：7/10"
+
+    },
+
+
+    "control": {
+
+      "rating": 7,
+
+      "cn": "控制性能：7/10"
+
+    },
+
+
+    "spin": {
+
+      "rating": 8,
+
+      "cn": "旋转能力：8/10"
+
+    },
+
+
+    "comfort": {
+
+      "rating": 10,
+
+      "cn": "舒适性：10/10"
+
+    },
+
+
+    "stability": {
+
+      "rating": 7,
+
+      "cn": "稳定性：7/10"
+
+    },
+
+
+    "maneuverability": {
+
+      "rating": 10,
+
+      "cn": "挥拍灵活性：10/10"
+
+    }
+
+  },
+
+
+  "advantages_cn": [
+
+    "Clash系列极佳舒适性",
+
+    "100平方英寸甜区大",
+
+    "280克重量容易挥动",
+
+    "适合长时间训练",
+
+    "Roland Garros特别设计具有收藏价值"
+
+  ],
+
+
+  "weaknesses_cn": [
+
+    "稳定性低于300克以上型号",
+
+    "进攻穿透力有限",
+
+    "高级球员可能觉得力量不足"
+
+  ],
+
+
+  "recommended_player_profile": {
+
+    "suitable_for": [
+
+      "女性球员",
+
+      "年轻球员",
+
+      "初中级业余玩家",
+
+      "手臂保护需求玩家",
+
+      "喜欢法网文化收藏者"
+
+    ],
+
+
+    "not_recommended_for": [
+
+      "职业竞技球员",
+
+      "力量型高级球员",
+
+      "追求极致控制玩家"
+
+    ]
+
+  },
+
+
+  "recommended_strings": {
+
+
+    "comfort": [
+
+      "Wilson NXT",
+
+      "Wilson Sensation"
+
+    ],
+
+
+    "spin": [
+
+      "Wilson Revolve Spin",
+
+      "Solinco Hyper-G Soft"
+
+    ],
+
+
+    "hybrid": [
+
+      "Multifilament + Polyester"
+
+    ]
+
+  },
+
+
+  "recommended_tension": {
+
+    "range": {
+
+      "value": "22-24 kg",
+
+      "cn": "推荐穿线范围22-24公斤"
+
+    }
+
+  },
+
+
+  "collector_value": {
+
+    "rating": 6,
+
+    "cn":
+    "具有赛事纪念价值，但收藏等级低于球员限量版"
+
+  },
+
+
+  "comparison": {
+
+
+    "vs_clash_100l_v3": {
+
+      "cn":
+      "性能基础一致，主要区别为Roland Garros主题设计和收藏属性"
+
+    },
+
+
+    "vs_wilson_blade_100ul_v10": {
+
+      "cn":
+      "Blade 100UL更偏控制和反馈，Clash 100L更强调舒适和容错"
+
+    },
+
+
+    "vs_babolat_pure_drive_team_2026": {
+
+      "cn":
+      "Pure Drive Team力量更强，Clash 100L舒适性更突出"
+
+    }
+
+  },
+
+
+  "ai_tags": [
+
+    "Roland Garros",
+
+    "French Open",
+
+    "Grand Slam",
+
+    "Clash",
+
+    "轻量",
+
+    "舒适",
+
+    "特别版"
+
+  ],
+
+
+  "ai_summary_cn":
+
+  "Wilson Clash 100L V3 Roland Garros 2026 是基于Clash第三代轻量型号打造的法网特别版球拍。它结合Clash系列领先的舒适性、100平方英寸高容错拍面和Roland Garros赛事文化元素，适合追求轻松挥拍、舒适体验以及收藏意义的业余球员。",
+
+
+  "variants": [],
+
+
+  "verification": {
+
+    "status": "official",
+
+    "verified": true,
+
+
+    "knowledge_path":
+
+    "knowledge/racquets/special_editions/wilson_clash_100l_v3_roland_garros_2026.json"
+
+  }
+
+}
