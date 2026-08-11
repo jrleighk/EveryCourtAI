@@ -1,0 +1,263 @@
+{
+  "id": "head_squared_2026",
+
+  "brand": "HEAD",
+  "brand_cn": "海德",
+
+  "model": "Squared 2026",
+  "model_cn": "Squared 2026",
+
+  "category": "performance_racket",
+  "category_cn": "竞技网球拍",
+
+  "series": "Squared",
+  "series_cn": "Squared 系列",
+
+  "generation": "2026",
+  "generation_cn": "2026款",
+
+  "release_year": 2026,
+
+  "aliases": [
+    "HEAD Squared 2026",
+    "Head Squared 2026",
+    "Squared 2026",
+    "HEAD Squared"
+  ],
+
+  "product_type": {
+    "type": "spin_performance",
+    "type_cn": "旋转竞技型",
+    "description_cn": "HEAD Squared 系列主打旋转、易上手和现代底线打法，适合希望提升旋转能力的中级球员。"
+  },
+
+  "player_profile": {
+
+    "level": [
+      "intermediate",
+      "club player"
+    ],
+
+    "level_cn": [
+      "中级球员",
+      "俱乐部球员"
+    ],
+
+    "style": [
+      "modern baseline",
+      "topspin",
+      "all court"
+    ],
+
+    "style_cn": [
+      "现代底线打法",
+      "上旋打法",
+      "全面型打法"
+    ]
+
+  },
+
+  "specifications": {
+
+    "head_size": {
+      "value": 100,
+      "unit": "sq in",
+      "cn": "100平方英寸"
+    },
+
+    "weight_strung": {
+      "value": 295,
+      "unit": "g",
+      "cn": "穿线后295克"
+    },
+
+    "weight_unstrung": {
+      "value": 277,
+      "unit": "g approx",
+      "cn": "预计空拍约277克"
+    },
+
+    "balance": {
+      "value": 295,
+      "unit": "mm",
+      "cn": "穿线后平衡点295毫米"
+    },
+
+    "length": {
+      "value": 27,
+      "unit": "inch",
+      "cn": "27英寸"
+    },
+
+    "string_pattern": {
+      "value": "16x18",
+      "cn": "16×18开放式线床"
+    }
+
+  },
+
+  "technology": [
+
+    {
+      "name": "Spin Optimized Design",
+      "cn": "优化旋转输出设计。"
+    },
+
+    {
+      "name": "Open String Pattern",
+      "cn": "16×18开放式线床，提高球线位移和旋转潜力。"
+    }
+
+  ],
+
+  "performance": {
+
+    "power": {
+      "rating": 8,
+      "cn": "力量输出：8/10"
+    },
+
+    "control": {
+      "rating": 7,
+      "cn": "控制性能：7/10"
+    },
+
+    "spin": {
+      "rating": 10,
+      "cn": "旋转能力：10/10"
+    },
+
+    "comfort": {
+      "rating": 8,
+      "cn": "舒适性：8/10"
+    },
+
+    "stability": {
+      "rating": 7,
+      "cn": "稳定性：7/10"
+    },
+
+    "maneuverability": {
+      "rating": 9,
+      "cn": "挥拍灵活性：9/10"
+    }
+
+  },
+
+  "advantages_cn": [
+
+    "16×18线床旋转能力突出",
+
+    "100平方英寸甜区宽容",
+
+    "挥拍轻快",
+
+    "适合现代上旋打法",
+
+    "适合中级球员升级"
+
+  ],
+
+  "weaknesses_cn": [
+
+    "控制力低于18×20球拍",
+
+    "稳定性不及高重量竞技型号",
+
+    "力量型职业球员可能需要加配重"
+
+  ],
+
+  "recommended_player_profile": {
+
+    "suitable_for": [
+
+      "中级球员",
+
+      "俱乐部球员",
+
+      "喜欢上旋打法",
+
+      "希望增加容错率的球员"
+
+    ],
+
+    "not_recommended_for": [
+
+      "职业高水平球员",
+
+      "偏好传统控制拍用户"
+
+    ]
+
+  },
+
+  "recommended_tension": {
+
+    "range": {
+
+      "value": "21-24 kg",
+
+      "cn": "推荐穿线范围21-24公斤"
+
+    }
+
+  },
+
+  "comparison": {
+
+    "vs_head_extreme_mp_2026": {
+
+      "cn": "Extreme MP整体稳定性更高；Squared更强调开放线床和旋转能力。"
+
+    },
+
+    "vs_babolat_pure_aero_2026": {
+
+      "cn": "两者都强调旋转；Pure Aero力量更直接，Squared更偏易上手。"
+
+    }
+
+  },
+
+  "ai_tags": [
+
+    "HEAD",
+
+    "Squared",
+
+    "2026",
+
+    "100",
+
+    "16x18",
+
+    "Spin",
+
+    "Intermediate"
+
+  ],
+
+  "ai_summary_cn": "HEAD Squared 2026 是一款面向中级球员的现代旋转型球拍，采用100平方英寸拍面、16×18开放式线床和约295克穿线重量设计，强调快速挥拍、强烈旋转和良好的容错性，适合希望提升上旋能力和底线进攻表现的球员。",
+
+  "variants": [],
+
+  "verification": {
+
+    "status": "partial_official",
+
+    "verified": true,
+
+    "verified_specs": {
+      "head_size": "100 sq in",
+      "weight_strung": "295 g",
+      "balance_strung": "295 mm",
+      "length": "27 in",
+      "string_pattern": "16x18"
+    },
+
+    "knowledge_path": "knowledge/racquets/head/head_squared_2026.json"
+
+  }
+
+}
