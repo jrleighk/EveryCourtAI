@@ -1,0 +1,473 @@
+{
+  "id": "head_boom_mp_l_alternate_2026",
+
+  "brand": "HEAD",
+  "brand_cn": "海德",
+
+  "model": "Boom MP L Alternate 2026",
+  "model_cn": "Boom MP L Alternate 2026",
+
+  "category": "special_edition_racket",
+  "category_cn": "特别版竞技网球拍",
+
+  "series": "Boom",
+  "series_cn": "Boom 系列",
+
+  "generation": "2026",
+  "generation_cn": "2026款",
+
+  "release_year": 2026,
+
+  "edition": {
+
+    "type": "Alternate Cosmetic",
+
+    "type_cn": "Alternate 配色版",
+
+    "name": "Alternate",
+
+    "name_cn": "Alternate 特别配色",
+
+    "theme_cn": "Boom MP L 2026 Alternate Cosmetics，性能与标准版完全一致，仅外观不同。"
+
+  },
+
+  "paint_job_only": true,
+
+  "base_model": {
+
+    "model": "HEAD Boom MP L 2026",
+
+    "cn": "基于 HEAD Boom MP L 2026"
+
+  },
+
+  "aliases": [
+
+    "HEAD Boom MP L Alternate 2026",
+
+    "Head Boom MP L Alternate",
+
+    "Boom MP L Alternate",
+
+    "Boom MPL Alternate",
+
+    "Boom MP L Alternate 2026"
+
+  ],
+
+  "product_type": {
+
+    "type": "performance_special",
+
+    "type_cn": "轻量竞技特别版",
+
+    "description_cn": "Boom MP L 2026 的 Alternate 配色版本，规格与标准版完全一致，仅采用不同配色设计。"
+
+  },
+
+  "player_profile": {
+
+    "level": [
+
+      "intermediate",
+
+      "advanced amateur",
+
+      "developing junior"
+
+    ],
+
+    "level_cn": [
+
+      "中级球员",
+
+      "高级业余球员",
+
+      "进阶青少年球员"
+
+    ],
+
+    "style": [
+
+      "modern baseline",
+
+      "all court",
+
+      "fast swing"
+
+    ],
+
+    "style_cn": [
+
+      "现代底线打法",
+
+      "全面型打法",
+
+      "快速挥拍"
+
+    ]
+
+  },
+
+  "specifications": {
+
+    "head_size": {
+
+      "value": 100,
+
+      "unit": "sq in",
+
+      "cn": "100平方英寸"
+
+    },
+
+    "weight_unstrung": {
+
+      "value": 257,
+
+      "unit": "g approx",
+
+      "cn": "预计空拍约257克"
+
+    },
+
+    "weight_strung": {
+
+      "value": 275,
+
+      "unit": "g",
+
+      "cn": "穿线后275克（官方）"
+
+    },
+
+    "balance": {
+
+      "value": 330,
+
+      "unit": "mm approx",
+
+      "cn": "预计空拍平衡点约330毫米"
+
+    },
+
+    "length": {
+
+      "value": 27,
+
+      "unit": "inch",
+
+      "cn": "27英寸"
+
+    },
+
+    "string_pattern": {
+
+      "value": "16x19",
+
+      "cn": "16×19开放式线床"
+
+    },
+
+    "beam": {
+
+      "value": "24 mm",
+
+      "cn": "待官方确认"
+
+    },
+
+    "material": {
+
+      "value": "Graphene Inside + Auxetic 2.0",
+
+      "cn": "Graphene Inside + Auxetic 2.0"
+
+    }
+
+  },
+
+  "technology": [
+
+    {
+
+      "name": "Auxetic 2.0",
+
+      "cn": "第二代 Auxetic 科技，提高击球反馈和舒适性。"
+
+    },
+
+    {
+
+      "name": "Graphene Inside",
+
+      "cn": "Graphene Inside 提高稳定性和能量传递。"
+
+    },
+
+    {
+
+      "name": "Morph Beam",
+
+      "cn": "Morph Beam 拍框结构，兼顾力量与控制。"
+
+    },
+
+    {
+
+      "name": "Power Grommets",
+
+      "cn": "扩大线床移动，提高力量输出。"
+
+    },
+
+    {
+
+      "name": "Directional Drilling",
+
+      "cn": "优化线孔角度，提高甜区和击球反馈。"
+
+    }
+
+  ],
+
+  "generation_features": [
+
+    "Auxetic 2.0",
+
+    "Graphene Inside",
+
+    "Morph Beam",
+
+    "Power Grommets",
+
+    "Directional Drilling"
+
+  ],
+
+  "performance": {
+
+    "power": {
+
+      "rating": 9,
+
+      "cn": "力量输出：9/10"
+
+    },
+
+    "control": {
+
+      "rating": 8,
+
+      "cn": "控制性能：8/10"
+
+    },
+
+    "spin": {
+
+      "rating": 8,
+
+      "cn": "旋转能力：8/10"
+
+    },
+
+    "comfort": {
+
+      "rating": 9,
+
+      "cn": "舒适性：9/10"
+
+    },
+
+    "stability": {
+
+      "rating": 7,
+
+      "cn": "稳定性：7/10"
+
+    },
+
+    "maneuverability": {
+
+      "rating": 10,
+
+      "cn": "挥拍灵活性：10/10"
+
+    }
+
+  },
+
+  "advantages_cn": [
+
+    "Alternate 特别配色",
+
+    "275克穿线重量，挥拍轻松",
+
+    "100平方英寸甜区宽容",
+
+    "力量输出轻松",
+
+    "舒适性优秀",
+
+    "具有一定收藏价值"
+
+  ],
+
+  "weaknesses_cn": [
+
+    "性能与标准版完全一致",
+
+    "仅外观不同",
+
+    "稳定性低于 Boom MP 和 Boom Pro"
+
+  ],
+
+  "recommended_player_profile": {
+
+    "suitable_for": [
+
+      "中级球员",
+
+      "女性球员",
+
+      "青少年球员",
+
+      "俱乐部球员",
+
+      "Boom 收藏玩家"
+
+    ],
+
+    "not_recommended_for": [
+
+      "希望获得性能升级的用户"
+
+    ]
+
+  },
+
+  "recommended_strings": {
+
+    "power": [
+
+      "HEAD Lynx 1.25",
+
+      "HEAD Lynx Tour 1.25"
+
+    ],
+
+    "control": [
+
+      "HEAD Hawk Touch 1.25"
+
+    ],
+
+    "comfort": [
+
+      "HEAD Velocity MLT",
+
+      "HEAD Reflex MLT"
+
+    ],
+
+    "hybrid": [
+
+      "HEAD Hawk Touch + Velocity MLT"
+
+    ]
+
+  },
+
+  "recommended_tension": {
+
+    "range": {
+
+      "value": "21-24 kg",
+
+      "cn": "推荐穿线范围21-24公斤"
+
+    }
+
+  },
+
+  "comparison": {
+
+    "vs_head_boom_mp_l_2026": {
+
+      "cn": "性能完全一致，仅配色不同。"
+
+    },
+
+    "vs_head_boom_mp_2026": {
+
+      "cn": "Boom MP 更稳定；Boom MP L Alternate 更轻、更容易挥拍。"
+
+    }
+
+  },
+
+  "collector_value": {
+
+    "rating": 8,
+
+    "cn": "Alternate 配色具有一定收藏价值。"
+
+  },
+
+  "ai_tags": [
+
+    "HEAD",
+
+    "Boom",
+
+    "Boom MP L",
+
+    "Alternate",
+
+    "2026",
+
+    "100",
+
+    "275g",
+
+    "16x19",
+
+    "Power",
+
+    "Special Edition"
+
+  ],
+
+  "ai_summary_cn": "HEAD Boom MP L Alternate 2026 是 Boom MP L 2026 的 Alternate 特别配色版本，采用100平方英寸拍面、275克穿线重量和16×19开放式线床设计。该版本与标准版拥有完全相同的性能，仅采用不同外观设计，适合希望兼顾实战与收藏价值的球员。",
+
+  "variants": [
+
+    "Boom MP L 2026"
+
+  ],
+
+  "verification": {
+
+    "status": "partial_official",
+
+    "verified": true,
+
+    "verified_specs": {
+
+      "weight_strung": "275 g",
+
+      "head_size": "100 sq in",
+
+      "length": "27 in",
+
+      "string_pattern": "16x19"
+
+    },
+
+    "knowledge_path": "knowledge/racquets/head/head_boom_mp_l_alternate_2026.json"
+
+  }
+
+}
