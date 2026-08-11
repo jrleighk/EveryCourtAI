@@ -1,0 +1,343 @@
+{
+  "id": "head_speed_tour_2026",
+
+  "brand": "HEAD",
+  "brand_cn": "海德",
+
+  "model": "Speed Tour 2026",
+  "model_cn": "Speed Tour 2026",
+
+  "category": "performance_racket",
+  "category_cn": "高级竞技网球拍",
+
+  "series": "Speed",
+  "series_cn": "Speed 系列",
+
+  "generation": "2026",
+  "generation_cn": "2026款",
+
+  "release_year": 2026,
+
+  "aliases": [
+    "HEAD Speed Tour 2026",
+    "Head Speed Tour 2026",
+    "Speed Tour 2026",
+    "HEAD Speed Tour"
+  ],
+
+  "product_type": {
+
+    "type": "performance_control",
+
+    "type_cn": "高级控制竞技型",
+
+    "description_cn": "Speed Tour 是 Speed 系列中强调精准控制和挥拍速度的高级竞技型号，适合喜欢97拍面和现代控制打法的球员。"
+
+  },
+
+  "player_profile": {
+
+    "level": [
+      "advanced",
+      "competitive amateur",
+      "tournament player"
+    ],
+
+    "level_cn": [
+      "高级球员",
+      "竞技业余球员",
+      "比赛型球员"
+    ],
+
+    "style": [
+      "all court",
+      "precision",
+      "aggressive baseline"
+    ],
+
+    "style_cn": [
+      "全面型打法",
+      "精准控制",
+      "进攻型底线打法"
+    ]
+
+  },
+
+  "specifications": {
+
+    "head_size": {
+      "value": 97,
+      "unit": "sq in",
+      "cn": "97平方英寸"
+    },
+
+    "weight_strung": {
+      "value": 305,
+      "unit": "g",
+      "cn": "穿线后305克（官方）"
+    },
+
+    "weight_unstrung": {
+      "value": null,
+      "unit": "g",
+      "cn": "空拍重量待官方确认"
+    },
+
+    "balance_strung": {
+      "value": 315,
+      "unit": "mm",
+      "cn": "穿线后平衡点315毫米（官方）"
+    },
+
+    "balance_unstrung": {
+      "value": null,
+      "unit": "mm",
+      "cn": "空拍平衡点待官方确认"
+    },
+
+    "length": {
+      "value": 27,
+      "unit": "inch",
+      "cn": "27英寸"
+    },
+
+    "string_pattern": {
+      "value": "16x19",
+      "cn": "16×19开放式线床"
+    },
+
+    "beam": {
+      "value": null,
+      "unit": "mm",
+      "cn": "拍框厚度待官方确认"
+    },
+
+    "stiffness": {
+      "value": null,
+      "unit": "RA",
+      "cn": "刚度待官方确认"
+    },
+
+    "material": {
+      "value": null,
+      "cn": "材料待官方确认"
+    }
+
+  },
+
+  "technology": [],
+
+  "performance": {
+
+    "power": {
+      "rating": 7,
+      "cn": "力量输出：7/10"
+    },
+
+    "control": {
+      "rating": 10,
+      "cn": "控制性能：10/10"
+    },
+
+    "spin": {
+      "rating": 8,
+      "cn": "旋转能力：8/10"
+    },
+
+    "comfort": {
+      "rating": 8,
+      "cn": "舒适性：8/10"
+    },
+
+    "stability": {
+      "rating": 9,
+      "cn": "稳定性：9/10"
+    },
+
+    "maneuverability": {
+      "rating": 9,
+      "cn": "挥拍灵活性：9/10"
+    }
+
+  },
+
+  "advantages_cn": [
+
+    "97平方英寸拍面提供更精准落点",
+
+    "16×19线床兼顾控制与旋转",
+
+    "305克穿线重量兼顾稳定与挥速",
+
+    "315毫米平衡提升操控性",
+
+    "适合高级比赛球员"
+
+  ],
+
+  "weaknesses_cn": [
+
+    "甜区小于100拍面",
+
+    "需要较好的击球基础",
+
+    "不适合初学者"
+
+  ],
+
+  "recommended_player_profile": {
+
+    "suitable_for": [
+
+      "高级竞技球员",
+
+      "全面型打法",
+
+      "控制型底线球员",
+
+      "喜欢97拍面的球员"
+
+    ],
+
+    "not_recommended_for": [
+
+      "初学者",
+
+      "需要大量免费力量的球员"
+
+    ]
+
+  },
+
+  "recommended_strings": {
+
+    "control": [
+
+      "HEAD Hawk Touch 1.25",
+
+      "HEAD Lynx Tour 1.25"
+
+    ],
+
+    "comfort": [
+
+      "HEAD Velocity MLT"
+
+    ],
+
+    "hybrid": [
+
+      "HEAD Hawk Touch + HEAD Velocity MLT"
+
+    ]
+
+  },
+
+  "recommended_tension": {
+
+    "range": {
+
+      "value": "21-25 kg",
+
+      "cn": "推荐穿线范围21-25公斤"
+
+    }
+
+  },
+
+  "comparison": {
+
+    "vs_head_speed_pro_2026": {
+
+      "cn": "Speed Tour 使用97平方英寸拍面和16×19线床，更强调挥拍速度和旋转；Speed Pro 为100平方英寸18×20，更强调稳定和精准控制。"
+
+    },
+
+    "vs_head_prestige_pro": {
+
+      "cn": "Speed Tour 更容易产生旋转和力量；Prestige Pro 控制更加传统。"
+
+    },
+
+    "vs_head_extreme_pro_2026": {
+
+      "cn": "Extreme Pro 更强调旋转；Speed Tour 更强调精准控制。"
+
+    }
+
+  },
+
+  "ai_tags": [
+
+    "HEAD",
+
+    "Speed",
+
+    "Speed Tour",
+
+    "2026",
+
+    "97",
+
+    "305g",
+
+    "315mm",
+
+    "16x19",
+
+    "Control",
+
+    "Advanced"
+
+  ],
+
+  "ai_summary_cn": "HEAD Speed Tour 2026 是 Speed 系列高级控制型球拍，采用97平方英寸拍面、305克穿线重量、315毫米穿线平衡点和16×19开放式线床设计，兼顾精准控制、挥拍速度与现代旋转能力，非常适合高级比赛球员。",
+
+  "variants": [
+
+    "Speed Pro 2026",
+    "Speed MP 2026",
+    "Speed MP L 2026"
+
+  ],
+
+  "verification": {
+
+    "status": "partial_official",
+
+    "verified": true,
+
+    "verified_specs": {
+
+      "weight_strung": "305 g",
+
+      "balance_strung": "315 mm",
+
+      "head_size": "97 sq in",
+
+      "length": "27 in",
+
+      "string_pattern": "16x19",
+
+      "player_level": "Advanced",
+
+      "performance_focus": "Control"
+
+    },
+
+    "unverified_specs": [
+
+      "weight_unstrung",
+      "balance_unstrung",
+      "beam",
+      "stiffness",
+      "material",
+      "technology"
+
+    ],
+
+    "knowledge_path": "knowledge/racquets/head/head_speed_tour_2026.json"
+
+  }
+
+}
