@@ -1,0 +1,293 @@
+{
+  "id": "head_radical_mp_palm_tree_crew_2025",
+
+  "brand": "HEAD",
+  "brand_cn": "海德",
+
+  "collaboration_brand": "Palm Tree Crew",
+  "collaboration_brand_cn": "Palm Tree Crew",
+
+  "model": "Radical MP Palm Tree Crew 2025",
+  "model_cn": "Radical MP Palm Tree Crew 联名版 2025",
+
+  "category": "collaboration_racket",
+  "category_cn": "品牌联名竞技网球拍",
+
+  "series": "Radical",
+  "series_cn": "Radical 系列",
+
+  "generation": "2025",
+  "generation_cn": "2025款",
+
+  "release_year": 2025,
+
+  "aliases": [
+    "HEAD Radical MP Palm Tree Crew 2025",
+    "Head Radical MP Palm Tree Crew",
+    "Radical MP Palm Tree Crew",
+    "Radical MP PTC 2025"
+  ],
+
+  "collaboration": {
+    "type": "lifestyle_collaboration",
+    "type_cn": "生活方式品牌联名",
+    "partner": "Palm Tree Crew",
+    "partner_cn": "Palm Tree Crew",
+    "theme_cn": "将 HEAD Radical 系列竞技性能与 Palm Tree Crew 的热带生活方式和潮流设计语言结合。"
+  },
+
+  "base_model": {
+    "model": "HEAD Radical MP 2025",
+    "cn": "基于 HEAD Radical MP 2025"
+  },
+
+  "paint_job_only": true,
+
+  "product_type": {
+    "type": "performance_collaboration",
+    "type_cn": "竞技联名版本",
+    "description_cn": "Radical MP 2025 的 Palm Tree Crew 联名版本，性能基础与标准 Radical MP 一致，主要区别为联名外观和收藏属性。"
+  },
+
+  "player_profile": {
+    "level": [
+      "advanced",
+      "competitive amateur",
+      "tournament player"
+    ],
+
+    "level_cn": [
+      "高级球员",
+      "竞技业余球员",
+      "比赛型球员"
+    ],
+
+    "style": [
+      "all court",
+      "control",
+      "aggressive baseline"
+    ],
+
+    "style_cn": [
+      "全面型打法",
+      "控制型打法",
+      "进攻型底线打法"
+    ]
+  },
+
+  "specifications": {
+    "head_size": {
+      "value": 98,
+      "unit": "sq in",
+      "cn": "98平方英寸"
+    },
+
+    "weight_unstrung": {
+      "value": null,
+      "unit": "g",
+      "cn": "空拍重量待确认"
+    },
+
+    "weight_strung": {
+      "value": 300,
+      "unit": "g",
+      "cn": "穿线后300克"
+    },
+
+    "balance_unstrung": {
+      "value": null,
+      "unit": "mm",
+      "cn": "空拍平衡点待确认"
+    },
+
+    "balance_strung": {
+      "value": 320,
+      "unit": "mm",
+      "cn": "穿线后平衡点320毫米"
+    },
+
+    "length": {
+      "value": 27,
+      "unit": "inch",
+      "cn": "27英寸"
+    },
+
+    "string_pattern": {
+      "value": "16x19",
+      "cn": "16×19开放式线床"
+    },
+
+    "beam": {
+      "value": null,
+      "unit": "mm",
+      "cn": "拍框厚度待确认"
+    },
+
+    "stiffness": {
+      "value": null,
+      "unit": "RA",
+      "cn": "刚度待确认"
+    },
+
+    "material": {
+      "value": null,
+      "cn": "材料结构待确认"
+    }
+  },
+
+  "technology": [],
+
+  "performance": {
+    "power": {
+      "rating": 8,
+      "cn": "力量输出：8/10"
+    },
+
+    "control": {
+      "rating": 9,
+      "cn": "控制性能：9/10"
+    },
+
+    "spin": {
+      "rating": 8,
+      "cn": "旋转能力：8/10"
+    },
+
+    "comfort": {
+      "rating": 8,
+      "cn": "舒适性：8/10"
+    },
+
+    "stability": {
+      "rating": 8,
+      "cn": "稳定性：8/10"
+    },
+
+    "maneuverability": {
+      "rating": 9,
+      "cn": "挥拍灵活性：9/10"
+    }
+  },
+
+  "advantages_cn": [
+    "98平方英寸兼顾精准与容错",
+    "16×19线床兼顾旋转和控制",
+    "300克穿线重量易于操控",
+    "Palm Tree Crew 联名设计辨识度高",
+    "兼顾实战性能和潮流收藏属性"
+  ],
+
+  "weaknesses_cn": [
+    "性能与标准 Radical MP 基本一致",
+    "联名溢价主要来自设计和收藏属性",
+    "对初学者仍有一定技术要求"
+  ],
+
+  "recommended_player_profile": {
+    "suitable_for": [
+      "高级业余球员",
+      "俱乐部比赛球员",
+      "全面型打法玩家",
+      "喜欢控制和旋转平衡的球员",
+      "Palm Tree Crew 收藏用户"
+    ],
+
+    "not_recommended_for": [
+      "初学者",
+      "需要超大甜区的玩家",
+      "只追求纯力量输出的用户"
+    ]
+  },
+
+  "recommended_strings": {
+    "control": [
+      "HEAD Hawk Touch 1.25",
+      "HEAD Lynx Tour 1.25"
+    ],
+
+    "spin": [
+      "HEAD Lynx Tour 1.25"
+    ],
+
+    "comfort": [
+      "HEAD Velocity MLT"
+    ],
+
+    "hybrid": [
+      "HEAD Hawk Touch + HEAD Velocity MLT"
+    ]
+  },
+
+  "recommended_tension": {
+    "range": {
+      "value": "21-25 kg",
+      "cn": "推荐穿线范围21-25公斤"
+    }
+  },
+
+  "collector_value": {
+    "rating": 9,
+    "cn": "Palm Tree Crew 联名赋予其明显的潮流与收藏属性。"
+  },
+
+  "comparison": {
+    "vs_head_radical_mp_2025": {
+      "cn": "性能基础基本一致，Palm Tree Crew 版本主要增加联名外观与收藏价值。"
+    },
+
+    "vs_head_speed_mp_2026": {
+      "cn": "Speed MP 更偏全面稳定；Radical MP Palm Tree Crew 更强调直接控制和联名潮流属性。"
+    },
+
+    "vs_head_extreme_mp_2026": {
+      "cn": "Extreme MP 更强调旋转；Radical MP 更偏均衡控制。"
+    }
+  },
+
+  "ai_tags": [
+    "HEAD",
+    "Radical",
+    "Radical MP",
+    "Palm Tree Crew",
+    "2025",
+    "98拍面",
+    "300g",
+    "320mm",
+    "16x19",
+    "Control",
+    "Collaboration",
+    "Lifestyle"
+  ],
+
+  "ai_summary_cn": "HEAD Radical MP Palm Tree Crew 2025 是 Radical MP 的品牌联名特别版本，采用98平方英寸拍面、300克穿线重量、320毫米穿线平衡点和16×19开放式线床设计。它兼顾控制、旋转和挥拍速度，同时通过 Palm Tree Crew 联名设计增加潮流和收藏属性，适合高级业余球员、俱乐部比赛玩家及联名装备收藏用户。",
+
+  "variants": [
+    "Radical MP 2025"
+  ],
+
+  "verification": {
+    "status": "partial_official",
+    "verified": true,
+
+    "verified_specs": {
+      "weight_strung": "300 g",
+      "balance_strung": "320 mm",
+      "head_size": "98 sq in",
+      "length": "27 in",
+      "string_pattern": "16x19",
+      "player_level": "Advanced",
+      "performance_focus": "Control"
+    },
+
+    "unverified_specs": [
+      "weight_unstrung",
+      "balance_unstrung",
+      "beam",
+      "stiffness",
+      "material",
+      "technology"
+    ],
+
+    "knowledge_path": "knowledge/racquets/collaborations/head_radical_mp_palm_tree_crew_2025.json"
+  }
+}
