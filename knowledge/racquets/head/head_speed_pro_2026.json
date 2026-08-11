@@ -1,0 +1,280 @@
+{
+  "id": "head_speed_pro_2026",
+
+  "brand": "HEAD",
+  "brand_cn": "海德",
+
+  "model": "Speed Pro 2026",
+  "model_cn": "Speed Pro 2026",
+
+  "category": "performance_racket",
+  "category_cn": "高级竞技网球拍",
+
+  "series": "Speed",
+  "series_cn": "Speed 系列",
+
+  "generation": "2026",
+  "generation_cn": "2026款",
+
+  "release_year": 2026,
+
+  "aliases": [
+    "HEAD Speed Pro 2026",
+    "Head Speed Pro 2026",
+    "Speed Pro 2026",
+    "HEAD Speed Pro"
+  ],
+
+  "product_type": {
+    "type": "performance_control",
+    "type_cn": "高级控制竞技型",
+    "description_cn": "HEAD Speed 系列高级竞技型号，采用100平方英寸拍面和18×20密线床，强调精准控制、稳定性和全面型比赛表现。"
+  },
+
+  "player_profile": {
+    "level": [
+      "advanced",
+      "competitive amateur",
+      "tournament player"
+    ],
+
+    "level_cn": [
+      "高级球员",
+      "竞技业余球员",
+      "比赛型球员"
+    ],
+
+    "style": [
+      "all court",
+      "precision",
+      "control",
+      "aggressive baseline"
+    ],
+
+    "style_cn": [
+      "全面型打法",
+      "精准击球",
+      "控制型打法",
+      "进攻型底线打法"
+    ]
+  },
+
+  "specifications": {
+    "head_size": {
+      "value": 100,
+      "unit": "sq in",
+      "cn": "100平方英寸"
+    },
+
+    "weight_unstrung": {
+      "value": 310,
+      "unit": "g",
+      "cn": "空拍重量310克"
+    },
+
+    "weight_strung": {
+      "value": null,
+      "unit": "g",
+      "cn": "穿线后重量待确认"
+    },
+
+    "balance_unstrung": {
+      "value": 310,
+      "unit": "mm",
+      "cn": "空拍平衡点310毫米"
+    },
+
+    "balance_strung": {
+      "value": null,
+      "unit": "mm",
+      "cn": "穿线后平衡点待确认"
+    },
+
+    "length": {
+      "value": 27,
+      "unit": "inch",
+      "cn": "27英寸"
+    },
+
+    "string_pattern": {
+      "value": "18x20",
+      "cn": "18×20密线床"
+    },
+
+    "beam": {
+      "value": null,
+      "unit": "mm",
+      "cn": "拍框厚度待官方确认"
+    },
+
+    "stiffness": {
+      "value": null,
+      "unit": "RA",
+      "cn": "刚度待官方确认"
+    },
+
+    "material": {
+      "value": null,
+      "cn": "具体材料结构待官方确认"
+    }
+  },
+
+  "technology": [],
+
+  "performance": {
+    "power": {
+      "rating": 7,
+      "cn": "力量输出：7/10"
+    },
+
+    "control": {
+      "rating": 10,
+      "cn": "控制性能：10/10"
+    },
+
+    "spin": {
+      "rating": 7,
+      "cn": "旋转能力：7/10"
+    },
+
+    "comfort": {
+      "rating": 8,
+      "cn": "舒适性：8/10"
+    },
+
+    "stability": {
+      "rating": 9,
+      "cn": "稳定性：9/10"
+    },
+
+    "maneuverability": {
+      "rating": 8,
+      "cn": "挥拍灵活性：8/10"
+    }
+  },
+
+  "advantages_cn": [
+    "18×20密线床提供优秀控制力",
+    "100平方英寸拍面兼顾控制与一定容错",
+    "310克空拍重量提供良好稳定性",
+    "310毫米头轻平衡有利于快速操控",
+    "适合高级全面型比赛球员"
+  ],
+
+  "weaknesses_cn": [
+    "力量辅助低于更开放线床型号",
+    "旋转能力低于16×19版本",
+    "310克重量对初中级球员要求较高",
+    "需要较完整的挥拍动作"
+  ],
+
+  "recommended_player_profile": {
+    "suitable_for": [
+      "高级竞技球员",
+      "俱乐部比赛球员",
+      "全面型打法球员",
+      "精准控制型球员",
+      "喜欢18×20密线床的玩家"
+    ],
+
+    "not_recommended_for": [
+      "初学者",
+      "挥拍速度较慢球员",
+      "依赖球拍自动提供大量力量的用户",
+      "追求极端上旋的玩家"
+    ]
+  },
+
+  "recommended_strings": {
+    "control": [
+      "HEAD Hawk Touch 1.25",
+      "HEAD Lynx Tour 1.25"
+    ],
+
+    "comfort": [
+      "HEAD Velocity MLT"
+    ],
+
+    "hybrid": [
+      "HEAD Hawk Touch + HEAD Velocity MLT"
+    ]
+  },
+
+  "recommended_tension": {
+    "range": {
+      "value": "21-25 kg",
+      "cn": "推荐穿线范围21-25公斤"
+    },
+
+    "control_player": {
+      "value": "23-25 kg",
+      "cn": "追求更高控制的球员建议23-25公斤"
+    },
+
+    "comfort_player": {
+      "value": "21-23 kg",
+      "cn": "追求舒适和弹性的球员建议21-23公斤"
+    }
+  },
+
+  "comparison": {
+    "vs_head_speed_mp_2026": {
+      "cn": "Speed Pro采用18×20密线床并拥有更高重量，控制和稳定性更强；Speed MP通常更容易产生旋转和力量。"
+    },
+
+    "vs_head_boom_pro_2026": {
+      "cn": "Speed Pro更强调全面控制和线路精准；Boom Pro更偏直接力量与击球反馈。"
+    },
+
+    "vs_head_extreme_pro_2026": {
+      "cn": "Extreme Pro更强调旋转和底线进攻；Speed Pro更强调控制和全面性。"
+    }
+  },
+
+  "ai_tags": [
+    "HEAD",
+    "Speed",
+    "Speed Pro",
+    "2026",
+    "100拍面",
+    "310g",
+    "310mm",
+    "18x20",
+    "Control",
+    "Advanced",
+    "Performance"
+  ],
+
+  "ai_summary_cn": "HEAD Speed Pro 2026 是 Speed 系列面向高级竞技球员的控制型旗舰型号。它采用100平方英寸拍面、310克空拍重量、310毫米空拍平衡点以及18×20密线床设计，重点提供精准控制、稳定性和全面型比赛表现。相比开放线床型号，它更加适合重视线路、节奏控制和扎实击球反馈的高级玩家。",
+
+  "variants": [
+    "Speed MP 2026",
+    "Speed MP L 2026"
+  ],
+
+  "verification": {
+    "status": "partial_official",
+    "verified": true,
+
+    "verified_specs": {
+      "weight_unstrung": "310 g",
+      "balance_unstrung": "310 mm",
+      "head_size": "100 sq in",
+      "length": "27 in",
+      "string_pattern": "18x20",
+      "player_level": "Advanced",
+      "performance_focus": "Control"
+    },
+
+    "unverified_specs": [
+      "weight_strung",
+      "balance_strung",
+      "beam",
+      "stiffness",
+      "material",
+      "technology"
+    ],
+
+    "knowledge_path": "knowledge/racquets/head/head_speed_pro_2026.json"
+  }
+}
