@@ -1,11 +1,11 @@
 {
-  "id": "head_extreme_mp_l_2026",
+  "id": "head_extreme_mp_ul_2026",
 
   "brand": "HEAD",
   "brand_cn": "海德",
 
-  "model": "Extreme MP L 2026",
-  "model_cn": "Extreme MP L 2026",
+  "model": "Extreme MP UL 2026",
+  "model_cn": "Extreme MP UL 2026",
 
   "category": "performance_racket",
   "category_cn": "竞技网球拍",
@@ -19,35 +19,35 @@
   "release_year": 2026,
 
   "aliases": [
-    "HEAD Extreme MP L 2026",
-    "Head Extreme MP L 2026",
-    "Extreme MP L 2026",
-    "Head Extreme MPL",
-    "Extreme MPL 2026"
+    "HEAD Extreme MP UL 2026",
+    "Head Extreme MP UL 2026",
+    "Extreme MP UL 2026",
+    "HEAD Extreme MPUL",
+    "Extreme MP UL"
   ],
 
   "product_type": {
 
-    "type": "performance",
+    "type": "performance_lightweight",
 
-    "type_cn": "竞技型",
+    "type_cn": "轻量竞技型",
 
-    "description_cn": "HEAD Extreme 系列轻量竞技版本，在保持 Extreme 系列旋转性能的同时，大幅提升挥拍速度和操控性。"
+    "description_cn": "HEAD Extreme 系列超轻竞技版本，专为希望获得强烈旋转、轻松挥拍和高容错的球员打造。"
 
   },
 
   "player_profile": {
 
     "level": [
+      "beginner",
       "intermediate",
-      "advanced",
-      "competitive amateur"
+      "club player"
     ],
 
     "level_cn": [
+      "初学者",
       "中级球员",
-      "高级球员",
-      "竞技业余球员"
+      "俱乐部球员"
     ],
 
     "style": [
@@ -73,21 +73,21 @@
     },
 
     "weight_unstrung": {
-      "value": 280,
+      "value": 260,
       "unit": "g",
-      "cn": "空拍重量280克"
+      "cn": "空拍重量260克"
     },
 
     "weight_strung": {
-      "value": 298,
+      "value": 278,
       "unit": "g approx",
-      "cn": "穿线后约298克"
+      "cn": "穿线后约278克"
     },
 
     "balance": {
-      "value": 325,
+      "value": 340,
       "unit": "mm",
-      "cn": "平衡点325毫米"
+      "cn": "平衡点340毫米"
     },
 
     "length": {
@@ -107,9 +107,9 @@
     },
 
     "stiffness": {
-      "value": 65,
+      "value": 64,
       "unit": "RA",
-      "cn": "约65 RA"
+      "cn": "约64 RA"
     },
 
     "material": {
@@ -123,7 +123,7 @@
 
     {
       "name": "Auxetic 2.0",
-      "cn": "第二代 Auxetic 科技，提高击球反馈和手感。"
+      "cn": "第二代 Auxetic 科技，提高击球反馈和舒适性。"
     },
 
     {
@@ -133,17 +133,17 @@
 
     {
       "name": "Spin Grommets",
-      "cn": "加大线孔，提高线床移动和旋转能力。"
+      "cn": "加大线孔设计，提高线床移动幅度和旋转能力。"
     },
 
     {
       "name": "Spin Shaft",
-      "cn": "优化拍颈设计，提高旋转输出。"
+      "cn": "优化拍颈结构，提高拍头速度和旋转输出。"
     },
 
     {
       "name": "Sound Grommets",
-      "cn": "优化击球声音、舒适性和力量反馈。"
+      "cn": "改善击球声音、舒适性和力量反馈。"
     }
 
   ],
@@ -151,18 +151,18 @@
   "performance": {
 
     "power": {
-      "rating": 8,
-      "cn": "力量输出：8/10"
+      "rating": 7,
+      "cn": "力量输出：7/10"
     },
 
     "control": {
-      "rating": 8,
-      "cn": "控制性能：8/10"
+      "rating": 7,
+      "cn": "控制性能：7/10"
     },
 
     "spin": {
-      "rating": 10,
-      "cn": "旋转能力：10/10"
+      "rating": 9,
+      "cn": "旋转能力：9/10"
     },
 
     "comfort": {
@@ -171,8 +171,8 @@
     },
 
     "stability": {
-      "rating": 7,
-      "cn": "稳定性：7/10"
+      "rating": 6,
+      "cn": "稳定性：6/10"
     },
 
     "maneuverability": {
@@ -184,15 +184,17 @@
 
   "advantages_cn": [
 
-    "280克重量挥拍速度极快",
+    "260克超轻重量",
 
-    "Extreme 系列旋转能力优秀",
+    "挥拍速度极快",
 
-    "100拍面甜区宽容",
+    "100平方英寸甜区宽容",
+
+    "Extreme系列优秀旋转能力",
 
     "Auxetic 2.0 提升球感",
 
-    "适合升级型球员"
+    "非常容易上手"
 
   ],
 
@@ -200,9 +202,9 @@
 
     "稳定性低于MP和Pro",
 
-    "面对重球容易吃力",
+    "面对高速来球容易失稳",
 
-    "职业球员通常需要加配重"
+    "高级球员通常需要加铅配重"
 
   ],
 
@@ -210,15 +212,17 @@
 
     "suitable_for": [
 
+      "初学者",
+
       "中级球员",
 
-      "女性竞技球员",
+      "女性球员",
 
-      "青少年比赛球员",
+      "青少年球员",
 
-      "希望提升挥拍速度的球员",
+      "希望升级到性能拍的用户",
 
-      "喜欢旋转打法用户"
+      "喜欢轻量球拍的球员"
 
     ],
 
@@ -226,9 +230,9 @@
 
       "职业男子球员",
 
-      "力量型底线球员",
+      "重炮型底线球员",
 
-      "喜欢重拍反馈玩家"
+      "追求极致稳定性的高级球员"
 
     ]
 
@@ -238,27 +242,23 @@
 
     "spin": [
 
-      "HEAD Lynx Tour",
+      "HEAD Lynx Tour 1.25",
 
-      "HEAD Hawk Rough"
-
-    ],
-
-    "control": [
-
-      "HEAD Hawk Touch"
+      "HEAD Hawk Rough 1.25"
 
     ],
 
     "comfort": [
 
-      "HEAD Velocity MLT"
+      "HEAD Velocity MLT",
+
+      "HEAD Reflex MLT"
 
     ],
 
     "hybrid": [
 
-      "HEAD Hawk Touch + HEAD Velocity MLT"
+      "HEAD Hawk Touch + Velocity MLT"
 
     ]
 
@@ -280,25 +280,25 @@
 
     "vs_head_extreme_mp_2026": {
 
-      "cn": "MP L 更轻、更容易挥动；MP 稳定性和穿透力更强。"
+      "cn": "Extreme MP 更稳定、更适合竞技；MP UL 更轻、更容易挥拍。"
 
     },
 
-    "vs_head_extreme_team_2026": {
+    "vs_head_extreme_pro_2026": {
 
-      "cn": "MP L 重量更高、竞技性能更强；Team 更适合初学和休闲球员。"
+      "cn": "Extreme Pro 面向高级竞技；MP UL 更适合初中级球员。"
 
     },
 
     "vs_head_speed_mp_l_2026": {
 
-      "cn": "Extreme MP L 更强调旋转；Speed MP L 更强调全面控制。"
+      "cn": "Speed MP L 更强调控制；Extreme MP UL 更强调旋转和容错。"
 
     },
 
     "vs_babolat_pure_aero_team_2026": {
 
-      "cn": "两者都适合快速挥拍；Extreme MP L 球感更柔和，Pure Aero Team 旋转更直接。"
+      "cn": "两者都属于轻量旋转型球拍；Extreme MP UL 球感更柔和，Pure Aero Team 击球更直接。"
 
     }
 
@@ -310,13 +310,13 @@
 
     "Extreme",
 
-    "Extreme MP L",
+    "Extreme MP UL",
 
     "2026",
 
     "100",
 
-    "280g",
+    "260g",
 
     "16x19",
 
@@ -324,18 +324,20 @@
 
     "Auxetic 2.0",
 
+    "Lightweight",
+
     "Performance"
 
   ],
 
-  "ai_summary_cn": "HEAD Extreme MP L 2026 是 Extreme 系列轻量竞技型号，采用100平方英寸拍面、280克空拍重量和16×19线床设计，搭载 Auxetic 2.0 与 Graphene Inside 技术。相比 MP 和 Pro，它更容易挥拍，旋转能力依然出色，非常适合中级球员、女性竞技球员和青少年比赛球员。",
+  "ai_summary_cn": "HEAD Extreme MP UL 2026 是 Extreme 系列超轻竞技型号，采用100平方英寸拍面、260克空拍重量、340毫米平衡点和16×19线床设计，搭载 Auxetic 2.0 与 Graphene Inside 技术。它拥有极佳的挥拍速度、优秀的旋转能力和舒适的击球反馈，非常适合初中级球员、女性球员及青少年球员使用。",
 
   "variants": [
 
     "Extreme Pro 2026",
     "Extreme MP 2026",
-    "Extreme Team 2026",
-    "Extreme Team L 2026"
+    "Extreme MP L 2026",
+    "Extreme Team 2026"
 
   ],
 
@@ -345,7 +347,7 @@
 
     "verified": true,
 
-    "knowledge_path": "knowledge/racquets/head/head_extreme_mp_l_2026.json"
+    "knowledge_path": "knowledge/racquets/head/head_extreme_mp_ul_2026.json"
 
   }
 
