@@ -1,0 +1,344 @@
+{
+  "id": "head_speed_mp_l_2026",
+
+  "brand": "HEAD",
+  "brand_cn": "海德",
+
+  "model": "Speed MP L 2026",
+  "model_cn": "Speed MP L 2026",
+
+  "category": "performance_racket",
+  "category_cn": "竞技网球拍",
+
+  "series": "Speed",
+  "series_cn": "Speed 系列",
+
+  "generation": "2026",
+  "generation_cn": "2026款",
+
+  "release_year": 2026,
+
+  "aliases": [
+    "HEAD Speed MP L 2026",
+    "Head Speed MP L 2026",
+    "Speed MP L 2026",
+    "HEAD Speed MPL",
+    "Speed MPL"
+  ],
+
+  "product_type": {
+
+    "type": "performance_lightweight",
+
+    "type_cn": "轻量竞技型",
+
+    "description_cn": "HEAD Speed 系列轻量版本，兼顾控制、舒适性与挥拍速度，适合中级及进阶球员。"
+
+  },
+
+  "player_profile": {
+
+    "level": [
+      "intermediate",
+      "advanced amateur",
+      "developing junior"
+    ],
+
+    "level_cn": [
+      "中级球员",
+      "高级业余球员",
+      "进阶青少年球员"
+    ],
+
+    "style": [
+      "all court",
+      "precision",
+      "fast swing"
+    ],
+
+    "style_cn": [
+      "全面型打法",
+      "精准控制",
+      "快速挥拍"
+    ]
+
+  },
+
+  "specifications": {
+
+    "head_size": {
+      "value": 100,
+      "unit": "sq in",
+      "cn": "100平方英寸"
+    },
+
+    "weight_unstrung": {
+      "value": null,
+      "unit": "g",
+      "cn": "空拍重量待官方确认"
+    },
+
+    "weight_strung": {
+      "value": 285,
+      "unit": "g",
+      "cn": "穿线后285克（官方）"
+    },
+
+    "balance_unstrung": {
+      "value": null,
+      "unit": "mm",
+      "cn": "空拍平衡点待官方确认"
+    },
+
+    "balance_strung": {
+      "value": 325,
+      "unit": "mm",
+      "cn": "穿线后平衡点325毫米（官方）"
+    },
+
+    "length": {
+      "value": 27,
+      "unit": "inch",
+      "cn": "27英寸"
+    },
+
+    "string_pattern": {
+      "value": "16x19",
+      "cn": "16×19开放式线床"
+    },
+
+    "beam": {
+      "value": null,
+      "unit": "mm",
+      "cn": "拍框厚度待官方确认"
+    },
+
+    "stiffness": {
+      "value": null,
+      "unit": "RA",
+      "cn": "刚度待官方确认"
+    },
+
+    "material": {
+      "value": null,
+      "cn": "材料待官方确认"
+    }
+
+  },
+
+  "technology": [],
+
+  "performance": {
+
+    "power": {
+      "rating": 8,
+      "cn": "力量输出：8/10"
+    },
+
+    "control": {
+      "rating": 9,
+      "cn": "控制性能：9/10"
+    },
+
+    "spin": {
+      "rating": 8,
+      "cn": "旋转能力：8/10"
+    },
+
+    "comfort": {
+      "rating": 9,
+      "cn": "舒适性：9/10"
+    },
+
+    "stability": {
+      "rating": 7,
+      "cn": "稳定性：7/10"
+    },
+
+    "maneuverability": {
+      "rating": 10,
+      "cn": "挥拍灵活性：10/10"
+    }
+
+  },
+
+  "advantages_cn": [
+
+    "285克穿线重量，挥拍轻松",
+
+    "325毫米平衡点提升操控性",
+
+    "100平方英寸甜区宽容",
+
+    "兼顾控制与舒适性",
+
+    "适合长时间训练和比赛"
+
+  ],
+
+  "weaknesses_cn": [
+
+    "稳定性低于 Speed MP 和 Speed Pro",
+
+    "面对重球时穿透力略弱",
+
+    "高级竞技球员可能需要更高重量"
+
+  ],
+
+  "recommended_player_profile": {
+
+    "suitable_for": [
+
+      "中级球员",
+
+      "高级业余球员",
+
+      "女性竞技球员",
+
+      "青少年球员",
+
+      "喜欢轻量控制型球拍的用户"
+
+    ],
+
+    "not_recommended_for": [
+
+      "职业男子球员",
+
+      "追求极致稳定性的高级球员"
+
+    ]
+
+  },
+
+  "recommended_strings": {
+
+    "control": [
+
+      "HEAD Hawk Touch 1.25",
+
+      "HEAD Lynx Tour 1.25"
+
+    ],
+
+    "comfort": [
+
+      "HEAD Velocity MLT",
+
+      "HEAD Reflex MLT"
+
+    ],
+
+    "hybrid": [
+
+      "HEAD Hawk Touch + HEAD Velocity MLT"
+
+    ]
+
+  },
+
+  "recommended_tension": {
+
+    "range": {
+
+      "value": "21-24 kg",
+
+      "cn": "推荐穿线范围21-24公斤"
+
+    }
+
+  },
+
+  "comparison": {
+
+    "vs_head_speed_mp_2026": {
+
+      "cn": "Speed MP L 更轻、更容易挥拍；Speed MP 稳定性和穿透力更强。"
+
+    },
+
+    "vs_head_speed_pro_2026": {
+
+      "cn": "Speed Pro 更适合高级比赛球员；Speed MP L 更适合中级及进阶球员。"
+
+    },
+
+    "vs_head_extreme_mp_l_2026": {
+
+      "cn": "Speed MP L 更强调控制与全面性；Extreme MP L 更强调旋转。"
+
+    }
+
+  },
+
+  "ai_tags": [
+
+    "HEAD",
+
+    "Speed",
+
+    "Speed MP L",
+
+    "2026",
+
+    "100",
+
+    "285g",
+
+    "325mm",
+
+    "16x19",
+
+    "Control",
+
+    "Intermediate",
+
+    "Lightweight"
+
+  ],
+
+  "ai_summary_cn": "HEAD Speed MP L 2026 是 Speed 系列轻量竞技型号，采用100平方英寸拍面、285克穿线重量、325毫米穿线平衡点和16×19开放式线床设计，兼顾控制、舒适性和挥拍速度，非常适合中级球员、女性球员及青少年进阶使用。",
+
+  "variants": [
+
+    "Speed Pro 2026",
+    "Speed Tour 2026",
+    "Speed MP 2026"
+
+  ],
+
+  "verification": {
+
+    "status": "partial_official",
+
+    "verified": true,
+
+    "verified_specs": {
+
+      "weight_strung": "285 g",
+      "balance_strung": "325 mm",
+      "head_size": "100 sq in",
+      "length": "27 in",
+      "string_pattern": "16x19",
+      "player_level": "Intermediate",
+      "performance_focus": "Control"
+
+    },
+
+    "unverified_specs": [
+
+      "weight_unstrung",
+      "balance_unstrung",
+      "beam",
+      "stiffness",
+      "material",
+      "technology"
+
+    ],
+
+    "knowledge_path": "knowledge/racquets/head/head_speed_mp_l_2026.json"
+
+  }
+
+}
