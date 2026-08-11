@@ -1,0 +1,297 @@
+{
+  "id": "head_speed_mp_legend_2026",
+
+  "brand": "HEAD",
+  "brand_cn": "海德",
+
+  "model": "Speed MP Legend 2026",
+  "model_cn": "Speed MP Legend 2026",
+
+  "category": "special_edition_racket",
+  "category_cn": "特别版竞技网球拍",
+
+  "series": "Speed",
+  "series_cn": "Speed 系列",
+
+  "generation": "2026",
+  "generation_cn": "2026款",
+
+  "release_year": 2026,
+
+  "edition": {
+    "type": "Legend Cosmetic",
+    "type_cn": "Legend 特别配色",
+    "name": "Legend",
+    "name_cn": "Legend",
+    "theme_cn": "Speed MP 2026 Legend 特别配色版，性能与标准版完全一致，仅外观不同。"
+  },
+
+  "paint_job_only": true,
+
+  "base_model": {
+    "model": "HEAD Speed MP 2026",
+    "cn": "基于 HEAD Speed MP 2026"
+  },
+
+  "aliases": [
+    "HEAD Speed MP Legend 2026",
+    "Head Speed MP Legend 2026",
+    "Speed MP Legend",
+    "Speed MP Legend 2026"
+  ],
+
+  "product_type": {
+    "type": "performance_special",
+    "type_cn": "控制型特别版",
+    "description_cn": "Speed MP 2026 的 Legend 特别配色版本，规格和性能与标准版完全一致，仅采用不同外观设计。"
+  },
+
+  "player_profile": {
+
+    "level": [
+      "advanced",
+      "competitive amateur",
+      "tournament player"
+    ],
+
+    "level_cn": [
+      "高级球员",
+      "竞技业余球员",
+      "比赛球员"
+    ],
+
+    "style": [
+      "all court",
+      "precision",
+      "aggressive baseline"
+    ],
+
+    "style_cn": [
+      "全面型打法",
+      "精准控制",
+      "进攻型底线打法"
+    ]
+  },
+
+  "specifications": {
+
+    "head_size": {
+      "value": 100,
+      "unit": "sq in",
+      "cn": "100平方英寸"
+    },
+
+    "weight_unstrung": {
+      "value": null,
+      "unit": "g",
+      "cn": "空拍重量待官方确认"
+    },
+
+    "weight_strung": {
+      "value": 300,
+      "unit": "g",
+      "cn": "穿线后300克（官方）"
+    },
+
+    "balance_unstrung": {
+      "value": null,
+      "unit": "mm",
+      "cn": "空拍平衡点待官方确认"
+    },
+
+    "balance_strung": {
+      "value": 320,
+      "unit": "mm",
+      "cn": "穿线后平衡点320毫米（官方）"
+    },
+
+    "length": {
+      "value": 27,
+      "unit": "inch",
+      "cn": "27英寸"
+    },
+
+    "string_pattern": {
+      "value": "16x19",
+      "cn": "16×19开放式线床"
+    },
+
+    "beam": {
+      "value": null,
+      "unit": "mm",
+      "cn": "拍框厚度待官方确认"
+    },
+
+    "stiffness": {
+      "value": null,
+      "unit": "RA",
+      "cn": "刚度待官方确认"
+    },
+
+    "material": {
+      "value": null,
+      "cn": "材料待官方确认"
+    }
+
+  },
+
+  "technology": [],
+
+  "performance": {
+
+    "power": {
+      "rating": 8,
+      "cn": "力量输出：8/10"
+    },
+
+    "control": {
+      "rating": 9,
+      "cn": "控制性能：9/10"
+    },
+
+    "spin": {
+      "rating": 8,
+      "cn": "旋转能力：8/10"
+    },
+
+    "comfort": {
+      "rating": 9,
+      "cn": "舒适性：9/10"
+    },
+
+    "stability": {
+      "rating": 8,
+      "cn": "稳定性：8/10"
+    },
+
+    "maneuverability": {
+      "rating": 9,
+      "cn": "挥拍灵活性：9/10"
+    }
+
+  },
+
+  "advantages_cn": [
+    "Legend 特别配色",
+    "100平方英寸甜区宽容",
+    "300克穿线重量兼顾稳定与挥拍速度",
+    "320毫米平衡点提升操控性",
+    "兼具实战与收藏价值"
+  ],
+
+  "weaknesses_cn": [
+    "性能与标准版完全一致",
+    "仅外观不同",
+    "希望获得性能升级的用户不会有额外收益"
+  ],
+
+  "recommended_player_profile": {
+
+    "suitable_for": [
+      "高级球员",
+      "竞技业余球员",
+      "俱乐部比赛球员",
+      "Speed 系列收藏者"
+    ],
+
+    "not_recommended_for": [
+      "希望获得性能升级的用户"
+    ]
+
+  },
+
+  "recommended_strings": {
+
+    "control": [
+      "HEAD Hawk Touch 1.25",
+      "HEAD Lynx Tour 1.25"
+    ],
+
+    "comfort": [
+      "HEAD Velocity MLT"
+    ],
+
+    "hybrid": [
+      "HEAD Hawk Touch + HEAD Velocity MLT"
+    ]
+
+  },
+
+  "recommended_tension": {
+
+    "range": {
+      "value": "21-25 kg",
+      "cn": "推荐穿线范围21-25公斤"
+    }
+
+  },
+
+  "comparison": {
+
+    "vs_head_speed_mp_2026": {
+      "cn": "性能完全一致，仅采用 Legend 特别配色。"
+    },
+
+    "vs_head_speed_pro_2026": {
+      "cn": "Speed Pro 更重、更稳定；Speed MP Legend 更容易挥拍。"
+    }
+
+  },
+
+  "collector_value": {
+
+    "rating": 9,
+    "cn": "Legend 配色具有较高收藏价值。"
+
+  },
+
+  "ai_tags": [
+    "HEAD",
+    "Speed",
+    "Speed MP",
+    "Legend",
+    "2026",
+    "100",
+    "300g",
+    "320mm",
+    "16x19",
+    "Control",
+    "Special Edition"
+  ],
+
+  "ai_summary_cn": "HEAD Speed MP Legend 2026 是 Speed MP 2026 的 Legend 特别配色版本，采用100平方英寸拍面、300克穿线重量、320毫米穿线平衡点和16×19开放式线床设计。其性能与标准版完全一致，仅采用 Legend 外观设计，适合希望兼顾比赛表现与收藏价值的球员。",
+
+  "variants": [
+    "Speed MP 2026"
+  ],
+
+  "verification": {
+
+    "status": "partial_official",
+
+    "verified": true,
+
+    "verified_specs": {
+
+      "weight_strung": "300 g",
+      "balance_strung": "320 mm",
+      "head_size": "100 sq in",
+      "length": "27 in",
+      "string_pattern": "16x19"
+
+    },
+
+    "unverified_specs": [
+      "weight_unstrung",
+      "balance_unstrung",
+      "beam",
+      "stiffness",
+      "material",
+      "technology"
+    ],
+
+    "knowledge_path": "knowledge/racquets/head/head_speed_mp_legend_2026.json"
+
+  }
+
+}
