@@ -22,50 +22,45 @@
     "HEAD Extreme MP L 2026",
     "Head Extreme MP L 2026",
     "Extreme MP L 2026",
-    "Head Extreme MPL",
+    "HEAD Extreme MPL 2026",
     "Extreme MPL 2026"
   ],
 
   "product_type": {
-
-    "type": "performance",
-
-    "type_cn": "竞技型",
-
-    "description_cn": "HEAD Extreme 系列轻量竞技版本，在保持 Extreme 系列旋转性能的同时，大幅提升挥拍速度和操控性。"
-
+    "type": "performance_lightweight",
+    "type_cn": "轻量竞技型",
+    "description_cn": "HEAD Extreme 系列轻量竞技型号，强调旋转、快速挥拍、力量输出和较好的容错表现。"
   },
 
   "player_profile": {
-
     "level": [
       "intermediate",
-      "advanced",
-      "competitive amateur"
+      "advanced amateur",
+      "developing junior"
     ],
 
     "level_cn": [
       "中级球员",
-      "高级球员",
-      "竞技业余球员"
+      "高级业余球员",
+      "进阶青少年球员"
     ],
 
     "style": [
       "modern baseline",
-      "heavy topspin",
-      "fast swing"
+      "topspin",
+      "fast swing",
+      "all court"
     ],
 
     "style_cn": [
       "现代底线打法",
       "上旋打法",
-      "快速挥拍"
+      "快速挥拍",
+      "全面型打法"
     ]
-
   },
 
   "specifications": {
-
     "head_size": {
       "value": 100,
       "unit": "sq in",
@@ -87,7 +82,7 @@
     "balance": {
       "value": 325,
       "unit": "mm",
-      "cn": "平衡点325毫米"
+      "cn": "空拍平衡点325毫米"
     },
 
     "length": {
@@ -106,68 +101,72 @@
       "cn": "23-26-21毫米变截面拍框"
     },
 
-    "stiffness": {
-      "value": 65,
-      "unit": "RA",
-      "cn": "约65 RA"
-    },
-
     "material": {
-      "value": "Graphene Inside + Auxetic 2.0 Graphite",
-      "cn": "Graphene Inside 石墨 + Auxetic 2.0"
+      "value": "Graphene Inside + Auxetic 2.0 + Hy-Bor",
+      "cn": "Graphene Inside + Auxetic 2.0 + Hy-Bor 高性能材料结构"
     }
-
   },
 
   "technology": [
-
     {
       "name": "Auxetic 2.0",
-      "cn": "第二代 Auxetic 科技，提高击球反馈和手感。"
+      "cn": "第二代 Auxetic 科技，在击球时提供更直接、更清晰的反馈和连接感。"
     },
 
     {
       "name": "Graphene Inside",
-      "cn": "Graphene Inside 提升稳定性和能量传递。"
+      "cn": "Graphene Inside 技术强化拍框关键区域，提高稳定性和力量传递效率。"
+    },
+
+    {
+      "name": "Hy-Bor",
+      "cn": "采用高性能 Hy-Bor 材料，提高轻量球拍在击球冲击下的稳定性和扎实感。"
     },
 
     {
       "name": "Spin Grommets",
-      "cn": "加大线孔，提高线床移动和旋转能力。"
+      "cn": "旋转线孔允许球线产生更充分的位移和回弹，提高上旋潜力。"
     },
 
     {
       "name": "Spin Shaft",
-      "cn": "优化拍颈设计，提高旋转输出。"
+      "cn": "针对旋转优化的拍颈结构，提高横向稳定性和旋转输出能力。"
     },
 
     {
       "name": "Sound Grommets",
-      "cn": "优化击球声音、舒适性和力量反馈。"
+      "cn": "优化击球声音、力量反馈和击球体验。"
     }
+  ],
 
+  "generation_features": [
+    "Auxetic 2.0",
+    "Graphene Inside",
+    "Hy-Bor",
+    "Spin Grommets",
+    "Spin Shaft",
+    "Sound Grommets"
   ],
 
   "performance": {
-
     "power": {
       "rating": 8,
       "cn": "力量输出：8/10"
     },
 
     "control": {
-      "rating": 8,
-      "cn": "控制性能：8/10"
+      "rating": 7,
+      "cn": "控制性能：7/10"
     },
 
     "spin": {
-      "rating": 10,
-      "cn": "旋转能力：10/10"
+      "rating": 9,
+      "cn": "旋转能力：9/10"
     },
 
     "comfort": {
-      "rating": 9,
-      "cn": "舒适性：9/10"
+      "rating": 8,
+      "cn": "舒适性：8/10"
     },
 
     "stability": {
@@ -179,174 +178,132 @@
       "rating": 10,
       "cn": "挥拍灵活性：10/10"
     }
-
   },
 
   "advantages_cn": [
-
-    "280克重量挥拍速度极快",
-
-    "Extreme 系列旋转能力优秀",
-
-    "100拍面甜区宽容",
-
-    "Auxetic 2.0 提升球感",
-
-    "适合升级型球员"
-
+    "280克轻量设计，挥拍速度快",
+    "100平方英寸拍面提供较好容错",
+    "16×19开放式线床拥有优秀旋转潜力",
+    "Hy-Bor提升轻量拍的稳定性",
+    "适合中级球员和青少年进阶",
+    "适合长时间训练和比赛使用"
   ],
 
   "weaknesses_cn": [
-
-    "稳定性低于MP和Pro",
-
-    "面对重球容易吃力",
-
-    "职业球员通常需要加配重"
-
+    "稳定性低于Extreme MP和Extreme Pro",
+    "面对高速重球时需要更主动的挥拍",
+    "高级力量型球员可能觉得重量偏轻",
+    "精准控制能力低于更重的竞技型号"
   ],
 
   "recommended_player_profile": {
-
     "suitable_for": [
-
       "中级球员",
-
+      "高级业余轻量拍用户",
       "女性竞技球员",
-
-      "青少年比赛球员",
-
-      "希望提升挥拍速度的球员",
-
-      "喜欢旋转打法用户"
-
+      "青少年进阶球员",
+      "喜欢上旋打法的玩家",
+      "希望提升挥拍速度的用户"
     ],
 
     "not_recommended_for": [
-
-      "职业男子球员",
-
-      "力量型底线球员",
-
-      "喜欢重拍反馈玩家"
-
+      "职业高强度比赛球员",
+      "喜欢重拍扎实反馈的玩家",
+      "追求极致稳定性的力量型底线球员"
     ]
-
   },
 
   "recommended_strings": {
-
     "spin": [
-
-      "HEAD Lynx Tour",
-
-      "HEAD Hawk Rough"
-
+      "HEAD Lynx Tour 1.25",
+      "HEAD Hawk Rough 1.25"
     ],
 
     "control": [
-
-      "HEAD Hawk Touch"
-
+      "HEAD Hawk Touch 1.25"
     ],
 
     "comfort": [
-
-      "HEAD Velocity MLT"
-
+      "HEAD Velocity MLT",
+      "HEAD Reflex MLT"
     ],
 
     "hybrid": [
-
       "HEAD Hawk Touch + HEAD Velocity MLT"
-
     ]
-
   },
 
   "recommended_tension": {
-
     "range": {
-
       "value": "21-24 kg",
+      "cn": "推荐穿线范围21-24公斤"
+    },
 
-      "cn": "推荐穿线磅数21-24公斤"
+    "spin_player": {
+      "value": "21-22 kg",
+      "cn": "追求旋转和弹性的球员建议21-22公斤"
+    },
 
+    "control_player": {
+      "value": "23-24 kg",
+      "cn": "追求控制的球员建议23-24公斤"
     }
-
   },
 
   "comparison": {
-
     "vs_head_extreme_mp_2026": {
-
-      "cn": "MP L 更轻、更容易挥动；MP 稳定性和穿透力更强。"
-
+      "cn": "Extreme MP L更轻、更容易挥动；Extreme MP稳定性、穿透力和比赛能力更强。"
     },
 
-    "vs_head_extreme_team_2026": {
-
-      "cn": "MP L 重量更高、竞技性能更强；Team 更适合初学和休闲球员。"
-
+    "vs_head_extreme_mp_ul_2026": {
+      "cn": "Extreme MP L比MP UL重20克，稳定性和竞技能力更高；MP UL更加轻松易用。"
     },
 
-    "vs_head_speed_mp_l_2026": {
-
-      "cn": "Extreme MP L 更强调旋转；Speed MP L 更强调全面控制。"
-
+    "vs_head_extreme_pro_2026": {
+      "cn": "Extreme Pro明显更重、更稳定，适合高级竞技球员；MP L更适合中级和进阶玩家。"
     },
 
-    "vs_babolat_pure_aero_team_2026": {
-
-      "cn": "两者都适合快速挥拍；Extreme MP L 球感更柔和，Pure Aero Team 旋转更直接。"
-
+    "vs_babolat_pure_aero_team": {
+      "cn": "两者都偏向轻量旋转型定位；Extreme MP L强调旋转与球感结合，Pure Aero Team的旋转反馈更加直接。"
     }
-
   },
 
   "ai_tags": [
-
     "HEAD",
-
     "Extreme",
-
     "Extreme MP L",
-
     "2026",
-
-    "100",
-
+    "100拍面",
     "280g",
-
     "16x19",
-
     "Spin",
-
+    "Topspin",
     "Auxetic 2.0",
-
-    "Performance"
-
+    "Hy-Bor",
+    "Lightweight",
+    "Intermediate"
   ],
 
-  "ai_summary_cn": "HEAD Extreme MP L 2026 是 Extreme 系列轻量竞技型号，采用100平方英寸拍面、280克空拍重量和16×19线床设计，搭载 Auxetic 2.0 与 Graphene Inside 技术。相比 MP 和 Pro，它更容易挥拍，旋转能力依然出色，非常适合中级球员、女性竞技球员和青少年比赛球员。",
+  "ai_summary_cn": "HEAD Extreme MP L 2026 是Extreme系列的轻量竞技型号，采用100平方英寸拍面、280克空拍重量、325毫米平衡点和16×19开放式线床。它搭载Auxetic 2.0、Graphene Inside、Hy-Bor、Spin Grommets和Spin Shaft等技术，在保持快速挥拍和优秀旋转能力的同时增强轻量球拍的稳定性。相比Extreme MP，它更容易操控；相比Extreme MP UL，它拥有更好的稳定性和竞技表现，适合中级球员、女性竞技球员和青少年进阶玩家。",
 
   "variants": [
-
     "Extreme Pro 2026",
     "Extreme MP 2026",
-    "Extreme Team 2026",
-    "Extreme Team L 2026"
-
+    "Extreme MP UL 2026"
   ],
 
   "verification": {
-
     "status": "official",
-
     "verified": true,
 
+    "verified_specs": {
+      "head_size": "100 sq in",
+      "weight_unstrung": "280 g",
+      "balance_unstrung": "325 mm",
+      "length": "27 in",
+      "string_pattern": "16x19"
+    },
+
     "knowledge_path": "knowledge/racquets/head/head_extreme_mp_l_2026.json"
-
   }
-
 }
