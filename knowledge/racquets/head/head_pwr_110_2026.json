@@ -1,0 +1,331 @@
+{
+  "id": "head_pwr_110_2026",
+
+  "brand": "HEAD",
+  "brand_cn": "海德",
+
+  "model": "PWR 110 2026",
+  "model_cn": "PWR 110 2026",
+
+  "category": "game_improvement_racket",
+  "category_cn": "易打型网球拍",
+
+  "series": "PWR",
+  "series_cn": "PWR 系列",
+
+  "generation": "2026",
+  "generation_cn": "2026款",
+
+  "release_year": 2026,
+
+  "aliases": [
+    "HEAD PWR 110 2026",
+    "Head PWR 110 2026",
+    "PWR 110",
+    "PWR 110 2026"
+  ],
+
+  "product_type": {
+
+    "type": "power_game_improvement",
+
+    "type_cn": "力量易打型",
+
+    "description_cn": "HEAD PWR 系列专为初学者和休闲球员打造，强调轻松发力、超大甜区和极高容错率。"
+
+  },
+
+  "player_profile": {
+
+    "level": [
+      "beginner",
+      "recreational",
+      "senior"
+    ],
+
+    "level_cn": [
+      "初学者",
+      "休闲球员",
+      "中老年球员"
+    ],
+
+    "style": [
+      "easy power",
+      "baseline",
+      "doubles"
+    ],
+
+    "style_cn": [
+      "轻松发力",
+      "底线打法",
+      "双打"
+    ]
+
+  },
+
+  "specifications": {
+
+    "head_size": {
+      "value": 110,
+      "unit": "sq in",
+      "cn": "110平方英寸"
+    },
+
+    "weight_unstrung": {
+      "value": null,
+      "unit": "g",
+      "cn": "空拍重量待官方确认"
+    },
+
+    "weight_strung": {
+      "value": 265,
+      "unit": "g",
+      "cn": "穿线后265克（官方）"
+    },
+
+    "balance_unstrung": {
+      "value": null,
+      "unit": "mm",
+      "cn": "空拍平衡点待官方确认"
+    },
+
+    "balance_strung": {
+      "value": 345,
+      "unit": "mm",
+      "cn": "穿线后平衡点345毫米（官方）"
+    },
+
+    "length": {
+      "value": 27.4,
+      "unit": "inch",
+      "cn": "27.4英寸"
+    },
+
+    "string_pattern": {
+      "value": "16x19",
+      "cn": "16×19开放式线床"
+    },
+
+    "beam": {
+      "value": null,
+      "unit": "mm",
+      "cn": "拍框厚度待官方确认"
+    },
+
+    "stiffness": {
+      "value": null,
+      "unit": "RA",
+      "cn": "刚度待官方确认"
+    },
+
+    "material": {
+      "value": null,
+      "cn": "材料待官方确认"
+    }
+
+  },
+
+  "technology": [],
+
+  "performance": {
+
+    "power": {
+      "rating": 10,
+      "cn": "力量输出：10/10"
+    },
+
+    "control": {
+      "rating": 6,
+      "cn": "控制性能：6/10"
+    },
+
+    "spin": {
+      "rating": 7,
+      "cn": "旋转能力：7/10"
+    },
+
+    "comfort": {
+      "rating": 10,
+      "cn": "舒适性：10/10"
+    },
+
+    "stability": {
+      "rating": 6,
+      "cn": "稳定性：6/10"
+    },
+
+    "maneuverability": {
+      "rating": 9,
+      "cn": "挥拍灵活性：9/10"
+    }
+
+  },
+
+  "advantages_cn": [
+
+    "110平方英寸超大甜区",
+
+    "265克穿线重量非常轻松",
+
+    "27.4英寸加长设计提升发球和底线力量",
+
+    "345毫米头重平衡增加击球深度",
+
+    "非常适合初学者和休闲娱乐"
+
+  ],
+
+  "weaknesses_cn": [
+
+    "精准控制不及竞技型球拍",
+
+    "高速挥拍时稳定性一般",
+
+    "不适合高水平比赛"
+
+  ],
+
+  "recommended_player_profile": {
+
+    "suitable_for": [
+
+      "初学者",
+
+      "休闲球员",
+
+      "中老年球员",
+
+      "双打爱好者",
+
+      "希望轻松发力的用户"
+
+    ],
+
+    "not_recommended_for": [
+
+      "高级竞技球员",
+
+      "职业比赛球员",
+
+      "追求精准控制的球员"
+
+    ]
+
+  },
+
+  "recommended_strings": {
+
+    "comfort": [
+
+      "HEAD Velocity MLT",
+
+      "HEAD Reflex MLT"
+
+    ],
+
+    "power": [
+
+      "HEAD Lynx 1.25"
+
+    ],
+
+    "hybrid": [
+
+      "HEAD Velocity MLT + HEAD Lynx"
+
+    ]
+
+  },
+
+  "recommended_tension": {
+
+    "range": {
+
+      "value": "20-23 kg",
+
+      "cn": "推荐穿线范围20-23公斤"
+
+    }
+
+  },
+
+  "comparison": {
+
+    "vs_head_speed_mp_l_2026": {
+
+      "cn": "PWR 110 更强调轻松发力和容错；Speed MP L 更强调控制和竞技表现。"
+
+    },
+
+    "vs_head_boom_mp_l_2026": {
+
+      "cn": "Boom MP L 更适合进阶球员；PWR 110 更适合初学者和休闲使用。"
+
+    }
+
+  },
+
+  "ai_tags": [
+
+    "HEAD",
+
+    "PWR",
+
+    "PWR 110",
+
+    "2026",
+
+    "110",
+
+    "265g",
+
+    "345mm",
+
+    "27.4",
+
+    "16x19",
+
+    "Power",
+
+    "Beginner"
+
+  ],
+
+  "ai_summary_cn": "HEAD PWR 110 2026 是一款专为初学者和休闲球员设计的易打型球拍，采用110平方英寸拍面、27.4英寸加长拍身、265克穿线重量和345毫米穿线平衡点设计，提供极高的容错率、轻松发力和舒适击球体验，非常适合作为入门或娱乐型球拍。",
+
+  "variants": [],
+
+  "verification": {
+
+    "status": "partial_official",
+
+    "verified": true,
+
+    "verified_specs": {
+
+      "weight_strung": "265 g",
+      "balance_strung": "345 mm",
+      "head_size": "110 sq in",
+      "length": "27.4 in",
+      "string_pattern": "16x19",
+      "player_level": "Beginner",
+      "performance_focus": "Power"
+
+    },
+
+    "unverified_specs": [
+
+      "weight_unstrung",
+      "balance_unstrung",
+      "beam",
+      "stiffness",
+      "material",
+      "technology"
+
+    ],
+
+    "knowledge_path": "knowledge/racquets/head/head_pwr_110_2026.json"
+
+  }
+
+}
