@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>EveryCourtAI</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 760px;
+      margin: 60px auto;
+      padding: 20px;
+      background: #f7f7f7;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+      color: #666;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 140px;
+      padding: 15px;
+      font-size: 16px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      resize: vertical;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      margin-top: 15px;
+      padding: 14px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 8px;
+      background: #111;
+      color: white;
+    }
+
+    #answer {
+      margin-top: 30px;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      min-height: 100px;
+      white-space: pre-wrap;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>EveryCourtAI</h1>
+
+  <p>输入你的网球装备问题</p>
+
+  <textarea
+    id="question"
+    placeholder="例如：我现在使用 Wilson RF 01 Pro，想换一把更轻松、更省力的球拍，推荐哪一款？"
+  ></textarea>
+
+  <button onclick="askAI()">
+    Ask AI
+  </button>
+
+  <div id="answer">
+    AI 回答会显示在这里。
+  </div>
+
+
+  <script>
+    async function askAI() {
+
+      const question =
+        document.getElementById("question").value;
+
+      const answerBox =
+        document.getElementById("answer");
+
+      if (!question.trim()) {
+        answerBox.innerText =
+          "请输入问题。";
+        return;
+      }
+
+      answerBox.innerText =
+        "AI 正在思考...";
+
+
+      try {
+
+        const response = await fetch(
+          "这里以后放你的API地址",
+          {
+            method: "POST",
+
+            headers: {
+              "Content-Type": "application/json"
+            },
+
+            body: JSON.stringify({
+              question: question
+            })
+          }
+        );
+
+
+        const data =
+          await response.json();
+
+
+        answerBox.innerText =
+          data.answer || JSON.stringify(data, null, 2);
+
+      }
+
+      catch (error) {
+
+        answerBox.innerText =
+          "请求失败：" + error.message;
+
+      }
+
+    }
+  </script>
+
+</body>
+</html>
