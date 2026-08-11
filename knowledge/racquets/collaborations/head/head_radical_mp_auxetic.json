@@ -1,0 +1,285 @@
+{
+  "id": "head_radical_mp_auxetic",
+
+  "brand": "HEAD",
+  "brand_cn": "海德",
+
+  "model": "Radical MP Auxetic",
+  "model_cn": "Radical MP Auxetic",
+
+  "category": "performance_racket",
+  "category_cn": "竞技网球拍",
+
+  "series": "Radical",
+  "series_cn": "Radical 系列",
+
+  "generation": "Auxetic",
+  "generation_cn": "Auxetic 第一代",
+
+  "release_year": 2023,
+
+  "aliases": [
+    "HEAD Radical MP Auxetic",
+    "Head Radical MP Auxetic",
+    "Radical MP Auxetic",
+    "HEAD Radical MP"
+  ],
+
+  "product_type": {
+    "type": "performance_control",
+    "type_cn": "控制竞技型",
+    "description_cn": "HEAD Radical MP Auxetic 是 Radical 系列经典竞技型号，兼顾控制、旋转和力量，适合现代全面型打法。"
+  },
+
+  "player_profile": {
+
+    "level": [
+      "advanced",
+      "competitive amateur",
+      "tournament player"
+    ],
+
+    "level_cn": [
+      "高级球员",
+      "竞技业余球员",
+      "比赛球员"
+    ],
+
+    "style": [
+      "all court",
+      "control",
+      "aggressive baseline"
+    ],
+
+    "style_cn": [
+      "全面打法",
+      "控制型打法",
+      "进攻型底线打法"
+    ]
+
+  },
+
+  "specifications": {
+
+    "head_size": {
+      "value": 98,
+      "unit": "sq in",
+      "cn": "98平方英寸"
+    },
+
+    "weight_unstrung": {
+      "value": null,
+      "unit": "g",
+      "cn": "空拍重量待官方确认"
+    },
+
+    "weight_strung": {
+      "value": 300,
+      "unit": "g",
+      "cn": "穿线后300克（官方）"
+    },
+
+    "balance_unstrung": {
+      "value": null,
+      "unit": "mm",
+      "cn": "空拍平衡点待官方确认"
+    },
+
+    "balance_strung": {
+      "value": 320,
+      "unit": "mm",
+      "cn": "穿线后平衡点320毫米（官方）"
+    },
+
+    "length": {
+      "value": 27,
+      "unit": "inch",
+      "cn": "27英寸"
+    },
+
+    "string_pattern": {
+      "value": "16x19",
+      "cn": "16×19开放式线床"
+    },
+
+    "beam": {
+      "value": null,
+      "unit": "mm",
+      "cn": "拍框厚度待官方确认"
+    },
+
+    "stiffness": {
+      "value": null,
+      "unit": "RA",
+      "cn": "刚度待官方确认"
+    },
+
+    "material": {
+      "value": null,
+      "cn": "材料待官方确认"
+    }
+
+  },
+
+  "technology": [
+    {
+      "name": "Auxetic",
+      "cn": "Auxetic 第一代科技，提高击球反馈和手感。"
+    }
+  ],
+
+  "generation_features": [
+    "Auxetic"
+  ],
+
+  "performance": {
+
+    "power": {
+      "rating": 8,
+      "cn": "力量输出：8/10"
+    },
+
+    "control": {
+      "rating": 9,
+      "cn": "控制性能：9/10"
+    },
+
+    "spin": {
+      "rating": 8,
+      "cn": "旋转能力：8/10"
+    },
+
+    "comfort": {
+      "rating": 8,
+      "cn": "舒适性：8/10"
+    },
+
+    "stability": {
+      "rating": 8,
+      "cn": "稳定性：8/10"
+    },
+
+    "maneuverability": {
+      "rating": 9,
+      "cn": "挥拍灵活性：9/10"
+    }
+
+  },
+
+  "advantages_cn": [
+    "98平方英寸兼顾精准与容错",
+    "16×19线床兼顾旋转与控制",
+    "300克重量适合现代竞技打法",
+    "操控灵活",
+    "适合全面型球员"
+  ],
+
+  "weaknesses_cn": [
+    "甜区小于100平方英寸球拍",
+    "需要一定挥拍速度",
+    "初学者不易驾驭"
+  ],
+
+  "recommended_player_profile": {
+
+    "suitable_for": [
+      "高级业余球员",
+      "比赛球员",
+      "全面型打法",
+      "控制型球员"
+    ],
+
+    "not_recommended_for": [
+      "初学者",
+      "需要大量免费力量的球员"
+    ]
+
+  },
+
+  "recommended_strings": {
+
+    "control": [
+      "HEAD Hawk Touch 1.25",
+      "HEAD Lynx Tour 1.25"
+    ],
+
+    "comfort": [
+      "HEAD Velocity MLT"
+    ],
+
+    "hybrid": [
+      "HEAD Hawk Touch + HEAD Velocity MLT"
+    ]
+
+  },
+
+  "recommended_tension": {
+
+    "range": {
+      "value": "21-25 kg",
+      "cn": "推荐穿线范围21-25公斤"
+    }
+
+  },
+
+  "comparison": {
+
+    "vs_head_speed_mp": {
+      "cn": "Radical MP 控制感更直接；Speed MP 更全面、更容易发力。"
+    },
+
+    "vs_head_extreme_mp": {
+      "cn": "Extreme MP 更强调旋转；Radical MP 更偏均衡控制。"
+    }
+
+  },
+
+  "ai_tags": [
+    "HEAD",
+    "Radical",
+    "Radical MP",
+    "Auxetic",
+    "98",
+    "300g",
+    "320mm",
+    "16x19",
+    "Control",
+    "Advanced"
+  ],
+
+  "ai_summary_cn": "HEAD Radical MP Auxetic 是 Radical 系列经典控制型球拍，采用98平方英寸拍面、300克穿线重量、320毫米穿线平衡点以及16×19开放式线床设计，兼顾控制、旋转和现代竞技打法，适合高级业余及比赛球员。",
+
+  "variants": [
+    "Radical Pro Auxetic",
+    "Radical Team Auxetic"
+  ],
+
+  "verification": {
+
+    "status": "partial_official",
+
+    "verified": true,
+
+    "verified_specs": {
+
+      "weight_strung": "300 g",
+      "balance_strung": "320 mm",
+      "head_size": "98 sq in",
+      "length": "27 in",
+      "string_pattern": "16x19"
+
+    },
+
+    "unverified_specs": [
+      "weight_unstrung",
+      "balance_unstrung",
+      "beam",
+      "stiffness",
+      "material"
+    ],
+
+    "knowledge_path": "knowledge/racquets/head/head_radical_mp_auxetic.json"
+
+  }
+
+}
