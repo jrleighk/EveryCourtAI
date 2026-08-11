@@ -1,0 +1,347 @@
+{
+  "id": "babolat_pure_strike_100_16x20_carbon_grey_2025",
+
+  "brand": "Babolat",
+  "brand_cn": "百宝力",
+
+  "model": "Pure Strike 100 16x20 Carbon Grey 2025",
+  "model_cn": "Pure Strike 100 16×20 碳灰特别版 2025",
+
+  "category": "special_edition_racket",
+  "category_cn": "特别版竞技网球拍",
+
+  "series": "Pure Strike",
+  "series_cn": "Pure Strike 系列",
+
+  "generation": "Gen4",
+  "generation_cn": "第四代",
+
+  "release_year": 2025,
+
+  "edition": {
+
+    "type": "Special Color Edition",
+
+    "type_cn": "特别配色版",
+
+    "name": "Carbon Grey",
+
+    "name_cn": "碳灰特别版",
+
+    "theme_cn": "采用 Carbon Grey 碳灰特别配色，保持 Pure Strike Gen4 全部竞技性能，仅外观不同。"
+
+  },
+
+  "paint_job_only": true,
+
+  "base_model": {
+
+    "model": "Babolat Pure Strike 100 16x20 Gen4",
+
+    "cn": "基于 Pure Strike 100 16×20 Gen4"
+
+  },
+
+  "product_type": {
+
+    "type": "performance_special",
+
+    "type_cn": "竞技特别版",
+
+    "description_cn": "Pure Strike 100 16×20 Gen4 特别配色版本，性能与标准版完全一致，仅增加 Carbon Grey 外观及收藏价值。"
+
+  },
+
+  "player_profile": {
+
+    "level": [
+      "intermediate",
+      "advanced",
+      "competitive amateur"
+    ],
+
+    "level_cn": [
+      "中级球员",
+      "高级球员",
+      "竞技业余球员"
+    ],
+
+    "style": [
+      "all court",
+      "modern baseline",
+      "controlled power"
+    ],
+
+    "style_cn": [
+      "全面型打法",
+      "现代底线打法",
+      "控制型力量打法"
+    ]
+
+  },
+
+  "specifications": {
+
+    "head_size": {
+      "value": 100,
+      "unit": "sq in",
+      "cn": "100平方英寸"
+    },
+
+    "weight_unstrung": {
+      "value": 300,
+      "unit": "g",
+      "cn": "空拍重量300克"
+    },
+
+    "weight_strung": {
+      "value": 318,
+      "unit": "g approx",
+      "cn": "穿线后约318克"
+    },
+
+    "balance": {
+      "value": 320,
+      "unit": "mm",
+      "cn": "平衡点320毫米"
+    },
+
+    "length": {
+      "value": 27,
+      "unit": "inch",
+      "cn": "27英寸"
+    },
+
+    "string_pattern": {
+      "value": "16x20",
+      "cn": "16×20线床"
+    },
+
+    "beam": {
+      "value": "21-23-21 mm",
+      "cn": "21-23-21毫米变截面拍框"
+    },
+
+    "stiffness": {
+      "value": 66,
+      "unit": "RA",
+      "cn": "刚度66 RA"
+    },
+
+    "material": {
+      "value": "Graphite",
+      "cn": "高模量石墨"
+    }
+
+  },
+
+  "technology": [
+
+    {
+      "name": "NF²-Tech",
+      "cn": "亚麻纤维减震技术，提高舒适性和击球反馈"
+    },
+
+    {
+      "name": "FSI Control",
+      "cn": "优化16×20线床布局，兼顾控制与旋转"
+    },
+
+    {
+      "name": "Control Frame Technology",
+      "cn": "结合方形与椭圆拍框，提高稳定性和精准度"
+    }
+
+  ],
+
+  "performance": {
+
+    "power": {
+      "rating": 8,
+      "cn": "力量输出：8/10"
+    },
+
+    "control": {
+      "rating": 9,
+      "cn": "控制性能：9/10"
+    },
+
+    "spin": {
+      "rating": 8,
+      "cn": "旋转能力：8/10"
+    },
+
+    "comfort": {
+      "rating": 8,
+      "cn": "舒适性：8/10"
+    },
+
+    "stability": {
+      "rating": 9,
+      "cn": "稳定性：9/10"
+    },
+
+    "maneuverability": {
+      "rating": 9,
+      "cn": "挥拍灵活性：9/10"
+    }
+
+  },
+
+  "advantages_cn": [
+
+    "100拍面甜区更大",
+
+    "16×20兼顾控制与旋转",
+
+    "300克重量适用范围广",
+
+    "Carbon Grey特别配色",
+
+    "适合现代全面型打法"
+
+  ],
+
+  "weaknesses_cn": [
+
+    "控制略低于98 18×20",
+
+    "力量不如Pure Drive系列",
+
+    "不适合追求极致旋转玩家"
+
+  ],
+
+  "recommended_player_profile": {
+
+    "suitable_for": [
+
+      "中高级球员",
+
+      "竞技业余球员",
+
+      "全面型打法",
+
+      "现代底线球员",
+
+      "希望兼顾控制和容错的用户"
+
+    ],
+
+    "not_recommended_for": [
+
+      "初学者",
+
+      "偏好超轻球拍玩家",
+
+      "极端旋转打法用户"
+
+    ]
+
+  },
+
+  "recommended_strings": {
+
+    "control": [
+
+      "Babolat RPM Blast 1.25",
+
+      "Babolat RPM Rough 1.25"
+
+    ],
+
+    "comfort": [
+
+      "Babolat Xcel",
+
+      "Tecnifibre X-One Biphase"
+
+    ],
+
+    "hybrid": [
+
+      "Babolat VS Touch + RPM Blast"
+
+    ]
+
+  },
+
+  "recommended_tension": {
+
+    "range": {
+
+      "value": "22-25 kg",
+
+      "cn": "推荐穿线磅数22-25公斤"
+
+    }
+
+  },
+
+  "collector_value": {
+
+    "rating": 8,
+
+    "cn": "Carbon Grey 特别配色具有一定收藏价值"
+
+  },
+
+  "comparison": {
+
+    "vs_pure_strike_100_16x20_gen4": {
+
+      "cn": "性能完全一致，仅外观不同。"
+
+    },
+
+    "vs_pure_strike_98_16x19_carbon_grey_2025": {
+
+      "cn": "100拍面容错更高；98拍面控制更精准。"
+
+    },
+
+    "vs_pure_drive_100_2025": {
+
+      "cn": "Pure Drive力量更强；Pure Strike控制和球感更优秀。"
+
+    }
+
+  },
+
+  "ai_tags": [
+
+    "Babolat",
+
+    "Pure Strike",
+
+    "100",
+
+    "16x20",
+
+    "Carbon Grey",
+
+    "Gen4",
+
+    "Special Edition",
+
+    "All Court",
+
+    "Control"
+
+  ],
+
+  "ai_summary_cn": "Babolat Pure Strike 100 16×20 Carbon Grey 2025 是 Pure Strike Gen4 的特别配色版本，采用100平方英寸拍面、300克空拍重量和16×20线床设计，在控制、力量、旋转和容错之间取得优秀平衡。Carbon Grey 配色赋予其更高辨识度和收藏价值，而性能与标准版保持完全一致，非常适合现代全面型打法及竞技业余球员。",
+
+  "variants": [],
+
+  "verification": {
+
+    "status": "official",
+
+    "verified": true,
+
+    "knowledge_path": "knowledge/racquets/special_editions/babolat_pure_strike_100_16x20_carbon_grey_2025.json"
+
+  }
+
+}
