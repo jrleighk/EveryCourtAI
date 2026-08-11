@@ -1,0 +1,338 @@
+{
+  "id": "head_extreme_pro_2026",
+
+  "brand": "HEAD",
+  "brand_cn": "海德",
+
+  "model": "Extreme Pro 2026",
+  "model_cn": "Extreme Pro 2026",
+
+  "category": "performance_racket",
+  "category_cn": "竞技网球拍",
+
+  "series": "Extreme",
+  "series_cn": "Extreme 系列",
+
+  "generation": "2026",
+  "generation_cn": "2026款",
+
+  "release_year": 2026,
+
+  "aliases": [
+    "HEAD Extreme Pro 2026",
+    "Head Extreme Pro 2026",
+    "Extreme Pro 2026",
+    "Head Extreme Pro"
+  ],
+
+  "product_type": {
+
+    "type": "performance",
+
+    "type_cn": "竞技型",
+
+    "description_cn": "HEAD Extreme系列旗舰型号，专为追求强烈旋转、爆发力和现代底线打法的高级球员打造。"
+
+  },
+
+  "player_profile": {
+
+    "level": [
+      "advanced",
+      "competitive amateur",
+      "professional"
+    ],
+
+    "level_cn": [
+      "高级球员",
+      "竞技业余球员",
+      "职业球员"
+    ],
+
+    "style": [
+      "modern baseline",
+      "heavy topspin",
+      "aggressive"
+    ],
+
+    "style_cn": [
+      "现代底线打法",
+      "强上旋打法",
+      "进攻型打法"
+    ]
+
+  },
+
+  "specifications": {
+
+    "head_size": {
+      "value": 100,
+      "unit": "sq in",
+      "cn": "100平方英寸"
+    },
+
+    "weight_unstrung": {
+      "value": 305,
+      "unit": "g",
+      "cn": "空拍重量305克"
+    },
+
+    "weight_strung": {
+      "value": 323,
+      "unit": "g approx",
+      "cn": "穿线后约323克"
+    },
+
+    "balance": {
+      "value": 315,
+      "unit": "mm",
+      "cn": "平衡点315毫米"
+    },
+
+    "length": {
+      "value": 27,
+      "unit": "inch",
+      "cn": "27英寸"
+    },
+
+    "string_pattern": {
+      "value": "16x19",
+      "cn": "16×19开放式线床"
+    },
+
+    "beam": {
+      "value": "22-23-21 mm",
+      "cn": "22-23-21毫米变截面拍框"
+    },
+
+    "stiffness": {
+      "value": 65,
+      "unit": "RA",
+      "cn": "约65 RA"
+    },
+
+    "material": {
+      "value": "Graphene Inside + Auxetic 2.0 Graphite",
+      "cn": "Graphene Inside 石墨 + Auxetic 2.0"
+    }
+
+  },
+
+  "technology": [
+
+    {
+      "name": "Auxetic 2.0",
+      "cn": "第二代 Auxetic 科技，提高击球反馈和手感。"
+    },
+
+    {
+      "name": "Graphene Inside",
+      "cn": "Graphene Inside 提升稳定性和能量传递。"
+    },
+
+    {
+      "name": "Spin Grommets",
+      "cn": "Spin Grommets 加大线孔，提高线床移动和旋转能力。"
+    },
+
+    {
+      "name": "Spin Shaft",
+      "cn": "优化拍颈设计，提高旋转输出。"
+    },
+
+    {
+      "name": "Sound Grommets",
+      "cn": "优化击球声音、舒适性及力量反馈。"
+    }
+
+  ],
+
+  "performance": {
+
+    "power": {
+      "rating": 9,
+      "cn": "力量输出：9/10"
+    },
+
+    "control": {
+      "rating": 8,
+      "cn": "控制性能：8/10"
+    },
+
+    "spin": {
+      "rating": 10,
+      "cn": "旋转能力：10/10"
+    },
+
+    "comfort": {
+      "rating": 8,
+      "cn": "舒适性：8/10"
+    },
+
+    "stability": {
+      "rating": 9,
+      "cn": "稳定性：9/10"
+    },
+
+    "maneuverability": {
+      "rating": 8,
+      "cn": "挥拍灵活性：8/10"
+    }
+
+  },
+
+  "advantages_cn": [
+
+    "Extreme系列旋转能力最强",
+
+    "305克适合高级竞技",
+
+    "100拍面兼顾容错和攻击",
+
+    "Auxetic 2.0球感明显提升",
+
+    "现代底线打法表现优秀"
+
+  ],
+
+  "weaknesses_cn": [
+
+    "平击控制不如Prestige",
+
+    "需要一定挥拍速度",
+
+    "初学者较难驾驭"
+
+  ],
+
+  "recommended_player_profile": {
+
+    "suitable_for": [
+
+      "高级球员",
+
+      "职业训练",
+
+      "现代底线打法",
+
+      "重上旋打法",
+
+      "进攻型球员"
+
+    ],
+
+    "not_recommended_for": [
+
+      "初学者",
+
+      "喜欢传统控制拍玩家",
+
+      "挥拍速度较慢球员"
+
+    ]
+
+  },
+
+  "recommended_strings": {
+
+    "spin": [
+
+      "HEAD Lynx Tour",
+
+      "HEAD Hawk Rough"
+
+    ],
+
+    "control": [
+
+      "HEAD Hawk Touch"
+
+    ],
+
+    "hybrid": [
+
+      "HEAD Hawk Touch + HEAD Velocity MLT"
+
+    ]
+
+  },
+
+  "recommended_tension": {
+
+    "range": {
+
+      "value": "21-25 kg",
+
+      "cn": "推荐穿线磅数21-25公斤"
+
+    }
+
+  },
+
+  "comparison": {
+
+    "vs_head_speed_pro_2026": {
+
+      "cn": "Extreme Pro旋转和爆发力更强；Speed Pro控制更加精准。"
+
+    },
+
+    "vs_head_gravity_pro_2025": {
+
+      "cn": "Extreme Pro更适合现代上旋打法；Gravity Pro甜区更大、控制更稳定。"
+
+    },
+
+    "vs_babolat_pure_aero_98_2026": {
+
+      "cn": "两者都强调旋转；Extreme Pro球感更柔和，Pure Aero 98击球更直接。"
+
+    },
+
+    "vs_wilson_blade_98_v10": {
+
+      "cn": "Blade控制更强；Extreme Pro旋转和力量优势明显。"
+
+    }
+
+  },
+
+  "ai_tags": [
+
+    "HEAD",
+
+    "Extreme",
+
+    "Extreme Pro",
+
+    "2026",
+
+    "100",
+
+    "305g",
+
+    "16x19",
+
+    "Spin",
+
+    "Auxetic 2.0",
+
+    "Performance"
+
+  ],
+
+  "ai_summary_cn": "HEAD Extreme Pro 2026 是 Extreme 系列旗舰竞技型号，采用100平方英寸拍面、305克空拍重量和16×19线床设计，搭载 Auxetic 2.0 与 Graphene Inside 技术，拥有极强的旋转能力、爆发力和稳定性，非常适合现代底线进攻型高级球员。",
+
+  "variants": [],
+
+  "verification": {
+
+    "status": "official",
+
+    "verified": true,
+
+    "knowledge_path": "knowledge/racquets/head/head_extreme_pro_2026.json"
+
+  }
+
+}
