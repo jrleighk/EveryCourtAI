@@ -1,0 +1,71 @@
+{
+  "id": "head_radical_mp_auxetic",
+  "brand": "Head",
+  "series": "Radical",
+  "model": "Radical MP",
+  "year": null,
+  "edition": "Auxetic",
+  "category": "Racquet",
+  "collaboration": false,
+
+  "specifications": {
+    "head_size_sq_in": 98,
+    "length_in": 27.0,
+    "weight_g_unstrung": 300,
+    "balance_mm_unstrung": 320,
+    "string_pattern": "16x19",
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null
+  },
+
+  "technology": [
+    "Auxetic"
+  ],
+
+  "playing_characteristics": {
+    "power": 7,
+    "control": 9,
+    "spin": 8,
+    "comfort": 8,
+    "maneuverability": 8,
+    "stability": 8
+  },
+
+  "recommended_player": {
+    "level": [
+      "Advanced",
+      "Tournament"
+    ],
+    "swing_style": [
+      "Fast",
+      "Full Swing"
+    ],
+    "play_style": [
+      "All Court",
+      "Aggressive Baseliner"
+    ]
+  },
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": []
+  },
+
+  "recommended_tension_lbs": {
+    "min": null,
+    "max": null
+  },
+
+  "description": {
+    "en": "Head Radical MP featuring Auxetic technology with a 98 sq.in head, 300 g unstrung weight and 16x19 string pattern. Designed for advanced players seeking outstanding control, feel and versatility.",
+    "zh": "Head Radical MP Auxetic 版本，采用 Auxetic 科技，98平方英寸拍面、300克空拍重量、16×19线床，为追求精准控制、扎实手感与全面性能的高级球员设计。"
+  },
+
+  "verification": {
+    "status": "verified",
+    "last_updated": "2026-08-12"
+  }
+}
