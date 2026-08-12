@@ -1,0 +1,242 @@
+{
+  "id": "babolat_rpm_rough",
+  "brand": "Babolat",
+  "series": "RPM",
+  "model": "RPM Rough",
+  "category": "String",
+
+  "manufacturer_data": {
+    "packaging": "Reel",
+    "length_m": 200,
+    "length_ft": 656,
+    "construction": "Monofilament",
+    "material": "Co-Polyester",
+    "composition": "High-Density Co-Polyester",
+    "cross_section": "Octagonal",
+    "surface_finish": "Rough / Textured",
+    "country_of_origin": "France"
+  },
+
+  "specifications": {
+    "string_family": "Polyester",
+    "construction": "Monofilament",
+    "cross_section": "Octagonal",
+    "surface": "Rough",
+
+    "available_colors": [
+      "Black"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_mm": 1.25,
+        "available": true,
+
+        "power": 6,
+        "control": 10,
+        "spin": 10,
+        "comfort": 5,
+        "feel": 8,
+        "durability": 9,
+        "tension_maintenance": 8,
+        "elasticity": 6,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Maximum Spin",
+          "Heavy Topspin",
+          "Aggressive Baseliners",
+          "Fast Swing Speed",
+          "Tournament Players",
+          "Heavy Hitters"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "High-Density Co-Polyester",
+    "Octagonal Structure",
+    "Rough Textured Surface",
+    "Embossed Logo Friction Reduction",
+    "RPM Spin Technology"
+  ],
+
+  "design_profile": {
+    "string_type": "Rough Spin Polyester",
+    "target_player": "Advanced and Tournament Players",
+    "arm_friendly": false,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": false,
+    "comfort_focus": false,
+    "durability_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 6,
+    "control": 10,
+    "spin": 10,
+    "comfort": 5,
+    "feel": 8,
+    "durability": 9,
+    "tension_maintenance": 8,
+    "elasticity": 6,
+    "launch_angle": "Medium-High"
+  },
+
+  "recommended_player": {
+    "level": [
+      "Advanced",
+      "Tournament",
+      "Professional"
+    ],
+
+    "swing_speed": [
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Heavy Topspin",
+      "Aggressive Baseliner",
+      "Modern Baseline",
+      "Attacking Player"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Babolat Pure Aero",
+    "Babolat Pure Drive",
+    "Babolat Pure Strike",
+    "Yonex VCORE",
+    "HEAD Extreme",
+    "Wilson Shift",
+    "Wilson Blade",
+    "Tecnifibre T-FIGHT",
+    "Dunlop SX",
+    "Prince Tour"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Babolat Touch VS",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²",
+      "Tecnifibre Triax",
+      "Wilson Natural Gut"
+    ]
+  },
+
+  "recommended_tension": {
+    "club_player_kg": "21-23",
+    "advanced_player_kg": "22-24",
+    "professional_kg": "23-26"
+  },
+
+  "gauge_recommendation": {
+    "1.25": {
+      "best_for": [
+        "Maximum Spin",
+        "Aggressive Trajectories",
+        "High Racquet Head Speed",
+        "Heavy Baseline Play",
+        "Tournament Competition"
+      ],
+
+      "tradeoffs": [
+        "Firm Feel",
+        "Lower Comfort",
+        "Not Ideal for Sensitive Arms"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.25": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "15-25"
+    }
+  },
+
+  "tour_players": [
+    {
+      "name": "Félix Auger-Aliassime",
+      "tour": "ATP",
+      "usage": "Manufacturer-stated user of RPM Rough",
+      "confidence": "High"
+    }
+  ],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Seeking Maximum Spin",
+      "Advanced Players With Fast Swing Speed",
+      "Aggressive Baseliners",
+      "Players Wanting More Texture Than RPM Blast",
+      "Heavy Hitters"
+    ],
+
+    "avoid_for": [
+      "Beginners",
+      "Players With Sensitive Arms",
+      "Players Seeking Maximum Comfort",
+      "Slow Swing Speed Players"
+    ],
+
+    "alternative_strings": [
+      "Babolat RPM Blast",
+      "Tecnifibre Black Code",
+      "Solinco Hyper-G",
+      "Yonex Poly Tour Rev",
+      "HEAD Lynx Tour"
+    ]
+  },
+
+  "comparison_tags": [
+    "Rough Polyester",
+    "Maximum Spin",
+    "Octagonal",
+    "Textured Surface",
+    "High Control",
+    "High Durability",
+    "Tour Proven"
+  ],
+
+  "ai_keywords": [
+    "babolat",
+    "rpm rough",
+    "rpm",
+    "rough",
+    "1.25",
+    "125",
+    "co-polyester",
+    "octagonal",
+    "rough texture",
+    "spin",
+    "control",
+    "felix auger aliassime"
+  ],
+
+  "target_competitors": [
+    "Tecnifibre Black Code",
+    "Solinco Hyper-G",
+    "Yonex Poly Tour Rev",
+    "HEAD Lynx Tour",
+    "Luxilon ALU Power Rough"
+  ],
+
+  "description": {
+    "en": "Babolat RPM Rough is a textured octagonal co-polyester monofilament designed for maximum spin and precise control. Its rough high-density co-polyester surface increases ball bite, while the octagonal profile further enhances rotation. The embossed logo helps reduce friction and improve durability. RPM Rough is aimed at advanced and tournament players with fast swing speeds who want aggressive spin and controlled trajectories.",
+
+    "zh": "Babolat RPM Rough 是一款粗糙表面、八边形结构的共聚酯单丝球线，核心定位是极强旋转与精准控制。高密度共聚酯的粗糙纹理能够增强咬球感，八边形截面进一步提升球的旋转；表面压印设计则有助于降低摩擦并提升耐久性。非常适合挥拍速度快、追求重上旋与攻击性弹道的高级和比赛型球员。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13"
+  }
+}
