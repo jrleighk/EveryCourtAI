@@ -1,0 +1,178 @@
+{
+  "id": "yonex_osaka_ezone_98_gold_purple_limited_edition",
+  "brand": "Yonex",
+  "series": "EZONE",
+  "model": "EZONE 98",
+  "generation": "7th Generation",
+  "year": 2022,
+  "edition": "Osaka Gold/Purple Limited Edition",
+  "category": "Racquet",
+  "collaboration": true,
+
+  "collaboration_details": {
+    "name": "OSAKA EZONE",
+    "collaborators": [
+      "Naomi Osaka",
+      "Mari Osaka"
+    ],
+    "type": "Player Collaboration",
+    "limited_edition": true,
+    "design_theme": [
+      "Dragon",
+      "Spider Lily",
+      "Gold",
+      "Purple"
+    ]
+  },
+
+  "specifications": {
+    "head_size_sq_in": 98,
+    "length_in": 27.0,
+    "weight_g_unstrung": 305,
+    "balance_mm_unstrung": 315,
+    "string_pattern": "16x19",
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+    "grip_sizes": []
+  },
+
+  "technology": [
+    "ISOMETRIC",
+    "2G-Namd Speed",
+    "AERO SHAPE DESIGN",
+    "SHAFT DESIGN",
+    "VDM"
+  ],
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 8,
+    "spin": 8,
+    "comfort": 9,
+    "maneuverability": 8,
+    "stability": 9
+  },
+
+  "playing_tags": [
+    "Advanced",
+    "Power",
+    "Comfort",
+    "All Court",
+    "Limited Edition",
+    "Player Collaboration"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+    "swing_style": [
+      "Medium-Fast",
+      "Fast"
+    ],
+    "play_style": [
+      "Aggressive Baseliner",
+      "All Court",
+      "Attacking Player"
+    ]
+  },
+
+  "recommended_skill_ntrp": {
+    "min": 3.5,
+    "max": 5.5
+  },
+
+  "recommended_skill_cn": {
+    "min": 3.5,
+    "max": 5.0
+  },
+
+  "recommended_match_type": [
+    "Singles",
+    "Doubles"
+  ],
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 45,
+      "max": 50
+    },
+    "multifilament": {
+      "min": 47,
+      "max": 52
+    },
+    "natural_gut": {
+      "min": 49,
+      "max": 54
+    },
+    "hybrid": {
+      "main": "48-50",
+      "cross": "46-48"
+    }
+  },
+
+  "pro_player_setup": {
+    "player": "Naomi Osaka",
+    "string": "Yonex POLYTOUR STRIKE 125",
+    "string_color": "Iron Gray",
+    "tension_lbs": null
+  },
+
+  "comparison_tags": [
+    "Same Performance Platform as 7th Generation EZONE 98",
+    "Limited Cosmetic",
+    "Player Collaboration",
+    "Power and Comfort",
+    "Collector Appeal"
+  ],
+
+  "ai_keywords": [
+    "yonex",
+    "osaka ezone",
+    "naomi osaka",
+    "mari osaka",
+    "ezone 98",
+    "gold purple",
+    "limited edition",
+    "dragon",
+    "spider lily",
+    "7th generation"
+  ],
+
+  "target_competitors": [
+    "Yonex EZONE 98",
+    "Babolat Pure Drive 98",
+    "Wilson Blade 98",
+    "HEAD Speed MP"
+  ],
+
+  "release_status": {
+    "status": "legacy",
+    "replacement": null,
+    "discontinued": true
+  },
+
+  "description": {
+    "en": "The Yonex OSAKA EZONE 98 Gold/Purple Limited Edition was created in collaboration with Naomi Osaka and Mari Osaka as a special cosmetic version of the 7th-generation EZONE 98. Its design features dragons and spider lilies, symbolizing strength, beauty, power and fighting spirit. Performance remains based on the power-and-comfort focused EZONE 98 platform.",
+
+    "zh": "Yonex OSAKA EZONE 98 Gold/Purple Limited Edition 是 Naomi Osaka 与其姐姐 Mari Osaka 联合 Yonex 研发团队共同设计的限定版本，以第7代 EZONE 98 为性能基础。球拍采用金色与紫色配色，并融入龙与彼岸花元素，象征力量、好运、坚韧、美丽与战斗精神。其性能定位仍延续 EZONE 98 的力量与舒适特性，主要区别在于限定联名外观及收藏属性。"
+  },
+
+  "verification": {
+    "status": "verified",
+    "last_updated": "2026-08-13"
+  }
+}
