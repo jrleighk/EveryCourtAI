@@ -1,0 +1,233 @@
+{
+  "id": "babolat_rpm_soft",
+  "brand": "Babolat",
+  "series": "RPM",
+  "model": "RPM Soft",
+  "category": "String",
+
+  "manufacturer_data": {
+    "packaging": "Reel",
+    "length_m": 200,
+    "construction": "Monofilament",
+    "material": "Polyamide",
+    "composition": "Polyamide",
+    "coating": "Double Coating with Aramid",
+    "country_of_origin": "France"
+  },
+
+  "specifications": {
+    "string_family": "Polyamide Monofilament",
+    "construction": "Monofilament",
+    "cross_section": "Round",
+    "surface": "Smooth",
+
+    "available_colors": [
+      "Brown"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_mm": 1.25,
+        "available": true,
+
+        "power": 8,
+        "control": 8,
+        "spin": 8,
+        "comfort": 10,
+        "feel": 9,
+        "durability": 8,
+        "tension_maintenance": 8,
+        "elasticity": 9,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Players Transitioning from Multifilament to Monofilament",
+          "Arm-Friendly Monofilament Setup",
+          "Intermediate Players",
+          "Players Seeking More Durability than Multifilament",
+          "Players Who Generate Moderate Spin"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "Polyamide Monofilament",
+    "Double Aramid Coating",
+    "RPM Soft Construction",
+    "Flexible Monofilament Design"
+  ],
+
+  "design_profile": {
+    "string_type": "Comfort Monofilament",
+    "target_player": "Beginner to Intermediate Monofilament Users",
+    "arm_friendly": true,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 8,
+    "spin": 8,
+    "comfort": 10,
+    "feel": 9,
+    "durability": 8,
+    "tension_maintenance": 8,
+    "elasticity": 9,
+    "launch_angle": "Medium-High"
+  },
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate",
+      "Advanced"
+    ],
+
+    "swing_speed": [
+      "Slow",
+      "Medium",
+      "Medium-Fast"
+    ],
+
+    "play_style": [
+      "All Court",
+      "Baseline",
+      "Recreational Competition",
+      "Developing Topspin"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Babolat Pure Drive",
+    "Babolat Pure Aero",
+    "Babolat Pure Strike",
+    "Wilson Clash",
+    "Wilson Blade",
+    "Yonex EZONE",
+    "Yonex VCORE",
+    "HEAD Speed",
+    "HEAD Radical",
+    "Tecnifibre T-FIGHT",
+    "Dunlop FX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Babolat Touch VS",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²",
+      "Tecnifibre Triax",
+      "Wilson NXT"
+    ]
+  },
+
+  "recommended_tension": {
+    "club_player_kg": "21-23",
+    "advanced_player_kg": "22-24",
+    "professional_kg": "23-25"
+  },
+
+  "gauge_recommendation": {
+    "1.25": {
+      "best_for": [
+        "Maximum Comfort in a Monofilament",
+        "Transition from Multifilament",
+        "Balanced Power and Control",
+        "Moderate Spin",
+        "Arm-Friendly Setup"
+      ],
+
+      "tradeoffs": [
+        "Less Maximum Spin than Shaped Polyester",
+        "Less Firm Control than RPM Blast",
+        "Less Durability than Firm Co-Polyester"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.25": {
+      "heavy_topspin_hours": "8-12",
+      "club_player_hours": "15-25"
+    }
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Who Find Polyester Too Stiff",
+      "Players Whose Multifilament Breaks Too Quickly",
+      "Intermediate Players Moving Into Monofilament",
+      "Players Prioritizing Comfort",
+      "Players Wanting Moderate Spin Without Harshness"
+    ],
+
+    "avoid_for": [
+      "Heavy String Breakers",
+      "Players Seeking Maximum Tour-Level Control",
+      "Very Fast Swing Players Wanting Maximum Spin",
+      "Players Who Prefer Very Firm Polyester Feel"
+    ],
+
+    "alternative_strings": [
+      "Babolat RPM Team",
+      "Tecnifibre Razor Soft",
+      "Luxilon Element",
+      "Yonex Poly Tour Air",
+      "Tecnifibre Triax"
+    ]
+  },
+
+  "comparison_tags": [
+    "Polyamide Monofilament",
+    "Maximum Comfort",
+    "Arm Friendly",
+    "More Durable than Multifilament",
+    "Softer than Polyester",
+    "Transition Monofilament"
+  ],
+
+  "ai_keywords": [
+    "babolat",
+    "rpm soft",
+    "rpm",
+    "soft",
+    "1.25",
+    "125",
+    "polyamide",
+    "monofilament",
+    "aramid coating",
+    "comfort",
+    "arm friendly",
+    "soft monofilament",
+    "multifilament alternative"
+  ],
+
+  "target_competitors": [
+    "Tecnifibre Triax",
+    "Luxilon Element",
+    "Yonex Poly Tour Air",
+    "HEAD Lynx Touch",
+    "Tecnifibre Razor Soft"
+  ],
+
+  "description": {
+    "en": "Babolat RPM Soft is a unique polyamide monofilament designed to bridge the gap between multifilament comfort and monofilament durability. Its flexible polyamide construction provides significantly more comfort than traditional polyester strings, while its monofilament structure and double aramid coating improve durability compared with standard multifilaments. It is especially suitable for players transitioning into monofilament strings or those who want more spin and durability without the stiffness of polyester.",
+
+    "zh": "Babolat RPM Soft 是一款非常特别的聚酰胺单丝球线，定位介于传统多芯线与聚酯单丝之间。聚酰胺材质比聚酯和共聚酯更柔软、更有弹性，因此拥有非常出色的舒适性；同时单丝结构和双层芳纶涂层又让它比普通多芯线更加耐用。它非常适合第一次从多芯线过渡到单丝球线的球员，或者希望获得更多旋转与耐久表现、但又不想承受传统聚酯线硬度的使用者。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13"
+  }
+}
