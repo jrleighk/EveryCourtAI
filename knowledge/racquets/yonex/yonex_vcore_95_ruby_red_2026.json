@@ -1,0 +1,114 @@
+{
+  "id": "yonex_vcore_95_ruby_red_2026",
+  "brand": "Yonex",
+  "series": "VCORE",
+  "model": "VCORE 95",
+  "year": 2026,
+  "edition": "Ruby Red",
+  "category": "Racquet",
+  "collaboration": false,
+
+  "specifications": {
+    "head_size_sq_in": 95,
+    "length_in": 27.0,
+    "weight_g_unstrung": 310,
+    "balance_mm_unstrung": 310,
+    "string_pattern": "16x20",
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+
+    "grip_sizes": [
+      "L2",
+      "L4"
+    ]
+  },
+
+  "technology": [
+    "ISOMETRIC",
+    "2G-Namd Flex Force",
+    "Silicone Oil Infused Grommets",
+    "Aero Trench",
+    "Aero Fin",
+    "VDM"
+  ],
+
+  "playing_characteristics": {
+    "power": 7,
+    "control": 10,
+    "spin": 10,
+    "comfort": 8,
+    "maneuverability": 8,
+    "stability": 10
+  },
+
+  "playing_tags": [
+    "Advanced",
+    "Professional",
+    "Spin",
+    "Precision",
+    "Control",
+    "Fast Swing",
+    "Aggressive Baseliner"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Advanced",
+      "Professional"
+    ],
+    "swing_style": [
+      "Fast"
+    ],
+    "play_style": [
+      "Aggressive Baseliner",
+      "All Court"
+    ]
+  },
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 46,
+      "max": 51
+    },
+    "multifilament": {
+      "min": 48,
+      "max": 53
+    },
+    "natural_gut": {
+      "min": 50,
+      "max": 55
+    },
+    "hybrid": {
+      "main": "49-51",
+      "cross": "47-49"
+    }
+  },
+
+  "release_status": {
+    "status": "current",
+    "replacement": null,
+    "discontinued": false
+  },
+
+  "description": {
+    "en": "The Yonex VCORE 95 Ruby Red 2026 is the most control-oriented model in the VCORE family. Featuring a 95 sq.in head, 310 g unstrung weight, 310 mm balance and a 16x20 string pattern, it delivers exceptional precision, heavy spin potential and outstanding stability for advanced and professional players with fast swing speeds.",
+
+    "zh": "Yonex VCORE 95 Ruby Red 2026 是 VCORE 系列中控制性能最强的型号，采用95平方英寸拍面、310克空拍重量、310毫米平衡点及16×20线床设计。专为高水平及职业球员打造，能够提供极高的精准度、强烈的旋转能力以及卓越的击球稳定性，非常适合挥拍速度快、主动进攻型球员。"
+  },
+
+  "verification": {
+    "status": "verified",
+    "last_updated": "2026-08-12"
+  }
+}
