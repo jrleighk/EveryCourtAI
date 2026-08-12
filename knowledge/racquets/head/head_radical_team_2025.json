@@ -1,0 +1,91 @@
+{
+  "id": "head_radical_team_2025",
+  "brand": "Head",
+  "series": "Radical",
+  "model": "Radical Team",
+  "year": 2025,
+  "edition": null,
+  "category": "Racquet",
+  "collaboration": false,
+
+  "specifications": {
+    "head_size_sq_in": 102,
+    "length_in": 27.0,
+    "weight_g_unstrung": 280,
+    "balance_mm_unstrung": 320,
+    "string_pattern": "16x19",
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+
+    "grip_sizes": [
+      "L1",
+      "L2",
+      "L3",
+      "L4"
+    ]
+  },
+
+  "technology": [
+    "Auxetic 2.0",
+    "Graphene Inside"
+  ],
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 8,
+    "spin": 7,
+    "comfort": 9,
+    "maneuverability": 9,
+    "stability": 7
+  },
+
+  "playing_tags": [
+    "Beginner",
+    "Intermediate",
+    "Easy Power",
+    "Comfort",
+    "Forgiving",
+    "Lightweight",
+    "Control",
+    "All Court",
+    "Recreational"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate"
+    ],
+    "swing_style": [
+      "Medium",
+      "Compact"
+    ],
+    "play_style": [
+      "All Court",
+      "Recreational"
+    ]
+  },
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": []
+  },
+
+  "recommended_tension_lbs": {
+    "min": null,
+    "max": null
+  },
+
+  "description": {
+    "en": "The Head Radical Team 2025 features Auxetic 2.0 technology, a forgiving 102 sq.in head, 280 g unstrung weight, 320 mm balance and a 16x19 string pattern. Designed for beginner and intermediate players seeking comfort, easy power and all-court versatility.",
+    "zh": "Head Radical Team 2025 搭载 Auxetic 2.0 科技，102平方英寸拍面、280克空拍重量、320毫米平衡点及16×19线床，为初学者及中级球员提供舒适手感、轻松发力与全面型表现。"
+  },
+
+  "verification": {
+    "status": "verified",
+    "last_updated": "2026-08-12"
+  }
+}
