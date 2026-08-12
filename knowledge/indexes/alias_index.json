@@ -1,0 +1,16 @@
+{
+  "Wilson RF01": "knowledge/racquets/wilson/rf01.json",
+  "RF01": "knowledge/racquets/wilson/rf01.json",
+  "RF 01": "knowledge/racquets/wilson/rf01.json",
+  "RF 01 Pro": "knowledge/racquets/wilson/rf01_pro.json",
+
+  "Blade 98": "knowledge/racquets/wilson/blade_98_v10.json",
+
+  "Pure Drive": "knowledge/racquets/babolat/pure_drive_2026.json",
+
+  "Pure Aero": "knowledge/racquets/babolat/pure_aero_2026.json",
+
+  "Speed MP": "knowledge/racquets/head/speed_mp_2026.json",
+
+  "Ezone 100": "knowledge/racquets/yonex/ezone_100_2025.json"
+}
