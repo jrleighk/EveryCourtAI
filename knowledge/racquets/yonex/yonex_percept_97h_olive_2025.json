@@ -1,0 +1,157 @@
+{
+  "id": "yonex_percept_97h_olive_2025",
+  "brand": "Yonex",
+  "series": "PERCEPT",
+  "model": "PERCEPT 97H",
+  "year": 2025,
+  "edition": "Olive",
+  "category": "Racquet",
+  "collaboration": false,
+
+  "specifications": {
+    "head_size_sq_in": 97,
+    "length_in": 27.0,
+    "weight_g_unstrung": 330,
+    "balance_mm_unstrung": 310,
+    "string_pattern": "16x19",
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+
+    "grip_sizes": [
+      "L1",
+      "L2",
+      "L3"
+    ]
+  },
+
+  "technology": [
+    "ISOMETRIC",
+    "SERVO FILTER",
+    "FLEXCON SYSTEM",
+    "2G-Namd Flex Force",
+    "STIFF RACQUET FACE DESIGN"
+  ],
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 10,
+    "spin": 8,
+    "comfort": 9,
+    "maneuverability": 6,
+    "stability": 10
+  },
+
+  "playing_tags": [
+    "Advanced",
+    "Tour",
+    "Control",
+    "Feel",
+    "Heavy Frame"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Advanced",
+      "Professional"
+    ],
+    "swing_style": [
+      "Fast",
+      "Very Fast"
+    ],
+    "play_style": [
+      "Aggressive Baseliner",
+      "All Court",
+      "Counter Puncher"
+    ]
+  },
+
+  "recommended_skill_ntrp": {
+    "min": 5.0,
+    "max": 7.0
+  },
+
+  "recommended_skill_cn": {
+    "min": 4.5,
+    "max": 6.5
+  },
+
+  "recommended_match_type": [
+    "Singles"
+  ],
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 46,
+      "max": 51
+    },
+    "multifilament": {
+      "min": 48,
+      "max": 54
+    },
+    "natural_gut": {
+      "min": 49,
+      "max": 55
+    },
+    "hybrid": {
+      "main": "48-50",
+      "cross": "46-48"
+    }
+  },
+
+  "comparison_tags": [
+    "330g Tour Frame",
+    "Maximum Stability",
+    "97 Head Size",
+    "16x19 Pattern",
+    "Tour Control"
+  ],
+
+  "ai_keywords": [
+    "yonex",
+    "percept",
+    "97h",
+    "olive",
+    "2025",
+    "330g",
+    "97",
+    "16x19",
+    "tour",
+    "control"
+  ],
+
+  "target_competitors": [
+    "Wilson Pro Staff RF97",
+    "Wilson Pro Staff 97",
+    "HEAD Prestige Pro",
+    "HEAD Radical Pro",
+    "Tecnifibre TF40 315 16x19"
+  ],
+
+  "release_status": {
+    "status": "current",
+    "replacement": null,
+    "discontinued": false
+  },
+
+  "description": {
+    "en": "The Yonex PERCEPT 97H Olive 2025 is the heaviest model in the PERCEPT family, designed for professional players seeking maximum stability, precision and plow-through from a classic 97 square inch frame.",
+
+    "zh": "Yonex PERCEPT 97H Olive 2025 是 PERCEPT 系列最重的职业版球拍，采用330克空拍重量、97平方英寸拍面、16×19线床及310mm平衡点，为高水平球员提供极佳的稳定性、穿透力、精准控制与击球质感。Olive 为特别配色版本。"
+  },
+
+  "verification": {
+    "status": "verified",
+    "last_updated": "2026-08-12"
+  }
+}
