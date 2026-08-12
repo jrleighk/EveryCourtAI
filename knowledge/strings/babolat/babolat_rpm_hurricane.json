@@ -1,0 +1,220 @@
+{
+  "id": "babolat_rpm_hurricane",
+  "brand": "Babolat",
+  "series": "RPM",
+  "model": "RPM Hurricane",
+  "category": "String",
+
+  "manufacturer_data": {
+    "packaging": "Reel",
+    "length_m": 200,
+    "length_ft": 656,
+    "construction": "Monofilament",
+    "material": "Co-Polyester",
+    "composition": "Low-Density Co-Polyester",
+    "country_of_origin": "France"
+  },
+
+  "specifications": {
+    "string_family": "Polyester",
+    "construction": "Monofilament",
+    "cross_section": "Octagonal",
+    "surface": "Smooth",
+
+    "available_colors": [
+      "Yellow"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_mm": 1.30,
+        "available": true,
+
+        "power": 7,
+        "control": 9,
+        "spin": 9,
+        "comfort": 7,
+        "feel": 8,
+        "durability": 9,
+        "tension_maintenance": 8,
+        "elasticity": 7,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Club Competition",
+          "Heavy Topspin",
+          "Aggressive Baseliner",
+          "Heavy Hitters",
+          "Players Seeking Value"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "Low-Density Co-Polyester",
+    "Octagonal Profile",
+    "RPM Spin Technology"
+  ],
+
+  "design_profile": {
+    "string_type": "Control Spin Polyester",
+    "target_player": "Intermediate to Advanced",
+    "arm_friendly": false,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": false,
+    "comfort_focus": true,
+    "durability_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 7,
+    "control": 9,
+    "spin": 9,
+    "comfort": 7,
+    "feel": 8,
+    "durability": 9,
+    "tension_maintenance": 8,
+    "elasticity": 7,
+    "launch_angle": "Medium-High"
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "Modern Baseline",
+      "All Court"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Babolat Pure Aero",
+    "Babolat Pure Drive",
+    "Babolat Pure Strike",
+    "Wilson Blade",
+    "Yonex VCORE",
+    "HEAD Extreme",
+    "Tecnifibre T-FIGHT",
+    "Dunlop SX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Babolat Touch VS",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²",
+      "Wilson Natural Gut"
+    ]
+  },
+
+  "recommended_tension": {
+    "club_player_kg": "21-23",
+    "advanced_player_kg": "22-24",
+    "professional_kg": "23-25"
+  },
+
+  "gauge_recommendation": {
+    "1.30": {
+      "best_for": [
+        "Spin",
+        "Control",
+        "Durability",
+        "Club Tournament Tennis"
+      ],
+
+      "tradeoffs": [
+        "Less Power than RPM Power",
+        "Less Comfort than Multifilament",
+        "Less Spin than RPM Rough"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.30": {
+      "heavy_topspin_hours": "10-16",
+      "club_player_hours": "18-30"
+    }
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Intermediate Players",
+      "Players Looking for Affordable Polyester",
+      "Heavy Topspin",
+      "Competitive Club Players",
+      "Players Wanting Durable Control"
+    ],
+
+    "avoid_for": [
+      "Beginners",
+      "Players With Arm Pain",
+      "Players Seeking Maximum Comfort"
+    ],
+
+    "alternative_strings": [
+      "Babolat RPM Team",
+      "Babolat RPM Blast",
+      "Tecnifibre Razor Soft",
+      "Tecnifibre Black Code",
+      "Yonex Poly Tour Strike"
+    ]
+  },
+
+  "comparison_tags": [
+    "Control Polyester",
+    "Spin Polyester",
+    "Durable",
+    "Affordable",
+    "Club Competition"
+  ],
+
+  "ai_keywords": [
+    "babolat",
+    "rpm hurricane",
+    "hurricane",
+    "130",
+    "1.30",
+    "polyester",
+    "co-polyester",
+    "octagonal",
+    "spin",
+    "control",
+    "durability"
+  ],
+
+  "target_competitors": [
+    "Tecnifibre Black Code",
+    "Tecnifibre Razor Code",
+    "Yonex Poly Tour Strike",
+    "HEAD Lynx Tour"
+  ],
+
+  "description": {
+    "en": "Babolat RPM Hurricane is a durable octagonal co-polyester monofilament designed for players who want strong spin, reliable control and long string life at an affordable price. Its lower-density co-polyester construction provides a slightly softer response than firmer polyester strings while maintaining excellent directional control and durability. It is an excellent choice for competitive club players with medium to fast swing speeds.",
+    "zh": "Babolat RPM Hurricane 是一款兼顾旋转、控制和耐久性的八边形共聚酯单丝球线，定位于高性价比竞技聚酯线。低密度共聚酯结构让它比传统硬聚酯更加柔和，同时仍然保持优秀的方向控制、旋转能力和耐久表现，非常适合中高级俱乐部比赛球员以及挥拍速度较快的底线型打法。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13"
+  }
+}
