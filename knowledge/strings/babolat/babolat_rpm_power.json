@@ -1,0 +1,235 @@
+{
+  "id": "babolat_rpm_power",
+  "brand": "Babolat",
+  "series": "RPM",
+  "model": "RPM Power",
+  "category": "String",
+
+  "manufacturer_data": {
+    "packaging": "Set",
+    "length_m": 12,
+    "length_ft": 39,
+    "construction": "Monofilament",
+    "material": "Co-Polyester",
+    "composition": "High-Density Co-Polyester",
+    "country_of_origin": "France"
+  },
+
+  "specifications": {
+    "string_family": "Polyester",
+    "construction": "Monofilament",
+    "cross_section": "Round",
+    "surface": "Smooth",
+    "special_finish": "Power Coating",
+
+    "available_colors": [
+      "Brown"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_mm": 1.30,
+        "available": true,
+
+        "power": 9,
+        "control": 8,
+        "spin": 9,
+        "comfort": 6,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 8,
+        "elasticity": 7,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Power Baseline Tennis",
+          "Aggressive Players",
+          "Heavy Hitters",
+          "Fast Swing Speed",
+          "Tournament Players"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "Unique Extrusion System",
+    "Power Coating",
+    "High-Density Co-Polyester",
+    "RPM Spin Technology"
+  ],
+
+  "design_profile": {
+    "string_type": "Power Polyester",
+    "target_player": "Advanced and Tournament Players",
+    "arm_friendly": false,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": false,
+    "durability_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 8,
+    "spin": 9,
+    "comfort": 6,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 8,
+    "elasticity": 7,
+    "launch_angle": "Medium-High"
+  },
+
+  "recommended_player": {
+    "level": [
+      "Advanced",
+      "Tournament",
+      "Professional"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Groundstrokes",
+      "Power Player",
+      "Modern Baseline"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Babolat Pure Aero",
+    "Babolat Pure Drive",
+    "Babolat Pure Strike",
+    "Yonex VCORE",
+    "Yonex EZONE",
+    "Wilson Blade",
+    "HEAD Extreme",
+    "HEAD Speed",
+    "Tecnifibre T-FIGHT",
+    "Dunlop SX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Babolat Touch VS",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²",
+      "Wilson Natural Gut"
+    ]
+  },
+
+  "recommended_tension": {
+    "club_player_kg": "21-23",
+    "advanced_player_kg": "22-24",
+    "professional_kg": "23-25"
+  },
+
+  "gauge_recommendation": {
+    "1.30": {
+      "best_for": [
+        "Maximum Power for Polyester",
+        "Heavy Groundstrokes",
+        "Fast Swing Players",
+        "Tournament Competition"
+      ],
+
+      "tradeoffs": [
+        "Less Comfortable than Multifilament",
+        "Slightly Less Control than RPM Blast"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.30": {
+      "heavy_topspin_hours": "10-16",
+      "club_player_hours": "18-30"
+    }
+  },
+
+  "tour_players": [
+    {
+      "name": "Dominic Thiem",
+      "tour": "ATP",
+      "usage": "Manufacturer promotional reference",
+      "confidence": "High"
+    }
+  ],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Wanting More Power Than RPM Blast",
+      "Aggressive Baseliners",
+      "Fast Swing Players",
+      "Players Who Like Crisp Impact",
+      "Heavy Hitters"
+    ],
+
+    "avoid_for": [
+      "Beginners",
+      "Players With Arm Pain",
+      "Players Looking for Maximum Comfort"
+    ],
+
+    "alternative_strings": [
+      "Babolat RPM Blast",
+      "Babolat RPM Team",
+      "Luxilon ALU Power",
+      "Yonex Poly Tour Strike",
+      "Tecnifibre Razor Code"
+    ]
+  },
+
+  "comparison_tags": [
+    "Power Polyester",
+    "High Spin",
+    "High Power",
+    "Crisp Feel",
+    "Durable",
+    "Tour Level"
+  ],
+
+  "ai_keywords": [
+    "babolat",
+    "rpm power",
+    "rpm",
+    "power",
+    "130",
+    "1.30",
+    "polyester",
+    "co-polyester",
+    "dominic thiem",
+    "spin",
+    "power",
+    "crisp"
+  ],
+
+  "target_competitors": [
+    "Luxilon ALU Power",
+    "Tecnifibre Razor Code",
+    "Yonex Poly Tour Strike",
+    "HEAD Hawk Power",
+    "Solinco Confidential"
+  ],
+
+  "description": {
+    "en": "Babolat RPM Power is a power-oriented co-polyester monofilament developed for players who want more ball speed without sacrificing the spin and durability of the RPM family. Its unique extrusion process and special surface coating create a crisp impact feel and distinctive sound, while maintaining excellent spin and long-term durability. It is best suited to advanced players with fast swings who attack from the baseline.",
+    "zh": "Babolat RPM Power 是 RPM 系列中强调力量输出的高密度共聚酯单丝球线。独特的挤压工艺结合特殊表面涂层，使它在保持 RPM 系列高旋转和耐久性的同时，提供更强的击球速度、更清脆的击球反馈以及独特的击球声音。非常适合挥拍速度快、依靠底线进攻和重炮击球的高级及比赛型球员。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13"
+  }
+}
