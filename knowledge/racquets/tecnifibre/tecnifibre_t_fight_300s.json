@@ -1,0 +1,225 @@
+{
+  "id": "tecnifibre_t_fight_300s",
+  "brand": "Tecnifibre",
+  "series": "T-FIGHT",
+  "model": "T-FIGHT 300S",
+  "year": null,
+  "edition": "Standard",
+  "category": "Racquet",
+  "collaboration": false,
+
+  "manufacturer_data": {
+    "reference": "14FI300S51",
+    "range": "T-Fight",
+    "main_material": "Graphite",
+    "head_size_cm2": 630,
+    "head_size_sq_in": 98,
+    "weight_g_unstrung": 300,
+    "weight_oz_unstrung": 10.6,
+    "length_cm": 68.6,
+    "string_pattern": "16x19",
+    "strung_status": "Unstrung",
+    "made_in": "China"
+  },
+
+  "specifications": {
+    "head_size_sq_in": 98,
+    "head_size_cm2": 630,
+    "length_in": 27.0,
+    "length_cm": 68.6,
+    "weight_g_unstrung": 300,
+    "balance_mm_unstrung": null,
+    "string_pattern": "16x19",
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+    "twistweight": null,
+    "vibration_hz": null,
+
+    "grip_sizes": [
+      "L1",
+      "L2",
+      "L3",
+      "L4"
+    ]
+  },
+
+  "technology": [
+    "RS Section",
+    "Isoflex",
+    "Centralized Weight Distribution",
+    "Optimized Swing Speed",
+    "Expanded Sweet Spot",
+    "TECNILAB"
+  ],
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 9,
+    "spin": 9,
+    "comfort": 8,
+    "maneuverability": 9,
+    "stability": 9
+  },
+
+  "playing_tags": [
+    "Advanced",
+    "Tournament",
+    "Power",
+    "Control",
+    "Spin",
+    "Fast Swing",
+    "Modern Tennis",
+    "Aggressive Baseliner",
+    "All Court"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+    "swing_style": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+    "play_style": [
+      "Aggressive Baseliner",
+      "All Court",
+      "Attacking Player",
+      "Modern Baseline"
+    ]
+  },
+
+  "recommended_skill_ntrp": {
+    "min": 3.5,
+    "max": 6.0
+  },
+
+  "recommended_skill_cn": {
+    "min": 3.5,
+    "max": 5.5
+  },
+
+  "recommended_match_type": [
+    "Singles",
+    "Doubles"
+  ],
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 44,
+      "max": 49
+    },
+    "multifilament": {
+      "min": 47,
+      "max": 53
+    },
+    "natural_gut": {
+      "min": 49,
+      "max": 55
+    },
+    "hybrid": {
+      "main": "47-49",
+      "cross": "45-47"
+    }
+  },
+
+  "pro_player_usage": {
+    "tour_players": [
+      "Daniil Medvedev",
+      "Iga Swiatek",
+      "Tallon Griekspoor",
+      "Danielle Collins",
+      "Christopher Eubanks"
+    ],
+    "used_on_tour": true,
+    "retail_spec_exact_match": false
+  },
+
+  "comparison_tags": [
+    "98 Head Size",
+    "300g",
+    "16x19 Pattern",
+    "Power and Control Balance",
+    "Fast Swing",
+    "Modern Maneuverability",
+    "RS Section",
+    "Isoflex"
+  ],
+
+  "ai_keywords": [
+    "tecnifibre",
+    "t-fight",
+    "t fight 300s",
+    "t-fight 300s",
+    "300s",
+    "98sqin",
+    "630cm2",
+    "300g",
+    "16x19",
+    "rs section",
+    "isoflex",
+    "fast swing",
+    "power",
+    "control",
+    "spin",
+    "modern tennis"
+  ],
+
+  "target_competitors": [
+    "Yonex EZONE 98",
+    "Yonex VCORE 98",
+    "Wilson Blade 98 16x19",
+    "HEAD Speed MP",
+    "Babolat Pure Strike 98 16x19",
+    "Dunlop CX 200"
+  ],
+
+  "release_status": {
+    "status": "current",
+    "replacement": null,
+    "discontinued": false
+  },
+
+  "environmental_data": {
+    "recycled_material_percentage_min": 0,
+    "hazardous_substances": "none",
+    "product_recyclable": false,
+    "packaging_recycled_material_percentage_min": 0,
+    "packaging_hazardous_substances": "none",
+    "packaging_recyclable": true
+  },
+
+  "description": {
+    "en": "The Tecnifibre T-FIGHT 300S is a modern 98 sq.in performance racquet designed to balance power, control, spin and maneuverability. Weighing 300 g unstrung with a 16x19 string pattern, it reflects Tecnifibre's modern swing-speed philosophy by redistributing weight toward the center of the frame to improve racquet-head acceleration. RS Section geometry blends square and round frame profiles to balance power and control, while Isoflex progressive stiffness expands the effective sweet spot and helps maintain precision on off-center contact.",
+
+    "zh": "Tecnifibre T-FIGHT 300S 是一款现代98平方英寸竞技型球拍，采用300克空拍重量及16×19线床，在力量、控制、旋转和灵活操控之间取得优秀平衡。其设计核心围绕现代网球更快的挥拍速度展开，通过重新分配拍框重量，让拍头更容易加速。RS Section 将方形与圆形拍框结构融合，以兼顾力量与控制；Isoflex 渐进式刚性系统则扩大有效甜区，使非中心击球依然保持良好的精准度与稳定性。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13",
+    "unverified_fields": [
+      "year",
+      "balance_mm_unstrung",
+      "beam_mm",
+      "stiffness_ra",
+      "swingweight",
+      "twistweight",
+      "vibration_hz"
+    ]
+  }
+}
