@@ -1,0 +1,181 @@
+{
+  "id": "dunlop_sx300_lite_2025",
+  "brand": "Dunlop",
+  "series": "SX",
+  "model": "SX 300 LITE",
+  "year": 2025,
+  "edition": "Standard",
+  "category": "Racquet",
+  "collaboration": false,
+
+  "manufacturer_data": {
+    "subgroup": "PREMIUM",
+    "level": "Beginner / Intermediate"
+  },
+
+  "specifications": {
+    "head_size_sq_in": 100,
+    "length_in": 27.0,
+    "weight_g_unstrung": 270,
+    "balance_mm_unstrung": 330,
+    "balance_description": "Head Light",
+    "string_pattern": "16x19",
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+
+    "grip_sizes": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4"
+    ]
+  },
+
+  "technology": [
+    "SONIC CORE with Infinergy",
+    "SPIN BOOST XT GROMMETS",
+    "SPIN BOOST FRAME GEOMETRY",
+    "V-ENERGY SHAFT",
+    "VIBROSHIELD"
+  ],
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 7,
+    "spin": 9,
+    "comfort": 9,
+    "maneuverability": 10,
+    "stability": 6
+  },
+
+  "playing_tags": [
+    "Beginner",
+    "Intermediate",
+    "Lightweight",
+    "Easy Swing",
+    "Spin",
+    "Comfort",
+    "Forgiving",
+    "All Court"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate"
+    ],
+    "swing_style": [
+      "Slow",
+      "Medium"
+    ],
+    "play_style": [
+      "All Court",
+      "Baseline",
+      "Recreational",
+      "Doubles"
+    ]
+  },
+
+  "recommended_skill_ntrp": {
+    "min": 2.0,
+    "max": 4.0
+  },
+
+  "recommended_skill_cn": {
+    "min": 1.5,
+    "max": 3.5
+  },
+
+  "recommended_match_type": [
+    "Singles",
+    "Doubles"
+  ],
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 42,
+      "max": 47
+    },
+    "multifilament": {
+      "min": 45,
+      "max": 51
+    },
+    "natural_gut": {
+      "min": 46,
+      "max": 52
+    },
+    "hybrid": {
+      "main": "45-47",
+      "cross": "43-45"
+    }
+  },
+
+  "comparison_tags": [
+    "Lightweight Spin Racquet",
+    "100 Head Size",
+    "270g",
+    "Easy Swing",
+    "Forgiving",
+    "Beginner Friendly"
+  ],
+
+  "ai_keywords": [
+    "dunlop",
+    "sx300",
+    "sx300 lite",
+    "sx 300 lite",
+    "2025",
+    "270g",
+    "330mm",
+    "100sqin",
+    "16x19",
+    "spin",
+    "lightweight",
+    "beginner",
+    "intermediate",
+    "easy swing"
+  ],
+
+  "target_competitors": [
+    "Yonex EZONE 100SL",
+    "Yonex VCORE 100L",
+    "HEAD Boom MP L",
+    "HEAD Extreme MP L",
+    "Babolat Pure Aero Team",
+    "Wilson Clash 100L"
+  ],
+
+  "release_status": {
+    "status": "current",
+    "replacement": null,
+    "discontinued": false
+  },
+
+  "description": {
+    "en": "The Dunlop SX 300 LITE 2025 is a lightweight spin-oriented racquet featuring a 100 sq.in head, 270 g unstrung weight and 330 mm balance. Designed for beginner and intermediate players, it provides quick maneuverability, easy acceleration and strong spin potential. SONIC CORE with Infinergy improves comfort and rebound, SPIN BOOST XT GROMMETS and SPIN BOOST FRAME GEOMETRY enhance spin and power, V-ENERGY SHAFT improves stability and swing speed, while VIBROSHIELD reduces unwanted vibration.",
+
+    "zh": "Dunlop SX 300 LITE 2025 是 SX 系列中的轻量旋转型球拍，采用100平方英寸拍面、270克空拍重量及330毫米平衡点，适合初学者及中级球员。球拍具备非常灵活的挥拍表现、轻松的加速能力以及优秀的旋转潜力。SONIC CORE with Infinergy 提升回弹与舒适性；SPIN BOOST XT GROMMETS 与 SPIN BOOST FRAME GEOMETRY 增强旋转和力量；V-ENERGY SHAFT 提升稳定性与挥拍速度；VIBROSHIELD 则帮助减少不必要的震动。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13",
+    "unverified_fields": [
+      "beam_mm",
+      "stiffness_ra",
+      "swingweight"
+    ]
+  }
+}
