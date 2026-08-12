@@ -1,0 +1,236 @@
+{
+  "id": "babolat_xalt",
+  "brand": "Babolat",
+  "series": "Xalt",
+  "model": "Xalt",
+  "category": "String",
+
+  "manufacturer_data": {
+    "packaging": "Set",
+    "length_m": 12,
+    "length_ft": 39,
+    "construction": "Multifilament",
+    "material": "Polyamide",
+    "composition": "Polyamide",
+    "country_of_origin": "France",
+    "solvent_free": true
+  },
+
+  "specifications": {
+    "string_family": "Multifilament",
+    "construction": "Multifilament Matrix",
+    "cross_section": "Round",
+    "surface": "Smooth",
+
+    "available_colors": [
+      "Natural"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_mm": 1.25,
+        "available": true,
+
+        "power": 8,
+        "control": 9,
+        "spin": 7,
+        "comfort": 10,
+        "feel": 9,
+        "durability": 8,
+        "tension_maintenance": 8,
+        "elasticity": 9,
+        "launch_angle": "Medium",
+
+        "recommended_use": [
+          "Comfort",
+          "Control",
+          "Responsive Feel",
+          "Intermediate Players",
+          "Advanced Club Players",
+          "Arm-Friendly Setup"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "Multifilament Matrix Structure",
+    "Specific Polyamide Fibres",
+    "Vibration Absorption",
+    "Solvent-Free Manufacturing"
+  ],
+
+  "design_profile": {
+    "string_type": "Responsive Control Multifilament",
+    "target_player": "Intermediate to Advanced",
+    "arm_friendly": true,
+    "spin_focus": false,
+    "control_focus": true,
+    "power_focus": false,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 9,
+    "spin": 7,
+    "comfort": 10,
+    "feel": 9,
+    "durability": 8,
+    "tension_maintenance": 8,
+    "elasticity": 9,
+    "launch_angle": "Medium"
+  },
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate",
+      "Advanced"
+    ],
+
+    "swing_speed": [
+      "Slow",
+      "Medium",
+      "Medium-Fast"
+    ],
+
+    "play_style": [
+      "All Court",
+      "Baseline",
+      "Counter Puncher",
+      "Touch Player",
+      "Doubles"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Babolat Pure Drive",
+    "Babolat Pure Strike",
+    "Babolat Pure Aero",
+    "Wilson Clash",
+    "Wilson Blade",
+    "Yonex EZONE",
+    "Yonex PERCEPT",
+    "HEAD Speed",
+    "HEAD Radical",
+    "Tecnifibre TF-40",
+    "Dunlop CX",
+    "Prince Tour"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Babolat RPM Blast",
+      "Babolat RPM Team",
+      "Tecnifibre Razor Soft",
+      "Tecnifibre Black Code",
+      "Luxilon ALU Power"
+    ]
+  },
+
+  "recommended_tension": {
+    "club_player_kg": "22-24",
+    "advanced_player_kg": "23-25",
+    "professional_kg": "24-26"
+  },
+
+  "gauge_recommendation": {
+    "1.25": {
+      "best_for": [
+        "Comfort",
+        "Precise Control",
+        "Responsive Impact",
+        "Balanced Multifilament Performance"
+      ],
+
+      "tradeoffs": [
+        "Less Maximum Spin than Shaped Polyester",
+        "Less Durability than Full Polyester"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.25": {
+      "heavy_topspin_hours": "6-10",
+      "club_player_hours": "14-24"
+    }
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Seeking Comfort Without Excessive Power",
+      "Players Wanting More Control than Traditional Soft Multifilaments",
+      "Players With Arm Sensitivity",
+      "Intermediate to Advanced Club Players",
+      "Players Who Prefer a Crisp but Comfortable Multifilament"
+    ],
+
+    "avoid_for": [
+      "Frequent String Breakers",
+      "Players Seeking Maximum Spin",
+      "Very Fast Swing Players Who Prefer Firm Polyester"
+    ],
+
+    "alternative_strings": [
+      "Tecnifibre XR3",
+      "Tecnifibre Duramix",
+      "Tecnifibre X-One Biphase",
+      "Babolat RPM Soft",
+      "Wilson NXT Control"
+    ]
+  },
+
+  "comparison_tags": [
+    "Responsive Multifilament",
+    "High Comfort",
+    "High Control",
+    "Arm Friendly",
+    "Polyamide",
+    "Solvent Free",
+    "Made in France"
+  ],
+
+  "ai_keywords": [
+    "babolat",
+    "xalt",
+    "xalt 125",
+    "1.25",
+    "125",
+    "multifilament",
+    "polyamide",
+    "comfort",
+    "control",
+    "responsive",
+    "arm friendly",
+    "solvent free",
+    "made in france"
+  ],
+
+  "target_competitors": [
+    "Tecnifibre XR3",
+    "Tecnifibre Duramix",
+    "Wilson NXT Control",
+    "HEAD Velocity MLT",
+    "Yonex Rexis Speed"
+  ],
+
+  "description": {
+    "en": "Babolat Xalt is a responsive polyamide multifilament designed to combine comfort, control and a firmer, more precise response. Its multifilament matrix absorbs vibration effectively, while specific polyamide fibres create a more reactive impact feel than very soft traditional multifilaments. Made in France using a solvent-free process, Xalt is particularly well suited to players who want arm-friendly comfort without losing directional control and responsiveness.",
+
+    "zh": "Babolat Xalt 是一款强调舒适、控制与快速响应的聚酰胺多芯球线。其多芯矩阵结构能够有效吸收震动，而特殊聚酰胺纤维则让击球反馈比传统柔软型多芯线更加扎实、直接和灵敏。Xalt 在法国制造，并采用无溶剂工艺，非常适合希望保护手臂，同时又不想牺牲线路控制与击球响应速度的中高级俱乐部球员。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13"
+  }
+}
