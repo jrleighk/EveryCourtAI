@@ -1,0 +1,154 @@
+{
+  "id": "yonex_percept_97d_midnight_navy_2025",
+  "brand": "Yonex",
+  "series": "PERCEPT",
+  "model": "PERCEPT 97D",
+  "year": 2025,
+  "edition": "Midnight Navy",
+  "category": "Racquet",
+  "collaboration": false,
+
+  "specifications": {
+    "head_size_sq_in": 97,
+    "length_in": 27.0,
+    "weight_g_unstrung": 320,
+    "balance_mm_unstrung": 310,
+    "string_pattern": "18x20",
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+
+    "grip_sizes": [
+      "L2"
+    ]
+  },
+
+  "technology": [
+    "ISOMETRIC",
+    "SERVO FILTER",
+    "2G-Namd Flex Force",
+    "FlexCon System",
+    "Stiff Racquet Face Design"
+  ],
+
+  "playing_characteristics": {
+    "power": 6,
+    "control": 10,
+    "spin": 7,
+    "comfort": 10,
+    "maneuverability": 7,
+    "stability": 10
+  },
+
+  "playing_tags": [
+    "Advanced",
+    "Tournament",
+    "Control",
+    "Precision",
+    "Feel"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Advanced",
+      "Tournament"
+    ],
+    "swing_style": [
+      "Fast",
+      "Very Fast"
+    ],
+    "play_style": [
+      "Aggressive Baseliner",
+      "All Court",
+      "Counter Puncher"
+    ]
+  },
+
+  "recommended_skill_ntrp": {
+    "min": 4.5,
+    "max": 6.0
+  },
+
+  "recommended_skill_cn": {
+    "min": 4.0,
+    "max": 5.5
+  },
+
+  "recommended_match_type": [
+    "Singles"
+  ],
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 45,
+      "max": 49
+    },
+    "multifilament": {
+      "min": 47,
+      "max": 52
+    },
+    "natural_gut": {
+      "min": 48,
+      "max": 53
+    },
+    "hybrid": {
+      "main": "47-49",
+      "cross": "45-47"
+    }
+  },
+
+  "comparison_tags": [
+    "Control",
+    "Precision",
+    "Feel",
+    "Dense Pattern",
+    "97 Head Size"
+  ],
+
+  "ai_keywords": [
+    "control",
+    "precision",
+    "feel",
+    "18x20",
+    "97sqin",
+    "320g",
+    "advanced",
+    "tournament",
+    "percept",
+    "97d"
+  ],
+
+  "target_competitors": [
+    "Wilson Pro Staff 97",
+    "HEAD Prestige Pro",
+    "Tecnifibre TF40 18x20",
+    "Babolat Pure Strike 18x20"
+  ],
+
+  "release_status": {
+    "status": "current",
+    "replacement": null,
+    "discontinued": false
+  },
+
+  "description": {
+    "en": "The Yonex PERCEPT 97D Midnight Navy 2025 is a tour-level control racquet featuring a dense 18x20 string pattern, exceptional directional precision and outstanding stability for advanced players.",
+
+    "zh": "Yonex PERCEPT 97D Midnight Navy 2025 是PERCEPT系列中控制能力最强的版本之一，采用97平方英寸拍面、320克空拍重量及18×20线床设计，提供极高的落点精准度、稳定性与击球反馈，非常适合竞技级球员及高水平控制型打法。"
+  },
+
+  "verification": {
+    "status": "verified",
+    "last_updated": "2026-08-12"
+  }
+}
