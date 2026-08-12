@@ -1,1 +1,46 @@
+{
+  "version": "1.0",
 
+  "racquets": {
+
+    "wilson_rf01_pro": {
+      "name": "Wilson RF 01 Pro",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/wilson/rf01_pro.json"
+    },
+
+    "wilson_blade_98_v10": {
+      "name": "Wilson Blade 98 V10",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/wilson/blade_98_v10.json"
+    },
+
+    "babolat_pure_drive_2026": {
+      "name": "Babolat Pure Drive 2026",
+      "brand": "Babolat",
+      "category": "racquet",
+      "path": "knowledge/racquets/babolat/pure_drive_2026.json"
+    }
+
+  },
+
+  "strings": {
+
+    "luxilon_alu_power": {
+      "name": "Luxilon ALU Power",
+      "brand": "Luxilon",
+      "category": "string",
+      "path": "knowledge/strings/luxilon/alu_power.json"
+    },
+
+    "rpm_blast": {
+      "name": "Babolat RPM Blast",
+      "brand": "Babolat",
+      "category": "string",
+      "path": "knowledge/strings/babolat/rpm_blast.json"
+    }
+
+  }
+}
