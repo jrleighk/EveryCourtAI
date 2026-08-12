@@ -1,0 +1,184 @@
+{
+  "id": "dunlop_sx300_2025",
+  "brand": "Dunlop",
+  "series": "SX",
+  "model": "SX 300",
+  "year": 2025,
+  "edition": "Standard",
+  "category": "Racquet",
+  "collaboration": false,
+
+  "manufacturer_data": {
+    "product_number": "10361525",
+    "ean": "0045566182647",
+    "subgroup": "PREMIUM",
+    "level": "Advanced",
+    "colour_name": "Teal/Basic Black/Neon Yellow",
+    "main_material": "Graphite",
+    "secondary_material": "Glassfibre"
+  },
+
+  "specifications": {
+    "head_size_sq_in": 100,
+    "length_in": null,
+    "weight_g_unstrung": 300,
+    "balance_mm_unstrung": 320,
+    "balance_description": "Slightly Head Light",
+    "string_pattern": null,
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+
+    "grip_sizes": [
+      "L1",
+      "L2",
+      "L3",
+      "L4"
+    ]
+  },
+
+  "technology": [
+    "SONIC CORE with Infinergy",
+    "SPIN BOOST XT GROMMETS",
+    "SPIN BOOST FRAME GEOMETRY",
+    "V-ENERGY SHAFT",
+    "VIBROSHIELD"
+  ],
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 8,
+    "spin": 10,
+    "comfort": 8,
+    "maneuverability": 9,
+    "stability": 8
+  },
+
+  "playing_tags": [
+    "Intermediate",
+    "Advanced",
+    "Spin",
+    "Power",
+    "Control",
+    "Modern Baseline",
+    "All Court",
+    "Fast Swing"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced"
+    ],
+    "swing_style": [
+      "Medium-Fast",
+      "Fast"
+    ],
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "All Court",
+      "Attacking Player"
+    ]
+  },
+
+  "recommended_skill_ntrp": {
+    "min": 3.5,
+    "max": 5.5
+  },
+
+  "recommended_skill_cn": {
+    "min": 3.5,
+    "max": 5.0
+  },
+
+  "recommended_match_type": [
+    "Singles",
+    "Doubles"
+  ],
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 44,
+      "max": 49
+    },
+    "multifilament": {
+      "min": 47,
+      "max": 53
+    },
+    "natural_gut": {
+      "min": 49,
+      "max": 54
+    },
+    "hybrid": {
+      "main": "47-49",
+      "cross": "45-47"
+    }
+  },
+
+  "comparison_tags": [
+    "Spin Racquet",
+    "100 Head Size",
+    "300g",
+    "Modern Baseline",
+    "Spin and Power",
+    "Intermediate to Advanced"
+  ],
+
+  "ai_keywords": [
+    "dunlop",
+    "sx",
+    "sx300",
+    "sx 300",
+    "2025",
+    "100sqin",
+    "300g",
+    "320mm",
+    "spin",
+    "power",
+    "control",
+    "teal",
+    "advanced"
+  ],
+
+  "target_competitors": [
+    "Yonex VCORE 100",
+    "Babolat Pure Aero",
+    "HEAD Extreme MP",
+    "Wilson Shift 99"
+  ],
+
+  "release_status": {
+    "status": "current",
+    "replacement": null,
+    "discontinued": false
+  },
+
+  "description": {
+    "en": "The Dunlop SX 300 2025 is a performance-focused spin racquet featuring a 100 sq.in head, 300 g unstrung weight and 320 mm slightly head-light balance. SONIC CORE with Infinergy improves rebound, vibration absorption and comfort, while SPIN BOOST XT GROMMETS and SPIN BOOST FRAME GEOMETRY enhance spin, power and shot consistency. V-ENERGY SHAFT increases stability and swing speed, while VIBROSHIELD reduces unwanted vibration. It is designed for intermediate to advanced players seeking a balanced combination of spin, explosive power and control.",
+
+    "zh": "Dunlop SX 300 2025 是 SX 系列的核心旋转型球拍，采用100平方英寸拍面、300克空拍重量及320毫米略偏头轻平衡设计。SONIC CORE with Infinergy 提升回弹表现、减震能力与舒适性；SPIN BOOST XT GROMMETS 与 SPIN BOOST FRAME GEOMETRY 强化旋转、力量及击球稳定性；V-ENERGY SHAFT 提升拍框稳定性与挥拍速度；VIBROSHIELD 则进一步降低不必要的震动。整体定位为旋转、力量与控制均衡，适合中级至高级的现代底线及全场型球员。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13",
+    "unverified_fields": [
+      "length_in",
+      "string_pattern",
+      "beam_mm",
+      "stiffness_ra",
+      "swingweight"
+    ]
+  }
+}
