@@ -1,0 +1,171 @@
+{
+  "id": "dunlop_cx400_2024",
+  "brand": "Dunlop",
+  "series": "CX",
+  "model": "CX 400",
+  "year": 2024,
+  "edition": "Standard",
+  "category": "Racquet",
+  "collaboration": false,
+
+  "specifications": {
+    "head_size_sq_in": 100,
+    "length_in": 27.0,
+    "weight_g_unstrung": 285,
+    "balance_mm_unstrung": 330,
+    "balance_description": "Head Light",
+    "string_pattern": null,
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+
+    "grip_sizes": [
+      "L1",
+      "L2",
+      "L3"
+    ]
+  },
+
+  "technology": [
+    "SONIC CORE with Infinergy",
+    "VIBROSHIELD",
+    "POWERGRID STRINGTECH+",
+    "CONTROL FRAME GEOMETRY"
+  ],
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 8,
+    "spin": 8,
+    "comfort": 9,
+    "maneuverability": 10,
+    "stability": 7
+  },
+
+  "playing_tags": [
+    "Intermediate",
+    "Control",
+    "Power",
+    "Comfort",
+    "Lightweight",
+    "Easy Swing",
+    "All Court"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Improving"
+    ],
+    "swing_style": [
+      "Medium",
+      "Medium-Fast"
+    ],
+    "play_style": [
+      "All Court",
+      "Baseline",
+      "Counter Puncher",
+      "Doubles"
+    ]
+  },
+
+  "recommended_skill_ntrp": {
+    "min": 2.5,
+    "max": 4.5
+  },
+
+  "recommended_skill_cn": {
+    "min": 2.5,
+    "max": 4.0
+  },
+
+  "recommended_match_type": [
+    "Singles",
+    "Doubles"
+  ],
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 43,
+      "max": 48
+    },
+    "multifilament": {
+      "min": 46,
+      "max": 52
+    },
+    "natural_gut": {
+      "min": 48,
+      "max": 54
+    },
+    "hybrid": {
+      "main": "46-48",
+      "cross": "44-46"
+    }
+  },
+
+  "comparison_tags": [
+    "Lightweight Control Racquet",
+    "100 Head Size",
+    "285g",
+    "Easy Maneuverability",
+    "Comfort and Control",
+    "Intermediate Friendly"
+  ],
+
+  "ai_keywords": [
+    "dunlop",
+    "cx",
+    "cx400",
+    "cx 400",
+    "2024",
+    "100sqin",
+    "285g",
+    "330mm",
+    "control",
+    "power",
+    "comfort",
+    "lightweight",
+    "all court"
+  ],
+
+  "target_competitors": [
+    "Yonex PERCEPT 100L",
+    "HEAD Radical Team",
+    "Wilson Blade 100L",
+    "Babolat Pure Strike Team",
+    "Tecnifibre TF-X1 285"
+  ],
+
+  "release_status": {
+    "status": "current",
+    "replacement": null,
+    "discontinued": false
+  },
+
+  "description": {
+    "en": "The Dunlop CX 400 2024 is a lightweight control-oriented racquet featuring a 100 sq.in head, 285 g unstrung weight and 330 mm head-light balance. It is designed for intermediate and improving players who want easier maneuverability without losing control, comfort or useful power. SONIC CORE with Infinergy improves rebound and vibration absorption, VIBROSHIELD enhances feel and comfort, POWERGRID STRINGTECH+ supports spin and power, while CONTROL FRAME GEOMETRY improves stability and swing-through.",
+
+    "zh": "Dunlop CX 400 2024 是一款轻量化控制型球拍，采用100平方英寸拍面、285克空拍重量及330毫米头轻平衡设计。它非常适合希望提升操控速度，同时又不想牺牲控制、舒适性与力量表现的中级及进阶球员。SONIC CORE with Infinergy 提升回弹与减震表现，VIBROSHIELD 改善击球手感与舒适性，POWERGRID STRINGTECH+ 增强旋转与力量，而 CONTROL FRAME GEOMETRY 则进一步提升稳定性与挥拍效率。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13",
+    "unverified_fields": [
+      "string_pattern",
+      "beam_mm",
+      "stiffness_ra",
+      "swingweight"
+    ]
+  }
+}
