@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+
+  "brands": {
+
+    "Wilson": "knowledge/racquets/wilson/",
+    "Babolat": "knowledge/racquets/babolat/",
+    "Head": "knowledge/racquets/head/",
+    "Yonex": "knowledge/racquets/yonex/",
+    "Dunlop": "knowledge/racquets/dunlop/",
+    "Tecnifibre": "knowledge/racquets/tecnifibre/",
+    "Prince": "knowledge/racquets/prince/",
+    "Solinco": "knowledge/racquets/solinco/"
+
+  }
+}
