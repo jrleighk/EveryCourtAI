@@ -1,0 +1,275 @@
+{
+  "id": "tecnifibre_tgv",
+  "brand": "Tecnifibre",
+  "series": "TGV",
+  "model": "TGV",
+  "category": "String",
+
+  "manufacturer_data": {
+    "packaging": "Set",
+    "construction": "Multifilament",
+    "material": "Polyamide",
+    "microfilament_count": 1200,
+    "polyurethane": "PU400",
+    "surface_finish": "SPL",
+    "country_of_origin": "France"
+  },
+
+  "specifications": {
+    "string_family": "Multifilament",
+    "construction": "Multifilament",
+    "cross_section": "Round",
+    "surface": "Smooth",
+    "color": "Black",
+
+    "available_colors": [
+      "Black"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_mm": 1.25,
+        "available": true,
+        "power": 9,
+        "control": 7,
+        "spin": 7,
+        "comfort": 10,
+        "feel": 9,
+        "durability": 7,
+        "tension_maintenance": 8,
+        "elasticity": 10,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Maximum Comfort",
+          "Maximum Power",
+          "Arm Friendly",
+          "Touch Players",
+          "Intermediate Players"
+        ]
+      },
+
+      {
+        "gauge_mm": 1.30,
+        "available": true,
+        "power": 8,
+        "control": 8,
+        "spin": 6,
+        "comfort": 10,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "elasticity": 9,
+        "launch_angle": "Medium",
+
+        "recommended_use": [
+          "Balanced Comfort and Durability",
+          "Club Players",
+          "All Court",
+          "Frequent Play"
+        ]
+      },
+
+      {
+        "gauge_mm": 1.35,
+        "available": true,
+        "power": 7,
+        "control": 8,
+        "spin": 6,
+        "comfort": 9,
+        "feel": 8,
+        "durability": 10,
+        "tension_maintenance": 9,
+        "elasticity": 8,
+        "launch_angle": "Medium-Low",
+
+        "recommended_use": [
+          "Maximum Durability",
+          "Frequent String Breakers",
+          "Coaches",
+          "High Usage Players"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "PU400",
+    "Polyamide Microfilaments",
+    "SPL Surface Treatment",
+    "High Polyurethane Content"
+  ],
+
+  "design_profile": {
+    "string_type": "Comfort Durability Multifilament",
+    "target_player": "Comfort Focused Players",
+    "arm_friendly": true,
+    "spin_focus": false,
+    "control_focus": false,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 8,
+    "spin": 6,
+    "comfort": 10,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9,
+    "elasticity": 9,
+    "launch_angle": "Medium"
+  },
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate",
+      "Advanced"
+    ],
+
+    "swing_speed": [
+      "Slow",
+      "Medium",
+      "Medium-Fast"
+    ],
+
+    "play_style": [
+      "All Court",
+      "Baseline",
+      "Serve & Volley",
+      "Touch Player",
+      "Doubles"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Tecnifibre TEMPO",
+    "Tecnifibre T-FIGHT",
+    "Tecnifibre TF-40",
+    "Wilson Clash",
+    "Wilson Blade",
+    "Yonex EZONE",
+    "Yonex PERCEPT",
+    "HEAD Speed",
+    "HEAD Radical",
+    "Prince Tour",
+    "Dunlop CX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Tecnifibre Razor Soft",
+      "Tecnifibre Razor Spin",
+      "Tecnifibre Black Code",
+      "Luxilon ALU Power",
+      "Babolat RPM Blast"
+    ]
+  },
+
+  "gauge_recommendation": {
+    "1.25": {
+      "best_for": [
+        "Maximum Comfort",
+        "Maximum Power",
+        "Soft Impact",
+        "Arm Friendly"
+      ],
+      "tradeoffs": [
+        "Lower Durability"
+      ]
+    },
+
+    "1.30": {
+      "best_for": [
+        "Best Overall Balance",
+        "Comfort",
+        "Durability",
+        "Club Play"
+      ],
+      "tradeoffs": [
+        "Slightly Less Power than 1.25"
+      ]
+    },
+
+    "1.35": {
+      "best_for": [
+        "Maximum Durability",
+        "Heavy Usage",
+        "Frequent String Breakers"
+      ],
+      "tradeoffs": [
+        "Less Power",
+        "Lower Spin",
+        "Slightly Firmer Feel"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.25": {
+      "heavy_topspin_hours": "6-10",
+      "club_player_hours": "12-20"
+    },
+
+    "1.30": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "16-25"
+    },
+
+    "1.35": {
+      "heavy_topspin_hours": "10-18",
+      "club_player_hours": "20-30"
+    }
+  },
+
+  "comparison_tags": [
+    "Premium Multifilament",
+    "Maximum Comfort",
+    "High Durability",
+    "PU400",
+    "Arm Friendly",
+    "Soft Feel"
+  ],
+
+  "ai_keywords": [
+    "tecnifibre",
+    "tgv",
+    "tgv black",
+    "multifilament",
+    "polyamide",
+    "pu400",
+    "spl",
+    "comfort",
+    "durability",
+    "power",
+    "1.25",
+    "1.30",
+    "1.35"
+  ],
+
+  "target_competitors": [
+    "Tecnifibre NRG²",
+    "Tecnifibre X-One Biphase",
+    "Wilson NXT Comfort",
+    "Babolat Xcel",
+    "HEAD Velocity MLT",
+    "Yonex Rexis Comfort"
+  ],
+
+  "description": {
+    "en": "Tecnifibre TGV is a premium multifilament string designed around two priorities: exceptional comfort and increased durability. Constructed with more than 1,200 polyamide microfilaments and a very high proportion of PU400 polyurethane, it delivers a soft, highly elastic response while improving resistance compared with traditional multifilaments. SPL surface treatment reduces friction and improves snap-back. Available in 1.25, 1.30 and 1.35 mm gauges, players can choose between maximum power and comfort, balanced performance, or maximum durability.",
+
+    "zh": "Tecnifibre TGV 是一款以舒适性与耐久性为核心的高端多芯球线。采用超过1200根聚酰胺微纤维，并含有非常高比例的 PU400 聚氨酯，因此能够提供极其柔和、富有弹性的击球反馈，同时相比传统多芯线拥有更好的耐久表现。SPL 表面处理可降低摩擦并帮助球线快速回位。提供1.25、1.30和1.35毫米三种线径：1.25偏最大力量与舒适，1.30最均衡，1.35则偏最大耐久。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13"
+  }
+}
