@@ -1,0 +1,156 @@
+{
+  "id": "yonex_ezone_100_blast_blue_2025",
+  "brand": "Yonex",
+  "series": "EZONE",
+  "model": "EZONE 100",
+  "year": 2025,
+  "edition": "Blast Blue",
+  "category": "Racquet",
+  "collaboration": false,
+
+  "specifications": {
+    "head_size_sq_in": 100,
+    "length_in": 27.0,
+    "weight_g_unstrung": 300,
+    "balance_mm_unstrung": 320,
+    "string_pattern": "16x19",
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+
+    "grip_sizes": [
+      "L2",
+      "L3"
+    ]
+  },
+
+  "technology": [
+    "ISOMETRIC",
+    "2G-Namd Speed",
+    "MINOLON",
+    "VDM",
+    "Liner Tech"
+  ],
+
+  "playing_characteristics": {
+    "power": 10,
+    "control": 8,
+    "spin": 8,
+    "comfort": 9,
+    "maneuverability": 8,
+    "stability": 8
+  },
+
+  "playing_tags": [
+    "Advanced",
+    "Power",
+    "All Court",
+    "Easy Power",
+    "Modern Baseline"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced"
+    ],
+    "swing_style": [
+      "Medium",
+      "Fast"
+    ],
+    "play_style": [
+      "Aggressive Baseliner",
+      "All Court",
+      "Counter Puncher"
+    ]
+  },
+
+  "recommended_skill_ntrp": {
+    "min": 3.5,
+    "max": 5.0
+  },
+
+  "recommended_skill_cn": {
+    "min": 3.0,
+    "max": 5.0
+  },
+
+  "recommended_match_type": [
+    "Singles",
+    "Doubles"
+  ],
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 44,
+      "max": 49
+    },
+    "multifilament": {
+      "min": 46,
+      "max": 52
+    },
+    "natural_gut": {
+      "min": 48,
+      "max": 54
+    },
+    "hybrid": {
+      "main": "46-48",
+      "cross": "44-46"
+    }
+  },
+
+  "comparison_tags": [
+    "Power",
+    "Comfort",
+    "100 Head Size",
+    "Modern Racquet",
+    "All Court"
+  ],
+
+  "ai_keywords": [
+    "yonex",
+    "ezone",
+    "ezone 100",
+    "blast blue",
+    "2025",
+    "300g",
+    "100sqin",
+    "16x19",
+    "power",
+    "comfort"
+  ],
+
+  "target_competitors": [
+    "Babolat Pure Drive 2026",
+    "Wilson Ultra 100 V5",
+    "HEAD Boom MP 2026",
+    "HEAD Extreme MP 2026"
+  ],
+
+  "release_status": {
+    "status": "current",
+    "replacement": null,
+    "discontinued": false
+  },
+
+  "description": {
+    "en": "The Yonex EZONE 100 Blast Blue 2025 delivers explosive power, excellent comfort and an easy-to-use response, making it one of the most versatile modern racquets for intermediate and advanced players.",
+
+    "zh": "Yonex EZONE 100 Blast Blue 2025 采用100平方英寸拍面、300克空拍重量、320mm平衡点及16×19线床，拥有出色的力量输出、舒适性与容错率，是适合现代底线打法及全场型球员的经典100拍面球拍。"
+  },
+
+  "verification": {
+    "status": "verified",
+    "last_updated": "2026-08-12"
+  }
+}
