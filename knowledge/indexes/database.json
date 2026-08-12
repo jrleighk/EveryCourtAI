@@ -1,1 +1,61 @@
+{
+  "project": "EveryCourtAI",
+  "version": "1.1",
+  "description": "AI tennis equipment recommendation database",
+
+  "categories": {
+
+    "racquets": {
+      "path": "knowledge/racquets/",
+      "description": "Tennis racket specifications",
+
+      "brands": [
+        "wilson",
+        "babolat",
+        "head",
+        "yonex",
+        "dunlop",
+        "tecnifibre",
+        "prince",
+        "solinco"
+      ]
+    },
+
+
+    "strings": {
+      "path": "knowledge/strings/",
+      "description": "Tennis string specifications",
+
+      "brands": [
+        "luxilon",
+        "babolat",
+        "yonex",
+        "head",
+        "wilson",
+        "solinco",
+        "tecnifibre",
+        "kirschbaum",
+        "weisscannon",
+        "toroline",
+        "grapplesnake",
+        "msv",
+        "gamma",
+        "prince"
+      ]
+    },
+
+
+    "recommendations": {
+      "path": "knowledge/recommendations/",
+      "description": "Equipment matching rules"
+    },
+
+
+    "profiles": {
+      "path": "knowledge/profiles/",
+      "description": "Player profiles"
+    }
+
+  }
+}
 
