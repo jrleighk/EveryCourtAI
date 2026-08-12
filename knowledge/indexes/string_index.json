@@ -1,0 +1,22 @@
+{
+  "version": "1.0",
+
+  "brands": {
+
+    "Luxilon": "knowledge/strings/luxilon/",
+    "Babolat": "knowledge/strings/babolat/",
+    "Yonex": "knowledge/strings/yonex/",
+    "Head": "knowledge/strings/head/",
+    "Wilson": "knowledge/strings/wilson/",
+    "Solinco": "knowledge/strings/solinco/",
+    "Tecnifibre": "knowledge/strings/tecnifibre/",
+    "Kirschbaum": "knowledge/strings/kirschbaum/",
+    "Weiss Cannon": "knowledge/strings/weisscannon/",
+    "Toroline": "knowledge/strings/toroline/",
+    "Grapplesnake": "knowledge/strings/grapplesnake/",
+    "MSV": "knowledge/strings/msv/",
+    "Gamma": "knowledge/strings/gamma/",
+    "Prince": "knowledge/strings/prince/"
+
+  }
+}
