@@ -1,0 +1,208 @@
+{
+  "id": "tecnifibre_fire_285",
+  "brand": "Tecnifibre",
+  "series": "FIRE",
+  "model": "FIRE 285",
+  "year": null,
+  "edition": "White and Yellow",
+  "category": "Racquet",
+  "collaboration": false,
+
+  "manufacturer_data": {
+    "reference": "14FIR28561",
+    "range": "Fire",
+    "main_material": "Graphite",
+    "head_size_cm2": 645,
+    "head_size_sq_in": 100,
+    "weight_g_unstrung": 285,
+    "weight_oz_unstrung": 10.05,
+    "length_mm": 685,
+    "balance_mm_unstrung": 325,
+    "beam_mm": {
+      "head": 24.5,
+      "shaft": 25.0,
+      "throat": 24.5
+    },
+    "string_pattern": "16x19",
+    "strung_status": "Unstrung"
+  },
+
+  "specifications": {
+    "head_size_sq_in": 100,
+    "head_size_cm2": 645,
+    "length_in": 26.97,
+    "length_mm": 685,
+    "weight_g_unstrung": 285,
+    "balance_mm_unstrung": 325,
+    "balance_description": "Head Light",
+    "string_pattern": "16x19",
+
+    "beam_mm": {
+      "head": 24.5,
+      "shaft": 25.0,
+      "throat": 24.5
+    },
+
+    "stiffness_ra": null,
+    "swingweight": null,
+    "twistweight": null,
+    "vibration_hz": null,
+
+    "grip_sizes": [
+      "L1",
+      "L2",
+      "L3"
+    ]
+  },
+
+  "technology": [
+    "X-DAMP",
+    "TecniLab",
+    "Centralized Weight Distribution",
+    "Refined Handle Geometry",
+    "5% Thinner Frame Sections"
+  ],
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 8,
+    "spin": 9,
+    "comfort": 10,
+    "maneuverability": 10,
+    "stability": 7
+  },
+
+  "playing_tags": [
+    "Intermediate",
+    "Advanced",
+    "Club Player",
+    "Power",
+    "Spin",
+    "Comfort",
+    "Easy Swing",
+    "Modern Tennis",
+    "All Court"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Club Competition"
+    ],
+    "swing_style": [
+      "Medium",
+      "Medium-Fast"
+    ],
+    "play_style": [
+      "All Court",
+      "Aggressive Baseliner",
+      "Counter Puncher",
+      "Doubles"
+    ]
+  },
+
+  "recommended_skill_ntrp": {
+    "min": 3.0,
+    "max": 5.0
+  },
+
+  "recommended_skill_cn": {
+    "min": 3.0,
+    "max": 4.5
+  },
+
+  "recommended_match_type": [
+    "Singles",
+    "Doubles"
+  ],
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 43,
+      "max": 48
+    },
+    "multifilament": {
+      "min": 46,
+      "max": 52
+    },
+    "natural_gut": {
+      "min": 48,
+      "max": 54
+    },
+    "hybrid": {
+      "main": "46-48",
+      "cross": "44-46"
+    }
+  },
+
+  "comparison_tags": [
+    "100 Head Size",
+    "285g",
+    "16x19 Pattern",
+    "Power and Maneuverability",
+    "X-DAMP Comfort",
+    "Club Competition",
+    "Modern Lightweight Performance"
+  ],
+
+  "ai_keywords": [
+    "tecnifibre",
+    "fire",
+    "fire 285",
+    "100sqin",
+    "645cm2",
+    "285g",
+    "325mm",
+    "16x19",
+    "x-damp",
+    "power",
+    "comfort",
+    "spin",
+    "maneuverability",
+    "club player",
+    "intermediate"
+  ],
+
+  "target_competitors": [
+    "Yonex EZONE 100L",
+    "Wilson Ultra 100L",
+    "HEAD Boom MP L",
+    "Babolat Pure Drive Team",
+    "Dunlop FX 500 LS"
+  ],
+
+  "release_status": {
+    "status": "current",
+    "replacement": null,
+    "discontinued": false
+  },
+
+  "description": {
+    "en": "The Tecnifibre FIRE 285 is positioned as the balance point between power and maneuverability in the FIRE range. Featuring a 100 sq.in head, 285 g unstrung weight, 325 mm balance and a 16x19 string pattern, it is designed for club competitors and improving players who want easier handling without giving up useful mass and shot penetration. X-DAMP technology reduces harmful vibration by approximately 36%, while the revised frame geometry and centralized weight distribution improve stability, power control and racquet-head acceleration.",
+
+    "zh": "Tecnifibre FIRE 285 是 FIRE 系列中兼顾力量与操控性的均衡型号，采用100平方英寸拍面、285克空拍重量、325毫米平衡点及16×19开放式线床。相比更轻的 FIRE 270，它拥有更好的击球厚重感与稳定性；相比 FIRE 300，则更容易挥动。X-DAMP 技术可减少约36%的有害震动，提升舒适性并降低手臂疲劳。拍框截面更加方正且整体薄约5%，重量分布也更加集中，从而提升稳定性、力量控制和拍头加速能力，非常适合俱乐部比赛球员及中高级进阶玩家。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13",
+    "unverified_fields": [
+      "year",
+      "stiffness_ra",
+      "swingweight",
+      "twistweight",
+      "vibration_hz"
+    ]
+  }
+}
