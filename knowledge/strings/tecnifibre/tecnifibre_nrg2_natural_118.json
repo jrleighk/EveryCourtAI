@@ -1,0 +1,168 @@
+{
+  "id": "tecnifibre_nrg2_natural_118",
+  "brand": "Tecnifibre",
+  "series": "NRG²",
+  "model": "NRG² Natural",
+  "category": "String",
+
+  "manufacturer_data": {
+    "packaging": "Set",
+    "length_m": 12,
+    "construction": "Multifilament",
+    "material": "Elastyl Microfilaments",
+    "polyurethane": "PU400",
+    "surface_finish": "SPL",
+    "gauge_mm": 1.18,
+    "country_of_origin": "France",
+    "market_positioning": "USA Best Seller"
+  },
+
+  "specifications": {
+    "string_family": "Multifilament",
+    "construction": "Multifilament",
+    "cross_section": "Round",
+    "surface": "Smooth",
+    "color": "Natural",
+    "available_colors": [
+      "Natural"
+    ],
+    "available_gauges_mm": [
+      1.18
+    ],
+    "microfilament_count": 1200,
+    "fiber_composition": {
+      "elastyl_percentage": 100
+    }
+  },
+
+  "technology": [
+    "PU400",
+    "Elastyl",
+    "SPL Final Coating"
+  ],
+
+  "playing_characteristics": {
+    "power": 10,
+    "control": 7,
+    "spin": 7,
+    "comfort": 10,
+    "feel": 9,
+    "durability": 7,
+    "tension_maintenance": 8
+  },
+
+  "design_profile": {
+    "string_type": "Power Multifilament",
+    "target_player": "Comfort and Power",
+    "arm_friendly": true,
+    "spin_focus": false,
+    "control_focus": false,
+    "power_focus": true,
+    "elasticity_focus": true
+  },
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate",
+      "Advanced"
+    ],
+    "swing_speed": [
+      "Slow",
+      "Medium",
+      "Medium-Fast"
+    ],
+    "play_style": [
+      "Baseline",
+      "All Court",
+      "Serve & Volley",
+      "Touch Player"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Tecnifibre T-FIGHT",
+    "Tecnifibre TF-40",
+    "Tecnifibre TEMPO",
+    "Wilson Clash",
+    "Wilson Blade",
+    "Yonex EZONE",
+    "Yonex PERCEPT",
+    "HEAD Speed",
+    "HEAD Radical",
+    "Dunlop CX",
+    "Prince Tour"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+    "best_pairings": [
+      "Tecnifibre Razor Soft",
+      "Tecnifibre Razor Spin",
+      "Tecnifibre Black Code",
+      "Luxilon ALU Power",
+      "Babolat RPM Blast"
+    ]
+  },
+
+  "recommended_tension": {
+    "club_player_kg": "22-24",
+    "advanced_player_kg": "23-25",
+    "professional_kg": "24-26"
+  },
+
+  "estimated_lifespan": {
+    "heavy_topspin_hours": "6-10",
+    "club_player_hours": "12-20",
+    "beginner_hours": "20+",
+    "recommended_restring_days": {
+      "competitive": 14,
+      "club": 30,
+      "casual": 60
+    }
+  },
+
+  "comparison_tags": [
+    "Maximum Power",
+    "Maximum Comfort",
+    "High Elasticity",
+    "Premium Multifilament",
+    "Arm Friendly",
+    "SPL Snapback"
+  ],
+
+  "ai_keywords": [
+    "tecnifibre",
+    "nrg2",
+    "nrg²",
+    "natural",
+    "multifilament",
+    "power",
+    "comfort",
+    "elastyl",
+    "pu400",
+    "spl",
+    "1.18",
+    "made in france"
+  ],
+
+  "target_competitors": [
+    "Tecnifibre X-One Biphase",
+    "Wilson NXT Power",
+    "Babolat Xcel",
+    "Yonex Rexis Comfort",
+    "HEAD Velocity MLT"
+  ],
+
+  "description": {
+    "en": "Tecnifibre NRG² Natural is a premium multifilament string designed to maximize power and comfort. It uses more than 1,200 Elastyl microfilaments, which are more elastic than standard polyamide, and is fully impregnated with highly elastic PU400 polyurethane. The SPL surface coating reduces abrasion and improves snap-back, while the overall construction delivers an exceptionally lively, soft and powerful response.",
+
+    "zh": "Tecnifibre NRG² Natural 是一款以力量与舒适性为核心的高端多芯球线。它采用超过1200根 Elastyl 微纤维，弹性高于普通聚酰胺，并通过高弹性 PU400 聚氨酯整体浸润，从而带来非常明显的力量输出与柔和手感。表面的 SPL 涂层可降低摩擦并帮助球线快速回位，提升 Snapback 表现。整体定位非常适合希望获得轻松力量、舒适击球感和较好弹性的球员。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13"
+  }
+}
