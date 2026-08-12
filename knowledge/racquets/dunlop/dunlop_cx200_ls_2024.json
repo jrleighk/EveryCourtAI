@@ -1,0 +1,171 @@
+{
+  "id": "dunlop_cx200_ls_2024",
+  "brand": "Dunlop",
+  "series": "CX",
+  "model": "CX 200 LS",
+  "year": 2024,
+  "edition": "Standard",
+  "category": "Racquet",
+  "collaboration": false,
+
+  "specifications": {
+    "head_size_sq_in": 98,
+    "length_in": 27.0,
+    "weight_g_unstrung": 290,
+    "balance_mm_unstrung": 325,
+    "balance_description": "Head Light",
+    "string_pattern": null,
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+
+    "grip_sizes": [
+      "L1",
+      "L2",
+      "L3"
+    ]
+  },
+
+  "technology": [
+    "SONIC CORE with Infinergy",
+    "VIBROSHIELD",
+    "POWERGRID STRINGTECH+",
+    "CONTROL FRAME GEOMETRY"
+  ],
+
+  "playing_characteristics": {
+    "power": 7,
+    "control": 8,
+    "spin": 8,
+    "comfort": 9,
+    "maneuverability": 10,
+    "stability": 7
+  },
+
+  "playing_tags": [
+    "Intermediate",
+    "Advanced",
+    "Control",
+    "Lightweight",
+    "Easy Swing",
+    "All Court",
+    "Modern Control"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced"
+    ],
+    "swing_style": [
+      "Medium",
+      "Medium-Fast"
+    ],
+    "play_style": [
+      "Aggressive Baseliner",
+      "All Court",
+      "Counter Puncher",
+      "Doubles"
+    ]
+  },
+
+  "recommended_skill_ntrp": {
+    "min": 3.0,
+    "max": 4.5
+  },
+
+  "recommended_skill_cn": {
+    "min": 3.0,
+    "max": 4.5
+  },
+
+  "recommended_match_type": [
+    "Singles",
+    "Doubles"
+  ],
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 44,
+      "max": 49
+    },
+    "multifilament": {
+      "min": 47,
+      "max": 53
+    },
+    "natural_gut": {
+      "min": 49,
+      "max": 54
+    },
+    "hybrid": {
+      "main": "47-49",
+      "cross": "45-47"
+    }
+  },
+
+  "comparison_tags": [
+    "Lightweight Control Racquet",
+    "98 Head Size",
+    "290g",
+    "Head Light",
+    "Easy Maneuverability",
+    "More Forgiving than CX 200"
+  ],
+
+  "ai_keywords": [
+    "dunlop",
+    "cx",
+    "cx200",
+    "cx200 ls",
+    "cx 200 ls",
+    "2024",
+    "98sqin",
+    "290g",
+    "325mm",
+    "control",
+    "lightweight",
+    "maneuverability",
+    "all court"
+  ],
+
+  "target_competitors": [
+    "Wilson Blade 100L",
+    "HEAD Radical Team",
+    "Yonex PERCEPT 100L",
+    "Tecnifibre TF40 290",
+    "Babolat Pure Strike Team"
+  ],
+
+  "release_status": {
+    "status": "current",
+    "replacement": null,
+    "discontinued": false
+  },
+
+  "description": {
+    "en": "The Dunlop CX 200 LS 2024 is a lightweight control-oriented performance racquet featuring a 98 sq.in head, 290 g unstrung weight and 325 mm head-light balance. It is designed for intermediate to advanced players seeking faster maneuverability without giving up precision and stability. SONIC CORE with Infinergy improves rebound and vibration absorption, VIBROSHIELD enhances comfort and feel, POWERGRID STRINGTECH+ supports spin and power, while CONTROL FRAME GEOMETRY improves stability and swing-through.",
+
+    "zh": "Dunlop CX 200 LS 2024 是一款轻量化控制型高性能球拍，采用98平方英寸拍面、290克空拍重量及325毫米头轻平衡设计。相比标准 CX 200 更容易挥动，适合希望提升挥拍速度、灵活性与快速反应，同时仍保留精准控制和稳定性的中高级球员。SONIC CORE with Infinergy 提升回弹和减震表现，VIBROSHIELD 改善舒适性与手感，POWERGRID STRINGTECH+ 增强旋转及力量，而 CONTROL FRAME GEOMETRY 则进一步提升拍框稳定性与挥拍效率。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13",
+    "unverified_fields": [
+      "string_pattern",
+      "beam_mm",
+      "stiffness_ra",
+      "swingweight"
+    ]
+  }
+}
