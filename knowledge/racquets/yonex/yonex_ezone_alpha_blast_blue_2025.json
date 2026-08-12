@@ -1,0 +1,164 @@
+{
+  "id": "yonex_ezone_alpha_blast_blue_2025",
+  "brand": "Yonex",
+  "series": "EZONE",
+  "model": "EZONE Alpha",
+  "year": 2025,
+  "edition": "Blast Blue",
+  "category": "Racquet",
+  "collaboration": false,
+
+  "specifications": {
+    "head_size_sq_in": 100,
+    "length_in": 27.0,
+    "weight_g_unstrung": 275,
+    "balance_mm_unstrung": 330,
+    "string_pattern": "16x18",
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+
+    "grip_sizes": [
+      "L1",
+      "L2",
+      "L3",
+      "L4"
+    ]
+  },
+
+  "technology": [
+    "ISOMETRIC",
+    "LINER TECH",
+    "O.P.S. (Oval Pressed Shaft)",
+    "Shockless Grommets",
+    "2G-Namd Speed",
+    "MINOLON",
+    "VDM (Vibration Dampening Mesh)"
+  ],
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 7,
+    "spin": 8,
+    "comfort": 10,
+    "maneuverability": 10,
+    "stability": 7
+  },
+
+  "playing_tags": [
+    "Intermediate",
+    "Comfort",
+    "Easy Power",
+    "Lightweight",
+    "Forgiving"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate"
+    ],
+    "swing_style": [
+      "Slow",
+      "Medium"
+    ],
+    "play_style": [
+      "All Court",
+      "Baseline",
+      "Recreational"
+    ]
+  },
+
+  "recommended_skill_ntrp": {
+    "min": 2.0,
+    "max": 4.0
+  },
+
+  "recommended_skill_cn": {
+    "min": 1.5,
+    "max": 3.5
+  },
+
+  "recommended_match_type": [
+    "Singles",
+    "Doubles"
+  ],
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 42,
+      "max": 47
+    },
+    "multifilament": {
+      "min": 45,
+      "max": 51
+    },
+    "natural_gut": {
+      "min": 46,
+      "max": 52
+    },
+    "hybrid": {
+      "main": "45-47",
+      "cross": "43-45"
+    }
+  },
+
+  "comparison_tags": [
+    "Comfort",
+    "Easy Power",
+    "Forgiving",
+    "Lightweight",
+    "100 Head Size"
+  ],
+
+  "ai_keywords": [
+    "yonex",
+    "ezone",
+    "ezone alpha",
+    "blast blue",
+    "2025",
+    "275g",
+    "330mm",
+    "100sqin",
+    "16x18",
+    "comfort",
+    "power",
+    "beginner"
+  ],
+
+  "target_competitors": [
+    "Wilson Clash 100L",
+    "Wilson Ultra 100L",
+    "HEAD Boom MP L",
+    "HEAD Speed MP L",
+    "Babolat Evo Drive",
+    "Babolat Pure Drive Lite"
+  ],
+
+  "release_status": {
+    "status": "current",
+    "replacement": null,
+    "discontinued": false
+  },
+
+  "description": {
+    "en": "The Yonex EZONE Alpha Blast Blue 2025 is a lightweight and forgiving racquet designed for recreational and improving players seeking effortless power, comfort and easy handling.",
+
+    "zh": "Yonex EZONE Alpha Blast Blue 2025 采用100平方英寸拍面、275克空拍重量、330mm平衡点及16×18线床，结合 ISOMETRIC、LINER TECH、O.P.S.、Shockless Grommets、2G-Namd Speed、MINOLON 与 VDM 技术，拥有轻松的击球力量、优秀的舒适性及极高容错率，非常适合初学者、休闲球员及希望提升挥拍速度的进阶球员。"
+  },
+
+  "verification": {
+    "status": "verified",
+    "last_updated": "2026-08-12"
+  }
+}
