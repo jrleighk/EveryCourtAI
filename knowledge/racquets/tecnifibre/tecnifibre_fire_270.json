@@ -1,0 +1,207 @@
+{
+  "id": "tecnifibre_fire_270",
+  "brand": "Tecnifibre",
+  "series": "FIRE",
+  "model": "FIRE 270",
+  "year": null,
+  "edition": "White and Yellow",
+  "category": "Racquet",
+  "collaboration": false,
+
+  "manufacturer_data": {
+    "reference": "14FIR27060",
+    "range": "Fire",
+    "main_material": "Graphite",
+    "head_size_cm2": 645,
+    "head_size_sq_in": 100,
+    "weight_g_unstrung": 270,
+    "weight_oz_unstrung": 9.52,
+    "length_mm": 685,
+    "balance_mm_unstrung": 330,
+    "beam_mm": {
+      "head": 24.5,
+      "shaft": 25.0,
+      "throat": 24.5
+    },
+    "string_pattern": "16x19",
+    "strung_status": "Unstrung"
+  },
+
+  "specifications": {
+    "head_size_sq_in": 100,
+    "length_in": 26.97,
+    "weight_g_unstrung": 270,
+    "balance_mm_unstrung": 330,
+    "balance_description": "Head Light",
+    "string_pattern": "16x19",
+
+    "beam_mm": {
+      "head": 24.5,
+      "shaft": 25.0,
+      "throat": 24.5
+    },
+
+    "stiffness_ra": null,
+    "swingweight": null,
+    "twistweight": null,
+    "vibration_hz": null,
+
+    "grip_sizes": [
+      "L1",
+      "L2",
+      "L3",
+      "L4"
+    ]
+  },
+
+  "technology": [
+    "X-DAMP",
+    "TecniLab",
+    "Centralized Weight Distribution",
+    "Refined Handle Geometry",
+    "5% Thinner Frame Sections"
+  ],
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 7,
+    "spin": 8,
+    "comfort": 10,
+    "maneuverability": 10,
+    "stability": 6
+  },
+
+  "playing_tags": [
+    "Beginner",
+    "Intermediate",
+    "Junior Competition",
+    "Club Player",
+    "Power",
+    "Comfort",
+    "Easy Swing",
+    "Lightweight",
+    "Modern Tennis"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate",
+      "Junior Competition"
+    ],
+    "swing_style": [
+      "Slow",
+      "Medium",
+      "Medium-Fast"
+    ],
+    "play_style": [
+      "All Court",
+      "Baseline",
+      "Club Tennis",
+      "Developing Player"
+    ]
+  },
+
+  "recommended_skill_ntrp": {
+    "min": 2.0,
+    "max": 4.0
+  },
+
+  "recommended_skill_cn": {
+    "min": 1.5,
+    "max": 3.5
+  },
+
+  "recommended_match_type": [
+    "Singles",
+    "Doubles"
+  ],
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 42,
+      "max": 47
+    },
+    "multifilament": {
+      "min": 45,
+      "max": 51
+    },
+    "natural_gut": {
+      "min": 47,
+      "max": 53
+    },
+    "hybrid": {
+      "main": "45-47",
+      "cross": "43-45"
+    }
+  },
+
+  "comparison_tags": [
+    "100 Head Size",
+    "270g",
+    "16x19 Pattern",
+    "Lightweight",
+    "Easy Power",
+    "Junior Friendly",
+    "X-DAMP Comfort"
+  ],
+
+  "ai_keywords": [
+    "tecnifibre",
+    "fire",
+    "fire 270",
+    "100sqin",
+    "645cm2",
+    "270g",
+    "330mm",
+    "16x19",
+    "x-damp",
+    "lightweight",
+    "comfort",
+    "easy power",
+    "club player",
+    "junior"
+  ],
+
+  "target_competitors": [
+    "Yonex EZONE 100SL",
+    "Wilson Clash 100L",
+    "HEAD Boom Team",
+    "Babolat Pure Drive Lite",
+    "Dunlop FX 500 Lite"
+  ],
+
+  "release_status": {
+    "status": "current",
+    "replacement": null,
+    "discontinued": false
+  },
+
+  "description": {
+    "en": "The Tecnifibre FIRE 270 is the lightest and most maneuverable racket in the FIRE range. Featuring a 100 sq.in head, 270 g unstrung weight, 330 mm balance and a 16x19 string pattern, it is designed for club players and young competitors seeking effortless power and fast handling. X-DAMP technology, developed with TecniLab, reduces harmful vibration by approximately 36%, improving comfort and reducing arm fatigue. Compared with the previous generation, the frame is approximately 5% thinner with a more square profile, while weight has been centralized to improve racket-head acceleration and modern swing speed.",
+
+    "zh": "Tecnifibre FIRE 270 是 FIRE 系列中最轻、最灵活的一款球拍，采用100平方英寸拍面、270克空拍重量、330毫米平衡点及16×19开放式线床，主要面向俱乐部球员、青少年比赛球员及进阶初学者。X-DAMP 技术由 TecniLab 开发，通过手柄内部钢制阻尼系统减少约36%的有害震动，大幅提升舒适性并降低手臂疲劳。相比上一代，拍框截面更接近方形且整体薄约5%，重量分布更加集中，使拍头加速更快，更符合现代网球对快速挥拍和轻松发力的需求。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13",
+    "unverified_fields": [
+      "year",
+      "stiffness_ra",
+      "swingweight",
+      "twistweight",
+      "vibration_hz"
+    ]
+  }
+}
