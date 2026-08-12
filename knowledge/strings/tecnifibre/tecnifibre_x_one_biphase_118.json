@@ -1,0 +1,161 @@
+{
+  "id": "tecnifibre_x_one_biphase_118",
+  "brand": "Tecnifibre",
+  "series": "X-One Biphase",
+  "model": "X-One Biphase",
+  "category": "String",
+
+  "manufacturer_data": {
+    "packaging": "Set",
+    "length_m": 12,
+    "construction": "Multifilament",
+    "material": "Elastyl + H²C Fibres",
+    "polyurethane": "PU400",
+    "technology": "Biphase Pre-Stretch",
+    "surface_finish": "SPL (Slip Processing Layer)",
+    "gauge_mm": 1.18,
+    "recommended_tension_kg": {
+      "min": 22,
+      "max": 25
+    },
+    "maximum_tension_kg": 32
+  },
+
+  "specifications": {
+    "string_family": "Multifilament",
+    "construction": "Multifilament",
+    "cross_section": "Round",
+    "surface": "Smooth",
+    "available_colors": [
+      "Natural",
+      "Red",
+      "Black",
+      "Green",
+      "Orange"
+    ],
+    "available_gauges_mm": [
+      1.18
+    ]
+  },
+
+  "technology": [
+    "Biphase",
+    "PU400",
+    "Elastyl",
+    "H²C Fibres",
+    "SPL Finish"
+  ],
+
+  "playing_characteristics": {
+    "power": 10,
+    "control": 8,
+    "spin": 7,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 6,
+    "tension_maintenance": 9
+  },
+
+  "design_profile": {
+    "string_type": "Premium Multifilament",
+    "target_player": "Comfort & Feel",
+    "arm_friendly": true,
+    "spin_focus": false,
+    "control_focus": true,
+    "power_focus": true
+  },
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate",
+      "Advanced"
+    ],
+    "swing_speed": [
+      "Slow",
+      "Medium",
+      "Medium-Fast"
+    ],
+    "play_style": [
+      "All Court",
+      "Serve & Volley",
+      "Baseline",
+      "Touch Player"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson Clash",
+    "Yonex EZONE",
+    "Yonex PERCEPT",
+    "Tecnifibre T-FIGHT",
+    "Tecnifibre TF-40",
+    "HEAD Speed",
+    "HEAD Radical",
+    "Prince Tour",
+    "Dunlop CX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+    "best_pairings": [
+      "Razor Soft",
+      "Razor Spin",
+      "4S",
+      "Black Code",
+      "Luxilon ALU Power",
+      "RPM Blast"
+    ]
+  },
+
+  "recommended_tension": {
+    "club_player_kg": "22-24",
+    "advanced_player_kg": "23-25",
+    "professional_kg": "24-26"
+  },
+
+  "comparison_tags": [
+    "Premium Multifilament",
+    "Maximum Comfort",
+    "Maximum Feel",
+    "High Power",
+    "Arm Friendly",
+    "Excellent Tension Maintenance"
+  ],
+
+  "ai_keywords": [
+    "tecnifibre",
+    "x-one biphase",
+    "x one",
+    "multifilament",
+    "comfort",
+    "feel",
+    "power",
+    "pu400",
+    "biphase",
+    "1.18",
+    "elastyl",
+    "h2c"
+  ],
+
+  "target_competitors": [
+    "Wilson NXT",
+    "Babolat Xcel",
+    "Head Velocity MLT",
+    "Yonex Rexis Comfort",
+    "Gamma Live Wire Professional"
+  ],
+
+  "description": {
+    "en": "Tecnifibre X-One Biphase is one of the world's benchmark premium multifilament strings. Built with over 1,400 Elastyl and H²C fibres, impregnated with highly elastic PU400 polyurethane and finished with Tecnifibre's exclusive Biphase pre-stretch process, it delivers exceptional comfort, feel, power and outstanding tension maintenance. SPL surface treatment also improves snap-back for additional spin compared with traditional multifilaments.",
+
+    "zh": "Tecnifibre X-One Biphase 是全球公认的顶级多芯球线之一。采用超过1400根 Elastyl 与 H²C 纤维，通过 PU400 高弹性聚氨酯整体浸润，并结合 Tecnifibre 独有的 Biphase 双向预拉伸工艺制造，使其拥有极佳的力量输出、舒适性、击球反馈以及优秀的保磅性能。表面的 SPL 涂层还能帮助球线快速回位，提高 Snapback 效果，使旋转表现优于传统多芯线。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13"
+  }
+}
