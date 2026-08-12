@@ -1,0 +1,236 @@
+{
+  "id": "tecnifibre_t_fight_300s_ig",
+  "brand": "Tecnifibre",
+  "series": "T-FIGHT",
+  "model": "T-FIGHT 300S IG",
+  "year": 2025,
+  "edition": "Iga Swiatek Paris / Roland Garros Special Edition",
+  "category": "Racquet",
+  "collaboration": true,
+
+  "collaboration_details": {
+    "name": "T-FIGHT 300S IG",
+    "collaborators": [
+      "Tecnifibre",
+      "Iga Swiatek"
+    ],
+    "type": "Player Special Edition",
+    "limited_edition": true,
+    "design_theme": [
+      "Paris",
+      "Roland Garros",
+      "Clay Court",
+      "Orange",
+      "Electric Yellow",
+      "Eiffel Tower",
+      "Four Paris Titles"
+    ],
+    "player_motto": "you did not wake up to be ordinary"
+  },
+
+  "manufacturer_data": {
+    "reference": "14FI30SIG3",
+    "range": "T-Fight",
+    "head_size_cm2": 630,
+    "head_size_sq_in": 98,
+    "weight_g_unstrung": 300,
+    "weight_oz_unstrung": 10.5,
+    "length_cm": 68.6,
+    "balance_mm_unstrung": 320,
+    "beam_mm": {
+      "head": 22.5,
+      "shaft": 23.0,
+      "throat": 22.5
+    },
+    "string_pattern": "16x19",
+    "strung_status": "Unstrung"
+  },
+
+  "specifications": {
+    "head_size_sq_in": 98,
+    "length_in": 27.0,
+    "weight_g_unstrung": 300,
+    "balance_mm_unstrung": 320,
+    "string_pattern": "16x19",
+
+    "beam_mm": {
+      "head": 22.5,
+      "shaft": 23.0,
+      "throat": 22.5
+    },
+
+    "stiffness_ra": null,
+    "swingweight": null,
+    "twistweight": null,
+    "vibration_hz": null,
+
+    "grip_sizes": []
+  },
+
+  "technology": [
+    "RS Section",
+    "Isoflex",
+    "Centralized Weight Distribution",
+    "Optimized Sweet Spot",
+    "Modern Swing Speed Design"
+  ],
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 9,
+    "spin": 9,
+    "comfort": 8,
+    "maneuverability": 9,
+    "stability": 9
+  },
+
+  "playing_tags": [
+    "Advanced",
+    "Tournament",
+    "Power",
+    "Control",
+    "Spin",
+    "Modern Tennis",
+    "Fast Swing",
+    "Aggressive Baseliner",
+    "All Court",
+    "Player Special Edition"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+    "swing_style": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+    "play_style": [
+      "Aggressive Baseliner",
+      "All Court",
+      "Attacking Player",
+      "Modern Baseline"
+    ]
+  },
+
+  "recommended_skill_ntrp": {
+    "min": 3.5,
+    "max": 6.0
+  },
+
+  "recommended_skill_cn": {
+    "min": 3.5,
+    "max": 5.5
+  },
+
+  "recommended_match_type": [
+    "Singles",
+    "Doubles"
+  ],
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 44,
+      "max": 49
+    },
+    "multifilament": {
+      "min": 47,
+      "max": 53
+    },
+    "natural_gut": {
+      "min": 49,
+      "max": 55
+    },
+    "hybrid": {
+      "main": "47-49",
+      "cross": "45-47"
+    }
+  },
+
+  "pro_player_setup": {
+    "player": "Iga Swiatek",
+    "tour_family": "T-FIGHT",
+    "exact_match_to_retail_spec": false,
+    "string": null,
+    "tension_lbs": null
+  },
+
+  "comparison_tags": [
+    "98 Head Size",
+    "300g",
+    "16x19 Pattern",
+    "Power and Control Balance",
+    "Modern Swing Speed",
+    "Player Special Edition",
+    "Roland Garros Theme",
+    "More Maneuverable T-FIGHT Generation"
+  ],
+
+  "ai_keywords": [
+    "tecnifibre",
+    "t-fight",
+    "t fight 300s",
+    "300s ig",
+    "iga swiatek",
+    "roland garros",
+    "paris",
+    "clay court",
+    "98sqin",
+    "300g",
+    "320mm",
+    "16x19",
+    "rs section",
+    "isoflex",
+    "power",
+    "control",
+    "spin",
+    "special edition"
+  ],
+
+  "target_competitors": [
+    "Yonex EZONE 98",
+    "Yonex VCORE 98",
+    "Wilson Blade 98 16x19",
+    "HEAD Speed MP",
+    "Babolat Pure Strike 98 16x19",
+    "Dunlop CX 200"
+  ],
+
+  "release_status": {
+    "status": "limited_edition",
+    "replacement": null,
+    "discontinued": false
+  },
+
+  "description": {
+    "en": "The Tecnifibre T-FIGHT 300S IG is a special Iga Swiatek-inspired event edition celebrating her connection with Paris and Roland Garros. Its orange and electric-yellow cosmetic references clay-court tennis, while details such as the four-star Eiffel Tower motif and Swiatek's 'you did not wake up to be ordinary' motto connect the design directly to her Paris achievements. Performance-wise, the racquet uses a 98 sq.in head, 300 g unstrung weight, 320 mm balance and 16x19 string pattern, combining power, control, spin and fast handling. RS Section geometry blends square and round frame profiles, while Isoflex varies stiffness around the head to optimize sweet spot response and stability.",
+
+    "zh": "Tecnifibre T-FIGHT 300S IG 是一款以 Iga Swiatek 与巴黎、Roland Garros 深厚联系为主题的特别版球拍。橙色主调与电光黄色细节象征红土场地与网球弹跳，四颗星组成的埃菲尔铁塔图案代表她在巴黎的四次夺冠，同时保留其标志性格言“you did not wake up to be ordinary”。性能方面，这支球拍采用98平方英寸拍面、300克空拍重量、320毫米平衡点及16×19线床，在力量、控制、旋转与挥拍速度之间取得平衡。RS Section 将传统方形与圆形拍框结构融合，而 Isoflex 通过拍框不同区域的渐进刚性优化甜区、稳定性与击球反馈。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13",
+    "unverified_fields": [
+      "grip_sizes",
+      "stiffness_ra",
+      "swingweight",
+      "twistweight",
+      "vibration_hz",
+      "exact_pro_string_setup"
+    ]
+  }
+}
