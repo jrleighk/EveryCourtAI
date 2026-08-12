@@ -1,0 +1,175 @@
+{
+  "id": "dunlop_sx300_ls_2025",
+  "brand": "Dunlop",
+  "series": "SX",
+  "model": "SX 300 LS",
+  "year": 2025,
+  "edition": "Standard",
+  "category": "Racquet",
+  "collaboration": false,
+
+  "manufacturer_data": {
+    "subgroup": "PREMIUM",
+    "level": "Intermediate / Advanced"
+  },
+
+  "specifications": {
+    "head_size_sq_in": 100,
+    "length_in": 27.0,
+    "weight_g_unstrung": 285,
+    "balance_mm_unstrung": 325,
+    "balance_description": "Head Light",
+    "string_pattern": "16x19",
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+
+    "grip_sizes": [
+      "L1",
+      "L2",
+      "L3"
+    ]
+  },
+
+  "technology": [
+    "SONIC CORE with Infinergy",
+    "SPIN BOOST XT GROMMETS",
+    "SPIN BOOST FRAME GEOMETRY",
+    "V-ENERGY SHAFT",
+    "VIBROSHIELD"
+  ],
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 8,
+    "spin": 10,
+    "comfort": 9,
+    "maneuverability": 10,
+    "stability": 7
+  },
+
+  "playing_tags": [
+    "Intermediate",
+    "Advanced",
+    "Spin",
+    "Lightweight",
+    "Easy Swing",
+    "All Court",
+    "Modern Baseline"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced"
+    ],
+    "swing_style": [
+      "Medium",
+      "Medium-Fast"
+    ],
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "All Court",
+      "Doubles"
+    ]
+  },
+
+  "recommended_skill_ntrp": {
+    "min": 3.0,
+    "max": 4.5
+  },
+
+  "recommended_skill_cn": {
+    "min": 3.0,
+    "max": 4.5
+  },
+
+  "recommended_match_type": [
+    "Singles",
+    "Doubles"
+  ],
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 44,
+      "max": 49
+    },
+    "multifilament": {
+      "min": 47,
+      "max": 53
+    },
+    "natural_gut": {
+      "min": 49,
+      "max": 54
+    },
+    "hybrid": {
+      "main": "47-49",
+      "cross": "45-47"
+    }
+  },
+
+  "comparison_tags": [
+    "Lightweight Spin Racquet",
+    "100 Head Size",
+    "285g",
+    "16x19 Pattern",
+    "Fast Swing",
+    "Easy Spin"
+  ],
+
+  "ai_keywords": [
+    "dunlop",
+    "sx300",
+    "sx300 ls",
+    "sx 300 ls",
+    "2025",
+    "285g",
+    "325mm",
+    "100sqin",
+    "16x19",
+    "spin",
+    "lightweight",
+    "easy swing"
+  ],
+
+  "target_competitors": [
+    "Yonex VCORE 100L",
+    "HEAD Extreme MP L",
+    "Babolat Pure Aero Team",
+    "Wilson Shift 99L",
+    "Yonex EZONE 100L"
+  ],
+
+  "release_status": {
+    "status": "current",
+    "replacement": null,
+    "discontinued": false
+  },
+
+  "description": {
+    "en": "The Dunlop SX 300 LS 2025 is a lightweight spin-oriented performance racquet featuring a 100 sq.in head, 285 g unstrung weight, 325 mm balance and a 16x19 string pattern. It combines exceptional maneuverability, explosive spin and impressive comfort, making it an excellent choice for intermediate and advanced players seeking a fast-swinging modern racquet.",
+
+    "zh": "Dunlop SX 300 LS 2025 是 SX 系列轻量级旋转型球拍，采用100平方英寸拍面、285克空拍重量、325毫米平衡点及16×19线床。SONIC CORE with Infinergy 提供优秀的减震与回弹表现；SPIN BOOST XT GROMMETS 与 SPIN BOOST FRAME GEOMETRY 带来更强旋转和更高容错率；V-ENERGY SHAFT 提高挥拍速度与稳定性；VIBROSHIELD 则进一步提升舒适性。整体定位为轻量、高旋转、易挥拍，适合希望提升挥拍速度和旋转质量的中高级球员。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13",
+    "unverified_fields": [
+      "beam_mm",
+      "stiffness_ra",
+      "swingweight"
+    ]
+  }
+}
