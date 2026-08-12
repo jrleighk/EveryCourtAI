@@ -1,0 +1,328 @@
+{
+  "id": "tecnifibre_duramix",
+  "brand": "Tecnifibre",
+  "series": "Duramix",
+  "model": "Duramix",
+  "category": "String",
+
+  "manufacturer_data": {
+    "packaging": "Set",
+    "length_m": 12,
+    "construction": "Hybrid Multifilament",
+    "material": [
+      "Polyamide",
+      "Polyester"
+    ],
+    "fiber_composition": {
+      "polyamide_percentage": 50,
+      "polyester_percentage": 50
+    },
+    "polyurethane": "HD PU",
+    "surface_finish": "SPL",
+    "country_of_origin": "France",
+
+    "recommended_tension_kg": {
+      "min": 22,
+      "max": 25
+    },
+
+    "maximum_tension_kg": 32
+  },
+
+  "specifications": {
+    "string_family": "Hybrid Multifilament",
+    "construction": "Multifilament with Polyester Fibres",
+    "cross_section": "Round",
+    "surface": "Smooth",
+
+    "available_colors": [
+      "Natural",
+      "Black"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_mm": 1.25,
+        "available": true,
+
+        "power": 8,
+        "control": 9,
+        "spin": 8,
+        "comfort": 9,
+        "feel": 9,
+        "durability": 8,
+        "tension_maintenance": 8,
+        "elasticity": 8,
+        "launch_angle": "Medium",
+
+        "recommended_use": [
+          "Firm Comfort",
+          "Control",
+          "All Court",
+          "Advanced Club Players",
+          "Players Seeking More Durability than Traditional Multifilament"
+        ]
+      },
+
+      {
+        "gauge_mm": 1.30,
+        "available": true,
+
+        "power": 7,
+        "control": 9,
+        "spin": 7,
+        "comfort": 9,
+        "feel": 8,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "elasticity": 7,
+        "launch_angle": "Medium-Low",
+
+        "recommended_use": [
+          "Balanced Control and Durability",
+          "Frequent Club Play",
+          "Firm Response",
+          "Heavy Hitters"
+        ]
+      },
+
+      {
+        "gauge_mm": 1.35,
+        "available": true,
+
+        "power": 7,
+        "control": 10,
+        "spin": 6,
+        "comfort": 8,
+        "feel": 8,
+        "durability": 10,
+        "tension_maintenance": 9,
+        "elasticity": 6,
+        "launch_angle": "Low",
+
+        "recommended_use": [
+          "Maximum Durability",
+          "Frequent String Breakers",
+          "Maximum Control",
+          "High Usage Players"
+        ]
+      }
+    ]
+  },
+
+  "color_variants": [
+    {
+      "color": "Natural",
+      "available_gauges_mm": [
+        1.25,
+        1.30,
+        1.35
+      ],
+      "performance_difference": false
+    },
+    {
+      "color": "Black",
+      "available_gauges_mm": [
+        1.25,
+        1.30,
+        1.35
+      ],
+      "performance_difference": false
+    }
+  ],
+
+  "technology": [
+    "HD PU",
+    "SPL Surface Treatment",
+    "Polyamide and Polyester Fibre Blend",
+    "Hybrid Multifilament Construction"
+  ],
+
+  "design_profile": {
+    "string_type": "Firm Comfort Hybrid Multifilament",
+    "target_player": "Intermediate to Advanced",
+    "arm_friendly": true,
+    "spin_focus": false,
+    "control_focus": true,
+    "power_focus": false,
+    "comfort_focus": true,
+    "durability_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 9,
+    "spin": 7,
+    "comfort": 9,
+    "feel": 8,
+    "durability": 9,
+    "tension_maintenance": 9,
+    "elasticity": 7,
+    "launch_angle": "Medium-Low"
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium",
+      "Medium-Fast",
+      "Fast"
+    ],
+
+    "play_style": [
+      "All Court",
+      "Baseline",
+      "Aggressive Baseliner",
+      "Flat Hitter",
+      "Doubles"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Tecnifibre T-FIGHT",
+    "Tecnifibre TF-40",
+    "Tecnifibre FIRE",
+    "Wilson Blade",
+    "Wilson Clash",
+    "Yonex EZONE",
+    "Yonex PERCEPT",
+    "HEAD Speed",
+    "HEAD Radical",
+    "Dunlop CX",
+    "Prince Tour"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Tecnifibre Razor Soft",
+      "Tecnifibre Razor Spin",
+      "Tecnifibre Black Code",
+      "Luxilon ALU Power",
+      "Babolat RPM Blast"
+    ]
+  },
+
+  "recommended_tension": {
+    "manufacturer_kg": {
+      "min": 22,
+      "max": 25
+    },
+
+    "club_player_kg": "22-24",
+    "advanced_player_kg": "23-25",
+    "professional_kg": "24-26"
+  },
+
+  "gauge_recommendation": {
+    "1.25": {
+      "best_for": [
+        "Firm Comfort",
+        "Feel",
+        "Control",
+        "Balanced Performance"
+      ],
+
+      "tradeoffs": [
+        "Less Durability than 1.30 and 1.35"
+      ]
+    },
+
+    "1.30": {
+      "best_for": [
+        "Control",
+        "Durability",
+        "Stable Response",
+        "Frequent Club Play"
+      ],
+
+      "tradeoffs": [
+        "Slightly Less Power and Elasticity"
+      ]
+    },
+
+    "1.35": {
+      "best_for": [
+        "Maximum Durability",
+        "Maximum Control",
+        "Frequent String Breakers"
+      ],
+
+      "tradeoffs": [
+        "Lower Power",
+        "Lower Spin",
+        "Firmer Feel"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.25": {
+      "heavy_topspin_hours": "7-11",
+      "club_player_hours": "14-22"
+    },
+
+    "1.30": {
+      "heavy_topspin_hours": "9-15",
+      "club_player_hours": "18-28"
+    },
+
+    "1.35": {
+      "heavy_topspin_hours": "12-20",
+      "club_player_hours": "22-35"
+    }
+  },
+
+  "comparison_tags": [
+    "Hybrid Multifilament",
+    "Firm Comfort",
+    "High Durability",
+    "High Control",
+    "HD PU",
+    "SPL Snapback"
+  ],
+
+  "ai_keywords": [
+    "tecnifibre",
+    "duramix",
+    "duramix black",
+    "duramix natural",
+    "hybrid multifilament",
+    "polyamide",
+    "polyester",
+    "hd pu",
+    "spl",
+    "firm comfort",
+    "control",
+    "durability",
+    "1.25",
+    "1.30",
+    "1.35"
+  ],
+
+  "target_competitors": [
+    "Tecnifibre Triax",
+    "Wilson NXT Control",
+    "HEAD RIP Control",
+    "Yonex Rexis Speed",
+    "Babolat Addiction"
+  ],
+
+  "description": {
+    "en": "Tecnifibre Duramix is a hybrid multifilament string combining 50% polyamide fibres for comfort and feel with 50% polyester fibres for firmer response, increased control and improved durability. High Density Polyurethane (HD PU) provides a firmer and more controlled feel than traditional soft multifilaments, while SPL surface treatment improves string movement and snap-back. Available in Natural and Black and in 1.25, 1.30 and 1.35 mm gauges, Duramix is particularly suitable for skilled players seeking comfort with greater firmness and durability.",
+
+    "zh": "Tecnifibre Duramix 是一款混合多芯球线，由50%聚酰胺纤维与50%聚酯纤维组成。聚酰胺负责提供舒适性和击球反馈，而聚酯则带来更扎实的手感、更强控制以及更好的耐久性。HD PU 高密度聚氨酯让整体手感比传统柔软型多芯线更加紧实，SPL 表面处理则帮助球线快速回位并提升 Snapback。提供 Natural 与 Black 两种颜色，以及1.25、1.30和1.35毫米三种线径，非常适合希望兼顾舒适、控制与耐久的中高级球员。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13"
+  }
+}
