@@ -1,0 +1,140 @@
+{
+  "id": "yonex_vcore_100d_ruby_red_2026",
+  "brand": "Yonex",
+  "series": "VCORE",
+  "model": "VCORE 100D",
+  "year": 2026,
+  "edition": "Ruby Red",
+  "category": "Racquet",
+  "collaboration": false,
+
+  "specifications": {
+    "head_size_sq_in": 100,
+    "length_in": 27.0,
+    "weight_g_unstrung": 300,
+    "balance_mm_unstrung": 320,
+    "string_pattern": "18x19",
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+
+    "grip_sizes": [
+      "L2",
+      "L3"
+    ]
+  },
+
+  "technology": [
+    "ISOMETRIC",
+    "2G-Namd Flex Force",
+    "Silicone Oil Infused Grommets",
+    "Aero Trench",
+    "Aero Fin",
+    "VDM"
+  ],
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 9,
+    "spin": 9,
+    "comfort": 8,
+    "maneuverability": 9,
+    "stability": 8
+  },
+
+  "playing_tags": [
+    "Advanced",
+    "Spin",
+    "Control",
+    "Modern Baseline",
+    "All Court"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Advanced",
+      "Tournament"
+    ],
+    "swing_style": [
+      "Medium-Fast",
+      "Fast"
+    ],
+    "play_style": [
+      "Aggressive Baseliner",
+      "All Court"
+    ]
+  },
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 45,
+      "max": 50
+    },
+    "multifilament": {
+      "min": 47,
+      "max": 52
+    },
+    "natural_gut": {
+      "min": 49,
+      "max": 54
+    },
+    "hybrid": {
+      "main": "48-50",
+      "cross": "46-48"
+    }
+  },
+
+  "comparison_tags": [
+    "More Control than VCORE 100",
+    "Denser Pattern",
+    "Less Launch Angle than VCORE 100",
+    "More Forgiving than VCORE 98",
+    "Spin-Control Balance"
+  ],
+
+  "ai_keywords": [
+    "spin",
+    "control",
+    "18x19",
+    "100sqin",
+    "advanced",
+    "baseline",
+    "all-court",
+    "precision",
+    "modern"
+  ],
+
+  "target_competitors": [
+    "Yonex EZONE 100",
+    "HEAD Speed MP",
+    "Wilson Blade 100 V10",
+    "Tecnifibre TF40 305 16x19"
+  ],
+
+  "release_status": {
+    "status": "current",
+    "replacement": null,
+    "discontinued": false
+  },
+
+  "description": {
+    "en": "The Yonex VCORE 100D Ruby Red 2026 combines the forgiveness of a 100 sq.in head with an 18x19 string pattern for greater directional control and flatter ball trajectories. It is ideal for advanced players who want the spin of the VCORE family with improved precision.",
+
+    "zh": "Yonex VCORE 100D Ruby Red 2026 采用100平方英寸拍面、300克空拍重量、320毫米平衡点以及18×19线床。相比标准版VCORE 100拥有更密集的线床，提供更精准的落点控制、更低的击球弹道，同时依然保持VCORE系列优秀的旋转能力，非常适合高级及比赛型球员。"
+  },
+
+  "verification": {
+    "status": "verified",
+    "last_updated": "2026-08-12"
+  }
+}
