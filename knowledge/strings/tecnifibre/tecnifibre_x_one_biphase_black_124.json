@@ -1,0 +1,176 @@
+{
+  "id": "tecnifibre_x_one_biphase_black_124",
+  "brand": "Tecnifibre",
+  "series": "X-One Biphase",
+  "model": "X-One Biphase Black",
+  "category": "String",
+
+  "manufacturer_data": {
+    "packaging": "Set",
+    "length_m": 12,
+    "construction": "Multifilament",
+    "material": "Polyamide",
+    "fiber_composition": {
+      "elastyl_percentage": 50,
+      "h2c_percentage": 50
+    },
+    "polyurethane": "PU400",
+    "technology": "Biphase Pre-Stretch",
+    "surface_finish": "Silicone Finish",
+    "gauge_mm": 1.24,
+    "country_of_origin": "France",
+    "recommended_tension_kg": {
+      "min": 22,
+      "max": 25
+    },
+    "maximum_tension_kg": 32
+  },
+
+  "specifications": {
+    "string_family": "Multifilament",
+    "construction": "Multifilament",
+    "cross_section": "Round",
+    "surface": "Silicone Coated",
+    "color": "Black",
+    "available_colors": [
+      "Black"
+    ],
+    "available_gauges_mm": [
+      1.24
+    ]
+  },
+
+  "technology": [
+    "Biphase",
+    "PU400",
+    "Elastyl",
+    "H²C Fibres",
+    "Silicone Finish",
+    "Wear Indicator"
+  ],
+
+  "design_profile": {
+    "string_type": "Premium Multifilament",
+    "target_player": "Comfort & Feel",
+    "arm_friendly": true,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 10,
+    "control": 8,
+    "spin": 8,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 7,
+    "tension_maintenance": 9
+  },
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate",
+      "Advanced"
+    ],
+    "swing_speed": [
+      "Slow",
+      "Medium",
+      "Medium-Fast"
+    ],
+    "play_style": [
+      "All Court",
+      "Serve & Volley",
+      "Touch Player",
+      "Baseline"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson Clash",
+    "Yonex EZONE",
+    "Yonex PERCEPT",
+    "Tecnifibre T-FIGHT",
+    "Tecnifibre TF-40",
+    "HEAD Speed",
+    "HEAD Radical",
+    "Prince Tour",
+    "Dunlop CX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+    "best_pairings": [
+      "Tecnifibre Razor Soft",
+      "Tecnifibre Razor Spin",
+      "Tecnifibre Black Code",
+      "Luxilon ALU Power",
+      "RPM Blast"
+    ]
+  },
+
+  "recommended_tension": {
+    "club_player_kg": "22-24",
+    "advanced_player_kg": "23-25",
+    "professional_kg": "24-26"
+  },
+
+  "estimated_lifespan": {
+    "heavy_topspin_hours": "6-10",
+    "club_player_hours": "12-18",
+    "beginner_hours": "20+",
+    "recommended_restring_days": {
+      "competitive": 14,
+      "club": 30,
+      "casual": 60
+    }
+  },
+
+  "comparison_tags": [
+    "Premium Multifilament",
+    "Maximum Comfort",
+    "Maximum Feel",
+    "High Power",
+    "Excellent Tension Maintenance",
+    "Wear Indicator",
+    "Black Color"
+  ],
+
+  "ai_keywords": [
+    "tecnifibre",
+    "x-one biphase",
+    "x one",
+    "black",
+    "1.24",
+    "multifilament",
+    "comfort",
+    "power",
+    "feel",
+    "pu400",
+    "elastyl",
+    "h2c",
+    "wear indicator"
+  ],
+
+  "target_competitors": [
+    "Wilson NXT",
+    "Babolat Xcel",
+    "Yonex Rexis Comfort",
+    "Head Velocity MLT",
+    "Gamma Live Wire Professional"
+  ],
+
+  "description": {
+    "en": "Tecnifibre X-One Biphase Black 1.24 is a premium multifilament string designed to deliver gut-like comfort, feel and power while offering improved durability and tension maintenance. The combination of Elastyl and H²C fibres with PU400 polyurethane and the exclusive Biphase pre-stretch process creates exceptional elasticity and long-lasting performance. A silicone surface finish improves string movement and includes a visible wear indicator to help players know when restringing is needed.",
+
+    "zh": "Tecnifibre X-One Biphase Black 1.24 是一款高端多芯球线，以接近天然肠线的舒适性、力量和击球反馈著称，同时拥有更好的耐久性和保磅表现。采用 50% Elastyl 高弹纤维、50% H²C 高耐热纤维、PU400 聚氨酯整体浸润以及独有的 Biphase 双向预拉伸工艺制造，使球线兼具力量、舒适性与长期性能。表面硅胶涂层改善球线滑动，并加入磨损指示设计，当出现明显起毛时即可判断需要重新穿线。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13"
+  }
+}
