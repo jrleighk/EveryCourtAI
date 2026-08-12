@@ -1,0 +1,94 @@
+{
+  "id": "head_gravity_tour_2025",
+  "brand": "Head",
+  "series": "Gravity",
+  "model": "Gravity Tour",
+  "year": 2025,
+  "edition": null,
+  "category": "Racquet",
+  "collaboration": false,
+
+  "specifications": {
+    "head_size_sq_in": 98,
+    "length_in": 27.0,
+    "weight_g_unstrung": 305,
+    "balance_mm_unstrung": 320,
+    "string_pattern": "16x19",
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+
+    "grip_sizes": [
+      "L2",
+      "L3",
+      "L4",
+      "L5"
+    ]
+  },
+
+  "technology": [
+    "Auxetic 2.0",
+    "Graphene Inside",
+    "Sweet Zone",
+    "Flex Groove",
+    "Elliptical Beam"
+  ],
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 9,
+    "spin": 9,
+    "comfort": 9,
+    "maneuverability": 8,
+    "stability": 9
+  },
+
+  "playing_tags": [
+    "Advanced",
+    "Tournament",
+    "Modern Control",
+    "Spin",
+    "Large Sweet Spot",
+    "Comfort",
+    "All Court",
+    "Aggressive Baseliner",
+    "Fast Swing"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Advanced",
+      "Tournament"
+    ],
+    "swing_style": [
+      "Fast",
+      "Full Swing"
+    ],
+    "play_style": [
+      "Aggressive Baseliner",
+      "All Court"
+    ]
+  },
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": []
+  },
+
+  "recommended_tension_lbs": {
+    "min": null,
+    "max": null
+  },
+
+  "description": {
+    "en": "The Head Gravity Tour 2025 features Auxetic 2.0 technology with a 98 sq.in head, 305 g unstrung weight, 320 mm balance and a 16x19 string pattern. It blends modern spin, exceptional feel and control with the forgiving sweet spot that defines the Gravity series.",
+    "zh": "Head Gravity Tour 2025 搭载 Auxetic 2.0 科技，98平方英寸拍面、305克空拍重量、320毫米平衡点及16×19线床。兼具现代旋转、精准控制、舒适手感，并拥有 Gravity 系列标志性的宽大甜区，适合高水平竞技球员。"
+  },
+
+  "verification": {
+    "status": "verified",
+    "last_updated": "2026-08-12"
+  }
+}
