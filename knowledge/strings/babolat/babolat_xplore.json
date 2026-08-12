@@ -1,0 +1,242 @@
+{
+  "id": "babolat_xplore",
+  "brand": "Babolat",
+  "series": "Xplore",
+  "model": "Xplore",
+  "category": "String",
+
+  "manufacturer_data": {
+    "packaging": "Reel",
+    "length_m": 200,
+    "length_in": 7874,
+    "construction": "Multifilament",
+    "material": "Polyamide",
+    "composition": "Multifilaments PA",
+    "coating": "PA Coating",
+    "country_of_origin": "France",
+    "solvent_free": true
+  },
+
+  "specifications": {
+    "string_family": "Multifilament",
+    "construction": "Polyamide Multifilament",
+    "cross_section": "Round",
+    "surface": "Smooth",
+
+    "available_colors": [
+      "Natural"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_mm": 1.30,
+        "available": true,
+
+        "power": 9,
+        "control": 7,
+        "spin": 6,
+        "comfort": 10,
+        "feel": 9,
+        "durability": 8,
+        "tension_maintenance": 8,
+        "elasticity": 10,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Beginner Players",
+          "Intermediate Players",
+          "Junior Players",
+          "Maximum Comfort",
+          "Easy Power",
+          "Arm-Friendly Setup",
+          "Forgiving Playability"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "Polyamide Multifilaments",
+    "PA Coating",
+    "Vibration Reduction",
+    "Solvent-Free Manufacturing"
+  ],
+
+  "design_profile": {
+    "string_type": "Comfort Power Multifilament",
+    "target_player": "Beginner to Intermediate",
+    "arm_friendly": true,
+    "spin_focus": false,
+    "control_focus": false,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": false,
+    "response_focus": false
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 7,
+    "spin": 6,
+    "comfort": 10,
+    "feel": 9,
+    "durability": 8,
+    "tension_maintenance": 8,
+    "elasticity": 10,
+    "launch_angle": "Medium-High"
+  },
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate",
+      "Junior"
+    ],
+
+    "swing_speed": [
+      "Slow",
+      "Medium"
+    ],
+
+    "play_style": [
+      "Recreational",
+      "Baseline",
+      "All Court",
+      "Doubles",
+      "Developing Player"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Babolat Pure Drive Team",
+    "Babolat Pure Drive Lite",
+    "Babolat Pure Aero Team",
+    "Wilson Clash",
+    "Yonex EZONE 100L",
+    "Yonex EZONE 100SL",
+    "HEAD Boom MP L",
+    "Tecnifibre TEMPO",
+    "Dunlop FX 500 LS",
+    "Prince Tour 100L"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Babolat RPM Soft",
+      "Babolat RPM Team",
+      "Tecnifibre Razor Soft",
+      "Tecnifibre Black Code"
+    ]
+  },
+
+  "recommended_tension": {
+    "club_player_kg": "22-24",
+    "advanced_player_kg": "23-25",
+    "junior_player_kg": "20-23"
+  },
+
+  "gauge_recommendation": {
+    "1.30": {
+      "best_for": [
+        "Maximum Comfort",
+        "Easy Power",
+        "Forgiveness",
+        "Junior and Intermediate Players",
+        "Arm-Friendly Play"
+      ],
+
+      "tradeoffs": [
+        "Lower Spin than Polyester",
+        "Less Precise than Firmer Control Strings",
+        "Not Ideal for Heavy String Breakers"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.30": {
+      "heavy_topspin_hours": "6-10",
+      "club_player_hours": "15-25",
+      "junior_player_hours": "18-30"
+    }
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Beginners",
+      "Intermediate Players",
+      "Junior Players",
+      "Players Seeking Maximum Comfort",
+      "Players With Arm Sensitivity",
+      "Players Wanting Easy Power and Forgiveness"
+    ],
+
+    "avoid_for": [
+      "Heavy String Breakers",
+      "Advanced Players Seeking Maximum Spin",
+      "Very Fast Swing Players",
+      "Players Wanting Firm Polyester Control"
+    ],
+
+    "alternative_strings": [
+      "Babolat Xalt",
+      "Babolat RPM Soft",
+      "Tecnifibre TGV",
+      "Tecnifibre NRG²",
+      "Wilson NXT"
+    ]
+  },
+
+  "comparison_tags": [
+    "Comfort Multifilament",
+    "Easy Power",
+    "Arm Friendly",
+    "Junior Friendly",
+    "Beginner Friendly",
+    "Polyamide",
+    "Solvent Free",
+    "Made in France"
+  ],
+
+  "ai_keywords": [
+    "babolat",
+    "xplore",
+    "xplore 130",
+    "1.30",
+    "130",
+    "multifilament",
+    "polyamide",
+    "pa coating",
+    "comfort",
+    "power",
+    "junior",
+    "beginner",
+    "intermediate",
+    "arm friendly",
+    "solvent free"
+  ],
+
+  "target_competitors": [
+    "Tecnifibre TGV",
+    "Tecnifibre NRG²",
+    "Wilson NXT",
+    "HEAD Velocity MLT",
+    "Yonex Rexis Comfort"
+  ],
+
+  "description": {
+    "en": "Babolat Xplore is a comfortable and forgiving polyamide multifilament designed for junior, intermediate and recreational players. Its flexible polyamide filaments absorb vibration effectively and create a lively trampoline effect for easy power, while maintaining enough control for developing players. Made in France using a solvent-free process, Xplore is particularly well suited to players who value comfort, forgiveness and effortless playability.",
+
+    "zh": "Babolat Xplore 是一款强调舒适、易打和容错性的聚酰胺多芯球线，主要面向青少年、中级及休闲球员。柔软的聚酰胺纤维能够有效吸收击球震动，同时通过良好的弹性产生明显的蹦床效应，让球员更轻松获得力量和深度。它采用无溶剂工艺并在法国制造，非常适合希望保护手臂、提升舒适性和降低击球难度的球员。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13"
+  }
+}
