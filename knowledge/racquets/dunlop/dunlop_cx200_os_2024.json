@@ -1,0 +1,173 @@
+{
+  "id": "dunlop_cx200_os_2024",
+  "brand": "Dunlop",
+  "series": "CX",
+  "model": "CX 200 OS",
+  "year": 2024,
+  "edition": "Standard",
+  "category": "Racquet",
+  "collaboration": false,
+
+  "specifications": {
+    "head_size_sq_in": 105,
+    "length_in": 27.0,
+    "weight_g_unstrung": 295,
+    "balance_mm_unstrung": 325,
+    "balance_description": "Head Light",
+    "string_pattern": null,
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+
+    "grip_sizes": [
+      "L1",
+      "L2",
+      "L3"
+    ]
+  },
+
+  "technology": [
+    "SONIC CORE with Infinergy",
+    "VIBROSHIELD",
+    "POWERGRID STRINGTECH+",
+    "CONTROL FRAME GEOMETRY"
+  ],
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 8,
+    "spin": 8,
+    "comfort": 10,
+    "maneuverability": 9,
+    "stability": 8
+  },
+
+  "playing_tags": [
+    "Intermediate",
+    "Advanced",
+    "Control",
+    "Comfort",
+    "Forgiving",
+    "Oversize",
+    "Large Sweet Spot",
+    "All Court"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced"
+    ],
+    "swing_style": [
+      "Medium",
+      "Medium-Fast"
+    ],
+    "play_style": [
+      "All Court",
+      "Counter Puncher",
+      "Doubles",
+      "Recreational Competition"
+    ]
+  },
+
+  "recommended_skill_ntrp": {
+    "min": 3.0,
+    "max": 5.0
+  },
+
+  "recommended_skill_cn": {
+    "min": 3.0,
+    "max": 4.5
+  },
+
+  "recommended_match_type": [
+    "Singles",
+    "Doubles"
+  ],
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 44,
+      "max": 49
+    },
+    "multifilament": {
+      "min": 47,
+      "max": 53
+    },
+    "natural_gut": {
+      "min": 49,
+      "max": 55
+    },
+    "hybrid": {
+      "main": "47-49",
+      "cross": "45-47"
+    }
+  },
+
+  "comparison_tags": [
+    "Oversize Control Racquet",
+    "105 Head Size",
+    "295g",
+    "Large Sweet Spot",
+    "Forgiving",
+    "Comfort and Control"
+  ],
+
+  "ai_keywords": [
+    "dunlop",
+    "cx",
+    "cx200",
+    "cx200 os",
+    "cx 200 os",
+    "2024",
+    "105sqin",
+    "295g",
+    "325mm",
+    "oversize",
+    "control",
+    "comfort",
+    "forgiving",
+    "large sweet spot"
+  ],
+
+  "target_competitors": [
+    "Yonex PERCEPT 100L",
+    "HEAD Radical Team",
+    "Wilson Blade 100L",
+    "Tecnifibre TF-X1 300",
+    "Babolat Pure Strike Team"
+  ],
+
+  "release_status": {
+    "status": "current",
+    "replacement": null,
+    "discontinued": false
+  },
+
+  "description": {
+    "en": "The Dunlop CX 200 OS 2024 is an oversize control-oriented performance racquet featuring a 105 sq.in head, 295 g unstrung weight and 325 mm head-light balance. It offers a larger sweet spot, improved forgiveness and excellent comfort without losing the precision and feel associated with the CX family. SONIC CORE with Infinergy enhances rebound and vibration absorption, VIBROSHIELD improves comfort and control on off-center hits, POWERGRID STRINGTECH+ increases spin and power, while CONTROL FRAME GEOMETRY improves stability and swing-through.",
+
+    "zh": "Dunlop CX 200 OS 2024 是 CX 系列中的大拍面控制型球拍，采用105平方英寸拍面、295克空拍重量及325毫米头轻平衡设计。相比标准 CX 200，它拥有更大的甜区、更高的容错率与更舒适的击球体验，同时仍保留 CX 系列强调的精准控制与手感。SONIC CORE with Infinergy 提升回弹与减震表现，VIBROSHIELD 改善偏心击球时的舒适性与控制，POWERGRID STRINGTECH+ 增强旋转与力量，而 CONTROL FRAME GEOMETRY 则进一步提升稳定性与挥拍效率。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13",
+    "unverified_fields": [
+      "string_pattern",
+      "beam_mm",
+      "stiffness_ra",
+      "swingweight"
+    ]
+  }
+}
