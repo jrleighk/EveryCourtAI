@@ -1,0 +1,206 @@
+{
+  "id": "tecnifibre_fire_300",
+  "brand": "Tecnifibre",
+  "series": "FIRE",
+  "model": "FIRE 300",
+  "year": null,
+  "edition": "White and Yellow",
+  "category": "Racquet",
+  "collaboration": false,
+
+  "manufacturer_data": {
+    "reference": "14FIR30061",
+    "range": "Fire",
+    "main_material": "Graphite",
+    "head_size_cm2": 645,
+    "head_size_sq_in": 100,
+    "weight_g_unstrung": 300,
+    "weight_oz_unstrung": 10.5,
+    "length_mm": 685,
+    "balance_mm_unstrung": 320,
+    "beam_mm": {
+      "head": 24.5,
+      "shaft": 25.0,
+      "throat": 24.5
+    },
+    "string_pattern": "16x19",
+    "strung_status": "Unstrung"
+  },
+
+  "specifications": {
+    "head_size_sq_in": 100,
+    "length_in": 26.97,
+    "weight_g_unstrung": 300,
+    "balance_mm_unstrung": 320,
+    "string_pattern": "16x19",
+
+    "beam_mm": {
+      "head": 24.5,
+      "shaft": 25.0,
+      "throat": 24.5
+    },
+
+    "stiffness_ra": null,
+    "swingweight": null,
+    "twistweight": null,
+    "vibration_hz": null,
+
+    "grip_sizes": [
+      "L1",
+      "L2",
+      "L3",
+      "L4"
+    ]
+  },
+
+  "technology": [
+    "X-DAMP",
+    "TecniLab",
+    "Centralized Weight Distribution",
+    "Refined Handle Geometry",
+    "5% Thinner Frame Sections"
+  ],
+
+  "playing_characteristics": {
+    "power": 10,
+    "control": 8,
+    "spin": 9,
+    "comfort": 10,
+    "maneuverability": 9,
+    "stability": 9
+  },
+
+  "playing_tags": [
+    "Intermediate",
+    "Advanced",
+    "Power",
+    "Spin",
+    "Comfort",
+    "Modern Tennis",
+    "Fast Swing",
+    "Aggressive Baseliner",
+    "All Court"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+    "swing_style": [
+      "Medium-Fast",
+      "Fast"
+    ],
+    "play_style": [
+      "Aggressive Baseliner",
+      "All Court",
+      "Attacking Player",
+      "Modern Baseline"
+    ]
+  },
+
+  "recommended_skill_ntrp": {
+    "min": 3.5,
+    "max": 5.5
+  },
+
+  "recommended_skill_cn": {
+    "min": 3.5,
+    "max": 5.0
+  },
+
+  "recommended_match_type": [
+    "Singles",
+    "Doubles"
+  ],
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 44,
+      "max": 49
+    },
+    "multifilament": {
+      "min": 47,
+      "max": 53
+    },
+    "natural_gut": {
+      "min": 49,
+      "max": 55
+    },
+    "hybrid": {
+      "main": "47-49",
+      "cross": "45-47"
+    }
+  },
+
+  "comparison_tags": [
+    "100 Head Size",
+    "300g",
+    "16x19 Pattern",
+    "Maximum Power",
+    "X-DAMP Comfort",
+    "Modern Maneuverability",
+    "Wide Beam"
+  ],
+
+  "ai_keywords": [
+    "tecnifibre",
+    "fire",
+    "fire 300",
+    "100sqin",
+    "645cm2",
+    "300g",
+    "320mm",
+    "16x19",
+    "24.5 25 24.5 beam",
+    "x-damp",
+    "power",
+    "comfort",
+    "spin",
+    "modern tennis",
+    "fast swing"
+  ],
+
+  "target_competitors": [
+    "Babolat Pure Drive",
+    "Yonex EZONE 100",
+    "Dunlop FX 500",
+    "Wilson Ultra 100",
+    "HEAD Boom MP"
+  ],
+
+  "release_status": {
+    "status": "current",
+    "replacement": null,
+    "discontinued": false
+  },
+
+  "description": {
+    "en": "The Tecnifibre FIRE 300 is the most power-oriented model in the FIRE range, combining explosive performance, comfort and easy acceleration. It features a 100 sq.in head, 300 g unstrung weight, 320 mm balance and a 16x19 string pattern. X-DAMP technology uses a steel component housed in an elastomer pocket inside the handle to counter impact vibration, reducing harmful vibration by 36% and helping reduce arm fatigue. Compared with the previous generation, the frame sections are more square and approximately 5% thinner to improve stability and power control, while weight has been redistributed toward the center of the frame to reduce swingweight and improve racquet-head acceleration.",
+
+    "zh": "Tecnifibre FIRE 300 是 FIRE 系列中最偏力量输出的型号，强调爆发力、舒适性与快速挥拍。球拍采用100平方英寸拍面、300克空拍重量、320毫米平衡点及16×19开放式线床。核心 X-DAMP 技术通过在手柄内部设置钢制部件与弹性体结构，使其在击球时产生反向运动，从而减少约36%的有害震动并降低手臂疲劳。相比上一代，拍框截面更接近方形且整体薄约5%，以提升稳定性和力量控制，同时将重量从拍框两端重新分配至中心区域，降低挥重并提升拍头加速能力。整体非常适合现代底线进攻型球员。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13",
+    "unverified_fields": [
+      "year",
+      "stiffness_ra",
+      "swingweight",
+      "twistweight",
+      "vibration_hz"
+    ]
+  }
+}
