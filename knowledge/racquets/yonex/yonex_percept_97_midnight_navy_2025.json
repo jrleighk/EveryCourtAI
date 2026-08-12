@@ -1,0 +1,153 @@
+{
+  "id": "yonex_percept_97_midnight_navy_2025",
+  "brand": "Yonex",
+  "series": "PERCEPT",
+  "model": "PERCEPT 97",
+  "year": 2025,
+  "edition": "Midnight Navy",
+  "category": "Racquet",
+  "collaboration": false,
+
+  "specifications": {
+    "head_size_sq_in": 97,
+    "length_in": 27.0,
+    "weight_g_unstrung": 310,
+    "balance_mm_unstrung": 310,
+    "string_pattern": "16x19",
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+
+    "grip_sizes": [
+      "L2"
+    ]
+  },
+
+  "technology": [
+    "ISOMETRIC",
+    "SERVO FILTER",
+    "2G-Namd Flex Force",
+    "FlexCon System",
+    "Stiff Racquet Face Design"
+  ],
+
+  "playing_characteristics": {
+    "power": 7,
+    "control": 10,
+    "spin": 8,
+    "comfort": 10,
+    "maneuverability": 8,
+    "stability": 10
+  },
+
+  "playing_tags": [
+    "Advanced",
+    "Control",
+    "Precision",
+    "All Court",
+    "Feel"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Advanced",
+      "Tournament"
+    ],
+    "swing_style": [
+      "Fast",
+      "Very Fast"
+    ],
+    "play_style": [
+      "All Court",
+      "Aggressive Baseliner",
+      "Counter Puncher"
+    ]
+  },
+
+  "recommended_skill_ntrp": {
+    "min": 4.0,
+    "max": 6.0
+  },
+
+  "recommended_skill_cn": {
+    "min": 4.0,
+    "max": 5.5
+  },
+
+  "recommended_match_type": [
+    "Singles"
+  ],
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 46,
+      "max": 50
+    },
+    "multifilament": {
+      "min": 48,
+      "max": 53
+    },
+    "natural_gut": {
+      "min": 49,
+      "max": 54
+    },
+    "hybrid": {
+      "main": "48-50",
+      "cross": "46-48"
+    }
+  },
+
+  "comparison_tags": [
+    "Control",
+    "Feel",
+    "Comfort",
+    "Precision",
+    "97 Head Size"
+  ],
+
+  "ai_keywords": [
+    "control",
+    "precision",
+    "feel",
+    "comfort",
+    "97sqin",
+    "310g",
+    "all court",
+    "advanced",
+    "percept"
+  ],
+
+  "target_competitors": [
+    "Wilson Pro Staff 97",
+    "HEAD Prestige Pro",
+    "Babolat Pure Strike 97",
+    "Tecnifibre TF40 315"
+  ],
+
+  "release_status": {
+    "status": "current",
+    "replacement": null,
+    "discontinued": false
+  },
+
+  "description": {
+    "en": "The Yonex PERCEPT 97 Midnight Navy 2025 is designed for advanced players seeking exceptional precision, feel and stability. Its 97 sq.in head and 310 g weight deliver classic control with modern comfort.",
+
+    "zh": "Yonex PERCEPT 97 Midnight Navy 2025 是一款专为高级球员打造的控制型球拍，拥有97平方英寸拍面、310克空拍重量以及优秀的击球手感，适合追求精准落点、稳定性和全场进攻能力的竞技型球员。"
+  },
+
+  "verification": {
+    "status": "verified",
+    "last_updated": "2026-08-12"
+  }
+}
