@@ -1,0 +1,208 @@
+{
+  "id": "tecnifibre_fire_305s",
+  "brand": "Tecnifibre",
+  "series": "FIRE",
+  "model": "FIRE 305S",
+  "year": null,
+  "edition": "White and Yellow",
+  "category": "Racquet",
+  "collaboration": false,
+
+  "manufacturer_data": {
+    "reference": "14FIR30561",
+    "range": "Fire",
+    "main_material": "Graphite",
+    "head_size_cm2": 630,
+    "head_size_sq_in": 98,
+    "weight_g_unstrung": 305,
+    "weight_oz_unstrung": 10.7,
+    "length_mm": 685,
+    "balance_mm_unstrung": 315,
+    "beam_mm": {
+      "head": 23.0,
+      "shaft": 23.0,
+      "throat": 22.5
+    },
+    "string_pattern": "16x19",
+    "strung_status": "Unstrung"
+  },
+
+  "specifications": {
+    "head_size_sq_in": 98,
+    "length_in": 26.97,
+    "weight_g_unstrung": 305,
+    "balance_mm_unstrung": 315,
+    "string_pattern": "16x19",
+
+    "beam_mm": {
+      "head": 23.0,
+      "shaft": 23.0,
+      "throat": 22.5
+    },
+
+    "stiffness_ra": null,
+    "swingweight": null,
+    "twistweight": null,
+    "vibration_hz": null,
+
+    "grip_sizes": [
+      "L1",
+      "L2",
+      "L3",
+      "L4"
+    ]
+  },
+
+  "technology": [
+    "X-DAMP",
+    "TecniLab",
+    "Centralized Weight Distribution",
+    "Refined Handle Geometry",
+    "Thinner Control-Oriented Frame Section"
+  ],
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 9,
+    "spin": 9,
+    "comfort": 10,
+    "maneuverability": 9,
+    "stability": 9
+  },
+
+  "playing_tags": [
+    "Advanced",
+    "Tournament",
+    "Power",
+    "Control",
+    "Spin",
+    "Comfort",
+    "Fast Swing",
+    "Aggressive Baseliner",
+    "Modern Tennis"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Advanced",
+      "Tournament"
+    ],
+    "swing_style": [
+      "Fast",
+      "Very Fast"
+    ],
+    "play_style": [
+      "Aggressive Baseliner",
+      "All Court",
+      "Attacking Player",
+      "Modern Baseline"
+    ]
+  },
+
+  "recommended_skill_ntrp": {
+    "min": 4.0,
+    "max": 6.0
+  },
+
+  "recommended_skill_cn": {
+    "min": 4.0,
+    "max": 5.5
+  },
+
+  "recommended_match_type": [
+    "Singles",
+    "Doubles"
+  ],
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 44,
+      "max": 49
+    },
+    "multifilament": {
+      "min": 47,
+      "max": 53
+    },
+    "natural_gut": {
+      "min": 49,
+      "max": 55
+    },
+    "hybrid": {
+      "main": "47-49",
+      "cross": "45-47"
+    }
+  },
+
+  "comparison_tags": [
+    "98 Head Size",
+    "305g",
+    "16x19 Pattern",
+    "Power and Control",
+    "Maximum Comfort",
+    "X-DAMP",
+    "Modern Maneuverability",
+    "Tournament Frame"
+  ],
+
+  "ai_keywords": [
+    "tecnifibre",
+    "fire",
+    "fire 305s",
+    "305s",
+    "98sqin",
+    "630cm2",
+    "305g",
+    "315mm",
+    "16x19",
+    "x-damp",
+    "comfort",
+    "power",
+    "control",
+    "spin",
+    "modern tennis",
+    "tournament"
+  ],
+
+  "target_competitors": [
+    "Yonex EZONE 98",
+    "Yonex VCORE 98",
+    "Dunlop FX 500 Tour",
+    "HEAD Speed Pro",
+    "Wilson Ultra 98 Tour",
+    "Babolat Pure Drive 98"
+  ],
+
+  "release_status": {
+    "status": "current",
+    "replacement": null,
+    "discontinued": false
+  },
+
+  "description": {
+    "en": "The Tecnifibre FIRE 305S is the top competition model in the FIRE range, combining controllable power, maximum maneuverability and exceptional comfort. It features a 98 sq.in head, 305 g unstrung weight, 315 mm balance and open 16x19 string pattern. X-DAMP technology uses a steel component inside an elastomer pocket in the handle to move against impact vibrations, reducing harmful vibration by 36% and helping reduce arm fatigue. Compared with the previous FIRE generation, the frame sections are more square and approximately 12% thinner, while weight has been redistributed toward the center of the frame to reduce swingweight and improve racquet-head acceleration.",
+
+    "zh": "Tecnifibre FIRE 305S 是 FIRE 系列中面向高水平竞技球员的旗舰型号，强调可控力量、快速操控与高舒适性。球拍采用98平方英寸拍面、305克空拍重量、315毫米平衡点及16×19开放式线床。核心 X-DAMP 技术通过在手柄内部设置钢制部件与弹性体结构，使其在击球时产生反向运动，从而减少约36%的有害震动并降低手臂疲劳。相比上一代 FIRE，拍框截面更接近方形且整体薄约12%，同时将重量从拍框两端向中心重新分配，以降低挥重并提升拍头加速能力，使其更符合现代网球对快速挥拍与高效率击球的需求。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13",
+    "unverified_fields": [
+      "year",
+      "stiffness_ra",
+      "swingweight",
+      "twistweight",
+      "vibration_hz"
+    ]
+  }
+}
