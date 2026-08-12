@@ -1,0 +1,91 @@
+{
+  "id": "head_gravity_mp_l_2025",
+  "brand": "Head",
+  "series": "Gravity",
+  "model": "Gravity MP L",
+  "year": 2025,
+  "edition": null,
+  "category": "Racquet",
+  "collaboration": false,
+
+  "specifications": {
+    "head_size_sq_in": 100,
+    "length_in": 27.0,
+    "weight_g_unstrung": 280,
+    "balance_mm_unstrung": 330,
+    "string_pattern": "16x20",
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+
+    "grip_sizes": [
+      "L0",
+      "L1",
+      "L2",
+      "L3"
+    ]
+  },
+
+  "technology": [
+    "Auxetic 2.0",
+    "Graphene Inside",
+    "Sweet Zone",
+    "Flex Groove",
+    "Elliptical Beam"
+  ],
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 7,
+    "spin": 8,
+    "comfort": 9,
+    "maneuverability": 10,
+    "stability": 7
+  },
+
+  "playing_tags": [
+    "Intermediate",
+    "Lightweight",
+    "Comfort",
+    "Easy Power",
+    "Easy Swing",
+    "Large Sweet Spot",
+    "All Court"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate"
+    ],
+    "swing_style": [
+      "Medium"
+    ],
+    "play_style": [
+      "All Court",
+      "Baseline"
+    ]
+  },
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": []
+  },
+
+  "recommended_tension_lbs": {
+    "min": null,
+    "max": null
+  },
+
+  "description": {
+    "en": "The Head Gravity MP L 2025 is the lightweight version of the Gravity MP, featuring Auxetic 2.0 technology, a 100 sq.in head, 280 g unstrung weight, 330 mm balance and a 16x20 string pattern. It offers excellent maneuverability, comfort and easy power while maintaining the signature Gravity feel.",
+    "zh": "Head Gravity MP L 2025 是 Gravity MP 的轻量版本，采用 Auxetic 2.0 科技，100平方英寸拍面、280克空拍重量、330毫米平衡点及16×20线床。拥有更快挥拍速度、更高容错率和舒适击球感，非常适合希望提升挥拍速度和轻松发力的球员。"
+  },
+
+  "verification": {
+    "status": "verified",
+    "last_updated": "2026-08-12"
+  }
+}
