@@ -1,0 +1,263 @@
+{
+  "id": "tecnifibre_xr3",
+  "brand": "Tecnifibre",
+  "series": "XR3",
+  "model": "XR3 Natural",
+  "category": "String",
+
+  "manufacturer_data": {
+    "packaging": "Set",
+    "length_m": 12,
+    "construction": "Multifilament with Three Monofilament Cores",
+    "material": [
+      "Polyamide",
+      "Polyurethane"
+    ],
+    "surface_finish": "Silicone Finish",
+    "country_of_origin": "France",
+    "market_positioning": "High-volume bestseller in Japan",
+
+    "recommended_tension_kg": {
+      "min": 22,
+      "max": 25
+    },
+
+    "maximum_tension_kg": 32
+  },
+
+  "specifications": {
+    "string_family": "Multifilament",
+    "construction": "Multifilament with Three Reinforced Monofilament Cores",
+    "cross_section": "Round",
+    "surface": "Smooth",
+    "color": "Natural",
+
+    "available_colors": [
+      "Natural"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_mm": 1.25,
+        "available": true,
+
+        "power": 9,
+        "control": 8,
+        "spin": 7,
+        "comfort": 9,
+        "feel": 9,
+        "durability": 7,
+        "tension_maintenance": 8,
+        "elasticity": 9,
+        "launch_angle": "Medium",
+
+        "recommended_use": [
+          "Balanced Feel",
+          "Comfort",
+          "Crisp Multifilament Response",
+          "Intermediate to Advanced Players",
+          "All Court"
+        ]
+      },
+
+      {
+        "gauge_mm": 1.30,
+        "available": true,
+
+        "power": 8,
+        "control": 9,
+        "spin": 6,
+        "comfort": 9,
+        "feel": 8,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "elasticity": 8,
+        "launch_angle": "Medium-Low",
+
+        "recommended_use": [
+          "More Durability",
+          "More Control",
+          "Frequent Club Play",
+          "Players Seeking Firmer Response"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "Three Reinforced Monofilament Cores",
+    "Liquid Polyurethane Impregnation",
+    "Silicone Finish",
+    "Wear Indicator"
+  ],
+
+  "design_profile": {
+    "string_type": "Crisp Multifilament",
+    "target_player": "Intermediate to Advanced",
+    "arm_friendly": true,
+    "spin_focus": false,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 8,
+    "spin": 7,
+    "comfort": 9,
+    "feel": 9,
+    "durability": 8,
+    "tension_maintenance": 8,
+    "elasticity": 8,
+    "launch_angle": "Medium"
+  },
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate",
+      "Advanced"
+    ],
+
+    "swing_speed": [
+      "Slow",
+      "Medium",
+      "Medium-Fast"
+    ],
+
+    "play_style": [
+      "All Court",
+      "Baseline",
+      "Serve & Volley",
+      "Touch Player",
+      "Doubles"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Tecnifibre T-FIGHT",
+    "Tecnifibre TF-40",
+    "Tecnifibre TEMPO",
+    "Wilson Blade",
+    "Wilson Clash",
+    "Yonex EZONE",
+    "Yonex PERCEPT",
+    "HEAD Speed",
+    "HEAD Radical",
+    "Prince Tour",
+    "Dunlop CX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Tecnifibre Razor Soft",
+      "Tecnifibre Razor Spin",
+      "Tecnifibre Black Code",
+      "Luxilon ALU Power",
+      "Babolat RPM Blast"
+    ]
+  },
+
+  "recommended_tension": {
+    "manufacturer_kg": {
+      "min": 22,
+      "max": 25
+    },
+
+    "club_player_kg": "22-24",
+    "advanced_player_kg": "23-25",
+    "professional_kg": "24-26"
+  },
+
+  "gauge_recommendation": {
+    "1.25": {
+      "best_for": [
+        "Best Overall Feel",
+        "More Elasticity",
+        "Comfort",
+        "Power",
+        "All Court Play"
+      ],
+      "tradeoffs": [
+        "Less Durability than 1.30"
+      ]
+    },
+
+    "1.30": {
+      "best_for": [
+        "Durability",
+        "Control",
+        "Stable Response",
+        "Frequent Club Players"
+      ],
+      "tradeoffs": [
+        "Slightly Lower Power",
+        "Less Spin than 1.25"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.25": {
+      "heavy_topspin_hours": "6-10",
+      "club_player_hours": "12-20"
+    },
+
+    "1.30": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "16-25"
+    }
+  },
+
+  "comparison_tags": [
+    "Multifilament",
+    "Crisp Feel",
+    "Dry Touch",
+    "Comfort",
+    "Power",
+    "Wear Indicator",
+    "Japan Bestseller"
+  ],
+
+  "ai_keywords": [
+    "tecnifibre",
+    "xr3",
+    "xr-3",
+    "natural",
+    "multifilament",
+    "three monofilament cores",
+    "dry touch",
+    "crisp feel",
+    "comfort",
+    "power",
+    "1.25",
+    "1.30",
+    "japan bestseller",
+    "wear indicator"
+  ],
+
+  "target_competitors": [
+    "Tecnifibre NRG²",
+    "Tecnifibre X-One Biphase",
+    "Wilson NXT",
+    "Babolat Xcel",
+    "HEAD Velocity MLT",
+    "Yonex Rexis Comfort"
+  ],
+
+  "description": {
+    "en": "Tecnifibre XR3 is a distinctive multifilament string that combines several hundred microfilaments with three thicker monofilament cores to create a crisper and drier response than traditional multifilaments. It retains strong comfort, power and durability while offering a firmer impact feel. Liquid polyurethane impregnation improves comfort and performance, while the built-in wear indicator helps players identify when restringing is needed before complete breakage. XR3 is particularly popular in Japan.",
+
+    "zh": "Tecnifibre XR3 是一款结构非常特别的多芯球线，在数百根微纤维之外加入三根较粗的单丝核心，因此相比传统多芯线拥有更清脆、更偏干爽的击球反馈。它依然保留多芯线出色的舒适性、力量与弹性，同时增加一定的控制感和耐久性。球线通过液态聚氨酯整体浸润提升舒适度，并带有磨损指示功能，当击球区域出现明显起毛时，可提醒球员在完全断线前及时重新穿线。XR3 在日本市场尤其受欢迎。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13"
+  }
+}
