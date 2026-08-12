@@ -13,7 +13,6 @@
     "additives": [
       "Polyurethane (PU)"
     ],
-    "country_of_origin": "France",
     "recommended_tension_kg": {
       "min": 22,
       "max": 25
@@ -26,13 +25,17 @@
     "construction": "Monofilament",
     "cross_section": "Round",
     "surface": "Smooth",
+
     "available_colors": [
-      "Lime"
+      "Lime",
+      "Carbon"
     ],
 
     "available_gauges": [
       {
         "gauge_mm": 1.20,
+        "available": true,
+
         "power": 8,
         "control": 8,
         "spin": 9,
@@ -41,10 +44,19 @@
         "durability": 7,
         "tension_maintenance": 8,
         "elasticity": 9,
-        "launch_angle": "Medium-High"
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Maximum Spin",
+          "Higher Launch Angle",
+          "Comfort",
+          "Fast Racquet Head Speed"
+        ]
       },
       {
         "gauge_mm": 1.25,
+        "available": true,
+
         "power": 7,
         "control": 9,
         "spin": 8,
@@ -53,10 +65,20 @@
         "durability": 8,
         "tension_maintenance": 8,
         "elasticity": 8,
-        "launch_angle": "Medium"
+        "launch_angle": "Medium",
+
+        "recommended_use": [
+          "Balanced Performance",
+          "Control",
+          "Comfort",
+          "Spin",
+          "All Court Play"
+        ]
       },
       {
         "gauge_mm": 1.30,
+        "available": true,
+
         "power": 7,
         "control": 9,
         "spin": 7,
@@ -65,10 +87,28 @@
         "durability": 10,
         "tension_maintenance": 9,
         "elasticity": 7,
-        "launch_angle": "Medium-Low"
+        "launch_angle": "Medium-Low",
+
+        "recommended_use": [
+          "Maximum Durability",
+          "Directional Control",
+          "Lower Launch Angle",
+          "Hard Hitters"
+        ]
       }
     ]
   },
+
+  "color_variants": [
+    {
+      "color": "Lime",
+      "performance_difference": false
+    },
+    {
+      "color": "Carbon",
+      "performance_difference": false
+    }
+  ],
 
   "technology": [
     "High Modulus Co-Polyester",
@@ -104,11 +144,13 @@
       "Advanced",
       "Tournament"
     ],
+
     "swing_speed": [
       "Medium",
       "Medium-Fast",
       "Fast"
     ],
+
     "play_style": [
       "All Court",
       "Baseline",
@@ -133,6 +175,7 @@
   "recommended_hybrid": {
     "mains": true,
     "crosses": true,
+
     "best_pairings": [
       "Tecnifibre X-One Biphase",
       "Tecnifibre NRG²",
@@ -146,6 +189,7 @@
       "min": 22,
       "max": 25
     },
+
     "club_player_kg": "21-23",
     "advanced_player_kg": "22-24",
     "professional_kg": "23-25"
@@ -159,10 +203,12 @@
         "Comfort",
         "Fast Racquet Head Speed"
       ],
+
       "tradeoffs": [
         "Lower Durability",
         "More Frequent Restringing"
       ],
+
       "recommended_player": "Spin-focused intermediate to advanced players"
     },
 
@@ -174,10 +220,12 @@
         "Spin",
         "All Court Play"
       ],
+
       "tradeoffs": [
         "Less Spin than 1.20",
         "Less Durability than 1.30"
       ],
+
       "recommended_player": "Best all-around choice for most intermediate and advanced players"
     },
 
@@ -188,11 +236,13 @@
         "Lower Launch Angle",
         "Hard Hitters"
       ],
+
       "tradeoffs": [
         "Lower Spin Potential",
         "Firmer Feel",
         "Less Elastic Response"
       ],
+
       "recommended_player": "Advanced players, string breakers and powerful hitters"
     }
   },
@@ -202,10 +252,12 @@
       "heavy_topspin_hours": "6-10",
       "club_player_hours": "12-20"
     },
+
     "1.25": {
       "heavy_topspin_hours": "8-12",
       "club_player_hours": "15-25"
     },
+
     "1.30": {
       "heavy_topspin_hours": "10-16",
       "club_player_hours": "20-30"
@@ -218,13 +270,17 @@
     "Soft Feel",
     "Excellent Control",
     "PU Enhanced",
-    "Multiple Gauge Options"
+    "Multiple Gauge Options",
+    "Multiple Color Options"
   ],
 
   "ai_keywords": [
     "tecnifibre",
     "razor soft",
+    "razor soft lime",
+    "razor soft carbon",
     "lime",
+    "carbon",
     "polyester",
     "co-poly",
     "pu",
@@ -245,9 +301,9 @@
   ],
 
   "description": {
-    "en": "Tecnifibre Razor Soft is a comfort-oriented co-polyester monofilament designed to deliver the precision of high-modulus polyester with significantly improved comfort through polyurethane additives. It is available in 1.20, 1.25 and 1.30 mm gauges, allowing players to choose between greater spin and elasticity, balanced all-around performance, or increased durability and control.",
+    "en": "Tecnifibre Razor Soft is a comfort-oriented high-modulus co-polyester monofilament enhanced with polyurethane additives. It combines precise control with a softer and more comfortable response than traditional polyester strings. Available in Lime and Carbon colorways and in 1.20, 1.25 and 1.30 mm gauges, Razor Soft allows players to choose between greater spin and elasticity, balanced performance, or increased durability and directional control.",
 
-    "zh": "Tecnifibre Razor Soft 是一款以舒适性为核心设计的共聚酯单丝球线，采用高模量 Co-Polyester 提供精准控制，并加入 PU 聚氨酯添加剂，以改善传统聚酯线偏硬的击球手感。提供1.20、1.25及1.30毫米三种线径选择：1.20更偏旋转与弹性，1.25最均衡，1.30则更偏耐久、控制及较低出球角度。"
+    "zh": "Tecnifibre Razor Soft 是一款以舒适性为核心的高模量共聚酯单丝球线，通过加入 PU 聚氨酯添加剂，在保持精准控制的同时改善传统聚酯线偏硬的击球手感。目前提供 Lime 与 Carbon 两种颜色，并有1.20、1.25和1.30毫米三种线径。1.20更强调旋转、弹性和较高出球角度；1.25最均衡；1.30则更强调耐久性、方向控制及较低的出球角度。"
   },
 
   "verification": {
