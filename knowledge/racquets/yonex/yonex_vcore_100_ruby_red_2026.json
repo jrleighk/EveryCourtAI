@@ -1,0 +1,136 @@
+{
+  "id": "yonex_vcore_100_ruby_red_2026",
+  "brand": "Yonex",
+  "series": "VCORE",
+  "model": "VCORE 100",
+  "year": 2026,
+  "edition": "Ruby Red",
+  "category": "Racquet",
+  "collaboration": false,
+
+  "specifications": {
+    "head_size_sq_in": 100,
+    "length_in": 27.0,
+    "weight_g_unstrung": 300,
+    "balance_mm_unstrung": 320,
+    "string_pattern": "16x19",
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+
+    "grip_sizes": [
+      "L2",
+      "L3",
+      "L4"
+    ]
+  },
+
+  "technology": [
+    "ISOMETRIC",
+    "2G-Namd Flex Force",
+    "Silicone Oil Infused Grommets",
+    "Aero Trench",
+    "Aero Fin",
+    "VDM"
+  ],
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 8,
+    "spin": 10,
+    "comfort": 8,
+    "maneuverability": 9,
+    "stability": 8
+  },
+
+  "playing_tags": [
+    "Advanced",
+    "Intermediate",
+    "Spin",
+    "Modern Baseline",
+    "Aggressive Baseliner",
+    "All Court"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced"
+    ],
+    "swing_style": [
+      "Medium-Fast",
+      "Fast"
+    ],
+    "play_style": [
+      "Aggressive Baseliner",
+      "All Court"
+    ]
+  },
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 45,
+      "max": 50
+    },
+    "multifilament": {
+      "min": 47,
+      "max": 52
+    },
+    "natural_gut": {
+      "min": 49,
+      "max": 54
+    },
+    "hybrid": {
+      "main": "48-50",
+      "cross": "46-48"
+    }
+  },
+
+  "comparison_tags": [
+    "More Forgiving than VCORE 98",
+    "More Powerful than VCORE 98",
+    "Less Control than VCORE 98 TOUR",
+    "Similar to EZONE 100",
+    "Competes with Babolat Pure Aero 100"
+  ],
+
+  "ai_keywords": [
+    "spin",
+    "topspin",
+    "100sqin",
+    "baseline",
+    "all-court",
+    "modern",
+    "fast swing",
+    "intermediate",
+    "advanced",
+    "power"
+  ],
+
+  "release_status": {
+    "status": "current",
+    "replacement": null,
+    "discontinued": false
+  },
+
+  "description": {
+    "en": "The Yonex VCORE 100 Ruby Red 2026 is the most versatile model in the VCORE family, combining easy power, heavy spin and excellent maneuverability. It suits intermediate to advanced players looking for modern baseline performance with all-court versatility.",
+
+    "zh": "Yonex VCORE 100 Ruby Red 2026 是 VCORE 系列最全面、最容易驾驭的型号之一。100平方英寸拍面、300克空拍重量、320毫米平衡点及16×19线床，在力量、旋转、容错性及操控之间取得优秀平衡，非常适合现代底线打法及全场型球员。"
+  },
+
+  "verification": {
+    "status": "verified",
+    "last_updated": "2026-08-12"
+  }
+}
