@@ -1,0 +1,191 @@
+{
+  "id": "gucci_x_head_tennis_racket",
+  "brand": "HEAD",
+  "series": "Speed",
+  "model": "Gucci x HEAD Tennis Racket",
+  "year": null,
+  "edition": "Gucci x HEAD",
+  "category": "Racquet",
+  "collaboration": true,
+
+  "collaboration_details": {
+    "name": "Gucci x HEAD",
+    "collaborators": [
+      "Gucci",
+      "HEAD"
+    ],
+    "type": "Luxury Fashion Collaboration",
+    "limited_edition": true,
+    "design_details": [
+      "Interlocking G logo on strings",
+      "Gucci logo detail on grip",
+      "Matching Gucci x HEAD racket case"
+    ]
+  },
+
+  "specifications": {
+    "head_size_sq_in": 100,
+    "length_in": 27.0,
+    "weight_g_unstrung": 300,
+    "balance_mm_unstrung": 317.5,
+    "balance_description": "1 in. HL",
+    "string_pattern": "16x19",
+    "beam_mm": 23,
+    "stiffness_ra": null,
+    "swingweight": null,
+    "cpi": 500,
+
+    "grip_sizes": [
+      "L3"
+    ],
+
+    "grip_size_in": "4 3/8",
+
+    "manufacturer_dimensions": {
+      "racquet_width_in": 10.4,
+      "racquet_height_in": 26.9,
+      "racquet_depth_in": 1.5,
+      "cover_width_in": 11.8,
+      "cover_height_in": 28.3,
+      "cover_depth_in": 2.1
+    }
+  },
+
+  "technology": [
+    "HEAD Auxetic 2.0",
+    "Graphene-Strengthened Frame",
+    "Directional Drilling",
+    "Speed Beam",
+    "Power Grommets",
+    "Speed Pattern"
+  ],
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 9,
+    "spin": 8,
+    "comfort": 8,
+    "maneuverability": 9,
+    "stability": 8
+  },
+
+  "playing_tags": [
+    "Intermediate",
+    "Advanced",
+    "Control",
+    "Power",
+    "All Court",
+    "Luxury Collaboration",
+    "Limited Edition",
+    "Collector"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced"
+    ],
+    "swing_style": [
+      "Medium-Fast",
+      "Fast"
+    ],
+    "play_style": [
+      "All Court",
+      "Aggressive Baseliner",
+      "Attacking Player"
+    ]
+  },
+
+  "recommended_skill_ntrp": {
+    "min": 3.5,
+    "max": 5.5
+  },
+
+  "recommended_skill_cn": {
+    "min": 3.0,
+    "max": 5.0
+  },
+
+  "recommended_match_type": [
+    "Singles",
+    "Doubles"
+  ],
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 45,
+      "max": 50
+    },
+    "multifilament": {
+      "min": 48,
+      "max": 53
+    },
+    "natural_gut": {
+      "min": 50,
+      "max": 55
+    },
+    "hybrid": {
+      "main": "48-50",
+      "cross": "46-48"
+    }
+  },
+
+  "comparison_tags": [
+    "HEAD Speed Platform",
+    "100 Head Size",
+    "300g Class",
+    "16x19 Pattern",
+    "Luxury Collaboration",
+    "Collector Appeal"
+  ],
+
+  "ai_keywords": [
+    "gucci",
+    "head",
+    "gucci x head",
+    "luxury tennis racket",
+    "limited edition",
+    "collaboration",
+    "speed",
+    "auxetic 2.0",
+    "300g",
+    "100sqin",
+    "16x19",
+    "cpi 500",
+    "collector"
+  ],
+
+  "target_competitors": [
+    "HEAD Speed MP",
+    "Wilson KITH Blade 98",
+    "Wilson KITH Pro Staff 97",
+    "Babolat Pure Drive 30th Anniversary"
+  ],
+
+  "release_status": {
+    "status": "limited_edition",
+    "replacement": null,
+    "discontinued": false
+  },
+
+  "description": {
+    "en": "The Gucci x HEAD Tennis Racket is a luxury collaboration combining Gucci design with HEAD performance technology. Featuring a 100 sq.in head, approximately 300 g unstrung weight, 16x19 string pattern, 23 mm beam and CPI 500 rating, it incorporates HEAD Auxetic 2.0, Graphene reinforcement, Directional Drilling, Speed Beam, Power Grommets and Speed Pattern technologies. Gucci-specific details include the Interlocking G logo on the strings and Gucci branding on the grip.",
+
+    "zh": "Gucci x HEAD Tennis Racket 是 Gucci 与 HEAD 推出的奢侈时尚联名限定网球拍，将 Gucci 的设计语言与 HEAD 的专业网球技术结合。球拍采用100平方英寸拍面、约300克空拍重量、16×19线床、23毫米拍框及CPI 500设定，并搭载HEAD Auxetic 2.0、Graphene强化拍框、Directional Drilling、Speed Beam、Power Grommets及Speed Pattern等技术。外观采用球线上Interlocking G双G标志及手柄Gucci品牌细节，兼具实际比赛性能与收藏属性。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13"
+  }
+}
