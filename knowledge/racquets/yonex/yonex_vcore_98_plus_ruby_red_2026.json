@@ -1,0 +1,115 @@
+{
+  "id": "yonex_vcore_98_plus_ruby_red_2026",
+  "brand": "Yonex",
+  "series": "VCORE",
+  "model": "VCORE 98+",
+  "year": 2026,
+  "edition": "Ruby Red",
+  "category": "Racquet",
+  "collaboration": false,
+
+  "specifications": {
+    "head_size_sq_in": 98,
+    "length_in": 27.5,
+    "weight_g_unstrung": 305,
+    "balance_mm_unstrung": 325,
+    "string_pattern": "16x19",
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+
+    "grip_sizes": [
+      "L2",
+      "L3",
+      "L4"
+    ]
+  },
+
+  "technology": [
+    "ISOMETRIC",
+    "2G-Namd Flex Force",
+    "Silicone Oil Infused Grommets",
+    "Aero Trench",
+    "Aero Fin",
+    "VDM"
+  ],
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 9,
+    "spin": 10,
+    "comfort": 8,
+    "maneuverability": 8,
+    "stability": 9
+  },
+
+  "playing_tags": [
+    "Advanced",
+    "Professional",
+    "Spin",
+    "Extended Length",
+    "Modern Baseline",
+    "Heavy Topspin"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Advanced",
+      "Professional"
+    ],
+    "swing_style": [
+      "Fast"
+    ],
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "All Court"
+    ]
+  },
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 45,
+      "max": 49
+    },
+    "multifilament": {
+      "min": 47,
+      "max": 52
+    },
+    "natural_gut": {
+      "min": 49,
+      "max": 54
+    },
+    "hybrid": {
+      "main": "48-50",
+      "cross": "46-48"
+    }
+  },
+
+  "release_status": {
+    "status": "current",
+    "replacement": null,
+    "discontinued": false
+  },
+
+  "description": {
+    "en": "The Yonex VCORE 98+ Ruby Red 2026 features a 27.5-inch extended frame for increased leverage, heavier ball penetration and greater serving power while maintaining the signature VCORE spin performance. Designed for advanced players with long, fast swings.",
+
+    "zh": "Yonex VCORE 98+ Ruby Red 2026 采用27.5英寸加长拍身设计，在保留VCORE系列高旋转特性的同时，提供更大的发球优势、更强的击球穿透力以及更重的来球质量。适合高级及职业球员，尤其适合拥有大幅度挥拍动作、希望提升发球和底线攻击力的使用者。"
+  },
+
+  "verification": {
+    "status": "verified",
+    "last_updated": "2026-08-12"
+  }
+}
