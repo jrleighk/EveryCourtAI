@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +10,14 @@
 <style>
 
 body{
-    margin:0;
     font-family:Arial,Helvetica,sans-serif;
-    background:#f7f8fa;
+    background:#f5f5f5;
+    margin:0;
 }
 
 .container{
-    width:90%;
-    max-width:850px;
-    margin:50px auto;
+    max-width:900px;
+    margin:40px auto;
     text-align:center;
 }
 
@@ -27,14 +27,15 @@ body{
 }
 
 h1{
-    font-size:42px;
-    margin:10px 0;
+    margin:0;
+    font-size:48px;
 }
 
 .subtitle{
-    font-size:18px;
     color:#666;
-    margin-bottom:40px;
+    margin-top:10px;
+    margin-bottom:35px;
+    font-size:22px;
 }
 
 textarea{
@@ -45,21 +46,21 @@ textarea{
     border:1px solid #ddd;
     border-radius:12px;
 
-    padding:18px;
+    font-size:20px;
 
-    font-size:17px;
-
-    resize:none;
+    padding:20px;
 
     box-sizing:border-box;
+
+    resize:none;
 
 }
 
 button{
 
-    margin-top:25px;
+    margin-top:30px;
 
-    background:#0d6efd;
+    background:#1769ff;
 
     color:white;
 
@@ -67,9 +68,9 @@ button{
 
     border-radius:10px;
 
-    padding:16px 45px;
+    padding:18px 45px;
 
-    font-size:18px;
+    font-size:22px;
 
     cursor:pointer;
 
@@ -77,45 +78,41 @@ button{
 
 button:hover{
 
-    background:#084298;
+    background:#0d5ae5;
 
 }
 
-.answer{
+.result{
 
-    margin-top:45px;
-
-    text-align:left;
+    margin-top:50px;
 
     background:white;
 
     border-radius:12px;
 
-    padding:25px;
-
-    border:1px solid #ddd;
+    padding:30px;
 
     min-height:180px;
 
-    white-space:pre-wrap;
+    text-align:left;
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    box-shadow:0 0 10px rgba(0,0,0,.08);
 
 }
 
-.examples{
+.example{
 
     margin-top:30px;
 
-    color:#777;
-
-    font-size:15px;
-
     text-align:left;
 
-}
+    color:#666;
 
-.examples p{
-
-    margin:8px 0;
+    line-height:2;
 
 }
 
@@ -127,7 +124,9 @@ button:hover{
 
 <div class="container">
 
-<img src="assets/logo/logo.png" class="logo">
+<img class="logo"
+src="assets/logo/ET-LOGO.png"
+alt="EveryCourtAI">
 
 <h1>EveryCourtAI</h1>
 
@@ -149,21 +148,25 @@ Analyze My Setup
 
 </button>
 
-<div class="examples">
+<div class="example">
 
 <b>Example Questions</b>
 
-<p>• Recommend a racket for an intermediate player.</p>
+<ul>
 
-<p>• Compare Wilson Blade 98 vs Head Speed MP.</p>
+<li>Recommend a racket for an intermediate player.</li>
 
-<p>• Best string for RF 01 Pro?</p>
+<li>Compare Wilson Blade 98 vs Head Speed MP.</li>
 
-<p>• My elbow hurts. Suggest a comfortable setup.</p>
+<li>Best string for RF 01 Pro?</li>
+
+<li>My elbow hurts. Suggest a comfortable setup.</li>
+
+</ul>
 
 </div>
 
-<div id="answer" class="answer">
+<div id="answer" class="result">
 
 AI Recommendation will appear here...
 
@@ -177,29 +180,39 @@ async function askAI(){
 
 const question=document.getElementById("question").value;
 
-if(question==""){
+document.getElementById("answer").innerHTML="Thinking...";
 
-alert("Please enter a question.");
+try{
 
-return;
+const response=await fetch("你的Make Webhook地址",{
+
+method:"POST",
+
+headers:{
+
+"Content-Type":"application/json"
+
+},
+
+body:JSON.stringify({
+
+question:question
+
+})
+
+});
+
+const data=await response.json();
+
+document.getElementById("answer").innerHTML=data.output;
 
 }
 
-document.getElementById("answer").innerHTML="Thinking...";
+catch(e){
 
+document.getElementById("answer").innerHTML="Connection Failed.";
 
-
-/*
-
-下一步这里接 Make Webhook
-
-*/
-
-document.getElementById("answer").innerHTML=
-
-"You asked:\n\n"+question+
-
-"\n\n(Next step: connect Make.com webhook.)";
+}
 
 }
 
