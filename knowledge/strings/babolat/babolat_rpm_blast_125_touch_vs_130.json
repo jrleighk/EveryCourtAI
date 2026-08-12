@@ -1,0 +1,255 @@
+{
+  "id": "babolat_rpm_blast_125_touch_vs_130",
+  "brand": "Babolat",
+  "series": "RPM Blast + Touch VS",
+  "model": "RPM Blast 125 + Touch VS 130",
+  "category": "Hybrid String Set",
+
+  "manufacturer_data": {
+    "packaging": "Hybrid Set",
+    "length_m": 12,
+    "length_ft": 39,
+    "composition": [
+      "Co-Polyester",
+      "Natural Gut"
+    ],
+    "country_of_origin": "France",
+    "tour_usage": "Extensively used on tour"
+  },
+
+  "hybrid_components": {
+    "polyester_string": {
+      "product_id": "babolat_rpm_blast",
+      "name": "Babolat RPM Blast",
+      "gauge_mm": 1.25,
+      "material": "Co-Polyester",
+      "recommended_position": "Mains"
+    },
+
+    "natural_gut_string": {
+      "product_id": "babolat_touch_vs",
+      "name": "Babolat Touch VS",
+      "gauge_mm": 1.30,
+      "material": "Natural Gut",
+      "recommended_position": "Crosses"
+    }
+  },
+
+  "default_configuration": {
+    "mains": {
+      "string": "Babolat RPM Blast",
+      "gauge_mm": 1.25
+    },
+    "crosses": {
+      "string": "Babolat Touch VS",
+      "gauge_mm": 1.30
+    },
+    "configuration_type": "Poly Mains / Gut Crosses"
+  },
+
+  "alternative_configuration": {
+    "mains": {
+      "string": "Babolat Touch VS",
+      "gauge_mm": 1.30
+    },
+    "crosses": {
+      "string": "Babolat RPM Blast",
+      "gauge_mm": 1.25
+    },
+    "configuration_type": "Gut Mains / Poly Crosses",
+    "effect": [
+      "More Power",
+      "More Comfort",
+      "More Feel",
+      "Less Control than Poly Mains"
+    ]
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 9,
+    "feel": 10,
+    "durability": 9,
+    "tension_maintenance": 10,
+    "elasticity": 9,
+    "launch_angle": "Medium"
+  },
+
+  "design_profile": {
+    "string_type": "Tour Hybrid",
+    "target_player": "Advanced and Tournament Players",
+    "arm_friendly": true,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "tension_stability_focus": true
+  },
+
+  "recommended_player": {
+    "level": [
+      "Advanced",
+      "Tournament",
+      "Professional"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "All Court",
+      "Attacking Player"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Babolat Pure Aero",
+    "Babolat Pure Drive",
+    "Babolat Pure Strike",
+    "Wilson Pro Staff",
+    "Wilson Blade",
+    "Yonex VCORE",
+    "Yonex EZONE",
+    "HEAD Speed",
+    "Tecnifibre T-FIGHT",
+    "Dunlop SX"
+  ],
+
+  "recommended_tension": {
+    "poly_mains_gut_crosses": {
+      "club_player_kg": {
+        "mains": "21-23",
+        "crosses": "22-24"
+      },
+      "advanced_player_kg": {
+        "mains": "22-24",
+        "crosses": "23-25"
+      },
+      "professional_kg": {
+        "mains": "23-26",
+        "crosses": "24-27"
+      }
+    },
+
+    "gut_mains_poly_crosses": {
+      "club_player_kg": {
+        "mains": "22-24",
+        "crosses": "20-22"
+      },
+      "advanced_player_kg": {
+        "mains": "23-25",
+        "crosses": "21-23"
+      },
+      "professional_kg": {
+        "mains": "24-27",
+        "crosses": "22-25"
+      }
+    }
+  },
+
+  "hybrid_characteristics": {
+    "rpm_blast_role": [
+      "Spin Generation",
+      "Directional Control",
+      "Durability"
+    ],
+
+    "touch_vs_role": [
+      "Feel",
+      "Elasticity",
+      "Comfort",
+      "Power",
+      "Tension Stability"
+    ],
+
+    "combined_benefits": [
+      "Maximum Spin",
+      "Excellent Control",
+      "Premium Feel",
+      "High Power",
+      "Improved Comfort",
+      "Excellent Tension Stability",
+      "High Competitive Durability"
+    ]
+  },
+
+  "estimated_lifespan": {
+    "heavy_topspin_hours": "8-14",
+    "club_player_hours": "15-25"
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Advanced Players Wanting Spin Without Losing Feel",
+      "Fast Swing Speeds",
+      "Aggressive Baselining",
+      "Players Wanting More Comfort Than Full Polyester",
+      "Players Seeking Tour-Style Hybrid Performance"
+    ],
+
+    "avoid_for": [
+      "Beginners",
+      "Very Slow Swing Speeds",
+      "Players Looking for a Low-Cost Setup",
+      "Players Who Frequently Break Natural Gut"
+    ],
+
+    "alternative_strings": [
+      "Babolat RPM Blast Full Bed",
+      "Babolat Touch VS Full Bed",
+      "Luxilon ALU Power + Natural Gut",
+      "Tecnifibre Razor Soft + X-One Biphase"
+    ]
+  },
+
+  "comparison_tags": [
+    "Tour Hybrid",
+    "Poly Mains Gut Crosses",
+    "Maximum Spin",
+    "Maximum Feel",
+    "High Control",
+    "High Comfort",
+    "Tour Proven"
+  ],
+
+  "ai_keywords": [
+    "babolat",
+    "rpm blast touch vs",
+    "rpm blast 125",
+    "touch vs 130",
+    "hybrid",
+    "poly gut hybrid",
+    "natural gut hybrid",
+    "spin",
+    "control",
+    "feel",
+    "tour hybrid"
+  ],
+
+  "target_competitors": [
+    "Luxilon ALU Power + Natural Gut",
+    "Luxilon 4G + Natural Gut",
+    "Tecnifibre Razor Soft + X-One Biphase"
+  ],
+
+  "description": {
+    "en": "Babolat RPM Blast 1.25 + Touch VS 1.30 is a premium hybrid string set combining the spin, control and durability of RPM Blast co-polyester with the exceptional feel, elasticity, comfort and tension stability of Touch VS natural gut. Babolat recommends RPM Blast in the mains and Touch VS in the crosses for maximum spin and control, while reversing the setup provides additional power, comfort and feel.",
+
+    "zh": "Babolat RPM Blast 1.25 + Touch VS 1.30 是一套高端混合穿线组合，将 RPM Blast 共聚酯线的旋转、控制与耐久性，与 Touch VS 天然肠线顶级的手感、弹性、舒适性及保磅性能结合。Babolat 建议将 RPM Blast 放在竖线、Touch VS 放在横线，以获得更强旋转和控制；如果将 Touch VS 放在竖线、RPM Blast 放在横线，则会获得更多力量、舒适性与击球反馈。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13"
+  }
+}
