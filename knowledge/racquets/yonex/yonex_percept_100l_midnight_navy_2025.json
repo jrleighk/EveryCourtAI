@@ -1,0 +1,154 @@
+{
+  "id": "yonex_percept_100l_midnight_navy_2025",
+  "brand": "Yonex",
+  "series": "PERCEPT",
+  "model": "PERCEPT 100L",
+  "year": 2025,
+  "edition": "Midnight Navy",
+  "category": "Racquet",
+  "collaboration": false,
+
+  "specifications": {
+    "head_size_sq_in": 100,
+    "length_in": 27.0,
+    "weight_g_unstrung": 280,
+    "balance_mm_unstrung": 335,
+    "string_pattern": "16x19",
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+
+    "grip_sizes": [
+      "L1",
+      "L2"
+    ]
+  },
+
+  "technology": [
+    "ISOMETRIC",
+    "SERVO FILTER",
+    "2G-Namd Flex Force",
+    "FlexCon System",
+    "Stiff Racquet Face Design"
+  ],
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 8,
+    "spin": 8,
+    "comfort": 10,
+    "maneuverability": 10,
+    "stability": 7
+  },
+
+  "playing_tags": [
+    "Intermediate",
+    "Comfort",
+    "Easy Swing",
+    "All Court"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate",
+      "Advanced"
+    ],
+    "swing_style": [
+      "Medium",
+      "Fast"
+    ],
+    "play_style": [
+      "All Court",
+      "Counter Puncher",
+      "Doubles"
+    ]
+  },
+
+  "recommended_skill_ntrp": {
+    "min": 3.0,
+    "max": 5.0
+  },
+
+  "recommended_skill_cn": {
+    "min": 2.5,
+    "max": 4.5
+  },
+
+  "recommended_match_type": [
+    "Singles",
+    "Doubles"
+  ],
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 45,
+      "max": 49
+    },
+    "multifilament": {
+      "min": 47,
+      "max": 53
+    },
+    "natural_gut": {
+      "min": 48,
+      "max": 54
+    },
+    "hybrid": {
+      "main": "47-49",
+      "cross": "45-47"
+    }
+  },
+
+  "comparison_tags": [
+    "Comfort",
+    "Lightweight",
+    "Easy Swing",
+    "100 Head Size",
+    "All Court"
+  ],
+
+  "ai_keywords": [
+    "comfort",
+    "lightweight",
+    "easy swing",
+    "280g",
+    "100sqin",
+    "16x19",
+    "percept",
+    "all court"
+  ],
+
+  "target_competitors": [
+    "Wilson Blade 100L",
+    "HEAD Radical Team",
+    "Babolat Pure Strike Team",
+    "Tecnifibre TF-X1 280"
+  ],
+
+  "release_status": {
+    "status": "current",
+    "replacement": null,
+    "discontinued": false
+  },
+
+  "description": {
+    "en": "The Yonex PERCEPT 100L Midnight Navy 2025 is a lightweight control racquet offering excellent comfort, maneuverability and forgiveness, making it ideal for improving intermediate players and doubles specialists.",
+
+    "zh": "Yonex PERCEPT 100L Midnight Navy 2025 采用100平方英寸拍面、280克空拍重量及16×19线床设计，在保持 PERCEPT 系列出色手感的同时，大幅提升挥拍速度与容错率，非常适合成长型球员、双打选手及希望减轻手臂负担的球员。"
+  },
+
+  "verification": {
+    "status": "verified",
+    "last_updated": "2026-08-12"
+  }
+}
