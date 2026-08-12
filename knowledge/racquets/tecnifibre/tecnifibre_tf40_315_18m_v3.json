@@ -1,0 +1,207 @@
+{
+  "id": "tecnifibre_tf40_315_18m_v3",
+  "brand": "Tecnifibre",
+  "series": "TF-40",
+  "model": "TF-40 315 18M V3",
+  "year": null,
+  "edition": "V3",
+  "category": "Racquet",
+  "collaboration": false,
+
+  "manufacturer_data": {
+    "reference": "14TF441582",
+    "range": "TF-40",
+    "main_material": "Graphite",
+    "head_size_cm2": 630,
+    "head_size_sq_in": 98,
+    "weight_g_unstrung": 315,
+    "weight_oz_unstrung": 11.1,
+    "length_cm": 68.6,
+    "string_pattern": "18x20",
+    "strung_status": "Unstrung"
+  },
+
+  "specifications": {
+    "head_size_sq_in": 98,
+    "head_size_cm2": 630,
+    "length_in": 27.0,
+    "length_cm": 68.6,
+    "weight_g_unstrung": 315,
+    "balance_mm_unstrung": null,
+    "string_pattern": "18x20",
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+    "twistweight": null,
+    "vibration_hz": null,
+
+    "grip_sizes": [
+      "L2",
+      "L3",
+      "L4"
+    ]
+  },
+
+  "technology": [
+    "RS Sharp Section",
+    "Fully Foamed Polyurethane Frame",
+    "Extense BG Grommets",
+    "TECNILAB"
+  ],
+
+  "playing_characteristics": {
+    "power": 7,
+    "control": 10,
+    "spin": 7,
+    "comfort": 9,
+    "maneuverability": 7,
+    "stability": 10
+  },
+
+  "playing_tags": [
+    "Advanced",
+    "Tournament",
+    "Control",
+    "Precision",
+    "Stability",
+    "Dense Pattern",
+    "Feel",
+    "All Court",
+    "Flat Hitter"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Advanced",
+      "Tournament",
+      "Regular Competition"
+    ],
+    "swing_style": [
+      "Fast",
+      "Very Fast"
+    ],
+    "play_style": [
+      "Aggressive Baseliner",
+      "All Court",
+      "Flat Hitter",
+      "Counter Puncher"
+    ]
+  },
+
+  "recommended_skill_ntrp": {
+    "min": 4.5,
+    "max": 6.5
+  },
+
+  "recommended_skill_cn": {
+    "min": 4.5,
+    "max": 6.0
+  },
+
+  "recommended_match_type": [
+    "Singles",
+    "Doubles"
+  ],
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 44,
+      "max": 49
+    },
+    "multifilament": {
+      "min": 47,
+      "max": 53
+    },
+    "natural_gut": {
+      "min": 49,
+      "max": 55
+    },
+    "hybrid": {
+      "main": "47-49",
+      "cross": "45-47"
+    }
+  },
+
+  "pro_player_usage": {
+    "tour_players": [
+      "Arthur Rinderknech",
+      "Martin Damm"
+    ],
+    "used_on_tour": true,
+    "retail_spec_exact_match": false
+  },
+
+  "comparison_tags": [
+    "Maximum Control",
+    "98 Head Size",
+    "315g",
+    "18x20 Pattern",
+    "Maximum Stability",
+    "Foam Filled",
+    "Traditional Control Frame",
+    "Tour Precision"
+  ],
+
+  "ai_keywords": [
+    "tecnifibre",
+    "tf-40",
+    "tf40",
+    "tf-40 315",
+    "315 18m",
+    "v3",
+    "98sqin",
+    "630cm2",
+    "315g",
+    "18x20",
+    "control",
+    "precision",
+    "stability",
+    "foam filled",
+    "rs sharp section",
+    "extense bg"
+  ],
+
+  "target_competitors": [
+    "Yonex PERCEPT 97D",
+    "Wilson Blade 98 18x20 V10",
+    "Dunlop CX 200 TOUR 18x20",
+    "HEAD Prestige Pro",
+    "Babolat Pure Strike 98 18x20"
+  ],
+
+  "release_status": {
+    "status": "current",
+    "replacement": null,
+    "discontinued": false
+  },
+
+  "description": {
+    "en": "The Tecnifibre TF-40 315 18M V3 is the most control- and stability-focused model in the TF-40 family. It features a 98 sq.in head, 315 g unstrung weight and a dense 18x20 string pattern for maximum directional precision and consistency. RS Sharp Section geometry optimizes frame flex at impact to preserve trajectory control while still delivering useful power. The frame is fully filled with polyurethane foam to absorb shock and create the signature TF-40 feel, while Exte​​nse BG grommets improve string movement and maintain responsiveness on off-center hits.",
+
+    "zh": "Tecnifibre TF-40 315 18M V3 是 TF-40 系列中最强调控制与稳定性的型号，采用98平方英寸拍面、315克空拍重量及18×20密集线床，为高水平球员提供极高的线路精准度与击球一致性。RS Sharp Section 拍框结构通过优化击球瞬间的拍框弯曲，在保持轨迹控制的同时提供适度力量；整支拍框内部填充聚氨酯泡沫，有效吸收冲击并形成 TF-40 标志性的扎实手感；Extense BG 线孔则通过更宽、更长的结构，让球线拥有更好的活动空间，从而提升非甜区击球时的响应与容错。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13",
+    "unverified_fields": [
+      "year",
+      "balance_mm_unstrung",
+      "beam_mm",
+      "stiffness_ra",
+      "swingweight",
+      "twistweight",
+      "vibration_hz"
+    ]
+  }
+}
