@@ -39,6 +39,7 @@
       {
         "gauge_mm": 1.18,
         "available": true,
+
         "power": 8,
         "control": 8,
         "spin": 10,
@@ -48,6 +49,7 @@
         "tension_maintenance": 7,
         "elasticity": 8,
         "launch_angle": "High",
+
         "recommended_use": [
           "Maximum Spin",
           "Fast Swing",
@@ -55,9 +57,11 @@
           "Players Who Do Not Break Strings Frequently"
         ]
       },
+
       {
         "gauge_mm": 1.24,
         "available": true,
+
         "power": 7,
         "control": 9,
         "spin": 10,
@@ -67,6 +71,7 @@
         "tension_maintenance": 8,
         "elasticity": 8,
         "launch_angle": "Medium-High",
+
         "recommended_use": [
           "Balanced Spin and Control",
           "All Court",
@@ -74,9 +79,11 @@
           "Aggressive Baseliner"
         ]
       },
+
       {
         "gauge_mm": 1.28,
         "available": true,
+
         "power": 7,
         "control": 9,
         "spin": 9,
@@ -86,6 +93,7 @@
         "tension_maintenance": 8,
         "elasticity": 7,
         "launch_angle": "Medium",
+
         "recommended_use": [
           "Heavy Hitters",
           "Advanced Competition",
@@ -93,9 +101,11 @@
           "Control"
         ]
       },
+
       {
         "gauge_mm": 1.32,
         "available": true,
+
         "power": 6,
         "control": 10,
         "spin": 8,
@@ -105,6 +115,7 @@
         "tension_maintenance": 9,
         "elasticity": 6,
         "launch_angle": "Medium-Low",
+
         "recommended_use": [
           "Frequent String Breakers",
           "Maximum Durability",
@@ -114,6 +125,37 @@
       }
     ]
   },
+
+  "color_variants": [
+    {
+      "color": "Black",
+      "available_gauges_mm": [
+        1.18,
+        1.24,
+        1.28,
+        1.32
+      ],
+      "performance_difference": false
+    },
+
+    {
+      "color": "Lime",
+      "available_gauges_mm": [
+        1.24,
+        1.28
+      ],
+      "performance_difference": false
+    },
+
+    {
+      "color": "Fire",
+      "available_gauges_mm": [
+        1.24,
+        1.28
+      ],
+      "performance_difference": false
+    }
+  ],
 
   "technology": [
     "Thermocore",
@@ -151,11 +193,13 @@
       "Advanced",
       "Tournament"
     ],
+
     "swing_speed": [
       "Medium-Fast",
       "Fast",
       "Very Fast"
     ],
+
     "play_style": [
       "Heavy Topspin",
       "Aggressive Baseliner",
@@ -180,6 +224,7 @@
   "recommended_hybrid": {
     "mains": true,
     "crosses": true,
+
     "best_pairings": [
       "Tecnifibre X-One Biphase",
       "Tecnifibre NRG²",
@@ -193,6 +238,7 @@
       "min": 22,
       "max": 25
     },
+
     "club_player_kg": "21-23",
     "advanced_player_kg": "22-24",
     "professional_kg": "23-25"
@@ -205,6 +251,7 @@
         "Higher Launch Angle",
         "Fast Racquet Head Speed"
       ],
+
       "tradeoffs": [
         "Lowest Durability",
         "More Frequent Restringing"
@@ -218,6 +265,7 @@
         "Control",
         "Tournament Play"
       ],
+
       "tradeoffs": [
         "Less Durability than 1.28 and 1.32"
       ]
@@ -230,6 +278,7 @@
         "Heavy Ball",
         "Advanced Players"
       ],
+
       "tradeoffs": [
         "Less Elasticity",
         "Slightly Lower Launch"
@@ -242,6 +291,7 @@
         "Frequent String Breakers",
         "Maximum Control"
       ],
+
       "tradeoffs": [
         "Lower Spin",
         "Firmer Feel",
@@ -284,10 +334,13 @@
   "ai_keywords": [
     "tecnifibre",
     "black code",
-    "black code 1.18",
-    "black code 1.24",
-    "black code 1.28",
-    "black code 1.32",
+    "black code black",
+    "black code lime",
+    "black code fire",
+    "1.18",
+    "1.24",
+    "1.28",
+    "1.32",
     "co-polyester",
     "pentagonal",
     "thermocore",
@@ -307,9 +360,9 @@
   ],
 
   "description": {
-    "en": "Tecnifibre Black Code is a pentagonal co-polyester monofilament designed for aggressive spin and trajectory control. Its five-sided profile increases ball bite, while Tecnifibre's Thermocore manufacturing process uses controlled heating and cooling stages to reduce the natural stiffness of polyester and improve comfort. Available in 1.18, 1.24, 1.28 and 1.32 mm gauges, Black Code allows players to choose between maximum spin, balanced performance or greater durability and control.",
+    "en": "Tecnifibre Black Code is a pentagonal co-polyester monofilament designed for aggressive spin and trajectory control. Its five-sided profile increases ball bite, while Tecnifibre's Thermocore manufacturing process softens the natural stiffness of polyester for improved comfort. Black Code is available in Black, Lime and Fire colorways, with the Fire version available in 1.24 and 1.28 mm gauges.",
 
-    "zh": "Tecnifibre Black Code 是一款五边形共聚酯单丝球线，以强烈旋转和稳定的击球轨迹控制为核心。五边形截面能够更有效咬住网球，制造高上旋和更具攻击性的弹道；Tecnifibre 独有的 Thermocore 工艺通过多阶段加热与冷却降低聚酯材料天然的硬度，从而改善舒适性。提供 1.18、1.24、1.28 和 1.32 毫米四种线径：1.18 偏最大旋转，1.24 最均衡，1.28 更强调控制与耐久，而 1.32 则适合力量较大及频繁断线的球员。"
+    "zh": "Tecnifibre Black Code 是一款五边形共聚酯单丝球线，以强烈旋转和击球轨迹控制为核心。五边形截面能够增强咬球能力，而 Tecnifibre 独有的 Thermocore 工艺则通过多阶段加热与冷却降低聚酯材料的天然硬度，从而改善舒适性。Black Code 提供 Black、Lime 和 Fire 三种颜色，其中 Fire 配色目前录入 1.24 和 1.28 毫米两种线径。"
   },
 
   "verification": {
