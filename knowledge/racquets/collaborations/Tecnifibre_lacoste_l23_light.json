@@ -1,0 +1,193 @@
+{
+  "id": "lacoste_l23_light",
+  "brand": "Lacoste",
+  "series": "L23",
+  "model": "L23 Light",
+  "year": null,
+  "edition": "Lacoste x Tecnifibre",
+  "category": "Racquet",
+  "collaboration": true,
+
+  "collaboration_details": {
+    "name": "Lacoste x Tecnifibre",
+    "collaborators": [
+      "Lacoste",
+      "Tecnifibre"
+    ],
+    "type": "Brand Collaboration",
+    "limited_edition": false
+  },
+
+  "manufacturer_data": {
+    "reference": "18LACL23L1",
+    "range": "Lacoste",
+    "main_material": "Graphite",
+    "weight_g_unstrung": 275,
+    "weight_oz_unstrung": 9.7,
+    "balance_mm_unstrung": 320,
+    "string_pattern": "16x19",
+    "strung_status": "Unstrung"
+  },
+
+  "specifications": {
+    "head_size_sq_in": null,
+    "length_in": 27.0,
+    "weight_g_unstrung": 275,
+    "balance_mm_unstrung": 320,
+    "string_pattern": "16x19",
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+    "twistweight": null,
+    "vibration_hz": null,
+
+    "grip_sizes": [
+      "L2"
+    ]
+  },
+
+  "technology": [
+    "Variable-Density String Pattern",
+    "Optimized Sweet Spot",
+    "Graphite Frame"
+  ],
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 7,
+    "spin": 8,
+    "comfort": 10,
+    "maneuverability": 10,
+    "stability": 7
+  },
+
+  "playing_tags": [
+    "Beginner",
+    "Intermediate",
+    "Comfort",
+    "Forgiving",
+    "Lightweight",
+    "Easy Swing",
+    "Baseline",
+    "Stylish"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate"
+    ],
+    "swing_style": [
+      "Slow",
+      "Medium"
+    ],
+    "play_style": [
+      "Baseline",
+      "All Court",
+      "Recreational"
+    ]
+  },
+
+  "recommended_skill_ntrp": {
+    "min": 2.0,
+    "max": 4.0
+  },
+
+  "recommended_skill_cn": {
+    "min": 1.5,
+    "max": 3.5
+  },
+
+  "recommended_match_type": [
+    "Singles",
+    "Doubles"
+  ],
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 42,
+      "max": 47
+    },
+    "multifilament": {
+      "min": 45,
+      "max": 51
+    },
+    "natural_gut": {
+      "min": 47,
+      "max": 53
+    },
+    "hybrid": {
+      "main": "45-47",
+      "cross": "43-45"
+    }
+  },
+
+  "comparison_tags": [
+    "Lightweight",
+    "Comfort",
+    "Forgiving",
+    "Easy Power",
+    "Variable-Density String Pattern",
+    "Brand Collaboration"
+  ],
+
+  "ai_keywords": [
+    "lacoste",
+    "tecnifibre",
+    "lacoste x tecnifibre",
+    "l23",
+    "l23 light",
+    "275g",
+    "320mm",
+    "16x19",
+    "comfort",
+    "forgiving",
+    "lightweight",
+    "beginner",
+    "intermediate"
+  ],
+
+  "target_competitors": [
+    "Tecnifibre FIRE 270",
+    "Yonex EZONE 100SL",
+    "HEAD Boom MP L",
+    "Babolat Pure Drive Lite",
+    "Wilson Clash 100L"
+  ],
+
+  "release_status": {
+    "status": "current",
+    "replacement": null,
+    "discontinued": false
+  },
+
+  "description": {
+    "en": "The Lacoste L23 Light is a lightweight collaboration racquet developed with Tecnifibre, designed to deliver comfort, forgiveness and easy maneuverability. Weighing 275 g unstrung with a 320 mm balance and 16x19 string pattern, it is particularly suitable for beginner and intermediate players seeking effortless handling and controllable power. Its variable-density string pattern is tighter around the ideal hitting zone and more open toward the edges, helping combine tolerance, comfort and power.",
+
+    "zh": "Lacoste L23 Light 是 Lacoste 与 Tecnifibre 联合开发的轻量化联名球拍，主打舒适性、容错率与灵活操控。球拍采用275克空拍重量、320毫米平衡点及16×19线床，非常适合初学者和中级球员。其线床在核心甜区位置密度更高，而边缘区域更加开放，从而兼顾精准度、容错性与力量输出。整体风格轻盈、易打，并兼具 Lacoste 标志性的设计感。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13",
+    "unverified_fields": [
+      "year",
+      "head_size_sq_in",
+      "beam_mm",
+      "stiffness_ra",
+      "swingweight",
+      "twistweight",
+      "vibration_hz"
+    ]
+  }
+}
