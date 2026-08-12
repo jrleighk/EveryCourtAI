@@ -1,0 +1,184 @@
+{
+  "id": "dunlop_cx400_tour_2024",
+  "brand": "Dunlop",
+  "series": "CX",
+  "model": "CX 400 TOUR",
+  "year": 2024,
+  "edition": "Standard",
+  "category": "Racquet",
+  "collaboration": false,
+
+  "manufacturer_data": {
+    "product_number": "10349680",
+    "ean": "0045566180964",
+    "subgroup": "PREMIUM",
+    "level": "Advanced",
+    "colour_name": "Metallic Red/Neon Red/Basic Black",
+    "main_material": "Graphite",
+    "secondary_material": "Glassfibre"
+  },
+
+  "specifications": {
+    "head_size_sq_in": 100,
+    "length_in": 27.0,
+    "weight_g_unstrung": 300,
+    "balance_mm_unstrung": 320,
+    "balance_description": "Slightly Head Light",
+    "string_pattern": null,
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+
+    "grip_sizes": [
+      "L1",
+      "L2",
+      "L3",
+      "L4"
+    ]
+  },
+
+  "technology": [
+    "SONIC CORE with Infinergy",
+    "VIBROSHIELD",
+    "POWERGRID STRINGTECH+",
+    "CONTROL FRAME GEOMETRY"
+  ],
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 9,
+    "spin": 8,
+    "comfort": 9,
+    "maneuverability": 9,
+    "stability": 9
+  },
+
+  "playing_tags": [
+    "Advanced",
+    "Control",
+    "Power",
+    "Comfort",
+    "All Court",
+    "Modern Control",
+    "Tour"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+    "swing_style": [
+      "Medium-Fast",
+      "Fast"
+    ],
+    "play_style": [
+      "All Court",
+      "Aggressive Baseliner",
+      "Attacking Player",
+      "Doubles"
+    ]
+  },
+
+  "recommended_skill_ntrp": {
+    "min": 3.5,
+    "max": 5.5
+  },
+
+  "recommended_skill_cn": {
+    "min": 3.5,
+    "max": 5.0
+  },
+
+  "recommended_match_type": [
+    "Singles",
+    "Doubles"
+  ],
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 44,
+      "max": 49
+    },
+    "multifilament": {
+      "min": 47,
+      "max": 53
+    },
+    "natural_gut": {
+      "min": 49,
+      "max": 55
+    },
+    "hybrid": {
+      "main": "47-49",
+      "cross": "45-47"
+    }
+  },
+
+  "comparison_tags": [
+    "Balanced Control Racquet",
+    "100 Head Size",
+    "300g",
+    "Slightly Head Light",
+    "Control and Power",
+    "All Court"
+  ],
+
+  "ai_keywords": [
+    "dunlop",
+    "cx",
+    "cx400",
+    "cx400 tour",
+    "cx 400 tour",
+    "2024",
+    "100sqin",
+    "300g",
+    "320mm",
+    "control",
+    "power",
+    "comfort",
+    "all court",
+    "advanced"
+  ],
+
+  "target_competitors": [
+    "Yonex PERCEPT 100",
+    "HEAD Radical MP",
+    "Wilson Blade 100",
+    "Babolat Pure Strike 100",
+    "Tecnifibre TF40 305"
+  ],
+
+  "release_status": {
+    "status": "current",
+    "replacement": null,
+    "discontinued": false
+  },
+
+  "description": {
+    "en": "The Dunlop CX 400 TOUR 2024 is a versatile control-oriented performance racquet featuring a 100 sq.in head, 300 g unstrung weight and 320 mm slightly head-light balance. It blends control, power, comfort and stability in a more forgiving package than the smaller-headed CX 200 models. SONIC CORE with Infinergy improves rebound and vibration absorption, VIBROSHIELD enhances comfort and feel, POWERGRID STRINGTECH+ supports spin and power, while CONTROL FRAME GEOMETRY improves stability and swing-through.",
+
+    "zh": "Dunlop CX 400 TOUR 2024 是一款兼顾控制、力量与舒适性的高性能球拍，采用100平方英寸拍面、300克空拍重量及320毫米略偏头轻平衡设计。相比拍面更小的 CX 200 系列，它拥有更好的容错率与更容易获得的力量，同时仍保持 CX 系列强调的精准控制与稳定性。SONIC CORE with Infinergy 提升回弹与减震表现，VIBROSHIELD 改善舒适性与手感，POWERGRID STRINGTECH+ 增强旋转与力量，而 CONTROL FRAME GEOMETRY 则进一步提升拍框稳定性与挥拍效率。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13",
+    "unverified_fields": [
+      "string_pattern",
+      "beam_mm",
+      "stiffness_ra",
+      "swingweight"
+    ]
+  }
+}
