@@ -1,0 +1,190 @@
+{
+  "id": "tecnifibre_t_fight_tour_26_2025",
+  "brand": "Tecnifibre",
+  "series": "T-FIGHT",
+  "model": "T-FIGHT TOUR 26",
+  "year": 2025,
+  "edition": "Junior",
+  "category": "Racquet",
+  "collaboration": false,
+
+  "manufacturer_data": {
+    "reference": "14FIGHT526",
+    "range": "T-Fight",
+    "main_material": "Graphite",
+    "head_size_cm2": 645,
+    "head_size_sq_in": 100,
+    "weight_g_unstrung": 250,
+    "weight_oz_unstrung": 8.8,
+    "length_cm": 66,
+    "balance_mm_unstrung": 330,
+    "string_pattern": "16x17"
+  },
+
+  "specifications": {
+    "head_size_sq_in": 100,
+    "head_size_cm2": 645,
+    "length_in": 25.98,
+    "length_cm": 66,
+    "weight_g_unstrung": 250,
+    "balance_mm_unstrung": 330,
+    "string_pattern": "16x17",
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+    "twistweight": null,
+    "vibration_hz": null,
+
+    "grip_sizes": [
+      "L2"
+    ]
+  },
+
+  "technology": [
+    "100% Graphite Construction",
+    "Junior Performance Geometry",
+    "Open 16x17 String Pattern",
+    "Team Tecnifibre Replica Design"
+  ],
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 8,
+    "spin": 9,
+    "comfort": 9,
+    "maneuverability": 10,
+    "stability": 7
+  },
+
+  "playing_tags": [
+    "Junior",
+    "Competition",
+    "Lightweight",
+    "Spin",
+    "Control",
+    "Easy Swing",
+    "Transition Racquet"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Junior Competition",
+      "Intermediate Junior",
+      "Advanced Junior"
+    ],
+    "age_range": [
+      10,
+      12
+    ],
+    "swing_style": [
+      "Medium",
+      "Medium-Fast"
+    ],
+    "play_style": [
+      "All Court",
+      "Aggressive Baseliner",
+      "Developing Competitor"
+    ]
+  },
+
+  "recommended_skill_ntrp": {
+    "min": 2.5,
+    "max": 4.0
+  },
+
+  "recommended_skill_cn": {
+    "min": 2.0,
+    "max": 4.0
+  },
+
+  "recommended_match_type": [
+    "Singles",
+    "Doubles"
+  ],
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 38,
+      "max": 43
+    },
+    "multifilament": {
+      "min": 40,
+      "max": 46
+    },
+    "natural_gut": {
+      "min": 42,
+      "max": 48
+    },
+    "hybrid": {
+      "main": "40-42",
+      "cross": "38-40"
+    }
+  },
+
+  "comparison_tags": [
+    "Junior 26 Inch",
+    "100 Head Size",
+    "250g",
+    "16x17 Pattern",
+    "Competition Junior",
+    "Transition to Adult Racquet"
+  ],
+
+  "ai_keywords": [
+    "tecnifibre",
+    "t-fight",
+    "t fight tour 26",
+    "junior",
+    "2025",
+    "26 inch",
+    "100sqin",
+    "250g",
+    "330mm",
+    "16x17",
+    "10 to 12 years",
+    "competition junior",
+    "medvedev",
+    "iga swiatek"
+  ],
+
+  "target_competitors": [
+    "Wilson Blade 26 Junior",
+    "Babolat Pure Drive Junior 26",
+    "Yonex EZONE Junior 26",
+    "HEAD Speed Junior 26"
+  ],
+
+  "release_status": {
+    "status": "current",
+    "replacement": null,
+    "discontinued": false
+  },
+
+  "description": {
+    "en": "The Tecnifibre T-FIGHT TOUR 26 2025 is a 26-inch junior performance racquet designed for competitive players aged approximately 10 to 12. It features a 100 sq.in head, 250 g unstrung weight, 330 mm balance and an open 16x17 string pattern, delivering an effective blend of power, control and spin. Its 100% graphite construction provides a premium feel, while the lightweight setup helps young players develop technique, racquet-head speed and confidence before transitioning to a full-size adult racquet.",
+
+    "zh": "Tecnifibre T-FIGHT TOUR 26 2025 是一款面向约10至12岁竞技型青少年的26英寸高性能球拍。采用100平方英寸拍面、250克空拍重量、330毫米平衡点及16×17开放式线床，在力量、控制与旋转之间取得良好平衡。100%石墨结构提供更专业的击球反馈，而轻量化设计则有助于青少年球员学习完整动作、提升拍头速度，并顺利过渡到成人全尺寸球拍。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13",
+    "unverified_fields": [
+      "beam_mm",
+      "stiffness_ra",
+      "swingweight",
+      "twistweight",
+      "vibration_hz"
+    ]
+  }
+}
