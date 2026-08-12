@@ -1,0 +1,233 @@
+{
+  "id": "babolat_rpm_team",
+  "brand": "Babolat",
+  "series": "RPM",
+  "model": "RPM Team",
+  "category": "String",
+
+  "manufacturer_data": {
+    "packaging": "Set",
+    "length_m": 12,
+    "length_ft": 39,
+    "construction": "Monofilament",
+    "material": "Co-Polyester",
+    "composition": "Low-Density Co-Polyester",
+    "cross_section": "Octagonal",
+    "country_of_origin": "France"
+  },
+
+  "specifications": {
+    "string_family": "Polyester",
+    "construction": "Monofilament",
+    "cross_section": "Octagonal",
+    "surface": "Shaped",
+
+    "available_colors": [
+      "Black"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_mm": 1.25,
+        "available": true,
+
+        "power": 7,
+        "control": 9,
+        "spin": 9,
+        "comfort": 8,
+        "feel": 8,
+        "durability": 9,
+        "tension_maintenance": 8,
+        "elasticity": 8,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Spin",
+          "Control",
+          "Softer Polyester Feel",
+          "Intermediate to Advanced Players",
+          "Heavy Topspin",
+          "Players Seeking More Tolerance than RPM Blast"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "Low-Density Co-Polyester",
+    "Octagonal Structure",
+    "RPM Spin Technology",
+    "Soft Polyester Construction"
+  ],
+
+  "design_profile": {
+    "string_type": "Soft Spin Polyester",
+    "target_player": "Intermediate to Advanced",
+    "arm_friendly": true,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": false,
+    "comfort_focus": true,
+    "durability_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 7,
+    "control": 9,
+    "spin": 9,
+    "comfort": 8,
+    "feel": 8,
+    "durability": 9,
+    "tension_maintenance": 8,
+    "elasticity": 8,
+    "launch_angle": "Medium-High"
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium",
+      "Medium-Fast",
+      "Fast"
+    ],
+
+    "play_style": [
+      "Heavy Topspin",
+      "Aggressive Baseliner",
+      "Modern Baseline",
+      "All Court"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Babolat Pure Aero",
+    "Babolat Pure Drive",
+    "Babolat Pure Strike",
+    "Yonex VCORE",
+    "Yonex EZONE",
+    "HEAD Extreme",
+    "Wilson Shift",
+    "Tecnifibre T-FIGHT",
+    "Dunlop SX",
+    "Prince Tour"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Babolat Touch VS",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²",
+      "Tecnifibre Triax",
+      "Wilson Natural Gut"
+    ]
+  },
+
+  "recommended_tension": {
+    "club_player_kg": "21-23",
+    "advanced_player_kg": "22-24",
+    "professional_kg": "23-25"
+  },
+
+  "gauge_recommendation": {
+    "1.25": {
+      "best_for": [
+        "Balanced Spin and Control",
+        "Softer Polyester Feel",
+        "More Tolerance than RPM Blast",
+        "Modern Baseline Play"
+      ],
+
+      "tradeoffs": [
+        "Less Crisp than RPM Blast",
+        "Slightly Less Maximum Control than Firmer Polyester"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.25": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "15-25"
+    }
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Who Like RPM Blast but Want More Comfort",
+      "Intermediate to Advanced Players",
+      "Heavy Topspin Players",
+      "Players Wanting a Softer Co-Poly",
+      "Players Seeking Better Tolerance from Polyester"
+    ],
+
+    "avoid_for": [
+      "Beginners With Very Slow Swing Speed",
+      "Players Seeking Maximum Natural-Gut-Like Comfort",
+      "Players Wanting the Firmest Possible Control Response"
+    ],
+
+    "alternative_strings": [
+      "Babolat RPM Blast",
+      "Tecnifibre Razor Soft",
+      "Tecnifibre Black Code",
+      "Yonex Poly Tour Air",
+      "Luxilon Element"
+    ]
+  },
+
+  "comparison_tags": [
+    "Soft Polyester",
+    "Octagonal",
+    "High Spin",
+    "High Control",
+    "More Comfortable than RPM Blast",
+    "Durable",
+    "Low-Density Co-Polyester"
+  ],
+
+  "ai_keywords": [
+    "babolat",
+    "rpm team",
+    "rpm",
+    "team",
+    "1.25",
+    "125",
+    "polyester",
+    "co-poly",
+    "low-density co-polyester",
+    "octagonal",
+    "spin",
+    "control",
+    "soft poly",
+    "comfort"
+  ],
+
+  "target_competitors": [
+    "Tecnifibre Razor Soft",
+    "Luxilon Element",
+    "Yonex Poly Tour Air",
+    "HEAD Lynx Touch",
+    "Solinco Tour Bite Soft"
+  ],
+
+  "description": {
+    "en": "Babolat RPM Team is a softer spin-oriented co-polyester string designed for players who want the control and spin of the RPM family with a more forgiving response. Its octagonal profile improves ball bite and spin, while the low-density co-polyester construction produces a softer and more tolerant feel than firmer polyester strings such as RPM Blast. It is particularly well suited to intermediate and advanced players seeking modern spin performance without excessive stiffness.",
+
+    "zh": "Babolat RPM Team 是 RPM 系列中偏柔和、偏容错的一款旋转型共聚酯球线。八边形截面能够提升咬球能力和旋转表现，而低密度共聚酯结构则让击球手感比 RPM Blast 更柔和、更容易驾驭。它非常适合喜欢 RPM 系列控制与旋转，但希望降低聚酯线硬度和提升舒适性的中高级球员。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13"
+  }
+}
