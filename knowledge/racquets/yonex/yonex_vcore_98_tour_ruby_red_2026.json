@@ -1,0 +1,115 @@
+{
+  "id": "yonex_vcore_98_tour_ruby_red_2026",
+  "brand": "Yonex",
+  "series": "VCORE",
+  "model": "VCORE 98 TOUR",
+  "year": 2026,
+  "edition": "Ruby Red",
+  "category": "Racquet",
+  "collaboration": false,
+
+  "specifications": {
+    "head_size_sq_in": 98,
+    "length_in": 27.0,
+    "weight_g_unstrung": 315,
+    "balance_mm_unstrung": 325,
+    "string_pattern": "16x19",
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+
+    "grip_sizes": [
+      "L2",
+      "L3",
+      "L4"
+    ]
+  },
+
+  "technology": [
+    "ISOMETRIC",
+    "2G-Namd Flex Force",
+    "Silicone Oil Infused Grommets",
+    "Aero Trench",
+    "Aero Fin",
+    "VDM"
+  ],
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 10,
+    "spin": 10,
+    "comfort": 8,
+    "maneuverability": 8,
+    "stability": 10
+  },
+
+  "playing_tags": [
+    "Advanced",
+    "Professional",
+    "Spin",
+    "Modern Baseline",
+    "Tournament",
+    "Heavy Ball"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Advanced",
+      "Professional"
+    ],
+    "swing_style": [
+      "Fast"
+    ],
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "All Court"
+    ]
+  },
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 45,
+      "max": 49
+    },
+    "multifilament": {
+      "min": 47,
+      "max": 52
+    },
+    "natural_gut": {
+      "min": 49,
+      "max": 54
+    },
+    "hybrid": {
+      "main": "48-50",
+      "cross": "46-48"
+    }
+  },
+
+  "release_status": {
+    "status": "current",
+    "replacement": null,
+    "discontinued": false
+  },
+
+  "description": {
+    "en": "The Yonex VCORE 98 TOUR Ruby Red 2026 is designed for advanced tournament players seeking maximum stability, precision and spin. With a 315 g unstrung weight and 98 sq.in head, it delivers exceptional plow-through and heavy ball production.",
+
+    "zh": "Yonex VCORE 98 TOUR Ruby Red 2026 是 VCORE 系列中最偏竞技比赛定位的版本，采用98平方英寸拍面、315克空拍重量、325毫米平衡点以及16×19线床。相比标准版拥有更高的稳定性、更重的击球质量以及更精准的控制能力，适合高水平及职业比赛球员使用。"
+  },
+
+  "verification": {
+    "status": "verified",
+    "last_updated": "2026-08-12"
+  }
+}
