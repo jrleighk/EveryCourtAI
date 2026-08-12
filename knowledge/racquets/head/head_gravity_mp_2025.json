@@ -1,0 +1,93 @@
+{
+  "id": "head_gravity_mp_2025",
+  "brand": "Head",
+  "series": "Gravity",
+  "model": "Gravity MP",
+  "year": 2025,
+  "edition": null,
+  "category": "Racquet",
+  "collaboration": false,
+
+  "specifications": {
+    "head_size_sq_in": 100,
+    "length_in": 27.0,
+    "weight_g_unstrung": 295,
+    "balance_mm_unstrung": 325,
+    "string_pattern": "16x20",
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+
+    "grip_sizes": [
+      "L1",
+      "L2",
+      "L3",
+      "L4"
+    ]
+  },
+
+  "technology": [
+    "Auxetic 2.0",
+    "Graphene Inside",
+    "Sweet Zone",
+    "Flex Groove",
+    "Elliptical Beam"
+  ],
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 8,
+    "spin": 9,
+    "comfort": 9,
+    "maneuverability": 9,
+    "stability": 8
+  },
+
+  "playing_tags": [
+    "Intermediate",
+    "Advanced",
+    "Modern Control",
+    "Spin",
+    "Comfort",
+    "Large Sweet Spot",
+    "All Court",
+    "Aggressive Baseliner"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced"
+    ],
+    "swing_style": [
+      "Medium",
+      "Fast"
+    ],
+    "play_style": [
+      "Aggressive Baseliner",
+      "All Court"
+    ]
+  },
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": []
+  },
+
+  "recommended_tension_lbs": {
+    "min": null,
+    "max": null
+  },
+
+  "description": {
+    "en": "The Head Gravity MP 2025 features Auxetic 2.0 technology with a 100 sq.in head, 295 g unstrung weight, 325 mm balance and a 16x20 string pattern. It combines excellent spin potential, easy power and comfort with the large sweet spot that defines the Gravity family.",
+    "zh": "Head Gravity MP 2025 搭载 Auxetic 2.0 科技，100平方英寸拍面、295克空拍重量、325毫米平衡点及16×20线床。兼具旋转、舒适、容错与现代力量，是 Gravity 系列最受欢迎、适用范围最广的一款球拍。"
+  },
+
+  "verification": {
+    "status": "verified",
+    "last_updated": "2026-08-12"
+  }
+}
