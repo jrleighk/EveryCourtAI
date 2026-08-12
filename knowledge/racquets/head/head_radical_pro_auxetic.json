@@ -1,0 +1,71 @@
+{
+  "id": "head_radical_pro_auxetic",
+  "brand": "Head",
+  "series": "Radical",
+  "model": "Radical Pro",
+  "year": null,
+  "edition": "Auxetic",
+  "category": "Racquet",
+  "collaboration": false,
+
+  "specifications": {
+    "head_size_sq_in": 98,
+    "length_in": 27.0,
+    "weight_g_unstrung": 315,
+    "balance_mm_unstrung": 315,
+    "string_pattern": "16x19",
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null
+  },
+
+  "technology": [
+    "Auxetic"
+  ],
+
+  "playing_characteristics": {
+    "power": 7,
+    "control": 10,
+    "spin": 8,
+    "comfort": 8,
+    "maneuverability": 7,
+    "stability": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Advanced",
+      "Tournament"
+    ],
+    "swing_style": [
+      "Fast",
+      "Full Swing"
+    ],
+    "play_style": [
+      "Aggressive Baseliner",
+      "All Court"
+    ]
+  },
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": []
+  },
+
+  "recommended_tension_lbs": {
+    "min": null,
+    "max": null
+  },
+
+  "description": {
+    "en": "Head Radical Pro with Auxetic technology features a 98 sq.in head, 315 g unstrung weight and 16x19 string pattern. Built for advanced players seeking maximum stability, precision and confidence on aggressive shots.",
+    "zh": "Head Radical Pro Auxetic 版本，采用 Auxetic 科技，98平方英寸拍面、315克空拍重量、315毫米平衡点及16×19线床，专为高水平球员打造，提供卓越的稳定性、精准控制与进攻表现。"
+  },
+
+  "verification": {
+    "status": "verified",
+    "last_updated": "2026-08-12"
+  }
+}
