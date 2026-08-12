@@ -1,0 +1,196 @@
+{
+  "id": "babolat_rpm_blast",
+  "brand": "Babolat",
+  "series": "RPM",
+  "model": "RPM Blast",
+  "category": "String",
+
+  "manufacturer_data": {
+    "packaging": "Set",
+    "length_m": 12,
+    "construction": "Monofilament",
+    "material": "Co-Polyester",
+    "cross_section": "Octagonal",
+    "country_of_origin": "France"
+  },
+
+  "specifications": {
+    "string_family": "Polyester",
+    "construction": "Monofilament",
+    "cross_section": "Octagonal",
+    "surface": "Textured",
+
+    "available_colors": [
+      "Black"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_mm": 1.25,
+        "available": true,
+
+        "power": 6,
+        "control": 10,
+        "spin": 10,
+        "comfort": 5,
+        "feel": 7,
+        "durability": 10,
+        "tension_maintenance": 8,
+        "elasticity": 6,
+        "launch_angle": "Medium",
+
+        "recommended_use": [
+          "Maximum Spin",
+          "Heavy Topspin",
+          "Tournament Players",
+          "Aggressive Baseliners"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "High Density Co-Polyester",
+    "Octagonal Structure",
+    "RPM Spin Technology"
+  ],
+
+  "design_profile": {
+    "string_type": "Spin Polyester",
+    "target_player": "Advanced Tournament Players",
+    "arm_friendly": false,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": false,
+    "comfort_focus": false,
+    "durability_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 6,
+    "control": 10,
+    "spin": 10,
+    "comfort": 5,
+    "feel": 7,
+    "durability": 10,
+    "tension_maintenance": 8,
+    "elasticity": 6,
+    "launch_angle": "Medium"
+  },
+
+  "recommended_player": {
+    "level": [
+      "Advanced",
+      "Tournament",
+      "Professional"
+    ],
+
+    "swing_speed": [
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Heavy Topspin",
+      "Aggressive Baseliner",
+      "Modern Power Tennis"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Babolat Pure Aero",
+    "Babolat Pure Drive",
+    "Yonex VCORE",
+    "Yonex EZONE",
+    "HEAD Extreme",
+    "Wilson Shift",
+    "Wilson Blade",
+    "Tecnifibre T-FIGHT",
+    "Dunlop SX",
+    "Prince Tour"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Babolat VS Touch",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre Triax",
+      "Wilson Natural Gut"
+    ]
+  },
+
+  "recommended_tension": {
+    "club_player_kg": "21-23",
+    "advanced_player_kg": "22-24",
+    "professional_kg": "23-26"
+  },
+
+  "estimated_lifespan": {
+    "1.25": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "15-25"
+    }
+  },
+
+  "comparison_tags": [
+    "Maximum Spin",
+    "Tour Polyester",
+    "Octagonal",
+    "High Control",
+    "Very Durable",
+    "Rafael Nadal"
+  ],
+
+  "tour_players": [
+    {
+      "name": "Rafael Nadal",
+      "status": "Former ATP Player",
+      "string_setup": {
+        "mains": "Babolat RPM Blast 1.25",
+        "crosses": "Babolat RPM Blast 1.25",
+        "tension_kg": {
+          "mains": 25,
+          "crosses": 24
+        }
+      }
+    }
+  ],
+
+  "ai_keywords": [
+    "babolat",
+    "rpm blast",
+    "rpm",
+    "blast",
+    "black",
+    "polyester",
+    "co-poly",
+    "octagonal",
+    "spin",
+    "control",
+    "rafa",
+    "rafael nadal",
+    "1.25"
+  ],
+
+  "target_competitors": [
+    "Tecnifibre Black Code",
+    "Yonex Poly Tour Rev",
+    "Solinco Hyper-G",
+    "Luxilon ALU Power Spin",
+    "HEAD Lynx Tour"
+  ],
+
+  "description": {
+    "en": "Babolat RPM Blast is one of the world's most iconic polyester strings. Its octagonal high-density co-polyester construction generates exceptional spin, maximum control and outstanding durability. Designed for advanced players with fast swing speeds, RPM Blast is best known as Rafael Nadal's signature string.",
+
+    "zh": "Babolat RPM Blast 是全球最具代表性的聚酯球线之一，采用八边形高密度共聚酯结构，可提供极强旋转、卓越控制以及极高耐久性。适合挥拍速度快、追求现代旋转打法的中高级及职业球员，也是 Rafael Nadal 长期使用的标志性球线。"
+  },
+
+  "verification": {
+    "status": "verified_from_manufacturer_information",
+    "last_updated": "2026-08-13"
+  }
+}
