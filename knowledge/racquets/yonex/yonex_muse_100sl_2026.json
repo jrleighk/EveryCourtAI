@@ -1,0 +1,109 @@
+{
+  "id": "yonex_muse_100sl_2026",
+  "brand": "Yonex",
+  "series": "MUSE",
+  "model": "MUSE 100SL",
+  "year": 2026,
+  "edition": null,
+  "category": "Racquet",
+  "collaboration": false,
+
+  "specifications": {
+    "head_size_sq_in": 100,
+    "length_in": 27.0,
+    "weight_g_unstrung": 265,
+    "balance_mm_unstrung": 330,
+    "string_pattern": "16x18",
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+
+    "grip_sizes": [
+      "L1",
+      "L2",
+      "L3"
+    ]
+  },
+
+  "technology": [
+    "ISOMETRIC",
+    "2G-Namd Flex Force",
+    "VDM",
+    "Servo Filter"
+  ],
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 6,
+    "spin": 8,
+    "comfort": 10,
+    "maneuverability": 10,
+    "stability": 6
+  },
+
+  "playing_tags": [
+    "Comfort",
+    "Ultra Lightweight",
+    "Easy Power",
+    "Easy Swing",
+    "Spin Friendly",
+    "Large Sweet Spot",
+    "Beginner",
+    "Intermediate"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate"
+    ],
+    "swing_style": [
+      "Slow",
+      "Medium"
+    ],
+    "play_style": [
+      "All Court",
+      "Baseline"
+    ]
+  },
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 45,
+      "max": 49
+    },
+    "multifilament": {
+      "min": 47,
+      "max": 52
+    },
+    "natural_gut": {
+      "min": 49,
+      "max": 53
+    },
+    "hybrid": {
+      "main": "47-49",
+      "cross": "45-47"
+    }
+  },
+
+  "description": {
+    "en": "The Yonex MUSE 100SL 2026 is the lightest model in the MUSE family, featuring a 100 sq.in head, 265 g unstrung weight, 330 mm balance and a 16x18 string pattern. It delivers outstanding comfort, effortless maneuverability and easy power, making it ideal for beginners, junior players, women and recreational players seeking a lightweight performance racquet.",
+
+    "zh": "Yonex MUSE 100SL 2026 是 MUSE 系列中最轻量化的型号，采用100平方英寸拍面、265克空拍重量、330毫米平衡点及16×18开放式线床设计。具备极佳的舒适性、轻松挥拍能力及良好的发力表现，非常适合初学者、女性球员、青少年以及希望降低挥拍负担的休闲球员。"
+  },
+
+  "verification": {
+    "status": "verified",
+    "last_updated": "2026-08-12"
+  }
+}
