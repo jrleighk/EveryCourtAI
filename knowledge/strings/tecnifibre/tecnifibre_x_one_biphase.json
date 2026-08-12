@@ -1,0 +1,305 @@
+{
+  "id": "tecnifibre_x_one_biphase",
+  "brand": "Tecnifibre",
+  "series": "X-One Biphase",
+  "model": "X-One Biphase",
+  "category": "String",
+
+  "manufacturer_data": {
+    "packaging": "Set",
+    "length_m": 12,
+    "construction": "Multifilament",
+    "material": "Polyamide",
+    "fiber_composition": {
+      "elastyl_percentage": 50,
+      "h2c_percentage": 50
+    },
+    "polyurethane": "PU400",
+    "technology": "Biphase Pre-Stretch",
+    "surface_finish": "SPL",
+    "country_of_origin": "France",
+
+    "recommended_tension_kg": {
+      "min": 22,
+      "max": 25
+    },
+
+    "maximum_tension_kg": 32
+  },
+
+  "specifications": {
+    "string_family": "Premium Multifilament",
+    "construction": "Multifilament",
+    "cross_section": "Round",
+    "surface": "Smooth",
+
+    "available_colors": [
+      "Natural",
+      "Red",
+      "Black"
+    ],
+
+    "available_gauges": [
+
+      {
+        "gauge_mm": 1.18,
+        "gauge_us": "18",
+        "available": true,
+
+        "power": 10,
+        "control": 8,
+        "spin": 8,
+        "comfort": 10,
+        "feel": 10,
+        "durability": 6,
+        "tension_maintenance": 9,
+        "elasticity": 10,
+        "launch_angle": "Medium-High"
+      },
+
+      {
+        "gauge_mm": 1.24,
+        "gauge_us": "17",
+        "available": true,
+
+        "power": 9,
+        "control": 8,
+        "spin": 8,
+        "comfort": 10,
+        "feel": 10,
+        "durability": 7,
+        "tension_maintenance": 9,
+        "elasticity": 9,
+        "launch_angle": "Medium"
+      },
+
+      {
+        "gauge_mm": 1.30,
+        "gauge_us": "16",
+        "available": true,
+
+        "power": 8,
+        "control": 9,
+        "spin": 7,
+        "comfort": 9,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 10,
+        "elasticity": 8,
+        "launch_angle": "Medium-Low"
+      },
+
+      {
+        "gauge_mm": 1.34,
+        "gauge_us": "15L",
+        "available": true,
+
+        "power": 7,
+        "control": 9,
+        "spin": 6,
+        "comfort": 9,
+        "feel": 8,
+        "durability": 10,
+        "tension_maintenance": 10,
+        "elasticity": 7,
+        "launch_angle": "Low"
+      }
+
+    ]
+  },
+
+  "technology": [
+    "Biphase",
+    "PU400",
+    "Elastyl",
+    "H²C Fibres",
+    "SPL Finish"
+  ],
+
+  "design_profile": {
+    "string_type": "Premium Multifilament",
+    "target_player": "Comfort & Feel",
+    "arm_friendly": true,
+    "spin_focus": false,
+    "control_focus": true,
+    "power_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 8,
+    "spin": 8,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 8,
+    "tension_maintenance": 9,
+    "elasticity": 9,
+    "launch_angle": "Medium"
+  },
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate",
+      "Advanced"
+    ],
+
+    "swing_speed": [
+      "Slow",
+      "Medium",
+      "Medium-Fast"
+    ],
+
+    "play_style": [
+      "All Court",
+      "Serve & Volley",
+      "Touch Player",
+      "Baseline"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Clash",
+    "Wilson Blade",
+    "Yonex EZONE",
+    "Yonex PERCEPT",
+    "Tecnifibre T-FIGHT",
+    "Tecnifibre TF-40",
+    "HEAD Speed",
+    "HEAD Radical",
+    "Prince Tour",
+    "Dunlop CX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Razor Soft",
+      "Razor Spin",
+      "Black Code",
+      "Luxilon ALU Power",
+      "Natural Gut"
+    ]
+  },
+
+  "recommended_tension": {
+    "manufacturer_kg": {
+      "min": 22,
+      "max": 25
+    },
+
+    "club_player_kg": "22-24",
+
+    "advanced_player_kg": "23-25",
+
+    "professional_kg": "24-26"
+  },
+
+  "gauge_recommendation": {
+
+    "1.18": {
+      "best_for": [
+        "Maximum Feel",
+        "Maximum Power",
+        "Comfort",
+        "Touch"
+      ]
+    },
+
+    "1.24": {
+      "best_for": [
+        "Balanced Performance",
+        "Feel",
+        "Comfort",
+        "Club Competition"
+      ]
+    },
+
+    "1.30": {
+      "best_for": [
+        "Durability",
+        "Control",
+        "String Breakers"
+      ]
+    },
+
+    "1.34": {
+      "best_for": [
+        "Maximum Durability",
+        "Frequent String Breakers",
+        "Coaches"
+      ]
+    }
+
+  },
+
+  "estimated_lifespan": {
+
+    "1.18": {
+      "heavy_topspin_hours": "4-8",
+      "club_player_hours": "10-18"
+    },
+
+    "1.24": {
+      "heavy_topspin_hours": "6-10",
+      "club_player_hours": "12-20"
+    },
+
+    "1.30": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "18-28"
+    },
+
+    "1.34": {
+      "heavy_topspin_hours": "10-18",
+      "club_player_hours": "20-35"
+    }
+
+  },
+
+  "comparison_tags": [
+    "Premium Multifilament",
+    "Maximum Comfort",
+    "Maximum Feel",
+    "Natural Gut Alternative",
+    "High Power",
+    "Excellent Tension Maintenance"
+  ],
+
+  "ai_keywords": [
+    "tecnifibre",
+    "x-one biphase",
+    "multifilament",
+    "comfort",
+    "feel",
+    "power",
+    "natural gut alternative",
+    "pu400",
+    "biphase",
+    "1.18",
+    "1.24",
+    "1.30",
+    "1.34"
+  ],
+
+  "target_competitors": [
+    "Wilson NXT",
+    "Babolat Xcel",
+    "Yonex Rexis Comfort",
+    "HEAD Velocity MLT",
+    "Gamma Live Wire Professional"
+  ],
+
+  "description": {
+    "en": "Tecnifibre X-One Biphase is one of the world's benchmark premium multifilament strings. Manufactured in France with over 1,400 Elastyl and H²C fibres impregnated in PU400 polyurethane and finished using the exclusive Biphase pre-stretch process, it delivers exceptional comfort, feel, power and outstanding tension maintenance while offering multiple gauges to suit different player preferences.",
+
+    "zh": "Tecnifibre X-One Biphase 是全球最具代表性的高端多芯球线之一。法国制造，采用超过1400根 Elastyl 与 H²C 微纤维，并使用 PU400 聚氨酯整体浸润及 Biphase 双向预拉伸工艺生产，拥有极佳的力量、舒适性、击球反馈及保磅性能，同时提供 1.18、1.24、1.30、1.34 四种线径，以满足不同球员对于旋转、耐久及手感的需求。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13"
+  }
+}
