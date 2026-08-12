@@ -1,0 +1,162 @@
+{
+  "id": "tecnifibre_triax_natural_128",
+  "brand": "Tecnifibre",
+  "series": "Triax",
+  "model": "Triax Natural",
+  "category": "String",
+
+  "manufacturer_data": {
+    "packaging": "Set",
+    "length_m": 12,
+    "construction": "Hybrid Multifilament",
+    "material": [
+      "Polyester",
+      "Polyamide",
+      "Polyurethane"
+    ],
+    "gauge_mm": 1.28,
+    "country_of_origin": "France"
+  },
+
+  "specifications": {
+    "string_family": "Hybrid Multifilament",
+    "construction": "Hybrid Multifilament",
+    "cross_section": "Round",
+    "surface": "Smooth",
+    "color": "Natural",
+    "available_colors": [
+      "Natural"
+    ],
+    "available_gauges_mm": [
+      1.28
+    ]
+  },
+
+  "technology": [
+    "Hybrid Multifilament",
+    "Polyester Core",
+    "Polyamide Fibres",
+    "Polyurethane Matrix"
+  ],
+
+  "design_profile": {
+    "string_type": "Control Multifilament",
+    "target_player": "Performance Players",
+    "arm_friendly": true,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "durability_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 9,
+    "spin": 8,
+    "comfort": 9,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+    "swing_speed": [
+      "Medium",
+      "Medium-Fast",
+      "Fast"
+    ],
+    "play_style": [
+      "All Court",
+      "Baseline",
+      "Aggressive Baseliner",
+      "Counter Puncher"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Tecnifibre TF-40",
+    "Tecnifibre T-FIGHT",
+    "Wilson Blade",
+    "Wilson Clash",
+    "Yonex PERCEPT",
+    "Yonex EZONE",
+    "HEAD Speed",
+    "HEAD Radical",
+    "Prince Tour",
+    "Dunlop CX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+    "best_pairings": [
+      "Razor Soft",
+      "Razor Spin",
+      "Black Code",
+      "Luxilon ALU Power"
+    ]
+  },
+
+  "recommended_tension": {
+    "club_player_kg": "22-24",
+    "advanced_player_kg": "23-25",
+    "professional_kg": "24-26"
+  },
+
+  "estimated_lifespan": {
+    "heavy_topspin_hours": "8-12",
+    "club_player_hours": "15-25",
+    "beginner_hours": "25+",
+    "recommended_restring_days": {
+      "competitive": 21,
+      "club": 35,
+      "casual": 60
+    }
+  },
+
+  "comparison_tags": [
+    "Hybrid Multifilament",
+    "Polyester Feel",
+    "Multifilament Comfort",
+    "Control",
+    "Spin",
+    "Excellent Durability",
+    "Outstanding Tension Maintenance"
+  ],
+
+  "ai_keywords": [
+    "tecnifibre",
+    "triax",
+    "hybrid multifilament",
+    "polyester",
+    "polyamide",
+    "polyurethane",
+    "control",
+    "comfort",
+    "durability",
+    "1.28"
+  ],
+
+  "target_competitors": [
+    "Head Hawk Touch",
+    "Luxilon Element",
+    "Wilson NXT Control",
+    "Head Velocity MLT",
+    "Yonex Rexis Speed"
+  ],
+
+  "description": {
+    "en": "Tecnifibre Triax is the world's first Hybrid Multifilament string, combining polyester, polyamide and polyurethane into a single construction. It offers the comfort and power of a premium multifilament while delivering the control, spin and durability typically associated with polyester strings, making it one of the most balanced strings in the Tecnifibre lineup.",
+    "zh": "Tecnifibre Triax 是全球首款 Hybrid Multifilament（混合多芯）球线，将聚酯、聚酰胺与聚氨酯三种材料融合于同一结构中。它兼具传统多芯线的舒适性和力量输出，同时拥有接近聚酯线的控制、旋转和耐久表现，是 Tecnifibre 产品线中最均衡、最全面的高性能球线之一。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13"
+  }
+}
