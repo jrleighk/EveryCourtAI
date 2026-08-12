@@ -1,0 +1,13 @@
+{
+  "version": "1.0",
+
+  "rules": {
+
+    "hybrid_strings": "knowledge/recommendations/hybrid_strings.json",
+    "arm_friendly": "knowledge/recommendations/arm_friendly.json",
+    "power_setup": "knowledge/recommendations/power_setup.json",
+    "control_setup": "knowledge/recommendations/control_setup.json",
+    "spin_setup": "knowledge/recommendations/spin_setup.json"
+
+  }
+}
