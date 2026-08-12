@@ -1,0 +1,230 @@
+{
+  "id": "tecnifibre_tempo_265_v2",
+  "brand": "Tecnifibre",
+  "series": "TEMPO",
+  "model": "TEMPO 265 V2",
+  "year": null,
+  "edition": "V2",
+  "category": "Racquet",
+  "collaboration": false,
+
+  "manufacturer_data": {
+    "reference": "14TEM26540",
+    "range": "Tempo",
+    "main_material": "Graphite",
+    "head_size_cm2": 660,
+    "head_size_sq_in": 102,
+    "weight_g_unstrung": 265,
+    "weight_oz_unstrung": 9.35,
+    "length_cm": 67.5,
+    "length_in": 26.57,
+    "balance_mm_unstrung": null,
+    "string_pattern": "16x19",
+    "strung_status": "Unstrung"
+  },
+
+  "specifications": {
+    "head_size_sq_in": 102,
+    "head_size_cm2": 660,
+    "length_in": 26.57,
+    "length_cm": 67.5,
+    "weight_g_unstrung": 265,
+    "weight_oz_unstrung": 9.35,
+    "balance_mm_unstrung": null,
+    "balance_description": null,
+    "string_pattern": "16x19",
+
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+    "twistweight": null,
+    "vibration_hz": null,
+
+    "grip_sizes": [
+      "L0",
+      "L1",
+      "L2"
+    ]
+  },
+
+  "technology": [
+    "X-SHORT",
+    "Women's Specific Design",
+    "TECNILAB",
+    "Large Sweet Spot",
+    "Shortened Frame Geometry"
+  ],
+
+  "design_profile": {
+    "target_biomechanics": "Women",
+    "frame_length_type": "Shortened",
+    "frame_length_cm": 67.5,
+    "lightweight_focus": true,
+    "x_short": true,
+    "oversize": false,
+    "tour_focus": false,
+    "arm_friendly": true,
+    "swing_acceleration": "High",
+    "design_philosophy": "Women's Specific Performance"
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 7,
+    "spin": 8,
+    "comfort": 9,
+    "maneuverability": 10,
+    "stability": 6
+  },
+
+  "playing_tags": [
+    "Women's Performance",
+    "Beginner",
+    "Intermediate",
+    "Lightweight",
+    "Easy Swing",
+    "Easy Power",
+    "Forgiving",
+    "Large Sweet Spot",
+    "Club Player",
+    "Junior Transition"
+  ],
+
+  "recommended_player": {
+    "gender_focus": "Women",
+    "level": [
+      "Beginner",
+      "Intermediate",
+      "Regular Player",
+      "Recreational Player",
+      "Junior Transition"
+    ],
+    "swing_style": [
+      "Slow",
+      "Medium"
+    ],
+    "play_style": [
+      "Baseline",
+      "All Court",
+      "Recreational",
+      "Doubles"
+    ]
+  },
+
+  "recommended_skill_ntrp": {
+    "min": 1.5,
+    "max": 3.5
+  },
+
+  "recommended_skill_cn": {
+    "min": 1.0,
+    "max": 3.0
+  },
+
+  "recommended_match_type": [
+    "Singles",
+    "Doubles"
+  ],
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 40,
+      "max": 45
+    },
+    "multifilament": {
+      "min": 44,
+      "max": 50
+    },
+    "natural_gut": {
+      "min": 46,
+      "max": 52
+    },
+    "hybrid": {
+      "main": "44-46",
+      "cross": "42-44"
+    }
+  },
+
+  "pro_player_usage": {
+    "ambassador": [
+      "Iga Swiatek"
+    ],
+    "used_on_tour": false,
+    "retail_spec_exact_match": false
+  },
+
+  "comparison_tags": [
+    "Women's Specific",
+    "102 Head Size",
+    "265g",
+    "Shortened Length",
+    "X-SHORT",
+    "Easy Power",
+    "Large Sweet Spot",
+    "High Maneuverability"
+  ],
+
+  "ai_keywords": [
+    "tecnifibre",
+    "tempo",
+    "tempo 265",
+    "tempo 265 v2",
+    "women",
+    "women's racket",
+    "265g",
+    "102sqin",
+    "660cm2",
+    "16x19",
+    "67.5cm",
+    "x-short",
+    "lightweight",
+    "easy power",
+    "forgiving",
+    "beginner",
+    "intermediate"
+  ],
+
+  "target_competitors": [
+    "Tecnifibre TEMPO 270 V2",
+    "Yonex EZONE 100SL",
+    "Babolat Pure Drive Lite",
+    "HEAD Boom MP L",
+    "Wilson Clash 100L"
+  ],
+
+  "release_status": {
+    "status": "current",
+    "replacement": null,
+    "discontinued": false
+  },
+
+  "description": {
+    "en": "The Tecnifibre TEMPO 265 V2 is a lightweight women's performance racquet designed for regular, recreational and developing players. It features a 102 sq.in head, 265 g unstrung weight, shortened 67.5 cm frame and a 16x19 string pattern. X-SHORT technology reduces overall bulk and helps improve racquet-head acceleration, while the larger 102 sq.in head provides additional power and forgiveness. Its lightweight construction also makes it suitable for younger players transitioning toward adult racquets.",
+
+    "zh": "Tecnifibre TEMPO 265 V2 是一款专为女性球员设计的轻量化高性能球拍，主要面向日常、休闲及成长型球员。球拍采用102平方英寸拍面、265克空拍重量、67.5厘米缩短拍长及16×19线床。X-SHORT 技术通过缩短拍身减少挥拍阻力，使拍头更容易加速；102平方英寸大拍面则提供更大的甜区、更轻松的力量输出及更高容错率。轻量化设计也非常适合正在向成人球拍过渡的年轻球员。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13",
+    "unverified_fields": [
+      "year",
+      "balance_mm_unstrung",
+      "beam_mm",
+      "stiffness_ra",
+      "swingweight",
+      "twistweight",
+      "vibration_hz"
+    ]
+  }
+}
