@@ -1,0 +1,211 @@
+{
+  "id": "tecnifibre_tempo_270_v2",
+  "brand": "Tecnifibre",
+  "series": "TEMPO",
+  "model": "TEMPO 270 V2",
+  "year": null,
+  "edition": "V2",
+  "category": "Racquet",
+  "collaboration": false,
+
+  "manufacturer_data": {
+    "reference": "14TEM27040",
+    "range": "Tempo",
+    "main_material": "Graphite",
+    "head_size_cm2": 645,
+    "head_size_sq_in": 100,
+    "weight_g_unstrung": 270,
+    "weight_oz_unstrung": 9.5,
+    "length_cm": 67.5,
+    "length_in": 26.57,
+    "balance_mm_unstrung": null,
+    "string_pattern": "16x19",
+    "strung_status": "Unstrung"
+  },
+
+  "specifications": {
+    "head_size_sq_in": 100,
+    "head_size_cm2": 645,
+    "length_in": 26.57,
+    "length_cm": 67.5,
+    "weight_g_unstrung": 270,
+    "weight_oz_unstrung": 9.5,
+    "balance_mm_unstrung": null,
+    "balance_description": null,
+    "string_pattern": "16x19",
+
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+    "twistweight": null,
+    "vibration_hz": null,
+
+    "grip_sizes": [
+      "L0",
+      "L1",
+      "L2"
+    ]
+  },
+
+  "technology": [
+    "X-SHORT",
+    "ISOFLEX",
+    "Superlight Cap",
+    "Women's Specific Design",
+    "TECNILAB"
+  ],
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 7,
+    "spin": 9,
+    "comfort": 9,
+    "maneuverability": 10,
+    "stability": 7
+  },
+
+  "playing_tags": [
+    "Women's Performance",
+    "Lightweight",
+    "Easy Swing",
+    "Spin",
+    "Power",
+    "Junior Transition",
+    "Club Player",
+    "Baseline",
+    "Intermediate"
+  ],
+
+  "recommended_player": {
+    "gender_focus": "Women",
+    "level": [
+      "Beginner",
+      "Intermediate",
+      "Junior Competition"
+    ],
+    "swing_style": [
+      "Slow",
+      "Medium"
+    ],
+    "play_style": [
+      "Baseline",
+      "All Court",
+      "Counter Puncher"
+    ]
+  },
+
+  "recommended_skill_ntrp": {
+    "min": 2.0,
+    "max": 4.0
+  },
+
+  "recommended_skill_cn": {
+    "min": 2.0,
+    "max": 3.5
+  },
+
+  "recommended_match_type": [
+    "Singles",
+    "Doubles"
+  ],
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 40,
+      "max": 45
+    },
+    "multifilament": {
+      "min": 44,
+      "max": 50
+    },
+    "natural_gut": {
+      "min": 46,
+      "max": 52
+    },
+    "hybrid": {
+      "main": "44-46",
+      "cross": "42-44"
+    }
+  },
+
+  "pro_player_usage": {
+    "ambassador": [
+      "Iga Swiatek"
+    ],
+    "used_on_tour": false,
+    "retail_spec_exact_match": false
+  },
+
+  "comparison_tags": [
+    "Women's Specific",
+    "100 Head Size",
+    "270g",
+    "X-SHORT",
+    "ISOFLEX",
+    "Superlight Cap",
+    "Fast Swing",
+    "Easy Power"
+  ],
+
+  "ai_keywords": [
+    "tecnifibre",
+    "tempo",
+    "tempo 270",
+    "tempo v2",
+    "women",
+    "women's racket",
+    "270g",
+    "100sqin",
+    "645cm2",
+    "16x19",
+    "x-short",
+    "isoflex",
+    "superlight cap",
+    "easy swing",
+    "lightweight"
+  ],
+
+  "target_competitors": [
+    "Wilson Clash 100L",
+    "Yonex EZONE 100SL",
+    "HEAD Boom MP L",
+    "Babolat Pure Drive Lite",
+    "Prince Tour 100L"
+  ],
+
+  "release_status": {
+    "status": "current",
+    "replacement": null,
+    "discontinued": false
+  },
+
+  "description": {
+    "en": "The Tecnifibre TEMPO 270 V2 is a women's performance racquet developed specifically around female biomechanics. It features a 100 sq.in head, 270 g unstrung weight and a shortened 67.5 cm frame using X-SHORT technology to improve maneuverability and racquet-head acceleration. Combined with ISOFLEX and Superlight Cap technologies, the racquet delivers effortless power, increased spin and a larger sweet spot while remaining exceptionally easy to swing.",
+
+    "zh": "Tecnifibre TEMPO 270 V2 是专为女性球员人体工学打造的高性能球拍。采用100平方英寸拍面、270克空拍重量以及67.5厘米加速型拍长，配合 X-SHORT 技术降低挥拍惯性，使拍头更容易加速。ISOFLEX 技术扩大甜区，而 Superlight Cap 则进一步减轻拍头重量，提升挥拍速度与灵活性。整体拥有优秀的力量输出、旋转能力及舒适手感，非常适合女性球员、青少年以及希望使用轻量球拍的俱乐部球员。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13",
+    "unverified_fields": [
+      "year",
+      "balance_mm_unstrung",
+      "beam_mm",
+      "stiffness_ra",
+      "swingweight",
+      "twistweight",
+      "vibration_hz"
+    ]
+  }
+}
