@@ -1,0 +1,174 @@
+{
+  "id": "dunlop_sx300_tour_2025",
+  "brand": "Dunlop",
+  "series": "SX",
+  "model": "SX 300 TOUR",
+  "year": 2025,
+  "edition": "Standard",
+  "category": "Racquet",
+  "collaboration": false,
+
+  "specifications": {
+    "head_size_sq_in": 98,
+    "length_in": null,
+    "weight_g_unstrung": 305,
+    "balance_mm_unstrung": 315,
+    "balance_description": "Head Light",
+    "string_pattern": null,
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+
+    "grip_sizes": [
+      "L2",
+      "L3",
+      "L4"
+    ]
+  },
+
+  "technology": [
+    "SONIC CORE with Infinergy",
+    "SPIN BOOST XT GROMMETS",
+    "SPIN BOOST FRAME GEOMETRY",
+    "V-ENERGY SHAFT",
+    "VIBROSHIELD"
+  ],
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 9,
+    "spin": 10,
+    "comfort": 8,
+    "maneuverability": 9,
+    "stability": 9
+  },
+
+  "playing_tags": [
+    "Advanced",
+    "Tournament",
+    "Spin",
+    "Control",
+    "Power",
+    "Aggressive Baseliner",
+    "Fast Swing",
+    "Tour"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Advanced",
+      "Tournament"
+    ],
+    "swing_style": [
+      "Fast",
+      "Very Fast"
+    ],
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "All Court",
+      "Attacking Player"
+    ]
+  },
+
+  "recommended_skill_ntrp": {
+    "min": 4.0,
+    "max": 6.0
+  },
+
+  "recommended_skill_cn": {
+    "min": 4.0,
+    "max": 5.5
+  },
+
+  "recommended_match_type": [
+    "Singles",
+    "Doubles"
+  ],
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 44,
+      "max": 49
+    },
+    "multifilament": {
+      "min": 47,
+      "max": 52
+    },
+    "natural_gut": {
+      "min": 49,
+      "max": 54
+    },
+    "hybrid": {
+      "main": "47-49",
+      "cross": "45-47"
+    }
+  },
+
+  "comparison_tags": [
+    "Tour Spin Racquet",
+    "98 Head Size",
+    "305g",
+    "Head Light",
+    "Spin and Control",
+    "Aggressive Baseline"
+  ],
+
+  "ai_keywords": [
+    "dunlop",
+    "sx300",
+    "sx 300 tour",
+    "sx300 tour",
+    "2025",
+    "98sqin",
+    "305g",
+    "315mm",
+    "spin",
+    "control",
+    "power",
+    "tour",
+    "competitive"
+  ],
+
+  "target_competitors": [
+    "Yonex VCORE 98",
+    "Yonex VCORE 98 TOUR",
+    "Babolat Pure Aero 98",
+    "HEAD Extreme Pro",
+    "Wilson Shift 99 Pro"
+  ],
+
+  "release_status": {
+    "status": "current",
+    "replacement": null,
+    "discontinued": false
+  },
+
+  "description": {
+    "en": "The Dunlop SX 300 TOUR 2025 is a competitive spin-focused racquet featuring a 98 sq.in head, 305 g unstrung weight and 315 mm head-light balance. SONIC CORE with Infinergy enhances rebound and vibration absorption, while SPIN BOOST XT GROMMETS and SPIN BOOST FRAME GEOMETRY increase spin potential and explosive shot production. V-ENERGY SHAFT improves stability and swing-through speed, while VIBROSHIELD helps reduce unwanted vibration for greater comfort and control.",
+
+    "zh": "Dunlop SX 300 TOUR 2025 是一款面向高水平竞技球员的旋转型球拍，采用98平方英寸拍面、305克空拍重量及315毫米头轻平衡设计。SONIC CORE with Infinergy 提升回弹表现并吸收震动；SPIN BOOST XT GROMMETS 与 SPIN BOOST FRAME GEOMETRY 进一步增强旋转和爆发力；V-ENERGY SHAFT 提升稳定性与挥拍速度；VIBROSHIELD 则帮助降低震动，在高速对抗中提供更好的舒适性与控制。整体定位是旋转、控制与力量之间的高性能平衡，适合主动进攻型底线球员及比赛型选手。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13",
+    "unverified_fields": [
+      "length_in",
+      "string_pattern",
+      "beam_mm",
+      "stiffness_ra",
+      "swingweight"
+    ]
+  }
+}
