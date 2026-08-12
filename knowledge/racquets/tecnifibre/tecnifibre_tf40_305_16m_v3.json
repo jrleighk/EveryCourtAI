@@ -1,0 +1,207 @@
+{
+  "id": "tecnifibre_tf40_305_16m_v3",
+  "brand": "Tecnifibre",
+  "series": "TF-40",
+  "model": "TF-40 305 16M V3",
+  "year": null,
+  "edition": "V3",
+  "category": "Racquet",
+  "collaboration": false,
+
+  "manufacturer_data": {
+    "reference": "14TF440562",
+    "range": "TF-40",
+    "main_material": "Graphite",
+    "head_size_cm2": 630,
+    "head_size_sq_in": 98,
+    "weight_g_unstrung": 305,
+    "weight_oz_unstrung": 10.8,
+    "length_cm": 68.6,
+    "string_pattern": "16x19",
+    "strung_status": "Unstrung"
+  },
+
+  "specifications": {
+    "head_size_sq_in": 98,
+    "head_size_cm2": 630,
+    "length_in": 27.0,
+    "length_cm": 68.6,
+    "weight_g_unstrung": 305,
+    "balance_mm_unstrung": null,
+    "string_pattern": "16x19",
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+    "twistweight": null,
+    "vibration_hz": null,
+
+    "grip_sizes": [
+      "L2",
+      "L3",
+      "L4"
+    ]
+  },
+
+  "technology": [
+    "RS Sharp Section",
+    "Fully Foamed Polyurethane Frame",
+    "Extense BG Grommets",
+    "TECNILAB"
+  ],
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 9,
+    "spin": 9,
+    "comfort": 9,
+    "maneuverability": 9,
+    "stability": 9
+  },
+
+  "playing_tags": [
+    "Advanced",
+    "Tournament",
+    "Control",
+    "Precision",
+    "Spin",
+    "Feel",
+    "All Court",
+    "Modern Control"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Advanced",
+      "Tournament",
+      "Regular Competition"
+    ],
+    "swing_style": [
+      "Medium-Fast",
+      "Fast"
+    ],
+    "play_style": [
+      "Aggressive Baseliner",
+      "All Court",
+      "Attacking Player",
+      "Counter Puncher"
+    ]
+  },
+
+  "recommended_skill_ntrp": {
+    "min": 4.0,
+    "max": 6.0
+  },
+
+  "recommended_skill_cn": {
+    "min": 4.0,
+    "max": 5.5
+  },
+
+  "recommended_match_type": [
+    "Singles",
+    "Doubles"
+  ],
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 44,
+      "max": 49
+    },
+    "multifilament": {
+      "min": 47,
+      "max": 53
+    },
+    "natural_gut": {
+      "min": 49,
+      "max": 55
+    },
+    "hybrid": {
+      "main": "47-49",
+      "cross": "45-47"
+    }
+  },
+
+  "pro_player_usage": {
+    "tour_players": [
+      "Arthur Rinderknech",
+      "Martin Damm"
+    ],
+    "used_on_tour": true,
+    "retail_spec_exact_match": false
+  },
+
+  "comparison_tags": [
+    "98 Head Size",
+    "305g",
+    "16x19 Pattern",
+    "Control and Spin",
+    "Foam Filled",
+    "RS Sharp Section",
+    "More Maneuverable than TF-40 315 18M",
+    "More Spin Friendly than TF-40 315 18M"
+  ],
+
+  "ai_keywords": [
+    "tecnifibre",
+    "tf-40",
+    "tf40",
+    "tf-40 305",
+    "305 16m",
+    "v3",
+    "98sqin",
+    "630cm2",
+    "305g",
+    "16x19",
+    "control",
+    "spin",
+    "precision",
+    "maneuverability",
+    "foam filled",
+    "rs sharp section",
+    "extense bg"
+  ],
+
+  "target_competitors": [
+    "Yonex PERCEPT 97",
+    "Wilson Blade 98 16x19 V10",
+    "Dunlop CX 200",
+    "HEAD Radical MP",
+    "Babolat Pure Strike 98 16x19"
+  ],
+
+  "release_status": {
+    "status": "current",
+    "replacement": null,
+    "discontinued": false
+  },
+
+  "description": {
+    "en": "The Tecnifibre TF-40 305 16M V3 is the most balanced model in the TF-40 range for players seeking precision with greater maneuverability and spin access. It features a 98 sq.in head, 305 g unstrung weight and a 16x19 string pattern that is tighter in the center to preserve control while allowing more spin than the 18x20 version. RS Sharp Section geometry optimizes frame flex at impact, the fully foamed polyurethane construction improves feel and shock absorption, and Exte​​nse BG grommets increase string movement and responsiveness on off-center contact.",
+
+    "zh": "Tecnifibre TF-40 305 16M V3 是 TF-40 系列中在操控性与旋转之间最均衡的型号。它采用98平方英寸拍面、305克空拍重量及16×19线床，并在核心甜区采用相对更紧密的线床布局，在保持精准控制的同时提供比18×20版本更好的旋转潜力。RS Sharp Section 拍框结构优化击球瞬间的拍框弯曲，整支拍框内部填充聚氨酯泡沫以提升减震与扎实手感，而 Exte​​nse BG 线孔则增强球线活动空间与非甜区击球时的响应。整体非常适合希望兼顾控制、旋转与灵活性的高级竞技球员。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13",
+    "unverified_fields": [
+      "year",
+      "balance_mm_unstrung",
+      "beam_mm",
+      "stiffness_ra",
+      "swingweight",
+      "twistweight",
+      "vibration_hz"
+    ]
+  }
+}
