@@ -1,0 +1,109 @@
+{
+  "id": "yonex_muse_100l_2026",
+  "brand": "Yonex",
+  "series": "MUSE",
+  "model": "MUSE 100L",
+  "year": 2026,
+  "edition": null,
+  "category": "Racquet",
+  "collaboration": false,
+
+  "specifications": {
+    "head_size_sq_in": 100,
+    "length_in": 27.0,
+    "weight_g_unstrung": 280,
+    "balance_mm_unstrung": 325,
+    "string_pattern": "16x18",
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+
+    "grip_sizes": [
+      "L1",
+      "L2",
+      "L3"
+    ]
+  },
+
+  "technology": [
+    "ISOMETRIC",
+    "2G-Namd Flex Force",
+    "VDM",
+    "Servo Filter"
+  ],
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 7,
+    "spin": 8,
+    "comfort": 10,
+    "maneuverability": 9,
+    "stability": 7
+  },
+
+  "playing_tags": [
+    "Comfort",
+    "Lightweight",
+    "Intermediate",
+    "Easy Power",
+    "Easy Swing",
+    "Large Sweet Spot",
+    "Spin Friendly",
+    "All Court"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate"
+    ],
+    "swing_style": [
+      "Slow",
+      "Medium"
+    ],
+    "play_style": [
+      "All Court",
+      "Baseline"
+    ]
+  },
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 46,
+      "max": 50
+    },
+    "multifilament": {
+      "min": 48,
+      "max": 53
+    },
+    "natural_gut": {
+      "min": 50,
+      "max": 54
+    },
+    "hybrid": {
+      "main": "48-50",
+      "cross": "46-48"
+    }
+  },
+
+  "description": {
+    "en": "The Yonex MUSE 100L 2026 is a lightweight comfort-oriented racquet featuring a 100 sq.in head, 280 g unstrung weight, 325 mm balance and a 16x18 string pattern. It offers excellent comfort, effortless power and easy maneuverability for developing and intermediate players.",
+
+    "zh": "Yonex MUSE 100L 2026 是一款轻量化舒适型网球拍，采用100平方英寸拍面、280克空拍重量、325毫米平衡点及16×18开放式线床设计。拥有优秀的舒适性、轻松发力、较高的容错率和良好的旋转表现，非常适合初学者、女性球员以及中级球员使用。"
+  },
+
+  "verification": {
+    "status": "verified",
+    "last_updated": "2026-08-12"
+  }
+}
