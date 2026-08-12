@@ -1,0 +1,211 @@
+{
+  "id": "tecnifibre_t_fight_team",
+  "brand": "Tecnifibre",
+  "series": "T-FIGHT TEAM",
+  "model": "T-FIGHT TEAM",
+  "year": null,
+  "edition": "Standard",
+  "category": "Racquet",
+  "collaboration": false,
+
+  "manufacturer_data": {
+    "reference": "14FIGTEA51",
+    "range": "T-Fight Team",
+    "main_material": "Graphite",
+    "head_size_cm2": 660,
+    "head_size_sq_in": 102,
+    "weight_g": 285,
+    "weight_oz": 10.05,
+    "length_cm": 68.5,
+    "balance_mm": 330,
+    "string_pattern": "16x19",
+    "factory_string": "Black Synthetic Gut",
+    "factory_strung": true
+  },
+
+  "specifications": {
+    "head_size_sq_in": 102,
+    "head_size_cm2": 660,
+    "length_in": 26.97,
+    "length_cm": 68.5,
+    "weight_g": 285,
+    "balance_mm": 330,
+    "string_pattern": "16x19",
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+    "twistweight": null,
+    "vibration_hz": null,
+
+    "grip_sizes": [
+      "L1",
+      "L2",
+      "L3"
+    ]
+  },
+
+  "technology": [
+    "RSX Section",
+    "Isoflex",
+    "Progressive Head Stiffness",
+    "Expanded Sweet Spot",
+    "Tecnifibre TECNILAB"
+  ],
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 8,
+    "spin": 9,
+    "comfort": 9,
+    "maneuverability": 9,
+    "stability": 8
+  },
+
+  "playing_tags": [
+    "Beginner",
+    "Intermediate",
+    "Regular Player",
+    "Power",
+    "Spin",
+    "Forgiving",
+    "Large Sweet Spot",
+    "Comfort",
+    "Easy Swing",
+    "All Court"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate",
+      "Regular Player"
+    ],
+    "swing_style": [
+      "Slow",
+      "Medium",
+      "Medium-Fast"
+    ],
+    "play_style": [
+      "All Court",
+      "Baseline",
+      "Counter Puncher",
+      "Doubles",
+      "Recreational Competition"
+    ]
+  },
+
+  "recommended_skill_ntrp": {
+    "min": 2.0,
+    "max": 4.5
+  },
+
+  "recommended_skill_cn": {
+    "min": 2.0,
+    "max": 4.0
+  },
+
+  "recommended_match_type": [
+    "Singles",
+    "Doubles"
+  ],
+
+  "factory_string_setup": {
+    "string": "Black Synthetic Gut",
+    "string_type": "Synthetic Gut",
+    "pre_strung": true,
+    "tension_lbs": null
+  },
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 43,
+      "max": 48
+    },
+    "multifilament": {
+      "min": 46,
+      "max": 52
+    },
+    "natural_gut": {
+      "min": 48,
+      "max": 54
+    },
+    "hybrid": {
+      "main": "46-48",
+      "cross": "44-46"
+    }
+  },
+
+  "comparison_tags": [
+    "102 Head Size",
+    "285g",
+    "16x19 Pattern",
+    "Forgiving T-FIGHT",
+    "Large Sweet Spot",
+    "Power and Spin",
+    "RSX Section",
+    "Isoflex"
+  ],
+
+  "ai_keywords": [
+    "tecnifibre",
+    "t-fight team",
+    "t fight team",
+    "102sqin",
+    "660cm2",
+    "285g",
+    "330mm",
+    "16x19",
+    "rsx section",
+    "isoflex",
+    "synthetic gut",
+    "pre-strung",
+    "forgiving",
+    "power",
+    "spin",
+    "intermediate"
+  ],
+
+  "target_competitors": [
+    "HEAD Radical Team",
+    "Wilson Blade 100L",
+    "Yonex PERCEPT 100L",
+    "Dunlop CX 400",
+    "Babolat Pure Strike Team"
+  ],
+
+  "release_status": {
+    "status": "current",
+    "replacement": null,
+    "discontinued": false
+  },
+
+  "description": {
+    "en": "The Tecnifibre T-FIGHT TEAM is a more accessible and forgiving version of the T-FIGHT concept, designed for regular and occasional players seeking power, spin and comfort. It features a 102 sq.in head, 285 g weight, 330 mm balance and a 16x19 string pattern. The larger RSX Section frame provides additional power compared with the standard T-FIGHT range, while Isoflex progressive stiffness enlarges the sweet spot and helps maintain consistent power and precision on both centered and off-center contact. The racquet is factory pre-strung with black synthetic gut and is ready to play.",
+
+    "zh": "Tecnifibre T-FIGHT TEAM 是标准 T-FIGHT 系列更容易驾驭、更高容错的版本，主要面向日常及休闲比赛球员。球拍采用102平方英寸拍面、285克重量、330毫米平衡点及16×19线床，在力量、旋转、舒适性与易打性之间取得优秀平衡。更大的 RSX Section 拍框结构相比标准 T-FIGHT 提供更多力量，而 Isoflex 渐进式刚性系统能够扩大甜区，使中心及非中心击球都保持较稳定的力量与精准度。该产品原厂预穿黑色 Synthetic Gut，可直接使用。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13",
+    "unverified_fields": [
+      "year",
+      "beam_mm",
+      "stiffness_ra",
+      "swingweight",
+      "twistweight",
+      "vibration_hz",
+      "factory_string_tension"
+    ]
+  }
+}
