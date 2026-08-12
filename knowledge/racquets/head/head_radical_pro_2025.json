@@ -1,0 +1,91 @@
+{
+  "id": "head_radical_pro_2025",
+  "brand": "Head",
+  "series": "Radical",
+  "model": "Radical Pro",
+  "year": 2025,
+  "edition": null,
+  "category": "Racquet",
+  "collaboration": false,
+
+  "specifications": {
+    "head_size_sq_in": 98,
+    "length_in": 27.0,
+    "weight_g_unstrung": 315,
+    "balance_mm_unstrung": 315,
+    "string_pattern": "16x19",
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+
+    "grip_sizes": [
+      "L2",
+      "L3",
+      "L4",
+      "L5"
+    ]
+  },
+
+  "technology": [
+    "Auxetic 2.0",
+    "Graphene Inside"
+  ],
+
+  "playing_characteristics": {
+    "power": 7,
+    "control": 10,
+    "spin": 8,
+    "comfort": 8,
+    "maneuverability": 7,
+    "stability": 10
+  },
+
+  "playing_tags": [
+    "Advanced",
+    "Tournament",
+    "Control",
+    "Precision",
+    "Stability",
+    "Aggressive Baseliner",
+    "All Court",
+    "Fast Swing",
+    "Flat Hitter"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Advanced",
+      "Tournament"
+    ],
+    "swing_style": [
+      "Fast",
+      "Full Swing"
+    ],
+    "play_style": [
+      "Aggressive Baseliner",
+      "All Court"
+    ]
+  },
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": []
+  },
+
+  "recommended_tension_lbs": {
+    "min": null,
+    "max": null
+  },
+
+  "description": {
+    "en": "The Head Radical Pro 2025 features Auxetic 2.0 technology, a 98 sq.in head, 315 g unstrung weight, 315 mm balance and a 16x19 string pattern. Designed for advanced players who demand exceptional control, stability and precision.",
+    "zh": "Head Radical Pro 2025 搭载 Auxetic 2.0 科技，98平方英寸拍面、315克空拍重量、315毫米平衡点、16×19线床，专为高水平及比赛型球员打造，提供极高的稳定性、精准控制与扎实击球手感。"
+  },
+
+  "verification": {
+    "status": "verified",
+    "last_updated": "2026-08-12"
+  }
+}
