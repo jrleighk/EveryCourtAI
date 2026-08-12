@@ -1,0 +1,12 @@
+{
+  "version": "1.0",
+
+  "profiles": {
+
+    "beginner": "knowledge/profiles/beginner.json",
+    "intermediate": "knowledge/profiles/intermediate.json",
+    "advanced": "knowledge/profiles/advanced.json",
+    "professional": "knowledge/profiles/professional.json"
+
+  }
+}
