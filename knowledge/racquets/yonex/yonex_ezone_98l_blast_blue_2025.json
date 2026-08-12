@@ -1,0 +1,154 @@
+{
+  "id": "yonex_ezone_98l_blast_blue_2025",
+  "brand": "Yonex",
+  "series": "EZONE",
+  "model": "EZONE 98L",
+  "year": 2025,
+  "edition": "Blast Blue",
+  "category": "Racquet",
+  "collaboration": false,
+
+  "specifications": {
+    "head_size_sq_in": 98,
+    "length_in": 27.0,
+    "weight_g_unstrung": 285,
+    "balance_mm_unstrung": 330,
+    "string_pattern": "16x19",
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+
+    "grip_sizes": [
+      "L3"
+    ]
+  },
+
+  "technology": [
+    "ISOMETRIC",
+    "2G-Namd Speed",
+    "MINOLON",
+    "VDM",
+    "Liner Tech"
+  ],
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 8,
+    "spin": 8,
+    "comfort": 9,
+    "maneuverability": 10,
+    "stability": 7
+  },
+
+  "playing_tags": [
+    "Intermediate",
+    "Power",
+    "Lightweight",
+    "Easy Swing",
+    "All Court"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced"
+    ],
+    "swing_style": [
+      "Medium",
+      "Fast"
+    ],
+    "play_style": [
+      "All Court",
+      "Aggressive Baseliner",
+      "Counter Puncher"
+    ]
+  },
+
+  "recommended_skill_ntrp": {
+    "min": 3.0,
+    "max": 4.5
+  },
+
+  "recommended_skill_cn": {
+    "min": 2.5,
+    "max": 4.0
+  },
+
+  "recommended_match_type": [
+    "Singles",
+    "Doubles"
+  ],
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 44,
+      "max": 48
+    },
+    "multifilament": {
+      "min": 46,
+      "max": 51
+    },
+    "natural_gut": {
+      "min": 47,
+      "max": 53
+    },
+    "hybrid": {
+      "main": "46-48",
+      "cross": "44-46"
+    }
+  },
+
+  "comparison_tags": [
+    "Power",
+    "Lightweight",
+    "Easy Swing",
+    "Comfort",
+    "98 Head Size"
+  ],
+
+  "ai_keywords": [
+    "ezone",
+    "98l",
+    "blast blue",
+    "285g",
+    "98sqin",
+    "16x19",
+    "lightweight",
+    "power"
+  ],
+
+  "target_competitors": [
+    "Wilson Ultra 100L",
+    "Wilson Blade 100UL",
+    "HEAD Speed MP L",
+    "HEAD Boom MP L",
+    "Babolat Pure Drive Team"
+  ],
+
+  "release_status": {
+    "status": "current",
+    "replacement": null,
+    "discontinued": false
+  },
+
+  "description": {
+    "en": "The Yonex EZONE 98L Blast Blue 2025 is a lightweight performance racquet offering easy power, excellent comfort and fast maneuverability for intermediate and improving advanced players.",
+
+    "zh": "Yonex EZONE 98L Blast Blue 2025 采用98平方英寸拍面、285克空拍重量及16×19线床，提供轻松挥拍、充足力量与舒适击球感，非常适合进阶型球员、女性球员及希望提升挥拍速度的使用者。"
+  },
+
+  "verification": {
+    "status": "verified",
+    "last_updated": "2026-08-12"
+  }
+}
