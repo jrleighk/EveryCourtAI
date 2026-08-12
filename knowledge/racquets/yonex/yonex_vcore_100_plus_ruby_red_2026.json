@@ -1,0 +1,150 @@
+{
+  "id": "yonex_vcore_100_plus_ruby_red_2026",
+  "brand": "Yonex",
+  "series": "VCORE",
+  "model": "VCORE 100+",
+  "year": 2026,
+  "edition": "Ruby Red",
+  "category": "Racquet",
+  "collaboration": false,
+
+  "specifications": {
+    "head_size_sq_in": 100,
+    "length_in": 27.5,
+    "weight_g_unstrung": 300,
+    "balance_mm_unstrung": 330,
+    "string_pattern": "16x19",
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+
+    "grip_sizes": [
+      "L2",
+      "L3"
+    ]
+  },
+
+  "technology": [
+    "ISOMETRIC",
+    "2G-Namd Flex Force",
+    "Silicone Oil Infused Grommets",
+    "Aero Trench",
+    "Aero Fin",
+    "VDM"
+  ],
+
+  "playing_characteristics": {
+    "power": 10,
+    "control": 7,
+    "spin": 10,
+    "comfort": 8,
+    "maneuverability": 8,
+    "stability": 9
+  },
+
+  "playing_tags": [
+    "Advanced",
+    "Spin",
+    "Extended Length",
+    "Baseline",
+    "Heavy Topspin"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Advanced",
+      "Tournament"
+    ],
+    "swing_style": [
+      "Fast",
+      "Very Fast"
+    ],
+    "play_style": [
+      "Baseline",
+      "Aggressive Baseliner"
+    ]
+  },
+
+  "recommended_skill_ntrp": {
+    "min": 4.0,
+    "max": 6.0
+  },
+
+  "recommended_skill_cn": {
+    "min": 4.0,
+    "max": 5.0
+  },
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 45,
+      "max": 49
+    },
+    "multifilament": {
+      "min": 47,
+      "max": 52
+    },
+    "natural_gut": {
+      "min": 49,
+      "max": 54
+    },
+    "hybrid": {
+      "main": "48-50",
+      "cross": "46-48"
+    }
+  },
+
+  "comparison_tags": [
+    "Extended Length",
+    "More Power than VCORE 100",
+    "Higher Serve Speed",
+    "Heavy Spin",
+    "Advanced Players Only"
+  ],
+
+  "ai_keywords": [
+    "spin",
+    "extended",
+    "27.5",
+    "100sqin",
+    "300g",
+    "baseline",
+    "serve",
+    "advanced",
+    "topspin"
+  ],
+
+  "target_competitors": [
+    "Babolat Pure Aero Plus",
+    "Wilson Shift 99 Pro",
+    "HEAD Extreme MP",
+    "Yonex EZONE 100+"
+  ],
+
+  "release_status": {
+    "status": "current",
+    "replacement": null,
+    "discontinued": false
+  },
+
+  "description": {
+    "en": "The Yonex VCORE 100+ Ruby Red 2026 features a 27.5-inch extended frame for additional leverage, heavier serves and explosive topspin. Designed for advanced players seeking maximum spin and power from the baseline.",
+
+    "zh": "Yonex VCORE 100+ Ruby Red 2026 采用27.5英寸加长拍身设计，在标准VCORE 100的基础上提供更大的杠杆效应、更高的发球速度以及更强的上旋能力，适合高级底线型球员和竞技比赛使用。"
+  },
+
+  "verification": {
+    "status": "verified",
+    "last_updated": "2026-08-12"
+  }
+}
