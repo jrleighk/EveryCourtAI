@@ -1,0 +1,114 @@
+{
+  "id": "yonex_vcore_98_ruby_red_2026",
+  "brand": "Yonex",
+  "series": "VCORE",
+  "model": "VCORE 98",
+  "year": 2026,
+  "edition": "Ruby Red",
+  "category": "Racquet",
+  "collaboration": false,
+
+  "specifications": {
+    "head_size_sq_in": 98,
+    "length_in": 27.0,
+    "weight_g_unstrung": 305,
+    "balance_mm_unstrung": 315,
+    "string_pattern": "16x19",
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+
+    "grip_sizes": [
+      "L2",
+      "L4"
+    ]
+  },
+
+  "technology": [
+    "ISOMETRIC",
+    "2G-Namd Flex Force",
+    "Silicone Oil Infused Grommets",
+    "Aero Trench",
+    "Aero Fin",
+    "VDM"
+  ],
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 9,
+    "spin": 10,
+    "comfort": 8,
+    "maneuverability": 9,
+    "stability": 9
+  },
+
+  "playing_tags": [
+    "Advanced",
+    "Spin",
+    "Modern Baseline",
+    "Aggressive Baseliner",
+    "Fast Swing",
+    "All Court"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Advanced",
+      "Professional"
+    ],
+    "swing_style": [
+      "Medium-Fast",
+      "Fast"
+    ],
+    "play_style": [
+      "Aggressive Baseliner",
+      "All Court"
+    ]
+  },
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 45,
+      "max": 50
+    },
+    "multifilament": {
+      "min": 47,
+      "max": 52
+    },
+    "natural_gut": {
+      "min": 49,
+      "max": 54
+    },
+    "hybrid": {
+      "main": "48-50",
+      "cross": "46-48"
+    }
+  },
+
+  "release_status": {
+    "status": "current",
+    "replacement": null,
+    "discontinued": false
+  },
+
+  "description": {
+    "en": "The Yonex VCORE 98 Ruby Red 2026 combines explosive spin, controllable power and excellent maneuverability. Its 98 sq.in head, 305 g weight and 16x19 string pattern make it an ideal choice for advanced players seeking aggressive baseline performance with all-court versatility.",
+
+    "zh": "Yonex VCORE 98 Ruby Red 2026 是 VCORE 系列最均衡的旗舰型号，采用98平方英寸拍面、305克空拍重量、315毫米平衡点及16×19线床。兼具强烈旋转、可控力量与灵活操控，非常适合高级及竞技型球员进行现代底线进攻，同时也具备优秀的全场能力。"
+  },
+
+  "verification": {
+    "status": "verified",
+    "last_updated": "2026-08-12"
+  }
+}
