@@ -1,0 +1,191 @@
+{
+  "id": "dunlop_cx200_tour_18x20_2024",
+  "brand": "Dunlop",
+  "series": "CX",
+  "model": "CX 200 TOUR 18x20",
+  "year": 2024,
+  "edition": "Standard",
+  "category": "Racquet",
+  "collaboration": false,
+
+  "manufacturer_data": {
+    "product_number": "10349660",
+    "ean": "0045566180810",
+    "subgroup": "PREMIUM",
+    "level": "Advanced",
+    "colour_name": "Metallic Red/Neon Red/Basic Black",
+    "main_material": "Graphite",
+    "secondary_material": "Glassfibre"
+  },
+
+  "specifications": {
+    "head_size_sq_in": 95,
+    "length_in": 27.0,
+    "weight_g_unstrung": 315,
+    "balance_mm_unstrung": 310,
+    "balance_tolerance_mm": 10,
+    "balance_description": "Head Light",
+    "string_pattern": "18x20",
+    "beam_mm": {
+      "head": 20.5,
+      "shaft": 20.5,
+      "throat": 20.5
+    },
+    "stiffness_ra": 65,
+    "swingweight_unstrung": 290,
+    "swingweight": null,
+
+    "grip_sizes": [
+      "L2",
+      "L3",
+      "L4"
+    ]
+  },
+
+  "technology": [
+    "SONIC CORE with Infinergy",
+    "VIBROSHIELD",
+    "POWERGRID STRINGTECH+",
+    "CONTROL FRAME GEOMETRY"
+  ],
+
+  "playing_characteristics": {
+    "power": 6,
+    "control": 10,
+    "spin": 7,
+    "comfort": 9,
+    "maneuverability": 7,
+    "stability": 10
+  },
+
+  "playing_tags": [
+    "Advanced",
+    "Tournament",
+    "Control",
+    "Precision",
+    "Feel",
+    "Dense Pattern",
+    "Flat Hitter",
+    "All Court",
+    "Tour"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Advanced",
+      "Tournament",
+      "Professional"
+    ],
+    "swing_style": [
+      "Fast",
+      "Very Fast"
+    ],
+    "play_style": [
+      "Aggressive Baseliner",
+      "All Court",
+      "Flat Hitter",
+      "Serve and Volley"
+    ]
+  },
+
+  "recommended_skill_ntrp": {
+    "min": 4.5,
+    "max": 7.0
+  },
+
+  "recommended_skill_cn": {
+    "min": 4.5,
+    "max": 6.5
+  },
+
+  "recommended_match_type": [
+    "Singles",
+    "Doubles"
+  ],
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 44,
+      "max": 49
+    },
+    "multifilament": {
+      "min": 47,
+      "max": 53
+    },
+    "natural_gut": {
+      "min": 49,
+      "max": 55
+    },
+    "hybrid": {
+      "main": "47-49",
+      "cross": "45-47"
+    }
+  },
+
+  "comparison_tags": [
+    "Maximum Control",
+    "95 Head Size",
+    "315g",
+    "18x20 Pattern",
+    "20.5mm Constant Beam",
+    "Tour Precision",
+    "Dense String Pattern"
+  ],
+
+  "ai_keywords": [
+    "dunlop",
+    "cx",
+    "cx200",
+    "cx200 tour",
+    "cx 200 tour",
+    "18x20",
+    "2024",
+    "95sqin",
+    "315g",
+    "310mm",
+    "ra65",
+    "290 swingweight",
+    "control",
+    "precision",
+    "tour",
+    "flat hitter"
+  ],
+
+  "target_competitors": [
+    "Yonex PERCEPT 97D",
+    "Wilson Blade 98 18x20 V10",
+    "HEAD Prestige Pro",
+    "Tecnifibre TF40 315 18x20",
+    "Wilson Pro Staff 97"
+  ],
+
+  "release_status": {
+    "status": "current",
+    "replacement": null,
+    "discontinued": false
+  },
+
+  "description": {
+    "en": "The Dunlop CX 200 TOUR 18x20 2024 is a tour-level control racquet built for advanced players seeking maximum precision, feel and directional consistency. Its compact 95 sq.in head, 315 g unstrung weight, 310 mm head-light balance and dense 18x20 string pattern provide exceptional stability and control. SONIC CORE with Infinergy improves rebound and vibration absorption, VIBROSHIELD enhances comfort and feel, POWERGRID STRINGTECH+ supports spin and power, while CONTROL FRAME GEOMETRY improves stability and precision through the swing.",
+
+    "zh": "Dunlop CX 200 TOUR 18x20 2024 是一款面向高水平及比赛型球员的极致控制型球拍。它采用95平方英寸拍面、315克空拍重量、310毫米头轻平衡、18×20密集线床以及20.5毫米恒定薄框设计，强调精准落点、稳定性与细腻击球反馈。SONIC CORE with Infinergy 提升回弹与减震表现，VIBROSHIELD 改善舒适性与手感，POWERGRID STRINGTECH+ 增强击球表现，而 CONTROL FRAME GEOMETRY 则进一步提升拍框稳定性与挥拍过程中的精准度。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13",
+    "unverified_fields": [
+      "strung_swingweight"
+    ]
+  }
+}
