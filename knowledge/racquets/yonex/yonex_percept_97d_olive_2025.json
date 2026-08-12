@@ -1,0 +1,157 @@
+{
+  "id": "yonex_percept_97d_olive_2025",
+  "brand": "Yonex",
+  "series": "PERCEPT",
+  "model": "PERCEPT 97D",
+  "year": 2025,
+  "edition": "Olive",
+  "category": "Racquet",
+  "collaboration": false,
+
+  "specifications": {
+    "head_size_sq_in": 97,
+    "length_in": 27.0,
+    "weight_g_unstrung": 320,
+    "balance_mm_unstrung": 310,
+    "string_pattern": "18x20",
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+
+    "grip_sizes": [
+      "L1",
+      "L2",
+      "L3"
+    ]
+  },
+
+  "technology": [
+    "ISOMETRIC",
+    "SERVO FILTER",
+    "FLEXCON SYSTEM",
+    "2G-Namd Flex Force",
+    "STIFF RACQUET FACE DESIGN"
+  ],
+
+  "playing_characteristics": {
+    "power": 7,
+    "control": 10,
+    "spin": 7,
+    "comfort": 9,
+    "maneuverability": 7,
+    "stability": 10
+  },
+
+  "playing_tags": [
+    "Advanced",
+    "Control",
+    "Precision",
+    "Feel",
+    "Tournament"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Advanced",
+      "Professional"
+    ],
+    "swing_style": [
+      "Fast",
+      "Very Fast"
+    ],
+    "play_style": [
+      "Aggressive Baseliner",
+      "All Court",
+      "Flat Hitter"
+    ]
+  },
+
+  "recommended_skill_ntrp": {
+    "min": 4.5,
+    "max": 7.0
+  },
+
+  "recommended_skill_cn": {
+    "min": 4.5,
+    "max": 6.5
+  },
+
+  "recommended_match_type": [
+    "Singles"
+  ],
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 46,
+      "max": 51
+    },
+    "multifilament": {
+      "min": 48,
+      "max": 54
+    },
+    "natural_gut": {
+      "min": 49,
+      "max": 55
+    },
+    "hybrid": {
+      "main": "48-50",
+      "cross": "46-48"
+    }
+  },
+
+  "comparison_tags": [
+    "Maximum Control",
+    "18x20 Pattern",
+    "Tour Level",
+    "Precision",
+    "97 Head Size"
+  ],
+
+  "ai_keywords": [
+    "yonex",
+    "percept",
+    "97d",
+    "olive",
+    "2025",
+    "320g",
+    "18x20",
+    "97sqin",
+    "control",
+    "precision"
+  ],
+
+  "target_competitors": [
+    "Wilson Blade 98 18x20 V10",
+    "Wilson Pro Staff 97",
+    "HEAD Prestige Pro",
+    "HEAD Radical Pro",
+    "Tecnifibre TF40 315 18x20"
+  ],
+
+  "release_status": {
+    "status": "current",
+    "replacement": null,
+    "discontinued": false
+  },
+
+  "description": {
+    "en": "The Yonex PERCEPT 97D Olive 2025 is a tour-level control racquet featuring the same performance specifications as the Midnight Navy version, finished in an exclusive Olive colorway.",
+
+    "zh": "Yonex PERCEPT 97D Olive 2025 为 Olive 特别配色版本，与 Midnight Navy 版本拥有完全相同的性能规格。采用97平方英寸拍面、320克空拍重量、310mm平衡点及18×20线床，搭载 ISOMETRIC、SERVO FILTER、FLEXCON SYSTEM 与 2G-Namd Flex Force 技术，提供顶级精准控制、稳定性与细腻手感。"
+  },
+
+  "verification": {
+    "status": "verified",
+    "last_updated": "2026-08-12"
+  }
+}
