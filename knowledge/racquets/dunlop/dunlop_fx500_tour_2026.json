@@ -1,0 +1,158 @@
+{
+  "id": "dunlop_fx500_tour_2026",
+  "brand": "Dunlop",
+  "series": "FX",
+  "model": "FX 500 Tour",
+  "year": 2026,
+  "edition": "Standard",
+  "category": "Racquet",
+  "collaboration": false,
+
+  "specifications": {
+    "head_size_sq_in": 98,
+    "length_in": 27.0,
+    "weight_g_unstrung": 305,
+    "balance_mm_unstrung": 315,
+    "string_pattern": "16x19",
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+
+    "grip_sizes": [
+      "L1",
+      "L2",
+      "L3"
+    ]
+  },
+
+  "technology": [
+    "Power Boost Frame Geometry",
+    "Power Boost Groove",
+    "Sonic Core with Infinergy",
+    "Flex Touch Resin",
+    "V-Energy Shaft"
+  ],
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 9,
+    "spin": 8,
+    "comfort": 8,
+    "maneuverability": 8,
+    "stability": 9
+  },
+
+  "playing_tags": [
+    "Advanced",
+    "Tour",
+    "Power",
+    "Control",
+    "All Court"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Advanced",
+      "Tournament"
+    ],
+    "swing_style": [
+      "Fast",
+      "Very Fast"
+    ],
+    "play_style": [
+      "Aggressive Baseliner",
+      "All Court",
+      "Attacking Player"
+    ]
+  },
+
+  "recommended_skill_ntrp": {
+    "min": 4.0,
+    "max": 6.5
+  },
+
+  "recommended_skill_cn": {
+    "min": 4.0,
+    "max": 6.0
+  },
+
+  "recommended_match_type": [
+    "Singles"
+  ],
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 45,
+      "max": 50
+    },
+    "multifilament": {
+      "min": 48,
+      "max": 54
+    },
+    "natural_gut": {
+      "min": 50,
+      "max": 55
+    },
+    "hybrid": {
+      "main": "48-50",
+      "cross": "46-48"
+    }
+  },
+
+  "comparison_tags": [
+    "Tour Racquet",
+    "98 Head Size",
+    "305g",
+    "16x19 Pattern",
+    "Power and Precision"
+  ],
+
+  "ai_keywords": [
+    "dunlop",
+    "fx500",
+    "fx500 tour",
+    "2026",
+    "98",
+    "305g",
+    "315mm",
+    "16x19",
+    "tour",
+    "power",
+    "control"
+  ],
+
+  "target_competitors": [
+    "Babolat Pure Drive 98",
+    "Yonex EZONE 98",
+    "Wilson Ultra 98 Tour",
+    "HEAD Speed Pro",
+    "Tecnifibre T-Fight 305"
+  ],
+
+  "release_status": {
+    "status": "current",
+    "replacement": null,
+    "discontinued": false
+  },
+
+  "description": {
+    "en": "The Dunlop FX 500 Tour 2026 is a tour-level power racquet featuring a 98 sq.in head, 305 g unstrung weight and a 16x19 string pattern. It offers explosive power with greater precision and stability for advanced players.",
+
+    "zh": "Dunlop FX 500 Tour 2026 是 FX 系列职业版力量型球拍，采用98平方英寸拍面、305克空拍重量、315mm平衡点及16×19线床，在保留 FX 系列爆发力的同时，提供更高的精准度、稳定性与击球控制，适合高水平竞技球员。"
+  },
+
+  "verification": {
+    "status": "verified",
+    "last_updated": "2026-08-13"
+  }
+}
