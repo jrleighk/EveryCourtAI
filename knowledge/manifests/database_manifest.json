@@ -1,0 +1,20 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-08-12",
+
+  "indexes": [
+    "knowledge/indexes/racquet_index.json",
+    "knowledge/indexes/string_index.json",
+    "knowledge/indexes/profile_index.json",
+    "knowledge/indexes/recommendation_index.json",
+    "knowledge/indexes/alias_index.json",
+    "knowledge/indexes/brand_index.json"
+  ],
+
+  "collections": [
+    "knowledge/racquets/",
+    "knowledge/strings/",
+    "knowledge/profiles/",
+    "knowledge/recommendations/"
+  ]
+}
