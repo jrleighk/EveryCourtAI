@@ -1,0 +1,88 @@
+{
+  "id": "yonex_muse_100",
+  "brand": "Yonex",
+  "series": "MUSE",
+  "model": "MUSE 100",
+  "year": 2025,
+  "edition": null,
+  "category": "Racquet",
+  "collaboration": false,
+
+  "specifications": {
+    "head_size_sq_in": 100,
+    "length_in": 27.0,
+    "weight_g_unstrung": 295,
+    "balance_mm_unstrung": 330,
+    "string_pattern": "16x18",
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+
+    "grip_sizes": [
+      "L1",
+      "L2",
+      "L3"
+    ]
+  },
+
+  "technology": [
+    "ISOMETRIC",
+    "2G-Namd Flex Force",
+    "VDM",
+    "Servo Filter"
+  ],
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 7,
+    "spin": 8,
+    "comfort": 10,
+    "maneuverability": 8,
+    "stability": 7
+  },
+
+  "playing_tags": [
+    "Comfort",
+    "Intermediate",
+    "Easy Power",
+    "Large Sweet Spot",
+    "Spin Friendly",
+    "All Court"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate"
+    ],
+    "swing_style": [
+      "Medium"
+    ],
+    "play_style": [
+      "All Court",
+      "Baseline"
+    ]
+  },
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": []
+  },
+
+  "recommended_tension_lbs": {
+    "min": null,
+    "max": null
+  },
+
+  "description": {
+    "en": "The Yonex MUSE 100 is a comfort-oriented 100 sq.in racquet featuring a 295 g unstrung weight, 330 mm balance and an open 16x18 string pattern. It offers easy power, excellent comfort and generous spin potential, making it suitable for a wide range of recreational and intermediate players.",
+    "zh": "Yonex MUSE 100 采用100平方英寸拍面、295克空拍重量、330毫米平衡点及16×18开放式线床设计，提供出色的舒适性、轻松发力与良好的旋转能力，非常适合休闲及中级球员使用。"
+  },
+
+  "verification": {
+    "status": "verified",
+    "last_updated": "2026-08-12"
+  }
+}
