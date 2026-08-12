@@ -1,0 +1,319 @@
+{
+  "id": "tecnifibre_black_code",
+  "brand": "Tecnifibre",
+  "series": "Black Code",
+  "model": "Black Code",
+  "category": "String",
+
+  "manufacturer_data": {
+    "packaging": "Set",
+    "length_m": 12,
+    "construction": "Monofilament",
+    "material": "Co-Polyester",
+    "composition": "100% Co-Polyester",
+    "cross_section": "Pentagonal",
+    "manufacturing_process": "Thermocore",
+    "country_of_origin": "France",
+
+    "recommended_tension_kg": {
+      "min": 22,
+      "max": 25
+    },
+
+    "maximum_tension_kg": 32
+  },
+
+  "specifications": {
+    "string_family": "Polyester",
+    "construction": "Monofilament",
+    "cross_section": "Pentagonal",
+    "surface": "Shaped",
+
+    "available_colors": [
+      "Black",
+      "Lime",
+      "Fire"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_mm": 1.18,
+        "available": true,
+        "power": 8,
+        "control": 8,
+        "spin": 10,
+        "comfort": 8,
+        "feel": 8,
+        "durability": 6,
+        "tension_maintenance": 7,
+        "elasticity": 8,
+        "launch_angle": "High",
+        "recommended_use": [
+          "Maximum Spin",
+          "Fast Swing",
+          "Advanced Players",
+          "Players Who Do Not Break Strings Frequently"
+        ]
+      },
+      {
+        "gauge_mm": 1.24,
+        "available": true,
+        "power": 7,
+        "control": 9,
+        "spin": 10,
+        "comfort": 8,
+        "feel": 8,
+        "durability": 8,
+        "tension_maintenance": 8,
+        "elasticity": 8,
+        "launch_angle": "Medium-High",
+        "recommended_use": [
+          "Balanced Spin and Control",
+          "All Court",
+          "Tournament",
+          "Aggressive Baseliner"
+        ]
+      },
+      {
+        "gauge_mm": 1.28,
+        "available": true,
+        "power": 7,
+        "control": 9,
+        "spin": 9,
+        "comfort": 7,
+        "feel": 8,
+        "durability": 9,
+        "tension_maintenance": 8,
+        "elasticity": 7,
+        "launch_angle": "Medium",
+        "recommended_use": [
+          "Heavy Hitters",
+          "Advanced Competition",
+          "Durability",
+          "Control"
+        ]
+      },
+      {
+        "gauge_mm": 1.32,
+        "available": true,
+        "power": 6,
+        "control": 10,
+        "spin": 8,
+        "comfort": 7,
+        "feel": 7,
+        "durability": 10,
+        "tension_maintenance": 9,
+        "elasticity": 6,
+        "launch_angle": "Medium-Low",
+        "recommended_use": [
+          "Frequent String Breakers",
+          "Maximum Durability",
+          "Powerful Players",
+          "Low Launch Preference"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "Thermocore",
+    "Pentagonal Structure",
+    "Co-Polyester Monofilament",
+    "Shaped Spin Technology"
+  ],
+
+  "design_profile": {
+    "string_type": "Spin Control Polyester",
+    "target_player": "Intermediate to Advanced",
+    "arm_friendly": false,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": false,
+    "comfort_focus": true,
+    "durability_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 7,
+    "control": 9,
+    "spin": 10,
+    "comfort": 8,
+    "feel": 8,
+    "durability": 8,
+    "tension_maintenance": 8,
+    "elasticity": 7,
+    "launch_angle": "Medium-High"
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+    "play_style": [
+      "Heavy Topspin",
+      "Aggressive Baseliner",
+      "Modern Baseline",
+      "All Court"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Tecnifibre T-FIGHT",
+    "Tecnifibre TF-40",
+    "Tecnifibre FIRE",
+    "Yonex VCORE",
+    "Yonex EZONE",
+    "Babolat Pure Aero",
+    "Babolat Pure Drive",
+    "HEAD Extreme",
+    "Wilson Shift",
+    "Dunlop SX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+    "best_pairings": [
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²",
+      "Tecnifibre Triax",
+      "Natural Gut"
+    ]
+  },
+
+  "recommended_tension": {
+    "manufacturer_kg": {
+      "min": 22,
+      "max": 25
+    },
+    "club_player_kg": "21-23",
+    "advanced_player_kg": "22-24",
+    "professional_kg": "23-25"
+  },
+
+  "gauge_recommendation": {
+    "1.18": {
+      "best_for": [
+        "Maximum Spin",
+        "Higher Launch Angle",
+        "Fast Racquet Head Speed"
+      ],
+      "tradeoffs": [
+        "Lowest Durability",
+        "More Frequent Restringing"
+      ]
+    },
+
+    "1.24": {
+      "best_for": [
+        "Best Overall Balance",
+        "Spin",
+        "Control",
+        "Tournament Play"
+      ],
+      "tradeoffs": [
+        "Less Durability than 1.28 and 1.32"
+      ]
+    },
+
+    "1.28": {
+      "best_for": [
+        "Control",
+        "Durability",
+        "Heavy Ball",
+        "Advanced Players"
+      ],
+      "tradeoffs": [
+        "Less Elasticity",
+        "Slightly Lower Launch"
+      ]
+    },
+
+    "1.32": {
+      "best_for": [
+        "Maximum Durability",
+        "Frequent String Breakers",
+        "Maximum Control"
+      ],
+      "tradeoffs": [
+        "Lower Spin",
+        "Firmer Feel",
+        "Lower Power"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.18": {
+      "heavy_topspin_hours": "5-8",
+      "club_player_hours": "10-15"
+    },
+
+    "1.24": {
+      "heavy_topspin_hours": "7-11",
+      "club_player_hours": "12-20"
+    },
+
+    "1.28": {
+      "heavy_topspin_hours": "9-14",
+      "club_player_hours": "16-25"
+    },
+
+    "1.32": {
+      "heavy_topspin_hours": "12-18",
+      "club_player_hours": "20-30"
+    }
+  },
+
+  "comparison_tags": [
+    "Pentagonal Polyester",
+    "Maximum Spin",
+    "High Control",
+    "Thermocore",
+    "French Made",
+    "Shaped Co-Polyester"
+  ],
+
+  "ai_keywords": [
+    "tecnifibre",
+    "black code",
+    "black code 1.18",
+    "black code 1.24",
+    "black code 1.28",
+    "black code 1.32",
+    "co-polyester",
+    "pentagonal",
+    "thermocore",
+    "spin",
+    "control",
+    "black",
+    "lime",
+    "fire"
+  ],
+
+  "target_competitors": [
+    "Babolat RPM Blast",
+    "Solinco Hyper-G",
+    "Yonex Poly Tour Rev",
+    "HEAD Lynx Tour",
+    "Luxilon ALU Power Spin"
+  ],
+
+  "description": {
+    "en": "Tecnifibre Black Code is a pentagonal co-polyester monofilament designed for aggressive spin and trajectory control. Its five-sided profile increases ball bite, while Tecnifibre's Thermocore manufacturing process uses controlled heating and cooling stages to reduce the natural stiffness of polyester and improve comfort. Available in 1.18, 1.24, 1.28 and 1.32 mm gauges, Black Code allows players to choose between maximum spin, balanced performance or greater durability and control.",
+
+    "zh": "Tecnifibre Black Code 是一款五边形共聚酯单丝球线，以强烈旋转和稳定的击球轨迹控制为核心。五边形截面能够更有效咬住网球，制造高上旋和更具攻击性的弹道；Tecnifibre 独有的 Thermocore 工艺通过多阶段加热与冷却降低聚酯材料天然的硬度，从而改善舒适性。提供 1.18、1.24、1.28 和 1.32 毫米四种线径：1.18 偏最大旋转，1.24 最均衡，1.28 更强调控制与耐久，而 1.32 则适合力量较大及频繁断线的球员。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13"
+  }
+}
