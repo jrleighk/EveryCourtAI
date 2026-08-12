@@ -1,0 +1,160 @@
+{
+  "id": "dunlop_fx500_2026",
+  "brand": "Dunlop",
+  "series": "FX",
+  "model": "FX 500",
+  "year": 2026,
+  "edition": "Standard",
+  "category": "Racquet",
+  "collaboration": false,
+
+  "specifications": {
+    "head_size_sq_in": 100,
+    "length_in": 27.0,
+    "weight_g_unstrung": 300,
+    "balance_mm_unstrung": 320,
+    "string_pattern": "16x19",
+    "beam_mm": null,
+    "stiffness_ra": null,
+    "swingweight": null,
+
+    "grip_sizes": [
+      "L1",
+      "L2",
+      "L3",
+      "L4"
+    ]
+  },
+
+  "technology": [
+    "Power Boost Frame Geometry",
+    "Power Boost Groove",
+    "Sonic Core with Infinergy",
+    "Flex Touch Resin",
+    "V-Energy Shaft"
+  ],
+
+  "playing_characteristics": {
+    "power": 10,
+    "control": 7,
+    "spin": 8,
+    "comfort": 8,
+    "maneuverability": 8,
+    "stability": 8
+  },
+
+  "playing_tags": [
+    "Advanced",
+    "Power",
+    "All Court",
+    "Baseline",
+    "Easy Depth"
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced"
+    ],
+    "swing_style": [
+      "Medium",
+      "Medium-Fast",
+      "Fast"
+    ],
+    "play_style": [
+      "Aggressive Baseliner",
+      "All Court",
+      "Attacking Player"
+    ]
+  },
+
+  "recommended_skill_ntrp": {
+    "min": 3.5,
+    "max": 5.5
+  },
+
+  "recommended_skill_cn": {
+    "min": 3.0,
+    "max": 5.0
+  },
+
+  "recommended_match_type": [
+    "Singles",
+    "Doubles"
+  ],
+
+  "recommended_strings": {
+    "polyester": [],
+    "multifilament": [],
+    "natural_gut": [],
+    "hybrid": [],
+    "beginner": [],
+    "intermediate": [],
+    "advanced": []
+  },
+
+  "recommended_tension_lbs": {
+    "polyester": {
+      "min": 45,
+      "max": 50
+    },
+    "multifilament": {
+      "min": 48,
+      "max": 54
+    },
+    "natural_gut": {
+      "min": 50,
+      "max": 55
+    },
+    "hybrid": {
+      "main": "48-50",
+      "cross": "46-48"
+    }
+  },
+
+  "comparison_tags": [
+    "Power Racquet",
+    "100 Head Size",
+    "300g",
+    "16x19 Pattern",
+    "Easy Power"
+  ],
+
+  "ai_keywords": [
+    "dunlop",
+    "fx500",
+    "fx 500",
+    "2026",
+    "100",
+    "300g",
+    "320mm",
+    "16x19",
+    "power",
+    "baseline"
+  ],
+
+  "target_competitors": [
+    "Babolat Pure Drive 2026",
+    "Yonex EZONE 100",
+    "Wilson Ultra 100 V5",
+    "HEAD Boom MP",
+    "Tecnifibre T-Fight 300"
+  ],
+
+  "release_status": {
+    "status": "current",
+    "replacement": null,
+    "discontinued": false
+  },
+
+  "description": {
+    "en": "The Dunlop FX 500 2026 is a modern power racquet featuring a 100 sq.in head, 300 g unstrung weight and a 16x19 string pattern. Designed for players seeking effortless pace, easy depth and comfortable power while maintaining solid maneuverability.",
+
+    "zh": "Dunlop FX 500 2026 是 FX 系列的核心力量型球拍，采用100平方英寸拍面、300克空拍重量、320mm平衡点及16×19线床，为追求轻松击球深度、强劲力量及舒适击球感的中高级球员打造，同时保持良好的挥拍速度与操控性。"
+  },
+
+  "verification": {
+    "status": "verified",
+    "last_updated": "2026-08-13"
+  }
+}
