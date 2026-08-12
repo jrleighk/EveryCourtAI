@@ -1,0 +1,141 @@
+{
+  "id": "tecnifibre_razor_spin_120",
+  "brand": "Tecnifibre",
+  "series": "Razor",
+  "model": "Razor Spin",
+  "category": "String",
+
+  "manufacturer_data": {
+    "packaging": "Set",
+    "length_m": 12,
+    "construction": "Monofilament",
+    "material": "Co-Polyester",
+    "additives": [
+      "Polyurethane (PU)"
+    ],
+    "shape": "Square",
+    "gauge_mm": 1.20,
+    "recommended_tension_kg": {
+      "min": 22,
+      "max": 25
+    },
+    "maximum_tension_kg": 32
+  },
+
+  "specifications": {
+    "string_family": "Polyester",
+    "construction": "Monofilament",
+    "cross_section": "Square",
+    "surface": "Smooth",
+    "color": null,
+    "available_gauges_mm": [
+      1.20
+    ]
+  },
+
+  "playing_characteristics": {
+    "power": 7,
+    "control": 9,
+    "spin": 10,
+    "comfort": 8,
+    "feel": 8,
+    "durability": 8,
+    "tension_maintenance": 8
+  },
+
+  "design_profile": {
+    "string_type": "Control Spin Polyester",
+    "target_player": "Intermediate to Advanced",
+    "arm_friendly": true,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": false
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast"
+    ],
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "All Court"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Tecnifibre T-FIGHT",
+    "Tecnifibre TF-40",
+    "Yonex VCORE",
+    "Yonex EZONE",
+    "Wilson Blade",
+    "HEAD Extreme",
+    "Babolat Pure Aero",
+    "Babolat Pure Strike"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+    "best_pairings": [
+      "Natural Gut",
+      "Tecnifibre Triax",
+      "Tecnifibre X-One Biphase",
+      "Multifeel"
+    ]
+  },
+
+  "recommended_tension": {
+    "club_player_kg": "21-23",
+    "advanced_player_kg": "22-24",
+    "professional_kg": "23-25"
+  },
+
+  "comparison_tags": [
+    "Square Polyester",
+    "Maximum Spin",
+    "PU Enhanced",
+    "Comfort Polyester",
+    "Control",
+    "Spin Friendly"
+  ],
+
+  "ai_keywords": [
+    "tecnifibre",
+    "razor spin",
+    "razor",
+    "polyester",
+    "co-poly",
+    "square",
+    "spin",
+    "control",
+    "1.20",
+    "polyurethane",
+    "pu"
+  ],
+
+  "target_competitors": [
+    "Solinco Hyper-G",
+    "Luxilon Eco Power",
+    "Yonex Poly Tour Rev",
+    "Babolat RPM Blast",
+    "Kirschbaum Max Power Rough"
+  ],
+
+  "description": {
+    "en": "Tecnifibre Razor Spin is a square-shaped co-polyester monofilament string designed for maximum spin and directional control. High modulus co-polyester provides excellent precision, while polyurethane additives improve comfort compared with traditional polyester strings. The square profile increases ball bite for enhanced topspin without sacrificing feel.",
+
+    "zh": "Tecnifibre Razor Spin 是一款方形截面的高模量共聚酯单丝球线，专为追求旋转与控制的球员打造。高模量 Co-Poly 提供精准击球反馈，PU 聚氨酯添加剂则改善传统聚酯线偏硬的手感，提高舒适度。方形截面能够更有效咬住网球，提升上旋制造能力，同时保持稳定的方向控制。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13"
+  }
+}
