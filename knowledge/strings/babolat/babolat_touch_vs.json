@@ -1,0 +1,236 @@
+{
+  "id": "babolat_touch_vs",
+  "brand": "Babolat",
+  "series": "Touch VS",
+  "model": "Touch VS",
+  "category": "String",
+
+  "manufacturer_data": {
+    "packaging": "Set",
+    "length_m": 12,
+    "length_ft": 39,
+    "construction": "Natural Gut",
+    "material": "Natural Gut",
+    "composition": "Gut",
+    "country_of_origin": "France"
+  },
+
+  "specifications": {
+    "string_family": "Natural Gut",
+    "construction": "Twisted Natural Fibres",
+    "cross_section": "Round",
+    "surface": "Smooth",
+
+    "available_colors": [
+      "Natural"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_mm": 1.30,
+        "available": true,
+
+        "power": 10,
+        "control": 9,
+        "spin": 7,
+        "comfort": 10,
+        "feel": 10,
+        "durability": 7,
+        "tension_maintenance": 10,
+        "elasticity": 10,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Maximum Feel",
+          "Maximum Comfort",
+          "Maximum Power",
+          "Excellent Tension Hold",
+          "Hybrid Stringing",
+          "Advanced Players",
+          "Players Seeking Arm Comfort"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "Natural Collagen Fibres",
+    "Twisted Fibre Construction",
+    "High Elasticity Natural Gut"
+  ],
+
+  "design_profile": {
+    "string_type": "Premium Natural Gut",
+    "target_player": "All Levels Seeking Maximum Feel and Comfort",
+    "arm_friendly": true,
+    "spin_focus": false,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": false,
+    "tension_stability_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 10,
+    "control": 9,
+    "spin": 7,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 7,
+    "tension_maintenance": 10,
+    "elasticity": 10,
+    "launch_angle": "Medium-High"
+  },
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate",
+      "Advanced",
+      "Tournament",
+      "Professional"
+    ],
+
+    "swing_speed": [
+      "Slow",
+      "Medium",
+      "Medium-Fast",
+      "Fast"
+    ],
+
+    "play_style": [
+      "All Court",
+      "Baseline",
+      "Serve & Volley",
+      "Touch Player",
+      "Flat Hitter"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Pro Staff",
+    "Wilson Blade",
+    "Yonex PERCEPT",
+    "Yonex EZONE",
+    "HEAD Speed",
+    "HEAD Prestige",
+    "Tecnifibre TF-40",
+    "Tecnifibre T-FIGHT",
+    "Prince Tour",
+    "Dunlop CX",
+    "Babolat Pure Strike"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Babolat RPM Blast",
+      "Luxilon ALU Power",
+      "Luxilon 4G",
+      "Tecnifibre Razor Soft",
+      "Tecnifibre Black Code"
+    ]
+  },
+
+  "recommended_tension": {
+    "club_player_kg": "22-25",
+    "advanced_player_kg": "23-26",
+    "professional_kg": "24-28"
+  },
+
+  "gauge_recommendation": {
+    "1.30": {
+      "best_for": [
+        "Maximum Feel",
+        "Maximum Comfort",
+        "High Power",
+        "Excellent Tension Stability",
+        "Hybrid Setups"
+      ],
+
+      "tradeoffs": [
+        "Higher Cost",
+        "Lower Abrasion Resistance than Polyester",
+        "Sensitive to Excessive Friction in Full Bed"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.30": {
+      "heavy_topspin_hours": "8-15",
+      "club_player_hours": "20-40"
+    }
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Seeking Maximum Comfort",
+      "Players Seeking Maximum Feel",
+      "Players With Slower Swing Speed",
+      "Advanced Players Seeking Premium Response",
+      "Hybrid Setups With Polyester"
+    ],
+
+    "avoid_for": [
+      "Very Frequent String Breakers",
+      "Players Prioritizing Maximum Polyester-Like Spin",
+      "Players Looking for Low-Cost Stringing"
+    ],
+
+    "alternative_strings": [
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²",
+      "Wilson Natural Gut",
+      "Luxilon Natural Gut"
+    ]
+  },
+
+  "comparison_tags": [
+    "Natural Gut",
+    "Maximum Feel",
+    "Maximum Comfort",
+    "Maximum Power",
+    "Best Tension Hold",
+    "Tour Proven",
+    "Premium String"
+  ],
+
+  "ai_keywords": [
+    "babolat",
+    "touch vs",
+    "vs touch",
+    "natural gut",
+    "gut",
+    "1.30",
+    "130",
+    "comfort",
+    "feel",
+    "power",
+    "tension hold",
+    "hybrid",
+    "made in france"
+  ],
+
+  "target_competitors": [
+    "Wilson Natural Gut",
+    "Luxilon Natural Gut",
+    "Tecnifibre X-One Biphase"
+  ],
+
+  "description": {
+    "en": "Babolat Touch VS is one of the world's benchmark natural gut tennis strings. Made in France from natural collagen fibres, it offers exceptional elasticity, power, comfort and feel while maintaining tension better than almost any other string type. Its long ball-contact time produces a uniquely connected response, and its tension stability makes it especially valuable in professional and hybrid string setups.",
+
+    "zh": "Babolat Touch VS 是全球天然肠线领域最具代表性的产品之一，法国制造，以天然胶原纤维制成。它拥有极高弹性、强劲力量、顶级舒适性和极佳击球反馈，同时具备非常出色的保磅能力。由于球线与球接触时间更长，Touch VS 能提供非常细腻、直接的手感，并且特别适合与聚酯线组成混合穿线方案。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13"
+  }
+}
