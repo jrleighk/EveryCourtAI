@@ -1,0 +1,306 @@
+{
+  "id": "gamma_synthetic_gut",
+  "brand": "GAMMA",
+  "series": "Synthetic Gut",
+  "model": "Synthetic Gut",
+  "category": "String",
+
+  "manufacturer_data": {
+    "packaging": "Set",
+    "construction": "Synthetic Gut",
+    "material": "Synthetic Nylon",
+    "technology": "Wearguard Fibers"
+  },
+
+  "specifications": {
+    "string_family": "Synthetic Gut",
+    "construction": "Synthetic Gut with Wearguard Fibers",
+    "cross_section": "Round",
+    "surface": "Smooth",
+
+    "available_gauges": [
+      {
+        "gauge_name": "15L",
+        "available": true,
+
+        "power": 7,
+        "control": 8,
+        "spin": 6,
+        "comfort": 8,
+        "feel": 7,
+        "durability": 10,
+        "tension_maintenance": 8,
+        "elasticity": 7,
+        "launch_angle": "Medium-Low",
+
+        "recommended_use": [
+          "Maximum Durability",
+          "Frequent String Breakers",
+          "High Usage Players",
+          "Coaches",
+          "Training Racquets"
+        ]
+      },
+
+      {
+        "gauge_name": "16",
+        "available": true,
+
+        "power": 8,
+        "control": 8,
+        "spin": 7,
+        "comfort": 8,
+        "feel": 8,
+        "durability": 9,
+        "tension_maintenance": 8,
+        "elasticity": 8,
+        "launch_angle": "Medium",
+
+        "recommended_use": [
+          "Best Overall Balance",
+          "Club Players",
+          "All Court",
+          "Singles",
+          "Doubles"
+        ]
+      },
+
+      {
+        "gauge_name": "17",
+        "available": true,
+
+        "power": 9,
+        "control": 7,
+        "spin": 8,
+        "comfort": 9,
+        "feel": 9,
+        "durability": 7,
+        "tension_maintenance": 7,
+        "elasticity": 9,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "More Feel",
+          "More Power",
+          "More Spin",
+          "Intermediate Players",
+          "Players Who Do Not Break Strings Frequently"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "Wearguard Fibers",
+    "Low-Friction Exterior",
+    "Notching Resistance"
+  ],
+
+  "design_profile": {
+    "string_type": "All-Around Synthetic Gut",
+    "target_player": "All Levels",
+    "arm_friendly": true,
+    "spin_focus": false,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 8,
+    "spin": 7,
+    "comfort": 8,
+    "feel": 8,
+    "durability": 9,
+    "tension_maintenance": 8,
+    "elasticity": 8,
+    "launch_angle": "Medium"
+  },
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate",
+      "Advanced Club"
+    ],
+
+    "swing_speed": [
+      "Slow",
+      "Medium",
+      "Medium-Fast"
+    ],
+
+    "play_style": [
+      "All Court",
+      "Baseline",
+      "Serve & Volley",
+      "Doubles",
+      "Recreational"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Babolat Pure Drive",
+    "Babolat Pure Aero",
+    "Wilson Clash",
+    "Wilson Blade",
+    "HEAD Speed",
+    "HEAD Boom",
+    "Yonex EZONE",
+    "Yonex VCORE",
+    "Tecnifibre T-FIGHT",
+    "Dunlop FX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "GAMMA Moto",
+      "GAMMA Moto Soft",
+      "GAMMA Ocho",
+      "Luxilon ALU Power",
+      "Babolat RPM Blast",
+      "Tecnifibre Razor Soft"
+    ]
+  },
+
+  "gauge_recommendation": {
+    "15L": {
+      "best_for": [
+        "Maximum Durability",
+        "Training",
+        "Frequent String Breakers"
+      ],
+
+      "tradeoffs": [
+        "Lower Feel",
+        "Lower Spin",
+        "Firmer Response"
+      ]
+    },
+
+    "16": {
+      "best_for": [
+        "Best Overall Balance",
+        "Durability",
+        "Control",
+        "Everyday Club Tennis"
+      ],
+
+      "tradeoffs": [
+        "Less Feel than 17 Gauge"
+      ]
+    },
+
+    "17": {
+      "best_for": [
+        "Maximum Feel",
+        "More Spin",
+        "More Elastic Response",
+        "More Power"
+      ],
+
+      "tradeoffs": [
+        "Lower Durability",
+        "More Frequent Restringing"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "15L": {
+      "heavy_topspin_hours": "15-25",
+      "club_player_hours": "30-50"
+    },
+
+    "16": {
+      "heavy_topspin_hours": "12-20",
+      "club_player_hours": "25-40"
+    },
+
+    "17": {
+      "heavy_topspin_hours": "8-15",
+      "club_player_hours": "18-30"
+    }
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Beginners",
+      "Intermediate Club Players",
+      "Players Seeking Good Value",
+      "Players Wanting Balanced Performance",
+      "Players Wanting More Comfort than Polyester",
+      "Training Racquets"
+    ],
+
+    "avoid_for": [
+      "Advanced Players Seeking Maximum Polyester Spin",
+      "Very Heavy Topspin Players",
+      "Players Seeking Natural-Gut-Level Feel"
+    ],
+
+    "alternative_strings": [
+      "GAMMA Live Wire",
+      "Wilson Synthetic Gut Power",
+      "Prince Synthetic Gut",
+      "HEAD Synthetic Gut",
+      "Babolat Synthetic Gut"
+    ]
+  },
+
+  "comparison_tags": [
+    "Synthetic Gut",
+    "All-Around",
+    "Durable",
+    "Wearguard",
+    "Good Value",
+    "All Levels",
+    "Arm Friendly"
+  ],
+
+  "ai_keywords": [
+    "gamma",
+    "gamma synthetic gut",
+    "synthetic gut",
+    "15L",
+    "16",
+    "17",
+    "wearguard",
+    "durability",
+    "comfort",
+    "all around",
+    "beginner",
+    "intermediate"
+  ],
+
+  "target_competitors": [
+    "Prince Synthetic Gut",
+    "Wilson Synthetic Gut Power",
+    "HEAD Synthetic Gut",
+    "Babolat Synthetic Gut"
+  ],
+
+  "description": {
+    "en": "GAMMA Synthetic Gut is an all-around performance string designed for players of every level and playing style. Wearguard fibres protect the exterior of the string, helping reduce friction and notching while increasing durability. Its balanced combination of power, control, comfort and durability makes it a practical choice for recreational play, club competition and training.",
+
+    "zh": "GAMMA Synthetic Gut 是一款适合各种水平和打法的全能型合成肠线，在力量、控制、舒适性与耐久性之间取得良好平衡。Wearguard 耐磨纤维覆盖球线外层，可降低球线之间的摩擦和切槽磨损，从而提升使用寿命。非常适合初学者、俱乐部球员、训练用拍以及希望获得高性价比穿线方案的用户。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13",
+    "unverified_fields": [
+      "exact_mm_diameter_for_each_gauge",
+      "color",
+      "set_length",
+      "recommended_tension"
+    ]
+  }
+}
