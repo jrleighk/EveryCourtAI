@@ -1,0 +1,283 @@
+{
+  "id": "gamma_tnt2_react_pro",
+  "brand": "GAMMA",
+  "series": "TNT2",
+  "model": "TNT2 React Pro",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Synthetic Multifilament / Solid-Core Hybrid Construction",
+    "material": "Synthetic Nylon",
+    "technology": [
+      "TNT2 Process",
+      "Low Friction Coating",
+      "Wear-Resistant Microfiber Outer Wrap"
+    ]
+  },
+
+  "specifications": {
+    "string_family": "Synthetic Performance String",
+    "construction": "TNT2 Performance Construction",
+    "cross_section": "Round",
+    "surface": "Low-Friction Coated",
+
+    "available_gauges": [
+      {
+        "gauge_name": "16",
+        "gauge_mm": 1.32,
+        "available": true,
+
+        "power": 8,
+        "control": 9,
+        "spin": 9,
+        "comfort": 9,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "elasticity": 8,
+        "launch_angle": "Medium",
+
+        "recommended_use": [
+          "Balanced Spin and Control",
+          "Durability",
+          "Club Competition",
+          "All Court Players",
+          "Players Wanting Better Snapback"
+        ]
+      },
+
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.27,
+        "available": true,
+
+        "power": 9,
+        "control": 9,
+        "spin": 10,
+        "comfort": 9,
+        "feel": 10,
+        "durability": 8,
+        "tension_maintenance": 8,
+        "elasticity": 9,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Maximum Spin",
+          "Responsive Feel",
+          "Fast Snapback",
+          "Intermediate to Advanced Players",
+          "Touch and All Court Play"
+        ]
+      }
+    ],
+
+    "available_colors": [
+      "Natural"
+    ]
+  },
+
+  "technology": [
+    "Patented TNT2 Process",
+    "Proprietary Low-Friction Coating",
+    "Quick Snapback Design",
+    "Wear-Resistant Microfibers",
+    "Enhanced Outer Wrap"
+  ],
+
+  "design_profile": {
+    "string_type": "Spin Responsive Synthetic",
+    "target_player": "Intermediate to Advanced",
+    "arm_friendly": true,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 9,
+    "spin": 9,
+    "comfort": 9,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9,
+    "elasticity": 9,
+    "launch_angle": "Medium"
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament Club"
+    ],
+
+    "swing_speed": [
+      "Medium",
+      "Medium-Fast",
+      "Fast"
+    ],
+
+    "play_style": [
+      "All Court",
+      "Baseline",
+      "Topspin",
+      "Doubles",
+      "Touch Player"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson Clash",
+    "Babolat Pure Drive",
+    "Babolat Pure Aero",
+    "Yonex EZONE",
+    "Yonex VCORE",
+    "HEAD Speed",
+    "HEAD Radical",
+    "Tecnifibre T-FIGHT",
+    "Dunlop FX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "GAMMA Moto",
+      "GAMMA Moto Soft",
+      "Luxilon ALU Power",
+      "Babolat RPM Blast",
+      "Tecnifibre Razor Soft"
+    ]
+  },
+
+  "gauge_recommendation": {
+    "1.32": {
+      "gauge_name": "16",
+
+      "best_for": [
+        "Durability",
+        "Control",
+        "Stable Response",
+        "Frequent Club Play"
+      ],
+
+      "tradeoffs": [
+        "Slightly Less Spin and Feel than 1.27"
+      ]
+    },
+
+    "1.27": {
+      "gauge_name": "17",
+
+      "best_for": [
+        "Maximum Spin",
+        "Snapback",
+        "Feel",
+        "Responsive Play"
+      ],
+
+      "tradeoffs": [
+        "Slightly Lower Durability than 1.32"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.32": {
+      "heavy_topspin_hours": "12-20",
+      "club_player_hours": "24-40"
+    },
+
+    "1.27": {
+      "heavy_topspin_hours": "10-16",
+      "club_player_hours": "20-34"
+    }
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Wanting More Spin Without Polyester Stiffness",
+      "Intermediate to Advanced Club Players",
+      "Players Seeking Quick Snapback",
+      "Players Wanting Strong Control and Comfort",
+      "Players Looking for More Durability than Traditional Multifilament"
+    ],
+
+    "avoid_for": [
+      "Heavy Professional String Breakers",
+      "Players Seeking Maximum Polyester Control",
+      "Players Wanting Natural Gut-Like Maximum Elasticity"
+    ],
+
+    "alternative_strings": [
+      "GAMMA TNT2",
+      "GAMMA Live Wire Professional",
+      "Babolat Xalt",
+      "Tecnifibre XR3",
+      "Tecnifibre Duramix"
+    ]
+  },
+
+  "comparison_tags": [
+    "TNT2",
+    "Low Friction",
+    "Snapback",
+    "Spin",
+    "Control",
+    "Durability",
+    "Comfort",
+    "Wear Resistant"
+  ],
+
+  "ai_keywords": [
+    "gamma",
+    "gamma tnt2 react pro",
+    "tnt2 react pro",
+    "react pro",
+    "16 gauge",
+    "17 gauge",
+    "1.32",
+    "1.27",
+    "low friction coating",
+    "snapback",
+    "wear resistant microfiber",
+    "spin",
+    "control",
+    "comfort"
+  ],
+
+  "target_competitors": [
+    "GAMMA TNT2",
+    "Tecnifibre XR3",
+    "Tecnifibre Duramix",
+    "Babolat Xalt",
+    "Wilson NXT Control"
+  ],
+
+  "description": {
+    "en": "GAMMA TNT2 React Pro combines the patented TNT2 process with a proprietary low-friction coating and wear-resistant microfiber outer wraps. The reduced friction allows the main strings to slide and snap back more easily across the crosses, increasing ball bite and spin. Reinforced outer fibers help prevent notching and extend durability, while the TNT2 process preserves comfort, control and lively response.",
+
+    "zh": "GAMMA TNT2 React Pro 将专利 TNT2 工艺与低摩擦表面涂层及耐磨微纤维外层结构结合。低摩擦设计让竖线能够更容易在横线上滑动并快速回位，从而提升 Snapback、咬球能力与旋转表现；强化耐磨纤维则可减少球线切槽磨损并提升耐久性。同时，TNT2 工艺继续保持良好的舒适性、控制能力和活跃的击球反馈。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13",
+    "verified_fields": [
+      "16 = 1.32 mm",
+      "17 = 1.27 mm",
+      "Color: Natural",
+      "Low Friction Coating",
+      "Wear-Resistant Microfiber Outer Wrap",
+      "TNT2 Process"
+    ]
+  }
+}
