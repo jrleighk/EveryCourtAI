@@ -1,0 +1,236 @@
+{
+  "id": "gamma_live_wire_professional",
+  "brand": "GAMMA",
+  "series": "Live Wire Professional",
+  "model": "Professional",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Multifilament",
+    "material": "Multifilament Nylon",
+    "technology": [
+      "Live Wire Technology",
+      "Iso-Elastic Fibers",
+      "NCP Tension Fibers",
+      "PEEK Abrasion Resistant Fibers"
+    ]
+  },
+
+  "specifications": {
+    "string_family": "Premium Multifilament",
+    "construction": "Multifilament",
+    "cross_section": "Round",
+    "surface": "Pearl Finish",
+
+    "available_gauges": [
+      {
+        "gauge_name": "16",
+        "gauge_mm": 1.32,
+        "available": true
+      },
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.27,
+        "available": true
+      },
+      {
+        "gauge_name": "18",
+        "gauge_mm": 1.22,
+        "available": true
+      }
+    ],
+
+    "available_colors": [
+      "Natural"
+    ]
+  },
+
+  "technology": [
+    "Live Wire Technology",
+    "50% More Iso-Elastic Fibers",
+    "NCP Tension Fibers",
+    "PEEK Abrasion Resistant Fibers"
+  ],
+
+  "design_profile": {
+    "string_type": "Premium Multifilament",
+    "target_player": "Intermediate to Advanced",
+    "arm_friendly": true,
+    "spin_focus": false,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 9,
+    "spin": 7,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 8,
+    "tension_maintenance": 9,
+    "elasticity": 10,
+    "launch_angle": "Medium"
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+    "swing_speed": [
+      "Medium",
+      "Medium-Fast"
+    ],
+    "play_style": [
+      "All Court",
+      "Baseline",
+      "Serve & Volley",
+      "Touch Players"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson Clash",
+    "Babolat Pure Strike",
+    "Yonex Percept",
+    "Yonex EZONE",
+    "HEAD Speed",
+    "Tecnifibre TF40",
+    "Tecnifibre T-FIGHT"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+    "best_pairings": [
+      "Gamma Moto",
+      "Gamma Moto Soft",
+      "Luxilon ALU Power",
+      "Babolat RPM Blast",
+      "Tecnifibre Razor Soft"
+    ]
+  },
+
+  "gauge_recommendation": {
+    "1.32": {
+      "best_for": [
+        "Maximum Durability",
+        "Tournament Players",
+        "Control"
+      ]
+    },
+    "1.27": {
+      "best_for": [
+        "Best Overall Balance",
+        "Power",
+        "Feel"
+      ]
+    },
+    "1.22": {
+      "best_for": [
+        "Maximum Feel",
+        "Comfort",
+        "Touch",
+        "Spin Potential"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.32": {
+      "heavy_topspin_hours": "12-20",
+      "club_player_hours": "25-40"
+    },
+    "1.27": {
+      "heavy_topspin_hours": "10-18",
+      "club_player_hours": "22-35"
+    },
+    "1.22": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "18-30"
+    }
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Wanting Natural Gut Feel",
+      "Players With Arm Sensitivity",
+      "Touch Players",
+      "All Court Players",
+      "Players Seeking Premium Multifilament Performance"
+    ],
+
+    "avoid_for": [
+      "Frequent String Breakers",
+      "Heavy Topspin Polyester Users"
+    ],
+
+    "alternative_strings": [
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²",
+      "Babolat Touch VS",
+      "Babolat Xalt",
+      "Wilson NXT"
+    ]
+  },
+
+  "comparison_tags": [
+    "Premium Multifilament",
+    "Gut Like Feel",
+    "Comfort",
+    "Power",
+    "Touch",
+    "PEEK Fibers",
+    "NCP"
+  ],
+
+  "ai_keywords": [
+    "gamma",
+    "gamma live wire professional",
+    "live wire professional",
+    "professional",
+    "iso elastic fibers",
+    "peek fibers",
+    "ncp tension fibers",
+    "premium multifilament",
+    "gut like",
+    "comfort",
+    "feel"
+  ],
+
+  "target_competitors": [
+    "Tecnifibre X-One Biphase",
+    "Tecnifibre NRG²",
+    "Wilson NXT",
+    "Babolat Xalt",
+    "Babolat Touch VS"
+  ],
+
+  "description": {
+    "en": "Gamma Live Wire Professional is a premium multifilament string engineered to provide natural gut-like performance while maintaining outstanding comfort and playability. Its construction incorporates 50% more Iso-Elastic Fibers, NCP Tension Fibers for improved tension maintenance, and PEEK abrasion-resistant fibers for enhanced durability, producing a crisp, solid response preferred by advanced players.",
+
+    "zh": "Gamma Live Wire Professional 是 Gamma 高端多芯球线，旨在提供接近天然肠线的击球体验，同时保持 Live Wire 系列出色的舒适性。它采用比标准 Live Wire 多 50% 的 Iso-Elastic Fibers、NCP 保磅纤维以及 PEEK 耐磨纤维，兼具优秀的手感、力量、控制、保磅能力与耐久性，适合追求天然肠线击球感但希望获得更高耐用性的球员。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13",
+    "verified_fields": [
+      "16 = 1.32 mm",
+      "17 = 1.27 mm",
+      "18 = 1.22 mm",
+      "Color: Natural",
+      "50% More Iso-Elastic Fibers",
+      "NCP Tension Fibers",
+      "PEEK Abrasion Resistant Fibers"
+    ]
+  }
+}
