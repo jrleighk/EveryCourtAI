@@ -1,0 +1,226 @@
+{
+  "id": "gamma_tnt2",
+  "brand": "GAMMA",
+  "series": "TNT2",
+  "model": "TNT2",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Multifilament",
+    "material": "Nylon Multifilament",
+    "technology": [
+      "TNT2 Technology"
+    ]
+  },
+
+  "specifications": {
+    "string_family": "Multifilament",
+    "construction": "Nylon Multifilament",
+    "cross_section": "Round",
+    "surface": "Smooth",
+
+    "available_gauges": [
+      {
+        "gauge_name": "16",
+        "gauge_mm": 1.29,
+        "available": true
+      },
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.22,
+        "available": true
+      }
+    ],
+
+    "available_colors": [
+      "Black",
+      "Blue",
+      "Orange Pink",
+      "White",
+      "Yellow"
+    ]
+  },
+
+  "technology": [
+    "TNT2 Technology"
+  ],
+
+  "design_profile": {
+    "string_type": "Power Multifilament",
+    "target_player": "All Levels",
+    "arm_friendly": true,
+    "spin_focus": false,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 8,
+    "spin": 7,
+    "comfort": 9,
+    "feel": 9,
+    "durability": 8,
+    "tension_maintenance": 8,
+    "elasticity": 9,
+    "launch_angle": "Medium"
+  },
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate",
+      "Advanced Club"
+    ],
+
+    "swing_speed": [
+      "Slow",
+      "Medium",
+      "Medium-Fast"
+    ],
+
+    "play_style": [
+      "All Court",
+      "Baseline",
+      "Doubles",
+      "Club Tennis"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Clash",
+    "Wilson Blade",
+    "Babolat Pure Drive",
+    "Yonex EZONE",
+    "HEAD Boom",
+    "Tecnifibre T-FIGHT"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Gamma Moto",
+      "Gamma Moto Soft",
+      "Gamma Ocho",
+      "Luxilon ALU Power",
+      "Babolat RPM Blast"
+    ]
+  },
+
+  "gauge_recommendation": {
+    "1.29": {
+      "gauge_name": "16",
+
+      "best_for": [
+        "Durability",
+        "Club Players",
+        "Balanced Performance"
+      ],
+
+      "tradeoffs": [
+        "Slightly Firmer Feel"
+      ]
+    },
+
+    "1.22": {
+      "gauge_name": "17",
+
+      "best_for": [
+        "Maximum Feel",
+        "Power",
+        "Comfort",
+        "Touch Shots"
+      ],
+
+      "tradeoffs": [
+        "Reduced Durability"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.29": {
+      "heavy_topspin_hours": "10-18",
+      "club_player_hours": "20-35"
+    },
+
+    "1.22": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "15-28"
+    }
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Seeking Comfort",
+      "Club Players",
+      "Players Switching From Polyester",
+      "Players With Arm Sensitivity",
+      "Doubles Players"
+    ],
+
+    "avoid_for": [
+      "Frequent String Breakers",
+      "Heavy Topspin Competitors"
+    ],
+
+    "alternative_strings": [
+      "Gamma Live Wire",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²",
+      "Babolat Xalt",
+      "Babolat AddiXion+"
+    ]
+  },
+
+  "comparison_tags": [
+    "Multifilament",
+    "Comfort",
+    "Power",
+    "Arm Friendly",
+    "Control",
+    "TNT2"
+  ],
+
+  "ai_keywords": [
+    "gamma",
+    "gamma tnt2",
+    "tnt2",
+    "multifilament",
+    "comfort",
+    "power",
+    "nylon",
+    "16 gauge",
+    "17 gauge"
+  ],
+
+  "target_competitors": [
+    "Tecnifibre X-One Biphase",
+    "Tecnifibre NRG²",
+    "Babolat Xalt",
+    "Wilson NXT",
+    "Head Velocity MLT"
+  ],
+
+  "description": {
+    "en": "Gamma TNT2 is a premium multifilament string engineered to deliver explosive power, excellent comfort and responsive feel. TNT2 Technology enhances elasticity and energy return, making it an outstanding option for players seeking arm-friendly performance with balanced control.",
+
+    "zh": "GAMMA TNT2 是一款高性能多芯球线，采用 TNT2 技术提升球线弹性与能量回馈，兼具力量、舒适性与击球手感。非常适合希望获得更柔和击球体验，同时保持稳定控制和良好动力输出的球员。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13",
+    "verified_fields": [
+      "16 = 1.29 mm",
+      "17 = 1.22 mm",
+      "Colors: Black, Blue, Orange Pink, White, Yellow"
+    ]
+  }
+}
