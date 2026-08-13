@@ -1,0 +1,275 @@
+{
+  "id": "gamma_verve_soft",
+  "brand": "GAMMA",
+  "series": "Verve",
+  "model": "Verve Soft",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "AMP Co-Polyester",
+    "technology": [
+      "AMP Technology",
+      "Co-Extrusion Construction",
+      "Tri-Prong Geometry"
+    ]
+  },
+
+  "specifications": {
+    "string_family": "Soft Co-Polyester",
+    "construction": "Co-Extruded Monofilament",
+    "cross_section": "Tri-Prong",
+    "surface": "Shaped",
+
+    "available_gauges": [
+      {
+        "gauge_name": "16",
+        "gauge_mm": 1.30,
+        "available": true,
+
+        "power": 8,
+        "control": 9,
+        "spin": 9,
+        "comfort": 8,
+        "feel": 8,
+        "durability": 9,
+        "tension_maintenance": 8,
+        "elasticity": 8,
+        "launch_angle": "Medium",
+
+        "recommended_use": [
+          "Balanced Spin",
+          "Control",
+          "Heavy Hitters",
+          "Club Competition"
+        ]
+      },
+
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.25,
+        "available": true,
+
+        "power": 9,
+        "control": 9,
+        "spin": 10,
+        "comfort": 9,
+        "feel": 9,
+        "durability": 8,
+        "tension_maintenance": 8,
+        "elasticity": 9,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Maximum Spin",
+          "Fast Swing Speed",
+          "Aggressive Baseliner",
+          "Tournament Players"
+        ]
+      }
+    ],
+
+    "available_colors": [
+      "Yellow / Black",
+      "Blue / Black"
+    ]
+  },
+
+  "technology": [
+    "AMP Technology",
+    "Soft Co-Poly Core",
+    "Co-Extrusion Construction",
+    "Tri-Prong Spin Profile",
+    "Vibration Absorption"
+  ],
+
+  "design_profile": {
+    "string_type": "Soft Spin Polyester",
+    "target_player": "Intermediate to Advanced",
+    "arm_friendly": true,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 9,
+    "spin": 10,
+    "comfort": 9,
+    "feel": 9,
+    "durability": 8,
+    "tension_maintenance": 8,
+    "elasticity": 8,
+    "launch_angle": "Medium-High"
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Heavy Topspin",
+      "Aggressive Baseliner",
+      "Modern Baseline",
+      "All Court"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Babolat Pure Aero",
+    "Babolat Pure Drive",
+    "Wilson Shift",
+    "Wilson Blade",
+    "Yonex VCORE",
+    "Yonex EZONE",
+    "HEAD Extreme",
+    "HEAD Speed",
+    "Tecnifibre T-FIGHT",
+    "Dunlop SX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Gamma Live Wire Professional",
+      "Gamma TNT2 React Pro",
+      "Gamma Synthetic Gut",
+      "Babolat Touch VS",
+      "Tecnifibre X-One Biphase"
+    ]
+  },
+
+  "gauge_recommendation": {
+    "1.30": {
+      "best_for": [
+        "Durability",
+        "Control",
+        "Heavy Hitters",
+        "Stable Response"
+      ],
+
+      "tradeoffs": [
+        "Less Spin than 1.25",
+        "Slightly Firmer Feel"
+      ]
+    },
+
+    "1.25": {
+      "best_for": [
+        "Maximum Spin",
+        "Snapback",
+        "Higher Launch",
+        "Responsive Feel"
+      ],
+
+      "tradeoffs": [
+        "Lower Durability"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.30": {
+      "heavy_topspin_hours": "10-16",
+      "club_player_hours": "20-30"
+    },
+
+    "1.25": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "18-28"
+    }
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Wanting Polyester Spin Without Harsh Feel",
+      "Intermediate to Advanced Players",
+      "Aggressive Baseliners",
+      "Players With Mild Arm Sensitivity",
+      "Modern Topspin Tennis"
+    ],
+
+    "avoid_for": [
+      "Beginners",
+      "Players Wanting Maximum Comfort",
+      "Players Preferring Multifilament Feel"
+    ],
+
+    "alternative_strings": [
+      "Tecnifibre Razor Soft",
+      "Babolat RPM Soft",
+      "Yonex Poly Tour Air",
+      "Luxilon ECO Power Soft",
+      "Head Lynx Touch"
+    ]
+  },
+
+  "comparison_tags": [
+    "Soft Polyester",
+    "AMP",
+    "Tri-Prong",
+    "Spin",
+    "Comfort",
+    "Control",
+    "Co-Extrusion"
+  ],
+
+  "ai_keywords": [
+    "gamma",
+    "gamma verve soft",
+    "verve soft",
+    "amp",
+    "soft polyester",
+    "tri prong",
+    "spin",
+    "co extrusion",
+    "1.30",
+    "1.25",
+    "yellow black",
+    "blue black"
+  ],
+
+  "target_competitors": [
+    "Tecnifibre Razor Soft",
+    "Babolat RPM Soft",
+    "Yonex Poly Tour Air",
+    "Luxilon ECO Power Soft",
+    "Head Lynx Touch"
+  ],
+
+  "description": {
+    "en": "Gamma Verve Soft is a soft co-polyester monofilament built with AMP Technology and a co-extrusion process that combines a soft core with stiffer outer prongs. The three-prong profile maximizes ball bite and spin while maintaining excellent comfort, control and vibration dampening, making it ideal for aggressive players who want polyester performance without excessive stiffness.",
+
+    "zh": "Gamma Verve Soft 是一款采用 AMP Technology 与共挤结构（Co-Extrusion）的软质聚酯单丝球线。其柔软核心负责提升舒适性并吸收震动，外层三凸棱聚酯结构则增强咬球与旋转能力，在保证控制力的同时提供更高的容错性，是追求旋转但又不希望传统聚酯过硬的球员理想选择。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13",
+    "verified_fields": [
+      "16 = 1.30 mm",
+      "17 = 1.25 mm",
+      "Colors: Yellow/Black, Blue/Black",
+      "AMP Technology",
+      "Co-Extrusion Construction",
+      "Tri-Prong Geometry"
+    ]
+  }
+}
