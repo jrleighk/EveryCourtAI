@@ -1,0 +1,308 @@
+{
+  "id": "gamma_moto",
+  "brand": "GAMMA",
+  "series": "Moto",
+  "model": "Moto",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Co-Polyester",
+    "cross_section": "Heptagonal",
+    "technology": [
+      "AMP Technology"
+    ]
+  },
+
+  "specifications": {
+    "string_family": "Polyester",
+    "construction": "Co-Polyester Monofilament",
+    "cross_section": "Heptagonal",
+    "surface": "Shaped",
+
+    "available_colors": [
+      "Black",
+      "Lime"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_name": "16",
+        "gauge_mm": 1.29,
+        "color": "Black",
+        "available": true,
+
+        "power": 8,
+        "control": 9,
+        "spin": 9,
+        "comfort": 6,
+        "feel": 9,
+        "durability": 10,
+        "tension_maintenance": 9,
+        "elasticity": 7,
+        "launch_angle": "Medium",
+
+        "recommended_use": [
+          "Heavy Hitters",
+          "Maximum Durability",
+          "High Control",
+          "Aggressive Baseliner",
+          "Tournament Players"
+        ]
+      },
+
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.24,
+        "color": "Lime",
+        "available": true,
+
+        "power": 9,
+        "control": 9,
+        "spin": 10,
+        "comfort": 7,
+        "feel": 9,
+        "durability": 8,
+        "tension_maintenance": 8,
+        "elasticity": 8,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Maximum Spin",
+          "Fast Racquet Head Speed",
+          "Aggressive Baseliner",
+          "Modern Topspin",
+          "Advanced Players"
+        ]
+      }
+    ]
+  },
+
+  "color_variants": [
+    {
+      "color": "Black",
+      "available_gauges": [
+        {
+          "gauge_name": "16",
+          "gauge_mm": 1.29
+        }
+      ],
+      "performance_difference": true
+    },
+
+    {
+      "color": "Lime",
+      "available_gauges": [
+        {
+          "gauge_name": "17",
+          "gauge_mm": 1.24
+        }
+      ],
+      "performance_difference": true
+    }
+  ],
+
+  "technology": [
+    "AMP Technology",
+    "Heptagonal Shape",
+    "Co-Polyester Construction",
+    "High Ball Bite Geometry"
+  ],
+
+  "design_profile": {
+    "string_type": "Spin Control Polyester",
+    "target_player": "High-Performance Players",
+    "arm_friendly": false,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": false,
+    "durability_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 9,
+    "spin": 10,
+    "comfort": 6,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9,
+    "elasticity": 8,
+    "launch_angle": "Medium-High"
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Heavy Topspin",
+      "Aggressive Baseliner",
+      "Modern Baseline",
+      "All Court"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Babolat Pure Aero",
+    "Babolat Pure Drive",
+    "Yonex VCORE",
+    "Yonex EZONE",
+    "HEAD Extreme",
+    "Wilson Shift",
+    "Wilson Blade",
+    "Tecnifibre T-FIGHT",
+    "Dunlop SX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "GAMMA Live Wire",
+      "GAMMA Synthetic Gut",
+      "Babolat Touch VS",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²"
+    ]
+  },
+
+  "gauge_recommendation": {
+    "1.29": {
+      "gauge_name": "16",
+      "color": "Black",
+
+      "best_for": [
+        "Maximum Durability",
+        "Heavy Hitters",
+        "More Stable Response",
+        "Lower Launch Angle",
+        "Control"
+      ],
+
+      "tradeoffs": [
+        "Less Spin than 1.24",
+        "Firmer Feel",
+        "Lower Elasticity"
+      ]
+    },
+
+    "1.24": {
+      "gauge_name": "17",
+      "color": "Lime",
+
+      "best_for": [
+        "Maximum Spin",
+        "Ball Bite",
+        "Higher Launch Angle",
+        "Fast Racquet Head Speed",
+        "Responsive Feel"
+      ],
+
+      "tradeoffs": [
+        "Less Durability than 1.29",
+        "More Frequent Restringing"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.29": {
+      "heavy_topspin_hours": "10-16",
+      "club_player_hours": "18-30"
+    },
+
+    "1.24": {
+      "heavy_topspin_hours": "7-12",
+      "club_player_hours": "14-24"
+    }
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Seeking Maximum Spin",
+      "Advanced Players With Fast Swings",
+      "Aggressive Baseliners",
+      "Players Wanting Strong Ball Bite",
+      "Players Seeking Responsive Polyester Feel"
+    ],
+
+    "avoid_for": [
+      "Beginners",
+      "Players With Sensitive Arms",
+      "Players Seeking Maximum Comfort",
+      "Slow Swing Speed Players"
+    ],
+
+    "alternative_strings": [
+      "Babolat RPM Blast",
+      "Babolat RPM Rough",
+      "Tecnifibre Black Code",
+      "Solinco Hyper-G",
+      "Yonex Poly Tour Rev"
+    ]
+  },
+
+  "comparison_tags": [
+    "Heptagonal Polyester",
+    "Maximum Spin",
+    "High Ball Bite",
+    "AMP Technology",
+    "High Control",
+    "Responsive",
+    "Durable"
+  ],
+
+  "ai_keywords": [
+    "gamma",
+    "gamma moto",
+    "moto",
+    "moto black",
+    "moto lime",
+    "16 gauge",
+    "17 gauge",
+    "1.29",
+    "1.24",
+    "heptagonal",
+    "co-polyester",
+    "amp technology",
+    "spin",
+    "control",
+    "power",
+    "ball bite"
+  ],
+
+  "target_competitors": [
+    "Babolat RPM Blast",
+    "Babolat RPM Rough",
+    "Tecnifibre Black Code",
+    "Solinco Hyper-G",
+    "Yonex Poly Tour Rev",
+    "HEAD Lynx Tour"
+  ],
+
+  "description": {
+    "en": "GAMMA Moto is a high-performance heptagonal co-polyester string designed to generate exceptional ball bite, spin, control and responsiveness. AMP Technology increases resiliency for additional power and ball speed, while the seven-sided profile enhances friction with the ball to maximize spin. The 16 gauge Black version measures 1.29 mm and emphasizes durability and control, while the 17 gauge Lime version measures 1.24 mm and provides greater spin, elasticity and responsiveness.",
+
+    "zh": "GAMMA Moto 是一款面向高水平球员的七边形共聚酯单丝球线，核心优势是强烈咬球、旋转、控制以及快速响应。AMP Technology 提升球线的回复性能，从而增加力量与球速；七边形截面则通过增强球线与网球之间的摩擦，大幅提升旋转能力。16号黑色版本为1.29毫米，更强调耐久、稳定与控制；17号青柠色版本为1.24毫米，更强调旋转、弹性、拍头速度和击球响应。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-13"
+  }
+}
