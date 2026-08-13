@@ -1,0 +1,78 @@
+{
+  "brand": "Gamma",
+  "model": "Live Wire",
+  "category": "Tennis String",
+  "string_type": "Multifilament",
+
+  "construction": {
+    "material": "Multifilament",
+    "technology": [
+      "Live Wire Technology"
+    ]
+  },
+
+  "gauges": [
+    {
+      "gauge_mm": 1.30,
+      "gauge_name": "16"
+    },
+    {
+      "gauge_mm": 1.25,
+      "gauge_name": "17"
+    }
+  ],
+
+  "colors": [
+    "Natural"
+  ],
+
+  "lengths": [
+    {
+      "type": "Set",
+      "length_m": 12.2
+    }
+  ],
+
+  "playability": {
+    "power": 95,
+    "spin": 75,
+    "control": 84,
+    "comfort": 97,
+    "feel": 96,
+    "durability": 82,
+    "tension_maintenance": 88
+  },
+
+  "recommended_tension": {
+    "min_kg": 22,
+    "max_kg": 26
+  },
+
+  "target_players": [
+    "Beginner",
+    "Intermediate",
+    "Advanced"
+  ],
+
+  "recommended_for": [
+    "Players seeking comfort",
+    "Players with arm sensitivity",
+    "All-court players",
+    "Baseline players",
+    "Players switching from natural gut"
+  ],
+
+  "technologies": [
+    {
+      "name": "Live Wire Technology",
+      "description": "Changes the molecular structure of the string to improve elasticity, resilience, power, comfort and control."
+    }
+  ],
+
+  "made_in": "USA",
+
+  "description": {
+    "en": "Gamma Live Wire is a premium multifilament tennis string engineered with Live Wire Technology to maximize elasticity and resilience. It delivers exceptional comfort, power, touch and arm-friendly performance while maintaining excellent control.",
+    "zh": "Gamma Live Wire 是一款高端多芯结构球线，采用 Live Wire Technology 提升分子弹性与回复性能，提供极佳的舒适性、力量、手感及控球能力，同时对手臂更加友好。"
+  }
+}
