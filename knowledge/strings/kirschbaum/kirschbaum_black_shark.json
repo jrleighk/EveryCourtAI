@@ -1,0 +1,337 @@
+{
+  "id": "kirschbaum_black_shark",
+  "brand": "Kirschbaum",
+  "series": "Black Shark",
+  "model": "Black Shark",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Co-Polyester",
+    "string_family": "Polyester",
+    "cross_section": "Octagonal",
+    "surface": "Shaped",
+    "relationship_to_base_model": "Shaped version of Pro Line Black",
+    "tour_positioning": "Spin / Control / Precision Polyester"
+  },
+
+  "specifications": {
+    "construction": "Co-Polyester Monofilament",
+    "cross_section": "Octagonal / 8-Sided",
+    "surface": "Shaped",
+
+    "available_gauges": [
+      {
+        "gauge_mm": 1.25,
+        "available": true,
+
+        "power": 8,
+        "control": 10,
+        "spin": 10,
+        "comfort": 7,
+        "feel": 9,
+        "durability": 8,
+        "tension_maintenance": 8,
+        "elasticity": 8,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Maximum Spin",
+          "Aggressive Baseliners",
+          "Fast Racquet Head Speed",
+          "Hybrid Mains",
+          "Tournament Players"
+        ]
+      },
+
+      {
+        "gauge_mm": 1.30,
+        "available": true,
+
+        "power": 7,
+        "control": 10,
+        "spin": 9,
+        "comfort": 7,
+        "feel": 8,
+        "durability": 10,
+        "tension_maintenance": 9,
+        "elasticity": 7,
+        "launch_angle": "Medium",
+
+        "recommended_use": [
+          "Maximum Durability",
+          "Maximum Stability",
+          "Heavy Hitters",
+          "Hybrid Mains",
+          "Frequent String Breakers"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "Octagonal Geometry",
+    "8-Sided Spin Profile",
+    "Ball-Bite Enhancement",
+    "Pro Line Black Material Platform",
+    "Hybrid-Oriented Control Design"
+  ],
+
+  "design_profile": {
+    "string_type": "Spin Control Polyester",
+    "target_player": "Intermediate / Advanced / Tournament",
+    "arm_friendly": false,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": false,
+    "comfort_focus": false,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 10,
+    "spin": 10,
+    "comfort": 7,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 8,
+    "elasticity": 8,
+    "launch_angle": "Medium-High"
+  },
+
+  "ai_rating": {
+    "power": 8,
+    "control": 10,
+    "spin": 10,
+    "comfort": 7,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 8
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium-Firm",
+    "snapback": 9,
+    "ball_pocketing": 8,
+    "string_movement": 2,
+    "tension_stability": 8,
+    "spin_window": "High",
+    "predictability": 9,
+    "arm_friendliness": 6,
+    "directional_precision": 10,
+    "ball_bite": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "Modern Baseline",
+      "Counter Puncher"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Babolat Pure Aero",
+    "Yonex VCORE",
+    "HEAD Extreme",
+    "Wilson Shift",
+    "Wilson Blade",
+    "Tecnifibre T-FIGHT",
+    "Dunlop SX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": false,
+
+    "best_pairings": [
+      "Kirschbaum Touch Multifibre",
+      "Natural Gut",
+      "Luxilon Natural Gut",
+      "Babolat Touch VS",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Maximum Spin",
+        "Control",
+        "Ball Bite",
+        "Directional Precision"
+      ]
+    },
+
+    "hybrid_note": "Black Shark is especially well suited as a shaped control-oriented main string paired with a softer, more powerful cross."
+  },
+
+  "gauge_recommendation": {
+    "1.25": {
+      "best_for": [
+        "Maximum Spin",
+        "Maximum Ball Bite",
+        "Fast Swing Speed",
+        "Tournament Play",
+        "Hybrid Mains"
+      ],
+
+      "tradeoffs": [
+        "Lower Durability Than 1.30"
+      ]
+    },
+
+    "1.30": {
+      "best_for": [
+        "Maximum Durability",
+        "Maximum Stability",
+        "Heavy Hitters",
+        "Frequent String Breakers"
+      ],
+
+      "tradeoffs": [
+        "Slightly Less Spin",
+        "Slightly Firmer Response"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.25": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "16-28"
+    },
+
+    "1.30": {
+      "heavy_topspin_hours": "10-18",
+      "club_player_hours": "20-34"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Medium",
+    "tension_loss_sensitivity": "Medium",
+    "playability_duration": "Good",
+    "recommended_monitoring": "Replace when ball bite, snapback or directional control noticeably declines."
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Baseliners Seeking Maximum Spin and Control",
+      "Heavy Topspin Players",
+      "Players Wanting a Shaped Hybrid Main",
+      "Advanced Players",
+      "Tournament Players"
+    ],
+
+    "avoid_for": [
+      "Beginners",
+      "Players With Significant Arm Sensitivity",
+      "Players Seeking Maximum Free Power",
+      "Players Wanting Multifilament-Level Comfort"
+    ],
+
+    "alternative_strings": [
+      "Kirschbaum Pro Line Rough",
+      "Kirschbaum Evolution",
+      "Kirschbaum Max Power Rough",
+      "Luxilon ALU Power Rough",
+      "HEAD Lynx Tour",
+      "Babolat RPM Blast"
+    ]
+  },
+
+  "comparison_tags": [
+    "Octagonal",
+    "8-Sided",
+    "Spin",
+    "Control",
+    "Ball Bite",
+    "Baseline",
+    "Hybrid Main",
+    "Pro Line Black"
+  ],
+
+  "ai_keywords": [
+    "kirschbaum",
+    "black shark",
+    "kirschbaum black shark",
+    "black shark 125",
+    "black shark 130",
+    "1.25",
+    "1.30",
+    "octagonal",
+    "8 sided",
+    "spin",
+    "control",
+    "ball bite",
+    "hybrid",
+    "pro line black"
+  ],
+
+  "target_competitors": [
+    "Kirschbaum Pro Line Rough",
+    "Kirschbaum Max Power Rough",
+    "Luxilon ALU Power Rough",
+    "HEAD Lynx Tour",
+    "Babolat RPM Blast",
+    "Tecnifibre Black Code",
+    "Solinco Tour Bite"
+  ],
+
+  "description": {
+    "en": "Kirschbaum Black Shark is an octagonal co-polyester string designed to maximize spin, precision and control for aggressive baseline players. As the shaped version of Pro Line Black, its eight-sided profile enhances ball bite and spin potential while maintaining a predictable and controlled response. It is especially popular in hybrid setups, where Black Shark is used in the mains for control and spin and paired with a softer, more powerful cross string. The 1.25 mm version emphasizes spin and responsiveness, while the 1.30 mm version offers greater durability and stability.",
+
+    "zh": "Kirschbaum Black Shark 是一款采用八边形截面的共聚酯单丝球线，专为追求高旋转、精准控制和强咬球能力的底线型球员设计。作为 Pro Line Black 的异形版本，其八边形结构能够显著增强球线与网球之间的摩擦和旋转潜力，同时保持稳定、可预测的击球反馈。它也非常适合作为 Hybrid 混穿中的主线，与更柔和、更有力量的横线搭配。1.25毫米版本更强调旋转和响应；1.30毫米版本则更偏向耐久与稳定。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-14",
+
+    "officially_verified_fields": [
+      "Kirschbaum Black Shark",
+      "1.25 mm",
+      "1.30 mm",
+      "Octagonal profile",
+      "Enhanced spin potential",
+      "Precision",
+      "Feel",
+      "Maximum spin and control positioning",
+      "Shaped version of Pro Line Black",
+      "Popular for hybrid setups",
+      "Control-oriented mains with softer and more powerful crosses"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
