@@ -1,0 +1,459 @@
+{
+  "id": "head_hawk",
+  "brand": "HEAD",
+  "series": "HAWK",
+  "model": "HAWK",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Co-Polyester",
+    "string_family": "Polyester",
+    "cross_section": "Round",
+    "surface": "Smooth",
+    "technology": [
+      "Crystal Core Technology"
+    ],
+    "classification": "Tour",
+    "main_benefit": "Power",
+    "target_level": "High-Level Tour / Tournament",
+    "target_player_description": "Tournament players with very good technique and a powerful, fast swing.",
+    "tour_positioning": "Power / Control Tour Polyester"
+  },
+
+  "specifications": {
+    "construction": "Co-Polyester Monofilament",
+    "cross_section": "Round",
+    "surface": "Smooth",
+
+    "available_colors": [
+      "Black",
+      "White",
+      "Grey"
+    ],
+
+    "packaging": [
+      {
+        "type": "Set",
+        "length_m": 12,
+        "length_ft": 40
+      }
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_name": "18",
+        "gauge_mm": 1.20,
+        "available": true,
+
+        "power": 9,
+        "control": 9,
+        "spin": 9,
+        "comfort": 7,
+        "feel": 9,
+        "durability": 7,
+        "tension_maintenance": 8,
+        "elasticity": 9,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Maximum Response",
+          "Explosive Power",
+          "Fast Racquet Head Speed",
+          "Advanced Players",
+          "Tournament Players",
+          "Players Prioritizing Feel Over Durability"
+        ]
+      },
+
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.25,
+        "available": true,
+
+        "power": 9,
+        "control": 10,
+        "spin": 9,
+        "comfort": 7,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "elasticity": 8,
+        "launch_angle": "Medium",
+
+        "recommended_use": [
+          "Best Overall Balance",
+          "Explosive Power",
+          "High Control",
+          "Tournament Play",
+          "Fast Swing Speed"
+        ]
+      },
+
+      {
+        "gauge_name": "16",
+        "gauge_mm": 1.30,
+        "available": true,
+
+        "power": 8,
+        "control": 10,
+        "spin": 8,
+        "comfort": 7,
+        "feel": 8,
+        "durability": 10,
+        "tension_maintenance": 9,
+        "elasticity": 7,
+        "launch_angle": "Medium-Low",
+
+        "recommended_use": [
+          "Maximum Durability",
+          "Maximum Stability",
+          "Heavy Hitters",
+          "Professional Match Play",
+          "Frequent String Breakers"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "Crystal Core Technology",
+    "Multistep Co-Polyester Heat Treatment",
+    "Crystalline Inner Core",
+    "Power-Oriented Outer Molecular Chains",
+    "Tour-Level Monofilament Construction"
+  ],
+
+  "technology_details": {
+    "crystal_core_technology": {
+      "description": "HEAD Crystal Core Technology uses a complex multistep heat-treatment process to influence the balance between power and control within the co-polyester string.",
+      "inner_core_role": "Crystalline inner core emphasizes control.",
+      "outer_structure_role": "Outer molecular chains emphasize power.",
+      "primary_benefits": [
+        "Explosive Power",
+        "High Control",
+        "Durability",
+        "Spin Potential",
+        "Consistent Response"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Tour Power Control Polyester",
+    "target_player": "Advanced / Tournament / Professional",
+    "arm_friendly": false,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": false,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 10,
+    "spin": 9,
+    "comfort": 7,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9,
+    "elasticity": 8,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 10,
+    "spin": 9,
+    "comfort": 7,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Firm",
+    "snapback": 9,
+    "ball_pocketing": 8,
+    "string_movement": 2,
+    "tension_stability": 9,
+    "spin_window": "Medium",
+    "predictability": 10,
+    "arm_friendliness": 6,
+    "directional_precision": 10,
+    "power_response": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Advanced",
+      "Tournament",
+      "Professional"
+    ],
+
+    "swing_speed": [
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Power Baseliner",
+      "All Court",
+      "Flat Hitter",
+      "Modern Power Tennis"
+    ]
+  },
+
+  "recommended_racquets": [
+    "HEAD Speed",
+    "HEAD Radical",
+    "HEAD Gravity",
+    "HEAD Prestige",
+    "Wilson Blade",
+    "Wilson Pro Staff",
+    "Wilson RF 01",
+    "Yonex EZONE",
+    "Yonex PERCEPT",
+    "Tecnifibre T-FIGHT",
+    "Tecnifibre TF-40",
+    "Babolat Pure Strike",
+    "Dunlop CX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Natural Gut",
+      "Luxilon Natural Gut",
+      "Babolat Touch VS",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Explosive Power",
+        "Control",
+        "Spin",
+        "Directional Precision"
+      ],
+
+      "as_crosses": [
+        "Control",
+        "Stringbed Stability",
+        "Crisp Response",
+        "Low-Abrasion Hybrid Support"
+      ]
+    },
+
+    "hybrid_note": "Its smooth round profile is less abrasive on softer hybrid partners than shaped polyester strings."
+  },
+
+  "gauge_recommendation": {
+    "1.20": {
+      "gauge_name": "18",
+
+      "best_for": [
+        "Maximum Response",
+        "Explosive Power",
+        "Spin",
+        "Fast Racquet Head Speed"
+      ],
+
+      "tradeoffs": [
+        "Lower Durability",
+        "More Frequent Restringing"
+      ]
+    },
+
+    "1.25": {
+      "gauge_name": "17",
+
+      "best_for": [
+        "Best Overall Balance",
+        "Power",
+        "Control",
+        "Tournament Play"
+      ],
+
+      "tradeoffs": [
+        "Less Durability Than 1.30"
+      ]
+    },
+
+    "1.30": {
+      "gauge_name": "16",
+
+      "best_for": [
+        "Maximum Durability",
+        "Maximum Stability",
+        "Heavy Hitters",
+        "Long Match Play"
+      ],
+
+      "tradeoffs": [
+        "Slightly Lower Feel",
+        "Slightly Lower Spin",
+        "Firmer Response"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.20": {
+      "heavy_topspin_hours": "6-10",
+      "club_player_hours": "12-20"
+    },
+
+    "1.25": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "16-28"
+    },
+
+    "1.30": {
+      "heavy_topspin_hours": "10-18",
+      "club_player_hours": "20-34"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Medium",
+    "tension_loss_sensitivity": "Medium-Low",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when explosive response, snapback or directional control noticeably declines."
+  },
+
+  "tour_players": [
+    {
+      "name": "Taylor Fritz",
+      "tour": "ATP",
+      "usage": "Manufacturer endorsement",
+      "confidence": "Official"
+    }
+  ],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Advanced Players Seeking Explosive Power and Control",
+      "Tournament Players",
+      "Fast Swing Speed Players",
+      "Heavy Hitters",
+      "Players Wanting Tour-Level Stability",
+      "Players Seeking a Round Polyester With High Power"
+    ],
+
+    "avoid_for": [
+      "Beginners",
+      "Players With Significant Arm Sensitivity",
+      "Slow Swing Speed Players",
+      "Players Seeking Maximum Comfort"
+    ],
+
+    "alternative_strings": [
+      "HEAD HAWK TOUCH",
+      "HEAD Lynx Tour",
+      "Luxilon ALU Power",
+      "Luxilon 4G",
+      "Yonex Poly Tour Strike",
+      "Tecnifibre Razor Soft",
+      "Grapplesnake Tour Sniper"
+    ]
+  },
+
+  "comparison_tags": [
+    "Tour Polyester",
+    "Crystal Core",
+    "Power",
+    "Control",
+    "Round Polyester",
+    "High Durability",
+    "High Spin Potential",
+    "Professional"
+  ],
+
+  "ai_keywords": [
+    "head",
+    "hawk",
+    "head hawk",
+    "hawk 120",
+    "hawk 125",
+    "hawk 130",
+    "1.20",
+    "1.25",
+    "1.30",
+    "18 gauge",
+    "17 gauge",
+    "16 gauge",
+    "black",
+    "white",
+    "grey",
+    "crystal core",
+    "crystal core technology",
+    "co polyester",
+    "power",
+    "control",
+    "spin",
+    "taylor fritz"
+  ],
+
+  "target_competitors": [
+    "HEAD HAWK TOUCH",
+    "Luxilon ALU Power",
+    "Luxilon 4G",
+    "Yonex Poly Tour Strike",
+    "Tecnifibre Razor Soft",
+    "Grapplesnake Tour Sniper",
+    "Kirschbaum Max Power"
+  ],
+
+  "description": {
+    "en": "HEAD HAWK is a Tour-level co-polyester monofilament designed for advanced players who want an aggressive combination of explosive power and precise control. Crystal Core Technology balances a crystalline inner core responsible for control with outer molecular chains that enhance power. The round profile provides predictable response, durability and strong spin potential while remaining relatively hybrid-friendly. The 1.20 mm version emphasizes response and power, the 1.25 mm version offers the best overall balance, and the 1.30 mm version maximizes durability and stability.",
+
+    "zh": "HEAD HAWK 是一款面向高水平巡回赛及竞技球员的共聚酯单丝球线，核心定位是在爆发力量与精准控制之间取得平衡。Crystal Core Technology 通过结晶内核强化控制，同时利用外层分子链增强力量输出。圆形截面提供稳定、可预测的击球反馈，并兼顾耐久性与旋转潜力，在混穿时也比棱形聚酯更加友好。1.20毫米版本更强调爆发力与响应；1.25毫米综合表现最均衡；1.30毫米则更偏向耐久与稳定。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_official_product_information",
+    "last_updated": "2026-08-14",
+
+    "officially_verified_fields": [
+      "HEAD HAWK",
+      "Crystal Core Technology",
+      "Co-polyester monofilament",
+      "Tour classification",
+      "Main benefit: Power",
+      "Balance of power and control",
+      "Round shape",
+      "High durability",
+      "High spin potential",
+      "1.20 mm / 18 gauge",
+      "1.25 mm / 17 gauge",
+      "1.30 mm / 16 gauge",
+      "Set length: 12 m / 40 ft",
+      "Black",
+      "White",
+      "Grey",
+      "Taylor Fritz endorsement"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
