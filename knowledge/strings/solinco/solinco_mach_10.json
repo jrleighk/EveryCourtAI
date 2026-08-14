@@ -1,0 +1,504 @@
+{
+  "id": "solinco_mach_10",
+  "brand": "Solinco",
+  "series": "Mach",
+  "model": "Mach-10",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Soft Co-Polyester",
+    "string_family": "Polyester",
+    "cross_section": "Shaped",
+    "surface": "Shaped",
+    "technology": [
+      "CloudFORM Technology"
+    ],
+    "generation": "New Generation Feel-Driven Co-Polyester",
+    "tour_positioning": "Power / Feel / Comfort / Tension Maintenance Polyester",
+    "official_positioning": "A new family of feel-driven, high-performance soft co-polyester strings outside Solinco's traditional big three."
+  },
+
+  "specifications": {
+    "construction": "Soft Co-Polyester Monofilament",
+    "cross_section": "Shaped",
+    "surface": "Shaped",
+
+    "packaging": [
+      {
+        "type": "Set",
+        "length_ft": 40,
+        "length_m": 12.2
+      },
+      {
+        "type": "Reel",
+        "length_ft": 656,
+        "length_m": 200
+      }
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_name": "18",
+        "gauge_mm": 1.15,
+        "available": true,
+
+        "power": 10,
+        "control": 8,
+        "spin": 10,
+        "comfort": 10,
+        "feel": 10,
+        "durability": 6,
+        "tension_maintenance": 9,
+        "elasticity": 10,
+        "launch_angle": "High",
+
+        "recommended_use": [
+          "Maximum Power",
+          "Maximum Feel",
+          "Maximum Pocketing",
+          "Maximum Spin",
+          "Fast Racquet Head Speed",
+          "Advanced Players"
+        ]
+      },
+
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.20,
+        "available": true,
+
+        "power": 10,
+        "control": 9,
+        "spin": 10,
+        "comfort": 10,
+        "feel": 10,
+        "durability": 7,
+        "tension_maintenance": 9,
+        "elasticity": 10,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Explosive Power",
+          "High Spin",
+          "Maximum Feel",
+          "Aggressive Baseliners",
+          "Tournament Players"
+        ]
+      },
+
+      {
+        "gauge_name": "16L",
+        "gauge_mm": 1.25,
+        "available": true,
+
+        "power": 10,
+        "control": 9,
+        "spin": 10,
+        "comfort": 10,
+        "feel": 10,
+        "durability": 9,
+        "tension_maintenance": 10,
+        "elasticity": 9,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Best Overall Balance",
+          "Explosive Power",
+          "Pocketing",
+          "Spin",
+          "Tournament Play",
+          "Modern Baseline Tennis"
+        ]
+      },
+
+      {
+        "gauge_name": "16",
+        "gauge_mm": 1.30,
+        "available": true,
+
+        "power": 9,
+        "control": 10,
+        "spin": 9,
+        "comfort": 9,
+        "feel": 9,
+        "durability": 10,
+        "tension_maintenance": 10,
+        "elasticity": 8,
+        "launch_angle": "Medium",
+
+        "recommended_use": [
+          "Maximum Durability",
+          "Maximum Stability",
+          "Heavy Hitters",
+          "Long Match Play",
+          "Players Wanting Mach-10 Feel With More Resistance"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "CloudFORM Technology",
+    "New Chemical Co-Polyester Formulation",
+    "Soft High-Performance Polyester Construction",
+    "Enhanced Ball Pocketing",
+    "Long-Lasting Playability Design",
+    "Power and Comfort Optimization"
+  ],
+
+  "technology_details": {
+    "cloudform": {
+      "full_name": "CloudFORM Technology",
+      "description": "An innovative chemical formulation developed to provide high power, comfort and tension maintenance while maintaining a responsive high-performance co-polyester feel.",
+      "primary_benefits": [
+        "Explosive Power",
+        "High Comfort",
+        "Long-Lasting Playability",
+        "Tension Maintenance",
+        "Ball Pocketing",
+        "Enhanced Feel"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Soft Power Feel Polyester",
+    "target_player": "Intermediate / Advanced / Tournament",
+    "arm_friendly": true,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 10,
+    "control": 9,
+    "spin": 10,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 9,
+    "tension_maintenance": 10,
+    "elasticity": 10,
+    "launch_angle": "Medium-High"
+  },
+
+  "ai_rating": {
+    "power": 10,
+    "control": 9,
+    "spin": 10,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 9,
+    "tension_maintenance": 10
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Soft-Medium",
+    "snapback": 10,
+    "ball_pocketing": 10,
+    "string_movement": 2,
+    "tension_stability": 10,
+    "spin_window": "High",
+    "predictability": 9,
+    "arm_friendliness": 10,
+    "directional_precision": 9,
+    "energy_return": 10,
+    "power_response": 10,
+    "pocketing": 10,
+    "acoustic_feedback": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium",
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "All Court",
+      "Power Baseliner",
+      "Modern Baseline"
+    ],
+
+    "special_player_profiles": [
+      "Players Seeking Softer High-Performance Co-Poly",
+      "Players Wanting Explosive Power",
+      "Players Prioritizing Ball Pocketing",
+      "Players Wanting Better Comfort Than Traditional Firm Polyester",
+      "Players Seeking Long-Lasting Playability"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Babolat Pure Aero",
+    "Babolat Pure Drive",
+    "Wilson Shift",
+    "Wilson Blade",
+    "Wilson Ultra",
+    "HEAD Extreme",
+    "HEAD Speed",
+    "Yonex VCORE",
+    "Yonex EZONE",
+    "Tecnifibre T-FIGHT",
+    "Dunlop SX",
+    "Dunlop FX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Solinco Hyper-G Round",
+      "Natural Gut",
+      "Luxilon Natural Gut",
+      "Babolat Touch VS",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Spin",
+        "Power",
+        "Ball Bite",
+        "Heavy Ball Production",
+        "Pocketing"
+      ],
+
+      "as_crosses": [
+        "Power",
+        "Comfort",
+        "Response",
+        "Spin Support"
+      ]
+    },
+
+    "official_hybrid_reference": "Used with Hyper-G Round in the Solinco Hyper-Mach BD hybrid system."
+  },
+
+  "gauge_recommendation": {
+    "1.15": {
+      "gauge_name": "18",
+      "best_for": [
+        "Maximum Power",
+        "Maximum Spin",
+        "Maximum Feel",
+        "Maximum Pocketing"
+      ],
+      "tradeoffs": [
+        "Lowest Durability",
+        "Not Ideal For Frequent String Breakers"
+      ]
+    },
+
+    "1.20": {
+      "gauge_name": "17",
+      "best_for": [
+        "Explosive Power",
+        "High Spin",
+        "Feel",
+        "Fast Swing Speed"
+      ],
+      "tradeoffs": [
+        "Lower Durability Than 1.25 and 1.30"
+      ]
+    },
+
+    "1.25": {
+      "gauge_name": "16L",
+      "best_for": [
+        "Best Overall Balance",
+        "Power",
+        "Spin",
+        "Pocketing",
+        "Tournament Play"
+      ],
+      "tradeoffs": [
+        "Less Durability Than 1.30"
+      ]
+    },
+
+    "1.30": {
+      "gauge_name": "16",
+      "best_for": [
+        "Maximum Durability",
+        "Maximum Stability",
+        "Heavy Hitters",
+        "Long Match Play"
+      ],
+      "tradeoffs": [
+        "Slightly Less Spin",
+        "Slightly Less Pocketing Than Thinner Gauges"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.15": {
+      "heavy_topspin_hours": "5-9",
+      "club_player_hours": "10-18"
+    },
+
+    "1.20": {
+      "heavy_topspin_hours": "6-11",
+      "club_player_hours": "12-22"
+    },
+
+    "1.25": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "16-28"
+    },
+
+    "1.30": {
+      "heavy_topspin_hours": "10-18",
+      "club_player_hours": "20-34"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Very Short",
+    "peak_playability": "Immediate",
+    "performance_drop": "Low",
+    "tension_loss_sensitivity": "Low",
+    "playability_duration": "Excellent",
+    "recommended_monitoring": "Replace when pocketing, snapback, power response or directional control noticeably declines."
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Seeking Explosive Power From a Soft Co-Poly",
+      "Players Wanting High Spin With Excellent Feel",
+      "Aggressive Baseliners",
+      "Players Prioritizing Ball Pocketing",
+      "Players Seeking Better Comfort Than Traditional Firm Solinco Strings",
+      "Tournament Players Wanting Long-Lasting Playability"
+    ],
+
+    "avoid_for": [
+      "Players Seeking Extremely Low-Powered Firm Control",
+      "Frequent String Breakers Using 1.15 mm",
+      "Players Who Prefer Very Crisp Traditional Polyester"
+    ],
+
+    "alternative_strings": [
+      "Solinco Hyper-G",
+      "Solinco Hyper-G Round",
+      "Solinco Tour Bite Soft",
+      "Luxilon Element",
+      "Tecnifibre Razor Soft",
+      "MSV Focus Hex Plus 38"
+    ]
+  },
+
+  "comparison_tags": [
+    "CloudFORM",
+    "Soft Co-Poly",
+    "Explosive Power",
+    "Maximum Feel",
+    "Ball Pocketing",
+    "High Spin",
+    "High Comfort",
+    "High Tension Maintenance",
+    "New Generation"
+  ],
+
+  "ai_keywords": [
+    "solinco",
+    "mach 10",
+    "mach-10",
+    "solinco mach 10",
+    "cloudform",
+    "cloudform technology",
+    "1.15",
+    "1.20",
+    "1.25",
+    "1.30",
+    "18 gauge",
+    "17 gauge",
+    "16l",
+    "16 gauge",
+    "soft co polyester",
+    "power",
+    "feel",
+    "comfort",
+    "tension maintenance",
+    "pocketing",
+    "spin",
+    "hyper mach bd"
+  ],
+
+  "target_competitors": [
+    "Solinco Hyper-G",
+    "Solinco Hyper-G Round",
+    "Luxilon Element",
+    "Tecnifibre Razor Soft",
+    "Yonex Poly Tour Air",
+    "MSV Focus Hex Plus 38",
+    "Kirschbaum Flash"
+  ],
+
+  "description": {
+    "en": "Solinco Mach-10 is a new-generation soft co-polyester string built around CloudFORM Technology, an advanced chemical formulation designed to deliver explosive power, superior feel, comfort and long-lasting tension stability. It marks a departure from Solinco's traditional high-performance polyester families by emphasizing feel and ball pocketing while retaining strong spin and control. Available from 1.15 to 1.30 mm, Mach-10 allows players to choose between maximum response and spin at thinner gauges or greater stability and durability at thicker gauges.",
+
+    "zh": "Solinco Mach-10 是 Solinco 新一代柔和型高性能共聚酯球线，核心采用 CloudFORM Technology，通过全新的化学配方提升爆发力、手感、舒适性以及长期保磅表现。它突破了 Solinco 传统高性能聚酯系列偏硬、偏控制的定位，更加强调持球感、Pocketing 和击球反馈，同时依然保留优秀旋转和控制能力。提供 1.15、1.20、1.25 与 1.30 毫米四种线径，细线径更强调响应、旋转和手感，粗线径则更偏向耐久与稳定。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Solinco Mach-10",
+      "Newest co-polyester string positioning",
+      "CloudFORM Technology",
+      "Explosive power",
+      "Superior feel",
+      "Long-lasting playability",
+      "Best-in-class power positioning",
+      "Comfort positioning",
+      "Tension maintenance positioning",
+      "New feel-driven high-performance co-polyester family",
+      "Completely new composition",
+      "Enhanced feel and control",
+      "Pop and pocketing",
+      "Signature sound",
+      "1.15 mm / 18 gauge",
+      "1.20 mm / 17 gauge",
+      "1.25 mm / 16L gauge",
+      "1.30 mm / 16 gauge",
+      "Set length: 40 ft / 12.2 m",
+      "Reel length: 656 ft / 200 m"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendations",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
