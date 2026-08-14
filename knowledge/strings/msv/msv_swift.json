@@ -1,0 +1,422 @@
+{
+  "id": "msv_swift",
+  "brand": "MSV",
+  "series": "Swift",
+  "model": "Swift",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Multi-Material Co-Polyester Blend",
+    "string_family": "Polyester",
+    "cross_section": "Round",
+    "surface": "Smooth",
+    "material_components": 6,
+    "manufacturing_steps": 3,
+    "tour_positioning": "Comfort / Balance / Hybrid-Friendly Co-Polyester",
+    "target_level": "Intermediate / Advanced / Tournament",
+    "made_in": "Austria",
+    "pre_stretch_required": false
+  },
+
+  "specifications": {
+    "construction": "Soft Co-Polyester Monofilament",
+    "cross_section": "Round",
+    "surface": "Smooth",
+
+    "available_colors": [
+      "Black",
+      "White"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_mm": 1.25,
+        "available": true,
+
+        "power": 9,
+        "control": 10,
+        "spin": 8,
+        "comfort": 10,
+        "feel": 9,
+        "durability": 8,
+        "tension_maintenance": 10,
+        "elasticity": 9,
+        "launch_angle": "Medium",
+
+        "recommended_use": [
+          "Maximum Comfort",
+          "Best Overall Balance",
+          "Hybrid Setups",
+          "Normal String Patterns",
+          "Dense String Patterns",
+          "Advanced Club Players"
+        ]
+      },
+
+      {
+        "gauge_mm": 1.30,
+        "available": true,
+
+        "power": 8,
+        "control": 10,
+        "spin": 8,
+        "comfort": 10,
+        "feel": 8,
+        "durability": 10,
+        "tension_maintenance": 10,
+        "elasticity": 8,
+        "launch_angle": "Medium-Low",
+
+        "recommended_use": [
+          "Maximum Durability",
+          "Maximum Stability",
+          "Comfort-Oriented Heavy Hitters",
+          "Dense String Patterns",
+          "Long Match Play"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "6-Material Complex Blend",
+    "3-Step Manufacturing Process",
+    "Very Soft Monofilament Co-Polyester Construction",
+    "Round Hybrid-Friendly Geometry",
+    "High Tension Stability Design"
+  ],
+
+  "design_profile": {
+    "string_type": "Soft Balanced Co-Polyester",
+    "target_player": "Intermediate / Advanced / Tournament",
+    "arm_friendly": true,
+    "spin_focus": false,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 10,
+    "spin": 8,
+    "comfort": 10,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 10,
+    "elasticity": 9,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 10,
+    "spin": 8,
+    "comfort": 10,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 10
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Soft",
+    "snapback": 9,
+    "ball_pocketing": 10,
+    "string_movement": 2,
+    "tension_stability": 10,
+    "spin_window": "Medium",
+    "predictability": 10,
+    "arm_friendliness": 10,
+    "directional_precision": 10,
+    "energy_return": 9,
+    "hybrid_friendliness": 10,
+    "dense_pattern_suitability": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium",
+      "Medium-Fast",
+      "Fast"
+    ],
+
+    "play_style": [
+      "All Court",
+      "Aggressive Baseliner",
+      "Flat Hitter",
+      "Control-Oriented Player"
+    ],
+
+    "special_player_profiles": [
+      "Players Seeking Arm-Friendly Co-Poly",
+      "Players Wanting High Tension Stability",
+      "Players Using Dense String Patterns",
+      "Hybrid Users"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson Clash",
+    "Wilson RF 01",
+    "HEAD Speed",
+    "HEAD Radical",
+    "HEAD Gravity",
+    "Yonex PERCEPT",
+    "Yonex EZONE",
+    "Babolat Pure Strike",
+    "Tecnifibre TF-40",
+    "Tecnifibre T-FIGHT",
+    "Dunlop CX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Natural Gut",
+      "Luxilon Natural Gut",
+      "Babolat Touch VS",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²",
+      "Kirschbaum Touch Multifibre"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Comfort",
+        "Control",
+        "Power",
+        "Stable Response"
+      ],
+
+      "as_crosses": [
+        "Low Friction",
+        "Snapback Support",
+        "Comfort",
+        "Stringbed Stability"
+      ]
+    },
+
+    "hybrid_note": "The round profile makes MSV Swift especially suitable for hybrid stringing."
+  },
+
+  "string_pattern_recommendation": {
+    "normal_pattern": "Recommended",
+    "dense_pattern": "Recommended",
+    "open_pattern": "Suitable, but players prioritizing maximum spin may prefer shaped MSV strings."
+  },
+
+  "pre_stretch_recommendation": {
+    "required": false,
+    "note": "Pre-stretch is not necessary."
+  },
+
+  "gauge_recommendation": {
+    "1.25": {
+      "best_for": [
+        "Best Overall Balance",
+        "Maximum Comfort",
+        "Feel",
+        "Hybrid Play",
+        "Control"
+      ],
+
+      "tradeoffs": [
+        "Less Durability Than 1.30"
+      ]
+    },
+
+    "1.30": {
+      "best_for": [
+        "Maximum Durability",
+        "Maximum Stability",
+        "Dense String Patterns",
+        "Long Match Play"
+      ],
+
+      "tradeoffs": [
+        "Slightly Less Feel",
+        "Slightly Lower Power"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.25": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "16-28"
+    },
+
+    "1.30": {
+      "heavy_topspin_hours": "10-18",
+      "club_player_hours": "20-34"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Immediate",
+    "peak_playability": "Immediate",
+    "performance_drop": "Low",
+    "tension_loss_sensitivity": "Very Low",
+    "playability_duration": "Excellent",
+    "recommended_monitoring": "Replace when control, response or snapback noticeably declines."
+  },
+
+  "test_results": {
+    "racketpedia_comparison": {
+      "comparison_reference": "Co-polyester strings with a similar profile such as Luxilon ALU Power",
+      "comfort_advantage_percentage_points": 10,
+      "tension_stability_advantage_percentage_points": 8,
+      "power_advantage_percentage_points": 5,
+      "control_advantage_percentage_points": 3,
+      "absolute_control_percent": 95
+    },
+
+    "ersa_pro_stringer_magazine_2022": {
+      "players": 20,
+      "organization": "European Racquet Stringers Association (ERSA)",
+      "publication": "Pro Stringer Magazine",
+      "publication_date": "2022-11",
+      "result": "Clear recommendation; above-average scores in almost all major parameters."
+    },
+
+    "perfect_tennis_review": {
+      "result": "High comfort level and very good tension maintenance confirmed in the supplied review reference."
+    }
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Seeking an Arm-Friendly Co-Poly",
+      "Players Wanting Excellent Tension Stability",
+      "Players Seeking Balanced Power and Control",
+      "Hybrid Users",
+      "Players Using Normal or Dense String Patterns",
+      "Players Wanting a Softer Alternative to Firm Tour Polyester"
+    ],
+
+    "avoid_for": [
+      "Players Seeking Maximum Shaped-String Spin",
+      "Players Wanting Extremely Crisp Firm Feedback",
+      "Frequent String Breakers Using 1.25 mm"
+    ],
+
+    "alternative_strings": [
+      "MSV Focus Hex Plus 38",
+      "MSV Focus Hex Plus 25",
+      "Luxilon Element",
+      "Tecnifibre Razor Soft",
+      "HEAD Lynx",
+      "Yonex Poly Tour Air"
+    ]
+  },
+
+  "comparison_tags": [
+    "Round Polyester",
+    "Very Soft Co-Poly",
+    "Arm Friendly",
+    "High Tension Stability",
+    "Hybrid Friendly",
+    "Balanced",
+    "Made in Austria",
+    "Dense Pattern Friendly"
+  ],
+
+  "ai_keywords": [
+    "msv",
+    "swift",
+    "msv swift",
+    "swift 125",
+    "swift 130",
+    "1.25",
+    "1.30",
+    "black",
+    "white",
+    "6 materials",
+    "3 step process",
+    "soft co poly",
+    "arm friendly",
+    "comfort",
+    "tension stability",
+    "round",
+    "hybrid",
+    "dense string pattern",
+    "no pre stretch",
+    "made in austria",
+    "95 percent control"
+  ],
+
+  "target_competitors": [
+    "Luxilon Element",
+    "Tecnifibre Razor Soft",
+    "HEAD Lynx",
+    "Yonex Poly Tour Air",
+    "Kirschbaum Flash",
+    "MSV Focus Hex Plus 38"
+  ],
+
+  "description": {
+    "en": "MSV Swift is a very soft, round co-polyester monofilament engineered from a complex blend of six different materials processed in three manufacturing stages. It is designed to provide above-average comfort, tension stability, power and control while retaining the durability and predictability expected from a performance polyester. Its smooth round profile makes it particularly suitable for hybrid setups, and MSV recommends it for normal and dense string patterns without the need for pre-stretching. Made in Austria.",
+
+    "zh": "MSV Swift 是一款非常柔和的圆形共聚酯单丝球线，由六种不同材料经过三阶段工艺复合制造。它的核心定位是在保持竞技型聚酯稳定性和耐久性的同时，提供更高舒适性、优秀保磅、力量以及控制表现。圆形光滑结构使其特别适合 Hybrid 混穿，同时 MSV 也推荐用于正常及密集线床，并明确表示无需预拉伸。产品产自奥地利。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "MSV Swift",
+      "1.25 mm",
+      "1.30 mm",
+      "Black",
+      "White",
+      "Arm-friendly positioning",
+      "Balanced co-poly positioning",
+      "6 different materials",
+      "3-step manufacturing process",
+      "Very soft monofilament co-poly string",
+      "High comfort",
+      "Racketpedia comparative comfort data",
+      "Racketpedia comparative tension stability data",
+      "Racketpedia comparative power data",
+      "Racketpedia comparative control data",
+      "95% absolute control",
+      "Round shape",
+      "Hybrid suitability",
+      "ERSA 20-player test",
+      "Pro Stringer Magazine November 2022 reference",
+      "perfect-tennis comfort and tension maintenance reference",
+      "Recommended for normal and dense string patterns",
+      "Pre-stretch not necessary",
+      "Made in Austria"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendations",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
