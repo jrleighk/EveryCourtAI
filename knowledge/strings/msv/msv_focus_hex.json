@@ -1,0 +1,499 @@
+{
+  "id": "msv_focus_hex",
+  "brand": "MSV",
+  "series": "Focus Hex",
+  "model": "Focus Hex",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Co-Polyester",
+    "string_family": "Polyester",
+    "cross_section": "Hexagonal",
+    "surface": "Shaped",
+    "bestseller": true,
+    "sales_milestone": "Over 2 million sold",
+    "tour_positioning": "Spin / Control / Tension Stability Polyester",
+    "target_level": "Club / Tournament"
+  },
+
+  "specifications": {
+    "construction": "Co-Polyester Monofilament",
+    "cross_section": "Hexagonal (6-Sided)",
+    "surface": "Shaped",
+
+    "available_colors": [
+      "Black",
+      "White",
+      "Silver",
+      "Red",
+      "Sky Blue",
+      "Green",
+      "Neon Yellow",
+      "Yellow",
+      "Neon Orange"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_mm": 1.10,
+        "available": true,
+        "power": 9,
+        "control": 9,
+        "spin": 10,
+        "comfort": 8,
+        "feel": 10,
+        "durability": 5,
+        "tension_maintenance": 8,
+        "elasticity": 9,
+        "launch_angle": "High",
+
+        "recommended_use": [
+          "Maximum Spin",
+          "Maximum Feel",
+          "Fast Racquet Head Speed",
+          "Tournament Players",
+          "Players Prioritizing Response Over Durability"
+        ]
+      },
+
+      {
+        "gauge_mm": 1.18,
+        "available": true,
+        "power": 9,
+        "control": 9,
+        "spin": 10,
+        "comfort": 8,
+        "feel": 10,
+        "durability": 7,
+        "tension_maintenance": 9,
+        "elasticity": 9,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Maximum Spin",
+          "Fast Swing Speed",
+          "Advanced Club Players",
+          "Tournament Play"
+        ]
+      },
+
+      {
+        "gauge_mm": 1.23,
+        "available": true,
+        "power": 8,
+        "control": 10,
+        "spin": 10,
+        "comfort": 8,
+        "feel": 9,
+        "durability": 8,
+        "tension_maintenance": 9,
+        "elasticity": 8,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Best Overall Balance",
+          "Maximum Spin",
+          "Control",
+          "Tournament Play",
+          "Aggressive Baseliners"
+        ]
+      },
+
+      {
+        "gauge_mm": 1.27,
+        "available": true,
+        "power": 8,
+        "control": 10,
+        "spin": 9,
+        "comfort": 7,
+        "feel": 8,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "elasticity": 8,
+        "launch_angle": "Medium",
+
+        "recommended_use": [
+          "Control",
+          "Durability",
+          "Heavy Hitters",
+          "Long Match Play",
+          "Frequent Club Competition"
+        ]
+      },
+
+      {
+        "gauge_mm": 1.33,
+        "available": true,
+        "power": 7,
+        "control": 10,
+        "spin": 8,
+        "comfort": 7,
+        "feel": 7,
+        "durability": 10,
+        "tension_maintenance": 10,
+        "elasticity": 7,
+        "launch_angle": "Medium-Low",
+
+        "recommended_use": [
+          "Maximum Durability",
+          "Maximum Stability",
+          "Frequent String Breakers",
+          "Heavy Hitters",
+          "Open String Patterns"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "Hexagonal Geometry",
+    "6-Sided Spin Profile",
+    "High Tension Stability",
+    "Control-Oriented Co-Polyester Construction",
+    "Spin-Enhancing Ball Bite"
+  ],
+
+  "design_profile": {
+    "string_type": "Spin Control Polyester",
+    "target_player": "Intermediate / Advanced / Tournament",
+    "arm_friendly": false,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": false,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 10,
+    "spin": 10,
+    "comfort": 8,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9,
+    "elasticity": 8,
+    "launch_angle": "Medium-High"
+  },
+
+  "ai_rating": {
+    "power": 8,
+    "control": 10,
+    "spin": 10,
+    "comfort": 8,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium-Firm",
+    "snapback": 9,
+    "ball_pocketing": 8,
+    "string_movement": 2,
+    "tension_stability": 9,
+    "spin_window": "High",
+    "predictability": 9,
+    "arm_friendliness": 7,
+    "directional_precision": 10,
+    "ball_bite": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "Modern Baseline",
+      "Counter Puncher"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Babolat Pure Aero",
+    "Yonex VCORE",
+    "HEAD Extreme",
+    "Wilson Shift",
+    "Wilson Blade",
+    "Tecnifibre T-FIGHT",
+    "Dunlop SX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Natural Gut",
+      "Luxilon Natural Gut",
+      "Babolat Touch VS",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²",
+      "Kirschbaum Touch Multifibre"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Maximum Spin",
+        "Ball Bite",
+        "Control",
+        "Directional Precision"
+      ],
+
+      "as_crosses": [
+        "Spin Support",
+        "Control",
+        "Stringbed Stability"
+      ]
+    },
+
+    "hybrid_note": "The hexagonal profile can create more friction against softer hybrid partners than a smooth round polyester."
+  },
+
+  "gauge_recommendation": {
+    "1.10": {
+      "best_for": [
+        "Maximum Spin",
+        "Maximum Feel",
+        "Fastest Response"
+      ],
+
+      "tradeoffs": [
+        "Lowest Durability",
+        "Not Suitable for Frequent String Breakers"
+      ]
+    },
+
+    "1.18": {
+      "best_for": [
+        "High Spin",
+        "Feel",
+        "Fast Swing Speed",
+        "Tournament Play"
+      ],
+
+      "tradeoffs": [
+        "Lower Durability Than Thicker Gauges"
+      ]
+    },
+
+    "1.23": {
+      "best_for": [
+        "Best Overall Balance",
+        "Spin",
+        "Control",
+        "Tournament Play"
+      ],
+
+      "tradeoffs": [
+        "Less Durability Than 1.27 and 1.33"
+      ]
+    },
+
+    "1.27": {
+      "best_for": [
+        "Control",
+        "Durability",
+        "Heavy Hitters",
+        "Long Match Play"
+      ],
+
+      "tradeoffs": [
+        "Slightly Less Spin and Feel Than Thinner Gauges"
+      ]
+    },
+
+    "1.33": {
+      "best_for": [
+        "Maximum Durability",
+        "Maximum Stability",
+        "Frequent String Breakers",
+        "Open String Patterns"
+      ],
+
+      "tradeoffs": [
+        "Lowest Feel",
+        "Lowest Launch Angle",
+        "Slightly Lower Spin Potential"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.10": {
+      "heavy_topspin_hours": "4-8",
+      "club_player_hours": "8-16"
+    },
+
+    "1.18": {
+      "heavy_topspin_hours": "6-10",
+      "club_player_hours": "12-20"
+    },
+
+    "1.23": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "16-28"
+    },
+
+    "1.27": {
+      "heavy_topspin_hours": "10-16",
+      "club_player_hours": "20-32"
+    },
+
+    "1.33": {
+      "heavy_topspin_hours": "12-20",
+      "club_player_hours": "24-40"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Low-Medium",
+    "tension_loss_sensitivity": "Low",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when spin production, snapback or directional control noticeably declines."
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Seeking Maximum Spin",
+      "Fast Swing Speed Players",
+      "Aggressive Baseliners",
+      "Tournament Players",
+      "Club Players Wanting High Control",
+      "Players Prioritizing Tension Stability"
+    ],
+
+    "avoid_for": [
+      "Beginners With Slow Swing Speed",
+      "Players With Significant Arm Sensitivity",
+      "Players Seeking Maximum Free Power",
+      "Players Wanting Multifilament-Level Comfort"
+    ],
+
+    "alternative_strings": [
+      "Kirschbaum Black Shark",
+      "Kirschbaum Pro Line Rough",
+      "Luxilon ALU Power Rough",
+      "HEAD Lynx Tour",
+      "Babolat RPM Blast",
+      "Tecnifibre Black Code"
+    ]
+  },
+
+  "comparison_tags": [
+    "Hexagonal",
+    "6-Sided",
+    "Maximum Spin",
+    "Control",
+    "High Tension Stability",
+    "Bestseller",
+    "Tournament",
+    "Club"
+  ],
+
+  "ai_keywords": [
+    "msv",
+    "focus hex",
+    "msv focus hex",
+    "focus hex 110",
+    "focus hex 118",
+    "focus hex 123",
+    "focus hex 127",
+    "focus hex 133",
+    "1.10",
+    "1.18",
+    "1.23",
+    "1.27",
+    "1.33",
+    "black",
+    "white",
+    "silver",
+    "red",
+    "sky blue",
+    "green",
+    "neon yellow",
+    "yellow",
+    "neon orange",
+    "hexagonal",
+    "spin",
+    "control",
+    "tension stability"
+  ],
+
+  "target_competitors": [
+    "Kirschbaum Black Shark",
+    "Kirschbaum Pro Line Rough",
+    "Luxilon ALU Power Rough",
+    "HEAD Lynx Tour",
+    "Babolat RPM Blast",
+    "Tecnifibre Black Code",
+    "Solinco Tour Bite"
+  ],
+
+  "description": {
+    "en": "MSV Focus Hex is the brand's bestselling hexagonal co-polyester string, engineered for maximum spin potential, excellent control and high tension stability. With more than two million units sold, it has become one of MSV's signature performance strings for fast-swinging tournament and club players. Its five available gauges range from the ultra-thin 1.10 mm version for maximum spin and feel to the 1.33 mm version for maximum durability and stability.",
+
+    "zh": "MSV Focus Hex 是 MSV 最畅销的六边形共聚酯球线，核心特点是极高的旋转潜力、优秀控制力以及良好的保磅表现，累计销量超过 200 万条。它非常适合挥拍速度快的比赛型和俱乐部球员。产品提供 1.10、1.18、1.23、1.27 与 1.33 毫米五种线径，从极细线径的极致旋转与手感，到粗线径的高耐久与稳定性，覆盖范围非常完整。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "MSV Focus Hex",
+      "Bestseller",
+      "Hexagonal profile",
+      "Maximum spin potential",
+      "Excellent control",
+      "High tension stability",
+      "Over 2 million sold",
+      "Tournament and club positioning",
+      "1.10 mm",
+      "1.18 mm",
+      "1.23 mm",
+      "1.27 mm",
+      "1.33 mm",
+      "Black",
+      "White",
+      "Silver",
+      "Red",
+      "Sky Blue",
+      "Green",
+      "Neon Yellow",
+      "Yellow",
+      "Neon Orange"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendations",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
