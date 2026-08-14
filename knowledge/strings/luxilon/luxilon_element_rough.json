@@ -1,0 +1,336 @@
+{
+  "id": "luxilon_element_rough",
+  "brand": "Luxilon",
+  "series": "Element",
+  "model": "Element Rough",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Multi-Mono",
+    "material": "Polymer-Based Polyester",
+    "string_family": "Polyester",
+    "surface": "Rough / Textured",
+    "technology": [
+      "Multi-Mono Technology",
+      "Shaped Rough Surface"
+    ],
+    "tour_positioning": "Comfort Spin Polyester",
+    "comfort_positioning": "One of the most comfortable Luxilon polyester strings"
+  },
+
+  "specifications": {
+    "construction": "Multi-Mono Polyester",
+    "cross_section": "Shaped",
+    "surface": "Rough / Textured",
+
+    "available_colors": [
+      "Bronze"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_name": "16",
+        "gauge_mm": 1.30,
+        "available": true,
+
+        "packaging": [
+          {
+            "type": "Set",
+            "length_ft": 40,
+            "length_m": 12.2
+          }
+        ],
+
+        "power": 8,
+        "control": 9,
+        "spin": 9,
+        "comfort": 10,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 8,
+        "elasticity": 8,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Players Seeking More Spin Than Standard Element",
+          "Comfort-Oriented Polyester",
+          "Fast Swing Speed",
+          "Big Swing Players",
+          "Players Sensitive to Harsh Polyester Vibrations",
+          "Advanced Club Players"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "Multi-Mono Technology",
+    "Rough Textured Surface",
+    "Shaped String Geometry",
+    "Soft Polyester Construction",
+    "Vibration Reduction",
+    "Enhanced Ball Bite"
+  ],
+
+  "design_profile": {
+    "string_type": "Comfort Spin Polyester",
+    "target_player": "Intermediate / Advanced / Tournament",
+
+    "arm_friendly": true,
+
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": false,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 9,
+    "spin": 9,
+    "comfort": 10,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 8,
+    "elasticity": 8,
+    "launch_angle": "Medium-High"
+  },
+
+  "ai_rating": {
+    "power": 8,
+    "control": 9,
+    "spin": 9,
+    "comfort": 10,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 8
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Soft-Medium",
+    "snapback": 9,
+    "ball_pocketing": 9,
+    "string_movement": 3,
+    "tension_stability": 8,
+    "spin_window": "Medium-High",
+    "predictability": 9,
+    "arm_friendliness": 10
+  },
+    "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "All Court",
+      "Counter Puncher"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson RF 01",
+    "Wilson Clash",
+    "HEAD Speed",
+    "HEAD Radical",
+    "HEAD Gravity",
+    "Yonex PERCEPT",
+    "Yonex EZONE",
+    "Tecnifibre TF-40",
+    "Tecnifibre T-FIGHT",
+    "Babolat Pure Strike",
+    "Dunlop CX"
+  ],
+
+  "recommended_hybrid": {
+
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Babolat Touch VS",
+      "Wilson Natural Gut",
+      "Luxilon Natural Gut",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²"
+    ],
+
+    "hybrid_roles": {
+
+      "as_mains": [
+        "Comfort",
+        "Spin",
+        "Ball Bite",
+        "Responsive Power"
+      ],
+
+      "as_crosses": [
+        "Comfort",
+        "Feel Enhancement",
+        "Stringbed Softening",
+        "Hybrid Support"
+      ]
+    }
+  },
+
+  "gauge_recommendation": {
+
+    "1.30": {
+
+      "gauge_name": "16",
+
+      "best_for": [
+        "Comfort",
+        "Spin",
+        "Ball Bite",
+        "Heavy Topspin",
+        "Long Fast Swings",
+        "Tournament Play"
+      ],
+
+      "tradeoffs": [
+        "Less Tension Stability Than 4G",
+        "Less Direct Feel Than ALU Power"
+      ],
+
+      "recommended_player":
+      "Players who want Luxilon comfort with additional spin and reduced vibration."
+    }
+  },
+
+  "estimated_lifespan": {
+
+    "1.30": {
+      "heavy_topspin_hours": "9-15",
+      "club_player_hours": "18-30"
+    }
+  },
+
+  "life_cycle": {
+
+    "break_in": "Very Short",
+
+    "peak_playability": "Immediate",
+
+    "performance_drop": "Medium",
+
+    "tension_loss_sensitivity": "Medium",
+
+    "playability_duration": "Good",
+
+    "recommended_monitoring":
+    "Replace when feel, spin or snapback noticeably decline."
+  },
+
+  "tour_players": [],
+    "recommended_by_ai": {
+    "best_for": [
+      "Players Seeking More Spin Than Standard Element",
+      "Players Wanting Soft Polyester Feel",
+      "Advanced Players With Fast Swings",
+      "Heavy Topspin Players",
+      "Players Sensitive to Harsh Polyester Vibrations",
+      "Players Wanting Comfort With Ball Bite"
+    ],
+
+    "avoid_for": [
+      "Beginners With Slow Swing Speed",
+      "Players Seeking Maximum Tension Maintenance",
+      "Players Wanting Extremely Firm Control",
+      "Players Prioritizing Maximum Durability Over Feel"
+    ],
+
+    "alternative_strings": [
+      "Luxilon Element",
+      "Luxilon 4G Soft",
+      "Luxilon ALU Power Rough",
+      "Tecnifibre Razor Soft",
+      "Babolat RPM Team",
+      "Yonex Poly Tour Air"
+    ]
+  },
+
+  "comparison_tags": [
+    "Soft Polyester",
+    "Rough Polyester",
+    "Multi-Mono",
+    "High Comfort",
+    "High Spin",
+    "Ball Bite",
+    "Arm Friendly",
+    "Low Vibration"
+  ],
+
+  "ai_keywords": [
+    "luxilon",
+    "element rough",
+    "luxilon element rough",
+    "element rough 130",
+    "1.30",
+    "16 gauge",
+    "multi mono",
+    "rough polyester",
+    "textured",
+    "spin",
+    "comfort",
+    "ball bite",
+    "low vibration",
+    "soft polyester"
+  ],
+
+  "target_competitors": [
+    "Luxilon Element",
+    "Luxilon ALU Power Rough",
+    "Tecnifibre Razor Soft",
+    "Babolat RPM Team",
+    "Yonex Poly Tour Air",
+    "HEAD Lynx Touch"
+  ],
+
+  "description": {
+    "en": "Luxilon Element Rough combines the signature comfort and feel of the Element family with a rougher, shaped surface that increases ball bite and spin. Multi-Mono Technology and Luxilon's soft polymer construction help reduce harsh vibrations, making it one of the more arm-friendly polyester options in the Luxilon lineup. The 1.30 mm gauge adds durability and stability while maintaining the softer response that defines Element.",
+
+    "zh": "Luxilon Element Rough 在 Element 系列柔和、舒适和高触球感的基础上，加入更粗糙、更具形状感的表面结构，从而提升咬球能力与旋转表现。Multi-Mono Technology 配合 Luxilon 较柔软的聚合物结构，有助于减少传统聚酯常见的生硬震动，因此它也是 Luxilon 系列中较为护臂的聚酯线之一。1.30毫米线径进一步增强耐久性与稳定性，同时保留 Element 系列标志性的柔和反馈。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_official_product_information",
+    "last_updated": "2026-08-14",
+
+    "officially_verified_fields": [
+      "Element Rough 1.30 mm / 16 gauge",
+      "Set length: 40 ft / 12.2 m",
+      "Multi-Mono Technology",
+      "Rougher texture",
+      "Additional ball bite",
+      "High comfort",
+      "Reduced vibration",
+      "Arm-friendly positioning"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
