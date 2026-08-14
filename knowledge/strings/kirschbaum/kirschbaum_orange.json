@@ -1,0 +1,335 @@
+{
+  "id": "kirschbaum_orange",
+  "brand": "Kirschbaum",
+  "series": "Orange",
+  "model": "Orange",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Co-Polyester",
+    "string_family": "Polyester",
+    "cross_section": "Round",
+    "surface": "Smooth",
+    "generation": "New Generation Co-Polyester",
+    "tour_positioning": "Power / Control Polyester",
+    "legacy_name": "Super Smash Orange"
+  },
+
+  "specifications": {
+    "construction": "Co-Polyester Monofilament",
+    "cross_section": "Round",
+    "surface": "Smooth",
+
+    "available_colors": [
+      "Orange"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_mm": 1.23,
+        "available": true,
+
+        "power": 9,
+        "control": 9,
+        "spin": 8,
+        "comfort": 8,
+        "feel": 9,
+        "durability": 8,
+        "tension_maintenance": 8,
+        "elasticity": 9,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Explosive Power",
+          "Fast Swing Speed",
+          "Aggressive Baseliners",
+          "Tournament Players",
+          "Maximum Feel"
+        ]
+      },
+
+      {
+        "gauge_mm": 1.28,
+        "available": true,
+
+        "power": 8,
+        "control": 10,
+        "spin": 8,
+        "comfort": 8,
+        "feel": 8,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "elasticity": 8,
+        "launch_angle": "Medium",
+
+        "recommended_use": [
+          "Best Overall Stability",
+          "Control",
+          "Hard Hitters",
+          "Tournament Play",
+          "Long Match Play"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "Advanced Co-Polyester Blend",
+    "Dynamic Performance Formulation",
+    "Power-Control Balance",
+    "Smooth Monofilament Construction"
+  ],
+
+  "design_profile": {
+    "string_type": "Power Control Polyester",
+    "target_player": "Intermediate / Advanced / Tournament",
+
+    "arm_friendly": false,
+
+    "spin_focus": false,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 9,
+    "spin": 8,
+    "comfort": 8,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 8,
+    "elasticity": 8,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 9,
+    "spin": 8,
+    "comfort": 8,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 8
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium-Firm",
+    "snapback": 8,
+    "ball_pocketing": 8,
+    "string_movement": 2,
+    "tension_stability": 8,
+    "spin_window": "Medium",
+    "predictability": 9,
+    "arm_friendliness": 7,
+    "directional_precision": 9,
+    "power_response": 9
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Power Baseliner",
+      "All Court",
+      "Hard Hitter"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson Ultra",
+    "HEAD Speed",
+    "HEAD Radical",
+    "Yonex EZONE",
+    "Yonex PERCEPT",
+    "Babolat Pure Strike",
+    "Babolat Pure Drive",
+    "Tecnifibre T-FIGHT",
+    "Dunlop CX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Natural Gut",
+      "Luxilon Natural Gut",
+      "Babolat Touch VS",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Power",
+        "Control",
+        "Explosive Response",
+        "Directional Precision"
+      ],
+
+      "as_crosses": [
+        "Control",
+        "Smooth String Movement",
+        "Hybrid Stability"
+      ]
+    }
+  },
+
+  "gauge_recommendation": {
+    "1.23": {
+      "best_for": [
+        "Maximum Feel",
+        "Explosive Acceleration",
+        "Fast Swing Speed",
+        "Aggressive Players"
+      ],
+
+      "tradeoffs": [
+        "Lower Durability"
+      ]
+    },
+
+    "1.28": {
+      "best_for": [
+        "Maximum Stability",
+        "Long Match Play",
+        "Hard Hitters",
+        "Best Overall Durability"
+      ],
+
+      "tradeoffs": [
+        "Slightly Less Feel Than 1.23"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.23": {
+      "heavy_topspin_hours": "7-12",
+      "club_player_hours": "14-24"
+    },
+
+    "1.28": {
+      "heavy_topspin_hours": "9-16",
+      "club_player_hours": "18-30"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Medium",
+    "tension_loss_sensitivity": "Medium",
+    "playability_duration": "Good",
+    "recommended_monitoring": "Replace when power response or directional precision noticeably declines."
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Hard Hitters",
+      "Players Seeking Power With Control",
+      "Aggressive Baseliners",
+      "Tournament Players",
+      "Players Wanting A Smooth Polyester Response"
+    ],
+
+    "avoid_for": [
+      "Beginners",
+      "Players Seeking Maximum Spin From Shaped Strings",
+      "Players With Significant Arm Sensitivity"
+    ],
+
+    "alternative_strings": [
+      "Kirschbaum Max Power",
+      "Kirschbaum Max Power Rough",
+      "Luxilon ALU Power",
+      "HEAD HAWK",
+      "Yonex Poly Tour Strike"
+    ]
+  },
+
+  "comparison_tags": [
+    "Round Polyester",
+    "Power",
+    "Control",
+    "Explosive Response",
+    "Advanced Co-Polyester",
+    "Formerly Super Smash Orange"
+  ],
+
+  "ai_keywords": [
+    "kirschbaum",
+    "orange",
+    "super smash orange",
+    "kirschbaum orange",
+    "1.23",
+    "1.28",
+    "advanced co polyester",
+    "power",
+    "control",
+    "hard hitter"
+  ],
+
+  "target_competitors": [
+    "Kirschbaum Max Power",
+    "Luxilon ALU Power",
+    "HEAD HAWK",
+    "Yonex Poly Tour Strike",
+    "Tecnifibre Razor Soft"
+  ],
+
+  "description": {
+    "en": "Kirschbaum Orange is a new-generation co-polyester monofilament engineered with an advanced polymer blend to improve dynamic performance. Formerly known as Super Smash Orange, it delivers explosive power, excellent control and a smooth, direct response suitable for aggressive players. The 1.23 mm version emphasizes acceleration and feel, while the 1.28 mm version provides greater stability and durability for powerful hitters.",
+
+    "zh": "Kirschbaum Orange（原名 Super Smash Orange）是一款采用新一代先进共聚酯配方开发的聚酯单丝球线，旨在提升整体动态性能。它兼具爆发力、精准控制以及顺畅直接的击球反馈，适合积极进攻型球员。1.23 毫米版本更强调加速与手感；1.28 毫米版本则更偏向稳定性和耐久性，特别适合力量型击球球员。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-14",
+
+    "officially_verified_fields": [
+      "Orange",
+      "Formerly Super Smash Orange",
+      "New generation co-polyester",
+      "Advanced blend",
+      "Explosive power",
+      "Excellent control",
+      "Smooth and precise shots",
+      "1.23 mm",
+      "1.28 mm"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
