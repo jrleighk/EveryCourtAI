@@ -1,0 +1,430 @@
+{
+  "id": "solinco_barb_wire",
+  "brand": "Solinco",
+  "series": "Barb Wire",
+  "model": "Barb Wire",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Co-Polyester",
+    "string_family": "Polyester",
+    "cross_section": "Shaped / Spin-Coiled",
+    "surface": "Textured / Edged",
+    "tour_positioning": "Maximum Spin / Bite / Power Polyester",
+    "official_positioning": "Ultra-performance co-polyester string designed and shaped to generate maximum spin and bite potential while maintaining strong all-around playability."
+  },
+
+  "specifications": {
+    "construction": "Co-Polyester Monofilament",
+    "cross_section": "Shaped / Spin-Coiled",
+    "surface": "Textured / Sharp-Edged",
+
+    "available_colors": [
+      "Grey"
+    ],
+
+    "packaging": [
+      {
+        "type": "Set",
+        "length_ft": 40,
+        "length_m": 12.2
+      },
+      {
+        "type": "Reel",
+        "length_ft": 656,
+        "length_m": 200
+      }
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.20,
+        "available": true,
+        "power": 9,
+        "control": 9,
+        "spin": 10,
+        "comfort": 8,
+        "feel": 9,
+        "durability": 7,
+        "tension_maintenance": 8,
+        "elasticity": 9,
+        "launch_angle": "High",
+        "recommended_use": [
+          "Maximum Spin",
+          "Maximum Bite",
+          "Fast Racquet Head Speed",
+          "Aggressive Baseliners",
+          "Players Taking Full Cuts At The Ball"
+        ]
+      },
+
+      {
+        "gauge_name": "16L",
+        "gauge_mm": 1.25,
+        "available": true,
+        "power": 9,
+        "control": 10,
+        "spin": 10,
+        "comfort": 8,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "elasticity": 8,
+        "launch_angle": "Medium-High",
+        "recommended_use": [
+          "Best Overall Balance",
+          "Maximum Spin",
+          "Control",
+          "Power",
+          "Tournament Play"
+        ]
+      },
+
+      {
+        "gauge_name": "16",
+        "gauge_mm": 1.30,
+        "available": true,
+        "power": 8,
+        "control": 10,
+        "spin": 9,
+        "comfort": 7,
+        "feel": 8,
+        "durability": 10,
+        "tension_maintenance": 9,
+        "elasticity": 7,
+        "launch_angle": "Medium",
+        "recommended_use": [
+          "Maximum Durability",
+          "Maximum Stability",
+          "Heavy Hitters",
+          "Frequent String Breakers",
+          "Long Match Play"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "Spin-Coiled Design",
+    "Sharp-Edged Profile",
+    "Textured Spin Geometry",
+    "Ball-Felt Grip Enhancement",
+    "Comfort-Oriented Spin Construction"
+  ],
+
+  "technology_details": {
+    "spin_coiled_design": {
+      "description": "A shaped, spin-oriented string profile designed so its sharp edges can grip and cut into the ball felt to increase rotation.",
+      "primary_benefits": [
+        "Maximum Spin",
+        "Strong Ball Bite",
+        "Heavy Ball Production",
+        "Aggressive Swing Confidence"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Maximum Spin Polyester",
+    "target_player": "Intermediate / Advanced / Tournament",
+    "arm_friendly": false,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 8,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9,
+    "elasticity": 8,
+    "launch_angle": "Medium-High"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 8,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium-Firm",
+    "snapback": 9,
+    "ball_pocketing": 8,
+    "string_movement": 2,
+    "tension_stability": 9,
+    "spin_window": "Very High",
+    "predictability": 9,
+    "arm_friendliness": 7,
+    "directional_precision": 9,
+    "ball_bite": 10,
+    "surface_grip": 10,
+    "heavy_ball_potential": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "Modern Baseline",
+      "Power Baseliner"
+    ],
+
+    "special_player_profiles": [
+      "Players Seeking Maximum Spin",
+      "Players Wanting Sharp Ball Bite",
+      "Players Who Swing Aggressively",
+      "Players Wanting More Comfort Than Very Stiff Spin Polys"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Babolat Pure Aero",
+    "Yonex VCORE",
+    "HEAD Extreme",
+    "Wilson Shift",
+    "Wilson Blade",
+    "Tecnifibre T-FIGHT",
+    "Dunlop SX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Solinco Hyper-G Round",
+      "Solinco Vanquish",
+      "Natural Gut",
+      "Luxilon Natural Gut",
+      "Babolat Touch VS",
+      "Tecnifibre X-One Biphase"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Maximum Spin",
+        "Ball Bite",
+        "Heavy Ball Production",
+        "Control"
+      ],
+
+      "as_crosses": [
+        "Spin Support",
+        "Control",
+        "Stringbed Stability"
+      ]
+    },
+
+    "hybrid_note": "The sharp textured profile can increase friction and wear against softer hybrid partners."
+  },
+
+  "gauge_recommendation": {
+    "1.20": {
+      "gauge_name": "17",
+      "best_for": [
+        "Maximum Spin",
+        "Maximum Bite",
+        "Fast Swing Speed",
+        "Aggressive Shot Making"
+      ],
+      "tradeoffs": [
+        "Lowest Durability"
+      ]
+    },
+
+    "1.25": {
+      "gauge_name": "16L",
+      "best_for": [
+        "Best Overall Balance",
+        "Spin",
+        "Control",
+        "Power",
+        "Tournament Play"
+      ],
+      "tradeoffs": [
+        "Less Durability Than 1.30"
+      ]
+    },
+
+    "1.30": {
+      "gauge_name": "16",
+      "best_for": [
+        "Maximum Durability",
+        "Maximum Stability",
+        "Heavy Hitters",
+        "Frequent String Breakers"
+      ],
+      "tradeoffs": [
+        "Slightly Less Spin",
+        "Slightly Less Feel"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.20": {
+      "heavy_topspin_hours": "6-11",
+      "club_player_hours": "12-22"
+    },
+
+    "1.25": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "16-28"
+    },
+
+    "1.30": {
+      "heavy_topspin_hours": "10-18",
+      "club_player_hours": "20-34"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Medium",
+    "tension_loss_sensitivity": "Medium",
+    "playability_duration": "Good",
+    "recommended_monitoring": "Replace when surface bite, snapback or spin response noticeably declines."
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Seeking Maximum Spin",
+      "Heavy Topspin Players",
+      "Aggressive Baseliners",
+      "Players Wanting Spin Without Extreme Stiffness",
+      "Players Who Take Full Cuts At The Ball"
+    ],
+
+    "avoid_for": [
+      "Players With Significant Arm Sensitivity",
+      "Beginners With Slow Swing Speed",
+      "Players Seeking Smooth Round Polyester",
+      "Players Wanting Maximum Tension Stability"
+    ],
+
+    "alternative_strings": [
+      "Solinco Tour Bite",
+      "Solinco Tour Bite Diamond Rough",
+      "Solinco Hyper-G",
+      "HEAD Lynx Tour",
+      "Babolat RPM Blast",
+      "Kirschbaum Black Shark"
+    ]
+  },
+
+  "comparison_tags": [
+    "Barb Wire",
+    "Spin-Coiled",
+    "Maximum Spin",
+    "Ball Bite",
+    "Textured Polyester",
+    "Grey",
+    "Power",
+    "Comfortable Spin Poly"
+  ],
+
+  "ai_keywords": [
+    "solinco",
+    "barb wire",
+    "solinco barb wire",
+    "1.20",
+    "1.25",
+    "1.30",
+    "17 gauge",
+    "16l",
+    "16 gauge",
+    "grey",
+    "spin coiled",
+    "textured",
+    "sharp edges",
+    "spin",
+    "bite",
+    "power",
+    "comfort",
+    "co polyester"
+  ],
+
+  "target_competitors": [
+    "Solinco Tour Bite",
+    "Solinco Tour Bite Diamond Rough",
+    "HEAD Lynx Tour",
+    "Babolat RPM Blast",
+    "Yonex Poly Tour Rev",
+    "Kirschbaum Black Shark",
+    "MSV Hepta Twist"
+  ],
+
+  "description": {
+    "en": "Solinco Barb Wire is an ultra-performance shaped co-polyester designed primarily for maximum spin and ball bite. Its spin-coiled, sharp-edged profile grips the ball felt to create heavy rotation while allowing players to swing aggressively through the ball. Unlike some spin strings that rely heavily on stiffness, Barb Wire derives much of its spin from its geometry, helping it provide a surprisingly comfortable response while maintaining strong power and all-around playability.",
+
+    "zh": "Solinco Barb Wire 是一款以极致旋转和咬球为核心的高性能异形共聚酯球线。其 Spin-Coiled 缠绕式轮廓与锐利边缘能够更强地抓住网球毛毡，从而制造大量旋转，让球员可以更大胆地完整加速挥拍。它的旋转并不主要依赖极高硬度，而更多来自球线本身的异形结构，因此在高旋转聚酯线中能够提供相对出色的舒适性，同时保持力量和全场可打性。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Solinco Barb Wire",
+      "Ultra-performance co-polyester",
+      "Maximum spin",
+      "Maximum bite",
+      "Superior all-around playability",
+      "Grey color",
+      "Spin derived from string profile rather than stiffness",
+      "Surprising comfort",
+      "Spin-coiled design",
+      "Sharp edges",
+      "Ball felt grip",
+      "Power positioning",
+      "1.20 mm / 17 gauge",
+      "1.25 mm / 16L gauge",
+      "1.30 mm / 16 gauge",
+      "Set length: 40 ft / 12.2 m",
+      "Reel length: 656 ft / 200 m"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendations",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
