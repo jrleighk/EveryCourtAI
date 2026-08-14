@@ -1,0 +1,334 @@
+{
+  "id": "luxilon_4g_rough",
+  "brand": "Luxilon",
+  "series": "4G",
+  "model": "4G Rough",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Poly-Ether-Ether",
+    "composition": "Poly-Ether-Ether",
+    "string_family": "Polyester",
+    "surface": "Textured / Dented",
+    "weather_resistance": true,
+    "moisture_resistant": true,
+    "tour_positioning": "Spin Control / Maximum Tension Maintenance",
+    "tension_maintenance_claim": "30% greater tension maintenance"
+  },
+
+  "specifications": {
+    "construction": "Polyester Monofilament",
+    "cross_section": "Round",
+    "surface": "Textured / Rough",
+
+    "available_colors": [
+      "Gold"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.25,
+        "available": true,
+
+        "power": 7,
+        "control": 10,
+        "spin": 10,
+        "comfort": 8,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 10,
+        "elasticity": 8,
+        "launch_angle": "Medium",
+
+        "recommended_use": [
+          "Advanced Players",
+          "Tournament Players",
+          "Heavy Topspin",
+          "Players Seeking More Spin Than Standard 4G",
+          "Players Wanting Maximum Tension Maintenance",
+          "Control-Oriented Baseliners"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "Strategically Aligned Molecular Chains",
+    "Poly-Ether-Ether Composition",
+    "Textured Surface",
+    "Dented Surface",
+    "Maximum Tension Maintenance",
+    "Weather Resistant Construction",
+    "Enhanced String Flex"
+  ],
+
+  "design_profile": {
+    "string_type": "Spin Control Polyester",
+    "target_player": "Advanced / Tournament / Professional",
+
+    "arm_friendly": false,
+
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": false,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 7,
+    "control": 10,
+    "spin": 10,
+    "comfort": 8,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 10,
+    "elasticity": 8,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 7,
+    "control": 10,
+    "spin": 10,
+    "comfort": 8,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 10
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Firm",
+    "snapback": 9,
+    "ball_pocketing": 8,
+    "string_movement": 2,
+    "tension_stability": 10,
+    "spin_window": "Medium-High",
+    "predictability": 10,
+    "arm_friendliness": 7
+  },
+    "recommended_player": {
+    "level": [
+      "Advanced",
+      "Tournament",
+      "Professional"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "Counter Puncher",
+      "All Court"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson RF 01",
+    "Wilson Pro Staff",
+    "HEAD Speed",
+    "HEAD Radical",
+    "HEAD Prestige",
+    "Yonex PERCEPT",
+    "Yonex VCORE",
+    "Tecnifibre TF-40",
+    "Tecnifibre T-FIGHT",
+    "Babolat Pure Strike",
+    "Dunlop CX"
+  ],
+
+  "recommended_hybrid": {
+
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Babolat Touch VS",
+      "Wilson Natural Gut",
+      "Luxilon Natural Gut",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²"
+    ],
+
+    "hybrid_roles": {
+
+      "as_mains": [
+        "Maximum Spin",
+        "Maximum Tension Stability",
+        "Heavy Ball Production",
+        "Tournament Precision"
+      ],
+
+      "as_crosses": [
+        "Control",
+        "Stringbed Stability",
+        "Improved Spin",
+        "Hybrid Support"
+      ]
+    }
+  },
+
+  "gauge_recommendation": {
+
+    "1.25": {
+
+      "gauge_name": "17",
+
+      "best_for": [
+        "Maximum Spin",
+        "Heavy Topspin",
+        "Tournament Players",
+        "Long Match Consistency",
+        "Hybrid Setup"
+      ],
+
+      "tradeoffs": [
+        "Less Comfortable Than 4G Soft",
+        "Less Direct Feel Than Standard 4G"
+      ],
+
+      "recommended_player":
+      "Advanced players wanting higher spin potential while maintaining exceptional tension stability."
+    }
+  },
+
+  "estimated_lifespan": {
+
+    "1.25": {
+      "heavy_topspin_hours": "10-16",
+      "club_player_hours": "20-35"
+    }
+  },
+
+  "life_cycle": {
+
+    "break_in": "Very Short",
+
+    "peak_playability": "Immediate",
+
+    "performance_drop": "Very Low",
+
+    "tension_loss_sensitivity": "Very Low",
+
+    "playability_duration": "Excellent",
+
+    "recommended_monitoring":
+    "Replace after noticeable reduction in snapback or spin production rather than tension loss."
+  },
+
+  "tour_players": [],
+    "recommended_by_ai": {
+
+    "best_for": [
+      "Players Seeking Maximum Spin With 4G Stability",
+      "Advanced Players",
+      "Tournament Players",
+      "Heavy Topspin Players",
+      "Aggressive Baseliners",
+      "Players Prioritizing Long Tension Stability"
+    ],
+
+    "avoid_for": [
+      "Beginners",
+      "Players Seeking Maximum Comfort",
+      "Slow Swing Speed Players",
+      "Players Looking For Easy Power"
+    ],
+
+    "alternative_strings": [
+      "Luxilon 4G",
+      "Luxilon ALU Power Rough",
+      "Luxilon 4G Soft",
+      "Babolat RPM Rough",
+      "Tecnifibre Black Code",
+      "Yonex Poly Tour Rev",
+      "Grapplesnake Tour M8",
+      "Grapplesnake Soldier"
+    ]
+  },
+
+  "comparison_tags": [
+    "Tour Polyester",
+    "Textured Polyester",
+    "Maximum Tension Maintenance",
+    "Maximum Spin",
+    "Control",
+    "Weather Resistant",
+    "Professional",
+    "4G Family"
+  ],
+
+  "ai_keywords": [
+    "luxilon",
+    "4g rough",
+    "luxilon 4g rough",
+    "4g rough 125",
+    "1.25",
+    "rough",
+    "textured",
+    "dented",
+    "poly ether ether",
+    "polyester",
+    "spin",
+    "control",
+    "maximum tension maintenance",
+    "tour string"
+  ],
+
+  "target_competitors": [
+    "Luxilon ALU Power Rough",
+    "Babolat RPM Rough",
+    "Tecnifibre Black Code",
+    "Yonex Poly Tour Rev",
+    "Solinco Tour Bite",
+    "Grapplesnake Tour M8"
+  ],
+
+  "description": {
+
+    "en": "Luxilon 4G Rough combines the legendary tension maintenance of the 4G family with a textured surface that enhances spin potential and ball bite. The dented surface increases string flex for a slightly softer feel while maintaining the outstanding stability, durability and control that define the 4G series. Engineered with strategically aligned molecular chains and Poly-Ether-Ether materials, 4G Rough minimizes tension loss over time and remains highly consistent even under demanding weather conditions.",
+
+    "zh": "Luxilon 4G Rough 将 4G 系列著名的保磅能力与粗糙纹理表面相结合，进一步提升旋转能力和咬球表现。官方采用凹凸纹理（Dented Surface）设计，在增加球线弯曲能力的同时，带来比标准 4G 略微更加柔和的击球反馈，并保持 4G 系列优秀的稳定性、耐久性与控制力。特殊排列的高分子链结构（Strategically Aligned Molecular Chains）与 Poly-Ether-Ether 材料可显著降低张力衰减，即使在潮湿或恶劣天气条件下也能维持稳定表现。"
+  },
+
+  "verification": {
+
+    "status": "verified_from_supplied_official_product_information",
+
+    "last_updated": "2026-08-14",
+
+    "officially_verified_fields": [
+      "Textured / dented surface",
+      "Greater spin potential",
+      "Greater ball bite",
+      "Enhanced string flex",
+      "Softer feel than standard 4G",
+      "30% greater tension maintenance",
+      "Poly-Ether-Ether composition",
+      "Strategically aligned molecular chains",
+      "Weather resistant performance"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
