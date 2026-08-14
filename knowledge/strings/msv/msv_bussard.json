@@ -1,0 +1,456 @@
+{
+  "id": "msv_bussard",
+  "brand": "MSV",
+  "series": "Bussard",
+  "model": "Bussard",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Co-Polyester",
+    "string_family": "Polyester",
+    "cross_section": "Round",
+    "surface": "Smooth",
+    "tour_positioning": "Crisp Control / Spin Polyester",
+    "target_level": "Intermediate / Advanced",
+    "target_player_description": "Intermediate to advanced players attacking the ball with full swings and topspin.",
+    "made_in": "Germany"
+  },
+
+  "specifications": {
+    "construction": "Co-Polyester Monofilament",
+    "cross_section": "Round",
+    "surface": "Smooth",
+
+    "available_colors": [
+      "Silver"
+    ],
+
+    "packaging": [
+      {
+        "type": "Set",
+        "length_m": 12,
+        "length_ft": 39
+      }
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.20,
+        "available": true,
+
+        "power": 8,
+        "control": 10,
+        "spin": 10,
+        "comfort": 7,
+        "feel": 10,
+        "durability": 7,
+        "tension_maintenance": 9,
+        "elasticity": 8,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Maximum Spin",
+          "Maximum Feel",
+          "Fast Racquet Head Speed",
+          "Full Swing Players",
+          "Advanced Players"
+        ]
+      },
+
+      {
+        "gauge_name": "16L",
+        "gauge_mm": 1.25,
+        "available": true,
+
+        "power": 8,
+        "control": 10,
+        "spin": 9,
+        "comfort": 7,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "elasticity": 8,
+        "launch_angle": "Medium",
+
+        "recommended_use": [
+          "Best Overall Balance",
+          "Maximum Control",
+          "Spin",
+          "Tournament Play",
+          "Aggressive Baseliners"
+        ]
+      },
+
+      {
+        "gauge_name": "16",
+        "gauge_mm": 1.30,
+        "available": true,
+
+        "power": 7,
+        "control": 10,
+        "spin": 8,
+        "comfort": 7,
+        "feel": 8,
+        "durability": 10,
+        "tension_maintenance": 10,
+        "elasticity": 7,
+        "launch_angle": "Medium-Low",
+
+        "recommended_use": [
+          "Maximum Durability",
+          "Maximum Stability",
+          "Heavy Hitters",
+          "Open String Patterns",
+          "Long Match Play"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "Crisp Co-Polyester Construction",
+    "Special Performance Additives",
+    "Tension Stability Engineering",
+    "Durability-Oriented Polymer Formulation"
+  ],
+
+  "design_profile": {
+    "string_type": "Crisp Control Spin Polyester",
+    "target_player": "Intermediate / Advanced / Tournament",
+    "arm_friendly": false,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": false,
+    "comfort_focus": false,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 10,
+    "spin": 9,
+    "comfort": 7,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9,
+    "elasticity": 8,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 8,
+    "control": 10,
+    "spin": 9,
+    "comfort": 7,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium-Firm / Crisp",
+    "snapback": 9,
+    "ball_pocketing": 8,
+    "string_movement": 2,
+    "tension_stability": 9,
+    "spin_window": "High",
+    "predictability": 10,
+    "arm_friendliness": 6,
+    "directional_precision": 10,
+    "ball_bite": 9,
+    "crispness": 10
+  },
+
+  "recommended_tension": {
+    "kg": {
+      "min": 20,
+      "max": 24
+    },
+    "lbs": {
+      "min": 44,
+      "max": 53
+    },
+    "reference": "Medium gauge and midsize racquet",
+    "source": "Manufacturer supplied recommendation"
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "All Court",
+      "Full Swing Player"
+    ],
+
+    "special_player_profiles": [
+      "Players Attacking the Ball With Full Swings",
+      "Players Seeking Very High Control",
+      "Players Seeking Strong Spin Potential",
+      "Players Using Normal String Patterns",
+      "Players Using Open String Patterns"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Babolat Pure Aero",
+    "Babolat Pure Drive",
+    "Yonex VCORE",
+    "Wilson Shift",
+    "HEAD Extreme",
+    "HEAD Speed",
+    "Tecnifibre T-FIGHT",
+    "Dunlop SX",
+    "Dunlop FX"
+  ],
+
+  "string_pattern_recommendation": {
+    "normal_pattern": "Recommended",
+    "open_pattern": "Recommended",
+    "dense_pattern": "Suitable"
+  },
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Natural Gut",
+      "Luxilon Natural Gut",
+      "Babolat Touch VS",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²",
+      "Kirschbaum Touch Multifibre"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Control",
+        "Spin",
+        "Crisp Response",
+        "Directional Precision"
+      ],
+
+      "as_crosses": [
+        "Control",
+        "Stringbed Stability",
+        "Snapback Support"
+      ]
+    }
+  },
+
+  "gauge_recommendation": {
+    "1.20": {
+      "gauge_name": "17",
+      "best_for": [
+        "Maximum Spin",
+        "Maximum Feel",
+        "Fastest Response",
+        "Full Swing Players"
+      ],
+      "tradeoffs": [
+        "Lowest Durability"
+      ]
+    },
+
+    "1.25": {
+      "gauge_name": "16L",
+      "best_for": [
+        "Best Overall Balance",
+        "Maximum Control",
+        "Spin",
+        "Tournament Play"
+      ],
+      "tradeoffs": [
+        "Less Durability Than 1.30"
+      ]
+    },
+
+    "1.30": {
+      "gauge_name": "16",
+      "best_for": [
+        "Maximum Durability",
+        "Maximum Stability",
+        "Open String Patterns",
+        "Heavy Hitters"
+      ],
+      "tradeoffs": [
+        "Slightly Less Spin",
+        "Slightly Less Feel"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.20": {
+      "heavy_topspin_hours": "6-11",
+      "club_player_hours": "12-22"
+    },
+
+    "1.25": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "16-28"
+    },
+
+    "1.30": {
+      "heavy_topspin_hours": "10-18",
+      "club_player_hours": "20-34"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Low",
+    "tension_loss_sensitivity": "Low",
+    "playability_duration": "Excellent",
+    "recommended_monitoring": "Replace when crisp response, spin or directional control noticeably declines."
+  },
+
+  "test_results": {
+    "racketpedia": {
+      "control_range_percent": "95-100",
+      "spin_range_percent": "85-100",
+      "note": "Reported values vary by gauge."
+    },
+
+    "perfect_tennis_review": {
+      "status": "External review referenced by manufacturer"
+    }
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Intermediate to Advanced Full-Swing Players",
+      "Aggressive Baseliners",
+      "Heavy Topspin Players",
+      "Players Seeking Very High Control",
+      "Players Using Open String Patterns",
+      "Players Prioritizing Durability and Tension Stability"
+    ],
+
+    "avoid_for": [
+      "Beginners With Slow Swing Speed",
+      "Players With Significant Arm Sensitivity",
+      "Players Seeking Maximum Free Power",
+      "Players Wanting Very Soft Polyester"
+    ],
+
+    "alternative_strings": [
+      "MSV Co Focus",
+      "MSV Focus HEX Ultra",
+      "MSV Focus Hex",
+      "Kirschbaum Competition",
+      "HEAD Lynx Tour",
+      "Luxilon 4G"
+    ]
+  },
+
+  "comparison_tags": [
+    "Crisp Co-Poly",
+    "Maximum Control",
+    "High Spin",
+    "High Tension Maintenance",
+    "Durable",
+    "Open Pattern Friendly",
+    "Full Swing",
+    "Made in Germany"
+  ],
+
+  "ai_keywords": [
+    "msv",
+    "bussard",
+    "msv bussard",
+    "bussard 120",
+    "bussard 125",
+    "bussard 130",
+    "1.20",
+    "1.25",
+    "1.30",
+    "17 gauge",
+    "16l",
+    "16 gauge",
+    "silver",
+    "crisp co polyester",
+    "control",
+    "spin",
+    "tension maintenance",
+    "durability",
+    "open string pattern",
+    "20 24 kg",
+    "made in germany"
+  ],
+
+  "target_competitors": [
+    "MSV Co Focus",
+    "MSV Focus HEX Ultra",
+    "Kirschbaum Competition",
+    "HEAD Lynx Tour",
+    "Luxilon 4G",
+    "Yonex Poly Tour Strike"
+  ],
+
+  "description": {
+    "en": "MSV Bussard is a crisp co-polyester monofilament designed for intermediate to advanced players who attack the ball with full swings and topspin. It delivers very high control and spin potential while special additives improve tension maintenance and durability. Racketpedia measurements supplied by MSV report control scores between 95 and 100 percent and spin scores between 85 and 100 percent depending on gauge. Bussard is recommended for normal and open string patterns, with an official tension recommendation of 20 to 24 kg. Made in Germany.",
+
+    "zh": "MSV Bussard 是一款击球反馈清脆的共聚酯单丝球线，专为使用完整挥拍动作、积极制造上旋的中高级球员设计。它提供极高的控制力和旋转潜力，同时通过特殊添加剂强化保磅与耐久表现。MSV 提供的 Racketpedia 数据显示，根据不同线径，其控制评分达到 95–100%，旋转评分达到 85–100%。Bussard 适合正常及开放式线床，官方建议穿线张力为 20–24 kg（44–53 lbs），产地为德国。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "MSV Bussard",
+      "1.20 mm / 17 gauge",
+      "1.25 mm / 16L gauge",
+      "1.30 mm / 16 gauge",
+      "Silver",
+      "12 m / 39 ft",
+      "Intermediate to advanced player positioning",
+      "Full swing and topspin positioning",
+      "Crisp monofil co-poly construction",
+      "Very high control",
+      "High spin potential",
+      "Special additives",
+      "Very good tension maintenance",
+      "Durability",
+      "Normal string pattern recommendation",
+      "Open string pattern recommendation",
+      "Racketpedia 95-100% control range",
+      "Racketpedia 85-100% spin range",
+      "Recommended tension 20-24 kg / 44-53 lbs",
+      "Made in Germany"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendations",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
