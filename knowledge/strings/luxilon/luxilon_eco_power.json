@@ -1,0 +1,325 @@
+{
+  "id": "luxilon_eco_power",
+  "brand": "Luxilon",
+  "series": "Eco",
+  "model": "Eco Power",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "100% Recycled Polyester-Based Material",
+    "string_family": "Polyester",
+    "cross_section": "Hexagonal",
+    "surface": "Shaped",
+    "recycled_material_percentage": 100,
+    "sustainable": true,
+    "tour_positioning": "Sustainable Power / Spin / Control Polyester"
+  },
+
+  "specifications": {
+    "construction": "Polyester Monofilament",
+    "cross_section": "Hexagonal",
+    "surface": "Shaped",
+
+    "available_gauges": [
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.25,
+        "available": true,
+
+        "packaging": [
+          {
+            "type": "Set",
+            "length_ft": 40,
+            "length_m": 12.2
+          }
+        ],
+
+        "power": 9,
+        "control": 9,
+        "spin": 9,
+        "comfort": 8,
+        "feel": 8,
+        "durability": 9,
+        "tension_maintenance": 8,
+        "elasticity": 8,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "All-Court Players",
+          "Aggressive Baseliners",
+          "Players Seeking Power and Spin",
+          "Intermediate Players",
+          "Advanced Players",
+          "Sustainability-Focused Players"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "100% Recycled Material Construction",
+    "Hexagonal Geometry",
+    "Ball-Gripping Shaped Profile",
+    "Durable Heavy-Duty Construction"
+  ],
+
+  "eco_profile": {
+    "recycled_material_percentage": 100,
+    "made_from_recycled_materials": true,
+    "biodegradable": false,
+    "environmental_positioning": "Sustainable Performance Polyester",
+    "manufacturer_claim": "Designed to perform at the same level as or better than conventional strings"
+  },
+
+  "design_profile": {
+    "string_type": "Sustainable Power Spin Polyester",
+    "target_player": "Intermediate / Advanced / Tournament",
+    "arm_friendly": false,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 9,
+    "spin": 9,
+    "comfort": 8,
+    "feel": 8,
+    "durability": 9,
+    "tension_maintenance": 8,
+    "elasticity": 8,
+    "launch_angle": "Medium-High"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 9,
+    "spin": 9,
+    "comfort": 8,
+    "feel": 8,
+    "durability": 9,
+    "tension_maintenance": 8
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium-Firm",
+    "snapback": 9,
+    "ball_pocketing": 8,
+    "string_movement": 2,
+    "tension_stability": 8,
+    "spin_window": "Medium-High",
+    "predictability": 9,
+    "arm_friendliness": 7
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "All Court",
+      "Aggressive Baseliner",
+      "Modern Topspin",
+      "Power Baseliner"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson Ultra",
+    "Wilson Shift",
+    "HEAD Speed",
+    "HEAD Extreme",
+    "Yonex VCORE",
+    "Yonex EZONE",
+    "Babolat Pure Aero",
+    "Babolat Pure Drive",
+    "Tecnifibre T-FIGHT",
+    "Dunlop SX",
+    "Dunlop FX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Luxilon Natural Gut",
+      "Babolat Touch VS",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²",
+      "Gamma Live Wire Professional"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Spin",
+        "Power",
+        "Control",
+        "Durability"
+      ],
+
+      "as_crosses": [
+        "Control",
+        "Stringbed Stability",
+        "Snapback Support"
+      ]
+    }
+  },
+
+  "gauge_recommendation": {
+    "1.25": {
+      "gauge_name": "17",
+
+      "best_for": [
+        "Balanced Power and Control",
+        "Spin",
+        "All-Court Tennis",
+        "Fast Swing Speed",
+        "Sustainable Performance"
+      ],
+
+      "tradeoffs": [
+        "Less Comfort Than Multifilament",
+        "Less Maximum Control Than 4G",
+        "Less Maximum Feel Than Element"
+      ],
+
+      "recommended_player": "Intermediate to advanced players seeking a versatile shaped polyester with strong power, spin and control while prioritizing recycled materials."
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.25": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "16-28"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Medium",
+    "tension_loss_sensitivity": "Medium",
+    "playability_duration": "Good",
+    "recommended_monitoring": "Replace when snapback, control or spin production noticeably decreases."
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Seeking Power, Spin and Control in One Polyester",
+      "All-Court Players",
+      "Aggressive Baseliners",
+      "Players Wanting a Hexagonal Spin String",
+      "Players Prioritizing Sustainable Equipment",
+      "Intermediate to Advanced Players"
+    ],
+
+    "avoid_for": [
+      "Beginners With Slow Swing Speed",
+      "Players With Significant Arm Sensitivity",
+      "Players Seeking Maximum Multifilament Comfort",
+      "Players Wanting Extremely Low-Powered Control"
+    ],
+
+    "alternative_strings": [
+      "Luxilon Eco Rough",
+      "Luxilon Eco Spin",
+      "Luxilon ALU Power",
+      "Babolat RPM Blast",
+      "Tecnifibre Black Code",
+      "Grapplesnake Tour M8"
+    ]
+  },
+
+  "comparison_tags": [
+    "100% Recycled",
+    "Sustainable Polyester",
+    "Hexagonal",
+    "Power",
+    "Spin",
+    "Control",
+    "Durable",
+    "All Court"
+  ],
+
+  "ai_keywords": [
+    "luxilon",
+    "eco power",
+    "luxilon eco power",
+    "eco power 125",
+    "1.25",
+    "17 gauge",
+    "100% recycled",
+    "recycled tennis string",
+    "sustainable tennis string",
+    "hexagonal",
+    "polyester",
+    "spin",
+    "power",
+    "control"
+  ],
+
+  "target_competitors": [
+    "Luxilon Eco Rough",
+    "Luxilon Eco Spin",
+    "Babolat RPM Blast",
+    "Tecnifibre Black Code",
+    "Solinco Hyper-G",
+    "Yonex Poly Tour Rev"
+  ],
+
+  "description": {
+    "en": "Luxilon Eco Power is a high-performance polyester monofilament made from 100% recycled materials. Its durable heavy-duty construction combines power, spin and control while retaining enough forgiveness for touch and finesse shots. The hexagonal profile grips the ball at impact to increase spin and help players control aggressive trajectories. Designed for versatile all-court players, Eco Power combines modern polyester performance with a more sustainable material platform.",
+
+    "zh": "Luxilon Eco Power 是一款采用 100% 再生材料制造的高性能聚酯单丝球线，将力量、旋转、控制和耐久性结合在一起，同时在处理小球和细腻击球时仍保留一定容错性。六边形截面能够在触球瞬间增强咬球能力，帮助球员产生更多旋转并提高攻击性击球的落点控制。它非常适合打法全面、挥拍速度较快，同时希望选择更可持续网球装备的中高级球员。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_official_product_information",
+    "last_updated": "2026-08-14",
+
+    "officially_verified_fields": [
+      "Eco Power",
+      "1.25 mm / 17 gauge",
+      "Set length: 40 ft / 12.2 m",
+      "100% recycled materials",
+      "Hexagonal shape",
+      "Power-oriented performance",
+      "Spin-oriented performance",
+      "Control-oriented performance",
+      "Durable heavy-duty construction",
+      "Forgiving response on delicate shots",
+      "Sustainable positioning"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
