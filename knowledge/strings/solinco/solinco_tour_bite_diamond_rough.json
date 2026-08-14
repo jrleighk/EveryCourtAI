@@ -1,0 +1,456 @@
+{
+  "id": "solinco_tour_bite_diamond_rough",
+  "brand": "Solinco",
+  "series": "Tour Bite",
+  "model": "Tour Bite Diamond Rough",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Co-Polyester",
+    "string_family": "Polyester",
+    "cross_section": "Shaped / Diamond Textured",
+    "surface": "Diamond Rough",
+    "technology": [
+      "Diamond Rough Texturing Process"
+    ],
+    "tour_positioning": "Extreme Spin / Power / Bite / Pocketing Polyester",
+    "official_positioning": "High-performance versatile polyester string using a Diamond Rough texturing process to enhance power, spin, bite, pocketing, feel and playability."
+  },
+
+  "specifications": {
+    "construction": "High-Powered Co-Polyester Monofilament",
+    "cross_section": "Shaped",
+    "surface": "Diamond Textured / Rough",
+
+    "packaging": [
+      {
+        "type": "Set",
+        "length_ft": 40,
+        "length_m": 12.2
+      },
+      {
+        "type": "Reel",
+        "length_ft": 656,
+        "length_m": 200
+      }
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.20,
+        "available": true,
+        "power": 9,
+        "control": 9,
+        "spin": 10,
+        "comfort": 7,
+        "feel": 10,
+        "durability": 7,
+        "tension_maintenance": 9,
+        "elasticity": 9,
+        "launch_angle": "High",
+        "recommended_use": [
+          "Maximum Spin",
+          "Maximum Feel",
+          "Maximum Ball Pocketing",
+          "Fast Racquet Head Speed",
+          "Tournament Players"
+        ]
+      },
+
+      {
+        "gauge_name": "16L",
+        "gauge_mm": 1.25,
+        "available": true,
+        "power": 9,
+        "control": 10,
+        "spin": 10,
+        "comfort": 7,
+        "feel": 10,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "elasticity": 8,
+        "launch_angle": "Medium-High",
+        "recommended_use": [
+          "Best Overall Balance",
+          "Maximum Spin",
+          "Ball Pocketing",
+          "Control",
+          "Tournament Play"
+        ]
+      },
+
+      {
+        "gauge_name": "16",
+        "gauge_mm": 1.30,
+        "available": true,
+        "power": 8,
+        "control": 10,
+        "spin": 9,
+        "comfort": 7,
+        "feel": 9,
+        "durability": 10,
+        "tension_maintenance": 10,
+        "elasticity": 7,
+        "launch_angle": "Medium",
+        "recommended_use": [
+          "Maximum Durability",
+          "Maximum Stability",
+          "Heavy Hitters",
+          "Long Match Play",
+          "Frequent String Breakers"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "Diamond Rough Texturing Process",
+    "Diamond Textured Construction",
+    "High-Powered Polyester Monofilament Fiber",
+    "Enhanced Ball Pocketing",
+    "Spin and Bite Amplification",
+    "Durability-Oriented Co-Polyester Construction"
+  ],
+
+  "technology_details": {
+    "diamond_rough": {
+      "full_name": "Diamond Rough Texturing Process",
+      "description": "A textured surface treatment designed to increase spin and bite while supporting ball pocketing, feel and overall playability.",
+      "primary_benefits": [
+        "Enhanced Spin",
+        "Ball Bite",
+        "Ball Pocketing",
+        "Feel",
+        "Playability"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Diamond Textured Spin Polyester",
+    "target_player": "Intermediate / Advanced / Tournament",
+    "arm_friendly": false,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": false,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 7,
+    "feel": 10,
+    "durability": 9,
+    "tension_maintenance": 9,
+    "elasticity": 8,
+    "launch_angle": "Medium-High"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 7,
+    "feel": 10,
+    "durability": 9,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium-Firm",
+    "snapback": 10,
+    "ball_pocketing": 10,
+    "string_movement": 2,
+    "tension_stability": 9,
+    "spin_window": "Very High",
+    "predictability": 9,
+    "arm_friendliness": 6,
+    "directional_precision": 10,
+    "ball_bite": 10,
+    "heavy_ball_potential": 10,
+    "surface_grip": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "Modern Baseline",
+      "All Court",
+      "Power Baseliner"
+    ],
+
+    "special_player_profiles": [
+      "Players Seeking More Spin Than Standard Tour Bite",
+      "Players Wanting Strong Ball Pocketing",
+      "Players Prioritizing Surface Grip and Bite",
+      "Heavy Hitters",
+      "Tournament Players"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Babolat Pure Aero",
+    "Yonex VCORE",
+    "HEAD Extreme",
+    "Wilson Shift",
+    "Wilson Blade",
+    "Tecnifibre T-FIGHT",
+    "Dunlop SX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Solinco Hyper-G Round",
+      "Natural Gut",
+      "Luxilon Natural Gut",
+      "Babolat Touch VS",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Maximum Spin",
+        "Ball Bite",
+        "Ball Pocketing",
+        "Heavy Ball Production",
+        "Control"
+      ],
+
+      "as_crosses": [
+        "Spin Support",
+        "Control",
+        "Stringbed Stability"
+      ]
+    },
+
+    "hybrid_note": "The aggressive diamond-textured surface may create more friction against softer hybrid partners than a smooth round polyester."
+  },
+
+  "gauge_recommendation": {
+    "1.20": {
+      "gauge_name": "17",
+      "best_for": [
+        "Maximum Spin",
+        "Maximum Feel",
+        "Maximum Pocketing",
+        "Fast Swing Speed"
+      ],
+      "tradeoffs": [
+        "Lowest Durability"
+      ]
+    },
+
+    "1.25": {
+      "gauge_name": "16L",
+      "best_for": [
+        "Best Overall Balance",
+        "Maximum Spin",
+        "Ball Pocketing",
+        "Control",
+        "Tournament Play"
+      ],
+      "tradeoffs": [
+        "Less Durability Than 1.30"
+      ]
+    },
+
+    "1.30": {
+      "gauge_name": "16",
+      "best_for": [
+        "Maximum Durability",
+        "Maximum Stability",
+        "Heavy Hitters",
+        "Long Match Play"
+      ],
+      "tradeoffs": [
+        "Slightly Less Spin",
+        "Slightly Less Feel"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.20": {
+      "heavy_topspin_hours": "7-12",
+      "club_player_hours": "14-24"
+    },
+
+    "1.25": {
+      "heavy_topspin_hours": "9-16",
+      "club_player_hours": "18-30"
+    },
+
+    "1.30": {
+      "heavy_topspin_hours": "11-20",
+      "club_player_hours": "22-36"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Medium",
+    "tension_loss_sensitivity": "Medium-Low",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when diamond-texture bite, snapback, pocketing or directional control noticeably declines."
+  },
+
+  "tour_players": [
+    {
+      "name": "Rajeev Ram",
+      "tour": "ATP",
+      "usage": "Manufacturer reported / trusted by",
+      "achievement_reference": "Grand Slam Doubles Champion",
+      "confidence": "Official Manufacturer Claim"
+    },
+
+    {
+      "name": "Austin Krajicek",
+      "tour": "ATP",
+      "usage": "Manufacturer reported / trusted by",
+      "achievement_reference": "Grand Slam Doubles Champion",
+      "confidence": "Official Manufacturer Claim"
+    }
+  ],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Heavy Topspin Players",
+      "Players Seeking Maximum Surface Grip",
+      "Players Wanting More Pocketing Than Standard Tour Bite",
+      "Aggressive Baseliners",
+      "Tournament Players",
+      "Heavy Hitters"
+    ],
+
+    "avoid_for": [
+      "Players With Significant Arm Sensitivity",
+      "Beginners With Slow Swing Speed",
+      "Players Seeking Maximum Softness",
+      "Players Wanting a Smooth Low-Friction Polyester"
+    ],
+
+    "alternative_strings": [
+      "Solinco Tour Bite",
+      "Solinco Hyper-G",
+      "Solinco Confidential",
+      "Luxilon ALU Power Rough",
+      "HEAD Lynx Tour",
+      "Babolat RPM Rough"
+    ]
+  },
+
+  "comparison_tags": [
+    "Tour Bite Family",
+    "Diamond Rough",
+    "Diamond Texture",
+    "Maximum Spin",
+    "Ball Bite",
+    "Ball Pocketing",
+    "Durable",
+    "Tournament",
+    "Heavy Ball"
+  ],
+
+  "ai_keywords": [
+    "solinco",
+    "tour bite diamond rough",
+    "solinco tour bite diamond rough",
+    "diamond rough",
+    "diamond textured",
+    "1.20",
+    "1.25",
+    "1.30",
+    "17 gauge",
+    "16l",
+    "16 gauge",
+    "spin",
+    "bite",
+    "pocketing",
+    "feel",
+    "durability",
+    "rajeev ram",
+    "austin krajicek"
+  ],
+
+  "target_competitors": [
+    "Solinco Tour Bite",
+    "Luxilon ALU Power Rough",
+    "Babolat RPM Rough",
+    "HEAD Lynx Tour",
+    "Yonex Poly Tour Rev",
+    "Tecnifibre Black Code",
+    "Kirschbaum Max Power Rough"
+  ],
+
+  "description": {
+    "en": "Solinco Tour Bite Diamond Rough is a textured evolution of Tour Bite designed around a new Diamond Rough surface treatment. The diamond-textured construction increases spin and ball bite while an innovative co-polyester composition enhances pocketing, feel and playability. It retains the durable, high-performance DNA of Tour Bite while adding a more aggressive surface interaction with the ball. Available in 1.20, 1.25 and 1.30 mm gauges.",
+
+    "zh": "Solinco Tour Bite Diamond Rough 是 Tour Bite 的 Diamond Rough 纹理强化版本，通过新的钻石纹理表面进一步提升旋转和咬球能力。创新共聚酯配方同时加强持球感、手感和可打性，在保留 Tour Bite 高耐久与高性能特点的基础上，提供更强的球面摩擦与旋转反馈。产品提供 1.20、1.25 与 1.30 毫米三种线径。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Solinco Tour Bite Diamond Rough",
+      "High-performance polyester",
+      "Diamond Rough texturing process",
+      "Extreme power",
+      "Intense spin",
+      "Ball bite",
+      "Innovative composition",
+      "High-powered polyester monofilament fiber",
+      "Superior ball pocketing",
+      "Feel",
+      "Playability",
+      "Enhanced spin",
+      "Durable co-polyester positioning",
+      "1.20 mm / 17 gauge",
+      "1.25 mm / 16L gauge",
+      "1.30 mm / 16 gauge",
+      "Set length: 40 ft / 12.2 m",
+      "Reel length: 656 ft / 200 m",
+      "Rajeev Ram manufacturer reference",
+      "Austin Krajicek manufacturer reference"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendations",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
