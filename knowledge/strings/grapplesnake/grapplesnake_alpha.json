@@ -1,0 +1,216 @@
+{
+  "id": "grapplesnake_alpha",
+  "brand": "Grapplesnake",
+  "series": "Tour",
+  "model": "Alpha",
+  "category": "String",
+
+  "manufacturer_data": {
+    "packaging": "Set",
+    "length_m": 12,
+    "construction": "Monofilament",
+    "material": "Co-Polyester",
+    "cross_section": "Pentagonal",
+    "color": "Gold",
+    "recommended_tension": "Normal polyester stringing tension"
+  },
+
+  "specifications": {
+    "string_family": "Tour Polyester",
+    "construction": "Co-Polyester Monofilament",
+    "cross_section": "Pentagonal",
+    "surface": "Smooth",
+
+    "available_colors": [
+      "Gold"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_mm": 1.25,
+        "available": true,
+
+        "power": 9,
+        "control": 9,
+        "spin": 9,
+        "comfort": 9,
+        "feel": 10,
+        "durability": 8,
+        "tension_maintenance": 9,
+        "elasticity": 9,
+        "launch_angle": "Medium"
+      }
+    ]
+  },
+
+  "technology": [
+    "Tour-Level Co-Polyester",
+    "Pentagonal Geometry",
+    "Soft Response",
+    "Directional Control"
+  ],
+
+  "design_profile": {
+    "string_type": "Comfort Tour Polyester",
+    "target_player": "Advanced / Tournament",
+    "arm_friendly": true,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 9,
+    "spin": 9,
+    "comfort": 9,
+    "feel": 10,
+    "durability": 8,
+    "tension_maintenance": 9,
+    "elasticity": 9,
+    "launch_angle": "Medium"
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "All Court",
+      "Modern Topspin",
+      "Counter Puncher"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson RF01",
+    "Babolat Pure Strike",
+    "Yonex PERCEPT",
+    "Yonex EZONE",
+    "HEAD Radical",
+    "HEAD Speed",
+    "Tecnifibre TF-40",
+    "Tecnifibre T-FIGHT"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Natural Gut",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²",
+      "Babolat Touch VS",
+      "Gamma Live Wire Professional"
+    ]
+  },
+
+  "gauge_recommendation": {
+    "1.25": {
+      "best_for": [
+        "Best Overall Performance",
+        "Feel",
+        "Comfort",
+        "Power",
+        "Tournament Play"
+      ],
+
+      "tradeoffs": [
+        "Slightly Less Durable Than Tour Sniper 1.30"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.25": {
+        "heavy_topspin_hours": "8-14",
+        "club_player_hours": "18-28"
+    }
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Wanting Tour Control With More Comfort",
+      "Players Finding ALU Power Too Firm",
+      "Players Seeking Better Feel",
+      "Aggressive Baseliners",
+      "Advanced Club Players"
+    ],
+
+    "avoid_for": [
+      "Players Wanting Extremely Low Launch Angle",
+      "Maximum Durability Seekers",
+      "Beginners"
+    ],
+
+    "alternative_strings": [
+      "Grapplesnake Tour Sniper",
+      "Grapplesnake Tour M8",
+      "Tecnifibre Razor Soft",
+      "Babolat RPM Soft",
+      "Yonex Poly Tour Air"
+    ]
+  },
+
+  "comparison_tags": [
+    "Comfort Tour Poly",
+    "Pentagonal",
+    "Gold",
+    "Power",
+    "Feel",
+    "Control",
+    "Spin"
+  ],
+
+  "ai_keywords": [
+    "grapplesnake",
+    "alpha",
+    "grapplesnake alpha",
+    "gold",
+    "pentagonal",
+    "tour polyester",
+    "comfortable poly",
+    "soft poly",
+    "1.25"
+  ],
+
+  "target_competitors": [
+    "Tecnifibre Razor Soft",
+    "Babolat RPM Soft",
+    "Yonex Poly Tour Air",
+    "Luxilon ECO Power Soft"
+  ],
+
+  "description": {
+    "en": "Grapplesnake Alpha is the softer and more powerful sister string to Tour Sniper. Designed as a premium pentagonal tour polyester, it combines excellent directional control with increased comfort, feel and ball speed. Its stable response under heavy impact makes it ideal for advanced players seeking tournament-level precision without the harshness of traditional control polyester strings.",
+
+    "zh": "Grapplesnake Alpha 是 Tour Sniper 的姊妹线，在保持 Tour 级控制能力的同时，进一步提升了舒适性、力量和击球手感。它采用五边形共聚酯结构，击球反馈稳定，甜区表现优秀，即使面对大力量击球也能保持精准控制，非常适合希望拥有竞技级表现但又不喜欢传统聚酯过硬手感的球员。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-14",
+    "verified_fields": [
+      "Gold color",
+      "Pentagonal shape",
+      "1.25 mm",
+      "12m Set"
+    ]
+  }
+}
