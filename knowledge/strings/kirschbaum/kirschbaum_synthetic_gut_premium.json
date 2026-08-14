@@ -1,0 +1,356 @@
+{
+  "id": "kirschbaum_synthetic_gut_premium",
+  "brand": "Kirschbaum",
+  "series": "Synthetic Gut",
+  "model": "Synthetic Gut Premium",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Synthetic Gut",
+    "material": "Polyamide",
+    "string_family": "Synthetic Gut",
+    "cross_section": "Round",
+    "surface": "Smooth",
+    "tour_positioning": "All-Around Comfort / Power / Durability Synthetic Gut",
+    "target_level": "All Levels",
+    "hybrid_positioning": "Designed to pair well with Pro Line Black and Pro Line Rough"
+  },
+
+  "specifications": {
+    "construction": "Polyamide Synthetic Gut",
+    "cross_section": "Round",
+    "surface": "Smooth",
+
+    "available_colors": [
+      "Gold",
+      "Black",
+      "White"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_mm": 1.25,
+        "available": true,
+        "power": 9,
+        "control": 8,
+        "spin": 7,
+        "comfort": 9,
+        "feel": 9,
+        "durability": 8,
+        "tension_maintenance": 8,
+        "elasticity": 9,
+        "shock_absorption": 9,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "All-Around Play",
+          "Comfort",
+          "Power",
+          "Hybrid Setups",
+          "Intermediate Players",
+          "Advanced Club Players"
+        ]
+      },
+
+      {
+        "gauge_mm": 1.30,
+        "available": true,
+        "power": 8,
+        "control": 9,
+        "spin": 7,
+        "comfort": 9,
+        "feel": 8,
+        "durability": 9,
+        "tension_maintenance": 8,
+        "elasticity": 8,
+        "shock_absorption": 9,
+        "launch_angle": "Medium",
+
+        "recommended_use": [
+          "Maximum Durability",
+          "Stable All-Around Performance",
+          "Hybrid Cross String",
+          "Frequent Club Play",
+          "Players Wanting Comfort With More Resistance"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "Premium Polyamide Construction",
+    "Classic Synthetic Gut Structure",
+    "Comfort-Oriented Response",
+    "Hybrid-Compatible Design"
+  ],
+
+  "design_profile": {
+    "string_type": "All-Around Synthetic Gut",
+    "target_player": "Beginner / Intermediate / Advanced",
+    "arm_friendly": true,
+    "spin_focus": false,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 8,
+    "spin": 7,
+    "comfort": 9,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 8,
+    "elasticity": 9,
+    "shock_absorption": 9,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 8,
+    "spin": 7,
+    "comfort": 9,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 8
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Soft-Medium",
+    "snapback": 7,
+    "ball_pocketing": 9,
+    "string_movement": 4,
+    "tension_stability": 8,
+    "spin_window": "Medium-Low",
+    "predictability": 9,
+    "arm_friendliness": 9,
+    "shock_absorption": 9,
+    "hybrid_friendliness": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate",
+      "Advanced"
+    ],
+
+    "swing_speed": [
+      "Slow",
+      "Medium",
+      "Medium-Fast",
+      "Fast"
+    ],
+
+    "play_style": [
+      "All Court",
+      "Baseline",
+      "Serve & Volley",
+      "Doubles",
+      "Touch Player"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Clash",
+    "Wilson Blade",
+    "HEAD Boom",
+    "HEAD Speed",
+    "Yonex EZONE",
+    "Yonex PERCEPT",
+    "Babolat Pure Drive",
+    "Tecnifibre T-FIGHT",
+    "Dunlop FX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Kirschbaum Pro Line Black",
+      "Kirschbaum Pro Line Rough",
+      "Kirschbaum Max Power",
+      "Kirschbaum Max Power Rough",
+      "Kirschbaum Black Shark"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Comfort",
+        "Power",
+        "Feel",
+        "All-Around Playability"
+      ],
+
+      "as_crosses": [
+        "Comfort",
+        "Power",
+        "Stringbed Softening",
+        "Reduced Harshness",
+        "Hybrid Durability"
+      ]
+    },
+
+    "hybrid_note": "Kirschbaum specifically positions Synthetic Gut Premium as a suitable hybrid partner with Pro Line Black or Pro Line Rough to combine comfort with control and spin."
+  },
+
+  "gauge_recommendation": {
+    "1.25": {
+      "best_for": [
+        "Maximum Feel",
+        "Power",
+        "Comfort",
+        "Hybrid Play"
+      ],
+
+      "tradeoffs": [
+        "Lower Durability Than 1.30"
+      ]
+    },
+
+    "1.30": {
+      "best_for": [
+        "Maximum Durability",
+        "Maximum Stability",
+        "Frequent Club Play",
+        "Hybrid Cross Use"
+      ],
+
+      "tradeoffs": [
+        "Slightly Less Feel",
+        "Slightly Less Power"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.25": {
+      "heavy_topspin_hours": "6-10",
+      "club_player_hours": "16-26"
+    },
+
+    "1.30": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "20-32"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Immediate",
+    "peak_playability": "Immediate",
+    "performance_drop": "Medium",
+    "tension_loss_sensitivity": "Medium",
+    "playability_duration": "Good",
+    "recommended_monitoring": "Replace when notching, fraying or loss of response becomes noticeable."
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Seeking Balanced Comfort, Power and Durability",
+      "Beginners and Club Players",
+      "Players Wanting a Softer Hybrid Cross",
+      "Players Transitioning Away From Full Polyester",
+      "Players Seeking Affordable All-Around Performance"
+    ],
+
+    "avoid_for": [
+      "Heavy Topspin Players Seeking Maximum Polyester Spin",
+      "Frequent String Breakers",
+      "Players Wanting Extremely Firm Tournament Control"
+    ],
+
+    "alternative_strings": [
+      "Kirschbaum Gut Feeling",
+      "Kirschbaum Touch Multifibre",
+      "Gamma Synthetic Gut",
+      "Tecnifibre XR3",
+      "Babolat Xplore"
+    ]
+  },
+
+  "comparison_tags": [
+    "Synthetic Gut",
+    "Polyamide",
+    "All-Around",
+    "Comfort",
+    "Power",
+    "Durability",
+    "Hybrid Friendly",
+    "Club Player"
+  ],
+
+  "ai_keywords": [
+    "kirschbaum",
+    "synthetic gut premium",
+    "kirschbaum synthetic gut premium",
+    "synthetic gut",
+    "1.25",
+    "1.30",
+    "gold",
+    "black",
+    "white",
+    "polyamide",
+    "comfort",
+    "power",
+    "durability",
+    "hybrid",
+    "pro line black",
+    "pro line rough"
+  ],
+
+  "target_competitors": [
+    "Gamma Synthetic Gut",
+    "Babolat Xplore",
+    "Tecnifibre XR3",
+    "Wilson Synthetic Gut Power",
+    "Prince Synthetic Gut"
+  ],
+
+  "description": {
+    "en": "Kirschbaum Synthetic Gut Premium is a classic high-quality polyamide synthetic gut string designed to provide balanced comfort, power and durability for players of all levels. Its smooth round construction delivers predictable response and easy playability, making it suitable both as a full-bed string and as a softer hybrid partner. Kirschbaum specifically recommends pairing it with Pro Line Black or Pro Line Rough to combine comfort with polyester control and spin. The 1.25 mm version emphasizes feel and power, while the 1.30 mm version offers greater durability and stability.",
+
+    "zh": "Kirschbaum Synthetic Gut Premium 是一款高品质经典聚酰胺合成肠线，面向各个水平的球员，在舒适性、力量和耐久性之间提供均衡表现。圆形光滑结构带来稳定、易驾驭的击球反馈，既可以整床使用，也非常适合作为 Hybrid 混穿中的柔和搭档。Kirschbaum 官方特别建议与 Pro Line Black 或 Pro Line Rough 搭配，以在舒适性的基础上获得聚酯线的控制和旋转。1.25毫米版本更强调手感和力量；1.30毫米版本则更偏向耐久与稳定。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-14",
+
+    "officially_verified_fields": [
+      "Kirschbaum Synthetic Gut Premium",
+      "1.25 mm",
+      "1.30 mm",
+      "Gold",
+      "Black",
+      "White",
+      "Top-quality polyamide string",
+      "All-around performance",
+      "Comfort",
+      "Power",
+      "Durability",
+      "Suitable for all levels",
+      "Hybrid suitability with Pro Line Black",
+      "Hybrid suitability with Pro Line Rough"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
