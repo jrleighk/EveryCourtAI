@@ -1,0 +1,250 @@
+{
+  "id": "grapplesnake_tour_sniper",
+  "brand": "Grapplesnake",
+  "series": "Tour",
+  "model": "Tour Sniper",
+  "category": "String",
+
+  "manufacturer_data": {
+    "packaging": "Set",
+    "length_m": 12,
+    "construction": "Monofilament",
+    "material": "Co-Polyester",
+    "cross_section": "Pentagonal",
+    "recommended_tension": "Normal polyester tension",
+    "pre_stretched": true,
+    "color": "Grey"
+  },
+
+  "specifications": {
+    "string_family": "Tour Polyester",
+    "construction": "Co-Polyester Monofilament",
+    "cross_section": "Pentagonal",
+    "surface": "Smooth / Silky",
+
+    "available_colors": [
+      "Grey"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_mm": 1.25,
+        "available": true,
+
+        "power": 7,
+        "control": 10,
+        "spin": 9,
+        "comfort": 8,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 10,
+        "elasticity": 7,
+        "launch_angle": "Low"
+      },
+
+      {
+        "gauge_mm": 1.30,
+        "available": true,
+
+        "power": 6,
+        "control": 10,
+        "spin": 8,
+        "comfort": 8,
+        "feel": 9,
+        "durability": 10,
+        "tension_maintenance": 10,
+        "elasticity": 6,
+        "launch_angle": "Low"
+      }
+    ]
+  },
+
+  "technology": [
+    "Partial Pre-Stretch",
+    "Pentagonal Geometry",
+    "Silky Surface",
+    "Low-Powered Tour Polyester"
+  ],
+
+  "design_profile": {
+    "string_type": "Tour Control Polyester",
+    "target_player": "Advanced / Tournament",
+    "arm_friendly": false,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": false,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "tension_stability_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 7,
+    "control": 10,
+    "spin": 9,
+    "comfort": 8,
+    "feel": 9,
+    "durability": 10,
+    "tension_maintenance": 10,
+    "elasticity": 7,
+    "launch_angle": "Low"
+  },
+
+  "recommended_player": {
+    "level": [
+      "Advanced",
+      "Tournament",
+      "Professional"
+    ],
+
+    "swing_speed": [
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Hitter",
+      "Counter Puncher",
+      "Flat Hitter"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson Pro Staff",
+    "Wilson RF01",
+    "Yonex PERCEPT",
+    "Yonex VCORE",
+    "HEAD Radical",
+    "HEAD Prestige",
+    "Tecnifibre TF40",
+    "Tecnifibre T-FIGHT",
+    "Babolat Pure Strike"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Natural Gut",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²",
+      "Gamma Live Wire Professional",
+      "Babolat Xalt"
+    ]
+  },
+
+  "gauge_recommendation": {
+    "1.25": {
+      "best_for": [
+        "Best Spin",
+        "Fast Swing Speed",
+        "Tournament Players",
+        "Precision"
+      ]
+    },
+
+    "1.30": {
+      "best_for": [
+        "Maximum Control",
+        "Heavy Hitters",
+        "Long Durability",
+        "Lowest Launch Angle"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.25": {
+      "heavy_topspin_hours": "9-15",
+      "club_player_hours": "18-28"
+    },
+
+    "1.30": {
+      "heavy_topspin_hours": "12-20",
+      "club_player_hours": "22-35"
+    }
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Heavy Hitters",
+      "Players Wanting Maximum Control",
+      "Players Who Like ALU Power",
+      "Players Who Like Tour Bite",
+      "Tournament Players",
+      "Players Wanting Lower Launch Angle"
+    ],
+
+    "avoid_for": [
+      "Beginners",
+      "Players Seeking Free Power",
+      "Players With Slow Swing Speed",
+      "Players Wanting Multifilament Comfort"
+    ],
+
+    "alternative_strings": [
+      "Luxilon ALU Power",
+      "Solinco Tour Bite",
+      "Kirschbaum Max Power",
+      "Grapplesnake Tour M8",
+      "Tecnifibre Razor Soft"
+    ]
+  },
+
+  "comparison_tags": [
+    "Tour Polyester",
+    "Pentagonal",
+    "Low Powered",
+    "Maximum Control",
+    "Heavy Hitters",
+    "Pre-Stretched",
+    "Grey"
+  ],
+
+  "ai_keywords": [
+    "grapplesnake",
+    "tour sniper",
+    "tour sniper 125",
+    "tour sniper 130",
+    "grey",
+    "pentagonal",
+    "pre stretched",
+    "alu power",
+    "tour bite",
+    "max power",
+    "heavy hitter",
+    "control"
+  ],
+
+  "target_competitors": [
+    "Luxilon ALU Power",
+    "Solinco Tour Bite",
+    "Kirschbaum Max Power",
+    "Yonex Poly Tour Strike",
+    "Tecnifibre Razor Code"
+  ],
+
+  "description": {
+    "en": "Grapplesnake Tour Sniper is a low-powered pentagonal co-polyester designed for ultimate directional control, exceptional tension stability and heavy-hitting tournament play. Inspired by ALU Power, Tour Bite and Max Power, it delivers a softer feel, lower launch angle and partially pre-stretched construction for improved tension maintenance while maintaining excellent spin and precision.",
+
+    "zh": "Grapplesnake Tour Sniper 是一款低动力五边形竞技聚酯球线，专为追求极致控制、稳定性及重炮型底线打法而设计。它融合了 ALU Power、Tour Bite 和 Max Power 的击球特性，同时拥有更柔和的手感、更低的发射角以及部分预拉伸结构，可有效降低聚酯球线初期掉磅，同时保持优秀的旋转和精准落点控制。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-14",
+    "verified_fields": [
+      "Pentagonal shape",
+      "Grey color",
+      "1.25 mm",
+      "1.30 mm",
+      "Partial pre-stretch",
+      "12m Set"
+    ]
+  }
+}
