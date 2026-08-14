@@ -1,0 +1,409 @@
+{
+  "id": "msv_focus_hex_plus_25",
+  "brand": "MSV",
+  "series": "Focus Hex",
+  "model": "Focus Hex Plus 25",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Co-Polyester",
+    "string_family": "Polyester",
+    "cross_section": "Hexagonal",
+    "surface": "Shaped",
+    "relative_elasticity": "25% more elastic than MSV Focus Hex",
+    "tour_positioning": "Power / Comfort / Spin Polyester",
+    "target_level": "Intermediate / Advanced / Tournament"
+  },
+
+  "specifications": {
+    "construction": "Co-Polyester Monofilament",
+    "cross_section": "Hexagonal (6-Sided)",
+    "surface": "Shaped",
+
+    "available_colors": [
+      "Black",
+      "White"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_mm": 1.20,
+        "available": true,
+        "power": 10,
+        "control": 9,
+        "spin": 9,
+        "comfort": 10,
+        "feel": 10,
+        "durability": 7,
+        "tension_maintenance": 8,
+        "elasticity": 10,
+        "launch_angle": "High",
+
+        "recommended_use": [
+          "Maximum Power",
+          "Maximum Comfort",
+          "Fast Racquet Head Speed",
+          "Arm-Friendly Polyester",
+          "Advanced Players"
+        ]
+      },
+
+      {
+        "gauge_mm": 1.25,
+        "available": true,
+        "power": 9,
+        "control": 9,
+        "spin": 10,
+        "comfort": 10,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "elasticity": 10,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Best Overall Balance",
+          "High Spin",
+          "Power",
+          "Comfort",
+          "Tournament Play"
+        ]
+      },
+
+      {
+        "gauge_mm": 1.30,
+        "available": true,
+        "power": 8,
+        "control": 10,
+        "spin": 9,
+        "comfort": 9,
+        "feel": 8,
+        "durability": 10,
+        "tension_maintenance": 9,
+        "elasticity": 9,
+        "launch_angle": "Medium",
+
+        "recommended_use": [
+          "Maximum Durability",
+          "Maximum Stability",
+          "Arm-Friendly Heavy Hitting",
+          "Frequent Club Play",
+          "Players Wanting Comfort With More Resistance"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "25% Enhanced Elasticity",
+    "Hexagonal Geometry",
+    "Strong Snap-Back Effect",
+    "Low String Movement",
+    "Comfort-Oriented Co-Polyester Construction"
+  ],
+
+  "design_profile": {
+    "string_type": "Power Comfort Spin Polyester",
+    "target_player": "Intermediate / Advanced / Tournament",
+    "arm_friendly": true,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 10,
+    "control": 9,
+    "spin": 10,
+    "comfort": 10,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9,
+    "elasticity": 10,
+    "launch_angle": "Medium-High"
+  },
+
+  "ai_rating": {
+    "power": 10,
+    "control": 9,
+    "spin": 10,
+    "comfort": 10,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Soft-Medium",
+    "snapback": 10,
+    "ball_pocketing": 10,
+    "string_movement": 1,
+    "tension_stability": 9,
+    "spin_window": "High",
+    "predictability": 9,
+    "arm_friendliness": 10,
+    "directional_precision": 9,
+    "ball_bite": 10,
+    "energy_return": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium",
+      "Medium-Fast",
+      "Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "All Court",
+      "Power Player"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Babolat Pure Aero",
+    "Babolat Pure Drive",
+    "Yonex VCORE",
+    "Yonex EZONE",
+    "HEAD Extreme",
+    "HEAD Speed",
+    "Wilson Shift",
+    "Wilson Clash",
+    "Wilson Blade",
+    "Tecnifibre T-FIGHT",
+    "Dunlop SX",
+    "Dunlop FX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Natural Gut",
+      "Luxilon Natural Gut",
+      "Babolat Touch VS",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²",
+      "Kirschbaum Touch Multifibre"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Power",
+        "Spin",
+        "Comfort",
+        "Snapback"
+      ],
+
+      "as_crosses": [
+        "Comfort",
+        "Power",
+        "Spin Support",
+        "Stringbed Softening"
+      ]
+    }
+  },
+
+  "gauge_recommendation": {
+    "1.20": {
+      "best_for": [
+        "Maximum Power",
+        "Maximum Comfort",
+        "Maximum Ball Pocketing",
+        "Fast Swing Speed"
+      ],
+
+      "tradeoffs": [
+        "Lower Durability Than Thicker Gauges"
+      ]
+    },
+
+    "1.25": {
+      "best_for": [
+        "Best Overall Balance",
+        "High Spin",
+        "Power",
+        "Comfort",
+        "Tournament Play"
+      ],
+
+      "tradeoffs": [
+        "Less Durability Than 1.30"
+      ]
+    },
+
+    "1.30": {
+      "best_for": [
+        "Maximum Durability",
+        "Maximum Stability",
+        "Comfort",
+        "Frequent Club Play"
+      ],
+
+      "tradeoffs": [
+        "Slightly Less Power",
+        "Slightly Less Feel"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.20": {
+      "heavy_topspin_hours": "6-11",
+      "club_player_hours": "12-22"
+    },
+
+    "1.25": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "16-28"
+    },
+
+    "1.30": {
+      "heavy_topspin_hours": "10-18",
+      "club_player_hours": "20-34"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Very Short",
+    "peak_playability": "Immediate",
+    "performance_drop": "Medium-Low",
+    "tension_loss_sensitivity": "Medium-Low",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when snapback, power response or control noticeably declines."
+  },
+
+  "test_results": {
+    "racketpedia_1_25": {
+      "tested_gauge_mm": 1.25,
+      "spin_potential_percent": 90
+    },
+
+    "racketpedia_1_20": {
+      "tested_gauge_mm": 1.20,
+      "power_percent": 90
+    }
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Wanting More Power Than Standard Focus Hex",
+      "Players Seeking Arm-Friendly Polyester",
+      "Players Wanting High Spin With Softer Feel",
+      "Intermediate to Advanced Players",
+      "Heavy Topspin Players",
+      "Players Prioritizing Snapback and Comfort"
+    ],
+
+    "avoid_for": [
+      "Players Seeking Extremely Firm Low-Powered Control",
+      "Frequent String Breakers Using 1.20 mm",
+      "Players Who Prefer Very Crisp Tour Polyester"
+    ],
+
+    "alternative_strings": [
+      "MSV Focus HEX Soft",
+      "MSV Focus Hex",
+      "MSV Focus HEX Ultra",
+      "Kirschbaum Xplosive Speed",
+      "Luxilon Element",
+      "Tecnifibre Razor Soft"
+    ]
+  },
+
+  "comparison_tags": [
+    "Hexagonal",
+    "25% More Elastic",
+    "Power",
+    "Arm Friendly",
+    "High Spin",
+    "Strong Snapback",
+    "Low String Movement",
+    "Soft Polyester"
+  ],
+
+  "ai_keywords": [
+    "msv",
+    "focus hex plus 25",
+    "msv focus hex plus 25",
+    "focus hex plus25",
+    "1.20",
+    "1.25",
+    "1.30",
+    "black",
+    "white",
+    "25 percent more elastic",
+    "hexagonal",
+    "snapback",
+    "arm friendly",
+    "power",
+    "spin",
+    "low string movement"
+  ],
+
+  "target_competitors": [
+    "MSV Focus HEX Soft",
+    "Kirschbaum Xplosive Speed",
+    "Luxilon Element",
+    "Tecnifibre Razor Soft",
+    "Babolat RPM Team",
+    "Yonex Poly Tour Air"
+  ],
+
+  "description": {
+    "en": "MSV Focus Hex Plus 25 is a more elastic and arm-friendly variation of the Focus Hex platform, offering approximately 25% greater elasticity than the original. Its hexagonal geometry and strong snapback provide high spin potential, while the softer response delivers increased power, ball pocketing and comfort. Low string movement helps maintain a stable stringbed. The 1.20 mm version emphasizes maximum power and feel, the 1.25 mm version provides the best overall balance, and the 1.30 mm version offers greater durability and stability.",
+
+    "zh": "MSV Focus Hex Plus 25 是 Focus Hex 系列中更加柔和、更加护臂并强化力量输出的版本，官方表示其弹性相比标准 Focus Hex 提升约 25%。六边形结构配合强 Snap-back 提供优秀旋转潜力，而更高弹性则提升力量、持球感和舒适性，同时保持较低的线床移动。1.20毫米版本更强调力量和手感；1.25毫米综合表现最均衡；1.30毫米版本则更偏向耐久与稳定。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "MSV Focus Hex Plus 25",
+      "1.20 mm",
+      "1.25 mm",
+      "1.30 mm",
+      "Black",
+      "White",
+      "25% more elastic than MSV Focus Hex",
+      "Arm-friendly positioning",
+      "Enhanced spin potential",
+      "Hexagonal shape",
+      "Strong snap-back effect",
+      "Low string movement",
+      "90% spin potential for 1.25 mm in supplied Racketpedia data",
+      "90% power for 1.20 mm in supplied Racketpedia data"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendations",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
