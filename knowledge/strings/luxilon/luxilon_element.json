@@ -1,0 +1,378 @@
+{
+  "id": "luxilon_element",
+  "brand": "Luxilon",
+  "series": "Element",
+  "model": "Element",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Multi-Mono",
+    "material": "Polymer-Based Polyester",
+    "string_family": "Polyester",
+    "surface": "Smooth",
+    "technology": [
+      "Multi-Mono Technology"
+    ],
+    "tour_positioning": "Comfort / Feel Polyester",
+    "comfort_positioning": "Among the softest and most comfortable Luxilon polyester strings"
+  },
+
+  "specifications": {
+    "construction": "Multi-Mono Polyester",
+    "cross_section": "Round",
+    "surface": "Smooth",
+
+    "available_colors": [
+      "Bronze"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.25,
+        "available": true,
+
+        "packaging": [
+          {
+            "type": "Set",
+            "length_ft": 40,
+            "length_m": 12.2
+          }
+        ],
+
+        "power": 9,
+        "control": 9,
+        "spin": 8,
+        "comfort": 10,
+        "feel": 10,
+        "durability": 7,
+        "tension_maintenance": 8,
+        "elasticity": 9,
+        "launch_angle": "Medium",
+
+        "recommended_use": [
+          "Maximum Feel",
+          "Comfort-Oriented Polyester",
+          "Fast Swing Speed",
+          "Big Swing Players",
+          "Players Sensitive to Harsh Polyester Vibrations",
+          "Advanced Club Players"
+        ]
+      },
+
+      {
+        "gauge_name": "16",
+        "gauge_mm": 1.30,
+        "available": true,
+
+        "packaging": [
+          {
+            "type": "Set",
+            "length_ft": 40,
+            "length_m": 12.2
+          }
+        ],
+
+        "power": 8,
+        "control": 9,
+        "spin": 8,
+        "comfort": 10,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 8,
+        "elasticity": 8,
+        "launch_angle": "Medium-Low",
+
+        "recommended_use": [
+          "More Durability",
+          "Comfort-Oriented Polyester",
+          "Heavy Hitters",
+          "Long Fast Swings",
+          "Players Wanting Soft Polyester With Greater Stability"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "Multi-Mono Technology",
+    "Soft Polyester Construction",
+    "Vibration Reduction",
+    "Enhanced Touch and Feel"
+  ],
+
+  "design_profile": {
+    "string_type": "Comfort Polyester",
+    "target_player": "Intermediate / Advanced / Tournament",
+
+    "arm_friendly": true,
+
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": false,
+    "feel_focus": true,
+    "tension_stability_focus": false,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 9,
+    "spin": 8,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 8,
+    "tension_maintenance": 8,
+    "elasticity": 9,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 9,
+    "spin": 8,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 8,
+    "tension_maintenance": 8
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Soft-Medium",
+    "snapback": 8,
+    "ball_pocketing": 10,
+    "string_movement": 3,
+    "tension_stability": 8,
+    "spin_window": "Medium",
+    "predictability": 9,
+    "arm_friendliness": 10
+  },
+    "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "All Court",
+      "Counter Puncher",
+      "Touch-Oriented Player"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson Clash",
+    "Wilson RF 01",
+    "HEAD Speed",
+    "HEAD Radical",
+    "Yonex EZONE",
+    "Yonex PERCEPT",
+    "Tecnifibre TF-40",
+    "Tecnifibre T-FIGHT",
+    "Babolat Pure Strike",
+    "Dunlop CX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Babolat Touch VS",
+      "Wilson Natural Gut",
+      "Luxilon Natural Gut",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Comfort",
+        "Feel",
+        "Ball Pocketing",
+        "Responsive Power"
+      ],
+
+      "as_crosses": [
+        "Comfort",
+        "Stringbed Softening",
+        "Feel Enhancement",
+        "Hybrid Support"
+      ]
+    }
+  },
+
+  "gauge_recommendation": {
+    "1.25": {
+      "gauge_name": "17",
+
+      "best_for": [
+        "Maximum Feel",
+        "Maximum Ball Pocketing",
+        "Control",
+        "Responsive Power",
+        "Fast Swing Speed"
+      ],
+
+      "tradeoffs": [
+        "Lower Durability Than 1.30",
+        "More Frequent Restringing For Heavy Hitters"
+      ],
+
+      "recommended_player": "Advanced players who want a softer polyester with excellent feel, control and responsiveness."
+    },
+
+    "1.30": {
+      "gauge_name": "16",
+
+      "best_for": [
+        "More Durability",
+        "Greater Stability",
+        "Heavy Hitters",
+        "Long Match Play",
+        "Soft Polyester Feel With More Resistance"
+      ],
+
+      "tradeoffs": [
+        "Slightly Less Feel Than 1.25",
+        "Slightly Lower Ball Pocketing"
+      ],
+
+      "recommended_player": "Players who want Element comfort with improved durability and stability."
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.25": {
+      "heavy_topspin_hours": "7-12",
+      "club_player_hours": "14-24"
+    },
+
+    "1.30": {
+      "heavy_topspin_hours": "9-15",
+      "club_player_hours": "18-30"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Very Short",
+    "peak_playability": "Immediate",
+    "performance_drop": "Medium",
+    "tension_loss_sensitivity": "Medium",
+    "playability_duration": "Good",
+    "recommended_monitoring": "Replace when feel, control or snapback noticeably declines."
+  },
+
+  "tour_players": [],
+    "recommended_by_ai": {
+    "best_for": [
+      "Players Seeking One of Luxilon's Softest Polyester Strings",
+      "Advanced Players With Fast Swings",
+      "Players Wanting More Comfort Than Traditional Polyester",
+      "Players Prioritizing Feel and Ball Pocketing",
+      "Big Hitters Who Dislike Harsh Vibrations",
+      "Hybrid Setups Requiring a Softer Poly"
+    ],
+
+    "avoid_for": [
+      "Beginners With Very Slow Swing Speed",
+      "Players Seeking Maximum Tension Maintenance",
+      "Frequent String Breakers Using Thin Gauge",
+      "Players Wanting Extremely Firm Control"
+    ],
+
+    "alternative_strings": [
+      "Luxilon 4G Soft",
+      "Luxilon ALU Power",
+      "Tecnifibre Razor Soft",
+      "Babolat RPM Team",
+      "Yonex Poly Tour Air",
+      "Grapplesnake Alpha"
+    ]
+  },
+
+  "comparison_tags": [
+    "Soft Polyester",
+    "Multi-Mono",
+    "High Comfort",
+    "High Feel",
+    "Ball Pocketing",
+    "Arm Friendly",
+    "Low Vibration",
+    "Responsive Power"
+  ],
+
+  "ai_keywords": [
+    "luxilon",
+    "element",
+    "luxilon element",
+    "element 125",
+    "element 130",
+    "1.25",
+    "1.30",
+    "17 gauge",
+    "16 gauge",
+    "multi mono",
+    "soft polyester",
+    "comfort",
+    "feel",
+    "ball pocketing",
+    "low vibration",
+    "polyester"
+  ],
+
+  "target_competitors": [
+    "Luxilon 4G Soft",
+    "Tecnifibre Razor Soft",
+    "Yonex Poly Tour Air",
+    "Babolat RPM Team",
+    "HEAD Lynx Touch",
+    "Grapplesnake Alpha"
+  ],
+
+  "description": {
+    "en": "Luxilon Element is one of the softest and most comfortable polyester strings in the Luxilon lineup. Its Multi-Mono Technology enhances touch, feel and ball pocketing while reducing the harsh vibrations often associated with traditional polyester strings. Designed for players with long, fast swings, Element combines remarkable precision and spin with a softer, more forgiving response. The 1.25 mm version emphasizes feel and control, while the 1.30 mm version provides greater durability and stability.",
+
+    "zh": "Luxilon Element 是 Luxilon 产品线中最柔和、最舒适的聚酯球线之一。其 Multi-Mono Technology 能够提升触球感、持球感与击球反馈，同时减少传统聚酯球线常见的生硬震动。它非常适合挥拍幅度大、速度快，但又不喜欢硬聚酯手感的球员，在保持精准控制和旋转能力的同时提供更柔和、更宽容的反馈。1.25毫米版本更强调手感与控制；1.30毫米版本则更强调耐久性和稳定性。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_official_product_information",
+    "last_updated": "2026-08-14",
+
+    "officially_verified_fields": [
+      "Multi-Mono Technology",
+      "Soft texture",
+      "High comfort",
+      "Reduced harsh vibrations",
+      "Enhanced touch and feel",
+      "1.25 mm / 17 gauge",
+      "1.30 mm / 16 gauge",
+      "Set length: 40 ft / 12.2 m",
+      "1.25 mm emphasizes feel and control",
+      "1.30 mm emphasizes durability"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
