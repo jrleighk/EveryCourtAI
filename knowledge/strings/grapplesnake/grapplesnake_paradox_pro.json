@@ -1,0 +1,270 @@
+{
+  "id": "grapplesnake_paradox_pro",
+  "brand": "Grapplesnake",
+  "series": "Paradox",
+  "model": "Paradox Pro",
+  "category": "String",
+
+  "manufacturer_data": {
+    "packaging": "Set",
+    "length_m": 12,
+    "construction": "Advanced Poly-Based Monofilament",
+    "material": "Poly-Based Composite with Metallic Additives",
+    "cross_section": "Round",
+    "surface": "Mildly Abrasive",
+    "color": "Forest Green",
+    "recommended_tension": "Normal polyester tension or +1 lb"
+  },
+
+  "specifications": {
+    "string_family": "Next Generation Tour Poly",
+    "construction": "Advanced Poly Composite",
+    "cross_section": "Round",
+    "surface": "Abrasive",
+
+    "available_colors": [
+      "Forest Green"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_mm": 1.26,
+        "available": true,
+
+        "power": 9,
+        "control": 10,
+        "spin": 9,
+        "comfort": 9,
+        "feel": 10,
+        "durability": 10,
+        "tension_maintenance": 10,
+        "elasticity": 8,
+        "launch_angle": "Medium"
+      },
+
+      {
+        "gauge_mm": 1.29,
+        "available": true,
+
+        "power": 8,
+        "control": 10,
+        "spin": 9,
+        "comfort": 9,
+        "feel": 10,
+        "durability": 10,
+        "tension_maintenance": 10,
+        "elasticity": 8,
+        "launch_angle": "Medium-Low"
+      }
+    ]
+  },
+
+  "technology": [
+    "Metallic Performance Additives",
+    "Advanced Poly Composite",
+    "Round Geometry",
+    "Abrasive Surface",
+    "Minimal Break-In",
+    "Extended Playability"
+  ],
+
+  "design_profile": {
+    "string_type": "Next Generation Tour Polyester",
+    "target_player": "Advanced / Tournament / Professional",
+    "arm_friendly": true,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 10,
+    "spin": 9,
+    "comfort": 9,
+    "feel": 10,
+    "durability": 10,
+    "tension_maintenance": 10,
+    "elasticity": 8,
+    "launch_angle": "Medium"
+  },
+
+  "recommended_player": {
+    "level": [
+      "Advanced",
+      "Tournament",
+      "Professional"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "All Court",
+      "Counter Puncher",
+      "Modern Power Tennis"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson RF01",
+    "Wilson Ultra",
+    "HEAD Speed",
+    "HEAD Radical",
+    "Yonex EZONE",
+    "Yonex PERCEPT",
+    "Tecnifibre T-FIGHT",
+    "Tecnifibre TF-40",
+    "Babolat Pure Strike"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Natural Gut",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²",
+      "Babolat Touch VS",
+      "Gamma Live Wire Professional"
+    ]
+  },
+
+  "gauge_recommendation": {
+    "1.26": {
+      "best_for": [
+        "Feel",
+        "Power",
+        "Spin",
+        "Tournament Play",
+        "All Around Performance"
+      ]
+    },
+
+    "1.29": {
+      "best_for": [
+        "Maximum Stability",
+        "Maximum Precision",
+        "Heavy Hitters",
+        "Long Match Durability"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.26": {
+      "heavy_topspin_hours": "10-16",
+      "club_player_hours": "20-32"
+    },
+
+    "1.29": {
+      "heavy_topspin_hours": "12-20",
+      "club_player_hours": "24-36"
+    }
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Wanting Maximum Feel",
+      "Tournament Players",
+      "Players Seeking Long Playability",
+      "Players Wanting Round Poly With High Spin",
+      "Advanced All-Court Players"
+    ],
+
+    "avoid_for": [
+      "Beginners",
+      "Players Seeking Maximum Launch Angle",
+      "Very Slow Swing Speeds"
+    ],
+
+    "alternative_strings": [
+      "Grapplesnake Tour Mako",
+      "Luxilon ALU Power",
+      "Luxilon 4G Soft",
+      "Tecnifibre Razor Code",
+      "Yonex Poly Tour Strike"
+    ]
+  },
+
+  "comparison": {
+    "more_direct_than": [
+      "Tour M8",
+      "Alpha",
+      "Tour Sniper"
+    ],
+
+    "longer_playability_than": [
+      "Typical Polyester Strings"
+    ],
+
+    "minimal_break_in": true,
+
+    "maintains_playability_until_break": true
+  },
+
+  "comparison_tags": [
+    "Next Generation Poly",
+    "Metal Additives",
+    "Round",
+    "Direct Feel",
+    "Extended Playability",
+    "Minimal Break-In",
+    "Tournament"
+  ],
+
+  "ai_keywords": [
+    "grapplesnake",
+    "paradox pro",
+    "forest green",
+    "advanced poly",
+    "metal additives",
+    "round poly",
+    "abrasive surface",
+    "minimal break in",
+    "extended playability",
+    "1.26",
+    "1.29"
+  ],
+
+  "target_competitors": [
+    "Luxilon ALU Power",
+    "Luxilon 4G",
+    "Yonex Poly Tour Strike",
+    "Tecnifibre Razor Code",
+    "Solinco Confidential"
+  ],
+
+  "description": {
+    "en": "Grapplesnake Paradox Pro is a next-generation tour string built with advanced metallic performance additives and proprietary manufacturing processes. It combines direct feel, outstanding precision, long-lasting playability and excellent comfort in a round-profile string with a mildly abrasive surface. Unlike traditional polyester strings, it requires almost no break-in period and maintains its playing characteristics until it finally breaks.",
+
+    "zh": "Grapplesnake Paradox Pro 是一款采用先进金属添加剂与特殊制造工艺打造的新一代竞技球线。它拥有极其直接的击球反馈、优秀的精准控制、长时间保持性能的能力以及出色的舒适性。虽然采用圆形截面，但依靠微磨砂表面依然能够提供优秀的旋转表现。与传统聚酯不同，它几乎无需磨合，并能在整个使用寿命内保持稳定性能，直到断线为止。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-14",
+    "verified_fields": [
+      "Forest Green",
+      "Round Shape",
+      "1.26 mm",
+      "1.29 mm",
+      "Metallic Additives",
+      "Minimal Break-In",
+      "Extended Playability",
+      "+1 lb recommendation"
+    ]
+  }
+}
