@@ -1,0 +1,410 @@
+{
+  "id": "head_lynx_tour",
+  "brand": "HEAD",
+  "series": "Lynx",
+  "model": "Lynx Tour",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Co-Polyester",
+    "string_family": "Polyester",
+    "cross_section": "Hexagonal / 6-Edge",
+    "surface": "Shaped",
+    "classification": "Performance",
+    "main_benefit": "Control",
+    "target_level": "Intermediate to Advanced",
+    "target_player_description": "Hard-hitting club and competitive players seeking a blend of control, spin and durability."
+  },
+
+  "specifications": {
+    "construction": "Co-Polyester Monofilament",
+    "cross_section": "6-Edge / Hexagonal",
+    "surface": "Edged / Shaped",
+
+    "packaging": [
+      {
+        "type": "Set",
+        "length_m": 12,
+        "length_ft": 40
+      }
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_name": "18",
+        "gauge_mm": 1.20,
+        "available": true,
+
+        "power": 8,
+        "control": 9,
+        "spin": 10,
+        "comfort": 8,
+        "feel": 9,
+        "durability": 7,
+        "tension_maintenance": 8,
+        "elasticity": 8,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Maximum Spin",
+          "Fast Racquet Head Speed",
+          "Advanced Players",
+          "Players Prioritizing Feel",
+          "Aggressive Baseline Play"
+        ]
+      },
+
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.25,
+        "available": true,
+
+        "power": 8,
+        "control": 10,
+        "spin": 10,
+        "comfort": 8,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "elasticity": 8,
+        "launch_angle": "Medium",
+
+        "recommended_use": [
+          "Best Overall Balance",
+          "Control",
+          "Spin",
+          "Tournament Play",
+          "Heavy Hitters"
+        ]
+      },
+
+      {
+        "gauge_name": "16",
+        "gauge_mm": 1.30,
+        "available": true,
+
+        "power": 7,
+        "control": 10,
+        "spin": 9,
+        "comfort": 7,
+        "feel": 8,
+        "durability": 10,
+        "tension_maintenance": 9,
+        "elasticity": 7,
+        "launch_angle": "Medium-Low",
+
+        "recommended_use": [
+          "Maximum Durability",
+          "Maximum Stability",
+          "Heavy Hitters",
+          "Frequent String Breakers",
+          "Long Match Play"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "6-Edge Shaped Geometry",
+    "New Co-Polymer Mixture",
+    "Spin-Enhancing Edges",
+    "Durability-Oriented Monofilament Construction"
+  ],
+
+  "design_profile": {
+    "string_type": "Control Spin Polyester",
+    "target_player": "Intermediate / Advanced / Tournament",
+    "arm_friendly": false,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 10,
+    "spin": 10,
+    "comfort": 8,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9,
+    "elasticity": 8,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 8,
+    "control": 10,
+    "spin": 10,
+    "comfort": 8,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium-Firm",
+    "snapback": 9,
+    "ball_pocketing": 8,
+    "string_movement": 2,
+    "tension_stability": 9,
+    "spin_window": "High",
+    "predictability": 9,
+    "arm_friendliness": 7,
+    "directional_precision": 10,
+    "ball_bite": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium",
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "All Court",
+      "Modern Baseline"
+    ]
+  },
+
+  "recommended_racquets": [
+    "HEAD Speed",
+    "HEAD Extreme",
+    "HEAD Radical",
+    "HEAD Gravity",
+    "Wilson Blade",
+    "Wilson Shift",
+    "Yonex VCORE",
+    "Yonex EZONE",
+    "Babolat Pure Aero",
+    "Tecnifibre T-FIGHT",
+    "Dunlop SX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Natural Gut",
+      "Luxilon Natural Gut",
+      "Babolat Touch VS",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Spin",
+        "Ball Bite",
+        "Control",
+        "Durability"
+      ],
+
+      "as_crosses": [
+        "Control",
+        "Stringbed Stability",
+        "Spin Support"
+      ]
+    },
+
+    "hybrid_note": "Because of its shaped edges, Lynx Tour may increase friction and wear when paired with softer cross strings."
+  },
+
+  "gauge_recommendation": {
+    "1.20": {
+      "gauge_name": "18",
+
+      "best_for": [
+        "Maximum Spin",
+        "Maximum Feel",
+        "Fast Swing Speed",
+        "Advanced Shot Makers"
+      ],
+
+      "tradeoffs": [
+        "Lower Durability",
+        "More Frequent Restringing"
+      ]
+    },
+
+    "1.25": {
+      "gauge_name": "17",
+
+      "best_for": [
+        "Best Overall Balance",
+        "Maximum Spin",
+        "Control",
+        "Tournament Play"
+      ],
+
+      "tradeoffs": [
+        "Less Durability Than 1.30"
+      ]
+    },
+
+    "1.30": {
+      "gauge_name": "16",
+
+      "best_for": [
+        "Maximum Durability",
+        "Maximum Stability",
+        "Heavy Hitters",
+        "Frequent String Breakers"
+      ],
+
+      "tradeoffs": [
+        "Slightly Lower Spin Than Thinner Gauges",
+        "Firmer Response"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.20": {
+      "heavy_topspin_hours": "6-10",
+      "club_player_hours": "12-20"
+    },
+
+    "1.25": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "16-28"
+    },
+
+    "1.30": {
+      "heavy_topspin_hours": "10-18",
+      "club_player_hours": "20-34"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Medium",
+    "tension_loss_sensitivity": "Medium-Low",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when spin, snapback or directional control noticeably declines."
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Intermediate to Advanced Players",
+      "Heavy Hitters",
+      "Players Seeking High Spin and Control",
+      "Modern Baseline Players",
+      "Players Wanting a Durable Shaped Polyester"
+    ],
+
+    "avoid_for": [
+      "Beginners",
+      "Players With Significant Arm Sensitivity",
+      "Players Seeking Maximum Free Power",
+      "Players Wanting Multifilament-Level Comfort"
+    ],
+
+    "alternative_strings": [
+      "HEAD HAWK TOUCH",
+      "Luxilon ALU Power Rough",
+      "Babolat RPM Blast",
+      "Tecnifibre Black Code",
+      "Yonex Poly Tour Rev",
+      "Grapplesnake Tour M8"
+    ]
+  },
+
+  "comparison_tags": [
+    "6-Edge",
+    "Shaped Polyester",
+    "Maximum Spin",
+    "Maximum Control",
+    "High Durability",
+    "Performance",
+    "Heavy Hitter",
+    "Club Competition"
+  ],
+
+  "ai_keywords": [
+    "head",
+    "lynx tour",
+    "head lynx tour",
+    "lynx tour 120",
+    "lynx tour 125",
+    "lynx tour 130",
+    "1.20",
+    "1.25",
+    "1.30",
+    "18 gauge",
+    "17 gauge",
+    "16 gauge",
+    "6 edge",
+    "hexagonal",
+    "shaped polyester",
+    "co polyester",
+    "spin",
+    "control",
+    "durability"
+  ],
+
+  "target_competitors": [
+    "Luxilon ALU Power Rough",
+    "Babolat RPM Blast",
+    "Tecnifibre Black Code",
+    "Yonex Poly Tour Rev",
+    "Solinco Tour Bite",
+    "Grapplesnake Tour M8"
+  ],
+
+  "description": {
+    "en": "HEAD Lynx Tour is a performance-oriented co-polyester monofilament designed for intermediate to advanced players who hit aggressively and want a strong combination of control and spin. Its six-edge shaped profile grips the ball to enhance spin and directional accuracy, while a newer co-polymer mixture improves durability without making the string excessively harsh. The 1.20 mm gauge emphasizes spin and feel, the 1.25 mm version provides the best all-around balance, and the 1.30 mm version maximizes durability and stability.",
+
+    "zh": "HEAD Lynx Tour 是一款面向中高级及竞技型球员的高性能共聚酯单丝球线，核心特点是强控制、高旋转以及优秀耐久性。独特的六棱形截面能够增强球线对网球的咬合，从而提升旋转能力和落点控制；新的共聚物配方则在提高耐久性的同时，尽量避免传统硬质聚酯过于生硬的击球感。1.20毫米版本更强调旋转与手感；1.25毫米版本综合表现最均衡；1.30毫米版本则更偏向耐久性与稳定性。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_official_product_information",
+    "last_updated": "2026-08-14",
+
+    "officially_verified_fields": [
+      "HEAD Lynx Tour",
+      "Co-polyester monofilament",
+      "6-edge design",
+      "Main benefit: control",
+      "Spin-oriented shaped profile",
+      "Improved durability",
+      "Comfortable playability",
+      "1.20 mm / 18 gauge",
+      "1.25 mm / 17 gauge",
+      "1.30 mm / 16 gauge",
+      "Set length: 12 m / 40 ft"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
