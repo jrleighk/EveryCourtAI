@@ -1,0 +1,431 @@
+{
+  "id": "solinco_vanquish",
+  "brand": "Solinco",
+  "series": "Vanquish",
+  "model": "Vanquish",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Multifilament",
+    "material": "DuPont High Modulus Polyamide",
+    "string_family": "Multifilament",
+    "core_structure": "High Modulus Polyamide Multifilament Core",
+    "bonding_material": "Enhanced Performance Resin",
+    "cross_section": "Round",
+    "surface": "Smooth",
+    "tour_positioning": "Touch / Control / Comfort Multifilament",
+    "official_positioning": "A superior arm-friendly multifilament string offering an optimal combination of touch, control and comfort."
+  },
+
+  "specifications": {
+    "construction": "Polyamide Multifilament",
+    "cross_section": "Round",
+    "surface": "Smooth",
+
+    "packaging": [
+      {
+        "type": "Set",
+        "length_ft": 40,
+        "length_m": 12.2
+      },
+      {
+        "type": "Reel",
+        "length_ft": 656,
+        "length_m": 200
+      }
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.20,
+        "available": true,
+        "power": 9,
+        "control": 9,
+        "spin": 7,
+        "comfort": 10,
+        "feel": 10,
+        "durability": 7,
+        "tension_maintenance": 8,
+        "elasticity": 10,
+        "shock_absorption": 10,
+        "launch_angle": "Medium-High",
+        "recommended_use": [
+          "Maximum Feel",
+          "Maximum Comfort",
+          "Touch-Oriented Play",
+          "Arm-Friendly Setup",
+          "Hybrid Cross Use"
+        ]
+      },
+
+      {
+        "gauge_name": "16",
+        "gauge_mm": 1.30,
+        "available": true,
+        "power": 9,
+        "control": 10,
+        "spin": 7,
+        "comfort": 10,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "elasticity": 9,
+        "shock_absorption": 10,
+        "launch_angle": "Medium",
+        "recommended_use": [
+          "Best Overall Balance",
+          "Maximum Control",
+          "Comfort",
+          "Full Bed",
+          "Hybrid Cross Use",
+          "Club Play"
+        ]
+      },
+
+      {
+        "gauge_name": "15L",
+        "gauge_mm": 1.35,
+        "available": true,
+        "power": 8,
+        "control": 10,
+        "spin": 6,
+        "comfort": 10,
+        "feel": 8,
+        "durability": 10,
+        "tension_maintenance": 9,
+        "elasticity": 8,
+        "shock_absorption": 10,
+        "launch_angle": "Medium-Low",
+        "recommended_use": [
+          "Maximum Durability",
+          "Maximum Stability",
+          "Comfort-Oriented Players",
+          "Frequent Club Play",
+          "Players Wanting Multifilament With More Resistance"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "DuPont High Modulus Polyamide Multifilament Core",
+    "Enhanced Performance Resin",
+    "Shock-Absorbing Multifilament Construction",
+    "Control-Oriented Multifilament Design",
+    "Hybrid-Compatible Architecture"
+  ],
+
+  "design_profile": {
+    "string_type": "Control Comfort Multifilament",
+    "target_player": "Beginner / Intermediate / Advanced",
+    "arm_friendly": true,
+    "spin_focus": false,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 10,
+    "spin": 7,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 9,
+    "tension_maintenance": 9,
+    "elasticity": 9,
+    "shock_absorption": 10,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 10,
+    "spin": 7,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 9,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Soft",
+    "snapback": 7,
+    "ball_pocketing": 10,
+    "string_movement": 4,
+    "tension_stability": 9,
+    "spin_window": "Medium-Low",
+    "predictability": 10,
+    "arm_friendliness": 10,
+    "shock_absorption": 10,
+    "directional_precision": 10,
+    "touch_response": 10,
+    "hybrid_friendliness": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate",
+      "Advanced"
+    ],
+
+    "swing_speed": [
+      "Slow",
+      "Medium",
+      "Medium-Fast"
+    ],
+
+    "play_style": [
+      "All Court",
+      "Serve & Volley",
+      "Touch Player",
+      "Doubles",
+      "Baseline"
+    ],
+
+    "special_player_profiles": [
+      "Players Seeking Maximum Comfort",
+      "Players With Arm Sensitivity",
+      "Players Wanting Better Touch and Control",
+      "Players Transitioning Away From Full Polyester",
+      "Players Seeking a Soft Hybrid Cross"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Clash",
+    "Wilson Blade",
+    "HEAD Speed",
+    "HEAD Boom",
+    "Yonex EZONE",
+    "Yonex PERCEPT",
+    "Babolat Pure Drive",
+    "Babolat Pure Strike",
+    "Tecnifibre T-FIGHT",
+    "Dunlop FX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Solinco Tour Bite",
+      "Solinco Hyper-G",
+      "Solinco Hyper-G Soft",
+      "Solinco Confidential",
+      "Solinco Revolution",
+      "Solinco Outlast"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Comfort",
+        "Touch",
+        "Power",
+        "Ball Pocketing"
+      ],
+
+      "as_crosses": [
+        "Stringbed Softening",
+        "Arm Protection",
+        "Touch",
+        "Control",
+        "Shock Absorption"
+      ]
+    },
+
+    "official_hybrid_reference": "Used as the cross string in the Solinco Tour Bite + Vanquish hybrid set."
+  },
+
+  "gauge_recommendation": {
+    "1.20": {
+      "gauge_name": "17",
+      "best_for": [
+        "Maximum Feel",
+        "Maximum Comfort",
+        "Touch",
+        "Hybrid Cross Use"
+      ],
+      "tradeoffs": [
+        "Lowest Durability"
+      ]
+    },
+
+    "1.30": {
+      "gauge_name": "16",
+      "best_for": [
+        "Best Overall Balance",
+        "Maximum Control",
+        "Comfort",
+        "Full Bed",
+        "Hybrid Play"
+      ],
+      "tradeoffs": [
+        "Less Durability Than 1.35"
+      ]
+    },
+
+    "1.35": {
+      "gauge_name": "15L",
+      "best_for": [
+        "Maximum Durability",
+        "Maximum Stability",
+        "Comfort",
+        "Frequent Club Play"
+      ],
+      "tradeoffs": [
+        "Slightly Less Feel",
+        "Lower Spin Potential"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.20": {
+      "heavy_topspin_hours": "5-9",
+      "club_player_hours": "14-24"
+    },
+
+    "1.30": {
+      "heavy_topspin_hours": "7-12",
+      "club_player_hours": "18-30"
+    },
+
+    "1.35": {
+      "heavy_topspin_hours": "9-15",
+      "club_player_hours": "22-36"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Immediate",
+    "peak_playability": "Immediate",
+    "performance_drop": "Low-Medium",
+    "tension_loss_sensitivity": "Medium-Low",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when fraying, notching, loss of touch or reduced stringbed response becomes significant."
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Seeking Maximum Comfort",
+      "Players With Arm Sensitivity",
+      "Players Wanting Touch and Control",
+      "Players Transitioning From Full Polyester",
+      "Hybrid Users Seeking a Soft Cross String",
+      "Players Wanting a Comfortable Full Bed"
+    ],
+
+    "avoid_for": [
+      "Heavy Topspin Players Seeking Maximum Polyester Spin",
+      "Frequent String Breakers Using 1.20 mm",
+      "Players Wanting Extremely Firm Tournament Control"
+    ],
+
+    "alternative_strings": [
+      "MSV Soft Touch",
+      "MSV Multi Q10",
+      "Kirschbaum Touch Multifibre",
+      "Kirschbaum Gut Feeling",
+      "Tecnifibre X-One Biphase",
+      "Wilson NXT"
+    ]
+  },
+
+  "comparison_tags": [
+    "Vanquish",
+    "Multifilament",
+    "DuPont Polyamide",
+    "Maximum Control",
+    "Touch",
+    "Arm Friendly",
+    "Shock Absorption",
+    "Hybrid Compatible",
+    "Full Bed"
+  ],
+
+  "ai_keywords": [
+    "solinco",
+    "vanquish",
+    "solinco vanquish",
+    "1.20",
+    "1.30",
+    "1.35",
+    "17 gauge",
+    "16 gauge",
+    "15l",
+    "multifilament",
+    "dupont",
+    "high modulus polyamide",
+    "performance resin",
+    "touch",
+    "control",
+    "comfort",
+    "arm friendly",
+    "shock absorption",
+    "hybrid",
+    "tour bite vanquish"
+  ],
+
+  "target_competitors": [
+    "MSV Soft Touch",
+    "MSV Multi Q10",
+    "Kirschbaum Touch Multifibre",
+    "Kirschbaum Gut Feeling",
+    "Tecnifibre X-One Biphase",
+    "Tecnifibre NRG²",
+    "Wilson NXT"
+  ],
+
+  "description": {
+    "en": "Solinco Vanquish is an arm-friendly multifilament string built around a DuPont high-modulus polyamide multifilament core and enhanced performance resin. It is designed to provide an excellent combination of touch, directional control, comfort and shock absorption while keeping power at a manageable level. Vanquish can be used as a comfortable full-bed string or as the softer component in a hybrid setup, including Solinco's official Tour Bite + Vanquish configuration.",
+
+    "zh": "Solinco Vanquish 是一款以护臂、触球感和控制为核心的高性能多芯球线，采用 DuPont 高模量聚酰胺多芯核心，并结合 Enhanced Performance Resin 增强树脂。它能够提供优秀的触球反馈、方向控制、舒适性和减震表现，同时保持可控的力量输出。Vanquish 既可以整床使用，也非常适合作为 Hybrid 混穿中的柔和线材，例如 Solinco 官方的 Tour Bite + Vanquish 组合。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Solinco Vanquish",
+      "Arm-friendly multifilament",
+      "Touch",
+      "Control",
+      "DuPont High Modulus polyamide multifilament core",
+      "Enhanced performance resin",
+      "Maximum control positioning",
+      "Total comfort positioning",
+      "Shock minimization",
+      "Balanced control",
+      "Hybrid compatibility",
+      "Full-bed suitability",
+      "1.20 mm / 17 gauge",
+      "1.30 mm / 16 gauge",
+      "1.35 mm / 15L gauge",
+      "Set length: 40 ft / 12.2 m",
+      "Reel length: 656 ft / 200 m"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendations",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
