@@ -1,0 +1,480 @@
+{
+  "id": "solinco_outlast",
+  "brand": "Solinco",
+  "series": "Outlast",
+  "model": "Outlast",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Co-Polyester",
+    "string_family": "Polyester",
+    "cross_section": "Round",
+    "surface": "Smooth",
+    "technology": [
+      "TruTension Technology"
+    ],
+    "tour_positioning": "Durability / Control / All-Court Polyester",
+    "official_positioning": "High-performance and well-rounded co-polyester string designed for maximum durability and all-court playability."
+  },
+
+  "specifications": {
+    "construction": "High-Powered Co-Polyester Monofilament",
+    "cross_section": "Round",
+    "surface": "Smooth",
+
+    "available_colors": [
+      "Red"
+    ],
+
+    "packaging": [
+      {
+        "type": "Set",
+        "length_ft": 40,
+        "length_m": 12.2
+      },
+      {
+        "type": "Reel",
+        "length_ft": 656,
+        "length_m": 200
+      }
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_name": "18",
+        "gauge_mm": 1.15,
+        "available": true,
+        "power": 8,
+        "control": 9,
+        "spin": 8,
+        "comfort": 8,
+        "feel": 9,
+        "durability": 7,
+        "tension_maintenance": 10,
+        "elasticity": 9,
+        "launch_angle": "Medium-High",
+        "recommended_use": [
+          "Maximum Feel",
+          "Fast Racquet Head Speed",
+          "All-Court Play",
+          "Players Wanting Durable Poly With More Response"
+        ]
+      },
+
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.20,
+        "available": true,
+        "power": 8,
+        "control": 10,
+        "spin": 8,
+        "comfort": 8,
+        "feel": 9,
+        "durability": 8,
+        "tension_maintenance": 10,
+        "elasticity": 8,
+        "launch_angle": "Medium",
+        "recommended_use": [
+          "All-Court Play",
+          "Control",
+          "Tension Stability",
+          "Tournament Play",
+          "Advanced Club Players"
+        ]
+      },
+
+      {
+        "gauge_name": "16L",
+        "gauge_mm": 1.25,
+        "available": true,
+        "power": 8,
+        "control": 10,
+        "spin": 8,
+        "comfort": 8,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 10,
+        "elasticity": 8,
+        "launch_angle": "Medium",
+        "recommended_use": [
+          "Best Overall Balance",
+          "Maximum Control",
+          "Durability",
+          "All-Court Play",
+          "Long-Lasting Performance"
+        ]
+      },
+
+      {
+        "gauge_name": "16",
+        "gauge_mm": 1.30,
+        "available": true,
+        "power": 7,
+        "control": 10,
+        "spin": 7,
+        "comfort": 7,
+        "feel": 8,
+        "durability": 10,
+        "tension_maintenance": 10,
+        "elasticity": 7,
+        "launch_angle": "Medium-Low",
+        "recommended_use": [
+          "Maximum Durability",
+          "Maximum Stability",
+          "Heavy Hitters",
+          "Frequent String Breakers",
+          "Long Match Play"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "TruTension Technology",
+    "High-Powered Co-Polyester Monofilament Fiber",
+    "Durability-Oriented Polymer Construction",
+    "Long-Term Tension Stability",
+    "All-Court Performance Design"
+  ],
+
+  "technology_details": {
+    "trutension": {
+      "full_name": "TruTension Technology",
+      "description": "Solinco technology designed to improve long-term tension stability and maintain consistent stringbed response over extended play.",
+      "primary_benefits": [
+        "Excellent Tension Maintenance",
+        "Longer Playability Window",
+        "Consistent Control",
+        "Stable Response"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Durable All-Court Control Polyester",
+    "target_player": "Intermediate / Advanced / Tournament",
+    "arm_friendly": false,
+    "spin_focus": false,
+    "control_focus": true,
+    "power_focus": false,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 10,
+    "spin": 8,
+    "comfort": 8,
+    "feel": 9,
+    "durability": 10,
+    "tension_maintenance": 10,
+    "elasticity": 8,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 8,
+    "control": 10,
+    "spin": 8,
+    "comfort": 8,
+    "feel": 9,
+    "durability": 10,
+    "tension_maintenance": 10
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium-Firm",
+    "snapback": 8,
+    "ball_pocketing": 8,
+    "string_movement": 2,
+    "tension_stability": 10,
+    "spin_window": "Medium",
+    "predictability": 10,
+    "arm_friendliness": 7,
+    "directional_precision": 10,
+    "durability_index": 10,
+    "all_court_consistency": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium",
+      "Medium-Fast",
+      "Fast"
+    ],
+
+    "play_style": [
+      "All Court",
+      "Aggressive Baseliner",
+      "Flat Hitter",
+      "Control-Oriented Player"
+    ],
+
+    "special_player_profiles": [
+      "Players Seeking Maximum Durability",
+      "Players Prioritizing Tension Maintenance",
+      "Players Wanting Reliable All-Court Performance",
+      "Frequent String Breakers",
+      "Players Seeking Consistent Response Over Time"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson RF 01",
+    "Wilson Pro Staff",
+    "HEAD Speed",
+    "HEAD Radical",
+    "HEAD Gravity",
+    "Yonex PERCEPT",
+    "Yonex EZONE",
+    "Babolat Pure Strike",
+    "Tecnifibre TF-40",
+    "Tecnifibre T-FIGHT",
+    "Dunlop CX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Natural Gut",
+      "Luxilon Natural Gut",
+      "Babolat Touch VS",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²",
+      "Solinco Vanquish"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Control",
+        "Durability",
+        "Tension Stability",
+        "Directional Precision"
+      ],
+
+      "as_crosses": [
+        "Control",
+        "Stringbed Stability",
+        "Durability Support"
+      ]
+    }
+  },
+
+  "gauge_recommendation": {
+    "1.15": {
+      "gauge_name": "18",
+      "best_for": [
+        "Maximum Feel",
+        "Faster Response",
+        "All-Court Play"
+      ],
+      "tradeoffs": [
+        "Lowest Durability"
+      ]
+    },
+
+    "1.20": {
+      "gauge_name": "17",
+      "best_for": [
+        "Control",
+        "Feel",
+        "Tension Stability",
+        "Tournament Play"
+      ],
+      "tradeoffs": [
+        "Less Durability Than 1.25 and 1.30"
+      ]
+    },
+
+    "1.25": {
+      "gauge_name": "16L",
+      "best_for": [
+        "Best Overall Balance",
+        "Control",
+        "Durability",
+        "All-Court Play",
+        "Tension Maintenance"
+      ],
+      "tradeoffs": [
+        "Less Durability Than 1.30"
+      ]
+    },
+
+    "1.30": {
+      "gauge_name": "16",
+      "best_for": [
+        "Maximum Durability",
+        "Maximum Stability",
+        "Heavy Hitters",
+        "Frequent String Breakers"
+      ],
+      "tradeoffs": [
+        "Slightly Less Feel",
+        "Lower Launch Angle"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.15": {
+      "heavy_topspin_hours": "6-11",
+      "club_player_hours": "12-22"
+    },
+
+    "1.20": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "16-28"
+    },
+
+    "1.25": {
+      "heavy_topspin_hours": "10-18",
+      "club_player_hours": "20-34"
+    },
+
+    "1.30": {
+      "heavy_topspin_hours": "12-22",
+      "club_player_hours": "24-40"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Very Low",
+    "tension_loss_sensitivity": "Very Low",
+    "playability_duration": "Excellent",
+    "recommended_monitoring": "Replace when response, directional control or stringbed consistency noticeably declines."
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Seeking Maximum Durability",
+      "Players Prioritizing Tension Stability",
+      "All-Court Players",
+      "Control-Oriented Players",
+      "Frequent String Breakers",
+      "Players Wanting Long-Lasting Polyester Performance"
+    ],
+
+    "avoid_for": [
+      "Players Seeking Maximum Spin From a Shaped String",
+      "Players With Significant Arm Sensitivity",
+      "Players Wanting Maximum Free Power",
+      "Players Seeking Very Plush Co-Poly Feel"
+    ],
+
+    "alternative_strings": [
+      "Solinco Confidential",
+      "Solinco Tour Bite",
+      "Luxilon 4G",
+      "HEAD HAWK",
+      "Kirschbaum Competition",
+      "MSV Bussard"
+    ]
+  },
+
+  "comparison_tags": [
+    "Outlast",
+    "Round Polyester",
+    "Maximum Durability",
+    "Control",
+    "All-Court",
+    "TruTension",
+    "Maximum Tension Maintenance",
+    "Reliable"
+  ],
+
+  "ai_keywords": [
+    "solinco",
+    "outlast",
+    "solinco outlast",
+    "1.15",
+    "1.20",
+    "1.25",
+    "1.30",
+    "18 gauge",
+    "17 gauge",
+    "16l",
+    "16 gauge",
+    "red",
+    "trutension",
+    "durability",
+    "control",
+    "tension maintenance",
+    "all court",
+    "responsive touch",
+    "co polyester"
+  ],
+
+  "target_competitors": [
+    "Luxilon 4G",
+    "Kirschbaum Competition",
+    "HEAD HAWK",
+    "Yonex Poly Tour Strike",
+    "MSV Bussard",
+    "Solinco Confidential"
+  ],
+
+  "description": {
+    "en": "Solinco Outlast is a durable, control-oriented co-polyester monofilament designed for consistent all-court performance and exceptional tension stability. Its high-powered polymer construction provides strong durability while retaining responsive touch and predictable control. Outlast is one of the strongest beneficiaries of Solinco's TruTension Technology and is positioned as one of the brand's best options for players seeking long-lasting tension maintenance and reliable playability.",
+
+    "zh": "Solinco Outlast 是一款强调耐久、控制和全场稳定表现的共聚酯单丝球线。其高性能聚酯结构在提供出色耐久性的同时，依然保留良好的响应手感和可预测控制。Outlast 是 TruTension™ Technology 受益最明显的 Solinco 球线之一，核心优势就是超强保磅和长期稳定可打性，非常适合希望减少频繁换线、同时保持稳定线床反馈的球员。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Solinco Outlast",
+      "High-performance co-polyester",
+      "Well-rounded positioning",
+      "Maximum durability",
+      "All-court playability",
+      "High-powered co-polyester monofilament fiber",
+      "Exceptional durability",
+      "Unparalleled playability",
+      "Red color",
+      "Control-focused positioning",
+      "Responsive touch",
+      "Consistency",
+      "Control",
+      "TruTension Technology",
+      "Longest levels of tension maintenance positioning",
+      "1.15 mm / 18 gauge",
+      "1.20 mm / 17 gauge",
+      "1.25 mm / 16L gauge",
+      "1.30 mm / 16 gauge",
+      "Set length: 40 ft / 12.2 m",
+      "Reel length: 656 ft / 200 m"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendations",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
