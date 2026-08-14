@@ -1,0 +1,181 @@
+{
+  "id": "grapplesnake_ces_neon_dust_liquid_neon_dust_hybrid",
+
+  "brand": "Grapplesnake",
+  "series": "CES / Liquid",
+  "model": "CES Neon Dust / Liquid Neon Dust Hybrid",
+
+  "category": "Hybrid String Set",
+
+  "manufacturer_data": {
+    "packaging": "Hybrid Set",
+    "length_m": 12,
+    "composition": {
+      "mains": {
+        "model": "CES Neon Dust",
+        "diameter_mm": 1.23
+      },
+      "crosses": {
+        "model": "Liquid Neon Dust",
+        "diameter_mm": 1.25
+      }
+    },
+
+    "recommended_tension": {
+      "mains": "-3 lb from normal polyester tension",
+      "crosses": "Normal polyester tension"
+    }
+  },
+
+  "construction": {
+    "mains": {
+      "material": "Co-Polyester",
+      "shape": "Square",
+      "surface": "Textured"
+    },
+
+    "crosses": {
+      "material": "Soft Co-Polyester",
+      "shape": "Round",
+      "surface": "Smooth"
+    }
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 9,
+    "feel": 10,
+    "durability": 10,
+    "tension_maintenance": 9,
+    "launch_angle": "Medium"
+  },
+
+  "design_profile": {
+    "hybrid_type": "Poly / Poly",
+    "target_player": "Tournament / Advanced",
+
+    "spin_focus": true,
+    "control_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true
+  },
+
+  "recommended_player": {
+    "level": [
+      "Advanced",
+      "Tournament",
+      "Professional"
+    ],
+
+    "swing_speed": [
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "Modern Tennis"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson RF01",
+    "HEAD Speed",
+    "HEAD Radical",
+    "Yonex VCORE",
+    "Yonex PERCEPT",
+    "Tecnifibre T-FIGHT",
+    "Pure Strike"
+  ],
+
+  "hybrid_setup": {
+    "mains": {
+      "string": "CES Neon Dust",
+      "diameter_mm": 1.23,
+      "role": [
+        "Spin",
+        "Control",
+        "Durability"
+      ]
+    },
+
+    "crosses": {
+      "string": "Liquid Neon Dust",
+      "diameter_mm": 1.25,
+      "role": [
+        "Comfort",
+        "Feel",
+        "Power"
+      ]
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Low",
+    "dies_before_breaking": false
+  },
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Wanting Poly Spin With Better Feel",
+      "Heavy Topspin",
+      "Tournament Players",
+      "Players Seeking Long Durability",
+      "High Performance Hybrid"
+    ],
+
+    "avoid_for": [
+      "Beginners",
+      "Players Seeking Multifilament Comfort",
+      "Slow Swing Speed"
+    ]
+  },
+
+  "comparison_tags": [
+    "Hybrid",
+    "Poly/Poly",
+    "Maximum Spin",
+    "High Feel",
+    "Tournament",
+    "Control",
+    "Durability"
+  ],
+
+  "ai_keywords": [
+    "grapplesnake",
+    "ces neon dust",
+    "liquid neon dust",
+    "hybrid",
+    "poly hybrid",
+    "1.23",
+    "1.25",
+    "spin",
+    "control",
+    "feel"
+  ],
+
+  "description": {
+    "en": "Official Grapplesnake hybrid combining CES Neon Dust mains for maximum spin, control and durability with Liquid Neon Dust crosses for comfort, feel and additional power. Designed as the flagship Poly/Poly hybrid in the Grapplesnake lineup.",
+
+    "zh": "Grapplesnake 官方旗舰 Poly/Poly Hybrid 套装。CES Neon Dust 主线负责提供旋转、控制与耐久性，Liquid Neon Dust 横线负责提升舒适性、击球手感以及力量输出，是 Grapplesnake 最具代表性的官方混穿组合。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+
+    "verified_fields": [
+      "CES Neon Dust 1.23 mm",
+      "Liquid Neon Dust 1.25 mm",
+      "Hybrid Set",
+      "Main -3 lb",
+      "Cross Normal Tension"
+    ]
+  }
+}
