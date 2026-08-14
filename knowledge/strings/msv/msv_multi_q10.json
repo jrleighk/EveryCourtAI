@@ -1,0 +1,348 @@
+{
+  "id": "msv_multi_q10",
+  "brand": "MSV",
+  "series": "Multi Q10",
+  "model": "Multi Q10",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Multifilament",
+    "material": "High-Quality Nylon",
+    "string_family": "Multifilament",
+    "cross_section": "Round",
+    "surface": "Smooth",
+    "tour_positioning": "Comfort / Power / Tension Stability Multifilament",
+    "target_level": "Beginner / Intermediate / Advanced",
+    "pre_stretch_recommended": true,
+    "pre_stretch_percent": 5
+  },
+
+  "specifications": {
+    "construction": "Nylon Multifilament",
+    "cross_section": "Round",
+    "surface": "Smooth",
+
+    "available_colors": [
+      "White"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_mm": 1.30,
+        "available": true,
+
+        "power": 10,
+        "control": 8,
+        "spin": 8,
+        "comfort": 10,
+        "feel": 9,
+        "durability": 8,
+        "tension_maintenance": 9,
+        "elasticity": 10,
+        "shock_absorption": 10,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Maximum Power",
+          "Maximum Comfort",
+          "Arm-Friendly Setup",
+          "Players Seeking High Tension Stability",
+          "Club Players",
+          "Players Moving Away From Firm Polyester"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "Complex Multifilament Manufacturing Process",
+    "High-Quality Nylon Construction",
+    "Power-Oriented Elastic Response",
+    "Arm-Protection-Oriented Design",
+    "High Tension Stability Construction"
+  ],
+
+  "design_profile": {
+    "string_type": "Power Comfort Multifilament",
+    "target_player": "Beginner / Intermediate / Advanced",
+    "arm_friendly": true,
+    "spin_focus": false,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 10,
+    "control": 8,
+    "spin": 8,
+    "comfort": 10,
+    "feel": 9,
+    "durability": 8,
+    "tension_maintenance": 9,
+    "elasticity": 10,
+    "shock_absorption": 10,
+    "launch_angle": "Medium-High"
+  },
+
+  "ai_rating": {
+    "power": 10,
+    "control": 8,
+    "spin": 8,
+    "comfort": 10,
+    "feel": 9,
+    "durability": 8,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Very Soft",
+    "snapback": 7,
+    "ball_pocketing": 10,
+    "string_movement": 4,
+    "tension_stability": 9,
+    "spin_window": "Medium",
+    "predictability": 9,
+    "arm_friendliness": 10,
+    "shock_absorption": 10,
+    "energy_return": 10,
+    "power_response": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate",
+      "Advanced"
+    ],
+
+    "swing_speed": [
+      "Slow",
+      "Medium",
+      "Medium-Fast"
+    ],
+
+    "play_style": [
+      "All Court",
+      "Baseline",
+      "Serve & Volley",
+      "Doubles",
+      "Touch Player"
+    ],
+
+    "special_player_profiles": [
+      "Players Seeking Maximum Arm Comfort",
+      "Players Wanting Easy Power",
+      "Players Prioritizing Tension Stability",
+      "Players Transitioning Away From Polyester"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Clash",
+    "Wilson Blade",
+    "HEAD Boom",
+    "HEAD Speed",
+    "Yonex EZONE",
+    "Yonex PERCEPT",
+    "Babolat Pure Drive",
+    "Tecnifibre T-FIGHT",
+    "Dunlop FX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "MSV Focus Hex",
+      "MSV Focus HEX Soft",
+      "MSV Co Focus",
+      "MSV Co Ultra",
+      "MSV Swift",
+      "MSV Bussard"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Maximum Power",
+        "Maximum Comfort",
+        "Feel",
+        "Ball Pocketing"
+      ],
+
+      "as_crosses": [
+        "Stringbed Softening",
+        "Arm Protection",
+        "Power",
+        "Shock Absorption"
+      ]
+    }
+  },
+
+  "pre_stretch_recommendation": {
+    "recommended": true,
+    "percent": 5,
+    "note": "5% pre-stretch during stringing is recommended."
+  },
+
+  "gauge_recommendation": {
+    "1.30": {
+      "best_for": [
+        "Maximum Power",
+        "Maximum Comfort",
+        "High Tension Stability",
+        "Arm-Friendly Full-Bed Setup",
+        "Hybrid Cross Use"
+      ],
+
+      "tradeoffs": [
+        "Less Spin Than Shaped Polyester",
+        "Lower Durability Than Firm Co-Polyester"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.30": {
+      "heavy_topspin_hours": "7-12",
+      "club_player_hours": "18-30"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Immediate",
+    "peak_playability": "Immediate",
+    "performance_drop": "Low-Medium",
+    "tension_loss_sensitivity": "Low",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when fraying, notching or loss of lively response becomes significant."
+  },
+
+  "test_results": {
+    "racketpedia": {
+      "tested_gauge_mm": 1.30,
+      "power_percent": 100,
+      "tension_stability_percent": 90,
+      "comfort_arm_friendliness_percent": 85,
+      "spin_potential_percent": 80
+    },
+
+    "saitenforum_player_ratings": {
+      "result": "High arm protection confirmed by player ratings.",
+      "source_type": "Manufacturer-supplied reference to saitenforum.de"
+    }
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Seeking Maximum Power",
+      "Players Seeking High Arm Comfort",
+      "Players Wanting Excellent Tension Stability",
+      "Club Players",
+      "Players Transitioning Away From Firm Polyester",
+      "Hybrid Users Seeking a Soft Powerful Cross"
+    ],
+
+    "avoid_for": [
+      "Heavy Topspin Players Seeking Maximum Polyester Spin",
+      "Frequent String Breakers",
+      "Players Wanting Extremely Firm Tournament Control"
+    ],
+
+    "alternative_strings": [
+      "MSV Soft Touch",
+      "Kirschbaum Touch Multifibre",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²",
+      "Gamma Live Wire Professional",
+      "Babolat Xalt"
+    ]
+  },
+
+  "comparison_tags": [
+    "Multifilament",
+    "Nylon",
+    "Maximum Power",
+    "High Comfort",
+    "Arm Friendly",
+    "High Tension Stability",
+    "5% Pre-Stretch",
+    "Club Player"
+  ],
+
+  "ai_keywords": [
+    "msv",
+    "multi q10",
+    "msv multi q10",
+    "1.30",
+    "white",
+    "multifilament",
+    "nylon",
+    "power",
+    "comfort",
+    "arm friendly",
+    "tension stability",
+    "pre stretch",
+    "5 percent pre stretch",
+    "racketpedia",
+    "100 percent power"
+  ],
+
+  "target_competitors": [
+    "MSV Soft Touch",
+    "Kirschbaum Touch Multifibre",
+    "Tecnifibre X-One Biphase",
+    "Tecnifibre NRG²",
+    "Gamma Live Wire Professional",
+    "Babolat Xalt",
+    "Wilson NXT"
+  ],
+
+  "description": {
+    "en": "MSV Multi Q10 is a high-quality nylon multifilament designed for players seeking maximum power, high arm comfort and strong tension stability. Its complex manufacturing process creates an elastic, forgiving stringbed with easy depth and excellent shock absorption. Racketpedia data supplied by MSV reports 100% power, 90% tension stability, 85% comfort and arm-friendliness, and 80% spin potential. MSV recommends a 5% pre-stretch during stringing.",
+
+    "zh": "MSV Multi Q10 是一款采用高品质尼龙材料制造的多芯球线，核心定位是最大力量、高舒适性以及优秀保磅能力。复杂的制造工艺带来高弹性、宽容且护臂的线床表现，能够轻松提供击球深度并有效吸收震动。MSV 提供的 Racketpedia 数据显示，其力量达到 100%，保磅 90%，舒适/护臂 85%，旋转潜力 80%。官方建议穿线时进行 5% 预拉伸。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "MSV Multi Q10",
+      "1.30 mm",
+      "White",
+      "Multifilament nylon construction",
+      "High arm comfort",
+      "High power",
+      "High tension stability",
+      "Complex manufacturing process",
+      "High-quality nylon material",
+      "Racketpedia 100% power",
+      "Racketpedia 90% tension stability",
+      "Racketpedia 85% comfort/arm-friendliness",
+      "Racketpedia 80% spin potential",
+      "High arm protection confirmed by saitenforum.de player ratings",
+      "5% pre-stretch recommended"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendations",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
