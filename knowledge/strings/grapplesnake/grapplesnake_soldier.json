@@ -1,0 +1,238 @@
+{
+  "id": "grapplesnake_soldier",
+  "brand": "Grapplesnake",
+  "series": "Soldier",
+  "model": "Soldier",
+  "category": "String",
+
+  "manufacturer_data": {
+    "packaging": "Set",
+    "length_m": 12,
+    "construction": "Co-Polyester Monofilament",
+    "material": "Advanced Co-Polyester",
+    "cross_section": "Heptagonal (7-Sided)",
+    "surface": "Micro-Abrasive",
+    "color": "Black",
+    "recommended_tension": "Approximately -3 lb from the player's normal polyester tension"
+  },
+
+  "specifications": {
+    "string_family": "Tour Control Polyester",
+    "construction": "Advanced Co-Polyester",
+    "cross_section": "Heptagonal",
+    "surface": "Micro Particle Abrasive",
+
+    "available_colors": [
+      "Black"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_mm": 1.25,
+        "available": true,
+
+        "power": 8,
+        "control": 10,
+        "spin": 10,
+        "comfort": 8,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 10,
+        "elasticity": 7,
+        "launch_angle": "Medium"
+      }
+    ]
+  },
+
+  "technology": [
+    "New Grapplesnake Manufacturing Process",
+    "Heptagonal Geometry",
+    "Micro Particle Abrasive Surface",
+    "Extended Playability Technology",
+    "Maximum Tension Maintenance"
+  ],
+
+  "design_profile": {
+    "string_type": "Tour Control Polyester",
+    "target_player": "Advanced / Tournament / Professional",
+
+    "arm_friendly": true,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": false,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "tension_stability_focus": true,
+    "playability_duration_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 10,
+    "spin": 10,
+    "comfort": 8,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 10,
+    "elasticity": 7,
+    "launch_angle": "Medium"
+  },
+
+  "recommended_player": {
+    "level": [
+      "Advanced",
+      "Tournament",
+      "Professional"
+    ],
+
+    "swing_speed": [
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Heavy Topspin",
+      "Aggressive Baseliner",
+      "Counter Puncher",
+      "Modern Power Tennis"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson RF01",
+    "Wilson Pro Staff",
+    "HEAD Radical",
+    "HEAD Speed",
+    "Tecnifibre TF-40",
+    "Tecnifibre T-FIGHT",
+    "Yonex PERCEPT",
+    "Yonex VCORE",
+    "Babolat Pure Strike"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Natural Gut",
+      "Babolat Touch VS",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²",
+      "Gamma Live Wire Professional"
+    ]
+  },
+
+  "estimated_lifespan": {
+    "1.25": {
+      "heavy_topspin_hours": "10-18",
+      "club_player_hours": "22-35"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Very Low",
+    "dies_before_breaking": false,
+    "playability_duration": "Excellent"
+  },
+
+  "comparison": {
+    "more_spin_than": [
+      "Tour Sniper",
+      "Tour M8"
+    ],
+
+    "similar_stiffness_to": [
+      "Tour Sniper"
+    ],
+
+    "between_models": [
+      "Tour Sniper",
+      "Tour M8",
+      "Alpha",
+      "Tour Mako"
+    ],
+
+    "contains_metals": false
+  },
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Prioritizing Tension Maintenance",
+      "Heavy Hitters",
+      "Tournament Players",
+      "Modern Topspin Tennis",
+      "Players Wanting Long Playability"
+    ],
+
+    "avoid_for": [
+      "Beginners",
+      "Players Wanting Maximum Power",
+      "Players With Slow Swing Speeds"
+    ],
+
+    "alternative_strings": [
+      "Grapplesnake Tour M8",
+      "Grapplesnake Tour Sniper",
+      "Luxilon 4G",
+      "Yonex Poly Tour Strike",
+      "Tecnifibre Razor Code"
+    ]
+  },
+
+  "comparison_tags": [
+    "Heptagonal",
+    "Tour Control",
+    "Maximum Tension Maintenance",
+    "Extended Playability",
+    "High Spin",
+    "Black",
+    "Micro Abrasive"
+  ],
+
+  "ai_keywords": [
+    "grapplesnake",
+    "soldier",
+    "soldier 125",
+    "heptagonal",
+    "7 sided",
+    "black",
+    "maximum tension maintenance",
+    "extended playability",
+    "tour control",
+    "micro abrasive",
+    "new technology"
+  ],
+
+  "target_competitors": [
+    "Luxilon 4G",
+    "Yonex Poly Tour Strike",
+    "Tecnifibre Razor Code",
+    "Solinco Confidential",
+    "Kirschbaum Max Power"
+  ],
+
+  "description": {
+    "en": "Grapplesnake Soldier is a next-generation tour control polyester engineered around maximum tension maintenance and exceptionally long playability. Its seven-sided profile and micro-abrasive surface generate higher spin than Tour Sniper and Tour M8 while preserving a predictable launch angle. Soldier offers medium power, outstanding control and stability, and is designed to perform best when strung approximately 3 lb lower than a player's normal polyester tension.",
+
+    "zh": "Grapplesnake Soldier 是一款新一代竞技控制型聚酯球线，以极高的保磅能力和超长的可打时间为核心设计目标。它采用七边形截面和微磨砂表面，在保持稳定发射角的同时提供比 Tour Sniper 与 Tour M8 更强的旋转表现。整体力量处于中等水平，控制、稳定性与耐久性均非常突出。官方建议比平时聚酯穿线磅数降低约 3 磅，以充分发挥其性能。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-14",
+    "verified_fields": [
+      "Black",
+      "Heptagonal (7-Sided)",
+      "1.25 mm",
+      "Micro Abrasive Surface",
+      "Maximum Tension Maintenance",
+      "Extended Playability",
+      "Recommended -3 lb",
+      "No Metals"
+    ]
+  }
+}
