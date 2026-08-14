@@ -1,0 +1,491 @@
+{
+  "id": "head_hawk_touch",
+  "brand": "HEAD",
+  "series": "HAWK",
+  "model": "HAWK TOUCH",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Co-Polyester",
+    "string_family": "Polyester",
+    "cross_section": "Round",
+    "surface": "Smooth",
+    "technology": [
+      "Crystal Core Technology"
+    ],
+    "tour_positioning": "Tour Control / Touch / Precision",
+    "target_level": "High-Level Tour and Tournament Players"
+  },
+
+  "specifications": {
+    "construction": "Co-Polyester Monofilament",
+    "cross_section": "Round",
+    "surface": "Smooth",
+
+    "packaging": [
+      {
+        "type": "Set",
+        "length_m": 12,
+        "length_ft": 40
+      }
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_name": "19",
+        "gauge_mm": 1.15,
+        "available": true,
+
+        "power": 8,
+        "control": 9,
+        "spin": 9,
+        "comfort": 8,
+        "feel": 10,
+        "durability": 6,
+        "tension_maintenance": 8,
+        "elasticity": 9,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Maximum Feel",
+          "Maximum Feedback",
+          "Fast Racquet Head Speed",
+          "Advanced Players",
+          "Tournament Players",
+          "Players Prioritizing Touch Over Durability"
+        ]
+      },
+
+      {
+        "gauge_name": "18",
+        "gauge_mm": 1.20,
+        "available": true,
+
+        "power": 8,
+        "control": 10,
+        "spin": 9,
+        "comfort": 8,
+        "feel": 10,
+        "durability": 7,
+        "tension_maintenance": 8,
+        "elasticity": 9,
+        "launch_angle": "Medium",
+
+        "recommended_use": [
+          "High-Level Control",
+          "Touch",
+          "Spin",
+          "Tournament Play",
+          "Fast Swing Speed"
+        ]
+      },
+
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.25,
+        "available": true,
+
+        "power": 7,
+        "control": 10,
+        "spin": 9,
+        "comfort": 8,
+        "feel": 10,
+        "durability": 8,
+        "tension_maintenance": 9,
+        "elasticity": 8,
+        "launch_angle": "Medium",
+
+        "recommended_use": [
+          "Best Overall Balance",
+          "Maximum Control",
+          "Tournament Players",
+          "Versatile All-Court Play",
+          "Professional-Level Precision"
+        ]
+      },
+
+      {
+        "gauge_name": "16",
+        "gauge_mm": 1.30,
+        "available": true,
+
+        "power": 7,
+        "control": 10,
+        "spin": 8,
+        "comfort": 7,
+        "feel": 9,
+        "durability": 10,
+        "tension_maintenance": 9,
+        "elasticity": 7,
+        "launch_angle": "Medium-Low",
+
+        "recommended_use": [
+          "Maximum Durability",
+          "Maximum Stability",
+          "Heavy Hitters",
+          "Long Match Play",
+          "Frequent String Breakers"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "Crystal Core Technology",
+    "Multistep Co-Polyester Heat Treatment",
+    "Large Crystalline Inner Core",
+    "Power-Control Balance Engineering",
+    "Elastic Tour-Level Construction"
+  ],
+
+  "technology_details": {
+    "crystal_core_technology": {
+      "description": "A complex multistep heat-treatment manufacturing process that allows HEAD to influence the balance between power and control within the co-polyester string.",
+      "core_design": "Large crystalline inner core",
+      "primary_benefits": [
+        "Ultimate Control",
+        "Accurate Feedback",
+        "Exquisite Feel",
+        "Consistent Response"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Tour Control Polyester",
+    "target_player": "Advanced / Tournament / Professional",
+    "arm_friendly": false,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": false,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 7,
+    "control": 10,
+    "spin": 9,
+    "comfort": 8,
+    "feel": 10,
+    "durability": 8,
+    "tension_maintenance": 9,
+    "elasticity": 8,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 7,
+    "control": 10,
+    "spin": 9,
+    "comfort": 8,
+    "feel": 10,
+    "durability": 8,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium-Firm",
+    "snapback": 9,
+    "ball_pocketing": 9,
+    "string_movement": 2,
+    "tension_stability": 9,
+    "spin_window": "Medium",
+    "predictability": 10,
+    "arm_friendliness": 7,
+    "feedback": 10,
+    "directional_precision": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Advanced",
+      "Tournament",
+      "Professional"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "All Court",
+      "Aggressive Baseliner",
+      "Counter Puncher",
+      "Flat Hitter",
+      "Precision-Oriented Player"
+    ]
+  },
+
+  "recommended_racquets": [
+    "HEAD Speed",
+    "HEAD Radical",
+    "HEAD Gravity",
+    "HEAD Prestige",
+    "Wilson Blade",
+    "Wilson Pro Staff",
+    "Wilson RF 01",
+    "Yonex PERCEPT",
+    "Tecnifibre TF-40",
+    "Babolat Pure Strike",
+    "Dunlop CX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Natural Gut",
+      "Luxilon Natural Gut",
+      "Babolat Touch VS",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Control",
+        "Spin",
+        "Accurate Feedback",
+        "Directional Precision"
+      ],
+
+      "as_crosses": [
+        "Control",
+        "Stringbed Stability",
+        "Crisp Response",
+        "Hybrid Precision"
+      ]
+    }
+  },
+
+  "gauge_recommendation": {
+    "1.15": {
+      "gauge_name": "19",
+
+      "best_for": [
+        "Maximum Feel",
+        "Maximum Touch",
+        "Fast Racquet Head Speed",
+        "High-Level Shot Making"
+      ],
+
+      "tradeoffs": [
+        "Lowest Durability",
+        "More Frequent Restringing"
+      ]
+    },
+
+    "1.20": {
+      "gauge_name": "18",
+
+      "best_for": [
+        "Feel",
+        "Spin",
+        "Precision",
+        "Tournament Play"
+      ],
+
+      "tradeoffs": [
+        "Lower Durability Than 1.25 and 1.30"
+      ]
+    },
+
+    "1.25": {
+      "gauge_name": "17",
+
+      "best_for": [
+        "Best Overall Balance",
+        "Maximum Control",
+        "Tour-Level Feel",
+        "Versatile Competition"
+      ],
+
+      "tradeoffs": [
+        "Less Durability Than 1.30"
+      ]
+    },
+
+    "1.30": {
+      "gauge_name": "16",
+
+      "best_for": [
+        "Maximum Durability",
+        "Maximum Stability",
+        "Heavy Hitters",
+        "Long Match Play"
+      ],
+
+      "tradeoffs": [
+        "Less Feel Than Thinner Gauges",
+        "Lower Launch Angle"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.15": {
+      "heavy_topspin_hours": "5-9",
+      "club_player_hours": "10-18"
+    },
+
+    "1.20": {
+      "heavy_topspin_hours": "6-11",
+      "club_player_hours": "12-22"
+    },
+
+    "1.25": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "16-28"
+    },
+
+    "1.30": {
+      "heavy_topspin_hours": "10-18",
+      "club_player_hours": "20-34"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Medium",
+    "tension_loss_sensitivity": "Medium-Low",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when feedback, snapback or directional control noticeably declines."
+  },
+
+  "tour_players": [
+    {
+      "name": "Jannik Sinner",
+      "tour": "ATP",
+      "usage": "Manufacturer endorsement",
+      "confidence": "Official"
+    },
+
+    {
+      "name": "Alexander Zverev",
+      "tour": "ATP",
+      "usage": "Manufacturer endorsement",
+      "confidence": "Official"
+    }
+  ],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Advanced Players Seeking Maximum Control",
+      "Tournament Players",
+      "Players Prioritizing Accurate Feedback",
+      "Players Wanting Excellent Touch From Polyester",
+      "Versatile All-Court Players",
+      "Players With Fast Swing Speeds"
+    ],
+
+    "avoid_for": [
+      "Beginners",
+      "Players Seeking Maximum Free Power",
+      "Players With Significant Arm Sensitivity",
+      "Slow Swing Speed Players"
+    ],
+
+    "alternative_strings": [
+      "Luxilon ALU Power",
+      "Luxilon 4G Soft",
+      "Yonex Poly Tour Strike",
+      "Tecnifibre Razor Soft",
+      "Grapplesnake Tour M8",
+      "Grapplesnake Tour Sniper"
+    ]
+  },
+
+  "comparison_tags": [
+    "Tour Polyester",
+    "Crystal Core",
+    "Maximum Control",
+    "Maximum Feel",
+    "Accurate Feedback",
+    "High Precision",
+    "Professional",
+    "Round Polyester"
+  ],
+
+  "ai_keywords": [
+    "head",
+    "hawk touch",
+    "head hawk touch",
+    "hawk touch 115",
+    "hawk touch 120",
+    "hawk touch 125",
+    "hawk touch 130",
+    "1.15",
+    "1.20",
+    "1.25",
+    "1.30",
+    "19 gauge",
+    "18 gauge",
+    "17 gauge",
+    "16 gauge",
+    "crystal core",
+    "crystal core technology",
+    "co polyester",
+    "control",
+    "feel",
+    "touch",
+    "feedback",
+    "jannik sinner",
+    "alexander zverev"
+  ],
+
+  "target_competitors": [
+    "Luxilon ALU Power",
+    "Luxilon 4G Soft",
+    "Yonex Poly Tour Strike",
+    "Tecnifibre Razor Soft",
+    "Grapplesnake Tour Sniper",
+    "Kirschbaum Max Power"
+  ],
+
+  "description": {
+    "en": "HEAD HAWK TOUCH is a high-performance co-polyester monofilament designed for advanced Tour and tournament players who demand exceptional control, touch and accurate feedback. Its Crystal Core Technology uses a complex multistep heat-treatment process to create a larger crystalline inner core, allowing HEAD to precisely tune the balance between control and elasticity. The result is a highly predictable string with excellent feel, directional precision and a versatile response for high-level competitive tennis.",
+
+    "zh": "HEAD HAWK TOUCH 是一款面向高级、巡回赛及比赛型球员的高性能共聚酯单丝球线，核心特点是极高的控制力、触球感和精准反馈。其 Crystal Core Technology 采用复杂的多阶段热处理制造工艺，通过形成更大的结晶内核来精确调节球线的力量与控制平衡。最终带来高度稳定、精准且具有优秀击球反馈的表现，非常适合挥拍速度快、需要精确掌控每一次击球的高水平球员。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_official_product_information",
+    "last_updated": "2026-08-14",
+
+    "officially_verified_fields": [
+      "HEAD HAWK TOUCH",
+      "Crystal Core Technology",
+      "Co-polyester construction",
+      "High-level Tour and tournament positioning",
+      "Ultimate touch",
+      "Accurate feedback",
+      "1.15 mm / 19 gauge",
+      "1.20 mm / 18 gauge",
+      "1.25 mm / 17 gauge",
+      "1.30 mm / 16 gauge",
+      "Set length: 12 m / 40 ft",
+      "Jannik Sinner endorsement",
+      "Alexander Zverev endorsement"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
