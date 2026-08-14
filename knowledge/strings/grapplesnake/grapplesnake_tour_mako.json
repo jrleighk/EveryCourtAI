@@ -1,0 +1,134 @@
+{
+  "id": "grapplesnake_tour_mako",
+
+  "brand": "Grapplesnake",
+  "series": "Tour",
+  "model": "Tour Mako",
+
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Co-Polyester Monofilament",
+    "shape": "Round",
+    "surface": "Mildly Abrasive",
+    "diameter_mm": [
+      1.25
+    ],
+    "length_m": 12,
+
+    "recommended_tension": {
+      "note": "String approximately 2 lb above your normal polyester tension."
+    }
+  },
+
+  "available_versions": [
+    {
+      "color": "Teal",
+
+      "characteristics": {
+        "power": 8,
+        "control": 9,
+        "spin": 9,
+        "comfort": 9,
+        "feel": 10,
+        "durability": 9,
+        "tension_maintenance": 9
+      },
+
+      "recommended_for": [
+        "Firm Racquets",
+        "Wilson Blade",
+        "Pure Strike",
+        "Percept",
+        "TF40"
+      ]
+    },
+
+    {
+      "color": "Silver",
+
+      "contains_aluminum": true,
+
+      "characteristics": {
+        "power": 8,
+        "control": 10,
+        "spin": 9,
+        "comfort": 8,
+        "feel": 8,
+        "durability": 10,
+        "tension_maintenance": 10
+      },
+
+      "recommended_for": [
+        "Soft Racquets",
+        "Wilson Clash",
+        "EZONE",
+        "Boom",
+        "Gravity"
+      ]
+    }
+  ],
+
+  "limited_editions": [
+    {
+      "name": "Tour Mako Short Fin",
+
+      "color": "Cream",
+
+      "shape": "Hexagonal",
+
+      "diameter_mm": 1.25,
+
+      "notes": [
+        "Limited Edition",
+        "Higher Ball Bite",
+        "Moderate Edges",
+        "Maintains Mako Feel"
+      ]
+    }
+  ],
+
+  "technology": [
+    "Non-metallic Performance Additives",
+    "Mild Abrasive Surface",
+    "Tour M8 Material Platform",
+    "Paradox Pro Material Technology"
+  ],
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 9,
+    "spin": 9,
+    "comfort": 9,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9
+  },
+
+  "comparison": {
+    "more_comfort_than": [
+      "Tour Sniper"
+    ],
+
+    "more_control_than": [
+      "Alpha"
+    ],
+
+    "similar_stability_to": [
+      "Tour M8"
+    ],
+
+    "closest_competitors": [
+      "Luxilon ALU Power Soft",
+      "Yonex Poly Tour Strike",
+      "Solinco Confidential",
+      "Tecnifibre Razor Code Soft"
+    ]
+  },
+
+  "description": {
+    "en": "Tour Mako combines the stability of Tour M8 with the feel innovations introduced in Paradox Pro. The mildly abrasive surface enhances spin without sacrificing launch consistency. Teal focuses on feel and comfort, while Silver incorporates aluminum for additional precision, stability and tension maintenance.",
+
+    "zh": "Tour Mako 是 Grapplesnake 目前最先进的 Tour 聚酯线，融合了 Tour M8 的稳定性以及 Paradox Pro 的新材料技术。微磨砂表面能够增加旋转而不会提高发射角，因此仍保持极高的一致性。Teal 版本更强调手感与舒适性；Silver 版本加入少量铝元素，进一步提升控制、保磅和稳定性，更适合偏软球拍。"
+  }
+}
