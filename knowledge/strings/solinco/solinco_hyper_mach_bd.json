@@ -1,0 +1,371 @@
+{
+  "id": "solinco_hyper_mach_bd",
+  "brand": "Solinco",
+  "series": "Hyper-Mach",
+  "model": "Hyper-Mach BD",
+  "category": "Hybrid String Set",
+
+  "collaboration": {
+    "partner": "Brain Dead",
+    "engineering": "Solinco",
+    "design": "Brain Dead",
+    "collaboration_type": "Performance / Design Collaboration"
+  },
+
+  "manufacturer_data": {
+    "construction": "Dual-Poly Hybrid System",
+    "material": "Co-Polyester",
+    "string_family": "Polyester Hybrid",
+    "components": [
+      "Hyper-G Round",
+      "Mach-10"
+    ],
+    "configuration": "Shaped / Round Hybrid",
+    "tour_positioning": "Customizable Power / Penetration / Spin Hybrid",
+    "official_positioning": "Advanced poly-poly hybrid designed for players who want to fine-tune stringbed performance."
+  },
+
+  "specifications": {
+    "packaging": [
+      {
+        "type": "Set",
+        "length_ft": 40,
+        "length_m": 12.2
+      }
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.20,
+        "available": true
+      }
+    ]
+  },
+
+  "component_strings": {
+    "hyper_g_round": {
+      "construction": "Monofilament",
+      "material": "Co-Polyester",
+      "shape": "Round",
+      "surface": "Smooth",
+      "primary_roles": [
+        "Control",
+        "Penetration",
+        "Smooth String Interaction",
+        "Directional Precision"
+      ]
+    },
+
+    "mach_10": {
+      "construction": "Monofilament",
+      "material": "Co-Polyester",
+      "shape": "Shaped",
+      "surface": "Edged / Shaped",
+      "primary_roles": [
+        "Spin",
+        "Ball Bite",
+        "Heavy Ball Production",
+        "Aggressive Response"
+      ]
+    }
+  },
+
+  "official_hybrid_setups": [
+    {
+      "setup_id": "hyper_g_round_mains",
+
+      "mains": "Hyper-G Round",
+      "crosses": "Mach-10",
+
+      "official_result": "Deeper, more penetrating ball",
+
+      "ai_profile": {
+        "power": 9,
+        "control": 10,
+        "spin": 9,
+        "penetration": 10,
+        "comfort": 8,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "launch_angle": "Medium"
+      },
+
+      "best_for": [
+        "Players Seeking Ball Penetration",
+        "Flatter Aggressive Groundstrokes",
+        "All-Court Players",
+        "Players Wanting More Driving Depth",
+        "Players Prioritizing Control and Forward Ball Speed"
+      ]
+    },
+
+    {
+      "setup_id": "hyper_g_round_crosses",
+
+      "mains": "Mach-10",
+      "crosses": "Hyper-G Round",
+
+      "official_result": "Superior spin and a heavier ball",
+
+      "ai_profile": {
+        "power": 9,
+        "control": 9,
+        "spin": 10,
+        "penetration": 9,
+        "comfort": 8,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "launch_angle": "Medium-High"
+      },
+
+      "best_for": [
+        "Heavy Topspin Players",
+        "Aggressive Baseliners",
+        "Players Seeking a Heavier Ball",
+        "Players Prioritizing Spin",
+        "Modern Baseline Players"
+      ]
+    }
+  ],
+
+  "technology": [
+    "Dual-Poly Hybrid Construction",
+    "Round Hyper-G Component",
+    "Shaped Mach-10 Component",
+    "Configurable Main / Cross Orientation",
+    "Performance-Tuning Hybrid Architecture"
+  ],
+
+  "design_profile": {
+    "string_type": "Configurable Dual-Poly Hybrid",
+    "target_player": "Intermediate / Advanced / Tournament",
+    "arm_friendly": false,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true,
+    "configurable_performance": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 8,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9,
+    "elasticity": 8,
+    "launch_angle": "Configurable"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 8,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9,
+    "configuration_flexibility": 10
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium-Firm",
+    "snapback": 10,
+    "ball_pocketing": 8,
+    "string_movement": 2,
+    "tension_stability": 9,
+    "spin_window": "High",
+    "predictability": 9,
+    "arm_friendliness": 7,
+    "directional_precision": 10,
+    "ball_bite": 10,
+    "penetration": 10,
+    "hybrid_tunability": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "All Court",
+      "Power Baseliner",
+      "Modern Baseline"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Babolat Pure Aero",
+    "Babolat Pure Drive",
+    "Wilson Shift",
+    "Wilson Blade",
+    "HEAD Extreme",
+    "HEAD Speed",
+    "Yonex VCORE",
+    "Yonex EZONE",
+    "Tecnifibre T-FIGHT",
+    "Dunlop SX"
+  ],
+
+  "gauge_recommendation": {
+    "1.20": {
+      "gauge_name": "17",
+
+      "best_for": [
+        "High Spin",
+        "Fast Response",
+        "Hybrid Tunability",
+        "Advanced Players",
+        "Tournament Play"
+      ],
+
+      "tradeoffs": [
+        "Less Durability Than Thicker Poly Gauges",
+        "May Feel Firm for Arm-Sensitive Players"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.20": {
+      "heavy_topspin_hours": "7-12",
+      "club_player_hours": "14-24"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Medium-Low",
+    "tension_loss_sensitivity": "Medium-Low",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when snapback, spin response or penetration noticeably declines."
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Wanting a Tunable Dual-Poly Hybrid",
+      "Aggressive Baseliners",
+      "Heavy Topspin Players",
+      "Players Seeking Either More Penetration or More Spin",
+      "Advanced Players Who Adjust Main / Cross Orientation",
+      "Players Wanting Solinco Performance With Brain Dead Collaboration Styling"
+    ],
+
+    "avoid_for": [
+      "Players With Significant Arm Sensitivity",
+      "Beginners With Very Slow Swing Speed",
+      "Players Seeking Multifilament-Level Comfort"
+    ],
+
+    "alternative_strings": [
+      "Solinco Hyper-G Hybrid System",
+      "Solinco Hyper-G Round",
+      "Solinco Mach-10",
+      "Solinco Hyper-G",
+      "Luxilon ALU Power Rough",
+      "HEAD Lynx Tour"
+    ]
+  },
+
+  "comparison_tags": [
+    "Hybrid System",
+    "Dual Poly",
+    "Brain Dead Collaboration",
+    "Hyper-G Round",
+    "Mach-10",
+    "Configurable",
+    "Spin",
+    "Penetration",
+    "Heavy Ball",
+    "Control"
+  ],
+
+  "ai_keywords": [
+    "solinco",
+    "hyper mach bd",
+    "hyper-mach bd",
+    "solinco brain dead",
+    "brain dead",
+    "hyper g round",
+    "mach 10",
+    "mach-10",
+    "1.20",
+    "17 gauge",
+    "dual poly",
+    "hybrid string",
+    "spin",
+    "control",
+    "penetration",
+    "heavy ball",
+    "shaped round hybrid"
+  ],
+
+  "target_competitors": [
+    "Solinco Hyper-G Hybrid System",
+    "Grapplesnake CES Neon Dust / Liquid Neon Dust",
+    "Luxilon Dual-Poly Hybrid Setups",
+    "HEAD Shaped / Round Poly Hybrids",
+    "Kirschbaum Performance Poly Hybrids"
+  ],
+
+  "description": {
+    "en": "Solinco Hyper-Mach BD is an advanced dual-poly hybrid developed with Brain Dead, combining smooth Hyper-G Round with shaped Mach-10. The configuration can be reversed to tune performance: Hyper-G Round in the mains produces a deeper, more penetrating ball, while Hyper-G Round in the crosses places Mach-10 in the mains for greater spin and heavier ball production. The 1.20 mm hybrid system is engineered by Solinco and designed by Brain Dead.",
+
+    "zh": "Solinco Hyper-Mach BD 是 Solinco 与 Brain Dead 合作推出的高性能双聚酯 Hybrid 系统，将圆形 Hyper-G Round 与异形 Mach-10 组合在一起。通过改变主横线方向可以调整整体性能：Hyper-G Round 做主线时，更强调深度和穿透力；Hyper-G Round 做横线、Mach-10 做主线时，则更强调旋转和更重的球质。该系统采用 1.20 毫米规格，由 Solinco 负责性能工程，Brain Dead 负责设计。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Solinco Hyper-Mach BD",
+      "Co-Polyester",
+      "Brain Dead collaboration",
+      "Hyper-G Round component",
+      "Mach-10 component",
+      "Shaped-round configuration",
+      "Hyper-G Round mains for deeper and more penetrating ball",
+      "Hyper-G Round crosses for superior spin and heavier ball",
+      "17 gauge / 1.20 mm",
+      "Set length: 40 ft / 12.2 m",
+      "Engineered by Solinco",
+      "Designed by Brain Dead"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Official Hybrid Setups",
+      "Recommended Racquets",
+      "Gauge Recommendations",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
