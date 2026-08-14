@@ -1,0 +1,479 @@
+{
+  "id": "solinco_hyper_g_soft",
+  "brand": "Solinco",
+  "series": "Hyper-G",
+  "model": "Hyper-G Soft",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Soft Co-Polyester",
+    "string_family": "Polyester",
+    "cross_section": "Shaped",
+    "surface": "Edged / Shaped",
+    "technology": [
+      "Softening Chemical Formula",
+      "High-Powered Polyester Monofilament Fiber"
+    ],
+    "tour_positioning": "Soft Power / Spin / Control Performance Polyester",
+    "official_positioning": "A softer high-performance co-polyester designed to combine playability and control with extreme power, spin and bite."
+  },
+
+  "specifications": {
+    "construction": "Soft Co-Polyester Monofilament",
+    "cross_section": "Shaped",
+    "surface": "Edged",
+
+    "packaging": [
+      {
+        "type": "Set",
+        "length_ft": 40,
+        "length_m": 12.2
+      },
+      {
+        "type": "Reel",
+        "length_ft": 656,
+        "length_m": 200
+      }
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_name": "18",
+        "gauge_mm": 1.15,
+        "available": true,
+
+        "power": 10,
+        "control": 9,
+        "spin": 10,
+        "comfort": 10,
+        "feel": 10,
+        "durability": 6,
+        "tension_maintenance": 9,
+        "elasticity": 10,
+        "launch_angle": "High",
+
+        "recommended_use": [
+          "Maximum Spin",
+          "Maximum Feel",
+          "Maximum Comfort",
+          "Fast Racquet Head Speed",
+          "Advanced Players"
+        ]
+      },
+
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.20,
+        "available": true,
+
+        "power": 10,
+        "control": 9,
+        "spin": 10,
+        "comfort": 10,
+        "feel": 10,
+        "durability": 7,
+        "tension_maintenance": 9,
+        "elasticity": 10,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Explosive Power",
+          "Maximum Spin",
+          "High Comfort",
+          "Aggressive Baseliners",
+          "Tournament Players"
+        ]
+      },
+
+      {
+        "gauge_name": "16L",
+        "gauge_mm": 1.25,
+        "available": true,
+
+        "power": 9,
+        "control": 10,
+        "spin": 10,
+        "comfort": 10,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 10,
+        "elasticity": 9,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Best Overall Balance",
+          "Spin",
+          "Control",
+          "Comfort",
+          "Tournament Play"
+        ]
+      },
+
+      {
+        "gauge_name": "16",
+        "gauge_mm": 1.30,
+        "available": true,
+
+        "power": 8,
+        "control": 10,
+        "spin": 9,
+        "comfort": 9,
+        "feel": 8,
+        "durability": 10,
+        "tension_maintenance": 10,
+        "elasticity": 8,
+        "launch_angle": "Medium",
+
+        "recommended_use": [
+          "Maximum Durability",
+          "Maximum Stability",
+          "Heavy Hitters",
+          "Long Match Play",
+          "Players Wanting Softer Hyper-G With More Resistance"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "Softening Chemical Formula",
+    "High-Powered Polyester Monofilament Fiber",
+    "Shaped Spin Geometry",
+    "Spin and Bite Amplification",
+    "Improved Tension Maintenance",
+    "Comfort-Oriented Co-Polyester Construction"
+  ],
+
+  "design_profile": {
+    "string_type": "Soft Spin Power Polyester",
+    "target_player": "Intermediate / Advanced / Tournament",
+    "arm_friendly": true,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 10,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 10,
+    "elasticity": 9,
+    "launch_angle": "Medium-High"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 10,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 10
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Soft-Medium",
+    "snapback": 10,
+    "ball_pocketing": 10,
+    "string_movement": 2,
+    "tension_stability": 10,
+    "spin_window": "Very High",
+    "predictability": 10,
+    "arm_friendliness": 10,
+    "directional_precision": 10,
+    "ball_bite": 10,
+    "power_response": 9,
+    "heavy_ball_potential": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium",
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "Modern Baseline",
+      "All Court",
+      "Power Player"
+    ],
+
+    "special_player_profiles": [
+      "Players Wanting Hyper-G Spin With More Comfort",
+      "Players Seeking Softer Co-Polyester",
+      "Players Prioritizing Tension Maintenance",
+      "Players Wanting Strong Bite Without Very Firm Feel"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Babolat Pure Aero",
+    "Babolat Pure Drive",
+    "Wilson Shift",
+    "Wilson Blade",
+    "Wilson Clash",
+    "HEAD Extreme",
+    "HEAD Speed",
+    "Yonex VCORE",
+    "Yonex EZONE",
+    "Tecnifibre T-FIGHT",
+    "Dunlop SX",
+    "Dunlop FX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Solinco Hyper-G Round",
+      "Natural Gut",
+      "Luxilon Natural Gut",
+      "Babolat Touch VS",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Maximum Spin",
+        "Ball Bite",
+        "Comfort",
+        "Heavy Ball Production",
+        "Control"
+      ],
+
+      "as_crosses": [
+        "Spin Support",
+        "Comfort",
+        "Stringbed Softening",
+        "Control"
+      ]
+    },
+
+    "official_hybrid_reference": "Solinco recommends Hyper-G Round as a hybrid partner with Hyper-G Soft."
+  },
+
+  "gauge_recommendation": {
+    "1.15": {
+      "gauge_name": "18",
+      "best_for": [
+        "Maximum Spin",
+        "Maximum Feel",
+        "Maximum Comfort",
+        "Fast Response"
+      ],
+      "tradeoffs": [
+        "Lowest Durability"
+      ]
+    },
+
+    "1.20": {
+      "gauge_name": "17",
+      "best_for": [
+        "Explosive Power",
+        "Spin",
+        "Comfort",
+        "Fast Swing Speed"
+      ],
+      "tradeoffs": [
+        "Lower Durability Than 1.25 and 1.30"
+      ]
+    },
+
+    "1.25": {
+      "gauge_name": "16L",
+      "best_for": [
+        "Best Overall Balance",
+        "Spin",
+        "Control",
+        "Comfort",
+        "Tournament Play"
+      ],
+      "tradeoffs": [
+        "Less Durability Than 1.30"
+      ]
+    },
+
+    "1.30": {
+      "gauge_name": "16",
+      "best_for": [
+        "Maximum Durability",
+        "Maximum Stability",
+        "Heavy Hitters",
+        "Long Match Play"
+      ],
+      "tradeoffs": [
+        "Slightly Less Spin",
+        "Slightly Less Feel"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.15": {
+      "heavy_topspin_hours": "5-9",
+      "club_player_hours": "10-18"
+    },
+
+    "1.20": {
+      "heavy_topspin_hours": "7-12",
+      "club_player_hours": "14-24"
+    },
+
+    "1.25": {
+      "heavy_topspin_hours": "9-16",
+      "club_player_hours": "18-30"
+    },
+
+    "1.30": {
+      "heavy_topspin_hours": "11-20",
+      "club_player_hours": "22-36"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Very Short",
+    "peak_playability": "Immediate",
+    "performance_drop": "Low",
+    "tension_loss_sensitivity": "Low",
+    "playability_duration": "Excellent",
+    "recommended_monitoring": "Replace when snapback, spin response, bite or directional control noticeably declines."
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Wanting Hyper-G Performance With More Comfort",
+      "Heavy Topspin Players",
+      "Aggressive Baseliners",
+      "Players Seeking Strong Spin and Bite",
+      "Players Prioritizing Improved Tension Maintenance",
+      "Players Wanting a Softer High-Performance Co-Poly"
+    ],
+
+    "avoid_for": [
+      "Players Seeking Extremely Firm and Crisp Polyester",
+      "Frequent String Breakers Using 1.15 mm",
+      "Players Seeking Multifilament-Level Softness"
+    ],
+
+    "alternative_strings": [
+      "Solinco Hyper-G",
+      "Solinco Hyper-G Round",
+      "Solinco Mach-10",
+      "Luxilon Element",
+      "Tecnifibre Razor Soft",
+      "MSV Focus Hex Plus 38"
+    ]
+  },
+
+  "comparison_tags": [
+    "Hyper-G Family",
+    "Soft Co-Poly",
+    "Maximum Spin",
+    "Extreme Bite",
+    "High Comfort",
+    "Improved Tension Maintenance",
+    "Shaped Polyester",
+    "Tournament"
+  ],
+
+  "ai_keywords": [
+    "solinco",
+    "hyper g soft",
+    "hyper-g soft",
+    "solinco hyper g soft",
+    "1.15",
+    "1.20",
+    "1.25",
+    "1.30",
+    "18 gauge",
+    "17 gauge",
+    "16l",
+    "16 gauge",
+    "softening chemical formula",
+    "soft co polyester",
+    "spin",
+    "bite",
+    "power",
+    "control",
+    "comfort",
+    "tension maintenance",
+    "hyper g round"
+  ],
+
+  "target_competitors": [
+    "Solinco Hyper-G",
+    "Solinco Mach-10",
+    "Luxilon Element",
+    "Tecnifibre Razor Soft",
+    "Yonex Poly Tour Air",
+    "MSV Focus Hex Plus 38",
+    "HEAD Lynx Tour"
+  ],
+
+  "description": {
+    "en": "Solinco Hyper-G Soft is the softer member of the Hyper-G family, developed to preserve the extreme spin, bite, power and control of the original while providing a more comfortable and elastic response. A specially developed softening chemical formula works with a shaped high-powered polyester monofilament to increase playability and improve tension maintenance. Available in 1.15, 1.20, 1.25 and 1.30 mm gauges, it is ideal for players who want the aggressive performance of Hyper-G with a softer stringbed feel.",
+
+    "zh": "Solinco Hyper-G Soft 是 Hyper-G 家族中的柔和版本，在保留标准 Hyper-G 强旋转、强咬球、力量和控制优势的同时，通过专门开发的柔化化学配方带来更舒适、更有弹性的击球反馈，并进一步改善保磅能力。产品提供 1.15、1.20、1.25 与 1.30 毫米四种线径，非常适合希望获得 Hyper-G 进攻性能，但又不喜欢过硬线床感觉的中高级球员。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Solinco Hyper-G Soft",
+      "Softer high-performance co-polyester",
+      "Playability",
+      "Control",
+      "Extreme power",
+      "Intense spin",
+      "Ball bite",
+      "Newly developed softening chemical formula",
+      "High-powered polyester monofilament fiber",
+      "Shaped construction",
+      "Improved tension maintenance",
+      "1.15 mm / 18 gauge",
+      "1.20 mm / 17 gauge",
+      "1.25 mm / 16L gauge",
+      "1.30 mm / 16 gauge",
+      "Set length: 40 ft / 12.2 m",
+      "Reel length: 656 ft / 200 m"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendations",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
