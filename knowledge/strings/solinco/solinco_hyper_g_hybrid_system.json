@@ -1,0 +1,363 @@
+{
+  "id": "solinco_hyper_g_hybrid_system",
+  "brand": "Solinco",
+  "series": "Hyper-G",
+  "model": "Hyper-G Hybrid System",
+  "category": "Hybrid String Set",
+
+  "manufacturer_data": {
+    "construction": "Dual-Poly Hybrid System",
+    "string_family": "Polyester Hybrid",
+    "components": [
+      "Hyper-G",
+      "Hyper-G Round"
+    ],
+    "tour_positioning": "Power / Control / Spin Hybrid System",
+    "target_level": "All Levels",
+    "official_positioning": "High-performance dual-poly combination designed to fine-tune power, penetration and spin."
+  },
+
+  "specifications": {
+    "packaging": [
+      {
+        "type": "Set",
+        "length_ft": 40,
+        "length_m": 12.2
+      }
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_name": "16L",
+        "gauge_mm": 1.25,
+        "available": true
+      },
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.20,
+        "available": true
+      }
+    ]
+  },
+
+  "component_strings": {
+    "hyper_g": {
+      "shape": "Shaped",
+      "surface": "Edged",
+      "primary_role": [
+        "Spin",
+        "Ball Bite",
+        "Heavy Ball Production"
+      ]
+    },
+
+    "hyper_g_round": {
+      "shape": "Round",
+      "surface": "Smooth",
+      "primary_role": [
+        "Control",
+        "Penetration",
+        "Smooth String Interaction"
+      ]
+    }
+  },
+
+  "official_hybrid_setups": [
+    {
+      "setup_id": "setup_1",
+      "mains": "Hyper-G Round",
+      "crosses": "Hyper-G",
+      "official_result": "Deeper, more penetrating ball",
+
+      "ai_profile": {
+        "power": 9,
+        "control": 10,
+        "spin": 8,
+        "penetration": 10,
+        "comfort": 8,
+        "feel": 9,
+        "launch_angle": "Medium"
+      },
+
+      "best_for": [
+        "Players Seeking Deeper Ball Penetration",
+        "Flatter Aggressive Groundstrokes",
+        "All-Court Players",
+        "Players Wanting More Control Than Maximum Spin"
+      ]
+    },
+
+    {
+      "setup_id": "setup_2",
+      "mains": "Hyper-G",
+      "crosses": "Hyper-G Round",
+      "official_result": "Superior spin and a heavier ball",
+
+      "ai_profile": {
+        "power": 9,
+        "control": 9,
+        "spin": 10,
+        "penetration": 9,
+        "comfort": 8,
+        "feel": 9,
+        "launch_angle": "Medium-High"
+      },
+
+      "best_for": [
+        "Heavy Topspin Players",
+        "Aggressive Baseliners",
+        "Players Seeking a Heavier Ball",
+        "Players Prioritizing Maximum Spin"
+      ]
+    }
+  ],
+
+  "technology": [
+    "Dual-Poly Hybrid Construction",
+    "Shaped Hyper-G Spin Component",
+    "Smooth Hyper-G Round Control Component",
+    "Configurable Main/Cross Orientation"
+  ],
+
+  "design_profile": {
+    "string_type": "Dual-Poly Performance Hybrid",
+    "target_player": "Beginner / Intermediate / Advanced / Tournament",
+    "arm_friendly": false,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true,
+    "configurable_performance": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 8,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9,
+    "elasticity": 8,
+    "launch_angle": "Configurable"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 8,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9,
+    "configuration_flexibility": 10
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium-Firm",
+    "snapback": 10,
+    "ball_pocketing": 8,
+    "string_movement": 2,
+    "tension_stability": 9,
+    "spin_window": "High",
+    "predictability": 9,
+    "arm_friendliness": 7,
+    "directional_precision": 10,
+    "ball_bite": 10,
+    "penetration": 10,
+    "hybrid_tunability": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium",
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "All Court",
+      "Power Baseliner",
+      "Modern Baseline"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Babolat Pure Aero",
+    "Babolat Pure Drive",
+    "Wilson Shift",
+    "Wilson Blade",
+    "HEAD Extreme",
+    "HEAD Speed",
+    "Yonex VCORE",
+    "Yonex EZONE",
+    "Tecnifibre T-FIGHT",
+    "Dunlop SX"
+  ],
+
+  "gauge_recommendation": {
+    "1.20": {
+      "gauge_name": "17",
+      "best_for": [
+        "Maximum Spin",
+        "Maximum Feel",
+        "Faster Response",
+        "Advanced Players"
+      ],
+      "tradeoffs": [
+        "Lower Durability Than 1.25"
+      ]
+    },
+
+    "1.25": {
+      "gauge_name": "16L",
+      "best_for": [
+        "Best Overall Balance",
+        "Control",
+        "Durability",
+        "Hybrid Stability"
+      ],
+      "tradeoffs": [
+        "Slightly Less Feel Than 1.20"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.20": {
+      "heavy_topspin_hours": "7-12",
+      "club_player_hours": "14-24"
+    },
+
+    "1.25": {
+      "heavy_topspin_hours": "9-16",
+      "club_player_hours": "18-30"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Medium-Low",
+    "tension_loss_sensitivity": "Medium-Low",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when snapback, spin response or directional precision noticeably declines."
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Wanting a Tunable Polyester Hybrid",
+      "Players Seeking Both Spin and Penetration",
+      "Aggressive Baseliners",
+      "All-Court Players",
+      "Players Wanting to Adjust Performance Through Main/Cross Orientation"
+    ],
+
+    "avoid_for": [
+      "Players With Significant Arm Sensitivity",
+      "Players Seeking Multifilament-Level Comfort",
+      "Beginners With Very Slow Swing Speed"
+    ],
+
+    "alternative_strings": [
+      "Solinco Hyper-G",
+      "Solinco Hyper-G Round",
+      "Solinco Tour Bite",
+      "Luxilon ALU Power Rough",
+      "HEAD Lynx Tour",
+      "Babolat RPM Blast"
+    ]
+  },
+
+  "comparison_tags": [
+    "Hybrid System",
+    "Dual Poly",
+    "Hyper-G",
+    "Hyper-G Round",
+    "Configurable",
+    "Spin",
+    "Control",
+    "Penetration",
+    "Heavy Ball"
+  ],
+
+  "ai_keywords": [
+    "solinco",
+    "hyper g hybrid system",
+    "hyper-g hybrid",
+    "hyper-g round",
+    "hyper-g",
+    "1.20",
+    "1.25",
+    "17 gauge",
+    "16l",
+    "dual poly",
+    "hybrid string",
+    "spin",
+    "control",
+    "penetration",
+    "heavy ball"
+  ],
+
+  "target_competitors": [
+    "Luxilon ALU Power / Natural Gut Hybrid",
+    "Babolat RPM Blast Hybrid",
+    "HEAD Lynx Tour Hybrid",
+    "Kirschbaum Pro Line Hybrid",
+    "Grapplesnake CES Neon Dust / Liquid Neon Dust"
+  ],
+
+  "description": {
+    "en": "Solinco Hyper-G Hybrid System combines shaped Hyper-G with smooth Hyper-G Round in a configurable dual-poly setup. Players can install Hyper-G Round in the mains with Hyper-G in the crosses for deeper penetration and a more driving ball, or reverse the orientation to place Hyper-G in the mains for increased spin and a heavier trajectory. Available in 1.20 mm and 1.25 mm gauges, the system allows players to fine-tune the balance of power, control, penetration and spin without changing string families.",
+
+    "zh": "Solinco Hyper-G Hybrid System 将异形 Hyper-G 与圆形 Hyper-G Round 组合成一个可调式双聚酯混穿系统。Hyper-G Round 做主线、Hyper-G 做横线时，更强调深度、穿透力和前冲球；反过来使用 Hyper-G 主线、Hyper-G Round 横线，则更强调旋转和更重的球质。提供 1.20 与 1.25 毫米两种规格，让球员可以在不更换球线家族的情况下，通过主横线方向调整力量、控制、穿透和旋转。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Solinco Hyper-G Hybrid System",
+      "Hyper-G component",
+      "Hyper-G Round component",
+      "Dual-poly hybrid system",
+      "Setup 1: Hyper-G Round mains / Hyper-G crosses",
+      "Setup 1 result: deeper and more penetrating ball",
+      "Setup 2: Hyper-G mains / Hyper-G Round crosses",
+      "Setup 2 result: superior spin and heavier ball",
+      "All-level player positioning",
+      "1.25 mm / 16L gauge",
+      "1.20 mm / 17 gauge",
+      "Set length: 40 ft / 12.2 m"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Official Hybrid Setups",
+      "Recommended Racquets",
+      "Gauge Recommendations",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
