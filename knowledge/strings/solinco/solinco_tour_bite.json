@@ -1,0 +1,597 @@
+{
+  "id": "solinco_tour_bite",
+  "brand": "Solinco",
+  "series": "Tour Bite",
+  "model": "Tour Bite",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Co-Polyester",
+    "string_family": "Polyester",
+    "cross_section": "Shaped",
+    "surface": "Edged / Shaped",
+    "tour_positioning": "Extreme Spin / Power / Bite / Durability Polyester",
+    "official_positioning": "High-performance versatile co-polyester designed to generate extreme power, intense spin and strong ball bite.",
+    "brand_positioning": "Category-defying performance string focused on power, spin and pro-level durability."
+  },
+
+  "specifications": {
+    "construction": "High-Powered Co-Polyester Monofilament",
+    "cross_section": "Shaped",
+    "surface": "Edged",
+
+    "packaging": [
+      {
+        "type": "Set",
+        "length_ft": 40,
+        "length_m": 12.2,
+        "available_for_all_gauges": true
+      },
+      {
+        "type": "Mini-Reel",
+        "length_ft": 328,
+        "length_m": 100,
+        "available_gauges_mm": [
+          1.30,
+          1.25,
+          1.20
+        ]
+      },
+      {
+        "type": "Reel",
+        "length_ft": 656,
+        "length_m": 200,
+        "available_for_all_gauges": true
+      }
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_name": "20",
+        "gauge_mm": 1.05,
+        "available": true,
+        "power": 10,
+        "control": 8,
+        "spin": 10,
+        "comfort": 6,
+        "feel": 10,
+        "durability": 4,
+        "tension_maintenance": 8,
+        "elasticity": 9,
+        "launch_angle": "High",
+        "recommended_use": [
+          "Maximum Spin",
+          "Maximum Bite",
+          "Maximum Feel",
+          "Fast Racquet Head Speed"
+        ]
+      },
+
+      {
+        "gauge_name": "19",
+        "gauge_mm": 1.10,
+        "available": true,
+        "power": 10,
+        "control": 8,
+        "spin": 10,
+        "comfort": 6,
+        "feel": 10,
+        "durability": 5,
+        "tension_maintenance": 8,
+        "elasticity": 9,
+        "launch_angle": "High",
+        "recommended_use": [
+          "Extreme Spin",
+          "Explosive Power",
+          "Maximum Ball Bite",
+          "Advanced Players"
+        ]
+      },
+
+      {
+        "gauge_name": "18",
+        "gauge_mm": 1.15,
+        "available": true,
+        "power": 10,
+        "control": 9,
+        "spin": 10,
+        "comfort": 6,
+        "feel": 9,
+        "durability": 6,
+        "tension_maintenance": 9,
+        "elasticity": 9,
+        "launch_angle": "High",
+        "recommended_use": [
+          "High Spin",
+          "Power",
+          "Fast Swing Speed",
+          "Aggressive Baseliners"
+        ]
+      },
+
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.20,
+        "available": true,
+        "power": 9,
+        "control": 9,
+        "spin": 10,
+        "comfort": 6,
+        "feel": 9,
+        "durability": 7,
+        "tension_maintenance": 9,
+        "elasticity": 8,
+        "launch_angle": "Medium-High",
+        "recommended_use": [
+          "Maximum Spin",
+          "Heavy Ball Production",
+          "Tournament Play",
+          "Fast Swing Speed"
+        ]
+      },
+
+      {
+        "gauge_name": "16L",
+        "gauge_mm": 1.25,
+        "available": true,
+        "power": 9,
+        "control": 10,
+        "spin": 10,
+        "comfort": 6,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "elasticity": 8,
+        "launch_angle": "Medium",
+        "recommended_use": [
+          "Best Overall Balance",
+          "Maximum Spin",
+          "Control",
+          "Power",
+          "Tournament Play"
+        ]
+      },
+
+      {
+        "gauge_name": "16",
+        "gauge_mm": 1.30,
+        "available": true,
+        "power": 8,
+        "control": 10,
+        "spin": 9,
+        "comfort": 6,
+        "feel": 8,
+        "durability": 10,
+        "tension_maintenance": 10,
+        "elasticity": 7,
+        "launch_angle": "Medium-Low",
+        "recommended_use": [
+          "Maximum Durability",
+          "Maximum Stability",
+          "Heavy Hitters",
+          "Frequent String Breakers",
+          "Long Match Play"
+        ]
+      },
+
+      {
+        "gauge_name": "15L",
+        "gauge_mm": 1.35,
+        "available": true,
+        "power": 7,
+        "control": 10,
+        "spin": 8,
+        "comfort": 5,
+        "feel": 7,
+        "durability": 10,
+        "tension_maintenance": 10,
+        "elasticity": 6,
+        "launch_angle": "Low",
+        "recommended_use": [
+          "Maximum Durability",
+          "Maximum Stability",
+          "Frequent String Breakers",
+          "Open String Patterns",
+          "Heavy Tournament Play"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "High-Powered Co-Polyester Monofilament Fiber",
+    "Shaped Spin Geometry",
+    "Extreme Ball Bite Design",
+    "Spin-Based Control Architecture",
+    "Pro-Level Durability Construction"
+  ],
+
+  "design_profile": {
+    "string_type": "Extreme Spin Power Polyester",
+    "target_player": "Intermediate / Advanced / Tournament",
+    "arm_friendly": false,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": false,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 6,
+    "feel": 9,
+    "durability": 10,
+    "tension_maintenance": 9,
+    "elasticity": 8,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 6,
+    "feel": 9,
+    "durability": 10,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Firm",
+    "snapback": 10,
+    "ball_pocketing": 7,
+    "string_movement": 1,
+    "tension_stability": 9,
+    "spin_window": "Very High",
+    "predictability": 10,
+    "arm_friendliness": 5,
+    "directional_precision": 10,
+    "ball_bite": 10,
+    "heavy_ball_potential": 10,
+    "durability_index": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "Modern Baseline",
+      "Power Baseliner",
+      "Counter Puncher"
+    ],
+
+    "special_player_profiles": [
+      "Players Seeking Maximum Spin",
+      "Players Wanting Strong Ball Bite",
+      "Heavy Hitters",
+      "Frequent String Breakers",
+      "Players Prioritizing Durability and Control"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Babolat Pure Aero",
+    "Yonex VCORE",
+    "HEAD Extreme",
+    "Wilson Shift",
+    "Wilson Blade",
+    "Tecnifibre T-FIGHT",
+    "Dunlop SX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Natural Gut",
+      "Luxilon Natural Gut",
+      "Babolat Touch VS",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²",
+      "Solinco Hyper-G Round"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Maximum Spin",
+        "Maximum Ball Bite",
+        "Heavy Ball Production",
+        "Control",
+        "Durability"
+      ],
+
+      "as_crosses": [
+        "Spin Support",
+        "Control",
+        "Stringbed Stability"
+      ]
+    },
+
+    "hybrid_note": "Its firm shaped profile can create more friction against softer hybrid partners than a smooth round polyester."
+  },
+
+  "gauge_recommendation": {
+    "1.05": {
+      "gauge_name": "20",
+      "best_for": [
+        "Maximum Spin",
+        "Maximum Bite",
+        "Maximum Feel"
+      ],
+      "tradeoffs": [
+        "Lowest Durability"
+      ]
+    },
+
+    "1.10": {
+      "gauge_name": "19",
+      "best_for": [
+        "Extreme Spin",
+        "Explosive Response",
+        "Maximum Ball Bite"
+      ],
+      "tradeoffs": [
+        "Very Low Durability Compared With Thicker Gauges"
+      ]
+    },
+
+    "1.15": {
+      "gauge_name": "18",
+      "best_for": [
+        "High Spin",
+        "Power",
+        "Fast Swing Speed"
+      ],
+      "tradeoffs": [
+        "Lower Durability"
+      ]
+    },
+
+    "1.20": {
+      "gauge_name": "17",
+      "best_for": [
+        "Maximum Spin",
+        "Heavy Ball",
+        "Tournament Play"
+      ],
+      "tradeoffs": [
+        "Lower Durability Than 1.25 and Thicker"
+      ]
+    },
+
+    "1.25": {
+      "gauge_name": "16L",
+      "best_for": [
+        "Best Overall Balance",
+        "Spin",
+        "Control",
+        "Power",
+        "Tournament Play"
+      ],
+      "tradeoffs": [
+        "Less Durability Than 1.30 and 1.35"
+      ]
+    },
+
+    "1.30": {
+      "gauge_name": "16",
+      "best_for": [
+        "Maximum Durability",
+        "Maximum Stability",
+        "Heavy Hitters"
+      ],
+      "tradeoffs": [
+        "Less Spin and Feel Than Thinner Gauges"
+      ]
+    },
+
+    "1.35": {
+      "gauge_name": "15L",
+      "best_for": [
+        "Maximum Durability",
+        "Open String Patterns",
+        "Frequent String Breakers"
+      ],
+      "tradeoffs": [
+        "Lowest Comfort",
+        "Lowest Feel",
+        "Lowest Launch Angle"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.05": {
+      "heavy_topspin_hours": "3-6",
+      "club_player_hours": "6-12"
+    },
+
+    "1.10": {
+      "heavy_topspin_hours": "4-8",
+      "club_player_hours": "8-16"
+    },
+
+    "1.15": {
+      "heavy_topspin_hours": "5-9",
+      "club_player_hours": "10-18"
+    },
+
+    "1.20": {
+      "heavy_topspin_hours": "7-12",
+      "club_player_hours": "14-24"
+    },
+
+    "1.25": {
+      "heavy_topspin_hours": "9-16",
+      "club_player_hours": "18-30"
+    },
+
+    "1.30": {
+      "heavy_topspin_hours": "11-20",
+      "club_player_hours": "22-36"
+    },
+
+    "1.35": {
+      "heavy_topspin_hours": "14-24",
+      "club_player_hours": "26-42"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Medium",
+    "tension_loss_sensitivity": "Medium-Low",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when ball bite, snapback or directional control noticeably declines."
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Seeking Maximum Spin and Bite",
+      "Aggressive Baseliners",
+      "Heavy Topspin Players",
+      "Heavy Hitters",
+      "Tournament Players",
+      "Frequent String Breakers",
+      "Players Prioritizing Pro-Level Durability"
+    ],
+
+    "avoid_for": [
+      "Players With Arm Sensitivity",
+      "Beginners With Slow Swing Speed",
+      "Players Seeking Maximum Comfort",
+      "Players Wanting Plush or Soft Co-Poly Feel"
+    ],
+
+    "alternative_strings": [
+      "Solinco Hyper-G",
+      "Solinco Hyper-G Soft",
+      "Solinco Confidential",
+      "HEAD Lynx Tour",
+      "Babolat RPM Blast",
+      "Kirschbaum Black Shark"
+    ]
+  },
+
+  "comparison_tags": [
+    "Tour Bite",
+    "Extreme Spin",
+    "Maximum Bite",
+    "Power",
+    "Spin-Based Control",
+    "Firm Polyester",
+    "Pro-Level Durability",
+    "Seven Gauges"
+  ],
+
+  "ai_keywords": [
+    "solinco",
+    "tour bite",
+    "solinco tour bite",
+    "1.05",
+    "1.10",
+    "1.15",
+    "1.20",
+    "1.25",
+    "1.30",
+    "1.35",
+    "20 gauge",
+    "19 gauge",
+    "18 gauge",
+    "17 gauge",
+    "16l",
+    "16 gauge",
+    "15l",
+    "co polyester",
+    "extreme spin",
+    "bite",
+    "power",
+    "control",
+    "durability",
+    "mini reel"
+  ],
+
+  "target_competitors": [
+    "Solinco Hyper-G",
+    "Babolat RPM Blast",
+    "HEAD Lynx Tour",
+    "Luxilon ALU Power Rough",
+    "Yonex Poly Tour Rev",
+    "Tecnifibre Black Code",
+    "Kirschbaum Black Shark"
+  ],
+
+  "description": {
+    "en": "Solinco Tour Bite is a firm, high-performance shaped co-polyester designed to maximize spin, ball bite, power and durability. Its high-powered monofilament construction and aggressive shaped geometry create exceptional rotation and spin-based control, allowing hard hitters to generate a heavy ball while maintaining directional precision. With seven gauges ranging from 1.05 to 1.35 mm, Tour Bite covers everything from extreme spin and feel to maximum durability and stability.",
+
+    "zh": "Solinco Tour Bite 是一款偏硬、强调高性能的异形共聚酯球线，核心优势是极高旋转、强咬球、力量以及耐久性。其高性能单丝结构与侵略性异形截面能够制造大量旋转，通过旋转本身提升控制，让大力量球员打出更重、更有压迫感的球。产品提供从 1.05 到 1.35 毫米共七种线径，细线径强调极致旋转和手感，粗线径则更偏向耐久、稳定和长期比赛使用。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Solinco Tour Bite",
+      "High-performance versatile co-polyester",
+      "Extreme power",
+      "Intense spin",
+      "Ball bite",
+      "High-powered co-polyester monofilament fiber",
+      "Shaped construction",
+      "Maximum power positioning",
+      "Spin amplification",
+      "Category-defying positioning",
+      "Ultimate in power and spin",
+      "Pro-level durability",
+      "Spin-based control",
+      "Exceptional ball bite",
+      "1.05 mm / 20 gauge",
+      "1.10 mm / 19 gauge",
+      "1.15 mm / 18 gauge",
+      "1.20 mm / 17 gauge",
+      "1.25 mm / 16L gauge",
+      "1.30 mm / 16 gauge",
+      "1.35 mm / 15L gauge",
+      "Set length: 40 ft / 12.2 m",
+      "Mini-Reel length: 328 ft / 100 m",
+      "Mini-Reel only in 16 / 16L / 17",
+      "Reel length: 656 ft / 200 m"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendations",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
