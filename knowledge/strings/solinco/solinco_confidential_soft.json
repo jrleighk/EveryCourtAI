@@ -1,0 +1,474 @@
+{
+  "id": "solinco_confidential_soft",
+  "brand": "Solinco",
+  "series": "Confidential",
+  "model": "Confidential Soft",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Soft Co-Polyester",
+    "string_family": "Polyester",
+    "cross_section": "Shaped",
+    "surface": "Edged / Shaped",
+    "project": "Prizm Project",
+    "colorway": "Electric Pink",
+    "tour_positioning": "Soft Control / Feel / Spin / Power Polyester",
+    "official_positioning": "A softer and more plush version of Confidential with enhanced pop while preserving directional control, feel, spin and trusted playability."
+  },
+
+  "specifications": {
+    "construction": "Soft Co-Polyester Monofilament",
+    "cross_section": "Shaped",
+    "surface": "Edged",
+
+    "available_colors": [
+      "Electric Pink"
+    ],
+
+    "packaging": [
+      {
+        "type": "Set",
+        "length_ft": 40,
+        "length_m": 12.2
+      },
+      {
+        "type": "Reel",
+        "length_ft": 656,
+        "length_m": 200
+      }
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_name": "18",
+        "gauge_mm": 1.15,
+        "available": true,
+        "power": 10,
+        "control": 9,
+        "spin": 10,
+        "comfort": 10,
+        "feel": 10,
+        "durability": 6,
+        "tension_maintenance": 9,
+        "elasticity": 10,
+        "launch_angle": "High",
+        "recommended_use": [
+          "Maximum Feel",
+          "Maximum Spin",
+          "Maximum Pop",
+          "Maximum Comfort",
+          "Fast Racquet Head Speed"
+        ]
+      },
+
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.20,
+        "available": true,
+        "power": 10,
+        "control": 9,
+        "spin": 10,
+        "comfort": 10,
+        "feel": 10,
+        "durability": 7,
+        "tension_maintenance": 9,
+        "elasticity": 10,
+        "launch_angle": "Medium-High",
+        "recommended_use": [
+          "Explosive Depth",
+          "Spin",
+          "Plush Feel",
+          "Aggressive Baseliners",
+          "Tournament Play"
+        ]
+      },
+
+      {
+        "gauge_name": "16L",
+        "gauge_mm": 1.25,
+        "available": true,
+        "power": 9,
+        "control": 10,
+        "spin": 10,
+        "comfort": 10,
+        "feel": 10,
+        "durability": 9,
+        "tension_maintenance": 10,
+        "elasticity": 9,
+        "launch_angle": "Medium-High",
+        "recommended_use": [
+          "Best Overall Balance",
+          "Directional Control",
+          "Spin",
+          "Comfort",
+          "Pop",
+          "Tournament Play"
+        ]
+      },
+
+      {
+        "gauge_name": "16",
+        "gauge_mm": 1.30,
+        "available": true,
+        "power": 9,
+        "control": 10,
+        "spin": 9,
+        "comfort": 9,
+        "feel": 9,
+        "durability": 10,
+        "tension_maintenance": 10,
+        "elasticity": 8,
+        "launch_angle": "Medium",
+        "recommended_use": [
+          "Maximum Durability",
+          "Maximum Stability",
+          "Heavy Hitters",
+          "Long Match Play",
+          "Players Wanting Plush Confidential Feel With More Resistance"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "Softened Confidential Construction",
+    "Plush Response Design",
+    "Enhanced Pop",
+    "Shaped Spin Geometry",
+    "Directional Control Architecture",
+    "Prizm Project Colorway"
+  ],
+
+  "design_profile": {
+    "string_type": "Soft Feel Control Spin Polyester",
+    "target_player": "Intermediate / Advanced / Tournament",
+    "arm_friendly": true,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 10,
+    "control": 10,
+    "spin": 10,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 9,
+    "tension_maintenance": 10,
+    "elasticity": 9,
+    "launch_angle": "Medium-High"
+  },
+
+  "ai_rating": {
+    "power": 10,
+    "control": 10,
+    "spin": 10,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 9,
+    "tension_maintenance": 10
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Soft-Medium",
+    "snapback": 10,
+    "ball_pocketing": 10,
+    "string_movement": 2,
+    "tension_stability": 10,
+    "spin_window": "High",
+    "predictability": 10,
+    "arm_friendliness": 10,
+    "directional_precision": 10,
+    "ball_bite": 10,
+    "power_response": 10,
+    "plushness": 10,
+    "depth_generation": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium",
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "All Court",
+      "Power Baseliner",
+      "Control-Oriented Player"
+    ],
+
+    "special_player_profiles": [
+      "Players Wanting Confidential Control With More Comfort",
+      "Players Seeking More Pop and Easier Depth",
+      "Players Who Prefer Plush Co-Poly Feel",
+      "Players Wanting High Spin Without a Very Firm Response"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson Shift",
+    "Wilson Clash",
+    "Wilson RF 01",
+    "HEAD Speed",
+    "HEAD Radical",
+    "HEAD Extreme",
+    "Yonex VCORE",
+    "Yonex EZONE",
+    "Babolat Pure Aero",
+    "Babolat Pure Strike",
+    "Tecnifibre T-FIGHT",
+    "Dunlop CX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Solinco Hyper-G Round",
+      "Natural Gut",
+      "Luxilon Natural Gut",
+      "Babolat Touch VS",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Spin",
+        "Directional Control",
+        "Pop",
+        "Feel",
+        "Comfort"
+      ],
+
+      "as_crosses": [
+        "Comfort",
+        "Spin Support",
+        "Stringbed Softening",
+        "Control"
+      ]
+    }
+  },
+
+  "gauge_recommendation": {
+    "1.15": {
+      "gauge_name": "18",
+      "best_for": [
+        "Maximum Feel",
+        "Maximum Spin",
+        "Maximum Pop",
+        "Maximum Comfort"
+      ],
+      "tradeoffs": [
+        "Lowest Durability"
+      ]
+    },
+
+    "1.20": {
+      "gauge_name": "17",
+      "best_for": [
+        "Spin",
+        "Pop",
+        "Comfort",
+        "Fast Swing Speed"
+      ],
+      "tradeoffs": [
+        "Lower Durability Than 1.25 and 1.30"
+      ]
+    },
+
+    "1.25": {
+      "gauge_name": "16L",
+      "best_for": [
+        "Best Overall Balance",
+        "Control",
+        "Spin",
+        "Comfort",
+        "Easy Depth"
+      ],
+      "tradeoffs": [
+        "Less Durability Than 1.30"
+      ]
+    },
+
+    "1.30": {
+      "gauge_name": "16",
+      "best_for": [
+        "Maximum Durability",
+        "Maximum Stability",
+        "Heavy Hitters",
+        "Long Match Play"
+      ],
+      "tradeoffs": [
+        "Slightly Less Pop",
+        "Slightly Less Feel"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.15": {
+      "heavy_topspin_hours": "5-9",
+      "club_player_hours": "10-18"
+    },
+
+    "1.20": {
+      "heavy_topspin_hours": "7-12",
+      "club_player_hours": "14-24"
+    },
+
+    "1.25": {
+      "heavy_topspin_hours": "9-16",
+      "club_player_hours": "18-30"
+    },
+
+    "1.30": {
+      "heavy_topspin_hours": "11-20",
+      "club_player_hours": "22-36"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Very Short",
+    "peak_playability": "Immediate",
+    "performance_drop": "Low",
+    "tension_loss_sensitivity": "Low",
+    "playability_duration": "Excellent",
+    "recommended_monitoring": "Replace when pop, snapback, feel or directional control noticeably declines."
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Wanting Confidential With More Comfort",
+      "Players Seeking Easier Depth and Pace",
+      "Players Wanting Plush Feel From a Performance Co-Poly",
+      "Heavy Topspin Players",
+      "Advanced Players Wanting Directional Control Without Excessive Firmness"
+    ],
+
+    "avoid_for": [
+      "Players Seeking Extremely Firm Crisp Polyester",
+      "Frequent String Breakers Using 1.15 mm",
+      "Players Wanting Very Low-Powered Response"
+    ],
+
+    "alternative_strings": [
+      "Solinco Confidential",
+      "Solinco Hyper-G Soft",
+      "Solinco Mach-10",
+      "Luxilon Element",
+      "Tecnifibre Razor Soft",
+      "MSV Focus Hex Plus 38"
+    ]
+  },
+
+  "comparison_tags": [
+    "Confidential Family",
+    "Soft Co-Poly",
+    "Electric Pink",
+    "Prizm Project",
+    "Directional Control",
+    "Spin",
+    "Plush Feel",
+    "More Pop",
+    "More Comfort"
+  ],
+
+  "ai_keywords": [
+    "solinco",
+    "confidential soft",
+    "solinco confidential soft",
+    "prizm project",
+    "electric pink",
+    "1.15",
+    "1.20",
+    "1.25",
+    "1.30",
+    "18 gauge",
+    "17 gauge",
+    "16l",
+    "16 gauge",
+    "soft co polyester",
+    "plush",
+    "pop",
+    "comfort",
+    "directional control",
+    "spin",
+    "feel"
+  ],
+
+  "target_competitors": [
+    "Solinco Confidential",
+    "Solinco Hyper-G Soft",
+    "Solinco Mach-10",
+    "Luxilon Element",
+    "Tecnifibre Razor Soft",
+    "Yonex Poly Tour Air",
+    "MSV Focus Hex Plus 38"
+  ],
+
+  "description": {
+    "en": "Solinco Confidential Soft is the softer, more plush evolution of Confidential and part of the Prizm Project. Finished in an electric pink colorway, it preserves the directional control, feel, spin and reliable playability of the original while adding greater comfort and more pop for easier depth and pace. The 1.25 mm version offers the most balanced performance, while thinner gauges emphasize feel and response and the 1.30 mm version provides increased durability and stability.",
+
+    "zh": "Solinco Confidential Soft 是 Confidential 的更柔和、更 Plush 的版本，同时属于 Prizm Project 系列，并采用 Electric Pink 电光粉配色。它保留标准 Confidential 标志性的方向控制、手感、旋转以及稳定可打性，同时加入更高舒适度和更明显的 Pop，让球员更容易获得击球深度和速度。1.25 毫米版本综合表现最均衡；较细线径更强调手感与响应；1.30 毫米版本则更偏向耐久和稳定。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Solinco Confidential Soft",
+      "Prizm Project",
+      "Electric Pink",
+      "Softer construction",
+      "Plush feel",
+      "More comfort",
+      "Enhanced pop",
+      "Effortless depth and pace",
+      "Directional control",
+      "Exceptional feel",
+      "Spin",
+      "Trusted playability",
+      "1.15 mm / 18 gauge",
+      "1.20 mm / 17 gauge",
+      "1.25 mm / 16L gauge",
+      "1.30 mm / 16 gauge",
+      "Set length: 40 ft / 12.2 m",
+      "Reel length: 656 ft / 200 m"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendations",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
