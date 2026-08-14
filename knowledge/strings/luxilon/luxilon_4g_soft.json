@@ -1,0 +1,309 @@
+{
+  "id": "luxilon_4g_soft",
+  "brand": "Luxilon",
+  "series": "4G",
+  "model": "4G Soft",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Poly-Ether-Ether",
+    "composition": "Poly-Ether-Ether",
+    "string_family": "Polyester",
+    "surface": "Smooth",
+    "weather_resistance": true,
+    "moisture_resistant": true,
+    "tour_positioning": "Comfort Control / Maximum Tension Maintenance",
+    "relative_softness": "Over 10% softer than standard 4G"
+  },
+
+  "specifications": {
+    "construction": "Polyester Monofilament",
+    "cross_section": "Round",
+    "surface": "Smooth",
+
+    "available_colors": [
+      "Gold"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_mm": 1.25,
+        "available": true,
+
+        "power": 8,
+        "control": 10,
+        "spin": 8,
+        "comfort": 9,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 10,
+        "elasticity": 8,
+        "launch_angle": "Medium",
+
+        "recommended_use": [
+          "Advanced Players",
+          "Tournament Players",
+          "Big Hitters",
+          "Players Seeking More Comfort Than Standard 4G",
+          "Long Match Consistency",
+          "Control-Oriented Players"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "Strategically Aligned Molecular Chains",
+    "Poly-Ether-Ether Composition",
+    "Maximum Tension Maintenance",
+    "Weather Resistant Construction",
+    "Enhanced Flexibility",
+    "Softened 4G Construction"
+  ],
+
+  "design_profile": {
+    "string_type": "Comfort Control Polyester",
+    "target_player": "Advanced / Tournament / Professional",
+
+    "arm_friendly": true,
+
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": false,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 10,
+    "spin": 8,
+    "comfort": 9,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 10,
+    "elasticity": 8,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 8,
+    "control": 10,
+    "spin": 8,
+    "comfort": 9,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 10
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium-Firm",
+    "snapback": 9,
+    "ball_pocketing": 9,
+    "string_movement": 2,
+    "tension_stability": 10,
+    "spin_window": "Medium",
+    "predictability": 10,
+    "arm_friendliness": 8
+  },
+    "recommended_player": {
+    "level": [
+      "Advanced",
+      "Tournament",
+      "Professional"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "All Court",
+      "Counter Puncher",
+      "Flat Hitter"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson RF 01",
+    "Wilson Pro Staff",
+    "HEAD Speed",
+    "HEAD Radical",
+    "HEAD Prestige",
+    "Yonex PERCEPT",
+    "Yonex EZONE",
+    "Tecnifibre TF-40",
+    "Tecnifibre T-FIGHT",
+    "Babolat Pure Strike",
+    "Dunlop CX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Babolat Touch VS",
+      "Wilson Natural Gut",
+      "Luxilon Natural Gut",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Control",
+        "Tension Stability",
+        "Comfort-Oriented Poly Performance",
+        "Tournament Precision"
+      ],
+
+      "as_crosses": [
+        "Control",
+        "Stringbed Stability",
+        "Improved Comfort",
+        "Hybrid Support"
+      ]
+    }
+  },
+
+  "gauge_recommendation": {
+    "1.25": {
+      "best_for": [
+        "More Comfort Than Standard 4G",
+        "Maximum Tension Stability",
+        "Control",
+        "Big Hitters",
+        "Long Match Consistency",
+        "Hybrid Setups"
+      ],
+
+      "tradeoffs": [
+        "Less Free Power Than Softer Multifilaments",
+        "Still Firmer Than True Soft Strings"
+      ],
+
+      "recommended_player": "Advanced players who want the control and tension stability of 4G with a softer and more forgiving response."
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.25": {
+      "heavy_topspin_hours": "10-16",
+      "club_player_hours": "20-35"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Very Short",
+    "peak_playability": "Immediate",
+    "performance_drop": "Very Low",
+    "tension_loss_sensitivity": "Very Low",
+    "playability_duration": "Excellent",
+    "recommended_monitoring": "Replace when elasticity and snapback noticeably decline rather than due to rapid tension loss."
+  },
+
+  "tour_players": [],
+    "recommended_by_ai": {
+    "best_for": [
+      "Advanced Players Seeking More Comfort Than Standard 4G",
+      "Big Hitters",
+      "Players Prioritizing Tension Maintenance",
+      "Tournament Players",
+      "Control-Oriented Players",
+      "Players Wanting Long Playability"
+    ],
+
+    "avoid_for": [
+      "Beginners",
+      "Players Seeking Maximum Free Power",
+      "Players Wanting Multifilament-Level Comfort",
+      "Slow Swing Speed Players"
+    ],
+
+    "alternative_strings": [
+      "Luxilon 4G",
+      "Luxilon Element",
+      "Luxilon ALU Power",
+      "Grapplesnake Alpha",
+      "Grapplesnake Tour M8",
+      "Tecnifibre Razor Soft",
+      "Yonex Poly Tour Air"
+    ]
+  },
+
+  "comparison_tags": [
+    "Soft 4G",
+    "Maximum Tension Maintenance",
+    "Control Polyester",
+    "Comfort-Oriented Poly",
+    "Long Playability",
+    "Weather Resistant",
+    "Tour Performance"
+  ],
+
+  "ai_keywords": [
+    "luxilon",
+    "4g soft",
+    "luxilon 4g soft",
+    "soft 4g",
+    "1.25",
+    "polyester",
+    "poly ether ether",
+    "tension maintenance",
+    "control",
+    "comfort",
+    "soft polyester",
+    "big hitter",
+    "tour string"
+  ],
+
+  "target_competitors": [
+    "Luxilon 4G",
+    "Tecnifibre Razor Soft",
+    "Yonex Poly Tour Air",
+    "Grapplesnake Alpha",
+    "HEAD Lynx Touch",
+    "Babolat RPM Team"
+  ],
+
+  "description": {
+    "en": "Luxilon 4G Soft is the more comfortable version of the 4G family, engineered to preserve the exceptional tension maintenance and control of standard 4G while providing a softer, more forgiving response. It is over 10% softer than 4G, yet still retains solid firmness, durability and precision. Strategically aligned molecular chains help minimize tension loss over time, while the Poly-Ether-Ether construction supports strength, flexibility and consistent performance even in demanding weather conditions.",
+
+    "zh": "Luxilon 4G Soft 是 4G 系列中更加舒适的版本，在保留标准 4G 出色保磅、控制和稳定性的同时，提供更柔和、更宽容的击球反馈。官方表示其柔软度相比 4G 提升超过 10%，但依旧保持足够的扎实感、耐久性和精准度。特殊排列的分子链结构有助于降低长期张力损失，而 Poly-Ether-Ether 材料则兼顾强度、柔韧性和稳定表现，即使在雨水或高湿度环境下也能保持良好可打性。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_official_product_information",
+    "last_updated": "2026-08-14",
+
+    "officially_verified_fields": [
+      "Over 10% softer than standard 4G",
+      "Maximum tension maintenance",
+      "Strategically aligned molecular chains",
+      "Poly-Ether-Ether materials",
+      "Weather resistant performance",
+      "Improved comfort and playability",
+      "Maintains firmness and durability"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
