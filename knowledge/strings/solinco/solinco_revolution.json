@@ -1,0 +1,466 @@
+{
+  "id": "solinco_revolution",
+  "brand": "Solinco",
+  "series": "Revolution",
+  "model": "Revolution",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Co-Polyester",
+    "string_family": "Polyester",
+    "cross_section": "Hexagonal",
+    "surface": "Shaped / Edged",
+    "tour_positioning": "Power / Control / Spin / Precision Polyester",
+    "official_positioning": "High-performance responsive co-polyester designed for maximum power, unbeatable control and precise manipulation of ball flight.",
+    "color": "Blue"
+  },
+
+  "specifications": {
+    "construction": "High-Powered Co-Polyester Monofilament",
+    "cross_section": "Hexagonal (6-Sided)",
+    "surface": "Shaped / Edged",
+
+    "available_colors": [
+      "Blue"
+    ],
+
+    "packaging": [
+      {
+        "type": "Set",
+        "length_ft": 40,
+        "length_m": 12.2
+      },
+      {
+        "type": "Reel",
+        "length_ft": 656,
+        "length_m": 200
+      }
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_name": "18",
+        "gauge_mm": 1.15,
+        "available": true,
+        "power": 10,
+        "control": 9,
+        "spin": 10,
+        "comfort": 7,
+        "feel": 10,
+        "durability": 6,
+        "tension_maintenance": 9,
+        "elasticity": 8,
+        "launch_angle": "High",
+        "recommended_use": [
+          "Maximum Spin",
+          "Maximum Feel",
+          "Fast Racquet Head Speed",
+          "Advanced Players"
+        ]
+      },
+
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.20,
+        "available": true,
+        "power": 10,
+        "control": 9,
+        "spin": 10,
+        "comfort": 7,
+        "feel": 9,
+        "durability": 7,
+        "tension_maintenance": 9,
+        "elasticity": 8,
+        "launch_angle": "Medium-High",
+        "recommended_use": [
+          "Explosive Power",
+          "Spin",
+          "Fast Swing Speed",
+          "Tournament Play"
+        ]
+      },
+
+      {
+        "gauge_name": "16L",
+        "gauge_mm": 1.25,
+        "available": true,
+        "power": 9,
+        "control": 10,
+        "spin": 10,
+        "comfort": 7,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "elasticity": 8,
+        "launch_angle": "Medium",
+        "recommended_use": [
+          "Best Overall Balance",
+          "Maximum Control",
+          "Spin",
+          "Power",
+          "Tournament Play"
+        ]
+      },
+
+      {
+        "gauge_name": "16",
+        "gauge_mm": 1.30,
+        "available": true,
+        "power": 8,
+        "control": 10,
+        "spin": 9,
+        "comfort": 7,
+        "feel": 8,
+        "durability": 10,
+        "tension_maintenance": 10,
+        "elasticity": 7,
+        "launch_angle": "Medium-Low",
+        "recommended_use": [
+          "Maximum Durability",
+          "Maximum Stability",
+          "Heavy Hitters",
+          "Long Match Play",
+          "Frequent String Breakers"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "Six-Sided Spin Geometry",
+    "High-Powered Co-Polyester Monofilament Fiber",
+    "Ball Flight Manipulation Design",
+    "Reduced Vibration Construction",
+    "High-Speed Predictability Engineering"
+  ],
+
+  "design_profile": {
+    "string_type": "Power Control Spin Polyester",
+    "target_player": "Intermediate / Advanced / Tournament",
+    "arm_friendly": false,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 7,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9,
+    "elasticity": 8,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 7,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Firm",
+    "snapback": 10,
+    "ball_pocketing": 8,
+    "string_movement": 2,
+    "tension_stability": 9,
+    "spin_window": "High",
+    "predictability": 10,
+    "arm_friendliness": 6,
+    "directional_precision": 10,
+    "ball_bite": 10,
+    "vibration_control": 9,
+    "off_center_shock_reduction": 9,
+    "ball_flight_control": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "All Court",
+      "Power Baseliner",
+      "Precision-Oriented Player"
+    ],
+
+    "special_player_profiles": [
+      "Players With Fast Swing Speeds",
+      "Players Seeking Predictable Response",
+      "Players Wanting Strong Spin With Precision",
+      "Players Prioritizing Ball Flight Control"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Babolat Pure Aero",
+    "Babolat Pure Drive",
+    "Wilson Shift",
+    "Wilson Blade",
+    "HEAD Extreme",
+    "HEAD Speed",
+    "Yonex VCORE",
+    "Yonex EZONE",
+    "Tecnifibre T-FIGHT",
+    "Dunlop SX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Solinco Hyper-G Round",
+      "Solinco Vanquish",
+      "Natural Gut",
+      "Luxilon Natural Gut",
+      "Babolat Touch VS",
+      "Tecnifibre X-One Biphase"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Spin",
+        "Control",
+        "Ball Bite",
+        "Directional Precision"
+      ],
+
+      "as_crosses": [
+        "Control",
+        "Stringbed Stability",
+        "Spin Support"
+      ]
+    }
+  },
+
+  "gauge_recommendation": {
+    "1.15": {
+      "gauge_name": "18",
+      "best_for": [
+        "Maximum Spin",
+        "Maximum Feel",
+        "Fast Response"
+      ],
+      "tradeoffs": [
+        "Lowest Durability"
+      ]
+    },
+
+    "1.20": {
+      "gauge_name": "17",
+      "best_for": [
+        "Explosive Power",
+        "Spin",
+        "Fast Swing Speed",
+        "Tournament Play"
+      ],
+      "tradeoffs": [
+        "Less Durability Than 1.25 and 1.30"
+      ]
+    },
+
+    "1.25": {
+      "gauge_name": "16L",
+      "best_for": [
+        "Best Overall Balance",
+        "Maximum Control",
+        "Spin",
+        "Precision"
+      ],
+      "tradeoffs": [
+        "Less Durability Than 1.30"
+      ]
+    },
+
+    "1.30": {
+      "gauge_name": "16",
+      "best_for": [
+        "Maximum Durability",
+        "Maximum Stability",
+        "Heavy Hitters",
+        "Long Match Play"
+      ],
+      "tradeoffs": [
+        "Slightly Less Spin",
+        "Slightly Less Feel"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.15": {
+      "heavy_topspin_hours": "5-9",
+      "club_player_hours": "10-18"
+    },
+
+    "1.20": {
+      "heavy_topspin_hours": "7-12",
+      "club_player_hours": "14-24"
+    },
+
+    "1.25": {
+      "heavy_topspin_hours": "9-16",
+      "club_player_hours": "18-30"
+    },
+
+    "1.30": {
+      "heavy_topspin_hours": "11-20",
+      "club_player_hours": "22-36"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Medium-Low",
+    "tension_loss_sensitivity": "Medium-Low",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when snapback, precision or ball-flight predictability noticeably declines."
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Seeking Fast-Swing Predictability",
+      "Players Wanting Strong Spin and Precision",
+      "Aggressive Baseliners",
+      "Tournament Players",
+      "Players Seeking High Control With Explosive Power"
+    ],
+
+    "avoid_for": [
+      "Players With Significant Arm Sensitivity",
+      "Beginners With Slow Swing Speed",
+      "Players Seeking Maximum Plush Comfort",
+      "Players Wanting Very Low-Powered Polyester"
+    ],
+
+    "alternative_strings": [
+      "Solinco Tour Bite",
+      "Solinco Hyper-G",
+      "Solinco Confidential",
+      "HEAD Lynx Tour",
+      "Luxilon ALU Power Rough",
+      "Babolat RPM Blast"
+    ]
+  },
+
+  "comparison_tags": [
+    "Revolution",
+    "Six-Sided",
+    "Hexagonal",
+    "Spin",
+    "Power",
+    "Precision",
+    "Control",
+    "Reduced Vibration",
+    "Fast Swing",
+    "Blue"
+  ],
+
+  "ai_keywords": [
+    "solinco",
+    "revolution",
+    "solinco revolution",
+    "1.15",
+    "1.20",
+    "1.25",
+    "1.30",
+    "18 gauge",
+    "17 gauge",
+    "16l",
+    "16 gauge",
+    "blue",
+    "six sided",
+    "hexagonal",
+    "spin",
+    "control",
+    "power",
+    "precision",
+    "reduced vibration",
+    "ball flight control"
+  ],
+
+  "target_competitors": [
+    "Solinco Tour Bite",
+    "Solinco Hyper-G",
+    "HEAD Lynx Tour",
+    "Babolat RPM Blast",
+    "Yonex Poly Tour Rev",
+    "Tecnifibre Black Code",
+    "MSV Focus Hex"
+  ],
+
+  "description": {
+    "en": "Solinco Revolution is a firm, six-sided co-polyester string engineered for players with fast swings who want explosive power, high spin and highly predictable control. Its hexagonal profile increases ball grip and rotation, while the high-powered monofilament construction helps players manipulate ball flight with precision. Despite its relatively high stiffness, Revolution is designed to reduce vibration and off-center shock, providing a more controlled and comfortable response than its firm construction might suggest.",
+
+    "zh": "Solinco Revolution 是一款采用六边形截面的偏硬型高性能共聚酯球线，主要面向挥拍速度快、追求爆发力量、高旋转和精准控制的球员。六边形结构能够增强咬球和旋转，而高性能单丝配方则强化对球路和飞行轨迹的控制。虽然整体刚性较高，但 Revolution 特别强调降低震动和偏心击球冲击，使它在保持清晰、稳定反馈的同时，具备比典型硬质聚酯更好的击球舒适度。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Solinco Revolution",
+      "High-performance responsive co-polyester",
+      "Maximum power",
+      "Unbeatable control positioning",
+      "High-powered co-polyester monofilament fiber",
+      "Shaped construction",
+      "Ball flight manipulation",
+      "Blue color",
+      "Predictable response at fast swing speeds",
+      "Six-sided design",
+      "Spin generation",
+      "Reduced vibration",
+      "Reduced off-center shock",
+      "Precision",
+      "Accurate ball placement",
+      "1.15 mm / 18 gauge",
+      "1.20 mm / 17 gauge",
+      "1.25 mm / 16L gauge",
+      "1.30 mm / 16 gauge",
+      "Set length: 40 ft / 12.2 m",
+      "Reel length: 656 ft / 200 m"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendations",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
