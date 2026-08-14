@@ -1,0 +1,380 @@
+{
+  "id": "luxilon_4g",
+  "brand": "Luxilon",
+  "series": "4G",
+  "model": "4G",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Poly-Ether-Ether",
+    "composition": "Poly-Ether-Ether",
+    "string_family": "Polyester",
+    "surface": "Smooth",
+    "weather_resistance": true,
+    "moisture_resistant": true,
+    "tour_positioning": "Tour Control / Maximum Tension Maintenance"
+  },
+
+  "specifications": {
+    "construction": "Polyester Monofilament",
+    "cross_section": "Round",
+    "surface": "Smooth",
+
+    "available_colors": [
+      "Gold"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.25,
+        "available": true,
+
+        "power": 7,
+        "control": 10,
+        "spin": 8,
+        "comfort": 7,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 10,
+        "elasticity": 7,
+        "launch_angle": "Medium",
+
+        "recommended_use": [
+          "Maximum Control",
+          "Maximum Tension Maintenance",
+          "Tournament Players",
+          "Fast Swing Speed",
+          "Players Seeking More Feel Than 1.30"
+        ]
+      },
+
+      {
+        "gauge_name": "16",
+        "gauge_mm": 1.30,
+        "available": true,
+
+        "power": 6,
+        "control": 10,
+        "spin": 8,
+        "comfort": 7,
+        "feel": 8,
+        "durability": 10,
+        "tension_maintenance": 10,
+        "elasticity": 6,
+        "launch_angle": "Medium-Low",
+
+        "recommended_use": [
+          "Maximum Durability",
+          "Maximum Stability",
+          "Heavy Hitters",
+          "Long Match Play",
+          "Frequent String Breakers"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "Strategically Aligned Molecular Chains",
+    "Poly-Ether-Ether Composition",
+    "Maximum Tension Maintenance",
+    "Weather Resistant Construction",
+    "Cushioned Impact Feel"
+  ],
+
+  "design_profile": {
+    "string_type": "Tour Control Polyester",
+    "target_player": "Advanced / Tournament / Professional",
+    "arm_friendly": false,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": false,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 7,
+    "control": 10,
+    "spin": 8,
+    "comfort": 7,
+    "feel": 9,
+    "durability": 10,
+    "tension_maintenance": 10,
+    "elasticity": 7,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 7,
+    "control": 10,
+    "spin": 8,
+    "comfort": 7,
+    "feel": 9,
+    "durability": 10,
+    "tension_maintenance": 10
+  },
+    "recommended_player": {
+    "level": [
+      "Advanced",
+      "Tournament",
+      "Professional"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Counter Puncher",
+      "All Court",
+      "Flat Hitter"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson RF 01",
+    "Wilson Pro Staff",
+    "HEAD Speed",
+    "HEAD Radical",
+    "HEAD Prestige",
+    "Yonex PERCEPT",
+    "Tecnifibre TF-40",
+    "Tecnifibre T-FIGHT",
+    "Babolat Pure Strike",
+    "Dunlop CX"
+  ],
+
+  "recommended_hybrid": {
+
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Babolat Touch VS",
+      "Wilson Natural Gut",
+      "Luxilon Natural Gut",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²"
+    ],
+
+    "hybrid_roles": {
+
+      "as_mains": [
+        "Maximum Control",
+        "Maximum Tension Stability",
+        "Tournament Precision"
+      ],
+
+      "as_crosses": [
+        "Control",
+        "Stringbed Stability",
+        "Improved Durability",
+        "Hybrid Support"
+      ]
+    }
+  },
+
+  "gauge_recommendation": {
+
+    "1.25": {
+
+      "gauge_name": "17",
+
+      "best_for": [
+        "Maximum Feel",
+        "Tournament Players",
+        "Long Match Consistency",
+        "Control",
+        "Hybrid Setup"
+      ],
+
+      "tradeoffs": [
+        "Less Durable than 1.30"
+      ],
+
+      "recommended_player":
+      "Advanced players wanting maximum control while keeping additional feel."
+    },
+
+    "1.30": {
+
+      "gauge_name": "16",
+
+      "best_for": [
+        "Maximum Durability",
+        "Heavy Hitters",
+        "Professional Match Play",
+        "Directional Precision",
+        "Long Lasting Performance"
+      ],
+
+      "tradeoffs": [
+        "Slightly Firmer Feel",
+        "Slightly Less Ball Pocketing"
+      ],
+
+      "recommended_player":
+      "Players who prioritize durability, stability and precision."
+    }
+  },
+
+  "estimated_lifespan": {
+
+    "1.25": {
+      "heavy_topspin_hours": "10-16",
+      "club_player_hours": "20-35"
+    },
+
+    "1.30": {
+      "heavy_topspin_hours": "12-20",
+      "club_player_hours": "24-40"
+    }
+  },
+
+  "life_cycle": {
+
+    "break_in": "Very Short",
+
+    "peak_playability": "Immediate",
+
+    "performance_drop": "Very Low",
+
+    "tension_loss_sensitivity": "Very Low",
+
+    "recommended_monitoring":
+    "Replace only after noticeable loss of elasticity or string movement."
+  },
+
+  "tour_players": [
+
+    {
+      "name": "Serena Williams",
+      "usage": "Full Bed / Hybrid",
+      "confidence": "Official"
+    },
+
+    {
+      "name": "Venus Williams",
+      "usage": "Full Bed / Hybrid",
+      "confidence": "Official"
+    },
+
+    {
+      "name": "Grigor Dimitrov",
+      "usage": "Full Bed / Hybrid",
+      "confidence": "Official"
+    }
+
+  ],
+    "recommended_by_ai": {
+
+    "best_for": [
+      "Players Wanting Maximum Tension Maintenance",
+      "Tournament Players",
+      "Professional Players",
+      "Heavy Hitters",
+      "Control-Oriented Players",
+      "Long Match Consistency",
+      "Natural Gut Hybrid Users"
+    ],
+
+    "avoid_for": [
+      "Beginners",
+      "Players Seeking Maximum Comfort",
+      "Players With Slow Swing Speed",
+      "Players Looking For Maximum Power"
+    ],
+
+    "alternative_strings": [
+      "Luxilon ALU Power",
+      "Luxilon 4G Soft",
+      "Luxilon 4G Rough",
+      "Grapplesnake Soldier",
+      "Grapplesnake Tour M8",
+      "Tecnifibre Razor Code",
+      "Yonex Poly Tour Strike",
+      "Solinco Confidential"
+    ]
+  },
+
+  "comparison_tags": [
+    "Tour Polyester",
+    "Round Polyester",
+    "Maximum Tension Maintenance",
+    "Professional",
+    "High Control",
+    "Low Tension Loss",
+    "Hybrid Friendly",
+    "Weather Resistant"
+  ],
+
+  "ai_keywords": [
+    "luxilon",
+    "4g",
+    "4g 125",
+    "4g 130",
+    "1.25",
+    "1.30",
+    "polyetherether",
+    "polyester",
+    "maximum tension maintenance",
+    "control",
+    "professional",
+    "poly",
+    "tour string"
+  ],
+
+  "target_competitors": [
+    "Yonex Poly Tour Strike",
+    "Tecnifibre Razor Code",
+    "Kirschbaum Max Power",
+    "Solinco Confidential",
+    "Grapplesnake Soldier",
+    "Luxilon ALU Power"
+  ],
+
+  "description": {
+
+    "en": "Luxilon 4G is one of the benchmark control polyester strings in professional tennis. Designed with strategically aligned molecular chains and Poly-Ether-Ether materials, it minimizes tension loss while maintaining exceptional consistency throughout its lifespan. The string delivers outstanding control, stability and durability with a slightly cushioned impact feel. The 1.25 mm version offers additional feel and response, while the 1.30 mm version prioritizes durability and long-term stability. Used by Serena Williams, Venus Williams and Grigor Dimitrov, 4G has become one of the industry's standards for tension maintenance.",
+
+    "zh": "Luxilon 4G 是职业网坛最具代表性的控制型聚酯球线之一。采用特殊排列的高分子链结构（Strategically Aligned Molecular Chains）以及 Poly-Ether-Ether 材料，大幅降低张力衰减，在整个使用寿命内保持极高的一致性。4G 提供优秀的控制、稳定性与耐久性，同时拥有比传统聚酯更柔和的击球反馈。1.25mm 更强调手感与反馈；1.30mm 更强调耐久性、稳定性及长期保磅能力。目前 Serena Williams、Venus Williams 与 Grigor Dimitrov 等职业球员均曾使用 4G 系列。"
+  },
+
+  "verification": {
+
+    "status": "verified_from_official_product_information",
+
+    "last_updated": "2026-08-14",
+
+    "officially_verified_fields": [
+      "Poly-Ether-Ether Composition",
+      "Maximum Tension Maintenance",
+      "Strategically Aligned Molecular Chains",
+      "Weather Resistant",
+      "1.25 mm",
+      "1.30 mm",
+      "Serena Williams",
+      "Venus Williams",
+      "Grigor Dimitrov"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "AI Recommendations",
+      "Estimated Lifespan",
+      "Hybrid Compatibility",
+      "Life Cycle",
+      "Competitor Mapping"
+    ]
+  }
+}
