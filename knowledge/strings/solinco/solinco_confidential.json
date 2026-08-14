@@ -1,0 +1,472 @@
+{
+  "id": "solinco_confidential",
+  "brand": "Solinco",
+  "series": "Confidential",
+  "model": "Confidential",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Co-Polyester",
+    "string_family": "Polyester",
+    "cross_section": "Shaped",
+    "surface": "Edged / Shaped",
+    "technology": [
+      "Innovative Chemical Composition",
+      "High-Powered Polyester Monofilament Fiber"
+    ],
+    "tour_positioning": "Power / Control / Feel / Spin Performance Polyester",
+    "official_positioning": "High-performance versatile co-polyester designed for improved playability, feel and comfort while generating extreme power, spin and bite."
+  },
+
+  "specifications": {
+    "construction": "High-Powered Co-Polyester Monofilament",
+    "cross_section": "Shaped",
+    "surface": "Edged",
+
+    "packaging": [
+      {
+        "type": "Set",
+        "length_ft": 40,
+        "length_m": 12.2
+      },
+      {
+        "type": "Reel",
+        "length_ft": 656,
+        "length_m": 200
+      }
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_name": "18",
+        "gauge_mm": 1.15,
+        "available": true,
+        "power": 9,
+        "control": 9,
+        "spin": 10,
+        "comfort": 8,
+        "feel": 10,
+        "durability": 6,
+        "tension_maintenance": 9,
+        "elasticity": 9,
+        "launch_angle": "High",
+        "recommended_use": [
+          "Maximum Feel",
+          "Maximum Spin",
+          "Fast Racquet Head Speed",
+          "Advanced Players",
+          "Players Prioritizing Response Over Durability"
+        ]
+      },
+
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.20,
+        "available": true,
+        "power": 9,
+        "control": 10,
+        "spin": 10,
+        "comfort": 8,
+        "feel": 10,
+        "durability": 7,
+        "tension_maintenance": 9,
+        "elasticity": 9,
+        "launch_angle": "Medium-High",
+        "recommended_use": [
+          "Spin",
+          "Control",
+          "Feel",
+          "Fast Swing Speed",
+          "Tournament Play"
+        ]
+      },
+
+      {
+        "gauge_name": "16L",
+        "gauge_mm": 1.25,
+        "available": true,
+        "power": 9,
+        "control": 10,
+        "spin": 10,
+        "comfort": 8,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 10,
+        "elasticity": 8,
+        "launch_angle": "Medium",
+        "recommended_use": [
+          "Best Overall Balance",
+          "Maximum Control",
+          "Spin",
+          "Power",
+          "Tournament Play"
+        ]
+      },
+
+      {
+        "gauge_name": "16",
+        "gauge_mm": 1.30,
+        "available": true,
+        "power": 8,
+        "control": 10,
+        "spin": 9,
+        "comfort": 8,
+        "feel": 8,
+        "durability": 10,
+        "tension_maintenance": 10,
+        "elasticity": 7,
+        "launch_angle": "Medium-Low",
+        "recommended_use": [
+          "Maximum Durability",
+          "Maximum Stability",
+          "Heavy Hitters",
+          "Frequent String Breakers",
+          "Long Match Play"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "Innovative Chemical Composition",
+    "High-Powered Polyester Monofilament Fiber",
+    "Shaped Spin Geometry",
+    "Power and Control Optimization",
+    "Spin and Bite Amplification",
+    "Improved Tension Maintenance"
+  ],
+
+  "design_profile": {
+    "string_type": "Feel Control Spin Polyester",
+    "target_player": "Intermediate / Advanced / Tournament",
+    "arm_friendly": false,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 8,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 10,
+    "elasticity": 8,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 8,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 10
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium-Firm",
+    "snapback": 10,
+    "ball_pocketing": 9,
+    "string_movement": 2,
+    "tension_stability": 10,
+    "spin_window": "High",
+    "predictability": 10,
+    "arm_friendliness": 7,
+    "directional_precision": 10,
+    "ball_bite": 10,
+    "power_response": 9,
+    "feedback": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "All Court",
+      "Power Baseliner",
+      "Control-Oriented Player"
+    ],
+
+    "special_player_profiles": [
+      "Players Wanting Strong Control With Added Feel",
+      "Players Seeking High Spin Without Sacrificing Stability",
+      "Players Prioritizing Tension Maintenance",
+      "Players Wanting a More Refined Co-Poly Response"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson Shift",
+    "Wilson RF 01",
+    "HEAD Speed",
+    "HEAD Radical",
+    "HEAD Extreme",
+    "Yonex VCORE",
+    "Yonex PERCEPT",
+    "Babolat Pure Aero",
+    "Babolat Pure Strike",
+    "Tecnifibre T-FIGHT",
+    "Dunlop CX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Solinco Hyper-G Round",
+      "Natural Gut",
+      "Luxilon Natural Gut",
+      "Babolat Touch VS",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Control",
+        "Spin",
+        "Ball Bite",
+        "Directional Precision",
+        "Stable Response"
+      ],
+
+      "as_crosses": [
+        "Control",
+        "Stringbed Stability",
+        "Spin Support"
+      ]
+    }
+  },
+
+  "gauge_recommendation": {
+    "1.15": {
+      "gauge_name": "18",
+      "best_for": [
+        "Maximum Feel",
+        "Maximum Spin",
+        "Fast Response"
+      ],
+      "tradeoffs": [
+        "Lowest Durability"
+      ]
+    },
+
+    "1.20": {
+      "gauge_name": "17",
+      "best_for": [
+        "Spin",
+        "Control",
+        "Feel",
+        "Tournament Play"
+      ],
+      "tradeoffs": [
+        "Lower Durability Than 1.25 and 1.30"
+      ]
+    },
+
+    "1.25": {
+      "gauge_name": "16L",
+      "best_for": [
+        "Best Overall Balance",
+        "Maximum Control",
+        "Spin",
+        "Power",
+        "Tournament Play"
+      ],
+      "tradeoffs": [
+        "Less Durability Than 1.30"
+      ]
+    },
+
+    "1.30": {
+      "gauge_name": "16",
+      "best_for": [
+        "Maximum Durability",
+        "Maximum Stability",
+        "Heavy Hitters",
+        "Long Match Play"
+      ],
+      "tradeoffs": [
+        "Slightly Less Feel",
+        "Slightly Lower Spin"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.15": {
+      "heavy_topspin_hours": "5-9",
+      "club_player_hours": "10-18"
+    },
+
+    "1.20": {
+      "heavy_topspin_hours": "7-12",
+      "club_player_hours": "14-24"
+    },
+
+    "1.25": {
+      "heavy_topspin_hours": "9-16",
+      "club_player_hours": "18-30"
+    },
+
+    "1.30": {
+      "heavy_topspin_hours": "11-20",
+      "club_player_hours": "22-36"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Low",
+    "tension_loss_sensitivity": "Low",
+    "playability_duration": "Excellent",
+    "recommended_monitoring": "Replace when spin response, feel or directional control noticeably declines."
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Seeking High Control With Strong Spin",
+      "Players Wanting Better Feel From a Performance Co-Poly",
+      "Aggressive Baseliners",
+      "Tournament Players",
+      "Players Prioritizing Tension Stability",
+      "Players Wanting a Refined Balance of Power and Control"
+    ],
+
+    "avoid_for": [
+      "Beginners With Slow Swing Speed",
+      "Players With Significant Arm Sensitivity",
+      "Players Seeking Maximum Free Power",
+      "Players Wanting Multifilament-Level Comfort"
+    ],
+
+    "alternative_strings": [
+      "Solinco Hyper-G",
+      "Solinco Hyper-G Soft",
+      "Solinco Mach-10",
+      "Luxilon 4G",
+      "HEAD HAWK",
+      "Yonex Poly Tour Strike"
+    ]
+  },
+
+  "comparison_tags": [
+    "Confidential",
+    "Shaped Polyester",
+    "Control",
+    "Spin",
+    "Power",
+    "Feel",
+    "High Tension Maintenance",
+    "High-Powered Filament",
+    "Tournament"
+  ],
+
+  "ai_keywords": [
+    "solinco",
+    "confidential",
+    "solinco confidential",
+    "1.15",
+    "1.20",
+    "1.25",
+    "1.30",
+    "18 gauge",
+    "17 gauge",
+    "16l",
+    "16 gauge",
+    "high powered filament",
+    "co polyester",
+    "spin",
+    "bite",
+    "power",
+    "control",
+    "feel",
+    "comfort",
+    "tension maintenance"
+  ],
+
+  "target_competitors": [
+    "Solinco Hyper-G",
+    "Luxilon 4G",
+    "HEAD HAWK",
+    "Yonex Poly Tour Strike",
+    "Kirschbaum Max Power",
+    "Tecnifibre Razor Code",
+    "MSV Bussard"
+  ],
+
+  "description": {
+    "en": "Solinco Confidential is a high-performance shaped co-polyester string engineered to deliver a refined balance of power, control, spin, feel and comfort. Its innovative chemical composition works with a high-powered polyester monofilament fiber to generate strong ball bite and spin while maintaining precise directional control and improved tension stability. Compared with more spin-dominant Solinco offerings, Confidential places greater emphasis on feedback, consistency and controlled power.",
+
+    "zh": "Solinco Confidential 是一款高性能异形共聚酯球线，核心定位是在力量、控制、旋转、手感和舒适性之间取得更精细的平衡。创新化学配方与高性能聚酯单丝结合，能够提供强咬球和高旋转，同时保持精准方向控制与优秀保磅表现。相比更加偏旋转导向的 Hyper-G，Confidential 更强调稳定反馈、精确控制以及可预测的力量输出。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Solinco Confidential",
+      "High-performance versatile co-polyester",
+      "Improved playability",
+      "Feel",
+      "Comfort",
+      "Extreme power",
+      "Spin",
+      "Ball bite",
+      "Innovative chemical composition",
+      "High-powered polyester monofilament fiber",
+      "Maximum power",
+      "Control",
+      "Spin amplification",
+      "Improved tension maintenance",
+      "Feel-based performance",
+      "Power and control positioning",
+      "1.15 mm / 18 gauge",
+      "1.20 mm / 17 gauge",
+      "1.25 mm / 16L gauge",
+      "1.30 mm / 16 gauge",
+      "Set length: 40 ft / 12.2 m",
+      "Reel length: 656 ft / 200 m"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendations",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
