@@ -1,0 +1,495 @@
+{
+  "id": "msv_focus_hex_plus_38",
+  "brand": "MSV",
+  "series": "Focus Hex",
+  "model": "Focus Hex Plus 38",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "High-Performance Co-Polyester",
+    "string_family": "Polyester",
+    "cross_section": "Hexagonal",
+    "surface": "Shaped",
+    "relative_elasticity": "38% more elastic than MSV Focus Hex",
+    "softness_positioning": "Softest MSV co-polyester string",
+    "tour_positioning": "Comfort / Arm Protection / Spin Polyester",
+    "target_level": "Intermediate / Advanced / Tournament"
+  },
+
+  "specifications": {
+    "construction": "High-Performance Co-Polyester Monofilament",
+    "cross_section": "Hexagonal (6-Sided)",
+    "surface": "Shaped",
+
+    "available_colors": [
+      "Black",
+      "White",
+      "Red"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_mm": 1.15,
+        "available": true,
+        "power": 10,
+        "control": 8,
+        "spin": 10,
+        "comfort": 10,
+        "feel": 10,
+        "durability": 6,
+        "tension_maintenance": 8,
+        "elasticity": 10,
+        "launch_angle": "High",
+
+        "recommended_use": [
+          "Maximum Comfort",
+          "Maximum Spin",
+          "Maximum Feel",
+          "Arm-Friendly Polyester",
+          "Players Using Stiff Racquets"
+        ]
+      },
+
+      {
+        "gauge_mm": 1.20,
+        "available": true,
+        "power": 10,
+        "control": 9,
+        "spin": 10,
+        "comfort": 10,
+        "feel": 10,
+        "durability": 7,
+        "tension_maintenance": 9,
+        "elasticity": 10,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Power",
+          "Spin",
+          "Maximum Comfort",
+          "Long Match Play",
+          "Players With Arm Sensitivity"
+        ]
+      },
+
+      {
+        "gauge_mm": 1.25,
+        "available": true,
+        "power": 9,
+        "control": 10,
+        "spin": 10,
+        "comfort": 10,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "elasticity": 10,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Best Overall Balance",
+          "Maximum Comfort",
+          "High Spin",
+          "Control",
+          "Arm Protection",
+          "Tournament Play"
+        ]
+      },
+
+      {
+        "gauge_mm": 1.30,
+        "available": true,
+        "power": 8,
+        "control": 10,
+        "spin": 9,
+        "comfort": 10,
+        "feel": 8,
+        "durability": 10,
+        "tension_maintenance": 10,
+        "elasticity": 9,
+        "launch_angle": "Medium",
+
+        "recommended_use": [
+          "Maximum Durability",
+          "Maximum Stability",
+          "Comfort-Oriented Heavy Hitters",
+          "Long Match Play",
+          "Players Using Stiff Frames"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "38% Enhanced Elasticity",
+    "Special Co-Polyester Additives",
+    "Hexagonal Geometry",
+    "Strong Snap-Back Effect",
+    "Low String Movement",
+    "Arm-Protection-Oriented Construction"
+  ],
+
+  "design_profile": {
+    "string_type": "Ultra-Comfort Spin Polyester",
+    "target_player": "Intermediate / Advanced / Tournament",
+    "arm_friendly": true,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 10,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9,
+    "elasticity": 10,
+    "launch_angle": "Medium-High"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 10,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Very Soft",
+    "snapback": 10,
+    "ball_pocketing": 10,
+    "string_movement": 1,
+    "tension_stability": 9,
+    "spin_window": "High",
+    "predictability": 9,
+    "arm_friendliness": 10,
+    "directional_precision": 10,
+    "ball_bite": 10,
+    "shock_absorption": 10,
+    "long_match_comfort": 10
+  },
+
+  "recommended_tension": {
+    "1.25": {
+      "kg": {
+        "min": 22,
+        "max": 26
+      },
+      "lbs": {
+        "min": 48.5,
+        "max": 57.3
+      },
+      "source": "Manufacturer supplied recommendation"
+    }
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium",
+      "Medium-Fast",
+      "Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "All Court",
+      "Long Match Player"
+    ],
+
+    "special_player_profiles": [
+      "Players Using Stiff Racquet Frames",
+      "Players With Arm Sensitivity",
+      "Comfort-Seeking Players",
+      "Players Playing Long Matches",
+      "Players Wanting Maximum Spin From a Very Soft Co-Poly"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Babolat Pure Drive",
+    "Babolat Pure Aero",
+    "Wilson Ultra",
+    "Wilson Shift",
+    "HEAD Extreme",
+    "HEAD Speed",
+    "Yonex EZONE",
+    "Yonex VCORE",
+    "Tecnifibre T-FIGHT",
+    "Dunlop FX",
+    "Dunlop SX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Natural Gut",
+      "Luxilon Natural Gut",
+      "Babolat Touch VS",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²",
+      "Kirschbaum Touch Multifibre"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Maximum Comfort",
+        "Maximum Spin",
+        "Ball Bite",
+        "Arm Protection"
+      ],
+
+      "as_crosses": [
+        "Comfort",
+        "Spin Support",
+        "Stringbed Softening",
+        "Arm Protection"
+      ]
+    }
+  },
+
+  "gauge_recommendation": {
+    "1.15": {
+      "best_for": [
+        "Maximum Comfort",
+        "Maximum Feel",
+        "Maximum Spin"
+      ],
+      "tradeoffs": [
+        "Lowest Durability",
+        "Not Ideal For Frequent String Breakers"
+      ]
+    },
+
+    "1.20": {
+      "best_for": [
+        "Maximum Power",
+        "Spin",
+        "Comfort",
+        "Arm-Friendly Play"
+      ],
+      "tradeoffs": [
+        "Lower Durability Than 1.25 and 1.30"
+      ]
+    },
+
+    "1.25": {
+      "best_for": [
+        "Best Overall Balance",
+        "Maximum Comfort",
+        "Control",
+        "Spin",
+        "Tournament Play"
+      ],
+      "tradeoffs": [
+        "Less Durability Than 1.30"
+      ]
+    },
+
+    "1.30": {
+      "best_for": [
+        "Maximum Durability",
+        "Maximum Stability",
+        "Comfort",
+        "Long Match Play"
+      ],
+      "tradeoffs": [
+        "Slightly Less Feel",
+        "Slightly Lower Spin Than Thinner Gauges"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.15": {
+      "heavy_topspin_hours": "5-9",
+      "club_player_hours": "10-18"
+    },
+
+    "1.20": {
+      "heavy_topspin_hours": "6-11",
+      "club_player_hours": "12-22"
+    },
+
+    "1.25": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "16-28"
+    },
+
+    "1.30": {
+      "heavy_topspin_hours": "10-18",
+      "club_player_hours": "20-34"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Immediate",
+    "peak_playability": "Immediate",
+    "performance_drop": "Medium-Low",
+    "tension_loss_sensitivity": "Medium-Low",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when snapback, spin response or control noticeably declines."
+  },
+
+  "test_results": {
+    "tennis_warehouse_university": {
+      "result": "Reported as having one of the highest spin potentials among very soft strings",
+      "source_type": "Manufacturer-supplied reference to Tennis Warehouse University"
+    }
+  },
+
+  "tour_players": [
+    {
+      "name": "Julie Struplova",
+      "tour": "WTA",
+      "usage": "Reported Player Usage",
+      "reported_ranking": "WTA Best #250",
+      "confidence": "Manufacturer Supplied"
+    },
+
+    {
+      "name": "Petra Krejsova",
+      "tour": "WTA",
+      "usage": "Reported Player Usage",
+      "reported_ranking": "WTA Best #221",
+      "confidence": "Manufacturer Supplied"
+    }
+  ],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Seeking the Softest MSV Co-Poly",
+      "Players Using Stiff Racquets",
+      "Players With Arm Sensitivity",
+      "Players Wanting Maximum Spin With Very High Comfort",
+      "Long Match Players",
+      "Intermediate to Advanced Players"
+    ],
+
+    "avoid_for": [
+      "Players Seeking Extremely Crisp Firm Polyester",
+      "Frequent String Breakers Using 1.15 mm",
+      "Players Wanting Very Low Launch Angle"
+    ],
+
+    "alternative_strings": [
+      "MSV Focus Hex Plus 25",
+      "MSV Focus HEX Soft",
+      "Luxilon Element",
+      "Tecnifibre Razor Soft",
+      "Yonex Poly Tour Air",
+      "Babolat RPM Team"
+    ]
+  },
+
+  "comparison_tags": [
+    "Hexagonal",
+    "38% More Elastic",
+    "Softest MSV Co-Poly",
+    "Maximum Comfort",
+    "Arm Protection",
+    "High Spin",
+    "Strong Snapback",
+    "Low String Movement",
+    "Stiff Racquet Friendly"
+  ],
+
+  "ai_keywords": [
+    "msv",
+    "focus hex plus 38",
+    "msv focus hex plus 38",
+    "focus hex plus38",
+    "1.15",
+    "1.20",
+    "1.25",
+    "1.30",
+    "black",
+    "white",
+    "red",
+    "38 percent more elastic",
+    "softest msv co poly",
+    "hexagonal",
+    "snapback",
+    "arm protection",
+    "arm friendly",
+    "spin",
+    "stiff racquet",
+    "22 26 kg"
+  ],
+
+  "target_competitors": [
+    "MSV Focus Hex Plus 25",
+    "MSV Focus HEX Soft",
+    "Luxilon Element",
+    "Tecnifibre Razor Soft",
+    "Yonex Poly Tour Air",
+    "Babolat RPM Team",
+    "Solinco Hyper-G Soft"
+  ],
+
+  "description": {
+    "en": "MSV Focus Hex Plus 38 is the softest co-polyester string in the MSV lineup, offering approximately 38% greater elasticity than the original Focus Hex. Designed for players using stiff racquet frames or seeking maximum arm comfort, it combines a very soft response with the spin benefits of a hexagonal profile and strong snapback. Despite its high flexibility, it retains excellent control and minimal string movement. The 1.25 mm version has a manufacturer-recommended tension range of 22 to 26 kg.",
+
+    "zh": "MSV Focus Hex Plus 38 是 MSV 系列中最柔和的共聚酯球线，官方表示其弹性相比标准 Focus Hex 提升约 38%。它特别适合使用偏硬球拍框、希望减轻手臂负担，或者需要长时间比赛舒适性的球员。六边形截面和强 Snap-back 保留了非常高的旋转潜力，同时在高柔韧性的情况下仍能提供优秀控制和极低的线床移动。1.25毫米版本官方建议穿线磅数为 22–26 kg（48.5–57.3 lbs）。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "MSV Focus Hex Plus 38",
+      "1.15 mm",
+      "1.20 mm",
+      "1.25 mm",
+      "1.30 mm",
+      "Black",
+      "White",
+      "Red",
+      "High-performance co-polyester",
+      "Hexagonal profile",
+      "38% more elastic than MSV Focus Hex",
+      "Softest MSV co-polyester",
+      "Very high arm protection",
+      "Soft comfortable feel",
+      "Strong snap-back effect",
+      "Excellent control despite flexibility",
+      "Minimal string slippage",
+      "Recommended tension 22-26 kg for 1.25 mm",
+      "Reported Tennis Warehouse University soft-string spin positioning",
+      "Julie Struplova reported usage",
+      "Petra Krejsova reported usage"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendations",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
