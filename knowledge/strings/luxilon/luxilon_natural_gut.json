@@ -1,0 +1,463 @@
+{
+  "id": "luxilon_natural_gut",
+  "brand": "Luxilon",
+  "series": "Natural Gut",
+  "model": "Natural Gut",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Natural Gut",
+    "material": "Organic Natural Gut",
+    "string_family": "Natural Gut",
+    "surface": "Coated",
+    "technology": [
+      "Unique Protective Coating",
+      "Organic Raw Material"
+    ],
+    "tour_positioning": "Premium Natural Gut / Hybrid Performance",
+    "hybrid_engineered": true,
+    "premium_category": true
+  },
+
+  "specifications": {
+    "construction": "Natural Gut",
+    "cross_section": "Round",
+    "surface": "Coated",
+
+    "available_colors": [
+      "Natural"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_name": "17L",
+        "gauge_mm": 1.20,
+        "available": true,
+
+        "packaging": [
+          {
+            "type": "Set",
+            "length_ft": 40,
+            "length_m": 12.2
+          }
+        ],
+
+        "power": 10,
+        "control": 8,
+        "spin": 8,
+        "comfort": 10,
+        "feel": 10,
+        "durability": 7,
+        "tension_maintenance": 10,
+        "elasticity": 10,
+        "shock_absorption": 10,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Maximum Feel",
+          "Maximum Comfort",
+          "Maximum Elasticity",
+          "Hybrid Setups",
+          "Advanced Players",
+          "Tournament Players"
+        ]
+      },
+
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.25,
+        "available": true,
+
+        "packaging": [
+          {
+            "type": "Set",
+            "length_ft": 40,
+            "length_m": 12.2
+          }
+        ],
+
+        "power": 10,
+        "control": 9,
+        "spin": 8,
+        "comfort": 10,
+        "feel": 10,
+        "durability": 8,
+        "tension_maintenance": 10,
+        "elasticity": 10,
+        "shock_absorption": 10,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Best Overall Natural Gut Balance",
+          "Maximum Comfort",
+          "Premium Hybrid Setups",
+          "Tournament Play",
+          "Arm-Friendly Performance"
+        ]
+      },
+
+      {
+        "gauge_name": "16",
+        "gauge_mm": 1.30,
+        "available": true,
+
+        "packaging": [
+          {
+            "type": "Set",
+            "length_ft": 40,
+            "length_m": 12.2
+          }
+        ],
+
+        "power": 9,
+        "control": 9,
+        "spin": 7,
+        "comfort": 10,
+        "feel": 10,
+        "durability": 9,
+        "tension_maintenance": 10,
+        "elasticity": 10,
+        "shock_absorption": 10,
+        "launch_angle": "Medium",
+
+        "recommended_use": [
+          "Maximum Durability",
+          "Maximum Stability",
+          "Premium Hybrid Setups",
+          "Frequent Match Play",
+          "Players Wanting Natural Gut With More Resistance"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "Unique Protective Coating",
+    "Organic Natural Gut Fibers",
+    "Exceptional Shock Absorption",
+    "Long-Term Tension Maintenance",
+    "Hybrid-Oriented Construction"
+  ],
+
+  "design_profile": {
+    "string_type": "Premium Natural Gut",
+    "target_player": "All Levels / Advanced / Tournament / Professional",
+
+    "arm_friendly": true,
+
+    "spin_focus": false,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 10,
+    "control": 9,
+    "spin": 8,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 8,
+    "tension_maintenance": 10,
+    "elasticity": 10,
+    "shock_absorption": 10,
+    "launch_angle": "Medium-High"
+  },
+
+  "ai_rating": {
+    "power": 10,
+    "control": 9,
+    "spin": 8,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 8,
+    "tension_maintenance": 10
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Ultra-Soft",
+    "snapback": 8,
+    "ball_pocketing": 10,
+    "string_movement": 4,
+    "tension_stability": 10,
+    "spin_window": "Medium",
+    "predictability": 9,
+    "arm_friendliness": 10
+  },
+
+  "natural_gut_properties": {
+    "organic_material": true,
+    "protective_coating": true,
+    "humidity_sensitivity": "Medium",
+    "shock_absorption": "Exceptional",
+    "elasticity": "Exceptional",
+    "tension_maintenance": "Exceptional",
+    "hybrid_recommended": true
+  },
+    "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate",
+      "Advanced",
+      "Tournament",
+      "Professional"
+    ],
+
+    "swing_speed": [
+      "Slow",
+      "Medium",
+      "Medium-Fast",
+      "Fast"
+    ],
+
+    "play_style": [
+      "All Court",
+      "Baseline",
+      "Serve & Volley",
+      "Touch Player",
+      "Flat Hitter"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson Pro Staff",
+    "Wilson RF 01",
+    "HEAD Speed",
+    "HEAD Radical",
+    "Yonex PERCEPT",
+    "Yonex EZONE",
+    "Tecnifibre TF-40",
+    "Tecnifibre T-FIGHT",
+    "Babolat Pure Strike",
+    "Dunlop CX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Luxilon ALU Power",
+      "Luxilon ALU Power Rough",
+      "Luxilon 4G",
+      "Luxilon 4G Rough",
+      "Luxilon 4G Soft",
+      "Luxilon Element"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Maximum Power",
+        "Maximum Comfort",
+        "Maximum Feel",
+        "Ball Pocketing",
+        "Tension Stability"
+      ],
+
+      "as_crosses": [
+        "Comfort",
+        "Power",
+        "Feel",
+        "Shock Absorption",
+        "Stringbed Softening"
+      ]
+    }
+  },
+
+  "gauge_recommendation": {
+    "1.20": {
+      "gauge_name": "17L",
+
+      "best_for": [
+        "Maximum Feel",
+        "Maximum Touch",
+        "Maximum Elasticity",
+        "Hybrid Setups",
+        "Advanced Players"
+      ],
+
+      "tradeoffs": [
+        "Lowest Durability",
+        "More Frequent Restringing"
+      ],
+
+      "recommended_player": "Players prioritizing feel, touch and responsiveness over durability."
+    },
+
+    "1.25": {
+      "gauge_name": "17",
+
+      "best_for": [
+        "Best Overall Balance",
+        "Comfort",
+        "Power",
+        "Feel",
+        "Hybrid Setups"
+      ],
+
+      "tradeoffs": [
+        "Less Durability Than 1.30"
+      ],
+
+      "recommended_player": "Players seeking the most balanced Luxilon Natural Gut setup."
+    },
+
+    "1.30": {
+      "gauge_name": "16",
+
+      "best_for": [
+        "Maximum Durability",
+        "Maximum Stability",
+        "Long Match Play",
+        "Hybrid Setups",
+        "Frequent Players"
+      ],
+
+      "tradeoffs": [
+        "Slightly Less Spin",
+        "Slightly Less Responsive Than Thinner Gauges"
+      ],
+
+      "recommended_player": "Players prioritizing durability and stability while retaining natural gut comfort."
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.20": {
+      "heavy_topspin_hours": "6-10",
+      "club_player_hours": "15-25"
+    },
+
+    "1.25": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "18-30"
+    },
+
+    "1.30": {
+      "heavy_topspin_hours": "10-18",
+      "club_player_hours": "22-35"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Immediate",
+    "peak_playability": "Immediate",
+    "performance_drop": "Very Low",
+    "tension_loss_sensitivity": "Very Low",
+    "playability_duration": "Excellent",
+    "recommended_monitoring": "Replace when visible fraying, damage or loss of structural integrity becomes significant."
+  },
+
+  "tour_players": [],
+    "recommended_by_ai": {
+    "best_for": [
+      "Players Seeking Maximum Comfort",
+      "Players Wanting The Best Feel Available",
+      "Professional Hybrid Setups",
+      "Players Recovering From Arm Discomfort",
+      "Tournament Players",
+      "Serve And Volley Players",
+      "All Court Players"
+    ],
+
+    "avoid_for": [
+      "Players Frequently Playing In Wet Conditions",
+      "Frequent String Breakers Using Full Bed Natural Gut",
+      "Budget-Conscious Players",
+      "Players Looking For Maximum Spin From Polyester"
+    ],
+
+    "alternative_strings": [
+      "Babolat Touch VS",
+      "Wilson Natural Gut",
+      "Luxilon ALU Power Hybrid",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²"
+    ]
+  },
+
+  "comparison_tags": [
+    "Natural Gut",
+    "Premium",
+    "Maximum Comfort",
+    "Maximum Feel",
+    "Maximum Elasticity",
+    "Maximum Tension Maintenance",
+    "Hybrid Ready",
+    "Professional"
+  ],
+
+  "ai_keywords": [
+    "luxilon",
+    "natural gut",
+    "luxilon natural gut",
+    "natural gut 120",
+    "natural gut 125",
+    "natural gut 130",
+    "1.20",
+    "1.25",
+    "1.30",
+    "17L",
+    "17",
+    "16",
+    "organic gut",
+    "coated natural gut",
+    "hybrid",
+    "comfort",
+    "feel",
+    "power",
+    "tension maintenance",
+    "shock absorption"
+  ],
+
+  "target_competitors": [
+    "Babolat Touch VS",
+    "Wilson Natural Gut",
+    "Tecnifibre X-One Biphase",
+    "Tecnifibre NRG²",
+    "Babolat Xcel"
+  ],
+
+  "description": {
+    "en": "Luxilon Natural Gut is a premium natural gut string engineered with a unique protective coating and carefully selected organic raw materials to deliver exceptional feel, comfort, elasticity and long-term tension maintenance. Designed specifically to complement Luxilon monofilament strings in hybrid setups, it offers remarkable shock absorption, outstanding responsiveness and durability that exceeds most synthetic strings. Available in 1.20, 1.25 and 1.30 mm gauges, it allows players to choose between ultimate feel, balanced performance or increased durability.",
+
+    "zh": "Luxilon Natural Gut 是 Luxilon 推出的高端天然肠线，采用天然有机原料与专属保护涂层制造，能够提供极佳的手感、舒适性、弹性以及长期保磅能力。官方特别强调其针对 Luxilon 聚酯球线混穿而设计，在保持天然肠线优秀击球反馈的同时，拥有出色的避震效果、响应速度以及超过绝大多数合成球线的耐打性。提供 1.20、1.25 与 1.30 三种线径，可分别满足极致手感、综合平衡及更高耐久性的不同需求。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_official_product_information",
+    "last_updated": "2026-08-14",
+
+    "officially_verified_fields": [
+      "Natural Gut construction",
+      "Unique protective coating",
+      "Organic raw material",
+      "Hybrid optimized",
+      "Exceptional touch",
+      "Exceptional comfort",
+      "Exceptional tension maintenance",
+      "Exceptional shock absorption",
+      "1.20 mm",
+      "1.25 mm",
+      "1.30 mm",
+      "Set length: 40 ft / 12.2 m"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Natural Gut Properties",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
