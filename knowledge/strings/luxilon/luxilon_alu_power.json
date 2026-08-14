@@ -1,0 +1,404 @@
+{
+  "id": "luxilon_alu_power",
+  "brand": "Luxilon",
+  "series": "ALU Power",
+  "model": "ALU Power",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Poly-Ether-Ether",
+    "composition": "Poly-Ether-Ether with Aluminum Additives",
+    "string_family": "Polyester",
+    "surface": "Smooth",
+    "weather_resistance": true,
+    "moisture_resistant": true,
+    "tour_positioning": "Tour Performance String"
+  },
+
+  "specifications": {
+    "construction": "Polyester Monofilament",
+    "cross_section": "Round",
+    "surface": "Smooth",
+
+    "available_colors": [
+      "Silver"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_name": "18",
+        "gauge_mm": 1.15,
+        "available": true,
+
+        "packaging": [
+          {
+            "type": "Set",
+            "length_ft": 40,
+            "length_m": 12.2
+          }
+        ],
+
+        "power": 9,
+        "control": 9,
+        "spin": 9,
+        "comfort": 7,
+        "feel": 10,
+        "durability": 6,
+        "tension_maintenance": 8,
+        "elasticity": 9,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Maximum Feel",
+          "Maximum Touch",
+          "Fast Racquet Head Speed",
+          "Advanced Players",
+          "Tournament Players",
+          "Players Who Do Not Break Strings Frequently"
+        ]
+      },
+
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.25,
+        "available": true,
+
+        "power": 8,
+        "control": 10,
+        "spin": 9,
+        "comfort": 7,
+        "feel": 10,
+        "durability": 8,
+        "tension_maintenance": 8,
+        "elasticity": 8,
+        "launch_angle": "Medium",
+
+        "recommended_use": [
+          "Best Overall Balance",
+          "Tournament Play",
+          "Control",
+          "Feel",
+          "Spin",
+          "Fast Swing Speed"
+        ]
+      },
+
+      {
+        "gauge_name": "16",
+        "gauge_mm": 1.30,
+        "available": true,
+
+        "power": 7,
+        "control": 10,
+        "spin": 8,
+        "comfort": 7,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "elasticity": 7,
+        "launch_angle": "Medium-Low",
+
+        "recommended_use": [
+          "Maximum Durability",
+          "Maximum Stability",
+          "Heavy Hitters",
+          "Frequent String Breakers",
+          "Directional Control"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "Poly-Ether-Ether Composition",
+    "Aluminum Additives",
+    "Near-Zero String Variance",
+    "Moisture Resistance",
+    "Atmospheric Condition Resistance"
+  ],
+
+  "design_profile": {
+    "string_type": "Tour Control Polyester",
+    "target_player": "Advanced / Tournament / Professional",
+    "arm_friendly": false,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": false,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 10,
+    "spin": 9,
+    "comfort": 7,
+    "feel": 10,
+    "durability": 8,
+    "tension_maintenance": 8,
+    "elasticity": 8,
+    "launch_angle": "Medium"
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament",
+      "Professional"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "All Court",
+      "Flat Hitter",
+      "Counter Puncher",
+      "Modern Power Tennis"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson Pro Staff",
+    "Wilson RF 01",
+    "HEAD Speed",
+    "HEAD Radical",
+    "HEAD Prestige",
+    "Yonex PERCEPT",
+    "Yonex EZONE",
+    "Tecnifibre TF-40",
+    "Tecnifibre T-FIGHT",
+    "Babolat Pure Strike",
+    "Dunlop CX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Babolat Touch VS",
+      "Wilson Natural Gut",
+      "Luxilon Natural Gut",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Control",
+        "Spin",
+        "Crisp Response",
+        "Directional Precision"
+      ],
+
+      "as_crosses": [
+        "Control",
+        "Snapback Support",
+        "Crisp Feel",
+        "Stringbed Stabilization"
+      ]
+    }
+  },
+
+  "gauge_recommendation": {
+    "1.15": {
+      "gauge_name": "18",
+
+      "best_for": [
+        "Maximum Feel",
+        "Touch",
+        "Ball Pocketing",
+        "Spin",
+        "Fast Racquet Head Speed"
+      ],
+
+      "tradeoffs": [
+        "Lowest Durability",
+        "More Frequent Restringing",
+        "Not Ideal for Frequent String Breakers"
+      ],
+
+      "recommended_player": "Advanced players prioritizing feel, responsiveness and spin over durability"
+    },
+
+    "1.25": {
+      "gauge_name": "17",
+
+      "best_for": [
+        "Best Overall Balance",
+        "Control",
+        "Feel",
+        "Spin",
+        "Tournament Play"
+      ],
+
+      "tradeoffs": [
+        "Less Durability than 1.30",
+        "Less Maximum Feel than 1.15"
+      ],
+
+      "recommended_player": "Best all-around ALU Power gauge for advanced and tournament players"
+    },
+
+    "1.30": {
+      "gauge_name": "16",
+
+      "best_for": [
+        "Maximum Durability",
+        "Maximum Stability",
+        "Heavy Hitters",
+        "Frequent String Breakers",
+        "Lower Launch Angle"
+      ],
+
+      "tradeoffs": [
+        "Slightly Lower Spin",
+        "Slightly Firmer Response",
+        "Less Touch than Thinner Gauges"
+      ],
+
+      "recommended_player": "Powerful advanced players prioritizing stability, control and durability"
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.15": {
+      "heavy_topspin_hours": "5-9",
+      "club_player_hours": "10-18"
+    },
+
+    "1.25": {
+      "heavy_topspin_hours": "7-12",
+      "club_player_hours": "14-24"
+    },
+
+    "1.30": {
+      "heavy_topspin_hours": "9-15",
+      "club_player_hours": "18-30"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Very Short",
+    "peak_playability": "Immediate",
+    "performance_drop": "Medium-High",
+    "tension_loss_sensitivity": "Medium-High",
+    "recommended_monitoring": "Restring when control, response or snapback noticeably declines"
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Advanced Players",
+      "Tournament Players",
+      "Fast Swing Speeds",
+      "Players Seeking Crisp Feel",
+      "Players Seeking Maximum Directional Control",
+      "Players Wanting Tour-Level Response",
+      "Hybrid Setups with Natural Gut"
+    ],
+
+    "avoid_for": [
+      "Beginners",
+      "Players With Significant Arm Sensitivity",
+      "Players Seeking Maximum Comfort",
+      "Slow Swing Speed Players"
+    ],
+
+    "alternative_strings": [
+      "Luxilon 4G",
+      "Luxilon Element",
+      "Grapplesnake Tour Sniper",
+      "Grapplesnake Tour M8",
+      "Tecnifibre Razor Soft",
+      "Babolat RPM Blast",
+      "Yonex Poly Tour Strike"
+    ]
+  },
+
+  "comparison_tags": [
+    "Tour Polyester",
+    "Round Polyester",
+    "Maximum Control",
+    "Crisp Feel",
+    "High Response",
+    "High Spin",
+    "Aluminum Additives",
+    "Tour Proven",
+    "Hybrid Friendly"
+  ],
+
+  "ai_keywords": [
+    "luxilon",
+    "alu power",
+    "alu power 115",
+    "alu power 125",
+    "alu power 130",
+    "1.15",
+    "1.25",
+    "1.30",
+    "18 gauge",
+    "17 gauge",
+    "16 gauge",
+    "polyester",
+    "monofilament",
+    "aluminum",
+    "poly ether ether",
+    "control",
+    "feel",
+    "spin",
+    "tour string",
+    "hybrid"
+  ],
+
+  "target_competitors": [
+    "Grapplesnake Tour Sniper",
+    "Grapplesnake Tour M8",
+    "Solinco Tour Bite",
+    "Kirschbaum Max Power",
+    "Tecnifibre Razor Soft",
+    "Yonex Poly Tour Strike",
+    "Babolat RPM Blast"
+  ],
+
+  "description": {
+    "en": "Luxilon ALU Power is one of the benchmark tour-level polyester tennis strings. Its proprietary poly-ether-ether composition with aluminum additives delivers a distinctive combination of crisp feel, control, power and responsiveness. The string is highly resistant to atmospheric conditions and manufactured with extremely low variance for consistent performance. The 1.15 mm version emphasizes feel and responsiveness, the 1.25 mm version provides the most balanced performance, and the 1.30 mm version emphasizes durability, stability and control.",
+
+    "zh": "Luxilon ALU Power 是职业巡回赛级聚酯球线中的标杆产品之一。其独特的 Poly-Ether-Ether 配方加入铝元素，在清脆击球感、精准控制、力量输出和快速响应之间形成非常鲜明的平衡，同时对湿度等环境条件具有很强的稳定性。1.15毫米版本最强调手感、触球和响应；1.25毫米版本最均衡；1.30毫米版本则更强调耐久、稳定性与方向控制。"
+  },
+
+  "verification": {
+    "status": "partially_verified_from_official_and_supplied_product_information",
+    "last_updated": "2026-08-14",
+
+    "officially_verified_fields": [
+      "ALU Power 1.15 mm / 18 gauge",
+      "1.15 mm set length: 40 ft / 12.2 m",
+      "Poly-Ether-Ether composition",
+      "Aluminum additives",
+      "Near-zero string variance",
+      "Resistance to atmospheric moisture",
+      "Control-oriented polyester positioning"
+    ],
+
+    "database_model_fields": [
+      "AI performance scores",
+      "recommended racquets",
+      "estimated lifespan",
+      "life cycle classification",
+      "AI recommendations"
+    ]
+  }
+}
