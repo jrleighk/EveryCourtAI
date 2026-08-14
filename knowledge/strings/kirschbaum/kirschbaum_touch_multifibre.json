@@ -1,0 +1,351 @@
+{
+  "id": "kirschbaum_touch_multifibre",
+  "brand": "Kirschbaum",
+  "series": "Touch",
+  "model": "Touch Multifibre",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Multifilament",
+    "material": "Polyamide",
+    "string_family": "Multifilament",
+    "core_structure": "1500 to 2400 High-Grade Polyamide Microfilaments",
+    "manufacturing_process": [
+      "Pre-Stretched",
+      "Twisted Multifilament Core"
+    ],
+    "surface": "PV Coated",
+    "tour_positioning": "Comfort / Feel / Natural Gut-Like Multifilament"
+  },
+
+  "specifications": {
+    "construction": "Polyamide Multifilament",
+    "cross_section": "Round",
+    "surface": "PV Coating",
+
+    "available_gauges": [
+      {
+        "gauge_mm": 1.25,
+        "available": true,
+        "power": 10,
+        "control": 8,
+        "spin": 8,
+        "comfort": 10,
+        "feel": 10,
+        "durability": 7,
+        "tension_maintenance": 9,
+        "elasticity": 10,
+        "shock_absorption": 10,
+        "launch_angle": "Medium-High",
+        "recommended_use": [
+          "Maximum Feel",
+          "Maximum Comfort",
+          "Arm-Friendly Setup",
+          "Touch Players",
+          "Players Seeking Natural Gut-Like Response"
+        ]
+      },
+
+      {
+        "gauge_mm": 1.30,
+        "available": true,
+        "power": 9,
+        "control": 9,
+        "spin": 7,
+        "comfort": 10,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "elasticity": 9,
+        "shock_absorption": 10,
+        "launch_angle": "Medium",
+        "recommended_use": [
+          "More Durability",
+          "Maximum Comfort",
+          "Arm-Friendly Setup",
+          "Frequent Club Play",
+          "Players Wanting Natural Gut-Like Feel With More Resistance"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "1500-2400 High-Grade Polyamide Microfilaments",
+    "Pre-Stretched Construction",
+    "Twisted Multifilament Core",
+    "Ball-Biting PV Coating",
+    "Natural Gut-Like Response"
+  ],
+
+  "design_profile": {
+    "string_type": "Premium Comfort Multifilament",
+    "target_player": "Beginner / Intermediate / Advanced",
+    "arm_friendly": true,
+    "spin_focus": false,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 10,
+    "control": 8,
+    "spin": 8,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 8,
+    "tension_maintenance": 9,
+    "elasticity": 10,
+    "shock_absorption": 10,
+    "launch_angle": "Medium-High"
+  },
+
+  "ai_rating": {
+    "power": 10,
+    "control": 8,
+    "spin": 8,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 8,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Soft",
+    "snapback": 7,
+    "ball_pocketing": 10,
+    "string_movement": 4,
+    "tension_stability": 9,
+    "spin_window": "Medium",
+    "predictability": 9,
+    "arm_friendliness": 10,
+    "shock_absorption": 10,
+    "natural_gut_similarity": 9
+  },
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate",
+      "Advanced"
+    ],
+
+    "swing_speed": [
+      "Slow",
+      "Medium",
+      "Medium-Fast",
+      "Fast"
+    ],
+
+    "play_style": [
+      "All Court",
+      "Serve & Volley",
+      "Touch Player",
+      "Baseline",
+      "Doubles"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Clash",
+    "Wilson Blade",
+    "HEAD Speed",
+    "HEAD Boom",
+    "Yonex EZONE",
+    "Yonex PERCEPT",
+    "Babolat Pure Drive",
+    "Babolat Pure Strike",
+    "Tecnifibre TF-40",
+    "Tecnifibre T-FIGHT",
+    "Dunlop FX",
+    "Dunlop CX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Kirschbaum Max Power",
+      "Kirschbaum Max Power Rough",
+      "Kirschbaum Pro Line Rough",
+      "Luxilon ALU Power",
+      "HEAD HAWK TOUCH",
+      "Babolat RPM Blast"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Comfort",
+        "Power",
+        "Feel",
+        "Ball Pocketing"
+      ],
+
+      "as_crosses": [
+        "Comfort",
+        "Stringbed Softening",
+        "Feel Enhancement",
+        "Shock Absorption"
+      ]
+    }
+  },
+
+  "gauge_recommendation": {
+    "1.25": {
+      "best_for": [
+        "Maximum Feel",
+        "Maximum Power",
+        "Maximum Ball Pocketing",
+        "Touch-Oriented Play"
+      ],
+
+      "tradeoffs": [
+        "Lower Durability Than 1.30"
+      ]
+    },
+
+    "1.30": {
+      "best_for": [
+        "Maximum Durability",
+        "Maximum Stability",
+        "Comfort",
+        "Frequent Club Play"
+      ],
+
+      "tradeoffs": [
+        "Slightly Less Feel Than 1.25",
+        "Slightly Lower Power"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.25": {
+      "heavy_topspin_hours": "6-10",
+      "club_player_hours": "15-25"
+    },
+
+    "1.30": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "20-32"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Immediate",
+    "peak_playability": "Immediate",
+    "performance_drop": "Low-Medium",
+    "tension_loss_sensitivity": "Low",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when fraying, notching or loss of response becomes significant."
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Seeking Maximum Comfort",
+      "Players With Arm Sensitivity",
+      "Players Wanting Natural Gut-Like Feel",
+      "Touch-Oriented Players",
+      "Doubles Players",
+      "Players Moving Away From Firm Polyester"
+    ],
+
+    "avoid_for": [
+      "Frequent String Breakers",
+      "Heavy Topspin Players Seeking Maximum Polyester Spin",
+      "Players Wanting Extremely Firm Control"
+    ],
+
+    "alternative_strings": [
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²",
+      "Gamma Live Wire Professional",
+      "Babolat Xalt",
+      "Luxilon Natural Gut"
+    ]
+  },
+
+  "comparison_tags": [
+    "Multifilament",
+    "Natural Gut-Like",
+    "Maximum Comfort",
+    "Maximum Feel",
+    "Arm Friendly",
+    "PV Coating",
+    "Pre-Stretched",
+    "High Elasticity"
+  ],
+
+  "ai_keywords": [
+    "kirschbaum",
+    "touch multifibre",
+    "kirschbaum touch multifibre",
+    "touch multifibre 125",
+    "touch multifibre 130",
+    "1.25",
+    "1.30",
+    "multifilament",
+    "polyamide",
+    "1500 microfilaments",
+    "2400 microfilaments",
+    "pv coating",
+    "pre stretched",
+    "natural gut like",
+    "comfort",
+    "feel",
+    "arm friendly"
+  ],
+
+  "target_competitors": [
+    "Tecnifibre X-One Biphase",
+    "Tecnifibre NRG²",
+    "Gamma Live Wire Professional",
+    "Babolat Xalt",
+    "Wilson NXT"
+  ],
+
+  "description": {
+    "en": "Kirschbaum Touch Multifibre is a premium polyamide multifilament string built from approximately 1500 to 2400 high-grade microfilaments depending on gauge. The fibers are pre-stretched and twisted to create a responsive multifilament core, then protected by a ball-biting PV coating for improved durability. It delivers exceptional comfort, reduced arm strain and natural gut-like feel, power and playability. The 1.25 mm version emphasizes touch, power and ball pocketing, while the 1.30 mm version offers greater durability and stability.",
+
+    "zh": "Kirschbaum Touch Multifibre 是一款高端聚酰胺多芯球线，根据线径不同由约 1500 至 2400 根高等级微纤维组成。球线经过预拉伸并扭合形成高响应多芯核心，外层再加入具有咬球能力的 PV 涂层，以提升耐久性。它拥有极高的舒适性、优秀避震能力以及接近天然肠线的手感、力量和可打性。1.25毫米版本更强调手感、力量和持球感；1.30毫米版本则更偏向耐久与稳定。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-14",
+
+    "officially_verified_fields": [
+      "Kirschbaum Touch Multifibre",
+      "1.25 mm",
+      "1.30 mm",
+      "1500 to 2400 high-grade polyamide microfilaments depending on gauge",
+      "Pre-stretched",
+      "Twisted multifilament core",
+      "PV coating",
+      "Enhanced durability",
+      "Superior comfort",
+      "Reduced arm strain",
+      "Natural gut-like playing characteristics",
+      "Exceptional feel and playability"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
