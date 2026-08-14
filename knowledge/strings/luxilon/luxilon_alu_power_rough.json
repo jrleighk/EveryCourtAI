@@ -1,0 +1,384 @@
+{
+  "id": "luxilon_alu_power_rough",
+  "brand": "Luxilon",
+  "series": "ALU Power",
+  "model": "ALU Power Rough",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Poly-Ether-Ether",
+    "composition": "Poly-Ether-Ether with Aluminum Additives",
+    "string_family": "Polyester",
+    "surface": "Textured / Dented",
+    "weather_resistance": true,
+    "moisture_resistant": true,
+    "tour_positioning": "Tour Performance String"
+  },
+
+  "specifications": {
+    "construction": "Polyester Monofilament",
+    "cross_section": "Round",
+    "surface": "Textured / Rough",
+
+    "available_colors": [
+      "Silver"
+    ],
+
+    "available_gauges": [
+
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.25,
+        "available": true,
+
+        "packaging": [
+          {
+            "type": "Set",
+            "length_ft": 40,
+            "length_m": 12.2
+          }
+        ],
+
+        "power": 8,
+        "control": 10,
+        "spin": 10,
+        "comfort": 8,
+        "feel": 10,
+        "durability": 8,
+        "tension_maintenance": 8,
+        "elasticity": 8,
+        "launch_angle": "Medium",
+
+        "recommended_use": [
+          "Tournament Players",
+          "Heavy Topspin",
+          "Aggressive Baseliner",
+          "Fast Swing Speed",
+          "Hybrid Setup"
+        ]
+      },
+
+      {
+        "gauge_name": "16",
+        "gauge_mm": 1.30,
+        "available": true,
+
+        "packaging": [
+          {
+            "type": "Set",
+            "length_ft": 40,
+            "length_m": 12.2
+          }
+        ],
+
+        "power": 7,
+        "control": 10,
+        "spin": 9,
+        "comfort": 8,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "elasticity": 7,
+        "launch_angle": "Medium-Low",
+
+        "recommended_use": [
+          "Heavy Hitters",
+          "Maximum Durability",
+          "Tournament Play",
+          "Directional Control",
+          "Frequent String Breakers"
+        ]
+      }
+
+    ]
+  },
+
+  "technology": [
+    "Poly-Ether-Ether Composition",
+    "Aluminum Additives",
+    "Textured Surface",
+    "Dented Surface",
+    "Near Zero String Variance",
+    "Moisture Resistant"
+  ],
+
+  "design_profile": {
+    "string_type": "Tour Control Polyester",
+    "target_player": "Advanced / Tournament / Professional",
+
+    "arm_friendly": false,
+
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 10,
+    "spin": 10,
+    "comfort": 8,
+    "feel": 10,
+    "durability": 8,
+    "tension_maintenance": 8,
+    "elasticity": 8,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 8,
+    "control": 10,
+    "spin": 10,
+    "comfort": 8,
+    "feel": 10,
+    "durability": 8,
+    "tension_maintenance": 8
+  },
+    "recommended_player": {
+    "level": [
+      "Advanced",
+      "Tournament",
+      "Professional"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "All Court",
+      "Counter Puncher"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson RF 01",
+    "Wilson Pro Staff",
+    "HEAD Speed",
+    "HEAD Radical",
+    "HEAD Prestige",
+    "Yonex PERCEPT",
+    "Yonex VCORE",
+    "Tecnifibre TF-40",
+    "Tecnifibre T-FIGHT",
+    "Babolat Pure Strike",
+    "Dunlop CX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Babolat Touch VS",
+      "Wilson Natural Gut",
+      "Luxilon Natural Gut",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Spin",
+        "Control",
+        "Ball Bite",
+        "Aggressive Trajectory"
+      ],
+
+      "as_crosses": [
+        "Control",
+        "Stringbed Stability",
+        "Snapback Support"
+      ]
+    }
+  },
+
+  "gauge_recommendation": {
+
+    "1.25": {
+
+      "gauge_name": "17",
+
+      "best_for": [
+        "Maximum Spin",
+        "Tournament Players",
+        "Fast Swing Speed",
+        "Hybrid Setup",
+        "Feel"
+      ],
+
+      "tradeoffs": [
+        "Lower Durability than 1.30",
+        "Slightly Faster Tension Loss"
+      ],
+
+      "recommended_player":
+      "Advanced players seeking maximum spin and feel."
+    },
+
+    "1.30": {
+
+      "gauge_name": "16",
+
+      "best_for": [
+        "Heavy Hitters",
+        "Maximum Stability",
+        "Maximum Durability",
+        "Long Match Play"
+      ],
+
+      "tradeoffs": [
+        "Slightly Lower Feel",
+        "Slightly Lower Spin"
+      ],
+
+      "recommended_player":
+      "Players prioritizing durability, stability and directional control."
+    }
+  },
+
+  "estimated_lifespan": {
+
+    "1.25": {
+      "heavy_topspin_hours": "7-12",
+      "club_player_hours": "14-24"
+    },
+
+    "1.30": {
+      "heavy_topspin_hours": "9-15",
+      "club_player_hours": "18-30"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Very Short",
+    "peak_playability": "Immediate",
+    "performance_drop": "Medium",
+    "tension_loss_sensitivity": "Medium",
+    "recommended_monitoring":
+    "Replace once control and snapback noticeably decrease."
+  },
+
+  "tour_players": [
+    {
+      "name": "Roger Federer",
+      "usage": "Hybrid",
+      "mains": "Natural Gut",
+      "crosses": "ALU Power Rough",
+      "confidence": "Official"
+    }
+  ],
+    "recommended_by_ai": {
+    "best_for": [
+      "Heavy Topspin Players",
+      "Advanced Players",
+      "Tournament Players",
+      "Fast Swing Speeds",
+      "Players Seeking More Spin Than Standard ALU Power",
+      "Natural Gut Hybrid Setups"
+    ],
+
+    "avoid_for": [
+      "Beginners",
+      "Players With Significant Arm Sensitivity",
+      "Players Seeking Maximum Comfort",
+      "Slow Swing Speed Players"
+    ],
+
+    "alternative_strings": [
+      "Luxilon ALU Power",
+      "Luxilon 4G",
+      "Grapplesnake Tour Sniper",
+      "Grapplesnake Tour M8",
+      "Babolat RPM Rough",
+      "Tecnifibre Black Code"
+    ]
+  },
+
+  "comparison_tags": [
+    "Tour Polyester",
+    "Textured Polyester",
+    "Dented Surface",
+    "Maximum Spin",
+    "High Control",
+    "Softer Than Standard ALU Power",
+    "Hybrid Friendly",
+    "Roger Federer",
+    "Tour Proven"
+  ],
+
+  "ai_keywords": [
+    "luxilon",
+    "alu power rough",
+    "alu rough",
+    "alu power rough 125",
+    "alu power rough 130",
+    "1.25",
+    "1.30",
+    "17 gauge",
+    "16 gauge",
+    "polyester",
+    "monofilament",
+    "aluminum",
+    "poly ether ether",
+    "textured",
+    "dented",
+    "rough",
+    "spin",
+    "control",
+    "hybrid",
+    "natural gut",
+    "roger federer"
+  ],
+
+  "target_competitors": [
+    "Babolat RPM Rough",
+    "Grapplesnake Tour Sniper",
+    "Solinco Tour Bite",
+    "Tecnifibre Black Code",
+    "Yonex Poly Tour Rev",
+    "HEAD Lynx Tour"
+  ],
+
+  "description": {
+    "en": "Luxilon ALU Power Rough is the textured version of the iconic ALU Power polyester string. Its dented surface increases ball bite and spin while also allowing additional string flex, creating a slightly softer and more forgiving response than standard ALU Power. The 1.25 mm gauge emphasizes feel, spin and responsiveness, while the 1.30 mm version provides greater durability and stability. Roger Federer famously used ALU Power Rough in the crosses of a natural gut hybrid setup.",
+
+    "zh": "Luxilon ALU Power Rough 是经典 ALU Power 的纹理版本。其凹凸表面能够增强球线与网球之间的咬合，从而提升旋转表现，同时表面结构也增加了一定的球线弯曲能力，因此相比标准 ALU Power 拥有略微更加柔和和宽容的击球反馈。1.25毫米版本更强调旋转、手感与响应速度；1.30毫米版本则更加注重耐久性、稳定性和方向控制。Roger Federer 曾长期将 ALU Power Rough 作为天然肠线混穿方案中的横线使用。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_official_product_information",
+    "last_updated": "2026-08-14",
+
+    "officially_verified_fields": [
+      "ALU Power Rough 1.25 mm / 17 gauge",
+      "ALU Power Rough 1.30 mm / 16 gauge",
+      "Set length: 40 ft / 12.2 m",
+      "Textured / dented surface",
+      "Additional spin",
+      "Slightly softer and more forgiving feel",
+      "Same material composition as ALU Power",
+      "Roger Federer natural gut hybrid usage"
+    ],
+
+    "database_model_fields": [
+      "AI performance scores",
+      "recommended racquets",
+      "estimated lifespan",
+      "life cycle classification",
+      "AI recommendations",
+      "competitor mapping"
+    ]
+  }
+}
