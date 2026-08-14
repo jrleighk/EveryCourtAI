@@ -1,0 +1,291 @@
+{
+  "id": "luxilon_eco_spin",
+  "brand": "Luxilon",
+  "series": "Eco",
+  "model": "Eco Spin",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "100% Recycled Polyester-Based Material",
+    "string_family": "Polyester",
+    "cross_section": "Pentagonal",
+    "surface": "Shaped",
+    "recycled_material_percentage": 100,
+    "biodegradable": true,
+    "sustainable": true,
+    "tour_positioning": "Sustainable Control / Spin Polyester"
+  },
+
+  "specifications": {
+    "construction": "Polyester Monofilament",
+    "cross_section": "Pentagonal",
+    "surface": "Shaped",
+
+    "available_gauges": [
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.25,
+        "available": true,
+
+        "packaging": [
+          {
+            "type": "Set",
+            "length_ft": 40,
+            "length_m": 12.2
+          }
+        ],
+
+        "power": 8,
+        "control": 10,
+        "spin": 10,
+        "comfort": 7,
+        "feel": 8,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "elasticity": 7,
+        "launch_angle": "Medium"
+      }
+    ]
+  },
+
+  "technology": [
+    "100% Recycled Material Construction",
+    "Biodegradable Polyester",
+    "Pentagonal Geometry",
+    "Ultimate Precision Design",
+    "High Tension Maintenance"
+  ],
+
+  "eco_profile": {
+    "recycled_material_percentage": 100,
+    "made_from_recycled_materials": true,
+    "biodegradable": true,
+    "environmental_positioning": "Sustainable Control Polyester",
+    "manufacturer_claim": "Eco-friendly performance polyester designed for precision and tension stability."
+  },
+
+  "design_profile": {
+    "string_type": "Control Spin Polyester",
+    "target_player": "Intermediate / Advanced / Tournament",
+
+    "arm_friendly": false,
+
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": false,
+    "comfort_focus": false,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 10,
+    "spin": 10,
+    "comfort": 7,
+    "feel": 8,
+    "durability": 9,
+    "tension_maintenance": 9,
+    "elasticity": 7,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 8,
+    "control": 10,
+    "spin": 10,
+    "comfort": 7,
+    "feel": 8,
+    "durability": 9,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium-Firm",
+    "snapback": 9,
+    "ball_pocketing": 8,
+    "string_movement": 2,
+    "tension_stability": 9,
+    "spin_window": "High",
+    "predictability": 10,
+    "arm_friendliness": 7
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "Counter Puncher",
+      "Tournament Player"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson Shift",
+    "HEAD Speed",
+    "HEAD Extreme",
+    "Yonex VCORE",
+    "Yonex PERCEPT",
+    "Babolat Pure Aero",
+    "Tecnifibre T-FIGHT",
+    "Dunlop SX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Luxilon Natural Gut",
+      "Babolat Touch VS",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²"
+    ]
+  },
+
+  "gauge_recommendation": {
+    "1.25": {
+      "gauge_name": "17",
+
+      "best_for": [
+        "Maximum Control",
+        "Maximum Spin",
+        "Tournament Play",
+        "Fast Swing Speed",
+        "Precision Shot Making"
+      ],
+
+      "tradeoffs": [
+        "Lower Comfort Than Element",
+        "Less Free Power Than Eco Power"
+      ],
+
+      "recommended_player": "Advanced players seeking maximum control, high spin and excellent tension stability in a sustainable polyester."
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.25": {
+      "heavy_topspin_hours": "9-15",
+      "club_player_hours": "18-30"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Slow",
+    "tension_loss_sensitivity": "Low",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when tension stability or directional precision noticeably declines."
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Tournament Players",
+      "Heavy Topspin Players",
+      "Players Seeking Maximum Precision",
+      "Players Prioritizing Tension Maintenance",
+      "Players Looking For Sustainable Equipment"
+    ],
+
+    "avoid_for": [
+      "Beginners",
+      "Players Seeking Maximum Comfort",
+      "Players Wanting High Free Power"
+    ],
+
+    "alternative_strings": [
+      "Luxilon Eco Power",
+      "Luxilon Eco Rough",
+      "Luxilon 4G",
+      "Luxilon ALU Power",
+      "Yonex Poly Tour Rev",
+      "Tecnifibre Razor Code"
+    ]
+  },
+
+  "comparison_tags": [
+    "100% Recycled",
+    "Biodegradable",
+    "Pentagonal",
+    "Maximum Control",
+    "Maximum Spin",
+    "High Tension Maintenance",
+    "Tournament Polyester"
+  ],
+
+  "ai_keywords": [
+    "luxilon",
+    "eco spin",
+    "luxilon eco spin",
+    "eco spin 125",
+    "1.25",
+    "17 gauge",
+    "100% recycled",
+    "biodegradable",
+    "pentagonal",
+    "control",
+    "spin",
+    "tension maintenance"
+  ],
+
+  "target_competitors": [
+    "Luxilon 4G",
+    "Luxilon Eco Rough",
+    "Babolat RPM Blast",
+    "Tecnifibre Razor Code",
+    "Yonex Poly Tour Rev",
+    "Solinco Hyper-G"
+  ],
+
+  "description": {
+    "en": "Luxilon Eco Spin is a durable pentagonal polyester string made from 100% recycled materials and is biodegradable. Designed for ultimate precision, exceptional spin and excellent tension maintenance, it delivers a controlled response for ambitious players while providing a more sustainable choice without sacrificing performance.",
+
+    "zh": "Luxilon Eco Spin 是一款采用 100% 再生材料制造，并具备可生物降解特性的五边形聚酯球线。它强调极高的控制力、旋转能力以及优异的保磅性能，适合追求精准击球与现代旋转打法的中高级球员，同时也是 Luxilon 环保系列中定位最偏向控制型的一款产品。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_official_product_information",
+    "last_updated": "2026-08-14",
+
+    "officially_verified_fields": [
+      "Eco Spin",
+      "1.25 mm / 17 gauge",
+      "Set length: 40 ft / 12.2 m",
+      "100% recycled materials",
+      "Biodegradable",
+      "Pentagonal shape",
+      "Ultimate precision",
+      "Excellent tension maintenance"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Eco Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Estimated Lifespan",
+      "AI Recommendations"
+    ]
+  }
+}
