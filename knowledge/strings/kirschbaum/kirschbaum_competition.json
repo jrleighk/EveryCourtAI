@@ -1,0 +1,386 @@
+{
+  "id": "kirschbaum_competition",
+  "brand": "Kirschbaum",
+  "series": "Competition",
+  "model": "Competition",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Co-Polyester",
+    "string_family": "Polyester",
+    "cross_section": "Round",
+    "surface": "Smooth",
+    "tour_positioning": "Control / Durability Competition Polyester",
+    "target_level": "Intermediate / Advanced / Tournament",
+    "target_player_description": "Aggressive baseliners, players using open string patterns, and frequent string breakers."
+  },
+
+  "specifications": {
+    "construction": "Co-Polyester Monofilament",
+    "cross_section": "Round",
+    "surface": "Smooth",
+
+    "available_gauges": [
+      {
+        "gauge_mm": 1.20,
+        "available": true,
+        "power": 8,
+        "control": 10,
+        "spin": 8,
+        "comfort": 7,
+        "feel": 9,
+        "durability": 8,
+        "tension_maintenance": 9,
+        "elasticity": 8,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Maximum Feel",
+          "Fast Racquet Head Speed",
+          "Aggressive Baseliners",
+          "Players Wanting Control With More Response"
+        ]
+      },
+
+      {
+        "gauge_mm": 1.25,
+        "available": true,
+        "power": 7,
+        "control": 10,
+        "spin": 8,
+        "comfort": 7,
+        "feel": 8,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "elasticity": 7,
+        "launch_angle": "Medium",
+
+        "recommended_use": [
+          "Best Overall Balance",
+          "Maximum Control",
+          "Tournament Play",
+          "Open String Patterns",
+          "Frequent String Breakers"
+        ]
+      },
+
+      {
+        "gauge_mm": 1.30,
+        "available": true,
+        "power": 6,
+        "control": 10,
+        "spin": 7,
+        "comfort": 6,
+        "feel": 8,
+        "durability": 10,
+        "tension_maintenance": 10,
+        "elasticity": 6,
+        "launch_angle": "Medium-Low",
+
+        "recommended_use": [
+          "Maximum Durability",
+          "Maximum Stability",
+          "Heavy Hitters",
+          "Open String Patterns",
+          "Frequent String Breakers",
+          "Long Match Play"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "High-Performance Co-Polyester Construction",
+    "Durability-Oriented Polymer Formulation",
+    "Control-Focused Monofilament Design",
+    "Long-Lasting Playability Engineering"
+  ],
+
+  "design_profile": {
+    "string_type": "Competition Control Polyester",
+    "target_player": "Intermediate / Advanced / Tournament",
+    "arm_friendly": false,
+    "spin_focus": false,
+    "control_focus": true,
+    "power_focus": false,
+    "comfort_focus": false,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 7,
+    "control": 10,
+    "spin": 8,
+    "comfort": 7,
+    "feel": 8,
+    "durability": 10,
+    "tension_maintenance": 9,
+    "elasticity": 7,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 7,
+    "control": 10,
+    "spin": 8,
+    "comfort": 7,
+    "feel": 8,
+    "durability": 10,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Firm",
+    "snapback": 8,
+    "ball_pocketing": 7,
+    "string_movement": 2,
+    "tension_stability": 9,
+    "spin_window": "Medium",
+    "predictability": 10,
+    "arm_friendliness": 6,
+    "directional_precision": 10,
+    "durability_index": 10,
+    "open_pattern_suitability": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Power Baseliner",
+      "Flat Hitter",
+      "Heavy Hitter"
+    ],
+
+    "special_player_profiles": [
+      "Frequent String Breakers",
+      "Players Using Open String Patterns",
+      "Players Prioritizing Durability and Control"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Babolat Pure Aero",
+    "Babolat Pure Drive",
+    "Yonex VCORE",
+    "Wilson Shift",
+    "HEAD Extreme",
+    "HEAD Speed",
+    "Tecnifibre T-FIGHT",
+    "Dunlop SX",
+    "Dunlop FX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Kirschbaum Touch Multifibre",
+      "Kirschbaum Gut Feeling",
+      "Kirschbaum Synthetic Gut Premium",
+      "Natural Gut",
+      "Tecnifibre X-One Biphase"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Maximum Control",
+        "Maximum Durability",
+        "Directional Precision",
+        "Stringbed Stability"
+      ],
+
+      "as_crosses": [
+        "Control",
+        "Durability",
+        "Stringbed Stabilization"
+      ]
+    }
+  },
+
+  "gauge_recommendation": {
+    "1.20": {
+      "best_for": [
+        "Maximum Feel",
+        "Faster Response",
+        "Control With More Touch"
+      ],
+      "tradeoffs": [
+        "Lower Durability Than 1.25 and 1.30"
+      ]
+    },
+
+    "1.25": {
+      "best_for": [
+        "Best Overall Balance",
+        "Control",
+        "Durability",
+        "Tournament Play",
+        "Open String Patterns"
+      ],
+      "tradeoffs": [
+        "Less Durability Than 1.30"
+      ]
+    },
+
+    "1.30": {
+      "best_for": [
+        "Maximum Durability",
+        "Maximum Stability",
+        "Frequent String Breakers",
+        "Open String Patterns",
+        "Heavy Hitters"
+      ],
+      "tradeoffs": [
+        "Firmest Response",
+        "Lowest Free Power",
+        "Slightly Less Spin and Feel"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.20": {
+      "heavy_topspin_hours": "7-12",
+      "club_player_hours": "14-24"
+    },
+
+    "1.25": {
+      "heavy_topspin_hours": "10-16",
+      "club_player_hours": "20-32"
+    },
+
+    "1.30": {
+      "heavy_topspin_hours": "12-20",
+      "club_player_hours": "24-40"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Low",
+    "tension_loss_sensitivity": "Low",
+    "playability_duration": "Excellent",
+    "recommended_monitoring": "Replace when control, string response or structural durability noticeably declines."
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Aggressive Baseliners",
+      "Frequent String Breakers",
+      "Players Using Open String Patterns",
+      "Players Seeking Maximum Control",
+      "Players Prioritizing Durability",
+      "Tournament Players"
+    ],
+
+    "avoid_for": [
+      "Beginners",
+      "Players With Significant Arm Sensitivity",
+      "Players Seeking Maximum Free Power",
+      "Players Wanting Very Soft Polyester"
+    ],
+
+    "alternative_strings": [
+      "Kirschbaum Max Power",
+      "Kirschbaum Pro Line Black",
+      "Luxilon 4G",
+      "HEAD HAWK",
+      "Yonex Poly Tour Strike"
+    ]
+  },
+
+  "comparison_tags": [
+    "Competition Polyester",
+    "Maximum Control",
+    "Maximum Durability",
+    "Open String Pattern",
+    "String Breaker",
+    "Aggressive Baseline",
+    "Long Playability"
+  ],
+
+  "ai_keywords": [
+    "kirschbaum",
+    "competition",
+    "kirschbaum competition",
+    "competition 120",
+    "competition 125",
+    "competition 130",
+    "1.20",
+    "1.25",
+    "1.30",
+    "co polyester",
+    "maximum durability",
+    "maximum control",
+    "open string pattern",
+    "string breaker",
+    "aggressive baseliner",
+    "long lasting playability"
+  ],
+
+  "target_competitors": [
+    "Luxilon 4G",
+    "Kirschbaum Max Power",
+    "Kirschbaum Pro Line Black",
+    "HEAD HAWK",
+    "Yonex Poly Tour Strike",
+    "Solinco Confidential"
+  ],
+
+  "description": {
+    "en": "Kirschbaum Competition is a high-performance co-polyester monofilament engineered for exceptional control, maximum durability and long-lasting playability. It is especially well suited to aggressive baseline players, frequent string breakers and players using racquets with open string patterns. The 1.20 mm version offers more feel and response, the 1.25 mm version provides the best overall balance, and the 1.30 mm version maximizes durability and stability for demanding hitters.",
+
+    "zh": "Kirschbaum Competition 是一款高性能共聚酯单丝球线，核心优势是极高控制力、出色耐久性以及长期稳定的可打表现。它特别适合积极进攻型底线球员、经常断线的球员，以及使用开放式线床球拍的玩家。1.20毫米版本更强调手感和响应；1.25毫米综合表现最均衡；1.30毫米版本则将耐久性和稳定性发挥到最高，更适合大力量击球和高频比赛使用。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-14",
+
+    "officially_verified_fields": [
+      "Kirschbaum Competition",
+      "1.20 mm",
+      "1.25 mm",
+      "1.30 mm",
+      "High-performance co-polyester",
+      "Exceptional control",
+      "Maximum durability",
+      "Aggressive baseliner positioning",
+      "Suitable for open string patterns",
+      "Suitable for frequent string breakers",
+      "Consistent performance",
+      "Long-lasting playability"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
