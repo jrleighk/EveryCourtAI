@@ -1,0 +1,193 @@
+{
+  "id": "grapplesnake_aspera_triplum",
+
+  "brand": "Grapplesnake",
+  "series": "Aspera",
+  "model": "Triplum",
+
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Co-Polyester Monofilament",
+    "shape": "Square",
+    "surface": "Abrasive",
+    "texture": "Diamond Indentations",
+    "diameter_mm": [
+      1.19
+    ],
+    "length_m": 12,
+
+    "recommended_tension": {
+      "note": "+2 lb above your normal polyester tension"
+    }
+  },
+
+  "available_colors": [
+    "Neon Yellow",
+    "Mantis Green"
+  ],
+
+  "technology": [
+    "Square Geometry",
+    "Abrasive Surface",
+    "Diamond Indentation Texture",
+    "Advanced Poly Additives",
+    "Soft Square Construction"
+  ],
+
+  "design_profile": {
+    "string_type": "Spin Polyester",
+    "target_player": "Tournament / Advanced",
+
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "tension_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 9,
+    "spin": 10,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 8,
+    "tension_maintenance": 10,
+    "elasticity": 9,
+    "launch_angle": "Medium-High"
+  },
+
+  "recommended_player": {
+    "level": [
+      "Advanced",
+      "Tournament",
+      "Professional"
+    ],
+
+    "swing_speed": [
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Heavy Topspin",
+      "Aggressive Baseliner",
+      "Modern Tennis"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Pure Aero",
+    "VCORE",
+    "Shift",
+    "Extreme",
+    "SX",
+    "TFight"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Natural Gut",
+      "X-One Biphase",
+      "Touch VS",
+      "Live Wire Professional"
+    ]
+  },
+
+  "comparison": {
+    "softer_than": [
+      "Grapplesnake Alpha"
+    ],
+
+    "similar_power_to": [
+      "Tour Mako Silver"
+    ],
+
+    "better_spin_than": [
+      "Tour Sniper",
+      "Tour M8",
+      "Alpha"
+    ],
+
+    "better_tension_maintenance_than": [
+      "Typical Square Polyester"
+    ]
+  },
+
+  "estimated_lifespan": {
+    "1.19": {
+      "heavy_topspin_hours": "8-12",
+      "club_player_hours": "15-25"
+    }
+  },
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Maximum Spin",
+      "Tournament Players",
+      "Heavy Topspin",
+      "Modern Aggressive Tennis",
+      "Players Wanting Soft Square Polyester"
+    ],
+
+    "avoid_for": [
+      "Beginners",
+      "Players Who Frequently Break Strings",
+      "Players Wanting Maximum Durability"
+    ]
+  },
+
+  "comparison_tags": [
+    "Square Poly",
+    "Maximum Spin",
+    "Soft Poly",
+    "Diamond Texture",
+    "Abrasive Surface",
+    "High Comfort",
+    "Tournament"
+  ],
+
+  "ai_keywords": [
+    "grapplesnake",
+    "aspera",
+    "triplum",
+    "square poly",
+    "1.19",
+    "maximum spin",
+    "soft square poly",
+    "diamond texture",
+    "abrasive"
+  ],
+
+  "target_competitors": [
+    "Solinco Hyper-G",
+    "Solinco Hyper-G Soft",
+    "Luxilon ECO Rough",
+    "Tecnifibre Black Code",
+    "Yonex Poly Tour Rev"
+  ],
+
+  "description": {
+    "en": "Aspera Triplum is Grapplesnake's most technologically advanced polyester string, combining square geometry, an abrasive surface and diamond-shaped indentations to maximize spin while maintaining exceptional comfort, feel and tension maintenance. Despite its aggressive profile, it is softer than Alpha and delivers outstanding power, control and consistency for modern tournament tennis.",
+
+    "zh": "Aspera Triplum 是 Grapplesnake 目前技术集成度最高的聚酯球线，结合四方形截面、磨砂表面以及钻石纹凹槽三重设计，实现极高的旋转能力。同时，它拥有远超传统方形聚酯的舒适性和击球反馈，甚至比 Alpha 更柔和。力量表现接近 Tour Mako Silver，同时兼具优秀的保磅和控制能力，是现代力量型底线打法的旗舰球线。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+
+    "verified_fields": [
+      "1.19 mm",
+      "Square Shape",
+      "Abrasive Surface",
+      "Diamond Indentations",
+      "Neon Yellow",
+      "Mantis Green",
+      "+2 lb recommendation"
+    ]
+  }
+}
