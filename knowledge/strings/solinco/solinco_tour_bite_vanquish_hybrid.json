@@ -1,0 +1,223 @@
+{
+  "id": "solinco_tour_bite_vanquish_hybrid",
+  "brand": "Solinco",
+  "series": "Tour Bite Hybrid",
+  "model": "Tour Bite + Vanquish",
+  "category": "Hybrid String Set",
+
+  "manufacturer_data": {
+    "construction": "Hybrid",
+    "main_string": "Tour Bite",
+    "cross_string": "Vanquish",
+    "official_positioning": "Official hybrid system combining Tour Bite polyester with Vanquish multifilament.",
+    "tour_positioning": "Spin / Power / Comfort Hybrid"
+  },
+
+  "specifications": {
+    "construction": "Polyester + Multifilament Hybrid",
+
+    "packaging": {
+      "type": "Hybrid Set",
+      "total_length_ft": 43,
+      "total_length_m": 13.1,
+
+      "mains": {
+        "string": "Tour Bite",
+        "length_ft": 22.3,
+        "length_m": 6.8
+      },
+
+      "crosses": {
+        "string": "Vanquish",
+        "length_ft": 20.7,
+        "length_m": 6.3
+      }
+    }
+  },
+
+  "technology": [
+    "Tour Bite Shaped Polyester",
+    "Vanquish Multifilament",
+    "DuPont High Modulus Polyamide",
+    "Enhanced Performance Resin"
+  ],
+
+  "hybrid_configuration": {
+    "mains": {
+      "string": "Tour Bite",
+      "material": "Co-Polyester",
+      "role": [
+        "Spin",
+        "Ball Bite",
+        "Power",
+        "Control"
+      ]
+    },
+
+    "crosses": {
+      "string": "Vanquish",
+      "material": "Multifilament",
+      "role": [
+        "Comfort",
+        "Touch",
+        "Shock Absorption",
+        "Feel"
+      ]
+    }
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 9,
+    "spin": 10,
+    "comfort": 9,
+    "feel": 9,
+    "durability": 8,
+    "tension_maintenance": 8,
+    "elasticity": 9,
+    "launch_angle": "Medium-High"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 9,
+    "spin": 10,
+    "comfort": 9,
+    "feel": 9,
+    "durability": 8,
+    "tension_maintenance": 8
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium",
+    "snapback": 9,
+    "ball_pocketing": 9,
+    "string_movement": 3,
+    "tension_stability": 8,
+    "spin_window": "High",
+    "predictability": 9,
+    "arm_friendliness": 9,
+    "directional_precision": 9,
+    "ball_bite": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium",
+      "Medium-Fast",
+      "Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "All Court",
+      "Heavy Topspin",
+      "Players Seeking More Comfort"
+    ],
+
+    "special_player_profiles": [
+      "Players Wanting Polyester Spin With Multifilament Comfort",
+      "Players Transitioning From Full Poly",
+      "Players With Mild Arm Sensitivity",
+      "Competitive Club Players"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson Shift",
+    "Wilson Clash",
+    "HEAD Speed",
+    "HEAD Radical",
+    "Yonex EZONE",
+    "Yonex VCORE",
+    "Babolat Pure Aero",
+    "Babolat Pure Strike",
+    "Tecnifibre T-FIGHT"
+  ],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Wanting Maximum Spin Without Full Poly Harshness",
+      "Players Looking For Better Comfort",
+      "Aggressive Baseliners",
+      "All-Court Players",
+      "Tournament Players"
+    ],
+
+    "avoid_for": [
+      "Players Seeking Maximum Polyester Durability",
+      "Frequent String Breakers",
+      "Players Wanting Extremely Firm Stringbeds"
+    ],
+
+    "alternative_strings": [
+      "Solinco Hyper-G Hybrid System",
+      "Natural Gut + Tour Bite",
+      "Hyper-G + Vanquish",
+      "Tour Bite Full Bed"
+    ]
+  },
+
+  "comparison_tags": [
+    "Official Hybrid",
+    "Tour Bite",
+    "Vanquish",
+    "Spin",
+    "Comfort",
+    "Touch",
+    "Control",
+    "Poly + Multifilament"
+  ],
+
+  "ai_keywords": [
+    "solinco",
+    "tour bite vanquish",
+    "tour bite hybrid",
+    "official hybrid",
+    "poly multifilament",
+    "spin",
+    "comfort",
+    "touch",
+    "control"
+  ],
+
+  "description": {
+    "en": "Solinco Tour Bite + Vanquish is an official hybrid string system pairing Tour Bite in the mains with Vanquish in the crosses. Tour Bite supplies explosive spin, power and ball bite, while Vanquish's DuPont high-modulus polyamide multifilament construction adds touch, comfort and arm-friendly playability. The combination is ideal for players seeking the performance of polyester without the harshness of a full polyester setup.",
+
+    "zh": "Solinco Tour Bite + Vanquish 是官方 Hybrid 混穿套装，采用 Tour Bite 作为主线、Vanquish 作为横线。Tour Bite 提供强大的旋转、力量与咬球能力，而 Vanquish 多芯线则利用 DuPont 高模量聚酰胺纤维带来更好的手感、舒适性与护肘表现。整体适合希望获得聚酯线性能，同时降低全聚酯线床硬度的球员。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Tour Bite + Vanquish",
+      "Hybrid Set",
+      "Tour Bite mains 22.3 ft / 6.8 m",
+      "Vanquish crosses 20.7 ft / 6.3 m",
+      "Tour Bite polyester",
+      "Vanquish multifilament",
+      "DuPont High Modulus Polyamide",
+      "Enhanced Performance Resin",
+      "Touch",
+      "Control",
+      "Arm-friendly"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Recommended Player",
+      "AI Recommendations"
+    ]
+  }
+}
