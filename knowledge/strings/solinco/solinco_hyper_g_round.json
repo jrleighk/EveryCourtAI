@@ -1,0 +1,464 @@
+{
+  "id": "solinco_hyper_g_round",
+  "brand": "Solinco",
+  "series": "Hyper-G",
+  "model": "Hyper-G Round",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Co-Polyester",
+    "string_family": "Polyester",
+    "cross_section": "Round",
+    "surface": "Smooth",
+    "technology": [
+      "Proprietary Chemical Formula"
+    ],
+    "tour_positioning": "Power / Penetration / Directional Control Polyester",
+    "hybrid_positioning": "Designed to enhance durability and performance in poly-poly and mixed-material hybrid setups"
+  },
+
+  "specifications": {
+    "construction": "Co-Polyester Monofilament",
+    "cross_section": "Round",
+    "surface": "Smooth",
+
+    "packaging": [
+      {
+        "type": "Set",
+        "length_ft": 40,
+        "length_m": 12.2
+      },
+      {
+        "type": "Reel",
+        "length_ft": 656,
+        "length_m": 200
+      }
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_name": "18",
+        "gauge_mm": 1.15,
+        "available": true,
+        "power": 10,
+        "control": 9,
+        "spin": 8,
+        "comfort": 8,
+        "feel": 10,
+        "durability": 6,
+        "tension_maintenance": 8,
+        "elasticity": 10,
+        "launch_angle": "Medium-High",
+        "recommended_use": [
+          "Maximum Power",
+          "Maximum Feel",
+          "Fast Racquet Head Speed",
+          "Hybrid Cross",
+          "Advanced Players"
+        ]
+      },
+
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.20,
+        "available": true,
+        "power": 10,
+        "control": 9,
+        "spin": 8,
+        "comfort": 8,
+        "feel": 10,
+        "durability": 7,
+        "tension_maintenance": 9,
+        "elasticity": 9,
+        "launch_angle": "Medium",
+        "recommended_use": [
+          "Explosive Power",
+          "Ball Penetration",
+          "Directional Control",
+          "Hybrid Setups",
+          "Tournament Players"
+        ]
+      },
+
+      {
+        "gauge_name": "16L",
+        "gauge_mm": 1.25,
+        "available": true,
+        "power": 9,
+        "control": 10,
+        "spin": 8,
+        "comfort": 8,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "elasticity": 9,
+        "launch_angle": "Medium",
+        "recommended_use": [
+          "Best Overall Balance",
+          "Power",
+          "Directional Control",
+          "Penetration",
+          "Hybrid Play"
+        ]
+      },
+
+      {
+        "gauge_name": "16",
+        "gauge_mm": 1.30,
+        "available": true,
+        "power": 8,
+        "control": 10,
+        "spin": 7,
+        "comfort": 8,
+        "feel": 8,
+        "durability": 10,
+        "tension_maintenance": 10,
+        "elasticity": 8,
+        "launch_angle": "Medium-Low",
+        "recommended_use": [
+          "Maximum Durability",
+          "Maximum Stability",
+          "Directional Precision",
+          "Heavy Hitters",
+          "Long Match Play"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "Smooth Round Geometry",
+    "Proprietary Chemical Formula",
+    "High-Powered Filament Construction",
+    "Penetration-Oriented Response",
+    "Hybrid-Friendly Low-Friction Surface"
+  ],
+
+  "design_profile": {
+    "string_type": "Power Control Round Polyester",
+    "target_player": "Intermediate / Advanced / Tournament",
+    "arm_friendly": false,
+    "spin_focus": false,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 10,
+    "control": 10,
+    "spin": 8,
+    "comfort": 8,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9,
+    "elasticity": 9,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 10,
+    "control": 10,
+    "spin": 8,
+    "comfort": 8,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium",
+    "snapback": 10,
+    "ball_pocketing": 9,
+    "string_movement": 2,
+    "tension_stability": 9,
+    "spin_window": "Medium",
+    "predictability": 10,
+    "arm_friendliness": 8,
+    "directional_precision": 10,
+    "penetration": 10,
+    "power_response": 10,
+    "hybrid_friendliness": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "All Court",
+      "Flat Hitter",
+      "Power Baseliner"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson Shift",
+    "Wilson Ultra",
+    "HEAD Speed",
+    "HEAD Radical",
+    "Yonex EZONE",
+    "Yonex VCORE",
+    "Babolat Pure Drive",
+    "Babolat Pure Aero",
+    "Tecnifibre T-FIGHT",
+    "Dunlop FX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Solinco Hyper-G",
+      "Solinco Hyper-G Soft",
+      "Solinco Mach-10",
+      "Natural Gut",
+      "Babolat Touch VS",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Ball Penetration",
+        "Power",
+        "Directional Control",
+        "Smooth Response"
+      ],
+
+      "as_crosses": [
+        "Low Friction",
+        "Snapback Support",
+        "Durability",
+        "Control",
+        "Hybrid Stability"
+      ]
+    },
+
+    "official_hybrid_recommendations": [
+      "Hyper-G Round + Hyper-G",
+      "Hyper-G Round + Hyper-G Soft"
+    ]
+  },
+
+  "gauge_recommendation": {
+    "1.15": {
+      "gauge_name": "18",
+      "best_for": [
+        "Maximum Power",
+        "Maximum Feel",
+        "Fast Response",
+        "Hybrid Cross Use"
+      ],
+      "tradeoffs": [
+        "Lowest Durability"
+      ]
+    },
+
+    "1.20": {
+      "gauge_name": "17",
+      "best_for": [
+        "Explosive Power",
+        "Penetration",
+        "Feel",
+        "Hybrid Play"
+      ],
+      "tradeoffs": [
+        "Lower Durability Than 1.25 and 1.30"
+      ]
+    },
+
+    "1.25": {
+      "gauge_name": "16L",
+      "best_for": [
+        "Best Overall Balance",
+        "Power",
+        "Control",
+        "Penetration",
+        "Hybrid Stability"
+      ],
+      "tradeoffs": [
+        "Less Durability Than 1.30"
+      ]
+    },
+
+    "1.30": {
+      "gauge_name": "16",
+      "best_for": [
+        "Maximum Durability",
+        "Maximum Stability",
+        "Directional Precision",
+        "Heavy Hitters"
+      ],
+      "tradeoffs": [
+        "Slightly Less Power",
+        "Slightly Less Feel"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.15": {
+      "heavy_topspin_hours": "5-9",
+      "club_player_hours": "10-18"
+    },
+
+    "1.20": {
+      "heavy_topspin_hours": "7-12",
+      "club_player_hours": "14-24"
+    },
+
+    "1.25": {
+      "heavy_topspin_hours": "9-16",
+      "club_player_hours": "18-30"
+    },
+
+    "1.30": {
+      "heavy_topspin_hours": "11-20",
+      "club_player_hours": "22-36"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Medium-Low",
+    "tension_loss_sensitivity": "Medium-Low",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when penetration, snapback or directional control noticeably declines."
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Seeking More Penetration Than Standard Hyper-G",
+      "Players Wanting High Power With Directional Control",
+      "Hybrid Users",
+      "Aggressive All-Court Players",
+      "Players Wanting a Smooth Round Polyester",
+      "Players Building Hyper-G or Hyper-G Soft Hybrids"
+    ],
+
+    "avoid_for": [
+      "Players Seeking Maximum Shaped-String Ball Bite",
+      "Players With Significant Arm Sensitivity",
+      "Beginners With Very Slow Swing Speed"
+    ],
+
+    "alternative_strings": [
+      "Solinco Hyper-G",
+      "Solinco Hyper-G Soft",
+      "Solinco Mach-10",
+      "MSV Co Focus",
+      "HEAD Lynx",
+      "Luxilon ALU Power"
+    ]
+  },
+
+  "comparison_tags": [
+    "Round Polyester",
+    "Hyper-G Family",
+    "Power",
+    "Penetration",
+    "Directional Control",
+    "Hybrid Friendly",
+    "Smooth Surface",
+    "Explosive Response"
+  ],
+
+  "ai_keywords": [
+    "solinco",
+    "hyper g round",
+    "hyper-g round",
+    "solinco hyper g round",
+    "1.15",
+    "1.20",
+    "1.25",
+    "1.30",
+    "18 gauge",
+    "17 gauge",
+    "16l",
+    "16 gauge",
+    "round",
+    "smooth",
+    "power",
+    "penetration",
+    "directional control",
+    "hybrid",
+    "hyper g",
+    "hyper g soft"
+  ],
+
+  "target_competitors": [
+    "Solinco Hyper-G",
+    "Solinco Mach-10",
+    "MSV Co Focus",
+    "HEAD Lynx",
+    "Luxilon ALU Power",
+    "Yonex Poly Tour Pro"
+  ],
+
+  "description": {
+    "en": "Solinco Hyper-G Round is the smooth, round member of the Hyper-G family, designed to enhance ball penetration, power and directional control. Its proprietary chemical formulation creates an explosive response while the low-friction round surface makes it especially effective in hybrid setups. Solinco specifically recommends pairing it with Hyper-G and Hyper-G Soft, and it can also be combined with synthetic gut, multifilament or natural gut strings. Available in 1.15, 1.20, 1.25 and 1.30 mm gauges.",
+
+    "zh": "Solinco Hyper-G Round 是 Hyper-G 家族中的圆形光滑版本，核心特点是增强击球穿透力、力量输出和方向控制。其专有化学配方提供爆发性击球反馈，而低摩擦圆形表面则使它特别适合 Hybrid 混穿。Solinco 官方明确推荐与 Hyper-G 和 Hyper-G Soft 搭配，同时也可以与 Synthetic Gut、多芯线或天然肠线组合使用。提供 1.15、1.20、1.25 与 1.30 毫米四种线径。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Solinco Hyper-G Round",
+      "Smooth surface",
+      "Improved court penetration",
+      "Power",
+      "Directional control",
+      "Proprietary chemical formula",
+      "Explosive response",
+      "Hybrid-oriented positioning",
+      "Poly-poly hybrid suitability",
+      "Synthetic gut hybrid suitability",
+      "Multifilament hybrid suitability",
+      "Natural gut hybrid suitability",
+      "Recommended with Hyper-G",
+      "Recommended with Hyper-G Soft",
+      "1.15 mm / 18 gauge",
+      "1.20 mm / 17 gauge",
+      "1.25 mm / 16L gauge",
+      "1.30 mm / 16 gauge",
+      "Set length: 40 ft / 12.2 m",
+      "Reel length: 656 ft / 200 m"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendations",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
