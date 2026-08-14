@@ -1,0 +1,454 @@
+{
+  "id": "msv_co_focus",
+  "brand": "MSV",
+  "series": "Co Focus",
+  "model": "Co Focus",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Co-Polyester",
+    "string_family": "Polyester",
+    "cross_section": "Round",
+    "surface": "Smooth",
+    "material_relationship": "Made from the same material platform as MSV Focus Hex",
+    "tour_positioning": "Spin / Control / Durability / Tension Maintenance Polyester",
+    "target_level": "Club / Tour"
+  },
+
+  "specifications": {
+    "construction": "Co-Polyester Monofilament",
+    "cross_section": "Round",
+    "surface": "Smooth",
+
+    "available_colors": [
+      "Black",
+      "White",
+      "Red",
+      "Light Blue"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_mm": 1.18,
+        "available": true,
+
+        "power": 9,
+        "control": 9,
+        "spin": 10,
+        "comfort": 8,
+        "feel": 10,
+        "durability": 7,
+        "tension_maintenance": 9,
+        "elasticity": 9,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Maximum Feel",
+          "High Spin",
+          "Fast Racquet Head Speed",
+          "Tour-Level Response",
+          "Players Prioritizing Performance Over Durability"
+        ]
+      },
+
+      {
+        "gauge_mm": 1.23,
+        "available": true,
+
+        "power": 9,
+        "control": 9,
+        "spin": 10,
+        "comfort": 8,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "elasticity": 9,
+        "launch_angle": "Medium",
+
+        "recommended_use": [
+          "Best Overall Balance",
+          "Spin",
+          "Control",
+          "Durability",
+          "Club Competition",
+          "Tour Play"
+        ]
+      },
+
+      {
+        "gauge_mm": 1.27,
+        "available": true,
+
+        "power": 8,
+        "control": 10,
+        "spin": 9,
+        "comfort": 8,
+        "feel": 8,
+        "durability": 10,
+        "tension_maintenance": 10,
+        "elasticity": 8,
+        "launch_angle": "Medium-Low",
+
+        "recommended_use": [
+          "Maximum Durability",
+          "Maximum Stability",
+          "Powerful Groundstrokes",
+          "Long Match Play",
+          "Frequent String Breakers"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "MSV Focus Material Platform",
+    "Unique Co-Polyester Material Mix",
+    "Round Monofilament Construction",
+    "Tension Stability Engineering",
+    "Long-Term Playability Design"
+  ],
+
+  "design_profile": {
+    "string_type": "Round Spin Control Polyester",
+    "target_player": "Intermediate / Advanced / Tour",
+    "arm_friendly": false,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 9,
+    "spin": 10,
+    "comfort": 8,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9,
+    "elasticity": 9,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 9,
+    "spin": 10,
+    "comfort": 8,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium",
+    "snapback": 10,
+    "ball_pocketing": 9,
+    "string_movement": 2,
+    "tension_stability": 9,
+    "spin_window": "High",
+    "predictability": 10,
+    "arm_friendliness": 8,
+    "directional_precision": 9,
+    "energy_return": 9,
+    "long_term_consistency": 10,
+    "hybrid_friendliness": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament",
+      "Tour"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "All Court",
+      "Power Baseliner",
+      "Heavy Topspin",
+      "Counter Puncher"
+    ],
+
+    "special_player_profiles": [
+      "Players With Powerful Groundstrokes",
+      "Players Seeking Long-Term Playability",
+      "Players Wanting Round Polyester With High Spin",
+      "Players Prioritizing Tension Stability"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson Shift",
+    "HEAD Speed",
+    "HEAD Radical",
+    "Yonex VCORE",
+    "Yonex EZONE",
+    "Babolat Pure Aero",
+    "Babolat Pure Drive",
+    "Tecnifibre T-FIGHT",
+    "Dunlop SX",
+    "Dunlop FX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Natural Gut",
+      "Luxilon Natural Gut",
+      "Babolat Touch VS",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²",
+      "Kirschbaum Touch Multifibre"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Spin",
+        "Control",
+        "Power",
+        "Snapback",
+        "Durability"
+      ],
+
+      "as_crosses": [
+        "Low Friction",
+        "Snapback Support",
+        "Control",
+        "Stringbed Stability"
+      ]
+    },
+
+    "hybrid_note": "Its smooth round profile makes Co Focus especially suitable as a low-friction polyester cross in hybrid setups."
+  },
+
+  "gauge_recommendation": {
+    "1.18": {
+      "best_for": [
+        "Maximum Feel",
+        "High Spin",
+        "Fast Response",
+        "Fast Swing Speed"
+      ],
+
+      "tradeoffs": [
+        "Lowest Durability"
+      ]
+    },
+
+    "1.23": {
+      "best_for": [
+        "Best Overall Balance",
+        "Spin",
+        "Control",
+        "Durability",
+        "Tournament Play"
+      ],
+
+      "tradeoffs": [
+        "Less Durability Than 1.27"
+      ]
+    },
+
+    "1.27": {
+      "best_for": [
+        "Maximum Durability",
+        "Maximum Stability",
+        "Powerful Groundstrokes",
+        "Long Match Play"
+      ],
+
+      "tradeoffs": [
+        "Slightly Less Feel",
+        "Slightly Lower Spin Than Thinner Gauges"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.18": {
+      "heavy_topspin_hours": "6-11",
+      "club_player_hours": "12-22"
+    },
+
+    "1.23": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "16-28"
+    },
+
+    "1.27": {
+      "heavy_topspin_hours": "10-18",
+      "club_player_hours": "20-34"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Low",
+    "tension_loss_sensitivity": "Low",
+    "playability_duration": "Excellent",
+    "recommended_monitoring": "Replace when snapback, control or consistent response noticeably declines."
+  },
+
+  "test_results": {
+    "tennis_warehouse_university": {
+      "status_date": "2026-01",
+      "tension_loss_vs_competitive_average_percent": -25,
+      "source_type": "Manufacturer-supplied reference to Tennis Warehouse University data"
+    },
+
+    "aalborg_university_study": {
+      "result": "MSV Co Focus was reported as the only tested string with significantly higher spin potential than all other strings in the referenced study.",
+      "source_type": "Manufacturer-supplied reference to Aalborg University scientific study"
+    },
+
+    "racketpedia_lab_test": {
+      "tested_gauge_mm": 1.23,
+      "spin_percent": 90,
+      "tension_maintenance_percent": 90,
+      "control_percent": 85
+    },
+
+    "perfect_tennis_playtest_2023": {
+      "status_date": "2023-09",
+      "summary": "Reported as a versatile all-court string offering a strong balance of power, control, spin and durability with long-lasting playability characteristics."
+    }
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Club and Tour Players With Powerful Groundstrokes",
+      "Players Seeking High Spin From a Round Polyester",
+      "Players Prioritizing Tension Stability",
+      "All-Court Players",
+      "Players Wanting Long-Lasting Playability",
+      "Hybrid Users Seeking a Smooth Polyester Cross"
+    ],
+
+    "avoid_for": [
+      "Beginners With Slow Swing Speed",
+      "Players Seeking Maximum Multifilament Comfort",
+      "Players Wanting Extremely High Launch Angle From a Shaped String"
+    ],
+
+    "alternative_strings": [
+      "MSV Focus Hex",
+      "MSV Focus HEX Soft",
+      "MSV Focus HEX Ultra",
+      "Luxilon ALU Power",
+      "HEAD Lynx",
+      "Yonex Poly Tour Pro"
+    ]
+  },
+
+  "comparison_tags": [
+    "Round Polyester",
+    "High Spin",
+    "High Control",
+    "High Tension Maintenance",
+    "Low Friction",
+    "Hybrid Friendly",
+    "Long Playability",
+    "Club",
+    "Tour"
+  ],
+
+  "ai_keywords": [
+    "msv",
+    "co focus",
+    "msv co focus",
+    "co focus 118",
+    "co focus 123",
+    "co focus 127",
+    "1.18",
+    "1.23",
+    "1.27",
+    "black",
+    "white",
+    "red",
+    "light blue",
+    "round polyester",
+    "focus hex material",
+    "spin",
+    "control",
+    "durability",
+    "tension maintenance",
+    "25 percent less tension loss",
+    "aalborg university",
+    "racketpedia"
+  ],
+
+  "target_competitors": [
+    "MSV Focus Hex",
+    "Luxilon ALU Power",
+    "HEAD Lynx",
+    "Yonex Poly Tour Pro",
+    "Kirschbaum Max Power",
+    "Tecnifibre Razor Soft"
+  ],
+
+  "description": {
+    "en": "MSV Co Focus is a round co-polyester string made from the same material platform as the highly regarded Focus Hex, but without the shaped profile. It is designed for club and Tour players with powerful groundstrokes who want a strong combination of spin, control, durability and tension maintenance. Its smooth round construction provides excellent snapback and makes it particularly useful in hybrid setups. Independent testing referenced by MSV has also highlighted strong spin potential, reduced tension loss and long-lasting playability.",
+
+    "zh": "MSV Co Focus 是一款采用圆形截面的共聚酯球线，使用与 Focus Hex 相同的核心材料体系，但取消了六边形结构。它面向拥有强大底线击球能力的俱乐部及巡回赛级球员，在旋转、控制、耐久以及保磅之间提供非常均衡的表现。圆形光滑结构能够提供优秀 Snap-back，同时也非常适合作为 Hybrid 混穿中的低摩擦聚酯横线。MSV 所引用的多项第三方测试也显示其具有较高旋转潜力、较低张力损失以及长期稳定的可打性。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "MSV Co Focus",
+      "1.18 mm",
+      "1.23 mm",
+      "1.27 mm",
+      "Black",
+      "White",
+      "Red",
+      "Light Blue",
+      "Club and Tour player positioning",
+      "Powerful groundstroke positioning",
+      "High spin potential",
+      "Control",
+      "Durability",
+      "Tension maintenance",
+      "Same material platform as MSV Focus Hex",
+      "Round shape",
+      "Unique material mix",
+      "25% less tension loss in supplied TW University reference",
+      "Aalborg University study reference",
+      "Racketpedia 1.23 mm lab data",
+      "perfect-tennis.com 2023 playtest reference"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendations",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
