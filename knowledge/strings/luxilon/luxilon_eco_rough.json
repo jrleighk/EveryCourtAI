@@ -1,0 +1,319 @@
+{
+  "id": "luxilon_eco_rough",
+  "brand": "Luxilon",
+  "series": "Eco",
+  "model": "Eco Rough",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "100% Recycled Polyester-Based Material",
+    "string_family": "Polyester",
+    "cross_section": "Round",
+    "surface": "Dented / Rough",
+    "recycled_material_percentage": 100,
+    "sustainable": true,
+    "tour_positioning": "Sustainable Spin / Comfort Polyester"
+  },
+
+  "specifications": {
+    "construction": "Polyester Monofilament",
+    "cross_section": "Round",
+    "surface": "45-Degree Dented Rough Surface",
+
+    "available_gauges": [
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.25,
+        "available": true,
+
+        "packaging": [
+          {
+            "type": "Set",
+            "length_ft": 40,
+            "length_m": 12.2
+          }
+        ],
+
+        "power": 8,
+        "control": 9,
+        "spin": 10,
+        "comfort": 8,
+        "feel": 8,
+        "durability": 9,
+        "tension_maintenance": 8,
+        "elasticity": 8,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Heavy Topspin",
+          "Aggressive Baseliners",
+          "Players Seeking Softer Rough Polyester",
+          "Advanced Club Players",
+          "Tournament Players",
+          "Sustainability-Focused Players"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "100% Recycled Material Construction",
+    "45-Degree Dented Surface",
+    "Enhanced String Flex",
+    "Spin-Oriented Rough Texture",
+    "Durable Polyester Construction"
+  ],
+
+  "eco_profile": {
+    "recycled_material_percentage": 100,
+    "made_from_recycled_materials": true,
+    "biodegradable": false,
+    "environmental_positioning": "Sustainable Spin Polyester"
+  },
+
+  "design_profile": {
+    "string_type": "Sustainable Rough Spin Polyester",
+    "target_player": "Intermediate / Advanced / Tournament",
+    "arm_friendly": false,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 9,
+    "spin": 10,
+    "comfort": 8,
+    "feel": 8,
+    "durability": 9,
+    "tension_maintenance": 8,
+    "elasticity": 8,
+    "launch_angle": "Medium-High"
+  },
+
+  "ai_rating": {
+    "power": 8,
+    "control": 9,
+    "spin": 10,
+    "comfort": 8,
+    "feel": 8,
+    "durability": 9,
+    "tension_maintenance": 8
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium-Firm",
+    "snapback": 9,
+    "ball_pocketing": 8,
+    "string_movement": 2,
+    "tension_stability": 8,
+    "spin_window": "High",
+    "predictability": 9,
+    "arm_friendliness": 7
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Heavy Topspin",
+      "Aggressive Baseliner",
+      "Modern Baseline",
+      "All Court"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Shift",
+    "Wilson Blade",
+    "HEAD Extreme",
+    "HEAD Speed",
+    "Yonex VCORE",
+    "Yonex EZONE",
+    "Babolat Pure Aero",
+    "Babolat Pure Drive",
+    "Tecnifibre T-FIGHT",
+    "Dunlop SX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Luxilon Natural Gut",
+      "Babolat Touch VS",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²",
+      "Gamma Live Wire Professional"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Spin",
+        "Ball Bite",
+        "Control",
+        "Durability"
+      ],
+
+      "as_crosses": [
+        "Spin Support",
+        "Control",
+        "Stringbed Stability"
+      ]
+    }
+  },
+
+  "gauge_recommendation": {
+    "1.25": {
+      "gauge_name": "17",
+
+      "best_for": [
+        "Maximum Spin",
+        "Ball Bite",
+        "Fast Swing Speed",
+        "Modern Baseline Tennis",
+        "Sustainable Performance"
+      ],
+
+      "tradeoffs": [
+        "Less Comfort Than Multifilament",
+        "Less Maximum Control Than 4G",
+        "Less Maximum Feel Than Element"
+      ],
+
+      "recommended_player": "Intermediate to advanced players who want a sustainable rough polyester with high spin, good durability and a slightly softer feel than traditional firm rough strings."
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.25": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "16-28"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Medium",
+    "tension_loss_sensitivity": "Medium",
+    "playability_duration": "Good",
+    "recommended_monitoring": "Replace when snapback, ball bite or directional control noticeably declines."
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Seeking Maximum Spin From the Luxilon Eco Family",
+      "Aggressive Baseliners",
+      "Heavy Topspin Players",
+      "Players Wanting a Softer Rough Polyester Response",
+      "Players Prioritizing Sustainable Equipment"
+    ],
+
+    "avoid_for": [
+      "Beginners With Slow Swing Speed",
+      "Players With Significant Arm Sensitivity",
+      "Players Seeking Maximum Free Power",
+      "Players Wanting Multifilament-Level Comfort"
+    ],
+
+    "alternative_strings": [
+      "Luxilon Eco Power",
+      "Luxilon Eco Spin",
+      "Luxilon ALU Power Rough",
+      "Babolat RPM Rough",
+      "Tecnifibre Black Code",
+      "Yonex Poly Tour Rev"
+    ]
+  },
+
+  "comparison_tags": [
+    "100% Recycled",
+    "Sustainable Polyester",
+    "Rough",
+    "45-Degree Dented",
+    "Maximum Spin",
+    "Softer Feel",
+    "High Durability",
+    "Modern Baseline"
+  ],
+
+  "ai_keywords": [
+    "luxilon",
+    "eco rough",
+    "luxilon eco rough",
+    "eco rough 125",
+    "1.25",
+    "17 gauge",
+    "100% recycled",
+    "45 degree dented",
+    "rough polyester",
+    "spin",
+    "soft feel",
+    "durability",
+    "sustainable tennis string"
+  ],
+
+  "target_competitors": [
+    "Luxilon ALU Power Rough",
+    "Babolat RPM Rough",
+    "Tecnifibre Black Code",
+    "Yonex Poly Tour Rev",
+    "Solinco Tour Bite",
+    "Grapplesnake Tour M8"
+  ],
+
+  "description": {
+    "en": "Luxilon Eco Rough is a sustainable polyester monofilament made from 100% recycled materials. Its surface is dented at 45-degree angles to increase string flexibility and create a softer response while also enhancing ball bite and spin. Designed for players who want durability, control and additional rotation without the overly harsh feel associated with some traditional rough polyester strings, Eco Rough combines modern spin performance with a more sustainable material platform.",
+
+    "zh": "Luxilon Eco Rough 是一款采用 100% 再生材料制造的环保型聚酯单丝球线。其表面以 45 度角形成凹纹结构，可提升球线弯曲能力，使击球反馈比传统粗糙型聚酯更加柔和，同时增强咬球能力和旋转表现。它适合希望兼顾耐久、控制、强旋转以及更舒适击球感的中高级球员，同时也是 Luxilon 环保系列中的主要旋转型产品。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_official_product_information",
+    "last_updated": "2026-08-14",
+
+    "officially_verified_fields": [
+      "Eco Rough",
+      "1.25 mm / 17 gauge",
+      "Set length: 40 ft / 12.2 m",
+      "100% recycled materials",
+      "45-degree dented surface",
+      "Enhanced flexibility",
+      "Softer feel",
+      "Additional spin",
+      "Durable construction"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
