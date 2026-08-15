@@ -1,0 +1,462 @@
+{
+  "id": "hip_sensitivity",
+  "category": "Player Physical Constraint",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
+
+  "constraint": {
+    "name": {
+      "en": "Hip Sensitivity",
+      "zh": "髋部 / 臀部敏感"
+    },
+    "description": {
+      "en": "The player experiences hip-region discomfort, stiffness, fatigue or movement limitation during or after tennis. This profile is used to adjust equipment recommendations and identify when movement or recovery considerations should take priority over performance goals.",
+      "zh": "球员在网球运动过程中或结束后出现髋部或臀部区域的不适、僵硬、疲劳或活动受限。本画像用于调整装备推荐，并判断何时应将移动能力与恢复需求置于单纯性能目标之上。"
+    }
+  },
+
+  "priority": {
+    "type": "Physical Constraint",
+    "override_level": "Highest",
+    "overrides": [
+      "maximum_performance",
+      "maximum_control",
+      "maximum_spin",
+      "maximum_stability_through_weight"
+    ]
+  },
+
+  "severity_levels": {
+    "none": {
+      "score": 0
+    },
+    "mild": {
+      "score": 1
+    },
+    "moderate": {
+      "score": 2
+    },
+    "high": {
+      "score": 3
+    }
+  },
+
+  "symptoms": [
+    "Hip-region soreness after play",
+    "Gluteal-region discomfort",
+    "Hip stiffness",
+    "Reduced rotational comfort",
+    "Discomfort during lateral movement",
+    "Difficulty recovering after wide shots",
+    "Reduced confidence during open-stance hitting",
+    "Fatigue during long matches",
+    "Reduced movement range"
+  ],
+
+  "possible_contributors": [
+    "High training or match load",
+    "Repeated acceleration and deceleration",
+    "Frequent lateral movement",
+    "Repeated rotational loading",
+    "Reduced hip mobility",
+    "Movement compensation elsewhere in the kinetic chain",
+    "Insufficient recovery",
+    "Previous hip-region injury"
+  ],
+
+  "equipment_strategy": {
+    "primary_goal": "Reduce Unnecessary Physical Demand While Preserving Stability And Easy Performance",
+
+    "change_priority": [
+      "Racquet Maneuverability",
+      "Racquet Power Assistance",
+      "Forgiveness",
+      "Swingweight",
+      "Static Weight",
+      "String Comfort",
+      "String Tension",
+      "Hybrid Architecture"
+    ]
+  },
+
+  "preferred_racquet_dna": {
+    "maneuverability": 10,
+    "forgiveness": 10,
+    "easy_power": 9,
+    "comfort": 9,
+    "stability": 8,
+    "moderate_swingweight": 9,
+    "predictability": 8,
+    "control": 7,
+    "spin": 7
+  },
+
+  "preferred_string_dna": {
+    "comfort": 9,
+    "elasticity": 9,
+    "easy_power": 9,
+    "ball_pocketing": 8,
+    "shock_absorption": 8,
+    "control": 7,
+    "feel": 7,
+    "spin": 6,
+    "stiffness": 3
+  },
+
+  "recommended_string_families": [
+    "Natural Gut",
+    "Multifilament",
+    "Soft Co-Polyester",
+    "Responsive Co-Polyester",
+    "Natural Gut / Polyester Hybrid",
+    "Multifilament / Soft Polyester Hybrid"
+  ],
+
+  "recommended_strings": [
+    "Babolat Touch VS",
+    "Wilson Natural Gut",
+    "Wilson NXT",
+    "Yonex PolyTour Air",
+    "Yonex REXIS Comfort",
+    "Yonex REXIS Speed",
+    "Luxilon Element",
+    "Babolat RPM Soft",
+    "Tecnifibre X-One Biphase",
+    "Tecnifibre NRG2",
+    "Solinco Hyper-G Soft",
+    "MSV Swift",
+    "Toroline Truffle X"
+  ],
+
+  "recommended_hybrids": [
+    "Natural Gut Main + Soft Polyester Cross",
+    "Multifilament Main + Soft Polyester Cross",
+    "Soft Polyester Main + Multifilament Cross"
+  ],
+
+  "racquet_adjustment": {
+    "prefer": [
+      "Easy racquet-head acceleration",
+      "Moderate static weight",
+      "Manageable swingweight",
+      "Large effective sweet spot",
+      "Good forgiveness",
+      "Stable off-center response",
+      "Usable free power"
+    ],
+
+    "avoid": [
+      "Excessively demanding racquets",
+      "Very high swingweight when movement is already limited",
+      "Very small sweet spot",
+      "Low-powered setup requiring repeated over-swinging"
+    ]
+  },
+
+  "tension_adjustment": {
+    "mild": {
+      "adjustment_lbs": -1
+    },
+
+    "moderate": {
+      "adjustment_lbs": -2
+    },
+
+    "high": {
+      "adjustment_lbs": -3
+    },
+
+    "notes": [
+      "Tension reduction is intended to increase easy depth and reduce the effort required from the complete kinetic chain.",
+      "Do not lower tension excessively if launch control becomes unstable.",
+      "String material should normally be reviewed before making large tension changes."
+    ]
+  },
+
+  "gauge_adjustment": {
+    "preferred": [
+      "1.20",
+      "1.23",
+      "1.25"
+    ],
+
+    "logic": {
+      "more_easy_power": "Prefer slightly thinner gauge when durability permits.",
+      "more_durability": "Prefer 1.25 before automatically moving to very thick gauges."
+    }
+  },
+
+  "movement_considerations": {
+    "importance": "Very High",
+
+    "affected_movements": [
+      "Lateral movement",
+      "Recovery steps",
+      "Open-stance forehand",
+      "Open-stance backhand",
+      "Wide defensive shots",
+      "Acceleration",
+      "Deceleration",
+      "Change of direction",
+      "Serve loading and rotation"
+    ],
+
+    "equipment_objectives": [
+      "Reduce unnecessary effort required to create depth",
+      "Maintain racquet maneuverability under movement pressure",
+      "Increase forgiveness when ideal positioning is unavailable",
+      "Provide predictable response during defensive contact"
+    ]
+  },
+
+  "kinetic_chain_logic": {
+    "importance": "High",
+
+    "principle": {
+      "en": "Hip function is part of the kinetic chain used to transfer force through tennis strokes. Movement limitation in one segment may alter how other segments contribute.",
+      "zh": "髋部是网球击球动力链的重要组成部分。某一环节的活动受限可能改变其他身体部位参与力量传递的方式。"
+    },
+
+    "equipment_response": [
+      "Do not assume that the player should compensate with a heavier racquet.",
+      "Increase easy power before asking the player to generate more body rotation.",
+      "Increase forgiveness if movement limitations reduce ideal court positioning."
+    ]
+  },
+
+  "playing_style_interaction": {
+    "baseline_aggressive": {
+      "risk_area": [
+        "Repeated rotation",
+        "Explosive lateral recovery"
+      ],
+
+      "equipment_direction": [
+        "Maintain control",
+        "Increase manageable power",
+        "Avoid excessive swingweight"
+      ]
+    },
+
+    "baseline_counterpuncher": {
+      "risk_area": [
+        "Wide defensive movement",
+        "Repeated changes of direction"
+      ],
+
+      "equipment_direction": [
+        "Increase forgiveness",
+        "Increase easy depth",
+        "Maintain maneuverability"
+      ]
+    },
+
+    "baseline_grinder": {
+      "risk_area": [
+        "High movement volume",
+        "Long match duration"
+      ],
+
+      "equipment_direction": [
+        "Reduce cumulative equipment demand",
+        "Increase comfort",
+        "Increase forgiveness"
+      ]
+    },
+
+    "all_court": {
+      "risk_area": [
+        "Frequent movement transitions"
+      ],
+
+      "equipment_direction": [
+        "Prioritize maneuverability",
+        "Maintain stable response"
+      ]
+    },
+
+    "serve_volley": {
+      "risk_area": [
+        "Explosive forward movement",
+        "Low volleys",
+        "Repeated serve loading"
+      ],
+
+      "equipment_direction": [
+        "Prioritize maneuverability",
+        "Easy acceleration",
+        "Stable volley response"
+      ]
+    }
+  },
+
+  "severity_logic": {
+    "mild": {
+      "recommendation": [
+        "Review racquet swingweight",
+        "Use comfortable string setup",
+        "Avoid unnecessary equipment weight",
+        "Maintain forgiveness"
+      ]
+    },
+
+    "moderate": {
+      "recommendation": [
+        "Prioritize maneuverability",
+        "Increase easy power",
+        "Use softer string setup",
+        "Reduce physical demand of the racquet",
+        "Review movement and recovery requirements"
+      ]
+    },
+
+    "high": {
+      "recommendation": [
+        "Use a highly manageable racquet setup",
+        "Prioritize forgiveness and easy depth",
+        "Use comfort-oriented strings",
+        "Avoid equipment that requires repeated maximal effort"
+      ],
+
+      "hard_constraints": [
+        "Do not recommend excessive swingweight solely for stability.",
+        "Do not recommend an underpowered setup that requires constant over-swinging.",
+        "Do not allow performance goals to override significant movement limitations."
+      ]
+    }
+  },
+
+  "goal_conflict_logic": {
+    "more_power": {
+      "resolution": [
+        "Increase power through string elasticity and racquet efficiency before increasing racquet mass."
+      ]
+    },
+
+    "more_control": {
+      "resolution": [
+        "Use predictable string response before moving to a demanding low-powered racquet."
+      ]
+    },
+
+    "more_spin": {
+      "resolution": [
+        "Improve spin through string and racquet-head acceleration rather than requiring exaggerated body rotation."
+      ]
+    },
+
+    "more_stability": {
+      "resolution": [
+        "Seek stability without creating excessive swingweight."
+      ]
+    }
+  },
+
+  "ai_override_rules": {
+    "if_hip_sensitivity_is_high": {
+      "override": true,
+
+      "prioritize": [
+        "Maneuverability",
+        "Forgiveness",
+        "Easy Power",
+        "Comfort",
+        "Reduced Physical Demand"
+      ],
+
+      "deprioritize": [
+        "Maximum Swingweight",
+        "Maximum Static Weight",
+        "Very Demanding Low-Power Frames",
+        "Equipment Requiring Maximum Body-Generated Power"
+      ]
+    }
+  },
+
+  "future_recovery_module": {
+    "related_area": "Recovery / Physiotherapy",
+
+    "possible_topics": [
+      "Hip Mobility",
+      "Hip Strength",
+      "Gluteal Strength",
+      "Core Stability",
+      "Movement Screening",
+      "Load Management",
+      "Recovery",
+      "Return To Tennis"
+    ],
+
+    "routing_rule": "Physical profile identifies the affected region and severity. Specific exercise, rehabilitation or treatment recommendations must come from a separate recovery module."
+  },
+
+  "medical_warning": {
+    "enabled": true,
+
+    "message": {
+      "en": "Equipment changes may reduce playing demands but cannot diagnose or treat hip conditions. Persistent, significant or worsening symptoms should be evaluated by an appropriate healthcare professional.",
+      "zh": "装备调整可能降低打球时的身体负担，但不能诊断或治疗髋部疾病。如症状持续、明显或不断加重，应由专业医疗人员进行评估。"
+    }
+  },
+
+  "tradeoffs": {
+    "more_maneuverability_can_reduce": [
+      "Maximum Plow Through",
+      "Maximum Mass-Based Stability"
+    ],
+
+    "more_easy_power_can_reduce": [
+      "Maximum Low-Launch Control"
+    ],
+
+    "acceptable_tradeoff": "Reducing unnecessary movement and rotational demand takes priority over maximizing a single equipment performance characteristic."
+  },
+
+  "matching_weights": {
+    "maneuverability": 0.22,
+    "forgiveness": 0.18,
+    "easy_power": 0.15,
+    "comfort": 0.12,
+    "swingweight": 0.10,
+    "stability": 0.08,
+    "static_weight": 0.06,
+    "predictability": 0.04,
+    "string_elasticity": 0.03,
+    "control": 0.01,
+    "spin": 0.01
+  },
+
+  "output_guidance": {
+    "must_explain": [
+      "How hip sensitivity changes the equipment recommendation.",
+      "Whether maneuverability, forgiveness or easy power is being prioritized.",
+      "Why additional racquet mass is or is not appropriate.",
+      "What performance tradeoff is intentionally accepted.",
+      "Whether recovery-module assessment should be considered."
+    ],
+
+    "must_not_do": [
+      "Do not diagnose the cause of hip pain.",
+      "Do not prescribe rehabilitation exercises from this equipment profile.",
+      "Do not assume all hip discomfort requires a lighter racquet.",
+      "Do not maximize easy power if it creates unacceptable loss of control."
+    ]
+  },
+
+  "search_keywords": [
+    "hip",
+    "hip pain",
+    "hip sensitivity",
+    "hip stiffness",
+    "glute",
+    "glute pain",
+    "hip mobility",
+    "hip rotation",
+    "髋部",
+    "髋关节",
+    "臀部",
+    "髋部疼痛",
+    "髋部僵硬",
+    "髋部敏感"
+  ]
+}
