@@ -1,0 +1,230 @@
+{
+  "id": "slow",
+  "category": "Swing Speed",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
+
+  "profile": {
+    "name": {
+      "en": "Slow Swing Speed",
+      "zh": "慢速挥拍"
+    },
+
+    "description": {
+      "en": "Players who generate limited racquet-head speed and rely more on equipment for power. Typical of beginners, recreational players, juniors, seniors, and players with compact swings.",
+      "zh": "拍头速度较慢，主要依靠球拍和球线提供力量。常见于初学者、休闲球员、青少年、资深球员以及挥拍动作较短的球员。"
+    }
+  },
+
+  "swing_characteristics": {
+    "racquet_head_speed": "Slow",
+    "acceleration": "Low",
+    "self_generated_power": "Low",
+    "spin_generation_potential": "Low",
+    "timing_requirement": "Low",
+    "contact_stability_requirement": "Medium"
+  },
+
+  "equipment_needs": {
+    "primary": [
+      "Free Power",
+      "Comfort",
+      "Forgiveness",
+      "Easy Depth"
+    ],
+    "secondary": [
+      "Larger Sweet Spot",
+      "Easy Launch",
+      "Shock Absorption"
+    ],
+    "lower_priority": [
+      "Maximum Spin",
+      "Tour-Level Control"
+    ]
+  },
+
+  "preferred_racquet_dna": {
+    "power": 10,
+    "control": 6,
+    "spin": 6,
+    "stability": 7,
+    "maneuverability": 8,
+    "forgiveness": 10,
+    "feel": 7,
+    "launch_angle": 9,
+    "comfort": 10
+  },
+
+  "preferred_racquet_characteristics": {
+    "head_size": [
+      "100",
+      "102",
+      "104",
+      "105"
+    ],
+    "weight_g": [
+      "260",
+      "270",
+      "280",
+      "285"
+    ],
+    "balance": [
+      "Even",
+      "Slightly Head Heavy"
+    ],
+    "string_patterns": [
+      "16x19",
+      "16x18"
+    ],
+    "stiffness_preference": [
+      "Medium",
+      "Medium-Firm"
+    ]
+  },
+
+  "preferred_string_dna": {
+    "power": 10,
+    "control": 6,
+    "spin": 6,
+    "comfort": 10,
+    "feel": 8,
+    "durability": 7,
+    "tension_maintenance": 8,
+    "snapback": 5,
+    "ball_pocketing": 9,
+    "launch_angle": 9
+  },
+
+  "recommended_string_families": [
+    "Multifilament",
+    "Natural Gut",
+    "Synthetic Gut",
+    "Soft Co-Polyester"
+  ],
+
+  "preferred_string_characteristics": {
+    "shape": [
+      "Round"
+    ],
+    "stiffness": [
+      "Soft"
+    ],
+    "gauge_mm": [
+      1.25,
+      1.30
+    ],
+    "key_traits": [
+      "Easy Power",
+      "Comfort",
+      "Elastic Response",
+      "Large Sweet Spot",
+      "Good Pocketing"
+    ]
+  },
+
+  "recommended_string_examples": [
+    "Wilson NXT",
+    "Wilson Sensation",
+    "Yonex REXIS Comfort",
+    "Yonex REXIS Speed",
+    "Tecnifibre X-One Biphase",
+    "Tecnifibre NRG2",
+    "Babolat XALT",
+    "Gamma Live Wire",
+    "Wilson Natural Gut"
+  ],
+
+  "recommended_hybrid_examples": [
+    "Natural Gut + Soft Poly",
+    "Multifilament + Soft Poly",
+    "Wilson Duo Feel",
+    "Champion's Choice Duo"
+  ],
+
+  "recommended_tension": {
+    "multifilament": "50-54 lbs",
+    "natural_gut": "52-56 lbs",
+    "soft_poly": "44-47 lbs",
+    "hybrid": "50/47 lbs"
+  },
+
+  "recommended_racquet_examples": [
+    "Yonex EZONE 100",
+    "Wilson Ultra 100",
+    "Babolat Pure Drive Team",
+    "Head Boom MP",
+    "Tecnifibre Tempo 270",
+    "Dunlop FX500"
+  ],
+
+  "ai_matching_priority": {
+    "power": 0.22,
+    "comfort": 0.20,
+    "forgiveness": 0.18,
+    "launch_angle": 0.12,
+    "ball_pocketing": 0.10,
+    "feel": 0.07,
+    "maneuverability": 0.05,
+    "control": 0.03,
+    "spin": 0.02,
+    "durability": 0.01
+  },
+
+  "matching_logic": {
+    "prioritize_when": [
+      "Player struggles to generate depth.",
+      "Player has compact swings.",
+      "Player values comfort over maximum control.",
+      "Player frequently leaves the ball short."
+    ],
+
+    "equipment_goals": [
+      "Increase easy depth.",
+      "Increase free power.",
+      "Reduce vibration.",
+      "Improve forgiveness.",
+      "Expand effective sweet spot."
+    ],
+
+    "deprioritize": [
+      "Extremely Stiff Polyester",
+      "Low Powered Racquets",
+      "Dense 18x20 Patterns",
+      "Very Small Head Sizes"
+    ]
+  },
+
+  "compatible_profiles": {
+    "playing_styles": [
+      "all_court",
+      "baseline_grinder"
+    ],
+    "levels": [
+      "beginner",
+      "intermediate",
+      "senior"
+    ],
+    "goals": [
+      "more_power",
+      "more_comfort",
+      "easy_depth"
+    ]
+  },
+
+  "risk_flags": [
+    "Using firm polyester at high tension may significantly reduce power.",
+    "Small control racquets may make it difficult to generate depth.",
+    "Very low-powered setups can encourage poor stroke mechanics."
+  ],
+
+  "search_keywords": [
+    "slow swing",
+    "compact swing",
+    "easy power",
+    "beginner",
+    "senior",
+    "slow racket head speed",
+    "慢挥拍",
+    "慢速挥拍"
+  ]
+}
