@@ -1,0 +1,564 @@
+{
+  "id": "wilson_nxt_duo_ii",
+  "brand": "Wilson",
+  "series": "NXT Duo",
+  "model": "NXT Duo II",
+  "category": "Hybrid String Set",
+
+  "manufacturer_data": {
+    "construction": "Multifilament + Co-Polyester Hybrid",
+    "main_components": [
+      "Wilson NXT 16",
+      "Luxilon Adrenaline 17"
+    ],
+    "string_family": "Hybrid",
+    "official_positioning": "Hybrid string set combining Wilson NXT with Luxilon Adrenaline for crisp responsiveness, arm-friendly comfort, ball pocketing, feedback and controlled stability.",
+    "target_level": "Intermediate / Advanced",
+    "reversible_configuration": true,
+    "product_generation": "Second Generation",
+    "predecessor": "Wilson NXT Duo",
+    "upgrade_from": "Enduro Pro",
+    "upgrade_to": "Luxilon Adrenaline"
+  },
+
+  "specifications": {
+    "construction": "Multifilament + Co-Polyester Hybrid",
+
+    "available_colors": [
+      "Platinum",
+      "Platinum"
+    ],
+
+    "components": {
+      "nxt_16": {
+        "string": "Wilson NXT",
+        "gauge_name": "16",
+        "gauge_mm": 1.30,
+        "color": "Platinum",
+        "construction": "Multifilament",
+        "material": "Xycro Microfibers with Polyurethane",
+        "shape": "Round",
+        "primary_role": [
+          "Comfort",
+          "Power",
+          "Ball Pocketing",
+          "Feel",
+          "Shock Absorption"
+        ]
+      },
+
+      "luxilon_adrenaline_17": {
+        "string": "Luxilon Adrenaline",
+        "gauge_name": "17",
+        "gauge_mm": 1.25,
+        "color": "Platinum",
+        "construction": "Co-Polyester Monofilament",
+        "shape": "Round",
+        "primary_role": [
+          "Control",
+          "Durability",
+          "Crisp Response",
+          "Stability",
+          "Directional Precision"
+        ]
+      }
+    },
+
+    "gauge": {
+      "official_listing": "17/16",
+      "mm_official_listing": "1.25/1.30"
+    },
+
+    "packaging": [
+      {
+        "type": "Hybrid Set",
+        "length_ft": 40,
+        "length_m": 12.2
+      }
+    ]
+  },
+
+  "official_hybrid_configuration": {
+    "reversible": true,
+
+    "durability_configuration": {
+      "mains": "Luxilon Adrenaline 17 / 1.25",
+      "crosses": "Wilson NXT 16 / 1.30",
+      "expected_character": [
+        "Higher Durability",
+        "More Control",
+        "Crisper Response",
+        "Higher Stringbed Stability",
+        "More Polyester-Dominant Feel"
+      ]
+    },
+
+    "playability_configuration": {
+      "mains": "Wilson NXT 16 / 1.30",
+      "crosses": "Luxilon Adrenaline 17 / 1.25",
+      "expected_character": [
+        "More Playability",
+        "More Feel",
+        "More Ball Pocketing",
+        "Higher Comfort",
+        "Softer Overall Response"
+      ]
+    }
+  },
+
+  "technology": [
+    "Wilson NXT Multifilament",
+    "Luxilon Adrenaline Co-Polyester",
+    "Reversible Hybrid Architecture",
+    "Crisp Response Tuning",
+    "Comfort-Control Integration",
+    "Ball Pocketing Enhancement"
+  ],
+
+  "technology_details": {
+    "nxt_component": {
+      "description": "Wilson NXT provides arm-friendly comfort, elasticity, pocketing and soft feel within the hybrid.",
+      "primary_benefits": [
+        "Comfort",
+        "Pocketing",
+        "Power",
+        "Shock Absorption",
+        "Feel"
+      ]
+    },
+
+    "adrenaline_component": {
+      "description": "Luxilon Adrenaline contributes firmer directional support, durability and a crisp, controlled polyester response.",
+      "primary_benefits": [
+        "Control",
+        "Durability",
+        "Crispness",
+        "Stability",
+        "Precision"
+      ]
+    },
+
+    "hybrid_interaction": {
+      "description": "The hybrid combines NXT's soft multifilament response with Adrenaline's firmer polyester structure to deliver stable pocketing, feedback and controlled responsiveness.",
+      "primary_benefits": [
+        "Crisp Responsiveness",
+        "Arm-Friendly Comfort",
+        "Ball Pocketing",
+        "Feedback",
+        "Stable Control"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Responsive Comfort-Control Hybrid",
+    "target_player": "Intermediate / Advanced",
+    "arm_friendly": true,
+    "spin_focus": false,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true,
+    "pocketing_focus": true,
+    "precision_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 9,
+    "spin": 8,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 8,
+    "tension_maintenance": 9,
+    "elasticity": 9,
+    "shock_absorption": 10,
+    "ball_pocketing": 10,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 9,
+    "spin": 8,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 8,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Soft-Medium",
+    "snapback": 8,
+    "ball_pocketing": 10,
+    "string_movement": 7,
+    "tension_stability": 9,
+    "spin_window": "Medium",
+    "predictability": 10,
+    "arm_friendliness": 10,
+    "shock_absorption": 10,
+    "directional_precision": 9,
+    "stringbed_stability": 9,
+    "response_crispness": 9,
+    "feedback": 10,
+    "connected_feel": 10,
+    "hybrid_versatility": 10
+  },
+
+  "stringing_recommendation": {
+    "general": {
+      "configuration": "Either string may be installed in the mains."
+    },
+
+    "configuration_guidance": {
+      "adrenaline_mains": {
+        "best_for": [
+          "More Durability",
+          "More Control",
+          "Crisper Response",
+          "Higher Stability"
+        ]
+      },
+
+      "nxt_mains": {
+        "best_for": [
+          "More Playability",
+          "More Feel",
+          "More Comfort",
+          "More Pocketing"
+        ]
+      }
+    }
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced"
+    ],
+
+    "swing_speed": [
+      "Medium",
+      "Medium-Fast",
+      "Fast"
+    ],
+
+    "play_style": [
+      "All Court",
+      "Baseline",
+      "Doubles",
+      "Serve & Volley",
+      "Control-Oriented Player"
+    ],
+
+    "special_player_profiles": [
+      "Players Wanting Crisp Response Without Full-Poly Harshness",
+      "Players Seeking Strong Ball Pocketing",
+      "Players Wanting Stable Feedback",
+      "Players Seeking Arm-Friendly Control",
+      "Players Wanting Adjustable Hybrid Performance",
+      "Players Transitioning Away From Full Polyester"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson Clash",
+    "Wilson RF 01",
+    "Wilson Pro Staff",
+    "Wilson Ultra",
+    "HEAD Speed",
+    "HEAD Radical",
+    "Yonex EZONE",
+    "Yonex PERCEPT",
+    "Babolat Pure Strike",
+    "Tecnifibre T-FIGHT",
+    "Dunlop CX"
+  ],
+
+  "hybrid_physics": {
+    "poly_component": {
+      "string": "Luxilon Adrenaline",
+      "gauge_mm": 1.25,
+      "primary_effects": [
+        "Control",
+        "Durability",
+        "Crispness",
+        "Directional Stability"
+      ]
+    },
+
+    "multifilament_component": {
+      "string": "Wilson NXT",
+      "gauge_mm": 1.30,
+      "primary_effects": [
+        "Comfort",
+        "Pocketing",
+        "Power",
+        "Shock Absorption"
+      ]
+    },
+
+    "combined_effect": [
+      "Stable Ball Pocketing",
+      "Crisp Responsiveness",
+      "Arm-Friendly Comfort",
+      "Controlled Feel",
+      "Reliable Feedback"
+    ]
+  },
+
+  "configuration_effects": {
+    "adrenaline_in_mains": {
+      "power": 8,
+      "control": 10,
+      "spin": 8,
+      "comfort": 9,
+      "feel": 9,
+      "durability": 9,
+      "tension_maintenance": 9,
+      "ball_pocketing": 9,
+      "response": "Crisp / Stable / Controlled"
+    },
+
+    "nxt_in_mains": {
+      "power": 10,
+      "control": 8,
+      "spin": 7,
+      "comfort": 10,
+      "feel": 10,
+      "durability": 8,
+      "tension_maintenance": 8,
+      "ball_pocketing": 10,
+      "response": "Plush / Responsive / Comfortable"
+    }
+  },
+
+  "estimated_lifespan": {
+    "hybrid_setup": {
+      "heavy_topspin_hours": "6-10",
+      "club_player_hours": "14-24"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Immediate / Short",
+    "peak_playability": "Immediate",
+    "performance_drop": "Medium-Low",
+    "tension_loss_sensitivity": "Medium-Low",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when NXT develops significant fraying or when Adrenaline loses crisp response and stringbed stability."
+  },
+
+  "comparison_data": {
+    "vs_original_nxt_duo": {
+      "upgrade": "Luxilon Adrenaline replaces Enduro Pro",
+      "response": "More Modern / More Refined",
+      "control": "Higher",
+      "stability": "Higher",
+      "durability": "Improved"
+    },
+
+    "vs_full_bed_adrenaline": {
+      "comfort": "Much Higher",
+      "pocketing": "Much Higher",
+      "power": "Higher",
+      "shock_absorption": "Much Higher",
+      "control": "Slightly Softer"
+    },
+
+    "vs_full_bed_nxt": {
+      "control": "Higher",
+      "stability": "Higher",
+      "durability": "Higher",
+      "crispness": "Higher",
+      "comfort": "Slightly Lower"
+    },
+
+    "vs_duo_feel": {
+      "crispness": "Higher",
+      "durability": "Higher",
+      "control": "Higher",
+      "comfort": "Slightly Lower",
+      "primary_identity": {
+        "nxt_duo_ii": "Crisp Response / Pocketing / Stability",
+        "duo_feel": "Maximum Feel / Comfort / Vibration Reduction"
+      }
+    },
+
+    "vs_duo_control": {
+      "comfort": "Higher",
+      "pocketing": "Higher",
+      "control": "Lower",
+      "spin": "Lower",
+      "tension_maintenance": "Lower",
+      "primary_identity": {
+        "nxt_duo_ii": "Balanced Comfort-Control",
+        "duo_control": "Precision / Control / Spin"
+      }
+    },
+
+    "vs_duo_power": {
+      "control": "Higher",
+      "crispness": "Higher",
+      "power": "Lower",
+      "pocketing": "Comparable",
+      "primary_identity": {
+        "nxt_duo_ii": "Stable Responsive Feel",
+        "duo_power": "Maximum Explosive Power"
+      }
+    }
+  },
+
+  "science_metrics": {
+    "hybrid_type": "Multifilament + Round Co-Polyester",
+
+    "performance_mechanisms": [
+      "Polyester Directional Support",
+      "Polyester Crisp Response",
+      "Multifilament Pocketing",
+      "Multifilament Shock Absorption"
+    ],
+
+    "trajectory_profile": "Balanced / Controlled",
+
+    "launch_angle_profile": "Medium",
+
+    "comfort_class": "Very High",
+    "feel_class": "Very High",
+    "control_class": "High",
+    "pocketing_class": "Very High",
+    "feedback_class": "Very High",
+    "hybrid_class": "Premium Responsive Hybrid"
+  },
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Seeking Crisp Hybrid Response",
+      "Players Wanting Strong Pocketing",
+      "Players Wanting More Control Than Full NXT",
+      "Players Wanting More Comfort Than Full Adrenaline",
+      "All-Court Players",
+      "Doubles Players",
+      "Players Transitioning Away From Full Polyester"
+    ],
+
+    "avoid_for": [
+      "Players Seeking Maximum Spin",
+      "Players Wanting Maximum Free Power",
+      "Players Seeking Maximum Polyester Durability",
+      "Frequent Multifilament String Breakers"
+    ],
+
+    "alternative_strings": [
+      "Wilson Duo Feel",
+      "Wilson Duo Control",
+      "Wilson Duo Power",
+      "Wilson NXT 16",
+      "Luxilon Adrenaline"
+    ]
+  },
+
+  "comparison_tags": [
+    "Wilson",
+    "NXT Duo II",
+    "NXT Duo",
+    "Luxilon Adrenaline",
+    "NXT",
+    "Hybrid",
+    "Multifilament",
+    "Co-Polyester",
+    "Crisp Response",
+    "Comfort",
+    "Pocketing",
+    "Feedback",
+    "Stability",
+    "Platinum",
+    "1.25",
+    "1.30"
+  ],
+
+  "ai_keywords": [
+    "wilson",
+    "nxt duo ii",
+    "nxt duo 2",
+    "wilson nxt duo ii",
+    "nxt",
+    "luxilon adrenaline",
+    "adrenaline",
+    "17 16",
+    "1.25",
+    "1.30",
+    "platinum",
+    "hybrid",
+    "multifilament poly hybrid",
+    "crisp response",
+    "comfort",
+    "ball pocketing",
+    "feedback",
+    "stable",
+    "controlled",
+    "enduro pro replacement"
+  ],
+
+  "target_competitors": [
+    "Wilson Duo Feel",
+    "Wilson Duo Control",
+    "Wilson Duo Power",
+    "Wilson NXT + Luxilon ALU Power",
+    "Solinco Tour Bite + Vanquish"
+  ],
+
+  "description": {
+    "en": "Wilson NXT Duo II is a hybrid combining Wilson NXT 16 / 1.30 mm with Luxilon Adrenaline 17 / 1.25 mm. It blends the soft, arm-friendly comfort and pocketing of NXT with the crisp, stable and controlled response of Adrenaline. An update to the original NXT Duo, this version replaces Enduro Pro with Luxilon Adrenaline. Installing Adrenaline in the mains produces greater durability and control, while installing NXT in the mains increases playability, feel and comfort.",
+
+    "zh": "Wilson NXT Duo II 是一套由 Wilson NXT 16 / 1.30 毫米与 Luxilon Adrenaline 17 / 1.25 毫米组成的官方 Hybrid。NXT 提供柔和、Arm-Friendly 的舒适性、Pocketing 和力量，而 Adrenaline 则提供更加 Crisp、稳定和可控的聚酯响应。它是原版 NXT Duo 的升级版本，Luxilon Adrenaline 替代了旧款 Enduro Pro。Adrenaline 放在主线时，更强调 Durability、Control 和稳定；NXT 放在主线时，则更加偏向 Playability、Feel、Comfort 和 Pocketing。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Wilson NXT Duo II",
+      "Platinum / Platinum",
+      "Hybrid string set",
+      "Wilson NXT 16",
+      "NXT 1.30 mm",
+      "Luxilon Adrenaline 17",
+      "Adrenaline 1.25 mm",
+      "Crisp responsiveness positioning",
+      "Arm-friendly comfort positioning",
+      "Excellent ball pocketing",
+      "Feedback positioning",
+      "Stable and controlled response positioning",
+      "Update to NXT Duo",
+      "Luxilon Adrenaline replaces Enduro Pro",
+      "Adrenaline mains recommended for more durability",
+      "NXT crosses recommended in durability setup",
+      "NXT mains recommended for more playability and feel",
+      "Adrenaline crosses recommended in playability setup",
+      "Gauge 17/16",
+      "Diameter 1.25/1.30 mm",
+      "Set 40 ft / 12.2 m"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Stringing Recommendation",
+      "Recommended Racquets",
+      "Hybrid Physics",
+      "Configuration Effects",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
