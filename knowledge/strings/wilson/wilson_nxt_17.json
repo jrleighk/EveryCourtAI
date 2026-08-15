@@ -1,0 +1,471 @@
+{
+  "id": "wilson_nxt_17",
+  "brand": "Wilson",
+  "series": "NXT",
+  "model": "NXT 17",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Multifilament",
+    "material": "Xycro Microfibers with Polyurethane",
+    "string_family": "Multifilament",
+    "core_structure": "X-Bonded Multifilament Core",
+    "cross_section": "Round",
+    "surface": "Smooth",
+    "tour_positioning": "Comfort / Power / Feel Multifilament",
+    "official_positioning": "Premium multifilament string using proprietary Xycro microfibers impregnated with PU to enhance comfort, power, tension maintenance and sweet-spot performance.",
+    "popularity_positioning": "Wilson describes NXT as the world's most popular multifilament string."
+  },
+
+  "specifications": {
+    "construction": "Xycro Multifilament with PU",
+    "cross_section": "Round",
+    "surface": "Smooth",
+
+    "available_colors": [
+      "Neon Orange"
+    ],
+
+    "color_availability": {
+      "Neon Orange": {
+        "gauge_mm": 1.24,
+        "gauge_name": "17",
+        "available": true
+      }
+    },
+
+    "available_gauges": [
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.24,
+        "available": true,
+
+        "available_colors": [
+          "Neon Orange"
+        ],
+
+        "power": 10,
+        "control": 8,
+        "spin": 8,
+        "comfort": 10,
+        "feel": 10,
+        "durability": 8,
+        "tension_maintenance": 9,
+        "elasticity": 10,
+        "shock_absorption": 10,
+        "ball_pocketing": 10,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Maximum Power",
+          "Maximum Feel",
+          "Maximum Comfort",
+          "Arm-Friendly Play",
+          "Full Bed",
+          "Hybrid Use",
+          "Players Wanting a More Lively NXT Response"
+        ]
+      }
+    ],
+
+    "packaging": [
+      {
+        "type": "Set",
+        "length_ft": 40,
+        "length_m": 12.2
+      }
+    ]
+  },
+
+  "technology": [
+    "Xycro Microfibers",
+    "Polyurethane Impregnation",
+    "X-Bonded Core",
+    "Enhanced Sweet Spot",
+    "Shock Reduction Construction"
+  ],
+
+  "technology_details": {
+    "xycro_microfibers": {
+      "description": "Proprietary Xycro microfibers are impregnated with polyurethane to increase comfort, power and cushioning.",
+      "primary_benefits": [
+        "Comfort",
+        "Power",
+        "Shock Absorption",
+        "Plush Feel"
+      ]
+    },
+
+    "x_bonded_core": {
+      "description": "Wilson's X-bonded core is designed to improve tension maintenance and sustain power over a longer playing period.",
+      "primary_benefits": [
+        "Improved Tension Maintenance",
+        "Longer-Lasting Power",
+        "More Stable Response"
+      ]
+    },
+
+    "sweet_spot_enhancement": {
+      "manufacturer_claim": "10% larger sweet spot than traditional synthetic gut string",
+      "primary_benefits": [
+        "More Forgiveness",
+        "Easier Power",
+        "Improved Off-Center Response"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Premium Comfort Power Multifilament",
+    "target_player": "Beginner / Intermediate / Advanced",
+    "arm_friendly": true,
+    "spin_focus": false,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true,
+    "pocketing_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 10,
+    "control": 8,
+    "spin": 8,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 8,
+    "tension_maintenance": 9,
+    "elasticity": 10,
+    "shock_absorption": 10,
+    "ball_pocketing": 10,
+    "launch_angle": "Medium-High"
+  },
+
+  "ai_rating": {
+    "power": 10,
+    "control": 8,
+    "spin": 8,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 8,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Soft",
+    "snapback": 7,
+    "ball_pocketing": 10,
+    "string_movement": 6,
+    "tension_stability": 9,
+    "spin_window": "Medium",
+    "predictability": 9,
+    "arm_friendliness": 10,
+    "shock_absorption": 10,
+    "directional_precision": 8,
+    "sweet_spot_forgiveness": 10,
+    "plushness": 10,
+    "power_response": 10,
+    "liveliness": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate",
+      "Advanced"
+    ],
+
+    "swing_speed": [
+      "Slow",
+      "Medium",
+      "Medium-Fast"
+    ],
+
+    "play_style": [
+      "All Court",
+      "Doubles",
+      "Serve & Volley",
+      "Touch Player",
+      "Baseline"
+    ],
+
+    "special_player_profiles": [
+      "Players Seeking Maximum Comfort",
+      "Players With Arm Sensitivity",
+      "Players Wanting More Power Than NXT 16",
+      "Players Seeking Maximum Feel",
+      "Players Transitioning Away From Full Polyester",
+      "Players Wanting a More Lively Multifilament Response"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Clash",
+    "Wilson Blade",
+    "Wilson RF 01",
+    "Wilson Pro Staff",
+    "HEAD Speed",
+    "HEAD Boom",
+    "Yonex EZONE",
+    "Yonex PERCEPT",
+    "Babolat Pure Drive",
+    "Babolat Pure Strike",
+    "Tecnifibre T-FIGHT",
+    "Dunlop FX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Luxilon ALU Power",
+      "Luxilon 4G",
+      "Luxilon Element",
+      "Wilson Revolve",
+      "Wilson Revolve Spin",
+      "Natural Gut"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Maximum Comfort",
+        "Power",
+        "Feel",
+        "Ball Pocketing"
+      ],
+
+      "as_crosses": [
+        "Stringbed Softening",
+        "Comfort",
+        "Power Support",
+        "Shock Reduction",
+        "Feel"
+      ]
+    },
+
+    "hybrid_note": "NXT 17 is especially useful when a player wants a softer and more lively component in a polyester hybrid."
+  },
+
+  "gauge_recommendation": {
+    "1.24": {
+      "gauge_name": "17",
+      "color": "Neon Orange",
+
+      "best_for": [
+        "Maximum Power",
+        "Maximum Feel",
+        "Comfort",
+        "Touch",
+        "Hybrid Play"
+      ],
+
+      "tradeoffs": [
+        "Less Durability Than NXT 16",
+        "Less Control Than NXT 16",
+        "More String Movement"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.24": {
+      "heavy_topspin_hours": "5-9",
+      "club_player_hours": "14-24"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Immediate",
+    "peak_playability": "Immediate",
+    "performance_drop": "Low-Medium",
+    "tension_loss_sensitivity": "Medium-Low",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when fraying, notching, tension loss or reduced pocketing becomes significant."
+  },
+
+  "installation_guidelines": {
+    "handling_sensitivity": "Medium-High",
+
+    "manufacturer_instructions": [
+      "Handle gently during installation.",
+      "Avoid over-clamping.",
+      "Avoid crimping the string."
+    ]
+  },
+
+  "comparison_data": {
+    "vs_nxt_16": {
+      "thickness": "Lower",
+      "power": "Higher",
+      "feel": "Higher",
+      "response": "More Lively",
+      "spin": "Slightly Higher",
+      "durability": "Lower",
+      "control": "Lower"
+    },
+
+    "vs_traditional_synthetic_gut": {
+      "sweet_spot": "10% larger according to Wilson",
+      "shock": "Fraction of traditional synthetic gut according to Wilson",
+      "comfort": "Much Higher",
+      "power": "Higher",
+      "pocketing": "Higher"
+    },
+
+    "vs_polyester": {
+      "comfort": "Much Higher",
+      "power": "Higher",
+      "shock_absorption": "Much Higher",
+      "spin": "Lower",
+      "durability": "Lower",
+      "control": "Softer / More Elastic"
+    }
+  },
+
+  "science_metrics": {
+    "material_class": "PU-Impregnated Multifilament",
+
+    "geometry": {
+      "shape": "Round"
+    },
+
+    "comfort_class": "Very High",
+    "power_class": "Very High",
+    "shock_absorption_class": "Very High",
+    "ball_pocketing_class": "Very High",
+    "tension_stability_class": "High",
+    "sweet_spot_claim": "+10% vs traditional synthetic gut",
+    "performance_class": "Premium Multifilament"
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Seeking Maximum Comfort",
+      "Players With Arm Sensitivity",
+      "Players Wanting More Power Than NXT 16",
+      "Players Seeking Maximum Feel",
+      "Players Wanting a Lively Multifilament",
+      "Players Building Comfortable Hybrid Setups"
+    ],
+
+    "avoid_for": [
+      "Heavy Topspin Players Seeking Maximum Snapback",
+      "Frequent String Breakers",
+      "Players Wanting Firm Polyester-Level Control",
+      "Players Seeking Maximum Durability"
+    ],
+
+    "alternative_strings": [
+      "Wilson NXT 16",
+      "Tecnifibre NRG2",
+      "Tecnifibre X-One Biphase",
+      "Solinco Vanquish",
+      "MSV Soft Touch",
+      "Kirschbaum Touch Multifibre"
+    ]
+  },
+
+  "comparison_tags": [
+    "NXT",
+    "NXT 17",
+    "Multifilament",
+    "Xycro Microfibers",
+    "PU",
+    "X-Bonded Core",
+    "Comfort",
+    "Power",
+    "Feel",
+    "Sweet Spot",
+    "Neon Orange",
+    "1.24"
+  ],
+
+  "ai_keywords": [
+    "wilson",
+    "nxt",
+    "nxt 17",
+    "wilson nxt 17",
+    "1.24",
+    "17 gauge",
+    "neon orange",
+    "multifilament",
+    "xycro",
+    "microfibers",
+    "polyurethane",
+    "pu",
+    "x bonded core",
+    "comfort",
+    "power",
+    "feel",
+    "tension maintenance",
+    "sweet spot",
+    "shock absorption",
+    "arm friendly"
+  ],
+
+  "target_competitors": [
+    "Wilson NXT 16",
+    "Tecnifibre NRG2",
+    "Tecnifibre X-One Biphase",
+    "Solinco Vanquish",
+    "MSV Soft Touch",
+    "Kirschbaum Touch Multifibre",
+    "Babolat Xcel"
+  ],
+
+  "description": {
+    "en": "Wilson NXT 17 is a premium multifilament string built with proprietary Xycro microfibers impregnated with polyurethane for exceptional comfort, power and shock absorption. Its X-bonded core is designed to improve tension maintenance and sustain pace over longer periods of play. Wilson also claims a 10% larger sweet spot than traditional synthetic gut with significantly reduced shock. At 1.24 mm, the 17 gauge version is thinner than NXT 16, producing a livelier, more powerful and more responsive feel at the expense of some durability and control. This version is available in Neon Orange.",
+
+    "zh": "Wilson NXT 17 是一款高端多芯球线，采用专有 Xycro 微纤维并注入 Polyurethane 聚氨酯，以提供非常高的舒适性、力量和减震表现。X-Bonded Core 结构用于提升保磅和更持久的力量输出。Wilson 同时表示，NXT 相比传统 Synthetic Gut 拥有约 10% 更大的 Sweet Spot，并显著降低击球冲击。1.24 毫米 / 17 规格比 NXT 16 更细，因此整体更加活跃、更有力量、触球感更明显，但耐久和控制会略低。此版本颜色为 Neon Orange。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Wilson NXT 17",
+      "Multifilament construction",
+      "Proprietary Xycro microfibers",
+      "PU impregnation",
+      "Enhanced comfort",
+      "Enhanced power",
+      "X-bonded core",
+      "Improved tension maintenance",
+      "Longer-lasting power positioning",
+      "World's most popular multifilament positioning",
+      "10% larger sweet spot than traditional synthetic gut claim",
+      "Reduced shock positioning",
+      "17 gauge",
+      "1.24 mm",
+      "Thinner than NXT 16",
+      "More power than NXT 16 positioning",
+      "Neon Orange",
+      "Set length 40 ft / 12.2 m",
+      "Gentle installation required",
+      "Avoid over-clamping",
+      "Avoid crimping"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendations",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "Installation Guidelines",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
