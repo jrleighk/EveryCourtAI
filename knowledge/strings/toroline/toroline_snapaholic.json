@@ -1,0 +1,437 @@
+{
+  "id": "toroline_snapaholic",
+  "brand": "Toroline",
+  "series": "Chef's Choice",
+  "model": "SNAPAHOLIC",
+  "category": "Hybrid String Set",
+
+  "curation": {
+    "curator": "Coach Conor Casey",
+    "program": "Chef's Choice",
+    "curation_type": "Monthly Curated Hybrid",
+    "debut_blend": true
+  },
+
+  "manufacturer_data": {
+    "construction": "Dual Co-Poly Hybrid",
+    "main_string": "Toroline Snapper 1.23 Lavender",
+    "cross_string": "Toroline O-TORO SNAP TOUR FLEX 1.25 Mint",
+    "official_positioning": "Spin-focused hybrid combining an octagonal shaped main with an ultra-slick round Tour Flex cross for aggressive bite, fast snapback, modern control and a crisp yet elastic response.",
+    "target_level": "Intermediate / Advanced / Tournament"
+  },
+
+  "specifications": {
+    "construction": "Octagonal Co-Poly + Round Low-Friction Tour Co-Poly Hybrid",
+
+    "packaging": {
+      "type": "Two Half Sets",
+      "half_sets_per_package": 2,
+      "length_per_half_set_m": 6.7,
+      "intended_racquets": 1,
+      "total_length_m": 13.4
+    },
+
+    "mains": {
+      "string": "Toroline Snapper",
+      "gauge_mm": 1.23,
+      "color": "Lavender",
+      "shape": "Octagonal",
+      "profile_sides": 8,
+      "material": "Co-Polyester",
+      "primary_role": [
+        "Aggressive Ball Bite",
+        "Spin",
+        "Mechanical Grip",
+        "Heavy Rotation"
+      ]
+    },
+
+    "crosses": {
+      "string": "Toroline O-TORO SNAP TOUR FLEX",
+      "gauge_mm": 1.25,
+      "color": "Mint",
+      "shape": "Round",
+      "surface": "Ultra-Slick / Low Friction",
+      "material": "Co-Polyester",
+      "flex_class": "Tour",
+      "primary_role": [
+        "Snapback Support",
+        "Control",
+        "Response Consistency",
+        "Low Inter-String Friction",
+        "Stringbed Stability"
+      ]
+    }
+  },
+
+  "component_strings": {
+    "snapper_123_lavender": {
+      "role": "Mains",
+      "construction": "Octagonal Co-Polyester",
+      "primary_benefits": [
+        "Ball Bite",
+        "Spin",
+        "Mechanical Grip",
+        "Aggressive Response"
+      ]
+    },
+
+    "o_toro_snap_tour_125_mint": {
+      "role": "Crosses",
+      "construction": "Round Tour-Flex Co-Polyester",
+      "surface": "Ultra-Slick",
+      "primary_benefits": [
+        "Low Friction",
+        "Fast Snapback",
+        "Control",
+        "Response Consistency",
+        "Stable Stringbed"
+      ]
+    }
+  },
+
+  "official_hybrid_configuration": {
+    "mains": "Snapper 1.23 Lavender",
+    "crosses": "O-TORO SNAP TOUR FLEX 1.25 Mint",
+
+    "official_feel": [
+      "Crisp",
+      "Elastic",
+      "Lively"
+    ],
+
+    "official_result": [
+      "Explosive Spin",
+      "Enhanced Snapback",
+      "Modern Control",
+      "Response Consistency",
+      "Pure Strike Feel"
+    ]
+  },
+
+  "technology": [
+    "Octagonal Mechanical Grip",
+    "Ultra-Slick Round Cross",
+    "Low-Friction Hybrid Architecture",
+    "Snapback Optimization",
+    "Tour-Flex Cross Stability",
+    "Modern Spin-Control Tuning"
+  ],
+
+  "technology_details": {
+    "spin_system": {
+      "description": "The Snapper mains generate mechanical ball grip through their octagonal geometry, while the ultra-slick O-TORO SNAP TOUR FLEX crosses reduce string-to-string friction and allow the mains to slide and return rapidly.",
+      "primary_mechanisms": [
+        "Mechanical Ball Grip",
+        "Reduced Inter-String Friction",
+        "Main-String Movement",
+        "Fast Snapback"
+      ]
+    },
+
+    "response_consistency": {
+      "description": "The slick round cross supports repeatable string return, helping the stringbed reset after impact for more consistent response."
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Spin Snapback Technical Hybrid",
+    "target_player": "Intermediate / Advanced / Tournament",
+    "arm_friendly": false,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "feel_focus": true,
+    "durability_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true,
+    "snapback_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 8,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9,
+    "elasticity": 9,
+    "launch_angle": "Medium-High"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 8,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium-Firm",
+    "snapback": 10,
+    "ball_pocketing": 9,
+    "string_movement": 10,
+    "inter_string_friction": "Very Low",
+    "tension_stability": 9,
+    "spin_window": "Very High",
+    "predictability": 10,
+    "arm_friendliness": 7,
+    "directional_precision": 10,
+    "ball_bite": 10,
+    "surface_grip": 10,
+    "response_consistency": 10,
+    "stringbed_stability": 10,
+    "liveliness": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "Modern Baseline",
+      "All Court"
+    ],
+
+    "special_player_profiles": [
+      "Spin-Focused Players",
+      "Players Seeking Maximum Snapback",
+      "Players Wanting Crisp Yet Elastic Response",
+      "Players Seeking Modern Control",
+      "Players Wanting a Lively Stringbed",
+      "Players Prioritizing Response Consistency"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Babolat Pure Aero",
+    "Babolat Pure Drive",
+    "Yonex VCORE",
+    "Wilson Shift",
+    "Wilson Blade",
+    "HEAD Extreme",
+    "HEAD Speed",
+    "Tecnifibre T-FIGHT",
+    "Dunlop SX"
+  ],
+
+  "hybrid_physics": {
+    "main_string_role": {
+      "string": "Snapper",
+      "shape": "Octagonal",
+      "primary_spin_source": "Mechanical ball grip"
+    },
+
+    "cross_string_role": {
+      "string": "O-TORO SNAP TOUR FLEX",
+      "shape": "Round",
+      "surface": "Ultra-Slick",
+      "primary_spin_source": "Low inter-string friction and fast snapback"
+    },
+
+    "combined_effect": [
+      "Strong Ball Bite",
+      "High Main-String Mobility",
+      "Fast Snapback",
+      "Explosive Spin",
+      "Stable Response",
+      "Modern Control"
+    ]
+  },
+
+  "estimated_lifespan": {
+    "hybrid_setup": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "16-28"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Medium-Low",
+    "tension_loss_sensitivity": "Medium-Low",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when Snapper bite, O-TORO SNAP TOUR FLEX slickness, snapback, or response consistency noticeably declines."
+  },
+
+  "comparison_data": {
+    "vs_full_bed_snapper": {
+      "snapback": "Higher",
+      "string_movement": "Higher",
+      "control": "Higher",
+      "response_consistency": "Higher",
+      "spin_efficiency": "Higher"
+    },
+
+    "vs_full_bed_o_toro_snap_tour_flex": {
+      "ball_bite": "Much Higher",
+      "spin": "Higher",
+      "launch_angle": "Higher",
+      "mechanical_grip": "Much Higher"
+    },
+
+    "vs_101_blend": {
+      "main_shape": {
+        "snapaholic": "Octagonal",
+        "101_blend": "Hexagonal"
+      },
+      "cross_role": "Similar low-friction snapback concept",
+      "spin_character": "More aggressive mechanical bite",
+      "feel": "Crisper / Livelier"
+    }
+  },
+
+  "science_metrics": {
+    "main_spin_mechanism": [
+      "Octagonal Mechanical Ball Grip",
+      "Surface Bite"
+    ],
+
+    "cross_spin_mechanism": [
+      "Ultra-Low Inter-String Friction",
+      "Fast Snapback",
+      "Increased Main-String Movement"
+    ],
+
+    "trajectory_profile": "Spin-Oriented / Controlled",
+
+    "launch_angle_profile": "Medium-High",
+
+    "inter_string_friction_class": "Very Low",
+
+    "snapback_class": "Elite",
+
+    "hybrid_class": "Performance Spin-Snapback Hybrid"
+  },
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Heavy Topspin Players",
+      "Aggressive Baseliners",
+      "Players Seeking Explosive Snapback",
+      "Players Wanting Crisp and Lively Response",
+      "Players Seeking Strong Mechanical Bite With a Slick Cross",
+      "Advanced Hybrid Users"
+    ],
+
+    "avoid_for": [
+      "Players With Significant Arm Sensitivity",
+      "Beginners With Slow Swing Speed",
+      "Players Seeking Plush Multifilament-Like Comfort",
+      "Players Wanting Very Low Launch Angle"
+    ],
+
+    "alternative_strings": [
+      "Toroline 101 Blend",
+      "Toroline COLE Blend",
+      "Toroline VAMOS + A5",
+      "Solinco Hyper-G Hybrid System",
+      "Toroline O-TORO + O-TORO SNAP"
+    ]
+  },
+
+  "comparison_tags": [
+    "SNAPAHOLIC",
+    "Chef's Choice",
+    "Coach Conor Casey",
+    "Snapper",
+    "O-TORO SNAP TOUR FLEX",
+    "Octagonal Main",
+    "Round Cross",
+    "Ultra Slick",
+    "Snapback",
+    "Spin",
+    "Lavender Mint"
+  ],
+
+  "ai_keywords": [
+    "toroline",
+    "snapaholic",
+    "chef choice",
+    "coach conor casey",
+    "snapper 1.23",
+    "lavender",
+    "o toro snap tour flex",
+    "1.25",
+    "mint",
+    "octagonal main",
+    "round cross",
+    "ultra slick",
+    "low friction",
+    "snapback",
+    "spin",
+    "crisp",
+    "elastic",
+    "lively",
+    "modern control"
+  ],
+
+  "description": {
+    "en": "Toroline SNAPAHOLIC is the debut blend in the Chef's Choice series curated by Coach Conor Casey. It combines Snapper 1.23 Lavender in the mains with O-TORO SNAP TOUR FLEX 1.25 Mint in the crosses. The octagonal Snapper mains create aggressive mechanical bite and spin, while the ultra-slick round crosses reduce inter-string friction and allow the mains to slide and return rapidly. The result is a crisp, elastic and lively hybrid designed for fast swings, explosive spin, strong snapback and consistent modern control.",
+
+    "zh": "Toroline SNAPAHOLIC 是 Chef's Choice 系列的首款 Hybrid，由 Coach Conor Casey 策划。主线使用 Snapper 1.23 Lavender，以八边形结构提供强机械咬球和旋转；横线使用 O-TORO SNAP TOUR FLEX 1.25 Mint，以超光滑圆形结构降低主横线摩擦，并提升主线滑动和快速回位。整体形成一套 Crisp、Elastic、Lively 的现代 Spin Hybrid，特别适合高速挥拍、追求爆发旋转、强 Snapback 和稳定控制的球员。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Toroline SNAPAHOLIC",
+      "Chef's Choice debut blend",
+      "Curated by Coach Conor Casey",
+      "Monthly hybrid series",
+      "Snapper 1.23 mains",
+      "Lavender mains",
+      "Octagonal co-poly mains",
+      "Aggressive bite",
+      "Spin",
+      "O-TORO SNAP TOUR FLEX 1.25 crosses",
+      "Mint crosses",
+      "Round co-poly crosses",
+      "Ultra-slick cross positioning",
+      "Effortless snapback",
+      "Control",
+      "Reduced string-to-string friction",
+      "Enhanced snapback",
+      "Response consistency",
+      "Crisp feel",
+      "Elastic feel",
+      "Lively feel",
+      "Spin-focused player positioning",
+      "Two half sets per package",
+      "6.7 m per half set",
+      "One-racquet package configuration"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Physics",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
