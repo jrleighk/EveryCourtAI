@@ -1,0 +1,725 @@
+{
+  "id": "tension_adjustment_logic",
+  "category": "Decision Rules",
+  "type": "Dynamic Tension Adjustment Engine",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
+
+  "description": {
+    "en": "Dynamic tension-adjustment logic used by EveryCourtAI to convert base string tension rules into player-, racquet-, string-, setup- and environment-specific recommendations.",
+    "zh": "EveryCourtAI 动态磅数修正规则，用于将基础穿线磅数结合球员、球拍、球线、穿线结构和环境条件，转换为个性化建议。"
+  },
+
+  "core_principle": {
+    "en": "Tension should be adjusted only after string family, string model, gauge and full-bed or hybrid architecture have been selected.",
+    "zh": "磅数必须在球线类别、具体型号、线径以及整床或 Hybrid 结构确定之后再进行计算。"
+  },
+
+  "decision_pipeline": [
+    "Read Base Tension From Tension Rules",
+    "Read Player Profile",
+    "Read Racquet DNA",
+    "Read Selected String DNA",
+    "Read Gauge",
+    "Read Full Bed Or Hybrid Architecture",
+    "Apply Physical Constraints",
+    "Apply Racquet Power Adjustment",
+    "Apply Racquet Stiffness Adjustment",
+    "Apply Head Size Adjustment",
+    "Apply String Pattern Adjustment",
+    "Apply String Stiffness Adjustment",
+    "Apply Gauge Adjustment",
+    "Apply Swing Speed Adjustment",
+    "Apply Player Goal Adjustment",
+    "Apply Current Setup Feedback",
+    "Apply Environment Adjustment",
+    "Apply Hybrid Main Cross Logic",
+    "Check Manufacturer Recommended Range If Available",
+    "Clamp To Safe And Practical Range",
+    "Round Final Recommendation",
+    "Generate Confidence And Explanation"
+  ],
+
+  "base_sources": {
+    "primary": "knowledge/recommendations/tension_rules.json",
+
+    "secondary": [
+      "Manufacturer recommended tension range stored in racquet data",
+      "Manufacturer stringing guidance stored in string data",
+      "Current player setup and feedback"
+    ],
+
+    "source_priority": [
+      "Physical safety constraints",
+      "Manufacturer hard limits",
+      "Current successful player setup",
+      "EveryCourtAI tension rules",
+      "Generic category defaults"
+    ]
+  },
+
+  "calculation_model": {
+    "formula": "final_tension = base_tension + racquet_adjustment + string_adjustment + gauge_adjustment + player_adjustment + goal_adjustment + setup_feedback_adjustment + environment_adjustment",
+
+    "hybrid_formula": {
+      "main": "final_main = base_main + applicable_adjustments",
+      "cross": "final_cross = base_cross + applicable_adjustments + hybrid_cross_offset"
+    },
+
+    "rounding": {
+      "lbs": 1,
+      "kg_decimals": 1
+    }
+  },
+
+  "racquet_adjustments": {
+    "power_level": {
+      "very_high": {
+        "adjustment_lbs": 2,
+        "reason": "Reduce excessive launch and free power."
+      },
+
+      "high": {
+        "adjustment_lbs": 1
+      },
+
+      "medium": {
+        "adjustment_lbs": 0
+      },
+
+      "low": {
+        "adjustment_lbs": -1
+      },
+
+      "very_low": {
+        "adjustment_lbs": -2,
+        "reason": "Increase depth and usable power."
+      }
+    },
+
+    "stiffness": {
+      "very_stiff": {
+        "adjustment_lbs": -2,
+        "comfort_override": true
+      },
+
+      "stiff": {
+        "adjustment_lbs": -1
+      },
+
+      "medium": {
+        "adjustment_lbs": 0
+      },
+
+      "flexible": {
+        "adjustment_lbs": 1
+      }
+    },
+
+    "head_size": {
+      "95_97": {
+        "adjustment_lbs": -1
+      },
+
+      "98_100": {
+        "adjustment_lbs": 0
+      },
+
+      "101_104": {
+        "adjustment_lbs": 1
+      },
+
+      "105_plus": {
+        "adjustment_lbs": 2
+      }
+    },
+
+    "string_pattern": {
+      "very_open": {
+        "examples": [
+          "16x18",
+          "16x19 Open"
+        ],
+        "adjustment_lbs": 1
+      },
+
+      "standard_open": {
+        "examples": [
+          "16x19"
+        ],
+        "adjustment_lbs": 0
+      },
+
+      "semi_dense": {
+        "examples": [
+          "16x20"
+        ],
+        "adjustment_lbs": -1
+      },
+
+      "dense": {
+        "examples": [
+          "18x20"
+        ],
+        "adjustment_lbs": -2
+      }
+    }
+  },
+
+  "string_adjustments": {
+    "stiffness": {
+      "very_soft": {
+        "adjustment_lbs": 2
+      },
+
+      "soft": {
+        "adjustment_lbs": 1
+      },
+
+      "medium": {
+        "adjustment_lbs": 0
+      },
+
+      "medium_firm": {
+        "adjustment_lbs": -1
+      },
+
+      "firm": {
+        "adjustment_lbs": -2
+      },
+
+      "very_firm": {
+        "adjustment_lbs": -3
+      }
+    },
+
+    "power_level": {
+      "very_high": {
+        "adjustment_lbs": 2
+      },
+
+      "high": {
+        "adjustment_lbs": 1
+      },
+
+      "medium": {
+        "adjustment_lbs": 0
+      },
+
+      "low": {
+        "adjustment_lbs": -1
+      }
+    },
+
+    "launch_angle": {
+      "very_high": {
+        "adjustment_lbs": 2
+      },
+
+      "high": {
+        "adjustment_lbs": 1
+      },
+
+      "medium": {
+        "adjustment_lbs": 0
+      },
+
+      "low": {
+        "adjustment_lbs": -1
+      }
+    }
+  },
+
+  "gauge_adjustments": {
+    "1.15_1.20": {
+      "adjustment_lbs": 1,
+      "reason": "Thinner strings generally provide more power, feel and movement."
+    },
+
+    "1.21_1.26": {
+      "adjustment_lbs": 0,
+      "default": true
+    },
+
+    "1.27_1.30": {
+      "adjustment_lbs": -1,
+      "reason": "Thicker strings generally provide more stability and lower launch."
+    },
+
+    "1.31_plus": {
+      "adjustment_lbs": -2
+    }
+  },
+
+  "swing_speed_adjustments": {
+    "slow": {
+      "adjustment_lbs": -2,
+      "reason": "Increase easy depth and usable power."
+    },
+
+    "medium": {
+      "adjustment_lbs": 0
+    },
+
+    "fast": {
+      "adjustment_lbs": 1,
+      "reason": "Increase directional control for higher racquet-head speed."
+    }
+  },
+
+  "playing_style_adjustments": {
+    "baseline_aggressive": {
+      "adjustment_lbs": 1
+    },
+
+    "baseline_counterpuncher": {
+      "adjustment_lbs": 0
+    },
+
+    "baseline_grinder": {
+      "adjustment_lbs": -1
+    },
+
+    "all_court": {
+      "adjustment_lbs": 0
+    },
+
+    "serve_volley": {
+      "adjustment_lbs": 1
+    }
+  },
+
+  "goal_adjustments": {
+    "more_control": {
+      "adjustment_lbs": 2,
+      "maximum_without_other_changes": 3
+    },
+
+    "more_power": {
+      "adjustment_lbs": -2
+    },
+
+    "more_spin": {
+      "adjustment_lbs": -1,
+      "note": "Lower tension may increase string movement, but shape and string selection are more important than tension alone."
+    },
+
+    "more_comfort": {
+      "adjustment_lbs": -2
+    },
+
+    "more_feel": {
+      "adjustment_lbs": -1
+    },
+
+    "more_stability": {
+      "adjustment_lbs": 1
+    },
+
+    "more_durability": {
+      "adjustment_lbs": 0,
+      "preferred_action": "Change gauge before increasing tension."
+    },
+
+    "better_tension_maintenance": {
+      "adjustment_lbs": 0,
+      "preferred_action": "Select a string with better tension stability rather than compensating through higher initial tension."
+    },
+
+    "higher_launch": {
+      "adjustment_lbs": -1
+    },
+
+    "lower_launch": {
+      "adjustment_lbs": 1
+    },
+
+    "more_ball_pocketing": {
+      "adjustment_lbs": -1
+    }
+  },
+
+  "physical_constraint_adjustments": {
+    "arm_sensitivity": {
+      "none": {
+        "adjustment_lbs": 0
+      },
+
+      "mild": {
+        "adjustment_lbs": -2
+      },
+
+      "moderate": {
+        "adjustment_lbs": -3,
+        "maximum_poly_tension_lbs": 50
+      },
+
+      "high": {
+        "adjustment_lbs": -4,
+        "prefer_non_poly_or_comfort_hybrid": true,
+        "maximum_poly_tension_lbs": 48
+      }
+    },
+
+    "elbow_sensitivity": {
+      "moderate_or_high": {
+        "adjustment_lbs": -3,
+        "avoid_high_tension_firm_poly": true
+      }
+    },
+
+    "wrist_sensitivity": {
+      "moderate_or_high": {
+        "adjustment_lbs": -2
+      }
+    },
+
+    "shoulder_sensitivity": {
+      "moderate_or_high": {
+        "adjustment_lbs": -1,
+        "note": "Racquet swingweight and static weight should also be reviewed."
+      }
+    }
+  },
+
+  "current_setup_feedback_adjustments": {
+    "too_powerful": {
+      "adjustment_lbs": 2
+    },
+
+    "not_enough_power": {
+      "adjustment_lbs": -2
+    },
+
+    "too_stiff": {
+      "adjustment_lbs": -2,
+      "preferred_action": "Reduce string stiffness before relying only on tension reduction."
+    },
+
+    "too_soft": {
+      "adjustment_lbs": 1
+    },
+
+    "too_high_launch": {
+      "adjustment_lbs": 2
+    },
+
+    "too_low_launch": {
+      "adjustment_lbs": -1
+    },
+
+    "not_enough_spin": {
+      "adjustment_lbs": -1
+    },
+
+    "not_enough_control": {
+      "adjustment_lbs": 2
+    },
+
+    "poor_comfort": {
+      "adjustment_lbs": -2
+    },
+
+    "poor_durability": {
+      "adjustment_lbs": 0,
+      "preferred_action": "Increase gauge or change string before tension."
+    },
+
+    "poor_tension_maintenance": {
+      "adjustment_lbs": 0,
+      "preferred_action": "Change string model before increasing initial tension."
+    }
+  },
+
+  "environment_adjustments": {
+    "temperature": {
+      "hot": {
+        "adjustment_lbs": 1
+      },
+
+      "normal": {
+        "adjustment_lbs": 0
+      },
+
+      "cold": {
+        "adjustment_lbs": -1
+      }
+    },
+
+    "altitude": {
+      "sea_level": {
+        "adjustment_lbs": 0
+      },
+
+      "low": {
+        "adjustment_lbs": 0
+      },
+
+      "medium": {
+        "adjustment_lbs": 1
+      },
+
+      "high": {
+        "adjustment_lbs": 2
+      }
+    },
+
+    "indoor_outdoor": {
+      "indoor_fast_conditions": {
+        "adjustment_lbs": 1
+      },
+
+      "outdoor_normal": {
+        "adjustment_lbs": 0
+      }
+    }
+  },
+
+  "hybrid_adjustment_logic": {
+    "core_rule": {
+      "en": "Main and cross tension should reflect material stiffness and hybrid role, not a fixed universal difference.",
+      "zh": "Hybrid 主线与横线的磅差应根据材料硬度和功能角色决定，而不是固定使用统一磅差。"
+    },
+
+    "gut_poly": {
+      "main_material": "Natural Gut",
+      "cross_material": "Polyester",
+
+      "default_relationship": {
+        "main_higher_than_cross_lbs": 2
+      },
+
+      "allowed_difference_lbs": [
+        2,
+        3,
+        4
+      ],
+
+      "note": "Polyester cross is normally strung lower than natural gut main."
+    },
+
+    "poly_multi": {
+      "main_material": "Polyester",
+      "cross_material": "Multifilament",
+
+      "default_relationship": {
+        "cross_higher_than_main_lbs": 2
+      },
+
+      "allowed_difference_lbs": [
+        1,
+        2,
+        3
+      ]
+    },
+
+    "multi_poly": {
+      "main_material": "Multifilament",
+      "cross_material": "Polyester",
+
+      "default_relationship": {
+        "main_higher_than_cross_lbs": 2
+      }
+    },
+
+    "shaped_poly_round_poly": {
+      "main_material": "Shaped Polyester",
+      "cross_material": "Round Polyester",
+
+      "default_relationship": {
+        "main_cross_difference_lbs": 0
+      },
+
+      "allowed_difference_lbs": [
+        0,
+        1,
+        2
+      ],
+
+      "note": "Cross may be slightly lower when additional snapback is desired."
+    },
+
+    "firm_poly_soft_poly": {
+      "default_relationship": {
+        "soft_cross_higher_than_firm_main_lbs": 1
+      }
+    },
+
+    "soft_poly_elastic_cross": {
+      "default_relationship": {
+        "elastic_cross_higher_than_poly_main_lbs": 2
+      }
+    }
+  },
+
+  "material_difference_rules": {
+    "poly_vs_natural_gut": {
+      "poly_reduction_percent": "5-10%",
+      "reason": "Polyester is generally stiffer and should usually be strung lower than natural gut in mixed-material hybrids."
+    },
+
+    "poly_vs_multifilament": {
+      "poly_reduction_percent": "5-10%"
+    },
+
+    "firm_poly_vs_soft_poly": {
+      "firm_poly_reduction_percent": "3-5%"
+    }
+  },
+
+  "change_limit_rules": {
+    "single_iteration": {
+      "recommended_maximum_change_lbs": 3,
+      "reason": "Large tension changes make it difficult to identify which variable caused the performance difference."
+    },
+
+    "exception": {
+      "allowed_when": [
+        "Current setup is clearly inappropriate.",
+        "Physical discomfort requires immediate reduction.",
+        "Player is moving between very different string families."
+      ]
+    }
+  },
+
+  "safe_range_logic": {
+    "polyester": {
+      "default_min_lbs": 40,
+      "default_max_lbs": 54
+    },
+
+    "soft_polyester": {
+      "default_min_lbs": 40,
+      "default_max_lbs": 53
+    },
+
+    "multifilament": {
+      "default_min_lbs": 46,
+      "default_max_lbs": 58
+    },
+
+    "natural_gut": {
+      "default_min_lbs": 48,
+      "default_max_lbs": 60
+    },
+
+    "synthetic_gut": {
+      "default_min_lbs": 46,
+      "default_max_lbs": 58
+    },
+
+    "manufacturer_override": {
+      "rule": "If the racquet manufacturer provides a recommended range, do not exceed it unless a verified stringing-specific reason exists.",
+      "priority": "high"
+    }
+  },
+
+  "confidence_logic": {
+    "high": {
+      "requirements": [
+        "Current racquet known",
+        "Selected string known",
+        "Gauge known",
+        "Swing speed known",
+        "Primary goal known",
+        "Physical sensitivity known",
+        "Current tension known"
+      ]
+    },
+
+    "medium": {
+      "requirements": [
+        "Current racquet known",
+        "Selected string known",
+        "Swing speed known",
+        "Primary goal known"
+      ]
+    },
+
+    "low": {
+      "behavior": "Return a wider tension range instead of a precise tension."
+    }
+  },
+
+  "output_logic": {
+    "high_confidence": {
+      "format": "single_value_plus_range",
+      "example": {
+        "recommended_lbs": 49,
+        "working_range_lbs": "48-50"
+      }
+    },
+
+    "medium_confidence": {
+      "format": "narrow_range",
+      "example": {
+        "working_range_lbs": "47-50"
+      }
+    },
+
+    "low_confidence": {
+      "format": "broad_range",
+      "example": {
+        "working_range_lbs": "46-51"
+      }
+    }
+  },
+
+  "output_contract": {
+    "fields": [
+      "setup_type",
+      "main_string_id",
+      "cross_string_id",
+      "main_gauge_mm",
+      "cross_gauge_mm",
+      "base_main_lbs",
+      "base_cross_lbs",
+      "recommended_main_lbs",
+      "recommended_cross_lbs",
+      "recommended_main_kg",
+      "recommended_cross_kg",
+      "working_range_lbs",
+      "confidence",
+      "adjustments_applied",
+      "primary_reasons",
+      "tradeoffs",
+      "risk_flags"
+    ]
+  },
+
+  "explanation_rules": {
+    "must_explain": [
+      "Why the selected tension fits the racquet.",
+      "Why the selected tension fits the string stiffness.",
+      "How swing speed influenced tension.",
+      "How the player's goal influenced tension.",
+      "How comfort or physical sensitivity changed the recommendation.",
+      "Why main and cross tensions differ in a hybrid."
+    ],
+
+    "must_not_do": [
+      "Do not claim that higher tension automatically creates more spin.",
+      "Do not increase tension indefinitely to solve control problems.",
+      "Do not use the same tension for every polyester string.",
+      "Do not ignore string gauge.",
+      "Do not ignore racquet stiffness.",
+      "Do not give false precision when player information is incomplete."
+    ]
+  },
+
+  "engine_connections": {
+    "reads_from": [
+      "knowledge/recommendations/tension_rules.json",
+      "knowledge/decision_rules/goal_priority.json",
+      "knowledge/decision_rules/string_selection_logic.json",
+      "knowledge/decision_rules/hybrid_decision_logic.json",
+      "knowledge/players/player_profile_schema.json",
+      "knowledge/racquets/",
+      "knowledge/strings/"
+    ],
+
+    "passes_to": [
+      "recommendation_engine"
+    ]
+  }
+}
