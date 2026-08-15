@@ -1,0 +1,482 @@
+{
+  "id": "toroline_vamos",
+  "brand": "Toroline",
+  "series": "VAMOS",
+  "model": "VAMOS",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Premium Co-Polyester",
+    "string_family": "Polyester",
+    "cross_section": "Hexagonal",
+    "surface": "Shaped / Edged",
+    "profile_sides": 6,
+    "development_platform": "Based on the Toroline A5 platform",
+    "collaboration": "Developed in collaboration with Jonas Eriksson of Tennisnerd",
+    "tour_positioning": "Spin / Bite / Control / Connected Feel Co-Polyester",
+    "official_positioning": "A shaped evolution of A5 designed for players seeking more bite and a higher launch angle while retaining A5's connected response.",
+    "target_level": "Intermediate / Advanced / Tournament"
+  },
+
+  "specifications": {
+    "construction": "Premium Co-Polyester Monofilament",
+    "cross_section": "Hexagonal (6-Sided)",
+    "surface": "Shaped / Edged",
+
+    "available_colors": [
+      "Latte"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_mm": 1.23,
+        "available": true,
+
+        "power": 9,
+        "control": 10,
+        "spin": 10,
+        "comfort": 8,
+        "feel": 10,
+        "durability": 9,
+        "tension_maintenance": 10,
+        "elasticity": 9,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Maximum Ball Bite",
+          "High Spin",
+          "Higher Launch Angle",
+          "Aggressive Baseline Play",
+          "Fast Racquet Head Speed",
+          "Tournament Play",
+          "Players Wanting A5 Feel With More Mechanical Grip"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "A5 Polymer Platform",
+    "Hexagonal Spin Geometry",
+    "Six-Sided Ball-Grip Profile",
+    "High Tension Stability",
+    "Connected Response Engineering",
+    "Spin and Launch-Angle Optimization"
+  ],
+
+  "technology_details": {
+    "a5_platform": {
+      "base_string": "Toroline A5",
+      "relationship": "Shaped evolution",
+      "description": "VAMOS is developed from the same performance foundation as A5 but replaces the round profile with a six-sided geometry to increase mechanical ball grip and launch angle."
+    },
+
+    "spin_generation": {
+      "primary_factors": [
+        "Hexagonal Ball Grip",
+        "String-to-Ball Friction",
+        "Snapback"
+      ],
+      "description": "The six-sided profile increases friction against the ball, allowing the string to grab the felt more effectively and produce a stronger spin response."
+    },
+
+    "launch_angle_engineering": {
+      "description": "Compared with the flatter and more penetrating trajectory associated with A5's round construction, VAMOS is engineered to create a higher and more spin-oriented launch."
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Shaped Spin Control Co-Polyester",
+    "target_player": "Intermediate / Advanced / Tournament",
+    "arm_friendly": false,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true,
+    "ball_bite_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 8,
+    "feel": 10,
+    "durability": 9,
+    "tension_maintenance": 10,
+    "elasticity": 9,
+    "launch_angle": "Medium-High"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 8,
+    "feel": 10,
+    "durability": 9,
+    "tension_maintenance": 10
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium-Firm",
+    "snapback": 9,
+    "ball_pocketing": 9,
+    "string_movement": 2,
+    "tension_stability": 10,
+    "spin_window": "Very High",
+    "predictability": 10,
+    "arm_friendliness": 7,
+    "directional_precision": 10,
+    "ball_bite": 10,
+    "surface_grip": 10,
+    "launch_angle_consistency": 9,
+    "connected_feel": 10,
+    "heavy_ball_potential": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "Modern Baseline",
+      "Power Baseliner",
+      "Aggressive Ball Striker"
+    ],
+
+    "special_player_profiles": [
+      "Players Who Like A5 But Want More Bite",
+      "Players Wanting a Higher Launch Angle Than A5",
+      "Players Seeking Strong Mechanical Ball Grip",
+      "Players Prioritizing Control and Tension Maintenance",
+      "Aggressive Ball Strikers",
+      "Players Seeking Connected Shaped-Poly Feel"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Babolat Pure Aero",
+    "Babolat Pure Drive",
+    "Yonex VCORE",
+    "Wilson Shift",
+    "Wilson Blade",
+    "HEAD Extreme",
+    "HEAD Speed",
+    "Tecnifibre T-FIGHT",
+    "Dunlop SX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Toroline A5",
+      "Natural Gut",
+      "Luxilon Natural Gut",
+      "Babolat Touch VS",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Maximum Ball Bite",
+        "Spin",
+        "Higher Launch Angle",
+        "Control",
+        "Heavy Ball Production"
+      ],
+
+      "as_crosses": [
+        "Spin Support",
+        "Control",
+        "Connected Feel"
+      ]
+    },
+
+    "recommended_toroline_hybrid": {
+      "mains": "VAMOS",
+      "crosses": "A5",
+      "concept": "Shaped main with smooth round cross",
+      "expected_profile": [
+        "Mechanical Ball Bite",
+        "Improved Snapback",
+        "High Spin",
+        "Predictable Control",
+        "Connected Response"
+      ]
+    },
+
+    "hybrid_note": "Pairing VAMOS mains with smooth A5 crosses is a logical Toroline hybrid configuration for players seeking the mechanical grip of a shaped main combined with the lower-friction snapback characteristics of a round cross."
+  },
+
+  "gauge_recommendation": {
+    "1.23": {
+      "best_for": [
+        "Spin",
+        "Ball Bite",
+        "Control",
+        "Higher Launch Angle",
+        "Aggressive Baseline Play",
+        "Tournament Play"
+      ],
+
+      "tradeoffs": [
+        "More Surface Friction Than Round A5",
+        "Lower Flat-Ball Penetration Than A5",
+        "Potentially More Abrasive In Soft-String Hybrids"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.23": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "16-28"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Low",
+    "tension_loss_sensitivity": "Low",
+    "playability_duration": "Excellent",
+    "recommended_monitoring": "Replace when ball bite, snapback, connected response or directional consistency noticeably declines."
+  },
+
+  "laboratory_testing": {
+    "tension_maintenance": {
+      "result": "Exceptional tension maintenance",
+      "validation": [
+        "Laboratory Testing",
+        "Player Testing Across Multiple Levels"
+      ],
+      "exact_numeric_value_available": false
+    }
+  },
+
+  "comparison_data": {
+    "vs_toroline_a5": {
+      "shared_platform": true,
+      "material_foundation": "Same foundation",
+
+      "shape": {
+        "vamos": "Hexagonal",
+        "a5": "Round"
+      },
+
+      "ball_grip": {
+        "vamos": "Higher",
+        "a5": "Lower mechanical grip"
+      },
+
+      "snapback": {
+        "vamos": "High",
+        "a5": "Elite"
+      },
+
+      "spin_mechanism": {
+        "vamos": [
+          "Mechanical Ball Grip",
+          "String Friction",
+          "Snapback"
+        ],
+        "a5": [
+          "Elite Snapback",
+          "Low Friction",
+          "String Movement"
+        ]
+      },
+
+      "launch_angle": {
+        "vamos": "Higher",
+        "a5": "Flatter / More Penetrating"
+      },
+
+      "trajectory": {
+        "vamos": "More Spin-Oriented",
+        "a5": "More Penetrating"
+      },
+
+      "connected_feel": {
+        "vamos": "Retained",
+        "a5": "Core Characteristic"
+      },
+
+      "control": {
+        "vamos": "Outstanding",
+        "a5": "Exceptional"
+      }
+    }
+  },
+
+  "science_metrics": {
+    "spin_mechanism": [
+      "Hexagonal Mechanical Grip",
+      "Increased Ball Friction",
+      "Snapback"
+    ],
+
+    "launch_profile": "Medium-High",
+
+    "trajectory_profile": "Spin-Oriented",
+
+    "tension_stability_class": "Excellent",
+
+    "surface_geometry": {
+      "type": "Hexagonal",
+      "sides": 6
+    },
+
+    "performance_class": "Advanced Shaped Co-Poly"
+  },
+
+  "collaboration": {
+    "partner": "Jonas Eriksson",
+    "organization": "Tennisnerd",
+    "role": "Development Collaboration",
+    "confidence": "Official Manufacturer Claim"
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Aggressive Ball Strikers",
+      "Heavy Topspin Players",
+      "Players Wanting More Bite Than A5",
+      "Players Seeking Higher Launch Angle",
+      "Players Who Like Connected Co-Poly Feel",
+      "Players Prioritizing Control and Tension Stability",
+      "Advanced Baseliners"
+    ],
+
+    "avoid_for": [
+      "Players Seeking the Flattest Possible Ball Trajectory",
+      "Players Wanting Maximum Low-Friction Round-Poly Response",
+      "Players With Significant Arm Sensitivity",
+      "Beginners With Slow Swing Speed"
+    ],
+
+    "alternative_strings": [
+      "Toroline A5",
+      "Toroline O-TORO",
+      "Solinco Hyper-G",
+      "HEAD Lynx Tour",
+      "MSV Focus Hex",
+      "Babolat RPM Blast"
+    ]
+  },
+
+  "comparison_tags": [
+    "VAMOS",
+    "A5 Platform",
+    "Hexagonal",
+    "Six-Sided",
+    "High Bite",
+    "High Spin",
+    "Higher Launch",
+    "Connected Feel",
+    "Tension Stability",
+    "Tennisnerd",
+    "Latte"
+  ],
+
+  "ai_keywords": [
+    "toroline",
+    "vamos",
+    "toroline vamos",
+    "1.23",
+    "latte",
+    "hexagonal",
+    "six sided",
+    "a5",
+    "a5 shaped evolution",
+    "tennisnerd",
+    "jonas eriksson",
+    "ball bite",
+    "spin",
+    "higher launch angle",
+    "control",
+    "tension maintenance",
+    "connected feel",
+    "aggressive ball striker"
+  ],
+
+  "target_competitors": [
+    "Toroline A5",
+    "Toroline O-TORO",
+    "Solinco Hyper-G",
+    "Babolat RPM Blast",
+    "HEAD Lynx Tour",
+    "MSV Focus Hex",
+    "Yonex Poly Tour Rev"
+  ],
+
+  "description": {
+    "en": "Toroline VAMOS is a six-sided evolution of A5 developed in collaboration with Jonas Eriksson of Tennisnerd. Built from the same underlying platform as A5, VAMOS replaces the smooth round profile with a 1.23 mm hexagonal geometry to increase mechanical ball grip, bite and launch angle. While A5 generates much of its spin through elite snapback and low friction, VAMOS adds stronger string-to-ball interaction, creating a more pronounced spin response while retaining the connected feel and predictable control associated with A5. Exceptional tension maintenance and strong directional accuracy make it particularly well suited to aggressive ball strikers.",
+
+    "zh": "Toroline VAMOS 是基于 A5 平台开发的六边形进阶版本，由 Toroline 与 Tennisnerd 的 Jonas Eriksson 合作研发。VAMOS 延续 A5 的核心材料与连接感，但将圆形结构改为 1.23 毫米六边形截面，从而增加球线与网球之间的机械摩擦、咬球能力以及出球角度。A5 主要依靠低摩擦和极高 Snapback 制造旋转，而 VAMOS 在此基础上增加更明显的机械抓球，因此能够提供更强烈的旋转反馈和更高的 Launch Angle，同时保留 A5 标志性的 Connected Feel 与精准控制。再加上优秀的保磅表现，它非常适合高速挥拍、积极进攻并重视旋转和方向控制的球员。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Toroline VAMOS",
+      "Developed with Jonas Eriksson of Tennisnerd",
+      "Shaped evolution of A5",
+      "Same foundation as A5",
+      "1.23 mm gauge",
+      "Hexagonal profile",
+      "Six-sided construction",
+      "Latte color",
+      "More bite than A5 positioning",
+      "Higher launch than A5 positioning",
+      "Connected A5 response retained",
+      "Increased ball grip",
+      "Increased friction between string and ball",
+      "More pronounced spin response",
+      "Outstanding control",
+      "Exceptional tension maintenance",
+      "Lab-tested tension maintenance validation",
+      "Player-tested tension maintenance validation",
+      "Aggressive ball striker positioning"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendations",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "Laboratory Testing",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
