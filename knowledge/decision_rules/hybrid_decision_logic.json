@@ -1,0 +1,779 @@
+{
+  "id": "hybrid_decision_logic",
+  "category": "Decision Rules",
+  "type": "Hybrid Selection Engine",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
+
+  "description": {
+    "en": "Core decision logic used by EveryCourtAI to determine whether a player should use a full-bed setup or a hybrid string configuration, and which hybrid architecture best fits the player's needs.",
+    "zh": "EveryCourtAI 用于判断球员应使用整床穿线还是混线，并进一步选择最合适混线结构的核心决策逻辑。"
+  },
+
+  "decision_pipeline": [
+    "Read Player Profile",
+    "Read Current Racquet DNA",
+    "Read Current String Setup",
+    "Read Current Setup Feedback",
+    "Apply Physical Constraints",
+    "Determine Whether Full Bed Can Satisfy Primary Goal",
+    "Check Goal Conflicts",
+    "Check Racquet And Stringbed Compatibility",
+    "Check Durability Requirements",
+    "Check Comfort Requirements",
+    "Determine Hybrid Architecture",
+    "Select Main String Role",
+    "Select Cross String Role",
+    "Select Candidate Strings",
+    "Recommend Gauge Relationship",
+    "Pass Configuration To Tension Engine"
+  ],
+
+  "core_principle": {
+    "en": "Use a hybrid only when combining two different string roles creates a meaningful performance advantage over a suitable full-bed setup.",
+    "zh": "只有当两种球线承担不同功能并能明显优于合适的整床方案时，才推荐 Hybrid，而不是为了复杂而混线。"
+  },
+
+  "default_behavior": {
+    "prefer_full_bed_when": [
+      "A single string can satisfy the player's primary goal without violating comfort or durability constraints.",
+      "The player values simplicity and consistency.",
+      "The player is still developing clear equipment preferences.",
+      "The player has not provided enough information to justify a hybrid."
+    ],
+
+    "consider_hybrid_when": [
+      "The player has two important but conflicting performance goals.",
+      "Full polyester provides enough control but insufficient comfort.",
+      "Multifilament or natural gut provides enough comfort but insufficient control.",
+      "The player wants shaped-string bite plus smoother snapback.",
+      "The player wants premium feel with polyester-style control.",
+      "The racquet is powerful or stiff and needs the stringbed to balance multiple characteristics."
+    ]
+  },
+
+  "hybrid_trigger_scores": {
+    "minimum_score_to_consider_hybrid": 65,
+    "minimum_score_to_prefer_hybrid": 80,
+
+    "trigger_weights": {
+      "goal_conflict": 0.25,
+      "comfort_need": 0.20,
+      "racquet_compensation_need": 0.15,
+      "spin_snapback_need": 0.15,
+      "feel_control_balance": 0.10,
+      "durability_need": 0.05,
+      "player_experience": 0.05,
+      "current_setup_failure": 0.05
+    }
+  },
+
+  "full_bed_preference_rules": {
+    "full_polyester": {
+      "prefer_when": [
+        "Player has medium or fast swing speed.",
+        "Player wants control, spin and durability.",
+        "Arm sensitivity is none or mild.",
+        "A single polyester can satisfy the player's comfort requirements."
+      ],
+
+      "avoid_when": [
+        "Moderate or high arm sensitivity.",
+        "Current full polyester is already reported as too stiff.",
+        "Player wants significantly more comfort or pocketing."
+      ]
+    },
+
+    "full_multifilament": {
+      "prefer_when": [
+        "Comfort is the dominant goal.",
+        "Swing speed is slow or medium.",
+        "Player does not frequently break strings.",
+        "Maximum spin is not required."
+      ],
+
+      "avoid_when": [
+        "Fast swing speed with frequent over-hitting.",
+        "Heavy topspin player requiring high snapback.",
+        "Frequent string breaker."
+      ]
+    },
+
+    "full_natural_gut": {
+      "prefer_when": [
+        "Maximum feel, comfort and tension maintenance are priorities.",
+        "Budget is not a major constraint.",
+        "Player wants premium response without polyester stiffness."
+      ]
+    },
+
+    "full_synthetic_gut": {
+      "prefer_when": [
+        "Player wants a simple and affordable setup.",
+        "Player is beginner or recreational.",
+        "Comfort and easy power are more important than advanced spin performance."
+      ]
+    }
+  },
+
+  "hybrid_architectures": {
+    "gut_poly": {
+      "id": "gut_poly",
+      "name": {
+        "en": "Natural Gut Main / Polyester Cross",
+        "zh": "天然肠主线 / 聚酯横线"
+      },
+
+      "primary_identity": "Premium Feel + Comfort + Controlled Spin",
+
+      "main_role": [
+        "Power",
+        "Feel",
+        "Comfort",
+        "Ball Pocketing",
+        "Tension Maintenance"
+      ],
+
+      "cross_role": [
+        "Control",
+        "Snapback",
+        "Launch Management",
+        "Spin Support",
+        "Stringbed Stabilization"
+      ],
+
+      "prefer_when": [
+        "Player wants maximum feel and comfort without giving up control.",
+        "Player is all-court or serve-volley oriented.",
+        "Player values tension maintenance and premium response.",
+        "Player uses a control-oriented racquet and wants more usable power."
+      ],
+
+      "avoid_when": [
+        "Frequent natural-gut breaker.",
+        "Budget is a major constraint.",
+        "Player regularly plays in wet conditions without string protection."
+      ],
+
+      "main_string_types": [
+        "Natural Gut"
+      ],
+
+      "cross_string_types": [
+        "Round Co-Polyester",
+        "Smooth Co-Polyester",
+        "Lightly Textured Co-Polyester"
+      ],
+
+      "gauge_guidance": {
+        "main_mm": [
+          1.25,
+          1.30
+        ],
+        "cross_mm": [
+          1.20,
+          1.25
+        ]
+      }
+    },
+
+    "poly_multi": {
+      "id": "poly_multi",
+      "name": {
+        "en": "Polyester Main / Multifilament Cross",
+        "zh": "聚酯主线 / 多芯横线"
+      },
+
+      "primary_identity": "Control + Spin + Added Comfort",
+
+      "main_role": [
+        "Control",
+        "Spin",
+        "Directional Precision",
+        "Durability"
+      ],
+
+      "cross_role": [
+        "Comfort",
+        "Pocketing",
+        "Shock Reduction",
+        "Power Support"
+      ],
+
+      "prefer_when": [
+        "Player likes polyester performance but finds full poly too firm.",
+        "Player has mild arm sensitivity.",
+        "Player wants to preserve control while increasing comfort.",
+        "Player has medium-to-fast swing speed."
+      ],
+
+      "avoid_when": [
+        "Player breaks multifilament crosses extremely quickly.",
+        "Maximum polyester-like durability is required."
+      ],
+
+      "main_string_types": [
+        "Co-Polyester",
+        "Soft Co-Polyester",
+        "Shaped Co-Polyester"
+      ],
+
+      "cross_string_types": [
+        "Multifilament",
+        "Elastic Polymer"
+      ],
+
+      "gauge_guidance": {
+        "main_mm": [
+          1.20,
+          1.23,
+          1.25
+        ],
+        "cross_mm": [
+          1.25,
+          1.30
+        ]
+      }
+    },
+
+    "multi_poly": {
+      "id": "multi_poly",
+      "name": {
+        "en": "Multifilament Main / Polyester Cross",
+        "zh": "多芯主线 / 聚酯横线"
+      },
+
+      "primary_identity": "Comfort + Feel + More Control",
+
+      "main_role": [
+        "Comfort",
+        "Power",
+        "Pocketing",
+        "Feel"
+      ],
+
+      "cross_role": [
+        "Control",
+        "Launch Management",
+        "Stringbed Stabilization"
+      ],
+
+      "prefer_when": [
+        "Comfort is more important than spin.",
+        "Player wants a softer response but still needs more control than full multifilament.",
+        "Player has slow-to-medium swing speed."
+      ],
+
+      "avoid_when": [
+        "Heavy topspin player.",
+        "Frequent string breaker.",
+        "Player expects maximum snapback."
+      ],
+
+      "main_string_types": [
+        "Multifilament"
+      ],
+
+      "cross_string_types": [
+        "Soft Co-Polyester",
+        "Round Co-Polyester"
+      ],
+
+      "gauge_guidance": {
+        "main_mm": [
+          1.25,
+          1.30
+        ],
+        "cross_mm": [
+          1.20,
+          1.25
+        ]
+      }
+    },
+
+    "shaped_poly_round_poly": {
+      "id": "shaped_poly_round_poly",
+      "name": {
+        "en": "Shaped Polyester Main / Round Polyester Cross",
+        "zh": "异形聚酯主线 / 圆形聚酯横线"
+      },
+
+      "primary_identity": "Mechanical Bite + Snapback + Controlled Spin",
+
+      "main_role": [
+        "Ball Bite",
+        "Spin",
+        "Trajectory Shaping"
+      ],
+
+      "cross_role": [
+        "Low Friction",
+        "Snapback",
+        "Predictable Launch",
+        "Response Consistency"
+      ],
+
+      "prefer_when": [
+        "Player wants maximum spin without using an aggressive shaped full bed.",
+        "Player has medium-fast or fast swing speed.",
+        "Player is a heavy-topspin or aggressive-baseline player.",
+        "Player wants greater string movement and snapback."
+      ],
+
+      "avoid_when": [
+        "Moderate or high arm sensitivity.",
+        "Player wants maximum plush comfort.",
+        "Player has slow swing speed."
+      ],
+
+      "main_string_types": [
+        "Shaped Co-Polyester"
+      ],
+
+      "cross_string_types": [
+        "Round Co-Polyester",
+        "Smooth Co-Polyester"
+      ],
+
+      "gauge_guidance": {
+        "main_mm": [
+          1.20,
+          1.23,
+          1.25
+        ],
+        "cross_mm": [
+          1.20,
+          1.25
+        ]
+      }
+    },
+
+    "firm_poly_soft_poly": {
+      "id": "firm_poly_soft_poly",
+      "name": {
+        "en": "Firm Polyester Main / Soft Polyester Cross",
+        "zh": "偏硬聚酯主线 / 软聚酯横线"
+      },
+
+      "primary_identity": "Control + Stability + Improved Comfort",
+
+      "main_role": [
+        "Control",
+        "Stability",
+        "Durability",
+        "Precision"
+      ],
+
+      "cross_role": [
+        "Comfort",
+        "Pocketing",
+        "Elasticity",
+        "Response Softening"
+      ],
+
+      "prefer_when": [
+        "Player wants firm main-string control but a less harsh overall stringbed.",
+        "Player has fast swing speed.",
+        "Player uses a softer or more flexible racquet."
+      ],
+
+      "avoid_when": [
+        "High arm sensitivity.",
+        "Player wants maximum free power."
+      ]
+    },
+
+    "soft_poly_elastic_cross": {
+      "id": "soft_poly_elastic_cross",
+      "name": {
+        "en": "Soft Polyester Main / Elastic Cross",
+        "zh": "软聚酯主线 / 高弹横线"
+      },
+
+      "primary_identity": "Comfort + Pocketing + Moderate Spin",
+
+      "main_role": [
+        "Control",
+        "Spin",
+        "Predictability"
+      ],
+
+      "cross_role": [
+        "Comfort",
+        "Elasticity",
+        "Pocketing",
+        "Power"
+      ],
+
+      "prefer_when": [
+        "Player has mild arm sensitivity.",
+        "Player wants polyester performance with significantly more comfort.",
+        "Player uses a stiff or powerful racquet."
+      ],
+
+      "avoid_when": [
+        "Player requires maximum durability.",
+        "Player wants a very firm tournament response."
+      ]
+    }
+  },
+
+  "main_cross_role_logic": {
+    "main_string_priority": {
+      "influence": "High",
+      "dominant_attributes": [
+        "Overall Feel",
+        "Spin Behavior",
+        "Power Character",
+        "Ball Interaction"
+      ]
+    },
+
+    "cross_string_priority": {
+      "influence": "Medium-High",
+      "dominant_attributes": [
+        "Snapback",
+        "Comfort Tuning",
+        "Launch Control",
+        "Stringbed Stability",
+        "Response Speed"
+      ]
+    }
+  },
+
+  "goal_based_hybrid_logic": {
+    "more_control_plus_more_comfort": {
+      "preferred_architectures": [
+        "poly_multi",
+        "firm_poly_soft_poly",
+        "gut_poly"
+      ]
+    },
+
+    "more_spin_plus_more_comfort": {
+      "preferred_architectures": [
+        "soft_poly_elastic_cross",
+        "shaped_poly_round_poly",
+        "poly_multi"
+      ]
+    },
+
+    "more_feel_plus_more_control": {
+      "preferred_architectures": [
+        "gut_poly",
+        "multi_poly"
+      ]
+    },
+
+    "more_spin_plus_lower_launch": {
+      "preferred_architectures": [
+        "shaped_poly_round_poly"
+      ]
+    },
+
+    "more_power_plus_more_control": {
+      "preferred_architectures": [
+        "gut_poly",
+        "multi_poly"
+      ]
+    }
+  },
+
+  "racquet_compensation_rules": {
+    "high_power_high_stiffness_racquet": {
+      "preferred_architectures": [
+        "poly_multi",
+        "soft_poly_elastic_cross",
+        "shaped_poly_round_poly"
+      ],
+
+      "deprioritize": [
+        "Very Powerful Multi Main + Powerful Cross",
+        "Firm Poly + Firm Poly At High Tension"
+      ]
+    },
+
+    "low_power_control_racquet": {
+      "preferred_architectures": [
+        "gut_poly",
+        "multi_poly",
+        "soft_poly_elastic_cross"
+      ]
+    },
+
+    "spin_oriented_open_pattern_racquet": {
+      "preferred_architectures": [
+        "shaped_poly_round_poly",
+        "poly_multi"
+      ],
+
+      "prioritize": [
+        "Controlled Launch",
+        "Durability",
+        "Tension Stability"
+      ]
+    },
+
+    "small_head_dense_pattern_racquet": {
+      "preferred_architectures": [
+        "gut_poly",
+        "multi_poly",
+        "soft_poly_elastic_cross"
+      ],
+
+      "prioritize": [
+        "Elasticity",
+        "Pocketing",
+        "Thin Or Medium Gauge"
+      ]
+    }
+  },
+
+  "physical_constraint_rules": {
+    "none": {
+      "allowed_architectures": "all"
+    },
+
+    "mild_arm_sensitivity": {
+      "preferred_architectures": [
+        "poly_multi",
+        "soft_poly_elastic_cross",
+        "gut_poly"
+      ],
+
+      "penalize": [
+        "firm_poly_soft_poly",
+        "Very Firm Poly/Poly"
+      ]
+    },
+
+    "moderate_arm_sensitivity": {
+      "preferred_architectures": [
+        "gut_poly",
+        "multi_poly",
+        "soft_poly_elastic_cross"
+      ],
+
+      "strongly_penalize": [
+        "shaped_poly_round_poly",
+        "firm_poly_soft_poly"
+      ]
+    },
+
+    "high_arm_sensitivity": {
+      "preferred_architectures": [
+        "gut_poly",
+        "multi_poly"
+      ],
+
+      "avoid": [
+        "Firm Poly/Poly",
+        "Shaped Poly/Poly",
+        "High-Tension Polyester Hybrids"
+      ]
+    }
+  },
+
+  "swing_speed_rules": {
+    "slow": {
+      "preferred_architectures": [
+        "multi_poly",
+        "gut_poly",
+        "soft_poly_elastic_cross"
+      ],
+
+      "deprioritize": [
+        "firm_poly_soft_poly",
+        "shaped_poly_round_poly"
+      ]
+    },
+
+    "medium": {
+      "preferred_architectures": [
+        "poly_multi",
+        "gut_poly",
+        "soft_poly_elastic_cross",
+        "multi_poly"
+      ]
+    },
+
+    "fast": {
+      "preferred_architectures": [
+        "shaped_poly_round_poly",
+        "poly_multi",
+        "firm_poly_soft_poly",
+        "gut_poly"
+      ]
+    }
+  },
+
+  "playing_style_rules": {
+    "baseline_aggressive": {
+      "preferred_architectures": [
+        "shaped_poly_round_poly",
+        "poly_multi",
+        "firm_poly_soft_poly"
+      ]
+    },
+
+    "baseline_counterpuncher": {
+      "preferred_architectures": [
+        "poly_multi",
+        "soft_poly_elastic_cross",
+        "gut_poly"
+      ]
+    },
+
+    "baseline_grinder": {
+      "preferred_architectures": [
+        "poly_multi",
+        "soft_poly_elastic_cross"
+      ]
+    },
+
+    "all_court": {
+      "preferred_architectures": [
+        "gut_poly",
+        "multi_poly",
+        "poly_multi"
+      ]
+    },
+
+    "serve_volley": {
+      "preferred_architectures": [
+        "gut_poly",
+        "multi_poly"
+      ]
+    }
+  },
+
+  "gauge_relationship_rules": {
+    "default": {
+      "main_cross_difference_mm": "0.00-0.05"
+    },
+
+    "shaped_main_round_cross": {
+      "preferred": [
+        "1.23 / 1.25",
+        "1.20 / 1.25",
+        "1.25 / 1.25"
+      ]
+    },
+
+    "poly_main_multi_cross": {
+      "preferred": [
+        "1.25 / 1.30",
+        "1.20 / 1.30",
+        "1.25 / 1.25"
+      ]
+    },
+
+    "gut_main_poly_cross": {
+      "preferred": [
+        "1.30 / 1.25",
+        "1.25 / 1.25"
+      ]
+    },
+
+    "multi_main_poly_cross": {
+      "preferred": [
+        "1.30 / 1.25",
+        "1.25 / 1.20"
+      ]
+    }
+  },
+
+  "hybrid_candidate_scoring": {
+    "base_score": 50,
+
+    "positive_match": {
+      "strong": 12,
+      "medium": 7,
+      "weak": 3
+    },
+
+    "negative_match": {
+      "strong": -15,
+      "medium": -8,
+      "weak": -3
+    },
+
+    "hard_constraint_failure": {
+      "action": "exclude_architecture"
+    },
+
+    "ranking_weights": {
+      "physical_compatibility": 0.22,
+      "goal_conflict_resolution": 0.20,
+      "racquet_compensation": 0.16,
+      "swing_speed_match": 0.12,
+      "playing_style_match": 0.10,
+      "comfort": 0.07,
+      "spin_or_control_target": 0.06,
+      "durability": 0.04,
+      "feel": 0.03
+    }
+  },
+
+  "full_bed_vs_hybrid_output": {
+    "decision_options": [
+      "full_bed_preferred",
+      "hybrid_preferred",
+      "both_viable"
+    ],
+
+    "output_fields": [
+      "decision",
+      "hybrid_score",
+      "full_bed_score",
+      "recommended_architecture",
+      "main_role",
+      "cross_role",
+      "recommended_main_candidates",
+      "recommended_cross_candidates",
+      "recommended_gauge_relationship",
+      "confidence",
+      "primary_reasons",
+      "tradeoffs",
+      "risk_flags"
+    ]
+  },
+
+  "explanation_rules": {
+    "must_explain": [
+      "Why a hybrid is preferred over a suitable full bed.",
+      "What role the main string performs.",
+      "What role the cross string performs.",
+      "What performance conflict the hybrid solves.",
+      "What the main tradeoff is."
+    ],
+
+    "must_not_do": [
+      "Do not recommend a hybrid merely because it is more advanced.",
+      "Do not call a full-bed setup a hybrid.",
+      "Do not assume hybrids are automatically more comfortable.",
+      "Do not use a firm polyester cross when physical constraints clearly prohibit it.",
+      "Do not select two strings with redundant roles unless there is a specific reason."
+    ]
+  },
+
+  "engine_connections": {
+    "reads_from": [
+      "knowledge/decision_rules/goal_priority.json",
+      "knowledge/decision_rules/string_selection_logic.json",
+      "knowledge/recommendations/hybrid_strings.json",
+      "knowledge/recommendations/full_bed_strings.json",
+      "knowledge/players/player_profile_schema.json",
+      "knowledge/players/playing_styles/",
+      "knowledge/players/swing_speeds/",
+      "knowledge/players/goals/",
+      "knowledge/racquets/",
+      "knowledge/strings/"
+    ],
+
+    "passes_to": [
+      "tension_adjustment_logic",
+      "recommendation_engine"
+    ]
+  }
+}
