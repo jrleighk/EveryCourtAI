@@ -1,0 +1,553 @@
+{
+  "id": "feel_preference",
+  "category": "Player Preference",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
+
+  "preference": {
+    "name": {
+      "en": "Feel Preference",
+      "zh": "击球手感偏好"
+    },
+    "description": {
+      "en": "Defines the player's preferred impact sensation and stringbed response. This is a preference, not a performance goal or physical constraint.",
+      "zh": "定义球员长期偏好的击球触感与线床响应。它属于个人偏好，而不是性能目标或身体限制条件。"
+    }
+  },
+
+  "priority": {
+    "type": "Preference",
+    "override_level": "Low-Medium",
+    "can_override": [
+      "brand_preference",
+      "cosmetic_preference"
+    ],
+    "cannot_override": [
+      "physical_constraints",
+      "manufacturer_limits",
+      "major_current_setup_problems"
+    ]
+  },
+
+  "allowed_preferences": {
+    "plush": {
+      "name": {
+        "en": "Plush",
+        "zh": "柔韧包裹型"
+      },
+      "description": {
+        "en": "Deep, cushioned and pocketing-oriented response with reduced harshness.",
+        "zh": "强调深度包球、柔和缓冲与低冲击感的线床反馈。"
+      }
+    },
+
+    "soft": {
+      "name": {
+        "en": "Soft",
+        "zh": "柔软型"
+      },
+      "description": {
+        "en": "Low-stiffness and comfortable response with easier deformation at impact.",
+        "zh": "强调较低刚性、舒适性与击球时更容易形变的反馈。"
+      }
+    },
+
+    "connected": {
+      "name": {
+        "en": "Connected",
+        "zh": "连接感型"
+      },
+      "description": {
+        "en": "Clear communication between ball, stringbed and racquet without excessive harshness or muting.",
+        "zh": "强调球、线床与球拍之间清晰直接的连接感，同时避免过度生硬或过度闷感。"
+      }
+    },
+
+    "crisp": {
+      "name": {
+        "en": "Crisp",
+        "zh": "清脆型"
+      },
+      "description": {
+        "en": "Fast, clean and defined impact response with immediate feedback.",
+        "zh": "强调快速、清晰、干净的触球反馈与较明显的瞬间响应。"
+      }
+    },
+
+    "firm": {
+      "name": {
+        "en": "Firm",
+        "zh": "硬朗型"
+      },
+      "description": {
+        "en": "Stable, controlled and low-deformation response with minimal trampoline sensation.",
+        "zh": "强调稳定、控制和较低形变，减少明显的弹床感。"
+      }
+    },
+
+    "muted": {
+      "name": {
+        "en": "Muted",
+        "zh": "低震闷感型"
+      },
+      "description": {
+        "en": "Filtered, damped response with reduced vibration and less sharp impact information.",
+        "zh": "强调过滤震动、降低锐利反馈和更安静柔和的触球感。"
+      }
+    }
+  },
+
+  "preference_to_string_dna": {
+    "plush": {
+      "preferred_string_dna": {
+        "comfort": 10,
+        "ball_pocketing": 10,
+        "elasticity": 9,
+        "feel": 9,
+        "stiffness": 2,
+        "crispness": 4
+      },
+
+      "preferred_string_families": [
+        "Natural Gut",
+        "Premium Multifilament",
+        "Soft Co-Polyester",
+        "Comfort Hybrid"
+      ],
+
+      "preferred_characteristics": [
+        "High Pocketing",
+        "Longer Dwell Time",
+        "Soft Impact",
+        "Elastic Response"
+      ],
+
+      "deprioritize": [
+        "Very Firm Polyester",
+        "Very High Tension",
+        "Low Pocketing"
+      ]
+    },
+
+    "soft": {
+      "preferred_string_dna": {
+        "comfort": 10,
+        "elasticity": 10,
+        "shock_absorption": 9,
+        "ball_pocketing": 9,
+        "stiffness": 1,
+        "crispness": 3
+      },
+
+      "preferred_string_families": [
+        "Multifilament",
+        "Natural Gut",
+        "Soft Co-Polyester",
+        "Elastic Polymer"
+      ],
+
+      "preferred_characteristics": [
+        "Low Static Stiffness",
+        "High Elasticity",
+        "Reduced Harshness"
+      ],
+
+      "deprioritize": [
+        "Firm Polyester",
+        "High-Tension Full Poly"
+      ]
+    },
+
+    "connected": {
+      "preferred_string_dna": {
+        "feel": 10,
+        "control": 9,
+        "ball_pocketing": 8,
+        "predictability": 9,
+        "comfort": 7,
+        "crispness": 7
+      },
+
+      "preferred_string_families": [
+        "Round Co-Polyester",
+        "Soft Control Polyester",
+        "Natural Gut / Polyester Hybrid",
+        "Premium Multifilament"
+      ],
+
+      "preferred_characteristics": [
+        "Clear Feedback",
+        "Predictable Response",
+        "Moderate Pocketing",
+        "Stable Contact"
+      ],
+
+      "deprioritize": [
+        "Extremely Muted Response",
+        "Excessive Trampoline Effect",
+        "Dead Polyester"
+      ]
+    },
+
+    "crisp": {
+      "preferred_string_dna": {
+        "feel": 9,
+        "crispness": 10,
+        "control": 9,
+        "response_speed": 10,
+        "ball_pocketing": 6,
+        "comfort": 6,
+        "stiffness": 7
+      },
+
+      "preferred_string_families": [
+        "Round Co-Polyester",
+        "Medium-Firm Co-Polyester",
+        "Crisp Synthetic Gut",
+        "Responsive Multifilament"
+      ],
+
+      "preferred_characteristics": [
+        "Fast Response",
+        "Clean Contact",
+        "Immediate Feedback",
+        "Directional Precision"
+      ],
+
+      "deprioritize": [
+        "Very Soft Muted Strings",
+        "Excessively Plush Response"
+      ]
+    },
+
+    "firm": {
+      "preferred_string_dna": {
+        "control": 10,
+        "stability": 10,
+        "predictability": 10,
+        "stiffness": 9,
+        "power": 5,
+        "comfort": 4,
+        "ball_pocketing": 5
+      },
+
+      "preferred_string_families": [
+        "Control Co-Polyester",
+        "Firm Co-Polyester",
+        "Poly / Poly Hybrid"
+      ],
+
+      "preferred_characteristics": [
+        "Low Trampoline",
+        "Stable Response",
+        "Low-Medium Launch",
+        "Direct Feedback"
+      ],
+
+      "deprioritize": [
+        "Very Elastic Multifilament",
+        "High-Power Soft Stringbeds"
+      ]
+    },
+
+    "muted": {
+      "preferred_string_dna": {
+        "comfort": 9,
+        "shock_absorption": 10,
+        "feel_filtering": 10,
+        "crispness": 3,
+        "ball_pocketing": 8,
+        "stiffness": 3
+      },
+
+      "preferred_string_families": [
+        "Soft Multifilament",
+        "Soft Co-Polyester",
+        "Comfort Hybrid"
+      ],
+
+      "preferred_characteristics": [
+        "Reduced Vibration",
+        "Filtered Feedback",
+        "Soft Impact"
+      ],
+
+      "deprioritize": [
+        "Sharp Crisp Polyester",
+        "Very Firm Direct Response"
+      ]
+    }
+  },
+
+  "preference_to_racquet_dna": {
+    "plush": {
+      "increase": [
+        "Comfort",
+        "Feel",
+        "Flexibility",
+        "Pocketing Support"
+      ],
+      "decrease": [
+        "Extreme Stiffness"
+      ]
+    },
+
+    "soft": {
+      "increase": [
+        "Comfort",
+        "Flexibility",
+        "Vibration Management"
+      ]
+    },
+
+    "connected": {
+      "increase": [
+        "Feel",
+        "Control",
+        "Predictability",
+        "Stable Feedback"
+      ],
+      "decrease": [
+        "Excessive Muting"
+      ]
+    },
+
+    "crisp": {
+      "increase": [
+        "Response",
+        "Control",
+        "Direct Feedback",
+        "Stability"
+      ]
+    },
+
+    "firm": {
+      "increase": [
+        "Control",
+        "Stability",
+        "Predictability"
+      ],
+      "decrease": [
+        "Excessive Free Power"
+      ]
+    },
+
+    "muted": {
+      "increase": [
+        "Comfort",
+        "Damping",
+        "Forgiveness"
+      ],
+      "decrease": [
+        "Harsh Feedback"
+      ]
+    }
+  },
+
+  "hybrid_logic": {
+    "plush": {
+      "preferred_architectures": [
+        "Natural Gut Main + Polyester Cross",
+        "Multifilament Main + Soft Polyester Cross",
+        "Soft Polyester Main + Elastic Cross"
+      ]
+    },
+
+    "soft": {
+      "preferred_architectures": [
+        "Multifilament Main + Soft Polyester Cross",
+        "Soft Polyester Main + Multifilament Cross"
+      ]
+    },
+
+    "connected": {
+      "preferred_architectures": [
+        "Natural Gut Main + Round Polyester Cross",
+        "Round Polyester Main + Premium Multifilament Cross"
+      ]
+    },
+
+    "crisp": {
+      "preferred_architectures": [
+        "Round Polyester Full Bed",
+        "Firm Polyester Main + Softer Round Polyester Cross"
+      ]
+    },
+
+    "firm": {
+      "preferred_architectures": [
+        "Control Polyester Full Bed",
+        "Poly / Poly Hybrid"
+      ]
+    },
+
+    "muted": {
+      "preferred_architectures": [
+        "Soft Polyester Main + Multifilament Cross",
+        "Multifilament Full Bed"
+      ]
+    }
+  },
+
+  "tension_logic": {
+    "plush": {
+      "adjustment_lbs": -1
+    },
+
+    "soft": {
+      "adjustment_lbs": -2
+    },
+
+    "connected": {
+      "adjustment_lbs": 0
+    },
+
+    "crisp": {
+      "adjustment_lbs": 1
+    },
+
+    "firm": {
+      "adjustment_lbs": 1,
+      "warning": "Do not increase tension if physical comfort constraints are present."
+    },
+
+    "muted": {
+      "adjustment_lbs": -1
+    }
+  },
+
+  "physical_override_logic": {
+    "rule": {
+      "en": "Feel preference never overrides physical safety constraints.",
+      "zh": "任何手感偏好都不能覆盖身体安全与舒适性限制。"
+    },
+
+    "examples": [
+      {
+        "preference": "firm",
+        "physical_constraint": "high_elbow_sensitivity",
+        "result": "Do not recommend firm full-bed polyester."
+      },
+
+      {
+        "preference": "crisp",
+        "physical_constraint": "moderate_wrist_sensitivity",
+        "result": "Use a softer crisp construction rather than high-tension firm polyester."
+      }
+    ]
+  },
+
+  "goal_interaction_logic": {
+    "more_control": {
+      "plush": "Use controlled plush constructions or gut/poly hybrid.",
+      "soft": "Use soft control polyester rather than simply increasing tension.",
+      "connected": "Strong compatibility.",
+      "crisp": "Strong compatibility.",
+      "firm": "Strong compatibility if physical constraints allow.",
+      "muted": "Use predictable muted string rather than overly elastic multifilament."
+    },
+
+    "more_power": {
+      "plush": "Strong compatibility.",
+      "soft": "Strong compatibility.",
+      "connected": "Use responsive but controlled string.",
+      "crisp": "Use lively crisp construction.",
+      "firm": "Potential conflict; gain power through racquet or gauge instead.",
+      "muted": "Use elastic muted construction."
+    },
+
+    "more_spin": {
+      "plush": "Prefer shaped-main comfort hybrid.",
+      "soft": "Prefer soft shaped polyester.",
+      "connected": "Use shaped main + smooth cross.",
+      "crisp": "Use crisp shaped polyester.",
+      "firm": "Use firm spin polyester if physical constraints allow.",
+      "muted": "Use softer shaped string with low-friction cross."
+    },
+
+    "more_comfort": {
+      "plush": "Very strong compatibility.",
+      "soft": "Very strong compatibility.",
+      "connected": "Maintain connection while reducing stiffness.",
+      "crisp": "Potential conflict; use soft crisp construction.",
+      "firm": "Conflict; physical comfort takes priority.",
+      "muted": "Very strong compatibility."
+    },
+
+    "more_feel": {
+      "plush": "High pocketing feel.",
+      "soft": "Soft tactile feel.",
+      "connected": "Highest compatibility.",
+      "crisp": "Immediate feedback feel.",
+      "firm": "Direct feedback feel.",
+      "muted": "Lower information but smoother response."
+    }
+  },
+
+  "preference_strength": {
+    "low": {
+      "score_multiplier": 0.25
+    },
+
+    "medium": {
+      "score_multiplier": 0.50
+    },
+
+    "high": {
+      "score_multiplier": 0.75
+    },
+
+    "very_high": {
+      "score_multiplier": 1.00
+    }
+  },
+
+  "matching_weights": {
+    "feel_match": 0.30,
+    "string_response_match": 0.20,
+    "racquet_response_match": 0.15,
+    "ball_pocketing_match": 0.10,
+    "comfort_match": 0.08,
+    "control_match": 0.06,
+    "tension_match": 0.04,
+    "hybrid_match": 0.04,
+    "brand_preference": 0.02,
+    "cosmetic_preference": 0.01
+  },
+
+  "output_guidance": {
+    "must_explain": [
+      "How the recommended setup matches the player's preferred impact feel.",
+      "Whether the feel comes mainly from the racquet, string or tension.",
+      "What performance tradeoff the selected feel introduces.",
+      "Whether physical constraints limit the requested feel."
+    ],
+
+    "must_not_do": [
+      "Do not confuse soft feel with high comfort in every case.",
+      "Do not treat crisp as automatically harsh.",
+      "Do not treat muted as automatically comfortable.",
+      "Do not override physical constraints for feel preference.",
+      "Do not recommend a string solely because marketing language describes it as premium feel."
+    ]
+  },
+
+  "search_keywords": [
+    "feel preference",
+    "plush",
+    "soft feel",
+    "connected feel",
+    "crisp feel",
+    "firm feel",
+    "muted feel",
+    "stringbed feel",
+    "impact feel",
+    "击球手感",
+    "柔软",
+    "包球",
+    "连接感",
+    "清脆",
+    "硬朗",
+    "闷感"
+  ]
+}
