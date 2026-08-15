@@ -1,0 +1,329 @@
+{
+  "id": "player_profile_schema",
+  "category": "Player Schema",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
+
+  "description": {
+    "en": "Unified player profile schema used by EveryCourtAI to normalize user information before equipment matching and recommendation.",
+    "zh": "EveryCourtAI 用于在装备匹配与推荐之前统一标准化球员信息的 Player DNA 总结构。"
+  },
+
+  "player_profile": {
+    "player_id": null,
+
+    "basic": {
+      "age_group": null,
+      "dominant_hand": null,
+      "experience_years": null,
+      "training_frequency_per_week": null,
+      "match_frequency": null
+    },
+
+    "level": {
+      "id": null,
+      "confidence": null
+    },
+
+    "playing_style": {
+      "primary": null,
+      "secondary": [],
+      "confidence": null
+    },
+
+    "swing_speed": {
+      "forehand": null,
+      "backhand": null,
+      "serve": null,
+      "overall": null,
+      "confidence": null
+    },
+
+    "shot_profiles": {
+      "forehand": {
+        "spin_level": null,
+        "trajectory": null,
+        "pace": null
+      },
+
+      "backhand": {
+        "type": null,
+        "spin_level": null,
+        "trajectory": null,
+        "pace": null
+      },
+
+      "serve": {
+        "primary_type": null,
+        "secondary_types": [],
+        "pace_level": null,
+        "spin_level": null
+      },
+
+      "return": {
+        "style": null,
+        "aggressiveness": null
+      },
+
+      "net_play": {
+        "frequency": null,
+        "confidence": null
+      }
+    },
+
+    "physical": {
+      "arm_sensitivity": "none",
+      "elbow_sensitivity": "none",
+      "shoulder_sensitivity": "none",
+      "wrist_sensitivity": "none",
+      "fatigue_sensitivity": "none",
+      "notes": []
+    },
+
+    "goals": {
+      "primary": [],
+      "secondary": []
+    },
+
+    "preferences": {
+      "feel": null,
+      "launch_angle": null,
+      "power_level": null,
+      "control_level": null,
+      "spin_level": null,
+      "comfort_level": null,
+      "ball_pocketing": null,
+      "stringbed_response": null
+    },
+
+    "current_setup": {
+      "racquet": {
+        "id": null,
+        "brand": null,
+        "model": null,
+        "year": null
+      },
+
+      "string": {
+        "main": {
+          "id": null,
+          "brand": null,
+          "model": null,
+          "gauge_mm": null
+        },
+
+        "cross": {
+          "id": null,
+          "brand": null,
+          "model": null,
+          "gauge_mm": null
+        },
+
+        "setup_type": null,
+
+        "tension": {
+          "main_lbs": null,
+          "cross_lbs": null
+        }
+      }
+    },
+
+    "current_setup_feedback": {
+      "likes": [],
+      "dislikes": [],
+
+      "issues": {
+        "too_powerful": false,
+        "not_enough_power": false,
+        "too_stiff": false,
+        "too_soft": false,
+        "too_high_launch": false,
+        "too_low_launch": false,
+        "not_enough_spin": false,
+        "not_enough_control": false,
+        "poor_feel": false,
+        "poor_comfort": false,
+        "poor_durability": false,
+        "poor_tension_maintenance": false
+      },
+
+      "free_text": null
+    },
+
+    "environment": {
+      "primary_court_surface": null,
+      "typical_temperature_c": null,
+      "typical_humidity": null,
+      "altitude_category": null,
+      "indoor_outdoor": null
+    },
+
+    "matching_requirements": {
+      "must_have": [],
+      "nice_to_have": [],
+      "avoid": []
+    }
+  },
+
+  "allowed_values": {
+    "age_group": [
+      "junior",
+      "adult",
+      "senior"
+    ],
+
+    "dominant_hand": [
+      "right",
+      "left"
+    ],
+
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced",
+      "tournament",
+      "professional"
+    ],
+
+    "playing_style": [
+      "baseline_aggressive",
+      "baseline_counterpuncher",
+      "baseline_grinder",
+      "all_court",
+      "serve_volley"
+    ],
+
+    "swing_speed": [
+      "slow",
+      "medium",
+      "fast"
+    ],
+
+    "backhand_type": [
+      "one_handed",
+      "two_handed"
+    ],
+
+    "spin_level": [
+      "low",
+      "medium",
+      "high",
+      "very_high"
+    ],
+
+    "trajectory": [
+      "low",
+      "medium_low",
+      "medium",
+      "medium_high",
+      "high"
+    ],
+
+    "pace": [
+      "low",
+      "medium",
+      "high",
+      "very_high"
+    ],
+
+    "sensitivity": [
+      "none",
+      "mild",
+      "moderate",
+      "high"
+    ],
+
+    "feel": [
+      "plush",
+      "soft",
+      "connected",
+      "crisp",
+      "firm"
+    ],
+
+    "stringbed_response": [
+      "muted",
+      "plush",
+      "elastic",
+      "balanced",
+      "crisp",
+      "firm"
+    ],
+
+    "setup_type": [
+      "full_bed",
+      "hybrid"
+    ],
+
+    "court_surface": [
+      "hard",
+      "clay",
+      "grass",
+      "synthetic",
+      "mixed"
+    ],
+
+    "indoor_outdoor": [
+      "indoor",
+      "outdoor",
+      "mixed"
+    ],
+
+    "altitude_category": [
+      "sea_level",
+      "low",
+      "medium",
+      "high"
+    ]
+  },
+
+  "goal_library": [
+    "more_power",
+    "more_control",
+    "more_spin",
+    "more_comfort",
+    "more_feel",
+    "more_stability",
+    "more_forgiveness",
+    "more_durability",
+    "better_tension_maintenance",
+    "lower_launch",
+    "higher_launch",
+    "more_ball_pocketing",
+    "better_net_play",
+    "better_defense",
+    "more_consistency",
+    "more_precision"
+  ],
+
+  "engine_requirements": {
+    "minimum_required_for_basic_recommendation": [
+      "level.id",
+      "playing_style.primary",
+      "swing_speed.overall",
+      "goals.primary",
+      "current_setup.racquet.id"
+    ],
+
+    "recommended_for_high_confidence_recommendation": [
+      "shot_profiles.forehand.spin_level",
+      "physical.arm_sensitivity",
+      "preferences.feel",
+      "preferences.launch_angle",
+      "current_setup.string",
+      "current_setup_feedback"
+    ]
+  },
+
+  "output_contract": {
+    "this_schema_does_not_store_final_recommendations": true,
+
+    "passed_to_engines": [
+      "racquet_matching_engine",
+      "string_matching_engine",
+      "hybrid_selection_engine",
+      "tension_engine",
+      "recommendation_engine"
+    ]
+  }
+}
