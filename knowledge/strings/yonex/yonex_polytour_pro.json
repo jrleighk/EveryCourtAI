@@ -1,0 +1,350 @@
+{
+  "id": "yonex_polytour_pro",
+  "brand": "Yonex",
+  "series": "PolyTour",
+  "model": "PolyTour Pro",
+  "category": "Co-Polyester",
+
+  "manufacturer_data": {
+    "construction": "Co-Polyester Monofilament",
+    "string_family": "PolyTour",
+    "official_positioning": "Soft all-around co-polyester designed to deliver power, spin and comfort for players of all swing speeds.",
+    "target_level": "Intermediate / Advanced / Tournament"
+  },
+
+  "specifications": {
+    "construction": "Co-Polyester Monofilament",
+
+    "available_colors": [
+      "Yellow",
+      "Graphite",
+      "Blue"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_name": "18",
+        "gauge_mm": 1.15
+      },
+      {
+        "gauge_name": "17L",
+        "gauge_mm": 1.20
+      },
+      {
+        "gauge_name": "16L",
+        "gauge_mm": 1.25
+      },
+      {
+        "gauge_name": "16",
+        "gauge_mm": 1.30
+      }
+    ],
+
+    "shape": "Round",
+
+    "surface": "Smooth"
+  },
+
+  "technology": [
+    "High Performance Co-Polyester",
+    "Soft Response",
+    "All-Around Performance",
+    "Enhanced Ball Pocketing"
+  ],
+
+  "technology_details": {
+    "soft_polyester": {
+      "description": "Soft co-poly construction balances comfort, control and power without excessive stiffness.",
+      "primary_benefits": [
+        "Comfort",
+        "Power",
+        "Feel"
+      ]
+    },
+
+    "ball_pocketing": {
+      "description": "Designed to provide deeper ball pocketing than firmer PolyTour models.",
+      "primary_benefits": [
+        "Pocketing",
+        "Control",
+        "Confidence"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Soft Round Co-Polyester",
+
+    "arm_friendly": true,
+
+    "spin_focus": true,
+
+    "control_focus": true,
+
+    "power_focus": true,
+
+    "comfort_focus": true,
+
+    "durability_focus": true,
+
+    "feel_focus": true,
+
+    "ball_pocketing_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+
+    "control": 8,
+
+    "spin": 8,
+
+    "comfort": 9,
+
+    "feel": 9,
+
+    "durability": 8,
+
+    "tension_maintenance": 8,
+
+    "elasticity": 8,
+
+    "ball_pocketing": 9,
+
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 8,
+    "spin": 8,
+    "comfort": 9,
+    "feel": 9,
+    "durability": 8,
+    "tension_maintenance": 8
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Soft",
+
+    "snapback": 8,
+
+    "ball_bite": 7,
+
+    "ball_pocketing": 9,
+
+    "string_movement": 8,
+
+    "tension_stability": 8,
+
+    "predictability": 9,
+
+    "arm_friendliness": 9,
+
+    "directional_precision": 8,
+
+    "stringbed_stability": 8,
+
+    "response": "Soft / Connected"
+  },
+
+  "official_performance_map": {
+    "responsiveness": "Medium",
+
+    "firmness": "Soft",
+
+    "ball_pocketing": "Very High",
+
+    "yonex_family_position": "Balanced Soft Performance Poly"
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Slow",
+      "Medium",
+      "Medium-Fast",
+      "Fast"
+    ],
+
+    "play_style": [
+      "All Court",
+      "Baseline",
+      "Counter Puncher",
+      "Aggressive Baseliner"
+    ],
+
+    "special_player_profiles": [
+      "Players New To Polyester",
+      "Players Wanting Soft Polyester",
+      "Players Wanting More Comfort",
+      "Players Wanting One String That Does Everything"
+    ]
+  },
+
+  "tour_players": [
+    "Casper Ruud",
+    "Ben Shelton",
+    "Frances Tiafoe",
+    "Jaume Munar"
+  ],
+
+  "recommended_racquets": [
+    "Yonex EZONE",
+    "Yonex VCORE",
+    "Yonex PERCEPT",
+    "Wilson Blade",
+    "Wilson RF 01",
+    "HEAD Speed",
+    "Babolat Pure Drive",
+    "Tecnifibre TFIGHT"
+  ],
+
+  "comparison_data": {
+    "vs_polytour_rev": {
+      "comfort": "Higher",
+      "power": "Higher",
+      "spin": "Lower",
+      "firmness": "Softer"
+    },
+
+    "vs_polytour_fire": {
+      "comfort": "Higher",
+      "response": "Softer",
+      "power": "Higher",
+      "firmness": "Lower"
+    },
+
+    "vs_polytour_strike": {
+      "comfort": "Much Higher",
+      "power": "Higher",
+      "control": "Lower",
+      "firmness": "Much Softer"
+    },
+
+    "vs_polytour_air": {
+      "control": "Higher",
+      "durability": "Higher",
+      "comfort": "Slightly Lower"
+    },
+
+    "vs_polytour_drive": {
+      "comfort": "Higher",
+      "response": "Softer",
+      "power": "Similar"
+    },
+
+    "vs_polytour_tough": {
+      "comfort": "Much Higher",
+      "power": "Higher",
+      "durability": "Lower"
+    }
+  },
+
+  "science_metrics": {
+    "shape": "Round",
+
+    "spin_generation": "Snapback",
+
+    "ball_grip": "Medium",
+
+    "trajectory_profile": "Neutral",
+
+    "launch_angle_profile": "Medium",
+
+    "comfort_class": "High",
+
+    "power_class": "High",
+
+    "control_class": "High"
+  },
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Switching From Multifilament",
+      "Players New To Polyester",
+      "Club Players",
+      "Tournament Players",
+      "Players Wanting Soft Co-Poly",
+      "All Court Players"
+    ],
+
+    "avoid_for": [
+      "Extreme Topspin Specialists",
+      "Players Wanting Maximum Ball Bite",
+      "Players Wanting Ultra Firm Control"
+    ],
+
+    "alternative_strings": [
+      "Yonex PolyTour Fire",
+      "Yonex PolyTour Rev",
+      "Wilson Revolve",
+      "Toroline A5",
+      "Solinco Hyper-G Soft"
+    ]
+  },
+
+  "comparison_tags": [
+    "Yonex",
+    "PolyTour Pro",
+    "Round",
+    "Co-Polyester",
+    "Comfort",
+    "Power",
+    "Spin",
+    "Soft Poly"
+  ],
+
+  "ai_keywords": [
+    "yonex",
+    "polytour pro",
+    "poly tour pro",
+    "soft polyester",
+    "round poly",
+    "comfort poly",
+    "all around poly",
+    "casper ruud",
+    "ben shelton",
+    "frances tiafoe",
+    "jaume munar"
+  ],
+
+  "description": {
+    "en": "Yonex PolyTour Pro is the flagship all-around co-polyester in the PolyTour family. It combines soft feel, excellent comfort, easy power and reliable spin, making it suitable for players of every swing speed. Compared with firmer PolyTour models, PolyTour Pro provides greater ball pocketing and a more forgiving response.",
+
+    "zh": "Yonex PolyTour Pro 是 Yonex PolyTour 系列最经典、最均衡的聚酯球线。官方定位为适合所有挥拍速度球员的 Soft All-Around Poly，兼顾力量、旋转、舒适性与控制。相比 PolyTour Strike、Fire、Tough 等偏硬型号，PolyTour Pro 提供更明显的 Ball Pocketing、更柔和的击球反馈以及更高的容错率，因此成为 Yonex 最受欢迎的聚酯球线之一。"
+  },
+
+  "verification": {
+    "status": "verified_from_official_product_information",
+
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "PolyTour Pro",
+      "115",
+      "120",
+      "125",
+      "130",
+      "Solid power",
+      "Spin",
+      "Comfort",
+      "For all swing speeds",
+      "Official Yonex performance chart",
+      "Professional player endorsements"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Comparison Data",
+      "Performance Map",
+      "Recommended Players",
+      "Science Metrics"
+    ]
+  }
+}
