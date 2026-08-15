@@ -1,0 +1,535 @@
+{
+  "id": "wilson_duo_power",
+  "brand": "Wilson",
+  "series": "Duo",
+  "model": "Duo Power",
+  "category": "Hybrid String Set",
+
+  "manufacturer_data": {
+    "construction": "Multifilament + Co-Polyester Hybrid",
+    "main_components": [
+      "Wilson NXT Power 16",
+      "Luxilon ALU Power 16L"
+    ],
+    "string_family": "Hybrid",
+    "official_positioning": "Power-oriented hybrid pairing Wilson NXT Power with Luxilon ALU Power for explosive power, spin, comfort and durability.",
+    "target_level": "Intermediate / Advanced / Tournament",
+    "reversible_configuration": true
+  },
+
+  "specifications": {
+    "construction": "Multifilament + Co-Polyester Hybrid",
+
+    "available_colors": [
+      "Silver",
+      "Natural"
+    ],
+
+    "components": {
+      "nxt_power_16": {
+        "string": "Wilson NXT Power",
+        "gauge_name": "16",
+        "gauge_mm": 1.30,
+        "color": "Natural",
+        "construction": "Multifilament",
+        "material": "High-Crystallinity Xycro Microfibers with Polyurethane",
+        "shape": "Round",
+        "primary_role": [
+          "Power",
+          "Comfort",
+          "Feel",
+          "Ball Pocketing",
+          "Shock Absorption"
+        ]
+      },
+
+      "luxilon_alu_power_16l": {
+        "string": "Luxilon ALU Power",
+        "gauge_name": "16L",
+        "gauge_mm": 1.25,
+        "color": "Silver",
+        "construction": "Co-Polyester Monofilament",
+        "shape": "Round",
+        "primary_role": [
+          "Power",
+          "Spin",
+          "Control",
+          "Durability",
+          "Stringbed Stability"
+        ]
+      }
+    },
+
+    "gauge": {
+      "official_listing": "17/16",
+      "mm_official_listing": "1.25/1.30"
+    },
+
+    "packaging": [
+      {
+        "type": "Hybrid Set",
+        "length_ft": 40,
+        "length_m": 12.2
+      }
+    ]
+  },
+
+  "official_hybrid_configuration": {
+    "reversible": true,
+
+    "configuration_1": {
+      "mains": "Luxilon ALU Power 16L / 1.25",
+      "crosses": "Wilson NXT Power 16 / 1.30",
+      "expected_character": [
+        "Maximum Controlled Power",
+        "High Spin",
+        "Firm Main Response",
+        "Improved Comfort",
+        "High Durability"
+      ]
+    },
+
+    "configuration_2": {
+      "mains": "Wilson NXT Power 16 / 1.30",
+      "crosses": "Luxilon ALU Power 16L / 1.25",
+      "expected_character": [
+        "Maximum Free Power",
+        "More Comfort",
+        "More Ball Pocketing",
+        "Explosive Response",
+        "Controlled Cross Support"
+      ]
+    }
+  },
+
+  "technology": [
+    "Wilson NXT Power Multifilament",
+    "Luxilon ALU Power Co-Polyester",
+    "Reversible Hybrid Configuration",
+    "Power-Oriented Hybrid Tuning",
+    "Comfort-Power Integration"
+  ],
+
+  "technology_details": {
+    "nxt_power_component": {
+      "description": "NXT Power contributes a soft, explosive and highly comfortable multifilament response with strong pocketing and easy power.",
+      "primary_benefits": [
+        "Explosive Power",
+        "Comfort",
+        "Pocketing",
+        "Shock Absorption",
+        "Feel"
+      ]
+    },
+
+    "alu_power_component": {
+      "description": "Luxilon ALU Power contributes high-level power, spin, control and durability with a firmer and more stable co-polyester response.",
+      "primary_benefits": [
+        "Power",
+        "Spin",
+        "Control",
+        "Durability",
+        "Stability"
+      ]
+    },
+
+    "hybrid_interaction": {
+      "description": "The hybrid combines the explosive softness of NXT Power with the firmer power-spin-control profile of ALU Power.",
+      "primary_benefits": [
+        "Maximum Power",
+        "Spin",
+        "Comfort",
+        "Pocketing",
+        "Directional Stability"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Power-Oriented Multifilament / Co-Poly Hybrid",
+    "target_player": "Intermediate / Advanced / Tournament",
+    "arm_friendly": true,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true,
+    "pocketing_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 10,
+    "control": 9,
+    "spin": 9,
+    "comfort": 9,
+    "feel": 10,
+    "durability": 9,
+    "tension_maintenance": 9,
+    "elasticity": 9,
+    "ball_pocketing": 10,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 10,
+    "control": 9,
+    "spin": 9,
+    "comfort": 9,
+    "feel": 10,
+    "durability": 9,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium",
+    "snapback": 9,
+    "ball_pocketing": 10,
+    "string_movement": 8,
+    "tension_stability": 9,
+    "spin_window": "High",
+    "predictability": 9,
+    "arm_friendliness": 9,
+    "shock_absorption": 9,
+    "directional_precision": 9,
+    "stringbed_stability": 9,
+    "put_away_power": 10,
+    "liveliness": 10,
+    "hybrid_versatility": 10
+  },
+
+  "stringing_recommendation": {
+    "general": {
+      "configuration": "Either string may be installed in the mains."
+    },
+
+    "luxilon_alu_power": {
+      "tension_adjustment": {
+        "recommended_reduction_percent_min": 10,
+        "instruction": "Reduce tension on Luxilon ALU Power by at least 10% for ideal playability."
+      }
+    },
+
+    "configuration_guidance": {
+      "alu_power_mains": {
+        "best_for": [
+          "More Control",
+          "More Spin",
+          "Higher Durability",
+          "More Stable Power"
+        ]
+      },
+
+      "nxt_power_mains": {
+        "best_for": [
+          "Maximum Free Power",
+          "More Comfort",
+          "More Pocketing",
+          "Softer Overall Stringbed"
+        ]
+      }
+    }
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium",
+      "Medium-Fast",
+      "Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "All Court",
+      "Power Baseliner",
+      "Doubles"
+    ],
+
+    "special_player_profiles": [
+      "Players Seeking Maximum Hybrid Power",
+      "Players Wanting Polyester Performance With Multifilament Comfort",
+      "Players Seeking More Pocketing Than Full ALU Power",
+      "Players Wanting More Control Than Full NXT Power",
+      "Big Hitters",
+      "Players Wanting Adjustable Main-Cross Performance"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson RF 01",
+    "Wilson Pro Staff",
+    "Wilson Clash",
+    "Wilson Ultra",
+    "HEAD Speed",
+    "HEAD Boom",
+    "Yonex EZONE",
+    "Babolat Pure Drive",
+    "Babolat Pure Strike",
+    "Tecnifibre T-FIGHT",
+    "Dunlop FX"
+  ],
+
+  "hybrid_physics": {
+    "poly_component": {
+      "string": "Luxilon ALU Power",
+      "primary_effects": [
+        "Spin",
+        "Control",
+        "Power",
+        "Directional Stability",
+        "Durability"
+      ]
+    },
+
+    "multifilament_component": {
+      "string": "Wilson NXT Power",
+      "primary_effects": [
+        "Explosive Power",
+        "Comfort",
+        "Ball Pocketing",
+        "Shock Absorption"
+      ]
+    },
+
+    "combined_effect": [
+      "Maximum Power",
+      "High Spin",
+      "Improved Comfort",
+      "Strong Pocketing",
+      "Stable Response"
+    ]
+  },
+
+  "configuration_effects": {
+    "alu_power_in_mains": {
+      "power": 10,
+      "control": 9,
+      "spin": 9,
+      "comfort": 8,
+      "feel": 9,
+      "durability": 9,
+      "tension_maintenance": 9,
+      "response": "Explosive / Controlled"
+    },
+
+    "nxt_power_in_mains": {
+      "power": 10,
+      "control": 8,
+      "spin": 8,
+      "comfort": 10,
+      "feel": 10,
+      "durability": 8,
+      "tension_maintenance": 8,
+      "response": "Plush / Explosive"
+    }
+  },
+
+  "estimated_lifespan": {
+    "hybrid_setup": {
+      "heavy_topspin_hours": "6-11",
+      "club_player_hours": "15-26"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Immediate / Short",
+    "peak_playability": "Early",
+    "performance_drop": "Medium-Low",
+    "tension_loss_sensitivity": "Medium",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when NXT Power develops significant fraying or when ALU Power loses snapback, tension or response consistency."
+  },
+
+  "comparison_data": {
+    "vs_full_bed_alu_power": {
+      "comfort": "Much Higher",
+      "pocketing": "Higher",
+      "free_power": "Higher",
+      "shock_absorption": "Higher",
+      "control": "Slightly Softer"
+    },
+
+    "vs_full_bed_nxt_power": {
+      "spin": "Higher",
+      "control": "Higher",
+      "stability": "Higher",
+      "durability": "Higher",
+      "comfort": "Slightly Lower"
+    },
+
+    "vs_duo_feel": {
+      "power": "Higher",
+      "spin": "Higher",
+      "durability": "Higher",
+      "comfort": "Slightly Lower",
+      "feel": "More Explosive",
+      "primary_identity": {
+        "duo_power": "Power / Spin / Explosive Performance",
+        "duo_feel": "Feel / Comfort / Shock Absorption"
+      }
+    },
+
+    "vs_duo_control": {
+      "power": "Higher",
+      "comfort": "Higher",
+      "control": "Lower",
+      "tension_maintenance": "Lower",
+      "primary_identity": {
+        "duo_power": "Maximum Power",
+        "duo_control": "Maximum Control / Precision"
+      }
+    }
+  },
+
+  "science_metrics": {
+    "hybrid_type": "Multifilament + Round Co-Polyester",
+
+    "main_performance_mechanisms": [
+      "Polyester Snapback",
+      "Polyester Directional Support",
+      "Multifilament Pocketing",
+      "Multifilament Elastic Power"
+    ],
+
+    "trajectory_profile": "Powerful / Controlled",
+
+    "launch_angle_profile": "Medium",
+
+    "power_class": "Very High",
+    "comfort_class": "High",
+    "spin_class": "High",
+    "pocketing_class": "Very High",
+    "hybrid_class": "Premium Power Hybrid"
+  },
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Aggressive Players Seeking Maximum Hybrid Power",
+      "Big Hitters",
+      "Players Wanting ALU Power Performance With More Comfort",
+      "Players Wanting NXT Power With More Spin And Control",
+      "Players Seeking Explosive Pocketing",
+      "Players Who Like Adjustable Hybrid Configurations"
+    ],
+
+    "avoid_for": [
+      "Players Seeking Maximum Low-Powered Control",
+      "Players With Severe Arm Sensitivity",
+      "Players Wanting Maximum Multifilament Softness",
+      "Players Seeking Maximum Tension Stability"
+    ],
+
+    "alternative_strings": [
+      "Wilson Duo Feel",
+      "Wilson Duo Control",
+      "Wilson NXT Power 16",
+      "Luxilon ALU Power",
+      "Natural Gut + Luxilon ALU Power"
+    ]
+  },
+
+  "comparison_tags": [
+    "Wilson",
+    "Duo Power",
+    "Hybrid",
+    "NXT Power",
+    "Luxilon ALU Power",
+    "Multifilament",
+    "Co-Polyester",
+    "Power",
+    "Spin",
+    "Pocketing",
+    "Silver",
+    "Natural",
+    "1.25",
+    "1.30"
+  ],
+
+  "ai_keywords": [
+    "wilson",
+    "duo power",
+    "wilson duo power",
+    "nxt power",
+    "luxilon alu power",
+    "alu power",
+    "17 16",
+    "16l",
+    "1.25",
+    "1.30",
+    "silver",
+    "natural",
+    "hybrid",
+    "multifilament poly hybrid",
+    "power",
+    "spin",
+    "durability",
+    "pocketing",
+    "reduce tension 10 percent",
+    "reversible hybrid"
+  ],
+
+  "target_competitors": [
+    "Wilson Duo Feel",
+    "Wilson Duo Control",
+    "Natural Gut + Luxilon ALU Power",
+    "Wilson NXT + Luxilon ALU Power"
+  ],
+
+  "description": {
+    "en": "Wilson Duo Power is a power-oriented hybrid combining Wilson NXT Power 16 / 1.30 mm with Luxilon ALU Power 16L / 1.25 mm. NXT Power contributes explosive elasticity, comfort and ball pocketing, while ALU Power adds spin, control, durability and directional stability. Wilson allows either string to be installed in the mains, letting players tune the setup toward firmer controlled power or softer free power. For ideal playability, Wilson recommends reducing ALU Power tension by at least 10%.",
+
+    "zh": "Wilson Duo Power 是一套以最大力量为核心的官方 Hybrid，由 Wilson NXT Power 16 / 1.30 毫米与 Luxilon ALU Power 16L / 1.25 毫米组成。NXT Power 负责提供爆发性弹力、舒适性和 Ball Pocketing，而 ALU Power 则补充 Spin、Control、Durability 和方向稳定性。两根球线都可以作为主线使用：ALU Power 做主线时更加偏向可控的爆发力、旋转和稳定；NXT Power 做主线时则更加柔软、容易获得力量并具有更明显的 Pocketing。Wilson 建议 ALU Power 的穿线张力至少降低 10%，以获得理想可打性。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Wilson Duo Power",
+      "Silver / Natural",
+      "Hybrid string set",
+      "Wilson NXT Power 16",
+      "Luxilon ALU Power",
+      "ALU Power 16L / 1.25 mm",
+      "Ultimate power positioning",
+      "NXT soft and explosive response positioning",
+      "ALU Power power / spin / durability positioning",
+      "Either string can be installed in the mains",
+      "Superior power and performance positioning",
+      "Reduce ALU Power tension by at least 10%",
+      "Official overall gauge listing 17/16",
+      "Official overall diameter listing 1.25/1.30 mm",
+      "Set 40 ft / 12.2 m"
+    ],
+
+    "data_quality_notes": [
+      "The supplied product description lists NXT Power as 16 / 1.32 mm, while the same product data also lists the hybrid diameters as 1.25 / 1.30 mm. The standalone NXT Power 16 product data supplied earlier specifies 1.30 mm. This database therefore uses 1.30 mm for NXT Power 16.",
+      "The supplied overall gauge listing states 17/16 while the ALU Power component is described as 16L / 1.25 mm. The database preserves the official overall listing but records the component itself as 16L / 1.25 mm."
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Stringing Recommendation",
+      "Recommended Racquets",
+      "Hybrid Physics",
+      "Configuration Effects",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
