@@ -1,0 +1,353 @@
+{
+  "id": "wilson_revolve_17",
+  "brand": "Wilson",
+  "series": "Revolve",
+  "model": "Revolve 17",
+  "category": "Co-Polyester",
+
+  "manufacturer_data": {
+    "construction": "Tri-Polymer Co-Polyester Monofilament",
+    "string_family": "Revolve",
+    "official_positioning": "Power-oriented co-polyester engineered for maximum snapback, exceptional power, comfort and spin, with enhanced feel and control from the thinner 17 gauge.",
+    "target_level": "Intermediate / Advanced / Tournament"
+  },
+
+  "specifications": {
+    "construction": "Tri-Polymer Co-Polyester Monofilament",
+
+    "available_colors": [
+      "Black",
+      "Orange",
+      "White"
+    ],
+
+    "gauge_name": "17",
+    "gauge_mm": 1.25,
+
+    "shape": "Round",
+
+    "surface": "Low-Friction",
+
+    "material": [
+      "Tri-Polymer",
+      "Low-Friction Additive"
+    ],
+
+    "packaging": [
+      {
+        "type": "Set",
+        "length_ft": 40,
+        "length_m": 12.2
+      }
+    ]
+  },
+
+  "technology": [
+    "Tri-Polymer Construction",
+    "Low-Friction Additive",
+    "Maximum Snapback",
+    "Spin Enhancement",
+    "Power-Oriented Response"
+  ],
+
+  "technology_details": {
+    "tri_polymer": {
+      "description": "Tri-polymer construction balances power, comfort and response while maintaining a controlled polyester character.",
+      "primary_benefits": [
+        "Power",
+        "Comfort",
+        "Consistency"
+      ]
+    },
+
+    "low_friction_additive": {
+      "description": "Low-friction additives reduce string-to-string friction to promote faster string movement and snapback.",
+      "primary_benefits": [
+        "Snapback",
+        "Spin",
+        "String Movement"
+      ]
+    },
+
+    "snapback_system": {
+      "description": "The smooth round geometry and low-friction construction maximize dynamic string movement and recovery speed.",
+      "primary_benefits": [
+        "Maximum Snapback",
+        "Spin",
+        "Ball Rotation",
+        "Easy Depth"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Power-Oriented Round Co-Polyester",
+    "arm_friendly": true,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "snapback_focus": true,
+    "ball_bite_focus": false
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 9,
+    "spin": 9,
+    "comfort": 8,
+    "feel": 9,
+    "durability": 8,
+    "tension_maintenance": 8,
+    "elasticity": 8,
+    "ball_pocketing": 9,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 9,
+    "spin": 9,
+    "comfort": 8,
+    "feel": 9,
+    "durability": 8,
+    "tension_maintenance": 8
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium",
+    "snapback": 10,
+    "ball_bite": 8,
+    "ball_pocketing": 9,
+    "string_movement": 10,
+    "tension_stability": 8,
+    "spin_window": "High",
+    "predictability": 9,
+    "arm_friendliness": 8,
+    "directional_precision": 9,
+    "stringbed_stability": 8,
+    "launch_consistency": 9,
+    "liveliness": 9
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Modern Baseline",
+      "All Court"
+    ],
+
+    "special_player_profiles": [
+      "Players Looking For Maximum Snapback",
+      "Players Wanting More Feel Than Revolve 16",
+      "Players Seeking Easy Power And Spin",
+      "Players With Long Fast Strokes",
+      "Players Wanting Better Pocketing From A Round Polyester"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson Shift",
+    "Wilson Ultra",
+    "Wilson RF 01",
+    "Babolat Pure Drive",
+    "Babolat Pure Aero",
+    "HEAD Boom",
+    "HEAD Speed",
+    "Yonex EZONE",
+    "Yonex VCORE"
+  ],
+
+  "comparison_data": {
+    "vs_revolve_16": {
+      "diameter": {
+        "revolve_17": "1.25 mm",
+        "revolve_16": "1.30 mm"
+      },
+
+      "feel": "Higher",
+      "control": "Higher Touch-Oriented Precision",
+      "power": "Slightly Higher",
+      "spin": "Slightly Easier To Access",
+      "ball_pocketing": "Higher",
+      "durability": "Lower",
+      "string_movement": "Higher"
+    },
+
+    "vs_revolve_spin_17": {
+      "shape": {
+        "revolve_17": "Round",
+        "revolve_spin_17": "Pentagonal"
+      },
+
+      "snapback": {
+        "revolve_17": "Higher",
+        "revolve_spin_17": "Very High"
+      },
+
+      "ball_bite": {
+        "revolve_17": "Lower",
+        "revolve_spin_17": "Higher"
+      },
+
+      "power": {
+        "revolve_17": "Higher",
+        "revolve_spin_17": "More Spin-Control Oriented"
+      },
+
+      "launch_angle": {
+        "revolve_17": "Lower / Cleaner",
+        "revolve_spin_17": "Higher"
+      }
+    },
+
+    "vs_luxilon_alu_power": {
+      "comfort": "Higher",
+      "free_power": "Higher",
+      "snapback": "Very High",
+      "control": "Lower",
+      "feel": "Softer"
+    }
+  },
+
+  "science_metrics": {
+    "shape": "Round",
+
+    "spin_mechanism": [
+      "Low-Friction String Movement",
+      "Snapback",
+      "Elastic String Return"
+    ],
+
+    "ball_grip": "Medium",
+    "snapback": "Elite",
+    "trajectory_profile": "Penetrating / Spin-Friendly",
+    "launch_angle_profile": "Medium",
+    "spin_class": "High",
+    "power_class": "High",
+    "feel_class": "High",
+    "comfort_class": "High"
+  },
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Wanting Easy Power And Spin",
+      "Players Looking For Maximum Snapback",
+      "Players Wanting More Feel Than Revolve 16",
+      "Aggressive Baseliners",
+      "Players Who Prefer Round Polyester Over Shaped Polyester"
+    ],
+
+    "avoid_for": [
+      "Players Seeking Maximum Mechanical Ball Bite",
+      "Extreme Topspin Specialists Wanting Aggressive Shaped Strings",
+      "Players Wanting Maximum Durability",
+      "Players Seeking Very Firm Low-Powered Control"
+    ],
+
+    "alternative_strings": [
+      "Wilson Revolve 16",
+      "Wilson Revolve Spin 17",
+      "Luxilon ALU Power",
+      "Solinco Hyper-G Round",
+      "Toroline A5",
+      "Toroline O-TORO SNAP"
+    ]
+  },
+
+  "comparison_tags": [
+    "Wilson",
+    "Revolve",
+    "Revolve 17",
+    "Round",
+    "Co-Polyester",
+    "Tri Polymer",
+    "Low Friction",
+    "Snapback",
+    "Power",
+    "Spin",
+    "Feel",
+    "Black",
+    "Orange",
+    "White",
+    "1.25"
+  ],
+
+  "ai_keywords": [
+    "wilson",
+    "revolve",
+    "revolve 17",
+    "wilson revolve 17",
+    "round poly",
+    "tri polymer",
+    "low friction",
+    "maximum snapback",
+    "snapback",
+    "spin",
+    "power",
+    "feel",
+    "control",
+    "17 gauge",
+    "1.25",
+    "black",
+    "orange",
+    "white"
+  ],
+
+  "description": {
+    "en": "Wilson Revolve 17 is a round tri-polymer co-polyester featuring a low-friction additive designed to maximize string movement and snapback. Built for players with long, fast strokes, it blends easy power, comfort and spin with a clean, predictable response. At 1.25 mm / 17 gauge, it is thinner than Revolve 16 and provides enhanced feel, pocketing and responsive control while sacrificing some durability.",
+
+    "zh": "Wilson Revolve 17 是一款采用 Tri-Polymer 三聚合物结构与低摩擦添加剂的圆形共聚酯球线。它主要通过极高的 String Movement 与 Snapback 来制造旋转，而不是依赖异形截面的机械咬球。1.25 毫米 / 17 Gauge 比 Revolve 16 更细，因此拥有更明显的 Feel、Pocketing 和响应式控制，同时依然保留 Revolve 系列突出的力量、舒适性与旋转表现，但耐久会略低于 1.30 毫米版本。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Wilson Revolve 17",
+      "Black",
+      "Orange",
+      "White",
+      "Tri-polymer construction",
+      "Low-friction additive",
+      "Exceptional power",
+      "Comfort",
+      "Spin-enhancing properties",
+      "Maximum snapback",
+      "Long fast strokes positioning",
+      "17 gauge thinner than 16 gauge",
+      "Enhanced feel positioning",
+      "Enhanced control positioning",
+      "Gauge 17",
+      "1.25 mm",
+      "Set 40 ft / 12.2 m"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Players",
+      "Recommended Racquets",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations"
+    ]
+  }
+}
