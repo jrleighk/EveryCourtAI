@@ -1,0 +1,533 @@
+{
+  "id": "yonex_polytour_fire",
+  "brand": "Yonex",
+  "series": "PolyTour",
+  "model": "PolyTour Fire",
+  "category": "Co-Polyester",
+
+  "manufacturer_data": {
+    "construction": "Polyester Monofilament",
+    "material": "Polyester",
+    "string_family": "PolyTour",
+    "official_positioning": "Responsive polyester designed to provide impressive snapback, added power and spin through SIF technology.",
+    "target_level": "Intermediate / Advanced / Tournament",
+    "target_style": "Aggressive Baseline / Power-Spin",
+    "swing_speed_positioning": "Medium-to-Fast",
+    "made_in": "Japan"
+  },
+
+  "specifications": {
+    "construction": "Polyester Monofilament",
+    "cross_section": "Not Explicitly Specified In Supplied Product Specification",
+    "surface": "Silicone-Infused / Low-Friction",
+
+    "available_colors": [
+      "Red"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.20,
+        "available": true,
+        "item_code_set": "PTGF120",
+        "item_code_reel": "PTF120-2",
+
+        "power": 9,
+        "control": 7,
+        "spin": 9,
+        "comfort": 8,
+        "feel": 8,
+        "durability": 8,
+        "tension_maintenance": 8,
+        "snapback": 10,
+        "ball_pocketing": 8,
+        "launch_angle": "Medium-High"
+      },
+
+      {
+        "gauge_name": "16L",
+        "gauge_mm": 1.25,
+        "available": true,
+        "item_code_set": "PTGF125",
+        "item_code_reel": "PTF125-2",
+
+        "power": 9,
+        "control": 8,
+        "spin": 9,
+        "comfort": 8,
+        "feel": 8,
+        "durability": 9,
+        "tension_maintenance": 8,
+        "snapback": 10,
+        "ball_pocketing": 8,
+        "launch_angle": "Medium"
+      },
+
+      {
+        "gauge_name": "16",
+        "gauge_mm": 1.30,
+        "available": true,
+        "availability_basis": "Product title and official item codes supplied",
+        "item_code_set": "PTGF130",
+        "item_code_reel": "PTF130-2",
+
+        "power": 8,
+        "control": 8,
+        "spin": 8,
+        "comfort": 8,
+        "feel": 8,
+        "durability": 10,
+        "tension_maintenance": 9,
+        "snapback": 9,
+        "ball_pocketing": 8,
+        "launch_angle": "Medium"
+      }
+    ],
+
+    "available_lengths": [
+      {
+        "type": "Set",
+        "length_m": 12
+      },
+      {
+        "type": "Reel",
+        "length_m": 200
+      }
+    ]
+  },
+
+  "technology": [
+    "SIF Technology",
+    "Silicone Oil Infused Filament",
+    "NANODAX Collaboration",
+    "High-Speed Snapback",
+    "Low-Friction String Movement",
+    "Power and Spin Enhancement"
+  ],
+
+  "technology_details": {
+    "sif": {
+      "full_name": "Silicone oil Infused Filament",
+      "developed_with": "NANODAX",
+
+      "description": "Silicone oil is infused into the polyester monofilament to increase string movement and snapback speed.",
+
+      "primary_benefits": [
+        "Faster Snapback",
+        "Spin",
+        "Power",
+        "String Movement",
+        "Responsive Feel"
+      ]
+    },
+
+    "snapback_system": {
+      "description": "SIF technology allows the string to move and return rapidly after ball impact, supporting powerful spin generation.",
+
+      "primary_benefits": [
+        "Snapback",
+        "Ball Rotation",
+        "Powerful Spin",
+        "Fast Response"
+      ]
+    },
+
+    "responsive_power": {
+      "description": "PolyTour Fire is positioned for medium-to-fast swing speeds seeking additional power without sacrificing spin.",
+
+      "primary_benefits": [
+        "Added Power",
+        "Fast Response",
+        "Spin Support"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Responsive Power-Spin Co-Polyester",
+
+    "target_player": "Intermediate / Advanced / Tournament",
+
+    "arm_friendly": false,
+
+    "spin_focus": true,
+
+    "control_focus": false,
+
+    "power_focus": true,
+
+    "comfort_focus": true,
+
+    "durability_focus": true,
+
+    "feel_focus": true,
+
+    "tension_stability_focus": true,
+
+    "snapback_focus": true,
+
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 7,
+    "spin": 9,
+    "comfort": 8,
+    "feel": 8,
+    "durability": 8,
+    "tension_maintenance": 8,
+    "elasticity": 8,
+    "ball_pocketing": 8,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 7,
+    "spin": 9,
+    "comfort": 8,
+    "feel": 8,
+    "durability": 8,
+    "tension_maintenance": 8
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Soft-Medium",
+    "snapback": 10,
+    "ball_bite": 7,
+    "ball_pocketing": 8,
+    "string_movement": 10,
+    "inter_string_friction": "Low",
+    "tension_stability": 8,
+    "spin_window": "High",
+    "predictability": 8,
+    "arm_friendliness": 8,
+    "directional_precision": 7,
+    "stringbed_stability": 8,
+    "response": "Fast / Lively / Responsive"
+  },
+
+  "official_performance_map": {
+    "responsiveness": "Very High",
+    "firmness": "Soft",
+    "ball_pocketing": "Medium",
+    "yonex_family_position": "Soft / Highly Responsive / Power-Oriented"
+  },
+
+  "official_string_parameters": {
+    "power": "High",
+    "spin": "Medium-High",
+    "comfort": "Medium",
+    "control": "Low",
+    "durability": "Medium",
+
+    "source": "Yonex Official String Parameters Guide"
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium",
+      "Medium-Fast",
+      "Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Power Baseliner",
+      "Modern Baseline",
+      "All Court"
+    ],
+
+    "special_player_profiles": [
+      "Players Seeking Added Power And Spin",
+      "Players Wanting Fast Snapback",
+      "Players With Medium-to-Fast Swing Speeds",
+      "Players Wanting A More Responsive PolyTour String",
+      "Players Wanting More Comfort Than Firmer Control Polys"
+    ]
+  },
+
+  "tour_players": [
+    "Tomas Machac",
+    "Diana Shnaider",
+    "Elena Rybakina"
+  ],
+
+  "recommended_racquets": [
+    "Yonex EZONE",
+    "Yonex VCORE",
+    "Yonex PERCEPT",
+    "Wilson Ultra",
+    "Wilson Blade",
+    "Wilson RF 01",
+    "Babolat Pure Drive",
+    "Babolat Pure Aero",
+    "HEAD Boom",
+    "HEAD Speed"
+  ],
+
+  "gauge_recommendation": {
+    "1.20": {
+      "gauge_name": "17",
+
+      "best_for": [
+        "Maximum Response",
+        "Easy Spin",
+        "More Power",
+        "Faster String Movement"
+      ],
+
+      "tradeoffs": [
+        "Lowest Durability Of The Available Gauges",
+        "Less Stability Than 1.25 And 1.30"
+      ]
+    },
+
+    "1.25": {
+      "gauge_name": "16L",
+
+      "best_for": [
+        "Best Overall Balance",
+        "Power",
+        "Spin",
+        "Tournament Play",
+        "Snapback"
+      ],
+
+      "tradeoffs": [
+        "Less Durability Than 1.30"
+      ]
+    },
+
+    "1.30": {
+      "gauge_name": "16",
+
+      "best_for": [
+        "Maximum Durability",
+        "More Stability",
+        "Heavy Hitters",
+        "Open String Patterns"
+      ],
+
+      "tradeoffs": [
+        "Slightly Less Lively",
+        "Slightly Less Spin Access Than 1.20"
+      ]
+    }
+  },
+
+  "comparison_data": {
+    "vs_polytour_pro": {
+      "response": "Higher",
+      "snapback": "Higher",
+      "spin": "Higher",
+      "power": "Higher",
+      "comfort": "Slightly Lower",
+      "ball_pocketing": "Lower"
+    },
+
+    "vs_polytour_force": {
+      "snapback": "Higher",
+      "spin": "Higher",
+      "power": "Slightly Lower",
+      "ball_pocketing": "Lower",
+      "response": "Similarly Fast"
+    },
+
+    "vs_polytour_rev": {
+      "power": "Higher",
+      "comfort": "Higher",
+      "mechanical_ball_bite": "Lower",
+      "spin": "Lower To Similar",
+      "firmness": "Lower",
+      "launch_angle": "Lower"
+    },
+
+    "vs_polytour_strike": {
+      "power": "Much Higher",
+      "comfort": "Higher",
+      "spin": "Higher",
+      "control": "Lower",
+      "firmness": "Much Lower"
+    },
+
+    "vs_polytour_spin": {
+      "power": "Higher",
+      "comfort": "Higher",
+      "response": "Higher",
+      "mechanical_spin": "Lower"
+    }
+  },
+
+  "science_metrics": {
+    "construction": "Polyester Monofilament",
+
+    "spin_mechanism": [
+      "SIF Low-Friction String Movement",
+      "High-Speed Snapback",
+      "Elastic String Return"
+    ],
+
+    "ball_grip": "Medium",
+
+    "snapback": "Elite",
+
+    "trajectory_profile": "Powerful / Penetrating",
+
+    "launch_angle_profile": "Medium",
+
+    "spin_class": "High",
+
+    "power_class": "Very High",
+
+    "response_class": "Very High",
+
+    "comfort_class": "Medium-High",
+
+    "control_class": "Medium"
+  },
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Aggressive Baseliners",
+      "Players Wanting Added Power And Spin",
+      "Medium-to-Fast Swing Speeds",
+      "Players Seeking Maximum Snapback",
+      "Players Wanting A More Responsive Yonex Polyester",
+      "Players Wanting More Comfort Than PolyTour Strike"
+    ],
+
+    "avoid_for": [
+      "Players Seeking Maximum Low-Powered Control",
+      "Players Wanting Extreme Mechanical Ball Bite",
+      "Players With Significant Arm Sensitivity",
+      "Players Wanting Very Firm Tournament Response"
+    ],
+
+    "alternative_strings": [
+      "Yonex PolyTour Force",
+      "Yonex PolyTour Pro",
+      "Yonex PolyTour Rev",
+      "Wilson Revolve",
+      "Luxilon ALU Power",
+      "Toroline A5",
+      "Toroline ENSO PRO"
+    ]
+  },
+
+  "comparison_tags": [
+    "Yonex",
+    "PolyTour Fire",
+    "SIF",
+    "Silicone Infused Filament",
+    "NANODAX",
+    "Polyester",
+    "Power",
+    "Spin",
+    "Snapback",
+    "Responsive",
+    "Red",
+    "1.20",
+    "1.25",
+    "1.30"
+  ],
+
+  "ai_keywords": [
+    "yonex",
+    "polytour fire",
+    "poly tour fire",
+    "ptgf",
+    "sif",
+    "silicone oil infused filament",
+    "nanodax",
+    "snapback",
+    "responsive",
+    "power",
+    "spin",
+    "1.20",
+    "1.25",
+    "1.30",
+    "red",
+    "tomas machac",
+    "diana shnaider",
+    "elena rybakina"
+  ],
+
+  "target_competitors": [
+    "Yonex PolyTour Force",
+    "Wilson Revolve",
+    "Luxilon ALU Power",
+    "Toroline A5",
+    "Toroline ENSO PRO",
+    "Solinco Mach-10"
+  ],
+
+  "description": {
+    "en": "Yonex PolyTour Fire is a responsive polyester monofilament designed for medium-to-fast swing speeds seeking added power and spin. Its SIF (Silicone oil Infused Filament) technology, developed in cooperation with NANODAX, is engineered to increase string movement and snapback speed. Within the Yonex PolyTour family, Fire sits toward the softer and more responsive side of the performance map, making it a lively power-spin option rather than a firm control-oriented polyester.",
+
+    "zh": "Yonex PolyTour Fire 是一款以快速响应、Snapback、力量和旋转为核心的聚酯单丝球线，主要面向中高速挥拍球员。它采用与 NANODAX 合作开发的 SIF（Silicone oil Infused Filament）技术，将硅油融入单丝材料中，以提升球线移动速度和 Snapback 效率。根据 Yonex 官方性能图，PolyTour Fire 位于整个 PolyTour 家族偏 Soft、偏 Responsive 的区域，因此它更接近一款活跃的 Power-Spin Poly，而不是 PolyTour Strike 那种偏硬、低力量、强调绝对控制的球线。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_official_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Yonex PolyTour Fire",
+      "120 / 125 / 130 product naming",
+      "Impressive snapback",
+      "Responsiveness",
+      "SIF technology",
+      "Silicone oil Infused Filament",
+      "Developed in cooperation with NANODAX",
+      "Medium-to-fast swing speeds",
+      "Added power",
+      "Added spin",
+      "Red",
+      "17 / 1.20 mm",
+      "16L / 1.25 mm",
+      "Set 12 m",
+      "Reel 200 m",
+      "Polyester Monofilament",
+      "Made in Japan",
+      "PTGF120",
+      "PTGF125",
+      "PTGF130",
+      "PTF120-2",
+      "PTF125-2",
+      "PTF130-2",
+      "Official Yonex performance map",
+      "Official Yonex string parameters",
+      "Tomas Machac player reference",
+      "Diana Shnaider player reference",
+      "Elena Rybakina player reference"
+    ],
+
+    "data_quality_notes": [
+      "The supplied title states PolyTour Fire 120/125/130 and the official item-code list includes PTGF130 and PTF130-2, indicating a 1.30 mm version. However, the supplied gauge specification table explicitly lists only 17 / 1.20 mm and 16L / 1.25 mm. The database therefore retains 1.30 mm as an available gauge based on the product title and item codes, while recording this specification-table omission here.",
+      "The supplied SIF technology paragraph states that SIF Technology uses a 'unique pentagonal structure'. However, the PolyTour Fire product specification itself identifies only 'Polyester (Monofilament)' and does not explicitly state a pentagonal cross-section. Because the supplied PolyTour Rev material contains similarly worded SIF copy while separately identifying Rev as octagonal, this database does not assign a pentagonal geometry to PolyTour Fire without model-specific confirmation."
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Official Performance Map",
+      "Official String Parameters",
+      "Recommended Players",
+      "Recommended Racquets",
+      "Gauge Recommendations",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
