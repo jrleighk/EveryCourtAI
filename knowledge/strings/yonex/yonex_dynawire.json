@@ -1,0 +1,529 @@
+{
+  "id": "yonex_dynawire",
+  "brand": "Yonex",
+  "series": "Dynawire",
+  "model": "Dynawire",
+  "category": "Synthetic Gut",
+
+  "manufacturer_data": {
+    "construction": "Nylon Monofilament with Metal Film",
+    "material": [
+      "Nylon",
+      "Metal Film"
+    ],
+    "string_family": "Dynawire",
+    "official_positioning": "Crisp-feeling nylon monofilament with power and high durability from a heat-resistant metal film.",
+    "target_level": "Beginner / Intermediate / Advanced",
+    "target_style": "Power / Durability / All-Court",
+    "swing_speed_positioning": "All Swing Speeds",
+    "made_in": "Japan"
+  },
+
+  "specifications": {
+    "construction": "Nylon Monofilament with Metal Film",
+    "cross_section": "Round",
+    "surface": "Metal-Film Reinforced",
+
+    "available_colors": [
+      "White / Silver",
+      "Black",
+      "Yellow",
+      "Blue",
+      "Red"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_name": "16L",
+        "gauge_mm": 1.25,
+        "available": true,
+        "item_code_set": "TGDW125",
+        "item_code_reel": "TDW125-2",
+
+        "power": 9,
+        "control": 8,
+        "spin": 6,
+        "comfort": 6,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 8,
+        "elasticity": 8,
+        "shock_absorption": 6,
+        "ball_pocketing": 6,
+        "launch_angle": "Medium"
+      },
+
+      {
+        "gauge_name": "16",
+        "gauge_mm": 1.30,
+        "available": true,
+        "item_code_set": "TGDW130",
+        "item_code_reel": "TDW130-2",
+
+        "power": 8,
+        "control": 9,
+        "spin": 6,
+        "comfort": 6,
+        "feel": 8,
+        "durability": 10,
+        "tension_maintenance": 9,
+        "elasticity": 7,
+        "shock_absorption": 6,
+        "ball_pocketing": 6,
+        "launch_angle": "Medium-Low"
+      }
+    ],
+
+    "available_lengths": [
+      {
+        "type": "Set",
+        "length_m": 12
+      },
+      {
+        "type": "Reel",
+        "length_m": 200
+      }
+    ]
+  },
+
+  "technology": [
+    "Heat-Resistant Metal Film",
+    "Nylon Monofilament Core",
+    "High Durability Construction",
+    "Crisp Response"
+  ],
+
+  "technology_details": {
+    "metal_film": {
+      "description": "A heat-resistant metal film reinforces the nylon monofilament and contributes to the string's crisp response and high durability.",
+      "primary_benefits": [
+        "Durability",
+        "Crisp Feel",
+        "Structural Stability"
+      ]
+    },
+
+    "nylon_monofilament": {
+      "description": "The solid nylon monofilament construction produces a direct and predictable response with easier power than polyester.",
+      "primary_benefits": [
+        "Power",
+        "Control",
+        "Responsiveness",
+        "Playability"
+      ]
+    },
+
+    "durability_system": {
+      "description": "Dynawire is designed to provide greater durability than softer multifilament constructions while retaining playable nylon response.",
+      "primary_benefits": [
+        "String Life",
+        "Stability",
+        "Consistency"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Durable Power Synthetic Gut",
+    "target_player": "Beginner / Intermediate / Advanced",
+
+    "arm_friendly": true,
+
+    "spin_focus": false,
+
+    "control_focus": true,
+
+    "power_focus": true,
+
+    "comfort_focus": false,
+
+    "durability_focus": true,
+
+    "feel_focus": true,
+
+    "tension_stability_focus": true,
+
+    "response_focus": true,
+
+    "ball_pocketing_focus": false
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 8,
+    "spin": 6,
+    "comfort": 6,
+    "feel": 9,
+    "durability": 10,
+    "tension_maintenance": 9,
+    "elasticity": 8,
+    "shock_absorption": 6,
+    "ball_pocketing": 6,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 8,
+    "spin": 6,
+    "comfort": 6,
+    "feel": 9,
+    "durability": 10,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium-Firm",
+    "snapback": 5,
+    "ball_bite": 4,
+    "ball_pocketing": 6,
+    "string_movement": 5,
+    "tension_stability": 9,
+    "spin_window": "Low-Medium",
+    "predictability": 9,
+    "arm_friendliness": 7,
+    "shock_absorption": 6,
+    "directional_precision": 9,
+    "stringbed_stability": 9,
+    "response": "Crisp / Firm / Responsive",
+    "energy_return": 9
+  },
+
+  "official_performance_map": {
+    "responsiveness": "Very High",
+    "firmness": "Firm",
+    "ball_pocketing": "Low-Medium",
+    "yonex_family_position": "Firm / Highly Responsive / Durable"
+  },
+
+  "official_string_parameters": {
+    "power": "Very High",
+    "spin": "Low",
+    "comfort": "Low",
+    "control": "Low",
+    "durability": "Very High",
+    "source": "Yonex Official String Parameters Guide"
+  },
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate",
+      "Advanced"
+    ],
+
+    "swing_speed": [
+      "Slow",
+      "Medium",
+      "Medium-Fast",
+      "Fast"
+    ],
+
+    "play_style": [
+      "All Court",
+      "Flat Hitter",
+      "Doubles",
+      "Serve & Volley",
+      "Power-Oriented Player"
+    ],
+
+    "special_player_profiles": [
+      "Players Wanting More Durability Than Multifilament",
+      "Players Wanting Crisp Synthetic Gut Feel",
+      "Players Seeking Easy Power",
+      "Players Wanting Affordable Long-Lasting Performance",
+      "Players Who Prefer A Firmer Nylon Stringbed"
+    ]
+  },
+
+  "tour_players": [],
+
+  "recommended_racquets": [
+    "Yonex EZONE",
+    "Yonex VCORE",
+    "Yonex PERCEPT",
+    "Wilson Ultra",
+    "Wilson Clash",
+    "HEAD Boom",
+    "HEAD Speed",
+    "Babolat Pure Drive"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Yonex PolyTour Pro",
+      "Yonex PolyTour Air",
+      "Yonex PolyTour Drive",
+      "Wilson Revolve",
+      "Luxilon Element"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Power",
+        "Durability",
+        "Crisp Feel",
+        "Control"
+      ],
+
+      "as_crosses": [
+        "Power Support",
+        "Durability",
+        "Firm Nylon Response",
+        "Cost-Effective Hybrid Component"
+      ]
+    },
+
+    "hybrid_note": "Dynawire can serve as a durable and inexpensive nylon component in hybrid setups where a player wants more power and comfort than full polyester without the softness of multifilament."
+  },
+
+  "gauge_recommendation": {
+    "1.25": {
+      "gauge_name": "16L",
+
+      "best_for": [
+        "More Power",
+        "More Feel",
+        "More Lively Response",
+        "All-Court Play"
+      ],
+
+      "tradeoffs": [
+        "Less Durability Than 1.30",
+        "Less Stability"
+      ]
+    },
+
+    "1.30": {
+      "gauge_name": "16",
+
+      "best_for": [
+        "Maximum Durability",
+        "More Control",
+        "More Stable Stringbed",
+        "Frequent Players"
+      ],
+
+      "tradeoffs": [
+        "Slightly Less Power",
+        "Slightly Less Feel"
+      ]
+    }
+  },
+
+  "comparison_data": {
+    "vs_rexis_speed": {
+      "durability": "Higher",
+      "firmness": "Higher",
+      "response": "More Direct",
+      "comfort": "Lower",
+      "ball_pocketing": "Lower",
+      "feel": "Crisper",
+      "primary_identity": {
+        "dynawire": "Durability / Crisp Response / Power",
+        "rexis_speed": "Responsive Multifilament / Power / Comfort"
+      }
+    },
+
+    "vs_rexis_feel": {
+      "durability": "Much Higher",
+      "power": "Higher",
+      "firmness": "Much Higher",
+      "ball_pocketing": "Much Lower",
+      "comfort": "Much Lower",
+      "control_character": "More Direct / Less Pocketing-Based"
+    },
+
+    "vs_rexis_comfort": {
+      "durability": "Much Higher",
+      "response": "Much Faster",
+      "firmness": "Much Higher",
+      "comfort": "Much Lower",
+      "shock_absorption": "Much Lower"
+    },
+
+    "vs_wilson_synthetic_gut_power": {
+      "construction": "Similar Solid-Core Nylon Category",
+      "durability": "High",
+      "power": "High",
+      "feel": "Crisp",
+      "key_difference": "Dynawire Uses Heat-Resistant Metal Film"
+    },
+
+    "vs_multifilament": {
+      "durability": "Higher",
+      "firmness": "Higher",
+      "comfort": "Lower",
+      "ball_pocketing": "Lower",
+      "response": "More Direct"
+    },
+
+    "vs_polyester": {
+      "power": "Higher",
+      "comfort": "Higher",
+      "spin": "Lower",
+      "control": "Lower",
+      "durability": "Lower Than Most Performance Polyester"
+    }
+  },
+
+  "science_metrics": {
+    "construction": "Nylon Monofilament + Metal Film",
+
+    "material_system": [
+      "Solid Nylon Monofilament",
+      "Heat-Resistant Metal Film"
+    ],
+
+    "trajectory_profile": "Direct / Penetrating",
+
+    "launch_angle_profile": "Medium",
+
+    "power_class": "Very High",
+
+    "response_class": "Very High",
+
+    "durability_class": "Very High For Nylon",
+
+    "comfort_class": "Medium",
+
+    "firmness_class": "Firm",
+
+    "ball_pocketing_class": "Medium-Low"
+  },
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Seeking Durable Nylon",
+      "Players Wanting Crisp Feel",
+      "Players Wanting Easy Power",
+      "Club Players",
+      "Flat Hitters",
+      "Players Seeking An Affordable Alternative To Multifilament"
+    ],
+
+    "avoid_for": [
+      "Players Seeking Maximum Comfort",
+      "Players With Significant Arm Sensitivity",
+      "Heavy Topspin Players",
+      "Players Wanting Deep Ball Pocketing",
+      "Players Seeking Polyester-Level Spin"
+    ],
+
+    "alternative_strings": [
+      "Wilson Synthetic Gut Power",
+      "Yonex REXIS Speed",
+      "Yonex REXIS Feel",
+      "Prince Synthetic Gut Duraflex",
+      "Gamma Synthetic Gut"
+    ]
+  },
+
+  "comparison_tags": [
+    "Yonex",
+    "Dynawire",
+    "Synthetic Gut",
+    "Nylon Monofilament",
+    "Metal Film",
+    "Crisp Feel",
+    "Power",
+    "Durability",
+    "Responsive",
+    "White Silver",
+    "Black",
+    "Yellow",
+    "Blue",
+    "Red",
+    "1.25",
+    "1.30"
+  ],
+
+  "ai_keywords": [
+    "yonex",
+    "dynawire",
+    "yonex dynawire",
+    "synthetic gut",
+    "nylon monofilament",
+    "metal film",
+    "heat resistant metal film",
+    "crisp feel",
+    "power",
+    "durability",
+    "responsive",
+    "1.25",
+    "1.30",
+    "white silver",
+    "black",
+    "yellow",
+    "blue",
+    "red",
+    "tgdw125",
+    "tgdw130",
+    "tdw125-2",
+    "tdw130-2"
+  ],
+
+  "target_competitors": [
+    "Wilson Synthetic Gut Power",
+    "Prince Synthetic Gut Duraflex",
+    "Gamma Synthetic Gut",
+    "Head Synthetic Gut"
+  ],
+
+  "description": {
+    "en": "Yonex Dynawire is a nylon monofilament synthetic gut reinforced with a heat-resistant metal film for crisp feel, easy power and high durability. Designed for players of all swing speeds, it offers a firmer and more responsive response than Yonex's REXIS multifilaments while sacrificing some comfort and ball pocketing. On Yonex's official Comfort & Playability map, Dynawire sits at the firmest and most responsive end of the non-polyester lineup, making it especially suitable for players who want a direct, durable and powerful nylon stringbed.",
+
+    "zh": "Yonex Dynawire 是一款采用 Nylon Monofilament 实心尼龙结构并加入 Heat-Resistant Metal Film 耐热金属膜的 Synthetic Gut。它的核心特点是 Crisp Feel、Power 和 High Durability。相比 Yonex REXIS 多芯系列，Dynawire 明显更硬、更直接、更耐打，同时 Ball Pocketing 和舒适性较低。根据 Yonex 官方 Comfort & Playability 图，Dynawire 位于整个非聚酯系列中最靠近 Firm 与 Responsive 的区域，因此特别适合喜欢清晰击球反馈、容易获得力量、同时希望球线寿命更长的俱乐部球员。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_official_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Yonex Dynawire 125 / 130",
+      "Crisp feel",
+      "Power",
+      "High durability",
+      "Heat resistant metal film",
+      "All swing speeds",
+      "Playable string positioning",
+      "White / Silver",
+      "Black",
+      "Yellow",
+      "Blue",
+      "Red",
+      "16L / 1.25 mm",
+      "16 / 1.30 mm",
+      "Set 12 m",
+      "Reel 200 m",
+      "Nylon Monofilament",
+      "Metal Film",
+      "Made in Japan",
+      "TGDW125",
+      "TGDW130",
+      "TDW125-2",
+      "TDW130-2",
+      "Official Yonex Comfort & Playability performance map",
+      "Official Yonex String Parameters Guide"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Official Performance Map",
+      "Official String Parameters",
+      "Recommended Players",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendation",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
