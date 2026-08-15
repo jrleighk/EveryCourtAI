@@ -1,0 +1,351 @@
+{
+  "id": "knee_sensitivity",
+  "category": "Player Physical Constraint",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
+
+  "constraint": {
+    "name": {
+      "en": "Knee Sensitivity",
+      "zh": "膝关节敏感"
+    },
+    "description": {
+      "en": "The player experiences knee pain, stiffness, instability or reduced confidence during tennis movement. This profile reduces unnecessary movement demand and repetitive loading through equipment optimization.",
+      "zh": "球员在网球运动过程中存在膝关节疼痛、僵硬、不稳定或活动受限。本画像通过装备优化降低移动需求及膝关节重复负荷。"
+    }
+  },
+
+  "priority": {
+    "type": "Physical Constraint",
+    "override_level": "Highest",
+    "overrides": [
+      "maximum_performance",
+      "maximum_spin",
+      "maximum_control",
+      "maximum_stability_through_weight"
+    ]
+  },
+
+  "severity_levels": {
+    "none": {
+      "score": 0
+    },
+    "mild": {
+      "score": 1
+    },
+    "moderate": {
+      "score": 2
+    },
+    "high": {
+      "score": 3
+    }
+  },
+
+  "symptoms": [
+    "Knee pain after play",
+    "Knee stiffness",
+    "Pain during squatting",
+    "Pain during lunging",
+    "Pain during recovery steps",
+    "Difficulty changing direction",
+    "Reduced confidence chasing wide balls",
+    "Fatigue after long matches"
+  ],
+
+  "possible_contributors": [
+    "Previous knee injury",
+    "Meniscus history",
+    "Ligament injury",
+    "Patellar tendon irritation",
+    "Frequent stopping and starting",
+    "Long match duration",
+    "Reduced lower-limb strength",
+    "Insufficient recovery"
+  ],
+
+  "equipment_strategy": {
+    "primary_goal": "Reduce Repetitive Knee Loading While Maintaining Match Performance",
+
+    "change_priority": [
+      "Forgiveness",
+      "Easy Power",
+      "Maneuverability",
+      "Swingweight",
+      "Static Weight",
+      "Comfort",
+      "String Material",
+      "String Tension"
+    ]
+  },
+
+  "preferred_racquet_dna": {
+    "forgiveness": 10,
+    "easy_power": 10,
+    "maneuverability": 9,
+    "comfort": 9,
+    "large_effective_sweet_spot": 10,
+    "moderate_swingweight": 9,
+    "stability": 8,
+    "control": 7,
+    "spin": 7
+  },
+
+  "preferred_string_dna": {
+    "comfort": 9,
+    "easy_power": 9,
+    "elasticity": 8,
+    "shock_absorption": 8,
+    "ball_pocketing": 8,
+    "control": 7,
+    "feel": 7,
+    "spin": 6,
+    "stiffness": 3
+  },
+
+  "recommended_string_families": [
+    "Natural Gut",
+    "Premium Multifilament",
+    "Soft Co-Polyester",
+    "Natural Gut / Polyester Hybrid",
+    "Multifilament / Soft Polyester Hybrid"
+  ],
+
+  "racquet_adjustment": {
+    "prefer": [
+      "Large sweet spot",
+      "Forgiving response",
+      "Easy depth",
+      "Moderate swingweight",
+      "Comfort-oriented frame"
+    ],
+
+    "avoid": [
+      "Demanding player's frames",
+      "Very high swingweight",
+      "Very low-powered racquets",
+      "Small head size"
+    ]
+  },
+
+  "tension_adjustment": {
+    "mild": {
+      "adjustment_lbs": -1
+    },
+    "moderate": {
+      "adjustment_lbs": -2
+    },
+    "high": {
+      "adjustment_lbs": -3
+    }
+  },
+
+  "movement_considerations": {
+    "importance": "Critical",
+
+    "affected_movements": [
+      "Split step",
+      "Lunging",
+      "Wide defensive movement",
+      "Acceleration",
+      "Deceleration",
+      "Direction changes",
+      "Low ball retrieval",
+      "Long rallies"
+    ],
+
+    "equipment_objectives": [
+      "Reduce movement demand",
+      "Increase easy depth",
+      "Increase forgiveness",
+      "Reduce dependence on perfect positioning"
+    ]
+  },
+
+  "playing_style_interaction": {
+    "baseline_aggressive": {
+      "risk_area": [
+        "Explosive recovery",
+        "Frequent direction changes"
+      ]
+    },
+
+    "baseline_counterpuncher": {
+      "risk_area": [
+        "Long defensive rallies",
+        "Large court coverage"
+      ]
+    },
+
+    "baseline_grinder": {
+      "risk_area": [
+        "Very high movement volume",
+        "Long match duration"
+      ]
+    },
+
+    "all_court": {
+      "risk_area": [
+        "Forward and backward transitions"
+      ]
+    },
+
+    "serve_volley": {
+      "risk_area": [
+        "Repeated split steps",
+        "Explosive first movement"
+      ]
+    }
+  },
+
+  "severity_logic": {
+    "mild": {
+      "recommendation": [
+        "Comfort-oriented setup",
+        "Increase forgiveness",
+        "Maintain maneuverability"
+      ]
+    },
+
+    "moderate": {
+      "recommendation": [
+        "Reduce equipment demand",
+        "Increase easy power",
+        "Use softer stringbed",
+        "Avoid excessive swingweight"
+      ]
+    },
+
+    "high": {
+      "recommendation": [
+        "Maximum forgiveness",
+        "Comfort-oriented racquet",
+        "Easy power",
+        "Soft string setup"
+      ],
+
+      "hard_constraints": [
+        "Avoid very demanding low-powered racquets.",
+        "Avoid excessive swingweight.",
+        "Avoid setups requiring perfect footwork."
+      ]
+    }
+  },
+
+  "goal_conflict_logic": {
+    "more_control": {
+      "resolution": [
+        "Improve control through string selection rather than reducing forgiveness."
+      ]
+    },
+
+    "more_spin": {
+      "resolution": [
+        "Increase spin through string technology instead of increasing movement demand."
+      ]
+    },
+
+    "more_power": {
+      "resolution": [
+        "Increase easy power through racquet efficiency and string elasticity."
+      ]
+    }
+  },
+
+  "ai_override_rules": {
+    "if_knee_sensitivity_is_high": {
+      "override": true,
+
+      "prioritize": [
+        "Forgiveness",
+        "Easy Power",
+        "Comfort",
+        "Maneuverability"
+      ],
+
+      "deprioritize": [
+        "Maximum Precision",
+        "Maximum Swingweight",
+        "Demanding Control Frames"
+      ]
+    }
+  },
+
+  "future_recovery_module": {
+    "related_area": "Recovery / Physiotherapy",
+
+    "possible_topics": [
+      "Quadriceps Strength",
+      "Hamstring Strength",
+      "Glute Strength",
+      "Balance Training",
+      "Movement Mechanics",
+      "Load Management",
+      "Return To Tennis"
+    ],
+
+    "routing_rule": "Equipment recommendations and rehabilitation guidance should remain separate modules."
+  },
+
+  "medical_warning": {
+    "enabled": true,
+
+    "message": {
+      "en": "Equipment optimization may reduce physical demand but cannot diagnose or treat knee injuries. Persistent pain, swelling or instability should be evaluated by a qualified healthcare professional.",
+      "zh": "装备优化可以降低身体负担，但不能诊断或治疗膝关节损伤。如持续疼痛、肿胀或不稳定，请咨询专业医疗人员。"
+    }
+  },
+
+  "tradeoffs": {
+    "more_forgiveness_can_reduce": [
+      "Maximum Precision"
+    ],
+
+    "more_easy_power_can_reduce": [
+      "Maximum Low-Launch Control"
+    ],
+
+    "acceptable_tradeoff": "Reducing cumulative knee load is more important than maximizing demanding equipment performance."
+  },
+
+  "matching_weights": {
+    "forgiveness": 0.23,
+    "easy_power": 0.18,
+    "maneuverability": 0.15,
+    "comfort": 0.12,
+    "effective_sweet_spot": 0.10,
+    "swingweight": 0.08,
+    "string_elasticity": 0.05,
+    "stability": 0.05,
+    "control": 0.03,
+    "spin": 0.01
+  },
+
+  "output_guidance": {
+    "must_explain": [
+      "How the setup reduces knee loading.",
+      "Why forgiveness and easy power are emphasized.",
+      "Which compromises are intentionally accepted.",
+      "Whether further recovery assessment is recommended."
+    ],
+
+    "must_not_do": [
+      "Do not diagnose knee injuries.",
+      "Do not prescribe rehabilitation exercises in this module.",
+      "Do not assume every player with knee sensitivity needs an ultra-light racquet."
+    ]
+  },
+
+  "search_keywords": [
+    "knee",
+    "knee pain",
+    "knee sensitivity",
+    "meniscus",
+    "acl",
+    "pcl",
+    "patellar tendon",
+    "膝盖",
+    "膝关节",
+    "膝盖疼痛",
+    "膝关节敏感"
+  ]
+}
