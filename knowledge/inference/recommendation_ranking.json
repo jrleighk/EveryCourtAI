@@ -1,0 +1,369 @@
+{
+  "id": "recommendation_ranking",
+  "category": "Inference Rules",
+  "type": "Recommendation Ranking Engine",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
+
+  "description": {
+    "en": "Ranks all valid recommendations and determines the best overall recommendation, alternatives and backup options.",
+    "zh": "对所有有效推荐方案进行排序，并决定最佳推荐、备选方案及替代方案。"
+  },
+
+  "core_principle": {
+    "en": "The best recommendation is not the highest performing setup. It is the setup with the highest total compatibility for this player.",
+    "zh": "最佳推荐并不是性能最高，而是与当前球员综合匹配度最高的方案。"
+  },
+
+  "ranking_objective": {
+    "primary_goal": "Maximize Overall Player Compatibility",
+    "secondary_goal": "Minimize Tradeoffs",
+    "third_goal": "Require The Smallest Effective Change"
+  },
+
+  "ranking_score": {
+    "formula": "overall_score = compatibility + physical + goal + equipment + confidence - penalties",
+
+    "maximum_score": 100
+  },
+
+  "ranking_weights": {
+
+    "physical_compatibility": {
+      "weight": 0.22
+    },
+
+    "goal_alignment": {
+      "weight": 0.20
+    },
+
+    "current_problem_resolution": {
+      "weight": 0.15
+    },
+
+    "racquet_string_synergy": {
+      "weight": 0.12
+    },
+
+    "playing_style_match": {
+      "weight": 0.08
+    },
+
+    "swing_speed_match": {
+      "weight": 0.06
+    },
+
+    "player_preferences": {
+      "weight": 0.05
+    },
+
+    "confidence_score": {
+      "weight": 0.08
+    },
+
+    "future_scalability": {
+      "weight": 0.04
+    }
+  },
+
+  "mandatory_filters": {
+
+    "reject_if": [
+
+      "Violates Physical Constraint",
+
+      "Violates Manufacturer Limits",
+
+      "Confidence Below Minimum",
+
+      "Incompatible Racquet And String",
+
+      "Impossible Tension Recommendation"
+
+    ]
+  },
+
+  "minimum_confidence": {
+
+    "product_recommendation": 60,
+
+    "high_precision_setup": 80
+  },
+
+  "recommendation_categories": {
+
+    "best_overall": {
+
+      "description": "Highest total compatibility."
+    },
+
+    "best_comfort": {
+
+      "description": "Highest comfort while maintaining acceptable performance."
+    },
+
+    "best_control": {
+
+      "description": "Highest control within safe limits."
+    },
+
+    "best_spin": {
+
+      "description": "Highest spin within safe limits."
+    },
+
+    "best_power": {
+
+      "description": "Highest power within safe limits."
+    },
+
+    "smallest_change": {
+
+      "description": "Requires the least equipment modification."
+    },
+
+    "premium_option": {
+
+      "description": "Highest overall performance regardless of price."
+    },
+
+    "value_option": {
+
+      "description": "Best performance per cost."
+    }
+  },
+
+  "tradeoff_penalties": {
+
+    "physical_compromise": -40,
+
+    "major_goal_loss": -15,
+
+    "minor_goal_loss": -5,
+
+    "large_learning_curve": -5,
+
+    "high_cost": -2,
+
+    "reduced_durability": -2
+  },
+
+  "bonus_scores": {
+
+    "solves_multiple_problems": 8,
+
+    "improves_comfort_without_losing_control": 6,
+
+    "improves_spin_without_launch_penalty": 5,
+
+    "maintains_player_preference": 3,
+
+    "small_equipment_change": 5,
+
+    "high_confidence": 5
+  },
+
+  "ranking_logic": {
+
+    "if_multiple_solutions_have_same_score": [
+
+      "Choose Higher Physical Compatibility",
+
+      "Choose Higher Confidence",
+
+      "Choose Smaller Equipment Change",
+
+      "Choose Lower User Adaptation Cost"
+
+    ]
+  },
+
+  "adaptation_cost": {
+
+    "same_string_new_tension": 1,
+
+    "same_family_new_string": 2,
+
+    "new_string_family": 4,
+
+    "hybrid_conversion": 5,
+
+    "new_racquet": 8
+  },
+
+  "equipment_change_priority": [
+
+    "Adjust Tension",
+
+    "Adjust Gauge",
+
+    "Replace String",
+
+    "Hybrid",
+
+    "Replace Racquet"
+
+  ],
+
+  "alternative_generation": {
+
+    "always_generate": [
+
+      "Best Overall",
+
+      "Alternative",
+
+      "Value Option"
+
+    ],
+
+    "optional": [
+
+      "Comfort Alternative",
+
+      "Tournament Setup",
+
+      "Practice Setup"
+
+    ]
+  },
+
+  "ranking_examples": [
+
+    {
+
+      "scenario": "Player Wants More Control",
+
+      "ranking": [
+
+        "Best Overall",
+
+        "Comfort Alternative",
+
+        "Maximum Control",
+
+        "Lowest Cost"
+
+      ]
+    },
+
+    {
+
+      "scenario": "Player Has Tennis Elbow",
+
+      "ranking": [
+
+        "Safest Setup",
+
+        "Comfort Hybrid",
+
+        "Control Hybrid"
+
+      ]
+    }
+
+  ],
+
+  "output_structure": {
+
+    "rank_1": {
+
+      "label": "Best Overall",
+
+      "required": [
+
+        "Overall Score",
+
+        "Confidence",
+
+        "Advantages",
+
+        "Tradeoffs"
+
+      ]
+    },
+
+    "rank_2": {
+
+      "label": "Alternative",
+
+      "required": [
+
+        "Reason",
+
+        "Advantages",
+
+        "Tradeoffs"
+
+      ]
+    },
+
+    "rank_3": {
+
+      "label": "Value Option",
+
+      "required": [
+
+        "Reason",
+
+        "Advantages",
+
+        "Tradeoffs"
+
+      ]
+    }
+  },
+
+  "display_rules": {
+
+    "show_scores": true,
+
+    "show_tradeoffs": true,
+
+    "show_confidence": true,
+
+    "show_why_ranked": true
+  },
+
+  "future_extensions": {
+
+    "machine_learning_ranking": true,
+
+    "community_success_rate": true,
+
+    "professional_player_similarity": true,
+
+    "court_surface_weighting": true,
+
+    "weather_weighting": true
+  },
+
+  "engine_connections": {
+
+    "reads_from": [
+
+      "knowledge/inference/conflict_resolution.json",
+
+      "knowledge/inference/confidence_scoring.json",
+
+      "knowledge/inference/missing_information_strategy.json",
+
+      "knowledge/decision_rules/",
+
+      "knowledge/racquets/",
+
+      "knowledge/strings/"
+
+    ],
+
+    "passes_to": [
+
+      "alternative_generation",
+
+      "decision_explanation",
+
+      "recommendation_engine"
+
+    ]
+  }
+}
