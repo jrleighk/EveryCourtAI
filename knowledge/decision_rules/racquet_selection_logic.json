@@ -1,0 +1,936 @@
+{
+  "id": "racquet_selection_logic",
+  "category": "Decision Rules",
+  "type": "Racquet Selection Engine",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
+
+  "description": {
+    "en": "Core racquet-selection logic used by EveryCourtAI to determine whether the player's current racquet should be retained, adjusted through string setup, or replaced with a more compatible frame.",
+    "zh": "EveryCourtAI 核心球拍选择逻辑，用于判断球员当前球拍是否应该继续使用、通过球线与磅数进行调整，或更换为更加匹配的球拍。"
+  },
+
+  "core_principle": {
+    "en": "Do not recommend a racquet change unless the current frame creates a meaningful mismatch that cannot reasonably be solved through string, gauge, tension or hybrid adjustments.",
+    "zh": "除非当前球拍存在无法通过球线、线径、磅数或 Hybrid 合理解决的明显不匹配，否则不要优先建议换拍。"
+  },
+
+  "decision_pipeline": [
+    "Read Player Profile",
+    "Read Current Racquet DNA",
+    "Read Current String Setup",
+    "Read Current Setup Feedback",
+    "Apply Physical Constraints",
+    "Evaluate Static Weight Compatibility",
+    "Evaluate Swingweight And Maneuverability",
+    "Evaluate Power Compatibility",
+    "Evaluate Control And Launch Compatibility",
+    "Evaluate Head Size And Forgiveness",
+    "Evaluate String Pattern Compatibility",
+    "Evaluate Stability",
+    "Evaluate Feel And Comfort",
+    "Check Whether String Or Tension Can Solve The Problem",
+    "Determine Keep / Adjust / Replace Decision",
+    "Generate Candidate Racquet DNA",
+    "Rank Racquet Candidates",
+    "Generate Tradeoffs And Explanation"
+  ],
+
+  "decision_options": [
+    "keep_current_racquet",
+    "keep_and_adjust_strings",
+    "racquet_change_optional",
+    "racquet_change_recommended",
+    "racquet_change_strongly_recommended"
+  ],
+
+  "change_thresholds": {
+    "keep_current_racquet": {
+      "minimum_compatibility_score": 85
+    },
+
+    "keep_and_adjust_strings": {
+      "minimum_compatibility_score": 72
+    },
+
+    "racquet_change_optional": {
+      "minimum_compatibility_score": 60
+    },
+
+    "racquet_change_recommended": {
+      "minimum_compatibility_score": 45
+    },
+
+    "racquet_change_strongly_recommended": {
+      "maximum_compatibility_score": 44
+    }
+  },
+
+  "change_sequence": {
+    "default_order": [
+      "Tension",
+      "String Gauge",
+      "String Model",
+      "Full Bed / Hybrid Architecture",
+      "Racquet"
+    ],
+
+    "skip_directly_to_racquet_change_when": [
+      "Current racquet is clearly too heavy for the player to swing safely or consistently.",
+      "Current swingweight significantly reduces timing and maneuverability.",
+      "Current head size or sweet spot is clearly inappropriate for the player's level.",
+      "Current racquet stiffness creates persistent discomfort that remains after string adjustment.",
+      "Current racquet power level fundamentally conflicts with the player's swing speed and control needs.",
+      "Current racquet is physically damaged."
+    ]
+  },
+
+  "racquet_dna_dimensions": [
+    "power",
+    "control",
+    "spin",
+    "launch_angle",
+    "stability",
+    "maneuverability",
+    "forgiveness",
+    "feel",
+    "comfort",
+    "predictability"
+  ],
+
+  "player_fit_dimensions": {
+    "static_weight": {
+      "weight": 0.14
+    },
+
+    "swingweight_maneuverability": {
+      "weight": 0.16
+    },
+
+    "power_match": {
+      "weight": 0.12
+    },
+
+    "control_match": {
+      "weight": 0.13
+    },
+
+    "launch_match": {
+      "weight": 0.08
+    },
+
+    "stability_match": {
+      "weight": 0.10
+    },
+
+    "forgiveness_match": {
+      "weight": 0.08
+    },
+
+    "comfort_match": {
+      "weight": 0.08
+    },
+
+    "feel_match": {
+      "weight": 0.05
+    },
+
+    "playing_style_match": {
+      "weight": 0.04
+    },
+
+    "swing_speed_match": {
+      "weight": 0.02
+    }
+  },
+
+  "static_weight_logic": {
+    "general_guidance_g": {
+      "slow_swing": {
+        "preferred_range": "260-290"
+      },
+
+      "medium_swing": {
+        "preferred_range": "285-305"
+      },
+
+      "fast_swing": {
+        "preferred_range": "300-320"
+      }
+    },
+
+    "too_heavy_signs": [
+      "Late contact",
+      "Loss of racquet-head speed",
+      "Reduced serve speed late in matches",
+      "Forearm or shoulder fatigue",
+      "Difficulty reacting at net",
+      "Performance drops significantly after extended play"
+    ],
+
+    "too_light_signs": [
+      "Instability against pace",
+      "Difficulty redirecting heavy balls",
+      "Excessive frame twisting",
+      "Player over-swings to create stability"
+    ],
+
+    "decision_rules": {
+      "mild_mismatch": {
+        "action": "keep_and_adjust_strings"
+      },
+
+      "moderate_mismatch": {
+        "action": "racquet_change_optional"
+      },
+
+      "severe_mismatch": {
+        "action": "racquet_change_recommended"
+      }
+    }
+  },
+
+  "swingweight_logic": {
+    "low": {
+      "benefits": [
+        "Maneuverability",
+        "Reaction Speed",
+        "Easy Acceleration"
+      ],
+
+      "penalties": [
+        "Lower Stability",
+        "Lower Plow Through"
+      ]
+    },
+
+    "medium": {
+      "benefits": [
+        "Balanced Maneuverability",
+        "Balanced Stability"
+      ],
+
+      "default_preference": true
+    },
+
+    "high": {
+      "benefits": [
+        "Stability",
+        "Plow Through",
+        "Heavy Ball"
+      ],
+
+      "penalties": [
+        "Reduced Maneuverability",
+        "Higher Physical Demand"
+      ]
+    },
+
+    "high_swingweight_penalty_when": [
+      "Slow swing speed",
+      "Shoulder sensitivity",
+      "Serve fatigue",
+      "Doubles player requiring rapid reactions"
+    ],
+
+    "high_swingweight_bonus_when": [
+      "Fast swing speed",
+      "Advanced player",
+      "Aggressive baseline style",
+      "Player wants stability and heavy ball"
+    ]
+  },
+
+  "power_match_logic": {
+    "high_power_racquet": {
+      "prefer_when": [
+        "Swing speed is slow.",
+        "Player struggles with depth.",
+        "Goal is more power.",
+        "Player uses compact swings."
+      ],
+
+      "penalize_when": [
+        "Swing speed is fast.",
+        "Player frequently over-hits.",
+        "Primary goal is more control.",
+        "Launch angle is already too high."
+      ],
+
+      "string_can_compensate": [
+        "Use more control-oriented string.",
+        "Use thicker gauge.",
+        "Increase tension moderately.",
+        "Use lower-launch string."
+      ]
+    },
+
+    "low_power_racquet": {
+      "prefer_when": [
+        "Player generates power naturally.",
+        "Swing speed is fast.",
+        "Primary goal is precision or control."
+      ],
+
+      "penalize_when": [
+        "Swing speed is slow.",
+        "Player struggles to reach depth.",
+        "Player reports fatigue from over-swinging."
+      ],
+
+      "string_can_compensate": [
+        "Use more elastic string.",
+        "Lower tension.",
+        "Use thinner gauge.",
+        "Use gut or multifilament hybrid."
+      ]
+    }
+  },
+
+  "control_logic": {
+    "increase_score_when": [
+      "Player has fast swing speed.",
+      "Playing style is baseline_aggressive.",
+      "Primary goal is more_control.",
+      "Player frequently hits long."
+    ],
+
+    "decrease_score_when": [
+      "Player struggles to create depth.",
+      "Swing speed is slow.",
+      "Current setup already feels underpowered."
+    ]
+  },
+
+  "launch_angle_logic": {
+    "high_launch_racquet": {
+      "prefer_when": [
+        "Player wants more spin.",
+        "Player needs higher net clearance.",
+        "Player has slow-to-medium swing speed."
+      ],
+
+      "penalize_when": [
+        "Player frequently hits long.",
+        "Player prefers flat penetrating trajectory.",
+        "Goal is lower_launch or more_control."
+      ],
+
+      "string_can_compensate": [
+        "Round control polyester.",
+        "Thicker gauge.",
+        "Slightly higher tension.",
+        "Lower-launch hybrid cross."
+      ]
+    },
+
+    "low_launch_racquet": {
+      "prefer_when": [
+        "Player hits flat.",
+        "Serve-volley style.",
+        "Player wants penetrating trajectory."
+      ],
+
+      "penalize_when": [
+        "Player struggles with net clearance.",
+        "Heavy topspin player wants more shape.",
+        "Slow swing player lacks depth."
+      ]
+    }
+  },
+
+  "head_size_and_forgiveness_logic": {
+    "95_97": {
+      "identity": "Precision / Player Frame",
+
+      "prefer_when": [
+        "Advanced player",
+        "Fast swing",
+        "High timing consistency",
+        "Control and feel are priorities"
+      ],
+
+      "penalize_when": [
+        "Beginner",
+        "Slow swing",
+        "Frequent off-center contact",
+        "Player needs maximum forgiveness"
+      ]
+    },
+
+    "98_100": {
+      "identity": "Performance Sweet Spot",
+
+      "prefer_when": [
+        "Intermediate",
+        "Advanced",
+        "Most modern competitive players"
+      ]
+    },
+
+    "101_105": {
+      "identity": "Forgiveness / Power",
+
+      "prefer_when": [
+        "Slow swing",
+        "Beginner",
+        "Comfort-oriented player",
+        "Player needs larger effective sweet spot"
+      ],
+
+      "penalize_when": [
+        "Fast swing player seeking maximum precision",
+        "Player reports excessive launch"
+      ]
+    },
+
+    "106_plus": {
+      "identity": "Maximum Power / Forgiveness",
+
+      "prefer_when": [
+        "Recreational player",
+        "Very slow swing",
+        "Player needs maximum easy depth"
+      ]
+    }
+  },
+
+  "string_pattern_logic": {
+    "16x19": {
+      "identity": "Open / Balanced Spin-Power",
+      "prefer_when": [
+        "Spin",
+        "Power",
+        "Modern baseline play"
+      ]
+    },
+
+    "16x20": {
+      "identity": "Balanced Control-Spin",
+      "prefer_when": [
+        "Control",
+        "Spin",
+        "Predictability"
+      ]
+    },
+
+    "18x20": {
+      "identity": "Dense / Control-Oriented",
+      "prefer_when": [
+        "Fast swing",
+        "Flat hitting",
+        "Control",
+        "Lower launch"
+      ],
+
+      "penalize_when": [
+        "Slow swing",
+        "Player struggles with depth",
+        "Player needs easy spin"
+      ]
+    }
+  },
+
+  "stability_logic": {
+    "increase_score_when": [
+      "Player faces heavy pace.",
+      "Player is baseline_aggressive.",
+      "Player is baseline_counterpuncher.",
+      "Goal is more_stability.",
+      "Player reports frame twisting."
+    ],
+
+    "decrease_score_when": [
+      "High stability comes with excessive swingweight for the player."
+    ]
+  },
+
+  "maneuverability_logic": {
+    "increase_score_when": [
+      "Serve-volley style.",
+      "All-court style.",
+      "Doubles-heavy usage.",
+      "Shoulder sensitivity.",
+      "Slow-to-medium swing speed."
+    ],
+
+    "decrease_score_when": [
+      "Very low swingweight creates instability."
+    ]
+  },
+
+  "comfort_logic": {
+    "high_priority_when": [
+      "Arm sensitivity",
+      "Elbow sensitivity",
+      "Shoulder sensitivity",
+      "Wrist sensitivity",
+      "Player reports harsh response"
+    ],
+
+    "racquet_change_trigger": [
+      "Persistent discomfort remains after using softer strings and lower tension.",
+      "Racquet stiffness is high and physical sensitivity is moderate or high."
+    ]
+  },
+
+  "playing_style_profiles": {
+    "baseline_aggressive": {
+      "priority": [
+        "Control",
+        "Stability",
+        "Spin",
+        "Predictability"
+      ],
+
+      "preferred_dna": {
+        "power": "Medium",
+        "control": "High",
+        "spin": "High",
+        "stability": "High",
+        "maneuverability": "Medium-High"
+      }
+    },
+
+    "baseline_counterpuncher": {
+      "priority": [
+        "Predictability",
+        "Forgiveness",
+        "Stability",
+        "Comfort"
+      ],
+
+      "preferred_dna": {
+        "power": "Medium",
+        "control": "High",
+        "forgiveness": "High",
+        "stability": "High"
+      }
+    },
+
+    "baseline_grinder": {
+      "priority": [
+        "Comfort",
+        "Forgiveness",
+        "Stability",
+        "Consistency"
+      ],
+
+      "preferred_dna": {
+        "power": "Medium-High",
+        "forgiveness": "High",
+        "comfort": "High"
+      }
+    },
+
+    "all_court": {
+      "priority": [
+        "Feel",
+        "Control",
+        "Maneuverability",
+        "Stability"
+      ],
+
+      "preferred_dna": {
+        "control": "High",
+        "feel": "High",
+        "maneuverability": "High"
+      }
+    },
+
+    "serve_volley": {
+      "priority": [
+        "Maneuverability",
+        "Feel",
+        "Stability",
+        "Control"
+      ],
+
+      "preferred_dna": {
+        "launch_angle": "Low-Medium",
+        "maneuverability": "Very High",
+        "feel": "Very High"
+      }
+    }
+  },
+
+  "swing_speed_profiles": {
+    "slow": {
+      "racquet_direction": [
+        "More Power",
+        "More Forgiveness",
+        "Higher Maneuverability"
+      ],
+
+      "avoid": [
+        "Very Low Power",
+        "Very Small Head",
+        "Very High Swingweight"
+      ]
+    },
+
+    "medium": {
+      "racquet_direction": [
+        "Balanced Power",
+        "Balanced Control",
+        "Forgiveness",
+        "Versatility"
+      ]
+    },
+
+    "fast": {
+      "racquet_direction": [
+        "More Control",
+        "More Stability",
+        "Predictable Launch"
+      ],
+
+      "avoid": [
+        "Excessive Free Power",
+        "Very High Launch"
+      ]
+    }
+  },
+
+  "goal_adjustments": {
+    "more_control": {
+      "increase": [
+        "Control",
+        "Predictability",
+        "Stability"
+      ],
+
+      "decrease": [
+        "Excessive Power",
+        "Excessive Launch"
+      ]
+    },
+
+    "more_power": {
+      "increase": [
+        "Power",
+        "Forgiveness",
+        "Easy Depth"
+      ]
+    },
+
+    "more_spin": {
+      "increase": [
+        "Spin",
+        "Launch Window",
+        "Maneuverability"
+      ]
+    },
+
+    "more_comfort": {
+      "increase": [
+        "Comfort",
+        "Forgiveness"
+      ],
+
+      "decrease": [
+        "Very High Stiffness"
+      ]
+    },
+
+    "more_feel": {
+      "increase": [
+        "Feel",
+        "Control",
+        "Touch"
+      ]
+    },
+
+    "more_stability": {
+      "increase": [
+        "Stability",
+        "Swingweight",
+        "Plow Through"
+      ],
+
+      "constraint": "Do not exceed player's maneuverability tolerance."
+    },
+
+    "more_forgiveness": {
+      "increase": [
+        "Head Size",
+        "Effective Sweet Spot",
+        "Forgiveness"
+      ]
+    },
+
+    "lower_launch": {
+      "increase": [
+        "Control",
+        "Dense Pattern",
+        "Predictability"
+      ]
+    },
+
+    "higher_launch": {
+      "increase": [
+        "Spin",
+        "Open Pattern",
+        "Forgiveness"
+      ]
+    }
+  },
+
+  "current_setup_problem_rules": {
+    "too_heavy": {
+      "preferred_actions": [
+        "Reduce static weight",
+        "Reduce swingweight",
+        "Increase head-light balance"
+      ],
+
+      "racquet_change_priority": "high"
+    },
+
+    "too_light": {
+      "preferred_actions": [
+        "Increase stability",
+        "Increase swingweight moderately",
+        "Consider heavier model"
+      ]
+    },
+
+    "too_powerful": {
+      "first_actions": [
+        "Control string",
+        "Gauge adjustment",
+        "Tension adjustment"
+      ],
+
+      "racquet_change_when": [
+        "Control problem persists despite appropriate string setup."
+      ]
+    },
+
+    "not_enough_power": {
+      "first_actions": [
+        "Lower tension",
+        "More powerful string",
+        "Thinner gauge"
+      ],
+
+      "racquet_change_when": [
+        "Player consistently over-swings to create depth."
+      ]
+    },
+
+    "poor_comfort": {
+      "first_actions": [
+        "Softer string",
+        "Lower tension",
+        "Comfort hybrid"
+      ],
+
+      "racquet_change_when": [
+        "Discomfort persists after string changes."
+      ]
+    },
+
+    "too_high_launch": {
+      "first_actions": [
+        "Lower-launch string",
+        "Thicker gauge",
+        "Slight tension increase"
+      ],
+
+      "racquet_change_when": [
+        "Frame remains fundamentally too launch-oriented."
+      ]
+    }
+  },
+
+  "candidate_generation": {
+    "initial_candidate_limit": 20,
+    "final_ranked_limit": 5,
+
+    "candidate_buckets": [
+      {
+        "bucket": "best_overall_match",
+        "count": 2
+      },
+
+      {
+        "bucket": "easier_transition",
+        "count": 1
+      },
+
+      {
+        "bucket": "more_performance",
+        "count": 1
+      },
+
+      {
+        "bucket": "more_comfort_or_forgiveness",
+        "count": 1
+      }
+    ]
+  },
+
+  "candidate_scoring": {
+    "base_score": 50,
+
+    "score_range": {
+      "minimum": 0,
+      "maximum": 100
+    },
+
+    "positive_match": {
+      "strong": 12,
+      "medium": 7,
+      "weak": 3
+    },
+
+    "negative_match": {
+      "strong": -15,
+      "medium": -8,
+      "weak": -3
+    },
+
+    "hard_constraint_failure": {
+      "action": "exclude_candidate"
+    }
+  },
+
+  "transition_logic": {
+    "principle": {
+      "en": "Prefer the smallest reasonable racquet change that solves the player's problem.",
+      "zh": "如果必须换拍，优先选择变化幅度最小、最容易适应且能够解决核心问题的型号。"
+    },
+
+    "avoid_large_simultaneous_changes": [
+      "Do not change head size, weight, balance and power level dramatically at the same time unless necessary.",
+      "Do not move a developing player directly from a forgiving 100 sq in frame to a demanding 95 sq in frame solely for control."
+    ],
+
+    "preferred_transition_variables": [
+      "Same family, different weight",
+      "Same family, different head size",
+      "Same family, different string pattern",
+      "Adjacent performance family"
+    ]
+  },
+
+  "special_edition_logic": {
+    "rule": {
+      "en": "Special editions and collaborations should inherit the performance DNA of their underlying racquet unless construction specifications are materially different.",
+      "zh": "特别版与联名版如果结构参数没有实质变化，应继承基础型号的 Performance DNA，不应因为外观、限量或收藏属性获得更高性能评分。"
+    },
+
+    "cosmetic_bonus": 0,
+
+    "collector_value_not_used_for_performance_matching": true
+  },
+
+  "duplicate_model_logic": {
+    "rule": "If multiple JSON files describe the same underlying racquet with cosmetic differences, performance candidates should be deduplicated unless the user specifically requests that edition.",
+
+    "deduplicate_by": [
+      "base_model",
+      "head_size",
+      "weight",
+      "balance",
+      "string_pattern",
+      "beam",
+      "stiffness"
+    ]
+  },
+
+  "explanation_rules": {
+    "must_explain": [
+      "Whether the current racquet should be kept or replaced.",
+      "Why a string adjustment is or is not sufficient.",
+      "Which racquet characteristics are mismatched.",
+      "What the recommended replacement improves.",
+      "What tradeoff the new racquet introduces.",
+      "How large the transition from the current racquet will be."
+    ],
+
+    "must_not_do": [
+      "Do not recommend a new racquet simply because a newer model exists.",
+      "Do not recommend based primarily on professional-player endorsement.",
+      "Do not give special editions a performance advantage solely because they are limited.",
+      "Do not recommend an excessively heavy frame to a player who cannot maintain racquet-head speed.",
+      "Do not solve every control problem by recommending a smaller head size.",
+      "Do not solve every power problem by recommending a stiffer racquet."
+    ]
+  },
+
+  "confidence_logic": {
+    "high": {
+      "requirements": [
+        "Current racquet known",
+        "Current racquet specifications known",
+        "Playing style known",
+        "Swing speed known",
+        "Primary goal known",
+        "Current setup feedback known"
+      ]
+    },
+
+    "medium": {
+      "requirements": [
+        "Current racquet known",
+        "Playing style known",
+        "Swing speed known",
+        "Primary goal known"
+      ]
+    },
+
+    "low": {
+      "behavior": "Recommend racquet DNA direction rather than a highly specific replacement."
+    }
+  },
+
+  "output_contract": {
+    "fields": [
+      "current_racquet_id",
+      "current_racquet_compatibility_score",
+      "decision",
+      "racquet_change_priority",
+      "mismatches_detected",
+      "string_adjustment_can_solve",
+      "recommended_racquet_dna",
+      "candidate_racquets",
+      "transition_difficulty",
+      "confidence",
+      "primary_reasons",
+      "tradeoffs",
+      "risk_flags"
+    ],
+
+    "candidate_fields": [
+      "racquet_id",
+      "brand",
+      "model",
+      "match_score",
+      "performance_direction",
+      "transition_difficulty",
+      "primary_improvements",
+      "tradeoffs"
+    ]
+  },
+
+  "engine_connections": {
+    "reads_from": [
+      "knowledge/decision_rules/goal_priority.json",
+      "knowledge/decision_rules/string_selection_logic.json",
+      "knowledge/decision_rules/hybrid_decision_logic.json",
+      "knowledge/decision_rules/tension_adjustment_logic.json",
+      "knowledge/players/player_profile_schema.json",
+      "knowledge/players/playing_styles/",
+      "knowledge/players/swing_speeds/",
+      "knowledge/players/goals/",
+      "knowledge/racquets/",
+      "knowledge/strings/"
+    ],
+
+    "passes_to": [
+      "recommendation_engine"
+    ]
+  }
+}
