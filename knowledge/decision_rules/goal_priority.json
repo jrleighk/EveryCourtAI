@@ -1,0 +1,598 @@
+{
+  "id": "goal_priority",
+  "category": "Decision Rules",
+  "type": "Priority And Conflict Resolution",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
+
+  "description": {
+    "en": "Defines the priority order used by EveryCourtAI when player needs, equipment characteristics, goals, preferences and physical constraints conflict.",
+    "zh": "定义 EveryCourtAI 在球员身体约束、当前装备问题、目标、打法和个人偏好发生冲突时的判断优先级。"
+  },
+
+  "core_principle": {
+    "en": "EveryCourtAI should not maximize a requested performance attribute when doing so creates a larger conflict with player safety, current setup compatibility or equipment stability.",
+    "zh": "EveryCourtAI 不应为了最大化某一个用户目标，而忽略身体负担、当前装备兼容性或整体装备稳定性所产生的更大冲突。"
+  },
+
+  "priority_order": [
+    {
+      "priority": 1,
+      "id": "physical_constraints",
+      "name": {
+        "en": "Physical Constraints",
+        "zh": "身体与舒适性约束"
+      },
+      "weight": 1.0,
+      "hard_constraint": true
+    },
+
+    {
+      "priority": 2,
+      "id": "current_setup_problems",
+      "name": {
+        "en": "Current Setup Problems",
+        "zh": "当前装备实际问题"
+      },
+      "weight": 0.95,
+      "hard_constraint": false
+    },
+
+    {
+      "priority": 3,
+      "id": "racquet_string_compatibility",
+      "name": {
+        "en": "Racquet and String Compatibility",
+        "zh": "球拍与球线兼容性"
+      },
+      "weight": 0.90,
+      "hard_constraint": false
+    },
+
+    {
+      "priority": 4,
+      "id": "primary_goal",
+      "name": {
+        "en": "Primary Player Goal",
+        "zh": "球员首要目标"
+      },
+      "weight": 0.85,
+      "hard_constraint": false
+    },
+
+    {
+      "priority": 5,
+      "id": "swing_speed",
+      "name": {
+        "en": "Swing Speed",
+        "zh": "挥拍速度"
+      },
+      "weight": 0.75,
+      "hard_constraint": false
+    },
+
+    {
+      "priority": 6,
+      "id": "playing_style",
+      "name": {
+        "en": "Playing Style",
+        "zh": "打法类型"
+      },
+      "weight": 0.70,
+      "hard_constraint": false
+    },
+
+    {
+      "priority": 7,
+      "id": "secondary_goals",
+      "name": {
+        "en": "Secondary Goals",
+        "zh": "次要目标"
+      },
+      "weight": 0.60,
+      "hard_constraint": false
+    },
+
+    {
+      "priority": 8,
+      "id": "preferences",
+      "name": {
+        "en": "Feel And Response Preferences",
+        "zh": "手感与响应偏好"
+      },
+      "weight": 0.50,
+      "hard_constraint": false
+    },
+
+    {
+      "priority": 9,
+      "id": "brand_or_color_preference",
+      "name": {
+        "en": "Brand And Cosmetic Preference",
+        "zh": "品牌与外观偏好"
+      },
+      "weight": 0.20,
+      "hard_constraint": false
+    }
+  ],
+
+  "physical_constraint_rules": {
+    "arm_sensitivity": {
+      "mild": {
+        "maximum_string_stiffness": "Medium-Firm",
+        "high_tension_penalty": true,
+        "comfort_weight_multiplier": 1.25
+      },
+
+      "moderate": {
+        "maximum_string_stiffness": "Medium",
+        "prefer_soft_poly_or_non_poly": true,
+        "high_tension_penalty": true,
+        "comfort_weight_multiplier": 1.50
+      },
+
+      "high": {
+        "maximum_string_stiffness": "Soft",
+        "prefer_multifilament_natural_gut_or_comfort_hybrid": true,
+        "avoid_firm_full_poly": true,
+        "comfort_weight_multiplier": 2.00
+      }
+    },
+
+    "elbow_sensitivity": {
+      "moderate_or_high": {
+        "avoid": [
+          "Firm Polyester + High Tension",
+          "Very Stiff Racquet + Firm Polyester",
+          "Dead Polyester With Poor Elasticity"
+        ],
+
+        "prioritize": [
+          "Comfort",
+          "Shock Absorption",
+          "Ball Pocketing",
+          "Lower Impact Load"
+        ]
+      }
+    },
+
+    "shoulder_sensitivity": {
+      "moderate_or_high": {
+        "prioritize": [
+          "Maneuverability",
+          "Reasonable Swingweight",
+          "Comfort"
+        ],
+
+        "deprioritize": [
+          "Very High Swingweight",
+          "Excessive Static Weight"
+        ]
+      }
+    },
+
+    "wrist_sensitivity": {
+      "moderate_or_high": {
+        "prioritize": [
+          "Comfort",
+          "Stable Response",
+          "Predictable Launch"
+        ],
+
+        "deprioritize": [
+          "Very Stiff Stringbeds",
+          "Harsh Off-Center Response"
+        ]
+      }
+    }
+  },
+
+  "current_setup_problem_rules": {
+    "too_powerful": {
+      "increase_priority": [
+        "Control",
+        "Predictability",
+        "Lower Launch",
+        "Tension Stability"
+      ],
+
+      "decrease_priority": [
+        "Free Power"
+      ],
+
+      "possible_actions": [
+        "Select More Control-Oriented String",
+        "Increase Gauge",
+        "Increase Tension Slightly",
+        "Select Lower-Powered Racquet If Necessary"
+      ]
+    },
+
+    "not_enough_power": {
+      "increase_priority": [
+        "Power",
+        "Elasticity",
+        "Ball Pocketing",
+        "Easy Depth"
+      ],
+
+      "possible_actions": [
+        "Lower Tension",
+        "Select Softer String",
+        "Select Thinner Gauge",
+        "Move From Firm Polyester To Softer Polyester Or Hybrid",
+        "Consider More Powerful Racquet Only If String Adjustment Is Insufficient"
+      ]
+    },
+
+    "too_stiff": {
+      "increase_priority": [
+        "Comfort",
+        "Elasticity",
+        "Ball Pocketing",
+        "Shock Absorption"
+      ],
+
+      "possible_actions": [
+        "Lower String Stiffness",
+        "Lower Tension",
+        "Use Multifilament Or Natural Gut Cross",
+        "Use Soft Polyester",
+        "Review Racquet Stiffness"
+      ]
+    },
+
+    "too_high_launch": {
+      "increase_priority": [
+        "Control",
+        "Predictability",
+        "Lower Launch"
+      ],
+
+      "possible_actions": [
+        "Use Rounder Or More Control-Oriented String",
+        "Increase Gauge",
+        "Increase Tension Slightly",
+        "Use Denser String Pattern When Racquet Change Is Appropriate"
+      ]
+    },
+
+    "not_enough_spin": {
+      "increase_priority": [
+        "Spin",
+        "Snapback",
+        "Ball Bite",
+        "String Movement"
+      ],
+
+      "possible_actions": [
+        "Use Shaped Polyester",
+        "Use Thinner Gauge",
+        "Use Shaped Main + Smooth Round Cross Hybrid",
+        "Reduce Tension Slightly When Appropriate"
+      ]
+    },
+
+    "not_enough_control": {
+      "increase_priority": [
+        "Control",
+        "Predictability",
+        "Stability",
+        "Tension Maintenance"
+      ]
+    },
+
+    "poor_comfort": {
+      "increase_priority": [
+        "Comfort",
+        "Shock Absorption",
+        "Ball Pocketing"
+      ],
+
+      "override_power": true,
+      "override_spin": true
+    },
+
+    "poor_durability": {
+      "increase_priority": [
+        "Durability",
+        "Gauge Thickness",
+        "Stringbed Stability"
+      ]
+    },
+
+    "poor_tension_maintenance": {
+      "increase_priority": [
+        "Tension Maintenance",
+        "Predictability",
+        "Playability Duration"
+      ]
+    }
+  },
+
+  "compatibility_rules": {
+    "powerful_stiff_racquet": {
+      "racquet_signals": [
+        "High Power",
+        "High RA",
+        "High Launch"
+      ],
+
+      "preferred_string_direction": [
+        "More Control",
+        "Medium Or Soft Stiffness",
+        "Stable Tension",
+        "Controlled Launch"
+      ],
+
+      "avoid_combination": [
+        "High Power Racquet + High Power String + Low Tension",
+        "Very Stiff Racquet + Firm Polyester + High Tension"
+      ]
+    },
+
+    "low_power_control_racquet": {
+      "racquet_signals": [
+        "Low Power",
+        "Dense Pattern",
+        "Small Head Size"
+      ],
+
+      "preferred_string_direction": [
+        "More Elasticity",
+        "More Pocketing",
+        "Moderate Power",
+        "Lower Or Moderate Tension"
+      ],
+
+      "avoid_combination": [
+        "Low Power Racquet + Dead Firm Polyester + High Tension"
+      ]
+    },
+
+    "spin_racquet": {
+      "racquet_signals": [
+        "Open Pattern",
+        "High Launch",
+        "Spin-Oriented Geometry"
+      ],
+
+      "preferred_string_direction": [
+        "Predictable Response",
+        "Snapback",
+        "Controlled Launch"
+      ]
+    }
+  },
+
+  "goal_conflict_rules": [
+    {
+      "conflict": [
+        "more_power",
+        "more_control"
+      ],
+
+      "resolution": "Balance Through String Type And Tension Before Recommending A Racquet Change",
+
+      "preferred_actions": [
+        "Use Controlled Power String",
+        "Use Medium Tension",
+        "Avoid Extreme Power Or Extreme Control Solutions"
+      ]
+    },
+
+    {
+      "conflict": [
+        "more_spin",
+        "more_comfort"
+      ],
+
+      "resolution": "Prefer Soft Shaped Polyester Or Spin-Oriented Hybrid",
+
+      "preferred_actions": [
+        "Soft Shaped Poly",
+        "Shaped Poly Main + Soft Smooth Cross",
+        "Lower Tension Moderately"
+      ]
+    },
+
+    {
+      "conflict": [
+        "more_control",
+        "more_comfort"
+      ],
+
+      "resolution": "Do Not Automatically Increase Tension",
+
+      "preferred_actions": [
+        "Use More Predictable String",
+        "Use Medium Gauge",
+        "Use Soft Control Polyester",
+        "Consider Hybrid"
+      ]
+    },
+
+    {
+      "conflict": [
+        "more_durability",
+        "more_feel"
+      ],
+
+      "resolution": "Use Moderate Gauge Before Moving To Maximum Thickness",
+
+      "preferred_actions": [
+        "Prefer 1.25 Before 1.30 When Possible",
+        "Select Durable But Responsive Construction"
+      ]
+    },
+
+    {
+      "conflict": [
+        "higher_launch",
+        "more_control"
+      ],
+
+      "resolution": "Increase Spin Window Without Creating Excessive Trampoline Effect",
+
+      "preferred_actions": [
+        "Shaped Controlled Poly",
+        "Moderately Lower Tension",
+        "Avoid Very Powerful Multifilament Full Bed"
+      ]
+    }
+  ],
+
+  "change_sequence": {
+    "principle": {
+      "en": "Change the smallest effective variable first.",
+      "zh": "优先修改成本最低、影响最可控的变量，而不是立即更换整套装备。"
+    },
+
+    "default_order": [
+      {
+        "step": 1,
+        "change": "Tension",
+        "reason": "Lowest-cost and easiest setup variable to adjust."
+      },
+
+      {
+        "step": 2,
+        "change": "String Gauge",
+        "reason": "Changes response without changing the full string family."
+      },
+
+      {
+        "step": 3,
+        "change": "String Model",
+        "reason": "Changes performance DNA while preserving the racquet."
+      },
+
+      {
+        "step": 4,
+        "change": "Full Bed vs Hybrid Architecture",
+        "reason": "Allows larger performance adjustment without immediately changing racquet."
+      },
+
+      {
+        "step": 5,
+        "change": "Racquet",
+        "reason": "Highest-cost and largest equipment change."
+      }
+    ],
+
+    "exceptions": [
+      "Immediate racquet change can be considered when the current racquet is clearly unsuitable in weight, size or maneuverability.",
+      "Physical comfort constraints can override the normal change sequence.",
+      "A dead or damaged stringbed should be replaced before other conclusions are drawn."
+    ]
+  },
+
+  "recommendation_behavior": {
+    "maximum_primary_recommendations": 3,
+    "maximum_alternatives": 3,
+
+    "required_explanation": [
+      "Why this recommendation fits the player.",
+      "What problem it solves.",
+      "What tradeoff it introduces.",
+      "Why higher-priority alternatives were rejected."
+    ],
+
+    "recommendation_order": [
+      "Best Match",
+      "More Comfort Alternative",
+      "More Performance Alternative"
+    ],
+
+    "do_not": [
+      "Recommend based only on brand.",
+      "Recommend based only on professional-player usage.",
+      "Recommend a racquet or string solely because it has the highest individual performance score.",
+      "Ignore current setup feedback.",
+      "Treat all stated player goals as equal priority."
+    ]
+  },
+
+  "missing_data_rules": {
+    "minimum_information": [
+      "Current Racquet",
+      "Playing Style",
+      "Swing Speed",
+      "Primary Goal"
+    ],
+
+    "high_value_optional_information": [
+      "Current String",
+      "Current Tension",
+      "Physical Sensitivity",
+      "Current Setup Problems",
+      "Preferred Feel"
+    ],
+
+    "behavior_when_missing": {
+      "physical_information": "Do not assume the player has physical sensitivity.",
+      "swing_speed": "Use medium only as a temporary low-confidence assumption.",
+      "playing_style": "Ask or infer from player description.",
+      "current_string": "Continue with racquet-level recommendation but reduce confidence.",
+      "current_tension": "Do not give highly precise tension adjustment claims."
+    }
+  },
+
+  "confidence_rules": {
+    "high": {
+      "minimum_score": 0.85,
+      "requirements": [
+        "Current racquet known",
+        "Swing speed known",
+        "Playing style known",
+        "Primary goal known",
+        "Current setup feedback available"
+      ]
+    },
+
+    "medium": {
+      "minimum_score": 0.65
+    },
+
+    "low": {
+      "minimum_score": 0.40,
+      "behavior": "Provide broader recommendations and request more information."
+    }
+  },
+
+  "engine_output": {
+    "primary_constraint": null,
+    "primary_goal": null,
+
+    "effective_priorities": [],
+
+    "conflicts_detected": [],
+
+    "hard_constraints": [],
+
+    "recommended_change_sequence": [],
+
+    "rejected_options": [],
+
+    "confidence": null
+  },
+
+  "engine_connections": {
+    "reads_from": [
+      "knowledge/players/player_profile_schema.json",
+      "knowledge/players/playing_styles/",
+      "knowledge/players/swing_speeds/",
+      "knowledge/players/goals/",
+      "knowledge/racquets/",
+      "knowledge/strings/"
+    ],
+
+    "passes_to": [
+      "racquet_selection_logic",
+      "string_selection_logic",
+      "hybrid_decision_logic",
+      "tension_adjustment_logic",
+      "recommendation_engine"
+    ]
+  }
+}
