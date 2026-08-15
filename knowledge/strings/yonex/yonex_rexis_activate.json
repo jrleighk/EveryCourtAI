@@ -1,0 +1,442 @@
+{
+  "id": "yonex_rexis_activate",
+  "brand": "Yonex",
+  "series": "REXIS",
+  "model": "REXIS Activate",
+  "category": "Multifilament",
+
+  "manufacturer_data": {
+    "construction": "Nylon Multifilament",
+    "material": "Nylon",
+    "string_family": "REXIS",
+    "official_positioning": "Excellent ball-pocketing and arm-friendly multifilament designed for players of all swing speeds looking for a comfortable playing experience.",
+    "target_level": "Beginner / Intermediate / Advanced",
+    "target_style": "Comfort / All Court",
+    "swing_speed_positioning": "All Swing Speeds",
+    "made_in": "Japan"
+  },
+
+  "specifications": {
+    "construction": "Nylon Multifilament",
+    "cross_section": "Round",
+    "surface": "Smooth",
+
+    "available_colors": [
+      "Black",
+      "White"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_name": "16L",
+        "gauge_mm": 1.25,
+        "item_code_set": "TGRA125",
+        "item_code_reel": "TRA125-2"
+      },
+      {
+        "gauge_name": "16",
+        "gauge_mm": 1.30,
+        "item_code_set": "TGRA130",
+        "item_code_reel": "TRA130-2"
+      }
+    ],
+
+    "available_lengths": [
+      {
+        "type": "Set",
+        "length_m": 12
+      },
+      {
+        "type": "Reel",
+        "length_m": 200
+      }
+    ]
+  },
+
+  "technology": [
+    "High Ball Pocketing",
+    "Comfort Multifilament",
+    "Arm Friendly Construction"
+  ],
+
+  "technology_details": {
+
+    "ball_pocketing": {
+      "description": "Designed to maximize dwell time and ball pocketing for improved touch and comfort.",
+      "primary_benefits": [
+        "Pocketing",
+        "Feel",
+        "Comfort",
+        "Touch"
+      ]
+    },
+
+    "arm_friendly": {
+      "description": "Soft multifilament construction reduces impact shock and vibration.",
+      "primary_benefits": [
+        "Comfort",
+        "Reduced Shock",
+        "Arm Protection"
+      ]
+    }
+
+  },
+
+  "design_profile": {
+
+    "string_type": "Comfort Multifilament",
+
+    "target_player": "Beginner / Intermediate / Advanced",
+
+    "comfort_focus": true,
+    "power_focus": true,
+    "feel_focus": true,
+    "control_focus": true,
+    "spin_focus": false,
+    "durability_focus": false,
+    "arm_friendly": true,
+    "ball_pocketing_focus": true
+  },
+
+  "playing_characteristics": {
+
+    "power": 7,
+
+    "control": 8,
+
+    "spin": 6,
+
+    "comfort": 10,
+
+    "feel": 10,
+
+    "durability": 6,
+
+    "tension_maintenance": 8,
+
+    "elasticity": 9,
+
+    "shock_absorption": 10,
+
+    "ball_pocketing": 10,
+
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+
+    "power": 7,
+    "control": 8,
+    "spin": 6,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 6,
+    "tension_maintenance": 8
+  },
+
+  "performance_profile": {
+
+    "string_stiffness": "Very Soft",
+
+    "snapback": 5,
+
+    "ball_bite": 4,
+
+    "ball_pocketing": 10,
+
+    "string_movement": 7,
+
+    "tension_stability": 8,
+
+    "spin_window": "Medium",
+
+    "predictability": 9,
+
+    "arm_friendliness": 10,
+
+    "shock_absorption": 10,
+
+    "directional_precision": 8,
+
+    "response": "Very Soft / Plush / Comfortable"
+  },
+
+  "official_string_parameters": {
+
+    "power": "Medium",
+
+    "spin": "Medium",
+
+    "comfort": "Very High",
+
+    "control": "High",
+
+    "durability": "Medium-Low",
+
+    "source": "Yonex Official String Parameters"
+  },
+
+  "recommended_player": {
+
+    "level": [
+      "Beginner",
+      "Intermediate",
+      "Advanced"
+    ],
+
+    "swing_speed": [
+      "Slow",
+      "Medium",
+      "Fast"
+    ],
+
+    "play_style": [
+      "All Court",
+      "Doubles",
+      "Touch Player"
+    ],
+
+    "special_player_profiles": [
+
+      "Players With Tennis Elbow",
+
+      "Players Recovering From Arm Injuries",
+
+      "Players Seeking Maximum Comfort",
+
+      "Players Transitioning From Natural Gut",
+
+      "Junior Players",
+
+      "Senior Players"
+    ]
+  },
+
+  "recommended_racquets": [
+
+    "Yonex EZONE",
+
+    "Yonex PERCEPT",
+
+    "Yonex VCORE",
+
+    "Wilson Clash",
+
+    "Wilson Blade",
+
+    "HEAD Boom",
+
+    "HEAD Speed"
+  ],
+
+  "comparison_data": {
+
+    "vs_rexis_feel": {
+
+      "comfort": "Similar",
+
+      "power": "Slightly Higher",
+
+      "control": "Slightly Lower",
+
+      "ball_pocketing": "Higher"
+    },
+
+    "vs_rexis_comfort": {
+
+      "comfort": "Similar",
+
+      "feel": "More Direct",
+
+      "power": "Higher"
+    },
+
+    "vs_rexis_speed": {
+
+      "comfort": "Higher",
+
+      "power": "Lower",
+
+      "control": "Higher"
+    },
+
+    "vs_natural_gut": {
+
+      "comfort": "Slightly Lower",
+
+      "power": "Lower",
+
+      "durability": "Higher",
+
+      "price": "Much Lower"
+    }
+
+  },
+
+  "science_metrics": {
+
+    "construction": "Nylon Multifilament",
+
+    "trajectory_profile": "Neutral",
+
+    "comfort_class": "Elite",
+
+    "power_class": "Medium",
+
+    "control_class": "High",
+
+    "elasticity_class": "High"
+  },
+
+  "recommended_by_ai": {
+
+    "best_for": [
+
+      "Comfort",
+
+      "Arm Health",
+
+      "Touch",
+
+      "Control",
+
+      "Ball Pocketing",
+
+      "Doubles"
+    ],
+
+    "avoid_for": [
+
+      "Frequent String Breakers",
+
+      "Heavy Topspin Players",
+
+      "Players Seeking Maximum Spin",
+
+      "Players Wanting Polyester-Like Control"
+    ],
+
+    "alternative_strings": [
+
+      "Yonex Rexis Feel",
+
+      "Yonex Rexis Comfort",
+
+      "Wilson NXT",
+
+      "Tecnifibre X-One Biphase",
+
+      "Tecnifibre NRG2",
+
+      "Babolat Xcel",
+
+      "Wilson Natural Gut"
+    ]
+  },
+
+  "comparison_tags": [
+
+    "Yonex",
+
+    "REXIS",
+
+    "Activate",
+
+    "Multifilament",
+
+    "Comfort",
+
+    "Ball Pocketing",
+
+    "Arm Friendly",
+
+    "Black",
+
+    "White",
+
+    "1.25",
+
+    "1.30"
+  ],
+
+  "ai_keywords": [
+
+    "yonex",
+
+    "rexis activate",
+
+    "multifilament",
+
+    "comfort",
+
+    "ball pocketing",
+
+    "arm friendly",
+
+    "nylon",
+
+    "1.25",
+
+    "1.30",
+
+    "black",
+
+    "white"
+  ],
+
+  "target_competitors": [
+
+    "Wilson NXT",
+
+    "Tecnifibre NRG2",
+
+    "Tecnifibre X-One Biphase",
+
+    "Babolat Xcel",
+
+    "Head Velocity MLT"
+  ],
+
+  "description": {
+
+    "en": "Yonex REXIS Activate is a premium nylon multifilament built around exceptional comfort and ball pocketing. It is designed for players of all swing speeds who want a soft, arm-friendly response with excellent feel and control. The string offers outstanding shock absorption while maintaining stable tension and a predictable response, making it ideal for players transitioning from natural gut or recovering from arm discomfort.",
+
+    "zh": "Yonex REXIS Activate 是 Yonex REXIS 系列中最强调 Ball Pocketing 与 Arm Friendly 的高端多股线。官方定位为适合所有挥拍速度，能够提供非常柔和的击球感、优秀的包球感以及极佳的舒适性。相比聚酯线，它能够显著降低击球震动，非常适合追求手感、保护手臂、双打、以及从天然肠线或 Multifilament 转换的球员。"
+  },
+
+  "verification": {
+
+    "status": "verified_from_official_yonex_information",
+
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+
+      "Excellent ball-pocketing",
+
+      "Arm-friendly",
+
+      "Comfortable playing experience",
+
+      "All swing speeds",
+
+      "Nylon Multifilament",
+
+      "Black",
+
+      "White",
+
+      "1.25",
+
+      "1.30",
+
+      "TGRA125",
+
+      "TGRA130",
+
+      "TRA125-2",
+
+      "TRA130-2"
+    ]
+  }
+}
