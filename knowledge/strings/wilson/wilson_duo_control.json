@@ -1,0 +1,513 @@
+{
+  "id": "wilson_duo_control",
+  "brand": "Wilson",
+  "series": "Duo",
+  "model": "Duo Control",
+  "category": "Hybrid String Set",
+
+  "manufacturer_data": {
+    "construction": "Multifilament + Co-Polyester Hybrid",
+    "main_components": [
+      "Wilson NXT Control 16",
+      "Luxilon 4G Rough 17"
+    ],
+    "string_family": "Hybrid",
+    "official_positioning": "Hybrid string set combining NXT Control with Luxilon 4G Rough for spin, precision, control and tension maintenance.",
+    "target_level": "Intermediate / Advanced / Tournament",
+    "reversible_configuration": true
+  },
+
+  "specifications": {
+    "construction": "Hybrid",
+
+    "available_colors": [
+      "Gold",
+      "Natural"
+    ],
+
+    "components": {
+      "nxt_control": {
+        "string": "Wilson NXT Control",
+        "gauge_name": "16",
+        "gauge_mm": 1.32,
+        "color": "Natural",
+        "construction": "Hybrid Multifilament",
+        "material": "Polyester + Nylon Microfibers in Polyurethane",
+        "shape": "Round",
+        "primary_role": [
+          "Comfort",
+          "Control",
+          "Feel",
+          "Shock Absorption",
+          "Pocketing"
+        ]
+      },
+
+      "luxilon_4g_rough": {
+        "string": "Luxilon 4G Rough",
+        "gauge_name": "17",
+        "gauge_mm": 1.25,
+        "color": "Gold",
+        "construction": "Co-Polyester Monofilament",
+        "surface": "Rough / Textured",
+        "primary_role": [
+          "Control",
+          "Spin",
+          "Tension Maintenance",
+          "Stability",
+          "Precision"
+        ]
+      }
+    },
+
+    "gauge": {
+      "official_listing": "17/16",
+      "mm_official_listing": "1.25/1.32"
+    },
+
+    "packaging": [
+      {
+        "type": "Hybrid Set",
+        "length_ft": 40,
+        "length_m": 12.2
+      }
+    ]
+  },
+
+  "official_hybrid_configuration": {
+    "reversible": true,
+
+    "configuration_1": {
+      "mains": "Luxilon 4G Rough 17 / 1.25",
+      "crosses": "Wilson NXT Control 16 / 1.32",
+      "expected_character": [
+        "Maximum Control",
+        "Spin",
+        "Firm Main Response",
+        "Improved Comfort",
+        "High Tension Stability"
+      ]
+    },
+
+    "configuration_2": {
+      "mains": "Wilson NXT Control 16 / 1.32",
+      "crosses": "Luxilon 4G Rough 17 / 1.25",
+      "expected_character": [
+        "Higher Comfort",
+        "More Pocketing",
+        "More Power",
+        "Controlled Cross Response",
+        "Spin Support"
+      ]
+    }
+  },
+
+  "technology": [
+    "NXT Control Hybrid Multifilament",
+    "Luxilon 4G Rough Co-Polyester",
+    "Reversible Hybrid Configuration",
+    "Comfort-Control Integration",
+    "Spin and Tension Stability Platform"
+  ],
+
+  "technology_details": {
+    "nxt_control_component": {
+      "description": "NXT Control combines polyester and nylon microfibers in polyurethane to provide polyester-influenced control with multifilament comfort.",
+      "primary_benefits": [
+        "Comfort",
+        "Control",
+        "Pocketing",
+        "Shock Absorption"
+      ]
+    },
+
+    "luxilon_4g_rough_component": {
+      "description": "Luxilon 4G Rough contributes firm control, spin support and strong tension maintenance to the hybrid stringbed.",
+      "primary_benefits": [
+        "Control",
+        "Spin",
+        "Precision",
+        "Tension Maintenance"
+      ]
+    },
+
+    "hybrid_interaction": {
+      "description": "The hybrid combines the comfort and forgiveness of NXT Control with the firmer control and spin characteristics of Luxilon 4G Rough.",
+      "primary_benefits": [
+        "Control",
+        "Spin",
+        "Comfort",
+        "Precision",
+        "Tension Stability"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Control-Oriented Multifilament / Co-Poly Hybrid",
+    "target_player": "Intermediate / Advanced / Tournament",
+    "arm_friendly": true,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": false,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true,
+    "precision_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 10,
+    "spin": 9,
+    "comfort": 9,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 10,
+    "elasticity": 8,
+    "ball_pocketing": 9,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 8,
+    "control": 10,
+    "spin": 9,
+    "comfort": 9,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 10
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium",
+    "snapback": 8,
+    "ball_pocketing": 9,
+    "tension_stability": 10,
+    "spin_window": "High",
+    "predictability": 10,
+    "arm_friendliness": 9,
+    "shock_absorption": 9,
+    "directional_precision": 10,
+    "stringbed_stability": 10,
+    "control_response": 10,
+    "hybrid_versatility": 10
+  },
+
+  "stringing_recommendation": {
+    "general": {
+      "configuration": "Either string may be installed in the mains."
+    },
+
+    "luxilon_4g_rough": {
+      "tension_adjustment": {
+        "recommended_reduction_percent_min": 10,
+        "instruction": "Reduce tension on Luxilon 4G Rough by at least 10% for ideal playability."
+      }
+    },
+
+    "configuration_guidance": {
+      "4g_rough_mains": {
+        "best_for": [
+          "Maximum Control",
+          "Spin",
+          "Firm Response",
+          "Advanced Players"
+        ]
+      },
+
+      "nxt_control_mains": {
+        "best_for": [
+          "More Comfort",
+          "More Pocketing",
+          "More Power",
+          "Softer Overall Stringbed"
+        ]
+      }
+    }
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium",
+      "Medium-Fast",
+      "Fast"
+    ],
+
+    "play_style": [
+      "All Court",
+      "Aggressive Baseliner",
+      "Doubles",
+      "Control-Oriented Player",
+      "Counter Puncher"
+    ],
+
+    "special_player_profiles": [
+      "Players Wanting Polyester Control With Multifilament Comfort",
+      "Players Seeking Excellent Tension Maintenance",
+      "Players Wanting Adjustable Hybrid Performance",
+      "Big Hitters Seeking More Comfort",
+      "Players Wanting Spin Without a Full Polyester Bed"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson RF 01",
+    "Wilson Pro Staff",
+    "Wilson Clash",
+    "HEAD Speed",
+    "HEAD Radical",
+    "Yonex EZONE",
+    "Yonex PERCEPT",
+    "Babolat Pure Strike",
+    "Tecnifibre T-FIGHT",
+    "Dunlop CX"
+  ],
+
+  "hybrid_physics": {
+    "poly_component": {
+      "string": "Luxilon 4G Rough",
+      "primary_effects": [
+        "Firm Stringbed Support",
+        "Control",
+        "Spin",
+        "Tension Stability"
+      ]
+    },
+
+    "multifilament_component": {
+      "string": "Wilson NXT Control",
+      "primary_effects": [
+        "Comfort",
+        "Pocketing",
+        "Shock Absorption",
+        "Feel"
+      ]
+    },
+
+    "combined_effect": [
+      "High Control",
+      "Spin",
+      "Improved Comfort",
+      "Excellent Tension Maintenance",
+      "Directional Precision"
+    ]
+  },
+
+  "configuration_effects": {
+    "4g_rough_in_mains": {
+      "control": 10,
+      "spin": 9,
+      "comfort": 8,
+      "power": 7,
+      "durability": 9,
+      "tension_maintenance": 10,
+      "feel": "Firm / Controlled"
+    },
+
+    "nxt_control_in_mains": {
+      "control": 9,
+      "spin": 8,
+      "comfort": 10,
+      "power": 9,
+      "durability": 8,
+      "tension_maintenance": 9,
+      "feel": "Plush / Connected"
+    }
+  },
+
+  "estimated_lifespan": {
+    "hybrid_setup": {
+      "heavy_topspin_hours": "7-12",
+      "club_player_hours": "16-28"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Low-Medium",
+    "tension_loss_sensitivity": "Low",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when NXT Control shows significant fraying or when Luxilon 4G Rough loses snapback and overall stringbed response."
+  },
+
+  "comparison_data": {
+    "vs_full_bed_4g_rough": {
+      "comfort": "Much Higher",
+      "pocketing": "Higher",
+      "power": "Higher",
+      "control": "Slightly Softer",
+      "tension_stability": "Still Very High"
+    },
+
+    "vs_full_bed_nxt_control": {
+      "spin": "Higher",
+      "control": "Higher",
+      "stability": "Higher",
+      "durability": "Higher",
+      "comfort": "Lower"
+    },
+
+    "vs_nxt_control_16": {
+      "spin": "Higher",
+      "precision": "Higher",
+      "tension_maintenance": "Higher",
+      "comfort": "Slightly Lower",
+      "hybrid_versatility": "Higher"
+    },
+
+    "vs_full_poly_hybrid": {
+      "comfort": "Higher",
+      "shock_absorption": "Higher",
+      "feel": "Softer",
+      "durability": "Lower"
+    }
+  },
+
+  "science_metrics": {
+    "hybrid_type": "Multifilament + Textured Co-Polyester",
+
+    "main_performance_mechanisms": [
+      "Textured Polyester Spin",
+      "Polyester Directional Stability",
+      "Multifilament Pocketing",
+      "Multifilament Shock Absorption"
+    ],
+
+    "trajectory_profile": "Controlled / Balanced",
+
+    "launch_angle_profile": "Medium",
+
+    "control_class": "Very High",
+    "comfort_class": "High",
+    "spin_class": "High",
+    "tension_stability_class": "Very High",
+    "hybrid_class": "Premium Control Hybrid"
+  },
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Advanced Players Seeking Control With Comfort",
+      "Big Hitters Who Find Full Polyester Too Firm",
+      "Players Seeking Excellent Tension Maintenance",
+      "Players Wanting Spin and Precision",
+      "Players Who Like To Customize Main/Cross Orientation"
+    ],
+
+    "avoid_for": [
+      "Players Seeking Maximum Multifilament Softness",
+      "Players With Severe Arm Sensitivity",
+      "Players Seeking Maximum Free Power",
+      "Beginners With Slow Swing Speed"
+    ],
+
+    "alternative_strings": [
+      "Wilson NXT Control 16",
+      "Luxilon 4G Rough",
+      "Wilson Duo Power",
+      "Natural Gut + Luxilon 4G",
+      "Wilson NXT + Luxilon ALU Power"
+    ]
+  },
+
+  "comparison_tags": [
+    "Wilson",
+    "Duo Control",
+    "Hybrid",
+    "NXT Control",
+    "Luxilon 4G Rough",
+    "Multifilament",
+    "Co-Polyester",
+    "Control",
+    "Spin",
+    "Tension Maintenance",
+    "Gold",
+    "Natural",
+    "1.25",
+    "1.32"
+  ],
+
+  "ai_keywords": [
+    "wilson",
+    "duo control",
+    "wilson duo control",
+    "nxt control",
+    "luxilon 4g rough",
+    "4g rough",
+    "17 16",
+    "1.25",
+    "1.32",
+    "gold",
+    "natural",
+    "hybrid",
+    "multifilament poly hybrid",
+    "control",
+    "spin",
+    "precision",
+    "tension maintenance",
+    "reduce tension 10 percent",
+    "reversible hybrid"
+  ],
+
+  "target_competitors": [
+    "Natural Gut + Luxilon 4G",
+    "Natural Gut + Luxilon ALU Power",
+    "Wilson NXT + Luxilon ALU Power",
+    "Solinco Tour Bite + Vanquish"
+  ],
+
+  "description": {
+    "en": "Wilson Duo Control is a premium hybrid set combining NXT Control 16 / 1.32 mm with Luxilon 4G Rough 17 / 1.25 mm. NXT Control contributes comfort, pocketing and shock absorption, while the textured 4G Rough co-poly adds spin, precision, stability and exceptional tension maintenance. Wilson allows either string to be installed in the mains, enabling players to tune the hybrid toward firmer control or greater comfort. For ideal playability, Wilson recommends reducing the tension of Luxilon 4G Rough by at least 10%.",
+
+    "zh": "Wilson Duo Control 是一套由 NXT Control 16 / 1.32 毫米与 Luxilon 4G Rough 17 / 1.25 毫米组成的官方 Hybrid。NXT Control 负责提供舒适、Pocketing、触球感和减震，而纹理型 4G Rough 聚酯则负责 Spin、Precision、稳定性以及非常优秀的保磅表现。两根球线都可以作为主线使用：4G Rough 做主线时整体更偏控制和旋转；NXT Control 做主线时则更加舒适、柔和并具有更好的 Pocketing。Wilson 特别建议，为获得理想可打性，Luxilon 4G Rough 的穿线磅数至少降低 10%。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Wilson Duo Control",
+      "Gold / Natural",
+      "Hybrid string set",
+      "Wilson NXT Control 16",
+      "NXT Control 1.32 mm",
+      "Luxilon 4G Rough 17",
+      "Luxilon 4G Rough 1.25 mm",
+      "Spin positioning",
+      "Precision positioning",
+      "Tension maintenance positioning",
+      "Either string can be installed in the mains",
+      "Superior control and performance positioning",
+      "Reduce Luxilon 4G Rough tension by at least 10%",
+      "Gauge 17/16",
+      "Diameter 1.25/1.32 mm",
+      "Set 40 ft / 12.2 m"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Stringing Recommendation",
+      "Recommended Racquets",
+      "Hybrid Physics",
+      "Configuration Effects",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
