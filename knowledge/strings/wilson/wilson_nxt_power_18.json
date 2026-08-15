@@ -1,0 +1,481 @@
+{
+  "id": "wilson_nxt_power_18",
+  "brand": "Wilson",
+  "series": "NXT Power",
+  "model": "NXT Power 18",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Multifilament",
+    "material": "High-Crystallinity Xycro Microfibers with Polyurethane",
+    "string_family": "Multifilament",
+    "core_structure": "Ribbon-Like Co-Polymer Core",
+    "cross_section": "Round",
+    "surface": "Smooth",
+    "former_name": "NXT Tour",
+    "tour_positioning": "Maximum Power / Comfort / Natural-Gut-Like Feel Multifilament",
+    "official_positioning": "Premium multifilament designed to combine exceptionally soft feel with explosive power using high-crystallinity Xycro microfibers bonded with polyurethane.",
+    "target_level": "Beginner / Intermediate / Advanced"
+  },
+
+  "specifications": {
+    "construction": "High-Crystallinity Xycro Multifilament with PU",
+    "cross_section": "Round",
+    "surface": "Smooth",
+
+    "available_colors": [
+      "Natural"
+    ],
+
+    "color_availability": {
+      "Natural": {
+        "gauge_mm": 1.21,
+        "gauge_name": "18",
+        "available": true
+      }
+    },
+
+    "available_gauges": [
+      {
+        "gauge_name": "18",
+        "gauge_mm": 1.21,
+        "available": true,
+
+        "available_colors": [
+          "Natural"
+        ],
+
+        "power": 10,
+        "control": 8,
+        "spin": 8,
+        "comfort": 10,
+        "feel": 10,
+        "durability": 7,
+        "tension_maintenance": 9,
+        "elasticity": 10,
+        "shock_absorption": 10,
+        "ball_pocketing": 10,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Maximum Power",
+          "Maximum Comfort",
+          "Maximum Feel",
+          "Arm-Friendly Play",
+          "Touch Play",
+          "Players Seeking Natural-Gut-Like Response"
+        ]
+      }
+    ],
+
+    "packaging": [
+      {
+        "type": "Set",
+        "length_ft": 40,
+        "length_m": 12.2
+      }
+    ]
+  },
+
+  "technology": [
+    "High-Crystallinity Xycro Microfibers",
+    "Polyurethane Bonding",
+    "Ribbon-Like Co-Polymer Core",
+    "Enhanced Sweet Spot",
+    "Vibration Reduction",
+    "Tension-Loss Reduction"
+  ],
+
+  "technology_details": {
+    "xycro_microfibers": {
+      "description": "High-crystallinity Xycro microfibers are bonded with polyurethane to create a soft, highly elastic and powerful multifilament response.",
+      "primary_benefits": [
+        "Soft Feel",
+        "Explosive Power",
+        "Comfort",
+        "Shock Absorption"
+      ]
+    },
+
+    "ribbon_like_core": {
+      "description": "A ribbon-like co-polymer core increases tensile strength and helps reduce tension loss during play.",
+      "primary_benefits": [
+        "Higher Tensile Strength",
+        "Improved Tension Maintenance",
+        "More Stable Long-Term Response"
+      ]
+    },
+
+    "sweet_spot_enhancement": {
+      "manufacturer_claim": "15% larger sweet spot than traditional synthetic gut string",
+      "primary_benefits": [
+        "More Forgiveness",
+        "Easier Power",
+        "Improved Off-Center Response"
+      ]
+    },
+
+    "vibration_reduction": {
+      "manufacturer_claim": "80% less vibration than traditional synthetic gut string",
+      "primary_benefits": [
+        "Arm Comfort",
+        "Reduced Shock",
+        "Softer Impact",
+        "Improved Feel"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Maximum-Power Premium Multifilament",
+    "target_player": "Beginner / Intermediate / Advanced",
+    "arm_friendly": true,
+    "spin_focus": false,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": false,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true,
+    "pocketing_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 10,
+    "control": 8,
+    "spin": 8,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 7,
+    "tension_maintenance": 9,
+    "elasticity": 10,
+    "shock_absorption": 10,
+    "ball_pocketing": 10,
+    "launch_angle": "Medium-High"
+  },
+
+  "ai_rating": {
+    "power": 10,
+    "control": 8,
+    "spin": 8,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 7,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Very Soft",
+    "snapback": 7,
+    "ball_pocketing": 10,
+    "string_movement": 6,
+    "tension_stability": 9,
+    "spin_window": "Medium",
+    "predictability": 9,
+    "arm_friendliness": 10,
+    "shock_absorption": 10,
+    "directional_precision": 8,
+    "sweet_spot_forgiveness": 10,
+    "plushness": 10,
+    "power_response": 10,
+    "liveliness": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate",
+      "Advanced"
+    ],
+
+    "swing_speed": [
+      "Slow",
+      "Medium",
+      "Medium-Fast"
+    ],
+
+    "play_style": [
+      "All Court",
+      "Doubles",
+      "Serve & Volley",
+      "Touch Player",
+      "Baseline"
+    ],
+
+    "special_player_profiles": [
+      "Players Seeking Maximum Power",
+      "Players With Arm Sensitivity",
+      "Players Wanting Natural-Gut-Like Softness",
+      "Players Seeking Maximum Ball Pocketing",
+      "Players Wanting More Forgiveness",
+      "Players Who Prioritize Comfort Over Durability"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Clash",
+    "Wilson Blade",
+    "Wilson RF 01",
+    "Wilson Pro Staff",
+    "HEAD Boom",
+    "HEAD Speed",
+    "Yonex EZONE",
+    "Yonex PERCEPT",
+    "Babolat Pure Drive",
+    "Babolat Pure Strike",
+    "Tecnifibre T-FIGHT",
+    "Dunlop FX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Luxilon ALU Power",
+      "Luxilon 4G",
+      "Luxilon Element",
+      "Wilson Revolve",
+      "Wilson Revolve Spin"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Maximum Power",
+        "Comfort",
+        "Feel",
+        "Ball Pocketing"
+      ],
+
+      "as_crosses": [
+        "Stringbed Softening",
+        "Power Support",
+        "Comfort",
+        "Shock Reduction",
+        "Touch"
+      ]
+    },
+
+    "hybrid_note": "NXT Power 18 is especially suitable when players want the softest and most powerful NXT Power response in either a full bed or comfort-focused hybrid."
+  },
+
+  "gauge_recommendation": {
+    "1.21": {
+      "gauge_name": "18",
+
+      "best_for": [
+        "Maximum Power",
+        "Maximum Feel",
+        "Maximum Comfort",
+        "Touch",
+        "Ball Pocketing"
+      ],
+
+      "tradeoffs": [
+        "Lowest Durability Within NXT Power Family",
+        "More String Movement",
+        "Less Control Than Thicker Gauges"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.21": {
+      "heavy_topspin_hours": "4-8",
+      "club_player_hours": "12-22"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Immediate",
+    "peak_playability": "Immediate",
+    "performance_drop": "Low-Medium",
+    "tension_loss_sensitivity": "Medium-Low",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when fraying, notching, excessive string movement or reduced tension stability becomes noticeable."
+  },
+
+  "comparison_data": {
+    "vs_traditional_synthetic_gut": {
+      "sweet_spot": "15% larger according to Wilson",
+      "vibration": "80% lower according to Wilson",
+      "comfort": "Much Higher",
+      "power": "Higher",
+      "ball_pocketing": "Higher"
+    },
+
+    "vs_nxt_16": {
+      "power": "Higher",
+      "feel": "Higher / Softer",
+      "comfort": "Similar to Higher",
+      "durability": "Lower",
+      "control": "Lower"
+    },
+
+    "vs_nxt_control": {
+      "power": "Higher",
+      "comfort": "Higher",
+      "control": "Lower",
+      "polyester_influence": "Lower",
+      "feel": "Softer / More Gut-Like"
+    },
+
+    "vs_polyester": {
+      "power": "Much Higher",
+      "comfort": "Much Higher",
+      "shock_absorption": "Much Higher",
+      "durability": "Lower",
+      "spin": "Lower",
+      "control": "More Elastic / Less Firm"
+    }
+  },
+
+  "science_metrics": {
+    "material_class": "PU-Bonded Premium Multifilament",
+
+    "geometry": {
+      "shape": "Round"
+    },
+
+    "comfort_class": "Extreme",
+    "power_class": "Very High",
+    "shock_absorption_class": "Very High",
+    "ball_pocketing_class": "Very High",
+    "tension_stability_class": "High",
+    "sweet_spot_claim": "+15% vs traditional synthetic gut",
+    "vibration_claim": "-80% vs traditional synthetic gut",
+    "performance_class": "Premium Power Multifilament"
+  },
+
+  "awards_and_testing": {
+    "usrsa": {
+      "result": "#1 Comfort String",
+      "source_type": "Manufacturer-Supplied USRSA Rating"
+    }
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Seeking Maximum Power",
+      "Players With Arm Sensitivity",
+      "Players Seeking Natural-Gut-Like Feel",
+      "Players Wanting Maximum Comfort",
+      "Players Seeking Forgiveness and Large Sweet Spot",
+      "Players Wanting a Very Soft Hybrid Component"
+    ],
+
+    "avoid_for": [
+      "Frequent String Breakers",
+      "Heavy Topspin Players Seeking Maximum Snapback",
+      "Players Wanting Firm Polyester-Level Control",
+      "Players Seeking Maximum Durability"
+    ],
+
+    "alternative_strings": [
+      "Wilson NXT 17",
+      "Wilson NXT 16",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG2",
+      "Babolat Xcel",
+      "Natural Gut"
+    ]
+  },
+
+  "comparison_tags": [
+    "NXT Power",
+    "NXT Power 18",
+    "Formerly NXT Tour",
+    "Multifilament",
+    "Xycro Microfibers",
+    "PU",
+    "Ribbon Co-Polymer Core",
+    "Maximum Power",
+    "Comfort",
+    "Natural-Gut-Like",
+    "Natural",
+    "1.21"
+  ],
+
+  "ai_keywords": [
+    "wilson",
+    "nxt power",
+    "nxt power 18",
+    "wilson nxt power 18",
+    "nxt tour",
+    "formerly nxt tour",
+    "1.21",
+    "18 gauge",
+    "natural",
+    "multifilament",
+    "xycro",
+    "high crystallinity",
+    "polyurethane",
+    "pu",
+    "ribbon co polymer",
+    "comfort",
+    "explosive power",
+    "sweet spot",
+    "80 percent less vibration",
+    "15 percent larger sweet spot",
+    "natural gut feel",
+    "usrsa"
+  ],
+
+  "target_competitors": [
+    "Tecnifibre X-One Biphase",
+    "Tecnifibre NRG2",
+    "Babolat Xcel",
+    "Wilson NXT 17",
+    "Natural Gut"
+  ],
+
+  "description": {
+    "en": "Wilson NXT Power 18 is the thinnest and most power-oriented version of the NXT Power family. Formerly known as NXT Tour, it uses high-crystallinity Xycro microfibers bonded with polyurethane to provide an exceptionally soft, comfortable and explosive response. A ribbon-like co-polymer core improves tensile strength and helps reduce tension loss. Wilson reports a 15% larger sweet spot and 80% less vibration than traditional synthetic gut, while the USRSA has rated NXT Power as a #1 comfort string. At 1.21 mm / 18 gauge, this version prioritizes maximum power, feel and pocketing over durability.",
+
+    "zh": "Wilson NXT Power 18 是 NXT Power 系列中最细、同时也是最强调力量的版本，原名 NXT Tour。它采用高结晶度 Xycro 微纤维并通过 Polyurethane 聚氨酯结合，带来非常柔软、舒适并具有爆发力的击球反馈。Ribbon-Like Co-Polymer Core 用于提升抗拉强度并减少击球过程中的张力流失。Wilson 表示它相比传统 Synthetic Gut 拥有约 15% 更大的 Sweet Spot，并减少约 80% 的震动；USRSA 还曾将其评为 #1 Comfort String。1.21 毫米 / 18 规格特别强调 Power、Feel 和 Pocketing，但耐久性会低于更粗规格。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Wilson NXT Power 18",
+      "Natural color",
+      "High-crystallinity Xycro microfibers",
+      "Polyurethane bonding",
+      "Soft feel",
+      "Explosive power",
+      "USRSA #1 comfort string claim",
+      "15% larger sweet spot than traditional synthetic gut claim",
+      "80% less vibration than traditional synthetic gut claim",
+      "Ribbon-like co-polymer core",
+      "Increased tensile strength",
+      "Reduced tension loss positioning",
+      "Formerly labeled NXT Tour",
+      "Natural-gut-like softness and comfort positioning",
+      "18 gauge",
+      "1.21 mm",
+      "Thinnest NXT Power gauge positioning",
+      "Most powerful NXT Power gauge positioning",
+      "Set 40 ft / 12.2 m"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendation",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "Comparison Data",
+      "Science Metrics",
+      "Awards and Testing",
+      "AI Recommendations"
+    ]
+  }
+}
