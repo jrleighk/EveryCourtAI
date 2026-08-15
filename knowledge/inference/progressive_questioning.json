@@ -1,0 +1,539 @@
+{
+  "id": "progressive_questioning",
+  "category": "Inference Rules",
+  "type": "Conversation Questioning Engine",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
+
+  "description": {
+    "en": "Controls how EveryCourtAI asks follow-up questions progressively, prioritizing the highest-value missing information while minimizing user effort.",
+    "zh": "控制 EveryCourtAI 如何分步骤追问，优先获取最有价值的缺失信息，同时尽量减少用户填写和回答负担。"
+  },
+
+  "core_principle": {
+    "en": "Ask the fewest possible questions needed to materially improve recommendation quality.",
+    "zh": "只询问那些能够明显提升推荐质量的问题，并将问题数量控制在最低。"
+  },
+
+  "conversation_rules": {
+    "maximum_questions_per_round": 2,
+    "maximum_consecutive_question_rounds": 3,
+    "prefer_single_choice": true,
+    "prefer_multi_choice_when_needed": true,
+    "allow_free_text": true,
+    "avoid_reasking_known_information": true,
+    "update_profile_after_each_answer": true,
+    "recalculate_confidence_after_each_answer": true
+  },
+
+  "question_priority": [
+    {
+      "priority": 1,
+      "field": "primary_goal",
+      "reason": "Recommendation direction cannot be determined reliably without knowing what the player wants to improve."
+    },
+    {
+      "priority": 2,
+      "field": "current_racquet",
+      "reason": "Current racquet strongly affects string, tension and replacement recommendations."
+    },
+    {
+      "priority": 3,
+      "field": "physical_constraints",
+      "reason": "Physical constraints can override performance goals."
+    },
+    {
+      "priority": 4,
+      "field": "playing_style",
+      "reason": "Playing style influences equipment weighting."
+    },
+    {
+      "priority": 5,
+      "field": "swing_speed",
+      "reason": "Swing speed affects string family, gauge and tension."
+    },
+    {
+      "priority": 6,
+      "field": "current_string",
+      "reason": "Current string helps determine whether the issue comes from the racquet or the stringbed."
+    },
+    {
+      "priority": 7,
+      "field": "current_tension",
+      "reason": "Tension improves precision of setup adjustment."
+    },
+    {
+      "priority": 8,
+      "field": "preferences",
+      "reason": "Preferences refine the final recommendation but are not normally required for a basic recommendation."
+    }
+  ],
+
+  "minimum_recommendation_profiles": {
+    "general_guidance": {
+      "required_fields": [
+        "primary_goal"
+      ]
+    },
+
+    "basic_personalized": {
+      "required_fields": [
+        "primary_goal",
+        "current_racquet",
+        "playing_style"
+      ]
+    },
+
+    "strong_personalized": {
+      "required_fields": [
+        "primary_goal",
+        "current_racquet",
+        "playing_style",
+        "swing_speed"
+      ]
+    },
+
+    "high_precision": {
+      "required_fields": [
+        "primary_goal",
+        "current_racquet",
+        "playing_style",
+        "swing_speed",
+        "current_string",
+        "current_tension",
+        "current_setup_feedback"
+      ]
+    }
+  },
+
+  "stop_questioning_rules": {
+    "stop_when": [
+      "Confidence is 90 or higher.",
+      "All high-value missing information has been collected.",
+      "Additional information would not materially change the recommendation.",
+      "User asks to receive the recommendation immediately."
+    ],
+
+    "continue_when": [
+      "Confidence is below 70 and one high-value question could significantly improve it.",
+      "A major conflict cannot be resolved without clarification.",
+      "The current racquet is unknown and the user wants a specific string recommendation.",
+      "Physical symptoms are mentioned but severity or location is unclear."
+    ]
+  },
+
+  "question_value_scoring": {
+    "formula": "question_value = recommendation_impact + uncertainty_reduction + conflict_resolution_value - user_effort",
+
+    "recommendation_impact": {
+      "high": 10,
+      "medium": 6,
+      "low": 2
+    },
+
+    "uncertainty_reduction": {
+      "high": 8,
+      "medium": 4,
+      "low": 1
+    },
+
+    "conflict_resolution_value": {
+      "high": 8,
+      "medium": 4,
+      "none": 0
+    },
+
+    "user_effort": {
+      "single_choice": 1,
+      "multi_choice": 2,
+      "short_text": 3,
+      "technical_specification": 5
+    }
+  },
+
+  "question_templates": {
+    "primary_goal": {
+      "type": "single_choice",
+      "question": {
+        "en": "What would you most like to improve?",
+        "zh": "你现在最想改善什么？"
+      },
+      "choices": [
+        "More Control",
+        "More Power",
+        "More Spin",
+        "More Comfort",
+        "More Feel"
+      ]
+    },
+
+    "current_racquet": {
+      "type": "short_text",
+      "question": {
+        "en": "What racquet are you currently using?",
+        "zh": "你现在使用什么球拍？"
+      }
+    },
+
+    "playing_style": {
+      "type": "single_choice",
+      "question": {
+        "en": "Which description is closest to your playing style?",
+        "zh": "下面哪一种最接近你的打法？"
+      },
+      "choices": [
+        "Baseline Aggressive",
+        "Baseline Counterpuncher",
+        "Baseline Grinder",
+        "All Court",
+        "Serve & Volley"
+      ]
+    },
+
+    "swing_speed": {
+      "type": "single_choice",
+      "question": {
+        "en": "How would you describe your normal swing speed?",
+        "zh": "你通常的挥拍速度属于哪一类？"
+      },
+      "choices": [
+        "Slow",
+        "Medium",
+        "Fast"
+      ]
+    },
+
+    "physical_constraints": {
+      "type": "multi_choice",
+      "question": {
+        "en": "Do you have any areas that become uncomfortable or sensitive when playing?",
+        "zh": "打球时有没有容易不舒服或敏感的身体部位？"
+      },
+      "choices": [
+        "Arm",
+        "Elbow",
+        "Wrist",
+        "Shoulder",
+        "Neck",
+        "Lower Back",
+        "Hip",
+        "Knee",
+        "Ankle",
+        "None"
+      ]
+    },
+
+    "physical_severity": {
+      "type": "single_choice",
+      "question": {
+        "en": "How significant is the discomfort?",
+        "zh": "这种不适大概是什么程度？"
+      },
+      "choices": [
+        "Mild",
+        "Moderate",
+        "High"
+      ]
+    },
+
+    "current_string": {
+      "type": "short_text",
+      "question": {
+        "en": "What string are you currently using?",
+        "zh": "你现在使用什么球线？"
+      }
+    },
+
+    "current_tension": {
+      "type": "short_text",
+      "question": {
+        "en": "Do you know your current tension?",
+        "zh": "你知道目前穿多少磅吗？"
+      }
+    },
+
+    "current_setup_feedback": {
+      "type": "multi_choice",
+      "question": {
+        "en": "What do you dislike most about your current setup?",
+        "zh": "你对目前配置最不满意的是什么？"
+      },
+      "choices": [
+        "Too Powerful",
+        "Not Enough Power",
+        "Too Stiff",
+        "Too Soft",
+        "Launch Too High",
+        "Launch Too Low",
+        "Not Enough Spin",
+        "Not Enough Control",
+        "Poor Feel",
+        "Poor Comfort",
+        "Poor Durability"
+      ]
+    },
+
+    "feel_preference": {
+      "type": "single_choice",
+      "question": {
+        "en": "What kind of impact feel do you prefer?",
+        "zh": "你更喜欢哪种击球手感？"
+      },
+      "choices": [
+        "Plush",
+        "Soft",
+        "Connected",
+        "Crisp",
+        "Firm",
+        "Muted"
+      ]
+    },
+
+    "launch_preference": {
+      "type": "single_choice",
+      "question": {
+        "en": "What ball trajectory do you prefer?",
+        "zh": "你更喜欢怎样的出球弹道？"
+      },
+      "choices": [
+        "Low",
+        "Medium-Low",
+        "Medium",
+        "Medium-High",
+        "High"
+      ]
+    }
+  },
+
+  "adaptive_questioning_logic": {
+    "if_user_wants_more_control": {
+      "prioritize_follow_up": [
+        "current_setup_feedback",
+        "current_tension",
+        "launch_preference"
+      ]
+    },
+
+    "if_user_wants_more_power": {
+      "prioritize_follow_up": [
+        "swing_speed",
+        "current_racquet",
+        "current_tension"
+      ]
+    },
+
+    "if_user_wants_more_spin": {
+      "prioritize_follow_up": [
+        "swing_speed",
+        "playing_style",
+        "current_string"
+      ]
+    },
+
+    "if_user_wants_more_comfort": {
+      "prioritize_follow_up": [
+        "physical_constraints",
+        "current_string",
+        "current_tension"
+      ]
+    },
+
+    "if_user_wants_more_feel": {
+      "prioritize_follow_up": [
+        "feel_preference",
+        "current_string",
+        "current_racquet"
+      ]
+    }
+  },
+
+  "physical_questioning_logic": {
+    "if_any_physical_issue_selected": {
+      "next_question": "physical_severity"
+    },
+
+    "if_multiple_regions_selected": {
+      "behavior": "Store all regions and ask severity only if severity is not already known."
+    },
+
+    "if_pain_or_injury_language_detected": {
+      "behavior": [
+        "Do not diagnose.",
+        "Apply conservative equipment logic.",
+        "Lower recommendation confidence if severity is unknown."
+      ]
+    }
+  },
+
+  "inference_without_questioning": {
+    "allowed_when": [
+      "The user already provided the information in natural language.",
+      "The information can be mapped confidently to an existing profile.",
+      "The answer would not materially affect recommendation safety."
+    ],
+
+    "examples": [
+      {
+        "user_input": "I hit very fast with heavy topspin from the baseline.",
+        "infer": {
+          "swing_speed": "fast",
+          "playing_style": "baseline_aggressive"
+        }
+      },
+      {
+        "user_input": "My elbow gets sore after two hours.",
+        "infer": {
+          "physical_region": "elbow"
+        },
+        "do_not_infer": [
+          "severity"
+        ]
+      }
+    ]
+  },
+
+  "avoid_question_overload": {
+    "rule": "Never display the full questionnaire unless the user explicitly chooses a full assessment.",
+
+    "progressive_mode": {
+      "default": true
+    },
+
+    "full_assessment_mode": {
+      "available": true,
+      "user_opt_in_required": true
+    }
+  },
+
+  "app_modes": {
+    "quick_recommendation": {
+      "target_questions": "2-4",
+      "target_confidence": "70-85"
+    },
+
+    "standard_assessment": {
+      "target_questions": "4-7",
+      "target_confidence": "80-92"
+    },
+
+    "deep_analysis": {
+      "target_questions": "8+",
+      "target_confidence": "90+"
+    }
+  },
+
+  "conversation_state": {
+    "track": [
+      "answered_fields",
+      "missing_fields",
+      "inferred_fields",
+      "confidence_score",
+      "active_conflicts",
+      "questions_already_asked"
+    ],
+
+    "never_reask": true
+  },
+
+  "recommendation_before_completion": {
+    "enabled": true,
+
+    "rule": {
+      "en": "Give useful guidance as early as possible instead of forcing the user to finish a questionnaire.",
+      "zh": "尽可能早地提供有价值的建议，而不是强迫用户完成整套问卷。"
+    },
+
+    "example": {
+      "known": [
+        "Pure Drive",
+        "More Comfort"
+      ],
+
+      "unknown": [
+        "Swing Speed",
+        "Current String"
+      ],
+
+      "response_behavior": [
+        "Provide preliminary direction.",
+        "Explain current confidence.",
+        "Ask the single most useful next question."
+      ]
+    }
+  },
+
+  "confidence_connection": {
+    "reads_from": "knowledge/inference/confidence_scoring.json",
+
+    "thresholds": {
+      "90_plus": "Stop questioning unless user requests deeper analysis.",
+      "80_89": "Ask optional refinement question only if high-value.",
+      "70_79": "Ask one high-value question.",
+      "below_70": "Ask up to two high-value questions.",
+      "below_50": "Avoid highly specific final setup recommendation."
+    }
+  },
+
+  "conflict_connection": {
+    "reads_from": "knowledge/inference/conflict_resolution.json",
+
+    "rule": "When a conflict cannot be resolved confidently, ask a clarification question instead of guessing."
+  },
+
+  "output_contract": {
+    "current_information_state": {
+      "known": [],
+      "inferred": [],
+      "missing": []
+    },
+
+    "current_confidence": null,
+
+    "question_needed": false,
+
+    "next_question": {
+      "field": null,
+      "question": null,
+      "type": null,
+      "choices": []
+    },
+
+    "reason_for_question": null,
+
+    "estimated_confidence_gain": null,
+
+    "ready_to_recommend": false
+  },
+
+  "explanation_rules": {
+    "must_do": [
+      "Ask short and easy-to-answer questions.",
+      "Explain why technical information is needed only when useful.",
+      "Accept natural-language answers instead of requiring exact terminology.",
+      "Use previous answers automatically."
+    ],
+
+    "must_not_do": [
+      "Do not ask every possible profile question.",
+      "Do not ask optional preference questions before essential information.",
+      "Do not repeat information already provided.",
+      "Do not delay useful advice unnecessarily.",
+      "Do not turn the conversation into a rigid form unless the user chooses that experience."
+    ]
+  },
+
+  "engine_connections": {
+    "reads_from": [
+      "knowledge/inference/missing_information_strategy.json",
+      "knowledge/inference/confidence_scoring.json",
+      "knowledge/inference/conflict_resolution.json",
+      "knowledge/players/player_profile_schema.json"
+    ],
+
+    "passes_to": [
+      "recommendation_ranking",
+      "recommendation_engine",
+      "conversation_manager"
+    ]
+  }
+}
