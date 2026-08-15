@@ -1,0 +1,199 @@
+{
+  "id": "heavy_topspin",
+  "category": "Player Profile",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
+
+  "profile": {
+    "name": {
+      "en": "Heavy Topspin Baseliner",
+      "zh": "重上旋底线型球员"
+    },
+
+    "description": {
+      "en": "A modern baseline player who generates heavy topspin through fast racket-head speed and aggressive upward swing paths.",
+      "zh": "依靠快速拍头速度与向上挥拍轨迹制造大量上旋的现代底线型球员。"
+    }
+  },
+
+  "typical_characteristics": {
+
+    "swing_speed": "Fast",
+
+    "contact_point": "In Front",
+
+    "ball_trajectory": "High",
+
+    "spin_rate": "Very High",
+
+    "net_clearance": "High",
+
+    "power_generation": "Racquet Head Speed",
+
+    "preferred_court_position": "Baseline",
+
+    "rally_tolerance": "High"
+  },
+
+  "priorities": {
+
+    "spin": 10,
+
+    "control": 9,
+
+    "snapback": 10,
+
+    "launch_angle": 9,
+
+    "ball_pocketing": 8,
+
+    "power": 7,
+
+    "comfort": 6,
+
+    "touch": 5
+  },
+
+  "preferred_racquet_characteristics": {
+
+    "head_size": [
+      "98",
+      "100"
+    ],
+
+    "string_pattern": [
+      "16x19",
+      "16x20"
+    ],
+
+    "beam": [
+      "23-26 mm"
+    ],
+
+    "stiffness": [
+      "64-70 RA"
+    ],
+
+    "weight": [
+      "300g",
+      "305g"
+    ],
+
+    "balance": "Slightly Head Light"
+  },
+
+  "preferred_string_characteristics": {
+
+    "family": [
+      "Co-Polyester"
+    ],
+
+    "shape": [
+      "Hexagonal",
+      "Pentagonal",
+      "Octagonal"
+    ],
+
+    "stiffness": [
+      "Medium",
+      "Medium-Firm"
+    ],
+
+    "gauge": [
+      "1.20",
+      "1.23",
+      "1.25"
+    ]
+  },
+
+  "recommended_string_examples": [
+
+    "Solinco Hyper-G",
+
+    "Solinco Tour Bite",
+
+    "Yonex PolyTour Rev",
+
+    "Toroline O-TORO",
+
+    "Toroline Snapper",
+
+    "Babolat RPM Blast",
+
+    "Luxilon ALU Power Rough",
+
+    "Head Lynx Tour"
+  ],
+
+  "recommended_hybrid_examples": [
+
+    "Shaped Poly + Round Poly",
+
+    "Poly + Soft Poly",
+
+    "O-TORO + O-TORO SNAP",
+
+    "Wasabi + Wasabi X"
+  ],
+
+  "recommended_tension": {
+
+    "poly": "46-50 lbs",
+
+    "hybrid": "48/46 lbs"
+  },
+
+  "avoid": {
+
+    "strings": [
+
+      "Full Multifilament",
+
+      "Full Synthetic Gut"
+
+    ],
+
+    "characteristics": [
+
+      "Very High Launch",
+
+      "Very Soft Stringbed",
+
+      "Excessive Power"
+    ]
+  },
+
+  "ai_matching_weights": {
+
+    "spin": 0.25,
+
+    "control": 0.20,
+
+    "snapback": 0.20,
+
+    "launch_angle": 0.10,
+
+    "durability": 0.10,
+
+    "comfort": 0.05,
+
+    "feel": 0.05,
+
+    "power": 0.05
+  },
+
+  "search_keywords": [
+
+    "heavy topspin",
+
+    "baseline",
+
+    "modern tennis",
+
+    "aggressive baseline",
+
+    "high rpm",
+
+    "spin player"
+  ]
+}
