@@ -1,0 +1,325 @@
+{
+  "id": "fast",
+  "category": "Swing Speed",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
+
+  "profile": {
+    "name": {
+      "en": "Fast Swing Speed",
+      "zh": "快速挥拍"
+    },
+    "description": {
+      "en": "Players who consistently generate high racquet-head speed, create their own pace and spin, and therefore benefit most from equipment that emphasizes control, stability, predictability and durability rather than excessive free power.",
+      "zh": "能够稳定产生较高拍头速度，自身具备较强力量和旋转制造能力，因此更适合强调控制、稳定、可预测性和耐久，而不是过度依赖免费力量的装备。"
+    }
+  },
+
+  "swing_characteristics": {
+    "racquet_head_speed": "Fast",
+    "acceleration": "High",
+    "self_generated_power": "High",
+    "spin_generation_potential": "High",
+    "timing_requirement": "High",
+    "contact_stability_requirement": "High",
+    "impact_load": "High"
+  },
+
+  "equipment_needs": {
+    "primary": [
+      "Control",
+      "Stability",
+      "Predictability",
+      "Directional Precision"
+    ],
+    "secondary": [
+      "Spin",
+      "Durability",
+      "Tension Maintenance",
+      "Stringbed Stability"
+    ],
+    "lower_priority": [
+      "Free Power",
+      "High Launch Assistance"
+    ]
+  },
+
+  "preferred_racquet_dna": {
+    "power": 6,
+    "control": 10,
+    "spin": 8,
+    "stability": 10,
+    "maneuverability": 8,
+    "forgiveness": 7,
+    "feel": 9,
+    "launch_angle": 6,
+    "comfort": 7,
+    "predictability": 10
+  },
+
+  "preferred_racquet_characteristics": {
+    "head_size": [
+      "95",
+      "97",
+      "98",
+      "100"
+    ],
+
+    "weight_g": [
+      "300",
+      "305",
+      "310",
+      "315",
+      "320"
+    ],
+
+    "balance": [
+      "Head Light",
+      "Slightly Head Light"
+    ],
+
+    "string_patterns": [
+      "16x19",
+      "16x20",
+      "18x20"
+    ],
+
+    "stiffness_preference": [
+      "Medium",
+      "Medium-Firm"
+    ],
+
+    "key_traits": [
+      "High Stability",
+      "Predictable Launch",
+      "Directional Control",
+      "Controlled Power",
+      "Fast Handling",
+      "Strong Response Under High Impact"
+    ]
+  },
+
+  "preferred_string_dna": {
+    "power": 6,
+    "control": 10,
+    "spin": 9,
+    "comfort": 6,
+    "feel": 8,
+    "durability": 10,
+    "tension_maintenance": 9,
+    "snapback": 9,
+    "ball_pocketing": 7,
+    "predictability": 10
+  },
+
+  "recommended_string_families": [
+    "Control Co-Polyester",
+    "Shaped Co-Polyester",
+    "Round Co-Polyester",
+    "Medium-Firm Co-Polyester",
+    "Poly / Poly Hybrid",
+    "Natural Gut / Polyester Hybrid"
+  ],
+
+  "preferred_string_characteristics": {
+    "shape": [
+      "Round",
+      "Hexagonal",
+      "Pentagonal",
+      "Octagonal"
+    ],
+
+    "stiffness": [
+      "Medium",
+      "Medium-Firm",
+      "Firm"
+    ],
+
+    "gauge_mm": [
+      1.20,
+      1.23,
+      1.25,
+      1.30
+    ],
+
+    "key_traits": [
+      "Control",
+      "Predictability",
+      "Snapback",
+      "Durability",
+      "Tension Stability",
+      "Directional Precision"
+    ]
+  },
+
+  "gauge_logic": {
+    "1.20": {
+      "best_for": [
+        "More Feel",
+        "More Spin Access",
+        "Players Who Do Not Break Strings Frequently"
+      ],
+      "tradeoffs": [
+        "Lower Durability",
+        "Less Stringbed Stability"
+      ]
+    },
+
+    "1.23_1.25": {
+      "best_for": [
+        "Best Overall Balance",
+        "Control",
+        "Spin",
+        "Tournament Play",
+        "Predictability"
+      ],
+      "tradeoffs": [
+        "Less Durability Than 1.30"
+      ]
+    },
+
+    "1.30": {
+      "best_for": [
+        "Heavy Hitters",
+        "Frequent String Breakers",
+        "Open String Patterns",
+        "Maximum Stability"
+      ],
+      "tradeoffs": [
+        "Lower Feel",
+        "Lower Easy Spin Access"
+      ]
+    }
+  },
+
+  "recommended_string_examples": [
+    "Luxilon ALU Power",
+    "Luxilon 4G",
+    "Luxilon 4G Soft",
+    "Solinco Confidential",
+    "Solinco Hyper-G",
+    "Solinco Tour Bite",
+    "Yonex PolyTour Rev",
+    "Yonex PolyTour Spin",
+    "Babolat RPM Blast",
+    "Babolat RPM Power",
+    "Head Hawk",
+    "Head Lynx Tour",
+    "Toroline O-TORO TOUR",
+    "Toroline VAMOS"
+  ],
+
+  "recommended_hybrid_examples": [
+    "Shaped Poly + Round Poly",
+    "Natural Gut + Control Poly",
+    "Firm Poly + Softer Round Poly",
+    "O-TORO TOUR + O-TORO SNAP",
+    "Hyper-G + Hyper-G Round"
+  ],
+
+  "recommended_tension": {
+    "poly": "48-52 lbs",
+    "firm_poly": "46-50 lbs",
+    "soft_poly": "48-51 lbs",
+    "poly_poly_hybrid": "49/48 lbs",
+    "gut_poly_hybrid": "54/51 lbs"
+  },
+
+  "recommended_racquet_examples": [
+    "Wilson Blade 98",
+    "Wilson RF 01 Pro",
+    "Wilson Pro Staff 97",
+    "Yonex PERCEPT 97",
+    "Yonex VCORE 98",
+    "Head Speed Pro",
+    "Head Radical Pro",
+    "Babolat Pure Strike 98",
+    "Tecnifibre TF40 305",
+    "Dunlop CX 200 Tour"
+  ],
+
+  "ai_matching_priority": {
+    "control": 0.22,
+    "stability": 0.18,
+    "predictability": 0.16,
+    "spin": 0.12,
+    "durability": 0.10,
+    "tension_maintenance": 0.08,
+    "feel": 0.06,
+    "maneuverability": 0.04,
+    "comfort": 0.03,
+    "power": 0.01
+  },
+
+  "matching_logic": {
+    "prioritize_when": [
+      "Player generates pace naturally.",
+      "Player regularly takes full swings.",
+      "Player creates significant racquet-head speed.",
+      "Player needs the stringbed to remain stable under high impact.",
+      "Player wants to reduce over-hitting without sacrificing confidence."
+    ],
+
+    "equipment_goals": [
+      "Control self-generated power.",
+      "Maintain predictable launch.",
+      "Increase directional precision.",
+      "Preserve stability at high impact speeds.",
+      "Maintain spin without excessive trampoline effect.",
+      "Improve durability and tension stability."
+    ],
+
+    "deprioritize": [
+      "Excessive Free Power",
+      "Very High Launch",
+      "Extremely Soft Unstable Stringbeds",
+      "Oversized Power Frames",
+      "Low-Tension High-Power Multifilament Setups"
+    ]
+  },
+
+  "compatible_profiles": {
+    "playing_styles": [
+      "baseline_aggressive",
+      "baseline_counterpuncher",
+      "all_court",
+      "serve_volley"
+    ],
+
+    "levels": [
+      "intermediate",
+      "advanced",
+      "tournament",
+      "professional"
+    ],
+
+    "goals": [
+      "more_control",
+      "more_spin",
+      "more_precision",
+      "more_stability",
+      "better_tension_maintenance"
+    ]
+  },
+
+  "risk_flags": [
+    "A powerful racquet combined with a powerful string may create excessive launch and over-hitting.",
+    "A stiff racquet combined with firm polyester and high tension may significantly increase impact load.",
+    "Thin gauges can lose durability quickly for fast-swinging heavy-spin players.",
+    "Increasing tension should not be the only method used to gain control.",
+    "If the player has arm sensitivity, string stiffness should be reduced before tension is increased."
+  ],
+
+  "search_keywords": [
+    "fast swing",
+    "fast swing speed",
+    "high racquet head speed",
+    "high racket head speed",
+    "aggressive swing",
+    "full swing",
+    "self generated power",
+    "快速挥拍",
+    "高拍头速度",
+    "高速挥拍"
+  ]
+}
