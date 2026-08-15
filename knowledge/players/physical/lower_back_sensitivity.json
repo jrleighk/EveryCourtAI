@@ -1,0 +1,271 @@
+{
+  "id": "lower_back_sensitivity",
+  "category": "Player Physical Constraint",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
+
+  "constraint": {
+    "name": {
+      "en": "Lower Back Sensitivity",
+      "zh": "腰部敏感"
+    },
+    "description": {
+      "en": "The player experiences lower back pain, stiffness, fatigue or has a history of lumbar injury. This condition influences equipment recommendations by reducing unnecessary physical load during tennis.",
+      "zh": "球员存在腰部疼痛、僵硬、疲劳或腰椎相关伤病史。该身体限制会影响装备推荐，以降低打球时对腰部的额外负荷。"
+    }
+  },
+
+  "priority": {
+    "type": "Physical Constraint",
+    "override_level": "Highest",
+    "overrides": [
+      "more_power",
+      "more_spin",
+      "more_control",
+      "maximum_performance"
+    ]
+  },
+
+  "severity_levels": {
+    "none": { "score": 0 },
+    "mild": { "score": 1 },
+    "moderate": { "score": 2 },
+    "high": { "score": 3 }
+  },
+
+  "symptoms": [
+    "Lower back soreness",
+    "Lumbar stiffness",
+    "Pain after long matches",
+    "Pain during serving",
+    "Pain during rotation",
+    "Difficulty bending forward",
+    "Reduced trunk rotation",
+    "Back fatigue after training"
+  ],
+
+  "possible_causes": [
+    "Heavy racquet",
+    "Very high swingweight",
+    "Very stiff stringbed",
+    "Repeated serving",
+    "Poor recovery",
+    "Insufficient core strength",
+    "Overtraining",
+    "Lumbar injury history"
+  ],
+
+  "equipment_strategy": {
+    "primary_goal": "Reduce Overall Physical Load",
+
+    "change_priority": [
+      "Racquet Weight",
+      "Swingweight",
+      "Balance",
+      "String Material",
+      "String Tension",
+      "Hybrid Architecture"
+    ]
+  },
+
+  "preferred_racquet_dna": {
+    "maneuverability": 10,
+    "comfort": 10,
+    "forgiveness": 9,
+    "easy_power": 9,
+    "moderate_swingweight": 10,
+    "head_light_balance": 8,
+    "stability": 8,
+    "control": 7
+  },
+
+  "preferred_string_dna": {
+    "comfort": 10,
+    "elasticity": 9,
+    "shock_absorption": 9,
+    "power": 8,
+    "ball_pocketing": 8,
+    "feel": 7,
+    "stiffness": 2
+  },
+
+  "recommended_string_families": [
+    "Natural Gut",
+    "Premium Multifilament",
+    "Soft Co-Polyester",
+    "Natural Gut / Polyester Hybrid",
+    "Multifilament / Soft Polyester Hybrid"
+  ],
+
+  "recommended_strings": [
+    "Babolat Touch VS",
+    "Wilson Natural Gut",
+    "Yonex PolyTour Air",
+    "Yonex REXIS Comfort",
+    "Luxilon Element",
+    "Tecnifibre X-One Biphase",
+    "Tecnifibre NRG2",
+    "Solinco Hyper-G Soft",
+    "Babolat RPM Soft"
+  ],
+
+  "recommended_hybrids": [
+    "Natural Gut Main + Soft Polyester Cross",
+    "Multifilament Main + Soft Polyester Cross",
+    "Soft Polyester Main + Multifilament Cross"
+  ],
+
+  "racquet_adjustment": {
+    "prefer": [
+      "Moderate static weight",
+      "Moderate swingweight",
+      "Easy acceleration",
+      "Comfort-oriented frame",
+      "Large sweet spot"
+    ],
+
+    "avoid": [
+      "Very heavy racquets",
+      "Extremely high swingweight",
+      "Demanding control frames",
+      "Very stiff frames"
+    ]
+  },
+
+  "tension_adjustment": {
+    "mild": {
+      "adjustment_lbs": -2
+    },
+    "moderate": {
+      "adjustment_lbs": -3
+    },
+    "high": {
+      "adjustment_lbs": -4
+    }
+  },
+
+  "severity_logic": {
+    "mild": {
+      "recommendation": [
+        "Reduce string tension",
+        "Review swingweight",
+        "Use softer strings"
+      ]
+    },
+
+    "moderate": {
+      "recommendation": [
+        "Comfort hybrid",
+        "Lower swingweight",
+        "Improve maneuverability"
+      ]
+    },
+
+    "high": {
+      "recommendation": [
+        "Natural gut or premium multifilament",
+        "Comfort racquet",
+        "Low physical load setup"
+      ],
+
+      "hard_constraints": [
+        "Avoid very heavy racquets.",
+        "Avoid excessive swingweight.",
+        "Avoid stiff full polyester at high tension."
+      ]
+    }
+  },
+
+  "movement_considerations": {
+    "affected_movements": [
+      "Serve",
+      "Forehand rotation",
+      "Backhand rotation",
+      "Wide defensive shots",
+      "Low balls",
+      "Open-stance hitting"
+    ],
+
+    "equipment_goal": [
+      "Reduce rotational effort",
+      "Reduce cumulative fatigue",
+      "Improve racquet acceleration with less body stress"
+    ]
+  },
+
+  "ai_override_rules": {
+    "if_lower_back_sensitivity_is_high": {
+      "override": true,
+
+      "prioritize": [
+        "Comfort",
+        "Easy Power",
+        "Maneuverability",
+        "Reduced Physical Load"
+      ],
+
+      "avoid": [
+        "Maximum Swingweight",
+        "Maximum Static Weight",
+        "Extremely Demanding Setups"
+      ]
+    }
+  },
+
+  "future_recovery_module": {
+    "related_area": "Recovery / Physiotherapy",
+
+    "possible_topics": [
+      "Core Stability",
+      "Hip Mobility",
+      "Lumbar Mobility",
+      "Recovery Routine",
+      "Stretching",
+      "Strength Training"
+    ]
+  },
+
+  "medical_warning": {
+    "enabled": true,
+
+    "message": {
+      "en": "Equipment recommendations may reduce physical stress but cannot diagnose or treat lower back conditions. Persistent symptoms should be evaluated by a qualified healthcare professional.",
+      "zh": "装备建议可以帮助降低身体负荷，但不能诊断或治疗腰部疾病。如症状持续，请咨询专业医疗人员。"
+    }
+  },
+
+  "matching_weights": {
+    "maneuverability": 0.22,
+    "comfort": 0.18,
+    "swingweight": 0.18,
+    "static_weight": 0.14,
+    "easy_power": 0.10,
+    "shock_absorption": 0.07,
+    "balance": 0.05,
+    "control": 0.03,
+    "spin": 0.02,
+    "durability": 0.01
+  },
+
+  "output_guidance": {
+    "must_explain": [
+      "How the recommendation reduces lower back load.",
+      "Whether racquet weight or swingweight is the main concern.",
+      "Why the selected setup is easier to use over long sessions.",
+      "What performance compromises are intentional."
+    ]
+  },
+
+  "search_keywords": [
+    "lower back",
+    "back pain",
+    "lumbar",
+    "lumbar pain",
+    "back fatigue",
+    "腰",
+    "腰部",
+    "腰痛",
+    "腰部疲劳",
+    "腰椎"
+  ]
+}
