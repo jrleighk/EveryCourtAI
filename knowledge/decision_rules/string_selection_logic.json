@@ -1,0 +1,674 @@
+{
+  "id": "string_selection_logic",
+  "category": "Decision Rules",
+  "type": "String Selection Engine",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
+
+  "description": {
+    "en": "Core string-selection logic used by EveryCourtAI to convert player DNA, racquet characteristics, physical constraints, current setup feedback and performance goals into ranked string candidates.",
+    "zh": "EveryCourtAI 核心球线筛选逻辑，用于将球员 DNA、球拍特性、身体约束、当前装备反馈与性能目标转换为球线候选排序。"
+  },
+
+  "selection_pipeline": [
+    "Read Player Profile",
+    "Read Current Racquet DNA",
+    "Read Current Setup Feedback",
+    "Apply Hard Constraints",
+    "Determine Preferred String Family",
+    "Determine Preferred Stiffness",
+    "Determine Preferred Shape",
+    "Determine Preferred Gauge",
+    "Apply Goal Weights",
+    "Apply Racquet Compensation",
+    "Apply Swing Speed Compensation",
+    "Apply Playing Style Compensation",
+    "Apply Physical Comfort Penalties",
+    "Apply Durability And Tension Maintenance Requirements",
+    "Rank Candidate Strings",
+    "Generate Alternatives",
+    "Pass Candidates To Hybrid And Tension Engines"
+  ],
+
+  "hard_constraints": {
+    "physical_sensitivity": {
+      "high_arm_sensitivity": {
+        "exclude": [
+          "Very Firm Polyester",
+          "Firm Polyester At High Tension",
+          "Dead Polyester With Low Elasticity"
+        ],
+        "strongly_prefer": [
+          "Multifilament",
+          "Natural Gut",
+          "Soft Co-Polyester",
+          "Comfort Hybrid"
+        ]
+      },
+
+      "moderate_arm_sensitivity": {
+        "penalize": [
+          "Firm Polyester",
+          "High Tension Polyester"
+        ],
+        "prefer": [
+          "Soft Co-Polyester",
+          "Medium-Soft Co-Polyester",
+          "Poly / Multifilament Hybrid",
+          "Natural Gut / Polyester Hybrid"
+        ]
+      }
+    },
+
+    "slow_swing_speed": {
+      "penalize": [
+        "Very Low-Powered Polyester",
+        "Very Firm Polyester",
+        "Thick Firm Polyester"
+      ],
+      "prefer": [
+        "Multifilament",
+        "Synthetic Gut",
+        "Natural Gut",
+        "Soft Polyester",
+        "Elastic Hybrid"
+      ]
+    },
+
+    "fast_swing_speed": {
+      "penalize": [
+        "Very High-Power Multifilament Full Bed",
+        "Very Elastic Low-Control Stringbeds"
+      ],
+      "prefer": [
+        "Control Polyester",
+        "Shaped Polyester",
+        "Round Control Polyester",
+        "Poly / Poly Hybrid"
+      ]
+    }
+  },
+
+  "string_family_selection": {
+    "co_polyester": {
+      "select_when": [
+        "Swing speed is medium or fast.",
+        "Player needs control, spin, durability or predictable response.",
+        "Player is comfortable with polyester response."
+      ],
+      "avoid_when": [
+        "High arm sensitivity.",
+        "Very slow swing speed.",
+        "Comfort is the dominant requirement."
+      ]
+    },
+
+    "soft_co_polyester": {
+      "select_when": [
+        "Player wants polyester-style control with more comfort.",
+        "Current full polyester feels too firm.",
+        "Player has mild arm sensitivity.",
+        "Player uses a stiff or powerful racquet."
+      ]
+    },
+
+    "multifilament": {
+      "select_when": [
+        "Comfort is a top priority.",
+        "Player has slow-to-medium swing speed.",
+        "Player wants easier power and pocketing.",
+        "Player is transitioning away from polyester."
+      ],
+      "avoid_when": [
+        "Player breaks strings frequently.",
+        "Player wants maximum shaped-string spin."
+      ]
+    },
+
+    "natural_gut": {
+      "select_when": [
+        "Maximum comfort, feel, power and tension maintenance are priorities.",
+        "Budget is not a major constraint.",
+        "Player values touch and premium response."
+      ],
+      "avoid_when": [
+        "Frequent string breaking.",
+        "Wet-condition exposure without protection."
+      ]
+    },
+
+    "synthetic_gut": {
+      "select_when": [
+        "Player wants affordable all-around performance.",
+        "Beginner or recreational player.",
+        "Comfort and easy power matter more than maximum spin."
+      ]
+    },
+
+    "hybrid_candidate": {
+      "select_when": [
+        "No single full-bed string family satisfies both primary and secondary goals.",
+        "Player wants polyester control with more comfort.",
+        "Player wants gut or multifilament feel with improved control.",
+        "Player wants shaped-main bite with smooth-cross snapback."
+      ]
+    }
+  },
+
+  "stiffness_logic": {
+    "soft": {
+      "increase_score_when": [
+        "Goal is more comfort.",
+        "Goal is more power.",
+        "Arm sensitivity exists.",
+        "Racquet stiffness is high.",
+        "Swing speed is slow."
+      ],
+      "decrease_score_when": [
+        "Player wants maximum low-launch control.",
+        "Player has very fast swing speed and over-hits."
+      ]
+    },
+
+    "medium": {
+      "increase_score_when": [
+        "Player wants balanced performance.",
+        "Swing speed is medium.",
+        "Playing style is all-court or counterpunching.",
+        "Player wants control without harshness."
+      ]
+    },
+
+    "medium_firm": {
+      "increase_score_when": [
+        "Swing speed is fast.",
+        "Goal is more control.",
+        "Goal is more stability.",
+        "Player uses a powerful racquet."
+      ],
+      "decrease_score_when": [
+        "Arm sensitivity is moderate or high."
+      ]
+    },
+
+    "firm": {
+      "increase_score_when": [
+        "Player has fast swing speed.",
+        "Player supplies most of their own power.",
+        "Goal is maximum control or durability."
+      ],
+      "hard_penalty_when": [
+        "High arm sensitivity.",
+        "Very stiff racquet.",
+        "High-tension setup."
+      ]
+    }
+  },
+
+  "shape_logic": {
+    "round": {
+      "benefits": [
+        "Predictable launch",
+        "Lower string-to-string friction",
+        "Snapback",
+        "Directional consistency"
+      ],
+      "prefer_when": [
+        "Goal is control.",
+        "Goal is lower launch.",
+        "Hybrid cross string is needed.",
+        "Player values predictable response."
+      ]
+    },
+
+    "shaped": {
+      "benefits": [
+        "Mechanical ball bite",
+        "Spin",
+        "Higher spin window"
+      ],
+      "prefer_when": [
+        "Goal is more spin.",
+        "Player uses heavy topspin.",
+        "Playing style is aggressive baseline."
+      ]
+    },
+
+    "highly_aggressive_shape": {
+      "prefer_when": [
+        "Maximum spin is the dominant goal.",
+        "Player has medium-fast or fast swing speed."
+      ],
+      "penalize_when": [
+        "Player values maximum comfort.",
+        "Player uses a dense pattern and does not need additional launch."
+      ]
+    }
+  },
+
+  "gauge_logic": {
+    "thin": {
+      "range_mm": "1.15-1.20",
+      "benefits": [
+        "More feel",
+        "More spin access",
+        "More power",
+        "Higher string movement"
+      ],
+      "penalties": [
+        "Lower durability",
+        "Lower stability"
+      ],
+      "prefer_when": [
+        "Player does not break strings frequently.",
+        "Goal is more spin or feel.",
+        "Dense string pattern needs more response."
+      ]
+    },
+
+    "medium": {
+      "range_mm": "1.21-1.26",
+      "benefits": [
+        "Best overall balance",
+        "Control",
+        "Spin",
+        "Durability",
+        "Feel"
+      ],
+      "default_choice": true
+    },
+
+    "thick": {
+      "range_mm": "1.27-1.35",
+      "benefits": [
+        "Durability",
+        "Stability",
+        "Lower launch",
+        "Control"
+      ],
+      "penalties": [
+        "Less feel",
+        "Less easy spin",
+        "Lower elasticity"
+      ],
+      "prefer_when": [
+        "Frequent string breaker.",
+        "Open string pattern.",
+        "Fast swing speed.",
+        "Goal is more durability or lower launch."
+      ]
+    }
+  },
+
+  "racquet_compensation_rules": {
+    "high_power_racquet": {
+      "increase_string_scores": [
+        "Control",
+        "Predictability",
+        "Tension Maintenance",
+        "Medium-Firm Response"
+      ],
+      "decrease_string_scores": [
+        "Very High Free Power",
+        "Very High Launch"
+      ]
+    },
+
+    "low_power_racquet": {
+      "increase_string_scores": [
+        "Elasticity",
+        "Ball Pocketing",
+        "Power",
+        "Comfort"
+      ],
+      "decrease_string_scores": [
+        "Dead Response",
+        "Very Firm Low-Power Polyester"
+      ]
+    },
+
+    "high_stiffness_racquet": {
+      "increase_string_scores": [
+        "Comfort",
+        "Elasticity",
+        "Shock Absorption",
+        "Pocketing"
+      ],
+      "decrease_string_scores": [
+        "Firmness",
+        "Harshness"
+      ]
+    },
+
+    "open_pattern_racquet": {
+      "increase_string_scores": [
+        "Control",
+        "Durability",
+        "Tension Stability"
+      ],
+      "decrease_string_scores": [
+        "Excessively High Launch"
+      ]
+    },
+
+    "dense_pattern_racquet": {
+      "increase_string_scores": [
+        "Elasticity",
+        "Thin Gauge",
+        "Spin Access",
+        "Pocketing"
+      ]
+    }
+  },
+
+  "goal_adjustments": {
+    "more_control": {
+      "increase": {
+        "control": 0.30,
+        "predictability": 0.20,
+        "tension_maintenance": 0.15,
+        "stability": 0.15,
+        "lower_launch": 0.10
+      },
+      "decrease": {
+        "free_power": 0.15
+      }
+    },
+
+    "more_power": {
+      "increase": {
+        "power": 0.30,
+        "elasticity": 0.20,
+        "ball_pocketing": 0.15,
+        "comfort": 0.10
+      },
+      "decrease": {
+        "firmness": 0.10
+      }
+    },
+
+    "more_spin": {
+      "increase": {
+        "spin": 0.30,
+        "snapback": 0.20,
+        "ball_bite": 0.20,
+        "string_movement": 0.10
+      }
+    },
+
+    "more_comfort": {
+      "increase": {
+        "comfort": 0.35,
+        "shock_absorption": 0.20,
+        "ball_pocketing": 0.15,
+        "elasticity": 0.15
+      },
+      "decrease": {
+        "firmness": 0.20
+      }
+    },
+
+    "more_feel": {
+      "increase": {
+        "feel": 0.30,
+        "ball_pocketing": 0.20,
+        "predictability": 0.15,
+        "touch": 0.15
+      }
+    },
+
+    "more_durability": {
+      "increase": {
+        "durability": 0.35,
+        "tension_maintenance": 0.20,
+        "stability": 0.15
+      }
+    },
+
+    "better_tension_maintenance": {
+      "increase": {
+        "tension_maintenance": 0.40,
+        "predictability": 0.20,
+        "playability_duration": 0.15
+      }
+    },
+
+    "lower_launch": {
+      "increase": {
+        "predictability": 0.20,
+        "control": 0.20,
+        "round_shape": 0.15,
+        "thicker_gauge": 0.10
+      },
+      "decrease": {
+        "high_launch": 0.25
+      }
+    },
+
+    "higher_launch": {
+      "increase": {
+        "spin": 0.20,
+        "shaped_geometry": 0.15,
+        "thin_gauge": 0.10,
+        "elasticity": 0.10
+      }
+    }
+  },
+
+  "playing_style_adjustments": {
+    "baseline_aggressive": {
+      "increase": [
+        "Control",
+        "Spin",
+        "Stability",
+        "Snapback",
+        "Durability"
+      ]
+    },
+
+    "baseline_counterpuncher": {
+      "increase": [
+        "Predictability",
+        "Pocketing",
+        "Comfort",
+        "Tension Maintenance",
+        "Controlled Power"
+      ]
+    },
+
+    "baseline_grinder": {
+      "increase": [
+        "Comfort",
+        "Durability",
+        "Tension Maintenance",
+        "Predictability"
+      ]
+    },
+
+    "all_court": {
+      "increase": [
+        "Feel",
+        "Control",
+        "Pocketing",
+        "Versatility"
+      ]
+    },
+
+    "serve_volley": {
+      "increase": [
+        "Feel",
+        "Touch",
+        "Predictability",
+        "Low-Medium Launch",
+        "Pocketing"
+      ]
+    }
+  },
+
+  "swing_speed_adjustments": {
+    "slow": {
+      "increase": [
+        "Power",
+        "Comfort",
+        "Elasticity",
+        "Pocketing"
+      ],
+      "decrease": [
+        "Very Firm Response"
+      ]
+    },
+
+    "medium": {
+      "increase": [
+        "Balanced Performance",
+        "Comfort",
+        "Control",
+        "Spin"
+      ]
+    },
+
+    "fast": {
+      "increase": [
+        "Control",
+        "Stability",
+        "Durability",
+        "Predictability",
+        "Spin"
+      ],
+      "decrease": [
+        "Excessive Free Power"
+      ]
+    }
+  },
+
+  "candidate_scoring": {
+    "base_score": 50,
+
+    "score_range": {
+      "minimum": 0,
+      "maximum": 100
+    },
+
+    "positive_match": {
+      "strong": 12,
+      "medium": 7,
+      "weak": 3
+    },
+
+    "negative_match": {
+      "strong": -15,
+      "medium": -8,
+      "weak": -3
+    },
+
+    "hard_constraint_failure": {
+      "action": "exclude_candidate"
+    }
+  },
+
+  "ranking_weights": {
+    "physical_compatibility": 0.20,
+    "racquet_compatibility": 0.18,
+    "primary_goal_match": 0.18,
+    "swing_speed_match": 0.12,
+    "playing_style_match": 0.10,
+    "control_predictability": 0.07,
+    "comfort": 0.05,
+    "durability": 0.04,
+    "tension_maintenance": 0.03,
+    "feel": 0.02,
+    "brand_preference": 0.01
+  },
+
+  "candidate_generation": {
+    "initial_candidate_limit": 20,
+    "final_ranked_limit": 6,
+
+    "required_candidate_buckets": [
+      {
+        "bucket": "best_match",
+        "count": 3
+      },
+      {
+        "bucket": "comfort_alternative",
+        "count": 1
+      },
+      {
+        "bucket": "performance_alternative",
+        "count": 1
+      },
+      {
+        "bucket": "value_or_simple_alternative",
+        "count": 1
+      }
+    ]
+  },
+
+  "output_contract": {
+    "candidate_fields": [
+      "string_id",
+      "brand",
+      "model",
+      "recommended_gauge_mm",
+      "recommended_setup_type",
+      "match_score",
+      "confidence",
+      "primary_reasons",
+      "tradeoffs",
+      "risk_flags"
+    ],
+
+    "example": {
+      "string_id": "yonex_polytour_pro",
+      "brand": "Yonex",
+      "model": "PolyTour Pro",
+      "recommended_gauge_mm": 1.25,
+      "recommended_setup_type": "full_bed",
+      "match_score": 92,
+      "confidence": "high",
+      "primary_reasons": [
+        "Balances control and comfort.",
+        "Compatible with medium-to-fast swing speed.",
+        "Round profile supports predictable launch."
+      ],
+      "tradeoffs": [
+        "Less mechanical bite than shaped polyester."
+      ],
+      "risk_flags": []
+    }
+  },
+
+  "explanation_rules": {
+    "must_explain": [
+      "Why the string fits the player's primary goal.",
+      "Why it fits the racquet.",
+      "Why the selected gauge was chosen.",
+      "What the main tradeoff is."
+    ],
+
+    "must_not_do": [
+      "Do not recommend only because a professional player uses the string.",
+      "Do not use brand popularity as a primary reason.",
+      "Do not rank a string highly if it violates a physical hard constraint.",
+      "Do not hide meaningful comfort or durability tradeoffs."
+    ]
+  },
+
+  "engine_connections": {
+    "reads_from": [
+      "knowledge/decision_rules/goal_priority.json",
+      "knowledge/players/player_profile_schema.json",
+      "knowledge/players/playing_styles/",
+      "knowledge/players/swing_speeds/",
+      "knowledge/players/goals/",
+      "knowledge/racquets/",
+      "knowledge/strings/"
+    ],
+
+    "passes_to": [
+      "hybrid_decision_logic",
+      "tension_adjustment_logic",
+      "recommendation_engine"
+    ]
+  }
+}
