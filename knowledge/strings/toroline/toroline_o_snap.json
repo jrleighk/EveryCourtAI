@@ -1,0 +1,454 @@
+{
+  "id": "toroline_o_snap",
+  "brand": "Toroline",
+  "series": "O-SNAP",
+  "model": "O-SNAP",
+  "category": "Hybrid String Set",
+
+  "collaboration": {
+    "partner": "TennCom",
+    "role": "Performance Tuning Collaboration",
+    "confidence": "Official Manufacturer Claim"
+  },
+
+  "manufacturer_data": {
+    "construction": "Dual Co-Poly Hybrid",
+    "main_string": "Toroline O-TORO Neon Pink 1.23",
+    "cross_string": "Toroline O-TORO SNAP TOUR FLEX Black 1.25",
+    "official_positioning": "A soft-main, firm-cross hybrid designed to increase snapback, responsiveness, crispness and spin-friendly performance.",
+    "target_level": "Intermediate / Advanced / Tournament"
+  },
+
+  "specifications": {
+    "construction": "Soft Hexagonal Co-Poly + Firm Round Low-Friction Co-Poly Hybrid",
+
+    "mains": {
+      "string": "Toroline O-TORO",
+      "gauge_mm": 1.23,
+      "gauge_name": "17",
+      "color": "Neon Pink",
+      "shape": "Hexagonal",
+      "material": "Co-Polyester",
+      "flex": "Medium / Softer",
+      "primary_role": [
+        "Spin",
+        "Ball Bite",
+        "Pocketing",
+        "Comfort",
+        "Heavy Rotation"
+      ]
+    },
+
+    "crosses": {
+      "string": "Toroline O-TORO SNAP TOUR FLEX",
+      "gauge_mm": 1.25,
+      "gauge_name": "17",
+      "color": "Black",
+      "shape": "Round",
+      "surface": "Ultra-Slick / Low Friction",
+      "material": "Co-Polyester",
+      "flex": "Firm / Tour",
+      "primary_role": [
+        "Snapback Support",
+        "Control",
+        "Stability",
+        "Crisp Response",
+        "Low Inter-String Friction"
+      ]
+    }
+  },
+
+  "component_strings": {
+    "o_toro_neon_pink_123": {
+      "role": "Mains",
+      "construction": "Hexagonal Co-Polyester",
+      "primary_benefits": [
+        "Spin",
+        "Mechanical Ball Grip",
+        "Pocketing",
+        "Comfort"
+      ]
+    },
+
+    "o_toro_snap_tour_flex_black_125": {
+      "role": "Crosses",
+      "construction": "Firm Round Tour-Flex Co-Polyester",
+      "surface": "Ultra-Slick",
+      "primary_benefits": [
+        "Low Friction",
+        "Fast Snapback",
+        "Control",
+        "Stringbed Stability",
+        "Crispness"
+      ]
+    }
+  },
+
+  "official_hybrid_configuration": {
+    "mains": "O-TORO Neon Pink 1.23",
+    "crosses": "O-TORO SNAP TOUR FLEX Black 1.25",
+
+    "official_result": [
+      "Faster Snapback",
+      "More Responsive Feel",
+      "Extra Crispness",
+      "Lively Response",
+      "Spin-Friendly Performance"
+    ]
+  },
+
+  "technology": [
+    "Soft-Firm Hybrid Contrast",
+    "Hexagonal Mechanical Grip",
+    "Ultra-Slick Round Cross",
+    "Low-Friction Snapback Architecture",
+    "Tour-Flex Cross Stability",
+    "Modern Spin-Control Tuning"
+  ],
+
+  "technology_details": {
+    "soft_firm_contrast": {
+      "mains": "Softer O-TORO",
+      "crosses": "Firmer O-TORO SNAP TOUR FLEX",
+      "description": "The softer main string contributes grip, pocketing and spin while the firmer slick cross increases support, snapback speed and crispness.",
+      "primary_benefits": [
+        "Fast Snapback",
+        "Responsive Feel",
+        "Crisp Impact",
+        "Improved Stringbed Support"
+      ]
+    },
+
+    "spin_system": {
+      "description": "The O-TORO mains create mechanical ball grip while the ultra-slick round crosses reduce string-to-string friction, allowing the mains to move and return more efficiently.",
+      "primary_mechanisms": [
+        "Mechanical Ball Grip",
+        "Main-String Movement",
+        "Reduced Inter-String Friction",
+        "Fast Snapback"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Responsive Spin Dual-Poly Hybrid",
+    "target_player": "Intermediate / Advanced / Tournament",
+    "arm_friendly": false,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "feel_focus": true,
+    "durability_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true,
+    "snapback_focus": true,
+    "crispness_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 8,
+    "feel": 10,
+    "durability": 9,
+    "tension_maintenance": 9,
+    "elasticity": 9,
+    "launch_angle": "Medium-High"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 8,
+    "feel": 10,
+    "durability": 9,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium-Firm",
+    "snapback": 10,
+    "ball_pocketing": 9,
+    "string_movement": 10,
+    "inter_string_friction": "Very Low",
+    "tension_stability": 9,
+    "spin_window": "Very High",
+    "predictability": 10,
+    "arm_friendliness": 7,
+    "directional_precision": 10,
+    "ball_bite": 10,
+    "surface_grip": 10,
+    "response_consistency": 10,
+    "stringbed_stability": 10,
+    "crispness": 10,
+    "liveliness": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "Modern Baseline",
+      "All Court"
+    ],
+
+    "special_player_profiles": [
+      "Players Seeking Faster Snapback",
+      "Players Wanting a Softer Main With Firmer Cross",
+      "Players Seeking Crisp Yet Lively Response",
+      "Players Prioritizing Spin and Response",
+      "Players Wanting More Support Than Full-Bed O-TORO"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Babolat Pure Aero",
+    "Babolat Pure Drive",
+    "Yonex VCORE",
+    "Wilson Shift",
+    "Wilson Blade",
+    "HEAD Extreme",
+    "HEAD Speed",
+    "Tecnifibre T-FIGHT",
+    "Dunlop SX"
+  ],
+
+  "hybrid_physics": {
+    "main_string_role": {
+      "string": "O-TORO",
+      "shape": "Hexagonal",
+      "flex": "Medium / Softer",
+      "primary_effects": [
+        "Ball Grip",
+        "Spin",
+        "Pocketing",
+        "Comfort"
+      ]
+    },
+
+    "cross_string_role": {
+      "string": "O-TORO SNAP TOUR FLEX",
+      "shape": "Round",
+      "surface": "Ultra-Slick",
+      "flex": "Firm / Tour",
+      "primary_effects": [
+        "Reduced Inter-String Friction",
+        "Faster Snapback",
+        "Control",
+        "Stability",
+        "Crispness"
+      ]
+    },
+
+    "combined_effect": [
+      "Fast Snapback",
+      "High Spin",
+      "Responsive Feel",
+      "Crisp Impact",
+      "Stable Stringbed",
+      "Modern Control"
+    ]
+  },
+
+  "estimated_lifespan": {
+    "hybrid_setup": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "16-28"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Medium-Low",
+    "tension_loss_sensitivity": "Medium-Low",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when O-TORO bite, O-TORO SNAP TOUR FLEX slickness, snapback or response consistency noticeably declines."
+  },
+
+  "comparison_data": {
+    "vs_full_bed_o_toro": {
+      "snapback": "Higher",
+      "control": "Higher",
+      "stability": "Higher",
+      "crispness": "Higher",
+      "comfort": "Slightly Lower",
+      "response": "More Direct"
+    },
+
+    "vs_full_bed_o_toro_snap_tour_flex": {
+      "spin": "Higher",
+      "ball_bite": "Much Higher",
+      "pocketing": "Higher",
+      "comfort": "Higher",
+      "launch_angle": "Higher"
+    },
+
+    "vs_101_blend": {
+      "main_string": "Same O-TORO platform",
+      "cross_flex": "Firmer",
+      "cross_color": "Black",
+      "crispness": "Higher",
+      "stability": "Higher",
+      "comfort": "Slightly Lower",
+      "target_player": "More Advanced / More Responsive Setup"
+    },
+
+    "vs_snapaholic": {
+      "main_shape": {
+        "o_snap": "Hexagonal",
+        "snapaholic": "Octagonal"
+      },
+      "main_character": {
+        "o_snap": "Softer / More Pocketing",
+        "snapaholic": "More Aggressive Mechanical Bite"
+      },
+      "cross_concept": "Similar firm slick round Tour Flex cross",
+      "feel": "Smoother / More Elastic"
+    }
+  },
+
+  "science_metrics": {
+    "main_spin_mechanism": [
+      "Hexagonal Mechanical Ball Grip",
+      "Elastic Main-String Response"
+    ],
+
+    "cross_spin_mechanism": [
+      "Ultra-Low Inter-String Friction",
+      "Fast Snapback",
+      "Firm Cross Support"
+    ],
+
+    "trajectory_profile": "Spin-Oriented / Controlled",
+
+    "launch_angle_profile": "Medium-High",
+
+    "inter_string_friction_class": "Very Low",
+
+    "snapback_class": "Elite",
+
+    "response_class": "Crisp / Lively",
+
+    "hybrid_class": "Modern Soft-Firm Dual-Poly Hybrid"
+  },
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Spin-Focused Players",
+      "Aggressive Baseliners",
+      "Players Seeking Faster Snapback",
+      "Players Wanting a Crisp Yet Elastic Hybrid",
+      "Players Who Like O-TORO But Want More Cross Support",
+      "Advanced Modern Baseline Players"
+    ],
+
+    "avoid_for": [
+      "Players With Significant Arm Sensitivity",
+      "Beginners With Slow Swing Speed",
+      "Players Seeking Plush Multifilament-Like Comfort",
+      "Players Wanting Extremely Low Launch Angle"
+    ],
+
+    "alternative_strings": [
+      "Toroline 101 Blend",
+      "Toroline SNAPAHOLIC",
+      "Toroline COLE Blend",
+      "Toroline O-TORO Full Bed",
+      "Solinco Hyper-G Hybrid System"
+    ]
+  },
+
+  "comparison_tags": [
+    "O-SNAP",
+    "TennCom",
+    "O-TORO",
+    "O-TORO SNAP TOUR FLEX",
+    "Soft Main",
+    "Firm Cross",
+    "Hexagonal Main",
+    "Round Cross",
+    "Snapback",
+    "Spin",
+    "Crisp",
+    "Neon Pink Black"
+  ],
+
+  "ai_keywords": [
+    "toroline",
+    "o snap",
+    "o-snap",
+    "tenncom",
+    "o toro neon pink",
+    "o-toro neon pink",
+    "1.23",
+    "o toro snap tour flex black",
+    "1.25",
+    "soft main",
+    "firm cross",
+    "hexagonal main",
+    "round cross",
+    "ultra slick",
+    "snapback",
+    "spin",
+    "responsive",
+    "crisp",
+    "lively"
+  ],
+
+  "description": {
+    "en": "Toroline O-SNAP, tuned by TennCom, combines O-TORO Neon Pink 1.23 in the mains with O-TORO SNAP TOUR FLEX Black 1.25 in the crosses. The softer hexagonal O-TORO mains provide mechanical ball grip, spin and pocketing, while the firmer ultra-slick round crosses reduce inter-string friction and add support, control and crispness. This soft-firm contrast produces faster snapback, a more responsive feel and a lively, spin-friendly response designed for modern aggressive players.",
+
+    "zh": "Toroline O-SNAP 由 TennCom 调校，采用 O-TORO Neon Pink 1.23 作为主线，搭配 O-TORO SNAP TOUR FLEX Black 1.25 作为横线。较柔和的六边形 O-TORO 主线负责咬球、旋转和 Pocketing，而更硬、超光滑的圆形 Tour Flex 横线则降低主横线摩擦，同时增加支撑、控制和 Crispness。Soft Main + Firm Cross 的结构能够带来更快 Snapback、更强响应和更清脆的击球反馈，整体是一套非常现代、偏旋转导向的双聚酯 Hybrid。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Toroline O-SNAP",
+      "Tuned by TennCom",
+      "O-TORO Neon Pink 1.23 mains",
+      "Softer spin-loaded main positioning",
+      "O-TORO SNAP TOUR FLEX Black 1.25 crosses",
+      "Stiffer ultra-slick cross positioning",
+      "Soft-firm contrast",
+      "Faster snapback",
+      "More responsive feel",
+      "Extra crispness",
+      "Lively response",
+      "Spin-friendly performance",
+      "1.23 mm / 17 mains",
+      "1.25 mm / 17 crosses"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Physics",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
