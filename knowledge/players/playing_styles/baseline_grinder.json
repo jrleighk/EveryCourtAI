@@ -1,0 +1,306 @@
+{
+  "id": "baseline_grinder",
+  "category": "Playing Style",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
+
+  "style": {
+    "name": {
+      "en": "Baseline Grinder",
+      "zh": "底线消耗型球员"
+    },
+
+    "description": {
+      "en": "A high-consistency baseline player who wins through rally tolerance, physical endurance, depth, repetition and error reduction rather than immediate point-ending aggression.",
+      "zh": "以高稳定性、长回合能力、体能、深度控制和减少失误为核心，通过持续消耗对手而不是快速结束回合来赢得比赛的底线型球员。"
+    }
+  },
+
+  "court_position": {
+    "primary": "Baseline",
+    "secondary": "Behind Baseline",
+
+    "net_frequency": "Low",
+
+    "preferred_rally_length": "Long"
+  },
+
+  "playing_identity": {
+    "offensive_level": 5,
+    "defensive_level": 9,
+    "risk_tolerance": 3,
+    "initiative": 5,
+    "consistency": 10,
+    "transition_to_net": 3,
+    "rally_tolerance": 10,
+    "physical_endurance": 10,
+    "error_reduction": 10,
+    "pace_absorption": 8,
+    "point_patience": 10
+  },
+
+  "stroke_characteristics": {
+    "forehand": "Consistent / Heavy",
+    "backhand": "Stable / Repeatable",
+    "serve": "Placement-Oriented",
+    "return": "Consistency-Oriented",
+    "volley": "Low Priority",
+    "slice_usage": "Moderate",
+    "defensive_strokes": "High Priority",
+    "neutral_ball_quality": "Very High"
+  },
+
+  "typical_ball_characteristics": {
+    "pace": 6,
+    "spin": 8,
+    "depth": 10,
+    "trajectory": "Medium-High",
+    "net_clearance": "High",
+    "court_penetration": 6,
+    "consistency": 10,
+    "margin_over_net": 10,
+    "repetition_quality": 10
+  },
+
+  "preferred_racquet_dna": {
+    "power": 7,
+    "control": 8,
+    "spin": 8,
+    "stability": 9,
+    "maneuverability": 8,
+    "forgiveness": 10,
+    "feel": 8,
+    "launch_angle": 8,
+    "comfort": 9,
+    "predictability": 10
+  },
+
+  "preferred_racquet_characteristics": {
+    "head_size": [
+      "98",
+      "100"
+    ],
+
+    "weight_g": [
+      "295",
+      "300",
+      "305"
+    ],
+
+    "balance": [
+      "Head Light",
+      "Slightly Head Light",
+      "Even"
+    ],
+
+    "string_patterns": [
+      "16x19",
+      "16x20"
+    ],
+
+    "stiffness_preference": [
+      "Medium",
+      "Medium-Soft"
+    ],
+
+    "key_traits": [
+      "Large Effective Sweet Spot",
+      "High Forgiveness",
+      "Stable Response",
+      "Predictable Launch",
+      "Good Comfort",
+      "Easy Depth"
+    ]
+  },
+
+  "preferred_string_dna": {
+    "power": 7,
+    "control": 8,
+    "spin": 8,
+    "comfort": 9,
+    "feel": 8,
+    "durability": 9,
+    "tension_maintenance": 10,
+    "snapback": 8,
+    "ball_pocketing": 9,
+    "predictability": 10
+  },
+
+  "recommended_string_families": [
+    "Soft Co-Polyester",
+    "Balanced Co-Polyester",
+    "Round Co-Polyester",
+    "Poly / Multifilament Hybrid",
+    "Durable Multifilament"
+  ],
+
+  "preferred_string_characteristics": {
+    "shape": [
+      "Round",
+      "Smooth",
+      "Lightly Shaped"
+    ],
+
+    "stiffness": [
+      "Soft",
+      "Medium"
+    ],
+
+    "gauge_mm": [
+      1.25,
+      1.30
+    ],
+
+    "key_traits": [
+      "Tension Maintenance",
+      "Comfort",
+      "Predictable Response",
+      "Ball Pocketing",
+      "Durability",
+      "Controlled Power"
+    ]
+  },
+
+  "recommended_string_examples": [
+    "Yonex PolyTour Pro",
+    "Yonex PolyTour Air",
+    "Luxilon Element",
+    "Solinco Hyper-G Soft",
+    "MSV Swift",
+    "Babolat RPM Soft",
+    "Toroline A5",
+    "Wilson Revolve",
+    "Head Lynx",
+    "Yonex REXIS Comfort"
+  ],
+
+  "recommended_hybrid_examples": [
+    "Soft Poly + Multifilament",
+    "Round Poly + Multifilament",
+    "PolyTour Pro + REXIS Comfort",
+    "Luxilon Element + Wilson NXT"
+  ],
+
+  "recommended_tension": {
+    "poly": "45-49 lbs",
+    "soft_poly": "46-50 lbs",
+    "poly_multi_hybrid": "48/51 lbs",
+    "multifilament": "51-54 lbs"
+  },
+
+  "recommended_racquet_examples": [
+    "Yonex EZONE 100",
+    "Yonex VCORE 100",
+    "Head Speed MP",
+    "Head Gravity MP",
+    "Wilson Blade 100",
+    "Wilson Clash 100 Pro",
+    "Babolat Pure Strike 100",
+    "Dunlop CX 400 Tour",
+    "Tecnifibre T-FIGHT 300"
+  ],
+
+  "ai_matching_priority": {
+    "predictability": 0.20,
+    "comfort": 0.16,
+    "forgiveness": 0.15,
+    "tension_maintenance": 0.14,
+    "stability": 0.12,
+    "durability": 0.10,
+    "ball_pocketing": 0.06,
+    "control": 0.04,
+    "spin": 0.02,
+    "power": 0.01
+  },
+
+  "matching_logic": {
+    "prioritize_when": [
+      "Player wins through long rallies and low error rate.",
+      "Player values repeatable depth more than immediate point-ending power.",
+      "Player needs comfort and stability over extended match duration.",
+      "Player wants equipment that behaves consistently late in long rallies."
+    ],
+
+    "equipment_goals": [
+      "Maintain depth with repeatable swings",
+      "Reduce fatigue over long matches",
+      "Preserve comfort during extended rallies",
+      "Maintain tension and response consistency",
+      "Increase forgiveness under defensive movement"
+    ],
+
+    "deprioritize": [
+      "Extremely Low-Powered Racquets",
+      "Very Small Sweet Spots",
+      "Very Stiff Stringbeds",
+      "Excessively High Launch",
+      "Unstable Lightweight Frames"
+    ]
+  },
+
+  "compatible_profiles": {
+    "levels": [
+      "intermediate",
+      "advanced",
+      "tournament"
+    ],
+
+    "swing_speeds": [
+      "medium",
+      "medium_fast"
+    ],
+
+    "shot_profiles": [
+      "moderate_topspin",
+      "heavy_topspin",
+      "defensive_loop",
+      "slice_defense"
+    ],
+
+    "goals": [
+      "more_consistency",
+      "more_comfort",
+      "more_durability",
+      "better_defense",
+      "more_stability"
+    ]
+  },
+
+  "avoid": {
+    "racquet_characteristics": [
+      "Very Small Sweet Spot",
+      "Low Forgiveness",
+      "Extreme Stiffness",
+      "Very High Swingweight"
+    ],
+
+    "string_characteristics": [
+      "Extremely Stiff Polyester",
+      "Poor Tension Maintenance",
+      "Low Comfort",
+      "Unpredictable Launch",
+      "Very Short Playability Window"
+    ]
+  },
+
+  "risk_flags": [
+    "A very stiff stringbed can increase cumulative arm fatigue during long rallies.",
+    "Poor tension maintenance can reduce predictability over extended match play.",
+    "A low-powered racquet combined with a dead control polyester can make defensive depth difficult.",
+    "Very thin gauges may lose durability quickly for players who produce heavy repetition and spin."
+  ],
+
+  "search_keywords": [
+    "baseline grinder",
+    "grinder",
+    "long rallies",
+    "consistency player",
+    "defensive baseline",
+    "high rally tolerance",
+    "physical baseline player",
+    "底线消耗",
+    "磨球",
+    "稳定型底线",
+    "长回合"
+  ]
+}
