@@ -1,0 +1,290 @@
+{
+  "id": "wilson_synthetic_gut_power_17",
+  "brand": "Wilson",
+  "series": "Synthetic Gut",
+  "model": "Synthetic Gut Power 17",
+  "category": "Synthetic Gut",
+
+  "manufacturer_data": {
+    "construction": "Solid Core Nylon",
+    "string_family": "Synthetic Gut",
+    "official_positioning": "Synthetic gut designed for crisp feel, easy power and arm-friendly comfort.",
+    "target_level": "Beginner / Intermediate / Recreational"
+  },
+
+  "specifications": {
+    "construction": "Solid Core Nylon",
+
+    "available_colors": [
+      "Black",
+      "White"
+    ],
+
+    "gauge_name": "17",
+    "gauge_mm": 1.25,
+
+    "shape": "Round",
+
+    "core": "Solid Nylon Core",
+
+    "outer_wrap": "High Energy Wraps",
+
+    "packaging": [
+      {
+        "type": "Set",
+        "length_ft": 40,
+        "length_m": 12.2
+      }
+    ]
+  },
+
+  "technology": [
+    "Solid Core Nylon",
+    "High Energy Wraps",
+    "Power Enhancement",
+    "Crisp Response",
+    "Arm-Friendly Construction"
+  ],
+
+  "technology_details": {
+    "solid_core": {
+      "description": "Solid nylon core provides a crisp response and dependable control.",
+      "primary_benefits": [
+        "Control",
+        "Consistency",
+        "Crisp Feel"
+      ]
+    },
+
+    "high_energy_wraps": {
+      "description": "Outer wraps increase energy return for easier power and improved feel.",
+      "primary_benefits": [
+        "Power",
+        "Responsiveness",
+        "Feel"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Synthetic Gut",
+    "arm_friendly": true,
+    "spin_focus": false,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": false,
+    "feel_focus": true,
+    "tension_stability_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 8,
+    "spin": 6,
+    "comfort": 9,
+    "feel": 9,
+    "durability": 7,
+    "tension_maintenance": 8,
+    "elasticity": 9,
+    "ball_pocketing": 8,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 8,
+    "spin": 6,
+    "comfort": 9,
+    "feel": 9,
+    "durability": 7,
+    "tension_maintenance": 8
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Soft",
+    "snapback": 5,
+    "ball_bite": 5,
+    "ball_pocketing": 8,
+    "string_movement": 6,
+    "tension_stability": 8,
+    "predictability": 8,
+    "arm_friendliness": 9,
+    "directional_precision": 8,
+    "stringbed_stability": 8,
+    "response": "Crisp"
+  },
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate",
+      "Recreational"
+    ],
+
+    "swing_speed": [
+      "Slow",
+      "Medium",
+      "Medium-Fast"
+    ],
+
+    "play_style": [
+      "All Court",
+      "Club Player",
+      "Developing Player"
+    ],
+
+    "special_player_profiles": [
+      "Players Wanting Easy Power",
+      "Players Transitioning From Factory Strings",
+      "Junior Players",
+      "Players Looking For An Affordable All-Around Nylon String"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Clash",
+    "Wilson Ultra",
+    "Wilson Blade 100",
+    "Wilson Burn",
+    "Babolat Boost",
+    "HEAD Boom Team",
+    "Yonex EZONE 100L"
+  ],
+
+  "comparison_data": {
+    "vs_synthetic_gut_power_16": {
+      "feel": "Higher",
+      "control": "Higher",
+      "power": "Slightly Higher",
+      "durability": "Lower",
+      "elasticity": "Higher"
+    },
+
+    "vs_sensation_17": {
+      "comfort": "Lower",
+      "power": "Similar",
+      "feel": "More Crisp",
+      "durability": "Higher",
+      "construction": {
+        "synthetic_gut_power": "Solid Core Nylon",
+        "sensation": "Multifilament"
+      }
+    },
+
+    "vs_nxt_17": {
+      "comfort": "Lower",
+      "power": "Lower",
+      "feel": "More Crisp",
+      "durability": "Higher",
+      "price": "More Affordable"
+    }
+  },
+
+  "science_metrics": {
+    "construction": "Solid Core Nylon",
+
+    "spin_generation": "Moderate",
+
+    "elasticity": "High",
+
+    "trajectory_profile": "Neutral",
+
+    "launch_angle_profile": "Medium",
+
+    "comfort_class": "High",
+
+    "power_class": "High",
+
+    "control_class": "Moderate-High"
+  },
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Club Players",
+      "Recreational Players",
+      "Junior Players",
+      "Players Wanting Comfortable Nylon Strings",
+      "Players Looking For Easy Power"
+    ],
+
+    "avoid_for": [
+      "Heavy Topspin Players",
+      "Frequent String Breakers",
+      "Tournament Players Seeking Maximum Spin",
+      "Players Wanting Polyester Control"
+    ],
+
+    "alternative_strings": [
+      "Wilson Synthetic Gut Power 16",
+      "Wilson Sensation 17",
+      "Wilson NXT 17",
+      "Prince Synthetic Gut Duraflex",
+      "Gamma Synthetic Gut"
+    ]
+  },
+
+  "comparison_tags": [
+    "Wilson",
+    "Synthetic Gut",
+    "Synthetic Gut Power",
+    "Solid Core Nylon",
+    "Power",
+    "Comfort",
+    "Control",
+    "Black",
+    "White",
+    "1.25"
+  ],
+
+  "ai_keywords": [
+    "wilson",
+    "synthetic gut power",
+    "synthetic gut",
+    "solid core nylon",
+    "17",
+    "1.25",
+    "black",
+    "white",
+    "power",
+    "comfort",
+    "crisp",
+    "nylon"
+  ],
+
+  "description": {
+    "en": "Wilson Synthetic Gut Power 17 is a solid-core nylon string featuring high-energy wraps that deliver crisp feel, responsive power and dependable control. The thinner 17 gauge (1.25 mm) increases feel and touch compared with the 16 gauge while remaining arm-friendly and easy to play.",
+
+    "zh": "Wilson Synthetic Gut Power 17 是一款采用 Solid Core Nylon（实心尼龙）结构的合成肠线，配备 High Energy Wraps 外层包覆，可提供清晰的击球反馈、轻松的力量输出以及稳定的控制。相比 16 号径，17（1.25mm）拥有更好的手感、触球反馈和控制能力，同时保持舒适、易打和对手臂友好的特点。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Wilson Synthetic Gut Power 17",
+      "Black",
+      "White",
+      "Solid Core Nylon",
+      "High Energy Wraps",
+      "Crisp Feel",
+      "Control",
+      "Power",
+      "Arm Friendly",
+      "17 gauge provides more feel and control",
+      "Gauge 17",
+      "1.25 mm",
+      "Set 40 ft / 12.2 m"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Players",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations"
+    ]
+  }
+}
