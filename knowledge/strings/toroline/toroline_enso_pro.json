@@ -1,0 +1,620 @@
+{
+  "id": "toroline_enso_pro",
+  "brand": "Toroline",
+  "series": "ENSO PRO",
+  "model": "ENSO PRO",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Co-Polyester",
+    "string_family": "Polyester",
+    "cross_section": "Round",
+    "surface": "Slick / Smooth",
+    "tour_positioning": "Pure Power / Precision / Pocketing / Comfort Co-Polyester",
+    "official_positioning": "Round co-poly designed for pure put-away power, precise ball placement, strong snapback, responsive feel, comfort and superior ball pocketing.",
+    "target_level": "Intermediate / Advanced / Tournament"
+  },
+
+  "specifications": {
+    "construction": "Round Co-Polyester Monofilament",
+    "cross_section": "Round",
+    "surface": "Slick / Smooth",
+
+    "available_colors": [
+      "Neon Pink",
+      "Carbon Gray"
+    ],
+
+    "color_availability": {
+      "Neon Pink": {
+        "gauge_mm": 1.24,
+        "gauge_name": "16L",
+        "available": true
+      },
+
+      "Carbon Gray": {
+        "gauge_mm": 1.25,
+        "gauge_name": "16L",
+        "available": true
+      }
+    },
+
+    "available_gauges": [
+      {
+        "gauge_name": "16L",
+        "gauge_mm": 1.24,
+        "available": true,
+
+        "available_colors": [
+          "Neon Pink"
+        ],
+
+        "power": 10,
+        "control": 10,
+        "spin": 9,
+        "comfort": 9,
+        "feel": 10,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "elasticity": 9,
+        "ball_pocketing": 10,
+        "launch_angle": "Medium",
+
+        "recommended_use": [
+          "Pure Put-Away Power",
+          "Aggressive Ball Striking",
+          "Precision",
+          "Fast Snapback",
+          "Ball Pocketing",
+          "Responsive Full-Bed Setup"
+        ]
+      },
+
+      {
+        "gauge_name": "16L",
+        "gauge_mm": 1.25,
+        "available": true,
+
+        "available_colors": [
+          "Carbon Gray"
+        ],
+
+        "power": 10,
+        "control": 10,
+        "spin": 9,
+        "comfort": 9,
+        "feel": 10,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "elasticity": 9,
+        "ball_pocketing": 10,
+        "launch_angle": "Medium-Low",
+
+        "recommended_use": [
+          "Pure Put-Away Power",
+          "Maximum Stability",
+          "Precision Ball Striking",
+          "Court Penetration",
+          "Ball Pocketing",
+          "Advanced Full-Bed Play"
+        ]
+      }
+    ],
+
+    "packaging": {
+      "type": "Two Half Sets",
+      "half_sets_per_package": 2,
+      "length_per_half_set_m": 6.7,
+      "intended_racquets": 1,
+      "total_length_m": 13.4
+    }
+  },
+
+  "technology": [
+    "Slick Surface Engineering",
+    "Round Low-Friction Geometry",
+    "Maximum Snapback Design",
+    "Pure Power Tuning",
+    "Ball Pocketing Optimization",
+    "Precision Response Engineering"
+  ],
+
+  "technology_details": {
+    "slick_surface": {
+      "description": "Like other Toroline performance strings, ENSO PRO uses a slick surface to reduce inter-string friction and maximize snapback potential.",
+      "primary_benefits": [
+        "Fast Snapback",
+        "Efficient String Movement",
+        "Spin Support",
+        "Consistent Response"
+      ]
+    },
+
+    "round_geometry": {
+      "description": "The smooth symmetrical round profile supports a clean, predictable and direct response for players who prioritize precise ball placement.",
+      "primary_benefits": [
+        "Predictable Launch",
+        "Directional Precision",
+        "Court Penetration",
+        "Pure Response"
+      ]
+    },
+
+    "power_response": {
+      "description": "ENSO PRO is tuned around put-away power for aggressive ball strikers seeking to finish points with pace.",
+      "primary_benefits": [
+        "Explosive Pace",
+        "Put-Away Power",
+        "Easy Acceleration",
+        "Court Penetration"
+      ]
+    },
+
+    "pocketing_response": {
+      "description": "The responsive construction is designed to provide superior ball pocketing while maintaining comfort and precision.",
+      "primary_benefits": [
+        "Connected Feel",
+        "Dwell Time",
+        "Comfort",
+        "Shot Placement"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Power Precision Round Co-Polyester",
+    "target_player": "Intermediate / Advanced / Tournament",
+    "arm_friendly": true,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true,
+    "pocketing_focus": true,
+    "penetration_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 10,
+    "control": 10,
+    "spin": 9,
+    "comfort": 9,
+    "feel": 10,
+    "durability": 9,
+    "tension_maintenance": 9,
+    "elasticity": 9,
+    "ball_pocketing": 10,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 10,
+    "control": 10,
+    "spin": 9,
+    "comfort": 9,
+    "feel": 10,
+    "durability": 9,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium",
+    "snapback": 10,
+    "ball_pocketing": 10,
+    "string_movement": 10,
+    "inter_string_friction": "Very Low",
+    "tension_stability": 9,
+    "spin_window": "High",
+    "predictability": 10,
+    "arm_friendliness": 8,
+    "directional_precision": 10,
+    "surface_friction": "Very Low",
+    "court_penetration": 10,
+    "put_away_power": 10,
+    "launch_angle_consistency": 10,
+    "connected_feel": 10,
+    "response_liveliness": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium",
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "All Court",
+      "Flat Hitter",
+      "Power Baseliner",
+      "Precision-Oriented Player"
+    ],
+
+    "special_player_profiles": [
+      "Players Seeking Pure Put-Away Power",
+      "Players Wanting Precise Ball Placement",
+      "Players Seeking a Responsive Round Co-Poly",
+      "Players Wanting Strong Pocketing",
+      "Players Wanting Comfort Without Giving Up Power",
+      "Players Who Finish Points Aggressively"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Babolat Pure Drive",
+    "Babolat Pure Strike",
+    "Wilson Blade",
+    "Wilson RF 01",
+    "HEAD Speed",
+    "HEAD Radical",
+    "Yonex EZONE",
+    "Yonex PERCEPT",
+    "Tecnifibre T-FIGHT",
+    "Dunlop FX",
+    "Dunlop CX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "preferred_role": "Crosses",
+
+    "best_pairings": [
+      "Toroline O-TORO",
+      "Toroline O-TORO TOUR",
+      "Toroline VAMOS",
+      "Toroline WASABI",
+      "Toroline Snapper",
+      "Toroline SUPER TORO"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Power",
+        "Pocketing",
+        "Precision",
+        "Court Penetration"
+      ],
+
+      "as_crosses": [
+        "Low Friction",
+        "Snapback Support",
+        "Power",
+        "Pocketing",
+        "Predictable Launch"
+      ]
+    },
+
+    "recommended_toroline_hybrids": [
+      {
+        "mains": "O-TORO",
+        "crosses": "ENSO PRO",
+        "expected_profile": [
+          "High Mechanical Spin",
+          "Fast Snapback",
+          "More Put-Away Power",
+          "Pocketing",
+          "Predictable Response"
+        ]
+      },
+
+      {
+        "mains": "VAMOS",
+        "crosses": "ENSO PRO",
+        "expected_profile": [
+          "Strong Ball Bite",
+          "Power",
+          "Low-Friction Cross",
+          "Connected Feel",
+          "Court Penetration"
+        ]
+      },
+
+      {
+        "mains": "SUPER TORO",
+        "crosses": "ENSO PRO",
+        "expected_profile": [
+          "Surgical Precision",
+          "More Free Power",
+          "Fast Snapback",
+          "Pocketing",
+          "Controlled Penetration"
+        ]
+      }
+    ],
+
+    "hybrid_note": "ENSO PRO's round slick geometry makes it well suited as a low-friction cross when players want to add power, pocketing and snapback to a shaped main."
+  },
+
+  "gauge_recommendation": {
+    "1.24": {
+      "gauge_name": "16L",
+      "color": "Neon Pink",
+
+      "best_for": [
+        "Maximum Liveliness",
+        "Pure Power",
+        "Pocketing",
+        "Fast Response"
+      ],
+
+      "tradeoffs": [
+        "Slightly Less Stability Than 1.25"
+      ]
+    },
+
+    "1.25": {
+      "gauge_name": "16L",
+      "color": "Carbon Gray",
+
+      "best_for": [
+        "Best Overall Balance",
+        "Power",
+        "Precision",
+        "Stability",
+        "Court Penetration"
+      ],
+
+      "tradeoffs": [
+        "Slightly Less Lively Than 1.24"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.24": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "16-28"
+    },
+
+    "1.25": {
+      "heavy_topspin_hours": "9-16",
+      "club_player_hours": "18-30"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Very Short",
+    "peak_playability": "Immediate",
+    "performance_drop": "Low-Medium",
+    "tension_loss_sensitivity": "Medium-Low",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when slickness, snapback, pocketing or put-away power noticeably declines."
+  },
+
+  "comparison_data": {
+    "vs_shaped_co_poly": {
+      "mechanical_ball_grip": "Lower",
+      "snapback": "Higher",
+      "launch_angle": "Lower / More Predictable",
+      "court_penetration": "Higher",
+      "power": "Higher",
+      "response": "Cleaner / More Direct"
+    },
+
+    "vs_toroline_a5": {
+      "shape": "Both Round",
+
+      "enso_pro_focus": [
+        "Put-Away Power",
+        "Pocketing",
+        "Court Penetration",
+        "Responsive Feel"
+      ],
+
+      "a5_focus": [
+        "Precision",
+        "Tension Stability",
+        "Elite Snapback",
+        "Connected Control"
+      ],
+
+      "power": {
+        "enso_pro": "Higher",
+        "a5": "More Controlled"
+      }
+    },
+
+    "vs_toroline_wasabi_x": {
+      "shape": "Both Round",
+
+      "enso_pro_focus": [
+        "Pure Power",
+        "Precision",
+        "Pocketing"
+      ],
+
+      "wasabi_x_focus": [
+        "Hybrid Cross",
+        "Maximum Snapback",
+        "Court Penetration",
+        "Liveliness"
+      ],
+
+      "full_bed_suitability": {
+        "enso_pro": "Higher",
+        "wasabi_x": "Primarily Cross-Oriented"
+      }
+    },
+
+    "vs_toroline_o_toro_snap": {
+      "shape": "Both Round",
+
+      "enso_pro": [
+        "More Power",
+        "More Pocketing",
+        "More Put-Away Response"
+      ],
+
+      "o_toro_snap": [
+        "More Snapback Focus",
+        "Lower Launch",
+        "More Pure Response"
+      ]
+    }
+  },
+
+  "science_metrics": {
+    "geometry": {
+      "shape": "Round",
+      "symmetry": "High"
+    },
+
+    "spin_mechanism": [
+      "Low-Friction Snapback",
+      "String Movement",
+      "Elastic String Return"
+    ],
+
+    "trajectory_profile": "Direct / Penetrating",
+
+    "launch_angle_profile": "Medium",
+
+    "inter_string_friction_class": "Very Low",
+
+    "snapback_class": "Elite",
+
+    "power_class": "Very High",
+
+    "ball_pocketing_class": "Very High",
+
+    "precision_class": "Very High",
+
+    "performance_class": "Premium Power Precision Round Co-Poly"
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Aggressive Ball Strikers",
+      "Players Seeking Pure Put-Away Power",
+      "Players Wanting a Powerful Round Co-Poly",
+      "Players Seeking Precise Ball Placement",
+      "Players Wanting Superior Pocketing",
+      "Players Seeking a Responsive Comfortable String",
+      "Players Building Power-Oriented Hybrids"
+    ],
+
+    "avoid_for": [
+      "Players Seeking Maximum Mechanical Ball Bite",
+      "Players Wanting Very High Launch Angle",
+      "Players Seeking Extremely Low-Powered Tournament Control",
+      "Players With Significant Arm Sensitivity Requiring Multifilament-Level Softness"
+    ],
+
+    "alternative_strings": [
+      "Toroline A5",
+      "Toroline Wasabi X",
+      "Toroline O-TORO SNAP",
+      "Toroline Absolute",
+      "Luxilon ALU Power",
+      "Yonex Poly Tour Pro"
+    ]
+  },
+
+  "comparison_tags": [
+    "ENSO PRO",
+    "Round",
+    "Slick",
+    "Pure Power",
+    "Put-Away Power",
+    "Precision",
+    "Snapback",
+    "Ball Pocketing",
+    "Responsive",
+    "Comfortable",
+    "Neon Pink",
+    "Carbon Gray"
+  ],
+
+  "ai_keywords": [
+    "toroline",
+    "enso pro",
+    "toroline enso pro",
+    "1.24",
+    "1.25",
+    "16l",
+    "neon pink",
+    "carbon gray",
+    "carbon grey",
+    "round",
+    "slick",
+    "pure power",
+    "put away power",
+    "snapback",
+    "precision",
+    "place the ball on a dime",
+    "responsive",
+    "comfortable",
+    "ball pocketing",
+    "court penetration"
+  ],
+
+  "target_competitors": [
+    "Toroline A5",
+    "Toroline Wasabi X",
+    "Toroline O-TORO SNAP",
+    "Toroline Absolute",
+    "Luxilon ALU Power",
+    "Yonex Poly Tour Pro",
+    "HEAD Hawk"
+  ],
+
+  "description": {
+    "en": "Toroline ENSO PRO is a slick round co-polyester built for pure put-away power, precise ball placement and superior pocketing. Its low-friction surface maximizes snapback, while the round geometry provides a clean and predictable response for aggressive ball strikers. ENSO PRO combines explosive pace with comfort and connected feel, making it suitable both as a full-bed power string and as a slick hybrid cross. It is available in Neon Pink 1.24 mm and Carbon Gray 1.25 mm, both listed as 16L.",
+
+    "zh": "Toroline ENSO PRO 是一款强调 Pure Put-Away Power、精准落点和强 Pocketing 的圆形低摩擦共聚酯球线。光滑表面能够最大化 Snapback，而对称圆形结构则提供干净、可预测并且具有穿透力的击球反馈。ENSO PRO 特别适合主动进攻型 Ball Striker，在提供爆发速度的同时兼顾舒适性和 Connected Feel。它既适合整床使用，也可以作为异形主线的低摩擦力量型横线。目前提供 Neon Pink 1.24 毫米和 Carbon Gray 1.25 毫米两个版本，官方均标记为 16L。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Toroline ENSO PRO",
+      "Round co-poly",
+      "Pure power positioning",
+      "Pure put-away power positioning",
+      "Slick surface",
+      "Maximum snapback positioning",
+      "Ball striker positioning",
+      "Precise ball placement positioning",
+      "Responsive option",
+      "Comfortable option",
+      "Superior ball pocketing",
+      "Neon Pink 1.24 mm / 16L",
+      "Carbon Gray 1.25 mm / 16L",
+      "Two half sets per package",
+      "6.7 m per half set",
+      "One-racquet package configuration"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendations",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
