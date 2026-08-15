@@ -1,0 +1,454 @@
+{
+  "id": "toroline_o_toro_snap",
+  "brand": "Toroline",
+  "series": "O-TORO",
+  "model": "O-TORO SNAP",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Co-Polyester",
+    "string_family": "Polyester",
+    "cross_section": "Round",
+    "surface": "Smooth",
+    "flex_class": "Tour",
+    "tour_positioning": "Control / Stability / Tension Hold Round Co-Polyester",
+    "official_positioning": "O-TORO SNAP in Tour Flex is a stiffer round co-polyester configuration designed for added control, stringbed stability and tension hold.",
+    "target_level": "Advanced / Tournament"
+  },
+
+  "specifications": {
+    "construction": "Tour-Flex Co-Polyester Monofilament",
+    "cross_section": "Round",
+    "surface": "Smooth",
+
+    "available_colors": [
+      "Black",
+      "Mint"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_name": "16L",
+        "gauge_mm": 1.25,
+        "available": true,
+        "available_colors": [
+          "Black",
+          "Mint"
+        ],
+
+        "power": 8,
+        "control": 10,
+        "spin": 9,
+        "comfort": 8,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 10,
+        "elasticity": 8,
+        "launch_angle": "Medium-Low",
+
+        "recommended_use": [
+          "Maximum Control",
+          "Stringbed Stability",
+          "Tension Hold",
+          "Fast Swing Speed",
+          "Advanced Players",
+          "Tournament Play",
+          "Players Wanting a Round Tour-Flex Co-Poly"
+        ]
+      }
+    ],
+
+    "packaging": {
+      "type": "Two Half Sets",
+      "half_sets_per_package": 2,
+      "length_per_half_set_m": 6.7,
+      "intended_racquets": 1,
+      "total_length_m": 13.4
+    }
+  },
+
+  "technology": [
+    "Tour Flex Construction",
+    "Round Low-Friction Geometry",
+    "High Tension Stability",
+    "Control-Oriented Polymer Tuning",
+    "Stringbed Stability Engineering"
+  ],
+
+  "technology_details": {
+    "tour_flex": {
+      "description": "A stiffer flex profile designed to increase directional control, stability and tension hold.",
+      "primary_benefits": [
+        "More Control",
+        "More Stability",
+        "Improved Tension Hold",
+        "More Predictable Response"
+      ]
+    },
+
+    "round_geometry": {
+      "description": "The round profile provides a cleaner, more predictable response and supports low-friction string movement.",
+      "primary_benefits": [
+        "Predictable Launch Angle",
+        "Low-Friction Response",
+        "Directional Precision",
+        "Hybrid Compatibility"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Tour Round Control Co-Polyester",
+    "target_player": "Advanced / Tournament",
+    "arm_friendly": false,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": false,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 10,
+    "spin": 9,
+    "comfort": 8,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 10,
+    "elasticity": 8,
+    "launch_angle": "Medium-Low"
+  },
+
+  "ai_rating": {
+    "power": 8,
+    "control": 10,
+    "spin": 9,
+    "comfort": 8,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 10
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Firm / Tour",
+    "snapback": 10,
+    "ball_pocketing": 8,
+    "string_movement": 1,
+    "tension_stability": 10,
+    "spin_window": "High",
+    "predictability": 10,
+    "arm_friendliness": 7,
+    "directional_precision": 10,
+    "surface_friction": "Low",
+    "launch_angle_consistency": 10,
+    "stringbed_stability": 10,
+    "tension_hold": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "All Court",
+      "Flat Hitter",
+      "Control-Oriented Player",
+      "Power Baseliner"
+    ],
+
+    "special_player_profiles": [
+      "Players Seeking More Control",
+      "Players Wanting Better Tension Hold",
+      "Players Prioritizing Stringbed Stability",
+      "Players Who Prefer Round Co-Poly Response",
+      "Players With Fast Swing Speeds"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson RF 01",
+    "Wilson Pro Staff",
+    "HEAD Speed",
+    "HEAD Radical",
+    "HEAD Gravity",
+    "Yonex PERCEPT",
+    "Yonex EZONE",
+    "Babolat Pure Strike",
+    "Tecnifibre TF-40",
+    "Tecnifibre T-FIGHT",
+    "Dunlop CX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Toroline O-TORO",
+      "Toroline O-TORO TOUR",
+      "Toroline VAMOS",
+      "Toroline Truffle X",
+      "Natural Gut",
+      "Babolat Touch VS"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Control",
+        "Tension Stability",
+        "Direct Response",
+        "Directional Precision"
+      ],
+
+      "as_crosses": [
+        "Low Friction",
+        "Snapback Support",
+        "Stringbed Stability",
+        "Launch Angle Control",
+        "Tension Hold"
+      ]
+    },
+
+    "recommended_toroline_hybrids": [
+      {
+        "mains": "O-TORO",
+        "crosses": "O-TORO SNAP",
+        "expected_profile": [
+          "High Spin",
+          "Low-Friction Cross",
+          "Improved Snapback",
+          "More Stability",
+          "More Control"
+        ]
+      },
+
+      {
+        "mains": "VAMOS",
+        "crosses": "O-TORO SNAP",
+        "expected_profile": [
+          "Mechanical Ball Bite",
+          "Stable Round Cross",
+          "Controlled Launch Angle",
+          "Spin",
+          "Tension Stability"
+        ]
+      },
+
+      {
+        "mains": "O-TORO TOUR",
+        "crosses": "O-TORO SNAP",
+        "expected_profile": [
+          "Tour-Level Control",
+          "High Stability",
+          "Low-Friction Response",
+          "Durability",
+          "Tension Hold"
+        ]
+      }
+    ],
+
+    "hybrid_note": "The smooth round Tour-Flex profile makes O-TORO SNAP particularly suitable as a low-friction, stability-oriented cross in shaped-poly hybrid setups."
+  },
+
+  "gauge_recommendation": {
+    "1.25": {
+      "gauge_name": "16L",
+
+      "best_for": [
+        "Maximum Control",
+        "Stringbed Stability",
+        "Tension Hold",
+        "Round-Poly Predictability",
+        "Advanced Tournament Play"
+      ],
+
+      "tradeoffs": [
+        "Less Mechanical Ball Bite Than Shaped O-TORO Variants",
+        "Firmer Feel Than Softer Round Co-Polys"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.25": {
+      "heavy_topspin_hours": "9-16",
+      "club_player_hours": "18-30"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Low",
+    "tension_loss_sensitivity": "Low",
+    "playability_duration": "Excellent",
+    "recommended_monitoring": "Replace when snapback, tension hold, response or directional consistency noticeably declines."
+  },
+
+  "comparison_data": {
+    "vs_shaped_o_toro_family": {
+      "mechanical_ball_grip": "Lower",
+      "surface_friction": "Lower",
+      "launch_angle": "Lower / More Predictable",
+      "snapback_support": "Higher",
+      "directional_precision": "Higher",
+      "hybrid_cross_suitability": "Higher"
+    },
+
+    "tour_flex_effect": {
+      "control": "Higher",
+      "stability": "Higher",
+      "tension_hold": "Higher",
+      "comfort": "Lower than softer flex versions"
+    }
+  },
+
+  "science_metrics": {
+    "geometry": {
+      "shape": "Round",
+      "symmetry": "High"
+    },
+
+    "spin_mechanism": [
+      "Snapback",
+      "Low-Friction String Movement"
+    ],
+
+    "trajectory_profile": "Controlled / Penetrating",
+
+    "launch_angle_profile": "Medium-Low",
+
+    "tension_stability_class": "Excellent",
+
+    "flex_class": "Tour",
+
+    "performance_class": "Advanced Round Co-Poly"
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Advanced Players Seeking Round-Poly Control",
+      "Players Wanting Excellent Tension Hold",
+      "Players Seeking Stable Hybrid Cross",
+      "Fast Swing Speed Players",
+      "Players Wanting More Predictable Launch Angle",
+      "Tournament Players"
+    ],
+
+    "avoid_for": [
+      "Beginners With Slow Swing Speed",
+      "Players Seeking Maximum Mechanical Ball Bite",
+      "Players With Significant Arm Sensitivity",
+      "Players Wanting Ultra-Soft Stringbed Feel"
+    ],
+
+    "alternative_strings": [
+      "Toroline A5",
+      "Toroline CASH",
+      "Solinco Hyper-G Round",
+      "Luxilon 4G",
+      "HEAD Hawk",
+      "MSV Co Focus"
+    ]
+  },
+
+  "comparison_tags": [
+    "O-TORO SNAP",
+    "Round",
+    "Tour Flex",
+    "Control",
+    "Stability",
+    "Tension Hold",
+    "Low Friction",
+    "Hybrid Cross",
+    "Black",
+    "Mint"
+  ],
+
+  "ai_keywords": [
+    "toroline",
+    "o toro snap",
+    "o-toro snap",
+    "toroline o toro snap",
+    "1.25",
+    "16l",
+    "black",
+    "mint",
+    "round",
+    "tour flex",
+    "stiffer flex",
+    "control",
+    "stability",
+    "tension hold",
+    "snapback",
+    "low friction",
+    "hybrid cross"
+  ],
+
+  "target_competitors": [
+    "Toroline A5",
+    "Solinco Hyper-G Round",
+    "Luxilon 4G",
+    "HEAD Hawk",
+    "Yonex Poly Tour Strike",
+    "MSV Co Focus",
+    "Kirschbaum Max Power"
+  ],
+
+  "description": {
+    "en": "Toroline O-TORO SNAP Tour Flex is a firm, round co-polyester designed to add control, stability and tension hold to the O-TORO family. Its smooth round geometry provides a clean, predictable response and low-friction string movement, while the Tour Flex construction increases stringbed stability for advanced players with fast swing speeds. O-TORO SNAP can be used as a full-bed control string or as a low-friction cross in shaped Toroline hybrids.",
+
+    "zh": "Toroline O-TORO SNAP Tour Flex 是 O-TORO 系列中的偏硬圆形共聚酯球线，核心定位是提升控制、稳定以及保磅表现。圆形光滑结构带来干净、可预测的击球反馈和低摩擦 Snapback，而 Tour Flex 偏硬调校则进一步强化高速挥拍下的线床稳定性。它既可以整床使用，也非常适合作为 O-TORO、VAMOS 或 O-TORO TOUR 等异形主线的低摩擦横线。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Toroline O-TORO SNAP",
+      "Tour Flex",
+      "Stiffer flex",
+      "Added control",
+      "Added stability",
+      "Improved tension hold",
+      "1.25 mm / 16L gauge",
+      "Black",
+      "Mint",
+      "Round profile",
+      "Two half sets per package",
+      "6.7 m per half set",
+      "One-racquet package configuration"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendations",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
