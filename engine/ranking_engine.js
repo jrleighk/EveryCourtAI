@@ -2,7 +2,7 @@
  * ============================================================
  * EveryCourtAI
  * Ranking Engine
- * Version: 1.0
+ * Version: 1.1
  * ============================================================
  *
  * 文件路径：
@@ -13,13 +13,22 @@
  * 2. 结合 Player Profile 重新计算最终排序分数
  * 3. 引入 Physical / Goal / Current Problem / Preference
  * 4. 引入 Confidence 与 Adaptation Cost
- * 5. 输出 Top Ranked Racquets / Strings
+ * 5. 强化 Current Racquet Continuity / Minimal Change
+ * 6. 输出 Top Ranked Racquets / Strings
  *
- * 注意：
- * - 本文件负责“最终排序”
- * - 不负责生成 Alternative
- * - 不负责生成最终自然语言解释
- * - 不负责决定最终推荐卡片结构
+ * 核心原则：
+ *
+ * 如果当前球拍不存在明显硬性不匹配：
+ *
+ * 保留当前球拍
+ * ↓
+ * 优先调整球线
+ * ↓
+ * 调整 Gauge
+ * ↓
+ * 调整 Tension
+ * ↓
+ * 最后才考虑换拍
  *
  * ============================================================
  */
@@ -40,7 +49,7 @@ import {
  * ============================================================
  */
 
-const ENGINE_VERSION = "1.0";
+const ENGINE_VERSION = "1.1";
 
 const MIN_SCORE = 0;
 const MAX_SCORE = 100;
@@ -58,15 +67,39 @@ const STRING_FINAL_LIMIT = 12;
  */
 
 const DEFAULT_WEIGHTS = {
-    base_match_score: 0.30,
+    base_match_score: 0.28,
     physical_compatibility: 0.22,
-    goal_alignment: 0.18,
+    goal_alignment: 0.17,
     current_problem_resolution: 0.10,
-    playing_style_match: 0.06,
+    playing_style_match: 0.05,
     swing_speed_match: 0.04,
-    preference_match: 0.04,
-    confidence: 0.04,
-    adaptation_cost: 0.02
+    preference_match: 0.03,
+    confidence: 0.03,
+    adaptation_score: 0.03,
+    continuity_score: 0.05
+};
+
+
+/**
+ * ============================================================
+ * Continuity 配置
+ * ============================================================
+ */
+
+const CONTINUITY_RULES = {
+    current_racquet_bonus: 22,
+
+    current_string_bonus: 6,
+
+    current_racquet_min_physical_score: 65,
+
+    current_racquet_min_goal_score: 55,
+
+    racquet_change_penalty_default: 6,
+
+    racquet_change_penalty_when_current_is_good: 12,
+
+    strong_current_racquet_threshold: 75
 };
 
 
@@ -166,7 +199,6 @@ function getActivePhysicalConstraints(
             physical
         )
     ) {
-
         if (
             value?.active === true &&
             value?.severity &&
@@ -306,7 +338,6 @@ function detectStringTraits(
 function detectRacquetTraits(
     candidate
 ) {
-
     const specs =
         candidate?.specifications ?? {};
 
@@ -346,6 +377,37 @@ function detectRacquetTraits(
 
 /**
  * ============================================================
+ * Current IDs
+ * ============================================================
+ */
+
+function getCurrentRacquetId(
+    playerProfile
+) {
+    return normalizeKey(
+        playerProfile
+            ?.current_setup
+            ?.racquet
+            ?.id
+    );
+}
+
+
+function getCurrentStringId(
+    playerProfile
+) {
+    return normalizeKey(
+        playerProfile
+            ?.current_setup
+            ?.string
+            ?.main
+            ?.id
+    );
+}
+
+
+/**
+ * ============================================================
  * Physical Score
  * ============================================================
  */
@@ -355,7 +417,6 @@ function calculatePhysicalScore(
     candidateType,
     physicalConstraints
 ) {
-
     if (
         physicalConstraints.length === 0
     ) {
@@ -373,7 +434,6 @@ function calculatePhysicalScore(
     if (
         candidateType === "string"
     ) {
-
         const traits =
             detectStringTraits(
                 candidate
@@ -383,7 +443,6 @@ function calculatePhysicalScore(
             const physical
             of physicalConstraints
         ) {
-
             const high =
                 physical.severity === "high";
 
@@ -402,7 +461,6 @@ function calculatePhysicalScore(
                     physical.region
                 )
             ) {
-
                 if (
                     traits.soft ||
                     traits.multifilament ||
@@ -440,7 +498,6 @@ function calculatePhysicalScore(
     if (
         candidateType === "racquet"
     ) {
-
         const traits =
             detectRacquetTraits(
                 candidate
@@ -450,7 +507,6 @@ function calculatePhysicalScore(
             const physical
             of physicalConstraints
         ) {
-
             const high =
                 physical.severity === "high";
 
@@ -466,7 +522,6 @@ function calculatePhysicalScore(
                     physical.region
                 )
             ) {
-
                 if (
                     traits.swingweight !== null &&
                     traits.swingweight > 330
@@ -502,7 +557,6 @@ function calculatePhysicalScore(
                     physical.region
                 )
             ) {
-
                 if (
                     traits.stiffness !== null &&
                     traits.stiffness >= 68
@@ -527,7 +581,6 @@ function calculatePhysicalScore(
                     physical.region
                 )
             ) {
-
                 if (
                     traits.swingweight !== null &&
                     traits.swingweight > 330
@@ -548,7 +601,6 @@ function calculatePhysicalScore(
                     physical.region
                 )
             ) {
-
                 if (
                     traits.head_size_sq_in !== null &&
                     traits.head_size_sq_in >= 100
@@ -593,7 +645,6 @@ function calculateGoalAlignment(
     candidateType,
     playerProfile
 ) {
-
     const goal =
         playerProfile?.primary_goal;
 
@@ -612,15 +663,12 @@ function calculateGoalAlignment(
     if (
         candidateType === "string"
     ) {
-
         const traits =
             detectStringTraits(
                 candidate
             );
 
-
         switch (goal) {
-
             case "more_control":
 
                 if (
@@ -723,15 +771,12 @@ function calculateGoalAlignment(
     if (
         candidateType === "racquet"
     ) {
-
         const text =
             buildCandidateText(
                 candidate
             );
 
-
         switch (goal) {
-
             case "more_control":
 
                 if (
@@ -837,7 +882,6 @@ function calculateProblemResolution(
     candidateType,
     playerProfile
 ) {
-
     const issues =
         getCurrentSetupIssues(
             playerProfile
@@ -860,7 +904,6 @@ function calculateProblemResolution(
     if (
         candidateType === "string"
     ) {
-
         const traits =
             detectStringTraits(
                 candidate
@@ -872,7 +915,6 @@ function calculateProblemResolution(
                 "too_stiff"
             )
         ) {
-
             if (
                 traits.soft ||
                 traits.multifilament ||
@@ -894,7 +936,6 @@ function calculateProblemResolution(
                 "not_enough_spin"
             )
         ) {
-
             if (
                 traits.spin ||
                 traits.shaped
@@ -909,7 +950,6 @@ function calculateProblemResolution(
                 "not_enough_control"
             )
         ) {
-
             if (
                 traits.control ||
                 traits.round
@@ -931,7 +971,6 @@ function calculateProblemResolution(
                 "not_enough_power"
             )
         ) {
-
             if (
                 traits.power ||
                 traits.soft ||
@@ -948,7 +987,6 @@ function calculateProblemResolution(
                 "poor_durability"
             )
         ) {
-
             if (
                 traits.durable ||
                 traits.polyester
@@ -962,7 +1000,6 @@ function calculateProblemResolution(
     if (
         candidateType === "racquet"
     ) {
-
         const traits =
             detectRacquetTraits(
                 candidate
@@ -1031,7 +1068,6 @@ function calculatePlayingStyleMatch(
     candidate,
     playerProfile
 ) {
-
     const style =
         normalizeKey(
             playerProfile
@@ -1054,7 +1090,6 @@ function calculatePlayingStyleMatch(
     if (
         style === "baseline_aggressive"
     ) {
-
         if (
             text.includes("control") ||
             text.includes("spin") ||
@@ -1068,7 +1103,6 @@ function calculatePlayingStyleMatch(
     if (
         style === "baseline_counterpuncher"
     ) {
-
         if (
             text.includes("control") ||
             text.includes("forgiveness") ||
@@ -1082,7 +1116,6 @@ function calculatePlayingStyleMatch(
     if (
         style === "baseline_grinder"
     ) {
-
         if (
             text.includes("comfort") ||
             text.includes("durability") ||
@@ -1096,7 +1129,6 @@ function calculatePlayingStyleMatch(
     if (
         style === "all_court"
     ) {
-
         if (
             text.includes("feel") ||
             text.includes("control") ||
@@ -1110,7 +1142,6 @@ function calculatePlayingStyleMatch(
     if (
         style === "serve_volley"
     ) {
-
         if (
             text.includes("feel") ||
             text.includes("touch") ||
@@ -1136,7 +1167,6 @@ function calculateSwingSpeedMatch(
     candidateType,
     playerProfile
 ) {
-
     const swingSpeed =
         normalizeKey(
             playerProfile
@@ -1154,7 +1184,6 @@ function calculateSwingSpeedMatch(
     if (
         candidateType === "string"
     ) {
-
         const traits =
             detectStringTraits(
                 candidate
@@ -1164,7 +1193,6 @@ function calculateSwingSpeedMatch(
         if (
             swingSpeed === "slow"
         ) {
-
             if (
                 traits.soft ||
                 traits.multifilament ||
@@ -1186,7 +1214,6 @@ function calculateSwingSpeedMatch(
         if (
             swingSpeed === "medium"
         ) {
-
             if (
                 traits.soft ||
                 traits.control ||
@@ -1200,7 +1227,6 @@ function calculateSwingSpeedMatch(
         if (
             swingSpeed === "fast"
         ) {
-
             if (
                 traits.control ||
                 traits.polyester ||
@@ -1222,7 +1248,6 @@ function calculateSwingSpeedMatch(
     if (
         candidateType === "racquet"
     ) {
-
         const traits =
             detectRacquetTraits(
                 candidate
@@ -1232,7 +1257,6 @@ function calculateSwingSpeedMatch(
         if (
             swingSpeed === "slow"
         ) {
-
             if (
                 traits.weight_g !== null &&
                 traits.weight_g <= 295
@@ -1252,7 +1276,6 @@ function calculateSwingSpeedMatch(
         if (
             swingSpeed === "medium"
         ) {
-
             if (
                 traits.weight_g !== null &&
                 traits.weight_g >= 285 &&
@@ -1266,7 +1289,6 @@ function calculateSwingSpeedMatch(
         if (
             swingSpeed === "fast"
         ) {
-
             if (
                 traits.weight_g !== null &&
                 traits.weight_g >= 295 &&
@@ -1292,7 +1314,6 @@ function calculatePreferenceMatch(
     candidate,
     playerProfile
 ) {
-
     let score = 70;
 
     const text =
@@ -1309,9 +1330,7 @@ function calculatePreferenceMatch(
 
 
     if (feel) {
-
         const feelMap = {
-
             plush: [
                 "plush",
                 "pocket",
@@ -1353,7 +1372,6 @@ function calculatePreferenceMatch(
             const keyword
             of feelMap[feel] ?? []
         ) {
-
             if (
                 text.includes(
                     keyword
@@ -1379,14 +1397,9 @@ function calculateCandidateConfidence(
     candidate,
     playerProfile
 ) {
-
     let confidence =
         DEFAULT_CONFIDENCE;
 
-
-    /**
-     * Candidate basic data
-     */
 
     if (
         candidate.id
@@ -1402,10 +1415,6 @@ function calculateCandidateConfidence(
         confidence += 5;
     }
 
-
-    /**
-     * Player Profile
-     */
 
     if (
         playerProfile.primary_goal
@@ -1446,10 +1455,6 @@ function calculateCandidateConfidence(
     }
 
 
-    /**
-     * Risk deduction
-     */
-
     const risks =
         candidate.risk_flags ?? [];
 
@@ -1474,20 +1479,12 @@ function calculateAdaptationCost(
     candidateType,
     playerProfile
 ) {
-
-    let cost = 5;
-
-
     if (
         candidateType === "racquet"
     ) {
-
         const currentId =
-            normalizeKey(
+            getCurrentRacquetId(
                 playerProfile
-                    ?.current_setup
-                    ?.racquet
-                    ?.id
             );
 
         if (
@@ -1499,21 +1496,16 @@ function calculateAdaptationCost(
             return 1;
         }
 
-        cost = 8;
+        return 8;
     }
 
 
     if (
         candidateType === "string"
     ) {
-
         const currentStringId =
-            normalizeKey(
+            getCurrentStringId(
                 playerProfile
-                    ?.current_setup
-                    ?.string
-                    ?.main
-                    ?.id
             );
 
         if (
@@ -1525,40 +1517,289 @@ function calculateAdaptationCost(
             return 1;
         }
 
-        cost = 4;
+        return 4;
     }
 
 
-    return cost;
+    return 5;
+}
+
+
+function convertAdaptationCostToScore(
+    cost
+) {
+    const mapping = {
+        1: 100,
+        2: 92,
+        3: 86,
+        4: 78,
+        5: 70,
+        6: 62,
+        7: 54,
+        8: 44,
+        9: 34,
+        10: 24
+    };
+
+    return mapping[cost] ?? 50;
 }
 
 
 /**
  * ============================================================
- * Adaptation Score
- *
- * Cost 越低，Score 越高。
+ * Current Racquet Continuity
  * ============================================================
  */
 
-function convertAdaptationCostToScore(
-    cost
+function calculateContinuityScore(
+    candidate,
+    candidateType,
+    playerProfile,
+    physicalScore,
+    goalScore
 ) {
+    if (
+        candidateType === "racquet"
+    ) {
+        const currentId =
+            getCurrentRacquetId(
+                playerProfile
+            );
 
-    const mapping = {
-        1: 100,
-        2: 90,
-        3: 82,
-        4: 75,
-        5: 68,
-        6: 60,
-        7: 52,
-        8: 45,
-        9: 35,
-        10: 25
+        const candidateId =
+            normalizeKey(
+                candidate.id
+            );
+
+
+        if (
+            !currentId
+        ) {
+            return {
+                score: 50,
+                bonus: 0,
+                penalty: 0,
+                is_current: false,
+                current_racquet_acceptable: false
+            };
+        }
+
+
+        const isCurrent =
+            currentId === candidateId;
+
+
+        const currentRacquetAcceptable =
+            physicalScore >=
+                CONTINUITY_RULES
+                    .current_racquet_min_physical_score &&
+            goalScore >=
+                CONTINUITY_RULES
+                    .current_racquet_min_goal_score;
+
+
+        if (
+            isCurrent &&
+            currentRacquetAcceptable
+        ) {
+            return {
+                score: 100,
+                bonus:
+                    CONTINUITY_RULES
+                        .current_racquet_bonus,
+                penalty: 0,
+                is_current: true,
+                current_racquet_acceptable: true
+            };
+        }
+
+
+        if (
+            isCurrent &&
+            !currentRacquetAcceptable
+        ) {
+            return {
+                score: 60,
+                bonus: 4,
+                penalty: 0,
+                is_current: true,
+                current_racquet_acceptable: false
+            };
+        }
+
+
+        return {
+            score: 35,
+            bonus: 0,
+            penalty:
+                CONTINUITY_RULES
+                    .racquet_change_penalty_default,
+            is_current: false,
+            current_racquet_acceptable: false
+        };
+    }
+
+
+    if (
+        candidateType === "string"
+    ) {
+        const currentId =
+            getCurrentStringId(
+                playerProfile
+            );
+
+        const candidateId =
+            normalizeKey(
+                candidate.id
+            );
+
+
+        if (
+            currentId &&
+            currentId === candidateId
+        ) {
+            return {
+                score: 95,
+                bonus:
+                    CONTINUITY_RULES
+                        .current_string_bonus,
+                penalty: 0,
+                is_current: true
+            };
+        }
+
+
+        return {
+            score: 60,
+            bonus: 0,
+            penalty: 0,
+            is_current: false
+        };
+    }
+
+
+    return {
+        score: 50,
+        bonus: 0,
+        penalty: 0,
+        is_current: false
     };
+}
 
-    return mapping[cost] ?? 50;
+
+/**
+ * ============================================================
+ * Current Racquet Quality Context
+ * ============================================================
+ */
+
+function evaluateCurrentRacquetContext(
+    candidates,
+    playerProfile,
+    physicalConstraints
+) {
+    const currentId =
+        getCurrentRacquetId(
+            playerProfile
+        );
+
+    if (
+        !currentId
+    ) {
+        return {
+            found: false,
+            candidate: null,
+            score: null,
+            physical_score: null,
+            goal_score: null,
+            strong_enough_to_keep: false
+        };
+    }
+
+
+    const currentCandidate =
+        candidates.find(
+            candidate =>
+                normalizeKey(
+                    candidate.id
+                ) === currentId
+        );
+
+
+    if (
+        !currentCandidate
+    ) {
+        return {
+            found: false,
+            candidate: null,
+            score: null,
+            physical_score: null,
+            goal_score: null,
+            strong_enough_to_keep: false
+        };
+    }
+
+
+    const physical =
+        calculatePhysicalScore(
+            currentCandidate,
+            "racquet",
+            physicalConstraints
+        );
+
+
+    const goal =
+        calculateGoalAlignment(
+            currentCandidate,
+            "racquet",
+            playerProfile
+        );
+
+
+    const base =
+        safeNumber(
+            currentCandidate.match_score
+        ) ?? 50;
+
+
+    const contextScore =
+        (
+            base * 0.45
+        ) +
+        (
+            physical.score * 0.35
+        ) +
+        (
+            goal.score * 0.20
+        );
+
+
+    return {
+        found: true,
+
+        candidate:
+            currentCandidate,
+
+        score:
+            Number(
+                contextScore
+                    .toFixed(1)
+            ),
+
+        physical_score:
+            physical.score,
+
+        goal_score:
+            goal.score,
+
+        strong_enough_to_keep:
+            contextScore >=
+                CONTINUITY_RULES
+                    .strong_current_racquet_threshold &&
+            physical.score >=
+                CONTINUITY_RULES
+                    .current_racquet_min_physical_score
+    };
 }
 
 
@@ -1571,7 +1812,6 @@ function convertAdaptationCostToScore(
 function calculateRiskPenalty(
     candidate
 ) {
-
     const risks =
         Array.isArray(
             candidate.risk_flags
@@ -1614,9 +1854,9 @@ function rankCandidate(
     originalCandidate,
     candidateType,
     playerProfile,
-    physicalConstraints
+    physicalConstraints,
+    currentRacquetContext = null
 ) {
-
     const candidate =
         deepClone(
             originalCandidate
@@ -1709,6 +1949,16 @@ function rankCandidate(
         );
 
 
+    const continuity =
+        calculateContinuityScore(
+            candidate,
+            candidateType,
+            playerProfile,
+            physical.score,
+            goal.score
+        );
+
+
     const riskPenalty =
         calculateRiskPenalty(
             candidate
@@ -1716,7 +1966,9 @@ function rankCandidate(
 
 
     /**
+     * ========================================================
      * Weighted Score
+     * ========================================================
      */
 
     let finalScore =
@@ -1779,9 +2031,63 @@ function rankCandidate(
 
         (
             adaptationScore *
-            DEFAULT_WEIGHTS.adaptation_cost
+            DEFAULT_WEIGHTS.adaptation_score
+        )
+
+        +
+
+        (
+            continuity.score *
+            DEFAULT_WEIGHTS.continuity_score
         );
 
+
+    /**
+     * ========================================================
+     * Continuity Bonus
+     * ========================================================
+     */
+
+    finalScore +=
+        continuity.bonus;
+
+
+    /**
+     * ========================================================
+     * Change Penalty
+     * ========================================================
+     *
+     * 如果当前球拍已经足够好，
+     * 新球拍必须明显更优秀才值得换。
+     * ========================================================
+     */
+
+    let changePenalty =
+        continuity.penalty;
+
+
+    if (
+        candidateType === "racquet" &&
+        currentRacquetContext
+            ?.strong_enough_to_keep === true &&
+        continuity.is_current === false
+    ) {
+        changePenalty =
+            Math.max(
+                changePenalty,
+                CONTINUITY_RULES
+                    .racquet_change_penalty_when_current_is_good
+            );
+    }
+
+
+    finalScore -=
+        changePenalty;
+
+
+    /**
+     * Risk Penalty
+     */
 
     finalScore -=
         riskPenalty;
@@ -1794,7 +2100,6 @@ function rankCandidate(
 
 
     candidate.ranking = {
-
         overall_score:
             Number(
                 finalScore
@@ -1822,8 +2127,7 @@ function rankCandidate(
         preference_match:
             preference,
 
-        confidence:
-            confidence,
+        confidence,
 
         adaptation_cost:
             adaptationCost,
@@ -1831,17 +2135,58 @@ function rankCandidate(
         adaptation_score:
             adaptationScore,
 
+        continuity_score:
+            continuity.score,
+
+        continuity_bonus:
+            continuity.bonus,
+
+        change_penalty:
+            changePenalty,
+
         risk_penalty:
-            riskPenalty
+            riskPenalty,
+
+        is_current_equipment:
+            continuity.is_current === true
     };
 
 
+    const reasons = [
+        ...physical.reasons,
+        ...goal.reasons,
+        ...problem.reasons
+    ];
+
+
+    if (
+        continuity.is_current === true &&
+        continuity.bonus > 0
+    ) {
+        reasons.push(
+            candidateType === "racquet"
+                ? "Current racquet receives a strong continuity bonus because it remains compatible."
+                : "Current string receives continuity bonus."
+        );
+    }
+
+
+    if (
+        candidateType === "racquet" &&
+        currentRacquetContext
+            ?.strong_enough_to_keep === true &&
+        continuity.is_current === false
+    ) {
+        reasons.push(
+            "Racquet-change penalty applied because the current frame remains a strong match."
+        );
+    }
+
+
     candidate.ranking_reasons =
-        uniqueArray([
-            ...physical.reasons,
-            ...goal.reasons,
-            ...problem.reasons
-        ]);
+        uniqueArray(
+            reasons
+        );
 
 
     return candidate;
@@ -1857,7 +2202,6 @@ function rankCandidate(
 function sortRankedCandidates(
     candidates
 ) {
-
     return [
         ...candidates
     ].sort(
@@ -1865,7 +2209,6 @@ function sortRankedCandidates(
             a,
             b
         ) => {
-
             const scoreA =
                 a
                     ?.ranking
@@ -1890,7 +2233,34 @@ function sortRankedCandidates(
 
 
             /**
-             * Tie-break #1:
+             * Tie-break #1
+             * Current equipment wins if safe
+             */
+
+            const currentA =
+                a
+                    ?.ranking
+                    ?.is_current_equipment ===
+                true;
+
+            const currentB =
+                b
+                    ?.ranking
+                    ?.is_current_equipment ===
+                true;
+
+
+            if (
+                currentA !== currentB
+            ) {
+                return currentA
+                    ? -1
+                    : 1;
+            }
+
+
+            /**
+             * Tie-break #2
              * Physical
              */
 
@@ -1919,7 +2289,7 @@ function sortRankedCandidates(
 
 
             /**
-             * Tie-break #2:
+             * Tie-break #3
              * Confidence
              */
 
@@ -1948,7 +2318,7 @@ function sortRankedCandidates(
 
 
             /**
-             * Tie-break #3:
+             * Tie-break #4
              * Adaptation Cost
              */
 
@@ -1984,13 +2354,11 @@ function assignRankLabels(
     candidates,
     candidateType
 ) {
-
     return candidates.map(
         (
             candidate,
             index
         ) => {
-
             const output =
                 deepClone(
                     candidate
@@ -2037,15 +2405,11 @@ function assignRankLabels(
  */
 
 async function loadRankingKnowledge() {
-
     try {
-
         return await loadKnowledgeJson(
             "inference/recommendation_ranking.json"
         );
-
     } catch {
-
         return null;
     }
 }
@@ -2061,7 +2425,6 @@ export async function rankRecommendations(
     conflictResult,
     playerProfile
 ) {
-
     /**
      * ----------------------------------
      * STEP 1
@@ -2144,6 +2507,21 @@ export async function rankRecommendations(
     /**
      * ----------------------------------
      * STEP 5
+     * Evaluate Current Racquet
+     * ----------------------------------
+     */
+
+    const currentRacquetContext =
+        evaluateCurrentRacquetContext(
+            rawRacquets,
+            playerProfile,
+            physicalConstraints
+        );
+
+
+    /**
+     * ----------------------------------
+     * STEP 6
      * Rank Racquets
      * ----------------------------------
      */
@@ -2155,13 +2533,13 @@ export async function rankRecommendations(
         const candidate
         of rawRacquets
     ) {
-
         const ranked =
             rankCandidate(
                 candidate,
                 "racquet",
                 playerProfile,
-                physicalConstraints
+                physicalConstraints,
+                currentRacquetContext
             );
 
 
@@ -2175,7 +2553,7 @@ export async function rankRecommendations(
 
     /**
      * ----------------------------------
-     * STEP 6
+     * STEP 7
      * Rank Strings
      * ----------------------------------
      */
@@ -2187,13 +2565,13 @@ export async function rankRecommendations(
         const candidate
         of rawStrings
     ) {
-
         const ranked =
             rankCandidate(
                 candidate,
                 "string",
                 playerProfile,
-                physicalConstraints
+                physicalConstraints,
+                currentRacquetContext
             );
 
 
@@ -2207,7 +2585,7 @@ export async function rankRecommendations(
 
     /**
      * ----------------------------------
-     * STEP 7
+     * STEP 8
      * Sort + Limit
      * ----------------------------------
      */
@@ -2240,8 +2618,8 @@ export async function rankRecommendations(
 
     /**
      * ----------------------------------
-     * STEP 8
-     * Summary
+     * STEP 9
+     * Best Matches
      * ----------------------------------
      */
 
@@ -2257,13 +2635,12 @@ export async function rankRecommendations(
 
     /**
      * ----------------------------------
-     * STEP 9
+     * STEP 10
      * Output
      * ----------------------------------
      */
 
     return {
-
         engine:
             "ranking_engine",
 
@@ -2299,6 +2676,33 @@ export async function rankRecommendations(
 
             physical_constraints:
                 physicalConstraints
+        },
+
+        continuity_context: {
+            current_racquet_id:
+                getCurrentRacquetId(
+                    playerProfile
+                ) || null,
+
+            current_racquet_found:
+                currentRacquetContext
+                    .found,
+
+            current_racquet_context_score:
+                currentRacquetContext
+                    .score,
+
+            current_racquet_physical_score:
+                currentRacquetContext
+                    .physical_score,
+
+            current_racquet_goal_score:
+                currentRacquetContext
+                    .goal_score,
+
+            current_racquet_strong_enough_to_keep:
+                currentRacquetContext
+                    .strong_enough_to_keep
         },
 
         candidate_counts: {
@@ -2339,7 +2743,6 @@ export async function rankRecommendations(
  */
 
 export const rankingHelpers = {
-
     calculatePhysicalScore,
 
     calculateGoalAlignment,
@@ -2357,6 +2760,10 @@ export const rankingHelpers = {
     calculateAdaptationCost,
 
     convertAdaptationCostToScore,
+
+    calculateContinuityScore,
+
+    evaluateCurrentRacquetContext,
 
     calculateRiskPenalty,
 
