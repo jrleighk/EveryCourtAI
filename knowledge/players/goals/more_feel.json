@@ -1,0 +1,414 @@
+{
+  "id": "more_feel",
+  "category": "Player Goal",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
+
+  "goal": {
+    "name": {
+      "en": "More Feel",
+      "zh": "提升手感"
+    },
+
+    "description": {
+      "en": "The player wants greater connection with the ball, clearer impact feedback, improved touch, precision and confidence during every shot.",
+      "zh": "球员希望获得更清晰的击球反馈、更好的控球感、更多包球感，以及更精准的落点控制与触球信心。"
+    }
+  },
+
+  "problem_signs": [
+    "Current stringbed feels numb.",
+    "Player cannot clearly feel ball contact.",
+    "Drop shots are difficult to judge.",
+    "Volleys lack touch.",
+    "Ball leaves the strings too quickly.",
+    "Player struggles to judge depth consistently.",
+    "Current setup feels disconnected."
+  ],
+
+  "typical_causes": [
+    "Current string is too stiff.",
+    "Current string has poor ball pocketing.",
+    "Current racquet is too muted.",
+    "Current tension is excessively high.",
+    "Current polyester has gone dead.",
+    "Impact dwell time is too short.",
+    "Current setup prioritizes durability over feel."
+  ],
+
+  "equipment_adjustments": {
+    "racquet": {
+      "preferred_changes": [
+        "More connected response",
+        "Better touch",
+        "Flexible feel",
+        "Stable impact",
+        "Clear feedback"
+      ],
+
+      "change_priority": "low",
+
+      "note": "Optimize string construction before recommending a racquet replacement."
+    },
+
+    "string": {
+      "preferred_changes": [
+        "Natural Gut",
+        "Premium Multifilament",
+        "Round Polyester",
+        "Soft Co-Polyester",
+        "Natural Gut Hybrid",
+        "Multifilament Hybrid"
+      ]
+    },
+
+    "tension": {
+      "general_adjustment_lbs": -1,
+
+      "normal_adjustment_range_lbs": "-1 to -2",
+
+      "notes": [
+        "Moderately lower tension can improve pocketing and feel.",
+        "Avoid excessively low tension that reduces directional precision.",
+        "String construction affects feel more than small tension changes."
+      ]
+    },
+
+    "gauge": {
+      "preferred_direction": "Medium or Slightly Thinner",
+
+      "examples": [
+        "1.30 → 1.25 mm",
+        "1.25 → 1.23 mm"
+      ],
+
+      "tradeoff": "Very thin gauges improve feel but may reduce durability."
+    }
+  },
+
+  "recommended_string_families": [
+    "Natural Gut",
+    "Premium Multifilament",
+    "Soft Round Polyester",
+    "Natural Gut / Polyester Hybrid",
+    "Multifilament / Polyester Hybrid"
+  ],
+
+  "preferred_string_dna": {
+    "feel": 10,
+    "ball_pocketing": 10,
+    "touch": 10,
+    "elasticity": 9,
+    "comfort": 9,
+    "control": 8,
+    "tension_maintenance": 8,
+    "power": 7,
+    "spin": 6,
+    "snapback": 6,
+    "durability": 5,
+    "stiffness": 2
+  },
+
+  "preferred_racquet_dna": {
+    "feel": 10,
+    "control": 9,
+    "comfort": 8,
+    "stability": 8,
+    "maneuverability": 8,
+    "touch": 9,
+    "forgiveness": 7,
+    "power": 7,
+    "spin": 7
+  },
+
+  "recommended_string_characteristics": {
+    "stiffness": [
+      "Very Soft",
+      "Soft",
+      "Medium"
+    ],
+
+    "shape": [
+      "Round",
+      "Smooth",
+      "Light Texture"
+    ],
+
+    "gauge_mm": [
+      1.20,
+      1.23,
+      1.25,
+      1.30
+    ],
+
+    "key_traits": [
+      "Ball Pocketing",
+      "Connected Feel",
+      "Touch",
+      "Elastic Response",
+      "Consistent Feedback",
+      "Controlled Dwell Time"
+    ]
+  },
+
+  "recommended_string_examples": [
+    "Babolat Touch VS",
+    "Wilson Natural Gut",
+    "Tecnifibre X-One Biphase",
+    "Tecnifibre NRG2",
+    "Yonex REXIS Feel",
+    "Yonex REXIS Comfort",
+    "Wilson NXT",
+    "Luxilon Element",
+    "Luxilon Element Rough",
+    "Yonex PolyTour Pro",
+    "Toroline Caviar",
+    "MSV Soft Touch",
+    "Gamma Live Wire Professional"
+  ],
+
+  "recommended_hybrid_architectures": [
+    "Natural Gut Main + Polyester Cross",
+    "Multifilament Main + Soft Polyester Cross",
+    "Soft Polyester Main + Multifilament Cross"
+  ],
+
+  "avoid": {
+    "racquet_characteristics": [
+      "Extremely Stiff Frames",
+      "Very Muted Response",
+      "Poor Ball Feedback"
+    ],
+
+    "string_characteristics": [
+      "Dead Polyester",
+      "Very Firm Polyester",
+      "Very High Tension",
+      "Very Thick Gauge"
+    ]
+  },
+
+  "ai_matching_weights": {
+    "feel": 0.28,
+    "ball_pocketing": 0.18,
+    "touch": 0.16,
+    "elasticity": 0.12,
+    "comfort": 0.08,
+    "control": 0.07,
+    "tension_maintenance": 0.04,
+    "stability": 0.03,
+    "power": 0.02,
+    "spin": 0.01,
+    "durability": 0.01
+  },
+
+  "matching_logic": {
+    "prioritize_when": [
+      "Player values touch.",
+      "Player frequently plays doubles.",
+      "Player enjoys all-court tennis.",
+      "Player wants better drop shots.",
+      "Player wants clearer impact feedback.",
+      "Current setup feels disconnected."
+    ],
+
+    "equipment_goals": [
+      "Improve touch.",
+      "Increase connection with the ball.",
+      "Increase pocketing.",
+      "Improve directional confidence.",
+      "Improve consistency of feedback."
+    ],
+
+    "deprioritize": [
+      "Maximum Durability",
+      "Very Firm Response",
+      "Very High Initial Tension"
+    ]
+  },
+
+  "racquet_compensation_logic": {
+    "if_current_racquet_is_muted": {
+      "preferred_solution_order": [
+        "Premium string",
+        "Natural gut hybrid",
+        "Lower tension slightly",
+        "Consider more connected frame"
+      ]
+    },
+
+    "if_current_racquet_is_control_frame": {
+      "action": "Preserve control while increasing feel through string selection."
+    },
+
+    "if_current_racquet_is_stiff": {
+      "preferred_solution_order": [
+        "Softer string",
+        "Hybrid",
+        "Natural gut",
+        "Lower tension"
+      ]
+    }
+  },
+
+  "swing_speed_logic": {
+    "slow": {
+      "goal_priority_multiplier": 1.10,
+
+      "preferred": [
+        "Natural Gut",
+        "Multifilament"
+      ]
+    },
+
+    "medium": {
+      "goal_priority_multiplier": 1.00,
+
+      "preferred": [
+        "Natural Gut Hybrid",
+        "Premium Multifilament",
+        "Soft Round Poly"
+      ]
+    },
+
+    "fast": {
+      "goal_priority_multiplier": 0.90,
+
+      "preferred": [
+        "Gut Hybrid",
+        "Round Polyester",
+        "Soft Polyester"
+      ],
+
+      "warning": "Maintain enough control while improving feel."
+    }
+  },
+
+  "playing_style_logic": {
+    "baseline_aggressive": {
+      "feel_type": "Connected Control"
+    },
+
+    "baseline_counterpuncher": {
+      "feel_type": "Predictable Pocketing"
+    },
+
+    "baseline_grinder": {
+      "feel_type": "Long-Term Consistency"
+    },
+
+    "all_court": {
+      "feel_type": "Maximum Touch"
+    },
+
+    "serve_volley": {
+      "feel_type": "Precision Touch"
+    }
+  },
+
+  "physical_constraint_logic": {
+    "arm_sensitivity": {
+      "mild": {
+        "preferred": [
+          "Natural Gut",
+          "Premium Multifilament",
+          "Soft Hybrid"
+        ]
+      },
+
+      "moderate": {
+        "preferred": [
+          "Natural Gut",
+          "Multifilament"
+        ],
+
+        "avoid": [
+          "Firm Polyester"
+        ]
+      },
+
+      "high": {
+        "preferred": [
+          "Natural Gut",
+          "Premium Multifilament"
+        ],
+
+        "avoid": [
+          "Firm Full Polyester"
+        ]
+      }
+    }
+  },
+
+  "tradeoffs": {
+    "more_feel_can_reduce": [
+      "Maximum Durability",
+      "Maximum Spin",
+      "String Life"
+    ],
+
+    "premium_strings_can_increase": [
+      "Cost"
+    ],
+
+    "softer_strings_can_reduce": [
+      "Firm Response",
+      "Crispness"
+    ]
+  },
+
+  "related_goals": [
+    "more_comfort",
+    "more_control",
+    "more_ball_pocketing",
+    "more_touch"
+  ],
+
+  "conflicting_goals": {
+    "more_durability": {
+      "resolution": "Prioritize premium construction before increasing gauge."
+    },
+
+    "maximum_spin": {
+      "resolution": "Use a round-poly hybrid instead of a very firm shaped polyester."
+    },
+
+    "maximum_power": {
+      "resolution": "Increase elasticity while preserving feedback."
+    }
+  },
+
+  "output_guidance": {
+    "preferred_change_sequence": [
+      "String Model",
+      "Hybrid",
+      "Tension",
+      "Gauge",
+      "Racquet"
+    ],
+
+    "must_explain": [
+      "Why the current setup lacks feel.",
+      "How the recommendation improves connection with the ball.",
+      "What performance tradeoff exists.",
+      "Why a premium string was selected."
+    ]
+  },
+
+  "search_keywords": [
+    "more feel",
+    "feel",
+    "touch",
+    "touch shots",
+    "connected feel",
+    "ball pocketing",
+    "drop shot",
+    "volleys",
+    "提升手感",
+    "包球感",
+    "控球感",
+    "触感",
+    "手感",
+    "网前"
+  ]
+}
