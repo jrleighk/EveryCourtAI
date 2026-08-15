@@ -1,0 +1,534 @@
+{
+  "id": "toroline_caviar",
+  "brand": "Toroline",
+  "series": "CAVIAR",
+  "model": "CAVIAR",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Co-Polyester",
+    "string_family": "Polyester",
+    "cross_section": "Hexagonal",
+    "surface": "Shaped / Edged",
+    "profile_sides": 6,
+    "tour_positioning": "Precision / Control / Court Penetration / Tension Stability Co-Polyester",
+    "official_positioning": "Six-sided shaped co-poly designed for maximum precision, lively response, flexibility, durability and unmatched tension maintenance.",
+    "target_level": "Intermediate / Advanced / Tournament",
+    "target_style": "All Court"
+  },
+
+  "specifications": {
+    "construction": "Six-Sided Co-Polyester Monofilament",
+    "cross_section": "Hexagonal (6-Sided)",
+    "surface": "Shaped / Edged",
+
+    "available_gauges": [
+      {
+        "gauge_name": "18",
+        "gauge_mm": 1.16,
+        "available": true,
+        "power": 10,
+        "control": 9,
+        "spin": 10,
+        "comfort": 9,
+        "feel": 10,
+        "durability": 7,
+        "tension_maintenance": 9,
+        "elasticity": 10,
+        "launch_angle": "Medium-High",
+        "recommended_use": [
+          "Maximum Feel",
+          "Maximum Response",
+          "Fast Racquet Head Speed",
+          "Spin",
+          "Players Prioritizing Liveliness"
+        ]
+      },
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.20,
+        "available": true,
+        "power": 9,
+        "control": 10,
+        "spin": 10,
+        "comfort": 9,
+        "feel": 10,
+        "durability": 8,
+        "tension_maintenance": 10,
+        "elasticity": 9,
+        "launch_angle": "Medium",
+        "recommended_use": [
+          "Precision",
+          "Spin",
+          "All-Court Play",
+          "Shot Redirection",
+          "Tournament Play"
+        ]
+      },
+      {
+        "gauge_name": "16L",
+        "gauge_mm": 1.24,
+        "available": true,
+        "power": 9,
+        "control": 10,
+        "spin": 9,
+        "comfort": 8,
+        "feel": 9,
+        "durability": 10,
+        "tension_maintenance": 10,
+        "elasticity": 9,
+        "launch_angle": "Medium-Low",
+        "recommended_use": [
+          "Best Overall Balance",
+          "Maximum Precision",
+          "Maximum Durability",
+          "Court Penetration",
+          "All-Court Play"
+        ]
+      }
+    ],
+
+    "packaging": {
+      "type": "Two Half Sets",
+      "half_sets_per_package": 2,
+      "length_per_half_set_m": 6.7,
+      "intended_racquets": 1,
+      "total_length_m": 13.4
+    }
+  },
+
+  "technology": [
+    "Six-Sided Precision Geometry",
+    "Flexible Co-Poly Construction",
+    "Lively Response Tuning",
+    "High Tension Stability",
+    "Durability-Oriented Polymer Engineering",
+    "Court Penetration Optimization"
+  ],
+
+  "technology_details": {
+    "hexagonal_geometry": {
+      "shape": "Hexagonal",
+      "sides": 6,
+      "description": "The six-sided profile increases ball interaction and supports spin while maintaining precise directional control.",
+      "primary_benefits": [
+        "Ball Bite",
+        "Spin",
+        "Directional Precision",
+        "Shot Shaping"
+      ]
+    },
+
+    "flexible_response": {
+      "description": "Compared with traditional polyester strings, CAVIAR is positioned as more lively and flexible.",
+      "primary_benefits": [
+        "More Responsive Feel",
+        "Better Pocketing",
+        "Improved Comfort",
+        "More Dynamic Ball Response"
+      ]
+    },
+
+    "tension_stability": {
+      "description": "CAVIAR is designed around exceptional durability and tension maintenance for longer-lasting consistency."
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Precision All-Court Co-Polyester",
+    "target_player": "Intermediate / Advanced / Tournament",
+    "arm_friendly": true,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true,
+    "precision_focus": true,
+    "penetration_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 9,
+    "feel": 10,
+    "durability": 10,
+    "tension_maintenance": 10,
+    "elasticity": 9,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 9,
+    "feel": 10,
+    "durability": 10,
+    "tension_maintenance": 10
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium",
+    "snapback": 9,
+    "ball_pocketing": 9,
+    "string_movement": 3,
+    "tension_stability": 10,
+    "spin_window": "High",
+    "predictability": 10,
+    "arm_friendliness": 8,
+    "directional_precision": 10,
+    "ball_bite": 9,
+    "surface_grip": 9,
+    "court_penetration": 10,
+    "response_liveliness": 10,
+    "shot_redirection": 10,
+    "all_court_consistency": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+    "swing_speed": [
+      "Medium",
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+    "play_style": [
+      "All Court",
+      "Aggressive Baseliner",
+      "Counter Puncher",
+      "Precision-Oriented Player",
+      "Transition Player"
+    ],
+    "special_player_profiles": [
+      "Players Seeking Maximum Precision",
+      "Players Wanting More Flex Than Traditional Polyester",
+      "Players Seeking Long Tension Maintenance",
+      "Players Who Redirect Pace",
+      "Players Wanting to Hit Through the Court",
+      "All-Court Players"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson RF 01",
+    "Wilson Pro Staff",
+    "HEAD Speed",
+    "HEAD Radical",
+    "HEAD Gravity",
+    "Yonex PERCEPT",
+    "Yonex EZONE",
+    "Babolat Pure Strike",
+    "Tecnifibre T-FIGHT",
+    "Tecnifibre TF-40",
+    "Dunlop CX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+    "preferred_role": "Mains",
+
+    "best_pairings": [
+      "Toroline A5",
+      "Toroline Wasabi X",
+      "Toroline O-TORO SNAP",
+      "Toroline O-TORO SNAP TOUR FLEX",
+      "Toroline CASH",
+      "Toroline Truffle X"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Precision",
+        "Court Penetration",
+        "Spin",
+        "Shot Redirection",
+        "Control"
+      ],
+      "as_crosses": [
+        "Control",
+        "Response Stability",
+        "Precision Support"
+      ]
+    },
+
+    "recommended_toroline_hybrids": [
+      {
+        "mains": "CAVIAR",
+        "crosses": "A5",
+        "expected_profile": [
+          "Precision",
+          "Low-Friction Cross",
+          "Predictable Launch",
+          "Spin",
+          "Connected Feel"
+        ]
+      },
+      {
+        "mains": "CAVIAR",
+        "crosses": "Wasabi X",
+        "expected_profile": [
+          "Court Penetration",
+          "Fast Snapback",
+          "Spin",
+          "Lively Response",
+          "Directional Control"
+        ]
+      },
+      {
+        "mains": "CAVIAR",
+        "crosses": "Truffle X",
+        "expected_profile": [
+          "Precision",
+          "Plush Pocketing",
+          "Comfort",
+          "Controlled Power",
+          "All-Court Feel"
+        ]
+      }
+    ]
+  },
+
+  "gauge_recommendation": {
+    "1.16": {
+      "gauge_name": "18",
+      "best_for": [
+        "Maximum Feel",
+        "Maximum Response",
+        "Spin",
+        "Fast Swing Speed"
+      ],
+      "tradeoffs": [
+        "Lowest Durability"
+      ]
+    },
+    "1.20": {
+      "gauge_name": "17",
+      "best_for": [
+        "Precision",
+        "Spin",
+        "All-Court Play",
+        "Shot Redirection"
+      ],
+      "tradeoffs": [
+        "Less Durability Than 1.24"
+      ]
+    },
+    "1.24": {
+      "gauge_name": "16L",
+      "best_for": [
+        "Best Overall Balance",
+        "Maximum Precision",
+        "Maximum Durability",
+        "Court Penetration"
+      ],
+      "tradeoffs": [
+        "Slightly Less Feel Than Thinner Gauges"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.16": {
+      "heavy_topspin_hours": "6-10",
+      "club_player_hours": "12-20"
+    },
+    "1.20": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "16-28"
+    },
+    "1.24": {
+      "heavy_topspin_hours": "10-18",
+      "club_player_hours": "20-34"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Low",
+    "tension_loss_sensitivity": "Low",
+    "playability_duration": "Excellent",
+    "recommended_monitoring": "Replace when directional precision, tension stability or lively response noticeably declines."
+  },
+
+  "comparison_data": {
+    "vs_traditional_poly": {
+      "flexibility": "Higher",
+      "liveliness": "Higher",
+      "comfort": "Higher",
+      "tension_maintenance": "Very High",
+      "durability": "Very High",
+      "response": "More Dynamic"
+    },
+
+    "vs_toroline_super_toro": {
+      "precision": "Both Very High",
+      "flex": "CAVIAR Softer / More Flexible",
+      "liveliness": "CAVIAR Higher",
+      "control": "SUPER TORO More Firmly Control-Oriented",
+      "all_court_suitability": "CAVIAR Higher"
+    },
+
+    "vs_toroline_toro_toro": {
+      "shape": "Both Hexagonal",
+      "caviar_focus": [
+        "Precision",
+        "Durability",
+        "Tension Maintenance",
+        "Court Penetration"
+      ],
+      "toro_toro_focus": [
+        "Pocketing",
+        "Spin",
+        "Softer Flex",
+        "Predictable Power"
+      ]
+    }
+  },
+
+  "science_metrics": {
+    "geometry": {
+      "shape": "Hexagonal",
+      "sides": 6
+    },
+    "spin_mechanism": [
+      "Hexagonal Mechanical Grip",
+      "String Movement",
+      "Snapback"
+    ],
+    "trajectory_profile": "Penetrating / Controlled",
+    "launch_angle_profile": "Medium",
+    "precision_class": "Very High",
+    "tension_stability_class": "Excellent",
+    "durability_class": "Excellent",
+    "flex_class": "Medium / Flexible",
+    "performance_class": "Premium All-Court Precision Co-Poly"
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "All-Court Players",
+      "Players Seeking Maximum Precision",
+      "Players Wanting More Lively Feel Than Traditional Polyester",
+      "Players Seeking Excellent Tension Maintenance",
+      "Players Who Redirect Pace",
+      "Players Wanting to Hit Through the Court",
+      "Advanced Players Seeking Long-Lasting Performance"
+    ],
+    "avoid_for": [
+      "Players Seeking Maximum Plush Comfort",
+      "Players Wanting Extremely High Launch Angle",
+      "Beginners With Very Slow Swing Speed"
+    ],
+    "alternative_strings": [
+      "Toroline SUPER TORO",
+      "Toroline TORO TORO",
+      "Toroline A5",
+      "Solinco Confidential",
+      "HEAD Hawk Touch",
+      "Kirschbaum Max Power"
+    ]
+  },
+
+  "comparison_tags": [
+    "CAVIAR",
+    "Hexagonal",
+    "Six-Sided",
+    "Maximum Precision",
+    "Lively",
+    "Flexible",
+    "Durability",
+    "Tension Maintenance",
+    "Court Penetration",
+    "All Court"
+  ],
+
+  "ai_keywords": [
+    "toroline",
+    "caviar",
+    "toroline caviar",
+    "1.16",
+    "1.20",
+    "1.24",
+    "18 gauge",
+    "17 gauge",
+    "16l",
+    "six sided",
+    "hexagonal",
+    "precision",
+    "lively",
+    "flexible",
+    "durability",
+    "tension maintenance",
+    "all court",
+    "court penetration",
+    "redirect the ball"
+  ],
+
+  "target_competitors": [
+    "Toroline SUPER TORO",
+    "Toroline TORO TORO",
+    "Solinco Confidential",
+    "HEAD Hawk Touch",
+    "Luxilon ALU Power",
+    "Kirschbaum Max Power",
+    "Yonex Poly Tour Strike"
+  ],
+
+  "description": {
+    "en": "Toroline CAVIAR is a six-sided shaped co-polyester designed for maximum precision, all-court control and strong court penetration. Compared with traditional polyester strings, CAVIAR is positioned as more lively and flexible while retaining exceptional durability and tension maintenance. Its hexagonal geometry provides spin and ball grip, while the responsive construction helps players redirect pace and drive through the court with confidence. Available in 1.16, 1.20 and 1.24 mm gauges.",
+
+    "zh": "Toroline CAVIAR 是一款以最大精准度、全场控制和穿透力为核心的六边形共聚酯球线。相比传统聚酯线，CAVIAR 的反馈更加灵活、有活力，同时保持非常出色的耐久和保磅表现。六边形结构负责提供旋转和咬球，而更具弹性的响应则帮助球员更容易改变来球方向，并把球更有穿透力地打过场地。产品提供 1.16、1.20 和 1.24 毫米三个线径。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+    "officially_verified_fields": [
+      "Toroline CAVIAR",
+      "Six-sided shaped co-poly",
+      "Maximum precision positioning",
+      "More lively than traditional poly",
+      "More flexible than traditional poly",
+      "Unmatched durability positioning",
+      "Unmatched tension maintenance positioning",
+      "All-court player positioning",
+      "Court penetration",
+      "Shot redirection",
+      "1.24 mm / 16L",
+      "1.20 mm / 17",
+      "1.16 mm / 18",
+      "Two half sets per package",
+      "6.7 m per half set",
+      "One-racquet package configuration"
+    ],
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendations",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
