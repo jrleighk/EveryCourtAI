@@ -1,0 +1,461 @@
+{
+  "id": "wilson_sensation_15",
+  "brand": "Wilson",
+  "series": "Sensation",
+  "model": "Sensation 15",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Multifilament",
+    "material": "Highly Elastic Nylon Fibers",
+    "string_family": "Multifilament",
+    "core_structure": "Elastic Nylon Multifilament Core with Dual Opposing Outer Wraps",
+    "cross_section": "Round",
+    "surface": "Smooth",
+    "tour_positioning": "Comfort / Durability / Value Multifilament",
+    "official_positioning": "Classic arm-friendly multifilament designed to provide comfort and playability through highly elastic nylon fibers, with dual opposing outer wraps to improve durability.",
+    "target_level": "Beginner / Intermediate / Recreational"
+  },
+
+  "specifications": {
+    "construction": "Nylon Multifilament",
+    "cross_section": "Round",
+    "surface": "Smooth",
+
+    "available_colors": [
+      "Natural"
+    ],
+
+    "color_availability": {
+      "Natural": {
+        "gauge_mm": 1.35,
+        "gauge_name": "15",
+        "available": true
+      }
+    },
+
+    "available_gauges": [
+      {
+        "gauge_name": "15",
+        "gauge_mm": 1.35,
+        "available": true,
+
+        "available_colors": [
+          "Natural"
+        ],
+
+        "power": 8,
+        "control": 9,
+        "spin": 7,
+        "comfort": 10,
+        "feel": 8,
+        "durability": 10,
+        "tension_maintenance": 8,
+        "elasticity": 9,
+        "shock_absorption": 10,
+        "ball_pocketing": 8,
+        "launch_angle": "Medium-Low",
+
+        "recommended_use": [
+          "Maximum Durability",
+          "Arm-Friendly Play",
+          "Recreational Play",
+          "Full Bed",
+          "Hybrid Use",
+          "Players Breaking Thinner Multifilaments"
+        ]
+      }
+    ],
+
+    "packaging": [
+      {
+        "type": "Set",
+        "length_ft": 40,
+        "length_m": 12.2
+      }
+    ]
+  },
+
+  "technology": [
+    "Highly Elastic Nylon Fibers",
+    "Dual Opposing Outer Wraps",
+    "Vibration Reduction Construction",
+    "Arm-Friendly Multifilament Design"
+  ],
+
+  "technology_details": {
+    "elastic_nylon_fibers": {
+      "description": "Highly elastic nylon fibers provide a soft and responsive feel while helping reduce impact vibration.",
+      "primary_benefits": [
+        "Comfort",
+        "Elasticity",
+        "Playability",
+        "Shock Reduction"
+      ]
+    },
+
+    "dual_outer_wraps": {
+      "description": "Two outer wraps are applied in opposite directions to reinforce the multifilament structure and improve durability.",
+      "primary_benefits": [
+        "Improved Durability",
+        "Better Structural Stability",
+        "Reduced Premature Fraying"
+      ]
+    },
+
+    "vibration_reduction": {
+      "description": "The elastic multifilament construction reduces harsh impact vibration and supports Sensation's established arm-friendly character.",
+      "primary_benefits": [
+        "Arm Comfort",
+        "Shock Absorption",
+        "Softer Impact"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Maximum-Durability Comfort Multifilament",
+    "target_player": "Beginner / Intermediate / Recreational",
+    "arm_friendly": true,
+    "spin_focus": false,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true,
+    "pocketing_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 9,
+    "spin": 7,
+    "comfort": 10,
+    "feel": 8,
+    "durability": 10,
+    "tension_maintenance": 8,
+    "elasticity": 9,
+    "shock_absorption": 10,
+    "ball_pocketing": 8,
+    "launch_angle": "Medium-Low"
+  },
+
+  "ai_rating": {
+    "power": 8,
+    "control": 9,
+    "spin": 7,
+    "comfort": 10,
+    "feel": 8,
+    "durability": 10,
+    "tension_maintenance": 8
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Soft-Medium",
+    "snapback": 5,
+    "ball_pocketing": 8,
+    "string_movement": 4,
+    "tension_stability": 8,
+    "spin_window": "Medium-Low",
+    "predictability": 9,
+    "arm_friendliness": 10,
+    "shock_absorption": 10,
+    "directional_precision": 9,
+    "sweet_spot_forgiveness": 9,
+    "plushness": 9,
+    "power_response": 8,
+    "abrasion_resistance": 9,
+    "string_break_resistance": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate",
+      "Recreational"
+    ],
+
+    "swing_speed": [
+      "Slow",
+      "Medium",
+      "Medium-Fast"
+    ],
+
+    "play_style": [
+      "All Court",
+      "Baseline",
+      "Doubles",
+      "Serve & Volley"
+    ],
+
+    "special_player_profiles": [
+      "Players Seeking Maximum Sensation Durability",
+      "Players With Arm Sensitivity",
+      "Players Breaking Sensation 16 or 17",
+      "Players Wanting Affordable Multifilament Comfort",
+      "Players Prioritizing Longevity Over Maximum Feel"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Clash",
+    "Wilson Blade",
+    "Wilson Ultra",
+    "HEAD Boom",
+    "HEAD Speed",
+    "Yonex EZONE",
+    "Babolat Pure Drive",
+    "Tecnifibre T-FIGHT",
+    "Dunlop FX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Luxilon ALU Power",
+      "Luxilon Element",
+      "Wilson Revolve",
+      "Wilson Revolve Spin"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Comfort",
+        "Durability",
+        "Power",
+        "Shock Reduction"
+      ],
+
+      "as_crosses": [
+        "Stringbed Softening",
+        "Durability Support",
+        "Comfort",
+        "Shock Reduction"
+      ]
+    },
+
+    "hybrid_note": "Sensation 15 is useful when a player wants a thicker, more durable multifilament component in a comfort-oriented hybrid."
+  },
+
+  "gauge_recommendation": {
+    "1.35": {
+      "gauge_name": "15",
+      "color": "Natural",
+
+      "best_for": [
+        "Maximum Durability",
+        "String Break Resistance",
+        "Comfort",
+        "Longer String Life"
+      ],
+
+      "tradeoffs": [
+        "Less Feel Than Sensation 16 and 17",
+        "Less Power Than Thinner Gauges",
+        "Less Spin Potential Than Thinner Gauges"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.35": {
+      "heavy_topspin_hours": "7-12",
+      "club_player_hours": "20-34"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Immediate",
+    "peak_playability": "Immediate",
+    "performance_drop": "Medium-Low",
+    "tension_loss_sensitivity": "Medium",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when fraying, notching or tension loss begins to noticeably reduce control and comfort."
+  },
+
+  "installation_guidelines": {
+    "handling_sensitivity": "Medium",
+    "manufacturer_instructions": [
+      "Handle gently during installation.",
+      "Avoid excessive clamping pressure.",
+      "Avoid damaging the outer wraps."
+    ]
+  },
+
+  "comparison_data": {
+    "vs_sensation_16": {
+      "diameter": {
+        "sensation_15": "1.35 mm",
+        "sensation_16": "1.30 mm"
+      },
+      "thickness": "Higher",
+      "durability": "Higher",
+      "control": "Slightly Higher",
+      "power": "Lower",
+      "feel": "Lower",
+      "spin": "Slightly Lower"
+    },
+
+    "vs_sensation_17": {
+      "thickness": "Much Higher",
+      "durability": "Much Higher",
+      "power": "Lower",
+      "feel": "Lower",
+      "spin": "Lower"
+    },
+
+    "vs_nxt_duramax_15": {
+      "gauge_class": "Both 15 Gauge",
+      "durability": "Very High",
+      "comfort": "High",
+      "technology": {
+        "sensation_15": "Dual Opposing Outer Wraps",
+        "nxt_duramax_15": "Abrasion Shields with PU-Bonded Fibers"
+      },
+      "positioning": {
+        "sensation_15": "Value Durable Multifilament",
+        "nxt_duramax_15": "Premium Maximum-Durability Multifilament"
+      }
+    },
+
+    "vs_polyester": {
+      "comfort": "Much Higher",
+      "shock_absorption": "Much Higher",
+      "power": "Higher",
+      "spin": "Lower",
+      "durability": "Lower Than Most Polyesters",
+      "control": "Softer / More Elastic"
+    }
+  },
+
+  "science_metrics": {
+    "material_class": "Nylon Multifilament",
+
+    "geometry": {
+      "shape": "Round"
+    },
+
+    "comfort_class": "Very High",
+    "power_class": "High",
+    "shock_absorption_class": "Very High",
+    "ball_pocketing_class": "High",
+    "durability_class": "Very High for Sensation Family",
+    "value_class": "Very High",
+    "performance_class": "Durable Comfort Multifilament"
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Wanting Maximum Sensation Durability",
+      "Players With Arm Sensitivity",
+      "Players Breaking Thinner Multifilaments",
+      "Players Seeking Affordable Comfort",
+      "Players Prioritizing String Life Over Maximum Feel"
+    ],
+
+    "avoid_for": [
+      "Players Seeking Maximum Power",
+      "Players Wanting Maximum Touch and Feel",
+      "Heavy Topspin Players Seeking Maximum Snapback",
+      "Advanced Players Seeking Polyester-Level Precision"
+    ],
+
+    "alternative_strings": [
+      "Wilson Sensation 16",
+      "Wilson NXT Duramax 15",
+      "Wilson NXT Duramax 16",
+      "Head Velocity MLT",
+      "Tecnifibre Multifeel"
+    ]
+  },
+
+  "comparison_tags": [
+    "Wilson",
+    "Sensation",
+    "Sensation 15",
+    "Multifilament",
+    "Nylon",
+    "Maximum Durability",
+    "Comfort",
+    "Arm Friendly",
+    "Natural",
+    "1.35"
+  ],
+
+  "ai_keywords": [
+    "wilson",
+    "sensation",
+    "sensation 15",
+    "wilson sensation 15",
+    "1.35",
+    "15 gauge",
+    "natural",
+    "multifilament",
+    "nylon fibers",
+    "outer wraps",
+    "comfort",
+    "arm friendly",
+    "durability",
+    "most durable sensation",
+    "thickest sensation"
+  ],
+
+  "target_competitors": [
+    "Wilson Sensation 16",
+    "Wilson NXT Duramax 15",
+    "Wilson NXT Duramax 16",
+    "Head Velocity MLT",
+    "Tecnifibre Multifeel"
+  ],
+
+  "description": {
+    "en": "Wilson Sensation 15 is the thickest and most durable version of the Sensation multifilament family. It uses highly elastic nylon fibers to provide comfort and vibration reduction, while two outer wraps applied in opposite directions improve structural durability. At 1.35 mm / 15 gauge, it prioritizes string life and stability over the extra power and feel of thinner Sensation gauges, making it particularly suitable for players who value arm-friendly comfort but frequently wear through multifilament strings.",
+
+    "zh": "Wilson Sensation 15 是 Sensation 系列中最粗、同时也是最耐打的版本。它采用高弹性尼龙纤维来提供舒适性和减震效果，并通过两组反向缠绕的外层结构提升耐久和整体稳定性。1.35 毫米 / 15 Gauge 相比 Sensation 16 和 17 更强调寿命、稳定和抗断线能力，而力量、手感和旋转会略低一些。它特别适合希望保持 Arm-Friendly 多芯线手感，但又经常打断较细球线的玩家。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Wilson Sensation 15",
+      "Natural color",
+      "Multifilament construction",
+      "Highly elastic nylon fibers",
+      "Reduced vibration positioning",
+      "Enhanced comfort",
+      "Enhanced playability",
+      "Two outer wraps",
+      "Outer wraps applied in opposite directions",
+      "Improved durability",
+      "Arm-friendly positioning",
+      "Value multifilament positioning",
+      "15 gauge",
+      "1.35 mm",
+      "Thickest gauge in Sensation collection",
+      "Most durable Sensation positioning",
+      "Set length 40 ft / 12.2 m"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendation",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "Installation Guidelines",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations"
+    ]
+  }
+}
