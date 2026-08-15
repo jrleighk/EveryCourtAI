@@ -1,0 +1,322 @@
+{
+  "id": "full_bed_string_recommendations",
+  "category": "Recommendation Rules",
+  "type": "Full Bed String Systems",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
+
+  "description": {
+    "en": "Core full-bed string recommendation templates used by EveryCourtAI.",
+    "zh": "EveryCourtAI 整床穿线推荐规则。"
+  },
+
+  "selection_logic": {
+    "purpose": [
+      "Determine when a player should use a full bed instead of a hybrid.",
+      "Provide recommendation templates before individual string selection."
+    ],
+
+    "decision_priority": [
+      "Player Profile",
+      "Swing Speed",
+      "Playing Style",
+      "Arm Health",
+      "Racquet DNA",
+      "Target Feel"
+    ]
+  },
+
+  "systems": [
+
+    {
+      "id": "full_poly_control",
+
+      "name": "Full Polyester Control",
+
+      "string_family": [
+        "Co-Polyester",
+        "Polyester"
+      ],
+
+      "performance_profile": {
+        "power": 6,
+        "control": 10,
+        "spin": 9,
+        "comfort": 4,
+        "feel": 7,
+        "durability": 10,
+        "tension_maintenance": 8,
+        "ball_pocketing": 6,
+        "snapback": 9
+      },
+
+      "recommended_for": {
+
+        "level": [
+          "Advanced",
+          "Tournament"
+        ],
+
+        "playing_style": [
+          "Aggressive Baseline",
+          "Heavy Topspin",
+          "Modern Tennis"
+        ],
+
+        "swing_speed": [
+          "Medium-Fast",
+          "Fast",
+          "Very Fast"
+        ]
+      },
+
+      "recommended_strings": [
+        "Luxilon 4G",
+        "Luxilon ALU Power",
+        "Babolat RPM Blast",
+        "Yonex PolyTour Rev",
+        "Solinco Tour Bite",
+        "Solinco Confidential",
+        "Head Hawk",
+        "Toroline O-TORO TOUR"
+      ],
+
+      "avoid_for": [
+        "Arm Sensitive",
+        "Slow Swing",
+        "Junior Beginner"
+      ]
+    },
+
+    {
+      "id": "soft_poly",
+
+      "name": "Soft Polyester",
+
+      "string_family": [
+        "Soft Co-Polyester"
+      ],
+
+      "performance_profile": {
+        "power": 8,
+        "control": 8,
+        "spin": 8,
+        "comfort": 8,
+        "feel": 8,
+        "durability": 8,
+        "tension_maintenance": 8,
+        "ball_pocketing": 8,
+        "snapback": 8
+      },
+
+      "recommended_for": {
+
+        "level": [
+          "Intermediate",
+          "Advanced"
+        ],
+
+        "playing_style": [
+          "Baseline",
+          "All Court"
+        ],
+
+        "swing_speed": [
+          "Medium",
+          "Medium-Fast"
+        ]
+      },
+
+      "recommended_strings": [
+        "Luxilon Element",
+        "Babolat RPM Soft",
+        "Yonex PolyTour Air",
+        "Solinco Hyper-G Soft",
+        "Toroline Truffle X Hybrid Systems",
+        "MSV Swift"
+      ],
+
+      "avoid_for": [
+        "Players Wanting Maximum Durability"
+      ]
+    },
+
+    {
+      "id": "full_multifilament",
+
+      "name": "Full Multifilament",
+
+      "string_family": [
+        "Multifilament"
+      ],
+
+      "performance_profile": {
+        "power": 9,
+        "control": 6,
+        "spin": 5,
+        "comfort": 10,
+        "feel": 10,
+        "durability": 5,
+        "tension_maintenance": 8,
+        "ball_pocketing": 10,
+        "snapback": 4
+      },
+
+      "recommended_for": {
+
+        "level": [
+          "Beginner",
+          "Intermediate",
+          "Senior"
+        ],
+
+        "playing_style": [
+          "All Court",
+          "Doubles",
+          "Flat Hitter"
+        ],
+
+        "swing_speed": [
+          "Slow",
+          "Medium"
+        ]
+      },
+
+      "recommended_strings": [
+        "Wilson NXT",
+        "Yonex REXIS Feel",
+        "Yonex REXIS Comfort",
+        "Tecnifibre X-One Biphase",
+        "Tecnifibre NRG2",
+        "Gamma Live Wire Professional"
+      ],
+
+      "avoid_for": [
+        "Frequent String Breakers",
+        "Heavy Topspin Tournament Players"
+      ]
+    },
+
+    {
+      "id": "natural_gut",
+
+      "name": "Full Natural Gut",
+
+      "string_family": [
+        "Natural Gut"
+      ],
+
+      "performance_profile": {
+        "power": 10,
+        "control": 8,
+        "spin": 7,
+        "comfort": 10,
+        "feel": 10,
+        "durability": 7,
+        "tension_maintenance": 10,
+        "ball_pocketing": 10,
+        "snapback": 6
+      },
+
+      "recommended_for": {
+
+        "level": [
+          "Advanced",
+          "Club"
+        ],
+
+        "playing_style": [
+          "All Court",
+          "Serve & Volley",
+          "Touch Player"
+        ],
+
+        "swing_speed": [
+          "Medium",
+          "Medium-Fast"
+        ]
+      },
+
+      "recommended_strings": [
+        "Babolat Touch VS",
+        "Wilson Natural Gut"
+      ],
+
+      "avoid_for": [
+        "Wet Conditions",
+        "Budget Players"
+      ]
+    },
+
+    {
+      "id": "synthetic_gut",
+
+      "name": "Synthetic Gut",
+
+      "string_family": [
+        "Synthetic Gut"
+      ],
+
+      "performance_profile": {
+        "power": 8,
+        "control": 7,
+        "spin": 5,
+        "comfort": 7,
+        "feel": 7,
+        "durability": 7,
+        "tension_maintenance": 7,
+        "ball_pocketing": 6,
+        "snapback": 4
+      },
+
+      "recommended_for": {
+
+        "level": [
+          "Beginner",
+          "Recreational",
+          "Junior"
+        ],
+
+        "playing_style": [
+          "All Court"
+        ],
+
+        "swing_speed": [
+          "Slow",
+          "Medium"
+        ]
+      },
+
+      "recommended_strings": [
+        "Wilson Synthetic Gut Power",
+        "Gamma Synthetic Gut",
+        "Yonex Dynawire",
+        "Kirschbaum Synthetic Gut Premium"
+      ],
+
+      "avoid_for": [
+        "Tournament Players Seeking Maximum Spin"
+      ]
+    }
+
+  ],
+
+  "engine_usage": {
+
+    "workflow": [
+
+      "Step 1 - Determine Full Bed or Hybrid",
+
+      "Step 2 - Select String Family",
+
+      "Step 3 - Select Individual String",
+
+      "Step 4 - Select Gauge",
+
+      "Step 5 - Calculate Tension"
+
+    ],
+
+    "next_engine": "tension_rules.json"
+  }
+}
