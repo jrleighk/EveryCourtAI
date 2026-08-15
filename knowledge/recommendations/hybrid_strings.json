@@ -1,49 +1,435 @@
 {
-  "last_updated": "2026-08-10",
+  "id": "hybrid_string_recommendations",
+  "category": "Recommendation Rules",
+  "type": "Hybrid String Systems",
+  "version": "2.0",
+  "last_updated": "2026-08-15",
+
+  "description": {
+    "en": "Core hybrid stringing templates used by EveryCourtAI to match player needs, racquet characteristics and string performance.",
+    "zh": "EveryCourtAI 用于结合球员需求、球拍特性与球线性能进行匹配的核心混合穿线模板。"
+  },
+
+  "hybrid_principles": {
+    "main_string_priority": [
+      "The main string contributes most strongly to the overall feel, spin behavior, power and response of the stringbed.",
+      "主线通常对整体手感、旋转、力量以及线床响应产生更大的影响。"
+    ],
+
+    "cross_string_priority": [
+      "The cross string is used to tune comfort, snapback, control, durability and launch behavior.",
+      "横线主要用于调整舒适度、Snapback、控制、耐久以及出球轨迹。"
+    ],
+
+    "general_rules": [
+      "Natural Gut mains + Polyester crosses prioritizes power, feel, comfort and controlled spin.",
+      "Polyester mains + Multifilament or Natural Gut crosses prioritizes spin, control and durability while softening the stringbed.",
+      "Shaped Polyester mains + Smooth Round Polyester crosses prioritizes mechanical bite plus snapback.",
+      "Soft Polyester mains + Soft cross strings are preferred when comfort is more important than maximum durability."
+    ]
+  },
+
   "hybrids": [
     {
-      "name": "Federer Style",
-      "main": "Babolat VS Touch",
-      "cross": "Luxilon ALU Power 125",
+      "id": "premium_gut_poly_control",
+      "name": "Premium Gut / Poly Control",
+      "reference_style": "Federer-Type Setup",
+
+      "configuration": {
+        "main": {
+          "string_type": "Natural Gut",
+          "preferred_strings": [
+            "Wilson Natural Gut",
+            "Babolat Touch VS"
+          ],
+          "recommended_gauge_mm": [
+            1.25,
+            1.30
+          ]
+        },
+
+        "cross": {
+          "string_type": "Smooth or Lightly Textured Co-Polyester",
+          "preferred_strings": [
+            "Luxilon ALU Power",
+            "Luxilon ALU Power Rough",
+            "Luxilon 4G",
+            "Yonex PolyTour Pro"
+          ],
+          "recommended_gauge_mm": [
+            1.20,
+            1.25
+          ]
+        }
+      },
+
+      "performance_profile": {
+        "power": 10,
+        "control": 9,
+        "spin": 9,
+        "comfort": 10,
+        "feel": 10,
+        "durability": 8,
+        "tension_maintenance": 10,
+        "ball_pocketing": 10,
+        "snapback": 9
+      },
+
       "benefits": [
         "Power",
+        "Feel",
+        "Comfort",
+        "Ball Pocketing",
+        "Controlled Spin",
+        "Excellent Tension Maintenance"
+      ],
+
+      "recommended_for": {
+        "levels": [
+          "Advanced",
+          "Tournament"
+        ],
+
+        "styles": [
+          "All Court",
+          "Serve & Volley",
+          "Doubles",
+          "Touch Player",
+          "Precision Player"
+        ],
+
+        "swing_speed": [
+          "Medium",
+          "Medium-Fast",
+          "Fast"
+        ]
+      },
+
+      "avoid_for": [
+        "Budget-Conscious Players",
+        "Frequent Natural Gut Breakers",
+        "Players Regularly Playing In Wet Conditions Without String Protection"
+      ],
+
+      "matching_logic": {
+        "prioritize_when": [
+          "Player wants maximum feel and comfort without losing polyester control.",
+          "Player uses a control-oriented or traditional player's racquet.",
+          "Player values touch, volleying, directional control and tension stability."
+        ],
+
+        "deprioritize_when": [
+          "Player wants maximum shaped-poly mechanical bite.",
+          "Player breaks strings extremely frequently."
+        ]
+      }
+    },
+
+    {
+      "id": "poly_multi_control_comfort",
+      "name": "Poly / Multifilament Control Comfort",
+
+      "configuration": {
+        "main": {
+          "string_type": "Co-Polyester",
+          "preferred_strings": [
+            "Yonex PolyTour Pro",
+            "Solinco Hyper-G Soft",
+            "Luxilon Element",
+            "Babolat RPM Soft",
+            "MSV Swift"
+          ],
+          "recommended_gauge_mm": [
+            1.20,
+            1.25
+          ]
+        },
+
+        "cross": {
+          "string_type": "Multifilament",
+          "preferred_strings": [
+            "Wilson NXT",
+            "Yonex REXIS Comfort",
+            "Yonex REXIS Feel",
+            "Solinco Vanquish",
+            "MSV Multi Q10",
+            "MSV Soft Touch"
+          ],
+          "recommended_gauge_mm": [
+            1.25,
+            1.30
+          ]
+        }
+      },
+
+      "performance_profile": {
+        "power": 8,
+        "control": 9,
+        "spin": 8,
+        "comfort": 9,
+        "feel": 9,
+        "durability": 7,
+        "tension_maintenance": 8,
+        "ball_pocketing": 9,
+        "snapback": 7
+      },
+
+      "benefits": [
         "Control",
         "Comfort",
-        "Touch"
+        "Reduced Harshness",
+        "Good Spin",
+        "Ball Pocketing"
       ],
-      "recommended_for": [
-        "Advanced",
-        "All Court",
-        "Serve & Volley"
-      ]
+
+      "recommended_for": {
+        "levels": [
+          "Intermediate",
+          "Advanced"
+        ],
+
+        "styles": [
+          "Baseline",
+          "All Court",
+          "Doubles"
+        ],
+
+        "swing_speed": [
+          "Medium",
+          "Medium-Fast",
+          "Fast"
+        ]
+      },
+
+      "special_player_profiles": [
+        "Players Transitioning Away From Full Polyester",
+        "Players With Mild Arm Sensitivity",
+        "Club Players Wanting Polyester Control With More Comfort"
+      ],
+
+      "matching_logic": {
+        "prioritize_when": [
+          "Full polyester feels too firm.",
+          "Player still wants polyester-style control and spin.",
+          "Comfort needs to increase without moving completely to multifilament."
+        ]
+      }
     },
+
     {
-      "name": "Nadal Style",
-      "main": "Babolat RPM Blast",
-      "cross": "Babolat RPM Blast",
+      "id": "shaped_poly_round_poly_spin",
+      "name": "Shaped Poly / Round Poly Spin",
+
+      "configuration": {
+        "main": {
+          "string_type": "Shaped Co-Polyester",
+          "preferred_strings": [
+            "Solinco Hyper-G",
+            "Toroline O-TORO",
+            "Toroline VAMOS",
+            "Yonex PolyTour Rev",
+            "Wilson Revolve Spin",
+            "MSV Focus Hex"
+          ],
+          "recommended_gauge_mm": [
+            1.20,
+            1.23,
+            1.25
+          ]
+        },
+
+        "cross": {
+          "string_type": "Smooth Round Co-Polyester",
+          "preferred_strings": [
+            "Solinco Hyper-G Round",
+            "Toroline O-TORO SNAP",
+            "Toroline A5",
+            "Yonex PolyTour Pro",
+            "Wilson Revolve"
+          ],
+          "recommended_gauge_mm": [
+            1.20,
+            1.25
+          ]
+        }
+      },
+
+      "performance_profile": {
+        "power": 8,
+        "control": 9,
+        "spin": 10,
+        "comfort": 7,
+        "feel": 8,
+        "durability": 9,
+        "tension_maintenance": 8,
+        "ball_pocketing": 8,
+        "snapback": 10
+      },
+
       "benefits": [
         "Maximum Spin",
-        "Heavy Topspin",
-        "Aggressive Baseline"
+        "Mechanical Ball Bite",
+        "Snapback",
+        "Heavy Ball",
+        "Controlled Launch"
       ],
-      "recommended_for": [
-        "Advanced",
-        "Baseline"
-      ]
+
+      "recommended_for": {
+        "levels": [
+          "Intermediate",
+          "Advanced",
+          "Tournament"
+        ],
+
+        "styles": [
+          "Heavy Topspin",
+          "Aggressive Baseline",
+          "Modern Baseline"
+        ],
+
+        "swing_speed": [
+          "Medium-Fast",
+          "Fast",
+          "Very Fast"
+        ]
+      },
+
+      "avoid_for": [
+        "Players With Significant Arm Sensitivity",
+        "Slow Swing Players",
+        "Players Seeking Maximum Plush Comfort"
+      ],
+
+      "matching_logic": {
+        "prioritize_when": [
+          "Player wants high spin but also predictable snapback.",
+          "Player wants more string movement than a shaped-poly full bed.",
+          "Racquet has an open or spin-friendly string pattern."
+        ]
+      }
     },
+
     {
-      "name": "Senior Comfort",
-      "main": "Babolat VS Touch",
-      "cross": "Luxilon ALU Power 125",
+      "id": "soft_poly_comfort_hybrid",
+      "name": "Soft Poly Comfort Hybrid",
+
+      "configuration": {
+        "main": {
+          "string_type": "Soft Co-Polyester",
+          "preferred_strings": [
+            "Yonex PolyTour Air",
+            "Solinco Hyper-G Soft",
+            "Luxilon Element",
+            "Babolat RPM Soft",
+            "MSV Swift"
+          ],
+          "recommended_gauge_mm": [
+            1.20,
+            1.25
+          ]
+        },
+
+        "cross": {
+          "string_type": "Soft Multifilament or Elastic Polymer",
+          "preferred_strings": [
+            "Yonex REXIS Comfort",
+            "Wilson NXT",
+            "MSV Soft Touch",
+            "Solinco Vanquish",
+            "Toroline Truffle X"
+          ],
+          "recommended_gauge_mm": [
+            1.25,
+            1.30
+          ]
+        }
+      },
+
+      "performance_profile": {
+        "power": 9,
+        "control": 8,
+        "spin": 8,
+        "comfort": 10,
+        "feel": 9,
+        "durability": 7,
+        "tension_maintenance": 8,
+        "ball_pocketing": 10,
+        "snapback": 7
+      },
+
       "benefits": [
         "Arm Friendly",
         "Comfort",
-        "Control"
+        "Pocketing",
+        "Easy Power",
+        "Moderate Spin"
       ],
-      "recommended_for": [
-        "45+",
-        "Advanced Club Player"
-      ]
+
+      "recommended_for": {
+        "levels": [
+          "Intermediate",
+          "Advanced",
+          "Club Player"
+        ],
+
+        "styles": [
+          "All Court",
+          "Baseline",
+          "Doubles"
+        ],
+
+        "swing_speed": [
+          "Slow",
+          "Medium",
+          "Medium-Fast"
+        ]
+      },
+
+      "special_player_profiles": [
+        "Arm Sensitive",
+        "Players Returning From A Break",
+        "Players Who Find Full Polyester Too Firm",
+        "Older Club Players"
+      ],
+
+      "matching_logic": {
+        "prioritize_when": [
+          "Comfort is a major requirement.",
+          "Player still wants some polyester control and spin.",
+          "Player uses a stiff or powerful racquet."
+        ],
+
+        "deprioritize_when": [
+          "Player is a frequent string breaker.",
+          "Player wants maximum tournament-level firmness."
+        ]
+      }
     }
-  ]
+  ],
+
+  "excluded_from_hybrid_database": [
+    {
+      "name": "Nadal Style",
+      "reason": "Full bed RPM Blast is not a hybrid configuration.",
+      "recommended_location": "knowledge/recommendations/full_bed_strings.json"
+    }
+  ],
+
+  "engine_usage": {
+    "purpose": [
+      "Candidate generation",
+      "Hybrid architecture selection",
+      "Main and cross role selection",
+      "Player-profile matching",
+      "Racquet compensation logic"
+    ],
+
+    "not_responsible_for": [
+      "Final tension calculation",
+      "Final recommendation score",
+      "Medical diagnosis"
+    ],
+
+    "next_engine": "tension_rules.json"
+  }
 }
