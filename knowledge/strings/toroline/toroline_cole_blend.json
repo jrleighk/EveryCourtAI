@@ -1,0 +1,473 @@
+{
+  "id": "toroline_cole_blend",
+  "brand": "Toroline",
+  "series": "COLE Blend",
+  "model": "COLE Blend",
+  "category": "Hybrid String Set",
+
+  "collaboration": {
+    "partner": "Cole Shoults",
+    "role": "Development Collaboration",
+    "confidence": "Official Manufacturer Claim"
+  },
+
+  "manufacturer_data": {
+    "construction": "Dual Co-Poly Hybrid",
+    "main_string": "Toroline O-TORO TOUR 1.23 Mint",
+    "cross_string": "Toroline O-TORO 1.23 Neon Green",
+    "official_positioning": "Precision-oriented hybrid engineered for players who want maximum command and durability from the mains while retaining explosive snapback, spin and pocketing from the crosses.",
+    "target_level": "Advanced / Tournament",
+    "performance_focus": [
+      "Precision",
+      "Spin",
+      "Control",
+      "Durability",
+      "Penetration",
+      "Full-Swing Stability"
+    ]
+  },
+
+  "specifications": {
+    "construction": "Firm Hexagonal Co-Poly + Medium Hexagonal Co-Poly Hybrid",
+
+    "packaging": {
+      "type": "Two Half Sets",
+      "half_sets_per_package": 2,
+      "length_per_half_set_m": 6.7,
+      "intended_racquets": 1,
+      "total_length_m": 13.4
+    },
+
+    "mains": {
+      "string": "Toroline O-TORO TOUR",
+      "gauge_mm": 1.23,
+      "color": "Mint",
+      "shape": "Hexagonal",
+      "profile_sides": 6,
+      "material": "Co-Polyester",
+      "flex": "Firm",
+      "primary_role": [
+        "Maximum Control",
+        "Durability",
+        "Stability",
+        "Directional Precision",
+        "Trajectory Control"
+      ]
+    },
+
+    "crosses": {
+      "string": "Toroline O-TORO",
+      "gauge_mm": 1.23,
+      "color": "Neon Green",
+      "shape": "Hexagonal",
+      "profile_sides": 6,
+      "material": "Co-Polyester",
+      "flex": "Medium",
+      "primary_role": [
+        "Spin",
+        "Snapback",
+        "Ball Pocketing",
+        "Comfort",
+        "Heavy Rotation"
+      ]
+    }
+  },
+
+  "component_strings": {
+    "o_toro_tour_mint_123": {
+      "role": "Mains",
+      "construction": "Firm Hexagonal Co-Polyester",
+      "primary_benefits": [
+        "Maximum Control",
+        "Long-Lasting Durability",
+        "High Stability",
+        "Full-Swing Confidence"
+      ]
+    },
+
+    "o_toro_neon_green_123": {
+      "role": "Crosses",
+      "construction": "Medium-Flex Hexagonal Co-Polyester",
+      "primary_benefits": [
+        "Explosive Snapback",
+        "Heavy Spin",
+        "Ball Pocketing",
+        "Arm-Friendly Comfort"
+      ]
+    }
+  },
+
+  "official_hybrid_configuration": {
+    "mains": "O-TORO TOUR Mint 1.23",
+    "crosses": "O-TORO Neon Green 1.23",
+
+    "official_result": [
+      "Clean Launch",
+      "Penetrating Ball Flight",
+      "Explosive Snapback",
+      "Heavy Rotation",
+      "High Precision",
+      "Confidence on Full Swings"
+    ]
+  },
+
+  "technology": [
+    "Dual Hexagonal Co-Poly Architecture",
+    "Firm-Main Stability Platform",
+    "Medium-Flex Spin Cross",
+    "Mechanical Ball Grip",
+    "Snapback Optimization",
+    "Trajectory Control Tuning"
+  ],
+
+  "technology_details": {
+    "flex_contrast": {
+      "mains": "Firm",
+      "crosses": "Medium",
+      "description": "The firmer O-TORO TOUR mains provide command and stability while the more responsive O-TORO crosses add snapback, pocketing and spin.",
+      "primary_benefits": [
+        "Controlled Main-String Response",
+        "More Responsive Cross String",
+        "Balanced Spin and Precision",
+        "Improved Full-Swing Confidence"
+      ]
+    },
+
+    "dual_hexagonal_geometry": {
+      "description": "Both strings use hexagonal geometry, maximizing mechanical interaction with the ball while the different flex profiles create separate control and spin roles within the stringbed."
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Precision Spin Dual-Poly Hybrid",
+    "target_player": "Advanced / Tournament",
+    "arm_friendly": false,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true,
+    "precision_focus": true,
+    "penetration_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 8,
+    "feel": 9,
+    "durability": 10,
+    "tension_maintenance": 9,
+    "elasticity": 8,
+    "ball_pocketing": 9,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 8,
+    "feel": 9,
+    "durability": 10,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium-Firm",
+    "snapback": 10,
+    "ball_pocketing": 9,
+    "string_movement": 3,
+    "tension_stability": 9,
+    "spin_window": "Very High",
+    "predictability": 10,
+    "arm_friendliness": 7,
+    "directional_precision": 10,
+    "ball_bite": 10,
+    "surface_grip": 10,
+    "court_penetration": 10,
+    "launch_angle_consistency": 10,
+    "full_swing_stability": 10,
+    "heavy_ball_potential": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "Power Baseliner",
+      "All Court",
+      "Precision-Oriented Player"
+    ],
+
+    "special_player_profiles": [
+      "Players Seeking Maximum Precision Without Losing Spin",
+      "Players Wanting Firm Main-String Control",
+      "Players Seeking Heavy Rotation",
+      "Players Taking Full Aggressive Swings",
+      "Players Prioritizing Durability and Stability",
+      "Players Wanting Penetrating Ball Flight"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson Shift",
+    "Wilson RF 01",
+    "HEAD Speed",
+    "HEAD Radical",
+    "HEAD Extreme",
+    "Yonex VCORE",
+    "Yonex EZONE",
+    "Babolat Pure Aero",
+    "Babolat Pure Strike",
+    "Tecnifibre T-FIGHT",
+    "Dunlop SX"
+  ],
+
+  "hybrid_physics": {
+    "main_string_role": {
+      "string": "O-TORO TOUR",
+      "flex": "Firm",
+      "shape": "Hexagonal",
+      "primary_effects": [
+        "Control",
+        "Stability",
+        "Trajectory Management",
+        "Durability"
+      ]
+    },
+
+    "cross_string_role": {
+      "string": "O-TORO",
+      "flex": "Medium",
+      "shape": "Hexagonal",
+      "primary_effects": [
+        "Spin",
+        "Snapback",
+        "Pocketing",
+        "Comfort"
+      ]
+    },
+
+    "combined_effect": [
+      "Firm Directional Platform",
+      "Explosive Spin Response",
+      "Controlled Launch",
+      "Heavy Ball Production",
+      "High Confidence at Full Swing Speed"
+    ]
+  },
+
+  "estimated_lifespan": {
+    "hybrid_setup": {
+      "heavy_topspin_hours": "9-16",
+      "club_player_hours": "18-30"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Low-Medium",
+    "tension_loss_sensitivity": "Medium-Low",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when O-TORO cross snapback, O-TORO TOUR stability, or overall trajectory consistency noticeably declines."
+  },
+
+  "comparison_data": {
+    "vs_full_bed_o_toro_tour": {
+      "spin": "Higher",
+      "pocketing": "Higher",
+      "comfort": "Higher",
+      "control": "Slightly Softer",
+      "launch": "Slightly More Lively",
+      "durability": "Slightly Lower"
+    },
+
+    "vs_full_bed_o_toro": {
+      "control": "Higher",
+      "stability": "Higher",
+      "durability": "Higher",
+      "launch_angle": "Lower / More Controlled",
+      "spin": "Similar / More Controlled"
+    },
+
+    "vs_101_blend": {
+      "mechanical_ball_grip": "Higher",
+      "cross_friction": "Higher",
+      "snapback": "Slightly Lower",
+      "control": "Higher",
+      "durability": "Higher",
+      "penetration": "Higher",
+      "target_player": "More Advanced / More Control-Oriented"
+    },
+
+    "vs_stevie_blend": {
+      "spin": "Higher",
+      "comfort": "Lower",
+      "pocketing": "Lower",
+      "durability": "Higher",
+      "full_swing_stability": "Higher",
+      "response": "More Direct"
+    }
+  },
+
+  "science_metrics": {
+    "main_spin_mechanism": [
+      "Hexagonal Mechanical Grip",
+      "Stable Main-String Platform"
+    ],
+
+    "cross_spin_mechanism": [
+      "Hexagonal Ball Grip",
+      "Snapback",
+      "Medium-Flex Elastic Response"
+    ],
+
+    "trajectory_profile": "Penetrating / Controlled",
+
+    "launch_angle_profile": "Medium",
+
+    "mechanical_ball_grip_class": "Very High",
+
+    "full_swing_stability_class": "Very High",
+
+    "hybrid_class": "Advanced Dual-Hexagonal Performance Hybrid"
+  },
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Advanced Players Seeking Precision and Spin",
+      "Aggressive Baseliners",
+      "Fast Swing Speed Players",
+      "Players Wanting More Control Than Full-Bed O-TORO",
+      "Players Wanting More Spin Than Full-Bed O-TORO TOUR",
+      "Players Seeking Penetrating Ball Flight",
+      "Tournament Players"
+    ],
+
+    "avoid_for": [
+      "Beginners With Slow Swing Speed",
+      "Players With Significant Arm Sensitivity",
+      "Players Seeking Plush Hybrid Comfort",
+      "Players Wanting Maximum Low-Friction Round-Cross Snapback"
+    ],
+
+    "alternative_strings": [
+      "Toroline 101 Blend",
+      "Toroline STEVIE Blend",
+      "Toroline O-TORO TOUR Full Bed",
+      "Toroline O-TORO Full Bed",
+      "Toroline VAMOS + A5"
+    ]
+  },
+
+  "comparison_tags": [
+    "COLE Blend",
+    "Cole Shoults",
+    "O-TORO TOUR",
+    "O-TORO",
+    "Dual Hexagonal",
+    "Firm Main",
+    "Medium Cross",
+    "Precision",
+    "Spin",
+    "Penetration",
+    "Durability",
+    "Mint Green"
+  ],
+
+  "ai_keywords": [
+    "toroline",
+    "cole blend",
+    "cole shoults",
+    "o toro tour mint",
+    "o-toro tour mint",
+    "o toro neon green",
+    "o-toro neon green",
+    "1.23",
+    "hexagonal",
+    "firm mains",
+    "medium crosses",
+    "spin",
+    "control",
+    "durability",
+    "snapback",
+    "pocketing",
+    "penetrating ball flight",
+    "clean launch",
+    "full swings"
+  ],
+
+  "target_competitors": [
+    "Toroline 101 Blend",
+    "Toroline STEVIE Blend",
+    "Solinco Hyper-G Hybrid System",
+    "Solinco Confidential Hybrid Setups",
+    "HEAD Lynx Tour Hybrid",
+    "Babolat RPM Hybrid Configurations"
+  ],
+
+  "description": {
+    "en": "Toroline COLE Blend, developed with Cole Shoults, combines firm O-TORO TOUR 1.23 Mint mains with medium-flex O-TORO 1.23 Neon Green crosses. The O-TORO TOUR mains create a stable, durable and highly controlled platform, while the more responsive O-TORO crosses contribute explosive snapback, heavy spin, pocketing and additional comfort. The result is a precision-oriented dual-poly hybrid with a clean launch, penetrating ball flight and enough spin response to support aggressive full swings.",
+
+    "zh": "Toroline COLE Blend 与 Cole Shoults 共同开发，采用偏硬的 O-TORO TOUR 1.23 Mint 作为主线，并搭配中等 Flex 的 O-TORO 1.23 Neon Green 作为横线。O-TORO TOUR 主线建立高控制、高稳定和耐久的线床基础，而 O-TORO 横线则补充更强 Snapback、旋转、Pocketing 和一定舒适性。整体形成一套兼顾精准与旋转的双聚酯 Hybrid，特点是干净的 Launch、具穿透力的球路，以及高速完整挥拍时非常强的信心和稳定性。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Toroline COLE Blend",
+      "Designed with Cole Shoults",
+      "O-TORO TOUR Mint 1.23 mains",
+      "Hexagonal co-poly mains",
+      "Firm flex mains",
+      "Maximum control positioning",
+      "Long-lasting durability positioning",
+      "O-TORO Neon Green 1.23 crosses",
+      "Hexagonal co-poly crosses",
+      "Medium flex crosses",
+      "Spin enhancement",
+      "Arm-friendly comfort positioning",
+      "Ball pocketing",
+      "Explosive snapback",
+      "Heavy rotation",
+      "Clean launch",
+      "Penetrating ball flight",
+      "Confidence on full swings",
+      "Two half sets per package",
+      "6.7 m per half set",
+      "One-racquet package configuration"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Physics",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
