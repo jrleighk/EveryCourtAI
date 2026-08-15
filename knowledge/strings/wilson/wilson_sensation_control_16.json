@@ -1,0 +1,477 @@
+{
+  "id": "wilson_sensation_control_16",
+  "brand": "Wilson",
+  "series": "Sensation Control",
+  "model": "Sensation Control 16",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Multifilament / Composite",
+    "material": "Nylon Fiber Core + Liquid Crystalline Polymer Ribbons",
+    "string_family": "Multifilament Control",
+    "core_structure": "Nylon Fiber Core Wrapped with Liquid Crystalline Polymer Ribbons",
+    "cross_section": "Round",
+    "surface": "Smooth",
+    "tour_positioning": "Comfort / Control / Durability Multifilament",
+    "official_positioning": "Control-oriented evolution of Wilson Sensation designed to provide a comfortable response with increased firmness, improved durability and reduced power for the modern big-hitting game.",
+    "target_level": "Intermediate / Advanced"
+  },
+
+  "specifications": {
+    "construction": "Nylon Multifilament Composite",
+    "cross_section": "Round",
+    "surface": "Smooth",
+
+    "available_colors": [
+      "Natural"
+    ],
+
+    "color_availability": {
+      "Natural": {
+        "gauge_mm": 1.30,
+        "gauge_name": "16",
+        "available": true
+      }
+    },
+
+    "available_gauges": [
+      {
+        "gauge_name": "16",
+        "gauge_mm": 1.30,
+        "available": true,
+
+        "available_colors": [
+          "Natural"
+        ],
+
+        "power": 8,
+        "control": 10,
+        "spin": 7,
+        "comfort": 9,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "elasticity": 8,
+        "shock_absorption": 9,
+        "ball_pocketing": 9,
+        "launch_angle": "Medium-Low",
+
+        "recommended_use": [
+          "Control",
+          "Comfort",
+          "Big Hitters",
+          "Full Bed",
+          "Hybrid Use",
+          "Players Wanting Less Power Than Standard Sensation",
+          "Players Seeking Firmer Multifilament Response"
+        ]
+      }
+    ],
+
+    "packaging": [
+      {
+        "type": "Set",
+        "length_ft": 40,
+        "length_m": 12.2
+      }
+    ]
+  },
+
+  "technology": [
+    "Nylon Fiber Core",
+    "Liquid Crystalline Polymer Ribbons",
+    "Control-Oriented Multifilament Construction",
+    "Increased Firmness",
+    "Power Moderation"
+  ],
+
+  "technology_details": {
+    "nylon_fiber_core": {
+      "description": "The nylon fiber core maintains the comfort and elastic response associated with multifilament construction.",
+      "primary_benefits": [
+        "Comfort",
+        "Shock Absorption",
+        "Playability",
+        "Ball Pocketing"
+      ]
+    },
+
+    "liquid_crystalline_polymer_ribbons": {
+      "description": "Liquid crystalline polymer ribbons wrap the nylon fiber core to increase firmness, structural stability and durability.",
+      "primary_benefits": [
+        "Control",
+        "Durability",
+        "Firmness",
+        "Directional Stability"
+      ]
+    },
+
+    "power_control_tuning": {
+      "description": "Compared with the original Sensation, Sensation Control is intentionally designed to reduce free power while increasing control.",
+      "primary_benefits": [
+        "Reduced Launch",
+        "Improved Depth Control",
+        "Confidence on Full Swings",
+        "Better Response for Big Hitters"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Control-Oriented Multifilament",
+    "target_player": "Intermediate / Advanced",
+    "arm_friendly": true,
+    "spin_focus": false,
+    "control_focus": true,
+    "power_focus": false,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true,
+    "pocketing_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 10,
+    "spin": 7,
+    "comfort": 9,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9,
+    "elasticity": 8,
+    "shock_absorption": 9,
+    "ball_pocketing": 9,
+    "launch_angle": "Medium-Low"
+  },
+
+  "ai_rating": {
+    "power": 8,
+    "control": 10,
+    "spin": 7,
+    "comfort": 9,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium-Soft",
+    "snapback": 6,
+    "ball_pocketing": 9,
+    "string_movement": 5,
+    "tension_stability": 9,
+    "spin_window": "Medium-Low",
+    "predictability": 10,
+    "arm_friendliness": 9,
+    "shock_absorption": 9,
+    "directional_precision": 10,
+    "sweet_spot_forgiveness": 9,
+    "power_response": 8,
+    "control_response": 10,
+    "firmness": 8,
+    "full_swing_confidence": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced"
+    ],
+
+    "swing_speed": [
+      "Medium",
+      "Medium-Fast",
+      "Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "All Court",
+      "Flat Hitter",
+      "Power Baseliner",
+      "Doubles"
+    ],
+
+    "special_player_profiles": [
+      "Big Hitters",
+      "Players Wanting Multifilament Comfort With More Control",
+      "Players Finding Standard Sensation Too Powerful",
+      "Players Seeking Firmer Multifilament Feel",
+      "Players Wanting More Durability Than Standard Comfort Multifilaments",
+      "Players Transitioning Away From Polyester"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson Clash",
+    "Wilson RF 01",
+    "Wilson Pro Staff",
+    "Wilson Ultra",
+    "HEAD Speed",
+    "HEAD Radical",
+    "Yonex EZONE",
+    "Yonex PERCEPT",
+    "Babolat Pure Strike",
+    "Tecnifibre T-FIGHT",
+    "Dunlop CX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Luxilon ALU Power",
+      "Luxilon 4G",
+      "Luxilon Element",
+      "Wilson Revolve",
+      "Wilson Revolve Spin"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Comfort",
+        "Control",
+        "Feel",
+        "Ball Pocketing"
+      ],
+
+      "as_crosses": [
+        "Stringbed Softening",
+        "Control Support",
+        "Comfort",
+        "Shock Reduction"
+      ]
+    },
+
+    "hybrid_note": "Sensation Control 16 is particularly useful for players who want to soften a polyester hybrid without adding as much free power as a traditional comfort multifilament."
+  },
+
+  "gauge_recommendation": {
+    "1.30": {
+      "gauge_name": "16",
+      "color": "Natural",
+
+      "best_for": [
+        "Control",
+        "Durability",
+        "Big Hitters",
+        "Full-Swing Confidence",
+        "Comfort-Control Balance"
+      ],
+
+      "tradeoffs": [
+        "Less Free Power Than Standard Sensation",
+        "Firmer Feel Than Standard Sensation",
+        "Less Spin Than Polyester"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.30": {
+      "heavy_topspin_hours": "6-10",
+      "club_player_hours": "18-30"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Immediate",
+    "peak_playability": "Immediate",
+    "performance_drop": "Low-Medium",
+    "tension_loss_sensitivity": "Medium-Low",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when fraying, tension loss, excessive string movement or reduced directional control becomes noticeable."
+  },
+
+  "comparison_data": {
+    "vs_sensation_16": {
+      "gauge": "Same 1.30 mm / 16",
+
+      "firmness": {
+        "sensation_control": "Higher",
+        "sensation": "Softer"
+      },
+
+      "control": {
+        "sensation_control": "Higher",
+        "sensation": "Lower / More Power-Oriented"
+      },
+
+      "power": {
+        "sensation_control": "Lower / More Controlled",
+        "sensation": "Higher"
+      },
+
+      "durability": {
+        "sensation_control": "Higher",
+        "sensation": "Good"
+      },
+
+      "comfort": {
+        "sensation_control": "High",
+        "sensation": "Higher / Softer"
+      },
+
+      "target_player": {
+        "sensation_control": "Big Hitting Intermediate / Advanced",
+        "sensation": "Recreational / Comfort-Oriented"
+      }
+    },
+
+    "vs_nxt_control_16": {
+      "control": "High",
+      "comfort": "High",
+      "price_positioning": "More Value-Oriented",
+      "construction": {
+        "sensation_control": "Nylon Core + Liquid Crystalline Polymer Ribbons",
+        "nxt_control": "Polyester + Nylon Microfibers in Polyurethane"
+      },
+      "performance_positioning": {
+        "sensation_control": "Firm Value Multifilament Control",
+        "nxt_control": "Premium Hybrid Multifilament Control"
+      }
+    },
+
+    "vs_polyester": {
+      "comfort": "Much Higher",
+      "shock_absorption": "Higher",
+      "power": "Higher",
+      "spin": "Lower",
+      "snapback": "Lower",
+      "control": "Softer / Less Firm"
+    }
+  },
+
+  "science_metrics": {
+    "material_class": "Nylon / Liquid Crystalline Polymer Composite Multifilament",
+
+    "geometry": {
+      "shape": "Round"
+    },
+
+    "comfort_class": "High",
+    "control_class": "Very High for Multifilament",
+    "power_class": "Moderate-High",
+    "shock_absorption_class": "High",
+    "ball_pocketing_class": "High",
+    "durability_class": "High for Multifilament",
+    "performance_class": "Control-Oriented Multifilament"
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Big Hitters Seeking Multifilament Comfort",
+      "Players Wanting More Control Than Standard Sensation",
+      "Players Seeking Reduced Free Power",
+      "Players Wanting a Firmer Multifilament",
+      "Players Transitioning Away From Full Polyester",
+      "Players Building Comfort-Control Hybrids"
+    ],
+
+    "avoid_for": [
+      "Players Seeking Maximum Free Power",
+      "Players Wanting Extremely Plush Multifilament Feel",
+      "Heavy Topspin Players Seeking Maximum Snapback",
+      "Frequent String Breakers Requiring Polyester-Level Durability"
+    ],
+
+    "alternative_strings": [
+      "Wilson Sensation 16",
+      "Wilson NXT Control 16",
+      "Wilson NXT 16",
+      "Head Velocity MLT",
+      "Tecnifibre Multifeel",
+      "Babolat Xcel"
+    ]
+  },
+
+  "comparison_tags": [
+    "Wilson",
+    "Sensation Control",
+    "Sensation Control 16",
+    "Multifilament",
+    "Nylon",
+    "Liquid Crystalline Polymer",
+    "Control",
+    "Comfort",
+    "Big Hitter",
+    "Natural",
+    "1.30"
+  ],
+
+  "ai_keywords": [
+    "wilson",
+    "sensation control",
+    "sensation control 16",
+    "wilson sensation control 16",
+    "1.30",
+    "16 gauge",
+    "natural",
+    "nylon fiber core",
+    "liquid crystalline polymer",
+    "polymer ribbons",
+    "multifilament",
+    "comfort",
+    "control",
+    "firm",
+    "durability",
+    "big hitter",
+    "reduced power"
+  ],
+
+  "target_competitors": [
+    "Wilson NXT Control 16",
+    "Wilson Sensation 16",
+    "Head Velocity MLT",
+    "Tecnifibre Multifeel",
+    "Babolat Xcel"
+  ],
+
+  "description": {
+    "en": "Wilson Sensation Control 16 is a control-oriented evolution of the original Sensation multifilament. It uses a nylon fiber core wrapped in liquid crystalline polymer ribbons to increase firmness, durability and directional control while maintaining a comfortable response. Designed for the modern big-hitting game, Sensation Control intentionally reduces some of the free power of standard Sensation, allowing aggressive players to swing harder with improved depth and trajectory control.",
+
+    "zh": "Wilson Sensation Control 16 是普通 Sensation 的控制型进阶版本。它采用尼龙纤维核心，并在外层加入 Liquid Crystalline Polymer 液晶聚合物带材，通过增加线床 Firmness 来提升耐久、方向控制和击球稳定性，同时继续保留多芯线应有的舒适表现。与普通 Sensation 相比，它刻意降低 Free Power、提高 Control，因此更加适合现代大力击球球员，让球员能够更放心地完成完整挥拍并控制击球深度。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Wilson Sensation Control 16",
+      "Natural color",
+      "Nylon fiber core",
+      "Liquid crystalline polymer ribbons",
+      "Comfortable feel",
+      "Increased firmness",
+      "Enhanced durability",
+      "Optimized control",
+      "Big-hitting modern game positioning",
+      "More control than original Sensation positioning",
+      "Reduced power compared with original Sensation positioning",
+      "16 gauge",
+      "1.30 mm",
+      "Set length 40 ft / 12.2 m"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendation",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
