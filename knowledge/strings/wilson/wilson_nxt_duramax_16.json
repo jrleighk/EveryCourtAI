@@ -1,0 +1,370 @@
+{
+  "id": "wilson_nxt_duramax_16",
+  "brand": "Wilson",
+  "series": "NXT Duramax",
+  "model": "NXT Duramax 16",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Multifilament",
+    "material": "PU-Bonded Multifilament",
+    "string_family": "Multifilament",
+    "core_structure": "PU-Bonded Multifilament with Abrasion Shields",
+    "cross_section": "Round",
+    "surface": "Smooth",
+    "tour_positioning": "Durable Comfort Multifilament",
+    "official_positioning": "The most durable version of NXT featuring Abrasion Shields to protect PU-bonded fibers while maintaining the comfort, power and spin associated with the NXT family.",
+    "target_level": "Intermediate / Advanced"
+  },
+
+  "specifications": {
+    "construction": "PU-Bonded Multifilament",
+    "cross_section": "Round",
+    "surface": "Smooth",
+
+    "available_colors": [
+      "Natural"
+    ],
+
+    "color_availability": {
+      "Natural": {
+        "gauge_mm": 1.32,
+        "gauge_name": "16",
+        "available": true
+      }
+    },
+
+    "available_gauges": [
+      {
+        "gauge_name": "16",
+        "gauge_mm": 1.32,
+        "available": true,
+
+        "available_colors": [
+          "Natural"
+        ],
+
+        "power": 9,
+        "control": 9,
+        "spin": 8,
+        "comfort": 10,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "elasticity": 9,
+        "shock_absorption": 10,
+        "ball_pocketing": 9,
+        "launch_angle": "Medium"
+      }
+    ],
+
+    "packaging": [
+      {
+        "type": "Set",
+        "length_ft": 40,
+        "length_m": 12.2
+      }
+    ]
+  },
+
+  "technology": [
+    "Abrasion Shields",
+    "PU-Bonded Multifilament",
+    "Reinforced Fiber Protection"
+  ],
+
+  "technology_details": {
+    "abrasion_shields": {
+      "description": "Abrasion Shields reinforce the outer structure and protect PU-bonded fibers from excessive wear, significantly improving resistance to string breakage.",
+      "primary_benefits": [
+        "Higher Durability",
+        "Reduced String Breakage",
+        "Longer Playability"
+      ]
+    },
+
+    "pu_bonded_core": {
+      "description": "PU-bonded multifilament fibers preserve the classic soft feel, comfort and power of the NXT family.",
+      "primary_benefits": [
+        "Comfort",
+        "Power",
+        "Shock Absorption",
+        "Feel"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Durable Premium Multifilament",
+    "target_player": "Intermediate / Advanced",
+    "arm_friendly": true,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 9,
+    "spin": 8,
+    "comfort": 10,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9,
+    "elasticity": 9,
+    "shock_absorption": 10,
+    "ball_pocketing": 9,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 9,
+    "spin": 8,
+    "comfort": 10,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Soft-Medium",
+    "snapback": 6,
+    "ball_pocketing": 9,
+    "string_movement": 5,
+    "tension_stability": 9,
+    "spin_window": "Medium",
+    "predictability": 9,
+    "arm_friendliness": 10,
+    "shock_absorption": 10,
+    "abrasion_resistance": 10,
+    "string_break_resistance": 9
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced"
+    ],
+
+    "swing_speed": [
+      "Medium",
+      "Medium-Fast",
+      "Fast"
+    ],
+
+    "play_style": [
+      "Baseline",
+      "All Court",
+      "Doubles"
+    ],
+
+    "special_player_profiles": [
+      "Players Breaking Strings Frequently",
+      "Players Wanting Premium Multifilament Comfort",
+      "Players Seeking More Power Than Duramax 15",
+      "Big Hitters",
+      "Players Avoiding Polyester"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Clash",
+    "Wilson Blade",
+    "Wilson RF 01",
+    "Wilson Pro Staff",
+    "HEAD Speed",
+    "Yonex EZONE",
+    "Babolat Pure Drive",
+    "Tecnifibre T-FIGHT"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Luxilon ALU Power",
+      "Luxilon 4G",
+      "Wilson Revolve",
+      "Wilson Revolve Spin"
+    ],
+
+    "hybrid_note": "Ideal for players who want a durable multifilament in a full bed or as the comfort component in a polyester hybrid."
+  },
+
+  "gauge_recommendation": {
+    "1.32": {
+      "gauge_name": "16",
+
+      "best_for": [
+        "Balanced Durability",
+        "Comfort",
+        "Power",
+        "Frequent String Breakers",
+        "Long Match Play"
+      ],
+
+      "tradeoffs": [
+        "Less Feel Than NXT 17",
+        "Less Durability Than Duramax 15"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.32": {
+      "heavy_topspin_hours": "7-12",
+      "club_player_hours": "20-34"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Immediate",
+    "peak_playability": "Immediate",
+    "performance_drop": "Low",
+    "tension_loss_sensitivity": "Low",
+    "playability_duration": "Excellent",
+    "recommended_monitoring": "Replace when severe fraying or significant tension loss affects performance."
+  },
+
+  "comparison_data": {
+    "vs_nxt_duramax_15": {
+      "gauge": "Thinner (1.32 mm vs 1.40 mm)",
+      "power": "Higher",
+      "feel": "Better",
+      "durability": "Slightly Lower",
+      "comfort": "Similar"
+    },
+
+    "vs_nxt_16": {
+      "durability": "Higher",
+      "comfort": "Similar",
+      "power": "Similar",
+      "spin": "Similar",
+      "string_break_resistance": "Higher"
+    },
+
+    "vs_polyester": {
+      "comfort": "Much Higher",
+      "arm_friendliness": "Much Higher",
+      "durability": "Lower",
+      "power": "Higher"
+    }
+  },
+
+  "science_metrics": {
+    "material_class": "Reinforced Multifilament",
+
+    "geometry": {
+      "shape": "Round"
+    },
+
+    "durability_class": "Very High",
+    "comfort_class": "Very High",
+    "shock_absorption_class": "Very High",
+    "performance_class": "Premium Durable Multifilament"
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Breaking Strings Frequently",
+      "Players Wanting More Power Than Duramax 15",
+      "Players Seeking Multifilament Comfort",
+      "Players With Arm Sensitivity",
+      "Big Hitters"
+    ],
+
+    "avoid_for": [
+      "Players Seeking Maximum Spin From Polyester",
+      "Players Wanting Ultra-Thin Gauges",
+      "Players Seeking Firm Tour Polyester Response"
+    ],
+
+    "alternative_strings": [
+      "Wilson NXT Duramax 15",
+      "Wilson NXT 16",
+      "Wilson NXT Control",
+      "Tecnifibre X-One Biphase",
+      "Head Velocity MLT"
+    ]
+  },
+
+  "comparison_tags": [
+    "Wilson",
+    "NXT Duramax",
+    "16 Gauge",
+    "1.32",
+    "Natural",
+    "Multifilament",
+    "Abrasion Shields",
+    "Durable"
+  ],
+
+  "ai_keywords": [
+    "wilson",
+    "nxt duramax",
+    "wilson nxt duramax 16",
+    "1.32",
+    "16 gauge",
+    "natural",
+    "abrasion shields",
+    "durable multifilament",
+    "comfort",
+    "power",
+    "spin",
+    "string breakers"
+  ],
+
+  "target_competitors": [
+    "Tecnifibre Multifeel",
+    "Head Velocity MLT",
+    "Babolat Xcel",
+    "Wilson NXT 16"
+  ],
+
+  "description": {
+    "en": "Wilson NXT Duramax 16 combines the signature comfort of the NXT family with enhanced durability through Abrasion Shields technology. Its PU-bonded multifilament construction preserves power, spin and feel while resisting premature string breakage. Compared with Duramax 15, the thinner 1.32 mm gauge delivers slightly more power and feel while maintaining excellent durability.",
+
+    "zh": "Wilson NXT Duramax 16 是 NXT 系列中兼顾舒适性与耐打性的版本，采用 Abrasion Shields（耐磨护盾）强化 PU 多芯结构，有效提高抗磨损和抗断线能力，同时保留 NXT 系列一贯的力量、旋转和舒适击球感。相比 Duramax 15，1.32 毫米线径带来更好的力量输出和手感，同时仍具有非常优秀的耐久表现。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Wilson NXT Duramax 16",
+      "Natural",
+      "Abrasion Shields",
+      "PU-Bonded Fibers",
+      "Comfort",
+      "Power",
+      "Spin",
+      "16 Gauge",
+      "1.32 mm",
+      "Thinner than Duramax 15",
+      "More power than Duramax 15",
+      "Set 40 ft / 12.2 m"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendation",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations"
+    ]
+  }
+}
