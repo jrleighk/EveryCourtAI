@@ -1,0 +1,399 @@
+{
+  "id": "alternative_generation",
+  "category": "Inference Rules",
+  "type": "Alternative Recommendation Engine",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
+
+  "description": {
+    "en": "Generates meaningful alternative equipment recommendations after the primary recommendation has been selected.",
+    "zh": "在首选推荐确定之后，生成具有明确差异和实际价值的备选装备方案。"
+  },
+
+  "core_principle": {
+    "en": "Alternatives must solve the same player problem through a meaningfully different tradeoff, not simply present similar products.",
+    "zh": "备选方案必须通过不同的取舍解决同一个球员问题，而不是简单列出几个相似产品。"
+  },
+
+  "input_requirements": [
+    "primary_recommendation",
+    "player_profile",
+    "current_setup",
+    "active_goals",
+    "physical_constraints",
+    "preferences",
+    "confidence_score",
+    "ranked_candidate_pool"
+  ],
+
+  "generation_pipeline": [
+    "Read Primary Recommendation",
+    "Identify Primary Recommendation Strengths",
+    "Identify Primary Recommendation Tradeoffs",
+    "Identify Unmet Secondary Goals",
+    "Identify Current Setup Change Cost",
+    "Generate Alternative Directions",
+    "Apply Physical Hard Constraints",
+    "Remove Redundant Alternatives",
+    "Score Alternative Candidates",
+    "Select Distinct Alternatives",
+    "Generate Explanation Of Differences"
+  ],
+
+  "alternative_categories": {
+    "comfort_alternative": {
+      "name": {
+        "en": "More Comfort",
+        "zh": "更舒适方案"
+      },
+
+      "purpose": "Reduce physical load or stringbed harshness while preserving as much performance as possible.",
+
+      "increase_priority": [
+        "Comfort",
+        "Shock Absorption",
+        "Ball Pocketing",
+        "Elasticity",
+        "Forgiveness"
+      ],
+
+      "acceptable_tradeoffs": [
+        "Slightly Lower Maximum Control",
+        "Slightly Lower Durability",
+        "Slightly Higher Launch"
+      ]
+    },
+
+    "performance_alternative": {
+      "name": {
+        "en": "More Performance",
+        "zh": "更性能导向方案"
+      },
+
+      "purpose": "Increase the player's primary performance goal while accepting a moderate reduction in comfort, forgiveness or ease of use.",
+
+      "increase_priority": [
+        "Control",
+        "Spin",
+        "Precision",
+        "Stability",
+        "Response"
+      ],
+
+      "hard_rule": "Physical constraints cannot be violated."
+    },
+
+    "minimal_change_alternative": {
+      "name": {
+        "en": "Smallest Change",
+        "zh": "最小改动方案"
+      },
+
+      "purpose": "Improve the current setup using the smallest possible equipment adjustment.",
+
+      "preferred_change_order": [
+        "Tension",
+        "Gauge",
+        "String Model",
+        "Hybrid Architecture",
+        "Racquet"
+      ]
+    },
+
+    "value_alternative": {
+      "name": {
+        "en": "Value Option",
+        "zh": "性价比方案"
+      },
+
+      "purpose": "Maintain most of the performance benefit while reducing expected equipment or restringing cost.",
+
+      "increase_priority": [
+        "Cost Efficiency",
+        "Durability",
+        "Availability",
+        "Simple Setup"
+      ]
+    },
+
+    "premium_alternative": {
+      "name": {
+        "en": "Premium Option",
+        "zh": "高端方案"
+      },
+
+      "purpose": "Maximize refinement, feel or overall performance where budget is not the dominant constraint.",
+
+      "increase_priority": [
+        "Feel",
+        "Tension Maintenance",
+        "Material Quality",
+        "Performance Refinement"
+      ]
+    },
+
+    "racquet_change_alternative": {
+      "name": {
+        "en": "Racquet Change Option",
+        "zh": "换拍方案"
+      },
+
+      "purpose": "Provide a frame change only when the current racquet materially limits the recommendation.",
+
+      "include_when": [
+        "Current racquet compatibility is low.",
+        "String and tension adjustments cannot solve the primary problem.",
+        "Weight, swingweight, power or forgiveness mismatch is significant."
+      ]
+    }
+  },
+
+  "default_output_policy": {
+    "maximum_alternatives": 3,
+
+    "preferred_set": [
+      "comfort_alternative",
+      "performance_alternative",
+      "minimal_change_alternative"
+    ],
+
+    "replace_with_value_when": [
+      "User mentions budget.",
+      "String break frequency is high.",
+      "Premium recommendation creates large recurring cost."
+    ],
+
+    "replace_with_racquet_change_when": [
+      "Racquet change is recommended by racquet_selection_logic."
+    ]
+  },
+
+  "distinctness_rules": {
+    "minimum_meaningful_difference": true,
+
+    "differentiate_by": [
+      "String Family",
+      "Hybrid Architecture",
+      "Tension Direction",
+      "Gauge",
+      "Racquet",
+      "Performance Tradeoff"
+    ],
+
+    "reject_if": [
+      "Alternative uses nearly identical performance DNA to the primary setup.",
+      "Only brand name changes but recommendation logic is the same.",
+      "Alternative has no meaningful advantage over the primary recommendation.",
+      "Alternative violates a hard physical constraint."
+    ]
+  },
+
+  "alternative_scoring": {
+    "base_score": 50,
+
+    "weights": {
+      "same_primary_problem_resolution": 0.25,
+      "distinct_tradeoff_value": 0.20,
+      "physical_compatibility": 0.20,
+      "secondary_goal_match": 0.10,
+      "transition_ease": 0.08,
+      "confidence": 0.07,
+      "cost_or_durability_value": 0.05,
+      "preference_match": 0.05
+    }
+  },
+
+  "comfort_generation_logic": {
+    "preferred_changes": [
+      "Reduce String Stiffness",
+      "Use Softer Hybrid",
+      "Increase Ball Pocketing",
+      "Lower Tension Moderately",
+      "Increase Forgiveness"
+    ],
+
+    "do_not": [
+      "Recommend an unnecessarily powerful trampoline setup.",
+      "Sacrifice all control for comfort.",
+      "Use comfort as a reason to ignore durability completely."
+    ]
+  },
+
+  "performance_generation_logic": {
+    "preferred_changes": [
+      "Increase Control",
+      "Increase Spin",
+      "Increase Precision",
+      "Increase Stability",
+      "Improve Launch Predictability"
+    ],
+
+    "do_not": [
+      "Violate physical constraints.",
+      "Increase tension aggressively as the only solution.",
+      "Recommend a much heavier racquet solely for stability."
+    ]
+  },
+
+  "minimal_change_logic": {
+    "step_1": {
+      "change": "Tension",
+      "use_when": "A small tension shift can reasonably solve the problem."
+    },
+
+    "step_2": {
+      "change": "Gauge",
+      "use_when": "The player needs more or less launch, durability, feel or stability."
+    },
+
+    "step_3": {
+      "change": "String Model",
+      "use_when": "String DNA is the primary limitation."
+    },
+
+    "step_4": {
+      "change": "Hybrid",
+      "use_when": "Two competing goals cannot be solved by one full-bed string."
+    },
+
+    "step_5": {
+      "change": "Racquet",
+      "use_when": "The frame itself is the major mismatch."
+    }
+  },
+
+  "value_generation_logic": {
+    "consider": [
+      "String replacement frequency",
+      "String durability",
+      "Premium material cost",
+      "Whether the player benefits meaningfully from the premium option",
+      "Whether a simpler full-bed setup performs nearly as well as a hybrid"
+    ],
+
+    "rule": "Do not call an option good value unless it preserves most of the important performance benefits."
+  },
+
+  "premium_generation_logic": {
+    "consider": [
+      "Natural Gut",
+      "Premium Multifilament",
+      "Premium Hybrid",
+      "High-Tension-Maintenance Strings",
+      "Higher-Refinement Racquet Options"
+    ],
+
+    "rule": "Premium price alone does not justify premium ranking."
+  },
+
+  "racquet_change_generation_logic": {
+    "first_check": [
+      "Can string solve the problem?",
+      "Can tension solve the problem?",
+      "Can gauge solve the problem?",
+      "Can hybrid solve the problem?"
+    ],
+
+    "only_then": "Generate racquet alternative."
+  },
+
+  "physical_constraint_logic": {
+    "rule": "All alternatives must pass the same physical hard constraints as the primary recommendation.",
+
+    "high_sensitivity_behavior": [
+      "Do not generate a performance alternative that increases physical risk.",
+      "Comfort alternative becomes mandatory when appropriate."
+    ]
+  },
+
+  "goal_interaction": {
+    "more_control": {
+      "comfort_alternative": "Use softer predictable control string or hybrid.",
+      "performance_alternative": "Use lower-launch control polyester.",
+      "minimal_change_alternative": "Adjust tension or gauge first."
+    },
+
+    "more_power": {
+      "comfort_alternative": "Use elastic multifilament, gut or soft poly.",
+      "performance_alternative": "Use controlled-power string or more efficient frame.",
+      "minimal_change_alternative": "Lower tension moderately."
+    },
+
+    "more_spin": {
+      "comfort_alternative": "Use soft shaped poly or spin hybrid.",
+      "performance_alternative": "Use higher-bite shaped polyester.",
+      "minimal_change_alternative": "Use thinner gauge or modest tension reduction."
+    },
+
+    "more_comfort": {
+      "comfort_alternative": "Use gut or premium multifilament.",
+      "performance_alternative": "Use soft control poly or comfort hybrid.",
+      "minimal_change_alternative": "Lower tension or soften string."
+    },
+
+    "more_feel": {
+      "comfort_alternative": "Use gut or premium multifilament.",
+      "performance_alternative": "Use connected round poly or gut/poly hybrid.",
+      "minimal_change_alternative": "Adjust string model before changing racquet."
+    }
+  },
+
+  "comparison_rules": {
+    "every_alternative_must_show": [
+      "What improves",
+      "What gets worse",
+      "How different it is from the primary recommendation",
+      "Who should choose it instead"
+    ]
+  },
+
+  "output_contract": {
+    "primary_recommendation_id": null,
+
+    "alternatives": [
+      {
+        "type": null,
+        "candidate_id": null,
+        "match_score": null,
+        "confidence": null,
+        "main_advantage": null,
+        "tradeoffs": [],
+        "difference_from_primary": [],
+        "best_for": []
+      }
+    ]
+  },
+
+  "explanation_rules": {
+    "must_do": [
+      "Make every alternative clearly different.",
+      "Explain why the alternative is not ranked first.",
+      "Show the specific tradeoff versus the primary recommendation.",
+      "Keep the number of alternatives limited."
+    ],
+
+    "must_not_do": [
+      "Do not produce five nearly identical strings.",
+      "Do not use alternatives as advertising inventory.",
+      "Do not recommend a premium option solely because it is expensive.",
+      "Do not create a performance alternative that violates physical constraints."
+    ]
+  },
+
+  "engine_connections": {
+    "reads_from": [
+      "knowledge/inference/conflict_resolution.json",
+      "knowledge/inference/confidence_scoring.json",
+      "knowledge/inference/recommendation_ranking.json",
+      "knowledge/decision_rules/recommendation_engine.json",
+      "knowledge/players/",
+      "knowledge/racquets/",
+      "knowledge/strings/"
+    ],
+
+    "passes_to": [
+      "decision_explanation",
+      "recommendation_engine"
+    ]
+  }
+}
