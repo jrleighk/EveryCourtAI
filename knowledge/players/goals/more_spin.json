@@ -1,0 +1,388 @@
+{
+  "id": "more_spin",
+  "category": "Player Goal",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
+
+  "goal": {
+    "name": {
+      "en": "More Spin",
+      "zh": "提升旋转"
+    },
+    "description": {
+      "en": "The player wants to generate heavier topspin or slice, increasing net clearance, ball dip, bounce and overall shot safety while maintaining control.",
+      "zh": "球员希望增加上旋或切削旋转，提高过网高度、落点下坠、弹跳质量以及整体击球容错率，同时保持良好的控制。"
+    }
+  },
+
+  "problem_signs": [
+    "Topspin is difficult to generate consistently.",
+    "Ball trajectory is too flat.",
+    "Shots frequently hit the net.",
+    "Opponent receives a comfortable ball with little bounce.",
+    "Player cannot create enough racket-head action.",
+    "Slice floats instead of staying low.",
+    "Current stringbed feels locked and does not snap back."
+  ],
+
+  "typical_causes": [
+    "Current string has poor snapback.",
+    "Current string is too thick.",
+    "Current tension is too high.",
+    "Current string has excessive friction.",
+    "Current racquet launch angle is too low.",
+    "Dense string pattern limits easy spin.",
+    "Player swing path is relatively flat.",
+    "Old strings have lost elasticity."
+  ],
+
+  "equipment_adjustments": {
+    "racquet": {
+      "preferred_changes": [
+        "Spin-oriented racquet geometry",
+        "More open string pattern",
+        "Slightly higher launch window",
+        "Improved maneuverability",
+        "Faster racquet-head acceleration"
+      ],
+      "change_priority": "low_to_medium",
+      "note": "Always optimize strings and tension before recommending a different racquet."
+    },
+
+    "string": {
+      "preferred_changes": [
+        "Shaped Polyester",
+        "Soft Shaped Polyester",
+        "Round Low-Friction Polyester",
+        "Shaped Main + Round Cross Hybrid",
+        "Thin Gauge",
+        "High Snapback Construction"
+      ]
+    },
+
+    "tension": {
+      "general_adjustment_lbs": -1,
+      "normal_adjustment_range_lbs": "-1 to -3",
+      "notes": [
+        "Lower tension slightly to increase string movement.",
+        "Do not sacrifice directional control excessively.",
+        "String selection has a greater influence on spin than tension alone."
+      ]
+    },
+
+    "gauge": {
+      "preferred_direction": "Thinner",
+      "examples": [
+        "1.30 → 1.25 mm",
+        "1.25 → 1.20 mm"
+      ],
+      "tradeoff": "Thinner strings improve bite and snapback but reduce durability."
+    }
+  },
+
+  "recommended_string_families": [
+    "Shaped Polyester",
+    "Soft Shaped Polyester",
+    "Round Low-Friction Polyester",
+    "Shaped Polyester + Round Polyester Hybrid",
+    "Shaped Polyester + Multifilament Hybrid"
+  ],
+
+  "preferred_string_dna": {
+    "spin": 10,
+    "snapback": 10,
+    "ball_bite": 10,
+    "string_movement": 9,
+    "control": 9,
+    "launch_angle": 8,
+    "feel": 7,
+    "comfort": 6,
+    "durability": 7,
+    "tension_maintenance": 7,
+    "power": 6
+  },
+
+  "preferred_racquet_dna": {
+    "spin": 10,
+    "maneuverability": 9,
+    "launch_angle": 9,
+    "control": 8,
+    "forgiveness": 8,
+    "power": 7,
+    "stability": 7,
+    "comfort": 7,
+    "feel": 6
+  },
+
+  "recommended_string_characteristics": {
+    "stiffness": [
+      "Soft",
+      "Medium",
+      "Medium-Firm"
+    ],
+    "shape": [
+      "Pentagonal",
+      "Hexagonal",
+      "Octagonal",
+      "Twisted",
+      "Round Low-Friction Cross"
+    ],
+    "gauge_mm": [
+      1.20,
+      1.23,
+      1.25
+    ],
+    "key_traits": [
+      "High Snapback",
+      "Low Inter-String Friction",
+      "Ball Bite",
+      "Mechanical Grip",
+      "Spin Window",
+      "Fast String Recovery"
+    ]
+  },
+
+  "recommended_string_examples": [
+    "Solinco Hyper-G",
+    "Solinco Tour Bite",
+    "Yonex PolyTour REV",
+    "Yonex PolyTour Spin",
+    "Yonex PolyTour Fire",
+    "Babolat RPM Blast",
+    "Babolat RPM Rough",
+    "Wilson Revolve Spin",
+    "Luxilon Eco Spin",
+    "Toroline Wasabi",
+    "Toroline O-Toro Spin",
+    "MSV Focus Hex",
+    "Gamma Moto",
+    "Head Lynx Tour",
+    "Kirschbaum Black Shark"
+  ],
+
+  "recommended_hybrid_architectures": [
+    "Shaped Polyester Main + Round Polyester Cross",
+    "Shaped Polyester Main + Soft Multifilament Cross",
+    "Soft Polyester Main + Smooth Polyester Cross"
+  ],
+
+  "avoid": {
+    "racquet_characteristics": [
+      "Very Dense String Pattern",
+      "Very Low Launch Frame",
+      "Poor Maneuverability"
+    ],
+    "string_characteristics": [
+      "High Friction Multifilament Full Bed",
+      "Dead Polyester",
+      "Very Thick Gauge",
+      "Very High Tension",
+      "Low Snapback Construction"
+    ]
+  },
+
+  "ai_matching_weights": {
+    "spin": 0.30,
+    "snapback": 0.20,
+    "ball_bite": 0.15,
+    "control": 0.10,
+    "launch_angle": 0.08,
+    "maneuverability": 0.06,
+    "string_movement": 0.05,
+    "feel": 0.03,
+    "comfort": 0.02,
+    "durability": 0.01
+  },
+
+  "matching_logic": {
+    "prioritize_when": [
+      "Player wants heavier topspin.",
+      "Player struggles to create net clearance.",
+      "Player wants higher kicking serves.",
+      "Player wants more aggressive baseline spin.",
+      "Current string has poor snapback."
+    ],
+    "equipment_goals": [
+      "Increase spin generation.",
+      "Increase ball bite.",
+      "Increase snapback.",
+      "Increase trajectory safety.",
+      "Improve heavy-ball effect."
+    ],
+    "deprioritize": [
+      "Very Thick Gauge",
+      "High Stringbed Friction",
+      "Very Low Launch Response"
+    ]
+  },
+
+  "racquet_compensation_logic": {
+    "if_current_racquet_is_spin_oriented": {
+      "action": "Optimize string selection before recommending another racquet.",
+      "preferred_solution_order": [
+        "Shaped polyester",
+        "Gauge adjustment",
+        "Lower tension",
+        "Hybrid"
+      ]
+    },
+
+    "if_current_racquet_is_dense_pattern": {
+      "preferred_solution_order": [
+        "Thinner gauge",
+        "High snapback string",
+        "Lower tension",
+        "Spin-oriented racquet only if necessary"
+      ]
+    },
+
+    "if_current_racquet_is_too_heavy": {
+      "note": "Insufficient racquet-head speed often reduces practical spin generation.",
+      "preferred_action": [
+        "Evaluate swingweight",
+        "Evaluate maneuverability"
+      ]
+    }
+  },
+
+  "swing_speed_logic": {
+    "slow": {
+      "goal_priority_multiplier": 0.85,
+      "preferred": [
+        "Soft Shaped Polyester",
+        "Responsive Polyester",
+        "Hybrid"
+      ]
+    },
+
+    "medium": {
+      "goal_priority_multiplier": 1.0,
+      "preferred": [
+        "Shaped Polyester",
+        "Round Cross Hybrid"
+      ]
+    },
+
+    "fast": {
+      "goal_priority_multiplier": 1.25,
+      "preferred": [
+        "Firm Shaped Polyester",
+        "Shaped Main + Round Cross",
+        "Tournament Spin Setup"
+      ]
+    }
+  },
+
+  "playing_style_logic": {
+    "baseline_aggressive": {
+      "priority": "Maximum Spin"
+    },
+    "baseline_counterpuncher": {
+      "priority": "Heavy Defensive Spin"
+    },
+    "baseline_grinder": {
+      "priority": "High Margin Consistency"
+    },
+    "all_court": {
+      "priority": "Balanced Spin and Feel"
+    },
+    "serve_volley": {
+      "priority": "Kick Serve + Slice"
+    }
+  },
+
+  "physical_constraint_logic": {
+    "arm_sensitivity": {
+      "mild": {
+        "preferred": [
+          "Soft Shaped Polyester",
+          "Soft Hybrid"
+        ]
+      },
+      "moderate": {
+        "preferred": [
+          "Spin Hybrid",
+          "Soft Polyester"
+        ],
+        "avoid": [
+          "Firm Full Polyester"
+        ]
+      },
+      "high": {
+        "preferred": [
+          "Multifilament Hybrid",
+          "Natural Gut Hybrid"
+        ],
+        "avoid": [
+          "Firm Spin Polyester"
+        ]
+      }
+    }
+  },
+
+  "tradeoffs": {
+    "more_spin_can_reduce": [
+      "Flat Ball Speed",
+      "Feel",
+      "String Durability"
+    ],
+    "lower_tension_can_increase": [
+      "Launch Angle",
+      "String Movement"
+    ],
+    "shaped_strings_can_reduce": [
+      "Comfort",
+      "Playability Duration"
+    ]
+  },
+
+  "related_goals": [
+    "more_control",
+    "higher_launch",
+    "more_ball_pocketing",
+    "more_power"
+  ],
+
+  "conflicting_goals": {
+    "lower_launch": {
+      "resolution": "Use lower-launch shaped strings instead of relying only on tension."
+    },
+    "more_comfort": {
+      "resolution": "Prefer soft shaped polyester or spin hybrid."
+    },
+    "more_durability": {
+      "resolution": "Use durable shaped strings before increasing gauge excessively."
+    }
+  },
+
+  "output_guidance": {
+    "preferred_change_sequence": [
+      "String Model",
+      "Gauge",
+      "Tension",
+      "Hybrid",
+      "Racquet"
+    ],
+    "must_explain": [
+      "Why spin is limited.",
+      "Whether the limitation comes from technique or equipment.",
+      "How snapback improves spin.",
+      "What tradeoff is introduced."
+    ]
+  },
+
+  "search_keywords": [
+    "more spin",
+    "spin",
+    "topspin",
+    "slice",
+    "kick serve",
+    "snapback",
+    "ball bite",
+    "增加旋转",
+    "上旋",
+    "切削",
+    "旋转不足",
+    "Kick发球"
+  ]
+}
