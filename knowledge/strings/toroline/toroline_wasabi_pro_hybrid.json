@@ -1,0 +1,444 @@
+{
+  "id": "toroline_wasabi_pro_hybrid",
+  "brand": "Toroline",
+  "series": "WASABI PRO HYBRID",
+  "model": "WASABI PRO HYBRID",
+  "category": "Hybrid String Set",
+
+  "manufacturer_data": {
+    "construction": "Dual Co-Poly Hybrid",
+    "main_string": "Toroline WASABI Neon Pink 1.23",
+    "cross_string": "Toroline WASABI X Neon Blue 1.23",
+    "official_positioning": "A performance hybrid combining a square shaped co-poly main for maximum ball grip with a slick round co-poly cross for enhanced string movement, snapback and massive spin.",
+    "target_level": "Intermediate / Advanced / Tournament"
+  },
+
+  "specifications": {
+    "construction": "Square Shaped Co-Poly + Round Slick Co-Poly Hybrid",
+
+    "mains": {
+      "string": "Toroline WASABI",
+      "gauge_mm": 1.23,
+      "gauge_name": "17",
+      "color": "Neon Pink",
+      "shape": "Square",
+      "profile_sides": 4,
+      "material": "Co-Polyester",
+      "surface": "Shaped / Sharp-Edged",
+      "primary_role": [
+        "Maximum Ball Grip",
+        "Mechanical Bite",
+        "Spin",
+        "Heavy Rotation"
+      ]
+    },
+
+    "crosses": {
+      "string": "Toroline WASABI X",
+      "gauge_mm": 1.23,
+      "gauge_name": "17",
+      "color": "Neon Blue",
+      "shape": "Round",
+      "material": "Co-Polyester",
+      "surface": "Slick / Low Friction",
+      "primary_role": [
+        "Low Inter-String Friction",
+        "Main-String Movement",
+        "Snapback Support",
+        "Response Consistency"
+      ]
+    }
+  },
+
+  "component_strings": {
+    "wasabi_neon_pink_123": {
+      "role": "Mains",
+      "construction": "Square Co-Polyester",
+      "primary_benefits": [
+        "Maximum Ball Grip",
+        "Sharp-Edge Bite",
+        "Spin",
+        "Heavy Ball Production"
+      ]
+    },
+
+    "wasabi_x_neon_blue_123": {
+      "role": "Crosses",
+      "construction": "Round Slick Co-Polyester",
+      "primary_benefits": [
+        "Low Friction",
+        "Fast Snapback",
+        "Main-String Mobility",
+        "Cleaner Release",
+        "Consistent Response"
+      ]
+    }
+  },
+
+  "official_hybrid_configuration": {
+    "mains": "WASABI Neon Pink 1.23",
+    "crosses": "WASABI X Neon Blue 1.23",
+
+    "official_result": [
+      "Maximum Ball Grip",
+      "Enhanced Main-String Movement",
+      "Fast Snapback",
+      "Massive Spin",
+      "Consistent Stringbed Response"
+    ]
+  },
+
+  "technology": [
+    "Square Mechanical Grip",
+    "Slick Round Cross",
+    "Low-Friction Hybrid Architecture",
+    "Main-String Mobility",
+    "Snapback Optimization",
+    "Spin Amplification"
+  ],
+
+  "technology_details": {
+    "main_string_function": {
+      "description": "The square WASABI main string uses sharp edges to grip the ball aggressively and generate mechanical spin.",
+      "primary_mechanisms": [
+        "Ball Grip",
+        "Mechanical Bite",
+        "Surface Interaction"
+      ]
+    },
+
+    "cross_string_function": {
+      "description": "The slick round WASABI X cross reduces string-to-string friction, allowing the WASABI mains to slide out of position and return more rapidly.",
+      "primary_mechanisms": [
+        "Low Inter-String Friction",
+        "String Movement",
+        "Snapback"
+      ]
+    },
+
+    "hybrid_spin_system": {
+      "description": "The WASABI mains slide during impact, grip the ball and then snap back across the slick WASABI X crosses, combining mechanical bite with dynamic string return for high spin output.",
+      "primary_benefits": [
+        "Massive Spin",
+        "Fast Snapback",
+        "Heavy Rotation",
+        "Responsive Stringbed"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Maximum Spin Dual-Poly Hybrid",
+    "target_player": "Intermediate / Advanced / Tournament",
+    "arm_friendly": false,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "feel_focus": true,
+    "durability_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true,
+    "snapback_focus": true,
+    "ball_bite_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 9,
+    "spin": 10,
+    "comfort": 8,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9,
+    "elasticity": 9,
+    "ball_pocketing": 9,
+    "launch_angle": "Medium-High"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 9,
+    "spin": 10,
+    "comfort": 8,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium",
+    "snapback": 10,
+    "ball_pocketing": 9,
+    "string_movement": 10,
+    "inter_string_friction": "Very Low",
+    "tension_stability": 9,
+    "spin_window": "Very High",
+    "predictability": 9,
+    "arm_friendliness": 8,
+    "directional_precision": 9,
+    "ball_bite": 10,
+    "surface_grip": 10,
+    "response_consistency": 10,
+    "heavy_ball_potential": 10,
+    "spin_efficiency": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "Modern Baseline",
+      "Power Baseliner",
+      "Spin-Oriented Player"
+    ],
+
+    "special_player_profiles": [
+      "Players Seeking Maximum Spin",
+      "Players Wanting Strong Mechanical Ball Grip",
+      "Players Seeking Faster Snapback",
+      "Players Wanting Shaped-Main Spin With a Slick Cross",
+      "Players With Fast Racquet Head Speed"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Babolat Pure Aero",
+    "Babolat Pure Drive",
+    "Yonex VCORE",
+    "Wilson Shift",
+    "Wilson Blade",
+    "HEAD Extreme",
+    "HEAD Speed",
+    "Tecnifibre T-FIGHT",
+    "Dunlop SX"
+  ],
+
+  "hybrid_physics": {
+    "main_string_role": {
+      "string": "WASABI",
+      "shape": "Square",
+      "primary_spin_source": "Mechanical ball grip and sharp-edge bite"
+    },
+
+    "cross_string_role": {
+      "string": "WASABI X",
+      "shape": "Round",
+      "surface": "Slick",
+      "primary_spin_source": "Reduced inter-string friction and enhanced snapback"
+    },
+
+    "combined_effect": [
+      "Maximum Ball Bite",
+      "High Main-String Mobility",
+      "Fast Snapback",
+      "Massive Spin",
+      "Consistent Response"
+    ]
+  },
+
+  "estimated_lifespan": {
+    "hybrid_setup": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "16-28"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Medium-Low",
+    "tension_loss_sensitivity": "Medium-Low",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when WASABI edge bite, WASABI X slickness, snapback or spin response noticeably declines."
+  },
+
+  "comparison_data": {
+    "vs_full_bed_wasabi": {
+      "snapback": "Higher",
+      "main_string_movement": "Higher",
+      "spin_efficiency": "Higher",
+      "response_consistency": "Higher",
+      "mechanical_ball_grip": "Similar"
+    },
+
+    "vs_full_bed_wasabi_x": {
+      "ball_bite": "Much Higher",
+      "mechanical_spin": "Much Higher",
+      "launch_angle": "Higher",
+      "snapback": "Still Very High"
+    },
+
+    "vs_101_blend": {
+      "main_geometry": {
+        "wasabi_pro_hybrid": "Square / Four-Sided",
+        "101_blend": "Hexagonal / Six-Sided"
+      },
+
+      "mechanical_ball_bite": {
+        "wasabi_pro_hybrid": "More Aggressive",
+        "101_blend": "Very High"
+      },
+
+      "cross_concept": "Both use a slick round co-poly to enhance main-string movement and snapback",
+
+      "spin_character": {
+        "wasabi_pro_hybrid": "Sharper Mechanical Bite",
+        "101_blend": "More Balanced Spin-Control Response"
+      }
+    }
+  },
+
+  "science_metrics": {
+    "main_geometry": {
+      "shape": "Square",
+      "sides": 4
+    },
+
+    "cross_geometry": {
+      "shape": "Round",
+      "symmetry": "High"
+    },
+
+    "spin_mechanism": [
+      "Square Mechanical Ball Grip",
+      "Sharp-Edge Bite",
+      "Low Inter-String Friction",
+      "Main-String Movement",
+      "Fast Snapback"
+    ],
+
+    "trajectory_profile": "Spin-Oriented",
+
+    "launch_angle_profile": "Medium-High",
+
+    "mechanical_ball_grip_class": "Very High",
+
+    "inter_string_friction_class": "Very Low",
+
+    "snapback_class": "Elite",
+
+    "hybrid_class": "Performance Shaped-Main / Slick-Cross Spin Hybrid"
+  },
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Heavy Topspin Players",
+      "Aggressive Baseliners",
+      "Players Seeking Maximum Ball Bite",
+      "Players Wanting High Main-String Movement",
+      "Players Seeking Fast Snapback",
+      "Players Wanting a Dedicated Spin Hybrid"
+    ],
+
+    "avoid_for": [
+      "Players With Significant Arm Sensitivity",
+      "Beginners With Slow Swing Speed",
+      "Players Seeking Very Low Launch Angle",
+      "Players Wanting Plush Multifilament-Like Comfort"
+    ],
+
+    "alternative_strings": [
+      "Toroline WASABI Full Bed",
+      "Toroline WASABI X Full Bed",
+      "Toroline 101 Blend",
+      "Toroline SNAPAHOLIC",
+      "Toroline O-SNAP",
+      "Solinco Hyper-G Hybrid System"
+    ]
+  },
+
+  "comparison_tags": [
+    "WASABI PRO HYBRID",
+    "WASABI",
+    "WASABI X",
+    "Square Main",
+    "Round Cross",
+    "Low Friction",
+    "Maximum Ball Grip",
+    "Snapback",
+    "Massive Spin",
+    "Neon Pink",
+    "Neon Blue"
+  ],
+
+  "ai_keywords": [
+    "toroline",
+    "wasabi pro hybrid",
+    "toroline wasabi pro",
+    "wasabi neon pink",
+    "wasabi x neon blue",
+    "1.23",
+    "17 gauge",
+    "square main",
+    "round cross",
+    "slick cross",
+    "ball grip",
+    "snapback",
+    "massive spin",
+    "string movement",
+    "low friction",
+    "dual poly hybrid"
+  ],
+
+  "target_competitors": [
+    "Toroline 101 Blend",
+    "Toroline SNAPAHOLIC",
+    "Toroline O-SNAP",
+    "Solinco Hyper-G Hybrid System",
+    "Solinco Tour Bite Hybrid Configurations"
+  ],
+
+  "description": {
+    "en": "Toroline WASABI PRO HYBRID combines WASABI Neon Pink 1.23 in the mains with WASABI X Neon Blue 1.23 in the crosses. The square-shaped WASABI mains provide maximum mechanical ball grip, while the slick round WASABI X crosses reduce inter-string friction and allow the mains to move and snap back rapidly. This interaction creates a dedicated high-spin hybrid with strong bite, high string movement and massive rotational output.",
+
+    "zh": "Toroline WASABI PRO HYBRID 采用 WASABI Neon Pink 1.23 作为主线，并搭配 WASABI X Neon Blue 1.23 作为横线。四边形 WASABI 主线通过锐利边缘提供最大机械咬球，而圆形超光滑 WASABI X 横线则降低主横线之间的摩擦，让主线在击球时更容易滑动，并在之后快速 Snapback。两者结合形成一套非常典型的高旋转 Hybrid，同时利用 Mechanical Ball Grip 与低摩擦 Snapback 来制造大量旋转。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Toroline WASABI PRO HYBRID",
+      "Two co-poly string hybrid",
+      "WASABI Neon Pink mains",
+      "WASABI 1.23 mm / 17",
+      "Square shaped mains",
+      "Maximum ball grip positioning",
+      "WASABI X Neon Blue crosses",
+      "WASABI X 1.23 mm / 17",
+      "Round cross profile",
+      "Slick surface",
+      "Main strings slide out of position",
+      "Main strings grip the ball",
+      "Main strings snap back",
+      "Massive spin positioning"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Physics",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
