@@ -1,0 +1,540 @@
+{
+  "id": "toroline_wasabi",
+  "brand": "Toroline",
+  "series": "WASABI",
+  "model": "WASABI",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Co-Polyester",
+    "string_family": "Polyester",
+    "cross_section": "Square",
+    "surface": "Shaped / Sharp-Edged / Slick-Coated",
+    "profile_sides": 4,
+    "tour_positioning": "Spin / Bite / Snapback / Soft Response Co-Polyester",
+    "official_positioning": "Four-sided shaped co-polyester designed to generate spin-loaded shots through sharp-edge ball grip while using a super-slick coating to enhance snapback and provide a softer response.",
+    "target_level": "Intermediate / Advanced / Tournament"
+  },
+
+  "specifications": {
+    "construction": "Four-Sided Co-Polyester Monofilament",
+    "cross_section": "Square (4-Sided)",
+    "surface": "Sharp-Edged with Slick Coating",
+
+    "available_colors": [
+      "Pomegranate Red",
+      "Neon Green",
+      "Neon Pink"
+    ],
+
+    "color_availability": {
+      "Pomegranate Red": {
+        "gauge_mm": 1.23,
+        "gauge_name": "17",
+        "available": true
+      },
+
+      "Neon Green": {
+        "gauge_mm": 1.23,
+        "gauge_name": "17",
+        "available": true
+      },
+
+      "Neon Pink": {
+        "gauge_mm": 1.23,
+        "gauge_name": "17",
+        "available": true
+      }
+    },
+
+    "available_gauges": [
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.23,
+        "available": true,
+
+        "available_colors": [
+          "Pomegranate Red",
+          "Neon Green",
+          "Neon Pink"
+        ],
+
+        "power": 9,
+        "control": 9,
+        "spin": 10,
+        "comfort": 9,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "elasticity": 9,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Maximum Spin",
+          "Aggressive Ball Bite",
+          "Heavy Topspin",
+          "Fast Snapback",
+          "Aggressive Baseline Play",
+          "Players Wanting Softer Response From a Shaped Co-Poly"
+        ]
+      }
+    ],
+
+    "packaging": {
+      "type": "Two Half Sets",
+      "half_sets_per_package": 2,
+      "length_per_half_set_m": 6.7,
+      "approximate_length_per_half_set_m": 6.7,
+      "intended_racquets": 1,
+      "total_length_m": 13.4
+    }
+  },
+
+  "technology": [
+    "Four-Sided Square Geometry",
+    "Sharp-Edge Ball Grip",
+    "Super-Slick Coating",
+    "Enhanced Snapback",
+    "Soft-Response Co-Poly Construction"
+  ],
+
+  "technology_details": {
+    "square_geometry": {
+      "shape": "Square",
+      "sides": 4,
+      "description": "The four-sided profile creates pronounced edges that grip the ball and increase mechanical interaction with the felt.",
+      "primary_benefits": [
+        "Ball Bite",
+        "Spin",
+        "Heavy Rotation",
+        "Trajectory Shaping"
+      ]
+    },
+
+    "slick_coating": {
+      "description": "A super-slick surface treatment helps reduce string-to-string friction, allowing the string to move and return more efficiently.",
+      "primary_benefits": [
+        "Enhanced Snapback",
+        "Lower Inter-String Friction",
+        "Faster String Return",
+        "Improved Spin Efficiency"
+      ]
+    },
+
+    "dual_spin_mechanism": {
+      "primary_factors": [
+        "Mechanical Ball Grip",
+        "Snapback"
+      ],
+      "description": "WASABI combines sharp square edges for mechanical bite with a slick coating for snapback, giving it two complementary mechanisms for generating spin."
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Square Spin Snapback Co-Polyester",
+    "target_player": "Intermediate / Advanced / Tournament",
+    "arm_friendly": true,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true,
+    "snapback_focus": true,
+    "ball_bite_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 9,
+    "spin": 10,
+    "comfort": 9,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9,
+    "elasticity": 9,
+    "launch_angle": "Medium-High"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 9,
+    "spin": 10,
+    "comfort": 9,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium",
+    "snapback": 10,
+    "ball_pocketing": 9,
+    "string_movement": 9,
+    "inter_string_friction": "Low",
+    "tension_stability": 9,
+    "spin_window": "Very High",
+    "predictability": 9,
+    "arm_friendliness": 8,
+    "directional_precision": 9,
+    "ball_bite": 10,
+    "surface_grip": 10,
+    "heavy_ball_potential": 10,
+    "response_softness": 9
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "Modern Baseline",
+      "Power Baseliner",
+      "All Court"
+    ],
+
+    "special_player_profiles": [
+      "Players Seeking Maximum Mechanical Ball Bite",
+      "Players Wanting Strong Spin and Snapback Together",
+      "Players Seeking Softer Response From a Shaped Poly",
+      "Aggressive Baseliners",
+      "Players Who Generate High Racquet Head Speed"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Babolat Pure Aero",
+    "Babolat Pure Drive",
+    "Yonex VCORE",
+    "Wilson Shift",
+    "Wilson Blade",
+    "HEAD Extreme",
+    "HEAD Speed",
+    "Tecnifibre T-FIGHT",
+    "Dunlop SX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "preferred_role": "Mains",
+
+    "best_pairings": [
+      "Toroline A5",
+      "Toroline O-TORO SNAP",
+      "Toroline O-TORO SNAP TOUR FLEX",
+      "Toroline CASH",
+      "Toroline Truffle X"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Maximum Ball Bite",
+        "Spin",
+        "Heavy Rotation",
+        "Snapback",
+        "Aggressive Response"
+      ],
+
+      "as_crosses": [
+        "Spin Support",
+        "Ball Grip",
+        "Stringbed Response"
+      ]
+    },
+
+    "recommended_toroline_hybrids": [
+      {
+        "mains": "WASABI",
+        "crosses": "A5",
+        "expected_profile": [
+          "Square Mechanical Bite",
+          "Low-Friction Round Cross",
+          "High Snapback",
+          "Spin",
+          "Predictable Control"
+        ]
+      },
+
+      {
+        "mains": "WASABI",
+        "crosses": "O-TORO SNAP TOUR FLEX",
+        "expected_profile": [
+          "Maximum Bite",
+          "Very Low Inter-String Friction",
+          "Fast Snapback",
+          "More Control",
+          "Stable Response"
+        ]
+      },
+
+      {
+        "mains": "WASABI",
+        "crosses": "Truffle X",
+        "expected_profile": [
+          "Strong Mechanical Spin",
+          "Plush Comfort",
+          "Pocketing",
+          "Reduced Stringbed Harshness"
+        ]
+      }
+    ],
+
+    "hybrid_note": "WASABI is particularly suitable as a shaped main paired with a smooth round or ultra-slick cross to maximize main-string movement and snapback."
+  },
+
+  "gauge_recommendation": {
+    "1.23": {
+      "gauge_name": "17",
+
+      "best_for": [
+        "Maximum Spin",
+        "Ball Bite",
+        "Snapback",
+        "Aggressive Baseline Play",
+        "Modern Topspin"
+      ],
+
+      "tradeoffs": [
+        "Square Edges Can Increase Friction Against Softer Hybrid Crosses",
+        "Less Flat-Trajectory Precision Than Round Strings"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.23": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "16-28"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Medium-Low",
+    "tension_loss_sensitivity": "Medium-Low",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when sharp-edge bite, slick coating performance, snapback or directional consistency noticeably declines."
+  },
+
+  "comparison_data": {
+    "vs_round_co_poly": {
+      "mechanical_ball_grip": "Much Higher",
+      "ball_bite": "Higher",
+      "launch_angle": "Higher",
+      "spin": "Higher",
+      "trajectory": "More Spin-Oriented",
+      "surface_friction_against_ball": "Higher"
+    },
+
+    "vs_toroline_a5": {
+      "shape": {
+        "wasabi": "Square / Four-Sided",
+        "a5": "Round"
+      },
+
+      "spin_mechanism": {
+        "wasabi": [
+          "Mechanical Ball Grip",
+          "Snapback"
+        ],
+        "a5": [
+          "Elite Snapback",
+          "Low-Friction String Movement"
+        ]
+      },
+
+      "ball_bite": {
+        "wasabi": "Higher",
+        "a5": "Lower Mechanical Bite"
+      },
+
+      "launch_angle": {
+        "wasabi": "Higher",
+        "a5": "Lower / More Penetrating"
+      }
+    },
+
+    "vs_toroline_o_toro": {
+      "profile": {
+        "wasabi": "Square / Four-Sided",
+        "o_toro": "Hexagonal / Six-Sided"
+      },
+
+      "spin_focus": "Both Very High",
+
+      "wasabi_character": [
+        "Sharper Mechanical Bite",
+        "Slick Coating",
+        "Soft Response"
+      ],
+
+      "o_toro_character": [
+        "Balanced Hexagonal Bite",
+        "High Spin",
+        "Controlled Response"
+      ]
+    }
+  },
+
+  "science_metrics": {
+    "geometry": {
+      "shape": "Square",
+      "sides": 4
+    },
+
+    "spin_mechanism": [
+      "Sharp-Edge Mechanical Grip",
+      "Low-Friction Snapback",
+      "String Movement"
+    ],
+
+    "trajectory_profile": "Spin-Oriented",
+
+    "launch_angle_profile": "Medium-High",
+
+    "mechanical_ball_grip_class": "Very High",
+
+    "snapback_class": "Very High",
+
+    "surface_coating": "Super-Slick",
+
+    "performance_class": "High-Spin Shaped Co-Poly"
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Heavy Topspin Players",
+      "Aggressive Baseliners",
+      "Players Seeking Maximum Ball Bite",
+      "Players Wanting Strong Snapback From a Shaped String",
+      "Players Seeking a Softer High-Spin Co-Poly",
+      "Players With Fast Swing Speeds"
+    ],
+
+    "avoid_for": [
+      "Players Seeking Very Low Launch Angle",
+      "Players Wanting Flat Round-String Trajectory",
+      "Players With Significant Arm Sensitivity",
+      "Beginners With Slow Swing Speed"
+    ],
+
+    "alternative_strings": [
+      "Toroline O-TORO",
+      "Toroline VAMOS",
+      "Toroline Snapper",
+      "Solinco Hyper-G",
+      "MSV Focus Hex",
+      "Kirschbaum Black Shark"
+    ]
+  },
+
+  "comparison_tags": [
+    "WASABI",
+    "Square",
+    "Four-Sided",
+    "Sharp Edges",
+    "Super Slick",
+    "Maximum Spin",
+    "Ball Bite",
+    "Snapback",
+    "Soft Response",
+    "Pomegranate Red",
+    "Neon Green",
+    "Neon Pink"
+  ],
+
+  "ai_keywords": [
+    "toroline",
+    "wasabi",
+    "toroline wasabi",
+    "1.23",
+    "17 gauge",
+    "square",
+    "four sided",
+    "4 sided",
+    "pomegranate red",
+    "neon green",
+    "neon pink",
+    "sharp edges",
+    "super slick",
+    "slick coating",
+    "spin",
+    "bite",
+    "snapback",
+    "soft response",
+    "co polyester"
+  ],
+
+  "target_competitors": [
+    "Toroline O-TORO",
+    "Toroline VAMOS",
+    "Toroline Snapper",
+    "Solinco Hyper-G",
+    "Solinco Tour Bite",
+    "MSV Focus Hex",
+    "Kirschbaum Black Shark"
+  ],
+
+  "description": {
+    "en": "Toroline WASABI is a four-sided square co-polyester string designed for aggressive spin production. Its sharp edges create strong mechanical ball grip and bite, while a super-slick coating reduces inter-string friction and enhances snapback. This combination allows WASABI to generate spin through both direct ball interaction and rapid string return. Despite its aggressive geometry, Toroline also positions WASABI as having a softer response than many traditional shaped co-polys. It is available in Pomegranate Red, Neon Green and Neon Pink, all in 1.23 mm / 17 gauge.",
+
+    "zh": "Toroline WASABI 是一款采用四边形 Square 截面的高旋转共聚酯球线。四条锐利边缘能够直接抓住网球毛毡，提供强烈的机械咬球和旋转；同时球线表面采用 Super-Slick 超光滑涂层，降低主横线之间的摩擦并提升 Snapback。因此 WASABI 同时利用 Ball Grip 与 Snapback 两种机制制造旋转。虽然外形非常具有攻击性，但 Toroline 同时强调它拥有相对柔和的击球反馈。产品统一采用 1.23 毫米 / 17 规格，提供 Pomegranate Red、Neon Green 与 Neon Pink 三种颜色。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Toroline WASABI",
+      "Four-sided profile",
+      "Square shaped co-poly",
+      "Sharp edges",
+      "Ball grip",
+      "Spin-loaded shots",
+      "Super slick coating",
+      "Enhanced snapback",
+      "Softer response",
+      "Pomegranate Red",
+      "Neon Green",
+      "Neon Pink",
+      "1.23 mm / 17 gauge",
+      "Two half sets per package",
+      "Approximately 6.7 m per half set",
+      "One-racquet package configuration"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendations",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
