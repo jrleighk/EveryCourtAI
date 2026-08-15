@@ -1,0 +1,24 @@
+{
+  "name": "everycourtai",
+  "version": "1.0.0",
+  "description": "EveryCourtAI Tennis Equipment Recommendation Engine",
+  "type": "module",
+  "main": "engine/main_engine.js",
+  "scripts": {
+    "test": "node tests/test_engine.js",
+    "test:engine": "node tests/test_engine.js"
+  },
+  "keywords": [
+    "tennis",
+    "ai",
+    "racquet",
+    "string",
+    "recommendation"
+  ],
+  "author": "JR LEIGH International Trading Co., Limited",
+  "license": "UNLICENSED",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  }
+}
