@@ -1,0 +1,698 @@
+{
+  "id": "recommendation_engine",
+  "category": "Decision Rules",
+  "type": "Final Recommendation Aggregation Engine",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
+
+  "description": {
+    "en": "Final recommendation aggregation logic used by EveryCourtAI to combine player profile, racquet evaluation, string selection, hybrid architecture and tension calculations into one ranked and explainable equipment recommendation.",
+    "zh": "EveryCourtAI 最终推荐汇总逻辑，用于将球员画像、球拍评估、球线筛选、Hybrid 架构以及磅数计算整合为可排序、可解释的最终装备推荐。"
+  },
+
+  "core_principle": {
+    "en": "The final recommendation should solve the player's highest-priority problem with the smallest effective equipment change while respecting physical constraints and preserving useful characteristics of the current setup.",
+    "zh": "最终推荐应在遵守身体与舒适性约束的前提下，用最小且有效的装备调整解决球员最高优先级的问题，同时尽可能保留当前配置中已经有效的特性。"
+  },
+
+  "decision_pipeline": [
+    "Read Normalized Player Profile",
+    "Read Goal Priority Output",
+    "Read Current Racquet Evaluation",
+    "Read String Candidate Ranking",
+    "Read Full Bed vs Hybrid Decision",
+    "Read Tension Adjustment Result",
+    "Apply Hard Constraints",
+    "Resolve Conflicting Recommendations",
+    "Determine Minimum Effective Change",
+    "Score Complete Setup Candidates",
+    "Generate Primary Recommendation",
+    "Generate Comfort Alternative",
+    "Generate Performance Alternative",
+    "Generate Optional Racquet Change",
+    "Calculate Confidence",
+    "Generate Human-Readable Explanation",
+    "Return Structured Recommendation Output"
+  ],
+
+  "engine_inputs": {
+    "required": [
+      "player_profile",
+      "goal_priority_result",
+      "racquet_selection_result",
+      "string_selection_result",
+      "hybrid_decision_result",
+      "tension_adjustment_result"
+    ],
+
+    "optional": [
+      "current_setup_history",
+      "previous_recommendation_feedback",
+      "brand_preferences",
+      "budget_preference",
+      "court_conditions",
+      "ball_type"
+    ]
+  },
+
+  "engine_dependencies": {
+    "goal_priority": "knowledge/decision_rules/goal_priority.json",
+    "racquet_selection": "knowledge/decision_rules/racquet_selection_logic.json",
+    "string_selection": "knowledge/decision_rules/string_selection_logic.json",
+    "hybrid_decision": "knowledge/decision_rules/hybrid_decision_logic.json",
+    "tension_adjustment": "knowledge/decision_rules/tension_adjustment_logic.json",
+    "full_bed_rules": "knowledge/recommendations/full_bed_strings.json",
+    "hybrid_rules": "knowledge/recommendations/hybrid_strings.json",
+    "tension_rules": "knowledge/recommendations/tension_rules.json",
+    "player_schema": "knowledge/players/player_profile_schema.json"
+  },
+
+  "decision_hierarchy": [
+    {
+      "priority": 1,
+      "factor": "physical_constraints",
+      "hard_override": true
+    },
+    {
+      "priority": 2,
+      "factor": "current_setup_problem",
+      "hard_override": false
+    },
+    {
+      "priority": 3,
+      "factor": "racquet_string_compatibility",
+      "hard_override": false
+    },
+    {
+      "priority": 4,
+      "factor": "primary_goal",
+      "hard_override": false
+    },
+    {
+      "priority": 5,
+      "factor": "swing_speed",
+      "hard_override": false
+    },
+    {
+      "priority": 6,
+      "factor": "playing_style",
+      "hard_override": false
+    },
+    {
+      "priority": 7,
+      "factor": "secondary_goals",
+      "hard_override": false
+    },
+    {
+      "priority": 8,
+      "factor": "preferences",
+      "hard_override": false
+    },
+    {
+      "priority": 9,
+      "factor": "brand_or_cosmetic_preference",
+      "hard_override": false
+    }
+  ],
+
+  "minimum_effective_change_logic": {
+    "default_sequence": [
+      {
+        "step": 1,
+        "variable": "tension",
+        "change_cost": "very_low",
+        "adaptation_difficulty": "very_low"
+      },
+      {
+        "step": 2,
+        "variable": "string_gauge",
+        "change_cost": "low",
+        "adaptation_difficulty": "low"
+      },
+      {
+        "step": 3,
+        "variable": "string_model",
+        "change_cost": "low",
+        "adaptation_difficulty": "medium"
+      },
+      {
+        "step": 4,
+        "variable": "full_bed_or_hybrid_architecture",
+        "change_cost": "medium",
+        "adaptation_difficulty": "medium"
+      },
+      {
+        "step": 5,
+        "variable": "racquet",
+        "change_cost": "high",
+        "adaptation_difficulty": "high"
+      }
+    ],
+
+    "override_sequence_when": [
+      "Current racquet is physically unsuitable.",
+      "Current racquet creates persistent discomfort after string correction.",
+      "Current racquet is clearly too heavy or too difficult to maneuver.",
+      "Current racquet fundamentally conflicts with the player's power or control needs."
+    ]
+  },
+
+  "setup_candidate_structure": {
+    "candidate_id": null,
+
+    "racquet": {
+      "id": null,
+      "status": null
+    },
+
+    "string_setup": {
+      "type": null,
+
+      "main": {
+        "string_id": null,
+        "gauge_mm": null,
+        "tension_lbs": null
+      },
+
+      "cross": {
+        "string_id": null,
+        "gauge_mm": null,
+        "tension_lbs": null
+      }
+    },
+
+    "scores": {
+      "overall_match": null,
+      "physical_compatibility": null,
+      "racquet_compatibility": null,
+      "string_compatibility": null,
+      "goal_match": null,
+      "swing_speed_match": null,
+      "playing_style_match": null,
+      "comfort": null,
+      "control": null,
+      "spin": null,
+      "power": null,
+      "feel": null,
+      "durability": null,
+      "tension_maintenance": null,
+      "transition_ease": null
+    },
+
+    "confidence": null,
+
+    "primary_reasons": [],
+
+    "tradeoffs": [],
+
+    "risk_flags": []
+  },
+
+  "setup_scoring_weights": {
+    "physical_compatibility": 0.18,
+    "racquet_compatibility": 0.15,
+    "string_compatibility": 0.15,
+    "primary_goal_match": 0.16,
+    "swing_speed_match": 0.08,
+    "playing_style_match": 0.07,
+    "comfort": 0.06,
+    "control": 0.04,
+    "spin": 0.03,
+    "power": 0.02,
+    "feel": 0.02,
+    "durability": 0.015,
+    "tension_maintenance": 0.015,
+    "transition_ease": 0.02
+  },
+
+  "hard_exclusion_rules": {
+    "exclude_setup_when": [
+      "Physical hard constraint is violated.",
+      "Selected racquet is clearly outside player maneuverability tolerance.",
+      "Selected string stiffness conflicts with high arm sensitivity.",
+      "Hybrid architecture violates material or comfort constraints.",
+      "Recommended tension exceeds manufacturer hard limit.",
+      "Selected string or racquet data is incomplete enough to make the recommendation unreliable."
+    ]
+  },
+
+  "conflict_resolution": {
+    "more_control_vs_more_comfort": {
+      "preferred_solution_order": [
+        "More predictable string",
+        "Softer control polyester",
+        "Hybrid",
+        "Moderate tension change",
+        "Racquet change"
+      ],
+
+      "avoid": [
+        "Large tension increase with firm polyester"
+      ]
+    },
+
+    "more_power_vs_more_control": {
+      "preferred_solution_order": [
+        "Controlled-power string",
+        "Gauge optimization",
+        "Moderate tension adjustment",
+        "Hybrid",
+        "Racquet change"
+      ]
+    },
+
+    "more_spin_vs_more_comfort": {
+      "preferred_solution_order": [
+        "Soft shaped polyester",
+        "Shaped main + smooth softer cross",
+        "Lower tension moderately",
+        "Spin-friendly but flexible racquet if necessary"
+      ]
+    },
+
+    "more_durability_vs_more_feel": {
+      "preferred_solution_order": [
+        "Medium gauge",
+        "Durable but responsive string",
+        "Hybrid architecture",
+        "Thicker gauge only if necessary"
+      ]
+    },
+
+    "more_stability_vs_more_maneuverability": {
+      "preferred_solution_order": [
+        "Moderate swingweight increase",
+        "More stable frame at similar static weight",
+        "Avoid large static-weight jump"
+      ]
+    }
+  },
+
+  "recommendation_buckets": {
+    "primary": {
+      "name": {
+        "en": "Best Overall Match",
+        "zh": "最佳综合方案"
+      },
+
+      "count": 1,
+
+      "selection_rule": "Highest-scoring setup that passes all hard constraints and does not require unnecessary equipment changes."
+    },
+
+    "comfort_alternative": {
+      "name": {
+        "en": "More Comfort",
+        "zh": "更舒适方案"
+      },
+
+      "count": 1,
+
+      "minimum_comfort_improvement": 5
+    },
+
+    "performance_alternative": {
+      "name": {
+        "en": "More Performance",
+        "zh": "更性能导向方案"
+      },
+
+      "count": 1,
+
+      "performance_direction": [
+        "More Control",
+        "More Spin",
+        "More Precision",
+        "More Stability"
+      ]
+    },
+
+    "racquet_change_option": {
+      "name": {
+        "en": "Racquet Change Option",
+        "zh": "换拍方案"
+      },
+
+      "count": 1,
+
+      "include_only_when": [
+        "racquet_change_optional",
+        "racquet_change_recommended",
+        "racquet_change_strongly_recommended"
+      ]
+    }
+  },
+
+  "current_setup_preservation_logic": {
+    "principle": {
+      "en": "Preserve what already works.",
+      "zh": "保留当前配置中已经有效的部分。"
+    },
+
+    "examples": [
+      {
+        "condition": "Player likes current racquet but dislikes stiffness of stringbed.",
+        "action": "Keep racquet and change string setup."
+      },
+
+      {
+        "condition": "Player likes current string feel but lacks control.",
+        "action": "Try tension or gauge adjustment before changing string family."
+      },
+
+      {
+        "condition": "Player likes current performance but fatigues late in matches.",
+        "action": "Evaluate racquet weight and swingweight before changing string performance."
+      }
+    ]
+  },
+
+  "new_racquet_decision_logic": {
+    "do_not_recommend_when": [
+      "The problem can reasonably be solved with string or tension.",
+      "The current racquet compatibility score is above 72.",
+      "The user is only seeking a minor performance adjustment."
+    ],
+
+    "recommend_when": [
+      "Current racquet compatibility is below 60.",
+      "Weight or swingweight mismatch is significant.",
+      "Player consistently struggles with racquet power level.",
+      "Comfort problems remain after string correction.",
+      "Head size or forgiveness is fundamentally inappropriate."
+    ]
+  },
+
+  "string_recommendation_logic": {
+    "primary_candidate_limit": 3,
+    "alternative_candidate_limit": 3,
+
+    "prefer_existing_database_ids": true,
+
+    "must_validate": [
+      "String exists in knowledge/strings/",
+      "Gauge exists in selected string file",
+      "String family matches decision logic",
+      "No physical hard constraint is violated"
+    ],
+
+    "avoid_duplicate_performance_profiles": true
+  },
+
+  "hybrid_recommendation_logic": {
+    "must_have_distinct_roles": true,
+
+    "main_role_required": true,
+
+    "cross_role_required": true,
+
+    "do_not_recommend_when": [
+      "Full bed already satisfies all major goals.",
+      "Hybrid adds complexity without meaningful benefit.",
+      "Player has insufficient information for confident architecture selection."
+    ]
+  },
+
+  "tension_output_logic": {
+    "high_confidence": {
+      "return": [
+        "recommended_main_lbs",
+        "recommended_cross_lbs",
+        "working_range_lbs"
+      ]
+    },
+
+    "medium_confidence": {
+      "return": [
+        "recommended_range_lbs"
+      ]
+    },
+
+    "low_confidence": {
+      "return": [
+        "broad_range_lbs"
+      ],
+
+      "must_state": "More player information is required for precise tension."
+    }
+  },
+
+  "confidence_model": {
+    "input_completeness": {
+      "weight": 0.25
+    },
+
+    "database_quality": {
+      "weight": 0.20
+    },
+
+    "physical_information": {
+      "weight": 0.15
+    },
+
+    "current_setup_information": {
+      "weight": 0.15
+    },
+
+    "goal_clarity": {
+      "weight": 0.10
+    },
+
+    "playing_style_confidence": {
+      "weight": 0.075
+    },
+
+    "swing_speed_confidence": {
+      "weight": 0.075
+    }
+  },
+
+  "confidence_labels": {
+    "high": {
+      "minimum": 0.85
+    },
+
+    "medium": {
+      "minimum": 0.65
+    },
+
+    "low": {
+      "minimum": 0.40
+    },
+
+    "insufficient": {
+      "maximum": 0.39
+    }
+  },
+
+  "explanation_framework": {
+    "required_sections": [
+      {
+        "id": "player_summary",
+        "name": {
+          "en": "Player Summary",
+          "zh": "球员画像摘要"
+        }
+      },
+
+      {
+        "id": "current_setup_analysis",
+        "name": {
+          "en": "Current Setup Analysis",
+          "zh": "当前配置分析"
+        }
+      },
+
+      {
+        "id": "primary_recommendation",
+        "name": {
+          "en": "Primary Recommendation",
+          "zh": "首选方案"
+        }
+      },
+
+      {
+        "id": "why_it_works",
+        "name": {
+          "en": "Why It Works",
+          "zh": "为什么适合"
+        }
+      },
+
+      {
+        "id": "tradeoffs",
+        "name": {
+          "en": "Tradeoffs",
+          "zh": "取舍"
+        }
+      },
+
+      {
+        "id": "alternatives",
+        "name": {
+          "en": "Alternatives",
+          "zh": "备选方案"
+        }
+      }
+    ],
+
+    "must_answer": [
+      "Why this setup is better than the player's current setup.",
+      "Which player goal it solves.",
+      "Why the racquet should be kept or changed.",
+      "Why this string family and model were selected.",
+      "Why this gauge was selected.",
+      "Why this tension was selected.",
+      "What the player gives up in exchange for the improvement."
+    ]
+  },
+
+  "output_style": {
+    "maximum_primary_recommendations": 1,
+    "maximum_total_alternatives": 3,
+
+    "avoid_information_overload": true,
+
+    "prefer_ranked_recommendations": true,
+
+    "score_display": {
+      "enabled": true,
+      "format": "percentage",
+      "maximum": 100
+    },
+
+    "confidence_display": true
+  },
+
+  "final_output_contract": {
+    "player_summary": {
+      "playing_style": null,
+      "swing_speed": null,
+      "level": null,
+      "primary_goal": null,
+      "physical_constraints": []
+    },
+
+    "current_setup": {
+      "racquet_id": null,
+      "string_setup": null,
+      "tension": null
+    },
+
+    "current_setup_assessment": {
+      "racquet_compatibility_score": null,
+      "main_problems": [],
+      "keep_or_change_racquet": null
+    },
+
+    "primary_recommendation": {
+      "racquet": {
+        "id": null,
+        "action": null
+      },
+
+      "string_setup": {
+        "type": null,
+
+        "main": {
+          "string_id": null,
+          "gauge_mm": null,
+          "tension_lbs": null
+        },
+
+        "cross": {
+          "string_id": null,
+          "gauge_mm": null,
+          "tension_lbs": null
+        }
+      },
+
+      "match_score": null,
+      "confidence": null,
+      "primary_reasons": [],
+      "tradeoffs": []
+    },
+
+    "alternatives": {
+      "comfort": null,
+      "performance": null,
+      "racquet_change": null
+    },
+
+    "risk_flags": [],
+
+    "next_test": {
+      "recommended_test_duration_hours": null,
+      "feedback_questions": [
+        "Was depth easier or harder to control?",
+        "Did launch angle feel higher or lower?",
+        "Was the stringbed more or less comfortable?",
+        "Did spin improve?",
+        "Did control improve?",
+        "Did performance change after several hours?"
+      ]
+    }
+  },
+
+  "feedback_loop": {
+    "enabled": true,
+
+    "purpose": {
+      "en": "Use real player feedback to refine future recommendations.",
+      "zh": "利用真实球员反馈逐步修正后续推荐。"
+    },
+
+    "feedback_fields": [
+      "hours_played",
+      "power_feedback",
+      "control_feedback",
+      "spin_feedback",
+      "comfort_feedback",
+      "feel_feedback",
+      "launch_feedback",
+      "durability_feedback",
+      "tension_maintenance_feedback",
+      "overall_rating"
+    ],
+
+    "future_learning_ready": true
+  },
+
+  "safety_and_integrity_rules": {
+    "do_not": [
+      "Do not invent racquet specifications.",
+      "Do not invent string specifications.",
+      "Do not claim medical treatment benefits.",
+      "Do not prioritize professional-player usage over player fit.",
+      "Do not recommend an expensive racquet when a small string adjustment is likely sufficient.",
+      "Do not present a low-confidence recommendation as precise fact.",
+      "Do not rank special editions higher solely for rarity or cosmetic value."
+    ],
+
+    "must": [
+      "Use verified database information where available.",
+      "Separate verified product facts from EveryCourtAI model inference.",
+      "Expose meaningful tradeoffs.",
+      "Lower confidence when source data is incomplete.",
+      "Respect physical constraints before performance goals."
+    ]
+  },
+
+  "engine_connections": {
+    "reads_from": [
+      "knowledge/decision_rules/goal_priority.json",
+      "knowledge/decision_rules/string_selection_logic.json",
+      "knowledge/decision_rules/hybrid_decision_logic.json",
+      "knowledge/decision_rules/tension_adjustment_logic.json",
+      "knowledge/decision_rules/racquet_selection_logic.json",
+      "knowledge/recommendations/full_bed_strings.json",
+      "knowledge/recommendations/hybrid_strings.json",
+      "knowledge/recommendations/tension_rules.json",
+      "knowledge/players/player_profile_schema.json",
+      "knowledge/racquets/",
+      "knowledge/strings/"
+    ],
+
+    "final_engine": true
+  }
+}
