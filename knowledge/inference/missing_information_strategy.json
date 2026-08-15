@@ -1,0 +1,334 @@
+{
+  "id": "missing_information_strategy",
+  "category": "Inference Rules",
+  "type": "Missing Information Engine",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
+
+  "description": {
+    "en": "Defines how EveryCourtAI behaves when player information is incomplete. The engine should minimize assumptions, ask only the most valuable questions, and continue recommending whenever reasonable.",
+    "zh": "定义 EveryCourtAI 在资料不完整时的推理策略。系统应尽量减少猜测，只提出最有价值的问题，并在合理情况下继续完成推荐。"
+  },
+
+  "core_principle": {
+    "en": "Never guess critical information. Ask only when the answer will materially improve recommendation quality.",
+    "zh": "绝不猜测关键资料。只有当答案能明显提升推荐质量时才提问。"
+  },
+
+  "questioning_rules": {
+    "maximum_questions_per_round": 2,
+    "minimum_information_before_recommendation": true,
+    "prefer_multiple_choice": true,
+    "avoid_repeated_questions": true,
+    "allow_estimation_when_safe": true
+  },
+
+  "information_priority": [
+    {
+      "priority": 1,
+      "field": "primary_goal",
+      "required": true
+    },
+    {
+      "priority": 2,
+      "field": "current_racquet",
+      "required": true
+    },
+    {
+      "priority": 3,
+      "field": "current_string",
+      "required": false
+    },
+    {
+      "priority": 4,
+      "field": "current_tension",
+      "required": false
+    },
+    {
+      "priority": 5,
+      "field": "playing_style",
+      "required": true
+    },
+    {
+      "priority": 6,
+      "field": "swing_speed",
+      "required": true
+    },
+    {
+      "priority": 7,
+      "field": "physical_constraints",
+      "required": false
+    },
+    {
+      "priority": 8,
+      "field": "preferences",
+      "required": false
+    }
+  ],
+
+  "field_rules": {
+
+    "primary_goal": {
+      "if_missing": {
+        "ask_question": true,
+        "allow_recommendation": false,
+        "confidence_penalty": -15
+      }
+    },
+
+    "current_racquet": {
+      "if_missing": {
+        "ask_question": true,
+        "allow_general_recommendation": true,
+        "confidence_penalty": -15
+      }
+    },
+
+    "current_string": {
+      "if_missing": {
+        "ask_question": false,
+        "assume_unknown": true,
+        "confidence_penalty": -8
+      }
+    },
+
+    "current_tension": {
+      "if_missing": {
+        "ask_question": false,
+        "recommend_range_only": true,
+        "confidence_penalty": -5
+      }
+    },
+
+    "playing_style": {
+      "if_missing": {
+        "ask_question": true,
+        "confidence_penalty": -10
+      }
+    },
+
+    "swing_speed": {
+      "if_missing": {
+        "ask_question": true,
+        "confidence_penalty": -8
+      }
+    },
+
+    "physical_constraints": {
+      "if_missing": {
+        "assume_none": false,
+        "ask_question": false,
+        "display_warning": true,
+        "confidence_penalty": 0
+      }
+    },
+
+    "preferences": {
+      "if_missing": {
+        "use_defaults": true,
+        "confidence_penalty": -3
+      }
+    }
+  },
+
+  "question_priority_logic": {
+
+    "rule": "Always ask the question that will reduce uncertainty the most.",
+
+    "priority_order": [
+      "Primary Goal",
+      "Current Racquet",
+      "Playing Style",
+      "Swing Speed",
+      "Physical Constraints",
+      "Current String",
+      "Current Tension",
+      "Preferences"
+    ]
+  },
+
+  "question_templates": {
+
+    "primary_goal": {
+      "type": "single_choice",
+
+      "choices": [
+        "More Control",
+        "More Spin",
+        "More Comfort",
+        "More Power",
+        "More Feel",
+        "More Durability"
+      ]
+    },
+
+    "playing_style": {
+      "type": "single_choice",
+
+      "choices": [
+        "Baseline Aggressive",
+        "Counterpuncher",
+        "Baseline Grinder",
+        "All Court",
+        "Serve & Volley"
+      ]
+    },
+
+    "swing_speed": {
+      "type": "single_choice",
+
+      "choices": [
+        "Slow",
+        "Medium",
+        "Fast"
+      ]
+    },
+
+    "physical_constraints": {
+      "type": "multi_choice",
+
+      "choices": [
+        "Arm",
+        "Elbow",
+        "Wrist",
+        "Shoulder",
+        "Lower Back",
+        "Hip",
+        "Knee",
+        "Ankle",
+        "Neck",
+        "None"
+      ]
+    }
+  },
+
+  "safe_assumptions": {
+
+    "allowed": [
+      "Unknown string brand",
+      "Unknown string gauge",
+      "Unknown cosmetic preference",
+      "Unknown brand preference"
+    ],
+
+    "not_allowed": [
+      "Assume swing speed",
+      "Assume injury",
+      "Assume playing style",
+      "Assume primary goal",
+      "Assume tension",
+      "Assume racquet model"
+    ]
+  },
+
+  "recommendation_behavior": {
+
+    "complete_profile": {
+      "recommendation_mode": "Full Personalized"
+    },
+
+    "partial_profile": {
+      "recommendation_mode": "Profile-Based",
+      "show_warning": true
+    },
+
+    "minimal_profile": {
+      "recommendation_mode": "General Direction",
+      "avoid_specific_products": true
+    }
+  },
+
+  "progressive_questioning": {
+
+    "enabled": true,
+
+    "rule": "Never ask everything at once.",
+
+    "strategy": [
+      "Recommend first when possible.",
+      "Ask only the next highest-value question.",
+      "Update confidence after every answer."
+    ]
+  },
+
+  "confidence_interaction": {
+
+    "connect_to": "confidence_scoring",
+
+    "automatic_recalculation": true
+  },
+
+  "follow_up_logic": {
+
+    "if_confidence_below_80": {
+      "suggest_follow_up": true
+    },
+
+    "if_confidence_below_70": {
+      "require_follow_up": true
+    },
+
+    "if_confidence_above_90": {
+      "no_follow_up_required": true
+    }
+  },
+
+  "avoid_behaviors": [
+
+    "Never ask questions whose answers do not affect recommendations.",
+    "Never ask more than two questions at one time.",
+    "Never repeat a question already answered.",
+    "Never assume an injury.",
+    "Never force the user to complete the entire profile before giving useful advice.",
+    "Never stop the recommendation simply because optional information is missing."
+  ],
+
+  "example_flows": [
+
+    {
+      "scenario": "User says: I want more spin.",
+
+      "next_questions": [
+        "What racquet are you using?",
+        "How would you describe your swing speed?"
+      ]
+    },
+
+    {
+      "scenario": "User uploads current setup.",
+
+      "next_questions": [
+        "What would you most like to improve?"
+      ]
+    },
+
+    {
+      "scenario": "Everything known except tension.",
+
+      "next_action": "Recommend normally and provide a tension range."
+    }
+  ],
+
+  "future_learning": {
+
+    "remember_previous_answers": true,
+
+    "avoid_reasking_known_information": true,
+
+    "learn_typical_preferences": true
+  },
+
+  "engine_connections": {
+
+    "reads_from": [
+      "knowledge/inference/conflict_resolution.json",
+      "knowledge/inference/confidence_scoring.json",
+      "knowledge/players/"
+    ],
+
+    "passes_to": [
+      "recommendation_engine",
+      "conversation_manager"
+    ]
+  }
+}
