@@ -1,0 +1,579 @@
+{
+  "id": "toroline_toro_toro",
+  "brand": "Toroline",
+  "series": "TORO TORO",
+  "model": "TORO TORO",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Co-Polyester",
+    "string_family": "Polyester",
+    "cross_section": "Hexagonal",
+    "surface": "Super-Slick / Shaped",
+    "profile_sides": 6,
+    "tour_positioning": "Spin / Precision / Predictable Response / Pocketing Co-Polyester",
+    "official_positioning": "A super-slick six-sided co-polyester designed to deliver massive spin, surgical precision, predictable response and a softer flex for enhanced ball pocketing and feel.",
+    "target_level": "Intermediate / Advanced / Tournament"
+  },
+
+  "specifications": {
+    "construction": "Six-Sided Co-Polyester Monofilament",
+    "cross_section": "Hexagonal (6-Sided)",
+    "surface": "Super-Slick / Shaped",
+
+    "available_colors": [
+      "Neon Pink",
+      "Neon Orange"
+    ],
+
+    "color_availability": {
+      "Neon Pink": {
+        "gauge_mm": 1.23,
+        "gauge_name": "17",
+        "available": true
+      },
+
+      "Neon Orange": {
+        "gauge_mm": 1.23,
+        "gauge_name": "17",
+        "available": true
+      }
+    },
+
+    "available_gauges": [
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.23,
+        "available": true,
+
+        "available_colors": [
+          "Neon Pink",
+          "Neon Orange"
+        ],
+
+        "power": 9,
+        "control": 10,
+        "spin": 10,
+        "comfort": 9,
+        "feel": 10,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "elasticity": 9,
+        "ball_pocketing": 10,
+        "launch_angle": "Medium",
+
+        "recommended_use": [
+          "Maximum Spin",
+          "Surgical Precision",
+          "Predictable Response",
+          "Aggressive Full Swings",
+          "Ball Pocketing",
+          "Fast Racquet Head Speed",
+          "Players Wanting Softer Shaped Co-Poly Feel"
+        ]
+      }
+    ],
+
+    "packaging": {
+      "type": "Two Half Sets",
+      "half_sets_per_package": 2,
+      "length_per_half_set_m": 6.7,
+      "approximate_length_per_half_set_m": 6.7,
+      "intended_racquets": 1,
+      "total_length_m": 13.4
+    }
+  },
+
+  "technology": [
+    "Six-Sided Hexagonal Geometry",
+    "Super-Slick Surface",
+    "Softer Flex Construction",
+    "Snapback Optimization",
+    "Ball Pocketing Enhancement",
+    "Precision Response Tuning"
+  ],
+
+  "technology_details": {
+    "hexagonal_geometry": {
+      "shape": "Hexagonal",
+      "sides": 6,
+      "description": "The six-sided profile increases string-to-ball interaction to create strong mechanical grip and spin.",
+      "primary_benefits": [
+        "Spin",
+        "Ball Bite",
+        "Trajectory Control",
+        "Heavy Ball Production"
+      ]
+    },
+
+    "super_slick_surface": {
+      "description": "A low-friction slick surface supports string movement and snapback while maintaining a clean and predictable response.",
+      "primary_benefits": [
+        "Snapback",
+        "Reduced Inter-String Friction",
+        "Spin Efficiency",
+        "Response Consistency"
+      ]
+    },
+
+    "softer_flex": {
+      "description": "The softer flex increases dwell time, pocketing and feel while retaining the control required for aggressive swings.",
+      "primary_benefits": [
+        "Ball Pocketing",
+        "Feel",
+        "Comfort",
+        "Swing Confidence"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Soft Precision Spin Co-Polyester",
+    "target_player": "Intermediate / Advanced / Tournament",
+    "arm_friendly": true,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true,
+    "precision_focus": true,
+    "pocketing_focus": true,
+    "snapback_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 9,
+    "feel": 10,
+    "durability": 9,
+    "tension_maintenance": 9,
+    "elasticity": 9,
+    "ball_pocketing": 10,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 9,
+    "feel": 10,
+    "durability": 9,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Soft-Medium",
+    "snapback": 10,
+    "ball_pocketing": 10,
+    "string_movement": 9,
+    "inter_string_friction": "Low",
+    "tension_stability": 9,
+    "spin_window": "Very High",
+    "predictability": 10,
+    "arm_friendliness": 9,
+    "directional_precision": 10,
+    "ball_bite": 10,
+    "surface_grip": 10,
+    "launch_angle_consistency": 10,
+    "full_swing_confidence": 10,
+    "overhit_resistance": 10,
+    "connected_feel": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "Modern Baseline",
+      "All Court",
+      "Precision-Oriented Player"
+    ],
+
+    "special_player_profiles": [
+      "Players Seeking Massive Spin With Precision",
+      "Players Who Take Big Full Swings",
+      "Players Wanting Predictable Response",
+      "Players Seeking Softer Shaped Co-Poly Feel",
+      "Players Wanting Strong Pocketing Without Losing Control",
+      "Players Concerned About Overhitting"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Babolat Pure Aero",
+    "Babolat Pure Drive",
+    "Wilson Shift",
+    "Wilson Blade",
+    "HEAD Extreme",
+    "HEAD Speed",
+    "Yonex VCORE",
+    "Yonex EZONE",
+    "Tecnifibre T-FIGHT",
+    "Dunlop SX",
+    "Dunlop FX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "preferred_role": "Mains",
+
+    "best_pairings": [
+      "Toroline A5",
+      "Toroline Wasabi X",
+      "Toroline O-TORO SNAP",
+      "Toroline O-TORO SNAP TOUR FLEX",
+      "Toroline Truffle X",
+      "Toroline CASH"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Spin",
+        "Ball Bite",
+        "Precision",
+        "Pocketing",
+        "Aggressive Swing Control"
+      ],
+
+      "as_crosses": [
+        "Spin Support",
+        "Pocketing",
+        "Response",
+        "Feel"
+      ]
+    },
+
+    "recommended_toroline_hybrids": [
+      {
+        "mains": "TORO TORO",
+        "crosses": "A5",
+        "expected_profile": [
+          "Hexagonal Ball Bite",
+          "Low-Friction Round Cross",
+          "Fast Snapback",
+          "Predictable Launch",
+          "Precision"
+        ]
+      },
+
+      {
+        "mains": "TORO TORO",
+        "crosses": "Wasabi X",
+        "expected_profile": [
+          "Strong Spin",
+          "Ultra-Slick Cross",
+          "Fast Snapback",
+          "Court Penetration",
+          "Pocketing"
+        ]
+      },
+
+      {
+        "mains": "TORO TORO",
+        "crosses": "Truffle X",
+        "expected_profile": [
+          "Spin",
+          "Plush Pocketing",
+          "Maximum Comfort",
+          "Controlled Power",
+          "Reduced Stringbed Harshness"
+        ]
+      },
+
+      {
+        "mains": "TORO TORO",
+        "crosses": "O-TORO SNAP TOUR FLEX",
+        "expected_profile": [
+          "Spin",
+          "Surgical Control",
+          "Low-Friction Snapback",
+          "Higher Stability",
+          "Modern Response"
+        ]
+      }
+    ],
+
+    "hybrid_note": "TORO TORO is particularly suitable as a shaped main paired with a smooth low-friction cross when players want to preserve its ball bite while increasing snapback efficiency."
+  },
+
+  "gauge_recommendation": {
+    "1.23": {
+      "gauge_name": "17",
+
+      "best_for": [
+        "Spin",
+        "Precision",
+        "Pocketing",
+        "Aggressive Full Swings",
+        "Predictable Response"
+      ],
+
+      "tradeoffs": [
+        "Less Maximum Durability Than Thicker 1.25-1.30 mm Co-Poly",
+        "Higher Ball Grip Than Round Strings May Produce a Less Penetrating Trajectory"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.23": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "16-28"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Medium-Low",
+    "tension_loss_sensitivity": "Medium-Low",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when slickness, snapback, pocketing or directional precision noticeably declines."
+  },
+
+  "comparison_data": {
+    "vs_round_co_poly": {
+      "mechanical_ball_grip": "Higher",
+      "spin": "Higher",
+      "ball_bite": "Higher",
+      "launch_angle": "Higher",
+      "pocketing": "High",
+      "trajectory": "More Spin-Oriented"
+    },
+
+    "vs_toroline_o_toro": {
+      "shape": {
+        "toro_toro": "Hexagonal",
+        "o_toro": "Hexagonal"
+      },
+
+      "spin": "Both Very High",
+
+      "toro_toro_character": [
+        "Surgical Precision",
+        "Predictable Response",
+        "Softer Flex",
+        "Enhanced Pocketing"
+      ],
+
+      "o_toro_character": [
+        "Elite Spin",
+        "Heavy Rotation",
+        "Controlled Response",
+        "High Comfort"
+      ]
+    },
+
+    "vs_toroline_vamos": {
+      "shape": "Both Hexagonal",
+
+      "toro_toro": [
+        "Softer Flex",
+        "More Pocketing",
+        "More Predictable Response"
+      ],
+
+      "vamos": [
+        "Stronger Bite Focus",
+        "Higher Launch",
+        "More Aggressive Spin Trajectory"
+      ]
+    },
+
+    "vs_toroline_snapper": {
+      "shape": {
+        "toro_toro": "Hexagonal",
+        "snapper": "Octagonal"
+      },
+
+      "toro_toro_focus": [
+        "Ball Bite",
+        "Precision",
+        "Pocketing"
+      ],
+
+      "snapper_focus": [
+        "Maximum Snapback",
+        "Court Penetration",
+        "Directional Control"
+      ],
+
+      "launch_angle": {
+        "toro_toro": "Medium",
+        "snapper": "Medium / More Penetrating"
+      }
+    }
+  },
+
+  "science_metrics": {
+    "geometry": {
+      "shape": "Hexagonal",
+      "sides": 6
+    },
+
+    "spin_mechanism": [
+      "Hexagonal Mechanical Grip",
+      "Low-Friction Snapback",
+      "String Movement"
+    ],
+
+    "trajectory_profile": "Controlled / Spin-Oriented",
+
+    "launch_angle_profile": "Medium",
+
+    "mechanical_ball_grip_class": "Very High",
+
+    "snapback_class": "Very High",
+
+    "ball_pocketing_class": "Very High",
+
+    "precision_class": "Very High",
+
+    "flex_class": "Soft-Medium",
+
+    "performance_class": "Premium Precision Spin Co-Poly"
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Aggressive Baseliners",
+      "Heavy Topspin Players",
+      "Players Seeking Surgical Precision",
+      "Players Wanting Massive Spin With Predictable Response",
+      "Players Who Take Big Cuts At The Ball",
+      "Players Seeking Enhanced Pocketing",
+      "Players Wanting a Softer Performance Co-Poly"
+    ],
+
+    "avoid_for": [
+      "Players Seeking Very Low Launch Round-String Trajectory",
+      "Frequent String Breakers Wanting Maximum Gauge Durability",
+      "Players With Significant Arm Sensitivity Requiring Multifilament-Level Comfort"
+    ],
+
+    "alternative_strings": [
+      "Toroline O-TORO",
+      "Toroline VAMOS",
+      "Toroline Snapper",
+      "Toroline WASABI",
+      "Solinco Hyper-G",
+      "MSV Focus Hex"
+    ]
+  },
+
+  "comparison_tags": [
+    "TORO TORO",
+    "Hexagonal",
+    "Six-Sided",
+    "Super Slick",
+    "Massive Spin",
+    "Surgical Precision",
+    "Predictable Response",
+    "Softer Flex",
+    "Ball Pocketing",
+    "Neon Pink",
+    "Neon Orange"
+  ],
+
+  "ai_keywords": [
+    "toroline",
+    "toro toro",
+    "toroline toro toro",
+    "1.23",
+    "17 gauge",
+    "neon pink",
+    "neon orange",
+    "six sided",
+    "6 sided",
+    "hexagonal",
+    "super slick",
+    "spin",
+    "precision",
+    "surgical precision",
+    "predictable response",
+    "soft flex",
+    "ball pocketing",
+    "feel",
+    "big cuts",
+    "overhitting"
+  ],
+
+  "target_competitors": [
+    "Toroline O-TORO",
+    "Toroline VAMOS",
+    "Toroline Snapper",
+    "Toroline WASABI",
+    "Solinco Hyper-G",
+    "HEAD Lynx Tour",
+    "MSV Focus Hex"
+  ],
+
+  "description": {
+    "en": "Toroline TORO TORO is a super-slick six-sided co-polyester designed to combine massive spin with surgical precision and predictable response. Its hexagonal geometry provides strong mechanical ball grip, while the slick surface supports efficient string movement and snapback. A softer flex increases ball pocketing, dwell time and feel, allowing aggressive players to take full cuts at the ball with greater confidence and reduced fear of overhitting. TORO TORO is available in Neon Pink and Neon Orange, both in 1.23 mm / 17 gauge.",
+
+    "zh": "Toroline TORO TORO 是一款采用六边形结构和 Super-Slick 超光滑表面的高性能共聚酯球线，核心定位是 Massive Spin、Surgical Precision 与 Predictable Response。六边形截面负责提供强机械咬球，而低摩擦表面则帮助球线移动并快速 Snapback。相比更硬的控制型聚酯，TORO TORO 采用更柔和的 Flex，能够增加 Ball Pocketing、Dwell Time 和触球感，让球员在高速完整挥拍时依然保持信心，并降低过度击球出界的风险。产品规格统一为 1.23 毫米 / 17，提供 Neon Pink 与 Neon Orange 两种颜色。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Toroline TORO TORO",
+      "Six-sided co-poly",
+      "Hexagonal profile",
+      "Super slick surface",
+      "Massive spin positioning",
+      "Surgical precision",
+      "Predictable response",
+      "Softer flex",
+      "Enhanced ball pocketing",
+      "Enhanced feel",
+      "Full swing confidence positioning",
+      "Reduced fear of overhitting positioning",
+      "Neon Pink",
+      "Neon Orange",
+      "1.23 mm / 17 gauge",
+      "Two half sets per package",
+      "Approximately 6.7 m per half set",
+      "One-racquet package configuration"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendations",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
