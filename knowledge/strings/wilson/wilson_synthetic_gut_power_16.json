@@ -1,0 +1,297 @@
+{
+  "id": "wilson_synthetic_gut_power_16",
+  "brand": "Wilson",
+  "series": "Synthetic Gut",
+  "model": "Synthetic Gut Power 16",
+  "category": "Synthetic Gut",
+
+  "manufacturer_data": {
+    "construction": "Solid Core Nylon",
+    "string_family": "Synthetic Gut",
+    "official_positioning": "Synthetic gut designed for crisp feel, easy power and arm-friendly comfort with increased durability.",
+    "target_level": "Beginner / Intermediate / Recreational"
+  },
+
+  "specifications": {
+    "construction": "Solid Core Nylon",
+
+    "available_colors": [
+      "Black",
+      "Green",
+      "White"
+    ],
+
+    "gauge_name": "16",
+    "gauge_mm": 1.30,
+
+    "shape": "Round",
+
+    "core": "Solid Nylon Core",
+
+    "outer_wrap": "High Energy Wraps",
+
+    "packaging": [
+      {
+        "type": "Set",
+        "length_ft": 40,
+        "length_m": 12.2
+      }
+    ]
+  },
+
+  "technology": [
+    "Solid Core Nylon",
+    "High Energy Wraps",
+    "Power Enhancement",
+    "Crisp Response",
+    "Arm-Friendly Construction"
+  ],
+
+  "technology_details": {
+    "solid_core": {
+      "description": "Solid nylon core provides dependable control, crisp response and excellent durability.",
+      "primary_benefits": [
+        "Control",
+        "Consistency",
+        "Durability",
+        "Crisp Feel"
+      ]
+    },
+
+    "high_energy_wraps": {
+      "description": "High energy wraps improve responsiveness and increase power while maintaining comfort.",
+      "primary_benefits": [
+        "Power",
+        "Responsiveness",
+        "Feel"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Synthetic Gut",
+    "arm_friendly": true,
+    "spin_focus": false,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 8,
+    "spin": 6,
+    "comfort": 9,
+    "feel": 8,
+    "durability": 8,
+    "tension_maintenance": 8,
+    "elasticity": 8,
+    "ball_pocketing": 8,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 8,
+    "spin": 6,
+    "comfort": 9,
+    "feel": 8,
+    "durability": 8,
+    "tension_maintenance": 8
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Soft",
+    "snapback": 5,
+    "ball_bite": 5,
+    "ball_pocketing": 8,
+    "string_movement": 6,
+    "tension_stability": 8,
+    "predictability": 9,
+    "arm_friendliness": 9,
+    "directional_precision": 8,
+    "stringbed_stability": 9,
+    "response": "Crisp"
+  },
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate",
+      "Recreational"
+    ],
+
+    "swing_speed": [
+      "Slow",
+      "Medium",
+      "Medium-Fast"
+    ],
+
+    "play_style": [
+      "All Court",
+      "Club Player",
+      "Developing Player"
+    ],
+
+    "special_player_profiles": [
+      "Players Looking For Easy Power",
+      "Players Wanting More Durability Than 17 Gauge",
+      "Junior Players",
+      "Players Transitioning From Factory Strings",
+      "Players Looking For Affordable All-Around Performance"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Clash",
+    "Wilson Ultra",
+    "Wilson Blade 100",
+    "Wilson Burn",
+    "Babolat Boost",
+    "HEAD Boom Team",
+    "Yonex EZONE 100L"
+  ],
+
+  "comparison_data": {
+    "vs_synthetic_gut_power_17": {
+      "diameter": {
+        "16": "1.30 mm",
+        "17": "1.25 mm"
+      },
+      "durability": "Higher",
+      "control": "More Stable",
+      "feel": "Slightly Lower",
+      "power": "Similar",
+      "elasticity": "Slightly Lower",
+      "ball_pocketing": "Slightly Lower"
+    },
+
+    "vs_sensation_16": {
+      "comfort": "Lower",
+      "durability": "Higher",
+      "feel": "More Crisp",
+      "construction": {
+        "synthetic_gut_power": "Solid Core Nylon",
+        "sensation": "Multifilament"
+      }
+    },
+
+    "vs_nxt_16": {
+      "comfort": "Lower",
+      "power": "Lower",
+      "feel": "More Crisp",
+      "durability": "Higher",
+      "price": "More Affordable"
+    }
+  },
+
+  "science_metrics": {
+    "construction": "Solid Core Nylon",
+    "spin_generation": "Moderate",
+    "elasticity": "High",
+    "trajectory_profile": "Neutral",
+    "launch_angle_profile": "Medium",
+    "comfort_class": "High",
+    "power_class": "High",
+    "control_class": "Moderate-High",
+    "durability_class": "High"
+  },
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Club Players",
+      "Recreational Players",
+      "Junior Players",
+      "Players Wanting Comfortable Nylon Strings",
+      "Players Looking For Easy Power",
+      "Players Who Break 17 Gauge Too Quickly"
+    ],
+
+    "avoid_for": [
+      "Heavy Topspin Players",
+      "Tournament Players Seeking Maximum Spin",
+      "Players Wanting Polyester-Level Control",
+      "Frequent String Breakers Seeking Polyester Durability"
+    ],
+
+    "alternative_strings": [
+      "Wilson Synthetic Gut Power 17",
+      "Wilson Sensation 16",
+      "Wilson NXT 16",
+      "Prince Synthetic Gut Duraflex",
+      "Gamma Synthetic Gut"
+    ]
+  },
+
+  "comparison_tags": [
+    "Wilson",
+    "Synthetic Gut",
+    "Synthetic Gut Power",
+    "Solid Core Nylon",
+    "Power",
+    "Comfort",
+    "Control",
+    "Durability",
+    "Black",
+    "Green",
+    "White",
+    "1.30"
+  ],
+
+  "ai_keywords": [
+    "wilson",
+    "synthetic gut power",
+    "synthetic gut",
+    "solid core nylon",
+    "16",
+    "1.30",
+    "black",
+    "green",
+    "white",
+    "power",
+    "comfort",
+    "control",
+    "durability",
+    "nylon"
+  ],
+
+  "description": {
+    "en": "Wilson Synthetic Gut Power 16 is a solid-core nylon string featuring high-energy wraps for crisp feel, responsive power and dependable control. The thicker 16 gauge (1.30 mm) increases durability and stringbed stability compared with the 17 gauge while maintaining excellent comfort and arm-friendly performance.",
+
+    "zh": "Wilson Synthetic Gut Power 16 是一款采用 Solid Core Nylon（实心尼龙）结构的合成肠线，配备 High Energy Wraps 外层包覆，可提供清晰的击球反馈、轻松的力量输出以及稳定的控制。相比 17（1.25mm），16（1.30mm）拥有更好的耐久性、更稳定的线床表现和更长的使用寿命，同时依然保持舒适、易打以及对手臂友好的特点。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Wilson Synthetic Gut Power 16",
+      "Black",
+      "Green",
+      "White",
+      "Solid Core Nylon",
+      "High Energy Wraps",
+      "Crisp Feel",
+      "Control",
+      "Power",
+      "Arm Friendly",
+      "16 gauge provides greater durability",
+      "Gauge 16",
+      "1.30 mm",
+      "Set 40 ft / 12.2 m"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Players",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations"
+    ]
+  }
+}
