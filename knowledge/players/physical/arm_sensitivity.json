@@ -1,0 +1,279 @@
+{
+  "id": "arm_sensitivity",
+  "category": "Player Physical Constraint",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
+
+  "constraint": {
+    "name": {
+      "en": "Arm Sensitivity",
+      "zh": "手臂敏感"
+    },
+
+    "description": {
+      "en": "The player experiences general arm discomfort, fatigue or sensitivity during or after play. This is a physical constraint and always has higher priority than performance goals.",
+      "zh": "球员在击球过程中或击球后容易出现手臂疲劳、不适或敏感。这属于身体限制条件，其优先级永远高于性能目标。"
+    }
+  },
+
+  "priority": {
+    "type": "Physical Constraint",
+    "override_level": "Highest",
+    "overrides": [
+      "more_power",
+      "more_spin",
+      "more_control",
+      "more_feel",
+      "more_durability"
+    ]
+  },
+
+  "severity_levels": {
+    "none": {
+      "score": 0
+    },
+    "mild": {
+      "score": 1
+    },
+    "moderate": {
+      "score": 2
+    },
+    "high": {
+      "score": 3
+    }
+  },
+
+  "symptoms": [
+    "General arm fatigue",
+    "Arm soreness after hitting",
+    "Shock felt on off-center hits",
+    "Player avoids long sessions because of discomfort",
+    "Harsh stringbed feeling",
+    "Difficulty recovering after play"
+  ],
+
+  "possible_causes": [
+    "Very stiff polyester",
+    "Dead polyester string",
+    "Very high string tension",
+    "High racquet stiffness",
+    "Very high swingweight",
+    "Poor impact location",
+    "Combination of several stiff components"
+  ],
+
+  "equipment_strategy": {
+    "primary_goal": "Reduce Impact Shock",
+
+    "change_priority": [
+      "String Material",
+      "String Tension",
+      "Hybrid Architecture",
+      "Gauge",
+      "Racquet"
+    ]
+  },
+
+  "recommended_string_families": [
+    "Natural Gut",
+    "Multifilament",
+    "Soft Co-Polyester",
+    "Natural Gut / Polyester Hybrid",
+    "Multifilament / Polyester Hybrid"
+  ],
+
+  "avoid_string_families": [
+    "Very Firm Polyester",
+    "Dead Polyester",
+    "High-Stiffness Tournament Polyester"
+  ],
+
+  "preferred_string_dna": {
+    "comfort": 10,
+    "shock_absorption": 10,
+    "elasticity": 9,
+    "ball_pocketing": 9,
+    "feel": 8,
+    "control": 7,
+    "spin": 6,
+    "durability": 5,
+    "stiffness": 1
+  },
+
+  "preferred_racquet_dna": {
+    "comfort": 10,
+    "forgiveness": 9,
+    "maneuverability": 8,
+    "stability": 8,
+    "feel": 8,
+    "control": 7,
+    "power": 7,
+    "spin": 7
+  },
+
+  "recommended_strings": [
+    "Babolat Touch VS",
+    "Babolat RPM Soft",
+    "Wilson Natural Gut",
+    "Wilson NXT",
+    "Yonex PolyTour Air",
+    "Yonex REXIS Comfort",
+    "Yonex REXIS Feel",
+    "Luxilon Element",
+    "Tecnifibre X-One Biphase",
+    "Tecnifibre NRG2",
+    "Solinco Hyper-G Soft",
+    "Toroline Truffle X",
+    "MSV Soft Touch"
+  ],
+
+  "recommended_hybrids": [
+    "Natural Gut Main + Soft Polyester Cross",
+    "Multifilament Main + Soft Polyester Cross",
+    "Soft Polyester Main + Multifilament Cross"
+  ],
+
+  "tension_adjustment": {
+    "mild": {
+      "adjustment_lbs": -2
+    },
+    "moderate": {
+      "adjustment_lbs": -3
+    },
+    "high": {
+      "adjustment_lbs": -4
+    },
+
+    "notes": [
+      "Reduce tension before recommending a racquet replacement.",
+      "Changing to a softer string is usually more effective than reducing tension alone."
+    ]
+  },
+
+  "gauge_adjustment": {
+    "preferred": [
+      "1.20",
+      "1.23",
+      "1.25"
+    ],
+
+    "avoid": [
+      "Very thick firm polyester unless durability is critical."
+    ]
+  },
+
+  "racquet_adjustment": {
+    "prefer": [
+      "Lower RA stiffness",
+      "Larger sweet spot",
+      "Better vibration damping",
+      "Moderate swingweight"
+    ],
+
+    "avoid": [
+      "Very stiff frames",
+      "Extremely demanding player's frames",
+      "Excessively high swingweight"
+    ]
+  },
+
+  "severity_logic": {
+    "mild": {
+      "recommendation": [
+        "Soft polyester",
+        "Lower tension",
+        "Comfort hybrid"
+      ]
+    },
+
+    "moderate": {
+      "recommendation": [
+        "Multifilament",
+        "Natural Gut Hybrid",
+        "Lower tension",
+        "Review racquet stiffness"
+      ]
+    },
+
+    "high": {
+      "recommendation": [
+        "Natural Gut",
+        "Premium Multifilament",
+        "Very soft hybrid",
+        "Flexible racquet"
+      ],
+
+      "hard_constraints": [
+        "Avoid firm polyester.",
+        "Avoid high polyester tension.",
+        "Avoid harsh full-bed polyester."
+      ]
+    }
+  },
+
+  "ai_override_rules": {
+    "if_arm_sensitivity_is_high": {
+      "override": true,
+
+      "ignore_if_goal_is": [
+        "Maximum Spin",
+        "Maximum Control",
+        "Maximum Durability"
+      ],
+
+      "prioritize": [
+        "Comfort",
+        "Shock Absorption",
+        "Safety",
+        "Long-Term Playability"
+      ]
+    }
+  },
+
+  "tradeoffs": {
+    "comfort_priority_can_reduce": [
+      "Maximum Spin",
+      "Maximum Control",
+      "Maximum Durability"
+    ],
+
+    "acceptable_tradeoff": "Protecting the player's arm is more important than maximizing performance."
+  },
+
+  "matching_weights": {
+    "comfort": 0.30,
+    "shock_absorption": 0.25,
+    "string_stiffness": 0.15,
+    "racquet_stiffness": 0.10,
+    "tension": 0.08,
+    "ball_pocketing": 0.05,
+    "feel": 0.03,
+    "control": 0.02,
+    "spin": 0.01,
+    "durability": 0.01
+  },
+
+  "output_guidance": {
+    "must_explain": [
+      "Why arm comfort overrides performance.",
+      "Which equipment variable contributes most to discomfort.",
+      "Why the recommended setup reduces impact stress.",
+      "Which performance characteristics are intentionally sacrificed."
+    ]
+  },
+
+  "search_keywords": [
+    "arm",
+    "arm pain",
+    "arm sensitive",
+    "arm fatigue",
+    "comfort",
+    "shock",
+    "soft",
+    "手臂",
+    "手臂敏感",
+    "手臂疲劳",
+    "舒适",
+    "减震"
+  ]
+}
