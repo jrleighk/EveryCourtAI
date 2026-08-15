@@ -1,0 +1,321 @@
+{
+  "id": "serve_volley",
+  "category": "Playing Style",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
+
+  "style": {
+    "name": {
+      "en": "Serve & Volley Player",
+      "zh": "发球上网型球员"
+    },
+
+    "description": {
+      "en": "A forward-oriented player who uses the serve to create attacking opportunities, transitions quickly toward the net, and finishes points through volleys, half-volleys, overheads and directional precision.",
+      "zh": "通过发球主动建立进攻机会，快速向网前推进，并依靠截击、半截击、高压球和方向控制完成得分的前场进攻型球员。"
+    }
+  },
+
+  "court_position": {
+    "primary": "Net / Inside Court",
+    "secondary": [
+      "Service Line",
+      "Baseline"
+    ],
+
+    "net_frequency": "Very High",
+
+    "preferred_rally_length": "Short"
+  },
+
+  "playing_identity": {
+    "offensive_level": 10,
+    "defensive_level": 5,
+    "risk_tolerance": 8,
+    "initiative": 10,
+    "consistency": 7,
+    "transition_to_net": 10,
+    "serve_dependency": 9,
+    "first_volley_importance": 10,
+    "reaction_requirement": 10,
+    "point_shortening": 10
+  },
+
+  "stroke_characteristics": {
+    "serve": "Primary Weapon",
+    "return": "Compact / Directional",
+    "forehand": "Transition-Oriented",
+    "backhand": "Transition-Oriented",
+    "volley": "Primary Weapon",
+    "half_volley": "High Priority",
+    "overhead": "High Priority",
+    "slice_usage": "High",
+    "drop_volley_usage": "High"
+  },
+
+  "typical_ball_characteristics": {
+    "pace": 8,
+    "spin": 6,
+    "depth": 8,
+    "trajectory": "Low-Medium",
+    "net_clearance": "Low-Medium",
+    "court_penetration": 10,
+    "touch": 10,
+    "directional_precision": 10,
+    "reaction_speed": 10
+  },
+
+  "preferred_racquet_dna": {
+    "power": 7,
+    "control": 10,
+    "spin": 6,
+    "stability": 10,
+    "maneuverability": 10,
+    "forgiveness": 7,
+    "feel": 10,
+    "launch_angle": 6,
+    "comfort": 8,
+    "predictability": 10,
+    "touch": 10
+  },
+
+  "preferred_racquet_characteristics": {
+    "head_size": [
+      "95",
+      "97",
+      "98",
+      "100"
+    ],
+
+    "weight_g": [
+      "300",
+      "305",
+      "310",
+      "315",
+      "320"
+    ],
+
+    "balance": [
+      "Head Light",
+      "Slightly Head Light"
+    ],
+
+    "string_patterns": [
+      "16x19",
+      "16x20",
+      "18x20"
+    ],
+
+    "stiffness_preference": [
+      "Medium",
+      "Medium-Firm"
+    ],
+
+    "key_traits": [
+      "Fast Handling",
+      "High Stability",
+      "Excellent Touch",
+      "Directional Control",
+      "Predictable Launch",
+      "Solid First-Volley Response"
+    ]
+  },
+
+  "preferred_string_dna": {
+    "power": 8,
+    "control": 10,
+    "spin": 6,
+    "comfort": 8,
+    "feel": 10,
+    "durability": 8,
+    "tension_maintenance": 9,
+    "snapback": 7,
+    "ball_pocketing": 9,
+    "predictability": 10,
+    "touch": 10
+  },
+
+  "recommended_string_families": [
+    "Natural Gut",
+    "Natural Gut / Polyester Hybrid",
+    "Premium Multifilament",
+    "Poly / Multifilament Hybrid",
+    "Soft Co-Polyester",
+    "Round Co-Polyester"
+  ],
+
+  "preferred_string_characteristics": {
+    "shape": [
+      "Round",
+      "Smooth",
+      "Lightly Textured"
+    ],
+
+    "stiffness": [
+      "Soft",
+      "Medium",
+      "Medium-Firm"
+    ],
+
+    "gauge_mm": [
+      1.20,
+      1.25,
+      1.30
+    ],
+
+    "key_traits": [
+      "Touch",
+      "Directional Control",
+      "Ball Pocketing",
+      "Stable Response",
+      "Comfort",
+      "Low-Medium Launch",
+      "Predictability"
+    ]
+  },
+
+  "recommended_string_examples": [
+    "Wilson Natural Gut",
+    "Babolat Touch VS",
+    "Wilson NXT Control",
+    "Yonex REXIS Feel",
+    "Tecnifibre X-One Biphase",
+    "Luxilon Element",
+    "Yonex PolyTour Pro",
+    "Toroline A5",
+    "Head Hawk Touch",
+    "Solinco Hyper-G Round"
+  ],
+
+  "recommended_hybrid_examples": [
+    "Natural Gut + Smooth Polyester",
+    "Natural Gut + ALU Power Rough",
+    "Poly + Multifilament",
+    "Soft Poly + Multifilament",
+    "Round Poly + Natural Gut"
+  ],
+
+  "recommended_tension": {
+    "natural_gut": "53-57 lbs",
+    "multifilament": "51-55 lbs",
+    "soft_poly": "47-50 lbs",
+    "gut_poly_hybrid": "54/51 lbs",
+    "poly_multi_hybrid": "49/52 lbs"
+  },
+
+  "recommended_racquet_examples": [
+    "Wilson RF 01 Pro",
+    "Wilson Pro Staff 97",
+    "Wilson Blade 98",
+    "Yonex PERCEPT 97",
+    "Head Speed Pro",
+    "Head Radical Pro",
+    "Tecnifibre TF40 305",
+    "Babolat Pure Strike 98",
+    "Dunlop CX 200 Tour"
+  ],
+
+  "ai_matching_priority": {
+    "feel": 0.20,
+    "control": 0.18,
+    "maneuverability": 0.16,
+    "stability": 0.14,
+    "touch": 0.12,
+    "predictability": 0.10,
+    "ball_pocketing": 0.05,
+    "comfort": 0.03,
+    "power": 0.01,
+    "spin": 0.01
+  },
+
+  "matching_logic": {
+    "prioritize_when": [
+      "Player frequently approaches the net behind first or second serves.",
+      "Player relies on first-volley quality and fast reaction shots.",
+      "Player values touch, directional precision and short-point execution.",
+      "Player prefers compact swings and direct response at net."
+    ],
+
+    "equipment_goals": [
+      "Improve first-volley stability",
+      "Preserve touch and directional control",
+      "Maintain low-to-medium launch",
+      "Increase reaction confidence",
+      "Provide enough power without excessive trampoline effect"
+    ],
+
+    "deprioritize": [
+      "Extreme Spin Bias",
+      "Very High Launch Angle",
+      "Excessive Free Power",
+      "Very Soft Unstable Stringbeds",
+      "Heavy Head-Biased Racquets"
+    ]
+  },
+
+  "compatible_profiles": {
+    "levels": [
+      "intermediate",
+      "advanced",
+      "tournament"
+    ],
+
+    "swing_speeds": [
+      "medium",
+      "medium_fast",
+      "fast"
+    ],
+
+    "shot_profiles": [
+      "flat_serve",
+      "slice_serve",
+      "touch_volley",
+      "slice_variation"
+    ],
+
+    "goals": [
+      "more_control",
+      "more_feel",
+      "better_net_play",
+      "more_precision",
+      "lower_launch"
+    ]
+  },
+
+  "avoid": {
+    "racquet_characteristics": [
+      "Very High Swingweight",
+      "Very Head Heavy",
+      "Extremely High Launch",
+      "Low Maneuverability",
+      "Low Touch"
+    ],
+
+    "string_characteristics": [
+      "Very High Trampoline Response",
+      "Extremely High Launch",
+      "Very Low Feel",
+      "Very Low Pocketing",
+      "Excessively Harsh Full Polyester"
+    ]
+  },
+
+  "risk_flags": [
+    "A high-launch racquet and string combination may reduce volley precision.",
+    "Excessively stiff polyester at high tension may reduce touch on volleys and half-volleys.",
+    "Very soft multifilament at low tension may create too much trampoline effect for directional net control.",
+    "Very high swingweight may reduce reaction speed at the net."
+  ],
+
+  "search_keywords": [
+    "serve volley",
+    "serve and volley",
+    "net player",
+    "volley player",
+    "first volley",
+    "attacking net",
+    "发球上网",
+    "网前型球员",
+    "截击打法"
+  ]
+}
