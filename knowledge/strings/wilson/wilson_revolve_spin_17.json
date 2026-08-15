@@ -1,0 +1,300 @@
+{
+  "id": "wilson_revolve_spin_17",
+  "brand": "Wilson",
+  "series": "Revolve",
+  "model": "Revolve Spin 17",
+  "category": "Co-Polyester",
+
+  "manufacturer_data": {
+    "construction": "Co-Polyester Monofilament",
+    "string_family": "Revolve",
+    "official_positioning": "Pentagonal co-polyester engineered for aggressive spin, exceptional bite, enhanced feel and excellent tension maintenance.",
+    "target_level": "Intermediate / Advanced / Tournament"
+  },
+
+  "specifications": {
+    "construction": "Co-Polyester Monofilament",
+
+    "available_colors": [
+      "Black",
+      "Green"
+    ],
+
+    "gauge_name": "17",
+    "gauge_mm": 1.25,
+
+    "shape": "Pentagonal",
+
+    "surface": "Low-Friction",
+
+    "material": [
+      "Crosslink Ester Polymer",
+      "UHMW Low-Friction Additive"
+    ],
+
+    "packaging": [
+      {
+        "type": "Set",
+        "length_ft": 40,
+        "length_m": 12.2
+      }
+    ]
+  },
+
+  "technology": [
+    "Pentagonal Geometry",
+    "UHMW Low-Friction Technology",
+    "Crosslink Ester Polymer",
+    "Enhanced Ball Bite",
+    "Improved Tension Maintenance"
+  ],
+
+  "technology_details": {
+    "pentagonal_shape": {
+      "description": "Five-sided profile maximizes ball bite and spin generation.",
+      "primary_benefits": [
+        "Spin",
+        "Ball Bite",
+        "Directional Control"
+      ]
+    },
+
+    "uhmw_material": {
+      "description": "Ultra High Molecular Weight additive reduces string friction and improves snapback.",
+      "primary_benefits": [
+        "Snapback",
+        "Spin",
+        "String Movement"
+      ]
+    },
+
+    "crosslink_ester_polymer": {
+      "description": "Crosslink ester polymer enhances feel and tension maintenance.",
+      "primary_benefits": [
+        "Feel",
+        "Comfort",
+        "Tension Maintenance"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Spin-Oriented Co-Polyester",
+    "arm_friendly": false,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": false,
+    "comfort_focus": false,
+    "durability_focus": false,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "snapback_focus": true,
+    "ball_bite_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 8.5,
+    "control": 9,
+    "spin": 10,
+    "comfort": 7,
+    "feel": 9,
+    "durability": 8,
+    "tension_maintenance": 9,
+    "elasticity": 8,
+    "ball_pocketing": 9,
+    "launch_angle": "Medium-High"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 9,
+    "spin": 10,
+    "comfort": 7,
+    "feel": 9,
+    "durability": 8,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium",
+    "snapback": 9,
+    "ball_bite": 10,
+    "ball_pocketing": 9,
+    "string_movement": 9,
+    "tension_stability": 9,
+    "spin_window": "Very High",
+    "predictability": 9,
+    "arm_friendliness": 7,
+    "directional_precision": 9,
+    "stringbed_stability": 9,
+    "launch_consistency": 9
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Heavy Topspin",
+      "Aggressive Baseliner",
+      "Modern Baseline",
+      "Counter Puncher"
+    ],
+
+    "special_player_profiles": [
+      "Players Wanting Maximum Spin",
+      "Players Seeking Better Feel Than 16 Gauge",
+      "Players Wanting Better Pocketing",
+      "Players Looking For Easier Racquet Head Speed"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Shift",
+    "Wilson Blade",
+    "Wilson RF 01",
+    "Wilson Ultra",
+    "Babolat Pure Aero",
+    "HEAD Extreme",
+    "Yonex VCORE",
+    "Dunlop SX"
+  ],
+
+  "comparison_data": {
+    "vs_revolve": {
+      "spin": "Higher",
+      "ball_bite": "Higher",
+      "launch_angle": "Higher",
+      "comfort": "Similar",
+      "snapback": "Similar"
+    },
+
+    "vs_revolve_spin_16": {
+      "feel": "Higher",
+      "control": "Higher",
+      "power": "Slightly Higher",
+      "spin": "Slightly Higher",
+      "ball_pocketing": "Higher",
+      "durability": "Lower",
+      "launch_angle": "Slightly Higher"
+    },
+
+    "vs_luxilon_alu_power": {
+      "spin": "Higher",
+      "ball_bite": "Higher",
+      "comfort": "Similar",
+      "power": "Lower"
+    }
+  },
+
+  "science_metrics": {
+    "shape": "Pentagonal",
+    "ball_grip": "Very High",
+    "snapback": "High",
+    "trajectory_profile": "Heavy Topspin",
+    "launch_angle_profile": "Medium-High",
+    "spin_class": "Elite",
+    "control_class": "High",
+    "feel_class": "High"
+  },
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Heavy Topspin Players",
+      "Modern Baseliners",
+      "Players Wanting Better Feel Than 16 Gauge",
+      "Players Looking For Maximum Ball Bite"
+    ],
+
+    "avoid_for": [
+      "Players With Arm Injuries",
+      "Players Wanting Maximum Comfort",
+      "Frequent String Breakers"
+    ],
+
+    "alternative_strings": [
+      "Wilson Revolve Spin 16",
+      "Wilson Revolve",
+      "Solinco Hyper-G 17",
+      "Solinco Tour Bite 17",
+      "Toroline O-TORO Spin",
+      "Toroline VAMOS"
+    ]
+  },
+
+  "comparison_tags": [
+    "Wilson",
+    "Revolve Spin",
+    "Pentagonal",
+    "Co-Polyester",
+    "Spin",
+    "Ball Bite",
+    "UHMW",
+    "Crosslink Ester Polymer",
+    "Black",
+    "Green",
+    "1.25"
+  ],
+
+  "ai_keywords": [
+    "wilson",
+    "revolve spin",
+    "wilson revolve spin",
+    "17",
+    "1.25",
+    "pentagonal",
+    "uhmw",
+    "crosslink ester polymer",
+    "ball bite",
+    "spin",
+    "feel",
+    "control",
+    "black",
+    "green"
+  ],
+
+  "description": {
+    "en": "Wilson Revolve Spin 17 is a pentagonal co-polyester featuring UHMW low-friction technology and Crosslink Ester Polymer construction. Compared with the 16 gauge version, the thinner 17 gauge offers enhanced feel, greater ball pocketing and slightly easier access to spin while maintaining the signature Revolve Spin bite and tension stability.",
+
+    "zh": "Wilson Revolve Spin 17 是一款五角形聚酯球线，采用 UHMW 低摩擦材料和 Crosslink Ester Polymer 配方。相比 16 号径，17（1.25mm）拥有更好的手感、更明显的 Ball Pocketing、更容易产生旋转，同时保持 Revolve Spin 系列标志性的 Ball Bite、Spin 与优秀的保磅表现。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Wilson Revolve Spin 17",
+      "Black",
+      "Green",
+      "Pentagonal shape",
+      "UHMW low-friction material",
+      "Crosslink Ester Polymer",
+      "Exceptional bite",
+      "Feel",
+      "Tension maintenance",
+      "17 gauge enhances feel and control",
+      "Gauge 17",
+      "1.25 mm",
+      "Set 40 ft / 12.2 m"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Players",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations"
+    ]
+  }
+}
