@@ -1,0 +1,459 @@
+{
+  "id": "yonex_polytour_spin",
+  "brand": "Yonex",
+  "series": "PolyTour",
+  "model": "PolyTour Spin",
+  "category": "Co-Polyester",
+
+  "manufacturer_data": {
+    "construction": "Polyester Pentagon Monofilament",
+    "material": "Polyester",
+    "string_family": "PolyTour",
+    "cross_section": "Pentagonal",
+    "profile_sides": 5,
+    "surface": "Shaped",
+    "official_positioning": "Shaped polyester designed for added spin, solid feel and maximum spin performance.",
+    "target_level": "Advanced / Tournament",
+    "target_style": "Aggressive Baseline / Heavy Spin",
+    "swing_speed_positioning": "Aggressive / Fast",
+    "made_in": "Japan"
+  },
+
+  "specifications": {
+    "construction": "Polyester Pentagon Monofilament",
+    "cross_section": "Pentagonal",
+    "profile_sides": 5,
+    "surface": "Shaped",
+
+    "available_colors": [
+      "Cobalt Blue",
+      "Black"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.20,
+        "available": true,
+        "item_code_set": "PTGS120",
+        "item_code_reel": "PTS120-2",
+
+        "power": 8,
+        "control": 9,
+        "spin": 10,
+        "comfort": 6,
+        "feel": 9,
+        "durability": 8,
+        "tension_maintenance": 8,
+        "ball_bite": 10,
+        "snapback": 8,
+        "ball_pocketing": 7,
+        "launch_angle": "High"
+      },
+
+      {
+        "gauge_name": "16L",
+        "gauge_mm": 1.25,
+        "available": true,
+        "item_code_set": "PTGSPN",
+        "item_code_reel": "PTGSPN-2",
+
+        "power": 7,
+        "control": 10,
+        "spin": 10,
+        "comfort": 6,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "ball_bite": 10,
+        "snapback": 8,
+        "ball_pocketing": 7,
+        "launch_angle": "Medium-High"
+      }
+    ],
+
+    "available_lengths": [
+      {
+        "type": "Set",
+        "length_m": 12
+      },
+      {
+        "type": "Reel",
+        "length_m": 200
+      }
+    ]
+  },
+
+  "technology": [
+    "Pentagonal Geometry",
+    "Mechanical Ball Bite",
+    "Maximum Spin Design",
+    "Solid Response"
+  ],
+
+  "technology_details": {
+    "pentagonal_geometry": {
+      "shape": "Pentagonal",
+      "sides": 5,
+
+      "description": "The five-sided profile increases mechanical interaction with the ball to generate strong bite and maximum spin.",
+
+      "primary_benefits": [
+        "Ball Bite",
+        "Mechanical Grip",
+        "Spin",
+        "Heavy Rotation"
+      ]
+    },
+
+    "spin_generation": {
+      "description": "PolyTour Spin relies strongly on shaped-string ball grip to create high rotational output for aggressive swings.",
+
+      "primary_benefits": [
+        "Maximum Spin",
+        "High Net Clearance",
+        "Kick",
+        "Heavy Ball"
+      ]
+    },
+
+    "solid_response": {
+      "description": "The firmer shaped construction produces a solid and direct response at impact.",
+
+      "primary_benefits": [
+        "Control",
+        "Stability",
+        "Connected Feel",
+        "Confidence On Full Swings"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Maximum-Spin Shaped Co-Polyester",
+    "target_player": "Advanced / Tournament",
+    "arm_friendly": false,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": false,
+    "comfort_focus": false,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "snapback_focus": true,
+    "ball_bite_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 7,
+    "control": 10,
+    "spin": 10,
+    "comfort": 6,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9,
+    "elasticity": 7,
+    "ball_pocketing": 7,
+    "launch_angle": "Medium-High"
+  },
+
+  "ai_rating": {
+    "power": 7,
+    "control": 10,
+    "spin": 10,
+    "comfort": 6,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Firm",
+    "snapback": 8,
+    "ball_bite": 10,
+    "ball_pocketing": 7,
+    "string_movement": 8,
+    "tension_stability": 9,
+    "spin_window": "Very High",
+    "predictability": 9,
+    "arm_friendliness": 6,
+    "directional_precision": 10,
+    "stringbed_stability": 9,
+    "heavy_ball_potential": 10,
+    "response": "Solid / Crisp / Spin-Oriented"
+  },
+
+  "official_performance_map": {
+    "responsiveness": "High",
+    "firmness": "Firm",
+    "ball_pocketing": "Medium",
+    "yonex_family_position": "Firm / Responsive / Maximum-Spin"
+  },
+
+  "official_string_parameters": {
+    "power": "High",
+    "spin": "Very High",
+    "comfort": "Low",
+    "control": "Medium",
+    "durability": "Low-Medium",
+    "source": "Yonex Official String Parameters Guide"
+  },
+
+  "recommended_player": {
+    "level": [
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Heavy Topspin",
+      "Aggressive Baseliner",
+      "Modern Baseline",
+      "Spin-Oriented Player"
+    ],
+
+    "special_player_profiles": [
+      "Players Seeking Maximum Mechanical Spin",
+      "Players With Aggressive Swing Speeds",
+      "Players Wanting Strong Ball Bite",
+      "Players Who Prefer Firm Shaped Polyester",
+      "Players Wanting Higher Launch And Net Clearance"
+    ]
+  },
+
+  "tour_players": [],
+
+  "recommended_racquets": [
+    "Yonex VCORE",
+    "Yonex EZONE",
+    "Yonex PERCEPT",
+    "Wilson Shift",
+    "Babolat Pure Aero",
+    "HEAD Extreme",
+    "Dunlop SX"
+  ],
+
+  "gauge_recommendation": {
+    "1.20": {
+      "gauge_name": "17",
+
+      "best_for": [
+        "Maximum Spin Access",
+        "Higher Launch",
+        "More Feel",
+        "Fast Racquet Head Speed"
+      ],
+
+      "tradeoffs": [
+        "Lower Durability Than 1.25",
+        "Less Stability"
+      ]
+    },
+
+    "1.25": {
+      "gauge_name": "16L",
+
+      "best_for": [
+        "Maximum Control",
+        "Best Overall Tournament Balance",
+        "Durability",
+        "Spin",
+        "Stringbed Stability"
+      ],
+
+      "tradeoffs": [
+        "Slightly Less Lively Than 1.20"
+      ]
+    }
+  },
+
+  "comparison_data": {
+    "vs_polytour_rev": {
+      "mechanical_ball_bite": "Higher",
+      "spin": "Comparable Very High",
+      "snapback": "Lower",
+      "comfort": "Lower",
+      "response": "More Solid / Less Elastic",
+      "technology": {
+        "polytour_spin": "Pentagonal Mechanical Grip",
+        "polytour_rev": "Octagonal Shape + SIF Snapback"
+      }
+    },
+
+    "vs_polytour_pro": {
+      "spin": "Much Higher",
+      "ball_bite": "Much Higher",
+      "control": "Higher",
+      "comfort": "Much Lower",
+      "power": "Lower",
+      "firmness": "Much Higher"
+    },
+
+    "vs_polytour_fire": {
+      "mechanical_spin": "Higher",
+      "ball_bite": "Much Higher",
+      "power": "Lower",
+      "comfort": "Lower",
+      "snapback": "Lower",
+      "firmness": "Higher"
+    },
+
+    "vs_polytour_strike": {
+      "spin": "Higher",
+      "launch_angle": "Higher",
+      "power": "Slightly Higher",
+      "control": "Slightly Lower",
+      "firmness": "Lower"
+    }
+  },
+
+  "science_metrics": {
+    "construction": "Pentagonal Polyester Monofilament",
+    "shape": "Pentagonal",
+    "profile_sides": 5,
+
+    "spin_mechanism": [
+      "Mechanical Ball Grip",
+      "Pentagonal Edge Bite",
+      "String Movement",
+      "Snapback"
+    ],
+
+    "ball_grip": "Extreme",
+    "snapback": "High",
+    "trajectory_profile": "Heavy Topspin",
+    "launch_angle_profile": "Medium-High",
+    "spin_class": "Elite",
+    "control_class": "Very High",
+    "firmness_class": "Firm",
+    "comfort_class": "Low-Medium"
+  },
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Extreme Topspin Players",
+      "Aggressive Baseliners",
+      "Fast Swing Speeds",
+      "Players Seeking Maximum Ball Bite",
+      "Players Wanting Firm Spin-Oriented Polyester",
+      "Players Wanting Higher Net Clearance"
+    ],
+
+    "avoid_for": [
+      "Players With Arm Sensitivity",
+      "Players With Slow Swing Speeds",
+      "Players Seeking Soft Polyester",
+      "Players Wanting Maximum Free Power",
+      "Players Wanting Deep Plush Pocketing"
+    ],
+
+    "alternative_strings": [
+      "Yonex PolyTour Rev",
+      "Yonex PolyTour Pro",
+      "Solinco Hyper-G",
+      "Solinco Tour Bite",
+      "Wilson Revolve Spin",
+      "Toroline O-TORO Spin",
+      "MSV Focus Hex"
+    ]
+  },
+
+  "comparison_tags": [
+    "Yonex",
+    "PolyTour Spin",
+    "Pentagonal",
+    "5-Sided",
+    "Polyester",
+    "Maximum Spin",
+    "Ball Bite",
+    "Solid Feel",
+    "Cobalt Blue",
+    "Black",
+    "1.20",
+    "1.25"
+  ],
+
+  "ai_keywords": [
+    "yonex",
+    "polytour spin",
+    "poly tour spin",
+    "pentagon",
+    "pentagonal",
+    "five sided",
+    "5 sided",
+    "maximum spin",
+    "ball bite",
+    "solid feel",
+    "aggressive swing",
+    "1.20",
+    "1.25",
+    "cobalt blue",
+    "black",
+    "ptgs120",
+    "ptgspn"
+  ],
+
+  "target_competitors": [
+    "Yonex PolyTour Rev",
+    "Solinco Hyper-G",
+    "Solinco Tour Bite",
+    "Wilson Revolve Spin",
+    "Toroline O-TORO Spin",
+    "MSV Focus Hex"
+  ],
+
+  "description": {
+    "en": "Yonex PolyTour Spin is a five-sided polyester monofilament engineered for aggressive players seeking maximum spin and a solid response. Its pentagonal geometry provides strong mechanical ball bite, allowing fast swings to generate heavy rotation and higher net clearance. Compared with PolyTour Pro, it is significantly firmer and more spin-oriented; compared with PolyTour Rev, it relies more heavily on direct mechanical bite rather than SIF-enhanced snapback.",
+
+    "zh": "Yonex PolyTour Spin 是一款采用五边形截面的聚酯单丝球线，专门面向挥拍激进、追求最大旋转的球员。Pentagonal 五边形结构通过锐利边缘直接提高球线与网球之间的 Mechanical Ball Bite，从而制造更重的 Topspin、更高的过网高度以及更明显的弹跳。相比 PolyTour Pro，它明显更硬、更偏控制和旋转；相比 PolyTour Rev，它更依赖五边形的机械咬球，而 Rev 则更多结合异形结构与 SIF 高速 Snapback 来制造旋转。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_official_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Yonex PolyTour Spin",
+      "120 / 125",
+      "Added spin",
+      "Solid feel",
+      "Aggressive swing speeds",
+      "Shaped string",
+      "Maximum spin positioning",
+      "Cobalt Blue",
+      "Black",
+      "17 / 1.20 mm",
+      "16L / 1.25 mm",
+      "Set 12 m",
+      "Reel 200 m",
+      "Polyester",
+      "Pentagon Monofilament",
+      "Made in Japan",
+      "PTGS120",
+      "PTGSPN",
+      "PTS120-2",
+      "PTGSPN-2",
+      "Official Yonex performance map"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Official Performance Map",
+      "Official String Parameters",
+      "Recommended Players",
+      "Recommended Racquets",
+      "Gauge Recommendations",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
