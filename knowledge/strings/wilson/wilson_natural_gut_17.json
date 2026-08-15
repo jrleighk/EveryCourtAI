@@ -1,0 +1,327 @@
+{
+  "id": "wilson_natural_gut_17",
+  "brand": "Wilson",
+  "series": "Natural Gut",
+  "model": "Natural Gut 17",
+  "category": "Natural Gut",
+
+  "manufacturer_data": {
+    "construction": "Natural Serosa Fibers",
+    "string_family": "Natural Gut",
+    "official_positioning": "Premium natural gut offering best-in-class comfort, feel, power and tension maintenance.",
+    "target_level": "Advanced / Tournament / Professional"
+  },
+
+  "specifications": {
+    "construction": "Natural Gut",
+
+    "available_colors": [
+      "Natural"
+    ],
+
+    "gauge_name": "17",
+    "gauge_mm": 1.25,
+
+    "shape": "Round",
+
+    "core": "Natural Serosa Fibers",
+
+    "surface": "Protective Outer Coating",
+
+    "manufacturing_features": [
+      "Stabilizing Chemical Bath",
+      "Protective Outer Coating",
+      "15% Improved Durability"
+    ],
+
+    "packaging": [
+      {
+        "type": "Set",
+        "length_ft": 40,
+        "length_m": 12.2
+      }
+    ]
+  },
+
+  "technology": [
+    "Natural Serosa Fiber Construction",
+    "Chemical Stabilization Treatment",
+    "Protective Outer Coating",
+    "Enhanced Durability Manufacturing",
+    "Industry-Leading Tension Maintenance"
+  ],
+
+  "technology_details": {
+    "natural_serosa": {
+      "description": "Natural serosa fibers provide unmatched elasticity, power, comfort and feel.",
+      "primary_benefits": [
+        "Power",
+        "Comfort",
+        "Feel",
+        "Elasticity",
+        "Ball Pocketing"
+      ]
+    },
+
+    "stabilization_process": {
+      "description": "Natural fibers are treated in a stabilizing chemical bath to improve consistency and durability.",
+      "primary_benefits": [
+        "Consistency",
+        "Durability",
+        "Moisture Resistance"
+      ]
+    },
+
+    "protective_coating": {
+      "description": "Protective coating shields the natural fibers and contributes to the improved durability of the latest generation.",
+      "primary_benefits": [
+        "Durability",
+        "Longevity"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Natural Gut",
+    "arm_friendly": true,
+    "spin_focus": false,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "elasticity_focus": true,
+    "ball_pocketing_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 10,
+    "control": 9,
+    "spin": 8,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 8,
+    "tension_maintenance": 10,
+    "elasticity": 10,
+    "shock_absorption": 10,
+    "ball_pocketing": 10,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 10,
+    "control": 9,
+    "spin": 8,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 8,
+    "tension_maintenance": 10
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Very Soft",
+    "snapback": 7,
+    "ball_bite": 7,
+    "ball_pocketing": 10,
+    "string_movement": 7,
+    "tension_stability": 10,
+    "predictability": 10,
+    "arm_friendliness": 10,
+    "directional_precision": 9,
+    "stringbed_stability": 10,
+    "response": "Extremely Plush",
+    "touch": 10,
+    "energy_return": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Advanced",
+      "Tournament",
+      "Professional"
+    ],
+
+    "swing_speed": [
+      "Medium",
+      "Medium-Fast",
+      "Fast"
+    ],
+
+    "play_style": [
+      "All Court",
+      "Serve & Volley",
+      "Aggressive Baseliner",
+      "Touch Player",
+      "Doubles"
+    ],
+
+    "special_player_profiles": [
+      "Players Seeking Maximum Comfort",
+      "Players Recovering From Arm Issues",
+      "Players Wanting Maximum Power",
+      "Players Wanting The Best Feel Available",
+      "Players Building Premium Hybrid Setups"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson RF 01",
+    "Wilson Pro Staff",
+    "Wilson Blade",
+    "HEAD Prestige",
+    "HEAD Speed",
+    "Yonex PERCEPT",
+    "Yonex EZONE",
+    "Babolat Pure Strike",
+    "Tecnifibre TF-40"
+  ],
+
+  "comparison_data": {
+    "vs_natural_gut_16": {
+      "feel": "Higher",
+      "control": "Higher",
+      "power": "Slightly Higher",
+      "durability": "Lower",
+      "elasticity": "Higher",
+      "ball_pocketing": "Higher"
+    },
+
+    "vs_nxt_17": {
+      "comfort": "Higher",
+      "power": "Higher",
+      "feel": "Higher",
+      "tension_maintenance": "Much Higher",
+      "elasticity": "Higher"
+    },
+
+    "vs_sensation_17": {
+      "comfort": "Much Higher",
+      "power": "Higher",
+      "feel": "Much Higher",
+      "durability": "Comparable",
+      "tension_maintenance": "Much Higher"
+    },
+
+    "vs_full_polyester": {
+      "comfort": "Much Higher",
+      "power": "Much Higher",
+      "touch": "Much Higher",
+      "spin": "Lower Mechanical Spin",
+      "tension_maintenance": "Much Higher"
+    }
+  },
+
+  "science_metrics": {
+    "construction": "Natural Gut",
+
+    "energy_return": "Elite",
+
+    "elasticity": "Elite",
+
+    "ball_pocketing": "Elite",
+
+    "tension_retention": "Industry Leading",
+
+    "trajectory_profile": "Natural / Powerful",
+
+    "launch_angle_profile": "Medium",
+
+    "comfort_class": "Elite",
+
+    "power_class": "Elite",
+
+    "feel_class": "Elite",
+
+    "tension_class": "Elite"
+  },
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Professional Players",
+      "Tournament Players",
+      "Players With Tennis Elbow",
+      "Players Wanting Maximum Feel",
+      "Premium Hybrid Users",
+      "Serve & Volley Players"
+    ],
+
+    "avoid_for": [
+      "Players Frequently Playing In Wet Conditions",
+      "Players Looking For Low-Cost Strings",
+      "Heavy String Breakers Using Full Gut"
+    ],
+
+    "alternative_strings": [
+      "Wilson Natural Gut 16",
+      "Wilson Champion's Choice Duo",
+      "Babolat VS Touch",
+      "Luxilon Natural Gut Hybrid",
+      "Wilson NXT Power"
+    ]
+  },
+
+  "comparison_tags": [
+    "Wilson",
+    "Natural Gut",
+    "Serosa",
+    "Natural",
+    "Comfort",
+    "Power",
+    "Feel",
+    "Professional",
+    "1.25"
+  ],
+
+  "ai_keywords": [
+    "wilson",
+    "natural gut",
+    "wilson natural gut",
+    "17",
+    "1.25",
+    "serosa",
+    "natural",
+    "power",
+    "comfort",
+    "feel",
+    "tension maintenance",
+    "natural gut string"
+  ],
+
+  "description": {
+    "en": "Wilson Natural Gut 17 is a premium natural gut string constructed from natural serosa fibers treated through a stabilizing process and finished with a protective coating. It delivers industry-leading comfort, feel, power and tension maintenance. The thinner 17 gauge (1.25 mm) enhances feel and control while preserving the signature elasticity and energy return that define natural gut.",
+
+    "zh": "Wilson Natural Gut 17 是一款采用天然 Serosa（牛肠浆膜）纤维制成的高端天然肠线，经过稳定化处理并覆盖保护涂层。它拥有业内领先的舒适性、力量、手感以及保磅能力。相比 16 号径，17（1.25mm）提供更细腻的触球反馈、更好的控制与 Ball Pocketing，同时保持天然肠线标志性的高弹性和能量回馈。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Wilson Natural Gut 17",
+      "Natural",
+      "Natural Serosa Fibers",
+      "Stabilizing Chemical Bath",
+      "Protective Outer Coating",
+      "15% Improved Durability",
+      "Best in class comfort",
+      "Best in class feel",
+      "Best in class power",
+      "Best tension maintenance",
+      "17 gauge enhances feel and control",
+      "Gauge 17",
+      "1.25 mm",
+      "Set 40 ft / 12.2 m"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Players",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations"
+    ]
+  }
+}
