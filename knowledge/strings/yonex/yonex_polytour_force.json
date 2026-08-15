@@ -1,0 +1,369 @@
+{
+  "id": "yonex_polytour_force",
+
+  "brand": "Yonex",
+
+  "series": "PolyTour",
+
+  "model": "PolyTour Force",
+
+  "category": "Co-Polyester",
+
+  "manufacturer_data": {
+    "construction": "Polyester Monofilament",
+
+    "string_family": "PolyTour",
+
+    "official_positioning": "Consistent ball pocketing and responsive power for medium to fast swing speeds.",
+
+    "target_level": "Intermediate / Advanced / Tournament"
+  },
+
+  "specifications": {
+    "construction": "Polyester Monofilament",
+
+    "shape": "Round",
+
+    "surface": "Smooth",
+
+    "available_colors": [
+      "Black",
+      "Bright Red"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.20
+      },
+      {
+        "gauge_name": "16L",
+        "gauge_mm": 1.25
+      },
+      {
+        "gauge_name": "16",
+        "gauge_mm": 1.30
+      }
+    ],
+
+    "available_lengths": [
+      {
+        "type": "Set",
+        "length_m": 12
+      },
+      {
+        "type": "Reel",
+        "length_m": 200
+      }
+    ]
+  },
+
+  "technology": [
+    "High Response Polyester",
+    "Consistent Ball Pocketing",
+    "Power Oriented Construction",
+    "Tension Maintenance"
+  ],
+
+  "technology_details": {
+    "responsive_poly": {
+      "description": "Designed to generate explosive response while maintaining predictable ball pocketing.",
+
+      "primary_benefits": [
+        "Power",
+        "Response",
+        "Consistency"
+      ]
+    },
+
+    "ball_pocketing": {
+      "description": "Maintains stable dwell time for controlled acceleration.",
+
+      "primary_benefits": [
+        "Pocketing",
+        "Feel",
+        "Confidence"
+      ]
+    }
+  },
+
+  "design_profile": {
+
+    "string_type": "Responsive Power Polyester",
+
+    "arm_friendly": false,
+
+    "power_focus": true,
+
+    "spin_focus": true,
+
+    "control_focus": false,
+
+    "comfort_focus": false,
+
+    "response_focus": true,
+
+    "ball_pocketing_focus": true,
+
+    "durability_focus": true
+  },
+
+  "playing_characteristics": {
+
+    "power": 10,
+
+    "control": 7,
+
+    "spin": 8,
+
+    "comfort": 7,
+
+    "feel": 8,
+
+    "durability": 8,
+
+    "tension_maintenance": 9,
+
+    "ball_pocketing": 9,
+
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+
+    "power": 10,
+
+    "control": 7,
+
+    "spin": 8,
+
+    "comfort": 7,
+
+    "feel": 8,
+
+    "durability": 8,
+
+    "tension_maintenance": 9
+  },
+
+  "official_performance_map": {
+
+    "responsiveness": "Very High",
+
+    "firmness": "Medium",
+
+    "ball_pocketing": "High",
+
+    "yonex_family_position": "Power / Response"
+  },
+
+  "performance_profile": {
+
+    "string_stiffness": "Medium",
+
+    "snapback": 8,
+
+    "ball_bite": 7,
+
+    "ball_pocketing": 9,
+
+    "string_movement": 8,
+
+    "tension_stability": 9,
+
+    "predictability": 8,
+
+    "response": "Explosive",
+
+    "directional_precision": 8
+  },
+
+  "recommended_player": {
+
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium",
+      "Medium-Fast",
+      "Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Power Baseliner",
+      "All Court"
+    ],
+
+    "special_player_profiles": [
+      "Players Wanting Easy Power",
+      "Players Looking For Responsive Polyester",
+      "Players Wanting Better Pocketing Than Strike",
+      "Players Looking For Strong Tension Maintenance"
+    ]
+  },
+
+  "tour_players": [
+    "Ben Shelton",
+    "Joao Fonseca",
+    "Sebastian Baez",
+    "Naomi Osaka"
+  ],
+
+  "recommended_racquets": [
+    "Yonex EZONE",
+    "Yonex VCORE",
+    "Wilson Ultra",
+    "Wilson RF 01",
+    "Babolat Pure Drive",
+    "HEAD Boom"
+  ],
+
+  "comparison_data": {
+
+    "vs_polytour_pro": {
+      "power": "Higher",
+
+      "response": "Higher",
+
+      "comfort": "Lower",
+
+      "control": "Similar"
+    },
+
+    "vs_polytour_fire": {
+      "power": "Higher",
+
+      "comfort": "Higher",
+
+      "response": "Similar"
+    },
+
+    "vs_polytour_strike": {
+      "power": "Higher",
+
+      "comfort": "Higher",
+
+      "control": "Lower"
+    },
+
+    "vs_polytour_rev": {
+      "spin": "Lower",
+
+      "power": "Higher"
+    }
+  },
+
+  "science_metrics": {
+
+    "shape": "Round",
+
+    "trajectory_profile": "Penetrating",
+
+    "launch_angle_profile": "Medium",
+
+    "power_class": "Elite",
+
+    "response_class": "Elite",
+
+    "comfort_class": "Medium",
+
+    "control_class": "Medium",
+
+    "durability_class": "High"
+  },
+
+  "recommended_by_ai": {
+
+    "best_for": [
+      "Players Wanting More Power",
+
+      "Intermediate Players",
+
+      "Aggressive Baseliners",
+
+      "Players Looking For Fast Response",
+
+      "Medium To Fast Swing Speeds"
+    ],
+
+    "avoid_for": [
+      "Players Wanting Maximum Comfort",
+
+      "Players Wanting Extreme Spin",
+
+      "Players Looking For Ultra Firm Control"
+    ],
+
+    "alternative_strings": [
+      "Yonex PolyTour Pro",
+
+      "Yonex PolyTour Drive",
+
+      "Wilson Revolve",
+
+      "Toroline ENSO PRO",
+
+      "Luxilon ECO Power"
+    ]
+  },
+
+  "comparison_tags": [
+    "Yonex",
+
+    "PolyTour Force",
+
+    "Power",
+
+    "Response",
+
+    "Round Polyester",
+
+    "Ball Pocketing"
+  ],
+
+  "description": {
+
+    "en": "Yonex PolyTour Force is the power-oriented member of the PolyTour family, delivering explosive response, strong ball pocketing and excellent tension maintenance. Designed for medium to fast swing speeds, it offers one of the highest power levels within the Yonex polyester lineup while maintaining predictable control.",
+
+    "zh": "Yonex PolyTour Force 是 PolyTour 系列中最偏向力量输出的聚酯球线之一。官方定位为具有 Consistent Ball Pocketing 与 High-Response Power，适合中高速挥拍球员，并拥有优秀的保磅能力。相比 PolyTour Pro，它拥有更高的力量与响应速度；相比 PolyTour Strike，则更加容易发力、更加宽容。"
+  },
+
+  "verification": {
+
+    "status": "verified_from_official_product_information",
+
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "PolyTour Force",
+
+      "Consistent ball pocketing",
+
+      "Responsive power",
+
+      "Medium to fast swing speed",
+
+      "Black",
+
+      "Bright Red",
+
+      "1.20",
+
+      "1.25",
+
+      "1.30",
+
+      "Set 12 m",
+
+      "Reel 200 m",
+
+      "Official Yonex performance chart",
+
+      "Official tour player usage"
+    ]
+  }
+}
