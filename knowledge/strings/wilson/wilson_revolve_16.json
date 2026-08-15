@@ -1,0 +1,299 @@
+{
+  "id": "wilson_revolve_16",
+  "brand": "Wilson",
+  "series": "Revolve",
+  "model": "Revolve 16",
+  "category": "Co-Polyester",
+
+  "manufacturer_data": {
+    "construction": "Tri-Polymer Co-Polyester Monofilament",
+    "string_family": "Revolve",
+    "official_positioning": "Power-oriented co-polyester engineered for maximum snapback, exceptional power, comfort and spin.",
+    "target_level": "Intermediate / Advanced / Tournament"
+  },
+
+  "specifications": {
+    "construction": "Tri-Polymer Co-Polyester Monofilament",
+
+    "available_colors": [
+      "Black",
+      "Orange",
+      "White"
+    ],
+
+    "gauge_name": "16",
+    "gauge_mm": 1.30,
+
+    "shape": "Round",
+
+    "surface": "Low-Friction",
+
+    "material": [
+      "Tri-Polymer",
+      "Low-Friction Additive"
+    ],
+
+    "packaging": [
+      {
+        "type": "Set",
+        "length_ft": 40,
+        "length_m": 12.2
+      }
+    ]
+  },
+
+  "technology": [
+    "Tri-Polymer Construction",
+    "Low-Friction Additive",
+    "Maximum Snapback",
+    "Spin Enhancement",
+    "Power-Oriented Response"
+  ],
+
+  "technology_details": {
+    "tri_polymer": {
+      "description": "Tri-polymer construction balances power, comfort and control while maintaining a responsive feel.",
+      "primary_benefits": [
+        "Power",
+        "Comfort",
+        "Consistency"
+      ]
+    },
+
+    "low_friction_additive": {
+      "description": "Reduces friction between strings to promote fast snapback and increased spin generation.",
+      "primary_benefits": [
+        "Snapback",
+        "Spin",
+        "String Movement"
+      ]
+    },
+
+    "snapback_system": {
+      "description": "Round geometry and low-friction coating maximize string movement and recovery speed.",
+      "primary_benefits": [
+        "Maximum Snapback",
+        "Heavy Spin",
+        "Easy Depth"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Power-Oriented Round Co-Polyester",
+    "arm_friendly": true,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "snapback_focus": true,
+    "ball_bite_focus": false
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 8,
+    "spin": 9,
+    "comfort": 8,
+    "feel": 8,
+    "durability": 9,
+    "tension_maintenance": 8,
+    "elasticity": 8,
+    "ball_pocketing": 8,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 8,
+    "spin": 9,
+    "comfort": 8,
+    "feel": 8,
+    "durability": 9,
+    "tension_maintenance": 8
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium",
+    "snapback": 10,
+    "ball_bite": 8,
+    "ball_pocketing": 8,
+    "string_movement": 10,
+    "tension_stability": 8,
+    "spin_window": "High",
+    "predictability": 9,
+    "arm_friendliness": 8,
+    "directional_precision": 8,
+    "stringbed_stability": 8,
+    "launch_consistency": 9
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Modern Baseline",
+      "All Court"
+    ],
+
+    "special_player_profiles": [
+      "Players Looking For Easy Spin",
+      "Players Wanting Maximum Snapback",
+      "Players With Long Fast Swings",
+      "Players Wanting More Power Than Traditional Control Poly"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson Shift",
+    "Wilson Ultra",
+    "Wilson RF 01",
+    "Babolat Pure Drive",
+    "Babolat Pure Aero",
+    "HEAD Boom",
+    "HEAD Speed",
+    "Yonex EZONE",
+    "Yonex VCORE"
+  ],
+
+  "comparison_data": {
+    "vs_revolve_spin_16": {
+      "power": "Higher",
+      "comfort": "Higher",
+      "snapback": "Higher",
+      "ball_bite": "Lower",
+      "spin": "Slightly Lower",
+      "launch_angle": "Lower"
+    },
+
+    "vs_luxilon_alu_power": {
+      "comfort": "Higher",
+      "power": "Higher",
+      "snapback": "Higher",
+      "control": "Lower"
+    },
+
+    "vs_solinco_hyper_g": {
+      "power": "Higher",
+      "comfort": "Higher",
+      "ball_bite": "Lower",
+      "launch_angle": "Lower"
+    }
+  },
+
+  "science_metrics": {
+    "shape": "Round",
+    "ball_grip": "Medium",
+    "snapback": "Elite",
+    "trajectory_profile": "Penetrating",
+    "launch_angle_profile": "Medium",
+    "spin_class": "High",
+    "power_class": "High",
+    "comfort_class": "High"
+  },
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Wanting Easy Power",
+      "Players Looking For Maximum Snapback",
+      "Aggressive Baseliners",
+      "Intermediate Players Moving Into Polyester"
+    ],
+
+    "avoid_for": [
+      "Players Seeking Maximum Ball Bite",
+      "Extreme Topspin Specialists",
+      "Players Wanting Very Firm Control"
+    ],
+
+    "alternative_strings": [
+      "Wilson Revolve Spin",
+      "Luxilon ECO Power",
+      "Luxilon ALU Power",
+      "Toroline A5",
+      "Toroline O-TORO SNAP",
+      "Solinco Hyper-G Round"
+    ]
+  },
+
+  "comparison_tags": [
+    "Wilson",
+    "Revolve",
+    "Round",
+    "Co-Polyester",
+    "Tri Polymer",
+    "Snapback",
+    "Power",
+    "Spin",
+    "Black",
+    "Orange",
+    "White",
+    "1.30"
+  ],
+
+  "ai_keywords": [
+    "wilson",
+    "revolve",
+    "wilson revolve",
+    "round poly",
+    "tri polymer",
+    "low friction",
+    "snapback",
+    "spin",
+    "power",
+    "16",
+    "1.30",
+    "black",
+    "orange",
+    "white"
+  ],
+
+  "description": {
+    "en": "Wilson Revolve 16 is a round tri-polymer co-polyester featuring a low-friction additive that maximizes snapback and string movement. Designed for players with long, fast swings, it blends easy power, comfort and heavy spin with a penetrating trajectory. Compared with Revolve Spin, Revolve delivers a cleaner launch and more free power while relying on elite snapback rather than aggressive ball bite.",
+
+    "zh": "Wilson Revolve 16 是一款采用 Tri-Polymer 配方与低摩擦添加剂的圆形聚酯球线。它通过极高的 Snapback 与 String Movement 获得旋转，而不是依赖多边形咬球，因此拥有更直接、更容易打透的球路，同时兼顾力量、舒适性与旋转，非常适合挥拍速度快、喜欢主动进攻的球员。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Wilson Revolve 16",
+      "Black",
+      "Orange",
+      "White",
+      "Tri-Polymer construction",
+      "Low-friction additive",
+      "Exceptional power",
+      "Comfort",
+      "Spin-enhancing properties",
+      "Maximum snapback",
+      "Long fast strokes positioning",
+      "Gauge 16",
+      "1.30 mm",
+      "Set 40 ft / 12.2 m"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations"
+    ]
+  }
+}
