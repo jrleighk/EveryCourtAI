@@ -1,1 +1,473 @@
+{
+  "id": "ankle_sensitivity",
+  "category": "Player Physical Constraint",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
 
+  "constraint": {
+    "name": {
+      "en": "Ankle Sensitivity",
+      "zh": "脚踝敏感"
+    },
+    "description": {
+      "en": "The player experiences ankle discomfort, stiffness, instability or reduced confidence during tennis movement. This profile is used to reduce unnecessary movement demands and improve equipment forgiveness.",
+      "zh": "球员在网球移动过程中存在脚踝不适、僵硬、不稳定或移动信心下降。本画像用于降低不必要的移动负担，并提高装备容错性。"
+    }
+  },
+
+  "priority": {
+    "type": "Physical Constraint",
+    "override_level": "Highest",
+    "overrides": [
+      "maximum_performance",
+      "maximum_spin",
+      "maximum_control",
+      "maximum_stability_through_weight"
+    ]
+  },
+
+  "severity_levels": {
+    "none": {
+      "score": 0
+    },
+    "mild": {
+      "score": 1
+    },
+    "moderate": {
+      "score": 2
+    },
+    "high": {
+      "score": 3
+    }
+  },
+
+  "symptoms": [
+    "Ankle soreness after play",
+    "Ankle stiffness",
+    "Feeling of instability",
+    "Reduced confidence during lateral movement",
+    "Difficulty changing direction",
+    "Discomfort during sudden stops",
+    "Reduced confidence on wide defensive shots",
+    "Fatigue during long movement sessions"
+  ],
+
+  "possible_contributors": [
+    "Previous ankle sprain",
+    "Repeated acceleration and deceleration",
+    "Rapid lateral movement",
+    "Frequent changes of direction",
+    "Reduced ankle mobility",
+    "Reduced lower-limb stability",
+    "High training load",
+    "Insufficient recovery"
+  ],
+
+  "equipment_strategy": {
+    "primary_goal": "Reduce Movement Demand And Increase Forgiveness",
+
+    "change_priority": [
+      "Forgiveness",
+      "Maneuverability",
+      "Easy Power",
+      "Sweet Spot Size",
+      "Swingweight",
+      "Static Weight",
+      "String Comfort",
+      "String Tension"
+    ]
+  },
+
+  "preferred_racquet_dna": {
+    "forgiveness": 10,
+    "maneuverability": 10,
+    "easy_power": 9,
+    "comfort": 9,
+    "large_effective_sweet_spot": 10,
+    "stability": 8,
+    "moderate_swingweight": 9,
+    "predictability": 9,
+    "control": 7,
+    "spin": 7
+  },
+
+  "preferred_string_dna": {
+    "comfort": 9,
+    "easy_power": 9,
+    "elasticity": 8,
+    "ball_pocketing": 8,
+    "shock_absorption": 8,
+    "control": 7,
+    "feel": 7,
+    "spin": 6,
+    "stiffness": 3
+  },
+
+  "recommended_string_families": [
+    "Natural Gut",
+    "Multifilament",
+    "Soft Co-Polyester",
+    "Responsive Co-Polyester",
+    "Natural Gut / Polyester Hybrid",
+    "Multifilament / Soft Polyester Hybrid"
+  ],
+
+  "recommended_strings": [
+    "Babolat Touch VS",
+    "Wilson Natural Gut",
+    "Wilson NXT",
+    "Yonex PolyTour Air",
+    "Yonex REXIS Comfort",
+    "Yonex REXIS Speed",
+    "Luxilon Element",
+    "Babolat RPM Soft",
+    "Tecnifibre X-One Biphase",
+    "Tecnifibre NRG2",
+    "Solinco Hyper-G Soft",
+    "MSV Swift",
+    "Toroline Truffle X"
+  ],
+
+  "recommended_hybrids": [
+    "Natural Gut Main + Soft Polyester Cross",
+    "Multifilament Main + Soft Polyester Cross",
+    "Soft Polyester Main + Multifilament Cross"
+  ],
+
+  "racquet_adjustment": {
+    "prefer": [
+      "Large effective sweet spot",
+      "High forgiveness",
+      "Easy acceleration",
+      "Moderate static weight",
+      "Manageable swingweight",
+      "Stable off-center response",
+      "Usable free power"
+    ],
+
+    "avoid": [
+      "Very small sweet spot",
+      "Extremely demanding control frames",
+      "Very high swingweight",
+      "Very heavy racquets",
+      "Low-powered setups requiring perfect positioning"
+    ]
+  },
+
+  "tension_adjustment": {
+    "mild": {
+      "adjustment_lbs": -1
+    },
+
+    "moderate": {
+      "adjustment_lbs": -2
+    },
+
+    "high": {
+      "adjustment_lbs": -3
+    },
+
+    "notes": [
+      "Slightly lower tension can increase easy depth when movement limitations reduce ideal positioning.",
+      "Do not lower tension excessively if directional control becomes unstable.",
+      "String elasticity and racquet forgiveness are more important than tension alone."
+    ]
+  },
+
+  "gauge_adjustment": {
+    "preferred": [
+      "1.20",
+      "1.23",
+      "1.25"
+    ],
+
+    "logic": {
+      "need_more_easy_power": "Prefer thinner gauge when durability allows.",
+      "need_more_control": "Prefer 1.25 before increasing tension aggressively."
+    }
+  },
+
+  "movement_considerations": {
+    "importance": "Critical",
+
+    "affected_movements": [
+      "Lateral acceleration",
+      "Lateral deceleration",
+      "Change of direction",
+      "Wide defensive movement",
+      "Recovery steps",
+      "Split step",
+      "Approach movement",
+      "Emergency stretching to the ball"
+    ],
+
+    "equipment_objectives": [
+      "Increase forgiveness when positioning is imperfect",
+      "Reduce need for maximal court coverage",
+      "Provide easy depth from defensive positions",
+      "Maintain maneuverability during late or compromised contact"
+    ]
+  },
+
+  "positioning_compensation_logic": {
+    "principle": {
+      "en": "If ankle sensitivity reduces the player's ability to arrive in ideal hitting position, equipment should provide more forgiveness and easier depth rather than demand greater precision.",
+      "zh": "如果脚踝敏感降低了球员到达理想击球位置的能力，装备应该提供更多容错与更轻松的深度，而不是进一步提高击球精准要求。"
+    },
+
+    "prioritize": [
+      "Forgiveness",
+      "Large Effective Sweet Spot",
+      "Easy Power",
+      "Stable Off-Center Response"
+    ],
+
+    "deprioritize": [
+      "Small Head Size",
+      "Very Low-Power Player Frames",
+      "Extremely Demanding Stringbeds"
+    ]
+  },
+
+  "playing_style_interaction": {
+    "baseline_aggressive": {
+      "risk_area": [
+        "Explosive recovery",
+        "Aggressive lateral movement"
+      ],
+
+      "equipment_direction": [
+        "Preserve control",
+        "Increase forgiveness",
+        "Maintain manageable swingweight"
+      ]
+    },
+
+    "baseline_counterpuncher": {
+      "risk_area": [
+        "Wide defensive coverage",
+        "Repeated directional changes"
+      ],
+
+      "equipment_direction": [
+        "Increase forgiveness",
+        "Increase easy depth",
+        "Reduce movement-dependent precision demands"
+      ]
+    },
+
+    "baseline_grinder": {
+      "risk_area": [
+        "High total movement volume",
+        "Long rallies",
+        "Repeated recovery steps"
+      ],
+
+      "equipment_direction": [
+        "Increase comfort",
+        "Increase forgiveness",
+        "Reduce cumulative equipment demand"
+      ]
+    },
+
+    "all_court": {
+      "risk_area": [
+        "Frequent forward and lateral transitions"
+      ],
+
+      "equipment_direction": [
+        "Prioritize maneuverability",
+        "Maintain stable response"
+      ]
+    },
+
+    "serve_volley": {
+      "risk_area": [
+        "Explosive forward movement",
+        "Split step",
+        "Rapid directional correction"
+      ],
+
+      "equipment_direction": [
+        "Prioritize maneuverability",
+        "Fast handling",
+        "Stable volley response"
+      ]
+    }
+  },
+
+  "severity_logic": {
+    "mild": {
+      "recommendation": [
+        "Maintain manageable swingweight",
+        "Increase forgiveness",
+        "Use comfortable string setup"
+      ]
+    },
+
+    "moderate": {
+      "recommendation": [
+        "Prioritize larger sweet spot",
+        "Increase easy power",
+        "Reduce equipment demand",
+        "Use softer string setup"
+      ]
+    },
+
+    "high": {
+      "recommendation": [
+        "Use highly forgiving racquet",
+        "Prioritize easy depth",
+        "Use manageable swingweight",
+        "Use comfort-oriented stringbed",
+        "Avoid equipment requiring perfect footwork"
+      ],
+
+      "hard_constraints": [
+        "Do not recommend very small unforgiving frames.",
+        "Do not recommend excessive swingweight solely for stability.",
+        "Do not recommend low-powered setups that require perfect court positioning.",
+        "Do not allow performance goals to override significant movement limitations."
+      ]
+    }
+  },
+
+  "goal_conflict_logic": {
+    "more_control": {
+      "resolution": [
+        "Increase predictability through string selection before reducing forgiveness.",
+        "Do not automatically move to a smaller head size."
+      ]
+    },
+
+    "more_spin": {
+      "resolution": [
+        "Generate spin through string geometry and racquet-head acceleration rather than demanding more court movement."
+      ]
+    },
+
+    "more_power": {
+      "resolution": [
+        "Use efficient racquet power and elastic strings before increasing racquet mass."
+      ]
+    },
+
+    "more_stability": {
+      "resolution": [
+        "Increase off-center stability without excessive swingweight."
+      ]
+    }
+  },
+
+  "ai_override_rules": {
+    "if_ankle_sensitivity_is_high": {
+      "override": true,
+
+      "prioritize": [
+        "Forgiveness",
+        "Maneuverability",
+        "Easy Power",
+        "Large Effective Sweet Spot",
+        "Reduced Movement Dependency"
+      ],
+
+      "deprioritize": [
+        "Maximum Precision Through Small Head Size",
+        "Maximum Swingweight",
+        "Very Demanding Player Frames",
+        "Low-Powered Setups Requiring Perfect Positioning"
+      ]
+    }
+  },
+
+  "future_recovery_module": {
+    "related_area": "Recovery / Physiotherapy",
+
+    "possible_topics": [
+      "Ankle Mobility",
+      "Ankle Stability",
+      "Balance Training",
+      "Calf Strength",
+      "Foot Strength",
+      "Proprioception",
+      "Change Of Direction Control",
+      "Return To Tennis",
+      "Load Management"
+    ],
+
+    "routing_rule": "This physical profile identifies equipment implications only. Exercise, rehabilitation and return-to-play recommendations should be handled by a separate recovery module."
+  },
+
+  "medical_warning": {
+    "enabled": true,
+
+    "message": {
+      "en": "Equipment changes may reduce movement demands but cannot diagnose, treat or rehabilitate ankle injuries. Persistent instability, swelling, significant pain or recurrent sprains should be evaluated by a qualified healthcare professional.",
+      "zh": "装备调整可以降低移动负担，但不能诊断、治疗或康复脚踝损伤。如持续存在不稳定、肿胀、明显疼痛或反复扭伤，应由专业医疗人员进行评估。"
+    }
+  },
+
+  "tradeoffs": {
+    "more_forgiveness_can_reduce": [
+      "Maximum Precision",
+      "Maximum Low-Launch Control"
+    ],
+
+    "more_easy_power_can_reduce": [
+      "Maximum Directional Control"
+    ],
+
+    "lower_swingweight_can_reduce": [
+      "Maximum Plow Through"
+    ],
+
+    "acceptable_tradeoff": "Reducing dependence on perfect movement and positioning takes priority over maximizing demanding equipment performance."
+  },
+
+  "matching_weights": {
+    "forgiveness": 0.24,
+    "maneuverability": 0.18,
+    "easy_power": 0.15,
+    "effective_sweet_spot": 0.13,
+    "comfort": 0.10,
+    "swingweight": 0.08,
+    "off_center_stability": 0.06,
+    "predictability": 0.03,
+    "string_elasticity": 0.02,
+    "control": 0.01
+  },
+
+  "output_guidance": {
+    "must_explain": [
+      "How ankle sensitivity changes the equipment recommendation.",
+      "Why forgiveness becomes more important when ideal positioning is harder.",
+      "How maneuverability and easy power reduce movement-dependent demands.",
+      "What precision or stability tradeoff is intentionally accepted.",
+      "Whether the recovery module should be considered."
+    ],
+
+    "must_not_do": [
+      "Do not diagnose the cause of ankle pain.",
+      "Do not prescribe rehabilitation exercises from this equipment profile.",
+      "Do not assume all ankle-sensitive players need the lightest possible racquet.",
+      "Do not sacrifice racquet stability excessively in pursuit of maneuverability."
+    ]
+  },
+
+  "search_keywords": [
+    "ankle",
+    "ankle pain",
+    "ankle sensitivity",
+    "ankle instability",
+    "ankle sprain",
+    "ankle stiffness",
+    "footwork",
+    "change of direction",
+    "脚踝",
+    "脚腕",
+    "脚踝疼痛",
+    "脚踝不稳",
+    "脚踝扭伤",
+    "脚踝敏感"
+  ]
+}
