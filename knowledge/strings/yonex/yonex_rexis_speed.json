@@ -1,0 +1,607 @@
+{
+  "id": "yonex_rexis_speed",
+  "brand": "Yonex",
+  "series": "REXIS",
+  "model": "REXIS Speed",
+  "category": "Multifilament",
+
+  "manufacturer_data": {
+    "construction": "Nylon / Polyester Multifilament Composite",
+    "material": [
+      "Nylon",
+      "Polyester",
+      "FORTIMO™"
+    ],
+    "string_family": "REXIS",
+    "official_positioning": "Highly responsive and lively multifilament designed to provide added speed and power for players of all swing speeds.",
+    "target_level": "Beginner / Intermediate / Advanced",
+    "target_style": "Power / Response / All-Court",
+    "swing_speed_positioning": "All Swing Speeds",
+    "made_in": "Japan"
+  },
+
+  "specifications": {
+    "construction": "Nylon / Polyester Multifilament Composite",
+    "cross_section": "Round",
+    "surface": "Smooth",
+
+    "available_colors": [
+      "White",
+      "Black",
+      "Yellow"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_name": "16L",
+        "gauge_mm": 1.25,
+        "available": true,
+        "item_code_set": "TGRSP125",
+        "item_code_reel": "TRSP125-2",
+
+        "power": 10,
+        "control": 8,
+        "spin": 7,
+        "comfort": 8,
+        "feel": 8,
+        "durability": 8,
+        "tension_maintenance": 8,
+        "elasticity": 9,
+        "shock_absorption": 8,
+        "ball_pocketing": 8,
+        "launch_angle": "Medium-High"
+      },
+
+      {
+        "gauge_name": "16",
+        "gauge_mm": 1.30,
+        "available": true,
+        "item_code_set": "TGRSP130",
+        "item_code_reel": "TRSP130-2",
+
+        "power": 9,
+        "control": 9,
+        "spin": 6,
+        "comfort": 8,
+        "feel": 8,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "elasticity": 8,
+        "shock_absorption": 8,
+        "ball_pocketing": 8,
+        "launch_angle": "Medium"
+      }
+    ],
+
+    "available_lengths": [
+      {
+        "type": "Set",
+        "length_m": 12
+      },
+      {
+        "type": "Reel",
+        "length_m": 200
+      }
+    ]
+  },
+
+  "technology": [
+    "FRF Process",
+    "Fusion of Resin Filament",
+    "Plasma Bonding",
+    "FORTIMO™",
+    "Nylon / Polyester Multifilament Composite",
+    "Molecular-Level Resin Bonding",
+    "Responsive Power Construction"
+  ],
+
+  "technology_details": {
+    "frf_process": {
+      "full_name": "Fusion of Resin Filament",
+      "description": "The FRF manufacturing process fills the gaps between conventional multifilament fibers with a more flexible resin material to create a denser, more elastic and more responsive string structure.",
+      "primary_benefits": [
+        "Power",
+        "Repulsion",
+        "Durability",
+        "Elasticity",
+        "Response"
+      ]
+    },
+
+    "plasma_bonding": {
+      "description": "Resin is bonded to the filaments through plasma treatment at the molecular level to improve repulsion, structural stability and durability.",
+      "primary_benefits": [
+        "Repulsion",
+        "Durability",
+        "Consistency",
+        "Filament Stability"
+      ]
+    },
+
+    "fortimo": {
+      "full_name": "FORTIMO™",
+      "developer": "Mitsui Chemicals, Inc.",
+      "material_type": "Polyurethane",
+
+      "description": "FORTIMO™ polyurethane combines flexibility, repulsion and durability while maintaining a brilliant white appearance through non-yellowing properties.",
+
+      "primary_benefits": [
+        "Flexibility",
+        "Repulsion",
+        "Durability",
+        "Elasticity",
+        "Color Stability"
+      ]
+    },
+
+    "nylon_polyester_composite": {
+      "description": "The combination of nylon and polyester multifilament components is designed to create a more responsive and stable response than a purely soft nylon multifilament.",
+
+      "primary_benefits": [
+        "Fast Response",
+        "Power",
+        "Stability",
+        "Crisper Feel"
+      ]
+    },
+
+    "responsive_speed_system": {
+      "description": "REXIS Speed is tuned for rapid energy return and lively response, helping increase ball speed across a wide range of swing speeds.",
+
+      "primary_benefits": [
+        "Ball Speed",
+        "Power",
+        "Responsiveness",
+        "Fast Energy Return"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Responsive Power Multifilament",
+    "target_player": "Beginner / Intermediate / Advanced",
+
+    "arm_friendly": true,
+
+    "spin_focus": false,
+
+    "control_focus": true,
+
+    "power_focus": true,
+
+    "comfort_focus": true,
+
+    "durability_focus": true,
+
+    "feel_focus": true,
+
+    "tension_stability_focus": true,
+
+    "response_focus": true,
+
+    "ball_pocketing_focus": true,
+
+    "speed_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 10,
+    "control": 8,
+    "spin": 7,
+    "comfort": 8,
+    "feel": 8,
+    "durability": 8,
+    "tension_maintenance": 8,
+    "elasticity": 9,
+    "shock_absorption": 8,
+    "ball_pocketing": 8,
+    "launch_angle": "Medium-High"
+  },
+
+  "ai_rating": {
+    "power": 10,
+    "control": 8,
+    "spin": 7,
+    "comfort": 8,
+    "feel": 8,
+    "durability": 8,
+    "tension_maintenance": 8
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium-Soft",
+    "snapback": 6,
+    "ball_bite": 5,
+    "ball_pocketing": 8,
+    "string_movement": 6,
+    "tension_stability": 8,
+    "spin_window": "Medium",
+    "predictability": 9,
+    "arm_friendliness": 8,
+    "shock_absorption": 8,
+    "directional_precision": 8,
+    "response": "Fast / Lively / Responsive",
+    "touch": 8,
+    "energy_return": 10,
+    "ball_speed": 10
+  },
+
+  "official_performance_map": {
+    "responsiveness": "Very High",
+    "firmness": "Medium-Firm",
+    "ball_pocketing": "Medium",
+    "yonex_family_position": "Responsive / Lively / Firmer Multifilament"
+  },
+
+  "official_string_parameters": {
+    "power": "High",
+    "spin": "Low-Medium",
+    "comfort": "Low-Medium",
+    "control": "Medium",
+    "durability": "Low-Medium",
+    "source": "Yonex Official String Parameters Guide"
+  },
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate",
+      "Advanced"
+    ],
+
+    "swing_speed": [
+      "Slow",
+      "Medium",
+      "Medium-Fast",
+      "Fast"
+    ],
+
+    "play_style": [
+      "All Court",
+      "Aggressive Baseline",
+      "Doubles",
+      "Serve & Volley",
+      "Power-Oriented Player"
+    ],
+
+    "special_player_profiles": [
+      "Players Seeking Maximum Multifilament Response",
+      "Players Wanting Easy Ball Speed",
+      "Players Wanting More Power Than REXIS Feel",
+      "Players Wanting A Crisper Multifilament",
+      "Players Transitioning From Synthetic Gut",
+      "Players Wanting More Comfort Than Polyester"
+    ]
+  },
+
+  "tour_players": [],
+
+  "recommended_racquets": [
+    "Yonex EZONE",
+    "Yonex VCORE",
+    "Yonex PERCEPT",
+    "Wilson Ultra",
+    "Wilson Blade",
+    "Wilson Clash",
+    "HEAD Boom",
+    "HEAD Speed",
+    "Babolat Pure Drive",
+    "Tecnifibre T-FIGHT"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Yonex PolyTour Pro",
+      "Yonex PolyTour Air",
+      "Yonex PolyTour Fire",
+      "Luxilon ALU Power",
+      "Wilson Revolve"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Power",
+        "Response",
+        "Ball Speed",
+        "Comfort",
+        "Pocketing"
+      ],
+
+      "as_crosses": [
+        "Power Support",
+        "Stringbed Softening",
+        "Response",
+        "Comfort",
+        "Shock Reduction"
+      ]
+    },
+
+    "hybrid_note": "REXIS Speed is particularly suitable for hybrid setups where the player wants multifilament comfort without making the stringbed excessively soft or muted."
+  },
+
+  "gauge_recommendation": {
+    "1.25": {
+      "gauge_name": "16L",
+
+      "best_for": [
+        "Maximum Response",
+        "Maximum Power",
+        "Faster Ball Speed",
+        "More Lively Feel",
+        "Hybrid Play"
+      ],
+
+      "tradeoffs": [
+        "Less Durability Than 1.30",
+        "Less Stability",
+        "More String Movement"
+      ]
+    },
+
+    "1.30": {
+      "gauge_name": "16",
+
+      "best_for": [
+        "More Stability",
+        "More Control",
+        "More Durability",
+        "Full Bed",
+        "Big Hitters"
+      ],
+
+      "tradeoffs": [
+        "Slightly Less Power",
+        "Slightly Less Lively Response"
+      ]
+    }
+  },
+
+  "comparison_data": {
+    "vs_rexis_feel": {
+      "power": "Higher",
+      "responsiveness": "Much Higher",
+      "ball_speed": "Higher",
+      "firmness": "Higher",
+      "ball_pocketing": "Lower",
+      "feel": "More Crisp / Less Plush",
+      "control": "Lower",
+      "primary_identity": {
+        "rexis_speed": "Response / Power / Speed",
+        "rexis_feel": "Feel / Control / Deep Pocketing"
+      }
+    },
+
+    "vs_rexis_comfort": {
+      "power": "Higher",
+      "responsiveness": "Much Higher",
+      "firmness": "Higher",
+      "comfort": "Lower",
+      "softness": "Lower",
+      "ball_pocketing": "Lower",
+      "primary_identity": {
+        "rexis_speed": "Fast Response / Power",
+        "rexis_comfort": "Softness / Comfort / Pocketing"
+      }
+    },
+
+    "vs_rexis_activate": {
+      "power": "Higher",
+      "responsiveness": "Higher",
+      "comfort": "Lower",
+      "ball_pocketing": "Lower",
+      "firmness": "Higher",
+      "primary_identity": {
+        "rexis_speed": "Speed / Response / Power",
+        "rexis_activate": "Arm-Friendly / Pocketing / Comfort"
+      }
+    },
+
+    "vs_wilson_nxt_power": {
+      "power": "Comparable High",
+      "response": "Crisper",
+      "comfort": "Lower",
+      "ball_pocketing": "Lower",
+      "control": "More Direct"
+    },
+
+    "vs_synthetic_gut": {
+      "power": "Higher",
+      "comfort": "Higher",
+      "ball_pocketing": "Higher",
+      "feel": "More Refined",
+      "price": "Higher"
+    },
+
+    "vs_polyester": {
+      "comfort": "Much Higher",
+      "power": "Higher",
+      "shock_absorption": "Higher",
+      "spin": "Lower",
+      "durability": "Lower"
+    }
+  },
+
+  "science_metrics": {
+    "construction": "Nylon / Polyester Multifilament Composite",
+
+    "material_system": [
+      "Nylon Filaments",
+      "Polyester Filaments",
+      "FORTIMO™ Polyurethane"
+    ],
+
+    "bonding_method": "Plasma Bonding",
+
+    "manufacturing_process": "FRF - Fusion of Resin Filament",
+
+    "trajectory_profile": "Fast / Lively",
+
+    "launch_angle_profile": "Medium-High",
+
+    "ball_pocketing_class": "High",
+
+    "feel_class": "High",
+
+    "control_class": "High",
+
+    "comfort_class": "High",
+
+    "response_class": "Elite",
+
+    "power_class": "Elite",
+
+    "elasticity_class": "Very High"
+  },
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Seeking Maximum Multifilament Power",
+      "Players Wanting Fast Ball Response",
+      "Players Wanting A Crisper Multifilament",
+      "All-Court Players",
+      "Doubles Players",
+      "Players Wanting More Comfort Than Polyester Without Losing Response"
+    ],
+
+    "avoid_for": [
+      "Players Seeking Maximum Softness",
+      "Players Wanting Deepest Possible Ball Pocketing",
+      "Extreme Topspin Players",
+      "Frequent String Breakers",
+      "Players Wanting Firm Polyester-Level Control"
+    ],
+
+    "alternative_strings": [
+      "Yonex REXIS Feel",
+      "Yonex REXIS Comfort",
+      "Yonex REXIS Activate",
+      "Wilson NXT Power",
+      "Tecnifibre NRG2",
+      "Tecnifibre X-One Biphase",
+      "Babolat Xcel"
+    ]
+  },
+
+  "comparison_tags": [
+    "Yonex",
+    "REXIS Speed",
+    "Multifilament",
+    "Nylon",
+    "Polyester",
+    "FORTIMO",
+    "FRF",
+    "Plasma Bonding",
+    "Power",
+    "Response",
+    "Speed",
+    "Lively",
+    "White",
+    "Black",
+    "Yellow",
+    "1.25",
+    "1.30"
+  ],
+
+  "ai_keywords": [
+    "yonex",
+    "rexis speed",
+    "rexis speed 125",
+    "rexis speed 130",
+    "multifilament",
+    "nylon polyester multifilament",
+    "fortimo",
+    "mitsui chemicals",
+    "frf",
+    "fusion of resin filament",
+    "plasma bonding",
+    "responsive multifilament",
+    "lively",
+    "power",
+    "ball speed",
+    "speed",
+    "1.25",
+    "1.30",
+    "white",
+    "black",
+    "yellow",
+    "tgrsp125",
+    "tgrsp130",
+    "trsp125-2",
+    "trsp130-2"
+  ],
+
+  "target_competitors": [
+    "Wilson NXT Power",
+    "Tecnifibre NRG2",
+    "Tecnifibre X-One Biphase",
+    "Babolat Xcel",
+    "Head Velocity MLT"
+  ],
+
+  "description": {
+    "en": "Yonex REXIS Speed is the most response- and speed-oriented member of the REXIS multifilament family. Its nylon and polyester multifilament construction works with FORTIMO™ polyurethane, FRF (Fusion of Resin Filament) processing and molecular-level Plasma Bonding to improve repulsion, elasticity and durability. Yonex positions REXIS Speed for players of all swing speeds who want a highly responsive, lively string with added ball speed. On the official Comfort & Playability map, it sits significantly more toward the responsive and firm side than REXIS Feel or Comfort.",
+
+    "zh": "Yonex REXIS Speed 是 REXIS 多芯系列中最强调 Response、Power 与 Ball Speed 的型号。它采用 Nylon + Polyester Multifilament 复合结构，并结合 FORTIMO™ 聚氨酯、FRF（Fusion of Resin Filament）制造工艺以及分子级 Plasma Bonding 技术，以提升回弹、弹性和耐久。Yonex 将它定位为适合所有挥拍速度、追求 Highly Responsive 和 Added Speed 的球员。根据官方 Comfort & Playability 图，REXIS Speed 明显比 REXIS Feel 和 REXIS Comfort 更靠近 Responsive 与 Firm 区域，因此整体击球感更加直接、活跃、快速，而不是单纯追求最柔软的线床。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_official_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Yonex REXIS Speed 125 / 130",
+      "Responsive",
+      "Lively with power",
+      "Highly-responsive string positioning",
+      "Added speed",
+      "All swing speeds",
+      "White",
+      "Black",
+      "Yellow",
+      "16L / 1.25 mm",
+      "16 / 1.30 mm",
+      "Set 12 m",
+      "Reel 200 m",
+      "Nylon",
+      "Polyester Multifilament",
+      "FORTIMO™",
+      "Made in Japan",
+      "TGRSP125",
+      "TGRSP130",
+      "TRSP125-2",
+      "TRSP130-2",
+      "FRF Process",
+      "Fusion of Resin Filament",
+      "Plasma Bonding",
+      "Molecular-level resin bonding",
+      "FORTIMO™ developed by Mitsui Chemicals, Inc.",
+      "Improved power",
+      "Improved repulsion",
+      "Improved durability",
+      "Greater elasticity",
+      "FORTIMO™ flexibility",
+      "FORTIMO™ repulsion",
+      "FORTIMO™ durability",
+      "FORTIMO™ non-yellowing properties",
+      "Official Yonex Comfort & Playability performance map"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Official Performance Map",
+      "Official String Parameters",
+      "Recommended Players",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendation",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
