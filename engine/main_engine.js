@@ -2,112 +2,924 @@
  * ============================================================
  * EveryCourtAI
  * Main Engine
- * Version: 1.0
+ * Version: 2.0
  * ============================================================
- * Purpose:
- * Central entry point for the EveryCourtAI Recommendation Engine.
- * Responsible for orchestrating all AI engines.
+ *
+ * 文件路径：
+ * engine/main_engine.js
+ *
+ * 作用：
+ * 统一调度整个 EveryCourtAI Recommendation Engine。
+ *
+ * 最终流程：
+ *
+ * User Input
+ *    ↓
+ * Player Engine
+ *    ↓
+ * Matching Engine
+ *    ↓
+ * Conflict Engine
+ *    ↓
+ * Ranking Engine
+ *    ↓
+ * Alternative Engine
+ *    ↓
+ * Recommendation Engine
+ *    ↓
+ * Confidence Engine
+ *    ↓
+ * Explanation Engine
+ *    ↓
+ * Final Output
+ *
  * ============================================================
  */
 
-import { buildPlayerProfile } from "./player_engine.js";
-import { runMatchingEngine } from "./matching_engine.js";
-import { rankRecommendations } from "./ranking_engine.js";
-import { generateRecommendation } from "./recommendation_engine.js";
-import { generateExplanation } from "./explanation_engine.js";
+import {
+    buildPlayerProfile,
+    validatePlayerProfile as validateNormalizedPlayerProfile
+} from "./player_engine.js";
+
+import {
+    runMatchingEngine
+} from "./matching_engine.js";
+
+import {
+    runConflictEngine
+} from "./conflict_engine.js";
+
+import {
+    rankRecommendations
+} from "./ranking_engine.js";
+
+import {
+    generateAlternatives
+} from "./alternative_engine.js";
+
+import {
+    generateRecommendation
+} from "./recommendation_engine.js";
+
+import {
+    calculateConfidence
+} from "./confidence_engine.js";
+
+import {
+    generateExplanation
+} from "./explanation_engine.js";
+
+import {
+    validateEngineOutput,
+    validatePlayerProfile
+} from "../utils/validator.js";
+
 
 /**
- * Main Recommendation Engine
- *
- * @param {Object} playerInput
- * @returns {Object}
+ * ============================================================
+ * 基础配置
+ * ============================================================
  */
-export async function runEveryCourtAI(playerInput) {
 
-    console.log("====================================");
-    console.log("EveryCourtAI Engine Started");
-    console.log("====================================");
+const ENGINE_NAME = "EveryCourtAI";
 
-    /**
-     * ----------------------------------
-     * STEP 1
-     * Build Player Profile
-     * ----------------------------------
-     */
+const ENGINE_VERSION = "2.0";
 
-    const playerProfile = await buildPlayerProfile(playerInput);
 
-    /**
-     * ----------------------------------
-     * STEP 2
-     * Find Matching Candidates
-     * ----------------------------------
-     */
+/**
+ * ============================================================
+ * 通用工具
+ * ============================================================
+ */
 
-    const candidates = await runMatchingEngine(playerProfile);
+function createTimestamp() {
+    return new Date()
+        .toISOString();
+}
 
-    /**
-     * ----------------------------------
-     * STEP 3
-     * Rank Candidates
-     * ----------------------------------
-     */
 
-    const rankedCandidates = await rankRecommendations(
-        candidates,
-        playerProfile
-    );
+function safeErrorMessage(error) {
+    if (
+        error instanceof Error
+    ) {
+        return error.message;
+    }
 
-    /**
-     * ----------------------------------
-     * STEP 4
-     * Generate Recommendation
-     * ----------------------------------
-     */
+    return String(error);
+}
 
-    const recommendation = await generateRecommendation(
-        rankedCandidates,
-        playerProfile
-    );
 
-    /**
-     * ----------------------------------
-     * STEP 5
-     * Generate Explanation
-     * ----------------------------------
-     */
+/**
+ * ============================================================
+ * Pipeline Status
+ * ============================================================
+ */
 
-    const explanation = await generateExplanation(
-        recommendation,
-        playerProfile
-    );
+function createPipelineStatus() {
+    return {
+        player_engine: {
+            status: "pending"
+        },
 
-    /**
-     * ----------------------------------
-     * Final Output
-     * ----------------------------------
-     */
+        matching_engine: {
+            status: "pending"
+        },
 
+        conflict_engine: {
+            status: "pending"
+        },
+
+        ranking_engine: {
+            status: "pending"
+        },
+
+        alternative_engine: {
+            status: "pending"
+        },
+
+        recommendation_engine: {
+            status: "pending"
+        },
+
+        confidence_engine: {
+            status: "pending"
+        },
+
+        explanation_engine: {
+            status: "pending"
+        }
+    };
+}
+
+
+/**
+ * ============================================================
+ * Engine Result Summary
+ * ============================================================
+ */
+
+function buildResultSummary({
+    playerProfile,
+    matchingResult,
+    conflictResult,
+    rankingResult,
+    alternativeResult,
+    recommendationResult,
+    confidenceResult
+}) {
     return {
 
-        success: true,
+        profile: {
+            completeness_score:
+                playerProfile
+                    ?.metadata
+                    ?.completeness_score ??
+                null,
 
-        engine: "EveryCourtAI",
+            missing_information:
+                playerProfile
+                    ?.metadata
+                    ?.missing_information ??
+                []
+        },
 
-        version: "1.0",
+        matching: {
+            racquet_candidates:
+                matchingResult
+                    ?.candidate_counts
+                    ?.racquets ??
+                0,
 
-        timestamp: new Date().toISOString(),
+            string_candidates:
+                matchingResult
+                    ?.candidate_counts
+                    ?.strings ??
+                0
+        },
 
-        player_profile: playerProfile,
+        conflict: {
+            racquets_excluded:
+                conflictResult
+                    ?.filtering
+                    ?.racquets_excluded ??
+                0,
 
-        candidates: candidates,
+            strings_excluded:
+                conflictResult
+                    ?.filtering
+                    ?.strings_excluded ??
+                0,
 
-        ranked_candidates: rankedCandidates,
+            conflicts_detected:
+                conflictResult
+                    ?.conflicts_detected
+                    ?.length ??
+                0
+        },
 
-        recommendation: recommendation,
+        ranking: {
+            best_racquet_id:
+                rankingResult
+                    ?.best_matches
+                    ?.racquet
+                    ?.id ??
+                null,
 
-        explanation: explanation
+            best_string_id:
+                rankingResult
+                    ?.best_matches
+                    ?.string
+                    ?.id ??
+                null
+        },
 
+        alternatives: {
+            racquet_alternatives:
+                alternativeResult
+                    ?.counts
+                    ?.racquet_alternatives ??
+                0,
+
+            string_alternatives:
+                alternativeResult
+                    ?.counts
+                    ?.string_alternatives ??
+                0
+        },
+
+        recommendation: {
+            setup_score:
+                recommendationResult
+                    ?.setup_score ??
+                null,
+
+            setup_type:
+                recommendationResult
+                    ?.string_setup
+                    ?.type ??
+                null,
+
+            racquet_action:
+                recommendationResult
+                    ?.racquet_decision
+                    ?.action ??
+                null,
+
+            main_string_id:
+                recommendationResult
+                    ?.string_setup
+                    ?.main
+                    ?.id ??
+                null,
+
+            cross_string_id:
+                recommendationResult
+                    ?.string_setup
+                    ?.cross
+                    ?.id ??
+                null,
+
+            main_tension_lbs:
+                recommendationResult
+                    ?.tension
+                    ?.main_lbs ??
+                null,
+
+            cross_tension_lbs:
+                recommendationResult
+                    ?.tension
+                    ?.cross_lbs ??
+                null
+        },
+
+        confidence: {
+            score:
+                confidenceResult
+                    ?.score ??
+                null,
+
+            level:
+                confidenceResult
+                    ?.level ??
+                null,
+
+            recommendation_mode:
+                confidenceResult
+                    ?.recommendation_mode ??
+                null
+        }
     };
+}
 
+
+/**
+ * ============================================================
+ * Main Engine
+ * ============================================================
+ */
+
+export async function runEveryCourtAI(
+    playerInput = {},
+    options = {}
+) {
+    const startedAt =
+        Date.now();
+
+    const pipeline =
+        createPipelineStatus();
+
+
+    /**
+     * ----------------------------------
+     * Options
+     * ----------------------------------
+     */
+
+    const {
+        include_debug = false,
+        include_intermediate_results = false
+    } = options;
+
+
+    try {
+
+        /**
+         * ====================================================
+         * STEP 1
+         * Player Engine
+         * ====================================================
+         */
+
+        const playerProfile =
+            await buildPlayerProfile(
+                playerInput
+            );
+
+
+        pipeline.player_engine = {
+            status: "completed"
+        };
+
+
+        /**
+         * Double Validation
+         */
+
+        const normalizedValidation =
+            validateNormalizedPlayerProfile(
+                playerProfile
+            );
+
+
+        const sharedValidation =
+            validatePlayerProfile(
+                playerProfile
+            );
+
+
+        if (
+            !normalizedValidation.valid ||
+            !sharedValidation.valid
+        ) {
+            throw new Error(
+                "EveryCourtAI Main Engine: normalized player profile failed validation."
+            );
+        }
+
+
+        /**
+         * ====================================================
+         * STEP 2
+         * Matching Engine
+         * ====================================================
+         */
+
+        const matchingResult =
+            await runMatchingEngine(
+                playerProfile
+            );
+
+
+        pipeline.matching_engine = {
+            status: "completed",
+
+            racquet_candidates:
+                matchingResult
+                    ?.candidate_counts
+                    ?.racquets ??
+                0,
+
+            string_candidates:
+                matchingResult
+                    ?.candidate_counts
+                    ?.strings ??
+                0
+        };
+
+
+        /**
+         * ====================================================
+         * STEP 3
+         * Conflict Engine
+         * ====================================================
+         */
+
+        const conflictResult =
+            await runConflictEngine(
+                matchingResult,
+                playerProfile
+            );
+
+
+        pipeline.conflict_engine = {
+            status: "completed",
+
+            racquets_excluded:
+                conflictResult
+                    ?.filtering
+                    ?.racquets_excluded ??
+                0,
+
+            strings_excluded:
+                conflictResult
+                    ?.filtering
+                    ?.strings_excluded ??
+                0
+        };
+
+
+        /**
+         * ====================================================
+         * STEP 4
+         * Ranking Engine
+         * ====================================================
+         */
+
+        const rankingResult =
+            await rankRecommendations(
+                conflictResult,
+                playerProfile
+            );
+
+
+        pipeline.ranking_engine = {
+            status: "completed",
+
+            best_racquet:
+                rankingResult
+                    ?.best_matches
+                    ?.racquet
+                    ?.id ??
+                null,
+
+            best_string:
+                rankingResult
+                    ?.best_matches
+                    ?.string
+                    ?.id ??
+                null
+        };
+
+
+        /**
+         * ====================================================
+         * STEP 5
+         * Alternative Engine
+         * ====================================================
+         */
+
+        const alternativeResult =
+            await generateAlternatives(
+                rankingResult,
+                playerProfile
+            );
+
+
+        pipeline.alternative_engine = {
+            status: "completed",
+
+            racquet_alternatives:
+                alternativeResult
+                    ?.counts
+                    ?.racquet_alternatives ??
+                0,
+
+            string_alternatives:
+                alternativeResult
+                    ?.counts
+                    ?.string_alternatives ??
+                0
+        };
+
+
+        /**
+         * ====================================================
+         * STEP 6
+         * Recommendation Engine
+         * ====================================================
+         */
+
+        const recommendationResult =
+            await generateRecommendation(
+                rankingResult,
+                playerProfile,
+                alternativeResult
+            );
+
+
+        pipeline.recommendation_engine = {
+            status: "completed",
+
+            setup_score:
+                recommendationResult
+                    ?.setup_score ??
+                null,
+
+            setup_type:
+                recommendationResult
+                    ?.string_setup
+                    ?.type ??
+                null
+        };
+
+
+        /**
+         * ====================================================
+         * STEP 7
+         * Confidence Engine
+         * ====================================================
+         */
+
+        const confidenceResult =
+            await calculateConfidence(
+                playerProfile,
+                {
+                    conflictResult,
+                    rankingResult,
+                    alternativeResult,
+                    recommendationResult
+                }
+            );
+
+
+        pipeline.confidence_engine = {
+            status: "completed",
+
+            score:
+                confidenceResult
+                    ?.score ??
+                null,
+
+            level:
+                confidenceResult
+                    ?.level ??
+                null
+        };
+
+
+        /**
+         * ====================================================
+         * STEP 8
+         * Explanation Engine
+         * ====================================================
+         */
+
+        const explanationResult =
+            await generateExplanation(
+                recommendationResult,
+                playerProfile,
+                confidenceResult
+            );
+
+
+        pipeline.explanation_engine = {
+            status: "completed"
+        };
+
+
+        /**
+         * ====================================================
+         * STEP 9
+         * Final Output
+         * ====================================================
+         */
+
+        const processingTimeMs =
+            Date.now() -
+            startedAt;
+
+
+        const summary =
+            buildResultSummary({
+                playerProfile,
+                matchingResult,
+                conflictResult,
+                rankingResult,
+                alternativeResult,
+                recommendationResult,
+                confidenceResult
+            });
+
+
+        const output = {
+
+            success: true,
+
+            engine: {
+                name:
+                    ENGINE_NAME,
+
+                version:
+                    ENGINE_VERSION
+            },
+
+            timestamp:
+                createTimestamp(),
+
+            processing_time_ms:
+                processingTimeMs,
+
+            summary,
+
+            recommendation:
+                recommendationResult,
+
+            confidence:
+                confidenceResult,
+
+            explanation:
+                explanationResult,
+
+            player_profile:
+                playerProfile,
+
+            pipeline
+        };
+
+
+        /**
+         * ----------------------------------
+         * Optional Intermediate Results
+         * ----------------------------------
+         */
+
+        if (
+            include_intermediate_results
+        ) {
+            output.intermediate_results = {
+                matching:
+                    matchingResult,
+
+                conflict:
+                    conflictResult,
+
+                ranking:
+                    rankingResult,
+
+                alternatives:
+                    alternativeResult
+            };
+        }
+
+
+        /**
+         * ----------------------------------
+         * Optional Debug
+         * ----------------------------------
+         */
+
+        if (
+            include_debug
+        ) {
+            output.debug = {
+                engine_order: [
+                    "player_engine",
+                    "matching_engine",
+                    "conflict_engine",
+                    "ranking_engine",
+                    "alternative_engine",
+                    "recommendation_engine",
+                    "confidence_engine",
+                    "explanation_engine"
+                ],
+
+                input_received:
+                    playerInput,
+
+                options_received:
+                    options
+            };
+        }
+
+
+        /**
+         * ----------------------------------
+         * Final Validation
+         * ----------------------------------
+         */
+
+        const outputValidation =
+            validateEngineOutput(
+                output
+            );
+
+
+        if (
+            !outputValidation.valid
+        ) {
+            throw new Error(
+                `EveryCourtAI Main Engine: final output failed validation: ${
+                    outputValidation
+                        .errors
+                        ?.join("; ") ??
+                    "unknown validation error"
+                }`
+            );
+        }
+
+
+        return output;
+
+    } catch (error) {
+
+        /**
+         * ====================================================
+         * Error Handling
+         * ====================================================
+         */
+
+        const processingTimeMs =
+            Date.now() -
+            startedAt;
+
+
+        /**
+         * 找出目前执行到哪一层
+         */
+
+        for (
+            const [
+                engineName,
+                status
+            ]
+            of Object.entries(
+                pipeline
+            )
+        ) {
+            if (
+                status.status === "pending"
+            ) {
+                pipeline[engineName] = {
+                    status: "failed"
+                };
+
+                break;
+            }
+        }
+
+
+        return {
+
+            success: false,
+
+            engine: {
+                name:
+                    ENGINE_NAME,
+
+                version:
+                    ENGINE_VERSION
+            },
+
+            timestamp:
+                createTimestamp(),
+
+            processing_time_ms:
+                processingTimeMs,
+
+            error: {
+                message:
+                    safeErrorMessage(
+                        error
+                    ),
+
+                type:
+                    error
+                        ?.name ??
+                    "Error"
+            },
+
+            pipeline
+        };
+    }
+}
+
+
+/**
+ * ============================================================
+ * Quick Recommendation Mode
+ * ============================================================
+ *
+ * 用于以后 App 快速模式。
+ * 不返回所有中间数据。
+ * ============================================================
+ */
+
+export async function runQuickRecommendation(
+    playerInput = {}
+) {
+    const result =
+        await runEveryCourtAI(
+            playerInput,
+            {
+                include_debug:
+                    false,
+
+                include_intermediate_results:
+                    false
+            }
+        );
+
+
+    if (
+        !result.success
+    ) {
+        return result;
+    }
+
+
+    return {
+        success:
+            true,
+
+        engine:
+            result.engine,
+
+        timestamp:
+            result.timestamp,
+
+        recommendation:
+            result.recommendation,
+
+        confidence:
+            result.confidence,
+
+        explanation:
+            result.explanation
+    };
+}
+
+
+/**
+ * ============================================================
+ * Deep Analysis Mode
+ * ============================================================
+ *
+ * 用于以后专业模式 / Debug / API 测试。
+ * ============================================================
+ */
+
+export async function runDeepAnalysis(
+    playerInput = {}
+) {
+    return runEveryCourtAI(
+        playerInput,
+        {
+            include_debug:
+                true,
+
+            include_intermediate_results:
+                true
+        }
+    );
+}
+
+
+/**
+ * ============================================================
+ * Engine Health
+ * ============================================================
+ */
+
+export function getEngineInfo() {
+    return {
+        name:
+            ENGINE_NAME,
+
+        version:
+            ENGINE_VERSION,
+
+        architecture: [
+            "player_engine",
+            "matching_engine",
+            "conflict_engine",
+            "ranking_engine",
+            "alternative_engine",
+            "recommendation_engine",
+            "confidence_engine",
+            "explanation_engine"
+        ],
+
+        status:
+            "ready_for_local_testing"
+    };
 }
