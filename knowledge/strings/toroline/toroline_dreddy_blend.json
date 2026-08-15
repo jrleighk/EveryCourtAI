@@ -1,0 +1,461 @@
+{
+  "id": "toroline_dreddy_blend",
+  "brand": "Toroline",
+  "series": "DREDDY Blend",
+  "model": "DREDDY",
+  "category": "Hybrid String Set",
+
+  "collaboration": {
+    "partner": "Dustin Brown",
+    "role": "Signature / Inspired Performance Blend",
+    "confidence": "Official Manufacturer Claim"
+  },
+
+  "manufacturer_data": {
+    "construction": "Dual Co-Poly Hybrid",
+    "main_string": "Toroline O-TORO TOUR Green 1.23",
+    "cross_string": "Toroline O-TORO SNAP Yellow 1.25",
+    "official_positioning": "A dynamic hybrid combining a firmer shaped main for bite and control with a softer slick round cross for explosive snapback, feel and pocketing.",
+    "target_level": "Intermediate / Advanced / Tournament",
+    "performance_focus": [
+      "Spin",
+      "Bite",
+      "Control",
+      "Feel",
+      "Snapback",
+      "Creativity",
+      "Explosive Response"
+    ]
+  },
+
+  "specifications": {
+    "construction": "Firm Hexagonal Co-Poly + Softer Round Low-Friction Co-Poly Hybrid",
+
+    "mains": {
+      "string": "Toroline O-TORO TOUR",
+      "gauge_mm": 1.23,
+      "gauge_name": "17",
+      "color": "Green",
+      "shape": "Hexagonal",
+      "profile_sides": 6,
+      "material": "Co-Polyester",
+      "flex": "Firm",
+      "primary_role": [
+        "Ball Bite",
+        "Extreme Spin",
+        "Control",
+        "Directional Precision",
+        "Durability"
+      ]
+    },
+
+    "crosses": {
+      "string": "Toroline O-TORO SNAP",
+      "gauge_mm": 1.25,
+      "gauge_name": "16L",
+      "color": "Yellow",
+      "shape": "Round",
+      "surface": "Ultra-Slick / Low Friction",
+      "material": "Co-Polyester",
+      "flex": "Softer",
+      "primary_role": [
+        "Snapback Support",
+        "Pocketing",
+        "Feel",
+        "Comfort",
+        "Low Inter-String Friction"
+      ]
+    }
+  },
+
+  "component_strings": {
+    "o_toro_tour_green_123": {
+      "role": "Mains",
+      "construction": "Firm Hexagonal Co-Polyester",
+      "primary_benefits": [
+        "Ruthless Bite",
+        "Laser-Like Control",
+        "Tour-Level Durability",
+        "Extreme Spin"
+      ]
+    },
+
+    "o_toro_snap_yellow_125": {
+      "role": "Crosses",
+      "construction": "Softer Round Co-Polyester",
+      "surface": "Ultra-Slick",
+      "primary_benefits": [
+        "Explosive Snapback",
+        "Plush Feel",
+        "Ball Pocketing",
+        "Low Friction"
+      ]
+    }
+  },
+
+  "official_hybrid_configuration": {
+    "mains": "O-TORO TOUR Green 1.23",
+    "crosses": "O-TORO SNAP Yellow 1.25",
+
+    "official_result": [
+      "Extreme Spin",
+      "Strong Bite",
+      "Laser-Like Control",
+      "Explosive Snapback",
+      "Plush Feel",
+      "Ball Pocketing",
+      "Creative Response"
+    ]
+  },
+
+  "technology": [
+    "Firm Hexagonal Main Geometry",
+    "Ultra-Slick Round Cross",
+    "Soft-Firm Hybrid Contrast",
+    "Low-Friction Snapback Architecture",
+    "Spin and Feel Integration"
+  ],
+
+  "technology_details": {
+    "main_function": {
+      "description": "The firm O-TORO TOUR mains use a hexagonal profile to grip the ball aggressively and provide strong directional control and durability."
+    },
+
+    "cross_function": {
+      "description": "The softer, slick O-TORO SNAP crosses reduce inter-string friction, allowing the mains to slide and return rapidly while adding pocketing and feel."
+    },
+
+    "hybrid_interaction": {
+      "description": "The contrast between firm shaped mains and softer slick crosses creates a blend of mechanical bite, fast snapback and enhanced pocketing."
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Creative Spin Feel Dual-Poly Hybrid",
+    "target_player": "Intermediate / Advanced / Tournament",
+    "arm_friendly": false,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "feel_focus": true,
+    "durability_focus": true,
+    "response_focus": true,
+    "snapback_focus": true,
+    "creativity_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 8,
+    "feel": 10,
+    "durability": 9,
+    "tension_maintenance": 9,
+    "elasticity": 9,
+    "ball_pocketing": 10,
+    "launch_angle": "Medium-High"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 8,
+    "feel": 10,
+    "durability": 9,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium-Firm",
+    "snapback": 10,
+    "ball_pocketing": 10,
+    "string_movement": 10,
+    "inter_string_friction": "Very Low",
+    "tension_stability": 9,
+    "spin_window": "Very High",
+    "predictability": 9,
+    "arm_friendliness": 7,
+    "directional_precision": 10,
+    "ball_bite": 10,
+    "surface_grip": 10,
+    "response_consistency": 9,
+    "creativity_response": 10,
+    "liveliness": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "All Court",
+      "Serve & Volley",
+      "Creative Shotmaker",
+      "Heavy Topspin"
+    ],
+
+    "special_player_profiles": [
+      "Players Seeking Strong Bite and Snapback",
+      "Players Wanting Creative Shotmaking Freedom",
+      "Players Seeking More Feel Than a Full Firm Poly Bed",
+      "Players Wanting Spin and Pocketing Together",
+      "Players Who Attack With Variety and Confidence"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Babolat Pure Aero",
+    "Babolat Pure Drive",
+    "Wilson Shift",
+    "Wilson Blade",
+    "HEAD Extreme",
+    "HEAD Speed",
+    "Yonex VCORE",
+    "Yonex EZONE",
+    "Tecnifibre T-FIGHT",
+    "Dunlop SX"
+  ],
+
+  "hybrid_physics": {
+    "main_string_role": {
+      "string": "O-TORO TOUR",
+      "shape": "Hexagonal",
+      "flex": "Firm",
+      "primary_effects": [
+        "Mechanical Ball Grip",
+        "Control",
+        "Durability",
+        "Spin"
+      ]
+    },
+
+    "cross_string_role": {
+      "string": "O-TORO SNAP",
+      "shape": "Round",
+      "surface": "Ultra-Slick",
+      "flex": "Softer",
+      "primary_effects": [
+        "Low Inter-String Friction",
+        "Fast Snapback",
+        "Pocketing",
+        "Feel"
+      ]
+    },
+
+    "combined_effect": [
+      "Extreme Spin",
+      "Fast Snapback",
+      "Strong Directional Control",
+      "Plush Pocketing",
+      "Creative Response"
+    ]
+  },
+
+  "estimated_lifespan": {
+    "hybrid_setup": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "16-28"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Medium-Low",
+    "tension_loss_sensitivity": "Medium-Low",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when O-TORO TOUR bite, O-TORO SNAP slickness, snapback or pocketing noticeably declines."
+  },
+
+  "comparison_data": {
+    "vs_full_bed_o_toro_tour": {
+      "comfort": "Higher",
+      "pocketing": "Higher",
+      "snapback": "Higher",
+      "feel": "More Plush",
+      "control": "Slightly Softer",
+      "durability": "Slightly Lower"
+    },
+
+    "vs_full_bed_o_toro_snap": {
+      "ball_bite": "Much Higher",
+      "control": "Higher",
+      "spin": "Higher",
+      "durability": "Higher",
+      "response": "More Structured"
+    },
+
+    "vs_o_snap": {
+      "main_flex": "Firmer",
+      "main_control": "Higher",
+      "cross_feel": "Softer / More Plush",
+      "overall_character": "More Creative / More Feel-Oriented"
+    },
+
+    "vs_101_blend": {
+      "main_string": "O-TORO TOUR instead of standard O-TORO",
+      "control": "Higher",
+      "durability": "Higher",
+      "feel": "More Plush",
+      "target_player": "More Advanced / More Creative"
+    }
+  },
+
+  "science_metrics": {
+    "main_spin_mechanism": [
+      "Hexagonal Mechanical Grip",
+      "Firm Main Stability"
+    ],
+
+    "cross_spin_mechanism": [
+      "Low Inter-String Friction",
+      "Fast Snapback",
+      "Softer Elastic Cross Response"
+    ],
+
+    "trajectory_profile": "Spin-Oriented / Controlled",
+
+    "launch_angle_profile": "Medium-High",
+
+    "snapback_class": "Elite",
+
+    "pocketing_class": "High",
+
+    "hybrid_class": "Dynamic Firm-Soft Dual-Poly Hybrid"
+  },
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Creative All-Court Players",
+      "Aggressive Baseliners",
+      "Players Seeking Strong Bite With Plush Feel",
+      "Players Wanting Fast Snapback",
+      "Players Seeking Spin and Control Without Losing Pocketing",
+      "Advanced Players Who Use Variety"
+    ],
+
+    "avoid_for": [
+      "Beginners With Slow Swing Speed",
+      "Players With Significant Arm Sensitivity",
+      "Players Seeking Extremely Low Launch Angle",
+      "Players Wanting Maximum Full-Poly Durability"
+    ],
+
+    "alternative_strings": [
+      "Toroline O-SNAP",
+      "Toroline 101 Blend",
+      "Toroline COLE Blend",
+      "Toroline SNAPAHOLIC",
+      "Toroline STEVIE Blend"
+    ]
+  },
+
+  "comparison_tags": [
+    "DREDDY",
+    "Dustin Brown",
+    "O-TORO TOUR",
+    "O-TORO SNAP",
+    "Firm Main",
+    "Softer Cross",
+    "Hexagonal Main",
+    "Round Cross",
+    "Spin",
+    "Snapback",
+    "Pocketing",
+    "Creative Feel",
+    "Green Yellow"
+  ],
+
+  "ai_keywords": [
+    "toroline",
+    "dreddy",
+    "dustin brown",
+    "dreddy blend",
+    "o toro tour green",
+    "o-toro tour green",
+    "1.23",
+    "o toro snap yellow",
+    "o-toro snap yellow",
+    "1.25",
+    "firm main",
+    "soft cross",
+    "hexagonal main",
+    "round cross",
+    "spin",
+    "bite",
+    "control",
+    "snapback",
+    "pocketing",
+    "creative",
+    "plush feel"
+  ],
+
+  "target_competitors": [
+    "Toroline O-SNAP",
+    "Toroline 101 Blend",
+    "Toroline COLE Blend",
+    "Toroline SNAPAHOLIC",
+    "Solinco Hyper-G Hybrid System"
+  ],
+
+  "description": {
+    "en": "Toroline DREDDY is a dynamic dual-poly hybrid inspired by Dustin Brown's creative and explosive style. It combines firm O-TORO TOUR Green 1.23 mains with softer O-TORO SNAP Yellow 1.25 crosses. The shaped mains provide aggressive bite, spin, control and durability, while the ultra-slick round crosses reduce friction and deliver fast snapback, plush pocketing and added feel. The result is a lively, spin-friendly and highly expressive setup for players who want to attack with variety, confidence and precision.",
+
+    "zh": "Toroline DREDDY 是一套以 Dustin Brown 创意型、爆发型打法为灵感的双聚酯 Hybrid。主线采用偏硬的 O-TORO TOUR Green 1.23，通过六边形结构提供强咬球、旋转、控制和耐久；横线采用更柔和、超光滑的 O-TORO SNAP Yellow 1.25，降低主横线摩擦并提供快速 Snapback、Plush Pocketing 和更丰富的手感。整体是一套兼顾 Spin、Control、Feel 和 Creativity 的配置，适合喜欢主动变化、积极进攻并追求自由击球感的球员。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Toroline DREDDY",
+      "Dustin Brown inspiration/reference",
+      "O-TORO TOUR Green 1.23 mains",
+      "1.23 mm / 17 mains",
+      "Stiffer hexagonal mains",
+      "Ball bite",
+      "Control",
+      "Tour-level durability",
+      "Extreme spin",
+      "O-TORO SNAP Yellow 1.25 crosses",
+      "1.25 mm / 16L crosses",
+      "Ultra-slick round crosses",
+      "Softer cross positioning",
+      "Explosive snapback",
+      "Plush feel",
+      "Ball pocketing",
+      "Low-friction main-string movement",
+      "Spin and feel positioning",
+      "Creativity",
+      "Confidence",
+      "Control"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Physics",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
