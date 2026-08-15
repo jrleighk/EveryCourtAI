@@ -1,0 +1,256 @@
+{
+  "id": "decision_explanation",
+  "category": "Inference Rules",
+  "type": "Decision Explanation Engine",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
+
+  "description": {
+    "en": "Converts EveryCourtAI's internal reasoning into concise, transparent and player-friendly explanations.",
+    "zh": "将 EveryCourtAI 的内部推理过程转换成清晰、透明且易于球员理解的推荐说明。"
+  },
+
+  "core_principle": {
+    "en": "Every recommendation must explain WHY, WHAT improved, WHAT tradeoffs remain, and WHY it ranked above alternatives.",
+    "zh": "每一个推荐都必须说明为什么、改善了什么、保留了哪些取舍，以及为什么它排名第一。"
+  },
+
+  "explanation_structure": [
+    {
+      "step": 1,
+      "title": "Recommendation Summary"
+    },
+    {
+      "step": 2,
+      "title": "Why This Setup"
+    },
+    {
+      "step": 3,
+      "title": "Problems Solved"
+    },
+    {
+      "step": 4,
+      "title": "Tradeoffs"
+    },
+    {
+      "step": 5,
+      "title": "Why Not The Alternatives"
+    },
+    {
+      "step": 6,
+      "title": "Confidence"
+    }
+  ],
+
+  "summary_rules": {
+    "maximum_sentences": 2,
+
+    "must_include": [
+      "Primary Goal",
+      "Overall Recommendation"
+    ]
+  },
+
+  "reasoning_rules": {
+    "explain_using": [
+      "Current Equipment",
+      "Playing Style",
+      "Swing Speed",
+      "Physical Constraints",
+      "Player Goals",
+      "Player Preferences"
+    ],
+
+    "avoid": [
+      "Internal scoring numbers",
+      "Technical implementation details",
+      "Database terminology"
+    ]
+  },
+
+  "problem_resolution": {
+    "possible_items": [
+      "Improved Control",
+      "Improved Spin",
+      "Improved Comfort",
+      "Improved Feel",
+      "Improved Launch Consistency",
+      "Improved Power",
+      "Improved Forgiveness",
+      "Reduced Physical Load",
+      "Reduced Equipment Demand"
+    ]
+  },
+
+  "tradeoff_rules": {
+    "always_show": true,
+
+    "maximum_items": 3,
+
+    "example": [
+      {
+        "gain": "Higher Comfort",
+        "cost": "Slightly Less Maximum Control"
+      },
+      {
+        "gain": "Higher Spin",
+        "cost": "Slightly Reduced Durability"
+      }
+    ]
+  },
+
+  "alternative_comparison": {
+    "required": true,
+
+    "compare_against": [
+      "Second Ranked Recommendation",
+      "Comfort Alternative",
+      "Performance Alternative"
+    ],
+
+    "show": [
+      "Why Primary Ranked Higher",
+      "Main Difference",
+      "Who Should Choose The Alternative"
+    ]
+  },
+
+  "physical_explanation": {
+    "enabled": true,
+
+    "if_present": {
+      "explain": [
+        "How the recommendation reduces physical stress.",
+        "Which equipment changes contribute most.",
+        "Why physical safety takes priority."
+      ]
+    }
+  },
+
+  "confidence_explanation": {
+    "show_percentage": true,
+    "show_level": true,
+
+    "must_include": [
+      "Main factors increasing confidence",
+      "Main factors reducing confidence",
+      "Missing information (if any)"
+    ]
+  },
+
+  "language_style": {
+    "tone": [
+      "Professional",
+      "Clear",
+      "Supportive",
+      "Objective"
+    ],
+
+    "avoid": [
+      "Marketing language",
+      "Exaggeration",
+      "Absolute certainty",
+      "Technical jargon without explanation"
+    ]
+  },
+
+  "output_sections": {
+    "recommendation": {
+      "required": true
+    },
+
+    "why": {
+      "required": true
+    },
+
+    "benefits": {
+      "required": true
+    },
+
+    "tradeoffs": {
+      "required": true
+    },
+
+    "alternatives": {
+      "required": true
+    },
+
+    "confidence": {
+      "required": true
+    },
+
+    "next_step": {
+      "required": true
+    }
+  },
+
+  "next_step_logic": {
+    "if_confidence_above_90": [
+      "Recommend trying the setup."
+    ],
+
+    "if_confidence_between_80_and_90": [
+      "Recommend trying the setup or answering one additional question."
+    ],
+
+    "if_confidence_below_80": [
+      "Recommend collecting additional information before final recommendation."
+    ]
+  },
+
+  "example_output": {
+    "summary": "This setup provides the best balance of control and comfort for your aggressive baseline game.",
+
+    "why": [
+      "Your current setup produces excessive launch.",
+      "Your swing speed supports a control-oriented string.",
+      "Your elbow sensitivity makes a softer response preferable."
+    ],
+
+    "benefits": [
+      "Lower launch",
+      "Better directional control",
+      "Reduced arm stress"
+    ],
+
+    "tradeoffs": [
+      "Slightly less maximum spin",
+      "Slightly shorter string life"
+    ],
+
+    "alternative": [
+      "The Comfort Alternative provides more cushioning but slightly less precision."
+    ],
+
+    "confidence": {
+      "score": 93,
+      "level": "Very High"
+    },
+
+    "next_step": "Test this setup for 6–10 hours before making further adjustments."
+  },
+
+  "future_extensions": {
+    "video_explanations": true,
+    "voice_output": true,
+    "coach_mode": true,
+    "shop_mode": true,
+    "tournament_mode": true
+  },
+
+  "engine_connections": {
+    "reads_from": [
+      "knowledge/inference/conflict_resolution.json",
+      "knowledge/inference/confidence_scoring.json",
+      "knowledge/inference/recommendation_ranking.json",
+      "knowledge/inference/alternative_generation.json",
+      "knowledge/decision_rules/recommendation_engine.json"
+    ],
+
+    "passes_to": [
+      "frontend_response",
+      "chat_response",
+      "api_response"
+    ]
+  }
+}
