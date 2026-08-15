@@ -1,0 +1,582 @@
+{
+  "id": "toroline_cash",
+  "brand": "Toroline",
+  "series": "CASH",
+  "model": "CASH",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Premium Co-Polyester",
+    "string_family": "Polyester",
+    "cross_section": "Round",
+    "surface": "Smooth",
+    "development_platform": "Based on the Toroline A5 platform",
+    "signature_player": "Julian Cash",
+    "collaboration": "Developed in collaboration with Julian Cash",
+    "tour_positioning": "Doubles / Feel / Control / Pocketing / Precision Co-Polyester",
+    "official_positioning": "Signature round co-poly engineered specifically for elite doubles play, with a softer flex profile than A5 to enhance dwell time, feel, pocketing and control in fast exchanges.",
+    "target_level": "Advanced / Tournament / Professional Doubles"
+  },
+
+  "specifications": {
+    "construction": "Premium Co-Polyester Monofilament",
+    "cross_section": "Round",
+    "surface": "Smooth",
+
+    "available_colors": [
+      "Benjamin Green"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_mm": 1.25,
+        "available": true,
+        "available_colors": [
+          "Benjamin Green"
+        ],
+
+        "power": 8,
+        "control": 10,
+        "spin": 9,
+        "comfort": 10,
+        "feel": 10,
+        "durability": 9,
+        "tension_maintenance": 10,
+        "elasticity": 10,
+        "launch_angle": "Low-Medium",
+
+        "recommended_use": [
+          "Elite Doubles Play",
+          "Serve Return",
+          "Volley Control",
+          "Net Exchanges",
+          "Redirecting Pace",
+          "Touch and Finesse",
+          "Fast Reaction Points",
+          "Players Seeking Lower Launch Angle"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "A5 Polymer Platform",
+    "Softer Flex Tuning",
+    "Enhanced Dwell Time",
+    "Low-Friction Round Geometry",
+    "Elite Snapback Response",
+    "High Tension Stability",
+    "Pocketing-Oriented Construction",
+    "Doubles Performance Tuning"
+  ],
+
+  "technology_details": {
+    "a5_platform": {
+      "base_string": "Toroline A5",
+      "relationship": "Softer doubles-oriented evolution",
+      "description": "CASH is built from the A5 platform but tuned with a softer flex to increase dwell time, pocketing and touch for high-speed doubles exchanges."
+    },
+
+    "soft_flex_tuning": {
+      "description": "A softer flex profile allows the ball to remain on the stringbed longer, improving control when absorbing and redirecting pace.",
+      "primary_benefits": [
+        "Longer Dwell Time",
+        "More Feel",
+        "Improved Pocketing",
+        "Better Pace Absorption",
+        "Improved Directional Control"
+      ]
+    },
+
+    "round_geometry": {
+      "description": "The clean round profile produces a lower and more penetrating launch angle with a predictable, repeatable trajectory.",
+      "primary_benefits": [
+        "Lower Launch Angle",
+        "Penetrating Ball Flight",
+        "Reduced Floating Trajectory",
+        "Predictable Directional Control",
+        "Better Doubles Passing and Return Trajectory"
+      ]
+    },
+
+    "spin_generation": {
+      "primary_factors": [
+        "Elite Snapback",
+        "Low-Friction Response",
+        "Elastic String Return"
+      ],
+      "description": "Like A5, CASH relies primarily on snapback and low-friction string movement rather than sharp edges for spin production."
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Soft Round Doubles Control Co-Polyester",
+    "target_player": "Advanced / Tournament / Professional Doubles",
+    "arm_friendly": true,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": false,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true,
+    "dwell_time_focus": true,
+    "pocketing_focus": true,
+    "net_play_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 10,
+    "spin": 9,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 9,
+    "tension_maintenance": 10,
+    "elasticity": 10,
+    "launch_angle": "Low-Medium"
+  },
+
+  "ai_rating": {
+    "power": 8,
+    "control": 10,
+    "spin": 9,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 9,
+    "tension_maintenance": 10
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Soft-Medium",
+    "snapback": 10,
+    "ball_pocketing": 10,
+    "string_movement": 2,
+    "tension_stability": 10,
+    "spin_window": "Medium-High",
+    "predictability": 10,
+    "arm_friendliness": 10,
+    "directional_precision": 10,
+    "surface_friction": "Low",
+    "launch_angle_consistency": 10,
+    "connected_feel": 10,
+    "trajectory_control": 10,
+    "dwell_time": 10,
+    "pace_absorption": 10,
+    "volley_response": 10,
+    "mishit_forgiveness": 9
+  },
+
+  "recommended_player": {
+    "level": [
+      "Advanced",
+      "Tournament",
+      "Professional"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Doubles",
+      "Serve & Volley",
+      "All Court",
+      "Aggressive Returner",
+      "Net Player"
+    ],
+
+    "special_player_profiles": [
+      "Doubles Specialists",
+      "Players Who Redirect Pace",
+      "Players Seeking Better Volley Control",
+      "Players Wanting Lower Ball Flight",
+      "Players Seeking More Pocketing Than A5",
+      "Players Wanting Forgiveness During Fast Exchanges",
+      "Players Prioritizing Touch and Precision"
+    ]
+  },
+
+  "doubles_performance": {
+    "serve_return": {
+      "rating": 10,
+      "benefits": [
+        "Absorbs Pace",
+        "Improves Redirect Control",
+        "Keeps Return Trajectory Low"
+      ]
+    },
+
+    "volleys": {
+      "rating": 10,
+      "benefits": [
+        "Enhanced Touch",
+        "Longer Dwell Time",
+        "Improved Placement",
+        "Stable Response"
+      ]
+    },
+
+    "reaction_exchanges": {
+      "rating": 10,
+      "benefits": [
+        "Forgiving Off-Center Response",
+        "Predictable Ball Flight",
+        "Fast Direction Changes"
+      ]
+    },
+
+    "poach_prevention": {
+      "benefit": "Lower penetrating trajectory helps prevent balls from sitting up for opposing net players."
+    }
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson Pro Staff",
+    "Wilson RF 01",
+    "HEAD Speed",
+    "HEAD Gravity",
+    "HEAD Radical",
+    "Yonex PERCEPT",
+    "Yonex EZONE",
+    "Babolat Pure Strike",
+    "Tecnifibre TF-40",
+    "Tecnifibre T-FIGHT",
+    "Dunlop CX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Toroline VAMOS",
+      "Toroline O-TORO",
+      "Toroline O-TORO TOUR",
+      "Natural Gut",
+      "Luxilon Natural Gut",
+      "Babolat Touch VS",
+      "Tecnifibre X-One Biphase"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Control",
+        "Feel",
+        "Pocketing",
+        "Low Launch Angle",
+        "Pace Absorption"
+      ],
+
+      "as_crosses": [
+        "Low Friction",
+        "Snapback Support",
+        "Stringbed Softening",
+        "Connected Feel",
+        "Trajectory Stability"
+      ]
+    },
+
+    "recommended_toroline_hybrids": [
+      {
+        "mains": "VAMOS",
+        "crosses": "CASH",
+        "expected_profile": [
+          "Mechanical Bite",
+          "Softer Cross",
+          "Improved Pocketing",
+          "Spin",
+          "Lower Launch Than Full VAMOS"
+        ]
+      },
+      {
+        "mains": "O-TORO",
+        "crosses": "CASH",
+        "expected_profile": [
+          "High Spin",
+          "Comfort",
+          "Dwell Time",
+          "Controlled Launch",
+          "Net-Friendly Response"
+        ]
+      }
+    ],
+
+    "hybrid_note": "CASH's smooth round surface and softer flex make it especially suitable as a cross string when players want more pocketing, comfort and trajectory control from a shaped main."
+  },
+
+  "gauge_recommendation": {
+    "1.25": {
+      "color": "Benjamin Green",
+
+      "best_for": [
+        "Elite Doubles",
+        "Volley Control",
+        "Serve Return",
+        "Pace Absorption",
+        "Touch",
+        "Low Launch Angle",
+        "Tournament Play"
+      ],
+
+      "tradeoffs": [
+        "Less Mechanical Ball Bite Than Shaped Strings",
+        "Lower Launch Than Spin-Focused Shaped Co-Polys",
+        "Less Maximum Free Power Than More Explosive Co-Polys"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.25": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "16-28"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Very Short",
+    "peak_playability": "Immediate",
+    "performance_drop": "Low",
+    "tension_loss_sensitivity": "Low",
+    "playability_duration": "Excellent",
+    "recommended_monitoring": "Replace when pocketing, snapback, connected feel or trajectory control noticeably declines."
+  },
+
+  "comparison_data": {
+    "vs_toroline_a5": {
+      "shared_platform": true,
+
+      "shape": {
+        "cash": "Round",
+        "a5": "Round"
+      },
+
+      "flex": {
+        "cash": "Softer",
+        "a5": "Firmer"
+      },
+
+      "dwell_time": {
+        "cash": "Longer",
+        "a5": "Shorter / More Immediate"
+      },
+
+      "feel": {
+        "cash": "Softer / More Plush",
+        "a5": "More Direct / Connected"
+      },
+
+      "pocketing": {
+        "cash": "Higher",
+        "a5": "High"
+      },
+
+      "control": {
+        "cash": "Optimized for fast exchanges and redirection",
+        "a5": "Optimized for baseline precision"
+      },
+
+      "launch_angle": {
+        "cash": "Low / Penetrating",
+        "a5": "Low-Medium / Penetrating"
+      },
+
+      "snapback": {
+        "cash": "Elite",
+        "a5": "Elite"
+      },
+
+      "tension_stability": {
+        "cash": "Outstanding",
+        "a5": "Outstanding"
+      }
+    },
+
+    "vs_shaped_strings": {
+      "ball_grip": "Lower mechanical grip",
+      "launch_angle": "Lower",
+      "trajectory": "More penetrating",
+      "predictability": "Higher",
+      "net_play_suitability": "Higher"
+    }
+  },
+
+  "science_metrics": {
+    "spin_mechanism": [
+      "Elite Snapback",
+      "Low-Friction Response",
+      "Elastic String Return"
+    ],
+
+    "geometry": {
+      "shape": "Round",
+      "symmetry": "High",
+      "mechanical_ball_grip": "Moderate"
+    },
+
+    "trajectory_profile": "Low / Penetrating",
+
+    "launch_angle_profile": "Low-Medium",
+
+    "dwell_time_class": "High",
+
+    "tension_stability_class": "Excellent",
+
+    "performance_class": "Premium Doubles-Oriented Round Co-Poly"
+  },
+
+  "collaboration": {
+    "partner": "Julian Cash",
+    "tour": "ATP",
+    "role": "Signature Player / Development Collaboration",
+    "career_reference": [
+      "2025 Wimbledon Doubles Champion",
+      "2025 Year-End World #1 in Doubles"
+    ],
+    "confidence": "Official Manufacturer Claim"
+  },
+
+  "tour_players": [
+    {
+      "name": "Julian Cash",
+      "tour": "ATP",
+      "relationship": "Signature Player / Co-Developer",
+      "career_reference": [
+        "2025 Wimbledon Doubles Champion",
+        "2025 Year-End World #1 in Doubles"
+      ],
+      "confidence": "Official Manufacturer Claim"
+    }
+  ],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Elite Doubles Players",
+      "Serve-and-Volley Players",
+      "Players Seeking More Feel Than A5",
+      "Players Wanting Longer Dwell Time",
+      "Players Redirecting Fast Serves",
+      "Players Wanting Lower Penetrating Ball Flight",
+      "Players Prioritizing Volley Precision",
+      "Players Seeking Forgiveness in Fast Exchanges"
+    ],
+
+    "avoid_for": [
+      "Players Seeking Maximum Mechanical Spin From Sharp Edges",
+      "Players Wanting Very High Launch Angle",
+      "Players Seeking Extremely Firm Tournament Feedback",
+      "Heavy Topspin Baseliners Who Prioritize Bite Over Touch"
+    ],
+
+    "alternative_strings": [
+      "Toroline A5",
+      "Toroline VAMOS",
+      "Solinco Hyper-G Round",
+      "Luxilon ALU Power",
+      "HEAD Hawk Touch",
+      "Yonex Poly Tour Pro"
+    ]
+  },
+
+  "comparison_tags": [
+    "CASH",
+    "Julian Cash",
+    "Signature String",
+    "A5 Platform",
+    "Round Co-Poly",
+    "Doubles",
+    "Soft Flex",
+    "Long Dwell Time",
+    "Pocketing",
+    "Low Launch",
+    "Connected Feel",
+    "Benjamin Green"
+  ],
+
+  "ai_keywords": [
+    "toroline",
+    "cash",
+    "toroline cash",
+    "julian cash",
+    "signature string",
+    "1.25",
+    "benjamin green",
+    "round",
+    "a5 platform",
+    "soft flex",
+    "doubles",
+    "volley",
+    "serve return",
+    "dwell time",
+    "pocketing",
+    "low launch angle",
+    "snapback",
+    "tension stability",
+    "pace absorption",
+    "connected control"
+  ],
+
+  "target_competitors": [
+    "Toroline A5",
+    "Solinco Hyper-G Round",
+    "Luxilon ALU Power",
+    "HEAD Hawk Touch",
+    "Yonex Poly Tour Pro",
+    "Tecnifibre Razor Soft"
+  ],
+
+  "description": {
+    "en": "Toroline CASH is Julian Cash's signature round co-polyester string, developed specifically for modern elite doubles. Built from the A5 platform, CASH uses a softer flex profile to increase dwell time, pocketing and touch while maintaining elite snapback, low friction and outstanding tension stability. Its clean round geometry creates a lower, more penetrating and predictable trajectory, helping players absorb pace, redirect returns and keep volleys low through fast exchanges. The result is a controlled, connected and highly precise string designed around the unique demands of doubles play.",
+
+    "zh": "Toroline CASH 是 Julian Cash 的签名款圆形共聚酯球线，专门针对现代高水平双打开发。它建立在 A5 平台基础上，但采用更柔和的 Flex 调校，从而增加 Dwell Time、Pocketing 和触球感，同时保留 A5 标志性的高 Snapback、低摩擦和优秀保磅。圆形结构带来更低、更具穿透力并且高度可预测的球路，非常适合双打中吸收来球速度、精准改变回球方向以及在网前快速交换中把球压低。整体定位就是 Connected、Controlled、Surgical——为双打中的接发、截击和快速反应而生。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Toroline CASH",
+      "Julian Cash signature string",
+      "Developed with Julian Cash",
+      "2025 Wimbledon Doubles Champion reference",
+      "2025 Year-End World #1 in Doubles reference",
+      "Built from A5 foundation",
+      "Softer flex than A5",
+      "Longer dwell time",
+      "Enhanced feel",
+      "Enhanced pocketing",
+      "Forgiveness on mishits",
+      "Round geometry",
+      "Lower penetrating launch angle",
+      "Predictable repeatable trajectory",
+      "Elite snapback",
+      "Low-friction response",
+      "Outstanding tension stability",
+      "Doubles performance positioning",
+      "1.25 mm",
+      "Benjamin Green"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Doubles Performance",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendations",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
