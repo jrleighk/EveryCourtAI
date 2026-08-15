@@ -1,0 +1,563 @@
+{
+  "id": "yonex_rexis_feel",
+  "brand": "Yonex",
+  "series": "REXIS",
+  "model": "REXIS Feel",
+  "category": "Multifilament",
+
+  "manufacturer_data": {
+    "construction": "Nylon Multifilament Composite",
+    "material": [
+      "Nylon",
+      "Rubber Polymer",
+      "Capsule",
+      "FORTIMO™"
+    ],
+    "string_family": "REXIS",
+    "official_positioning": "Superior ball-pocketing and feel for improved control.",
+    "target_level": "Beginner / Intermediate / Advanced",
+    "target_style": "Control / Feel / Comfort",
+    "swing_speed_positioning": "All Swing Speeds",
+    "made_in": "Japan"
+  },
+
+  "specifications": {
+    "construction": "Nylon Multifilament Composite",
+    "cross_section": "Round",
+    "surface": "Smooth",
+
+    "available_colors": [
+      "Black",
+      "White"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_name": "16L",
+        "gauge_mm": 1.25,
+        "available": true,
+        "item_code_set": "TGRFL125",
+        "item_code_reel": "TRFL125-2",
+
+        "power": 8,
+        "control": 9,
+        "spin": 7,
+        "comfort": 9,
+        "feel": 10,
+        "durability": 8,
+        "tension_maintenance": 8,
+        "elasticity": 9,
+        "shock_absorption": 9,
+        "ball_pocketing": 10,
+        "launch_angle": "Medium"
+      },
+
+      {
+        "gauge_name": "16",
+        "gauge_mm": 1.30,
+        "available": true,
+        "item_code_set": "TGRFL130",
+        "item_code_reel": "TRFL130-2",
+
+        "power": 8,
+        "control": 10,
+        "spin": 6,
+        "comfort": 9,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "elasticity": 8,
+        "shock_absorption": 9,
+        "ball_pocketing": 9,
+        "launch_angle": "Medium-Low"
+      }
+    ],
+
+    "available_lengths": [
+      {
+        "type": "Set",
+        "length_m": 12
+      },
+      {
+        "type": "Reel",
+        "length_m": 200
+      }
+    ]
+  },
+
+  "technology": [
+    "FRF Process",
+    "Fusion of Resin Filament",
+    "Plasma Bonding",
+    "FORTIMO™",
+    "Rubber Polymer",
+    "Capsule Structure",
+    "Molecular-Level Resin Bonding"
+  ],
+
+  "technology_details": {
+    "frf_process": {
+      "full_name": "Fusion of Resin Filament",
+      "description": "The FRF production process fills the gaps in ordinary multifilament construction with a more flexible resin material to create a denser and more elastic string structure.",
+      "primary_benefits": [
+        "Power",
+        "Repulsion",
+        "Durability",
+        "Elasticity",
+        "Structural Stability"
+      ]
+    },
+
+    "plasma_bonding": {
+      "description": "Resin is bonded to nylon filaments by plasma at the molecular level to improve repulsion and durability.",
+      "primary_benefits": [
+        "Repulsion",
+        "Durability",
+        "Filament Stability",
+        "Consistency"
+      ]
+    },
+
+    "fortimo": {
+      "full_name": "FORTIMO™",
+      "developer": "Mitsui Chemicals, Inc.",
+      "material_type": "Polyurethane",
+
+      "description": "FORTIMO™ polyurethane combines flexibility, repulsion and durability while maintaining a bright white appearance through non-yellowing properties.",
+
+      "primary_benefits": [
+        "Flexibility",
+        "Repulsion",
+        "Durability",
+        "Elasticity",
+        "Color Stability"
+      ]
+    },
+
+    "ball_pocketing_system": {
+      "description": "The elastic multifilament structure is tuned for deep ball pocketing and prolonged contact feel, supporting improved directional control.",
+      "primary_benefits": [
+        "Ball Pocketing",
+        "Feel",
+        "Control",
+        "Touch"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Feel / Control Multifilament",
+    "target_player": "Beginner / Intermediate / Advanced",
+    "arm_friendly": true,
+    "spin_focus": false,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true,
+    "ball_pocketing_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 9,
+    "spin": 7,
+    "comfort": 9,
+    "feel": 10,
+    "durability": 8,
+    "tension_maintenance": 8,
+    "elasticity": 9,
+    "shock_absorption": 9,
+    "ball_pocketing": 10,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 8,
+    "control": 9,
+    "spin": 7,
+    "comfort": 9,
+    "feel": 10,
+    "durability": 8,
+    "tension_maintenance": 8
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Soft",
+    "snapback": 6,
+    "ball_bite": 5,
+    "ball_pocketing": 10,
+    "string_movement": 6,
+    "tension_stability": 8,
+    "spin_window": "Medium",
+    "predictability": 10,
+    "arm_friendliness": 9,
+    "shock_absorption": 9,
+    "directional_precision": 10,
+    "response": "Soft / Connected / Controlled",
+    "touch": 10,
+    "dwell_time": "High"
+  },
+
+  "official_performance_map": {
+    "responsiveness": "Low-Medium",
+    "firmness": "Soft",
+    "ball_pocketing": "Very High",
+    "yonex_family_position": "Soft / Deep Pocketing / Feel-Oriented"
+  },
+
+  "official_string_parameters": {
+    "power": "Medium-Low",
+    "spin": "Medium-High",
+    "comfort": "High",
+    "control": "High",
+    "durability": "Medium",
+    "source": "Yonex Official String Parameters Guide"
+  },
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate",
+      "Advanced"
+    ],
+
+    "swing_speed": [
+      "Slow",
+      "Medium",
+      "Medium-Fast",
+      "Fast"
+    ],
+
+    "play_style": [
+      "All Court",
+      "Doubles",
+      "Serve & Volley",
+      "Touch Player",
+      "Control-Oriented Baseline"
+    ],
+
+    "special_player_profiles": [
+      "Players Seeking Maximum Feel",
+      "Players Wanting Deep Ball Pocketing",
+      "Players Wanting Multifilament Comfort With More Control",
+      "Players Transitioning From Natural Gut",
+      "Players With Mild Arm Sensitivity",
+      "Doubles Players",
+      "Touch-Oriented Players"
+    ]
+  },
+
+  "tour_players": [],
+
+  "recommended_racquets": [
+    "Yonex PERCEPT",
+    "Yonex EZONE",
+    "Yonex VCORE",
+    "Wilson Blade",
+    "Wilson Clash",
+    "Wilson RF 01",
+    "HEAD Speed",
+    "HEAD Prestige",
+    "Babolat Pure Strike",
+    "Tecnifibre TF-40"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Yonex PolyTour Pro",
+      "Yonex PolyTour Air",
+      "Yonex PolyTour Rev",
+      "Luxilon ALU Power",
+      "Luxilon Element"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Feel",
+        "Ball Pocketing",
+        "Comfort",
+        "Power",
+        "Touch"
+      ],
+
+      "as_crosses": [
+        "Stringbed Softening",
+        "Feel Support",
+        "Shock Reduction",
+        "Pocketing",
+        "Comfort"
+      ]
+    },
+
+    "hybrid_note": "REXIS Feel is especially useful as the comfort-and-feel component in hybrids where the player wants more pocketing and control than a highly power-oriented multifilament."
+  },
+
+  "gauge_recommendation": {
+    "1.25": {
+      "gauge_name": "16L",
+
+      "best_for": [
+        "Maximum Feel",
+        "Ball Pocketing",
+        "Touch",
+        "Responsive Control",
+        "Hybrid Play"
+      ],
+
+      "tradeoffs": [
+        "Less Durability Than 1.30",
+        "More String Movement"
+      ]
+    },
+
+    "1.30": {
+      "gauge_name": "16",
+
+      "best_for": [
+        "More Control",
+        "More Durability",
+        "More Stable Response",
+        "Full Bed"
+      ],
+
+      "tradeoffs": [
+        "Slightly Less Feel",
+        "Slightly Less Liveliness"
+      ]
+    }
+  },
+
+  "comparison_data": {
+    "vs_rexis_activate": {
+      "feel": "Higher",
+      "control": "Higher",
+      "ball_pocketing": "Comparable Very High",
+      "comfort": "Slightly Lower",
+      "power": "Slightly Lower",
+      "primary_identity": {
+        "rexis_feel": "Feel / Control / Pocketing",
+        "rexis_activate": "Comfort / Pocketing / Arm Friendliness"
+      }
+    },
+
+    "vs_rexis_comfort": {
+      "feel": "Higher",
+      "control": "Higher",
+      "response": "More Connected",
+      "comfort": "Slightly Lower",
+      "softness": "Lower",
+      "primary_identity": {
+        "rexis_feel": "Feel / Control",
+        "rexis_comfort": "Softness / Comfort"
+      }
+    },
+
+    "vs_rexis_speed": {
+      "ball_pocketing": "Higher",
+      "feel": "Higher",
+      "control": "Higher",
+      "power": "Lower",
+      "responsiveness": "Lower",
+      "primary_identity": {
+        "rexis_feel": "Pocketing / Feel",
+        "rexis_speed": "Response / Speed"
+      }
+    },
+
+    "vs_wilson_nxt": {
+      "control": "Higher",
+      "ball_pocketing": "Very High",
+      "feel": "More Connected",
+      "power": "Slightly Lower",
+      "comfort": "Comparable"
+    },
+
+    "vs_natural_gut": {
+      "power": "Lower",
+      "elasticity": "Lower",
+      "tension_maintenance": "Lower",
+      "feel": "Very High But Less Organic",
+      "price": "Lower",
+      "moisture_resistance": "Higher"
+    }
+  },
+
+  "science_metrics": {
+    "construction": "Nylon Multifilament Composite",
+
+    "material_system": [
+      "Nylon Filaments",
+      "FORTIMO™ Polyurethane",
+      "Rubber Polymer",
+      "Capsule"
+    ],
+
+    "bonding_method": "Plasma Bonding",
+
+    "manufacturing_process": "FRF - Fusion of Resin Filament",
+
+    "trajectory_profile": "Controlled / Neutral",
+
+    "launch_angle_profile": "Medium",
+
+    "ball_pocketing_class": "Elite",
+
+    "feel_class": "Elite",
+
+    "control_class": "Very High",
+
+    "comfort_class": "Very High",
+
+    "elasticity_class": "High"
+  },
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Seeking Maximum Multifilament Feel",
+      "Players Wanting Deep Ball Pocketing",
+      "Control-Oriented Multifilament Users",
+      "Doubles Players",
+      "Touch Players",
+      "Players Seeking Arm-Friendly Control"
+    ],
+
+    "avoid_for": [
+      "Extreme Topspin Players",
+      "Frequent String Breakers",
+      "Players Seeking Maximum Free Power",
+      "Players Wanting Firm Polyester Response"
+    ],
+
+    "alternative_strings": [
+      "Yonex REXIS Activate",
+      "Yonex REXIS Comfort",
+      "Yonex REXIS Speed",
+      "Wilson NXT Control",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG2",
+      "Babolat Xcel"
+    ]
+  },
+
+  "comparison_tags": [
+    "Yonex",
+    "REXIS Feel",
+    "Multifilament",
+    "Nylon",
+    "FORTIMO",
+    "FRF",
+    "Plasma Bonding",
+    "Ball Pocketing",
+    "Feel",
+    "Control",
+    "Black",
+    "White",
+    "1.25",
+    "1.30"
+  ],
+
+  "ai_keywords": [
+    "yonex",
+    "rexis feel",
+    "rexis feel 125",
+    "rexis feel 130",
+    "multifilament",
+    "nylon",
+    "fortimo",
+    "mitsui chemicals",
+    "frf",
+    "fusion of resin filament",
+    "plasma bonding",
+    "rubber polymer",
+    "capsule",
+    "ball pocketing",
+    "feel",
+    "control",
+    "1.25",
+    "1.30",
+    "black",
+    "white",
+    "tgrfl125",
+    "tgrfl130",
+    "trfl125-2",
+    "trfl130-2"
+  ],
+
+  "target_competitors": [
+    "Wilson NXT Control",
+    "Wilson NXT",
+    "Tecnifibre X-One Biphase",
+    "Tecnifibre NRG2",
+    "Babolat Xcel",
+    "Head Velocity MLT"
+  ],
+
+  "description": {
+    "en": "Yonex REXIS Feel is a premium nylon multifilament designed around superior ball pocketing, feel and control. It uses Yonex's FRF (Fusion of Resin Filament) process and molecular-level Plasma Bonding, with FORTIMO™ polyurethane developed by Mitsui Chemicals filling the gaps between nylon filaments to improve elasticity, repulsion and durability. Within the REXIS family, Feel sits on the softer, deeper-pocketing side of the official performance map and is intended for players of all swing speeds who prioritize connected feel and controlled pocketing.",
+
+    "zh": "Yonex REXIS Feel 是一款以 Ball Pocketing、Feel 与 Control 为核心的高端尼龙多芯球线。它采用 Yonex 的 FRF（Fusion of Resin Filament）工艺和分子级 Plasma Bonding 技术，并使用由 Mitsui Chemicals 开发的 FORTIMO™ 聚氨酯材料填充传统 Multifilament 纤维之间的空隙，从而提升弹性、回弹力和耐久性。根据 Yonex 官方 Comfort & Playability 图，REXIS Feel 位于偏 Soft、Ball Pocketing 很深的区域，因此相比 REXIS Speed 更强调包球与手感，相比 REXIS Comfort 则更加偏向清晰反馈与方向控制。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_official_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Yonex REXIS Feel 125 / 130",
+      "Superior ball-pocketing",
+      "Feel",
+      "Improved control",
+      "All swing speeds",
+      "Black",
+      "White",
+      "16L / 1.25 mm",
+      "16 / 1.30 mm",
+      "Set 12 m",
+      "Reel 200 m",
+      "Nylon Multifilament",
+      "Rubber Polymer",
+      "Capsule",
+      "FORTIMO™",
+      "Made in Japan",
+      "TGRFL125",
+      "TGRFL130",
+      "TRFL125-2",
+      "TRFL130-2",
+      "FRF Process",
+      "Fusion of Resin Filament",
+      "Plasma Bonding",
+      "Molecular-level resin bonding",
+      "FORTIMO™ developed by Mitsui Chemicals, Inc.",
+      "Improved power",
+      "Improved repulsion",
+      "Improved durability",
+      "Greater elasticity",
+      "FORTIMO™ flexibility",
+      "FORTIMO™ repulsion",
+      "FORTIMO™ durability",
+      "FORTIMO™ non-yellowing properties",
+      "Official Yonex Comfort & Playability performance map"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Official Performance Map",
+      "Official String Parameters",
+      "Recommended Players",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendation",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
