@@ -1,0 +1,549 @@
+{
+  "id": "toroline_o_toro_octa",
+  "brand": "Toroline",
+  "series": "O-TORO",
+  "model": "O-TORO OCTA",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Co-Polyester",
+    "string_family": "Polyester",
+    "cross_section": "Octagonal",
+    "surface": "Shaped / Edged",
+    "profile_sides": 8,
+    "development_platform": "Based on O-TORO TOUR formula",
+    "designer": "Steve Johnson",
+    "designer_role": "Toroline Chief String Officer",
+    "designer_profile": "Former Top-25 ATP Professional",
+    "tour_positioning": "Court Penetration / Control / Spin / Direct Response Co-Polyester",
+    "official_positioning": "Newest evolution of the O-TORO line, engineered to balance spin, court penetration and control with a lower launch angle and cleaner response.",
+    "target_level": "Advanced / Tournament",
+    "flex_class": "Tour",
+    "flex_positioning": "Stiffer for added control and durability"
+  },
+
+  "specifications": {
+    "construction": "Tour-Level Co-Polyester Monofilament",
+    "cross_section": "Octagonal (8-Sided)",
+    "surface": "Shaped / Edged",
+
+    "available_colors": [
+      "Neon Mint"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_name": "16L",
+        "gauge_mm": 1.25,
+        "available": true,
+        "available_colors": [
+          "Neon Mint"
+        ],
+
+        "power": 9,
+        "control": 10,
+        "spin": 9,
+        "comfort": 8,
+        "feel": 10,
+        "durability": 10,
+        "tension_maintenance": 10,
+        "elasticity": 8,
+        "launch_angle": "Medium-Low",
+
+        "recommended_use": [
+          "Maximum Court Penetration",
+          "Lower Launch Angle",
+          "Fast Ball Speed",
+          "Direct Response",
+          "Advanced Players",
+          "Tournament Play",
+          "Players Who Like O-TORO TOUR But Want More Penetration"
+        ]
+      }
+    ],
+
+    "packaging": {
+      "type": "Two Half Sets",
+      "half_sets_per_package": 2,
+      "length_per_half_set_m": 6.7,
+      "intended_racquets": 1,
+      "total_length_m": 13.4
+    }
+  },
+
+  "technology": [
+    "O-TORO TOUR Polymer Formula",
+    "Octagonal Spin Geometry",
+    "Lower Launch Angle Engineering",
+    "Court Penetration Optimization",
+    "Direct Response Tuning",
+    "Tour-Stiffness Construction"
+  ],
+
+  "technology_details": {
+    "o_toro_tour_platform": {
+      "base_string": "Toroline O-TORO TOUR",
+      "relationship": "Same core formula with different extrusion geometry",
+      "description": "O-TORO OCTA uses the same performance formula as O-TORO TOUR but is extruded in an eight-sided profile to modify launch angle, grip and response."
+    },
+
+    "octagonal_geometry": {
+      "shape": "Octagonal",
+      "sides": 8,
+      "description": "The octagonal profile reduces string-to-ball grip slightly compared with the more aggressive O-TORO TOUR geometry, producing a cleaner and more direct response with a lower launch angle.",
+      "primary_benefits": [
+        "Lower Launch Angle",
+        "Higher Court Penetration",
+        "Faster Ball Speed",
+        "Cleaner Response",
+        "More Direct Feel"
+      ]
+    },
+
+    "spin_generation": {
+      "primary_factors": [
+        "Octagonal Mechanical Grip",
+        "Snapback",
+        "Stringbed Stability"
+      ],
+      "description": "O-TORO OCTA retains strong spin performance while shifting some emphasis from maximum grip toward penetration, directness and lower trajectory."
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Tour Penetration Control Co-Polyester",
+    "target_player": "Advanced / Tournament",
+    "arm_friendly": false,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true,
+    "penetration_focus": true,
+    "low_launch_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 10,
+    "spin": 9,
+    "comfort": 8,
+    "feel": 10,
+    "durability": 10,
+    "tension_maintenance": 10,
+    "elasticity": 8,
+    "launch_angle": "Medium-Low"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 10,
+    "spin": 9,
+    "comfort": 8,
+    "feel": 10,
+    "durability": 10,
+    "tension_maintenance": 10
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Firm / Tour",
+    "snapback": 9,
+    "ball_pocketing": 8,
+    "string_movement": 1,
+    "tension_stability": 10,
+    "spin_window": "High",
+    "predictability": 10,
+    "arm_friendliness": 7,
+    "directional_precision": 10,
+    "ball_bite": 9,
+    "surface_grip": 9,
+    "court_penetration": 10,
+    "ball_speed": 10,
+    "launch_angle_consistency": 10,
+    "direct_response": 10,
+    "stringbed_stability": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Flat Hitter",
+      "Power Baseliner",
+      "All Court",
+      "Control-Oriented Player"
+    ],
+
+    "special_player_profiles": [
+      "Players Who Like O-TORO TOUR But Want More Court Penetration",
+      "Players Seeking Lower Launch Angle",
+      "Players Wanting Faster Ball Speed",
+      "Players Seeking Cleaner Direct Response",
+      "Players Wanting Tour-Level Stability and Durability"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson RF 01",
+    "Wilson Pro Staff",
+    "HEAD Speed",
+    "HEAD Radical",
+    "HEAD Gravity",
+    "Yonex PERCEPT",
+    "Yonex EZONE",
+    "Babolat Pure Strike",
+    "Tecnifibre TF-40",
+    "Tecnifibre T-FIGHT",
+    "Dunlop CX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Toroline A5",
+      "Toroline CASH",
+      "Toroline Truffle X",
+      "Natural Gut",
+      "Luxilon Natural Gut",
+      "Babolat Touch VS"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Court Penetration",
+        "Control",
+        "Spin",
+        "Low Launch Angle",
+        "Fast Ball Speed"
+      ],
+
+      "as_crosses": [
+        "Launch Angle Control",
+        "Stringbed Stability",
+        "Directional Precision",
+        "Durability"
+      ]
+    },
+
+    "recommended_toroline_hybrids": [
+      {
+        "mains": "O-TORO OCTA",
+        "crosses": "A5",
+        "expected_profile": [
+          "Lower Launch Angle",
+          "Low-Friction Snapback",
+          "Fast Ball Speed",
+          "Penetration",
+          "Precise Control"
+        ]
+      },
+
+      {
+        "mains": "O-TORO OCTA",
+        "crosses": "Truffle X",
+        "expected_profile": [
+          "Court Penetration",
+          "Plush Comfort",
+          "Lower Launch",
+          "Pocketing",
+          "Spin With Softer Response"
+        ]
+      },
+
+      {
+        "mains": "O-TORO OCTA",
+        "crosses": "CASH",
+        "expected_profile": [
+          "Direct Response",
+          "Controlled Launch",
+          "Pocketing",
+          "Net-Friendly Precision"
+        ]
+      }
+    ],
+
+    "hybrid_note": "O-TORO OCTA can be used full bed or as part of a hybrid to fine-tune launch angle, mechanical grip and overall response."
+  },
+
+  "gauge_recommendation": {
+    "1.25": {
+      "gauge_name": "16L",
+      "color": "Neon Mint",
+
+      "best_for": [
+        "Court Penetration",
+        "Low Launch Angle",
+        "Control",
+        "Fast Ball Speed",
+        "High-Speed Stability",
+        "Tournament Play"
+      ],
+
+      "tradeoffs": [
+        "Slightly Less Ball Grip Than O-TORO TOUR",
+        "Lower Launch Angle Than Spin-Oriented O-TORO Variants",
+        "Firmer Feel Than Standard O-TORO"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.25": {
+      "heavy_topspin_hours": "10-18",
+      "club_player_hours": "20-34"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Low",
+    "tension_loss_sensitivity": "Low",
+    "playability_duration": "Excellent",
+    "recommended_monitoring": "Replace when direct response, launch-angle consistency, snapback or directional control noticeably declines."
+  },
+
+  "comparison_data": {
+    "vs_o_toro_tour": {
+      "shared_formula": true,
+
+      "shape": {
+        "o_toro_octa": "Octagonal",
+        "o_toro_tour": "Hexagonal"
+      },
+
+      "court_penetration": {
+        "o_toro_octa": "Higher",
+        "o_toro_tour": "High"
+      },
+
+      "ball_speed": {
+        "o_toro_octa": "Higher",
+        "o_toro_tour": "High"
+      },
+
+      "launch_angle": {
+        "o_toro_octa": "Lower",
+        "o_toro_tour": "Medium"
+      },
+
+      "mechanical_ball_grip": {
+        "o_toro_octa": "Slightly Lower",
+        "o_toro_tour": "Higher"
+      },
+
+      "response": {
+        "o_toro_octa": "Cleaner / More Direct",
+        "o_toro_tour": "More Grip-Oriented"
+      },
+
+      "spin": {
+        "o_toro_octa": "High",
+        "o_toro_tour": "Very High"
+      },
+
+      "control": {
+        "o_toro_octa": "Excellent",
+        "o_toro_tour": "Excellent"
+      },
+
+      "durability": {
+        "o_toro_octa": "Excellent",
+        "o_toro_tour": "Excellent"
+      }
+    },
+
+    "vs_standard_o_toro": {
+      "stiffness": "Higher",
+      "launch_angle": "Lower",
+      "court_penetration": "Higher",
+      "directness": "Higher",
+      "comfort": "Lower",
+      "durability": "Higher"
+    }
+  },
+
+  "science_metrics": {
+    "geometry": {
+      "shape": "Octagonal",
+      "sides": 8
+    },
+
+    "spin_mechanism": [
+      "Octagonal Mechanical Grip",
+      "Snapback",
+      "Stringbed Stability"
+    ],
+
+    "trajectory_profile": "Low / Penetrating",
+
+    "launch_angle_profile": "Medium-Low",
+
+    "ball_speed_class": "High",
+
+    "court_penetration_class": "Very High",
+
+    "tension_stability_class": "Excellent",
+
+    "performance_class": "Tour-Level Octagonal Co-Poly"
+  },
+
+  "collaboration": {
+    "partner": "Steve Johnson",
+    "tour": "ATP",
+    "role": "Designer / Chief String Officer",
+    "career_reference": "Former Top-25 ATP Professional",
+    "confidence": "Official Manufacturer Claim"
+  },
+
+  "tour_players": [
+    {
+      "name": "Steve Johnson",
+      "tour": "ATP",
+      "relationship": "Designer / Chief String Officer",
+      "career_reference": "Former Top-25 ATP Professional",
+      "confidence": "Official Manufacturer Claim"
+    }
+  ],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Advanced Players Seeking Lower Launch Angle",
+      "Players Wanting More Court Penetration Than O-TORO TOUR",
+      "Fast and Very Fast Swing Speed Players",
+      "Aggressive Baseliners",
+      "Flat and Flatter Topspin Hitters",
+      "Players Wanting Direct Connected Response",
+      "Players Seeking Tour-Level Stability and Durability"
+    ],
+
+    "avoid_for": [
+      "Players Seeking Maximum High-Launch Topspin",
+      "Players With Significant Arm Sensitivity",
+      "Beginners With Slow Swing Speed",
+      "Players Wanting the Softest O-TORO Setup"
+    ],
+
+    "alternative_strings": [
+      "Toroline O-TORO TOUR",
+      "Toroline A5",
+      "Toroline CASH",
+      "Luxilon 4G",
+      "Solinco Confidential",
+      "Yonex Poly Tour Strike"
+    ]
+  },
+
+  "comparison_tags": [
+    "O-TORO OCTA",
+    "Octagonal",
+    "Eight-Sided",
+    "Tour Flex",
+    "Lower Launch",
+    "Court Penetration",
+    "Fast Ball Speed",
+    "Direct Response",
+    "Control",
+    "Durability",
+    "Neon Mint",
+    "Steve Johnson"
+  ],
+
+  "ai_keywords": [
+    "toroline",
+    "o toro octa",
+    "o-toro octa",
+    "toroline o toro octa",
+    "1.25",
+    "16l",
+    "neon mint",
+    "octagonal",
+    "eight sided",
+    "tour flex",
+    "stiff",
+    "control",
+    "durability",
+    "court penetration",
+    "ball speed",
+    "lower launch angle",
+    "direct response",
+    "o toro tour",
+    "steve johnson"
+  ],
+
+  "target_competitors": [
+    "Toroline O-TORO TOUR",
+    "Toroline A5",
+    "Luxilon 4G",
+    "Solinco Confidential",
+    "Yonex Poly Tour Strike",
+    "HEAD HAWK",
+    "Kirschbaum Max Power"
+  ],
+
+  "description": {
+    "en": "Toroline O-TORO OCTA is the newest evolution of the O-TORO family, designed by former ATP Top-25 professional and Toroline Chief String Officer Steve Johnson. Built from the same core formula as O-TORO TOUR, OCTA changes the extrusion to an eight-sided profile. This reduces mechanical ball grip slightly, lowers launch angle and creates a cleaner, more direct response with greater court penetration and faster ball speed. Its Tour-level flex emphasizes control, stability and durability, making it particularly suitable for advanced players who like O-TORO TOUR but want a more penetrating trajectory and purer response.",
+
+    "zh": "Toroline O-TORO OCTA 是 O-TORO 系列最新的进阶版本，由前 ATP 世界前25球员、Toroline Chief String Officer Steve Johnson 设计。它使用与 O-TORO TOUR 相同的核心配方，但将截面改为八边形。这样的变化会略微降低球线对网球的机械抓球，却带来更低的 Launch Angle、更强 Court Penetration、更快 Ball Speed，以及更加纯粹、直接的击球反馈。Tour 级偏硬 Flex 进一步强化控制、稳定和耐久，非常适合喜欢 O-TORO TOUR，但希望球路更低、更快、更具穿透力的高级和比赛型球员。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Toroline O-TORO OCTA",
+      "Designed by Steve Johnson",
+      "Toroline Chief String Officer reference",
+      "Former Top-25 ATP professional reference",
+      "Newest evolution of O-TORO line",
+      "Same formula as O-TORO TOUR",
+      "Octagonal profile",
+      "More court penetration than O-TORO TOUR positioning",
+      "Faster ball speed than O-TORO TOUR positioning",
+      "More pure response positioning",
+      "Lower launch angle",
+      "Slightly reduced string-to-ball grip",
+      "Cleaner direct response",
+      "Full-bed suitability",
+      "Hybrid suitability",
+      "1.25 mm / 16L gauge",
+      "Neon Mint",
+      "Tour flex",
+      "Stiffer for added control",
+      "Stiffer for added durability",
+      "Two half sets per package",
+      "6.7 m per half set"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendations",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
