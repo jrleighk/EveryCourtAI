@@ -1,0 +1,532 @@
+{
+  "id": "toroline_o_toro_tour",
+  "brand": "Toroline",
+  "series": "O-TORO",
+  "model": "O-TORO TOUR",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Co-Polyester",
+    "string_family": "Polyester",
+    "cross_section": "Hexagonal",
+    "surface": "Shaped / Edged",
+    "profile_sides": 6,
+    "tour_positioning": "Control / Stability / Durability / Spin Co-Polyester",
+    "official_positioning": "A firmer and more control-oriented evolution of O-TORO designed for advanced players and higher swing speeds.",
+    "co_developed_with": "Steve Johnson",
+    "co_developer_profile": "Former Top 25 ATP Professional",
+    "target_level": "Advanced / Tournament",
+    "relative_stiffness_vs_o_toro_percent": 15
+  },
+
+  "specifications": {
+    "construction": "Performance Co-Polyester Monofilament",
+    "cross_section": "Hexagonal (6-Sided)",
+    "surface": "Shaped / Edged",
+
+    "available_colors": [
+      "Neon Mint",
+      "Neon Green"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_name": "17L",
+        "gauge_mm": 1.20,
+        "available": true,
+
+        "power": 8,
+        "control": 10,
+        "spin": 10,
+        "comfort": 8,
+        "feel": 9,
+        "durability": 8,
+        "tension_maintenance": 9,
+        "elasticity": 8,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Maximum Spin",
+          "Fast Racquet Head Speed",
+          "Advanced Players",
+          "Low Tension Setups",
+          "Players Seeking More Response Than 1.23"
+        ]
+      },
+
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.23,
+        "available": true,
+
+        "power": 8,
+        "control": 10,
+        "spin": 10,
+        "comfort": 8,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 10,
+        "elasticity": 8,
+        "launch_angle": "Medium",
+
+        "recommended_use": [
+          "Best Overall Balance",
+          "Maximum Control",
+          "Maximum Stability",
+          "High Swing Speed",
+          "Tournament Play",
+          "Players Seeking More Durability Than Standard O-TORO"
+        ]
+      }
+    ],
+
+    "packaging": {
+      "type": "Two Half Sets",
+      "half_sets_per_package": 2,
+      "length_per_half_set_m": 6.7,
+      "intended_racquets": 1,
+      "total_length_m": 13.4
+    }
+  },
+
+  "technology": [
+    "Hexagonal Spin Geometry",
+    "Higher-Stiffness O-TORO Construction",
+    "High-Speed Stability Tuning",
+    "Control-Oriented Polymer Refinement",
+    "Spin-Optimized Snapback Response"
+  ],
+
+  "technology_details": {
+    "stiffness_tuning": {
+      "relative_to": "Toroline O-TORO",
+      "increase_percent": 15,
+      "description": "O-TORO TOUR is approximately 15% stiffer than standard O-TORO, improving control, stability and durability at higher swing speeds.",
+      "primary_benefits": [
+        "More Control",
+        "More Stability",
+        "More Durability",
+        "Higher-Speed Responsiveness"
+      ]
+    },
+
+    "spin_generation": {
+      "primary_factors": [
+        "Hexagonal Ball Grip",
+        "Snapback",
+        "Stringbed Stability"
+      ],
+      "description": "The hexagonal profile maintains high ball grip while the firmer construction improves stability under aggressive racquet-head acceleration."
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Firm Spin Control Co-Polyester",
+    "target_player": "Advanced / Tournament",
+    "arm_friendly": false,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": false,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true,
+    "high_speed_stability_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 10,
+    "spin": 10,
+    "comfort": 8,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 10,
+    "elasticity": 8,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 8,
+    "control": 10,
+    "spin": 10,
+    "comfort": 8,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 10
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Firm",
+    "relative_stiffness_vs_o_toro": "+15%",
+    "snapback": 10,
+    "ball_pocketing": 8,
+    "string_movement": 1,
+    "tension_stability": 10,
+    "spin_window": "Very High",
+    "predictability": 10,
+    "arm_friendliness": 7,
+    "directional_precision": 10,
+    "ball_bite": 10,
+    "surface_grip": 10,
+    "high_speed_stability": 10,
+    "heavy_ball_potential": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "Power Baseliner",
+      "Modern Baseline",
+      "Control-Oriented Player"
+    ],
+
+    "special_player_profiles": [
+      "Players Seeking More Control Than Standard O-TORO",
+      "Players With Very Fast Swing Speeds",
+      "Players Seeking Higher Stringbed Stability",
+      "Players Wanting Greater Durability",
+      "Players Using Softer Racquet Frames",
+      "Players Stringing At Lower Tensions"
+    ]
+  },
+
+  "racquet_frame_compatibility": {
+    "soft_flex_frames": {
+      "recommended": true,
+      "reason": "The firmer O-TORO TOUR construction can complement softer-flex racquet frames by increasing stringbed stability and control."
+    },
+
+    "stiff_frames": {
+      "recommended": "Conditional",
+      "reason": "Players using stiff frames should consider lower tension or standard O-TORO if additional comfort is required."
+    }
+  },
+
+  "tension_profile": {
+    "low_tension_suitability": "Excellent",
+    "normal_tension_suitability": "Excellent",
+    "high_tension_suitability": "Advanced Players Only",
+    "note": "Manufacturer specifically positions O-TORO TOUR as suitable for players who string at low tension."
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson Clash",
+    "Wilson RF 01",
+    "HEAD Gravity",
+    "HEAD Speed",
+    "HEAD Radical",
+    "Yonex PERCEPT",
+    "Yonex EZONE",
+    "Babolat Pure Strike",
+    "Tecnifibre TF-40",
+    "Tecnifibre T-FIGHT",
+    "Dunlop CX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Toroline A5",
+      "Natural Gut",
+      "Luxilon Natural Gut",
+      "Babolat Touch VS",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Maximum Spin",
+        "Control",
+        "Stability",
+        "Heavy Ball Production",
+        "Durability"
+      ],
+
+      "as_crosses": [
+        "Control",
+        "Stringbed Stability",
+        "Spin Support",
+        "Tension Stability"
+      ]
+    },
+
+    "hybrid_note": "O-TORO TOUR works particularly well as a shaped main paired with a smooth low-friction cross when maximum control and spin are desired."
+  },
+
+  "gauge_recommendation": {
+    "1.20": {
+      "gauge_name": "17L",
+      "best_for": [
+        "Maximum Spin",
+        "Faster Response",
+        "Fast Swing Speed",
+        "Advanced Players"
+      ],
+
+      "tradeoffs": [
+        "Less Durability Than 1.23",
+        "Slightly Higher Launch Angle"
+      ]
+    },
+
+    "1.23": {
+      "gauge_name": "17",
+      "best_for": [
+        "Best Overall Balance",
+        "Maximum Control",
+        "Maximum Stability",
+        "Durability",
+        "Tournament Play"
+      ],
+
+      "tradeoffs": [
+        "Slightly Less Response Than 1.20"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.20": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "16-28"
+    },
+
+    "1.23": {
+      "heavy_topspin_hours": "10-18",
+      "club_player_hours": "20-34"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Low",
+    "tension_loss_sensitivity": "Low",
+    "playability_duration": "Excellent",
+    "recommended_monitoring": "Replace when snapback, spin response or high-speed directional stability noticeably declines."
+  },
+
+  "laboratory_testing": {
+    "manufacturer_reported_lab_comparisons": {
+      "comparison_strings": [
+        "Luxilon 4G",
+        "Babolat RPM Blast"
+      ],
+
+      "spin_result": {
+        "result": "O-TORO TOUR tested higher in spin than both comparison strings.",
+        "exact_values_available": false
+      },
+
+      "comfort_result": {
+        "result": "O-TORO TOUR tested higher in comfort than both comparison strings.",
+        "exact_values_available": false
+      },
+
+      "stiffness_reference": {
+        "description": "Approximately 15% stiffer than standard O-TORO.",
+        "comparison_class": "Manufacturer describes the resulting stiffness as comparable to Luxilon 4G and Babolat RPM Blast."
+      }
+    }
+  },
+
+  "comparison_data": {
+    "vs_standard_o_toro": {
+      "stiffness": "+15%",
+      "control": "Higher",
+      "stability": "Higher",
+      "durability": "Higher",
+      "comfort": "Lower",
+      "target_swing_speed": "Higher"
+    },
+
+    "vs_luxilon_4g": {
+      "spin": "Higher in manufacturer-reported lab testing",
+      "comfort": "Higher in manufacturer-reported lab testing",
+      "exact_numeric_difference": null
+    },
+
+    "vs_babolat_rpm_blast": {
+      "spin": "Higher in manufacturer-reported lab testing",
+      "comfort": "Higher in manufacturer-reported lab testing",
+      "exact_numeric_difference": null
+    }
+  },
+
+  "science_metrics": {
+    "relative_stiffness_vs_standard_o_toro_percent": 15,
+    "spin_mechanism": [
+      "Hexagonal Ball Grip",
+      "Snapback",
+      "High-Speed Stringbed Stability"
+    ],
+    "control_mechanism": [
+      "Higher Stiffness",
+      "Reduced Stringbed Deformation",
+      "Predictable Launch Angle"
+    ],
+    "performance_class": "Advanced Tournament Co-Poly"
+  },
+
+  "tour_players": [
+    {
+      "name": "Steve Johnson",
+      "tour": "ATP",
+      "relationship": "Co-Developer",
+      "career_reference": "Former Top 25 ATP Professional",
+      "confidence": "Official Manufacturer Claim"
+    }
+  ],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Advanced Players Seeking More Control Than Standard O-TORO",
+      "Fast and Very Fast Swing Speed Players",
+      "Aggressive Baseliners",
+      "Players Using Softer Racquet Frames",
+      "Players Stringing At Low Tension",
+      "Players Wanting High Spin With Greater Stability",
+      "Players Seeking Better Durability From the O-TORO Platform"
+    ],
+
+    "avoid_for": [
+      "Beginners",
+      "Players With Slow Swing Speed",
+      "Players With Significant Arm Sensitivity",
+      "Players Seeking Maximum Plush Comfort",
+      "Players Already Using Very Stiff Frames At High Tension"
+    ],
+
+    "alternative_strings": [
+      "Toroline O-TORO",
+      "Toroline A5",
+      "Luxilon 4G",
+      "Babolat RPM Blast",
+      "Solinco Confidential",
+      "HEAD HAWK"
+    ]
+  },
+
+  "comparison_tags": [
+    "O-TORO TOUR",
+    "Hexagonal",
+    "Advanced Player",
+    "Higher Stiffness",
+    "Maximum Control",
+    "Maximum Stability",
+    "High Spin",
+    "Durability",
+    "Low Tension Friendly",
+    "Soft Frame Friendly",
+    "Steve Johnson"
+  ],
+
+  "ai_keywords": [
+    "toroline",
+    "o toro tour",
+    "o-toro tour",
+    "toroline o toro tour",
+    "1.20",
+    "1.23",
+    "17l",
+    "17 gauge",
+    "neon mint",
+    "neon green",
+    "hexagonal",
+    "15 percent stiffer",
+    "control",
+    "stability",
+    "durability",
+    "spin",
+    "advanced player",
+    "low tension",
+    "soft racquet",
+    "soft flex",
+    "luxilon 4g",
+    "rpm blast",
+    "steve johnson"
+  ],
+
+  "target_competitors": [
+    "Toroline O-TORO",
+    "Luxilon 4G",
+    "Babolat RPM Blast",
+    "Solinco Confidential",
+    "HEAD HAWK",
+    "Yonex Poly Tour Strike",
+    "Kirschbaum Max Power"
+  ],
+
+  "description": {
+    "en": "Toroline O-TORO TOUR is a firmer, more control-oriented evolution of the original O-TORO, refined with former ATP Top 25 professional Steve Johnson for advanced players and higher swing speeds. It is approximately 15% stiffer than standard O-TORO, increasing directional control, stringbed stability and durability while retaining the hexagonal profile and high spin potential of the original. Manufacturer-reported laboratory testing places its stiffness in a similar class to Luxilon 4G and Babolat RPM Blast while reporting higher spin and comfort than both. O-TORO TOUR is particularly well suited to powerful players, softer-flex racquets and low-tension setups.",
+
+    "zh": "Toroline O-TORO TOUR 是标准 O-TORO 的更硬、更偏控制版本，由前 ATP 世界前25球员 Steve Johnson 继续参与优化，主要面向高级及比赛型球员。其刚性相比标准 O-TORO 约提高 15%，因此在高速挥拍下能够提供更强的方向控制、线床稳定性和耐久表现，同时保留六边形结构带来的高旋转能力。Toroline 表示其刚性水平与 Luxilon 4G 和 Babolat RPM Blast 接近，但实验室测试中的旋转和舒适表现均高于这两款对比球线。它尤其适合高速挥拍球员、偏柔软拍框以及低磅穿线方案。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Toroline O-TORO TOUR",
+      "Steve Johnson development reference",
+      "Former Top 25 ATP professional reference",
+      "Advanced player positioning",
+      "Approximately 15% increase in stiffness vs O-TORO",
+      "More control",
+      "More stability",
+      "More durability",
+      "Comparable stiffness positioning to Luxilon 4G",
+      "Comparable stiffness positioning to Babolat RPM Blast",
+      "Higher spin than Luxilon 4G in manufacturer-reported lab testing",
+      "Higher spin than Babolat RPM Blast in manufacturer-reported lab testing",
+      "Higher comfort than Luxilon 4G in manufacturer-reported lab testing",
+      "Higher comfort than Babolat RPM Blast in manufacturer-reported lab testing",
+      "Enhanced responsiveness at higher swing speeds",
+      "Recommended compatibility with softer-flex racquets",
+      "Recommended compatibility with low-tension setups",
+      "1.23 mm / 17 gauge",
+      "1.20 mm / 17L gauge",
+      "Neon Mint",
+      "Neon Green",
+      "Hexagonal profile",
+      "Two half sets per package",
+      "6.7 m per half set"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Racquet Frame Compatibility",
+      "Tension Profile",
+      "Hybrid Compatibility",
+      "Gauge Recommendations",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "Laboratory Testing",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
