@@ -1,0 +1,323 @@
+{
+  "id": "confidence_scoring",
+  "category": "Inference Rules",
+  "type": "Confidence Engine",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
+
+  "description": {
+    "en": "Calculates the confidence score for EveryCourtAI recommendations based on data completeness, inference quality, equipment compatibility and unresolved conflicts.",
+    "zh": "根据资料完整度、推理质量、装备兼容性及未解决冲突，为 EveryCourtAI 推荐结果计算可信度。"
+  },
+
+  "score_range": {
+    "minimum": 0,
+    "maximum": 100
+  },
+
+  "starting_score": 100,
+
+  "scoring_categories": [
+    {
+      "category": "Player Profile",
+      "maximum_points": 30,
+      "weight": 0.30
+    },
+    {
+      "category": "Equipment Information",
+      "maximum_points": 25,
+      "weight": 0.25
+    },
+    {
+      "category": "Inference Quality",
+      "maximum_points": 25,
+      "weight": 0.25
+    },
+    {
+      "category": "Recommendation Stability",
+      "maximum_points": 20,
+      "weight": 0.20
+    }
+  ],
+
+  "player_profile_scoring": {
+
+    "playing_style": {
+      "known": 5,
+      "unknown": -5
+    },
+
+    "swing_speed": {
+      "known": 5,
+      "unknown": -5
+    },
+
+    "primary_goal": {
+      "known": 6,
+      "unknown": -6
+    },
+
+    "physical_constraints": {
+      "known": 5,
+      "unknown": 0
+    },
+
+    "preferences": {
+      "known": 4,
+      "unknown": -2
+    },
+
+    "playing_frequency": {
+      "known": 3,
+      "unknown": -2
+    },
+
+    "skill_level": {
+      "known": 2,
+      "unknown": -2
+    }
+  },
+
+  "equipment_information_scoring": {
+
+    "racquet_model": {
+      "exact_model": 8,
+      "brand_only": 3,
+      "unknown": -8
+    },
+
+    "string_model": {
+      "exact_model": 6,
+      "brand_only": 2,
+      "unknown": -6
+    },
+
+    "string_tension": {
+      "known": 4,
+      "estimated": 1,
+      "unknown": -4
+    },
+
+    "string_gauge": {
+      "known": 3,
+      "unknown": -2
+    },
+
+    "current_setup_feedback": {
+      "known": 4,
+      "unknown": -5
+    }
+  },
+
+  "inference_quality": {
+
+    "no_conflict": {
+      "bonus": 5
+    },
+
+    "single_minor_conflict": {
+      "penalty": -3
+    },
+
+    "single_major_conflict": {
+      "penalty": -8
+    },
+
+    "multiple_conflicts": {
+      "penalty": -15
+    },
+
+    "hard_constraint_violation": {
+      "penalty": -30
+    },
+
+    "all_required_information_present": {
+      "bonus": 5
+    },
+
+    "recommendation_supported_by_multiple_rules": {
+      "bonus": 5
+    },
+
+    "recommendation_depends_on_assumption": {
+      "penalty": -10
+    }
+  },
+
+  "recommendation_stability": {
+
+    "racquet_and_string_match": {
+      "excellent": 5,
+      "good": 3,
+      "average": 1,
+      "poor": -5
+    },
+
+    "goal_alignment": {
+      "excellent": 5,
+      "partial": 2,
+      "poor": -5
+    },
+
+    "physical_compatibility": {
+      "excellent": 5,
+      "acceptable": 2,
+      "poor": -10
+    },
+
+    "tradeoffs_resolved": {
+      "yes": 5,
+      "no": -5
+    }
+  },
+
+  "confidence_levels": {
+
+    "95_100": {
+      "level": "Exceptional",
+
+      "message": {
+        "en": "Extremely high confidence recommendation.",
+        "zh": "极高可信度推荐。"
+      }
+    },
+
+    "90_94": {
+      "level": "Very High"
+    },
+
+    "80_89": {
+      "level": "High"
+    },
+
+    "70_79": {
+      "level": "Good"
+    },
+
+    "60_69": {
+      "level": "Moderate"
+    },
+
+    "50_59": {
+      "level": "Low"
+    },
+
+    "0_49": {
+      "level": "Insufficient Information"
+    }
+  },
+
+  "automatic_follow_up_rules": {
+
+    "below_80": {
+      "recommend": true,
+      "reason": "Collect additional player information."
+    },
+
+    "below_70": {
+      "recommend": true,
+      "ask_questions": true
+    },
+
+    "below_60": {
+      "recommend": true,
+      "limit_specific_product_recommendation": true
+    },
+
+    "below_50": {
+      "recommend": true,
+      "only_return_general_direction": true
+    }
+  },
+
+  "confidence_explanation": {
+
+    "must_include": [
+      "Overall confidence score",
+      "Main factors increasing confidence",
+      "Main factors reducing confidence",
+      "What additional information would improve accuracy"
+    ]
+  },
+
+  "example_outputs": [
+
+    {
+      "scenario": "Complete Player Profile",
+
+      "confidence": 96,
+
+      "reason": [
+        "Known racquet",
+        "Known string",
+        "Known tension",
+        "Known swing speed",
+        "Known playing style",
+        "Known physical condition",
+        "No unresolved conflicts"
+      ]
+    },
+
+    {
+      "scenario": "Unknown Current Setup",
+
+      "confidence": 72,
+
+      "reason": [
+        "Player profile complete",
+        "Current racquet unknown",
+        "Current tension unknown"
+      ]
+    },
+
+    {
+      "scenario": "Only Wants More Spin",
+
+      "confidence": 55,
+
+      "reason": [
+        "Goal known",
+        "Current equipment unknown",
+        "Swing speed unknown",
+        "Playing style unknown"
+      ]
+    }
+  ],
+
+  "display_rules": {
+
+    "show_percentage": true,
+
+    "show_level": true,
+
+    "show_explanation": true,
+
+    "show_missing_information": true
+  },
+
+  "future_extensions": {
+
+    "machine_learning": true,
+
+    "user_feedback_adjustment": true,
+
+    "recommendation_success_tracking": true,
+
+    "match_result_feedback": true
+  },
+
+  "engine_connections": {
+
+    "reads_from": [
+      "knowledge/inference/conflict_resolution.json",
+      "knowledge/players/",
+      "knowledge/racquets/",
+      "knowledge/strings/"
+    ],
+
+    "passes_to": [
+      "recommendation_engine",
+      "progressive_questioning"
+    ]
+  }
+}
