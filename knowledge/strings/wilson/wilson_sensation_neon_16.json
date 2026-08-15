@@ -1,0 +1,446 @@
+{
+  "id": "wilson_sensation_neon_16",
+  "brand": "Wilson",
+  "series": "Sensation",
+  "model": "Sensation Neon 16",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Multifilament",
+    "material": "Highly Elastic Nylon Fibers",
+    "string_family": "Multifilament",
+    "core_structure": "Elastic Nylon Multifilament Core with Dual Opposing Outer Wraps",
+    "cross_section": "Round",
+    "surface": "Smooth",
+    "tour_positioning": "Comfort / Playability / Value Multifilament",
+    "official_positioning": "Arm-friendly multifilament string using highly elastic nylon fibers and dual opposing outer wraps for comfort, playability, durability and long-term value.",
+    "target_level": "Beginner / Intermediate / Recreational"
+  },
+
+  "specifications": {
+    "construction": "Nylon Multifilament",
+    "cross_section": "Round",
+    "surface": "Smooth",
+
+    "available_colors": [
+      "Neon Green"
+    ],
+
+    "color_availability": {
+      "Neon Green": {
+        "gauge_mm": 1.30,
+        "gauge_name": "16",
+        "available": true
+      }
+    },
+
+    "available_gauges": [
+      {
+        "gauge_name": "16",
+        "gauge_mm": 1.30,
+        "available": true,
+        "available_colors": [
+          "Neon Green"
+        ],
+
+        "power": 9,
+        "control": 8,
+        "spin": 7,
+        "comfort": 10,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 8,
+        "elasticity": 10,
+        "shock_absorption": 10,
+        "ball_pocketing": 9,
+        "launch_angle": "Medium",
+
+        "recommended_use": [
+          "Comfort",
+          "Arm-Friendly Play",
+          "Recreational Play",
+          "Full Bed",
+          "Hybrid Use",
+          "Players Wanting a Bright Color Multifilament"
+        ]
+      }
+    ],
+
+    "packaging": [
+      {
+        "type": "Set",
+        "length_ft": 40,
+        "length_m": 12.2
+      }
+    ]
+  },
+
+  "technology": [
+    "Highly Elastic Nylon Fibers",
+    "Dual Opposing Outer Wraps",
+    "Vibration Reduction Construction",
+    "Arm-Friendly Multifilament Design"
+  ],
+
+  "technology_details": {
+    "elastic_nylon_fibers": {
+      "description": "Highly elastic nylon fibers provide a soft and responsive response while helping reduce impact vibration.",
+      "primary_benefits": [
+        "Comfort",
+        "Elasticity",
+        "Playability",
+        "Shock Reduction"
+      ]
+    },
+
+    "dual_outer_wraps": {
+      "description": "Two outer wraps are applied in opposite directions to reinforce the multifilament structure and improve durability and longevity.",
+      "primary_benefits": [
+        "Improved Durability",
+        "Longer String Life",
+        "Better Structural Stability",
+        "Reduced Premature Fraying"
+      ]
+    },
+
+    "vibration_reduction": {
+      "description": "The elastic multifilament construction reduces harsh vibration and supports Sensation's established arm-friendly character.",
+      "primary_benefits": [
+        "Arm Comfort",
+        "Shock Absorption",
+        "Softer Impact"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Comfort Value Multifilament",
+    "target_player": "Beginner / Intermediate / Recreational",
+    "arm_friendly": true,
+    "spin_focus": false,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true,
+    "pocketing_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 8,
+    "spin": 7,
+    "comfort": 10,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 8,
+    "elasticity": 10,
+    "shock_absorption": 10,
+    "ball_pocketing": 9,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 8,
+    "spin": 7,
+    "comfort": 10,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 8
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Soft",
+    "snapback": 6,
+    "ball_pocketing": 9,
+    "string_movement": 6,
+    "tension_stability": 8,
+    "spin_window": "Medium-Low",
+    "predictability": 9,
+    "arm_friendliness": 10,
+    "shock_absorption": 10,
+    "directional_precision": 8,
+    "sweet_spot_forgiveness": 9,
+    "plushness": 9,
+    "power_response": 9,
+    "value_performance": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate",
+      "Recreational"
+    ],
+
+    "swing_speed": [
+      "Slow",
+      "Medium",
+      "Medium-Fast"
+    ],
+
+    "play_style": [
+      "All Court",
+      "Baseline",
+      "Doubles",
+      "Serve & Volley",
+      "Touch Player"
+    ],
+
+    "special_player_profiles": [
+      "Players Seeking Arm-Friendly Comfort",
+      "Players Wanting Easy Power",
+      "Players Looking For Affordable Multifilament",
+      "Players Transitioning Away From Polyester",
+      "Players Wanting Neon Green String Aesthetics"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Clash",
+    "Wilson Blade",
+    "Wilson Ultra",
+    "HEAD Boom",
+    "HEAD Speed",
+    "Yonex EZONE",
+    "Babolat Pure Drive",
+    "Tecnifibre T-FIGHT",
+    "Dunlop FX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Luxilon ALU Power",
+      "Luxilon Element",
+      "Wilson Revolve",
+      "Wilson Revolve Spin"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Comfort",
+        "Power",
+        "Feel",
+        "Ball Pocketing"
+      ],
+
+      "as_crosses": [
+        "Stringbed Softening",
+        "Comfort",
+        "Power Support",
+        "Shock Reduction"
+      ]
+    },
+
+    "hybrid_note": "Sensation Neon 16 can be used as a budget-friendly comfort component in hybrid setups while adding a distinctive Neon Green appearance."
+  },
+
+  "gauge_recommendation": {
+    "1.30": {
+      "gauge_name": "16",
+      "color": "Neon Green",
+
+      "best_for": [
+        "Comfort",
+        "Durability",
+        "Recreational Play",
+        "Full Bed",
+        "Hybrid Play"
+      ],
+
+      "tradeoffs": [
+        "Lower Spin Than Polyester",
+        "Lower Durability Than Co-Poly",
+        "Less Precision Than Firm Control Strings"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.30": {
+      "heavy_topspin_hours": "5-9",
+      "club_player_hours": "16-26"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Immediate",
+    "peak_playability": "Immediate",
+    "performance_drop": "Medium",
+    "tension_loss_sensitivity": "Medium",
+    "playability_duration": "Good",
+    "recommended_monitoring": "Replace when fraying, notching, excessive string movement or tension loss becomes noticeable."
+  },
+
+  "installation_guidelines": {
+    "handling_sensitivity": "Medium",
+    "manufacturer_instructions": [
+      "Handle gently during installation.",
+      "Avoid excessive clamping pressure.",
+      "Avoid damaging the outer wraps."
+    ]
+  },
+
+  "comparison_data": {
+    "vs_sensation_16": {
+      "performance": "Essentially Same Core Performance",
+      "gauge": "Same 1.30 mm / 16",
+      "construction": "Same Nylon Multifilament Platform",
+      "main_difference": "Color / SKU Positioning",
+      "sensation_neon_16_color": "Neon Green",
+      "sensation_16_color": "Natural"
+    },
+
+    "vs_nxt_16": {
+      "price_positioning": "More Value-Oriented",
+      "comfort": "High",
+      "power": "Slightly Lower",
+      "feel": "Lower",
+      "tension_maintenance": "Lower",
+      "durability": "Good"
+    },
+
+    "vs_polyester": {
+      "comfort": "Much Higher",
+      "shock_absorption": "Much Higher",
+      "power": "Higher",
+      "spin": "Lower",
+      "durability": "Lower",
+      "control": "Softer / More Elastic"
+    }
+  },
+
+  "science_metrics": {
+    "material_class": "Nylon Multifilament",
+
+    "geometry": {
+      "shape": "Round"
+    },
+
+    "comfort_class": "Very High",
+    "power_class": "High",
+    "shock_absorption_class": "Very High",
+    "ball_pocketing_class": "High",
+    "durability_class": "High for Multifilament",
+    "value_class": "Very High",
+    "performance_class": "Comfort Value Multifilament"
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Recreational Players Seeking Comfort",
+      "Players With Arm Sensitivity",
+      "Players Wanting Easy Power",
+      "Players Seeking Affordable Multifilament",
+      "Players Wanting Neon Green String Color",
+      "Players Building Budget Comfort Hybrids"
+    ],
+
+    "avoid_for": [
+      "Heavy Topspin Players Seeking Maximum Snapback",
+      "Frequent String Breakers",
+      "Players Wanting Firm Polyester-Level Control",
+      "Advanced Players Seeking Maximum Precision"
+    ],
+
+    "alternative_strings": [
+      "Wilson Sensation 16",
+      "Wilson NXT 16",
+      "Head Velocity MLT",
+      "Tecnifibre Multifeel",
+      "Babolat Xcel"
+    ]
+  },
+
+  "comparison_tags": [
+    "Wilson",
+    "Sensation",
+    "Sensation Neon",
+    "Sensation Neon 16",
+    "Multifilament",
+    "Nylon",
+    "Comfort",
+    "Arm Friendly",
+    "Value",
+    "Neon Green",
+    "1.30"
+  ],
+
+  "ai_keywords": [
+    "wilson",
+    "sensation neon",
+    "sensation neon 16",
+    "wilson sensation neon 16",
+    "1.30",
+    "16 gauge",
+    "neon green",
+    "multifilament",
+    "nylon fibers",
+    "outer wraps",
+    "comfort",
+    "playability",
+    "arm friendly",
+    "durability",
+    "value multifilament"
+  ],
+
+  "target_competitors": [
+    "Wilson Sensation 16",
+    "Wilson NXT 16",
+    "Head Velocity MLT",
+    "Tecnifibre Multifeel",
+    "Babolat Xcel"
+  ],
+
+  "description": {
+    "en": "Wilson Sensation Neon 16 is the Neon Green version of Wilson's classic Sensation multifilament. It uses highly elastic nylon fibers to provide comfort, easy power and improved playability, while two outer wraps applied in opposite directions increase durability and longevity. At 1.30 mm / 16 gauge, it delivers the same core comfort-oriented performance as Sensation 16 while adding a distinctive high-visibility Neon Green aesthetic.",
+
+    "zh": "Wilson Sensation Neon 16 是经典 Sensation 多芯球线的 Neon Green 特别配色版本。它采用高弹性尼龙纤维提供舒适、易获得的力量和良好可打性，并通过两组反向缠绕的外层结构提升耐久和使用寿命。1.30 毫米 / 16 Gauge 的核心性能与普通 Sensation 16 基本一致，主要区别在于醒目的 Neon Green 外观。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Wilson Sensation Neon 16",
+      "Neon Green",
+      "Multifilament construction",
+      "Highly elastic nylon fibers",
+      "Reduced vibration positioning",
+      "Enhanced comfort",
+      "Enhanced playability",
+      "Two outer wraps",
+      "Outer wraps applied in opposite directions",
+      "Improved durability",
+      "Improved longevity",
+      "Arm-friendly positioning",
+      "Value multifilament positioning",
+      "16 gauge",
+      "1.30 mm",
+      "Set length 40 ft / 12.2 m"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendation",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "Installation Guidelines",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations"
+    ]
+  }
+}
