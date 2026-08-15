@@ -1,0 +1,491 @@
+{
+  "id": "wilson_spin_effect_hybrid",
+  "brand": "Wilson",
+  "series": "Spin Effect",
+  "model": "Spin Effect Hybrid",
+  "category": "Hybrid String Set",
+
+  "manufacturer_data": {
+    "construction": "Co-Polyester + Multifilament Hybrid",
+    "main_components": [
+      "Wilson Revolve 17",
+      "Wilson Sensation 16"
+    ],
+    "string_family": "Hybrid",
+    "official_positioning": "Hybrid string set combining spin-enhancing Revolve polyester with low-friction Sensation multifilament to maximize string movement, snapback and ball rotation.",
+    "target_level": "Intermediate / Advanced",
+    "spin_effect_positioning": true
+  },
+
+  "specifications": {
+    "construction": "Co-Polyester + Multifilament Hybrid",
+
+    "available_colors": [
+      "White"
+    ],
+
+    "components": {
+      "revolve_17": {
+        "string": "Wilson Revolve",
+        "gauge_name": "17",
+        "gauge_mm": 1.25,
+        "color": "White",
+        "construction": "Co-Polyester Monofilament",
+        "shape": "Round",
+        "primary_role": [
+          "Spin",
+          "Snapback",
+          "String Movement",
+          "Control",
+          "Durability"
+        ]
+      },
+
+      "sensation_16": {
+        "string": "Wilson Sensation",
+        "gauge_name": "16",
+        "gauge_mm": 1.30,
+        "color": "White",
+        "construction": "Multifilament",
+        "material": "Highly Elastic Nylon Fibers",
+        "shape": "Round",
+        "primary_role": [
+          "Comfort",
+          "Low-Friction Support",
+          "Power",
+          "Shock Absorption",
+          "Playability"
+        ]
+      }
+    },
+
+    "gauge": {
+      "official_listing": "17/16",
+      "mm_official_listing": "1.25/1.30"
+    },
+
+    "packaging": [
+      {
+        "type": "Hybrid Set",
+        "length_ft": 40,
+        "length_m": 12.2
+      }
+    ]
+  },
+
+  "official_hybrid_configuration": {
+    "polyester_component": "Wilson Revolve 17 / 1.25",
+    "multifilament_component": "Wilson Sensation 16 / 1.30",
+
+    "official_result": [
+      "Enhanced Spin",
+      "Ultimate Snapback",
+      "High String Movement",
+      "Increased Ball Rotation",
+      "Improved Playability"
+    ]
+  },
+
+  "technology": [
+    "Spin Effect Hybrid Architecture",
+    "Revolve Spin-Enhancing Polyester",
+    "Low-Friction Sensation Multifilament",
+    "String Movement Optimization",
+    "Snapback Enhancement",
+    "Ball Rotation Amplification"
+  ],
+
+  "technology_details": {
+    "revolve_component": {
+      "description": "Wilson Revolve provides a spin-oriented polyester response designed to support string movement and snapback.",
+      "primary_benefits": [
+        "Spin",
+        "Snapback",
+        "Control",
+        "String Movement"
+      ]
+    },
+
+    "sensation_component": {
+      "description": "Wilson Sensation contributes multifilament comfort and a lower-friction interaction within the hybrid stringbed.",
+      "primary_benefits": [
+        "Comfort",
+        "Playability",
+        "Shock Absorption",
+        "Power Support"
+      ]
+    },
+
+    "spin_effect_interaction": {
+      "description": "The combination allows significant string movement during impact and rapid string return, increasing ball rotation while retaining more comfort than a full polyester setup.",
+      "primary_benefits": [
+        "Enhanced Snapback",
+        "More Ball Rotation",
+        "Spin Efficiency",
+        "Improved Comfort"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Spin-Oriented Polyester / Multifilament Hybrid",
+    "target_player": "Intermediate / Advanced",
+    "arm_friendly": true,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true,
+    "snapback_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 9,
+    "spin": 10,
+    "comfort": 9,
+    "feel": 9,
+    "durability": 8,
+    "tension_maintenance": 8,
+    "elasticity": 9,
+    "shock_absorption": 9,
+    "ball_pocketing": 9,
+    "launch_angle": "Medium-High"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 9,
+    "spin": 10,
+    "comfort": 9,
+    "feel": 9,
+    "durability": 8,
+    "tension_maintenance": 8
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium",
+    "snapback": 10,
+    "ball_pocketing": 9,
+    "string_movement": 10,
+    "inter_string_friction": "Low",
+    "tension_stability": 8,
+    "spin_window": "Very High",
+    "predictability": 9,
+    "arm_friendliness": 9,
+    "shock_absorption": 9,
+    "directional_precision": 9,
+    "ball_rotation": 10,
+    "spin_efficiency": 10,
+    "stringbed_liveliness": 9
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced"
+    ],
+
+    "swing_speed": [
+      "Medium",
+      "Medium-Fast",
+      "Fast"
+    ],
+
+    "play_style": [
+      "Heavy Topspin",
+      "Aggressive Baseliner",
+      "Modern Baseline",
+      "All Court"
+    ],
+
+    "special_player_profiles": [
+      "Players Seeking More Spin Without Full Polyester",
+      "Players Wanting Strong Snapback",
+      "Players Seeking More String Movement",
+      "Players Wanting Polyester Spin With Multifilament Comfort",
+      "Players Using Spin Effect Racquets",
+      "Players With Modern Vertical Swing Paths"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Shift",
+    "Wilson Blade",
+    "Wilson Ultra",
+    "Wilson Clash",
+    "Babolat Pure Aero",
+    "HEAD Extreme",
+    "Yonex VCORE",
+    "Dunlop SX"
+  ],
+
+  "hybrid_physics": {
+    "poly_component": {
+      "string": "Wilson Revolve",
+      "gauge_mm": 1.25,
+      "primary_effects": [
+        "Snapback",
+        "Spin",
+        "Control",
+        "Main-String Movement"
+      ]
+    },
+
+    "multifilament_component": {
+      "string": "Wilson Sensation",
+      "gauge_mm": 1.30,
+      "primary_effects": [
+        "Comfort",
+        "Shock Absorption",
+        "Power",
+        "Playability"
+      ]
+    },
+
+    "combined_effect": [
+      "High String Movement",
+      "Fast Snapback",
+      "Heavy Ball Rotation",
+      "Improved Comfort",
+      "Spin-Oriented Response"
+    ]
+  },
+
+  "configuration_guidance": {
+    "revolve_mains": {
+      "expected_profile": [
+        "Maximum Spin",
+        "Higher Snapback",
+        "More Control",
+        "More Polyester Dominance"
+      ],
+
+      "best_for": [
+        "Heavy Topspin Players",
+        "Fast Swing Speeds",
+        "Players Prioritizing Spin And Control"
+      ]
+    },
+
+    "sensation_mains": {
+      "expected_profile": [
+        "More Comfort",
+        "More Power",
+        "More Pocketing",
+        "Softer Stringbed"
+      ],
+
+      "best_for": [
+        "Players Prioritizing Comfort",
+        "Players Wanting More Free Power",
+        "Players Transitioning Away From Full Polyester"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "hybrid_setup": {
+      "heavy_topspin_hours": "6-10",
+      "club_player_hours": "14-24"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Medium",
+    "tension_loss_sensitivity": "Medium",
+    "playability_duration": "Good to Very Good",
+    "recommended_monitoring": "Replace when Sensation develops significant fraying or when Revolve no longer slides and snaps back efficiently."
+  },
+
+  "comparison_data": {
+    "vs_full_bed_revolve": {
+      "comfort": "Much Higher",
+      "shock_absorption": "Higher",
+      "power": "Higher",
+      "pocketing": "Higher",
+      "durability": "Lower",
+      "spin": "Slightly Lower to Similar Depending on Configuration"
+    },
+
+    "vs_full_bed_sensation": {
+      "spin": "Much Higher",
+      "snapback": "Much Higher",
+      "control": "Higher",
+      "stringbed_stability": "Higher",
+      "comfort": "Lower"
+    },
+
+    "vs_duo_feel": {
+      "spin": "Higher",
+      "snapback": "Higher",
+      "ball_rotation": "Higher",
+      "comfort": "Slightly Lower",
+      "feel": "More Spin-Oriented",
+      "primary_identity": {
+        "spin_effect_hybrid": "Spin / Snapback / String Movement",
+        "duo_feel": "Feel / Comfort / Shock Absorption"
+      }
+    },
+
+    "vs_duo_control": {
+      "spin": "Similar High",
+      "snapback": "Higher",
+      "comfort": "Higher",
+      "control": "Lower",
+      "tension_maintenance": "Lower",
+      "primary_identity": {
+        "spin_effect_hybrid": "Dynamic Spin",
+        "duo_control": "Precision / Control"
+      }
+    }
+  },
+
+  "science_metrics": {
+    "hybrid_type": "Round Co-Polyester + Multifilament",
+
+    "spin_mechanism": [
+      "Polyester String Movement",
+      "Low-Friction Interaction",
+      "Snapback",
+      "Ball Rotation"
+    ],
+
+    "trajectory_profile": "Spin-Oriented",
+
+    "launch_angle_profile": "Medium-High",
+
+    "snapback_class": "Very High",
+
+    "string_movement_class": "Very High",
+
+    "spin_class": "Very High",
+
+    "comfort_class": "High",
+
+    "hybrid_class": "Spin Effect Performance Hybrid"
+  },
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Heavy Topspin Players",
+      "Players Seeking High Snapback",
+      "Players Wanting More Spin Than Full Multifilament",
+      "Players Wanting More Comfort Than Full Polyester",
+      "Modern Baseline Players",
+      "Players Using Spin-Friendly Racquets"
+    ],
+
+    "avoid_for": [
+      "Frequent Multifilament String Breakers",
+      "Players Seeking Maximum Polyester Durability",
+      "Players Wanting Extremely Low Launch Angle",
+      "Players Seeking Maximum Firm Control"
+    ],
+
+    "alternative_strings": [
+      "Wilson Revolve Full Bed",
+      "Wilson Sensation 16",
+      "Wilson Duo Feel",
+      "Wilson Duo Control",
+      "Luxilon ALU Power + Wilson NXT",
+      "Solinco Hyper-G Hybrid System"
+    ]
+  },
+
+  "comparison_tags": [
+    "Wilson",
+    "Spin Effect Hybrid",
+    "Revolve",
+    "Sensation",
+    "Hybrid",
+    "Co-Polyester",
+    "Multifilament",
+    "Spin",
+    "Snapback",
+    "String Movement",
+    "Ball Rotation",
+    "White",
+    "1.25",
+    "1.30"
+  ],
+
+  "ai_keywords": [
+    "wilson",
+    "spin effect hybrid",
+    "wilson spin effect hybrid",
+    "revolve",
+    "sensation",
+    "17 16",
+    "1.25",
+    "1.30",
+    "white",
+    "hybrid",
+    "poly multifilament hybrid",
+    "spin",
+    "snapback",
+    "snap back",
+    "string movement",
+    "ball rotation",
+    "spin effect technology",
+    "comfort"
+  ],
+
+  "target_competitors": [
+    "Wilson Duo Feel",
+    "Wilson Duo Control",
+    "Wilson NXT + Luxilon ALU Power",
+    "Solinco Hyper-G Hybrid System",
+    "Solinco Tour Bite + Vanquish"
+  ],
+
+  "description": {
+    "en": "Wilson Spin Effect Hybrid combines Revolve 17 / 1.25 mm polyester with Sensation 16 / 1.30 mm multifilament to create a spin-focused hybrid built around string movement and snapback. Revolve provides the polyester component needed for spin, control and dynamic string return, while Sensation contributes comfort, power and shock absorption. The combination is designed to increase string movement and ball rotation while offering more playability and comfort than a full polyester stringbed.",
+
+    "zh": "Wilson Spin Effect Hybrid 是一套围绕 Spin、String Movement 与 Snapback 设计的官方混合线，由 Revolve 17 / 1.25 毫米聚酯线与 Sensation 16 / 1.30 毫米多芯线组成。Revolve 负责提供聚酯所需的旋转、控制和动态回位能力，而 Sensation 则补充舒适性、力量与减震表现。两者结合能够让球线在击球过程中产生更明显的移动和 Snapback，从而增加 Ball Rotation，同时又比整床聚酯拥有更好的舒适性和 Playability。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Wilson Spin Effect Hybrid",
+      "White",
+      "Hybrid string set",
+      "Premium Spin Effect technology positioning",
+      "Enhanced playability",
+      "Ultimate snapback positioning",
+      "Wilson Revolve 17",
+      "Revolve 1.25 mm",
+      "Spin-enhancing polyester",
+      "Wilson Sensation 16",
+      "Sensation 1.30 mm",
+      "Low-friction multifilament positioning",
+      "Increased string movement",
+      "Increased ball rotation",
+      "Gauge 17/16",
+      "Diameter 1.25/1.30 mm",
+      "Set 40 ft / 12.2 m"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Physics",
+      "Configuration Guidance",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
