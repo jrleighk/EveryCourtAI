@@ -1,0 +1,485 @@
+{
+  "id": "toroline_snapper",
+  "brand": "Toroline",
+  "series": "Snapper",
+  "model": "Snapper",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Co-Polyester",
+    "string_family": "Polyester",
+    "cross_section": "Octagonal",
+    "surface": "Ultra-Slick / Shaped",
+    "profile_sides": 8,
+    "tour_positioning": "Snapback / Penetration / Directional Control / Soft Response Co-Polyester",
+    "official_positioning": "Octagonal co-poly engineered to maximize snapback through increased surface slickness, producing a more penetrating ball, exceptional directional control and a softer response.",
+    "target_level": "Intermediate / Advanced / Tournament"
+  },
+
+  "specifications": {
+    "construction": "Octagonal Co-Polyester Monofilament",
+    "cross_section": "Octagonal (8-Sided)",
+    "surface": "Ultra-Slick / Shaped",
+
+    "available_colors": [
+      "Lavender"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.23,
+        "available": true,
+        "available_colors": [
+          "Lavender"
+        ],
+
+        "power": 9,
+        "control": 10,
+        "spin": 10,
+        "comfort": 9,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "elasticity": 9,
+        "launch_angle": "Medium",
+
+        "recommended_use": [
+          "Maximum Snapback",
+          "Court Penetration",
+          "Directional Control",
+          "Fast Swing Speed",
+          "Aggressive Baseline Play",
+          "Players Seeking Softer Response From a Shaped Co-Poly"
+        ]
+      }
+    ],
+
+    "packaging": {
+      "type": "Two Half Sets",
+      "half_sets_per_package": 2,
+      "length_per_half_set_m": 6.7,
+      "intended_racquets": 1,
+      "total_length_m": 13.4
+    }
+  },
+
+  "technology": [
+    "Octagonal Spin Geometry",
+    "Ultra-Slick Surface Engineering",
+    "Maximum Snapback Tuning",
+    "Court Penetration Optimization",
+    "Directional Control Tuning",
+    "Soft-Response Co-Poly Construction"
+  ],
+
+  "technology_details": {
+    "snapback_engineering": {
+      "description": "Toroline increased surface slickness to maximize string movement and snapback.",
+      "primary_benefits": [
+        "Faster String Return",
+        "Enhanced Spin Potential",
+        "More Penetrating Ball Flight",
+        "Improved Response Consistency"
+      ]
+    },
+
+    "octagonal_geometry": {
+      "shape": "Octagonal",
+      "sides": 8,
+      "description": "The eight-sided profile provides shaped-string ball interaction while maintaining a cleaner and more penetrating trajectory than more aggressive high-launch geometries."
+    },
+
+    "soft_response": {
+      "description": "Despite its shaped performance profile, Snapper is engineered to provide a softer response at impact."
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Snapback Penetration Co-Polyester",
+    "target_player": "Intermediate / Advanced / Tournament",
+    "arm_friendly": true,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true,
+    "snapback_focus": true,
+    "penetration_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 9,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9,
+    "elasticity": 9,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 9,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium",
+    "snapback": 10,
+    "ball_pocketing": 9,
+    "string_movement": 10,
+    "inter_string_friction": "Very Low",
+    "tension_stability": 9,
+    "spin_window": "Very High",
+    "predictability": 10,
+    "arm_friendliness": 8,
+    "directional_precision": 10,
+    "ball_bite": 9,
+    "surface_grip": 9,
+    "court_penetration": 10,
+    "launch_angle_consistency": 10,
+    "response_softness": 9,
+    "liveliness": 9
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Modern Baseline",
+      "All Court",
+      "Precision-Oriented Player",
+      "Spin-Oriented Player"
+    ],
+
+    "special_player_profiles": [
+      "Players Seeking Maximum Snapback",
+      "Players Wanting Strong Court Penetration",
+      "Players Seeking Directional Precision",
+      "Players Wanting a Softer Shaped Co-Poly",
+      "Players Who Generate High Racquet Head Speed"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Babolat Pure Aero",
+    "Babolat Pure Drive",
+    "Wilson Shift",
+    "Wilson Blade",
+    "HEAD Extreme",
+    "HEAD Speed",
+    "Yonex VCORE",
+    "Yonex EZONE",
+    "Tecnifibre T-FIGHT",
+    "Dunlop SX",
+    "Dunlop FX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "preferred_role": "Mains",
+
+    "best_pairings": [
+      "Toroline O-TORO SNAP TOUR FLEX",
+      "Toroline A5",
+      "Toroline Wasabi X",
+      "Toroline CASH",
+      "Toroline Truffle X"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Snapback",
+        "Spin",
+        "Court Penetration",
+        "Directional Control",
+        "Shaped Ball Interaction"
+      ],
+
+      "as_crosses": [
+        "Spin Support",
+        "Stringbed Response",
+        "Trajectory Control"
+      ]
+    },
+
+    "recommended_toroline_hybrids": [
+      {
+        "mains": "Snapper",
+        "crosses": "O-TORO SNAP TOUR FLEX",
+        "expected_profile": [
+          "Maximum Snapback",
+          "Low Inter-String Friction",
+          "Explosive Spin",
+          "Modern Control",
+          "Crisp Yet Elastic Response"
+        ]
+      },
+      {
+        "mains": "Snapper",
+        "crosses": "A5",
+        "expected_profile": [
+          "Octagonal Bite",
+          "Low-Friction Round Cross",
+          "High Snapback",
+          "Penetrating Ball Flight",
+          "Predictable Control"
+        ]
+      },
+      {
+        "mains": "Snapper",
+        "crosses": "Truffle X",
+        "expected_profile": [
+          "Spin",
+          "Snapback",
+          "Plush Comfort",
+          "Pocketing",
+          "Reduced Stringbed Harshness"
+        ]
+      }
+    ],
+
+    "hybrid_note": "Snapper works especially well as a shaped main paired with a smooth, low-friction cross to maximize string movement and snapback."
+  },
+
+  "gauge_recommendation": {
+    "1.23": {
+      "gauge_name": "17",
+      "color": "Lavender",
+
+      "best_for": [
+        "Maximum Snapback",
+        "Directional Control",
+        "Court Penetration",
+        "Spin",
+        "Fast Swing Speed"
+      ],
+
+      "tradeoffs": [
+        "Less Mechanical Bite Than Sharper Square Profiles",
+        "Less Flat-Trajectory Directness Than Round Co-Poly Strings"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.23": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "16-28"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Medium-Low",
+    "tension_loss_sensitivity": "Medium-Low",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when surface slickness, snapback, directional control or penetration noticeably declines."
+  },
+
+  "comparison_data": {
+    "vs_round_co_poly": {
+      "mechanical_ball_grip": "Higher",
+      "snapback": "Very High",
+      "launch_angle": "Slightly Higher",
+      "spin": "Higher",
+      "trajectory": "Still Penetrating",
+      "surface_grip": "Higher"
+    },
+
+    "vs_toroline_wasabi": {
+      "shape": {
+        "snapper": "Octagonal / Eight-Sided",
+        "wasabi": "Square / Four-Sided"
+      },
+
+      "snapback": {
+        "snapper": "Higher",
+        "wasabi": "Very High"
+      },
+
+      "ball_bite": {
+        "snapper": "High",
+        "wasabi": "Very High"
+      },
+
+      "court_penetration": {
+        "snapper": "Higher",
+        "wasabi": "More Spin-Oriented"
+      },
+
+      "response": {
+        "snapper": "Softer / More Penetrating",
+        "wasabi": "More Aggressive Mechanical Grip"
+      }
+    },
+
+    "vs_toroline_vamos": {
+      "shape": "Both shaped co-poly strings",
+      "snapback": "Snapper more snapback-focused",
+      "ball_grip": "VAMOS more bite-focused",
+      "penetration": "Snapper higher",
+      "launch_angle": "Snapper lower / more penetrating"
+    }
+  },
+
+  "science_metrics": {
+    "geometry": {
+      "shape": "Octagonal",
+      "sides": 8
+    },
+
+    "spin_mechanism": [
+      "Low-Friction Snapback",
+      "String Movement",
+      "Octagonal Ball Interaction"
+    ],
+
+    "trajectory_profile": "Penetrating / Spin-Oriented",
+
+    "launch_angle_profile": "Medium",
+
+    "inter_string_friction_class": "Very Low",
+
+    "snapback_class": "Elite",
+
+    "directional_control_class": "Very High",
+
+    "performance_class": "Premium Snapback-Oriented Shaped Co-Poly"
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Seeking Maximum Snapback",
+      "Aggressive Baseliners",
+      "Players Wanting Spin With Strong Court Penetration",
+      "Players Seeking Directional Precision",
+      "Players Wanting a Softer Response Than Traditional Firm Shaped Poly",
+      "Fast Swing Speed Players"
+    ],
+
+    "avoid_for": [
+      "Players Seeking Maximum Sharp-Edge Mechanical Bite",
+      "Players Wanting Very Low Launch Round-String Trajectory",
+      "Players With Significant Arm Sensitivity",
+      "Beginners With Slow Swing Speed"
+    ],
+
+    "alternative_strings": [
+      "Toroline WASABI",
+      "Toroline VAMOS",
+      "Toroline O-TORO",
+      "Toroline O-TORO OCTA",
+      "Solinco Hyper-G",
+      "Yonex Poly Tour Rev"
+    ]
+  },
+
+  "comparison_tags": [
+    "Snapper",
+    "Octagonal",
+    "Eight-Sided",
+    "Ultra Slick",
+    "Maximum Snapback",
+    "Court Penetration",
+    "Directional Control",
+    "Soft Response",
+    "Lavender"
+  ],
+
+  "ai_keywords": [
+    "toroline",
+    "snapper",
+    "toroline snapper",
+    "1.23",
+    "17 gauge",
+    "lavender",
+    "octagonal",
+    "eight sided",
+    "8 sided",
+    "slick",
+    "snapback",
+    "spin",
+    "court penetration",
+    "directional control",
+    "soft response",
+    "co polyester"
+  ],
+
+  "target_competitors": [
+    "Toroline WASABI",
+    "Toroline VAMOS",
+    "Toroline O-TORO",
+    "Toroline O-TORO OCTA",
+    "Solinco Hyper-G",
+    "Yonex Poly Tour Rev"
+  ],
+
+  "description": {
+    "en": "Toroline Snapper is an octagonal co-polyester built around one core objective: maximizing snapback. Toroline increased the surface slickness to reduce inter-string friction and allow the string to slide and return rapidly after impact. Combined with its eight-sided profile, Snapper delivers strong spin, excellent directional control and a more penetrating ball flight while maintaining a softer response than many traditional shaped co-polys. It is available in Lavender at 1.23 mm / 17 gauge.",
+
+    "zh": "Toroline Snapper 是一款以最大化 Snapback 为核心设计的八边形共聚酯球线。Toroline 通过进一步提高球线表面的光滑度来降低主横线之间的摩擦，让球线在击球后能够更快速地滑动和回位。八边形结构同时提供足够的球面抓力，因此 Snapper 能够兼顾高旋转、优秀方向控制以及更具穿透力的球路，并且整体反馈比许多传统异形聚酯更加柔和。产品规格为 1.23 毫米 / 17，颜色为 Lavender。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Toroline Snapper",
+      "Snapback-focused positioning",
+      "Increased string slickness",
+      "Maximum snapback development goal",
+      "More penetrating ball",
+      "Exceptional directional control",
+      "Softer response",
+      "1.23 mm / 17 gauge",
+      "Lavender",
+      "Octagonal profile",
+      "Two half sets per package",
+      "6.7 m per half set",
+      "One-racquet package configuration"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendations",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
