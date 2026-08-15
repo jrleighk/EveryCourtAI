@@ -1,0 +1,420 @@
+{
+  "id": "wilson_nxt_control_16",
+  "brand": "Wilson",
+  "series": "NXT Control",
+  "model": "NXT Control 16",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Hybrid Multifilament",
+    "material": "Polyester Microfibers + Nylon Microfibers + Polyurethane",
+    "string_family": "Multifilament Hybrid",
+    "core_structure": "Polyester and Nylon Microfibers Embedded in Polyurethane",
+    "cross_section": "Round",
+    "surface": "Smooth",
+    "tour_positioning": "Comfort + Control Multifilament",
+    "official_positioning": "Premium multifilament hybrid combining polyester and nylon microfibers within a polyurethane matrix to deliver an ideal balance of comfort and control.",
+    "target_level": "Intermediate / Advanced"
+  },
+
+  "specifications": {
+    "construction": "Hybrid Multifilament",
+    "cross_section": "Round",
+    "surface": "Smooth",
+
+    "available_colors": [
+      "Natural"
+    ],
+
+    "color_availability": {
+      "Natural": {
+        "gauge_mm": 1.32,
+        "gauge_name": "16",
+        "available": true
+      }
+    },
+
+    "available_gauges": [
+      {
+        "gauge_name": "16",
+        "gauge_mm": 1.32,
+        "available": true,
+
+        "available_colors": [
+          "Natural"
+        ],
+
+        "power": 9,
+        "control": 10,
+        "spin": 7,
+        "comfort": 10,
+        "feel": 10,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "elasticity": 9,
+        "shock_absorption": 10,
+        "ball_pocketing": 10,
+        "launch_angle": "Medium",
+
+        "recommended_use": [
+          "Comfort",
+          "Control",
+          "Full Bed",
+          "Hybrid Setup",
+          "Arm-Friendly Performance"
+        ]
+      }
+    ],
+
+    "packaging": [
+      {
+        "type": "Set",
+        "length_ft": 40,
+        "length_m": 12.2
+      }
+    ]
+  },
+
+  "technology": [
+    "Polyester Microfibers",
+    "Nylon Microfibers",
+    "Polyurethane Matrix",
+    "Hybrid Multifilament Construction",
+    "Shock Absorption"
+  ],
+
+  "technology_details": {
+    "polyester_microfibers": {
+      "description": "Polyester microfibers increase control, feel and directional precision.",
+      "primary_benefits": [
+        "Control",
+        "Precision",
+        "Feel"
+      ]
+    },
+
+    "nylon_microfibers": {
+      "description": "Nylon microfibers provide comfort and improve elasticity.",
+      "primary_benefits": [
+        "Comfort",
+        "Power",
+        "Forgiveness"
+      ]
+    },
+
+    "polyurethane_matrix": {
+      "description": "Polyurethane binds the microfiber structure together while improving comfort, damping vibration and increasing shock absorption.",
+      "primary_benefits": [
+        "Shock Absorption",
+        "Comfort",
+        "Forgiveness",
+        "Soft Feel"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Comfort-Control Hybrid Multifilament",
+    "target_player": "Intermediate / Advanced",
+    "arm_friendly": true,
+    "spin_focus": false,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true,
+    "pocketing_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 10,
+    "spin": 7,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 9,
+    "tension_maintenance": 9,
+    "elasticity": 9,
+    "shock_absorption": 10,
+    "ball_pocketing": 10,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 10,
+    "spin": 7,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 9,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Soft-Medium",
+    "snapback": 6,
+    "ball_pocketing": 10,
+    "string_movement": 5,
+    "tension_stability": 9,
+    "spin_window": "Medium",
+    "predictability": 10,
+    "arm_friendliness": 10,
+    "shock_absorption": 10,
+    "directional_precision": 10,
+    "control_response": 10,
+    "forgiveness": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced"
+    ],
+
+    "swing_speed": [
+      "Medium",
+      "Medium-Fast",
+      "Fast"
+    ],
+
+    "play_style": [
+      "All Court",
+      "Baseline",
+      "Doubles",
+      "Serve & Volley"
+    ],
+
+    "special_player_profiles": [
+      "Players Wanting Polyester Control Without Full Polyester Stiffness",
+      "Players With Arm Sensitivity",
+      "Big Hitters",
+      "Players Looking For Comfort And Precision",
+      "Hybrid String Users"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson Clash",
+    "Wilson RF 01",
+    "Wilson Pro Staff",
+    "HEAD Speed",
+    "HEAD Radical",
+    "Yonex EZONE",
+    "Yonex PERCEPT",
+    "Babolat Pure Strike",
+    "Tecnifibre T-FIGHT"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Luxilon ALU Power",
+      "Luxilon Element",
+      "Wilson Revolve",
+      "Wilson Revolve Spin",
+      "Natural Gut"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Comfort",
+        "Control",
+        "Touch",
+        "Feel"
+      ],
+
+      "as_crosses": [
+        "Soften Polyester",
+        "Increase Comfort",
+        "Improve Feel",
+        "Reduce Shock"
+      ]
+    },
+
+    "hybrid_note": "Designed for players who want the control of polyester with the comfort of Wilson NXT."
+  },
+
+  "gauge_recommendation": {
+    "1.32": {
+      "gauge_name": "16",
+
+      "best_for": [
+        "Comfort",
+        "Control",
+        "Durability",
+        "Big Hitters",
+        "Full Bed"
+      ],
+
+      "tradeoffs": [
+        "Lower Spin Than Polyester",
+        "Less Snapback Than Co-Poly Strings"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.32": {
+      "heavy_topspin_hours": "6-10",
+      "club_player_hours": "18-30"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Immediate",
+    "peak_playability": "Immediate",
+    "performance_drop": "Low-Medium",
+    "tension_loss_sensitivity": "Medium-Low",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when fraying, tension loss or reduced comfort becomes noticeable."
+  },
+
+  "installation_guidelines": {
+    "handling_sensitivity": "Medium",
+
+    "manufacturer_instructions": [
+      "Handle gently during installation.",
+      "Avoid over-clamping.",
+      "Avoid crimping."
+    ]
+  },
+
+  "comparison_data": {
+    "vs_nxt_16": {
+      "control": "Higher",
+      "feel": "More Connected",
+      "comfort": "Similar",
+      "power": "Slightly Lower",
+      "polyester_influence": "Higher"
+    },
+
+    "vs_full_polyester": {
+      "comfort": "Much Higher",
+      "shock_absorption": "Much Higher",
+      "control": "Slightly Lower",
+      "arm_friendliness": "Much Higher"
+    }
+  },
+
+  "science_metrics": {
+    "material_class": "Hybrid Multifilament",
+
+    "geometry": {
+      "shape": "Round"
+    },
+
+    "comfort_class": "Very High",
+    "control_class": "Very High",
+    "shock_absorption_class": "Very High",
+    "ball_pocketing_class": "Very High",
+    "performance_class": "Premium Comfort-Control Multifilament"
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Seeking Control Without Full Polyester",
+      "Big Hitters",
+      "Players With Arm Issues",
+      "Players Wanting Comfort",
+      "Players Looking For Premium Multifilament Control"
+    ],
+
+    "avoid_for": [
+      "Players Seeking Maximum Snapback",
+      "Extreme Topspin Players",
+      "Players Wanting Firm Tour Polyester Response"
+    ],
+
+    "alternative_strings": [
+      "Wilson NXT 16",
+      "Wilson NXT 17",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG2",
+      "Babolat Xcel",
+      "Solinco Vanquish"
+    ]
+  },
+
+  "comparison_tags": [
+    "Wilson",
+    "NXT Control",
+    "Multifilament",
+    "Hybrid",
+    "Comfort",
+    "Control",
+    "Natural",
+    "1.32"
+  ],
+
+  "ai_keywords": [
+    "wilson",
+    "nxt control",
+    "wilson nxt control",
+    "1.32",
+    "16 gauge",
+    "natural",
+    "multifilament",
+    "polyester microfibers",
+    "nylon microfibers",
+    "polyurethane",
+    "comfort",
+    "control",
+    "shock absorption",
+    "big hitters"
+  ],
+
+  "target_competitors": [
+    "Tecnifibre X-One Biphase",
+    "Tecnifibre NRG2",
+    "Wilson NXT 16",
+    "Babolat Xcel",
+    "Head Velocity MLT"
+  ],
+
+  "description": {
+    "en": "Wilson NXT Control 16 combines polyester and nylon microfibers inside a polyurethane matrix to create a premium hybrid multifilament string. Polyester improves feel and directional control, while nylon enhances comfort and forgiveness. Designed for players who want the control of polyester with the comfort of Wilson NXT, it also delivers excellent shock absorption and clean response on off-center shots.",
+
+    "zh": "Wilson NXT Control 16 是一款采用聚酯微纤维、尼龙微纤维以及聚氨酯复合结构的高端多芯混合球线。聚酯提供更好的击球反馈与控制，尼龙则带来更高的舒适性和容错率，整体兼具聚酯的精准与 NXT 系列的柔和手感。它特别适合力量型球员，希望拥有聚酯控制力，同时降低对手臂负担。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Wilson NXT Control 16",
+      "Natural color",
+      "Hybrid multifilament",
+      "Polyester microfibers",
+      "Nylon microfibers",
+      "Polyurethane",
+      "Comfort and control positioning",
+      "Shock absorption",
+      "Forgiveness",
+      "Big hitters positioning",
+      "Gauge 16",
+      "1.32 mm",
+      "Set 40 ft / 12.2 m"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendation",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations"
+    ]
+  }
+}
