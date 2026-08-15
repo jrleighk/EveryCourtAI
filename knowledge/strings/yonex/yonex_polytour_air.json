@@ -1,0 +1,426 @@
+{
+  "id": "yonex_polytour_air",
+  "brand": "Yonex",
+  "series": "PolyTour",
+  "model": "PolyTour Air",
+  "category": "Co-Polyester",
+
+  "manufacturer_data": {
+    "construction": "Polyester Monofilament with HR-Elastomer",
+    "material": [
+      "Polyester",
+      "HR-Elastomer"
+    ],
+    "string_family": "PolyTour",
+    "official_positioning": "Arm-friendly and shock-absorbing polyester designed for effortless power and comfort.",
+    "target_level": "Beginner / Intermediate / Advanced",
+    "target_style": "Comfort-Oriented / All-Court",
+    "swing_speed_positioning": "Slow-to-Medium",
+    "made_in": "Japan"
+  },
+
+  "specifications": {
+    "construction": "Polyester Monofilament with HR-Elastomer",
+    "cross_section": "Round",
+    "surface": "Smooth",
+
+    "available_colors": [
+      "Sky Blue"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_name": "16L",
+        "gauge_mm": 1.25,
+        "available": true,
+        "item_code_set": "PTGA125",
+        "item_code_reel": "PTA125-2",
+
+        "power": 9,
+        "control": 8,
+        "spin": 7,
+        "comfort": 10,
+        "feel": 9,
+        "durability": 8,
+        "tension_maintenance": 8,
+        "elasticity": 10,
+        "shock_absorption": 10,
+        "ball_pocketing": 10,
+        "launch_angle": "Medium"
+      }
+    ],
+
+    "available_lengths": [
+      {
+        "type": "Set",
+        "length_m": 12
+      },
+      {
+        "type": "Reel",
+        "length_m": 200
+      }
+    ]
+  },
+
+  "technology": [
+    "HR-Elastomer",
+    "Shock Absorption",
+    "Elastic Recovery",
+    "Arm-Friendly Polyester Construction",
+    "Effortless Power"
+  ],
+
+  "technology_details": {
+    "hr_elastomer": {
+      "description": "HR-Elastomer is engineered to maintain strong repulsion and durability while reducing impact stress and producing a softer response.",
+      "primary_benefits": [
+        "Comfort",
+        "Shock Absorption",
+        "Elastic Recovery",
+        "Power",
+        "Reduced Arm Stress"
+      ]
+    },
+
+    "elastic_recovery": {
+      "description": "Yonex demonstrates that HR-Elastomer returns toward its original state after bending more effectively than conventional polyester material.",
+      "primary_benefits": [
+        "Elasticity",
+        "Recovery",
+        "Responsive Feel",
+        "Reduced Harshness"
+      ]
+    },
+
+    "comfort_power_balance": {
+      "description": "PolyTour Air combines the durability and repulsion of polyester with a softer, lighter impact feel.",
+      "primary_benefits": [
+        "Effortless Power",
+        "Comfort",
+        "Pocketing",
+        "Arm Friendliness"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Comfort-Oriented Co-Polyester",
+    "target_player": "Beginner / Intermediate / Advanced",
+    "arm_friendly": true,
+    "spin_focus": false,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "ball_pocketing_focus": true,
+    "shock_absorption_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 8,
+    "spin": 7,
+    "comfort": 10,
+    "feel": 9,
+    "durability": 8,
+    "tension_maintenance": 8,
+    "elasticity": 10,
+    "shock_absorption": 10,
+    "ball_pocketing": 10,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 8,
+    "spin": 7,
+    "comfort": 10,
+    "feel": 9,
+    "durability": 8,
+    "tension_maintenance": 8
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Very Soft",
+    "snapback": 7,
+    "ball_bite": 6,
+    "ball_pocketing": 10,
+    "string_movement": 7,
+    "tension_stability": 8,
+    "spin_window": "Medium",
+    "predictability": 9,
+    "arm_friendliness": 10,
+    "shock_absorption": 10,
+    "directional_precision": 8,
+    "stringbed_stability": 8,
+    "response": "Soft / Elastic / Comfortable"
+  },
+
+  "official_performance_map": {
+    "responsiveness": "Low-Medium",
+    "firmness": "Very Soft",
+    "ball_pocketing": "Very High",
+    "yonex_family_position": "Soft / Maximum Pocketing / Comfort-Oriented"
+  },
+
+  "official_string_parameters": {
+    "power": "High",
+    "spin": "Low-Medium",
+    "comfort": "Very High",
+    "control": "High",
+    "durability": "Very Low-Medium",
+    "source": "Yonex Official String Parameters Guide"
+  },
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate",
+      "Advanced"
+    ],
+
+    "swing_speed": [
+      "Slow",
+      "Medium"
+    ],
+
+    "play_style": [
+      "All Court",
+      "Doubles",
+      "Touch Player",
+      "Comfort-Oriented Baseline"
+    ],
+
+    "special_player_profiles": [
+      "Players Seeking Maximum Polyester Comfort",
+      "Players With Arm Sensitivity",
+      "Players Transitioning From Multifilament To Polyester",
+      "Players With Slow-to-Medium Swing Speeds",
+      "Players Wanting Effortless Power",
+      "Players Wanting More Pocketing Than Traditional Polyester"
+    ]
+  },
+
+  "tour_players": [],
+
+  "recommended_racquets": [
+    "Yonex EZONE",
+    "Yonex PERCEPT",
+    "Yonex VCORE",
+    "Wilson Clash",
+    "Wilson Blade",
+    "HEAD Boom",
+    "HEAD Speed",
+    "Babolat Pure Drive",
+    "Tecnifibre T-FIGHT"
+  ],
+
+  "gauge_recommendation": {
+    "1.25": {
+      "gauge_name": "16L",
+
+      "best_for": [
+        "Maximum Comfort",
+        "Ball Pocketing",
+        "Arm Friendliness",
+        "Easy Power",
+        "Players New To Polyester"
+      ],
+
+      "tradeoffs": [
+        "Less Mechanical Spin Than Shaped Polyester",
+        "Less Firm Control Than PolyTour Strike",
+        "Lower Durability Than Firmer PolyTour Models"
+      ]
+    }
+  },
+
+  "comparison_data": {
+    "vs_polytour_pro": {
+      "comfort": "Higher",
+      "ball_pocketing": "Higher",
+      "power": "Similar To Higher",
+      "spin": "Lower",
+      "control": "Slightly Lower",
+      "firmness": "Lower"
+    },
+
+    "vs_polytour_force": {
+      "comfort": "Much Higher",
+      "ball_pocketing": "Higher",
+      "response": "Lower",
+      "power": "Slightly Lower",
+      "firmness": "Much Lower"
+    },
+
+    "vs_polytour_fire": {
+      "comfort": "Higher",
+      "shock_absorption": "Higher",
+      "spin": "Lower",
+      "snapback": "Lower",
+      "response": "Softer"
+    },
+
+    "vs_polytour_rev": {
+      "comfort": "Much Higher",
+      "ball_pocketing": "Higher",
+      "spin": "Much Lower",
+      "ball_bite": "Much Lower",
+      "firmness": "Much Lower"
+    },
+
+    "vs_polytour_spin": {
+      "comfort": "Much Higher",
+      "power": "Higher",
+      "spin": "Much Lower",
+      "ball_bite": "Much Lower"
+    },
+
+    "vs_polytour_strike": {
+      "comfort": "Much Higher",
+      "power": "Higher",
+      "ball_pocketing": "Much Higher",
+      "control": "Lower",
+      "firmness": "Much Lower"
+    }
+  },
+
+  "science_metrics": {
+    "construction": "Polyester Monofilament with HR-Elastomer",
+
+    "spin_mechanism": [
+      "Elastic String Movement",
+      "Moderate Snapback"
+    ],
+
+    "ball_grip": "Low-Medium",
+    "snapback": "Medium",
+    "trajectory_profile": "Comfortable / Neutral",
+    "launch_angle_profile": "Medium",
+    "comfort_class": "Elite",
+    "power_class": "High",
+    "control_class": "High",
+    "firmness_class": "Very Soft",
+    "shock_absorption_class": "Elite"
+  },
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players With Arm Sensitivity",
+      "Players Seeking Soft Polyester",
+      "Players New To Polyester",
+      "Slow-to-Medium Swing Speeds",
+      "Players Wanting Easy Power",
+      "Players Wanting Maximum Ball Pocketing"
+    ],
+
+    "avoid_for": [
+      "Extreme Topspin Players",
+      "Players Seeking Maximum Mechanical Bite",
+      "Very Fast Swing Players Wanting Firm Control",
+      "Frequent String Breakers"
+    ],
+
+    "alternative_strings": [
+      "Yonex PolyTour Pro",
+      "Wilson Revolve",
+      "Luxilon Element",
+      "Solinco Hyper-G Soft",
+      "Toroline Truffle X Hybrid",
+      "MSV Focus Hex Plus 38"
+    ]
+  },
+
+  "comparison_tags": [
+    "Yonex",
+    "PolyTour Air",
+    "HR-Elastomer",
+    "Polyester",
+    "Comfort",
+    "Arm Friendly",
+    "Shock Absorption",
+    "Ball Pocketing",
+    "Soft Poly",
+    "Sky Blue",
+    "1.25"
+  ],
+
+  "ai_keywords": [
+    "yonex",
+    "polytour air",
+    "poly tour air",
+    "hr elastomer",
+    "soft polyester",
+    "arm friendly polyester",
+    "shock absorption",
+    "comfort",
+    "ball pocketing",
+    "easy power",
+    "slow swing",
+    "medium swing",
+    "1.25",
+    "sky blue",
+    "ptga125",
+    "pta125-2"
+  ],
+
+  "target_competitors": [
+    "Yonex PolyTour Pro",
+    "Luxilon Element",
+    "Solinco Hyper-G Soft",
+    "MSV Focus Hex Plus 38",
+    "Toroline Soft Co-Poly Hybrids"
+  ],
+
+  "description": {
+    "en": "Yonex PolyTour Air 125 is the comfort-oriented member of the PolyTour family. It combines polyester monofilament with HR-Elastomer to reduce impact stress while maintaining repulsion and durability. Designed for slow-to-medium swing speeds, it provides effortless power, excellent shock absorption and some of the deepest ball pocketing in the Yonex polyester lineup. Compared with firmer strings such as PolyTour Strike, Rev or Spin, PolyTour Air offers a much softer and more arm-friendly response.",
+
+    "zh": "Yonex PolyTour Air 125 是 PolyTour 系列中最强调舒适性与 Arm-Friendly 的聚酯球线之一。它在 Polyester Monofilament 中加入 HR-Elastomer 高弹性材料，用于降低击球冲击和手臂负担，同时保留聚酯球线应有的回弹力和耐久性。官方定位主要面向 Slow-to-Medium Swing Speed 球员，提供 Effortless Power、优秀的 Shock Absorption 和非常明显的 Ball Pocketing。根据 Yonex 官方性能图，它位于整个 PolyTour 家族最偏 Soft 和 Ball-Pocketing 的区域之一，明显比 Strike、Rev、Spin 等型号更加柔和。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_official_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Yonex PolyTour Air 125",
+      "Arm-friendly positioning",
+      "Shock-absorbing positioning",
+      "HR-Elastomer",
+      "Effortless power",
+      "Slow-to-medium swing speeds",
+      "Comfortable string positioning",
+      "Sky Blue",
+      "16L / 1.25 mm",
+      "Set 12 m",
+      "Reel 200 m",
+      "Polyester Monofilament",
+      "HR-Elastomer material",
+      "Made in Japan",
+      "PTGA125",
+      "PTA125-2",
+      "HR-Elastomer retains repulsion power",
+      "HR-Elastomer retains durability",
+      "Reduced stress positioning",
+      "Soft impact feel",
+      "Elastic recovery demonstration",
+      "Official Yonex performance map"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Official Performance Map",
+      "Official String Parameters",
+      "Recommended Players",
+      "Recommended Racquets",
+      "Gauge Recommendation",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
