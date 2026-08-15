@@ -1,0 +1,443 @@
+{
+  "id": "toroline_stevie_blend_mint_purple",
+  "brand": "Toroline",
+  "series": "STEVIE Blend",
+  "model": "STEVIE MINT/PURPLE",
+  "category": "Hybrid String Set",
+
+  "curation": {
+    "designer": "Steve Johnson",
+    "role": "Toroline Chief String Officer",
+    "curation_type": "Signature Technical Hybrid"
+  },
+
+  "manufacturer_data": {
+    "construction": "Hybrid",
+    "main_string": "Toroline O-TORO TOUR 1.23",
+    "cross_string": "Toroline Truffle X 1.30",
+    "official_positioning": "Toroline's most technical hybrid, combining exceptional precision, stability, feel and arm-friendly comfort.",
+    "target_level": "Advanced / Tournament / Technical Hybrid Users"
+  },
+
+  "specifications": {
+    "construction": "Shaped Co-Poly + Ultra-Soft Polymer Hybrid",
+
+    "packaging": {
+      "type": "Two Half Sets",
+      "half_sets_per_package": 2,
+      "length_per_half_set_m": 6.7,
+      "intended_racquets": 1,
+      "total_length_m": 13.4
+    },
+
+    "mains": {
+      "string": "Toroline O-TORO TOUR",
+      "gauge_mm": 1.23,
+      "gauge_name": "17",
+      "color": "Mint",
+      "shape": "Hexagonal",
+      "material": "Co-Polyester",
+      "flex_class": "Tour",
+      "primary_role": [
+        "Control",
+        "Stability",
+        "Spin",
+        "Directional Precision"
+      ]
+    },
+
+    "crosses": {
+      "string": "Toroline Truffle X",
+      "gauge_mm": 1.30,
+      "gauge_name": "16",
+      "color": "Purple",
+      "shape": "Round",
+      "material": "Ultra-Soft Non-Polyester Polymer",
+      "primary_role": [
+        "Comfort",
+        "Feel",
+        "Ball Pocketing",
+        "Shock Reduction"
+      ]
+    }
+  },
+
+  "component_strings": {
+    "o_toro_tour_123_mint": {
+      "role": "Mains",
+      "construction": "Firm Hexagonal Co-Polyester",
+      "primary_benefits": [
+        "Ultimate Control",
+        "High Stability",
+        "Spin",
+        "Directional Precision"
+      ]
+    },
+
+    "truffle_x_130_purple": {
+      "role": "Crosses",
+      "construction": "Ultra-Soft Round Polymer",
+      "primary_benefits": [
+        "Arm-Friendly Comfort",
+        "Ball Pocketing",
+        "Feel",
+        "Elasticity",
+        "Shock Absorption"
+      ]
+    }
+  },
+
+  "official_hybrid_configuration": {
+    "mains": "O-TORO TOUR 1.23 MINT",
+    "crosses": "TRUFFLE X 1.30 PURPLE",
+
+    "official_result": [
+      "Exceptional Precision",
+      "High Stability",
+      "Enhanced Feel",
+      "Improved Comfort",
+      "Strong Spin",
+      "Ball Pocketing"
+    ]
+  },
+
+  "technology": [
+    "O-TORO TOUR Hexagonal Control Platform",
+    "Tour-Flex Stability",
+    "Truffle X Ultra-Soft Polymer",
+    "Hybrid Pocketing Optimization",
+    "Precision and Comfort Integration"
+  ],
+
+  "design_profile": {
+    "string_type": "Technical Control Comfort Hybrid",
+    "target_player": "Advanced / Tournament",
+    "arm_friendly": true,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": false,
+    "comfort_focus": true,
+    "feel_focus": true,
+    "durability_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true,
+    "precision_focus": true,
+    "stability_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 10,
+    "spin": 9,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 8,
+    "tension_maintenance": 9,
+    "elasticity": 9,
+    "ball_pocketing": 10,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 8,
+    "control": 10,
+    "spin": 9,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 8,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium",
+    "snapback": 9,
+    "ball_pocketing": 10,
+    "string_movement": 2,
+    "tension_stability": 9,
+    "spin_window": "High",
+    "predictability": 10,
+    "arm_friendliness": 10,
+    "directional_precision": 10,
+    "surface_grip": 10,
+    "stringbed_stability": 10,
+    "shock_absorption": 10,
+    "connected_feel": 10,
+    "plushness": 9
+  },
+
+  "recommended_player": {
+    "level": [
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "All Court",
+      "Control-Oriented Player",
+      "Technical Hybrid User"
+    ],
+
+    "special_player_profiles": [
+      "Players Wanting O-TORO TOUR Control With More Comfort",
+      "Players Seeking High Precision Without Full-Poly Harshness",
+      "Players Wanting Better Ball Pocketing",
+      "Players With Mild Arm Sensitivity",
+      "Players Seeking Stable Hybrid Response"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson RF 01",
+    "Wilson Pro Staff",
+    "HEAD Speed",
+    "HEAD Radical",
+    "HEAD Gravity",
+    "Yonex PERCEPT",
+    "Yonex EZONE",
+    "Babolat Pure Strike",
+    "Tecnifibre TF-40",
+    "Tecnifibre T-FIGHT",
+    "Dunlop CX"
+  ],
+
+  "stringing_recommendation": {
+    "mains": {
+      "string": "O-TORO TOUR 1.23",
+      "recommended_tension_lbs": {
+        "min": 50,
+        "max": 52
+      },
+      "kg_approx": {
+        "min": 22.7,
+        "max": 23.6
+      }
+    },
+
+    "crosses": {
+      "string": "Truffle X 1.30",
+      "recommended_tension_lbs": {
+        "min": 50,
+        "max": 55
+      },
+      "kg_approx": {
+        "min": 22.7,
+        "max": 24.9
+      },
+
+      "prestretch": {
+        "recommended": true,
+        "percent": {
+          "min": 5,
+          "max": 10
+        }
+      }
+    },
+
+    "general_note": "Truffle X should be tensioned similarly to natural gut or multifilament."
+  },
+
+  "installation_guidelines": {
+    "truffle_x_handling": [
+      "Use gentle knot tie-off technique.",
+      "Do not overpull knots.",
+      "Account for significant elasticity and elongation.",
+      "Avoid crushing or damaging the string during installation."
+    ],
+
+    "knot_tie_off": {
+      "maximum_force_lbs": 35,
+      "applies_to": "Truffle X"
+    }
+  },
+
+  "estimated_lifespan": {
+    "hybrid_setup": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "16-28"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Immediate",
+    "peak_playability": "Immediate",
+    "performance_drop": "Low-Medium",
+    "tension_loss_sensitivity": "Low-Medium",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when O-TORO TOUR snapback, Truffle X pocketing, or overall directional stability noticeably declines."
+  },
+
+  "comparison_data": {
+    "vs_full_bed_o_toro_tour": {
+      "comfort": "Much Higher",
+      "pocketing": "Higher",
+      "feel": "Softer / More Plush",
+      "control": "Slightly Softer",
+      "spin": "Slightly Lower",
+      "arm_friendliness": "Much Higher"
+    },
+
+    "vs_o_toro_truffle_x_hybrid": {
+      "control": "Higher",
+      "stability": "Higher",
+      "launch_angle": "Lower / More Controlled",
+      "comfort": "Similar",
+      "spin": "Slightly More Controlled",
+      "target_player": "More Advanced"
+    },
+
+    "vs_a5_truffle_x_hybrid": {
+      "control": "Higher",
+      "stability": "Higher",
+      "mechanical_ball_grip": "Higher",
+      "comfort": "Slightly Lower",
+      "trajectory": "More Controlled"
+    }
+  },
+
+  "science_metrics": {
+    "main_spin_mechanism": [
+      "Hexagonal Mechanical Grip",
+      "Snapback",
+      "Tour-Flex Stability"
+    ],
+
+    "cross_comfort_mechanism": [
+      "Truffle X Elasticity",
+      "Long Dwell Time",
+      "Shock Absorption",
+      "Ball Pocketing"
+    ],
+
+    "trajectory_profile": "Controlled / Penetrating",
+
+    "launch_angle_profile": "Medium",
+
+    "precision_class": "Very High",
+
+    "comfort_class": "Very High",
+
+    "hybrid_class": "Advanced Technical Hybrid"
+  },
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Advanced Players Wanting Precision With Comfort",
+      "Players Seeking O-TORO TOUR Performance Without Full-Poly Harshness",
+      "Players Wanting Stable Spin and Better Pocketing",
+      "Technical Hybrid Users",
+      "Players With Fast Swing Speeds",
+      "Players Seeking a Controlled Plush Response"
+    ],
+
+    "avoid_for": [
+      "Beginners With Slow Swing Speed",
+      "Players Seeking Maximum Full-Poly Durability",
+      "Players Wanting Extremely Soft Full-Bed Feel",
+      "Frequent String Breakers"
+    ],
+
+    "alternative_strings": [
+      "Toroline O-TORO TOUR Full Bed",
+      "Toroline O-TORO + Truffle X",
+      "Toroline A5 + Truffle X",
+      "Toroline CASH",
+      "Natural Gut + Firm Co-Poly Hybrid"
+    ]
+  },
+
+  "comparison_tags": [
+    "STEVIE Blend",
+    "Steve Johnson",
+    "O-TORO TOUR",
+    "Truffle X",
+    "Hybrid",
+    "Precision",
+    "Stability",
+    "Comfort",
+    "Pocketing",
+    "Mint Purple"
+  ],
+
+  "ai_keywords": [
+    "toroline",
+    "stevie",
+    "stevie blend",
+    "stevie mint purple",
+    "steve johnson",
+    "o toro tour 1.23",
+    "truffle x 1.30",
+    "mint",
+    "purple",
+    "hybrid",
+    "control",
+    "stability",
+    "precision",
+    "comfort",
+    "pocketing",
+    "50 52 lbs",
+    "50 55 lbs",
+    "5 10 percent prestretch"
+  ],
+
+  "description": {
+    "en": "Toroline STEVIE MINT/PURPLE is a technical hybrid designed by Toroline Chief String Officer Steve Johnson. It combines O-TORO TOUR 1.23 in the mains for firm hexagonal control, stability and spin with Truffle X 1.30 in the crosses for ultra-soft comfort, elasticity, feel and ball pocketing. The result is a highly precise and stable hybrid that preserves advanced-player control while reducing the harshness of a full polyester setup. Toroline recommends approximately 50-52 lbs for O-TORO TOUR and 50-55 lbs with 5-10% prestretch for Truffle X.",
+
+    "zh": "Toroline STEVIE MINT/PURPLE 是由 Toroline Chief String Officer Steve Johnson 设计的一套技术型 Hybrid。主线采用 O-TORO TOUR 1.23 Mint，以偏硬六边形结构提供控制、稳定和旋转；横线采用 Truffle X 1.30 Purple，以超柔软现代 Polymer 提供舒适、弹性、Pocketing 和触球感。整体目标是在保留高级球员所需要的精准和稳定的同时，显著降低全聚酯线床的硬感。Toroline 建议 O-TORO TOUR 约 50-52 lbs，Truffle X 约 50-55 lbs，并对 Truffle X 使用 5-10% 预拉。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Toroline STEVIE MINT/PURPLE",
+      "Designed by Steve Johnson",
+      "Toroline Chief String Officer reference",
+      "O-TORO TOUR 1.23 mains",
+      "Mint mains",
+      "Firm hexagonal co-poly",
+      "Control",
+      "Stability",
+      "Spin",
+      "Truffle X 1.30 crosses",
+      "Purple crosses",
+      "Ultra-soft round polymer",
+      "Comfort",
+      "Feel",
+      "Ball pocketing",
+      "Most technical Toroline hybrid positioning",
+      "Exceptional precision",
+      "Exceptional stability",
+      "Exceptional feel",
+      "Truffle X natural-gut/multifilament tension reference",
+      "Truffle X 50-55 lbs starting reference",
+      "Truffle X 5-10% prestretch",
+      "O-TORO TOUR 50-52 lbs recommendation",
+      "Two half sets per package",
+      "6.7 m per half set",
+      "One-racquet package configuration"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Stringing Recommendation",
+      "Installation Guidelines",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
