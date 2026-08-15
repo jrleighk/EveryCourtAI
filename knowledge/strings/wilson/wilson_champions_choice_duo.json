@@ -1,0 +1,594 @@
+{
+  "id": "wilson_champions_choice_duo",
+  "brand": "Wilson",
+  "series": "Champion's Choice",
+  "model": "Champion's Choice Duo",
+  "category": "Hybrid String Set",
+
+  "manufacturer_data": {
+    "construction": "Natural Gut + Co-Polyester Hybrid",
+    "main_components": [
+      "Wilson Natural Gut 16",
+      "Luxilon ALU Power Rough 17"
+    ],
+    "string_family": "Hybrid",
+    "official_positioning": "Premium hybrid combining the power and feel of Wilson Natural Gut with the durability and spin of Luxilon ALU Power Rough.",
+    "target_level": "Advanced / Tournament / Professional",
+    "reversible_configuration": true,
+    "signature_player_reference": "Roger Federer"
+  },
+
+  "specifications": {
+    "construction": "Natural Gut + Textured Co-Polyester Hybrid",
+
+    "available_colors": [
+      "Silver",
+      "Silver"
+    ],
+
+    "components": {
+      "wilson_natural_gut_16": {
+        "string": "Wilson Natural Gut",
+        "gauge_name": "16",
+        "gauge_mm": 1.30,
+        "color": "Natural / Manufacturer Package Color Reference: Silver",
+        "construction": "Natural Gut",
+        "shape": "Round",
+        "primary_role": [
+          "Power",
+          "Feel",
+          "Comfort",
+          "Ball Pocketing",
+          "Elasticity",
+          "Touch"
+        ]
+      },
+
+      "luxilon_alu_power_rough_17": {
+        "string": "Luxilon ALU Power Rough",
+        "gauge_name": "17",
+        "gauge_mm": 1.25,
+        "color": "Silver",
+        "construction": "Textured Co-Polyester Monofilament",
+        "shape": "Round / Rough Textured",
+        "surface": "Rough / Textured",
+        "primary_role": [
+          "Spin",
+          "Control",
+          "Durability",
+          "Snapback",
+          "Directional Stability"
+        ]
+      }
+    },
+
+    "component_gauges": {
+      "natural_gut": {
+        "gauge_name": "16",
+        "gauge_mm": 1.30
+      },
+      "alu_power_rough": {
+        "gauge_name": "17",
+        "gauge_mm": 1.25
+      }
+    },
+
+    "packaging": [
+      {
+        "type": "Hybrid Set",
+        "length_ft": 40,
+        "length_m": 12.2
+      }
+    ]
+  },
+
+  "official_hybrid_configuration": {
+    "reversible": true,
+
+    "federer_configuration": {
+      "mains": "Wilson Natural Gut 16 / 1.30",
+      "crosses": "Luxilon ALU Power Rough 17 / 1.25",
+      "official_player_reference": "Roger Federer",
+      "expected_character": [
+        "Softer Feel",
+        "Exceptional Playability",
+        "High Power",
+        "Maximum Pocketing",
+        "High Comfort",
+        "Controlled Spin"
+      ]
+    },
+
+    "durability_configuration": {
+      "mains": "Luxilon ALU Power Rough 17 / 1.25",
+      "crosses": "Wilson Natural Gut 16 / 1.30",
+      "expected_character": [
+        "Higher Durability",
+        "More Control",
+        "More Polyester-Dominant Response",
+        "Higher Spin",
+        "Firm Main Response"
+      ]
+    }
+  },
+
+  "technology": [
+    "Natural Gut Elasticity",
+    "Luxilon ALU Power Rough Co-Polyester",
+    "Natural Gut / Polyester Hybrid Architecture",
+    "Textured Polyester Spin Support",
+    "Reversible Main-Cross Configuration",
+    "Professional-Level Hybrid Tuning"
+  ],
+
+  "technology_details": {
+    "natural_gut_component": {
+      "description": "Wilson Natural Gut provides exceptional elasticity, power, comfort, ball pocketing and touch.",
+      "primary_benefits": [
+        "Power",
+        "Comfort",
+        "Feel",
+        "Ball Pocketing",
+        "Elasticity",
+        "Touch"
+      ]
+    },
+
+    "alu_power_rough_component": {
+      "description": "Luxilon ALU Power Rough adds the firmer response, spin, durability and directional stability of a performance co-polyester.",
+      "primary_benefits": [
+        "Spin",
+        "Control",
+        "Durability",
+        "Snapback",
+        "Precision"
+      ]
+    },
+
+    "hybrid_interaction": {
+      "description": "The natural gut and polyester components balance elasticity and pocketing with polyester control, spin and stability. Changing the main-string orientation significantly changes the overall character of the stringbed.",
+      "primary_benefits": [
+        "Power-Control Balance",
+        "Spin",
+        "Comfort",
+        "Feel",
+        "Directional Precision"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Premium Natural Gut / Co-Polyester Hybrid",
+    "target_player": "Advanced / Tournament / Professional",
+    "arm_friendly": true,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true,
+    "pocketing_focus": true,
+    "precision_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 10,
+    "control": 10,
+    "spin": 9,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 9,
+    "tension_maintenance": 10,
+    "elasticity": 10,
+    "shock_absorption": 10,
+    "ball_pocketing": 10,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 10,
+    "control": 10,
+    "spin": 9,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 9,
+    "tension_maintenance": 10
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium-Soft",
+    "snapback": 9,
+    "ball_pocketing": 10,
+    "string_movement": 8,
+    "tension_stability": 10,
+    "spin_window": "High",
+    "predictability": 10,
+    "arm_friendliness": 10,
+    "shock_absorption": 10,
+    "directional_precision": 10,
+    "stringbed_stability": 10,
+    "plushness": 10,
+    "connected_feel": 10,
+    "touch": 10,
+    "hybrid_versatility": 10
+  },
+
+  "stringing_recommendation": {
+    "federer_style_setup": {
+      "mains": "Wilson Natural Gut 16 / 1.30",
+      "crosses": "Luxilon ALU Power Rough 17 / 1.25",
+      "best_for": [
+        "Power",
+        "Feel",
+        "Comfort",
+        "Pocketing",
+        "Playability"
+      ]
+    },
+
+    "durability_setup": {
+      "mains": "Luxilon ALU Power Rough 17 / 1.25",
+      "crosses": "Wilson Natural Gut 16 / 1.30",
+      "best_for": [
+        "Durability",
+        "Control",
+        "Spin",
+        "Firm Response"
+      ]
+    },
+
+    "configuration_note": "Wilson specifically identifies Natural Gut mains with ALU Power Rough crosses as Roger Federer's configuration, while ALU Power Rough mains are recommended when greater durability is the priority."
+  },
+
+  "recommended_player": {
+    "level": [
+      "Advanced",
+      "Tournament",
+      "Professional"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "All Court",
+      "Aggressive Baseliner",
+      "Serve & Volley",
+      "Doubles",
+      "Touch Player",
+      "Precision-Oriented Player"
+    ],
+
+    "special_player_profiles": [
+      "Players Seeking Premium Natural Gut Feel With Polyester Control",
+      "Players Wanting Maximum Pocketing",
+      "Players Seeking High Power Without Losing Precision",
+      "Advanced All-Court Players",
+      "Players Wanting More Comfort Than Full Polyester",
+      "Players Seeking Professional-Level Hybrid Performance"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Pro Staff",
+    "Wilson RF 01",
+    "Wilson Blade",
+    "HEAD Speed",
+    "HEAD Prestige",
+    "HEAD Radical",
+    "Yonex PERCEPT",
+    "Yonex EZONE",
+    "Babolat Pure Strike",
+    "Tecnifibre TF-40",
+    "Tecnifibre T-FIGHT",
+    "Dunlop CX"
+  ],
+
+  "hybrid_physics": {
+    "natural_gut_component": {
+      "string": "Wilson Natural Gut",
+      "gauge_mm": 1.30,
+      "primary_effects": [
+        "High Elastic Energy Return",
+        "Ball Pocketing",
+        "Comfort",
+        "Touch",
+        "Power"
+      ]
+    },
+
+    "poly_component": {
+      "string": "Luxilon ALU Power Rough",
+      "gauge_mm": 1.25,
+      "primary_effects": [
+        "Snapback",
+        "Spin",
+        "Control",
+        "Directional Stability",
+        "Durability"
+      ]
+    },
+
+    "combined_effect": [
+      "Premium Power-Control Balance",
+      "High Spin",
+      "Exceptional Pocketing",
+      "Excellent Comfort",
+      "Precise Response"
+    ]
+  },
+
+  "configuration_effects": {
+    "natural_gut_in_mains": {
+      "power": 10,
+      "control": 9,
+      "spin": 9,
+      "comfort": 10,
+      "feel": 10,
+      "durability": 8,
+      "tension_maintenance": 10,
+      "ball_pocketing": 10,
+      "response": "Plush / Powerful / Connected"
+    },
+
+    "alu_power_rough_in_mains": {
+      "power": 9,
+      "control": 10,
+      "spin": 10,
+      "comfort": 9,
+      "feel": 9,
+      "durability": 10,
+      "tension_maintenance": 9,
+      "ball_pocketing": 9,
+      "response": "Firm / Controlled / Spin-Oriented"
+    }
+  },
+
+  "estimated_lifespan": {
+    "natural_gut_mains_configuration": {
+      "heavy_topspin_hours": "8-15",
+      "club_player_hours": "20-40"
+    },
+
+    "alu_power_rough_mains_configuration": {
+      "heavy_topspin_hours": "10-18",
+      "club_player_hours": "22-42"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Immediate / Short",
+    "peak_playability": "Immediate",
+    "performance_drop": "Low",
+    "tension_loss_sensitivity": "Low",
+    "playability_duration": "Excellent",
+    "recommended_monitoring": "Monitor natural gut for fraying and moisture-related damage, and replace when ALU Power Rough loses snapback or the overall hybrid response becomes inconsistent."
+  },
+
+  "comparison_data": {
+    "vs_full_bed_natural_gut": {
+      "spin": "Higher",
+      "control": "Higher",
+      "durability_against_controlled_full_swings": "Higher",
+      "power": "Slightly Lower",
+      "comfort": "Slightly Lower",
+      "snapback": "Higher"
+    },
+
+    "vs_full_bed_alu_power_rough": {
+      "comfort": "Much Higher",
+      "power": "Higher",
+      "pocketing": "Much Higher",
+      "touch": "Much Higher",
+      "shock_absorption": "Much Higher"
+    },
+
+    "vs_duo_power": {
+      "feel": "Higher",
+      "comfort": "Higher",
+      "pocketing": "Higher",
+      "natural_response": "Much Higher",
+      "price_positioning": "More Premium",
+      "primary_identity": {
+        "champions_choice_duo": "Natural Gut Feel / Premium Playability / Control",
+        "duo_power": "Explosive Multifilament / Polyester Power"
+      }
+    },
+
+    "vs_duo_feel": {
+      "power": "Higher",
+      "feel": "Higher",
+      "tension_stability": "Higher",
+      "premium_material_level": "Higher",
+      "primary_identity": {
+        "champions_choice_duo": "Natural Gut / Professional Hybrid",
+        "duo_feel": "Comfort / Vibration Reduction Hybrid"
+      }
+    },
+
+    "vs_duo_control": {
+      "comfort": "Higher",
+      "power": "Higher",
+      "feel": "Higher",
+      "control": "Comparable",
+      "spin": "Comparable High",
+      "primary_identity": {
+        "champions_choice_duo": "Premium All-Court Balance",
+        "duo_control": "Control / Spin / Tension Stability"
+      }
+    }
+  },
+
+  "science_metrics": {
+    "hybrid_type": "Natural Gut + Textured Co-Polyester",
+
+    "performance_mechanisms": [
+      "Natural Gut Elastic Energy Return",
+      "Natural Gut Ball Pocketing",
+      "Textured Polyester Spin",
+      "Polyester Snapback",
+      "Polyester Directional Stability"
+    ],
+
+    "trajectory_profile": "Balanced / Penetrating",
+
+    "launch_angle_profile": "Medium",
+
+    "power_class": "Very High",
+    "comfort_class": "Very High",
+    "feel_class": "Extreme",
+    "spin_class": "High",
+    "control_class": "Very High",
+    "tension_stability_class": "Very High",
+    "hybrid_class": "Professional Natural Gut / Polyester Hybrid"
+  },
+
+  "player_reference": {
+    "player": "Roger Federer",
+    "relationship": "Manufacturer-stated string choice",
+    "official_configuration": {
+      "mains": "Wilson Natural Gut 16 / 1.30",
+      "crosses": "Luxilon ALU Power Rough 17 / 1.25"
+    },
+    "configuration_reason": [
+      "Softer Feel",
+      "Superb Playability"
+    ],
+    "confidence": "Official Manufacturer Claim"
+  },
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Advanced All-Court Players",
+      "Players Seeking Premium Natural Gut Feel",
+      "Players Wanting High Power With Excellent Control",
+      "Players Seeking Exceptional Pocketing And Touch",
+      "Players Wanting Polyester Spin Without Full-Poly Harshness",
+      "Players Seeking Professional-Level Hybrid Performance"
+    ],
+
+    "avoid_for": [
+      "Budget-Conscious Players",
+      "Players Frequently Playing In Wet Conditions Without Proper String Protection",
+      "Players Seeking Maximum Full-Poly Durability",
+      "Beginners Who Do Not Benefit From Premium Hybrid Performance"
+    ],
+
+    "alternative_strings": [
+      "Wilson Duo Power",
+      "Wilson Duo Feel",
+      "Wilson Duo Control",
+      "Wilson Natural Gut + Luxilon ALU Power",
+      "Wilson NXT Power + Luxilon ALU Power"
+    ]
+  },
+
+  "comparison_tags": [
+    "Wilson",
+    "Champion's Choice Duo",
+    "Champions Choice",
+    "Natural Gut",
+    "Luxilon ALU Power Rough",
+    "Hybrid",
+    "Roger Federer",
+    "Power",
+    "Feel",
+    "Spin",
+    "Control",
+    "Pocketing",
+    "Silver",
+    "1.30",
+    "1.25"
+  ],
+
+  "ai_keywords": [
+    "wilson",
+    "champions choice duo",
+    "champion's choice duo",
+    "wilson champions choice",
+    "roger federer",
+    "federer string",
+    "natural gut",
+    "wilson natural gut",
+    "luxilon alu power rough",
+    "alu power rough",
+    "16 gauge",
+    "17 gauge",
+    "1.30",
+    "1.25",
+    "silver",
+    "hybrid",
+    "gut poly hybrid",
+    "natural gut poly hybrid",
+    "power",
+    "feel",
+    "spin",
+    "durability",
+    "playability",
+    "pocketing"
+  ],
+
+  "target_competitors": [
+    "Natural Gut + Luxilon ALU Power",
+    "Natural Gut + Luxilon 4G",
+    "Wilson Duo Power",
+    "Premium Natural Gut / Polyester Hybrid Setups"
+  ],
+
+  "description": {
+    "en": "Wilson Champion's Choice Duo is a premium natural-gut and polyester hybrid combining Wilson Natural Gut 16 / 1.30 mm with Luxilon ALU Power Rough 17 / 1.25 mm. Wilson identifies this combination as Roger Federer's string choice, with Natural Gut installed in the mains and ALU Power Rough in the crosses for a softer feel, exceptional pocketing and superb playability. Players seeking more durability can reverse the configuration and install ALU Power Rough in the mains. The hybrid combines the power, elasticity and touch of natural gut with the spin, control and durability of textured performance polyester.",
+
+    "zh": "Wilson Champion's Choice Duo 是一套高端 Natural Gut + Polyester 官方 Hybrid，由 Wilson Natural Gut 16 / 1.30 毫米与 Luxilon ALU Power Rough 17 / 1.25 毫米组成。Wilson 将其称为 Roger Federer 的球线选择：Natural Gut 放在主线、ALU Power Rough 放在横线，以获得更加柔和的手感、优秀的 Ball Pocketing、力量以及非常高的 Playability。如果球员更重视耐久，则可以把 ALU Power Rough 放在主线。整体上，这套 Hybrid 将天然肠线的弹性、力量、舒适和 Touch，与 ALU Power Rough 的 Spin、Control、Snapback 和 Durability 结合，是典型的专业级 Natural Gut / Polyester Hybrid。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Wilson Champion's Choice Duo",
+      "Silver / Silver color listing",
+      "Roger Federer string choice positioning",
+      "Wilson Natural Gut",
+      "Natural Gut 16 / 1.30 mm",
+      "Luxilon ALU Power Rough",
+      "ALU Power Rough 17 / 1.25 mm",
+      "Natural Gut power positioning",
+      "Natural Gut feel positioning",
+      "ALU Power Rough durability positioning",
+      "ALU Power Rough spin positioning",
+      "Roger Federer uses Natural Gut in mains",
+      "Roger Federer uses ALU Power Rough in crosses",
+      "Softer feel positioning with Natural Gut mains",
+      "Superb playability positioning",
+      "ALU Power Rough mains recommended for better durability",
+      "Set 40 ft / 12.2 m"
+    ],
+
+    "data_quality_notes": [
+      "The supplied product page displays 'Gauge 1.30' and 'mm 16', which appears to have the gauge and millimeter field values reversed. The component description clearly identifies Wilson Natural Gut as 16 / 1.30 mm and Luxilon ALU Power Rough as 17 / 1.25 mm, so the database records those component specifications.",
+      "The supplied color listing states Silver / Silver. Wilson Natural Gut is normally visually natural in appearance, but this database preserves the supplied official color listing while separately identifying the Natural Gut component by its material."
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Stringing Recommendation",
+      "Recommended Racquets",
+      "Hybrid Physics",
+      "Configuration Effects",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "Comparison Data",
+      "Science Metrics",
+      "Player Reference",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
