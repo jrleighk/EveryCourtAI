@@ -1,0 +1,271 @@
+{
+  "id": "baseline_aggressive",
+  "category": "Playing Style",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
+
+  "style": {
+    "name": {
+      "en": "Aggressive Baseliner",
+      "zh": "进攻型底线球员"
+    },
+
+    "description": {
+      "en": "Controls rallies from the baseline through aggressive groundstrokes, early ball striking and offensive court positioning.",
+      "zh": "通过积极的底线抽击、提前击球和主动站位控制回合，是现代网球最典型的打法之一。"
+    }
+  },
+
+  "court_position": {
+    "primary": "Baseline",
+    "secondary": "Inside Baseline",
+
+    "net_frequency": "Medium",
+
+    "preferred_rally_length": "Short to Medium"
+  },
+
+  "playing_identity": {
+
+    "offensive_level": 10,
+
+    "defensive_level": 5,
+
+    "risk_tolerance": 8,
+
+    "initiative": 10,
+
+    "consistency": 7,
+
+    "transition_to_net": 6
+  },
+
+  "stroke_characteristics": {
+
+    "forehand": "Primary Weapon",
+
+    "backhand": "Aggressive",
+
+    "serve": "Offensive",
+
+    "return": "Attacking",
+
+    "volley": "Situational",
+
+    "slice_usage": "Occasional"
+  },
+
+  "typical_ball_characteristics": {
+
+    "pace": 9,
+
+    "spin": 8,
+
+    "depth": 9,
+
+    "trajectory": "Medium",
+
+    "net_clearance": "Medium",
+
+    "court_penetration": 10
+  },
+
+  "preferred_racquet_dna": {
+
+    "power": 7,
+
+    "control": 9,
+
+    "spin": 8,
+
+    "stability": 9,
+
+    "maneuverability": 7,
+
+    "forgiveness": 7,
+
+    "feel": 8
+  },
+
+  "preferred_string_dna": {
+
+    "power": 7,
+
+    "control": 10,
+
+    "spin": 9,
+
+    "snapback": 9,
+
+    "durability": 9,
+
+    "comfort": 6,
+
+    "ball_pocketing": 7
+  },
+
+  "recommended_string_families": [
+
+    "Co-Polyester",
+
+    "Soft Co-Polyester",
+
+    "Shaped Polyester",
+
+    "Poly/Poly Hybrid"
+  ],
+
+  "recommended_examples": [
+
+    "Solinco Confidential",
+
+    "Solinco Tour Bite",
+
+    "Solinco Hyper-G",
+
+    "Yonex PolyTour Rev",
+
+    "Yonex PolyTour Pro",
+
+    "Luxilon ALU Power",
+
+    "Luxilon 4G Soft",
+
+    "Toroline O-TORO",
+
+    "Toroline O-TORO TOUR",
+
+    "Head Lynx Tour",
+
+    "Babolat RPM Blast",
+
+    "Babolat RPM Power"
+  ],
+
+  "recommended_tension": {
+
+    "poly": "47-51 lbs",
+
+    "soft_poly": "46-50 lbs",
+
+    "hybrid": "49/47 lbs"
+  },
+
+  "recommended_racquet_examples": [
+
+    "Wilson Blade 98",
+
+    "Yonex Percept 97",
+
+    "Yonex VCORE 98",
+
+    "Babolat Pure Strike",
+
+    "Head Radical Pro",
+
+    "Tecnifibre TF40",
+
+    "Wilson RF 01",
+
+    "Head Speed Pro"
+  ],
+
+  "ai_matching_priority": {
+
+    "control": 0.22,
+
+    "spin": 0.18,
+
+    "stability": 0.16,
+
+    "court_penetration": 0.14,
+
+    "snapback": 0.10,
+
+    "durability": 0.08,
+
+    "feel": 0.06,
+
+    "comfort": 0.04,
+
+    "power": 0.02
+  },
+
+  "works_best_with": [
+
+    "advanced",
+
+    "fast_swing",
+
+    "heavy_topspin",
+
+    "more_control"
+  ],
+
+  "compatible_profiles": {
+
+    "levels": [
+
+      "advanced",
+
+      "intermediate"
+    ],
+
+    "swing_speeds": [
+
+      "medium_fast",
+
+      "fast"
+    ],
+
+    "shot_profiles": [
+
+      "heavy_topspin",
+
+      "aggressive_flat"
+    ],
+
+    "goals": [
+
+      "more_control",
+
+      "more_spin"
+    ]
+  },
+
+  "avoid": {
+
+    "racquet_characteristics": [
+
+      "Extremely Powerful",
+
+      "Very High Launch",
+
+      "Ultra Soft"
+    ],
+
+    "string_characteristics": [
+
+      "Full Multifilament",
+
+      "Low Control",
+
+      "Very High Power"
+    ]
+  },
+
+  "search_keywords": [
+
+    "aggressive baseliner",
+
+    "baseline",
+
+    "offensive",
+
+    "modern tennis",
+
+    "baseline attacker",
+
+    "aggressive groundstrokes"
+  ]
+}
