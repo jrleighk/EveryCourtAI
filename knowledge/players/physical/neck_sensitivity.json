@@ -1,0 +1,491 @@
+{
+  "id": "neck_sensitivity",
+  "category": "Player Physical Constraint",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
+
+  "constraint": {
+    "name": {
+      "en": "Neck Sensitivity",
+      "zh": "颈部敏感"
+    },
+    "description": {
+      "en": "The player experiences neck pain, stiffness, fatigue or restricted cervical movement during or after tennis. This profile adjusts equipment recommendations to reduce unnecessary upper-body load and repeated strain.",
+      "zh": "球员在网球运动过程中或结束后出现颈部疼痛、僵硬、疲劳或颈椎活动受限。本画像用于调整装备推荐，以降低上半身不必要的负荷与重复性压力。"
+    }
+  },
+
+  "priority": {
+    "type": "Physical Constraint",
+    "override_level": "Highest",
+    "overrides": [
+      "maximum_performance",
+      "maximum_power_through_weight",
+      "maximum_stability_through_weight",
+      "maximum_spin"
+    ]
+  },
+
+  "severity_levels": {
+    "none": {
+      "score": 0
+    },
+    "mild": {
+      "score": 1
+    },
+    "moderate": {
+      "score": 2
+    },
+    "high": {
+      "score": 3
+    }
+  },
+
+  "symptoms": [
+    "Neck stiffness after play",
+    "Neck soreness",
+    "Upper trapezius fatigue",
+    "Pain during serving",
+    "Discomfort during overhead shots",
+    "Reduced head rotation",
+    "Difficulty tracking high balls",
+    "Upper-body fatigue late in matches"
+  ],
+
+  "possible_contributors": [
+    "Excessive racquet weight",
+    "Very high swingweight",
+    "Head-heavy balance",
+    "Repeated overhead activity",
+    "Serving volume",
+    "Upper-body muscular fatigue",
+    "Very stiff stringbed",
+    "Poor recovery",
+    "Previous cervical or upper-back issues"
+  ],
+
+  "equipment_strategy": {
+    "primary_goal": "Reduce Upper-Body Load While Preserving Stable And Predictable Performance",
+
+    "change_priority": [
+      "Swingweight",
+      "Static Weight",
+      "Balance",
+      "Maneuverability",
+      "String Comfort",
+      "String Tension",
+      "Hybrid Architecture"
+    ]
+  },
+
+  "preferred_racquet_dna": {
+    "maneuverability": 10,
+    "comfort": 10,
+    "moderate_swingweight": 10,
+    "head_light_balance": 9,
+    "forgiveness": 9,
+    "stability": 8,
+    "easy_power": 8,
+    "predictability": 8,
+    "control": 7,
+    "spin": 7
+  },
+
+  "preferred_string_dna": {
+    "comfort": 10,
+    "shock_absorption": 9,
+    "elasticity": 9,
+    "ball_pocketing": 8,
+    "easy_power": 8,
+    "feel": 7,
+    "control": 7,
+    "spin": 6,
+    "stiffness": 2
+  },
+
+  "recommended_string_families": [
+    "Natural Gut",
+    "Premium Multifilament",
+    "Soft Multifilament",
+    "Soft Co-Polyester",
+    "Natural Gut / Polyester Hybrid",
+    "Multifilament / Soft Polyester Hybrid"
+  ],
+
+  "recommended_strings": [
+    "Babolat Touch VS",
+    "Wilson Natural Gut",
+    "Wilson NXT",
+    "Yonex PolyTour Air",
+    "Yonex REXIS Comfort",
+    "Yonex REXIS Feel",
+    "Luxilon Element",
+    "Babolat RPM Soft",
+    "Tecnifibre X-One Biphase",
+    "Tecnifibre NRG2",
+    "Solinco Hyper-G Soft",
+    "MSV Soft Touch",
+    "Toroline Truffle X"
+  ],
+
+  "recommended_hybrids": [
+    "Natural Gut Main + Soft Polyester Cross",
+    "Multifilament Main + Soft Polyester Cross",
+    "Soft Polyester Main + Multifilament Cross"
+  ],
+
+  "racquet_adjustment": {
+    "prefer": [
+      "Moderate static weight",
+      "Moderate swingweight",
+      "Head-light or slightly head-light balance",
+      "Easy racquet-head acceleration",
+      "Large effective sweet spot",
+      "Stable but manageable frame"
+    ],
+
+    "avoid": [
+      "Very high swingweight",
+      "Very heavy racquets",
+      "Strongly head-heavy balance",
+      "Demanding frames requiring repeated maximal acceleration",
+      "Very stiff frames when discomfort is significant"
+    ]
+  },
+
+  "tension_adjustment": {
+    "mild": {
+      "adjustment_lbs": -1
+    },
+
+    "moderate": {
+      "adjustment_lbs": -2
+    },
+
+    "high": {
+      "adjustment_lbs": -3
+    },
+
+    "notes": [
+      "Lower stringbed stiffness may reduce harsh impact feedback transmitted through the upper kinetic chain.",
+      "Do not use tension reduction as the only solution if racquet weight or swingweight is clearly excessive.",
+      "String material should be reviewed before large tension changes are made."
+    ]
+  },
+
+  "gauge_adjustment": {
+    "preferred": [
+      "1.20",
+      "1.23",
+      "1.25"
+    ],
+
+    "logic": {
+      "need_more_comfort": "Prefer a softer construction before changing gauge aggressively.",
+      "need_more_easy_power": "A slightly thinner gauge may be considered when durability allows."
+    }
+  },
+
+  "movement_considerations": {
+    "importance": "High",
+
+    "affected_movements": [
+      "Serve",
+      "Overhead",
+      "High-ball tracking",
+      "Head rotation",
+      "Open-stance rotation",
+      "Wide-ball visual tracking",
+      "Repeated serving",
+      "Long-duration play"
+    ],
+
+    "equipment_objectives": [
+      "Reduce unnecessary racquet mass demand",
+      "Reduce repeated upper-body acceleration demand",
+      "Improve easy power",
+      "Preserve stable response without excessive swingweight"
+    ]
+  },
+
+  "serve_and_overhead_logic": {
+    "importance": "Critical",
+
+    "principle": {
+      "en": "Serving and overhead strokes combine repeated upper-body rotation, elevation and racquet acceleration. Excessive racquet demand can increase cumulative fatigue.",
+      "zh": "发球与高压球需要重复进行上半身旋转、抬举以及球拍加速，过高的装备负担可能增加累计疲劳。"
+    },
+
+    "prioritize": [
+      "Manageable swingweight",
+      "Easy acceleration",
+      "Head-light balance",
+      "Comfortable stringbed"
+    ],
+
+    "deprioritize": [
+      "Maximum racquet mass",
+      "Maximum swingweight",
+      "Very demanding serve-oriented setups"
+    ]
+  },
+
+  "kinetic_chain_logic": {
+    "importance": "High",
+
+    "principle": {
+      "en": "Neck and upper-body symptoms should be considered within the complete kinetic chain rather than attributed to one equipment variable.",
+      "zh": "颈部及上半身症状应结合完整动力链进行判断，而不能简单归因于某一个装备变量。"
+    },
+
+    "related_regions": [
+      "Shoulder",
+      "Upper Back",
+      "Lower Back"
+    ],
+
+    "equipment_response": [
+      "Check shoulder sensitivity when neck symptoms are reported.",
+      "Check swingweight and static weight before assuming string stiffness is the primary issue.",
+      "Avoid adding racquet mass to solve performance problems without considering cumulative upper-body demand."
+    ]
+  },
+
+  "playing_style_interaction": {
+    "baseline_aggressive": {
+      "risk_area": [
+        "High racquet-head acceleration",
+        "Repeated trunk and upper-body rotation"
+      ],
+
+      "equipment_direction": [
+        "Preserve control",
+        "Maintain manageable swingweight",
+        "Avoid unnecessary racquet mass"
+      ]
+    },
+
+    "baseline_counterpuncher": {
+      "risk_area": [
+        "Extended match duration",
+        "Repeated high-ball tracking"
+      ],
+
+      "equipment_direction": [
+        "Increase comfort",
+        "Increase forgiveness",
+        "Reduce cumulative demand"
+      ]
+    },
+
+    "baseline_grinder": {
+      "risk_area": [
+        "Long rallies",
+        "High total match duration"
+      ],
+
+      "equipment_direction": [
+        "Prioritize sustainable comfort",
+        "Use manageable racquet demand"
+      ]
+    },
+
+    "all_court": {
+      "risk_area": [
+        "Frequent positional changes",
+        "Overheads",
+        "Net play"
+      ],
+
+      "equipment_direction": [
+        "Prioritize maneuverability",
+        "Maintain stable response"
+      ]
+    },
+
+    "serve_volley": {
+      "risk_area": [
+        "High serving volume",
+        "Overhead frequency",
+        "Rapid net reactions"
+      ],
+
+      "equipment_direction": [
+        "Prioritize head-light balance",
+        "Easy acceleration",
+        "Fast handling"
+      ]
+    }
+  },
+
+  "severity_logic": {
+    "mild": {
+      "recommendation": [
+        "Review swingweight",
+        "Use comfortable string setup",
+        "Maintain head-light balance",
+        "Avoid unnecessary equipment mass"
+      ]
+    },
+
+    "moderate": {
+      "recommendation": [
+        "Reduce upper-body equipment demand",
+        "Use softer strings",
+        "Review static weight and swingweight",
+        "Prioritize easy acceleration"
+      ]
+    },
+
+    "high": {
+      "recommendation": [
+        "Use highly manageable racquet setup",
+        "Use comfort-oriented stringbed",
+        "Prioritize moderate swingweight",
+        "Avoid equipment requiring repeated maximal acceleration"
+      ],
+
+      "hard_constraints": [
+        "Avoid excessive swingweight.",
+        "Avoid strongly head-heavy racquets.",
+        "Avoid very heavy racquets solely for stability or power.",
+        "Do not allow performance goals to override significant physical limitation."
+      ]
+    }
+  },
+
+  "goal_conflict_logic": {
+    "more_power": {
+      "resolution": [
+        "Increase power through string elasticity and racquet efficiency before adding racquet mass."
+      ]
+    },
+
+    "more_stability": {
+      "resolution": [
+        "Seek torsional stability without excessive swingweight."
+      ]
+    },
+
+    "more_spin": {
+      "resolution": [
+        "Use string geometry and manageable racquet-head acceleration rather than increasing physical demand."
+      ]
+    },
+
+    "more_control": {
+      "resolution": [
+        "Improve predictability through string selection before moving to a much heavier control frame."
+      ]
+    }
+  },
+
+  "ai_override_rules": {
+    "if_neck_sensitivity_is_high": {
+      "override": true,
+
+      "prioritize": [
+        "Maneuverability",
+        "Moderate Swingweight",
+        "Comfort",
+        "Easy Acceleration",
+        "Reduced Upper-Body Load"
+      ],
+
+      "deprioritize": [
+        "Maximum Static Weight",
+        "Maximum Swingweight",
+        "Head-Heavy Balance",
+        "Demanding High-Mass Setups"
+      ]
+    }
+  },
+
+  "future_recovery_module": {
+    "related_area": "Recovery / Physiotherapy",
+
+    "possible_topics": [
+      "Cervical Mobility",
+      "Thoracic Mobility",
+      "Scapular Control",
+      "Postural Endurance",
+      "Shoulder Mobility",
+      "Upper-Back Strength",
+      "Load Management",
+      "Recovery",
+      "Return To Tennis"
+    ],
+
+    "routing_rule": "This profile identifies equipment implications only. Exercise, rehabilitation, manual therapy or return-to-play recommendations should be handled by a separate recovery module."
+  },
+
+  "medical_warning": {
+    "enabled": true,
+
+    "message": {
+      "en": "Equipment changes may reduce upper-body loading but cannot diagnose or treat neck conditions. Persistent pain, neurological symptoms, significant weakness or worsening symptoms should be evaluated by an appropriate healthcare professional.",
+      "zh": "装备调整可能降低上半身负荷，但不能诊断或治疗颈部疾病。如果疼痛持续，或出现神经症状、明显无力或症状不断加重，应由专业医疗人员进行评估。"
+    }
+  },
+
+  "tradeoffs": {
+    "lower_swingweight_can_reduce": [
+      "Maximum Plow Through",
+      "Maximum Mass-Based Stability"
+    ],
+
+    "more_easy_power_can_reduce": [
+      "Maximum Low-Launch Control"
+    ],
+
+    "acceptable_tradeoff": "Reducing unnecessary upper-body loading takes priority over maximizing racquet mass or a single performance characteristic."
+  },
+
+  "matching_weights": {
+    "maneuverability": 0.22,
+    "swingweight": 0.20,
+    "comfort": 0.15,
+    "static_weight": 0.12,
+    "balance": 0.10,
+    "easy_power": 0.07,
+    "forgiveness": 0.05,
+    "string_stiffness": 0.04,
+    "stability": 0.03,
+    "control": 0.01,
+    "spin": 0.01
+  },
+
+  "output_guidance": {
+    "must_explain": [
+      "How neck sensitivity changes the equipment recommendation.",
+      "Whether swingweight, static weight, balance or stringbed stiffness is the primary equipment concern.",
+      "Why easier racquet acceleration is being prioritized.",
+      "What performance compromise is intentionally accepted.",
+      "Whether a recovery-module assessment should be considered."
+    ],
+
+    "must_not_do": [
+      "Do not diagnose the cause of neck pain.",
+      "Do not prescribe rehabilitation exercises from this equipment profile.",
+      "Do not assume every neck-sensitive player needs the lightest racquet possible.",
+      "Do not sacrifice racquet stability excessively in pursuit of maneuverability."
+    ]
+  },
+
+  "search_keywords": [
+    "neck",
+    "neck pain",
+    "neck sensitivity",
+    "neck stiffness",
+    "cervical",
+    "cervical pain",
+    "upper trapezius",
+    "serve neck pain",
+    "颈部",
+    "颈椎",
+    "颈部疼痛",
+    "颈部僵硬",
+    "颈部敏感",
+    "脖子疼"
+  ]
+}
