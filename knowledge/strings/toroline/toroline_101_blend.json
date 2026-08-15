@@ -1,0 +1,419 @@
+{
+  "id": "toroline_101_blend",
+  "brand": "Toroline",
+  "series": "101 Blend",
+  "model": "101 Blend",
+  "category": "Hybrid String Set",
+
+  "manufacturer_data": {
+    "construction": "Dual Co-Poly Hybrid",
+    "main_string": "Toroline O-TORO Black 1.23",
+    "cross_string": "Toroline O-TORO SNAP White 1.25",
+    "official_positioning": "Hybrid setup combining Toroline's highest-rated spin string in the mains with its slickest round string in the crosses for a comfortable, controlled and spin-driven response.",
+    "target_level": "Intermediate / Advanced / Tournament"
+  },
+
+  "specifications": {
+    "construction": "Shaped Co-Poly + Round Low-Friction Co-Poly Hybrid",
+
+    "packaging": {
+      "type": "Two Half Sets",
+      "half_sets_per_package": 2,
+      "length_per_half_set_m": 6.7,
+      "intended_racquets": 1,
+      "total_length_m": 13.4
+    },
+
+    "mains": {
+      "string": "Toroline O-TORO",
+      "gauge_mm": 1.23,
+      "color": "Black",
+      "shape": "Hexagonal",
+      "material": "Co-Polyester",
+      "primary_role": [
+        "Spin",
+        "Ball Bite",
+        "Control",
+        "Heavy Ball Production"
+      ]
+    },
+
+    "crosses": {
+      "string": "Toroline O-TORO SNAP",
+      "gauge_mm": 1.25,
+      "color": "White",
+      "shape": "Round",
+      "material": "Co-Polyester",
+      "surface": "Low-Friction / Slick",
+      "primary_role": [
+        "Snapback Support",
+        "Low Friction",
+        "Response Consistency",
+        "String Movement"
+      ]
+    }
+  },
+
+  "component_strings": {
+    "o_toro_black_123": {
+      "role": "Mains",
+      "construction": "Hexagonal Co-Polyester",
+      "primary_benefits": [
+        "Maximum Spin",
+        "Mechanical Ball Grip",
+        "Control",
+        "Heavy Ball"
+      ]
+    },
+
+    "o_toro_snap_white_125": {
+      "role": "Crosses",
+      "construction": "Round Low-Friction Co-Polyester",
+      "primary_benefits": [
+        "Improved Snapback",
+        "Reduced Main-Cross Friction",
+        "Consistent Response",
+        "Stringbed Stability"
+      ]
+    }
+  },
+
+  "official_hybrid_configuration": {
+    "mains": "O-TORO Black 1.23",
+    "crosses": "O-TORO SNAP White 1.25",
+
+    "official_result": [
+      "Comfortable Response",
+      "Controlled Response",
+      "Spin-Driven Performance",
+      "Increased String Movement",
+      "Faster Snapback",
+      "Enhanced Spin Potential",
+      "Improved Response Consistency"
+    ]
+  },
+
+  "technology": [
+    "Hexagonal Mechanical Grip",
+    "Low-Friction Round Cross",
+    "Enhanced Main-String Movement",
+    "Fast Snapback Architecture",
+    "Spin-Control Hybrid Optimization"
+  ],
+
+  "technology_details": {
+    "spin_system": {
+      "description": "The 101 Blend uses a shaped O-TORO main for mechanical ball grip and a slick round O-TORO SNAP cross to reduce inter-string friction and allow faster main-string return.",
+      "primary_mechanisms": [
+        "Ball Grip",
+        "Main String Movement",
+        "Snapback",
+        "Low Inter-String Friction"
+      ]
+    },
+
+    "cross_function": {
+      "description": "The round O-TORO SNAP cross is designed to support more efficient main-string sliding and return while improving response consistency."
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Spin Snapback Dual-Poly Hybrid",
+    "target_player": "Intermediate / Advanced / Tournament",
+    "arm_friendly": false,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "feel_focus": true,
+    "durability_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true,
+    "snapback_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 8,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9,
+    "elasticity": 9,
+    "launch_angle": "Medium-High"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 8,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium-Firm",
+    "snapback": 10,
+    "ball_pocketing": 9,
+    "string_movement": 10,
+    "inter_string_friction": "Low",
+    "tension_stability": 9,
+    "spin_window": "Very High",
+    "predictability": 10,
+    "arm_friendliness": 7,
+    "directional_precision": 10,
+    "ball_bite": 10,
+    "surface_grip": 10,
+    "response_consistency": 10,
+    "heavy_ball_potential": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "Modern Baseline",
+      "All Court"
+    ],
+
+    "special_player_profiles": [
+      "Players Seeking Maximum Spin From a Hybrid",
+      "Players Wanting More Snapback Than Full-Bed Shaped Poly",
+      "Players Seeking Controlled Launch",
+      "Players Prioritizing Response Consistency",
+      "Players Wanting a Slick Round Cross"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Babolat Pure Aero",
+    "Babolat Pure Drive",
+    "Yonex VCORE",
+    "Wilson Shift",
+    "Wilson Blade",
+    "HEAD Extreme",
+    "HEAD Speed",
+    "Tecnifibre T-FIGHT",
+    "Dunlop SX"
+  ],
+
+  "hybrid_physics": {
+    "main_string_role": {
+      "string": "O-TORO",
+      "shape": "Hexagonal",
+      "primary_spin_source": "Mechanical ball grip"
+    },
+
+    "cross_string_role": {
+      "string": "O-TORO SNAP",
+      "shape": "Round",
+      "primary_spin_source": "Reduced inter-string friction and faster snapback"
+    },
+
+    "combined_effect": [
+      "High Ball Bite",
+      "High Main-String Mobility",
+      "Fast Snapback",
+      "Heavy Spin",
+      "Consistent Response"
+    ]
+  },
+
+  "estimated_lifespan": {
+    "hybrid_setup": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "16-28"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Medium-Low",
+    "tension_loss_sensitivity": "Medium-Low",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when main-string snapback, spin response or response consistency noticeably declines."
+  },
+
+  "comparison_data": {
+    "vs_full_bed_o_toro": {
+      "snapback": "Higher",
+      "main_string_movement": "Higher",
+      "response_consistency": "Higher",
+      "mechanical_ball_grip": "Similar",
+      "comfort": "Slightly Higher",
+      "spin_efficiency": "Higher"
+    },
+
+    "vs_full_bed_o_toro_snap": {
+      "ball_bite": "Much Higher",
+      "spin": "Higher",
+      "launch_angle": "Higher",
+      "control": "Similar",
+      "snapback": "Similar / High"
+    },
+
+    "vs_o_toro_truffle_x_hybrid": {
+      "spin": "Higher",
+      "control": "Higher",
+      "comfort": "Lower",
+      "pocketing": "Lower",
+      "durability": "Higher",
+      "response": "More Direct"
+    },
+
+    "vs_stevie_blend": {
+      "spin": "Higher",
+      "comfort": "Lower",
+      "stability": "Slightly Lower",
+      "snapback": "Higher",
+      "target_player": "More Spin-Oriented"
+    }
+  },
+
+  "science_metrics": {
+    "main_spin_mechanism": [
+      "Hexagonal Mechanical Ball Grip",
+      "Surface Bite"
+    ],
+
+    "cross_spin_mechanism": [
+      "Low Inter-String Friction",
+      "Fast Snapback",
+      "Increased Main-String Movement"
+    ],
+
+    "trajectory_profile": "Spin-Oriented / Controlled",
+
+    "launch_angle_profile": "Medium-High",
+
+    "inter_string_friction_class": "Low",
+
+    "snapback_class": "Elite",
+
+    "hybrid_class": "Performance Dual-Poly Spin Hybrid"
+  },
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Heavy Topspin Players",
+      "Aggressive Baseliners",
+      "Players Seeking Maximum Snapback",
+      "Players Wanting High Spin With Better Response Consistency",
+      "Players Who Like O-TORO But Want a Slicker Cross",
+      "Advanced Hybrid Users"
+    ],
+
+    "avoid_for": [
+      "Players With Significant Arm Sensitivity",
+      "Beginners With Slow Swing Speed",
+      "Players Seeking Plush Multifilament-Like Comfort",
+      "Players Wanting Very Low Launch Angle"
+    ],
+
+    "alternative_strings": [
+      "Toroline O-TORO Full Bed",
+      "Toroline O-TORO + Truffle X",
+      "Toroline STEVIE Blend",
+      "Toroline VAMOS + A5",
+      "Solinco Hyper-G Hybrid System"
+    ]
+  },
+
+  "comparison_tags": [
+    "101 Blend",
+    "O-TORO",
+    "O-TORO SNAP",
+    "Dual Poly",
+    "Hexagonal Main",
+    "Round Cross",
+    "Low Friction",
+    "Maximum Snapback",
+    "Spin",
+    "Control",
+    "Black White"
+  ],
+
+  "ai_keywords": [
+    "toroline",
+    "101 blend",
+    "toroline 101",
+    "o toro black",
+    "o-toro black",
+    "o toro snap white",
+    "o-toro snap white",
+    "1.23",
+    "1.25",
+    "hexagonal main",
+    "round cross",
+    "low friction",
+    "slick cross",
+    "snapback",
+    "spin",
+    "control",
+    "dual poly hybrid",
+    "string movement"
+  ],
+
+  "description": {
+    "en": "Toroline 101 Blend pairs O-TORO Black 1.23 in the mains with O-TORO SNAP White 1.25 in the crosses. The hexagonal O-TORO mains provide strong mechanical ball grip, control and spin, while the slick round O-TORO SNAP crosses reduce inter-string friction and allow the mains to slide and return faster. The result is a comfortable, controlled and highly spin-oriented dual-poly hybrid with increased string movement, fast snapback and consistent response.",
+
+    "zh": "Toroline 101 Blend 采用 O-TORO Black 1.23 作为主线，搭配 O-TORO SNAP White 1.25 作为横线。六边形 O-TORO 主线负责提供机械咬球、控制和高旋转，而圆形低摩擦 O-TORO SNAP 横线则降低主横线之间的摩擦，让主线更容易移动并快速回位。最终形成一套以 Spin + Snapback + Control 为核心的双聚酯 Hybrid，在保持可控反馈的同时提升主线移动速度、Snapback 效率和整体旋转表现。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Toroline 101 Blend",
+      "O-TORO Black 1.23 mains",
+      "O-TORO highest-rated spin string positioning",
+      "Hexagonal shaped co-poly mains",
+      "Spin",
+      "Control",
+      "O-TORO SNAP White 1.25 crosses",
+      "Round cross",
+      "Low-friction co-poly cross",
+      "Slickest Toroline string positioning",
+      "Increased string movement",
+      "Faster snapback",
+      "Enhanced spin potential",
+      "Improved response consistency",
+      "Comfortable response",
+      "Controlled response",
+      "Spin-driven response",
+      "Two half sets per package",
+      "6.7 m per half set",
+      "One-racquet package configuration"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Physics",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
