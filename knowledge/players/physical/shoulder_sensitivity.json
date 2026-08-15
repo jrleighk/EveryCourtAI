@@ -1,0 +1,369 @@
+{
+  "id": "shoulder_sensitivity",
+  "category": "Player Physical Constraint",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
+
+  "constraint": {
+    "name": {
+      "en": "Shoulder Sensitivity",
+      "zh": "肩部敏感"
+    },
+    "description": {
+      "en": "The player experiences shoulder pain, fatigue or reduced mobility during or after tennis. This physical constraint has higher priority than equipment performance goals.",
+      "zh": "球员在打球过程中或结束后容易出现肩部疼痛、疲劳或活动受限。此身体限制条件优先级高于装备性能目标。"
+    }
+  },
+
+  "priority": {
+    "type": "Physical Constraint",
+    "override_level": "Highest",
+    "overrides": [
+      "more_power",
+      "more_spin",
+      "more_control",
+      "more_durability",
+      "maximum_performance"
+    ]
+  },
+
+  "severity_levels": {
+    "none": {
+      "score": 0
+    },
+    "mild": {
+      "score": 1
+    },
+    "moderate": {
+      "score": 2
+    },
+    "high": {
+      "score": 3
+    }
+  },
+
+  "symptoms": [
+    "Shoulder soreness after serving",
+    "Pain during overhead shots",
+    "Fatigue after long hitting sessions",
+    "Reduced serve speed due to discomfort",
+    "Difficulty accelerating the racquet",
+    "Pain during high forehand follow-through",
+    "Shoulder tightness after play",
+    "Loss of endurance in long matches"
+  ],
+
+  "possible_causes": [
+    "Racquet is too heavy",
+    "Swingweight is too high",
+    "Head-heavy balance",
+    "Very stiff racquet",
+    "Very stiff stringbed",
+    "High string tension",
+    "Overuse",
+    "Insufficient recovery",
+    "Poor serving mechanics"
+  ],
+
+  "equipment_strategy": {
+    "primary_goal": "Reduce Shoulder Load While Maintaining Playability",
+
+    "change_priority": [
+      "Racquet Weight",
+      "Swingweight",
+      "Balance",
+      "String Material",
+      "String Tension",
+      "Hybrid Architecture",
+      "Gauge"
+    ]
+  },
+
+  "recommended_string_families": [
+    "Natural Gut",
+    "Premium Multifilament",
+    "Soft Multifilament",
+    "Soft Co-Polyester",
+    "Natural Gut / Polyester Hybrid",
+    "Multifilament / Soft Polyester Hybrid"
+  ],
+
+  "avoid_string_families": [
+    "Very Firm Polyester",
+    "Dead Polyester",
+    "High-Stiffness Polyester"
+  ],
+
+  "preferred_string_dna": {
+    "comfort": 10,
+    "elasticity": 9,
+    "shock_absorption": 9,
+    "ball_pocketing": 8,
+    "feel": 8,
+    "control": 7,
+    "spin": 6,
+    "durability": 5,
+    "stiffness": 1
+  },
+
+  "preferred_racquet_dna": {
+    "maneuverability": 10,
+    "comfort": 10,
+    "forgiveness": 9,
+    "stability": 8,
+    "head_light_balance": 9,
+    "moderate_swingweight": 10,
+    "control": 7,
+    "power": 7,
+    "spin": 7
+  },
+
+  "recommended_strings": [
+    "Babolat Touch VS",
+    "Babolat RPM Soft",
+    "Wilson Natural Gut",
+    "Wilson NXT",
+    "Yonex PolyTour Air",
+    "Yonex REXIS Comfort",
+    "Yonex REXIS Feel",
+    "Luxilon Element",
+    "Tecnifibre X-One Biphase",
+    "Tecnifibre NRG2",
+    "Solinco Hyper-G Soft",
+    "MSV Soft Touch",
+    "Toroline Truffle X"
+  ],
+
+  "recommended_hybrids": [
+    "Natural Gut Main + Soft Polyester Cross",
+    "Multifilament Main + Soft Polyester Cross",
+    "Soft Polyester Main + Multifilament Cross"
+  ],
+
+  "tension_adjustment": {
+    "mild": {
+      "adjustment_lbs": -2
+    },
+    "moderate": {
+      "adjustment_lbs": -3
+    },
+    "high": {
+      "adjustment_lbs": -4
+    },
+    "notes": [
+      "Reduce stringbed stiffness before changing racquets.",
+      "Lower tension should not excessively reduce directional control."
+    ]
+  },
+
+  "gauge_adjustment": {
+    "preferred": [
+      "1.20",
+      "1.23",
+      "1.25"
+    ],
+    "avoid": [
+      "Very thick firm polyester"
+    ]
+  },
+
+  "racquet_adjustment": {
+    "prefer": [
+      "Lower static weight",
+      "Moderate swingweight",
+      "Head-light balance",
+      "Comfort-oriented frame",
+      "Large sweet spot"
+    ],
+    "avoid": [
+      "Very heavy racquets",
+      "Extremely high swingweight",
+      "Head-heavy balance",
+      "Very stiff frames"
+    ]
+  },
+
+  "serve_load_logic": {
+    "importance": "Critical",
+
+    "reason": {
+      "en": "The serve places the greatest mechanical load on the shoulder. Excessive racquet weight or swingweight significantly increases cumulative fatigue.",
+      "zh": "发球是肩部负荷最高的击球动作。过大的静态重量或挥重会显著增加肩部累计疲劳。"
+    },
+
+    "prioritize": [
+      "Easy acceleration",
+      "Lower swingweight",
+      "Comfortable impact",
+      "Efficient energy return"
+    ]
+  },
+
+  "fatigue_logic": {
+    "importance": "Very High",
+
+    "evaluate": [
+      "Match duration",
+      "Training frequency",
+      "Late-match performance",
+      "Serve volume",
+      "Age"
+    ],
+
+    "preferred_solution": [
+      "Reduce racquet demand before reducing performance expectations."
+    ]
+  },
+
+  "severity_logic": {
+    "mild": {
+      "recommendation": [
+        "Lower tension",
+        "Soft polyester",
+        "Review swingweight"
+      ]
+    },
+
+    "moderate": {
+      "recommendation": [
+        "Hybrid setup",
+        "Multifilament",
+        "Reduce swingweight",
+        "Head-light balance"
+      ]
+    },
+
+    "high": {
+      "recommendation": [
+        "Natural Gut",
+        "Premium Multifilament",
+        "Comfort racquet",
+        "Low-impact setup"
+      ],
+
+      "hard_constraints": [
+        "Avoid excessively heavy racquets.",
+        "Avoid high swingweight.",
+        "Avoid firm polyester at high tension."
+      ]
+    }
+  },
+
+  "ai_override_rules": {
+    "if_shoulder_sensitivity_is_high": {
+      "override": true,
+
+      "ignore_if_goal_is": [
+        "Maximum Stability",
+        "Maximum Plow Through",
+        "Maximum Power Through Weight"
+      ],
+
+      "prioritize": [
+        "Maneuverability",
+        "Comfort",
+        "Easy Acceleration",
+        "Reduced Fatigue"
+      ]
+    }
+  },
+
+  "goal_conflict_logic": {
+    "more_power": {
+      "resolution": [
+        "Increase power through string elasticity before increasing racquet weight."
+      ]
+    },
+
+    "more_stability": {
+      "resolution": [
+        "Improve torsional stability rather than static weight whenever possible."
+      ]
+    },
+
+    "more_spin": {
+      "resolution": [
+        "Increase spin through string selection instead of increasing swingweight."
+      ]
+    }
+  },
+
+  "medical_warning": {
+    "enabled": true,
+
+    "message": {
+      "en": "Equipment adjustments may reduce shoulder load but cannot diagnose or treat shoulder injuries. Persistent shoulder pain should be evaluated by a qualified healthcare professional.",
+      "zh": "装备调整可以降低肩部负荷，但不能诊断或治疗肩部损伤。如肩部疼痛持续，请咨询专业医疗人员。"
+    }
+  },
+
+  "tradeoffs": {
+    "lighter_racquet_can_reduce": [
+      "Plow Through",
+      "Maximum Stability"
+    ],
+
+    "lower_swingweight_can_reduce": [
+      "Ball Heaviness",
+      "Mass Behind The Ball"
+    ],
+
+    "acceptable_tradeoff": "Protecting long-term shoulder health is more important than maximizing racquet mass."
+  },
+
+  "matching_weights": {
+    "maneuverability": 0.24,
+    "swingweight": 0.20,
+    "comfort": 0.16,
+    "static_weight": 0.12,
+    "balance": 0.10,
+    "string_stiffness": 0.07,
+    "shock_absorption": 0.05,
+    "ball_pocketing": 0.03,
+    "control": 0.02,
+    "spin": 0.01
+  },
+
+  "decision_thresholds": {
+    "mild": {
+      "allow_full_poly": true,
+      "max_poly_tension_lbs": 50
+    },
+
+    "moderate": {
+      "allow_full_poly": true,
+      "max_poly_tension_lbs": 48,
+      "prefer_hybrid": true
+    },
+
+    "high": {
+      "allow_full_poly": false,
+      "prefer_multifilament_or_gut": true,
+      "heavy_racquet_penalty": "very_high",
+      "high_swingweight_penalty": "very_high"
+    }
+  },
+
+  "output_guidance": {
+    "must_explain": [
+      "Why shoulder health overrides performance goals.",
+      "Whether the primary issue is racquet weight, swingweight, balance or stringbed stiffness.",
+      "Why easier racquet acceleration is beneficial.",
+      "What performance tradeoffs are intentional."
+    ]
+  },
+
+  "search_keywords": [
+    "shoulder",
+    "shoulder pain",
+    "shoulder soreness",
+    "shoulder fatigue",
+    "serve pain",
+    "overhead pain",
+    "肩膀",
+    "肩部",
+    "肩膀疼痛",
+    "肩部疲劳",
+    "发球肩痛"
+  ]
+}
