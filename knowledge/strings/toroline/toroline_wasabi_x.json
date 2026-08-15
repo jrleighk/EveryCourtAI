@@ -1,0 +1,522 @@
+{
+  "id": "toroline_wasabi_x",
+  "brand": "Toroline",
+  "series": "WASABI",
+  "model": "Wasabi X",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Co-Polyester",
+    "string_family": "Polyester",
+    "cross_section": "Round",
+    "surface": "Ultra-Slick / Smooth",
+    "tour_positioning": "Snapback / Pocketing / Penetration / Hybrid Cross Co-Polyester",
+    "official_positioning": "Ultra-slick round co-poly engineered to maximize snapback, ball pocketing and effortless court penetration, primarily as a cross string in hybrid setups.",
+    "target_level": "Intermediate / Advanced / Tournament"
+  },
+
+  "specifications": {
+    "construction": "Round Co-Polyester Monofilament",
+    "cross_section": "Round",
+    "surface": "Ultra-Slick / Smooth",
+
+    "available_colors": [
+      "Neon Blue"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.23,
+        "available": true,
+        "available_colors": [
+          "Neon Blue"
+        ],
+
+        "power": 10,
+        "control": 9,
+        "spin": 9,
+        "comfort": 9,
+        "feel": 10,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "elasticity": 9,
+        "ball_pocketing": 10,
+        "launch_angle": "Medium-Low",
+
+        "recommended_use": [
+          "Hybrid Cross",
+          "Maximum Snapback",
+          "Maximum Pocketing",
+          "Court Penetration",
+          "Faster Ball Speed",
+          "Predictable Launch Angle",
+          "Players Seeking More Liveliness"
+        ]
+      }
+    ],
+
+    "packaging": {
+      "type": "Two Half Sets",
+      "half_sets_per_package": 2,
+      "length_per_half_set_m": 6.7,
+      "approximate_length_per_half_set_m": 6.7,
+      "intended_racquets": 1,
+      "total_length_m": 13.4
+    }
+  },
+
+  "technology": [
+    "Ultra-Slick Surface",
+    "Low-Friction Round Geometry",
+    "Snapback Optimization",
+    "Ball Pocketing Enhancement",
+    "Court Penetration Tuning",
+    "Hybrid Cross Optimization"
+  ],
+
+  "technology_details": {
+    "low_friction_surface": {
+      "description": "The ultra-slick surface reduces string-to-string friction and allows the main strings to slide and snap back more freely.",
+      "primary_benefits": [
+        "Faster Snapback",
+        "Improved Main-String Movement",
+        "Enhanced Spin Potential",
+        "Cleaner Stringbed Release"
+      ]
+    },
+
+    "round_geometry": {
+      "description": "The smooth symmetrical round profile produces a cleaner and more predictable launch angle than aggressively shaped strings.",
+      "primary_benefits": [
+        "Predictable Ball Flight",
+        "Direct Response",
+        "Court Penetration",
+        "Trajectory Consistency"
+      ]
+    },
+
+    "pocketing_response": {
+      "description": "Wasabi X is tuned to provide strong ball pocketing and a lively elastic response while retaining a fast release from the stringbed.",
+      "primary_benefits": [
+        "Ball Pocketing",
+        "Explosive Pop",
+        "Easy Depth",
+        "Connected Feel"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Ultra-Slick Hybrid Cross Co-Polyester",
+    "target_player": "Intermediate / Advanced / Tournament",
+    "arm_friendly": true,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true,
+    "snapback_focus": true,
+    "hybrid_cross_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 10,
+    "control": 9,
+    "spin": 9,
+    "comfort": 9,
+    "feel": 10,
+    "durability": 9,
+    "tension_maintenance": 9,
+    "elasticity": 9,
+    "ball_pocketing": 10,
+    "launch_angle": "Medium-Low"
+  },
+
+  "ai_rating": {
+    "power": 10,
+    "control": 9,
+    "spin": 9,
+    "comfort": 9,
+    "feel": 10,
+    "durability": 9,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium",
+    "snapback": 10,
+    "ball_pocketing": 10,
+    "string_movement": 10,
+    "inter_string_friction": "Very Low",
+    "tension_stability": 9,
+    "spin_window": "High",
+    "predictability": 10,
+    "arm_friendliness": 8,
+    "directional_precision": 10,
+    "surface_friction": "Very Low",
+    "court_penetration": 10,
+    "ball_speed": 10,
+    "launch_angle_consistency": 10,
+    "connected_feel": 10,
+    "liveliness": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium",
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "All Court",
+      "Heavy Topspin",
+      "Power Baseliner",
+      "Hybrid User"
+    ],
+
+    "special_player_profiles": [
+      "Players Seeking Maximum Snapback",
+      "Players Wanting a Slick Cross String",
+      "Players Seeking More Pocketing",
+      "Players Wanting Faster Ball Speed",
+      "Players Seeking Lower-Friction Hybrid Response",
+      "Players Wanting Predictable Launch"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Babolat Pure Aero",
+    "Babolat Pure Drive",
+    "Wilson Shift",
+    "Wilson Blade",
+    "HEAD Extreme",
+    "HEAD Speed",
+    "Yonex VCORE",
+    "Yonex EZONE",
+    "Tecnifibre T-FIGHT",
+    "Dunlop SX",
+    "Dunlop FX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "preferred_role": "Crosses",
+
+    "best_pairings": [
+      "Toroline WASABI",
+      "Toroline O-TORO",
+      "Toroline O-TORO TOUR",
+      "Toroline VAMOS",
+      "Toroline Snapper"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Fast Response",
+        "Penetration",
+        "Pocketing",
+        "Predictable Launch"
+      ],
+
+      "as_crosses": [
+        "Maximum Snapback Support",
+        "Low Inter-String Friction",
+        "Pocketing",
+        "Court Penetration",
+        "Response Consistency"
+      ]
+    },
+
+    "recommended_toroline_hybrids": [
+      {
+        "mains": "WASABI",
+        "crosses": "Wasabi X",
+        "expected_profile": [
+          "Strong Square-String Ball Bite",
+          "Ultra-Low Friction Cross",
+          "Fast Snapback",
+          "High Spin",
+          "Improved Pocketing",
+          "Cleaner Release"
+        ]
+      },
+
+      {
+        "mains": "O-TORO",
+        "crosses": "Wasabi X",
+        "expected_profile": [
+          "High Spin",
+          "Fast Snapback",
+          "Lively Response",
+          "Court Penetration",
+          "Connected Feel"
+        ]
+      },
+
+      {
+        "mains": "VAMOS",
+        "crosses": "Wasabi X",
+        "expected_profile": [
+          "Hexagonal Mechanical Bite",
+          "Low-Friction Cross",
+          "Enhanced Snapback",
+          "Spin",
+          "Predictable Launch"
+        ]
+      }
+    ],
+
+    "hybrid_note": "Wasabi X is designed primarily as a cross string and pairs especially well with shaped or textured mains to reduce friction and unlock faster snapback."
+  },
+
+  "gauge_recommendation": {
+    "1.23": {
+      "gauge_name": "17",
+      "color": "Neon Blue",
+
+      "best_for": [
+        "Hybrid Cross Use",
+        "Maximum Snapback",
+        "Ball Pocketing",
+        "Court Penetration",
+        "Fast Response"
+      ],
+
+      "tradeoffs": [
+        "Less Mechanical Ball Bite Than Shaped Strings",
+        "Lower Launch Angle Than Aggressive Spin-Oriented Mains"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.23": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "16-28"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Low-Medium",
+    "tension_loss_sensitivity": "Medium-Low",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when surface slickness, snapback, pocketing or response consistency noticeably declines."
+  },
+
+  "comparison_data": {
+    "vs_toroline_wasabi": {
+      "shape": {
+        "wasabi_x": "Round",
+        "wasabi": "Square / Four-Sided"
+      },
+
+      "preferred_role": {
+        "wasabi_x": "Cross",
+        "wasabi": "Main"
+      },
+
+      "ball_grip": {
+        "wasabi_x": "Lower Mechanical Grip",
+        "wasabi": "Very High"
+      },
+
+      "snapback_support": {
+        "wasabi_x": "Very High",
+        "wasabi": "High"
+      },
+
+      "surface_friction": {
+        "wasabi_x": "Very Low",
+        "wasabi": "Low with slick coating"
+      },
+
+      "launch_angle": {
+        "wasabi_x": "Lower / More Predictable",
+        "wasabi": "Higher / More Spin-Oriented"
+      },
+
+      "court_penetration": {
+        "wasabi_x": "Higher",
+        "wasabi": "Moderate-High"
+      }
+    },
+
+    "vs_shaped_co_poly": {
+      "mechanical_ball_grip": "Lower",
+      "inter_string_friction": "Lower",
+      "snapback": "Higher",
+      "launch_angle": "Lower / More Predictable",
+      "court_penetration": "Higher",
+      "response": "Cleaner / More Direct"
+    }
+  },
+
+  "science_metrics": {
+    "geometry": {
+      "shape": "Round",
+      "symmetry": "High"
+    },
+
+    "spin_mechanism": [
+      "Low-Friction Snapback",
+      "Main-String Movement",
+      "Elastic String Return"
+    ],
+
+    "trajectory_profile": "Direct / Penetrating",
+
+    "launch_angle_profile": "Medium-Low",
+
+    "inter_string_friction_class": "Very Low",
+
+    "snapback_class": "Elite",
+
+    "ball_pocketing_class": "Very High",
+
+    "hybrid_role": "Cross",
+
+    "performance_class": "Premium Low-Friction Round Co-Poly"
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Building Spin-Focused Hybrids",
+      "Players Seeking Maximum Snapback",
+      "Players Wanting a Slick Round Cross",
+      "Players Seeking More Court Penetration",
+      "Players Wanting Explosive Pop and Easy Depth",
+      "Players Seeking Cleaner Launch and Connected Feel"
+    ],
+
+    "avoid_for": [
+      "Players Seeking Maximum Mechanical Ball Bite From the Cross String",
+      "Players Wanting Very High Launch Angle",
+      "Players With Significant Arm Sensitivity",
+      "Players Seeking Multifilament-Level Softness"
+    ],
+
+    "alternative_strings": [
+      "Toroline A5",
+      "Toroline O-TORO SNAP",
+      "Toroline O-TORO SNAP TOUR FLEX",
+      "Solinco Hyper-G Round",
+      "MSV Co Focus",
+      "Luxilon ALU Power"
+    ]
+  },
+
+  "comparison_tags": [
+    "Wasabi X",
+    "Round",
+    "Ultra Slick",
+    "Hybrid Cross",
+    "Snapback",
+    "Ball Pocketing",
+    "Court Penetration",
+    "Low Friction",
+    "Predictable Launch",
+    "Neon Blue"
+  ],
+
+  "ai_keywords": [
+    "toroline",
+    "wasabi x",
+    "toroline wasabi x",
+    "1.23",
+    "17 gauge",
+    "neon blue",
+    "round",
+    "ultra slick",
+    "low friction",
+    "cross string",
+    "hybrid cross",
+    "snapback",
+    "ball pocketing",
+    "court penetration",
+    "ball speed",
+    "easy depth",
+    "predictable launch",
+    "connected feel"
+  ],
+
+  "target_competitors": [
+    "Toroline A5",
+    "Toroline O-TORO SNAP",
+    "Toroline O-TORO SNAP TOUR FLEX",
+    "Solinco Hyper-G Round",
+    "MSV Co Focus",
+    "Luxilon ALU Power",
+    "Yonex Poly Tour Pro"
+  ],
+
+  "description": {
+    "en": "Toroline Wasabi X is an ultra-slick round co-polyester designed primarily as a hybrid cross string. Its low-friction surface allows shaped or textured main strings to slide and snap back more freely, increasing string movement, spin efficiency and response consistency. The round geometry also creates a cleaner and more predictable launch angle while producing strong pocketing, explosive pop, easy depth and improved court penetration. Wasabi X is available in Neon Blue at 1.23 mm / 17 gauge.",
+
+    "zh": "Toroline Wasabi X 是一款主要针对 Hybrid 横线设计的超光滑圆形共聚酯球线。其低摩擦表面能够让异形或纹理主线更自由地滑动并快速 Snapback，从而提升主线移动、旋转效率和线床响应一致性。圆形结构同时带来更干净、更可预测的 Launch Angle，并提供优秀的 Pocketing、爆发性 Pop、轻松深度以及更强的 Court Penetration。产品采用 Neon Blue 配色，规格为 1.23 毫米 / 17。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Toroline Wasabi X",
+      "Ultra-slick round co-poly",
+      "Maximum snapback positioning",
+      "Ball pocketing",
+      "Effortless court penetration",
+      "Designed primarily as a hybrid cross string",
+      "Improved main-string sliding",
+      "Enhanced spin potential",
+      "Livelier response",
+      "Cleaner stringbed release",
+      "Predictable launch angle",
+      "Explosive pop",
+      "Easy depth",
+      "Low-friction surface",
+      "Compatibility with shaped mains",
+      "Compatibility with textured mains",
+      "Connected feel",
+      "1.23 mm / 17 gauge",
+      "Neon Blue",
+      "Round profile",
+      "Two half sets per package",
+      "Approximately 6.7 m per half set",
+      "One-racquet package configuration"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendations",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
