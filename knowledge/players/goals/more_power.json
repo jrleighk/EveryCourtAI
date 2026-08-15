@@ -1,0 +1,441 @@
+{
+  "id": "more_power",
+  "category": "Player Goal",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
+
+  "goal": {
+    "name": {
+      "en": "More Power",
+      "zh": "提升力量"
+    },
+
+    "description": {
+      "en": "The player wants easier depth, higher ball speed and more usable pace without needing to swing significantly harder.",
+      "zh": "球员希望在不明显增加挥拍负担的情况下获得更轻松的击球深度、更高球速和更多可用力量。"
+    }
+  },
+
+  "problem_signs": [
+    "Balls frequently land short.",
+    "Player needs to over-swing to reach depth.",
+    "Serve lacks penetration.",
+    "Defensive shots do not reach sufficient depth.",
+    "Player feels the current setup is dead or underpowered.",
+    "Performance drops significantly late in matches due to effort."
+  ],
+
+  "typical_causes": [
+    "Racquet is too low-powered for the player's swing speed.",
+    "String is too firm or too low-powered.",
+    "String tension is too high.",
+    "Gauge is too thick.",
+    "Dense string pattern reduces easy launch.",
+    "String has lost elasticity.",
+    "Player has slow-to-medium swing speed.",
+    "Current racquet swingweight or static weight reduces acceleration."
+  ],
+
+  "equipment_adjustments": {
+    "racquet": {
+      "preferred_changes": [
+        "More powerful frame",
+        "Larger effective sweet spot",
+        "Slightly more open string pattern",
+        "More forgiving frame",
+        "Easier acceleration if current racquet is too demanding"
+      ],
+
+      "change_priority": "low_to_medium",
+
+      "note": "String and tension changes should normally be tested before recommending a racquet change."
+    },
+
+    "string": {
+      "preferred_changes": [
+        "More elastic string",
+        "Soft co-polyester",
+        "Multifilament",
+        "Natural gut",
+        "Power-oriented multifilament",
+        "Thinner gauge",
+        "More responsive string construction"
+      ]
+    },
+
+    "tension": {
+      "general_adjustment_lbs": -2,
+
+      "normal_adjustment_range_lbs": "-1 to -3",
+
+      "notes": [
+        "Lower tension gradually rather than making a large immediate change.",
+        "Do not reduce tension so far that launch and directional control become unstable.",
+        "For firm polyester, changing string stiffness may be more effective than tension alone."
+      ]
+    },
+
+    "gauge": {
+      "preferred_direction": "Thinner",
+
+      "examples": [
+        "1.30 to 1.25 mm",
+        "1.25 to 1.20 mm"
+      ],
+
+      "tradeoff": "Thinner gauge may reduce durability and increase launch."
+    }
+  },
+
+  "recommended_string_families": [
+    "Soft Co-Polyester",
+    "Responsive Co-Polyester",
+    "Multifilament",
+    "Natural Gut",
+    "Synthetic Gut",
+    "Natural Gut / Polyester Hybrid",
+    "Multifilament / Soft Polyester Hybrid"
+  ],
+
+  "preferred_string_dna": {
+    "power": 10,
+    "elasticity": 10,
+    "ball_pocketing": 9,
+    "comfort": 9,
+    "feel": 8,
+    "control": 7,
+    "spin": 7,
+    "snapback": 7,
+    "durability": 6,
+    "tension_maintenance": 8,
+    "launch_angle": 8
+  },
+
+  "preferred_racquet_dna": {
+    "power": 9,
+    "forgiveness": 9,
+    "maneuverability": 8,
+    "stability": 8,
+    "launch_angle": 8,
+    "comfort": 8,
+    "control": 7,
+    "feel": 7,
+    "spin": 7
+  },
+
+  "recommended_string_characteristics": {
+    "stiffness": [
+      "Very Soft",
+      "Soft",
+      "Medium-Soft"
+    ],
+
+    "shape": [
+      "Round",
+      "Smooth",
+      "Lightly Shaped"
+    ],
+
+    "gauge_mm": [
+      1.20,
+      1.23,
+      1.25,
+      1.30
+    ],
+
+    "key_traits": [
+      "High Elasticity",
+      "Easy Depth",
+      "Ball Pocketing",
+      "Energy Return",
+      "Comfort",
+      "Responsive Feel"
+    ]
+  },
+
+  "recommended_string_examples": [
+    "Yonex PolyTour Air",
+    "Yonex PolyTour Force",
+    "Yonex REXIS Speed",
+    "Luxilon Element",
+    "Babolat RPM Soft",
+    "Babolat XALT",
+    "Wilson NXT Power",
+    "Wilson NXT",
+    "Tecnifibre NRG2",
+    "Tecnifibre X-One Biphase",
+    "Toroline ENSO PRO",
+    "Toroline Truffle X",
+    "MSV Swift",
+    "Gamma Live Wire Professional"
+  ],
+
+  "recommended_hybrid_architectures": [
+    "Natural Gut Main + Polyester Cross",
+    "Multifilament Main + Soft Polyester Cross",
+    "Soft Polyester Main + Elastic Cross"
+  ],
+
+  "avoid": {
+    "racquet_characteristics": [
+      "Very Low Power",
+      "Very Small Head Size For Developing Players",
+      "Excessively High Swingweight",
+      "Very Dense Low-Launch Setup When Player Already Struggles With Depth"
+    ],
+
+    "string_characteristics": [
+      "Very Firm Low-Power Polyester",
+      "Dead Polyester",
+      "Excessively Thick Gauge",
+      "Very High Tension",
+      "Very Low Elasticity"
+    ]
+  },
+
+  "ai_matching_weights": {
+    "power": 0.30,
+    "elasticity": 0.18,
+    "ball_pocketing": 0.14,
+    "comfort": 0.12,
+    "forgiveness": 0.08,
+    "maneuverability": 0.06,
+    "feel": 0.04,
+    "control": 0.03,
+    "spin": 0.02,
+    "durability": 0.015,
+    "tension_maintenance": 0.015
+  },
+
+  "matching_logic": {
+    "prioritize_when": [
+      "Player consistently leaves balls short.",
+      "Player needs excessive effort to create depth.",
+      "Current setup feels dead or low powered.",
+      "Player's swing speed is slow or medium.",
+      "Player wants more serve penetration.",
+      "Player loses depth late in matches."
+    ],
+
+    "equipment_goals": [
+      "Increase easy depth.",
+      "Increase usable ball speed.",
+      "Reduce effort required to generate pace.",
+      "Maintain enough control to swing confidently.",
+      "Improve defensive depth.",
+      "Increase energy return from the stringbed."
+    ],
+
+    "deprioritize": [
+      "Maximum Firmness",
+      "Maximum Low-Powered Control",
+      "Very Dense Low-Launch Response",
+      "Extremely Thick String Gauge"
+    ]
+  },
+
+  "racquet_compensation_logic": {
+    "if_current_racquet_is_high_power": {
+      "action": "Do not automatically recommend a more powerful racquet.",
+
+      "preferred_solution_order": [
+        "Check whether current string is too firm.",
+        "Reduce tension moderately.",
+        "Use thinner gauge.",
+        "Use more elastic string."
+      ]
+    },
+
+    "if_current_racquet_is_low_power": {
+      "preferred_solution_order": [
+        "Use more elastic string.",
+        "Lower tension.",
+        "Use thinner gauge.",
+        "Consider a more powerful racquet only if depth remains difficult."
+      ]
+    },
+
+    "if_current_racquet_is_too_heavy": {
+      "note": "The player may describe the problem as lack of power when the actual problem is insufficient racquet-head speed.",
+
+      "preferred_action": [
+        "Evaluate static weight.",
+        "Evaluate swingweight.",
+        "Evaluate late-match fatigue."
+      ]
+    }
+  },
+
+  "swing_speed_logic": {
+    "slow": {
+      "goal_priority_multiplier": 1.25,
+
+      "preferred": [
+        "Multifilament",
+        "Natural Gut",
+        "Synthetic Gut",
+        "Very Soft Polyester"
+      ]
+    },
+
+    "medium": {
+      "goal_priority_multiplier": 1.0,
+
+      "preferred": [
+        "Soft Polyester",
+        "Responsive Polyester",
+        "Multifilament",
+        "Hybrid"
+      ]
+    },
+
+    "fast": {
+      "goal_priority_multiplier": 0.75,
+
+      "warning": "Fast swingers usually generate sufficient power naturally, so additional power must not compromise control.",
+
+      "preferred": [
+        "Controlled Power Polyester",
+        "Elastic Control String",
+        "Moderate Tension Reduction"
+      ]
+    }
+  },
+
+  "playing_style_logic": {
+    "baseline_aggressive": {
+      "power_type": "Controlled Power",
+      "control_protection": "High"
+    },
+
+    "baseline_counterpuncher": {
+      "power_type": "Easy Depth / Redirected Pace",
+      "control_protection": "Medium-High"
+    },
+
+    "baseline_grinder": {
+      "power_type": "Sustainable Easy Depth",
+      "comfort_protection": "High"
+    },
+
+    "all_court": {
+      "power_type": "Responsive Power With Feel",
+      "feel_protection": "High"
+    },
+
+    "serve_volley": {
+      "power_type": "Serve Penetration + Touch",
+      "launch_protection": "High"
+    }
+  },
+
+  "physical_constraint_logic": {
+    "arm_sensitivity": {
+      "mild": {
+        "preferred": [
+          "Soft Co-Polyester",
+          "Multifilament",
+          "Comfort Hybrid"
+        ]
+      },
+
+      "moderate": {
+        "preferred": [
+          "Multifilament",
+          "Natural Gut",
+          "Soft Hybrid"
+        ],
+
+        "avoid": [
+          "Firm Polyester"
+        ]
+      },
+
+      "high": {
+        "preferred": [
+          "Natural Gut",
+          "Multifilament"
+        ],
+
+        "avoid": [
+          "Firm Full Polyester",
+          "High Tension"
+        ]
+      }
+    }
+  },
+
+  "tradeoffs": {
+    "more_power_can_reduce": [
+      "Control",
+      "Launch Predictability",
+      "Durability"
+    ],
+
+    "lower_tension_can_increase": [
+      "Launch Angle",
+      "String Movement",
+      "Ball Pocketing"
+    ],
+
+    "thinner_gauge_can_reduce": [
+      "Durability",
+      "Stringbed Stability"
+    ]
+  },
+
+  "related_goals": [
+    "more_comfort",
+    "more_ball_pocketing",
+    "higher_launch",
+    "more_forgiveness",
+    "more_feel"
+  ],
+
+  "conflicting_goals": {
+    "more_control": {
+      "resolution": "Use controlled-power strings rather than maximizing elasticity."
+    },
+
+    "lower_launch": {
+      "resolution": "Increase power through elasticity and pocketing rather than excessive launch."
+    },
+
+    "more_durability": {
+      "resolution": "Do not automatically use very thin gauge; select a more powerful construction first."
+    }
+  },
+
+  "output_guidance": {
+    "preferred_change_sequence": [
+      "Tension",
+      "Gauge",
+      "String Model",
+      "Hybrid Architecture",
+      "Racquet"
+    ],
+
+    "must_explain": [
+      "Whether the player actually needs more free power.",
+      "Whether the power problem may come from racquet weight or swingweight.",
+      "How much control will be traded for additional power.",
+      "Why tension, gauge or string change is preferred before racquet replacement."
+    ]
+  },
+
+  "search_keywords": [
+    "more power",
+    "power",
+    "easy power",
+    "easy depth",
+    "more pace",
+    "ball speed",
+    "underpowered",
+    "lack of depth",
+    "增加力量",
+    "提升力量",
+    "增加球速",
+    "增加深度",
+    "打不深"
+  ]
+}
