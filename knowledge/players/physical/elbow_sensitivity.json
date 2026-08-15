@@ -1,0 +1,311 @@
+{
+  "id": "elbow_sensitivity",
+  "category": "Player Physical Constraint",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
+
+  "constraint": {
+    "name": {
+      "en": "Elbow Sensitivity",
+      "zh": "肘部敏感"
+    },
+    "description": {
+      "en": "The player experiences discomfort, soreness or has a history of tennis elbow or similar elbow-related conditions. This physical constraint has higher priority than equipment performance goals.",
+      "zh": "球员存在肘部不适、网球肘或相关病史。此身体限制条件优先级高于装备性能目标。"
+    }
+  },
+
+  "priority": {
+    "type": "Physical Constraint",
+    "override_level": "Highest",
+    "overrides": [
+      "more_spin",
+      "more_control",
+      "more_power",
+      "more_durability",
+      "maximum_performance"
+    ]
+  },
+
+  "severity_levels": {
+    "none": {
+      "score": 0
+    },
+    "mild": {
+      "score": 1
+    },
+    "moderate": {
+      "score": 2
+    },
+    "high": {
+      "score": 3
+    }
+  },
+
+  "symptoms": [
+    "Outer elbow pain",
+    "Inner elbow soreness",
+    "Pain during impact",
+    "Pain after serving",
+    "Pain after backhand",
+    "Pain increases after long sessions",
+    "Reduced grip strength",
+    "Tenderness around the elbow"
+  ],
+
+  "possible_causes": [
+    "Firm polyester strings",
+    "Dead polyester",
+    "High string tension",
+    "Very stiff racquet",
+    "Very high swingweight",
+    "Off-center impact",
+    "Poor recovery",
+    "Overuse"
+  ],
+
+  "equipment_strategy": {
+    "primary_goal": "Minimize Impact Shock At The Elbow",
+
+    "change_priority": [
+      "String Material",
+      "String Tension",
+      "Hybrid",
+      "Gauge",
+      "Racquet"
+    ]
+  },
+
+  "recommended_string_families": [
+    "Natural Gut",
+    "Premium Multifilament",
+    "Soft Multifilament",
+    "Soft Co-Polyester",
+    "Natural Gut Hybrid",
+    "Multifilament Hybrid"
+  ],
+
+  "avoid_string_families": [
+    "Firm Polyester",
+    "Dead Polyester",
+    "High-Stiffness Polyester",
+    "Very Firm Tournament Polyester"
+  ],
+
+  "preferred_string_dna": {
+    "comfort": 10,
+    "shock_absorption": 10,
+    "elasticity": 10,
+    "ball_pocketing": 9,
+    "feel": 8,
+    "control": 7,
+    "tension_maintenance": 7,
+    "spin": 6,
+    "durability": 5,
+    "stiffness": 1
+  },
+
+  "preferred_racquet_dna": {
+    "comfort": 10,
+    "forgiveness": 9,
+    "stability": 8,
+    "maneuverability": 8,
+    "feel": 8,
+    "control": 7,
+    "power": 7,
+    "spin": 7
+  },
+
+  "recommended_strings": [
+    "Babolat Touch VS",
+    "Babolat RPM Soft",
+    "Wilson Natural Gut",
+    "Wilson NXT",
+    "Wilson NXT Power",
+    "Yonex PolyTour Air",
+    "Yonex REXIS Comfort",
+    "Yonex REXIS Feel",
+    "Luxilon Element",
+    "Tecnifibre X-One Biphase",
+    "Tecnifibre NRG2",
+    "MSV Soft Touch",
+    "Solinco Hyper-G Soft",
+    "Toroline Truffle X"
+  ],
+
+  "recommended_hybrids": [
+    "Natural Gut Main + Soft Polyester Cross",
+    "Multifilament Main + Soft Polyester Cross",
+    "Soft Polyester Main + Multifilament Cross"
+  ],
+
+  "tension_adjustment": {
+    "mild": {
+      "adjustment_lbs": -2
+    },
+    "moderate": {
+      "adjustment_lbs": -3
+    },
+    "high": {
+      "adjustment_lbs": -4
+    },
+    "notes": [
+      "Reduce tension before considering a racquet replacement.",
+      "Changing to a softer string is normally more effective than tension reduction alone."
+    ]
+  },
+
+  "gauge_adjustment": {
+    "preferred": [
+      "1.20",
+      "1.23",
+      "1.25"
+    ],
+    "avoid": [
+      "Very thick polyester",
+      "1.30 mm firm polyester unless absolutely necessary"
+    ]
+  },
+
+  "racquet_adjustment": {
+    "prefer": [
+      "Flexible frame",
+      "Medium swingweight",
+      "Large sweet spot",
+      "Better vibration damping",
+      "Comfort-oriented construction"
+    ],
+    "avoid": [
+      "High RA stiffness",
+      "Very high swingweight",
+      "Demanding control frames",
+      "Harsh impact frames"
+    ]
+  },
+
+  "severity_logic": {
+    "mild": {
+      "recommendation": [
+        "Soft polyester",
+        "Reduce tension",
+        "Comfort hybrid"
+      ]
+    },
+
+    "moderate": {
+      "recommendation": [
+        "Premium multifilament",
+        "Natural gut hybrid",
+        "Reduce tension",
+        "Review racquet stiffness"
+      ]
+    },
+
+    "high": {
+      "recommendation": [
+        "Natural gut",
+        "Premium multifilament",
+        "Flexible racquet",
+        "Very low-impact setup"
+      ],
+
+      "hard_constraints": [
+        "Avoid full-bed firm polyester.",
+        "Avoid high-tension polyester.",
+        "Avoid extremely stiff racquets."
+      ]
+    }
+  },
+
+  "ai_override_rules": {
+    "if_elbow_sensitivity_is_high": {
+      "override": true,
+
+      "ignore_if_goal_is": [
+        "Maximum Spin",
+        "Maximum Control",
+        "Maximum Durability"
+      ],
+
+      "prioritize": [
+        "Comfort",
+        "Shock Absorption",
+        "Long-Term Health",
+        "Recovery"
+      ]
+    }
+  },
+
+  "medical_warning": {
+    "enabled": true,
+
+    "message": {
+      "en": "Equipment adjustments may reduce impact stress but cannot diagnose, treat or cure elbow injuries. Persistent pain should be evaluated by a qualified healthcare professional.",
+      "zh": "装备调整可以降低击球冲击，但不能诊断、治疗或治愈肘部损伤。如疼痛持续，请咨询专业医疗人员。"
+    }
+  },
+
+  "tradeoffs": {
+    "comfort_priority_can_reduce": [
+      "Maximum Spin",
+      "Maximum Control",
+      "Maximum Durability"
+    ],
+
+    "acceptable_tradeoff": "Protecting elbow health is more important than maximizing equipment performance."
+  },
+
+  "matching_weights": {
+    "comfort": 0.28,
+    "shock_absorption": 0.22,
+    "string_stiffness": 0.15,
+    "racquet_stiffness": 0.12,
+    "tension": 0.08,
+    "ball_pocketing": 0.05,
+    "forgiveness": 0.04,
+    "feel": 0.03,
+    "control": 0.02,
+    "spin": 0.01
+  },
+
+  "decision_thresholds": {
+    "mild": {
+      "allow_full_poly": true,
+      "max_poly_tension_lbs": 50
+    },
+
+    "moderate": {
+      "allow_full_poly": true,
+      "max_poly_tension_lbs": 48,
+      "prefer_hybrid": true
+    },
+
+    "high": {
+      "allow_full_poly": false,
+      "prefer_hybrid": false,
+      "prefer_multifilament_or_gut": true
+    }
+  },
+
+  "output_guidance": {
+    "must_explain": [
+      "Why elbow health overrides performance goals.",
+      "Which equipment variables contribute most to elbow stress.",
+      "Why the selected setup is safer.",
+      "Which performance compromises are intentional."
+    ]
+  },
+
+  "search_keywords": [
+    "elbow",
+    "tennis elbow",
+    "lateral epicondylitis",
+    "medial epicondylitis",
+    "elbow pain",
+    "elbow sensitive",
+    "肘部",
+    "网球肘",
+    "肘部疼痛",
+    "肘部敏感"
+  ]
+}
