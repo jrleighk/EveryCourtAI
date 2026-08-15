@@ -1,0 +1,443 @@
+{
+  "id": "wilson_sensation_16",
+  "brand": "Wilson",
+  "series": "Sensation",
+  "model": "Sensation 16",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Multifilament",
+    "material": "Highly Elastic Nylon Fibers",
+    "string_family": "Multifilament",
+    "core_structure": "Elastic Nylon Multifilament Core with Dual Opposing Outer Wraps",
+    "cross_section": "Round",
+    "surface": "Smooth",
+    "tour_positioning": "Comfort / Playability / Value Multifilament",
+    "official_positioning": "Classic arm-friendly multifilament designed to provide comfort and playability through highly elastic nylon fibers, with two outer wraps applied in opposite directions to improve durability.",
+    "target_level": "Beginner / Intermediate / Recreational"
+  },
+
+  "specifications": {
+    "construction": "Nylon Multifilament",
+    "cross_section": "Round",
+    "surface": "Smooth",
+
+    "available_colors": [
+      "Natural"
+    ],
+
+    "color_availability": {
+      "Natural": {
+        "gauge_mm": 1.30,
+        "gauge_name": "16",
+        "available": true
+      }
+    },
+
+    "available_gauges": [
+      {
+        "gauge_name": "16",
+        "gauge_mm": 1.30,
+        "available": true,
+
+        "available_colors": [
+          "Natural"
+        ],
+
+        "power": 9,
+        "control": 8,
+        "spin": 7,
+        "comfort": 10,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 8,
+        "elasticity": 10,
+        "shock_absorption": 10,
+        "ball_pocketing": 9,
+        "launch_angle": "Medium",
+
+        "recommended_use": [
+          "Comfort",
+          "Arm-Friendly Play",
+          "Recreational Play",
+          "Full Bed",
+          "Hybrid Use",
+          "Players Seeking Value Multifilament"
+        ]
+      }
+    ],
+
+    "packaging": [
+      {
+        "type": "Set",
+        "length_ft": 40,
+        "length_m": 12.2
+      }
+    ]
+  },
+
+  "technology": [
+    "Highly Elastic Nylon Fibers",
+    "Dual Opposing Outer Wraps",
+    "Vibration Reduction Construction",
+    "Arm-Friendly Multifilament Design"
+  ],
+
+  "technology_details": {
+    "elastic_nylon_fibers": {
+      "description": "Highly elastic nylon fibers provide a soft and responsive feel while helping reduce impact vibration.",
+      "primary_benefits": [
+        "Comfort",
+        "Elasticity",
+        "Playability",
+        "Shock Reduction"
+      ]
+    },
+
+    "dual_outer_wraps": {
+      "description": "Two outer wraps are applied in opposite directions to reinforce the multifilament structure and improve durability.",
+      "primary_benefits": [
+        "Improved Durability",
+        "Better Structural Stability",
+        "Reduced Premature Fraying"
+      ]
+    },
+
+    "vibration_reduction": {
+      "description": "The elastic multifilament construction reduces harsh impact vibration and supports Sensation's arm-friendly character.",
+      "primary_benefits": [
+        "Arm Comfort",
+        "Shock Absorption",
+        "Softer Impact"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Comfort Value Multifilament",
+    "target_player": "Beginner / Intermediate / Recreational",
+    "arm_friendly": true,
+    "spin_focus": false,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true,
+    "pocketing_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 8,
+    "spin": 7,
+    "comfort": 10,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 8,
+    "elasticity": 10,
+    "shock_absorption": 10,
+    "ball_pocketing": 9,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 8,
+    "spin": 7,
+    "comfort": 10,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 8
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Soft",
+    "snapback": 6,
+    "ball_pocketing": 9,
+    "string_movement": 6,
+    "tension_stability": 8,
+    "spin_window": "Medium-Low",
+    "predictability": 9,
+    "arm_friendliness": 10,
+    "shock_absorption": 10,
+    "directional_precision": 8,
+    "sweet_spot_forgiveness": 9,
+    "plushness": 9,
+    "power_response": 9,
+    "value_performance": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate",
+      "Recreational"
+    ],
+
+    "swing_speed": [
+      "Slow",
+      "Medium",
+      "Medium-Fast"
+    ],
+
+    "play_style": [
+      "All Court",
+      "Baseline",
+      "Doubles",
+      "Serve & Volley",
+      "Touch Player"
+    ],
+
+    "special_player_profiles": [
+      "Players Seeking Arm-Friendly Comfort",
+      "Players Wanting Easy Power",
+      "Players Looking For Affordable Multifilament",
+      "Players Transitioning Away From Polyester",
+      "Players Wanting More Durability Than Sensation 17"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Clash",
+    "Wilson Blade",
+    "Wilson Ultra",
+    "HEAD Boom",
+    "HEAD Speed",
+    "Yonex EZONE",
+    "Babolat Pure Drive",
+    "Tecnifibre T-FIGHT",
+    "Dunlop FX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Luxilon ALU Power",
+      "Luxilon Element",
+      "Wilson Revolve",
+      "Wilson Revolve Spin"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Comfort",
+        "Power",
+        "Feel",
+        "Ball Pocketing"
+      ],
+
+      "as_crosses": [
+        "Stringbed Softening",
+        "Comfort",
+        "Power Support",
+        "Shock Reduction"
+      ]
+    },
+
+    "hybrid_note": "Sensation 16 works well as a budget-friendly comfort component in hybrid setups, especially for players who want to soften a polyester stringbed."
+  },
+
+  "gauge_recommendation": {
+    "1.30": {
+      "gauge_name": "16",
+
+      "best_for": [
+        "Durability",
+        "Comfort",
+        "Recreational Play",
+        "Full Bed",
+        "Hybrid Play"
+      ],
+
+      "tradeoffs": [
+        "Slightly Less Feel Than Sensation 17",
+        "Slightly Less Power and Spin Than Thinner Gauges"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.30": {
+      "heavy_topspin_hours": "5-9",
+      "club_player_hours": "16-26"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Immediate",
+    "peak_playability": "Immediate",
+    "performance_drop": "Medium",
+    "tension_loss_sensitivity": "Medium",
+    "playability_duration": "Good",
+    "recommended_monitoring": "Replace when fraying, notching, excessive string movement or tension loss becomes noticeable."
+  },
+
+  "installation_guidelines": {
+    "handling_sensitivity": "Medium",
+    "manufacturer_instructions": [
+      "Handle gently during installation.",
+      "Avoid excessive clamping pressure.",
+      "Avoid damaging the outer wraps."
+    ]
+  },
+
+  "comparison_data": {
+    "vs_sensation_17": {
+      "thickness": "Higher",
+      "durability": "Higher",
+      "control": "Higher",
+      "power": "Slightly Lower",
+      "feel": "Slightly Lower",
+      "spin": "Slightly Lower"
+    },
+
+    "vs_nxt_16": {
+      "price_positioning": "More Value-Oriented",
+      "comfort": "High",
+      "power": "Slightly Lower",
+      "feel": "Lower",
+      "tension_maintenance": "Lower",
+      "durability": "Comparable to Good"
+    },
+
+    "vs_polyester": {
+      "comfort": "Much Higher",
+      "shock_absorption": "Much Higher",
+      "power": "Higher",
+      "spin": "Lower",
+      "durability": "Lower",
+      "control": "Softer / More Elastic"
+    }
+  },
+
+  "science_metrics": {
+    "material_class": "Nylon Multifilament",
+
+    "geometry": {
+      "shape": "Round"
+    },
+
+    "comfort_class": "Very High",
+    "power_class": "High",
+    "shock_absorption_class": "Very High",
+    "ball_pocketing_class": "High",
+    "durability_class": "High for Multifilament",
+    "value_class": "Very High",
+    "performance_class": "Comfort Value Multifilament"
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Recreational Players Seeking Comfort",
+      "Players With Arm Sensitivity",
+      "Players Wanting Easy Power",
+      "Players Seeking Affordable Multifilament",
+      "Players Wanting Better Durability Than Sensation 17",
+      "Players Building Budget Comfort Hybrids"
+    ],
+
+    "avoid_for": [
+      "Heavy Topspin Players Seeking Maximum Snapback",
+      "Frequent String Breakers",
+      "Players Wanting Firm Polyester-Level Control",
+      "Advanced Players Seeking Maximum Precision"
+    ],
+
+    "alternative_strings": [
+      "Wilson NXT 16",
+      "Wilson Sensation 17",
+      "Head Velocity MLT",
+      "Tecnifibre Multifeel",
+      "Babolat Xcel"
+    ]
+  },
+
+  "comparison_tags": [
+    "Wilson",
+    "Sensation",
+    "Sensation 16",
+    "Multifilament",
+    "Nylon",
+    "Comfort",
+    "Arm Friendly",
+    "Value",
+    "Natural",
+    "1.30"
+  ],
+
+  "ai_keywords": [
+    "wilson",
+    "sensation",
+    "sensation 16",
+    "wilson sensation 16",
+    "1.30",
+    "16 gauge",
+    "natural",
+    "multifilament",
+    "nylon fibers",
+    "outer wraps",
+    "comfort",
+    "playability",
+    "arm friendly",
+    "durability",
+    "value multifilament"
+  ],
+
+  "target_competitors": [
+    "Wilson NXT 16",
+    "Head Velocity MLT",
+    "Tecnifibre Multifeel",
+    "Babolat Xcel"
+  ],
+
+  "description": {
+    "en": "Wilson Sensation 16 is a classic value-oriented multifilament built from highly elastic nylon fibers for comfort, easy power and improved playability. Two outer wraps applied in opposite directions reinforce the string and improve durability. The 1.30 mm / 16 gauge version is thicker than Sensation 17, making it the more durable and slightly more controlled option while retaining the arm-friendly character that has made Sensation a long-standing multifilament choice.",
+
+    "zh": "Wilson Sensation 16 是一款经典、性价比较高的多芯球线，采用高弹性尼龙纤维来提供舒适、易获得的力量和良好可打性。球线外层采用两组反向缠绕结构，以提升整体耐久和结构稳定性。1.30 毫米 / 16 Gauge 比 Sensation 17 更粗，因此更耐打、控制更稳定，同时继续保持 Sensation 系列标志性的 Arm-Friendly 柔和特性。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Wilson Sensation 16",
+      "Natural color",
+      "Multifilament construction",
+      "Highly elastic nylon fibers",
+      "Reduced vibration positioning",
+      "Enhanced comfort",
+      "Enhanced playability",
+      "Two outer wraps",
+      "Outer wraps applied in opposite directions",
+      "Improved durability",
+      "Arm-friendly positioning",
+      "Value multifilament positioning",
+      "16 gauge",
+      "1.30 mm",
+      "Thicker than Sensation 17",
+      "More durable than Sensation 17 positioning",
+      "Set length 40 ft / 12.2 m"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendation",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "Installation Guidelines",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations"
+    ]
+  }
+}
