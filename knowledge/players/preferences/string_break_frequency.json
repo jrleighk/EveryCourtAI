@@ -1,0 +1,364 @@
+{
+  "id": "string_break_frequency",
+  "category": "Player Preference",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
+
+  "preference": {
+    "name": {
+      "en": "String Break Frequency",
+      "zh": "断线频率"
+    },
+    "description": {
+      "en": "Represents how frequently the player breaks strings during normal play. This helps EveryCourtAI balance durability, playability, comfort and cost.",
+      "zh": "表示球员在正常打球过程中断线的频率，用于帮助 EveryCourtAI 在耐久、手感、舒适性与成本之间取得平衡。"
+    }
+  },
+
+  "priority": {
+    "type": "Preference",
+    "override_level": "Medium",
+    "can_override": [
+      "brand_preference",
+      "cosmetic_preference"
+    ],
+    "cannot_override": [
+      "physical_constraints",
+      "manufacturer_limits",
+      "current_setup_failures"
+    ]
+  },
+
+  "frequency_levels": {
+    "very_frequent": {
+      "name": {
+        "en": "Very Frequent",
+        "zh": "经常断线"
+      },
+      "description": {
+        "en": "Usually breaks strings within 5 hours.",
+        "zh": "通常 5 小时以内断线。"
+      },
+      "estimated_hours": {
+        "max": 5
+      }
+    },
+
+    "frequent": {
+      "name": {
+        "en": "Frequent",
+        "zh": "较常断线"
+      },
+      "description": {
+        "en": "Usually breaks strings within 5–10 hours.",
+        "zh": "通常 5–10 小时断线。"
+      },
+      "estimated_hours": {
+        "min": 5,
+        "max": 10
+      }
+    },
+
+    "normal": {
+      "name": {
+        "en": "Normal",
+        "zh": "一般"
+      },
+      "description": {
+        "en": "Strings normally last 10–20 hours.",
+        "zh": "通常可使用 10–20 小时。"
+      },
+      "estimated_hours": {
+        "min": 10,
+        "max": 20
+      }
+    },
+
+    "rare": {
+      "name": {
+        "en": "Rarely Breaks Strings",
+        "zh": "很少断线"
+      },
+      "description": {
+        "en": "Strings generally last more than 20 hours.",
+        "zh": "通常超过 20 小时以上才会断线。"
+      },
+      "estimated_hours": {
+        "min": 20
+      }
+    },
+
+    "never": {
+      "name": {
+        "en": "Almost Never",
+        "zh": "几乎不断线"
+      },
+      "description": {
+        "en": "Player normally cuts strings before they break.",
+        "zh": "通常还没断线就主动剪线。"
+      }
+    }
+  },
+
+  "equipment_logic": {
+    "very_frequent": {
+      "preferred_gauge": [
+        1.25,
+        1.28,
+        1.30
+      ],
+
+      "preferred_string_families": [
+        "Durable Polyester",
+        "Control Polyester",
+        "Poly / Poly Hybrid"
+      ],
+
+      "deprioritize": [
+        "Natural Gut Full Bed",
+        "Very Thin Multifilament",
+        "1.20 Polyester"
+      ]
+    },
+
+    "frequent": {
+      "preferred_gauge": [
+        1.23,
+        1.25,
+        1.30
+      ],
+
+      "preferred_string_families": [
+        "Polyester",
+        "Hybrid",
+        "Durable Multifilament"
+      ]
+    },
+
+    "normal": {
+      "preferred_gauge": [
+        1.23,
+        1.25
+      ],
+
+      "preferred_string_families": [
+        "Polyester",
+        "Hybrid",
+        "Multifilament"
+      ]
+    },
+
+    "rare": {
+      "preferred_gauge": [
+        1.20,
+        1.23,
+        1.25
+      ],
+
+      "preferred_string_families": [
+        "Multifilament",
+        "Natural Gut",
+        "Comfort Hybrid",
+        "Soft Polyester"
+      ]
+    },
+
+    "never": {
+      "preferred_gauge": [
+        1.20,
+        1.23
+      ],
+
+      "preferred_string_families": [
+        "Natural Gut",
+        "Premium Multifilament",
+        "Comfort Hybrid"
+      ]
+    }
+  },
+
+  "durability_priority": {
+    "very_frequent": 10,
+    "frequent": 8,
+    "normal": 5,
+    "rare": 2,
+    "never": 1
+  },
+
+  "comfort_priority": {
+    "very_frequent": 3,
+    "frequent": 5,
+    "normal": 7,
+    "rare": 9,
+    "never": 10
+  },
+
+  "gauge_logic": {
+    "very_frequent": {
+      "increase_gauge_priority": true,
+      "preferred_direction": "Thicker"
+    },
+
+    "frequent": {
+      "increase_gauge_priority": true
+    },
+
+    "normal": {
+      "keep_neutral": true
+    },
+
+    "rare": {
+      "allow_thinner": true
+    },
+
+    "never": {
+      "prefer_thinner": true
+    }
+  },
+
+  "hybrid_logic": {
+    "very_frequent": {
+      "prefer": [
+        "Poly / Poly Hybrid",
+        "Durable Polyester"
+      ]
+    },
+
+    "frequent": {
+      "prefer": [
+        "Polyester",
+        "Hybrid"
+      ]
+    },
+
+    "normal": {
+      "prefer": [
+        "Hybrid",
+        "Polyester",
+        "Multifilament"
+      ]
+    },
+
+    "rare": {
+      "prefer": [
+        "Natural Gut Hybrid",
+        "Multifilament Hybrid"
+      ]
+    },
+
+    "never": {
+      "prefer": [
+        "Natural Gut",
+        "Premium Multifilament",
+        "Natural Gut Hybrid"
+      ]
+    }
+  },
+
+  "cost_logic": {
+    "very_frequent": {
+      "warning": {
+        "en": "Premium natural gut may result in very high annual stringing costs.",
+        "zh": "如果经常断线，天然肠线可能带来非常高的年度穿线成本。"
+      }
+    },
+
+    "never": {
+      "recommendation": {
+        "en": "Premium strings become more cost-effective because they are replaced due to playability rather than breakage.",
+        "zh": "由于通常不是因为断线而更换球线，因此高端球线的性价比反而更高。"
+      }
+    }
+  },
+
+  "playing_style_interaction": {
+    "baseline_aggressive": {
+      "expected_break_rate": "Higher"
+    },
+
+    "baseline_grinder": {
+      "expected_break_rate": "High"
+    },
+
+    "baseline_counterpuncher": {
+      "expected_break_rate": "Medium"
+    },
+
+    "all_court": {
+      "expected_break_rate": "Medium-Low"
+    },
+
+    "serve_volley": {
+      "expected_break_rate": "Low"
+    }
+  },
+
+  "physical_override_logic": {
+    "rule": {
+      "en": "Durability should never override player safety.",
+      "zh": "耐久性不能覆盖身体安全。"
+    },
+
+    "examples": [
+      {
+        "condition": "Very Frequent Breaker + High Elbow Sensitivity",
+        "result": "Recommend durable soft polyester or hybrid instead of firm polyester."
+      },
+      {
+        "condition": "Rare Breaker + High Arm Sensitivity",
+        "result": "Prioritize comfort over durability."
+      }
+    ]
+  },
+
+  "recommendation_adjustments": {
+    "increase_priority": [
+      "Gauge",
+      "Durability",
+      "String Construction"
+    ],
+
+    "decrease_priority": [
+      "Cosmetics",
+      "Brand Preference"
+    ]
+  },
+
+  "matching_weights": {
+    "durability": 0.35,
+    "gauge": 0.18,
+    "string_family": 0.18,
+    "comfort": 0.10,
+    "cost_efficiency": 0.08,
+    "hybrid": 0.06,
+    "feel": 0.03,
+    "spin": 0.02
+  },
+
+  "output_guidance": {
+    "must_explain": [
+      "How break frequency influences string recommendation.",
+      "Whether thicker gauge is beneficial.",
+      "Whether durability should outweigh feel.",
+      "Estimated tradeoff in comfort or playability."
+    ],
+
+    "must_not_do": [
+      "Do not recommend thicker gauge if it conflicts with serious physical constraints.",
+      "Do not assume all string breakers need the stiffest polyester.",
+      "Do not optimize only for durability."
+    ]
+  },
+
+  "search_keywords": [
+    "string break",
+    "break frequency",
+    "durability",
+    "string life",
+    "how often break strings",
+    "断线",
+    "断线频率",
+    "耐久",
+    "球线寿命"
+  ]
+}
