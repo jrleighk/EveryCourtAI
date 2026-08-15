@@ -1,0 +1,436 @@
+{
+  "id": "yonex_polytour_drive_soft",
+  "brand": "Yonex",
+  "series": "PolyTour",
+  "model": "PolyTour Drive Soft",
+  "category": "Co-Polyester",
+
+  "manufacturer_data": {
+    "construction": "Polyester Octagonal Monofilament",
+    "material": "Polyester",
+    "string_family": "PolyTour",
+    "cross_section": "Octagonal",
+    "profile_sides": 8,
+    "surface": "Shaped",
+    "official_positioning": "Soft shaped polyester designed to provide easy access to powerful spin for players of all swing speeds at an affordable price.",
+    "target_level": "Beginner / Intermediate / Advanced",
+    "target_style": "Spin-Oriented / Comfort-Oriented Baseline",
+    "swing_speed_positioning": "All Swing Speeds"
+  },
+
+  "specifications": {
+    "construction": "Polyester Octagonal Monofilament",
+    "cross_section": "Octagonal",
+    "profile_sides": 8,
+    "surface": "Shaped",
+
+    "available_colors": [
+      "Flash Yellow"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_name": "16L",
+        "gauge_mm": 1.25,
+        "available": true,
+        "item_code_set": "PTGDS125",
+        "item_code_reel": "PTDS25-2",
+
+        "power": 9,
+        "control": 8,
+        "spin": 9,
+        "comfort": 9,
+        "feel": 9,
+        "durability": 7,
+        "tension_maintenance": 8,
+        "ball_bite": 9,
+        "snapback": 8,
+        "ball_pocketing": 9,
+        "launch_angle": "Medium-High"
+      }
+    ],
+
+    "available_lengths": [
+      {
+        "type": "Set",
+        "length_m": 12
+      },
+      {
+        "type": "Reel",
+        "length_m": 200
+      }
+    ]
+  },
+
+  "technology": [
+    "Octagonal Geometry",
+    "Mechanical Ball Bite",
+    "Easy Spin Access",
+    "Soft Polyester Response",
+    "Comfort-Oriented Spin Performance"
+  ],
+
+  "technology_details": {
+    "octagonal_geometry": {
+      "shape": "Octagonal",
+      "sides": 8,
+      "description": "The eight-sided profile increases mechanical grip on the ball to support spin generation even at slower swing speeds.",
+      "primary_benefits": [
+        "Ball Bite",
+        "Spin",
+        "Trajectory Shaping",
+        "Easy Spin Access"
+      ]
+    },
+
+    "soft_response": {
+      "description": "Drive Soft maintains the shaped-spin concept of PolyTour Drive while providing a softer and more comfortable stringbed response.",
+      "primary_benefits": [
+        "Comfort",
+        "Ball Pocketing",
+        "Feel",
+        "Reduced Harshness"
+      ]
+    },
+
+    "accessible_spin": {
+      "description": "Designed to provide useful spin production across a broad range of swing speeds without requiring a very fast racquet-head speed.",
+      "primary_benefits": [
+        "Accessible Spin",
+        "Power",
+        "Confidence",
+        "Versatility"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Soft Shaped Spin Co-Polyester",
+    "target_player": "Beginner / Intermediate / Advanced",
+    "arm_friendly": true,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": false,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "snapback_focus": true,
+    "ball_bite_focus": true,
+    "value_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 8,
+    "spin": 9,
+    "comfort": 9,
+    "feel": 9,
+    "durability": 7,
+    "tension_maintenance": 8,
+    "elasticity": 9,
+    "ball_pocketing": 9,
+    "launch_angle": "Medium-High"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 8,
+    "spin": 9,
+    "comfort": 9,
+    "feel": 9,
+    "durability": 7,
+    "tension_maintenance": 8
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Soft",
+    "snapback": 8,
+    "ball_bite": 9,
+    "ball_pocketing": 9,
+    "string_movement": 8,
+    "tension_stability": 8,
+    "spin_window": "High",
+    "predictability": 9,
+    "arm_friendliness": 9,
+    "directional_precision": 8,
+    "stringbed_stability": 8,
+    "heavy_ball_potential": 9,
+    "response": "Soft / Lively / Spin-Friendly"
+  },
+
+  "official_performance_map": {
+    "responsiveness": "Medium-High",
+    "firmness": "Soft",
+    "ball_pocketing": "High",
+    "yonex_family_position": "Soft / Spin-Friendly / Accessible"
+  },
+
+  "official_string_parameters": {
+    "power": "High",
+    "spin": "High",
+    "comfort": "High",
+    "control": "Medium",
+    "durability": "Low-Medium",
+    "source": "Yonex Official String Parameters Guide"
+  },
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate",
+      "Advanced"
+    ],
+
+    "swing_speed": [
+      "Slow",
+      "Medium",
+      "Medium-Fast",
+      "Fast"
+    ],
+
+    "play_style": [
+      "Baseline",
+      "Modern Baseline",
+      "Heavy Topspin",
+      "All Court"
+    ],
+
+    "special_player_profiles": [
+      "Players Seeking Easy Spin With More Comfort",
+      "Players New To Shaped Polyester",
+      "Players With Slow-to-Medium Swing Speeds",
+      "Players Wanting Softer PolyTour Drive Feel",
+      "Players Seeking Affordable Spin Performance",
+      "Players Wanting More Pocketing From A Shaped Poly"
+    ]
+  },
+
+  "tour_players": [],
+
+  "recommended_racquets": [
+    "Yonex VCORE",
+    "Yonex EZONE",
+    "Yonex PERCEPT",
+    "Wilson Shift",
+    "Wilson Clash",
+    "Babolat Pure Aero",
+    "Babolat Pure Drive",
+    "HEAD Extreme",
+    "HEAD Boom",
+    "Dunlop SX"
+  ],
+
+  "gauge_recommendation": {
+    "1.25": {
+      "gauge_name": "16L",
+
+      "best_for": [
+        "Easy Spin",
+        "Comfort",
+        "Ball Pocketing",
+        "All Swing Speeds",
+        "Players New To Shaped Polyester"
+      ],
+
+      "tradeoffs": [
+        "Less Durability Than PolyTour Drive",
+        "Less Absolute Control Than PolyTour Strike",
+        "Less Maximum Spin Than PolyTour Rev Or Spin"
+      ]
+    }
+  },
+
+  "comparison_data": {
+    "vs_polytour_drive": {
+      "comfort": "Higher",
+      "feel": "Softer",
+      "ball_pocketing": "Higher",
+      "power": "Similar",
+      "spin": "Similar",
+      "durability": "Lower",
+      "control": "Slightly Lower",
+      "firmness": "Lower"
+    },
+
+    "vs_polytour_pro": {
+      "spin": "Higher",
+      "ball_bite": "Higher",
+      "launch_angle": "Higher",
+      "comfort": "Similar",
+      "shape": {
+        "polytour_drive_soft": "Octagonal",
+        "polytour_pro": "Round"
+      }
+    },
+
+    "vs_polytour_air": {
+      "spin": "Much Higher",
+      "ball_bite": "Much Higher",
+      "control": "Higher",
+      "comfort": "Lower",
+      "shock_absorption": "Lower"
+    },
+
+    "vs_polytour_rev": {
+      "comfort": "Higher",
+      "ease_of_use": "Higher",
+      "power": "Higher",
+      "spin": "Lower",
+      "snapback": "Lower",
+      "firmness": "Lower"
+    },
+
+    "vs_polytour_spin": {
+      "comfort": "Much Higher",
+      "power": "Higher",
+      "ease_of_spin": "Higher At Lower Swing Speeds",
+      "maximum_spin": "Lower",
+      "firmness": "Much Lower"
+    },
+
+    "vs_polytour_fire": {
+      "comfort": "Higher",
+      "ball_bite": "Higher",
+      "snapback": "Lower",
+      "response": "Softer",
+      "power": "Similar"
+    }
+  },
+
+  "science_metrics": {
+    "construction": "Octagonal Polyester Monofilament",
+    "shape": "Octagonal",
+    "profile_sides": 8,
+
+    "spin_mechanism": [
+      "Mechanical Ball Grip",
+      "Octagonal Edge Bite",
+      "String Movement",
+      "Snapback"
+    ],
+
+    "ball_grip": "High",
+    "snapback": "High",
+    "trajectory_profile": "Spin-Friendly / Lively",
+    "launch_angle_profile": "Medium-High",
+    "spin_class": "Very High",
+    "power_class": "High",
+    "comfort_class": "High",
+    "firmness_class": "Soft",
+    "accessibility_class": "Very High"
+  },
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Club Players Wanting Easy Spin",
+      "Players Wanting Softer Shaped Polyester",
+      "Players With Slow-to-Medium Swing Speeds",
+      "Players New To Polyester",
+      "Players Wanting More Comfort Than PolyTour Drive",
+      "Players Seeking Affordable Spin Performance"
+    ],
+
+    "avoid_for": [
+      "Very Fast Swing Players Seeking Maximum Firm Control",
+      "Frequent String Breakers",
+      "Players Seeking Maximum Mechanical Spin",
+      "Players Wanting Extremely Low Launch"
+    ],
+
+    "alternative_strings": [
+      "Yonex PolyTour Drive",
+      "Yonex PolyTour Pro",
+      "Yonex PolyTour Air",
+      "Solinco Hyper-G Soft",
+      "MSV Focus Hex Plus 25",
+      "Toroline O-TORO"
+    ]
+  },
+
+  "comparison_tags": [
+    "Yonex",
+    "PolyTour Drive Soft",
+    "Octagonal",
+    "8-Sided",
+    "Polyester",
+    "Soft Poly",
+    "Spin",
+    "Easy Spin",
+    "Power",
+    "Comfort",
+    "Affordable",
+    "Flash Yellow",
+    "1.25"
+  ],
+
+  "ai_keywords": [
+    "yonex",
+    "polytour drive soft",
+    "poly tour drive soft",
+    "ptgds125",
+    "ptds25-2",
+    "octagonal",
+    "octagon",
+    "8 sided",
+    "soft shaped polyester",
+    "easy spin",
+    "comfortable polyester",
+    "slow swing speed",
+    "all swing speeds",
+    "affordable polyester",
+    "1.25",
+    "flash yellow"
+  ],
+
+  "target_competitors": [
+    "Yonex PolyTour Drive",
+    "Solinco Hyper-G Soft",
+    "MSV Focus Hex Plus 25",
+    "Toroline O-TORO",
+    "Wilson Revolve Spin"
+  ],
+
+  "description": {
+    "en": "Yonex PolyTour Drive Soft is a softer version of the PolyTour Drive concept, combining an octagonal polyester profile with easy access to power and spin. Designed for players across all swing speeds, it offers more comfort and ball pocketing than standard PolyTour Drive while maintaining the mechanical bite of an eight-sided shaped string. It is particularly suitable for players who want shaped-poly spin without the firmer feel of more demanding strings such as PolyTour Rev or PolyTour Spin.",
+
+    "zh": "Yonex PolyTour Drive Soft 是 PolyTour Drive 的柔和版本，继续采用 Octagonal 八边形聚酯单丝结构，同时进一步强化舒适性、Ball Pocketing 和易用性。官方定位同样适合所有挥拍速度，即使挥拍速度较慢，也能比较容易获得有力量的旋转。相比普通 PolyTour Drive，它更加柔软、Pocketing 更明显；相比 PolyTour Rev 或 PolyTour Spin，则明显更加宽容和容易驾驭，非常适合想尝试异形聚酯但不喜欢过硬线床的球员。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_official_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Yonex PolyTour Drive Soft",
+      "Easy access to powerful spin",
+      "Spin access at slower swing speeds",
+      "All swing speeds",
+      "Shaped string",
+      "Affordable price positioning",
+      "Flash Yellow",
+      "16L / 1.25 mm",
+      "Set 12 m",
+      "Reel 200 m",
+      "Polyester",
+      "Octagon Monofilament",
+      "PTGDS125",
+      "PTDS25-2",
+      "Official Yonex performance map"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Official Performance Map",
+      "Official String Parameters",
+      "Recommended Players",
+      "Recommended Racquets",
+      "Gauge Recommendation",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
