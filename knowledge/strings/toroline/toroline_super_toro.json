@@ -1,0 +1,541 @@
+{
+  "id": "toroline_super_toro",
+  "brand": "Toroline",
+  "series": "SUPER TORO",
+  "model": "SUPER TORO",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Co-Polyester",
+    "string_family": "Polyester",
+    "cross_section": "Hexagonal",
+    "surface": "Shaped / Sharp-Edged",
+    "profile_sides": 6,
+    "tour_positioning": "Precision / Control / Controllable Power / Heavy Spin Co-Polyester",
+    "official_positioning": "Six-sided co-poly designed for surgical precision, controllable power, heavy spin and confident shot redirection.",
+    "target_level": "Intermediate / Advanced / Tournament"
+  },
+
+  "specifications": {
+    "construction": "Six-Sided Co-Polyester Monofilament",
+    "cross_section": "Hexagonal (6-Sided)",
+    "surface": "Sharp-Edged / Shaped",
+
+    "available_colors": [
+      "Dark Blue"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.23,
+        "available": true,
+
+        "available_colors": [
+          "Dark Blue"
+        ],
+
+        "power": 9,
+        "control": 10,
+        "spin": 10,
+        "comfort": 8,
+        "feel": 10,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "elasticity": 8,
+        "ball_pocketing": 9,
+        "launch_angle": "Medium",
+
+        "recommended_use": [
+          "Surgical Precision",
+          "Controllable Power",
+          "Heavy Spin",
+          "Shot Redirection",
+          "Aggressive Full Swings",
+          "Directional Control",
+          "Tournament Play"
+        ]
+      }
+    ],
+
+    "packaging": {
+      "type": "Two Half Sets",
+      "half_sets_per_package": 2,
+      "length_per_half_set_m": 6.7,
+      "intended_racquets": 1,
+      "total_length_m": 13.4
+    }
+  },
+
+  "technology": [
+    "Six-Sided Hexagonal Geometry",
+    "Sharp-Edge Mechanical Ball Grip",
+    "Precision Response Tuning",
+    "Controllable Power Engineering",
+    "Shot Redirection Stability",
+    "Heavy Spin Optimization"
+  ],
+
+  "technology_details": {
+    "hexagonal_geometry": {
+      "shape": "Hexagonal",
+      "sides": 6,
+      "description": "The six-sided profile uses sharp edges to grip the ball tightly and increase mechanical spin generation.",
+      "primary_benefits": [
+        "Ball Bite",
+        "Heavy Spin",
+        "Trajectory Control",
+        "Directional Precision"
+      ]
+    },
+
+    "precision_control": {
+      "description": "SUPER TORO is designed around a highly predictable and connected response to help players redirect pace and control point construction.",
+      "primary_benefits": [
+        "Surgical Precision",
+        "Shot Redirection",
+        "Point Control",
+        "Confidence on Full Swings"
+      ]
+    },
+
+    "controllable_power": {
+      "description": "The string is tuned to provide usable power without creating an overly explosive or unpredictable launch.",
+      "primary_benefits": [
+        "Controlled Acceleration",
+        "Reduced Fear of Overhitting",
+        "Confident Racquet Acceleration",
+        "Predictable Depth"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Precision Control Spin Co-Polyester",
+    "target_player": "Intermediate / Advanced / Tournament",
+    "arm_friendly": false,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true,
+    "precision_focus": true,
+    "redirection_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 8,
+    "feel": 10,
+    "durability": 9,
+    "tension_maintenance": 9,
+    "elasticity": 8,
+    "ball_pocketing": 9,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 8,
+    "feel": 10,
+    "durability": 9,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium-Firm",
+    "snapback": 9,
+    "ball_pocketing": 9,
+    "string_movement": 3,
+    "tension_stability": 9,
+    "spin_window": "Very High",
+    "predictability": 10,
+    "arm_friendliness": 7,
+    "directional_precision": 10,
+    "ball_bite": 10,
+    "surface_grip": 10,
+    "heavy_ball_potential": 10,
+    "redirection_control": 10,
+    "full_swing_confidence": 10,
+    "overhit_resistance": 10,
+    "connected_feel": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "All Court",
+      "Counter Puncher",
+      "Power Baseliner",
+      "Precision-Oriented Player"
+    ],
+
+    "special_player_profiles": [
+      "Players Seeking Surgical Precision",
+      "Players Wanting Controllable Power",
+      "Players Who Redirect Pace",
+      "Players Seeking Heavy Spin Without Losing Control",
+      "Players Who Take Big Full Swings",
+      "Players Wanting a Highly Connected Response"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson RF 01",
+    "Wilson Pro Staff",
+    "Wilson Shift",
+    "HEAD Speed",
+    "HEAD Radical",
+    "Yonex PERCEPT",
+    "Yonex EZONE",
+    "Babolat Pure Strike",
+    "Babolat Pure Aero",
+    "Tecnifibre T-FIGHT",
+    "Dunlop CX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "preferred_role": "Mains",
+
+    "best_pairings": [
+      "Toroline A5",
+      "Toroline Wasabi X",
+      "Toroline O-TORO SNAP",
+      "Toroline O-TORO SNAP TOUR FLEX",
+      "Toroline CASH",
+      "Toroline Truffle X"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Precision",
+        "Ball Bite",
+        "Spin",
+        "Directional Control",
+        "Shot Redirection"
+      ],
+
+      "as_crosses": [
+        "Control",
+        "Spin Support",
+        "Response Stability"
+      ]
+    },
+
+    "recommended_toroline_hybrids": [
+      {
+        "mains": "SUPER TORO",
+        "crosses": "A5",
+        "expected_profile": [
+          "Hexagonal Ball Bite",
+          "Low-Friction Round Cross",
+          "Predictable Launch",
+          "High Control",
+          "Strong Snapback"
+        ]
+      },
+
+      {
+        "mains": "SUPER TORO",
+        "crosses": "Wasabi X",
+        "expected_profile": [
+          "Precision",
+          "Fast Snapback",
+          "Court Penetration",
+          "Heavy Spin",
+          "Connected Feel"
+        ]
+      },
+
+      {
+        "mains": "SUPER TORO",
+        "crosses": "O-TORO SNAP TOUR FLEX",
+        "expected_profile": [
+          "Maximum Control",
+          "High Stability",
+          "Low-Friction Response",
+          "Directional Precision",
+          "Tournament-Level Stringbed"
+        ]
+      },
+
+      {
+        "mains": "SUPER TORO",
+        "crosses": "Truffle X",
+        "expected_profile": [
+          "Precision",
+          "Heavy Spin",
+          "Plush Pocketing",
+          "Improved Comfort",
+          "Controlled Power"
+        ]
+      }
+    ],
+
+    "hybrid_note": "SUPER TORO is especially suitable as a control-oriented shaped main paired with a smooth round cross to preserve its ball bite while increasing snapback efficiency."
+  },
+
+  "gauge_recommendation": {
+    "1.23": {
+      "gauge_name": "17",
+      "color": "Dark Blue",
+
+      "best_for": [
+        "Precision",
+        "Control",
+        "Heavy Spin",
+        "Shot Redirection",
+        "Aggressive Full Swings"
+      ],
+
+      "tradeoffs": [
+        "Less Comfort Than Softer Toroline Co-Polys",
+        "Less Free Power Than More Elastic O-TORO Variants"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.23": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "16-28"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Low-Medium",
+    "tension_loss_sensitivity": "Medium-Low",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when sharp-edge bite, directional precision, connected response or tension stability noticeably declines."
+  },
+
+  "comparison_data": {
+    "vs_toroline_toro_toro": {
+      "shape": {
+        "super_toro": "Hexagonal",
+        "toro_toro": "Hexagonal"
+      },
+
+      "precision": {
+        "super_toro": "Higher / More Control-Oriented",
+        "toro_toro": "Very High"
+      },
+
+      "flex": {
+        "super_toro": "Firmer",
+        "toro_toro": "Softer"
+      },
+
+      "pocketing": {
+        "super_toro": "High",
+        "toro_toro": "Higher"
+      },
+
+      "power": {
+        "super_toro": "More Controlled",
+        "toro_toro": "More Lively"
+      },
+
+      "target_profile": {
+        "super_toro": "Precision / Redirection / Control",
+        "toro_toro": "Spin / Pocketing / Predictable Power"
+      }
+    },
+
+    "vs_toroline_o_toro": {
+      "control": "Higher",
+      "flex": "Firmer",
+      "precision": "Higher",
+      "comfort": "Lower",
+      "spin": "Very High",
+      "launch_angle": "Lower / More Controlled"
+    },
+
+    "vs_toroline_o_toro_tour": {
+      "control": "Comparable High-Control Positioning",
+      "spin": "Very High",
+      "feel": "More Connected / Precision-Oriented",
+      "primary_identity": "Shot Redirection and Controllable Power"
+    },
+
+    "vs_round_co_poly": {
+      "mechanical_ball_grip": "Higher",
+      "ball_bite": "Higher",
+      "spin": "Higher",
+      "launch_angle": "Slightly Higher",
+      "directional_control": "Very High"
+    }
+  },
+
+  "science_metrics": {
+    "geometry": {
+      "shape": "Hexagonal",
+      "sides": 6
+    },
+
+    "spin_mechanism": [
+      "Sharp-Edge Mechanical Ball Grip",
+      "String Movement",
+      "Snapback"
+    ],
+
+    "trajectory_profile": "Controlled / Penetrating Spin",
+
+    "launch_angle_profile": "Medium",
+
+    "mechanical_ball_grip_class": "Very High",
+
+    "precision_class": "Very High",
+
+    "redirection_class": "Very High",
+
+    "power_class": "Controlled",
+
+    "performance_class": "Premium Precision Control Co-Poly"
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Advanced Players Seeking Surgical Precision",
+      "Aggressive Baseliners",
+      "Counter Punchers Who Redirect Pace",
+      "Players Wanting Heavy Spin With High Control",
+      "Players Who Fear Overhitting",
+      "Players Seeking a Connected Extension-of-the-Arm Feel",
+      "Tournament Players"
+    ],
+
+    "avoid_for": [
+      "Players Seeking Maximum Plush Comfort",
+      "Players Wanting Maximum Free Power",
+      "Beginners With Slow Swing Speed",
+      "Players With Significant Arm Sensitivity"
+    ],
+
+    "alternative_strings": [
+      "Toroline TORO TORO",
+      "Toroline O-TORO TOUR",
+      "Toroline O-TORO OCTA",
+      "Solinco Confidential",
+      "Luxilon 4G",
+      "HEAD Hawk"
+    ]
+  },
+
+  "comparison_tags": [
+    "SUPER TORO",
+    "Hexagonal",
+    "Six-Sided",
+    "Surgical Precision",
+    "Controllable Power",
+    "Heavy Spin",
+    "Shot Redirection",
+    "Connected Feel",
+    "Overhit Resistance",
+    "Dark Blue"
+  ],
+
+  "ai_keywords": [
+    "toroline",
+    "super toro",
+    "toroline super toro",
+    "1.23",
+    "17 gauge",
+    "dark blue",
+    "hexagonal",
+    "six sided",
+    "6 sided",
+    "sharp edges",
+    "surgical precision",
+    "controllable power",
+    "heavy spin",
+    "redirect shots",
+    "directional control",
+    "extension of your arm",
+    "overhitting",
+    "control"
+  ],
+
+  "target_competitors": [
+    "Toroline TORO TORO",
+    "Toroline O-TORO TOUR",
+    "Toroline O-TORO OCTA",
+    "Solinco Confidential",
+    "Luxilon 4G",
+    "HEAD Hawk",
+    "Kirschbaum Max Power"
+  ],
+
+  "description": {
+    "en": "Toroline SUPER TORO is a six-sided co-polyester designed around surgical precision, controllable power and heavy spin. Its sharp hexagonal edges grip the ball aggressively, while the controlled response helps players redirect pace and take full swings without fear of overhitting. Toroline positions SUPER TORO as a highly connected string that feels like an extension of the player's arm, making it particularly suitable for advanced players who want to dictate points through precision, spin and confident directional control.",
+
+    "zh": "Toroline SUPER TORO 是一款以 Surgical Precision、Controllable Power 和 Heavy Spin 为核心的六边形共聚酯球线。锐利的六边形边缘能够牢牢抓住网球并制造大量旋转，同时整体力量输出保持高度可控，让球员可以放心完成完整挥拍，而不必过度担心击球过深。它特别强调 Connected Feel 和 Shot Redirection，Toroline 将这种反馈描述为球线仿佛成为手臂的延伸，因此非常适合希望通过精准落点、改变来球方向和主动控制比赛节奏的高级球员。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Toroline SUPER TORO",
+      "Six-sided co-poly",
+      "Hexagonal profile",
+      "Surgical precision",
+      "Controllable power",
+      "Sharp edges",
+      "Tight ball grip",
+      "Heavy spin",
+      "Extension-of-your-arm feel positioning",
+      "Shot redirection",
+      "Point control",
+      "Reduced fear of overhitting positioning",
+      "1.23 mm / 17 gauge",
+      "Dark Blue",
+      "Two half sets per package",
+      "6.7 m per half set",
+      "One-racquet package configuration"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendations",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
