@@ -1,0 +1,687 @@
+{
+  "id": "launch_preference",
+  "category": "Player Preference",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
+
+  "preference": {
+    "name": {
+      "en": "Launch Angle Preference",
+      "zh": "出球弹道偏好"
+    },
+    "description": {
+      "en": "Defines the player's preferred ball-launch window and trajectory behavior. This is a subjective preference and should be interpreted together with playing style, spin level, racquet DNA and performance goals.",
+      "zh": "定义球员偏好的出球窗口与弹道特征。该项目属于主观偏好，需要结合打法、旋转水平、球拍 DNA 与性能目标共同判断。"
+    }
+  },
+
+  "priority": {
+    "type": "Preference",
+    "override_level": "Low-Medium",
+    "can_override": [
+      "brand_preference",
+      "cosmetic_preference"
+    ],
+    "cannot_override": [
+      "physical_constraints",
+      "manufacturer_limits",
+      "major_current_setup_problems"
+    ]
+  },
+
+  "allowed_preferences": {
+    "low": {
+      "name": {
+        "en": "Low Launch",
+        "zh": "低弹道"
+      },
+      "description": {
+        "en": "A flatter and more penetrating trajectory with lower net clearance and a more direct ball flight.",
+        "zh": "更平、更穿透的弹道，过网高度较低，出球方向更直接。"
+      }
+    },
+
+    "medium_low": {
+      "name": {
+        "en": "Medium-Low Launch",
+        "zh": "中低弹道"
+      },
+      "description": {
+        "en": "A controlled and penetrating launch with slightly more margin than a true low-launch setup.",
+        "zh": "保持较强穿透性的同时，比纯低弹道拥有更多安全余量。"
+      }
+    },
+
+    "medium": {
+      "name": {
+        "en": "Medium Launch",
+        "zh": "中等弹道"
+      },
+      "description": {
+        "en": "A neutral trajectory balancing control, net clearance, spin potential and directional predictability.",
+        "zh": "在控制、过网高度、旋转和方向稳定性之间取得平衡的中性弹道。"
+      }
+    },
+
+    "medium_high": {
+      "name": {
+        "en": "Medium-High Launch",
+        "zh": "中高弹道"
+      },
+      "description": {
+        "en": "A higher launch window that supports topspin, net clearance and safer aggressive baseline play.",
+        "zh": "更高的出球窗口，有利于上旋、过网安全以及底线积极进攻。"
+      }
+    },
+
+    "high": {
+      "name": {
+        "en": "High Launch",
+        "zh": "高弹道"
+      },
+      "description": {
+        "en": "A high-arching trajectory designed to maximize net clearance, topspin shape and heavy vertical ball movement.",
+        "zh": "强调高过网、高上旋以及明显纵向轨迹变化的高弹道。"
+      }
+    }
+  },
+
+  "preference_to_racquet_dna": {
+    "low": {
+      "preferred_racquet_dna": {
+        "launch_angle": 3,
+        "control": 10,
+        "predictability": 10,
+        "stability": 9,
+        "spin": 6,
+        "power": 6
+      },
+
+      "preferred_characteristics": [
+        "Dense String Pattern",
+        "Controlled Response",
+        "Lower Launch Geometry",
+        "Stable Stringbed"
+      ],
+
+      "deprioritize": [
+        "Very Open Patterns",
+        "Extremely Spin-Oriented Frames",
+        "High Trampoline Response"
+      ]
+    },
+
+    "medium_low": {
+      "preferred_racquet_dna": {
+        "launch_angle": 5,
+        "control": 9,
+        "predictability": 9,
+        "stability": 8,
+        "spin": 7,
+        "power": 7
+      },
+
+      "preferred_characteristics": [
+        "Balanced Control",
+        "Moderately Dense Pattern",
+        "Penetrating Trajectory"
+      ]
+    },
+
+    "medium": {
+      "preferred_racquet_dna": {
+        "launch_angle": 7,
+        "control": 8,
+        "predictability": 9,
+        "spin": 8,
+        "power": 8,
+        "forgiveness": 8
+      },
+
+      "preferred_characteristics": [
+        "Balanced Pattern",
+        "Neutral Launch",
+        "Versatile Response"
+      ]
+    },
+
+    "medium_high": {
+      "preferred_racquet_dna": {
+        "launch_angle": 9,
+        "spin": 9,
+        "forgiveness": 9,
+        "power": 8,
+        "control": 7,
+        "maneuverability": 8
+      },
+
+      "preferred_characteristics": [
+        "Open Pattern",
+        "Spin-Friendly Geometry",
+        "Easy Net Clearance"
+      ]
+    },
+
+    "high": {
+      "preferred_racquet_dna": {
+        "launch_angle": 10,
+        "spin": 10,
+        "forgiveness": 9,
+        "maneuverability": 9,
+        "power": 8,
+        "control": 6
+      },
+
+      "preferred_characteristics": [
+        "Highly Open String Pattern",
+        "Spin-Oriented Geometry",
+        "Easy Vertical Launch",
+        "Fast Racquet-Head Acceleration"
+      ],
+
+      "deprioritize": [
+        "Dense 18x20 Control Frames",
+        "Very Low Launch Player Frames"
+      ]
+    }
+  },
+
+  "preference_to_string_dna": {
+    "low": {
+      "preferred_string_dna": {
+        "control": 10,
+        "predictability": 10,
+        "launch_angle": 3,
+        "stability": 9,
+        "snapback": 7,
+        "spin": 7,
+        "power": 5
+      },
+
+      "preferred_string_families": [
+        "Round Control Co-Polyester",
+        "Medium-Firm Co-Polyester",
+        "Poly / Poly Control Hybrid"
+      ],
+
+      "preferred_characteristics": [
+        "Round Profile",
+        "Stable Response",
+        "Controlled Power",
+        "Medium Or Thick Gauge"
+      ],
+
+      "deprioritize": [
+        "Highly Elastic Multifilament",
+        "Very Thin High-Launch Strings",
+        "Aggressively Shaped High-Launch Polyester"
+      ]
+    },
+
+    "medium_low": {
+      "preferred_string_dna": {
+        "control": 9,
+        "predictability": 9,
+        "launch_angle": 5,
+        "spin": 8,
+        "snapback": 8,
+        "power": 6
+      },
+
+      "preferred_string_families": [
+        "Round Co-Polyester",
+        "Lightly Shaped Co-Polyester",
+        "Control Hybrid"
+      ]
+    },
+
+    "medium": {
+      "preferred_string_dna": {
+        "control": 8,
+        "spin": 8,
+        "snapback": 8,
+        "launch_angle": 7,
+        "power": 7,
+        "comfort": 7
+      },
+
+      "preferred_string_families": [
+        "Balanced Co-Polyester",
+        "Soft Co-Polyester",
+        "Round Polyester",
+        "Balanced Hybrid"
+      ]
+    },
+
+    "medium_high": {
+      "preferred_string_dna": {
+        "spin": 9,
+        "snapback": 9,
+        "ball_bite": 9,
+        "launch_angle": 9,
+        "power": 7,
+        "control": 7
+      },
+
+      "preferred_string_families": [
+        "Shaped Co-Polyester",
+        "Soft Shaped Polyester",
+        "Shaped Main + Round Cross Hybrid"
+      ]
+    },
+
+    "high": {
+      "preferred_string_dna": {
+        "spin": 10,
+        "snapback": 10,
+        "ball_bite": 10,
+        "launch_angle": 10,
+        "string_movement": 9,
+        "control": 6,
+        "power": 7
+      },
+
+      "preferred_string_families": [
+        "Aggressively Shaped Polyester",
+        "Thin Shaped Polyester",
+        "Shaped Main + Slick Round Cross Hybrid"
+      ],
+
+      "preferred_characteristics": [
+        "High Snapback",
+        "Aggressive Shape",
+        "Thin Gauge",
+        "Low Inter-String Friction"
+      ]
+    }
+  },
+
+  "string_shape_logic": {
+    "low": {
+      "prefer": [
+        "Round",
+        "Smooth"
+      ],
+      "deprioritize": [
+        "Aggressive Pentagonal",
+        "Aggressive Octagonal"
+      ]
+    },
+
+    "medium_low": {
+      "prefer": [
+        "Round",
+        "Lightly Shaped"
+      ]
+    },
+
+    "medium": {
+      "prefer": [
+        "Round",
+        "Hexagonal",
+        "Lightly Shaped"
+      ]
+    },
+
+    "medium_high": {
+      "prefer": [
+        "Hexagonal",
+        "Pentagonal",
+        "Octagonal"
+      ]
+    },
+
+    "high": {
+      "prefer": [
+        "Pentagonal",
+        "Octagonal",
+        "Highly Shaped"
+      ]
+    }
+  },
+
+  "gauge_logic": {
+    "low": {
+      "preferred_gauge_mm": [
+        1.25,
+        1.30
+      ],
+      "reason": "Medium-to-thicker gauges generally support a more stable and lower-launch response."
+    },
+
+    "medium_low": {
+      "preferred_gauge_mm": [
+        1.23,
+        1.25,
+        1.30
+      ]
+    },
+
+    "medium": {
+      "preferred_gauge_mm": [
+        1.23,
+        1.25
+      ]
+    },
+
+    "medium_high": {
+      "preferred_gauge_mm": [
+        1.20,
+        1.23,
+        1.25
+      ]
+    },
+
+    "high": {
+      "preferred_gauge_mm": [
+        1.20,
+        1.23
+      ],
+      "reason": "Thinner gauges generally increase string movement, bite and launch potential."
+    }
+  },
+
+  "tension_logic": {
+    "low": {
+      "adjustment_lbs": 1,
+      "maximum_preference_adjustment_lbs": 2
+    },
+
+    "medium_low": {
+      "adjustment_lbs": 1
+    },
+
+    "medium": {
+      "adjustment_lbs": 0
+    },
+
+    "medium_high": {
+      "adjustment_lbs": -1
+    },
+
+    "high": {
+      "adjustment_lbs": -1,
+      "maximum_preference_adjustment_lbs": -2
+    },
+
+    "warning": {
+      "en": "Launch preference should not be controlled by tension alone.",
+      "zh": "弹道偏好不应仅依靠磅数进行调整，球拍结构、球线形状和线径通常更加重要。"
+    }
+  },
+
+  "hybrid_logic": {
+    "low": {
+      "preferred_architectures": [
+        "Round Control Poly Full Bed",
+        "Firm Polyester Main + Round Polyester Cross",
+        "Natural Gut Main + Controlled Round Poly Cross"
+      ]
+    },
+
+    "medium_low": {
+      "preferred_architectures": [
+        "Round Poly Full Bed",
+        "Control Poly Hybrid"
+      ]
+    },
+
+    "medium": {
+      "preferred_architectures": [
+        "Balanced Poly Full Bed",
+        "Poly / Multifilament Hybrid",
+        "Gut / Poly Hybrid"
+      ]
+    },
+
+    "medium_high": {
+      "preferred_architectures": [
+        "Shaped Polyester Full Bed",
+        "Shaped Main + Round Cross"
+      ]
+    },
+
+    "high": {
+      "preferred_architectures": [
+        "Shaped Polyester Main + Slick Round Polyester Cross",
+        "Thin Shaped Polyester Full Bed"
+      ]
+    }
+  },
+
+  "playing_style_interaction": {
+    "baseline_aggressive": {
+      "preferred_range": [
+        "medium",
+        "medium_high"
+      ]
+    },
+
+    "baseline_counterpuncher": {
+      "preferred_range": [
+        "medium",
+        "medium_high"
+      ]
+    },
+
+    "baseline_grinder": {
+      "preferred_range": [
+        "medium_high",
+        "high"
+      ]
+    },
+
+    "all_court": {
+      "preferred_range": [
+        "medium_low",
+        "medium"
+      ]
+    },
+
+    "serve_volley": {
+      "preferred_range": [
+        "low",
+        "medium_low"
+      ]
+    }
+  },
+
+  "swing_speed_interaction": {
+    "slow": {
+      "warning": "Very low launch may make depth generation difficult.",
+      "preferred_range": [
+        "medium",
+        "medium_high"
+      ]
+    },
+
+    "medium": {
+      "preferred_range": [
+        "medium_low",
+        "medium",
+        "medium_high"
+      ]
+    },
+
+    "fast": {
+      "preferred_range": [
+        "low",
+        "medium_low",
+        "medium",
+        "medium_high"
+      ]
+    }
+  },
+
+  "goal_interaction_logic": {
+    "more_control": {
+      "low": "Strong compatibility.",
+      "medium_low": "Very strong compatibility.",
+      "medium": "Balanced compatibility.",
+      "medium_high": "Protect control through string selection.",
+      "high": "Potential conflict; prioritize controlled spin rather than raw launch."
+    },
+
+    "more_power": {
+      "low": "Potential conflict; increase elasticity rather than launch.",
+      "medium_low": "Controlled power.",
+      "medium": "Strong compatibility.",
+      "medium_high": "Strong compatibility.",
+      "high": "Monitor excessive trampoline response."
+    },
+
+    "more_spin": {
+      "low": "Use snapback without aggressively increasing launch.",
+      "medium_low": "Controlled spin.",
+      "medium": "Strong compatibility.",
+      "medium_high": "Very strong compatibility.",
+      "high": "Maximum compatibility for heavy topspin."
+    },
+
+    "more_comfort": {
+      "low": "Use softer round strings rather than high tension.",
+      "medium_low": "Easy to balance.",
+      "medium": "Strong compatibility.",
+      "medium_high": "Use softer spin-oriented constructions.",
+      "high": "Avoid chasing launch through harsh shaped polyester if physical sensitivity exists."
+    },
+
+    "more_feel": {
+      "low": "Direct and connected feel.",
+      "medium_low": "Strong precision feel.",
+      "medium": "Balanced feel.",
+      "medium_high": "Pocketing-oriented feel.",
+      "high": "Spin-window feel can reduce directness."
+    }
+  },
+
+  "physical_override_logic": {
+    "rule": {
+      "en": "Launch preference never overrides physical constraints.",
+      "zh": "任何弹道偏好都不能覆盖身体安全限制。"
+    },
+
+    "examples": [
+      {
+        "preference": "low",
+        "physical_constraint": "high_elbow_sensitivity",
+        "result": "Do not create low launch by using very firm polyester at high tension."
+      },
+
+      {
+        "preference": "high",
+        "physical_constraint": "moderate_arm_sensitivity",
+        "result": "Prefer softer spin strings and racquet geometry rather than aggressive firm polyester."
+      }
+    ]
+  },
+
+  "current_setup_feedback_logic": {
+    "too_high_launch": {
+      "preference_conflict": [
+        "medium_high",
+        "high"
+      ],
+      "action": "Current setup feedback has higher priority than stated launch preference."
+    },
+
+    "too_low_launch": {
+      "preference_conflict": [
+        "low",
+        "medium_low"
+      ],
+      "action": "Current setup feedback has higher priority than stated launch preference."
+    }
+  },
+
+  "preference_strength": {
+    "low": {
+      "score_multiplier": 0.25
+    },
+
+    "medium": {
+      "score_multiplier": 0.50
+    },
+
+    "high": {
+      "score_multiplier": 0.75
+    },
+
+    "very_high": {
+      "score_multiplier": 1.00
+    }
+  },
+
+  "matching_weights": {
+    "launch_match": 0.28,
+    "racquet_geometry_match": 0.18,
+    "string_shape_match": 0.14,
+    "string_response_match": 0.12,
+    "gauge_match": 0.08,
+    "tension_match": 0.07,
+    "spin_match": 0.05,
+    "control_match": 0.04,
+    "playing_style_match": 0.02,
+    "feel_match": 0.02
+  },
+
+  "tradeoffs": {
+    "lower_launch_can_reduce": [
+      "Net Clearance",
+      "Easy Spin Access",
+      "Defensive Margin"
+    ],
+
+    "higher_launch_can_reduce": [
+      "Directional Precision",
+      "Flat Ball Penetration",
+      "Control Margin For Fast Swingers"
+    ],
+
+    "higher_launch_can_increase": [
+      "Topspin Safety",
+      "Net Clearance",
+      "Vertical Ball Shape"
+    ],
+
+    "lower_launch_can_increase": [
+      "Penetration",
+      "Directional Confidence",
+      "Flat-Hitting Precision"
+    ]
+  },
+
+  "output_guidance": {
+    "must_explain": [
+      "What launch window the player prefers.",
+      "Whether the current racquet naturally supports that launch.",
+      "How string shape and gauge affect launch.",
+      "Why tension is only a secondary launch-adjustment tool.",
+      "What control or spin tradeoff the preferred trajectory creates."
+    ],
+
+    "must_not_do": [
+      "Do not equate high launch automatically with high spin.",
+      "Do not equate low launch automatically with better control.",
+      "Do not solve launch preference through tension alone.",
+      "Do not override current setup problems or physical constraints."
+    ]
+  },
+
+  "search_keywords": [
+    "launch preference",
+    "launch angle",
+    "low launch",
+    "high launch",
+    "trajectory",
+    "ball trajectory",
+    "penetrating ball",
+    "net clearance",
+    "弹道",
+    "出球角度",
+    "出球高度",
+    "低弹道",
+    "高弹道",
+    "过网高度"
+  ]
+}
