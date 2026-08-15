@@ -1,0 +1,404 @@
+{
+  "id": "wrist_sensitivity",
+  "category": "Player Physical Constraint",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
+
+  "constraint": {
+    "name": {
+      "en": "Wrist Sensitivity",
+      "zh": "手腕敏感"
+    },
+    "description": {
+      "en": "The player experiences wrist discomfort, soreness, fatigue or sensitivity during or after play. This physical constraint has higher priority than performance-oriented equipment goals.",
+      "zh": "球员在击球过程中或击球后存在手腕不适、酸痛、疲劳或敏感。此身体限制条件优先级高于性能导向的装备目标。"
+    }
+  },
+
+  "priority": {
+    "type": "Physical Constraint",
+    "override_level": "Highest",
+    "overrides": [
+      "more_spin",
+      "more_control",
+      "more_power",
+      "more_durability",
+      "maximum_performance"
+    ]
+  },
+
+  "severity_levels": {
+    "none": {
+      "score": 0
+    },
+    "mild": {
+      "score": 1
+    },
+    "moderate": {
+      "score": 2
+    },
+    "high": {
+      "score": 3
+    }
+  },
+
+  "symptoms": [
+    "Wrist soreness after play",
+    "Pain during impact",
+    "Pain during topspin generation",
+    "Discomfort during serve",
+    "Discomfort during late contact",
+    "Fatigue when accelerating the racquet",
+    "Pain on off-center hits",
+    "Reduced confidence during aggressive swings"
+  ],
+
+  "possible_causes": [
+    "Very stiff stringbed",
+    "Firm polyester",
+    "High string tension",
+    "Very high swingweight",
+    "Head-heavy balance",
+    "Frame instability on off-center contact",
+    "Late contact point",
+    "Excessive wrist-dominant stroke mechanics",
+    "Dead polyester",
+    "Overuse"
+  ],
+
+  "equipment_strategy": {
+    "primary_goal": "Reduce Wrist Impact Load And Torsional Stress",
+
+    "change_priority": [
+      "String Material",
+      "String Tension",
+      "Racquet Maneuverability",
+      "Racquet Stability",
+      "Hybrid Architecture",
+      "Gauge",
+      "Racquet"
+    ]
+  },
+
+  "recommended_string_families": [
+    "Natural Gut",
+    "Premium Multifilament",
+    "Soft Multifilament",
+    "Soft Co-Polyester",
+    "Natural Gut / Polyester Hybrid",
+    "Multifilament / Soft Polyester Hybrid"
+  ],
+
+  "avoid_string_families": [
+    "Very Firm Polyester",
+    "Dead Polyester",
+    "High-Stiffness Polyester",
+    "Very Thick Firm Polyester"
+  ],
+
+  "preferred_string_dna": {
+    "comfort": 10,
+    "shock_absorption": 10,
+    "elasticity": 9,
+    "ball_pocketing": 9,
+    "feel": 8,
+    "control": 7,
+    "tension_maintenance": 7,
+    "spin": 6,
+    "durability": 5,
+    "stiffness": 1
+  },
+
+  "preferred_racquet_dna": {
+    "comfort": 10,
+    "maneuverability": 10,
+    "stability": 9,
+    "forgiveness": 9,
+    "feel": 8,
+    "control": 7,
+    "power": 7,
+    "spin": 7,
+    "predictability": 9
+  },
+
+  "recommended_strings": [
+    "Babolat Touch VS",
+    "Wilson Natural Gut",
+    "Wilson NXT",
+    "Wilson NXT Power",
+    "Yonex PolyTour Air",
+    "Yonex REXIS Comfort",
+    "Yonex REXIS Feel",
+    "Luxilon Element",
+    "Babolat RPM Soft",
+    "Tecnifibre X-One Biphase",
+    "Tecnifibre NRG2",
+    "Solinco Hyper-G Soft",
+    "MSV Soft Touch",
+    "Toroline Truffle X"
+  ],
+
+  "recommended_hybrids": [
+    "Natural Gut Main + Soft Polyester Cross",
+    "Multifilament Main + Soft Polyester Cross",
+    "Soft Polyester Main + Multifilament Cross"
+  ],
+
+  "tension_adjustment": {
+    "mild": {
+      "adjustment_lbs": -2
+    },
+
+    "moderate": {
+      "adjustment_lbs": -3
+    },
+
+    "high": {
+      "adjustment_lbs": -4
+    },
+
+    "notes": [
+      "Reduce tension progressively.",
+      "Changing to a softer string is generally more effective than tension reduction alone.",
+      "Avoid combining firm polyester with high tension."
+    ]
+  },
+
+  "gauge_adjustment": {
+    "preferred": [
+      "1.20",
+      "1.23",
+      "1.25"
+    ],
+
+    "avoid": [
+      "Very thick firm polyester",
+      "1.30 mm firm polyester unless durability requirements clearly justify it"
+    ],
+
+    "note": "Thinner gauges can improve elasticity and feel, but excessive string movement should be considered."
+  },
+
+  "racquet_adjustment": {
+    "prefer": [
+      "Moderate static weight",
+      "Moderate swingweight",
+      "Head-light or slightly head-light balance",
+      "High torsional stability",
+      "Large effective sweet spot",
+      "Comfort-oriented frame response"
+    ],
+
+    "avoid": [
+      "Very high swingweight",
+      "Very head-heavy balance",
+      "Low torsional stability",
+      "Very stiff frames",
+      "Demanding small-sweet-spot frames"
+    ]
+  },
+
+  "maneuverability_logic": {
+    "importance": "Very High",
+
+    "reason": {
+      "en": "Excessive swingweight or head-heavy balance can increase wrist load during acceleration, late contact and rapid directional changes.",
+      "zh": "过高挥重或明显头重平衡会在加速、晚点击球以及快速改变拍头方向时增加手腕负担。"
+    },
+
+    "prioritize": [
+      "Easy racquet-head acceleration",
+      "Head-light balance",
+      "Manageable swingweight"
+    ]
+  },
+
+  "stability_logic": {
+    "importance": "Very High",
+
+    "reason": {
+      "en": "A racquet that twists significantly on off-center contact can transfer additional torsional load to the wrist.",
+      "zh": "球拍在偏心击球时如果明显扭转，会向手腕传递更多扭矩负荷。"
+    },
+
+    "prioritize": [
+      "Stable off-center response",
+      "Adequate twistweight",
+      "Large effective sweet spot"
+    ],
+
+    "warning": "Do not increase stability through excessive swingweight if maneuverability becomes unsuitable."
+  },
+
+  "severity_logic": {
+    "mild": {
+      "recommendation": [
+        "Soft polyester",
+        "Reduce tension",
+        "Review racquet balance",
+        "Improve stringbed comfort"
+      ]
+    },
+
+    "moderate": {
+      "recommendation": [
+        "Multifilament",
+        "Natural gut hybrid",
+        "Reduce tension",
+        "Review swingweight",
+        "Review frame stability"
+      ]
+    },
+
+    "high": {
+      "recommendation": [
+        "Natural gut",
+        "Premium multifilament",
+        "Low-impact stringbed",
+        "Maneuverable stable racquet"
+      ],
+
+      "hard_constraints": [
+        "Avoid firm full-bed polyester.",
+        "Avoid high polyester tension.",
+        "Avoid excessive swingweight.",
+        "Avoid strongly head-heavy racquets."
+      ]
+    }
+  },
+
+  "ai_override_rules": {
+    "if_wrist_sensitivity_is_high": {
+      "override": true,
+
+      "ignore_if_goal_is": [
+        "Maximum Spin",
+        "Maximum Control",
+        "Maximum Durability",
+        "Maximum Stability Through Weight"
+      ],
+
+      "prioritize": [
+        "Comfort",
+        "Maneuverability",
+        "Torsional Stability",
+        "Shock Absorption",
+        "Predictable Contact"
+      ]
+    }
+  },
+
+  "goal_conflict_logic": {
+    "more_spin": {
+      "resolution": [
+        "Prefer soft shaped polyester only when sensitivity is mild.",
+        "Prefer lower-friction hybrids over very firm spin polyester.",
+        "Do not chase spin through excessive wrist load."
+      ]
+    },
+
+    "more_stability": {
+      "resolution": [
+        "Increase torsional stability without creating excessive swingweight.",
+        "Do not automatically recommend heavier racquets."
+      ]
+    },
+
+    "more_control": {
+      "resolution": [
+        "Use predictable string construction before significantly increasing tension."
+      ]
+    },
+
+    "more_durability": {
+      "resolution": [
+        "Select a durable soft construction before moving to very thick firm polyester."
+      ]
+    }
+  },
+
+  "medical_warning": {
+    "enabled": true,
+
+    "message": {
+      "en": "Equipment adjustments may reduce impact and torsional stress but cannot diagnose or treat wrist injuries. Persistent, worsening or significant wrist pain should be evaluated by a qualified healthcare professional.",
+      "zh": "装备调整可能降低冲击与扭矩负荷，但不能诊断或治疗手腕损伤。如果手腕疼痛持续、加重或较明显，应咨询专业医疗人员。"
+    }
+  },
+
+  "tradeoffs": {
+    "comfort_priority_can_reduce": [
+      "Maximum Spin",
+      "Maximum Firm Control",
+      "Maximum Durability"
+    ],
+
+    "maneuverability_priority_can_reduce": [
+      "Maximum Plow Through",
+      "Maximum Swingweight Stability"
+    ],
+
+    "acceptable_tradeoff": "Reducing wrist load is more important than maximizing a single performance characteristic."
+  },
+
+  "matching_weights": {
+    "comfort": 0.22,
+    "maneuverability": 0.18,
+    "torsional_stability": 0.16,
+    "shock_absorption": 0.14,
+    "string_stiffness": 0.10,
+    "swingweight": 0.08,
+    "balance": 0.05,
+    "ball_pocketing": 0.03,
+    "feel": 0.02,
+    "control": 0.01,
+    "spin": 0.01
+  },
+
+  "decision_thresholds": {
+    "mild": {
+      "allow_full_poly": true,
+      "max_poly_tension_lbs": 50,
+      "high_swingweight_penalty": "moderate"
+    },
+
+    "moderate": {
+      "allow_full_poly": true,
+      "max_poly_tension_lbs": 48,
+      "prefer_hybrid": true,
+      "high_swingweight_penalty": "high"
+    },
+
+    "high": {
+      "allow_full_poly": false,
+      "prefer_multifilament_or_gut": true,
+      "high_swingweight_penalty": "very_high",
+      "head_heavy_penalty": "very_high"
+    }
+  },
+
+  "output_guidance": {
+    "must_explain": [
+      "Why wrist sensitivity overrides performance goals.",
+      "Whether the primary concern is impact stiffness, swingweight, balance or racquet twisting.",
+      "Why the selected string reduces impact load.",
+      "Why racquet maneuverability and stability must be considered together.",
+      "Which performance compromises are intentional."
+    ]
+  },
+
+  "search_keywords": [
+    "wrist",
+    "wrist pain",
+    "wrist sensitivity",
+    "wrist soreness",
+    "wrist fatigue",
+    "wrist injury",
+    "hand wrist",
+    "手腕",
+    "手腕敏感",
+    "手腕疼痛",
+    "手腕酸痛",
+    "手腕疲劳"
+  ]
+}
