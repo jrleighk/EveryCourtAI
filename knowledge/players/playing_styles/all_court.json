@@ -1,0 +1,310 @@
+{
+  "id": "all_court",
+  "category": "Playing Style",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
+
+  "style": {
+    "name": {
+      "en": "All-Court Player",
+      "zh": "全场型球员"
+    },
+
+    "description": {
+      "en": "A versatile player who can construct points from the baseline, transition forward, finish at the net, vary pace and spin, and adapt tactics to different opponents and match situations.",
+      "zh": "能够从底线组织回合、主动向前压迫、在网前结束得分，并通过速度、旋转和节奏变化适应不同对手和比赛局面的全面型球员。"
+    }
+  },
+
+  "court_position": {
+    "primary": "All Court",
+    "secondary": [
+      "Baseline",
+      "Inside Baseline",
+      "Net"
+    ],
+
+    "net_frequency": "Medium-High",
+
+    "preferred_rally_length": "Variable"
+  },
+
+  "playing_identity": {
+    "offensive_level": 8,
+    "defensive_level": 8,
+    "risk_tolerance": 7,
+    "initiative": 8,
+    "consistency": 8,
+    "transition_to_net": 9,
+    "adaptability": 10,
+    "shot_variety": 10,
+    "point_construction": 10
+  },
+
+  "stroke_characteristics": {
+    "forehand": "Versatile / Offensive",
+    "backhand": "Stable / Directional",
+    "serve": "Placement + Power",
+    "return": "Balanced",
+    "volley": "High Priority",
+    "slice_usage": "High",
+    "drop_shot_usage": "Moderate",
+    "transition_shots": "High Priority"
+  },
+
+  "typical_ball_characteristics": {
+    "pace": 8,
+    "spin": 8,
+    "depth": 8,
+    "trajectory": "Variable",
+    "net_clearance": "Variable",
+    "court_penetration": 8,
+    "touch": 9,
+    "variety": 10
+  },
+
+  "preferred_racquet_dna": {
+    "power": 7,
+    "control": 9,
+    "spin": 8,
+    "stability": 9,
+    "maneuverability": 9,
+    "forgiveness": 8,
+    "feel": 10,
+    "launch_angle": 7,
+    "comfort": 8,
+    "predictability": 9,
+    "touch": 10
+  },
+
+  "preferred_racquet_characteristics": {
+    "head_size": [
+      "97",
+      "98",
+      "100"
+    ],
+
+    "weight_g": [
+      "300",
+      "305",
+      "310",
+      "315"
+    ],
+
+    "balance": [
+      "Head Light",
+      "Slightly Head Light"
+    ],
+
+    "string_patterns": [
+      "16x19",
+      "16x20",
+      "18x20"
+    ],
+
+    "stiffness_preference": [
+      "Medium",
+      "Medium-Firm"
+    ],
+
+    "key_traits": [
+      "Directional Control",
+      "Stable On Volleys",
+      "Fast Handling",
+      "Good Touch",
+      "Predictable Launch",
+      "Balanced Power"
+    ]
+  },
+
+  "preferred_string_dna": {
+    "power": 8,
+    "control": 9,
+    "spin": 8,
+    "comfort": 8,
+    "feel": 10,
+    "durability": 8,
+    "tension_maintenance": 9,
+    "snapback": 8,
+    "ball_pocketing": 9,
+    "predictability": 9,
+    "touch": 10
+  },
+
+  "recommended_string_families": [
+    "Balanced Co-Polyester",
+    "Soft Co-Polyester",
+    "Natural Gut / Polyester Hybrid",
+    "Poly / Multifilament Hybrid",
+    "Premium Multifilament"
+  ],
+
+  "preferred_string_characteristics": {
+    "shape": [
+      "Round",
+      "Lightly Shaped",
+      "Smooth"
+    ],
+
+    "stiffness": [
+      "Soft",
+      "Medium",
+      "Medium-Firm"
+    ],
+
+    "gauge_mm": [
+      1.20,
+      1.25,
+      1.30
+    ],
+
+    "key_traits": [
+      "Feel",
+      "Touch",
+      "Directional Control",
+      "Ball Pocketing",
+      "Stable Response",
+      "Versatility"
+    ]
+  },
+
+  "recommended_string_examples": [
+    "Yonex PolyTour Pro",
+    "Luxilon ALU Power",
+    "Luxilon Element",
+    "Solinco Hyper-G Round",
+    "Toroline A5",
+    "Head Hawk Touch",
+    "Babolat RPM Power",
+    "Wilson NXT Control",
+    "Yonex REXIS Feel"
+  ],
+
+  "recommended_hybrid_examples": [
+    "Natural Gut + Smooth Polyester",
+    "Poly + Multifilament",
+    "Round Poly + Soft Poly",
+    "Wilson Champion's Choice Duo",
+    "Yonex PolyTour Pro + REXIS Feel"
+  ],
+
+  "recommended_tension": {
+    "poly": "47-51 lbs",
+    "soft_poly": "47-50 lbs",
+    "poly_multi_hybrid": "49/52 lbs",
+    "gut_poly_hybrid": "54/51 lbs"
+  },
+
+  "recommended_racquet_examples": [
+    "Wilson RF 01",
+    "Wilson Blade 98",
+    "Yonex PERCEPT 97",
+    "Yonex EZONE 98",
+    "Head Speed Pro",
+    "Head Radical Pro",
+    "Babolat Pure Strike 98",
+    "Tecnifibre TF40 305",
+    "Dunlop CX 200 Tour"
+  ],
+
+  "ai_matching_priority": {
+    "feel": 0.18,
+    "control": 0.17,
+    "maneuverability": 0.15,
+    "stability": 0.13,
+    "predictability": 0.12,
+    "ball_pocketing": 0.10,
+    "comfort": 0.06,
+    "spin": 0.04,
+    "power": 0.03,
+    "durability": 0.02
+  },
+
+  "matching_logic": {
+    "prioritize_when": [
+      "Player regularly changes court position during points.",
+      "Player relies on both baseline construction and net finishing.",
+      "Player uses touch, slice, volleys and pace variation.",
+      "Player values versatility more than one-dimensional maximum power or spin."
+    ],
+
+    "equipment_goals": [
+      "Maintain control from all court positions",
+      "Improve transition-shot confidence",
+      "Preserve touch at net",
+      "Provide enough spin from the baseline",
+      "Maintain predictable response across different stroke types"
+    ],
+
+    "deprioritize": [
+      "Extremely High Free Power",
+      "Extreme Launch Angle",
+      "Very Low Feel",
+      "Overly Stiff Stringbeds",
+      "One-Dimensional Spin-Only Setups"
+    ]
+  },
+
+  "compatible_profiles": {
+    "levels": [
+      "intermediate",
+      "advanced",
+      "tournament"
+    ],
+
+    "swing_speeds": [
+      "medium",
+      "medium_fast",
+      "fast"
+    ],
+
+    "shot_profiles": [
+      "moderate_topspin",
+      "controlled_flat",
+      "slice_variation",
+      "touch_volley"
+    ],
+
+    "goals": [
+      "more_control",
+      "more_feel",
+      "more_versatility",
+      "better_net_play",
+      "more_consistency"
+    ]
+  },
+
+  "avoid": {
+    "racquet_characteristics": [
+      "Extremely High Launch",
+      "Very Low Maneuverability",
+      "Low Touch",
+      "Extreme Power Bias"
+    ],
+
+    "string_characteristics": [
+      "Very Low Feel",
+      "Excessive Trampoline Response",
+      "Extremely Stiff Full Polyester",
+      "Very Low Pocketing"
+    ]
+  },
+
+  "risk_flags": [
+    "An overly powerful racquet-string combination may reduce touch and directional control at net.",
+    "A very stiff polyester setup may reduce feel on volleys and transition shots.",
+    "A very soft, high-powered multifilament setup may reduce confidence on aggressive baseline swings."
+  ],
+
+  "search_keywords": [
+    "all court",
+    "all-court player",
+    "versatile player",
+    "baseline and net",
+    "serve and volley transition",
+    "variety",
+    "全场型",
+    "全面型打法",
+    "底线上网结合"
+  ]
+}
