@@ -1,0 +1,505 @@
+{
+  "id": "yonex_polytour_rev",
+  "brand": "Yonex",
+  "series": "PolyTour",
+  "model": "PolyTour Rev",
+  "category": "Co-Polyester",
+
+  "manufacturer_data": {
+    "construction": "Polyester Octagonal Monofilament",
+    "material": "Polyester",
+    "string_family": "PolyTour",
+    "cross_section": "Octagonal",
+    "profile_sides": 8,
+    "surface": "Shaped / Silicone-Infused",
+    "official_positioning": "Shaped polyester designed for intense bite, control and ultimate spin through SIF technology.",
+    "target_level": "Intermediate / Advanced / Tournament",
+    "target_style": "Baseline / Spin-Oriented",
+    "swing_speed_positioning": "Medium-to-Fast",
+    "made_in": "Japan"
+  },
+
+  "specifications": {
+    "construction": "Polyester Octagonal Monofilament",
+    "cross_section": "Octagonal",
+    "profile_sides": 8,
+    "surface": "Shaped / Silicone-Infused",
+
+    "available_colors": [
+      "Mint",
+      "Purple",
+      "White",
+      "Bright Orange"
+    ],
+
+    "available_gauges": [
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.20,
+        "available": true,
+        "item_code_set": "PTGR120",
+        "item_code_reel": "PTR120-2",
+        "power": 9,
+        "control": 9,
+        "spin": 10,
+        "comfort": 7,
+        "feel": 9,
+        "durability": 8,
+        "tension_maintenance": 8,
+        "ball_bite": 10,
+        "snapback": 10,
+        "launch_angle": "High"
+      },
+      {
+        "gauge_name": "16L",
+        "gauge_mm": 1.25,
+        "available": true,
+        "item_code_set": "PTGR125",
+        "item_code_reel": "PTR125-2",
+        "power": 8,
+        "control": 10,
+        "spin": 10,
+        "comfort": 7,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "ball_bite": 10,
+        "snapback": 10,
+        "launch_angle": "Medium-High"
+      },
+      {
+        "gauge_name": "16",
+        "gauge_mm": 1.30,
+        "available": true,
+        "item_code_set": "PTGR130",
+        "item_code_reel": "PTR130-2",
+        "power": 8,
+        "control": 10,
+        "spin": 9,
+        "comfort": 7,
+        "feel": 8,
+        "durability": 10,
+        "tension_maintenance": 9,
+        "ball_bite": 9,
+        "snapback": 9,
+        "launch_angle": "Medium-High"
+      }
+    ],
+
+    "available_lengths": [
+      {
+        "type": "Set",
+        "length_m": 12
+      },
+      {
+        "type": "Reel",
+        "length_m": 200
+      }
+    ]
+  },
+
+  "technology": [
+    "SIF Technology",
+    "Silicone Oil Infused Filament",
+    "NANODAX Collaboration",
+    "Octagonal Shaped Geometry",
+    "High-Speed Snapback",
+    "Spin Amplification"
+  ],
+
+  "technology_details": {
+    "sif": {
+      "full_name": "Silicone oil Infused Filament",
+      "description": "Silicone oil is infused into the monofilament to reduce resistance and allow faster string movement and snapback.",
+      "developed_with": "NANODAX",
+      "primary_benefits": [
+        "Faster Snapback",
+        "Spin",
+        "String Movement",
+        "Responsive Rotation"
+      ]
+    },
+
+    "shaped_geometry": {
+      "shape": "Octagonal",
+      "sides": 8,
+      "description": "The shaped profile grips the ball aggressively to create intense bite and high rotational potential.",
+      "primary_benefits": [
+        "Ball Bite",
+        "Mechanical Grip",
+        "Spin",
+        "Trajectory Shaping"
+      ]
+    },
+
+    "snapback_system": {
+      "description": "SIF technology is designed to increase snapback speed, allowing the string to return more rapidly after displacement.",
+      "primary_benefits": [
+        "Ultimate Spin",
+        "Heavy Ball",
+        "Fast String Recovery",
+        "Consistent Spin Production"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Shaped Spin Co-Polyester",
+    "target_player": "Intermediate / Advanced / Tournament",
+    "arm_friendly": false,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": false,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "snapback_focus": true,
+    "ball_bite_focus": true,
+    "response_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 8,
+    "control": 10,
+    "spin": 10,
+    "comfort": 7,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9,
+    "elasticity": 8,
+    "ball_pocketing": 8,
+    "launch_angle": "Medium-High"
+  },
+
+  "ai_rating": {
+    "power": 8,
+    "control": 10,
+    "spin": 10,
+    "comfort": 7,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium-Firm",
+    "snapback": 10,
+    "ball_bite": 10,
+    "ball_pocketing": 8,
+    "string_movement": 10,
+    "inter_string_friction": "Low",
+    "tension_stability": 9,
+    "spin_window": "Very High",
+    "predictability": 9,
+    "arm_friendliness": 7,
+    "directional_precision": 10,
+    "stringbed_stability": 9,
+    "heavy_ball_potential": 10,
+    "response": "Crisp / Spin-Oriented"
+  },
+
+  "official_performance_map": {
+    "responsiveness": "High",
+    "firmness": "Firm",
+    "ball_pocketing": "Medium",
+    "yonex_family_position": "Firm / Responsive / Spin-Oriented"
+  },
+
+  "official_string_parameters": {
+    "power": "Medium-High",
+    "spin": "Very High",
+    "comfort": "Medium-Low",
+    "control": "Medium-High",
+    "durability": "Medium-High",
+    "source": "Yonex Official String Parameters Guide"
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium",
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "Modern Baseline",
+      "Counter Puncher"
+    ],
+
+    "special_player_profiles": [
+      "Players Seeking Maximum Spin",
+      "Players Wanting Strong Ball Bite",
+      "Players With Medium-to-Fast Swing Speeds",
+      "Players Wanting Shaped Polyester",
+      "Players Seeking Faster Snapback",
+      "Players Wanting More Spin Than PolyTour Pro"
+    ]
+  },
+
+  "tour_players": [
+    "Madison Keys",
+    "Emma Navarro"
+  ],
+
+  "recommended_racquets": [
+    "Yonex VCORE",
+    "Yonex EZONE",
+    "Yonex PERCEPT",
+    "Wilson Shift",
+    "Wilson Blade",
+    "Babolat Pure Aero",
+    "HEAD Extreme",
+    "Dunlop SX"
+  ],
+
+  "gauge_recommendation": {
+    "1.20": {
+      "gauge_name": "17",
+      "best_for": [
+        "Maximum Spin",
+        "Maximum Feel",
+        "Fast Racquet Head Speed",
+        "Higher Launch"
+      ],
+      "tradeoffs": [
+        "Lowest Durability Of The Three Gauges"
+      ]
+    },
+
+    "1.25": {
+      "gauge_name": "16L",
+      "best_for": [
+        "Best Overall Balance",
+        "Spin",
+        "Control",
+        "Tournament Play"
+      ],
+      "tradeoffs": [
+        "Less Durability Than 1.30"
+      ]
+    },
+
+    "1.30": {
+      "gauge_name": "16",
+      "best_for": [
+        "Maximum Durability",
+        "More Stability",
+        "Heavy Hitters",
+        "Open String Patterns"
+      ],
+      "tradeoffs": [
+        "Slightly Less Feel",
+        "Slightly Less Spin Access"
+      ]
+    }
+  },
+
+  "comparison_data": {
+    "vs_polytour_pro": {
+      "spin": "Much Higher",
+      "ball_bite": "Much Higher",
+      "firmness": "Higher",
+      "comfort": "Lower",
+      "launch_angle": "Higher",
+      "snapback": "Higher"
+    },
+
+    "vs_polytour_force": {
+      "spin": "Higher",
+      "ball_bite": "Much Higher",
+      "power": "Lower",
+      "response": "More Spin-Oriented",
+      "firmness": "Higher"
+    },
+
+    "vs_polytour_spin": {
+      "spin": "Comparable Very High",
+      "response": "More Responsive",
+      "comfort": "Higher",
+      "ball_pocketing": "Higher",
+      "launch_character": "More Dynamic"
+    },
+
+    "vs_polytour_strike": {
+      "spin": "Higher",
+      "power": "Higher",
+      "comfort": "Higher",
+      "control": "Slightly Lower",
+      "firmness": "Lower"
+    }
+  },
+
+  "science_metrics": {
+    "construction": "Octagonal Polyester Monofilament",
+    "shape": "Octagonal",
+    "profile_sides": 8,
+
+    "spin_mechanism": [
+      "Mechanical Ball Grip",
+      "SIF Low-Friction Movement",
+      "High-Speed Snapback"
+    ],
+
+    "ball_grip": "Very High",
+    "snapback": "Elite",
+    "trajectory_profile": "Heavy Topspin",
+    "launch_angle_profile": "Medium-High",
+    "spin_class": "Elite",
+    "control_class": "Very High",
+    "response_class": "High",
+    "firmness_class": "Medium-Firm"
+  },
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Heavy Topspin Baseliners",
+      "Players Seeking Maximum Spin",
+      "Medium-to-Fast Swing Speeds",
+      "Players Wanting Strong Mechanical Bite",
+      "Players Wanting Fast Snapback",
+      "Advanced Players Using Modern Vertical Swings"
+    ],
+
+    "avoid_for": [
+      "Players With Significant Arm Sensitivity",
+      "Players Seeking Maximum Comfort",
+      "Players With Slow Swing Speeds",
+      "Players Wanting A Low Launch Round Polyester"
+    ],
+
+    "alternative_strings": [
+      "Yonex PolyTour Spin",
+      "Yonex PolyTour Pro",
+      "Solinco Hyper-G",
+      "Solinco Tour Bite",
+      "Toroline O-TORO Spin",
+      "Toroline VAMOS",
+      "Wilson Revolve Spin"
+    ]
+  },
+
+  "comparison_tags": [
+    "Yonex",
+    "PolyTour Rev",
+    "Octagonal",
+    "8-Sided",
+    "SIF",
+    "Silicone Infused Filament",
+    "NANODAX",
+    "Spin",
+    "Snapback",
+    "Ball Bite",
+    "Mint",
+    "Purple",
+    "White",
+    "Bright Orange"
+  ],
+
+  "ai_keywords": [
+    "yonex",
+    "polytour rev",
+    "poly tour rev",
+    "ptgr",
+    "sif",
+    "silicone oil infused filament",
+    "nanodax",
+    "octagonal",
+    "8 sided",
+    "spin",
+    "snapback",
+    "ball bite",
+    "1.20",
+    "1.25",
+    "1.30",
+    "mint",
+    "purple",
+    "white",
+    "bright orange",
+    "madison keys",
+    "emma navarro"
+  ],
+
+  "target_competitors": [
+    "Solinco Hyper-G",
+    "Solinco Tour Bite",
+    "Wilson Revolve Spin",
+    "Toroline O-TORO Spin",
+    "Toroline VAMOS",
+    "MSV Focus Hex"
+  ],
+
+  "description": {
+    "en": "Yonex PolyTour Rev is an octagonal shaped polyester monofilament engineered for intense bite, control and maximum spin. Its SIF (Silicone oil Infused Filament) technology, developed in cooperation with NANODAX, is designed to increase string movement and snapback speed, helping aggressive baseliners generate heavy rotation. Available in 1.20, 1.25 and 1.30 mm gauges, PolyTour Rev is positioned for medium-to-fast swing speeds and players seeking a firm, responsive shaped polyester with high spin potential.",
+
+    "zh": "Yonex PolyTour Rev 是一款八边形异形聚酯单丝球线，核心定位是 Intense Bite、Control 与 Ultimate Spin。它采用与 NANODAX 合作开发的 SIF（Silicone oil Infused Filament）技术，将硅油融入单丝材料中，以提升球线移动速度和 Snapback 效率，从而帮助中高速挥拍的底线球员制造更强烈的旋转。PolyTour Rev 提供 1.20、1.25 和 1.30 毫米三个线径，整体属于 Yonex PolyTour 家族中偏硬、响应快、旋转能力非常突出的 Shaped Poly。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_official_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Yonex PolyTour Rev",
+      "120 / 125 / 130",
+      "Intense bite",
+      "Control",
+      "SIF technology",
+      "Silicone oil Infused Filament",
+      "Developed in cooperation with NANODAX",
+      "Medium-to-fast swing speeds",
+      "Shaped string",
+      "8-sided positioning",
+      "Ultimate spin positioning",
+      "Mint",
+      "Purple",
+      "White",
+      "Bright Orange",
+      "17 / 1.20 mm",
+      "16L / 1.25 mm",
+      "16 / 1.30 mm",
+      "Set 12 m",
+      "Reel 200 m",
+      "Polyester",
+      "Octagon Monofilament",
+      "Made in Japan",
+      "PTGR120",
+      "PTGR125",
+      "PTGR130",
+      "PTR120-2",
+      "PTR125-2",
+      "PTR130-2",
+      "Official Yonex performance map",
+      "Official Yonex string parameters",
+      "Madison Keys player reference",
+      "Emma Navarro player reference"
+    ],
+
+    "data_quality_notes": [
+      "The supplied official product specification identifies PolyTour Rev as an 'Octagon Monofilament' and explicitly describes it as an 8-sided shaped string. The supplied SIF technology paragraph separately refers to a 'unique pentagonal structure'. These two official descriptions conflict. The database therefore uses Octagonal / 8-sided as the primary geometry because it is stated in both the product specification and main product description, while preserving the conflicting pentagonal wording here for traceability."
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Official Performance Map",
+      "Official String Parameters",
+      "Recommended Players",
+      "Recommended Racquets",
+      "Gauge Recommendations",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
