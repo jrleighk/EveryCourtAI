@@ -1,0 +1,116 @@
+{
+  "id": "more_control",
+  "category": "Player Goal",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
+
+  "goal": {
+    "name": {
+      "en": "More Control",
+      "zh": "提升控制"
+    },
+
+    "description": {
+      "en": "The player wants greater shot precision, directional accuracy and confidence to swing faster without overhitting.",
+      "zh": "球员希望提升击球控制、方向精准度和挥拍信心，在全力挥拍时减少出界。"
+    }
+  },
+
+  "problem_signs": [
+    "Balls frequently land long.",
+    "Difficulty controlling depth.",
+    "Shots fly under pressure.",
+    "Lack of confidence on full swings.",
+    "Inconsistent directional accuracy."
+  ],
+
+  "typical_causes": [
+    "Equipment provides too much free power.",
+    "Launch angle is too high.",
+    "String tension is too low.",
+    "String has lost tension.",
+    "Player's swing speed has improved.",
+    "Racquet is too powerful for current level."
+  ],
+
+  "equipment_adjustments": {
+    "racquet": {
+      "preferred_changes": [
+        "Lower powered frame",
+        "Higher control frame",
+        "More stable frame",
+        "Smaller head size",
+        "Denser string pattern"
+      ]
+    },
+
+    "string": {
+      "preferred_changes": [
+        "Control polyester",
+        "Round polyester",
+        "Medium-firm polyester",
+        "Higher tension stability",
+        "Slightly thicker gauge"
+      ]
+    },
+
+    "tension": {
+      "general_adjustment_lbs": "+2",
+      "notes": [
+        "Increase gradually.",
+        "Do not exceed comfort limits."
+      ]
+    }
+  },
+
+  "recommended_string_families": [
+    "Control Co-Polyester",
+    "Round Polyester",
+    "Poly/Poly Hybrid",
+    "Natural Gut + Control Poly"
+  ],
+
+  "recommended_racquet_characteristics": [
+    "Control",
+    "Stability",
+    "Predictability",
+    "Lower Launch",
+    "Directional Accuracy"
+  ],
+
+  "avoid": [
+    "Very powerful racquets",
+    "Very elastic multifilaments",
+    "Low tension setups",
+    "Oversized power frames"
+  ],
+
+  "ai_matching_weights": {
+    "control": 0.35,
+    "predictability": 0.20,
+    "stability": 0.15,
+    "launch_angle": 0.10,
+    "spin": 0.08,
+    "durability": 0.05,
+    "feel": 0.04,
+    "comfort": 0.03
+  },
+
+  "related_goals": [
+    "more_precision",
+    "more_stability",
+    "lower_launch",
+    "better_tension_maintenance"
+  ],
+
+  "search_keywords": [
+    "more control",
+    "control",
+    "precision",
+    "direction",
+    "depth control",
+    "降低出界",
+    "增加控制",
+    "控制力"
+  ]
+}
