@@ -1,0 +1,338 @@
+{
+  "id": "tension_rules",
+  "category": "Recommendation Rules",
+  "type": "String Tension Engine",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
+
+  "description": {
+    "en": "Core tension recommendation engine used by EveryCourtAI.",
+    "zh": "EveryCourtAI 球线磅数推荐规则引擎。"
+  },
+
+  "base_tension": {
+
+    "polyester": {
+      "lbs": 48,
+      "kg": 21.8
+    },
+
+    "soft_polyester": {
+      "lbs": 47,
+      "kg": 21.3
+    },
+
+    "multifilament": {
+      "lbs": 53,
+      "kg": 24.0
+    },
+
+    "natural_gut": {
+      "lbs": 54,
+      "kg": 24.5
+    },
+
+    "synthetic_gut": {
+      "lbs": 52,
+      "kg": 23.6
+    },
+
+    "hybrid": {
+      "lbs_main": 50,
+      "lbs_cross": 48
+    }
+  },
+
+  "racquet_adjustments": {
+
+    "power_racquet": {
+      "examples": [
+        "Pure Drive",
+        "EZONE 100",
+        "Ultra 100",
+        "FX500"
+      ],
+
+      "adjustment_lbs": 2,
+
+      "reason": "Reduce launch and improve directional control."
+    },
+
+    "control_racquet": {
+      "examples": [
+        "Blade",
+        "Percept 97",
+        "Prestige",
+        "TF40"
+      ],
+
+      "adjustment_lbs": -1,
+
+      "reason": "Increase pocketing and free power."
+    },
+
+    "spin_racquet": {
+      "examples": [
+        "Pure Aero",
+        "VCORE",
+        "Extreme"
+      ],
+
+      "adjustment_lbs": 0,
+
+      "reason": "Keep neutral unless player preference suggests otherwise."
+    }
+  },
+
+  "string_pattern_adjustments": {
+
+    "16x19": {
+      "adjustment_lbs": 0
+    },
+
+    "16x20": {
+      "adjustment_lbs": 1
+    },
+
+    "18x20": {
+      "adjustment_lbs": -1
+    }
+  },
+
+  "head_size_adjustments": {
+
+    "95_98": {
+      "adjustment_lbs": -1
+    },
+
+    "99_100": {
+      "adjustment_lbs": 0
+    },
+
+    "101_plus": {
+      "adjustment_lbs": 1
+    }
+  },
+
+  "gauge_adjustments": {
+
+    "1.15_1.20": {
+      "adjustment_lbs": 1
+    },
+
+    "1.23_1.25": {
+      "adjustment_lbs": 0
+    },
+
+    "1.28_1.30": {
+      "adjustment_lbs": -1
+    },
+
+    "1.35_plus": {
+      "adjustment_lbs": -2
+    }
+  },
+
+  "player_level_adjustments": {
+
+    "beginner": {
+      "adjustment_lbs": -2
+    },
+
+    "intermediate": {
+      "adjustment_lbs": 0
+    },
+
+    "advanced": {
+      "adjustment_lbs": 1
+    },
+
+    "professional": {
+      "adjustment_lbs": 2
+    }
+  },
+
+  "swing_speed_adjustments": {
+
+    "slow": {
+      "adjustment_lbs": -2
+    },
+
+    "medium": {
+      "adjustment_lbs": 0
+    },
+
+    "medium_fast": {
+      "adjustment_lbs": 1
+    },
+
+    "fast": {
+      "adjustment_lbs": 2
+    }
+  },
+
+  "player_preference_adjustments": {
+
+    "more_power": {
+      "adjustment_lbs": -2
+    },
+
+    "more_spin": {
+      "adjustment_lbs": -1
+    },
+
+    "more_control": {
+      "adjustment_lbs": 2
+    },
+
+    "more_comfort": {
+      "adjustment_lbs": -2
+    },
+
+    "more_touch": {
+      "adjustment_lbs": -1
+    }
+  },
+
+  "arm_health_adjustments": {
+
+    "healthy": {
+      "adjustment_lbs": 0
+    },
+
+    "slight_discomfort": {
+      "adjustment_lbs": -2
+    },
+
+    "tennis_elbow_history": {
+      "adjustment_lbs": -4
+    }
+  },
+
+  "environment_adjustments": {
+
+    "hot_weather": {
+      "adjustment_lbs": 1
+    },
+
+    "cold_weather": {
+      "adjustment_lbs": -1
+    },
+
+    "high_altitude": {
+      "adjustment_lbs": 2
+    },
+
+    "sea_level": {
+      "adjustment_lbs": 0
+    }
+  },
+
+  "hybrid_rules": {
+
+    "gut_poly": {
+
+      "main_difference": 2,
+
+      "recommended": {
+        "main": 54,
+        "cross": 52
+      }
+    },
+
+    "poly_multi": {
+
+      "main_difference": 2,
+
+      "recommended": {
+        "main": 50,
+        "cross": 52
+      }
+    },
+
+    "poly_poly": {
+
+      "main_difference": 0,
+
+      "recommended": {
+        "main": 48,
+        "cross": 48
+      }
+    }
+  },
+
+  "safe_ranges": {
+
+    "polyester": {
+
+      "minimum": 40,
+
+      "maximum": 54
+    },
+
+    "multifilament": {
+
+      "minimum": 46,
+
+      "maximum": 58
+    },
+
+    "natural_gut": {
+
+      "minimum": 48,
+
+      "maximum": 60
+    },
+
+    "synthetic_gut": {
+
+      "minimum": 46,
+
+      "maximum": 58
+    }
+  },
+
+  "calculation_order": [
+
+    "Determine String Family",
+
+    "Load Base Tension",
+
+    "Apply Racquet Adjustment",
+
+    "Apply Head Size Adjustment",
+
+    "Apply String Pattern Adjustment",
+
+    "Apply Gauge Adjustment",
+
+    "Apply Player Level Adjustment",
+
+    "Apply Swing Speed Adjustment",
+
+    "Apply Player Preference Adjustment",
+
+    "Apply Arm Health Adjustment",
+
+    "Apply Environment Adjustment",
+
+    "Apply Hybrid Rules",
+
+    "Clamp To Safe Range"
+  ],
+
+  "output_template": {
+
+    "recommended_main_lbs": null,
+
+    "recommended_cross_lbs": null,
+
+    "recommended_main_kg": null,
+
+    "recommended_cross_kg": null,
+
+    "confidence": null,
+
+    "explanation": []
+  }
+}
