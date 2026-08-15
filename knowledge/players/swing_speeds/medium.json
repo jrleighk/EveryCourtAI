@@ -1,0 +1,241 @@
+{
+  "id": "medium",
+  "category": "Swing Speed",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
+
+  "profile": {
+    "name": {
+      "en": "Medium Swing Speed",
+      "zh": "中等挥拍速度"
+    },
+
+    "description": {
+      "en": "Players with balanced racquet-head speed who generate moderate pace and spin while benefiting from equipment that offers an even balance of power, control and comfort.",
+      "zh": "拥有中等拍头速度，能够自行产生一定力量与旋转，同时仍能从球拍和球线获得辅助，是最常见的俱乐部球员挥拍类型。"
+    }
+  },
+
+  "swing_characteristics": {
+    "racquet_head_speed": "Medium",
+    "acceleration": "Medium",
+    "self_generated_power": "Medium",
+    "spin_generation_potential": "Medium",
+    "timing_requirement": "Medium",
+    "contact_stability_requirement": "Medium"
+  },
+
+  "equipment_needs": {
+    "primary": [
+      "Balanced Power",
+      "Balanced Control",
+      "Comfort",
+      "Consistency"
+    ],
+    "secondary": [
+      "Spin",
+      "Forgiveness",
+      "Directional Accuracy"
+    ],
+    "lower_priority": [
+      "Maximum Power",
+      "Tour-Level Precision"
+    ]
+  },
+
+  "preferred_racquet_dna": {
+    "power": 8,
+    "control": 8,
+    "spin": 8,
+    "stability": 8,
+    "maneuverability": 8,
+    "forgiveness": 8,
+    "feel": 8,
+    "launch_angle": 8,
+    "comfort": 8
+  },
+
+  "preferred_racquet_characteristics": {
+    "head_size": [
+      "98",
+      "100"
+    ],
+    "weight_g": [
+      "285",
+      "290",
+      "295",
+      "300",
+      "305"
+    ],
+    "balance": [
+      "Even",
+      "Slightly Head Light"
+    ],
+    "string_patterns": [
+      "16x19",
+      "16x20"
+    ],
+    "stiffness_preference": [
+      "Medium",
+      "Medium-Firm"
+    ]
+  },
+
+  "preferred_string_dna": {
+    "power": 8,
+    "control": 8,
+    "spin": 8,
+    "comfort": 8,
+    "feel": 8,
+    "durability": 8,
+    "tension_maintenance": 8,
+    "snapback": 8,
+    "ball_pocketing": 8,
+    "launch_angle": 8
+  },
+
+  "recommended_string_families": [
+    "Soft Co-Polyester",
+    "Balanced Co-Polyester",
+    "Multifilament",
+    "Poly / Multifilament Hybrid",
+    "Natural Gut / Polyester Hybrid"
+  ],
+
+  "preferred_string_characteristics": {
+    "shape": [
+      "Round",
+      "Lightly Shaped"
+    ],
+    "stiffness": [
+      "Soft",
+      "Medium"
+    ],
+    "gauge_mm": [
+      1.23,
+      1.25,
+      1.30
+    ],
+    "key_traits": [
+      "Balanced Response",
+      "Comfort",
+      "Control",
+      "Spin",
+      "Pocketing"
+    ]
+  },
+
+  "recommended_string_examples": [
+    "Yonex PolyTour Pro",
+    "Yonex PolyTour Air",
+    "Luxilon Element",
+    "Head Lynx",
+    "Wilson Revolve",
+    "Solinco Hyper-G Soft",
+    "Toroline A5",
+    "Babolat RPM Soft",
+    "Wilson NXT",
+    "Tecnifibre X-One Biphase"
+  ],
+
+  "recommended_hybrid_examples": [
+    "Soft Poly + Multifilament",
+    "Natural Gut + Soft Poly",
+    "Round Poly + Multifilament",
+    "Wilson Duo Feel",
+    "Wilson Duo Power"
+  ],
+
+  "recommended_tension": {
+    "multifilament": "50-54 lbs",
+    "natural_gut": "52-55 lbs",
+    "poly": "46-50 lbs",
+    "hybrid": "50/48 lbs"
+  },
+
+  "recommended_racquet_examples": [
+    "Wilson Blade 100",
+    "Wilson Clash 100 Pro",
+    "Yonex EZONE 100",
+    "Yonex PERCEPT 100",
+    "Head Speed MP",
+    "Head Boom MP",
+    "Babolat Pure Drive",
+    "Babolat Pure Strike 100",
+    "Tecnifibre T-FIGHT 300",
+    "Dunlop FX500"
+  ],
+
+  "ai_matching_priority": {
+    "power": 0.12,
+    "control": 0.12,
+    "spin": 0.12,
+    "comfort": 0.12,
+    "forgiveness": 0.10,
+    "feel": 0.10,
+    "maneuverability": 0.08,
+    "stability": 0.08,
+    "tension_maintenance": 0.08,
+    "durability": 0.08
+  },
+
+  "matching_logic": {
+    "prioritize_when": [
+      "Player has balanced technique.",
+      "Player wants all-around performance.",
+      "Player alternates between singles and doubles.",
+      "Player values consistency across different situations."
+    ],
+
+    "equipment_goals": [
+      "Maintain balance between power and control.",
+      "Improve consistency.",
+      "Provide enough spin without sacrificing comfort.",
+      "Offer predictable response."
+    ],
+
+    "deprioritize": [
+      "Extremely Powerful Setups",
+      "Extremely Low Powered Setups",
+      "Very Stiff Polyester at High Tension",
+      "Ultra-Light Beginner Frames"
+    ]
+  },
+
+  "compatible_profiles": {
+    "playing_styles": [
+      "baseline_aggressive",
+      "baseline_counterpuncher",
+      "baseline_grinder",
+      "all_court",
+      "serve_volley"
+    ],
+    "levels": [
+      "intermediate",
+      "advanced"
+    ],
+    "goals": [
+      "more_control",
+      "more_spin",
+      "more_comfort",
+      "more_power",
+      "more_consistency"
+    ]
+  },
+
+  "risk_flags": [
+    "Balanced players can easily drift toward either excessive power or excessive control depending on equipment selection.",
+    "String tension has a greater influence on performance than changing racquets for this player type.",
+    "Avoid matching a control racquet with a dead control polyester unless the player has above-average swing speed."
+  ],
+
+  "search_keywords": [
+    "medium swing",
+    "medium swing speed",
+    "balanced swing",
+    "club player",
+    "intermediate swing",
+    "中等挥拍",
+    "中速挥拍"
+  ]
+}
