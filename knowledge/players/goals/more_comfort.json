@@ -1,0 +1,511 @@
+{
+  "id": "more_comfort",
+  "category": "Player Goal",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
+
+  "goal": {
+    "name": {
+      "en": "More Comfort",
+      "zh": "提升舒适性"
+    },
+
+    "description": {
+      "en": "The player wants a softer, less harsh and more forgiving impact response with reduced shock and improved ball pocketing, without unnecessarily sacrificing control or playability.",
+      "zh": "球员希望获得更柔和、更少冲击、更宽容的击球反馈，并提升减震与包球感，同时尽量避免不必要地牺牲控制与整体可打性。"
+    }
+  },
+
+  "problem_signs": [
+    "Stringbed feels harsh or board-like.",
+    "Arm or forearm feels fatigued after play.",
+    "Off-center hits feel uncomfortable.",
+    "Player dislikes sharp impact feedback.",
+    "Current polyester setup feels too stiff.",
+    "Player wants longer dwell time and more pocketing.",
+    "Comfort decreases noticeably late in long sessions."
+  ],
+
+  "typical_causes": [
+    "String is too stiff.",
+    "String tension is too high.",
+    "Racquet stiffness is high.",
+    "Full polyester setup is too demanding.",
+    "String has gone dead and lost elasticity.",
+    "Gauge is unnecessarily thick.",
+    "Racquet swingweight or static weight increases physical fatigue.",
+    "Current setup combines multiple stiff variables at the same time."
+  ],
+
+  "equipment_adjustments": {
+    "racquet": {
+      "preferred_changes": [
+        "More flexible frame",
+        "Better vibration management",
+        "More forgiving sweet spot",
+        "Lower physical demand",
+        "More manageable swingweight"
+      ],
+
+      "change_priority": "low_to_medium",
+
+      "note": "String type and tension should normally be adjusted before recommending a racquet change unless the frame itself is clearly contributing to discomfort."
+    },
+
+    "string": {
+      "preferred_changes": [
+        "Multifilament",
+        "Natural Gut",
+        "Soft Co-Polyester",
+        "Elastic Polymer",
+        "Comfort-Oriented Hybrid",
+        "More Flexible String Construction"
+      ]
+    },
+
+    "tension": {
+      "general_adjustment_lbs": -2,
+
+      "normal_adjustment_range_lbs": "-1 to -4",
+
+      "notes": [
+        "Reduce tension progressively rather than making a very large change immediately.",
+        "For firm polyester, changing to a softer construction is often more effective than tension reduction alone.",
+        "Do not lower tension so far that launch and directional control become unstable."
+      ]
+    },
+
+    "gauge": {
+      "preferred_direction": "Slightly Thinner When Durability Allows",
+
+      "examples": [
+        "1.30 to 1.25 mm",
+        "1.25 to 1.20 mm"
+      ],
+
+      "tradeoff": "Thinner gauges may increase comfort and elasticity but can reduce durability and stringbed stability."
+    }
+  },
+
+  "recommended_string_families": [
+    "Multifilament",
+    "Natural Gut",
+    "Soft Co-Polyester",
+    "Elastic Polymer",
+    "Natural Gut / Polyester Hybrid",
+    "Polyester / Multifilament Hybrid",
+    "Soft Polyester / Elastic Cross Hybrid"
+  ],
+
+  "preferred_string_dna": {
+    "comfort": 10,
+    "shock_absorption": 10,
+    "ball_pocketing": 10,
+    "elasticity": 9,
+    "feel": 9,
+    "power": 8,
+    "control": 7,
+    "tension_maintenance": 8,
+    "spin": 6,
+    "snapback": 6,
+    "durability": 6,
+    "stiffness": 2
+  },
+
+  "preferred_racquet_dna": {
+    "comfort": 10,
+    "forgiveness": 9,
+    "feel": 9,
+    "stability": 8,
+    "maneuverability": 8,
+    "power": 7,
+    "control": 7,
+    "spin": 7,
+    "launch_angle": 7
+  },
+
+  "recommended_string_characteristics": {
+    "stiffness": [
+      "Very Soft",
+      "Soft",
+      "Medium-Soft"
+    ],
+
+    "shape": [
+      "Round",
+      "Smooth",
+      "Lightly Shaped"
+    ],
+
+    "gauge_mm": [
+      1.20,
+      1.25,
+      1.30
+    ],
+
+    "key_traits": [
+      "Shock Absorption",
+      "Ball Pocketing",
+      "Elasticity",
+      "Soft Impact",
+      "Longer Dwell Time",
+      "Reduced Harshness"
+    ]
+  },
+
+  "recommended_string_examples": [
+    "Yonex PolyTour Air",
+    "Yonex REXIS Comfort",
+    "Yonex REXIS Feel",
+    "Luxilon Element",
+    "Babolat RPM Soft",
+    "Babolat Touch VS",
+    "Wilson Natural Gut",
+    "Wilson NXT",
+    "Wilson NXT Power",
+    "Tecnifibre NRG2",
+    "Tecnifibre X-One Biphase",
+    "Solinco Hyper-G Soft",
+    "Solinco Vanquish",
+    "MSV Soft Touch",
+    "MSV Swift",
+    "Toroline Truffle X"
+  ],
+
+  "recommended_hybrid_architectures": [
+    "Natural Gut Main + Soft Polyester Cross",
+    "Polyester Main + Multifilament Cross",
+    "Multifilament Main + Soft Polyester Cross",
+    "Soft Polyester Main + Elastic Cross"
+  ],
+
+  "avoid": {
+    "racquet_characteristics": [
+      "Very High Stiffness",
+      "Excessive Swingweight For The Player",
+      "Very Small Sweet Spot When Forgiveness Is Needed",
+      "Harsh Off-Center Response"
+    ],
+
+    "string_characteristics": [
+      "Very Firm Polyester",
+      "Dead Polyester",
+      "Very High Tension",
+      "Very Thick Firm Gauge",
+      "Low Elasticity",
+      "Harsh Stringbed Response"
+    ]
+  },
+
+  "ai_matching_weights": {
+    "comfort": 0.30,
+    "shock_absorption": 0.18,
+    "ball_pocketing": 0.15,
+    "elasticity": 0.12,
+    "feel": 0.08,
+    "forgiveness": 0.06,
+    "power": 0.04,
+    "control": 0.03,
+    "tension_maintenance": 0.02,
+    "spin": 0.01,
+    "durability": 0.01
+  },
+
+  "matching_logic": {
+    "prioritize_when": [
+      "Player reports harsh impact.",
+      "Player reports fatigue from the stringbed.",
+      "Current full polyester setup feels too stiff.",
+      "Player wants more pocketing and dwell time.",
+      "Player uses a stiff or powerful racquet.",
+      "Player is returning from a break and wants a less demanding setup."
+    ],
+
+    "equipment_goals": [
+      "Reduce impact harshness.",
+      "Increase ball pocketing.",
+      "Increase dwell time.",
+      "Improve shock absorption.",
+      "Reduce cumulative fatigue.",
+      "Preserve sufficient control."
+    ],
+
+    "deprioritize": [
+      "Maximum Firmness",
+      "Maximum Low-Powered Control",
+      "Very High Initial Tension",
+      "Extremely Thick Firm Polyester"
+    ]
+  },
+
+  "racquet_compensation_logic": {
+    "if_current_racquet_is_stiff": {
+      "preferred_solution_order": [
+        "Use softer string.",
+        "Lower tension.",
+        "Use hybrid.",
+        "Evaluate racquet change only if discomfort remains."
+      ]
+    },
+
+    "if_current_racquet_is_flexible": {
+      "action": "Do not automatically maximize string softness.",
+      "note": "A very flexible racquet combined with an extremely soft stringbed can become too vague or unstable for some players."
+    },
+
+    "if_current_racquet_is_too_heavy": {
+      "note": "Physical fatigue may be incorrectly interpreted as stringbed discomfort.",
+      "preferred_action": [
+        "Evaluate static weight.",
+        "Evaluate swingweight.",
+        "Evaluate late-session timing and fatigue."
+      ]
+    }
+  },
+
+  "string_family_logic": {
+    "multifilament": {
+      "comfort_priority": "Very High",
+      "best_for": [
+        "Maximum comfort",
+        "Slow-to-medium swing speed",
+        "Players moving away from polyester"
+      ]
+    },
+
+    "natural_gut": {
+      "comfort_priority": "Elite",
+      "best_for": [
+        "Premium comfort",
+        "Feel",
+        "Power",
+        "Tension maintenance"
+      ]
+    },
+
+    "soft_co_polyester": {
+      "comfort_priority": "Medium-High",
+      "best_for": [
+        "Players who still need polyester control and spin",
+        "Mild comfort concerns"
+      ]
+    },
+
+    "hybrid": {
+      "comfort_priority": "Variable",
+      "best_for": [
+        "Balancing comfort with control",
+        "Players who do not want to leave polyester completely"
+      ]
+    }
+  },
+
+  "swing_speed_logic": {
+    "slow": {
+      "goal_priority_multiplier": 1.15,
+
+      "preferred": [
+        "Multifilament",
+        "Natural Gut",
+        "Synthetic Gut",
+        "Very Soft Co-Polyester"
+      ]
+    },
+
+    "medium": {
+      "goal_priority_multiplier": 1.0,
+
+      "preferred": [
+        "Soft Co-Polyester",
+        "Multifilament",
+        "Natural Gut Hybrid",
+        "Poly / Multifilament Hybrid"
+      ]
+    },
+
+    "fast": {
+      "goal_priority_multiplier": 0.90,
+
+      "preferred": [
+        "Soft Control Polyester",
+        "Comfort Hybrid",
+        "Natural Gut / Polyester Hybrid"
+      ],
+
+      "warning": "Fast swing players may still require enough stringbed stability and control despite prioritizing comfort."
+    }
+  },
+
+  "playing_style_logic": {
+    "baseline_aggressive": {
+      "comfort_type": "Stable Comfort",
+      "control_protection": "High"
+    },
+
+    "baseline_counterpuncher": {
+      "comfort_type": "Pocketing + Shock Absorption",
+      "predictability_protection": "High"
+    },
+
+    "baseline_grinder": {
+      "comfort_type": "Long-Duration Comfort",
+      "fatigue_reduction_priority": "Very High"
+    },
+
+    "all_court": {
+      "comfort_type": "Comfort + Feel",
+      "touch_protection": "High"
+    },
+
+    "serve_volley": {
+      "comfort_type": "Comfort + Connected Feel",
+      "touch_protection": "Very High"
+    }
+  },
+
+  "physical_constraint_logic": {
+    "arm_sensitivity": {
+      "none": {
+        "hard_override": false
+      },
+
+      "mild": {
+        "comfort_priority_multiplier": 1.25,
+
+        "preferred": [
+          "Soft Co-Polyester",
+          "Multifilament",
+          "Comfort Hybrid"
+        ]
+      },
+
+      "moderate": {
+        "comfort_priority_multiplier": 1.50,
+
+        "preferred": [
+          "Multifilament",
+          "Natural Gut",
+          "Comfort Hybrid"
+        ],
+
+        "avoid": [
+          "Firm Full Polyester",
+          "High Polyester Tension"
+        ]
+      },
+
+      "high": {
+        "comfort_priority_multiplier": 2.0,
+
+        "preferred": [
+          "Natural Gut",
+          "Multifilament"
+        ],
+
+        "avoid": [
+          "Firm Full Polyester",
+          "Very Firm Polyester",
+          "High Tension Polyester"
+        ]
+      }
+    },
+
+    "elbow_sensitivity": {
+      "moderate_or_high": {
+        "hard_override": true,
+
+        "prioritize": [
+          "Shock Absorption",
+          "Low String Stiffness",
+          "Pocketing"
+        ]
+      }
+    }
+  },
+
+  "tradeoffs": {
+    "more_comfort_can_reduce": [
+      "Maximum Control",
+      "Stringbed Crispness",
+      "Durability",
+      "Mechanical Spin Bite"
+    ],
+
+    "lower_tension_can_increase": [
+      "Launch Angle",
+      "String Movement",
+      "Free Power"
+    ],
+
+    "soft_strings_can_increase": [
+      "Pocketing",
+      "Dwell Time",
+      "Power"
+    ],
+
+    "soft_strings_can_reduce": [
+      "Directness",
+      "Firm Stability"
+    ]
+  },
+
+  "related_goals": [
+    "more_feel",
+    "more_ball_pocketing",
+    "more_power",
+    "more_forgiveness"
+  ],
+
+  "conflicting_goals": {
+    "more_control": {
+      "resolution": "Use soft control-oriented polyester or a comfort hybrid rather than simply lowering tension dramatically."
+    },
+
+    "more_spin": {
+      "resolution": "Use soft shaped polyester or shaped-main hybrid rather than firm spin polyester."
+    },
+
+    "more_durability": {
+      "resolution": "Select a more durable soft construction before increasing gauge excessively."
+    },
+
+    "lower_launch": {
+      "resolution": "Maintain controlled launch through string construction and gauge instead of relying on high tension."
+    }
+  },
+
+  "output_guidance": {
+    "preferred_change_sequence": [
+      "String Model",
+      "Tension",
+      "Hybrid Architecture",
+      "Gauge",
+      "Racquet"
+    ],
+
+    "must_explain": [
+      "What is causing the uncomfortable response.",
+      "Whether the issue is primarily string-related or racquet-related.",
+      "Why a softer string or hybrid was selected.",
+      "What control or durability tradeoff may occur.",
+      "Why lower tension is or is not appropriate."
+    ]
+  },
+
+  "search_keywords": [
+    "more comfort",
+    "comfort",
+    "soft stringbed",
+    "arm friendly",
+    "harsh stringbed",
+    "shock absorption",
+    "ball pocketing",
+    "softer feel",
+    "提升舒适",
+    "更舒服",
+    "手感太硬",
+    "线床太硬",
+    "减震",
+    "包球感"
+  ]
+}
