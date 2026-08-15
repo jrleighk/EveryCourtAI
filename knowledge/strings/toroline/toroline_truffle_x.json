@@ -1,0 +1,532 @@
+{
+  "id": "toroline_truffle_x",
+  "brand": "Toroline",
+  "series": "Truffle X",
+  "model": "Truffle X",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament / Elastic Polymer String",
+    "material": "Modern Non-Polyester Polymer",
+    "string_family": "Modern Polymer",
+    "cross_section": "Round",
+    "surface": "Smooth",
+    "polyester_free": true,
+    "tour_positioning": "Ultra-Soft / Comfort / Elasticity / Hybrid Cross",
+    "official_positioning": "Toroline's softest and most elastic string, engineered from a new non-polyester polymer as a modern alternative to traditional multifilaments.",
+    "target_level": "All Levels / Comfort-Oriented / Hybrid Users"
+  },
+
+  "specifications": {
+    "construction": "Ultra-Soft Elastic Polymer",
+    "cross_section": "Round",
+    "surface": "Smooth",
+
+    "available_gauges": [
+      {
+        "gauge_mm": 1.30,
+        "available": true,
+
+        "power": 10,
+        "control": 8,
+        "spin": 7,
+        "comfort": 10,
+        "feel": 10,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "elasticity": 10,
+        "shock_absorption": 10,
+        "ball_pocketing": 10,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Maximum Comfort",
+          "Maximum Ball Pocketing",
+          "Maximum Elasticity",
+          "Hybrid Cross",
+          "Players Replacing Multifilament",
+          "Players Seeking Plush Response"
+        ]
+      }
+    ],
+
+    "effective_gauge_note": "Due to its highly elastic nature, Truffle X stretches under tension and may play thinner than its nominal 1.30 mm diameter.",
+
+    "packaging": {
+      "type": "Two Half Sets",
+      "half_sets_per_package": 2,
+      "length_per_half_set_m": 6.7,
+      "intended_racquets": 1,
+      "total_length_m": 13.4
+    }
+  },
+
+  "technology": [
+    "Modern Non-Polyester Polymer",
+    "Ultra-Low Static Stiffness",
+    "High Elasticity Construction",
+    "Explosive Ball Pocketing",
+    "Plush Response Engineering",
+    "Hybrid Cross Optimization"
+  ],
+
+  "technology_details": {
+    "material_platform": {
+      "type": "Non-Polyester Modern Polymer",
+      "description": "Truffle X uses a new polymer platform that is neither traditional polyester nor conventional multifilament construction.",
+      "primary_benefits": [
+        "Extreme Elasticity",
+        "Ultra-Soft Feel",
+        "Improved Comfort",
+        "Longer-Lasting Playability Than Traditional Multifilament Positioning"
+      ]
+    },
+
+    "elastic_behavior": {
+      "description": "The string elongates substantially under tension, increasing pocketing and reducing effective installed diameter.",
+      "primary_benefits": [
+        "Long Dwell Time",
+        "Plush Feel",
+        "Explosive Pop",
+        "Shock Reduction"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Ultra-Soft Elastic Polymer",
+    "target_player": "Beginner / Intermediate / Advanced / Hybrid User",
+    "arm_friendly": true,
+    "spin_focus": false,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true,
+    "hybrid_cross_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 10,
+    "control": 8,
+    "spin": 7,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 9,
+    "tension_maintenance": 9,
+    "elasticity": 10,
+    "shock_absorption": 10,
+    "ball_pocketing": 10,
+    "launch_angle": "Medium-High"
+  },
+
+  "ai_rating": {
+    "power": 10,
+    "control": 8,
+    "spin": 7,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 9,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Ultra-Soft",
+    "static_stiffness_kg_per_mm": 0.20,
+    "dynamic_stiffness": "Comparable to many top-selling multifilaments",
+    "snapback": 8,
+    "ball_pocketing": 10,
+    "string_movement": 4,
+    "tension_stability": 9,
+    "spin_window": "Medium",
+    "predictability": 9,
+    "arm_friendliness": 10,
+    "shock_absorption": 10,
+    "energy_return": 10,
+    "plushness": 10,
+    "dwell_time": 10
+  },
+
+  "static_stiffness_comparison": [
+    {
+      "string": "Toroline Truffle X",
+      "gauge_mm": 1.30,
+      "static_stiffness_kg_per_mm": 0.20
+    },
+    {
+      "string": "Babolat Natural Gut VS Touch",
+      "gauge_mm": 1.30,
+      "static_stiffness_kg_per_mm": 0.55
+    },
+    {
+      "string": "Tecnifibre NRG2",
+      "gauge_mm": 1.32,
+      "static_stiffness_kg_per_mm": 0.58
+    },
+    {
+      "string": "Wilson NXT",
+      "gauge_mm": 1.30,
+      "static_stiffness_kg_per_mm": 0.67
+    },
+    {
+      "string": "Toroline O-TORO",
+      "static_stiffness_kg_per_mm": 0.95
+    },
+    {
+      "string": "Babolat RPM Blast",
+      "gauge_mm": 1.25,
+      "static_stiffness_kg_per_mm": 1.18
+    }
+  ],
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate",
+      "Advanced"
+    ],
+
+    "swing_speed": [
+      "Slow",
+      "Medium",
+      "Medium-Fast",
+      "Fast"
+    ],
+
+    "play_style": [
+      "All Court",
+      "Touch Player",
+      "Doubles",
+      "Comfort-Oriented Player",
+      "Hybrid User"
+    ],
+
+    "special_player_profiles": [
+      "Players Seeking Maximum Comfort",
+      "Players Replacing Multifilament",
+      "Players Wanting More Durability Than Traditional Multifilament",
+      "Players Seeking Maximum Pocketing",
+      "Players With Arm Sensitivity",
+      "Players Building Spin-Oriented Hybrids"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Clash",
+    "Wilson Blade",
+    "HEAD Speed",
+    "HEAD Boom",
+    "Yonex EZONE",
+    "Yonex PERCEPT",
+    "Babolat Pure Drive",
+    "Babolat Pure Aero",
+    "Tecnifibre T-FIGHT",
+    "Dunlop FX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": false,
+    "crosses": true,
+
+    "preferred_role": "Cross",
+
+    "best_pairings": [
+      "Toroline O-TORO",
+      "Toroline O-TORO TOUR",
+      "Toroline VAMOS",
+      "Toroline A5",
+      "Toroline CASH"
+    ],
+
+    "official_pairing": {
+      "mains": "Toroline O-TORO",
+      "crosses": "Toroline Truffle X",
+      "expected_profile": [
+        "High Spin",
+        "Plush Comfort",
+        "Strong Snapback",
+        "Ball Pocketing",
+        "Reduced Stringbed Harshness"
+      ]
+    },
+
+    "hybrid_roles": {
+      "as_crosses": [
+        "Maximum Comfort",
+        "Ball Pocketing",
+        "Stringbed Softening",
+        "Power",
+        "Dwell Time",
+        "Shock Absorption"
+      ]
+    },
+
+    "hybrid_note": "Toroline specifically positions Truffle X as a cross string, ideally paired with a slick co-poly main such as O-TORO."
+  },
+
+  "recommended_tension": {
+    "general_guideline": "Use the same tension normally used for natural gut or multifilament.",
+
+    "recommended_starting_range": {
+      "lbs": {
+        "min": 50,
+        "max": 55
+      },
+      "kg_approx": {
+        "min": 22.7,
+        "max": 24.9
+      }
+    },
+
+    "prestretch": {
+      "recommended": true,
+      "percent": {
+        "min": 5,
+        "max": 10
+      }
+    }
+  },
+
+  "installation_guidelines": {
+    "material_sensitivity": "Very High",
+
+    "knot_tie_off": {
+      "maximum_force_lbs": 35,
+      "instruction": "Do not apply more than 35 lbs of force when tying off knots."
+    },
+
+    "handling": [
+      "Be gentle during knot tie-off.",
+      "Do not overpull knots.",
+      "Avoid crushing or damaging the string during installation.",
+      "Account for significant string elongation under tension."
+    ],
+
+    "installer_warning": "Truffle X is made from an ultra-soft elastic material and requires more careful handling than conventional polyester strings."
+  },
+
+  "gauge_recommendation": {
+    "1.30": {
+      "best_for": [
+        "Maximum Comfort",
+        "Maximum Pocketing",
+        "Hybrid Cross Use",
+        "Multifilament Replacement",
+        "Arm-Friendly Setup"
+      ],
+
+      "tradeoffs": [
+        "Lower Mechanical Spin Than Shaped Co-Poly",
+        "Requires Careful Installation",
+        "High Elasticity Causes Significant Stretch Under Tension"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.30": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "18-32"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Immediate",
+    "peak_playability": "Immediate",
+    "performance_drop": "Low-Medium",
+    "tension_loss_sensitivity": "Low-Medium",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when elasticity, pocketing, tension stability or surface integrity noticeably declines."
+  },
+
+  "laboratory_testing": {
+    "static_stiffness": {
+      "tested_gauge_mm": 1.30,
+      "value_kg_per_mm": 0.20,
+      "result": "Extremely low static stiffness"
+    },
+
+    "dynamic_stiffness": {
+      "result": "Comparable to many leading multifilaments",
+      "exact_numeric_value_available": false
+    }
+  },
+
+  "comparison_data": {
+    "vs_babolat_natural_gut_vs_touch_130": {
+      "truffle_x_static_stiffness": 0.20,
+      "competitor_static_stiffness": 0.55,
+      "relative_position": "Substantially lower static stiffness"
+    },
+
+    "vs_tecnifibre_nrg2_132": {
+      "truffle_x_static_stiffness": 0.20,
+      "competitor_static_stiffness": 0.58,
+      "relative_position": "Substantially lower static stiffness"
+    },
+
+    "vs_wilson_nxt_130": {
+      "truffle_x_static_stiffness": 0.20,
+      "competitor_static_stiffness": 0.67,
+      "relative_position": "Substantially lower static stiffness"
+    },
+
+    "vs_toroline_o_toro": {
+      "truffle_x_static_stiffness": 0.20,
+      "competitor_static_stiffness": 0.95,
+      "relative_position": "Much softer"
+    },
+
+    "vs_babolat_rpm_blast_125": {
+      "truffle_x_static_stiffness": 0.20,
+      "competitor_static_stiffness": 1.18,
+      "relative_position": "Extremely softer"
+    }
+  },
+
+  "science_metrics": {
+    "material_class": "Modern Non-Polyester Polymer",
+    "static_stiffness_kg_per_mm": 0.20,
+    "elasticity_class": "Ultra High",
+    "comfort_class": "Extreme",
+    "dwell_time_class": "Very High",
+    "ball_pocketing_class": "Very High",
+    "hybrid_role": "Cross",
+    "effective_installed_gauge": "Lower than nominal due to elongation"
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Seeking Maximum Comfort",
+      "Players With Arm Sensitivity",
+      "Players Wanting a Modern Multifilament Alternative",
+      "Players Seeking More Durability Than Traditional Multifilaments",
+      "Players Wanting Maximum Pocketing and Plush Feel",
+      "Hybrid Users",
+      "Players Pairing With O-TORO or Other Slick Co-Poly Mains"
+    ],
+
+    "avoid_for": [
+      "Players Seeking Maximum Full-Bed Polyester Control",
+      "Players Wanting Maximum Mechanical Spin From a Shaped String",
+      "Installers Unfamiliar With Highly Elastic Strings",
+      "Players Wanting a Very Firm Stringbed"
+    ],
+
+    "alternative_strings": [
+      "Babolat Natural Gut VS Touch",
+      "Tecnifibre NRG2",
+      "Wilson NXT",
+      "Solinco Vanquish",
+      "MSV Soft Touch",
+      "Kirschbaum Touch Multifibre"
+    ]
+  },
+
+  "comparison_tags": [
+    "Truffle X",
+    "Non-Polyester",
+    "Modern Polymer",
+    "Ultra Soft",
+    "0.20 kg/mm",
+    "Maximum Comfort",
+    "Maximum Elasticity",
+    "Ball Pocketing",
+    "Hybrid Cross",
+    "Multifilament Alternative",
+    "Prestretch"
+  ],
+
+  "ai_keywords": [
+    "toroline",
+    "truffle x",
+    "toroline truffle x",
+    "1.30",
+    "non polyester",
+    "modern polymer",
+    "ultra soft",
+    "elastic",
+    "0.20 kg mm",
+    "static stiffness",
+    "multifilament replacement",
+    "ball pocketing",
+    "plush",
+    "hybrid cross",
+    "o toro hybrid",
+    "50 55 lbs",
+    "5 10 percent prestretch",
+    "35 lbs knot force"
+  ],
+
+  "target_competitors": [
+    "Babolat Natural Gut VS Touch",
+    "Tecnifibre NRG2",
+    "Wilson NXT",
+    "Solinco Vanquish",
+    "MSV Soft Touch",
+    "Kirschbaum Touch Multifibre"
+  ],
+
+  "description": {
+    "en": "Toroline Truffle X is an ultra-soft, highly elastic tennis string built from a new non-polyester polymer and positioned as a modern alternative to traditional multifilaments. With a manufacturer-reported static stiffness of just 0.20 kg/mm, it is substantially softer than natural gut, leading multifilaments and performance co-polyesters in the supplied comparison. Truffle X delivers extreme pocketing, plush comfort and explosive pop while aiming to maintain feel and playability longer than conventional multifilament constructions. It is designed primarily as a hybrid cross, with Toroline specifically recommending pairing it with a slick co-poly main such as O-TORO.",
+
+    "zh": "Toroline Truffle X 是一款采用全新非聚酯现代聚合物制造的超柔软、高弹性球线，定位为传统 Multifilament 多芯线的现代替代方案。Toroline 提供的数据中，它的静态刚性仅为 0.20 kg/mm，明显低于天然肠线、多款主流多芯线以及高性能聚酯线。Truffle X 的核心优势是极高弹性、强烈 Pocketing、柔软 Plush 手感和爆发性 Pop，同时目标是在保持舒适性的情况下获得比传统多芯线更持久的可打性。官方主要推荐将其作为 Hybrid 横线，尤其与 O-TORO 等低摩擦共聚酯主线搭配。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Toroline Truffle X",
+      "Softest Toroline string positioning",
+      "Most elastic Toroline string positioning",
+      "New polymer",
+      "Not polyester",
+      "Modern multifilament replacement positioning",
+      "1.30 mm nominal gauge",
+      "Effective thickness reduces under tension",
+      "Ultra-soft performance",
+      "High elasticity",
+      "Explosive ball pocketing",
+      "Explosive pop",
+      "Designed primarily as a cross string",
+      "O-TORO recommended main pairing",
+      "Static stiffness 0.20 kg/mm",
+      "Babolat Natural Gut VS Touch 1.30 comparison 0.55 kg/mm",
+      "Tecnifibre NRG2 1.32 comparison 0.58 kg/mm",
+      "Wilson NXT 1.30 comparison 0.67 kg/mm",
+      "O-TORO comparison 0.95 kg/mm",
+      "Babolat RPM Blast 1.25 comparison 1.18 kg/mm",
+      "Dynamic stiffness comparable to leading multifilaments",
+      "50-55 lbs suggested starting tension",
+      "5-10% prestretch recommendation",
+      "Two half sets per package",
+      "6.7 m per half set",
+      "Maximum 35 lbs knot tie-off force warning",
+      "Gentle installation required"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Static Stiffness Comparison",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Recommended Tension",
+      "Installation Guidelines",
+      "Gauge Recommendations",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "Laboratory Testing",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
