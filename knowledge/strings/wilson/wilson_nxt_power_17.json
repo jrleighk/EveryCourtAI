@@ -1,0 +1,507 @@
+{
+  "id": "wilson_nxt_power_17",
+  "brand": "Wilson",
+  "series": "NXT Power",
+  "model": "NXT Power 17",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Multifilament",
+    "material": "High-Crystallinity Xycro Microfibers with Polyurethane",
+    "string_family": "Multifilament",
+    "core_structure": "Ribbon-Like Co-Polymer Core",
+    "cross_section": "Round",
+    "surface": "Smooth",
+    "former_name": "NXT Tour",
+    "tour_positioning": "Power / Comfort / Feel / Natural-Gut-Like Multifilament",
+    "official_positioning": "Premium multifilament designed to combine soft feel, explosive power, high comfort and improved tension maintenance through high-crystallinity Xycro microfibers bonded with polyurethane.",
+    "target_level": "Beginner / Intermediate / Advanced"
+  },
+
+  "specifications": {
+    "construction": "High-Crystallinity Xycro Multifilament with PU",
+    "cross_section": "Round",
+    "surface": "Smooth",
+
+    "available_colors": [
+      "Natural"
+    ],
+
+    "color_availability": {
+      "Natural": {
+        "gauge_mm": 1.26,
+        "gauge_name": "17",
+        "available": true
+      }
+    },
+
+    "available_gauges": [
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.26,
+        "available": true,
+
+        "available_colors": [
+          "Natural"
+        ],
+
+        "power": 10,
+        "control": 8,
+        "spin": 8,
+        "comfort": 10,
+        "feel": 10,
+        "durability": 8,
+        "tension_maintenance": 9,
+        "elasticity": 10,
+        "shock_absorption": 10,
+        "ball_pocketing": 10,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "High Power",
+          "Maximum Comfort",
+          "Maximum Feel",
+          "Natural-Gut-Like Response",
+          "Arm-Friendly Play",
+          "Full Bed",
+          "Comfort Hybrid"
+        ]
+      }
+    ],
+
+    "packaging": [
+      {
+        "type": "Set",
+        "length_ft": 40,
+        "length_m": 12.2
+      }
+    ]
+  },
+
+  "technology": [
+    "High-Crystallinity Xycro Microfibers",
+    "Polyurethane Bonding",
+    "Ribbon-Like Co-Polymer Core",
+    "Enhanced Sweet Spot",
+    "Vibration Reduction",
+    "Tension-Loss Reduction"
+  ],
+
+  "technology_details": {
+    "xycro_microfibers": {
+      "description": "High-crystallinity Xycro microfibers bonded with polyurethane create a highly elastic multifilament structure designed for soft feel, comfort and explosive power.",
+      "primary_benefits": [
+        "Soft Feel",
+        "Power",
+        "Comfort",
+        "Shock Absorption",
+        "Ball Pocketing"
+      ]
+    },
+
+    "ribbon_like_core": {
+      "description": "A ribbon-like co-polymer core increases tensile strength and helps reduce tension loss during play.",
+      "primary_benefits": [
+        "Higher Tensile Strength",
+        "Improved Tension Maintenance",
+        "More Consistent Long-Term Response"
+      ]
+    },
+
+    "sweet_spot_enhancement": {
+      "manufacturer_claim": "15% larger sweet spot than traditional synthetic gut string",
+      "primary_benefits": [
+        "More Forgiveness",
+        "Easier Power",
+        "Improved Off-Center Response"
+      ]
+    },
+
+    "vibration_reduction": {
+      "manufacturer_claim": "80% less vibration than traditional synthetic gut string",
+      "primary_benefits": [
+        "Arm Comfort",
+        "Reduced Shock",
+        "Softer Impact",
+        "Improved Feel"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Premium Power Comfort Multifilament",
+    "target_player": "Beginner / Intermediate / Advanced",
+    "arm_friendly": true,
+    "spin_focus": false,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true,
+    "pocketing_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 10,
+    "control": 8,
+    "spin": 8,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 8,
+    "tension_maintenance": 9,
+    "elasticity": 10,
+    "shock_absorption": 10,
+    "ball_pocketing": 10,
+    "launch_angle": "Medium-High"
+  },
+
+  "ai_rating": {
+    "power": 10,
+    "control": 8,
+    "spin": 8,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 8,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Very Soft",
+    "snapback": 7,
+    "ball_pocketing": 10,
+    "string_movement": 6,
+    "tension_stability": 9,
+    "spin_window": "Medium",
+    "predictability": 9,
+    "arm_friendliness": 10,
+    "shock_absorption": 10,
+    "directional_precision": 8,
+    "sweet_spot_forgiveness": 10,
+    "plushness": 10,
+    "power_response": 10,
+    "liveliness": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Beginner",
+      "Intermediate",
+      "Advanced"
+    ],
+
+    "swing_speed": [
+      "Slow",
+      "Medium",
+      "Medium-Fast"
+    ],
+
+    "play_style": [
+      "All Court",
+      "Doubles",
+      "Serve & Volley",
+      "Touch Player",
+      "Baseline"
+    ],
+
+    "special_player_profiles": [
+      "Players Seeking High Power",
+      "Players With Arm Sensitivity",
+      "Players Wanting Natural-Gut-Like Feel",
+      "Players Seeking Maximum Comfort",
+      "Players Wanting More Response Than NXT Power 16",
+      "Players Wanting More Durability Than NXT Power 18"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Clash",
+    "Wilson Blade",
+    "Wilson RF 01",
+    "Wilson Pro Staff",
+    "HEAD Boom",
+    "HEAD Speed",
+    "Yonex EZONE",
+    "Yonex PERCEPT",
+    "Babolat Pure Drive",
+    "Babolat Pure Strike",
+    "Tecnifibre T-FIGHT",
+    "Dunlop FX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Luxilon ALU Power",
+      "Luxilon 4G",
+      "Luxilon Element",
+      "Wilson Revolve",
+      "Wilson Revolve Spin"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Power",
+        "Comfort",
+        "Feel",
+        "Ball Pocketing"
+      ],
+
+      "as_crosses": [
+        "Stringbed Softening",
+        "Power Support",
+        "Comfort",
+        "Shock Reduction",
+        "Touch"
+      ]
+    },
+
+    "hybrid_note": "NXT Power 17 offers a strong middle ground between the durability of the 16 gauge and the maximum liveliness of the 18 gauge."
+  },
+
+  "gauge_recommendation": {
+    "1.26": {
+      "gauge_name": "17",
+
+      "best_for": [
+        "Power",
+        "Feel",
+        "Comfort",
+        "Pocketing",
+        "Balanced NXT Power Performance"
+      ],
+
+      "tradeoffs": [
+        "Less Durability Than NXT Power 16",
+        "Less Maximum Power Than NXT Power 18",
+        "More String Movement Than NXT Power 16"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.26": {
+      "heavy_topspin_hours": "5-9",
+      "club_player_hours": "15-26"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Immediate",
+    "peak_playability": "Immediate",
+    "performance_drop": "Low-Medium",
+    "tension_loss_sensitivity": "Medium-Low",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when fraying, notching, excessive string movement or reduced tension stability becomes noticeable."
+  },
+
+  "comparison_data": {
+    "vs_nxt_power_16": {
+      "diameter": {
+        "nxt_power_17": "1.26 mm",
+        "nxt_power_16": "1.30 mm"
+      },
+      "thickness": "Lower",
+      "power": "Higher",
+      "feel": "Higher",
+      "liveliness": "Higher",
+      "spin": "Slightly Higher",
+      "durability": "Lower",
+      "control": "Slightly Lower"
+    },
+
+    "vs_nxt_power_18": {
+      "diameter": {
+        "nxt_power_17": "1.26 mm",
+        "nxt_power_18": "1.21 mm"
+      },
+      "thickness": "Higher",
+      "durability": "Higher",
+      "control": "Higher",
+      "power": "Slightly Lower",
+      "feel": "Slightly Lower",
+      "liveliness": "Slightly Lower"
+    },
+
+    "vs_nxt_17": {
+      "power": "Higher",
+      "comfort": "Very High",
+      "feel": "More Gut-Like",
+      "sweet_spot_claim": "15% vs 10% manufacturer claim relative to synthetic gut",
+      "vibration_reduction": "80% manufacturer claim relative to synthetic gut"
+    },
+
+    "vs_traditional_synthetic_gut": {
+      "sweet_spot": "15% larger according to Wilson",
+      "vibration": "80% lower according to Wilson",
+      "comfort": "Much Higher",
+      "power": "Higher",
+      "ball_pocketing": "Higher"
+    },
+
+    "vs_polyester": {
+      "comfort": "Much Higher",
+      "power": "Much Higher",
+      "shock_absorption": "Much Higher",
+      "durability": "Lower",
+      "spin": "Lower",
+      "control": "Softer / More Elastic"
+    }
+  },
+
+  "science_metrics": {
+    "material_class": "PU-Bonded Premium Multifilament",
+
+    "geometry": {
+      "shape": "Round"
+    },
+
+    "comfort_class": "Extreme",
+    "power_class": "Very High",
+    "shock_absorption_class": "Very High",
+    "ball_pocketing_class": "Very High",
+    "tension_stability_class": "High",
+    "sweet_spot_claim": "+15% vs traditional synthetic gut",
+    "vibration_claim": "-80% vs traditional synthetic gut",
+    "performance_class": "Premium Power Multifilament"
+  },
+
+  "awards_and_testing": {
+    "usrsa": {
+      "result": "#1 Comfort String",
+      "source_type": "Manufacturer-Supplied USRSA Rating"
+    }
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Seeking High Power and Maximum Comfort",
+      "Players With Arm Sensitivity",
+      "Players Wanting Natural-Gut-Like Feel",
+      "Players Seeking a Balance Between NXT Power 16 and 18",
+      "Players Wanting More Feel Than NXT Power 16",
+      "Players Wanting More Durability Than NXT Power 18"
+    ],
+
+    "avoid_for": [
+      "Heavy Topspin Players Seeking Maximum Snapback",
+      "Frequent String Breakers",
+      "Players Wanting Firm Polyester-Level Control",
+      "Players Seeking Maximum Durability"
+    ],
+
+    "alternative_strings": [
+      "Wilson NXT Power 16",
+      "Wilson NXT Power 18",
+      "Wilson NXT 17",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG2",
+      "Babolat Xcel",
+      "Natural Gut"
+    ]
+  },
+
+  "comparison_tags": [
+    "NXT Power",
+    "NXT Power 17",
+    "Formerly NXT Tour",
+    "Multifilament",
+    "Xycro Microfibers",
+    "PU",
+    "Ribbon Co-Polymer Core",
+    "Power",
+    "Comfort",
+    "Feel",
+    "Natural-Gut-Like",
+    "Natural",
+    "1.26"
+  ],
+
+  "ai_keywords": [
+    "wilson",
+    "nxt power",
+    "nxt power 17",
+    "wilson nxt power 17",
+    "nxt tour",
+    "formerly nxt tour",
+    "1.26",
+    "17 gauge",
+    "natural",
+    "multifilament",
+    "xycro",
+    "high crystallinity",
+    "polyurethane",
+    "pu",
+    "ribbon co polymer",
+    "comfort",
+    "explosive power",
+    "sweet spot",
+    "80 percent less vibration",
+    "15 percent larger sweet spot",
+    "natural gut feel",
+    "usrsa"
+  ],
+
+  "target_competitors": [
+    "Wilson NXT Power 16",
+    "Wilson NXT Power 18",
+    "Tecnifibre X-One Biphase",
+    "Tecnifibre NRG2",
+    "Babolat Xcel",
+    "Natural Gut"
+  ],
+
+  "description": {
+    "en": "Wilson NXT Power 17 is a premium power-oriented multifilament formerly known as NXT Tour. It uses high-crystallinity Xycro microfibers bonded with polyurethane to deliver a soft, comfortable and explosive response, while a ribbon-like co-polymer core improves tensile strength and helps reduce tension loss. Wilson reports a 15% larger sweet spot and 80% less vibration than traditional synthetic gut. At 1.26 mm / 17 gauge, it sits between the 1.30 mm NXT Power 16 and the 1.21 mm NXT Power 18, offering a balanced combination of power, feel, comfort and durability.",
+
+    "zh": "Wilson NXT Power 17 是一款以力量、舒适和手感为核心的高端多芯球线，原名 NXT Tour。它采用高结晶度 Xycro 微纤维并通过 Polyurethane 聚氨酯结合，带来柔软、舒适且具有爆发力的击球反馈；Ribbon-Like Co-Polymer Core 则用于提升抗拉强度并减少张力流失。Wilson 表示它相比传统 Synthetic Gut 拥有约 15% 更大的 Sweet Spot，并减少约 80% 的震动。1.26 毫米 / 17 Gauge 位于 1.30 毫米 NXT Power 16 和 1.21 毫米 NXT Power 18 之间，是整个系列中力量、手感、舒适与耐久较平衡的版本。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Wilson NXT Power 17",
+      "Natural color",
+      "High-crystallinity Xycro microfibers",
+      "Polyurethane bonding",
+      "Soft feel",
+      "Explosive power",
+      "USRSA #1 comfort string claim",
+      "15% larger sweet spot than traditional synthetic gut claim",
+      "80% less vibration than traditional synthetic gut claim",
+      "Ribbon-like co-polymer core",
+      "Increased tensile strength",
+      "Reduced tension loss positioning",
+      "Formerly labeled NXT Tour",
+      "Natural-gut-like softness and comfort positioning",
+      "17 gauge",
+      "1.26 mm",
+      "Set 40 ft / 12.2 m"
+    ],
+
+    "data_quality_notes": [
+      "The supplied manufacturer copy states that the 17 gauge version is thicker than the 16 gauge version. This conflicts with the stated physical diameters: NXT Power 17 is 1.26 mm while NXT Power 16 is 1.30 mm. Database gauge comparisons therefore follow the actual millimeter specifications rather than the contradictory marketing sentence."
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendation",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "Comparison Data",
+      "Science Metrics",
+      "Awards and Testing",
+      "AI Recommendations"
+    ]
+  }
+}
