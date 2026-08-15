@@ -1,0 +1,523 @@
+{
+  "id": "wilson_duo_feel",
+  "brand": "Wilson",
+  "series": "Duo",
+  "model": "Duo Feel",
+  "category": "Hybrid String Set",
+
+  "manufacturer_data": {
+    "construction": "Multifilament + Co-Polyester Hybrid",
+    "main_components": [
+      "Wilson NXT 16",
+      "Luxilon Element 17"
+    ],
+    "string_family": "Hybrid",
+    "official_positioning": "Hybrid string set combining Wilson NXT with Luxilon Element for excellent shock absorption, reduced stringbed vibration, superior feel and balanced performance.",
+    "target_level": "Intermediate / Advanced",
+    "reversible_configuration": true
+  },
+
+  "specifications": {
+    "construction": "Multifilament + Co-Polyester Hybrid",
+
+    "available_colors": [
+      "Bronze",
+      "Natural"
+    ],
+
+    "components": {
+      "nxt_16": {
+        "string": "Wilson NXT",
+        "gauge_name": "16",
+        "gauge_mm": 1.30,
+        "color": "Natural",
+        "construction": "Multifilament",
+        "material": "Xycro Microfibers with Polyurethane",
+        "shape": "Round",
+        "primary_role": [
+          "Comfort",
+          "Power",
+          "Feel",
+          "Shock Absorption",
+          "Ball Pocketing"
+        ]
+      },
+
+      "luxilon_element_17": {
+        "string": "Luxilon Element",
+        "gauge_name": "17",
+        "gauge_mm": 1.25,
+        "color": "Bronze",
+        "construction": "Co-Polyester Monofilament",
+        "shape": "Round",
+        "primary_role": [
+          "Control",
+          "Feel",
+          "Stringbed Stability",
+          "Snapback Support",
+          "Reduced Harshness"
+        ]
+      }
+    },
+
+    "gauge": {
+      "official_listing": "17/16",
+      "mm_official_listing": "1.25/1.30"
+    },
+
+    "packaging": [
+      {
+        "type": "Hybrid Set",
+        "length_ft": 40,
+        "length_m": 12.2
+      }
+    ]
+  },
+
+  "official_hybrid_configuration": {
+    "reversible": true,
+
+    "configuration_1": {
+      "mains": "Luxilon Element 17 / 1.25",
+      "crosses": "Wilson NXT 16 / 1.30",
+      "expected_character": [
+        "More Control",
+        "More Stable Response",
+        "Good Feel",
+        "Improved Comfort",
+        "Reduced Stringbed Vibration"
+      ]
+    },
+
+    "configuration_2": {
+      "mains": "Wilson NXT 16 / 1.30",
+      "crosses": "Luxilon Element 17 / 1.25",
+      "expected_character": [
+        "Maximum Comfort",
+        "More Power",
+        "More Ball Pocketing",
+        "Plush Feel",
+        "Controlled Response"
+      ]
+    }
+  },
+
+  "technology": [
+    "Wilson NXT Multifilament",
+    "Luxilon Element Co-Polyester",
+    "Reversible Hybrid Configuration",
+    "Shock Absorption Integration",
+    "Stringbed Vibration Reduction",
+    "Feel-Oriented Hybrid Tuning"
+  ],
+
+  "technology_details": {
+    "nxt_component": {
+      "description": "Wilson NXT uses proprietary Xycro microfibers impregnated with polyurethane to provide high comfort, power, pocketing and shock absorption.",
+      "primary_benefits": [
+        "Comfort",
+        "Power",
+        "Pocketing",
+        "Shock Absorption",
+        "Plush Feel"
+      ]
+    },
+
+    "luxilon_element_component": {
+      "description": "Luxilon Element provides a controlled co-polyester response while maintaining a softer and more feel-oriented character than traditional firm polyester strings.",
+      "primary_benefits": [
+        "Control",
+        "Feel",
+        "Stability",
+        "Responsive Polyester Performance"
+      ]
+    },
+
+    "hybrid_interaction": {
+      "description": "The combination reduces overall stringbed vibration while retaining the directional support of polyester and the comfort and pocketing of multifilament.",
+      "primary_benefits": [
+        "Excellent Shock Absorption",
+        "Reduced Vibration",
+        "Superior Feel",
+        "Comfort-Control Balance"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Feel-Oriented Multifilament / Co-Poly Hybrid",
+    "target_player": "Intermediate / Advanced",
+    "arm_friendly": true,
+    "spin_focus": false,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true,
+    "pocketing_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 9,
+    "spin": 8,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 8,
+    "tension_maintenance": 9,
+    "elasticity": 9,
+    "shock_absorption": 10,
+    "ball_pocketing": 10,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 9,
+    "spin": 8,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 8,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Soft-Medium",
+    "snapback": 8,
+    "ball_pocketing": 10,
+    "string_movement": 7,
+    "tension_stability": 9,
+    "spin_window": "Medium-High",
+    "predictability": 9,
+    "arm_friendliness": 10,
+    "shock_absorption": 10,
+    "vibration_reduction": 10,
+    "directional_precision": 9,
+    "stringbed_stability": 9,
+    "plushness": 10,
+    "connected_feel": 10,
+    "hybrid_versatility": 10
+  },
+
+  "stringing_recommendation": {
+    "general": {
+      "configuration": "Either string may be installed in the mains."
+    },
+
+    "luxilon_element": {
+      "tension_adjustment": {
+        "recommended_reduction_percent_min": 10,
+        "instruction": "Reduce tension on Luxilon Element by at least 10% for ideal playability."
+      }
+    },
+
+    "configuration_guidance": {
+      "element_mains": {
+        "best_for": [
+          "More Control",
+          "More Polyester Response",
+          "Higher Stringbed Stability",
+          "Balanced Comfort"
+        ]
+      },
+
+      "nxt_mains": {
+        "best_for": [
+          "Maximum Comfort",
+          "More Power",
+          "More Pocketing",
+          "Softer Overall Feel"
+        ]
+      }
+    }
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced"
+    ],
+
+    "swing_speed": [
+      "Medium",
+      "Medium-Fast",
+      "Fast"
+    ],
+
+    "play_style": [
+      "All Court",
+      "Doubles",
+      "Serve & Volley",
+      "Baseline",
+      "Touch Player"
+    ],
+
+    "special_player_profiles": [
+      "Players Wanting Polyester Performance Without Full-Poly Harshness",
+      "Players Seeking Maximum Hybrid Feel",
+      "Players Wanting Reduced Stringbed Vibration",
+      "Players With Mild Arm Sensitivity",
+      "Players Seeking Comfort And Control",
+      "Players Wanting Adjustable Main-Cross Performance"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Blade",
+    "Wilson Clash",
+    "Wilson RF 01",
+    "Wilson Pro Staff",
+    "HEAD Speed",
+    "HEAD Radical",
+    "HEAD Boom",
+    "Yonex EZONE",
+    "Yonex PERCEPT",
+    "Babolat Pure Strike",
+    "Tecnifibre T-FIGHT",
+    "Dunlop CX"
+  ],
+
+  "hybrid_physics": {
+    "poly_component": {
+      "string": "Luxilon Element",
+      "primary_effects": [
+        "Directional Support",
+        "Control",
+        "Stringbed Stability",
+        "Responsive Feel"
+      ]
+    },
+
+    "multifilament_component": {
+      "string": "Wilson NXT",
+      "primary_effects": [
+        "Comfort",
+        "Power",
+        "Ball Pocketing",
+        "Shock Absorption"
+      ]
+    },
+
+    "combined_effect": [
+      "Reduced Stringbed Vibration",
+      "Excellent Shock Absorption",
+      "Plush Connected Feel",
+      "Balanced Control",
+      "Comfortable Power"
+    ]
+  },
+
+  "configuration_effects": {
+    "element_in_mains": {
+      "power": 8,
+      "control": 9,
+      "spin": 8,
+      "comfort": 9,
+      "feel": 10,
+      "durability": 9,
+      "tension_maintenance": 9,
+      "response": "Controlled / Connected"
+    },
+
+    "nxt_in_mains": {
+      "power": 10,
+      "control": 8,
+      "spin": 7,
+      "comfort": 10,
+      "feel": 10,
+      "durability": 8,
+      "tension_maintenance": 8,
+      "response": "Plush / Powerful"
+    }
+  },
+
+  "estimated_lifespan": {
+    "hybrid_setup": {
+      "heavy_topspin_hours": "6-10",
+      "club_player_hours": "14-24"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Immediate / Short",
+    "peak_playability": "Immediate",
+    "performance_drop": "Low-Medium",
+    "tension_loss_sensitivity": "Medium-Low",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when NXT develops significant fraying or when Element loses responsive snapback and overall stringbed consistency."
+  },
+
+  "comparison_data": {
+    "vs_full_bed_element": {
+      "comfort": "Much Higher",
+      "shock_absorption": "Much Higher",
+      "pocketing": "Higher",
+      "power": "Higher",
+      "control": "Slightly Softer",
+      "feel": "More Plush"
+    },
+
+    "vs_full_bed_nxt": {
+      "control": "Higher",
+      "spin": "Higher",
+      "stability": "Higher",
+      "durability": "Higher",
+      "comfort": "Slightly Lower"
+    },
+
+    "vs_duo_control": {
+      "comfort": "Higher",
+      "feel": "Softer / More Plush",
+      "shock_absorption": "Higher",
+      "power": "Higher",
+      "control": "Lower",
+      "spin": "Lower",
+      "tension_maintenance": "Lower",
+      "primary_identity": {
+        "duo_feel": "Feel / Comfort / Vibration Reduction",
+        "duo_control": "Control / Spin / Tension Maintenance"
+      }
+    }
+  },
+
+  "science_metrics": {
+    "hybrid_type": "Multifilament + Round Co-Polyester",
+
+    "main_performance_mechanisms": [
+      "Polyester Directional Support",
+      "Multifilament Pocketing",
+      "Multifilament Shock Absorption",
+      "Hybrid Vibration Reduction"
+    ],
+
+    "trajectory_profile": "Balanced / Controlled",
+
+    "launch_angle_profile": "Medium",
+
+    "comfort_class": "Very High",
+    "feel_class": "Very High",
+    "shock_absorption_class": "Very High",
+    "control_class": "High",
+    "hybrid_class": "Premium Feel Hybrid"
+  },
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Seeking Maximum Hybrid Feel",
+      "Players Wanting Polyester Control With NXT Comfort",
+      "Players Seeking Reduced Stringbed Vibration",
+      "Players With Mild Arm Sensitivity",
+      "All-Court Players",
+      "Doubles Players",
+      "Players Who Value Touch And Pocketing"
+    ],
+
+    "avoid_for": [
+      "Players Seeking Maximum Polyester Durability",
+      "Extreme Topspin Players Seeking Maximum Bite",
+      "Players Wanting Very Firm Tournament Response",
+      "Frequent Multifilament String Breakers"
+    ],
+
+    "alternative_strings": [
+      "Wilson Duo Control",
+      "Wilson NXT 16",
+      "Luxilon Element",
+      "Wilson NXT + Luxilon ALU Power",
+      "Natural Gut + Luxilon Element"
+    ]
+  },
+
+  "comparison_tags": [
+    "Wilson",
+    "Duo Feel",
+    "Hybrid",
+    "NXT",
+    "Luxilon Element",
+    "Multifilament",
+    "Co-Polyester",
+    "Feel",
+    "Comfort",
+    "Shock Absorption",
+    "Low Vibration",
+    "Bronze",
+    "Natural",
+    "1.25",
+    "1.30"
+  ],
+
+  "ai_keywords": [
+    "wilson",
+    "duo feel",
+    "wilson duo feel",
+    "nxt 16",
+    "luxilon element",
+    "element 17",
+    "17 16",
+    "1.25",
+    "1.30",
+    "bronze",
+    "natural",
+    "hybrid",
+    "multifilament poly hybrid",
+    "feel",
+    "comfort",
+    "shock absorption",
+    "less vibration",
+    "reduce tension 10 percent",
+    "reversible hybrid"
+  ],
+
+  "target_competitors": [
+    "Wilson Duo Control",
+    "Natural Gut + Luxilon Element",
+    "Wilson NXT + Luxilon ALU Power",
+    "Tecnifibre Multifilament + Co-Poly Hybrid"
+  ],
+
+  "description": {
+    "en": "Wilson Duo Feel is a comfort- and feel-oriented hybrid combining Wilson NXT 16 / 1.30 mm with Luxilon Element 17 / 1.25 mm. NXT contributes power, pocketing and exceptional shock absorption, while Element adds controlled co-polyester response and stringbed stability without the harshness of firmer polyester strings. Wilson allows either string to be installed in the mains, enabling players to tune the setup toward more control or more comfort. For ideal playability, Wilson recommends reducing Luxilon Element tension by at least 10%.",
+
+    "zh": "Wilson Duo Feel 是一套以 Feel、Comfort 和减震为核心的官方 Hybrid，由 Wilson NXT 16 / 1.30 毫米与 Luxilon Element 17 / 1.25 毫米组成。NXT 负责提供力量、Pocketing、柔和手感和优秀的 Shock Absorption；Luxilon Element 则提供聚酯所需要的方向支撑、控制和线床稳定性，但整体比传统偏硬聚酯更加柔和。两根球线都可以作为主线使用：Element 做主线时更加偏控制和稳定；NXT 做主线时则更加柔软、有力量并具有更明显的 Pocketing。Wilson 建议 Luxilon Element 的穿线张力至少降低 10%，以获得理想的可打性。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Wilson Duo Feel",
+      "Bronze / Natural",
+      "Hybrid string set",
+      "Wilson NXT 16",
+      "NXT 1.30 mm",
+      "Luxilon Element 17",
+      "Luxilon Element 1.25 mm",
+      "Excellent shock absorption positioning",
+      "Reduced stringbed vibration positioning",
+      "Either string can be installed in the mains",
+      "Superior feel and performance positioning",
+      "Reduce Luxilon Element tension by at least 10%",
+      "Gauge 17/16",
+      "Diameter 1.25/1.30 mm",
+      "Set 40 ft / 12.2 m"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Stringing Recommendation",
+      "Recommended Racquets",
+      "Hybrid Physics",
+      "Configuration Effects",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
