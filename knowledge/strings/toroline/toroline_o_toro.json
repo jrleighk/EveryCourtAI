@@ -1,0 +1,528 @@
+{
+  "id": "toroline_o_toro",
+  "brand": "Toroline",
+  "series": "O-TORO",
+  "model": "O-TORO",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Co-Polyester",
+    "string_family": "Polyester",
+    "cross_section": "Hexagonal",
+    "surface": "Shaped / Edged",
+    "profile_sides": 6,
+    "tour_positioning": "Maximum Spin / Power / Comfort Co-Polyester",
+    "official_positioning": "TOROLINE's best-selling and most spin-friendly string, designed to deliver elite-level spin with a controlled and comfortable response.",
+    "best_seller": true,
+    "co_developed_with": "Steve Johnson",
+    "co_developer_profile": "Former Top 25 ATP professional",
+    "target_level": "Intermediate / Advanced / Tournament"
+  },
+
+  "specifications": {
+    "construction": "Co-Polyester Monofilament",
+    "cross_section": "Hexagonal (6-Sided)",
+    "surface": "Shaped / Edged",
+
+    "available_colors": [
+      "Neon Green",
+      "White",
+      "Neon Pink",
+      "Black",
+      "Neon Orange"
+    ],
+
+    "color_availability": {
+      "Neon Green": {
+        "gauge_mm": 1.23,
+        "gauge_name": "17",
+        "standard_availability": true
+      },
+      "White": {
+        "gauge_mm": 1.23,
+        "gauge_name": "17",
+        "standard_availability": true
+      },
+      "Neon Pink": {
+        "gauge_mm": 1.23,
+        "gauge_name": "17",
+        "standard_availability": true
+      },
+      "Black": {
+        "gauge_mm": 1.23,
+        "gauge_name": "17",
+        "standard_availability": true
+      },
+      "Neon Orange": {
+        "gauge_mm": 1.23,
+        "gauge_name": "17",
+        "standard_availability": false,
+        "exclusive_retailer": "Tennis Warehouse"
+      }
+    },
+
+    "available_gauges": [
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.23,
+        "available": true,
+
+        "power": 9,
+        "control": 10,
+        "spin": 10,
+        "comfort": 9,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "elasticity": 9,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Maximum Spin",
+          "Heavy Topspin",
+          "Aggressive Baseline Play",
+          "Fast Racquet Head Speed",
+          "Tournament Play",
+          "Players Wanting Spin With More Comfort Than Traditional Firm Co-Poly"
+        ]
+      }
+    ],
+
+    "packaging": {
+      "type": "Two Half Sets",
+      "half_sets_per_package": 2,
+      "length_per_half_set_m": 6.7,
+      "intended_racquets": 1,
+      "total_length_m": 13.4
+    }
+  },
+
+  "technology": [
+    "Hexagonal Spin Geometry",
+    "High Snapback Response",
+    "Low-Friction String Movement",
+    "Comfort-Oriented Co-Polyester Construction",
+    "Spin-Optimized Polymer Engineering"
+  ],
+
+  "technology_details": {
+    "spin_generation": {
+      "primary_factors": [
+        "Ball Grip",
+        "Snapback"
+      ],
+      "description": "O-TORO combines a hexagonal profile for mechanical ball grip with strong snapback to generate very high rotational output."
+    },
+
+    "comfort_spin_balance": {
+      "description": "Designed to deliver elite spin performance while maintaining lower stiffness and greater comfort than many traditional high-spin co-polyester strings."
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Maximum Spin Performance Co-Polyester",
+    "target_player": "Intermediate / Advanced / Tournament",
+    "arm_friendly": true,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true,
+    "snapback_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 9,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9,
+    "elasticity": 9,
+    "launch_angle": "Medium-High"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 10,
+    "spin": 10,
+    "comfort": 9,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Soft-Medium",
+    "snapback": 10,
+    "ball_pocketing": 9,
+    "string_movement": 2,
+    "tension_stability": 9,
+    "spin_window": "Very High",
+    "predictability": 9,
+    "arm_friendliness": 9,
+    "directional_precision": 10,
+    "ball_bite": 10,
+    "surface_grip": 10,
+    "heavy_ball_potential": 10,
+    "power_response": 9
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "Modern Baseline",
+      "Power Baseliner",
+      "All Court"
+    ],
+
+    "special_player_profiles": [
+      "Players Seeking Maximum Spin",
+      "Players Wanting High Spin Without Excessive Stiffness",
+      "Big Hitters",
+      "Players Seeking Heavy Ball Production",
+      "Players Wanting More Comfort Than Traditional Firm Spin Co-Poly"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Babolat Pure Aero",
+    "Babolat Pure Drive",
+    "Yonex VCORE",
+    "Wilson Shift",
+    "Wilson Blade",
+    "HEAD Extreme",
+    "HEAD Speed",
+    "Tecnifibre T-FIGHT",
+    "Dunlop SX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "best_pairings": [
+      "Toroline A5",
+      "Natural Gut",
+      "Luxilon Natural Gut",
+      "Babolat Touch VS",
+      "Tecnifibre X-One Biphase",
+      "Tecnifibre NRG²"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Maximum Spin",
+        "Ball Bite",
+        "Heavy Ball Production",
+        "Control"
+      ],
+
+      "as_crosses": [
+        "Spin Support",
+        "Control",
+        "Stringbed Stability"
+      ]
+    },
+
+    "hybrid_note": "O-TORO is especially suitable as a shaped main string when paired with a smooth, low-friction cross."
+  },
+
+  "gauge_recommendation": {
+    "1.23": {
+      "gauge_name": "17",
+      "best_for": [
+        "Maximum Spin",
+        "Maximum Ball Bite",
+        "Heavy Ball Production",
+        "Fast Swing Speed",
+        "Tournament Play"
+      ],
+
+      "tradeoffs": [
+        "Less Durability Than Thicker 1.25-1.30 mm Co-Poly Strings"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.23": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "16-28"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Very Short",
+    "peak_playability": "Immediate",
+    "performance_drop": "Medium-Low",
+    "tension_loss_sensitivity": "Medium-Low",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when snapback, surface bite or directional control noticeably declines."
+  },
+
+  "laboratory_testing": {
+    "racketpedia": {
+      "tested_gauge_mm": 1.23,
+      "spin_score": 100,
+      "spin_score_scale": 100,
+      "result": "Perfect 100/100 spin rating",
+      "source_type": "Manufacturer-supplied Racketpedia laboratory result"
+    },
+
+    "tennis_warehouse_lab": {
+      "reference_string": "Toroline O-TORO 1.23",
+
+      "spin_comparisons": [
+        {
+          "competitor": "Babolat RPM Blast",
+          "competitor_gauge_mm": 1.25,
+          "spin_advantage_percent": 104
+        },
+        {
+          "competitor": "Yonex Poly Tour Strike",
+          "competitor_gauge_mm": 1.25,
+          "spin_advantage_percent": 104
+        },
+        {
+          "competitor": "Tecnifibre Razor Code",
+          "competitor_gauge_mm": 1.25,
+          "spin_advantage_percent": 68
+        },
+        {
+          "competitor": "Luxilon ALU Power",
+          "competitor_gauge_mm": 1.25,
+          "spin_advantage_percent": 62
+        },
+        {
+          "competitor": "Volkl Cyclone",
+          "competitor_gauge_mm": 1.25,
+          "spin_advantage_percent": 62
+        },
+        {
+          "competitor": "Solinco Hyper-G",
+          "competitor_gauge_mm": 1.25,
+          "spin_advantage_percent": 54
+        }
+      ],
+
+      "stiffness_comparison": {
+        "competitor": "Babolat RPM Blast",
+        "competitor_gauge_mm": 1.25,
+        "stiffness_difference_percent": -29,
+        "interpretation": "O-TORO measured 29% lower stiffness than Babolat RPM Blast in the manufacturer-supplied head-to-head comparison."
+      },
+
+      "category_claim": {
+        "claim": "Highest spin potential for any string under 170 lb/in stiffness",
+        "stiffness_threshold_lb_per_in": 170,
+        "source_type": "Manufacturer-supplied reference to Tennis Warehouse laboratory data"
+      }
+    }
+  },
+
+  "comparison_data": {
+    "spin_advantage_vs_competitors": [
+      {
+        "competitor": "Babolat RPM Blast 1.25",
+        "advantage_percent": 104
+      },
+      {
+        "competitor": "Yonex Poly Tour Strike 1.25",
+        "advantage_percent": 104
+      },
+      {
+        "competitor": "Tecnifibre Razor Code 1.25",
+        "advantage_percent": 68
+      },
+      {
+        "competitor": "Luxilon ALU Power 1.25",
+        "advantage_percent": 62
+      },
+      {
+        "competitor": "Volkl Cyclone 1.25",
+        "advantage_percent": 62
+      },
+      {
+        "competitor": "Solinco Hyper-G 1.25",
+        "advantage_percent": 54
+      }
+    ],
+
+    "comfort_reference": {
+      "comparison": "Babolat RPM Blast 1.25",
+      "lower_stiffness_percent": 29
+    }
+  },
+
+  "science_metrics": {
+    "spin_rating_racketpedia": 100,
+    "spin_rating_scale": 100,
+    "spin_mechanism": [
+      "Mechanical Ball Grip",
+      "Snapback",
+      "String Movement"
+    ],
+    "stiffness_class": "Below 170 lb/in according to manufacturer-supplied Tennis Warehouse laboratory reference",
+    "spin_efficiency_class": "Elite"
+  },
+
+  "tour_players": [
+    {
+      "name": "Steve Johnson",
+      "tour": "ATP",
+      "relationship": "Co-Developer",
+      "career_reference": "Former Top 25 ATP Professional",
+      "confidence": "Official Manufacturer Claim"
+    }
+  ],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Seeking Elite Spin",
+      "Heavy Topspin Players",
+      "Aggressive Baseliners",
+      "Big Hitters",
+      "Players Wanting More Comfort Than Traditional Firm Spin Polys",
+      "Players Seeking Heavy Ball Production",
+      "Tournament Players"
+    ],
+
+    "avoid_for": [
+      "Beginners With Slow Swing Speed",
+      "Players Seeking Maximum Flat-Hitting Precision From a Round String",
+      "Frequent String Breakers Wanting 1.30 mm Durability",
+      "Players Wanting Multifilament-Level Softness"
+    ],
+
+    "alternative_strings": [
+      "Toroline A5",
+      "Solinco Hyper-G",
+      "Babolat RPM Blast",
+      "HEAD Lynx Tour",
+      "Luxilon ALU Power Rough",
+      "MSV Focus Hex"
+    ]
+  },
+
+  "comparison_tags": [
+    "Toroline Bestseller",
+    "Hexagonal",
+    "Maximum Spin",
+    "100/100 Spin",
+    "High Snapback",
+    "Comfortable Co-Poly",
+    "Low Stiffness",
+    "Heavy Ball",
+    "Steve Johnson",
+    "Tournament"
+  ],
+
+  "ai_keywords": [
+    "toroline",
+    "o toro",
+    "o-toro",
+    "toroline o toro",
+    "toroline o-toro",
+    "1.23",
+    "17 gauge",
+    "neon green",
+    "white",
+    "neon pink",
+    "black",
+    "neon orange",
+    "hexagonal",
+    "spin",
+    "100 spin",
+    "racketpedia",
+    "tennis warehouse",
+    "104 percent rpm blast",
+    "54 percent hyper g",
+    "snapback",
+    "low stiffness",
+    "steve johnson"
+  ],
+
+  "target_competitors": [
+    "Babolat RPM Blast",
+    "Yonex Poly Tour Strike",
+    "Tecnifibre Razor Code",
+    "Luxilon ALU Power",
+    "Volkl Cyclone",
+    "Solinco Hyper-G",
+    "HEAD Lynx Tour"
+  ],
+
+  "description": {
+    "en": "Toroline O-TORO is the brand's best-selling and most spin-oriented co-polyester string, co-developed with former ATP Top 25 professional Steve Johnson. Its hexagonal profile creates strong mechanical ball grip while powerful snapback adds rotational speed. Racketpedia laboratory testing supplied by Toroline rated O-TORO 1.23 a perfect 100/100 for spin. Manufacturer-supplied Tennis Warehouse laboratory comparisons also report significantly higher spin potential than several major performance co-polys while measuring lower stiffness than Babolat RPM Blast. O-TORO is designed for aggressive players seeking elite spin, heavy ball production and strong control without the harsh response often associated with high-spin polyester strings.",
+
+    "zh": "Toroline O-TORO 是 TOROLINE 最畅销、同时也是品牌中最强调旋转表现的共聚酯球线，由前 ATP 世界前25球员 Steve Johnson 参与联合开发。其六边形截面负责提供强机械咬球，而高 Snapback 则进一步提升球线回弹速度与旋转输出。Toroline 提供的 Racketpedia 实验室测试中，O-TORO 1.23 的旋转评分达到满分 100/100。品牌引用的 Tennis Warehouse 实验室数据还显示，O-TORO 相比多款主流高性能聚酯线拥有显著更高的 Spin Potential，同时相较 Babolat RPM Blast 1.25 刚性更低。它特别适合大力量、快速挥拍并希望获得极高旋转、重球质和稳定控制，同时又不希望线床过硬的进攻型球员。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Toroline O-TORO",
+      "Best-selling Toroline string positioning",
+      "Most spin-friendly Toroline string positioning",
+      "Co-developed with Steve Johnson",
+      "Former Top 25 ATP professional reference",
+      "Hexagonal profile",
+      "1.23 mm / 17 gauge",
+      "Neon Green",
+      "White",
+      "Neon Pink",
+      "Black",
+      "Neon Orange Tennis Warehouse exclusive",
+      "Racketpedia 100/100 spin rating",
+      "Elite spin positioning",
+      "Controlled response",
+      "Comfort-oriented positioning",
+      "Tennis Warehouse +104% spin vs Babolat RPM Blast 1.25",
+      "Tennis Warehouse +104% spin vs Yonex Poly Tour Strike 1.25",
+      "Tennis Warehouse +68% spin vs Tecnifibre Razor Code 1.25",
+      "Tennis Warehouse +62% spin vs Luxilon ALU Power 1.25",
+      "Tennis Warehouse +62% spin vs Volkl Cyclone 1.25",
+      "Tennis Warehouse +54% spin vs Solinco Hyper-G 1.25",
+      "29% lower stiffness vs Babolat RPM Blast in supplied comparison",
+      "Highest spin potential under 170 lb/in stiffness manufacturer-supplied Tennis Warehouse claim",
+      "Two half sets per package",
+      "6.7 m per half set"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendations",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "Laboratory Testing",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
