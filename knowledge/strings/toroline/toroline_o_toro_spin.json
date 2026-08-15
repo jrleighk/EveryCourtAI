@@ -1,0 +1,649 @@
+{
+  "id": "toroline_o_toro_spin",
+  "brand": "Toroline",
+  "series": "O-TORO",
+  "model": "O-TORO Spin",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Co-Polyester",
+    "string_family": "Polyester",
+    "cross_section": "Pentagonal",
+    "surface": "Shaped / Edged",
+    "profile_sides": 5,
+    "development_platform": "Based on original Toroline O-TORO",
+    "designer": "Steve Johnson",
+    "designer_profile": "Former Top-25 ATP Professional",
+    "tour_positioning": "Spin / Bite / High Launch / Comfort Co-Polyester",
+    "official_positioning": "A more aggressively shaped evolution of O-TORO designed to increase ball bite and launch angle while retaining the comfortable flex and elasticity of the original.",
+    "target_level": "Intermediate / Advanced / Tournament"
+  },
+
+  "specifications": {
+    "construction": "Pentagonal Co-Polyester Monofilament",
+    "cross_section": "Pentagonal (5-Sided)",
+    "surface": "Shaped / Edged",
+
+    "available_colors": [
+      "Neon Green",
+      "Neon Pink",
+      "Lavender",
+      "White"
+    ],
+
+    "color_availability": {
+      "Neon Green": {
+        "gauge_mm": 1.23,
+        "gauge_name": "17",
+        "available": true
+      },
+
+      "Neon Pink": {
+        "gauge_mm": 1.23,
+        "gauge_name": "17",
+        "available": true
+      },
+
+      "Lavender": {
+        "gauge_mm": 1.23,
+        "gauge_name": "17",
+        "available": true
+      },
+
+      "White": {
+        "gauge_mm": 1.23,
+        "gauge_name": "17",
+        "available": true,
+        "team_favorite": true
+      }
+    },
+
+    "available_gauges": [
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.23,
+        "available": true,
+
+        "available_colors": [
+          "Neon Green",
+          "Neon Pink",
+          "Lavender",
+          "White"
+        ],
+
+        "power": 9,
+        "control": 9,
+        "spin": 10,
+        "comfort": 9,
+        "feel": 9,
+        "durability": 9,
+        "tension_maintenance": 9,
+        "elasticity": 9,
+        "launch_angle": "High",
+
+        "recommended_use": [
+          "Maximum Spin",
+          "Heavy Topspin",
+          "High Net Clearance",
+          "Kick Serves",
+          "Aggressive Baseline Play",
+          "Players Wanting More Bite Than Original O-TORO",
+          "Players Wanting High Launch Without Sacrificing Comfort"
+        ]
+      }
+    ]
+  },
+
+  "technology": [
+    "Pentagonal Spin Geometry",
+    "Aggressive Five-Sided Ball Grip",
+    "O-TORO Comfortable Flex Platform",
+    "High Launch Angle Engineering",
+    "Elastic Spin Response",
+    "Heavy Ball Optimization"
+  ],
+
+  "technology_details": {
+    "o_toro_platform": {
+      "base_string": "Toroline O-TORO",
+      "relationship": "Spin-oriented shaped evolution",
+      "description": "O-TORO Spin retains the comfortable flex and elasticity of original O-TORO while changing the geometry to a more aggressive five-sided profile."
+    },
+
+    "pentagonal_geometry": {
+      "shape": "Pentagonal",
+      "sides": 5,
+      "description": "The more aggressive pentagonal profile increases mechanical interaction between string and ball, generating stronger bite and a more pronounced spin response.",
+      "primary_benefits": [
+        "Enhanced Ball Bite",
+        "Higher Spin Potential",
+        "Higher Launch Angle",
+        "Heavy Topspin"
+      ]
+    },
+
+    "high_launch_engineering": {
+      "description": "The pentagonal profile is designed to create a higher launch angle, increasing net clearance and helping players generate heavier dipping trajectories.",
+      "primary_benefits": [
+        "Higher Net Clearance",
+        "Heavier Topspin Arc",
+        "More Margin Over The Net",
+        "Kick Serve Enhancement"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "High-Launch Spin Co-Polyester",
+    "target_player": "Intermediate / Advanced / Tournament",
+    "arm_friendly": true,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true,
+    "ball_bite_focus": true,
+    "high_launch_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 9,
+    "spin": 10,
+    "comfort": 9,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9,
+    "elasticity": 9,
+    "launch_angle": "High"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 9,
+    "spin": 10,
+    "comfort": 9,
+    "feel": 9,
+    "durability": 9,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Medium",
+    "snapback": 9,
+    "ball_pocketing": 9,
+    "string_movement": 8,
+    "tension_stability": 9,
+    "spin_window": "Very High",
+    "predictability": 9,
+    "arm_friendliness": 8,
+    "directional_precision": 9,
+    "ball_bite": 10,
+    "surface_grip": 10,
+    "launch_angle_consistency": 9,
+    "net_clearance": 10,
+    "heavy_ball_potential": 10,
+    "kick_serve_potential": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium-Fast",
+      "Fast",
+      "Very Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "Modern Baseline",
+      "Power Baseliner",
+      "Spin-Oriented Player"
+    ],
+
+    "special_player_profiles": [
+      "Players Who Stand On The Baseline And Hit Heavy",
+      "Players Seeking More Bite Than Original O-TORO",
+      "Players Wanting Higher Net Clearance",
+      "Players Seeking More Kick On Second Serves",
+      "Players Wanting Spin Without Losing O-TORO Comfort",
+      "Players Using Modern Vertical Swing Paths"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Babolat Pure Aero",
+    "Babolat Pure Drive",
+    "Wilson Shift",
+    "Wilson Blade",
+    "HEAD Extreme",
+    "HEAD Speed",
+    "Yonex VCORE",
+    "Yonex EZONE",
+    "Tecnifibre T-FIGHT",
+    "Dunlop SX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "preferred_role": "Mains",
+
+    "best_pairings": [
+      "Toroline O-TORO SNAP",
+      "Toroline O-TORO SNAP TOUR FLEX",
+      "Toroline A5",
+      "Toroline Wasabi X",
+      "Toroline CASH",
+      "Toroline Truffle X"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Maximum Spin",
+        "Ball Bite",
+        "High Launch Angle",
+        "Heavy Ball Production",
+        "Kick Serve Enhancement"
+      ],
+
+      "as_crosses": [
+        "Spin Support",
+        "Ball Grip",
+        "Higher Launch Response"
+      ]
+    },
+
+    "recommended_toroline_hybrids": [
+      {
+        "mains": "O-TORO Spin",
+        "crosses": "O-TORO SNAP",
+        "expected_profile": [
+          "Maximum Ball Bite",
+          "Low-Friction Round Cross",
+          "Enhanced Snapback",
+          "High Spin",
+          "Controlled High Launch"
+        ]
+      },
+
+      {
+        "mains": "O-TORO Spin",
+        "crosses": "A5",
+        "expected_profile": [
+          "Pentagonal Mechanical Grip",
+          "Elite Round-String Snapback",
+          "Heavy Spin",
+          "Predictable Response",
+          "Connected Feel"
+        ]
+      },
+
+      {
+        "mains": "O-TORO Spin",
+        "crosses": "Wasabi X",
+        "expected_profile": [
+          "High Ball Bite",
+          "Ultra-Slick Cross",
+          "Fast Snapback",
+          "High Launch",
+          "More Court Penetration"
+        ]
+      },
+
+      {
+        "mains": "O-TORO Spin",
+        "crosses": "Truffle X",
+        "expected_profile": [
+          "Maximum Spin",
+          "High Launch",
+          "Plush Comfort",
+          "Pocketing",
+          "Arm-Friendly Response"
+        ]
+      }
+    ],
+
+    "hybrid_note": "O-TORO Spin is especially suitable as a shaped main paired with a smooth low-friction cross to combine aggressive pentagonal grip with efficient snapback."
+  },
+
+  "serve_profile": {
+    "flat_serve": {
+      "rating": 8,
+      "primary_benefits": [
+        "Power",
+        "Control"
+      ]
+    },
+
+    "slice_serve": {
+      "rating": 10,
+      "primary_benefits": [
+        "Ball Bite",
+        "Side Spin",
+        "Wide-Angle Movement"
+      ]
+    },
+
+    "kick_serve": {
+      "rating": 10,
+      "primary_benefits": [
+        "High Rotation",
+        "High Bounce",
+        "Second-Serve Margin",
+        "Net Clearance"
+      ]
+    }
+  },
+
+  "gauge_recommendation": {
+    "1.23": {
+      "gauge_name": "17",
+
+      "best_for": [
+        "Heavy Topspin",
+        "High Launch Angle",
+        "Ball Bite",
+        "Kick Serve",
+        "Aggressive Baseline Play"
+      ],
+
+      "tradeoffs": [
+        "Higher Launch Than Original O-TORO",
+        "Less Penetrating Trajectory Than O-TORO OCTA",
+        "Less Flat-Ball Directness Than Round O-TORO SNAP"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.23": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "16-28"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Short",
+    "peak_playability": "Early",
+    "performance_drop": "Medium-Low",
+    "tension_loss_sensitivity": "Medium-Low",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when pentagonal edge definition, spin response, snapback or launch-angle consistency noticeably declines."
+  },
+
+  "comparison_data": {
+    "vs_original_o_toro": {
+      "shared_flex": true,
+      "shared_elasticity": true,
+
+      "shape": {
+        "o_toro_spin": "Pentagonal / 5-Sided",
+        "o_toro": "Hexagonal / 6-Sided"
+      },
+
+      "ball_bite": {
+        "o_toro_spin": "Higher",
+        "o_toro": "Very High"
+      },
+
+      "launch_angle": {
+        "o_toro_spin": "Higher",
+        "o_toro": "Medium-High"
+      },
+
+      "net_clearance": {
+        "o_toro_spin": "Higher",
+        "o_toro": "High"
+      },
+
+      "spin_orientation": {
+        "o_toro_spin": "More Aggressive",
+        "o_toro": "More Balanced"
+      },
+
+      "comfort": {
+        "o_toro_spin": "Similar",
+        "o_toro": "High"
+      },
+
+      "elasticity": {
+        "o_toro_spin": "Same Comfortable Elastic Platform",
+        "o_toro": "Core Characteristic"
+      }
+    },
+
+    "vs_o_toro_tour": {
+      "stiffness": "Lower / Softer",
+      "comfort": "Higher",
+      "launch_angle": "Higher",
+      "ball_bite": "Higher",
+      "control": "Less Firm",
+      "durability": "Lower"
+    },
+
+    "vs_o_toro_octa": {
+      "shape": {
+        "o_toro_spin": "Pentagonal",
+        "o_toro_octa": "Octagonal"
+      },
+
+      "launch_angle": {
+        "o_toro_spin": "Much Higher",
+        "o_toro_octa": "Lower"
+      },
+
+      "ball_bite": {
+        "o_toro_spin": "Higher",
+        "o_toro_octa": "Lower / Cleaner"
+      },
+
+      "court_penetration": {
+        "o_toro_spin": "Moderate-High",
+        "o_toro_octa": "Very High"
+      },
+
+      "trajectory": {
+        "o_toro_spin": "Heavy Arc / High Clearance",
+        "o_toro_octa": "Low / Penetrating"
+      }
+    },
+
+    "vs_o_toro_snap": {
+      "mechanical_ball_grip": "Much Higher",
+      "launch_angle": "Much Higher",
+      "spin": "Higher Mechanical Spin",
+      "snapback": "Lower",
+      "trajectory": "More Arc / Less Flat",
+      "surface_geometry": "Pentagonal vs Round"
+    }
+  },
+
+  "science_metrics": {
+    "geometry": {
+      "shape": "Pentagonal",
+      "sides": 5
+    },
+
+    "spin_mechanism": [
+      "Aggressive Pentagonal Mechanical Grip",
+      "String Movement",
+      "Snapback"
+    ],
+
+    "trajectory_profile": "High Arc / Heavy Spin",
+
+    "launch_angle_profile": "High",
+
+    "mechanical_ball_grip_class": "Extreme",
+
+    "snapback_class": "Very High",
+
+    "comfort_class": "High",
+
+    "elasticity_class": "High",
+
+    "kick_serve_class": "Very High",
+
+    "performance_class": "Premium High-Launch Spin Co-Poly"
+  },
+
+  "collaboration": {
+    "partner": "Steve Johnson",
+    "tour": "ATP",
+    "role": "Designer / String Development",
+    "career_reference": "Former Top-25 ATP Professional",
+    "confidence": "Official Manufacturer Claim"
+  },
+
+  "tour_players": [
+    {
+      "name": "Steve Johnson",
+      "tour": "ATP",
+      "relationship": "Designer / Development Reference",
+      "career_reference": "Former Top-25 ATP Professional",
+      "confidence": "Official Manufacturer Claim"
+    }
+  ],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Heavy Topspin Baseliners",
+      "Players Seeking Maximum Ball Bite",
+      "Players Wanting Higher Launch Angle",
+      "Players Seeking More Net Clearance",
+      "Players Wanting Extra Kick On Second Serve",
+      "Players Who Like O-TORO But Want More Aggressive Spin",
+      "Players Wanting High Spin Without Moving To a Firmer Tour Flex"
+    ],
+
+    "avoid_for": [
+      "Flat Hitters Seeking Very Low Launch Angle",
+      "Players Wanting Maximum Court Penetration",
+      "Players Seeking Round-String Predictability",
+      "Players With Slow Swing Speed Who Already Struggle With High Launch"
+    ],
+
+    "alternative_strings": [
+      "Toroline O-TORO",
+      "Toroline VAMOS",
+      "Toroline WASABI",
+      "Toroline Snapper",
+      "Solinco Hyper-G",
+      "MSV Focus Hex"
+    ]
+  },
+
+  "comparison_tags": [
+    "O-TORO Spin",
+    "Pentagonal",
+    "Five-Sided",
+    "Enhanced Bite",
+    "High Launch",
+    "Net Clearance",
+    "Heavy Topspin",
+    "Kick Serve",
+    "Comfortable Flex",
+    "Steve Johnson",
+    "Neon Green",
+    "Neon Pink",
+    "Lavender",
+    "White"
+  ],
+
+  "ai_keywords": [
+    "toroline",
+    "o toro spin",
+    "o-toro spin",
+    "toroline o toro spin",
+    "1.23",
+    "17 gauge",
+    "pentagonal",
+    "five sided",
+    "5 sided",
+    "neon green",
+    "neon pink",
+    "lavender",
+    "white",
+    "team favorite",
+    "spin",
+    "bite",
+    "high launch angle",
+    "net clearance",
+    "heavy baseline",
+    "heavy topspin",
+    "kick serve",
+    "second serve",
+    "comfortable flex",
+    "elasticity",
+    "steve johnson"
+  ],
+
+  "target_competitors": [
+    "Toroline O-TORO",
+    "Toroline VAMOS",
+    "Toroline WASABI",
+    "Solinco Hyper-G",
+    "Babolat RPM Blast",
+    "HEAD Lynx Tour",
+    "MSV Focus Hex"
+  ],
+
+  "description": {
+    "en": "Toroline O-TORO Spin is a more aggressively shaped evolution of the original O-TORO developed by Steve Johnson. It changes the profile from six-sided to pentagonal, increasing mechanical ball grip, bite and launch angle while retaining the comfortable flex and elasticity of the original O-TORO platform. The higher trajectory creates greater net clearance and heavy topspin, making O-TORO Spin particularly suitable for aggressive baseline players and players seeking additional kick on second serves. It is available in Neon Green, Neon Pink, Lavender and White at 1.23 mm / 17 gauge.",
+
+    "zh": "Toroline O-TORO Spin 是 Steve Johnson 基于原版 O-TORO 开发的更激进旋转版本。它将原本的六边形结构改为五边形 Pentagonal 截面，从而进一步增加机械咬球、Ball Bite 和 Launch Angle，同时保留原版 O-TORO 标志性的舒适 Flex 与弹性。更高的出球弧线能够带来更大的过网高度和更重的 Topspin，非常适合站在底线高速完整挥拍的重上旋球员，同时对二发 Kick Serve 也非常有帮助。产品规格为 1.23 毫米 / 17，提供 Neon Green、Neon Pink、Lavender 和 White 四种颜色。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Toroline O-TORO Spin",
+      "Developed by Steve Johnson",
+      "New version of best-selling O-TORO",
+      "Pentagonal profile",
+      "More aggressive shape",
+      "Enhanced bite",
+      "Higher launch angle",
+      "Higher net clearance positioning",
+      "Heavy baseline shot positioning",
+      "Second-serve kick positioning",
+      "Same comfortable flex as original O-TORO",
+      "Same elasticity as original O-TORO",
+      "Neon Green",
+      "Neon Pink",
+      "Lavender",
+      "White",
+      "White Toroline Team Favorite Color reference",
+      "1.23 mm / 17 gauge"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Serve Profile",
+      "Gauge Recommendations",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
