@@ -1,0 +1,556 @@
+{
+  "id": "toroline_absolute",
+  "brand": "Toroline",
+  "series": "Absolute",
+  "model": "Absolute",
+  "category": "String",
+
+  "manufacturer_data": {
+    "construction": "Monofilament",
+    "material": "Co-Polyester",
+    "string_family": "Polyester",
+    "cross_section": "Hexagonal",
+    "surface": "Shaped / Edged",
+    "profile_sides": 6,
+    "tour_positioning": "Plush / Crisp / Spin / Free Power Co-Polyester",
+    "official_positioning": "Six-sided co-poly designed for players seeking a plush yet crisp response with ample spin and easy free power.",
+    "target_level": "Intermediate / Advanced"
+  },
+
+  "specifications": {
+    "construction": "Six-Sided Co-Polyester Monofilament",
+    "cross_section": "Hexagonal (6-Sided)",
+    "surface": "Shaped / Edged",
+
+    "available_colors": [
+      "Black"
+    ],
+
+    "color_availability": {
+      "Black": {
+        "gauge_mm": 1.20,
+        "gauge_name": "17",
+        "available": true
+      }
+    },
+
+    "available_gauges": [
+      {
+        "gauge_name": "17",
+        "gauge_mm": 1.20,
+        "available": true,
+
+        "available_colors": [
+          "Black"
+        ],
+
+        "power": 10,
+        "control": 9,
+        "spin": 10,
+        "comfort": 9,
+        "feel": 10,
+        "durability": 8,
+        "tension_maintenance": 9,
+        "elasticity": 9,
+        "ball_pocketing": 10,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Free Power",
+          "Heavy Spin",
+          "Plush Feel",
+          "Crisp Response",
+          "Aggressive Baseline Play",
+          "Players Seeking Softer Shaped Co-Poly Performance"
+        ]
+      }
+    ],
+
+    "packaging": {
+      "type": "Two Half Sets",
+      "half_sets_per_package": 2,
+      "length_per_half_set_m": 6.7,
+      "approximate_length_per_half_set_m": 6.7,
+      "intended_racquets": 1,
+      "total_length_m": 13.4
+    }
+  },
+
+  "technology": [
+    "Six-Sided Hexagonal Geometry",
+    "Plush Response Tuning",
+    "Crisp Impact Response",
+    "Free Power Optimization",
+    "Spin-Oriented Co-Poly Construction"
+  ],
+
+  "technology_details": {
+    "hexagonal_geometry": {
+      "shape": "Hexagonal",
+      "sides": 6,
+      "description": "The six-sided profile creates additional ball interaction and mechanical grip to support spin generation.",
+      "primary_benefits": [
+        "Ball Bite",
+        "Spin",
+        "Trajectory Shaping",
+        "Heavy Ball Production"
+      ]
+    },
+
+    "plush_crisp_balance": {
+      "description": "Absolute is designed to combine a softer, plush pocketing sensation with a clean and crisp response at impact.",
+      "primary_benefits": [
+        "Comfort",
+        "Ball Pocketing",
+        "Connected Feel",
+        "Responsive Impact"
+      ]
+    },
+
+    "free_power_response": {
+      "description": "The lively co-poly response helps generate easier depth and pace than more control-oriented firm polyester strings.",
+      "primary_benefits": [
+        "Free Power",
+        "Easy Depth",
+        "Lively Response",
+        "Reduced Effort"
+      ]
+    }
+  },
+
+  "design_profile": {
+    "string_type": "Plush Power Spin Co-Polyester",
+    "target_player": "Intermediate / Advanced",
+    "arm_friendly": true,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "durability_focus": true,
+    "feel_focus": true,
+    "tension_stability_focus": true,
+    "response_focus": true,
+    "pocketing_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 10,
+    "control": 9,
+    "spin": 10,
+    "comfort": 9,
+    "feel": 10,
+    "durability": 8,
+    "tension_maintenance": 9,
+    "elasticity": 9,
+    "ball_pocketing": 10,
+    "launch_angle": "Medium-High"
+  },
+
+  "ai_rating": {
+    "power": 10,
+    "control": 9,
+    "spin": 10,
+    "comfort": 9,
+    "feel": 10,
+    "durability": 8,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Soft-Medium",
+    "snapback": 9,
+    "ball_pocketing": 10,
+    "string_movement": 8,
+    "tension_stability": 9,
+    "spin_window": "Very High",
+    "predictability": 9,
+    "arm_friendliness": 9,
+    "directional_precision": 9,
+    "ball_bite": 10,
+    "surface_grip": 10,
+    "free_power": 10,
+    "response_crispness": 9,
+    "plushness": 10,
+    "liveliness": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced"
+    ],
+
+    "swing_speed": [
+      "Medium",
+      "Medium-Fast",
+      "Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "Heavy Topspin",
+      "Modern Baseline",
+      "All Court",
+      "Power-Oriented Player"
+    ],
+
+    "special_player_profiles": [
+      "Players Seeking Free Power From a Co-Poly",
+      "Players Wanting Plush Pocketing",
+      "Players Seeking Crisp Response Without Excessive Stiffness",
+      "Players Wanting High Spin With Easy Depth",
+      "Players Transitioning From Firmer Polyester Strings"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Babolat Pure Aero",
+    "Babolat Pure Drive",
+    "Wilson Shift",
+    "Wilson Blade",
+    "HEAD Extreme",
+    "HEAD Speed",
+    "HEAD Boom",
+    "Yonex VCORE",
+    "Yonex EZONE",
+    "Tecnifibre T-FIGHT",
+    "Dunlop SX",
+    "Dunlop FX"
+  ],
+
+  "recommended_hybrid": {
+    "mains": true,
+    "crosses": true,
+
+    "preferred_role": "Mains",
+
+    "best_pairings": [
+      "Toroline A5",
+      "Toroline Wasabi X",
+      "Toroline O-TORO SNAP",
+      "Toroline O-TORO SNAP TOUR FLEX",
+      "Toroline CASH",
+      "Toroline Truffle X"
+    ],
+
+    "hybrid_roles": {
+      "as_mains": [
+        "Spin",
+        "Free Power",
+        "Ball Bite",
+        "Pocketing",
+        "Lively Response"
+      ],
+
+      "as_crosses": [
+        "Power Support",
+        "Pocketing",
+        "Comfort",
+        "Spin Support"
+      ]
+    },
+
+    "recommended_toroline_hybrids": [
+      {
+        "mains": "Absolute",
+        "crosses": "A5",
+        "expected_profile": [
+          "Hexagonal Ball Bite",
+          "Low-Friction Snapback",
+          "Free Power",
+          "Predictable Response",
+          "Connected Feel"
+        ]
+      },
+
+      {
+        "mains": "Absolute",
+        "crosses": "Wasabi X",
+        "expected_profile": [
+          "High Spin",
+          "Fast Snapback",
+          "Court Penetration",
+          "Pocketing",
+          "Lively Response"
+        ]
+      },
+
+      {
+        "mains": "Absolute",
+        "crosses": "O-TORO SNAP TOUR FLEX",
+        "expected_profile": [
+          "Free Power",
+          "Spin",
+          "More Control",
+          "Higher Stability",
+          "Low-Friction Snapback"
+        ]
+      },
+
+      {
+        "mains": "Absolute",
+        "crosses": "Truffle X",
+        "expected_profile": [
+          "Maximum Comfort",
+          "Plush Pocketing",
+          "Free Power",
+          "Spin",
+          "Soft Hybrid Response"
+        ]
+      }
+    ],
+
+    "hybrid_note": "Absolute is particularly suitable as a lively shaped main paired with a smooth low-friction cross when players want to retain spin and free power while improving snapback efficiency."
+  },
+
+  "gauge_recommendation": {
+    "1.20": {
+      "gauge_name": "17",
+      "color": "Black",
+
+      "best_for": [
+        "Free Power",
+        "Spin",
+        "Pocketing",
+        "Plush Feel",
+        "Fast Response"
+      ],
+
+      "tradeoffs": [
+        "Less Durability Than Thicker Co-Poly Strings",
+        "Less Maximum Control Than Firmer Toroline Strings",
+        "More Lively Response May Require Additional Spin or Racquet-Head Speed"
+      ]
+    }
+  },
+
+  "estimated_lifespan": {
+    "1.20": {
+      "heavy_topspin_hours": "7-12",
+      "club_player_hours": "14-24"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Very Short",
+    "peak_playability": "Immediate",
+    "performance_drop": "Medium",
+    "tension_loss_sensitivity": "Medium",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when pocketing, spin response, tension stability or controlled power noticeably declines."
+  },
+
+  "comparison_data": {
+    "vs_toroline_super_toro": {
+      "flex": {
+        "absolute": "Softer",
+        "super_toro": "Firmer"
+      },
+
+      "power": {
+        "absolute": "Higher / Freer",
+        "super_toro": "More Controlled"
+      },
+
+      "pocketing": {
+        "absolute": "Higher",
+        "super_toro": "High"
+      },
+
+      "control": {
+        "absolute": "High",
+        "super_toro": "Higher"
+      },
+
+      "primary_identity": {
+        "absolute": "Plush / Crisp / Free Power / Spin",
+        "super_toro": "Precision / Control / Redirection"
+      }
+    },
+
+    "vs_toroline_toro_toro": {
+      "shape": "Both Hexagonal",
+
+      "absolute_focus": [
+        "Free Power",
+        "Plush Response",
+        "Crisp Feel",
+        "Spin"
+      ],
+
+      "toro_toro_focus": [
+        "Surgical Precision",
+        "Predictable Response",
+        "Pocketing",
+        "Controlled Full Swings"
+      ],
+
+      "power": {
+        "absolute": "Higher / Freer",
+        "toro_toro": "More Controlled"
+      }
+    },
+
+    "vs_toroline_caviar": {
+      "power": "Higher",
+      "plushness": "Higher",
+      "control": "Lower",
+      "precision": "Lower",
+      "tension_maintenance": "Lower",
+      "target_style": {
+        "absolute": "Power / Spin",
+        "caviar": "All Court / Precision"
+      }
+    },
+
+    "vs_firm_control_poly": {
+      "power": "Higher",
+      "comfort": "Higher",
+      "pocketing": "Higher",
+      "stiffness": "Lower",
+      "control": "Slightly Lower",
+      "liveliness": "Higher"
+    }
+  },
+
+  "science_metrics": {
+    "geometry": {
+      "shape": "Hexagonal",
+      "sides": 6
+    },
+
+    "spin_mechanism": [
+      "Hexagonal Mechanical Grip",
+      "String Movement",
+      "Snapback"
+    ],
+
+    "trajectory_profile": "Spin-Oriented / Lively",
+
+    "launch_angle_profile": "Medium-High",
+
+    "mechanical_ball_grip_class": "Very High",
+
+    "power_class": "High / Free",
+
+    "pocketing_class": "Very High",
+
+    "comfort_class": "High",
+
+    "flex_class": "Soft-Medium",
+
+    "performance_class": "Plush High-Power Spin Co-Poly"
+  },
+
+  "tour_players": [],
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Intermediate and Advanced Players Seeking Free Power",
+      "Heavy Topspin Players",
+      "Players Wanting Plush Co-Poly Feel",
+      "Players Seeking Crisp Yet Soft Response",
+      "Players Wanting Easier Depth",
+      "Players Who Find Firm Control Polys Too Demanding"
+    ],
+
+    "avoid_for": [
+      "Players Seeking Maximum Low-Powered Control",
+      "Players Wanting Extremely Firm Tournament Response",
+      "Frequent String Breakers Prioritizing Maximum Durability",
+      "Flat Hitters Who Already Generate Excessive Depth"
+    ],
+
+    "alternative_strings": [
+      "Toroline TORO TORO",
+      "Toroline O-TORO",
+      "Toroline CAVIAR",
+      "Solinco Hyper-G Soft",
+      "Toroline VAMOS",
+      "Toroline WASABI"
+    ]
+  },
+
+  "comparison_tags": [
+    "Absolute",
+    "Hexagonal",
+    "Six-Sided",
+    "Plush",
+    "Crisp",
+    "Free Power",
+    "Spin",
+    "Pocketing",
+    "Soft-Medium Flex",
+    "Black"
+  ],
+
+  "ai_keywords": [
+    "toroline",
+    "absolute",
+    "toroline absolute",
+    "1.20",
+    "17 gauge",
+    "black",
+    "hexagonal",
+    "six sided",
+    "6 sided",
+    "co polyester",
+    "plush",
+    "crispy",
+    "crisp",
+    "spin",
+    "free power",
+    "ball pocketing",
+    "soft poly",
+    "lively"
+  ],
+
+  "target_competitors": [
+    "Toroline TORO TORO",
+    "Toroline O-TORO",
+    "Toroline CAVIAR",
+    "Solinco Hyper-G Soft",
+    "HEAD Lynx",
+    "Yonex Poly Tour Pro"
+  ],
+
+  "description": {
+    "en": "Toroline Absolute is a six-sided co-polyester designed for players seeking a plush yet crisp response with ample spin and easy free power. Its hexagonal geometry creates mechanical ball grip for spin, while the softer and livelier response improves pocketing, comfort and effortless depth. Absolute is particularly suitable for players who want the performance characteristics of a shaped co-poly without the demanding stiffness or low-powered response of traditional firm control strings. It is available in Black at 1.20 mm / 17 gauge.",
+
+    "zh": "Toroline Absolute 是一款采用六边形结构的共聚酯球线，核心定位是 Plush、Crisp、Spin 和 Free Power。六边形截面提供机械咬球和旋转，而更柔和、更有活力的线床响应则增加 Pocketing、舒适性以及轻松获得深度和速度的能力。相比传统偏硬、低力量的控制型聚酯，Absolute 更容易打、更有弹性，适合希望获得异形聚酯旋转性能，但又不想牺牲舒适和免费力量的中高级球员。产品规格为 1.20 毫米 / 17，颜色为 Black。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Toroline Absolute",
+      "Six-sided co-poly",
+      "Hexagonal profile",
+      "Plush response positioning",
+      "Crisp response positioning",
+      "Spin generation positioning",
+      "Free power positioning",
+      "1.20 mm / 17 gauge",
+      "Black",
+      "Two half sets per package",
+      "Approximately 6.7 m per half set",
+      "One-racquet package configuration"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Hybrid Compatibility",
+      "Gauge Recommendations",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
