@@ -22,13 +22,55 @@
     "surface": "Smooth",
 
     "available_colors": [
+      "Infrared",
       "Carbon Gray"
     ],
 
+    "color_availability": {
+      "Infrared": {
+        "gauge_mm": 1.20,
+        "available": true
+      },
+      "Carbon Gray": {
+        "gauge_mm": 1.25,
+        "available": true
+      }
+    },
+
     "available_gauges": [
+      {
+        "gauge_mm": 1.20,
+        "available": true,
+        "available_colors": [
+          "Infrared"
+        ],
+
+        "power": 9,
+        "control": 10,
+        "spin": 10,
+        "comfort": 8,
+        "feel": 10,
+        "durability": 8,
+        "tension_maintenance": 9,
+        "elasticity": 10,
+        "launch_angle": "Medium-High",
+
+        "recommended_use": [
+          "Maximum Snapback",
+          "Maximum Feel",
+          "High Spin",
+          "Fast Racquet Head Speed",
+          "Aggressive Baseline Play",
+          "Tournament Players"
+        ]
+      },
+
       {
         "gauge_mm": 1.25,
         "available": true,
+        "available_colors": [
+          "Carbon Gray"
+        ],
 
         "power": 9,
         "control": 10,
@@ -41,11 +83,12 @@
         "launch_angle": "Medium",
 
         "recommended_use": [
-          "Aggressive Baseliners",
-          "Fast Racquet Head Speed",
-          "Players Seeking High Spin From a Round String",
-          "Players Wanting Predictable Launch Angle",
-          "Tournament Players"
+          "Best Overall Balance",
+          "Precision",
+          "High Spin",
+          "Directional Control",
+          "Tournament Play",
+          "Players Wanting Greater Stability and Durability"
         ]
       }
     ]
@@ -68,7 +111,15 @@
     },
 
     "round_geometry": {
-      "description": "The symmetrical round profile supports a clean, predictable launch angle and repeatable ball trajectory."
+      "description": "The symmetrical round profile supports a clean and predictable launch angle with repeatable ball trajectory."
+    },
+
+    "spin_physics": {
+      "primary_factors": [
+        "Ball Grip",
+        "Snapback"
+      ],
+      "a5_solution": "Because a smooth round string naturally provides less mechanical ball grip than a shaped string, A5 relies on elite snapback, low friction, elasticity and rapid string return to generate high rotational output."
     }
   },
 
@@ -121,7 +172,8 @@
     "directional_precision": 10,
     "surface_friction": "Low",
     "launch_angle_consistency": 10,
-    "connected_feel": 10
+    "connected_feel": 10,
+    "trajectory_control": 10
   },
 
   "recommended_player": {
@@ -149,7 +201,8 @@
       "Players Prioritizing Snapback",
       "Players Wanting Stable Launch Angle",
       "Players Seeking Pinpoint Accuracy",
-      "Players Wanting Connected Feel"
+      "Players Wanting Connected Feel",
+      "Players Wanting Repeatable Ball Flight"
     ]
   },
 
@@ -171,12 +224,13 @@
     "crosses": true,
 
     "best_pairings": [
+      "Toroline VAMOS",
+      "Toroline O-TORO",
+      "Toroline O-TORO TOUR",
       "Natural Gut",
       "Luxilon Natural Gut",
       "Babolat Touch VS",
-      "Tecnifibre X-One Biphase",
-      "Tecnifibre NRG²",
-      "Toroline Shaped Co-Poly Strings"
+      "Tecnifibre X-One Biphase"
     ],
 
     "hybrid_roles": {
@@ -192,30 +246,77 @@
         "Low Friction",
         "Snapback Support",
         "Launch Angle Stability",
-        "Control"
+        "Control",
+        "Stringbed Consistency"
       ]
     },
 
-    "hybrid_note": "The smooth round construction makes A5 especially suitable as a low-friction cross in shaped-poly hybrids."
+    "recommended_toroline_hybrids": [
+      {
+        "mains": "VAMOS",
+        "crosses": "A5",
+        "expected_profile": [
+          "Mechanical Ball Bite",
+          "Low-Friction Cross",
+          "Improved Snapback",
+          "High Spin",
+          "Connected Response"
+        ]
+      },
+      {
+        "mains": "O-TORO",
+        "crosses": "A5",
+        "expected_profile": [
+          "High Ball Bite",
+          "Elite Snapback",
+          "Heavy Spin",
+          "Stable Launch Angle"
+        ]
+      }
+    ],
+
+    "hybrid_note": "A5's smooth round profile makes it particularly valuable as a low-friction cross for shaped Toroline mains."
   },
 
   "gauge_recommendation": {
+    "1.20": {
+      "color": "Infrared",
+      "best_for": [
+        "Maximum Snapback",
+        "Maximum Feel",
+        "Higher Launch",
+        "Faster Response",
+        "High Spin"
+      ],
+
+      "tradeoffs": [
+        "Less Durability Than 1.25",
+        "Slightly More Lively Response"
+      ]
+    },
+
     "1.25": {
+      "color": "Carbon Gray",
       "best_for": [
         "Best Overall Balance",
-        "Maximum Snapback",
-        "High Spin",
+        "Maximum Stability",
         "Directional Control",
+        "Spin",
         "Tournament Play"
       ],
 
       "tradeoffs": [
-        "Less Mechanical Ball Bite Than Aggressively Shaped Strings"
+        "Slightly Less Lively Than 1.20"
       ]
     }
   },
 
   "estimated_lifespan": {
+    "1.20": {
+      "heavy_topspin_hours": "7-12",
+      "club_player_hours": "14-24"
+    },
+
     "1.25": {
       "heavy_topspin_hours": "8-14",
       "club_player_hours": "16-28"
@@ -228,17 +329,80 @@
     "performance_drop": "Low",
     "tension_loss_sensitivity": "Low",
     "playability_duration": "Excellent",
-    "recommended_monitoring": "Replace when snapback, connected feel or directional consistency noticeably declines."
+    "recommended_monitoring": "Replace when snapback, connected feel, trajectory control or directional consistency noticeably declines."
   },
 
-  "test_results": {
-    "racketpedia_lab_test": {
-      "tested_gauge_mm": 1.25,
+  "laboratory_testing": {
+    "racketpedia": {
       "spin_score": 100,
       "spin_score_scale": 100,
       "result": "Perfect 100/100 spin rating",
-      "manufacturer_claim": "Highest-rated Toroline round string for spin performance"
+      "manufacturer_claim": "Highest-rated Toroline round string for spin performance",
+      "tested_gauge_reference": "Manufacturer product information attributes the 100/100 spin result to A5."
     }
+  },
+
+  "comparison_data": {
+    "vs_shaped_strings": {
+      "mechanical_ball_grip": "Lower",
+      "snapback_dependency": "Higher",
+      "surface_friction": "Lower",
+      "launch_angle_predictability": "Higher",
+      "trajectory_profile": "More penetrating and predictable"
+    },
+
+    "vs_toroline_vamos": {
+      "shape": {
+        "a5": "Round",
+        "vamos": "Hexagonal"
+      },
+
+      "ball_grip": {
+        "a5": "Lower mechanical grip",
+        "vamos": "Higher mechanical grip"
+      },
+
+      "snapback": {
+        "a5": "Elite",
+        "vamos": "High"
+      },
+
+      "launch_angle": {
+        "a5": "Lower / More Penetrating",
+        "vamos": "Higher"
+      },
+
+      "trajectory": {
+        "a5": "Flatter and More Penetrating",
+        "vamos": "More Spin-Oriented"
+      }
+    }
+  },
+
+  "science_metrics": {
+    "spin_rating_racketpedia": 100,
+    "spin_rating_scale": 100,
+
+    "spin_mechanism": [
+      "Elite Snapback",
+      "Low-Friction Response",
+      "Elastic String Return",
+      "String Movement"
+    ],
+
+    "geometry": {
+      "shape": "Round",
+      "symmetry": "High",
+      "mechanical_ball_grip": "Moderate"
+    },
+
+    "trajectory_profile": "Controlled / Penetrating",
+
+    "launch_angle_profile": "Predictable",
+
+    "tension_stability_class": "Excellent",
+
+    "performance_class": "Premium Round Co-Poly"
   },
 
   "tour_players": [],
@@ -250,6 +414,7 @@
       "Players Wanting Predictable Launch Angle",
       "Players Prioritizing Snapback and Low Friction",
       "Players Seeking Stable Yet Lively Response",
+      "Players Wanting Pinpoint Accuracy",
       "Tournament Players"
     ],
 
@@ -260,6 +425,8 @@
     ],
 
     "alternative_strings": [
+      "Toroline VAMOS",
+      "Toroline O-TORO",
       "Solinco Hyper-G Round",
       "MSV Co Focus",
       "Luxilon ALU Power",
@@ -269,6 +436,7 @@
   },
 
   "comparison_tags": [
+    "A5",
     "Round Co-Poly",
     "Elite Snapback",
     "Low Friction",
@@ -276,6 +444,7 @@
     "Precision",
     "Stable Launch Angle",
     "Connected Feel",
+    "Infrared",
     "Carbon Gray"
   ],
 
@@ -283,7 +452,9 @@
     "toroline",
     "a5",
     "toroline a5",
+    "1.20",
     "1.25",
+    "infrared",
     "carbon gray",
     "round co polyester",
     "round poly",
@@ -295,7 +466,8 @@
     "tension stability",
     "precision",
     "launch angle",
-    "connected feel"
+    "connected feel",
+    "trajectory control"
   ],
 
   "target_competitors": [
@@ -308,9 +480,9 @@
   ],
 
   "description": {
-    "en": "Toroline A5 is a premium round co-polyester engineered for players who want precision, stability and elite spin without relying on aggressive shaped edges. Its refined polymer blend delivers exceptional snapback, low-friction response and strong tension stability. Racketpedia laboratory testing rated the 1.25 mm A5 a perfect 100/100 for spin, making it Toroline's highest-rated round string for spin performance. Its symmetrical round geometry also produces a clean, predictable launch angle and a connected, repeatable response for aggressive baseline play.",
+    "en": "Toroline A5 is a premium round co-polyester engineered for precision, stability and elite spin without relying on aggressive shaped edges. Its refined polymer blend produces exceptional snapback, low-friction response and strong tension stability. Because round strings naturally create less mechanical ball grip, A5 generates much of its spin through rapid string movement, elasticity and powerful snapback. Racketpedia laboratory testing cited by Toroline rated A5 a perfect 100/100 for spin, making it the brand's highest-rated round string for spin performance. Its symmetrical geometry also produces a clean, predictable launch angle and repeatable ball flight. The 1.20 mm Infrared version provides a livelier response and greater feel, while the 1.25 mm Carbon Gray version emphasizes stability and control.",
 
-    "zh": "Toroline A5 是一款高端圆形共聚酯球线，专为追求精准、稳定和高旋转表现的球员设计。它并不依赖锐利异形边缘制造旋转，而是通过极高的 Snapback、低摩擦响应和优秀弹性来提升球线回弹速度，从而产生大量旋转。Racketpedia 实验室测试中，1.25 毫米 A5 的旋转评分达到 100/100，是 Toroline 目前旋转评分最高的圆形球线。对称圆形结构同时带来非常稳定、可预测的出球角度和清晰连接感，非常适合积极进攻型底线球员。"
+    "zh": "Toroline A5 是一款高端圆形共聚酯球线，核心定位是精准、稳定、Connected Feel 与极高旋转表现。由于圆形球线缺少异形线锐利边缘提供的机械咬球，A5 主要依靠极高 Snapback、低摩擦、弹性以及快速线床回位来制造旋转。Toroline 引用的 Racketpedia 实验室测试中，A5 的旋转评分达到满分 100/100，使其成为 Toroline 旋转评分最高的圆形球线。对称圆形结构同时能够提供非常稳定、可预测的 Launch Angle 与重复性极高的球路。1.20 毫米 Infrared 版本更加活跃、强调手感与回弹；1.25 毫米 Carbon Gray 版本则更偏向稳定、控制与耐久。"
   },
 
   "verification": {
@@ -331,6 +503,8 @@
       "Aggressive baseline positioning",
       "Racketpedia 100/100 spin rating",
       "Highest-rated Toroline round string for spin positioning",
+      "1.20 mm",
+      "Infrared",
       "1.25 mm",
       "Carbon Gray"
     ],
@@ -343,6 +517,9 @@
       "Gauge Recommendations",
       "Estimated Lifespan",
       "Life Cycle",
+      "Laboratory Testing",
+      "Comparison Data",
+      "Science Metrics",
       "AI Recommendations",
       "Competitor Mapping"
     ]
