@@ -1,0 +1,404 @@
+{
+  "id": "toroline_chef_conor_monthly_special",
+  "brand": "Toroline",
+  "series": "Chef Conor's Monthly Special",
+  "model": "A5 Infrared 1.20 + Truffle X 1.30",
+  "category": "Hybrid String Set",
+
+  "curation": {
+    "curator": "Coach Conor Casey",
+    "program": "Chef Conor's Monthly Special",
+    "curation_type": "Monthly Curated Hybrid Setup"
+  },
+
+  "manufacturer_data": {
+    "construction": "Hybrid",
+    "main_string": "Toroline A5 Infrared 1.20",
+    "cross_string": "Toroline Truffle X 1.30",
+    "official_positioning": "A comfort-oriented premium hybrid combining the control and snapback of A5 mains with the ultra-soft elasticity and pocketing of Truffle X crosses.",
+    "target_level": "Intermediate / Advanced / Tournament",
+    "target_player_description": "Players seeking co-poly control and spin without sacrificing comfort, including players who want relief from stiffer stringbeds or a plush gut-like response."
+  },
+
+  "specifications": {
+    "construction": "Round Co-Poly + Ultra-Soft Polymer Hybrid",
+
+    "packaging": {
+      "type": "Two Half Sets",
+      "half_sets_per_package": 2,
+      "length_per_half_set_m": 6.7,
+      "intended_racquets": 1,
+      "total_length_m": 13.4
+    },
+
+    "mains": {
+      "string": "Toroline A5",
+      "variant": "Infrared",
+      "gauge_mm": 1.20,
+      "shape": "Round",
+      "material": "Co-Polyester"
+    },
+
+    "crosses": {
+      "string": "Toroline Truffle X",
+      "variant": "Grey",
+      "gauge_mm": 1.30,
+      "shape": "Round",
+      "material": "Ultra-Soft Non-Polyester Polymer"
+    }
+  },
+
+  "component_strings": {
+    "a5_infrared_120": {
+      "role": "Mains",
+      "construction": "Round Co-Polyester Monofilament",
+      "primary_benefits": [
+        "Elite Snapback",
+        "Control",
+        "Spin",
+        "Connected Feel",
+        "Predictable Launch"
+      ]
+    },
+
+    "truffle_x_130": {
+      "role": "Crosses",
+      "construction": "Ultra-Soft Elastic Polymer",
+      "primary_benefits": [
+        "Maximum Comfort",
+        "Ball Pocketing",
+        "Elasticity",
+        "Plush Feel",
+        "Pop",
+        "Shock Reduction"
+      ]
+    }
+  },
+
+  "official_hybrid_configuration": {
+    "mains": "A5 Infrared 1.20",
+    "crosses": "Truffle X 1.30",
+
+    "official_feel": [
+      "Plush",
+      "Elastic",
+      "Connected"
+    ],
+
+    "official_performance_result": [
+      "Clean Spin",
+      "Predictable Launch",
+      "Improved Comfort",
+      "Explosive Pocketing",
+      "Controlled Power"
+    ]
+  },
+
+  "technology": [
+    "A5 Elite Snapback Platform",
+    "Low-Friction Round Main Geometry",
+    "Truffle X Ultra-Soft Polymer",
+    "Hybrid Comfort Optimization",
+    "Pocketing and Spin Integration"
+  ],
+
+  "design_profile": {
+    "string_type": "Comfort Spin Hybrid",
+    "target_player": "Intermediate / Advanced / Tournament",
+    "arm_friendly": true,
+    "spin_focus": true,
+    "control_focus": true,
+    "power_focus": true,
+    "comfort_focus": true,
+    "feel_focus": true,
+    "pocketing_focus": true,
+    "hybrid_focus": true
+  },
+
+  "playing_characteristics": {
+    "power": 9,
+    "control": 9,
+    "spin": 9,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 8,
+    "tension_maintenance": 9,
+    "elasticity": 10,
+    "ball_pocketing": 10,
+    "launch_angle": "Medium"
+  },
+
+  "ai_rating": {
+    "power": 9,
+    "control": 9,
+    "spin": 9,
+    "comfort": 10,
+    "feel": 10,
+    "durability": 8,
+    "tension_maintenance": 9
+  },
+
+  "performance_profile": {
+    "string_stiffness": "Soft-Medium",
+    "snapback": 10,
+    "ball_pocketing": 10,
+    "string_movement": 2,
+    "tension_stability": 9,
+    "spin_window": "High",
+    "predictability": 10,
+    "arm_friendliness": 10,
+    "directional_precision": 9,
+    "surface_friction": "Low",
+    "launch_angle_consistency": 10,
+    "connected_feel": 10,
+    "shock_absorption": 10,
+    "plushness": 10
+  },
+
+  "recommended_player": {
+    "level": [
+      "Intermediate",
+      "Advanced",
+      "Tournament"
+    ],
+
+    "swing_speed": [
+      "Medium",
+      "Medium-Fast",
+      "Fast"
+    ],
+
+    "play_style": [
+      "Aggressive Baseliner",
+      "All Court",
+      "Doubles",
+      "Control-Oriented Player",
+      "Comfort-Oriented Player"
+    ],
+
+    "special_player_profiles": [
+      "Players Wanting Co-Poly Spin With More Comfort",
+      "Players Seeking Relief From Stiffer Stringbeds",
+      "Players Wanting Gut-Like Pocketing",
+      "Players Seeking Plush Feel With Predictable Launch",
+      "Hybrid Users"
+    ]
+  },
+
+  "recommended_racquets": [
+    "Wilson Clash",
+    "Wilson Blade",
+    "Wilson RF 01",
+    "HEAD Speed",
+    "HEAD Gravity",
+    "Yonex EZONE",
+    "Yonex PERCEPT",
+    "Babolat Pure Strike",
+    "Babolat Pure Drive",
+    "Tecnifibre T-FIGHT",
+    "Dunlop FX"
+  ],
+
+  "stringing_recommendation": {
+    "starting_tension": {
+      "lbs": {
+        "min": 50,
+        "max": 55
+      },
+      "kg_approx": {
+        "min": 22.7,
+        "max": 24.9
+      }
+    },
+
+    "prestretch": {
+      "recommended": true,
+      "percent": {
+        "min": 5,
+        "max": 10
+      },
+      "applies_to": "Truffle X"
+    },
+
+    "knot_tie_off": {
+      "maximum_force_lbs": 35,
+      "applies_to": "Truffle X",
+      "warning": "Do not exceed 35 lbs of force when tying off Truffle X knots."
+    }
+  },
+
+  "installation_guidelines": {
+    "truffle_x_handling": [
+      "Use gentle knot tie-off technique.",
+      "Do not overpull knots.",
+      "Account for high elasticity and elongation.",
+      "Avoid crushing or damaging Truffle X during installation."
+    ]
+  },
+
+  "estimated_lifespan": {
+    "hybrid_setup": {
+      "heavy_topspin_hours": "8-14",
+      "club_player_hours": "16-28"
+    }
+  },
+
+  "life_cycle": {
+    "break_in": "Immediate",
+    "peak_playability": "Immediate",
+    "performance_drop": "Low-Medium",
+    "tension_loss_sensitivity": "Low-Medium",
+    "playability_duration": "Very Good",
+    "recommended_monitoring": "Replace when A5 snapback, Truffle X pocketing, or overall launch-angle consistency noticeably declines."
+  },
+
+  "comparison_data": {
+    "vs_full_bed_a5": {
+      "comfort": "Higher",
+      "pocketing": "Higher",
+      "power": "Higher",
+      "control": "Slightly Softer",
+      "spin": "Slightly Lower",
+      "arm_friendliness": "Much Higher"
+    },
+
+    "vs_full_bed_truffle_x": {
+      "control": "Higher",
+      "spin": "Higher",
+      "directional_precision": "Higher",
+      "comfort": "Slightly Lower",
+      "pocketing": "Still Very High"
+    }
+  },
+
+  "science_metrics": {
+    "main_spin_mechanism": [
+      "A5 Snapback",
+      "Low-Friction String Movement"
+    ],
+
+    "cross_comfort_mechanism": [
+      "Truffle X Elasticity",
+      "Long Dwell Time",
+      "Shock Absorption",
+      "Ball Pocketing"
+    ],
+
+    "trajectory_profile": "Controlled / Predictable",
+
+    "launch_angle_profile": "Medium",
+
+    "comfort_class": "Very High",
+
+    "hybrid_class": "Premium Comfort-Performance Hybrid"
+  },
+
+  "recommended_by_ai": {
+    "best_for": [
+      "Players Wanting Premium Co-Poly Control With Greater Comfort",
+      "Players With Mild Arm Sensitivity",
+      "Players Seeking Plush Pocketing",
+      "Players Wanting Predictable Launch and Clean Spin",
+      "Players Transitioning Away From Full Polyester",
+      "Advanced Hybrid Users"
+    ],
+
+    "avoid_for": [
+      "Players Seeking Maximum Full-Poly Durability",
+      "Frequent String Breakers",
+      "Players Wanting Extremely Firm Stringbeds",
+      "Players Seeking Maximum Mechanical Spin From Shaped Mains"
+    ],
+
+    "alternative_strings": [
+      "Toroline A5 Full Bed",
+      "Toroline O-TORO + Truffle X",
+      "Toroline CASH",
+      "Natural Gut + Round Co-Poly Hybrid",
+      "Solinco Tour Bite + Vanquish"
+    ]
+  },
+
+  "comparison_tags": [
+    "Chef Conor",
+    "Monthly Special",
+    "A5 Infrared",
+    "Truffle X",
+    "Hybrid",
+    "Comfort",
+    "Pocketing",
+    "Snapback",
+    "Connected Feel",
+    "Predictable Launch"
+  ],
+
+  "ai_keywords": [
+    "toroline",
+    "chef conor",
+    "monthly special",
+    "conor casey",
+    "a5 infrared",
+    "a5 1.20",
+    "truffle x 1.30",
+    "hybrid",
+    "round co poly",
+    "ultra soft polymer",
+    "comfort",
+    "spin",
+    "pocketing",
+    "plush",
+    "50 55 lbs",
+    "5 10 percent prestretch",
+    "35 lbs knot"
+  ],
+
+  "description": {
+    "en": "Chef Conor's Monthly Special pairs Toroline A5 Infrared 1.20 in the mains with Truffle X 1.30 in the crosses. A5 provides low-friction snapback, control, spin and a connected response, while Truffle X adds extreme elasticity, plush comfort, pocketing and pop. The result is a premium hybrid designed for players who want co-poly performance without the harshness of a full polyester stringbed. Toroline recommends 50-55 lbs as a starting tension reference with 5-10% prestretch for Truffle X, while keeping Truffle X knot tie-off force at or below 35 lbs.",
+
+    "zh": "Chef Conor's Monthly Special 是由 Coach Conor Casey 策划的 Toroline Hybrid 配方，采用 A5 Infrared 1.20 作为主线，Truffle X 1.30 作为横线。A5 提供低摩擦 Snapback、控制、旋转以及清晰 Connected Feel；Truffle X 则增加极高弹性、Plush 舒适感、Pocketing 和 Pop。整体非常适合希望保留高性能 Co-Poly 控制与旋转，同时降低全聚酯线床硬度的球员。官方建议可从 50-55 lbs 开始，并对 Truffle X 使用 5-10% 预拉，同时结线时不要超过 35 lbs 的拉力。"
+  },
+
+  "verification": {
+    "status": "verified_from_supplied_product_information",
+    "last_updated": "2026-08-15",
+
+    "officially_verified_fields": [
+      "Chef Conor's Monthly Special",
+      "Curated by Coach Conor Casey",
+      "A5 Infrared 1.20 mains",
+      "A5 round co-poly",
+      "Truffle X 1.30 crosses",
+      "Truffle X ultra-soft polymer",
+      "Truffle X Grey",
+      "Plush feel",
+      "Elastic feel",
+      "Connected feel",
+      "Clean spin",
+      "Predictable launch",
+      "Comfort-oriented positioning",
+      "Gut-like feel positioning",
+      "Explosive pocketing",
+      "Explosive pop",
+      "50-55 lbs starting tension reference",
+      "5-10% prestretch",
+      "Maximum 35 lbs knot force for Truffle X",
+      "Two half sets per package",
+      "6.7 m per half set",
+      "One-racquet package configuration"
+    ],
+
+    "database_model_fields": [
+      "AI Rating",
+      "Performance Profile",
+      "Recommended Racquets",
+      "Stringing Recommendation",
+      "Installation Guidelines",
+      "Estimated Lifespan",
+      "Life Cycle",
+      "Comparison Data",
+      "Science Metrics",
+      "AI Recommendations",
+      "Competitor Mapping"
+    ]
+  }
+}
