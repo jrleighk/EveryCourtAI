@@ -1,0 +1,302 @@
+{
+  "id": "baseline_counterpuncher",
+  "category": "Playing Style",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
+
+  "style": {
+    "name": {
+      "en": "Baseline Counterpuncher",
+      "zh": "底线反击型球员"
+    },
+
+    "description": {
+      "en": "A baseline-oriented player who absorbs pace, extends rallies, redirects opponent power and wins through consistency, timing, movement and controlled counterattack.",
+      "zh": "以底线防守与反击为核心，通过吸收对手球速、延长回合、借力回击、稳定性、移动和精准反击来建立优势的球员。"
+    }
+  },
+
+  "court_position": {
+    "primary": "Baseline",
+    "secondary": "Behind Baseline",
+
+    "net_frequency": "Low-Medium",
+
+    "preferred_rally_length": "Medium to Long"
+  },
+
+  "playing_identity": {
+    "offensive_level": 6,
+    "defensive_level": 10,
+    "risk_tolerance": 5,
+    "initiative": 6,
+    "consistency": 10,
+    "transition_to_net": 5,
+    "pace_absorption": 10,
+    "redirection": 10,
+    "rally_tolerance": 10
+  },
+
+  "stroke_characteristics": {
+    "forehand": "Stable / Counterattacking",
+    "backhand": "Stable / Redirecting",
+    "serve": "Placement-Oriented",
+    "return": "High Priority",
+    "volley": "Situational",
+    "slice_usage": "Moderate",
+    "defensive_strokes": "High Priority"
+  },
+
+  "typical_ball_characteristics": {
+    "pace": 7,
+    "spin": 7,
+    "depth": 9,
+    "trajectory": "Medium-High",
+    "net_clearance": "Medium-High",
+    "court_penetration": 7,
+    "consistency": 10,
+    "directional_change": 9
+  },
+
+  "preferred_racquet_dna": {
+    "power": 7,
+    "control": 9,
+    "spin": 8,
+    "stability": 9,
+    "maneuverability": 9,
+    "forgiveness": 9,
+    "feel": 9,
+    "launch_angle": 7,
+    "comfort": 8,
+    "predictability": 10
+  },
+
+  "preferred_racquet_characteristics": {
+    "head_size": [
+      "98",
+      "100"
+    ],
+
+    "weight_g": [
+      "295",
+      "300",
+      "305"
+    ],
+
+    "balance": [
+      "Head Light",
+      "Slightly Head Light"
+    ],
+
+    "string_patterns": [
+      "16x19",
+      "16x20",
+      "18x20"
+    ],
+
+    "stiffness_preference": [
+      "Medium",
+      "Medium-Soft"
+    ],
+
+    "key_traits": [
+      "Stable On Defense",
+      "Easy Directional Control",
+      "Good Sweet Spot",
+      "Fast Handling",
+      "Predictable Launch"
+    ]
+  },
+
+  "preferred_string_dna": {
+    "power": 7,
+    "control": 9,
+    "spin": 8,
+    "comfort": 8,
+    "feel": 9,
+    "durability": 8,
+    "tension_maintenance": 9,
+    "snapback": 8,
+    "ball_pocketing": 9,
+    "predictability": 10
+  },
+
+  "recommended_string_families": [
+    "Soft Co-Polyester",
+    "Balanced Co-Polyester",
+    "Round Co-Polyester",
+    "Poly / Multifilament Hybrid",
+    "Natural Gut / Polyester Hybrid"
+  ],
+
+  "preferred_string_characteristics": {
+    "shape": [
+      "Round",
+      "Lightly Shaped",
+      "Smooth"
+    ],
+
+    "stiffness": [
+      "Soft",
+      "Medium",
+      "Medium-Firm"
+    ],
+
+    "gauge_mm": [
+      1.20,
+      1.25,
+      1.30
+    ],
+
+    "key_traits": [
+      "Predictable Response",
+      "Good Tension Stability",
+      "Ball Pocketing",
+      "Controlled Power",
+      "Comfort",
+      "Reliable Snapback"
+    ]
+  },
+
+  "recommended_string_examples": [
+    "Yonex PolyTour Pro",
+    "Yonex PolyTour Air",
+    "Luxilon Element",
+    "Solinco Hyper-G Soft",
+    "Babolat RPM Soft",
+    "Wilson Revolve",
+    "MSV Swift",
+    "Toroline A5",
+    "Toroline CASH",
+    "Head Hawk Touch"
+  ],
+
+  "recommended_hybrid_examples": [
+    "Soft Poly + Multifilament",
+    "Natural Gut + Smooth Polyester",
+    "Round Poly + Multifilament",
+    "PolyTour Pro + REXIS Feel",
+    "Luxilon Element + Wilson NXT"
+  ],
+
+  "recommended_tension": {
+    "poly": "46-50 lbs",
+    "soft_poly": "47-51 lbs",
+    "poly_multi_hybrid": "48/51 lbs",
+    "gut_poly_hybrid": "53/50 lbs"
+  },
+
+  "recommended_racquet_examples": [
+    "Yonex EZONE 98",
+    "Yonex PERCEPT 100",
+    "Wilson Blade 98",
+    "Wilson Blade 100",
+    "Head Speed MP",
+    "Head Gravity MP",
+    "Tecnifibre TF40 305",
+    "Dunlop CX 200",
+    "Babolat Pure Strike 100"
+  ],
+
+  "ai_matching_priority": {
+    "predictability": 0.20,
+    "control": 0.18,
+    "stability": 0.15,
+    "forgiveness": 0.14,
+    "ball_pocketing": 0.10,
+    "comfort": 0.08,
+    "feel": 0.07,
+    "maneuverability": 0.04,
+    "spin": 0.03,
+    "power": 0.01
+  },
+
+  "matching_logic": {
+    "prioritize_when": [
+      "Player wins through consistency and redirection rather than first-strike power.",
+      "Player frequently absorbs pace from stronger opponents.",
+      "Player needs predictable response under defensive pressure.",
+      "Player values stability and forgiveness during long rallies."
+    ],
+
+    "equipment_goals": [
+      "Maintain depth under pressure",
+      "Improve directional redirection",
+      "Increase defensive stability",
+      "Preserve comfort during long rallies",
+      "Maintain predictable launch angle"
+    ],
+
+    "deprioritize": [
+      "Excessive Free Power",
+      "Extremely High Launch",
+      "Very Stiff Stringbeds",
+      "Low Forgiveness Racquets",
+      "Unstable Lightweight Frames"
+    ]
+  },
+
+  "compatible_profiles": {
+    "levels": [
+      "intermediate",
+      "advanced",
+      "tournament"
+    ],
+
+    "swing_speeds": [
+      "medium",
+      "medium_fast",
+      "fast"
+    ],
+
+    "shot_profiles": [
+      "moderate_topspin",
+      "heavy_topspin",
+      "controlled_flat",
+      "slice_defense"
+    ],
+
+    "goals": [
+      "more_control",
+      "more_consistency",
+      "more_comfort",
+      "more_stability",
+      "better_defense"
+    ]
+  },
+
+  "avoid": {
+    "racquet_characteristics": [
+      "Extremely High Power",
+      "Very High Launch",
+      "Low Stability",
+      "Very Small Sweet Spot"
+    ],
+
+    "string_characteristics": [
+      "Extremely Stiff Polyester",
+      "Very Low Pocketing",
+      "Unpredictable Launch",
+      "Excessive Trampoline Response"
+    ]
+  },
+
+  "risk_flags": [
+    "A very low-powered racquet combined with a low-powered control polyester may make defensive depth difficult.",
+    "A stiff racquet combined with a firm polyester at high tension may reduce comfort during long rallies.",
+    "Excessively powerful equipment may reduce directional confidence when redirecting pace."
+  ],
+
+  "search_keywords": [
+    "counterpuncher",
+    "counter puncher",
+    "baseline counterpuncher",
+    "defensive baseliner",
+    "redirect pace",
+    "rally player",
+    "consistent baseline",
+    "底线反击",
+    "防守反击",
+    "借力打力"
+  ]
+}
