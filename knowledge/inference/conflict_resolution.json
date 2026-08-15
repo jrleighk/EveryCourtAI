@@ -1,0 +1,604 @@
+{
+  "id": "conflict_resolution",
+  "category": "Inference Rules",
+  "type": "Conflict Resolution Engine",
+  "version": "1.0",
+  "last_updated": "2026-08-15",
+
+  "description": {
+    "en": "Core inference logic used by EveryCourtAI to resolve conflicts between physical constraints, player goals, equipment problems, playing style, swing speed and personal preferences.",
+    "zh": "EveryCourtAI 核心冲突推理逻辑，用于解决身体限制、球员目标、当前装备问题、打法、挥拍速度和个人偏好之间的冲突。"
+  },
+
+  "core_principle": {
+    "en": "When two or more recommendations conflict, EveryCourtAI should protect physical compatibility first, solve the player's real setup problem second, and optimize performance only after those requirements are satisfied.",
+    "zh": "当两个或多个推荐条件发生冲突时，EveryCourtAI 应首先保护身体兼容性，其次解决当前装备的真实问题，之后才优化性能目标。"
+  },
+
+  "priority_hierarchy": [
+    {
+      "priority": 1,
+      "id": "physical_constraints",
+      "hard_override": true,
+      "weight": 1.0
+    },
+    {
+      "priority": 2,
+      "id": "manufacturer_and_safety_limits",
+      "hard_override": true,
+      "weight": 1.0
+    },
+    {
+      "priority": 3,
+      "id": "current_setup_problems",
+      "hard_override": false,
+      "weight": 0.95
+    },
+    {
+      "priority": 4,
+      "id": "equipment_compatibility",
+      "hard_override": false,
+      "weight": 0.90
+    },
+    {
+      "priority": 5,
+      "id": "primary_goal",
+      "hard_override": false,
+      "weight": 0.85
+    },
+    {
+      "priority": 6,
+      "id": "swing_speed",
+      "hard_override": false,
+      "weight": 0.75
+    },
+    {
+      "priority": 7,
+      "id": "playing_style",
+      "hard_override": false,
+      "weight": 0.70
+    },
+    {
+      "priority": 8,
+      "id": "secondary_goals",
+      "hard_override": false,
+      "weight": 0.60
+    },
+    {
+      "priority": 9,
+      "id": "feel_and_launch_preferences",
+      "hard_override": false,
+      "weight": 0.50
+    },
+    {
+      "priority": 10,
+      "id": "durability_and_cost_preferences",
+      "hard_override": false,
+      "weight": 0.35
+    },
+    {
+      "priority": 11,
+      "id": "brand_and_cosmetic_preferences",
+      "hard_override": false,
+      "weight": 0.15
+    }
+  ],
+
+  "conflict_detection": {
+    "detect_when": [
+      "Two inputs recommend opposite tension directions.",
+      "Two inputs recommend opposite string stiffness directions.",
+      "A performance goal conflicts with a physical constraint.",
+      "A preferred racquet characteristic conflicts with maneuverability or comfort requirements.",
+      "A durability preference conflicts with physical comfort.",
+      "A launch preference conflicts with current setup feedback.",
+      "Multiple goals compete for the same equipment variable.",
+      "Current equipment feedback contradicts the player's stated preference."
+    ]
+  },
+
+  "resolution_method": {
+    "step_1": "Identify all active constraints, goals and preferences.",
+    "step_2": "Separate hard constraints from soft preferences.",
+    "step_3": "Remove candidates that violate hard constraints.",
+    "step_4": "Identify the player's primary unresolved problem.",
+    "step_5": "Resolve competing goals using weighted priority.",
+    "step_6": "Prefer solutions that satisfy multiple goals simultaneously.",
+    "step_7": "Apply the smallest effective equipment change.",
+    "step_8": "Expose remaining tradeoffs to the user."
+  },
+
+  "hard_constraint_rules": {
+    "physical": {
+      "high_elbow_sensitivity": {
+        "exclude": [
+          "Firm Full Polyester At High Tension",
+          "Very Firm Polyester",
+          "Harsh Stringbed Configurations"
+        ]
+      },
+
+      "high_wrist_sensitivity": {
+        "exclude": [
+          "Very High Swingweight",
+          "Strongly Head-Heavy Racquets",
+          "Firm High-Tension Polyester"
+        ]
+      },
+
+      "high_shoulder_sensitivity": {
+        "exclude": [
+          "Excessive Static Weight",
+          "Excessive Swingweight",
+          "Head-Heavy High-Demand Frames"
+        ]
+      },
+
+      "high_lower_back_sensitivity": {
+        "exclude": [
+          "Extremely Demanding High-Swingweight Setups",
+          "Low-Power Setups Requiring Repeated Maximal Effort"
+        ]
+      },
+
+      "high_hip_sensitivity": {
+        "exclude": [
+          "Very Demanding Low-Power Frames",
+          "Maximum Swingweight Solutions"
+        ]
+      },
+
+      "high_knee_sensitivity": {
+        "exclude": [
+          "Very Unforgiving Small-Sweet-Spot Frames",
+          "Low-Power Setups Requiring Perfect Positioning"
+        ]
+      },
+
+      "high_ankle_sensitivity": {
+        "exclude": [
+          "Very Demanding Precision Frames",
+          "Excessive Swingweight Solely For Stability"
+        ]
+      },
+
+      "high_neck_sensitivity": {
+        "exclude": [
+          "Maximum Static Weight",
+          "Maximum Swingweight",
+          "Strongly Head-Heavy Racquets"
+        ]
+      }
+    },
+
+    "manufacturer_limits": {
+      "rule": "Never exceed verified manufacturer hard limits for racquet tension or product usage."
+    }
+  },
+
+  "goal_conflict_matrix": {
+    "more_power_vs_more_control": {
+      "conflict_level": "High",
+
+      "preferred_resolution": [
+        "Use controlled-power string.",
+        "Optimize gauge.",
+        "Use moderate tension.",
+        "Avoid extreme power and extreme control solutions."
+      ],
+
+      "do_not": [
+        "Maximize power through very low tension if control is already poor.",
+        "Maximize control through very firm high-tension polyester if power is already insufficient."
+      ]
+    },
+
+    "more_spin_vs_more_comfort": {
+      "conflict_level": "Medium",
+
+      "preferred_resolution": [
+        "Use soft shaped polyester.",
+        "Use shaped main + smooth soft cross hybrid.",
+        "Use lower-friction construction.",
+        "Reduce tension moderately if appropriate."
+      ]
+    },
+
+    "more_control_vs_more_comfort": {
+      "conflict_level": "High",
+
+      "preferred_resolution": [
+        "Use soft control polyester.",
+        "Use predictable round polyester.",
+        "Use comfort hybrid.",
+        "Improve control through string construction before increasing tension."
+      ]
+    },
+
+    "more_power_vs_lower_launch": {
+      "conflict_level": "Medium",
+
+      "preferred_resolution": [
+        "Increase elasticity without creating excessive launch.",
+        "Use controlled-power string.",
+        "Use moderate gauge."
+      ]
+    },
+
+    "more_spin_vs_lower_launch": {
+      "conflict_level": "Medium",
+
+      "preferred_resolution": [
+        "Use high-snapback lower-launch polyester.",
+        "Use shaped main + controlled round cross.",
+        "Do not equate more spin with higher launch automatically."
+      ]
+    },
+
+    "more_feel_vs_more_durability": {
+      "conflict_level": "Medium",
+
+      "preferred_resolution": [
+        "Use responsive durable construction.",
+        "Prefer 1.25 before automatically moving to 1.30.",
+        "Consider hybrid architecture."
+      ]
+    },
+
+    "more_power_vs_more_durability": {
+      "conflict_level": "Medium",
+
+      "preferred_resolution": [
+        "Select more elastic durable construction.",
+        "Avoid overly thick gauge unless break frequency requires it."
+      ]
+    }
+  },
+
+  "physical_vs_goal_rules": {
+    "physical_vs_more_control": {
+      "rule": "Physical constraints override control goals.",
+      "preferred_solution": [
+        "Increase predictability through string model.",
+        "Use softer control-oriented string.",
+        "Avoid excessive tension increases."
+      ]
+    },
+
+    "physical_vs_more_spin": {
+      "rule": "Physical constraints override maximum spin.",
+      "preferred_solution": [
+        "Use softer spin string.",
+        "Use hybrid.",
+        "Use racquet geometry and snapback instead of maximum string stiffness."
+      ]
+    },
+
+    "physical_vs_more_power": {
+      "rule": "Generate power through efficiency and elasticity rather than excessive racquet mass.",
+      "preferred_solution": [
+        "More elastic string",
+        "Lower tension",
+        "More efficient racquet",
+        "Manageable swingweight"
+      ]
+    },
+
+    "physical_vs_more_durability": {
+      "rule": "Durability cannot justify a setup that creates excessive physical stress.",
+      "preferred_solution": [
+        "Durable soft polyester",
+        "Medium gauge",
+        "Hybrid",
+        "More frequent restringing if necessary"
+      ]
+    },
+
+    "physical_vs_firm_feel": {
+      "rule": "Firm feel preference does not override physical safety.",
+      "preferred_solution": [
+        "Use connected medium-firm response.",
+        "Avoid harsh high-tension full polyester."
+      ]
+    }
+  },
+
+  "current_setup_vs_preference_rules": {
+    "too_high_launch_vs_high_launch_preference": {
+      "winner": "current_setup_problem",
+      "reason": "Observed performance feedback is more important than stated preference."
+    },
+
+    "too_low_launch_vs_low_launch_preference": {
+      "winner": "current_setup_problem"
+    },
+
+    "too_stiff_vs_firm_feel_preference": {
+      "winner": "current_setup_problem",
+      "resolution": "Use a more connected but less harsh setup."
+    },
+
+    "not_enough_power_vs_low_power_preference": {
+      "winner": "current_setup_problem",
+      "resolution": "Restore usable depth while preserving a controlled response."
+    }
+  },
+
+  "racquet_string_conflict_rules": {
+    "high_power_racquet_plus_power_goal": {
+      "resolution": [
+        "Do not automatically select high-power string.",
+        "Check whether more power is actually needed.",
+        "Prefer controlled elasticity."
+      ]
+    },
+
+    "stiff_racquet_plus_firm_string": {
+      "resolution": [
+        "Reduce string stiffness.",
+        "Reduce tension if necessary.",
+        "Apply physical penalties if sensitivity exists."
+      ]
+    },
+
+    "dense_control_racquet_plus_low_power_string": {
+      "resolution": [
+        "Increase elasticity.",
+        "Use thinner gauge.",
+        "Lower tension moderately."
+      ]
+    },
+
+    "open_spin_racquet_plus_high_launch_string": {
+      "resolution": [
+        "Increase launch predictability.",
+        "Use round or controlled cross.",
+        "Consider thicker gauge."
+      ]
+    },
+
+    "high_swingweight_racquet_plus_physical_fatigue": {
+      "resolution": [
+        "Reduce equipment demand before changing strings for performance.",
+        "Evaluate racquet compatibility."
+      ]
+    }
+  },
+
+  "multi_physical_constraint_logic": {
+    "rule": {
+      "en": "When multiple physical constraints are active, use the most restrictive compatible equipment direction rather than averaging them.",
+      "zh": "当多个身体限制同时存在时，应采用能够同时满足这些限制的最严格兼容方向，而不是简单取平均值。"
+    },
+
+    "examples": [
+      {
+        "constraints": [
+          "shoulder_sensitivity",
+          "wrist_sensitivity"
+        ],
+        "combined_priority": [
+          "Manageable Swingweight",
+          "Head-Light Balance",
+          "Torsional Stability",
+          "Comfort"
+        ]
+      },
+
+      {
+        "constraints": [
+          "lower_back_sensitivity",
+          "knee_sensitivity"
+        ],
+        "combined_priority": [
+          "Forgiveness",
+          "Easy Power",
+          "Manageable Racquet Demand",
+          "Large Effective Sweet Spot"
+        ]
+      },
+
+      {
+        "constraints": [
+          "elbow_sensitivity",
+          "shoulder_sensitivity"
+        ],
+        "combined_priority": [
+          "Soft Stringbed",
+          "Moderate Swingweight",
+          "Comfort",
+          "Avoid Firm High-Tension Polyester"
+        ]
+      }
+    ]
+  },
+
+  "multi_goal_logic": {
+    "maximum_active_primary_goals": 2,
+
+    "more_than_two_primary_goals": {
+      "action": "Request prioritization or automatically rank using player feedback and current setup problems."
+    },
+
+    "goal_priority_scoring": {
+      "current_problem_match": 0.35,
+      "player_stated_priority": 0.30,
+      "physical_compatibility": 0.20,
+      "playing_style_match": 0.10,
+      "preference_match": 0.05
+    }
+  },
+
+  "smallest_effective_change_logic": {
+    "default_order": [
+      "Tension",
+      "Gauge",
+      "String Model",
+      "Hybrid Architecture",
+      "Racquet"
+    ],
+
+    "exception_order": {
+      "racquet_too_heavy": [
+        "Racquet"
+      ],
+
+      "racquet_too_demanding": [
+        "Racquet",
+        "String"
+      ],
+
+      "dead_string": [
+        "String Replacement"
+      ],
+
+      "physical_hard_constraint_violation": [
+        "Immediately Remove Violating Variable"
+      ]
+    }
+  },
+
+  "tradeoff_logic": {
+    "rule": "Every resolved conflict must expose at least one meaningful tradeoff if one exists.",
+
+    "tradeoff_categories": [
+      "Power",
+      "Control",
+      "Spin",
+      "Comfort",
+      "Feel",
+      "Launch",
+      "Durability",
+      "Tension Maintenance",
+      "Maneuverability",
+      "Stability",
+      "Cost"
+    ],
+
+    "example": {
+      "decision": "Use softer shaped polyester instead of firm spin polyester.",
+      "gain": [
+        "Comfort",
+        "Spin"
+      ],
+      "tradeoff": [
+        "Slightly less maximum control",
+        "Potentially shorter durability"
+      ]
+    }
+  },
+
+  "confidence_adjustment": {
+    "no_conflict": {
+      "modifier": 0
+    },
+
+    "single_minor_conflict": {
+      "modifier": -0.03
+    },
+
+    "single_major_conflict": {
+      "modifier": -0.08
+    },
+
+    "multiple_conflicts": {
+      "modifier": -0.12
+    },
+
+    "unresolved_hard_conflict": {
+      "modifier": -0.30,
+      "action": "Do not produce a high-confidence recommendation."
+    }
+  },
+
+  "missing_information_behavior": {
+    "physical_status_unknown": {
+      "action": "Do not assume injury or sensitivity.",
+      "confidence_penalty": 0
+    },
+
+    "current_setup_feedback_missing": {
+      "confidence_penalty": -0.08
+    },
+
+    "primary_goal_unclear": {
+      "confidence_penalty": -0.12,
+      "action": "Ask one targeted question."
+    },
+
+    "racquet_unknown": {
+      "confidence_penalty": -0.20,
+      "action": "Return profile-level guidance rather than precise setup."
+    }
+  },
+
+  "output_contract": {
+    "conflicts_detected": [],
+
+    "hard_constraints_applied": [],
+
+    "winning_priorities": [],
+
+    "suppressed_preferences": [],
+
+    "resolved_goals": [],
+
+    "recommended_direction": {
+      "racquet": [],
+      "string": [],
+      "hybrid": [],
+      "tension": []
+    },
+
+    "tradeoffs": [],
+
+    "confidence_modifier": 0,
+
+    "requires_follow_up_question": false,
+
+    "follow_up_question": null
+  },
+
+  "explanation_rules": {
+    "must_explain": [
+      "What conflict was detected.",
+      "Which factor received higher priority.",
+      "Why that factor won.",
+      "How the chosen solution preserves as much of the lower-priority goal as possible.",
+      "What tradeoff remains."
+    ],
+
+    "must_not_do": [
+      "Do not silently ignore conflicting user goals.",
+      "Do not average hard physical constraints with performance preferences.",
+      "Do not treat all goals as equal.",
+      "Do not invent a compromise when one option violates a hard constraint.",
+      "Do not overcomplicate the recommendation when a simple adjustment solves the conflict."
+    ]
+  },
+
+  "engine_connections": {
+    "reads_from": [
+      "knowledge/decision_rules/goal_priority.json",
+      "knowledge/decision_rules/string_selection_logic.json",
+      "knowledge/decision_rules/hybrid_decision_logic.json",
+      "knowledge/decision_rules/tension_adjustment_logic.json",
+      "knowledge/decision_rules/racquet_selection_logic.json",
+      "knowledge/decision_rules/recommendation_engine.json",
+      "knowledge/players/player_profile_schema.json",
+      "knowledge/players/physical/",
+      "knowledge/players/goals/",
+      "knowledge/players/preferences/",
+      "knowledge/players/playing_styles/",
+      "knowledge/players/swing_speeds/",
+      "knowledge/racquets/",
+      "knowledge/strings/"
+    ],
+
+    "passes_to": [
+      "confidence_scoring",
+      "missing_information_strategy",
+      "recommendation_engine"
+    ]
+  }
+}
