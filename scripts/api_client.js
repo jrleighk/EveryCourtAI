@@ -58,7 +58,7 @@ const API_CLIENT_VERSION =
  */
 
 let API_ENDPOINT =
-    "https://YOUR-EVERYCOURT-WORKER.workers.dev/ai";
+    "https://everycourt-api.jrleighk.workers.dev/ai";
 
 
 /**
