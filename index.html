@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+
   <meta
     name="viewport"
     content="width=device-width, initial-scale=1.0"
@@ -20,6 +21,7 @@
       --bg-soft: #15362f;
       --card: #18342e;
       --card-strong: #1f443b;
+
       --border: rgba(255,255,255,0.10);
 
       --text: #f5f7f6;
@@ -33,7 +35,8 @@
       --user-bubble: rgba(255,255,255,0.08);
       --ai-bubble: rgba(71,199,122,0.10);
 
-      --shadow: 0 20px 60px rgba(0,0,0,0.22);
+      --shadow:
+        0 20px 60px rgba(0,0,0,0.22);
     }
 
     body[data-theme="clay"] {
@@ -41,7 +44,9 @@
       --bg-soft: #9d5032;
       --card: #a45738;
       --card-strong: #b76745;
-      --border: rgba(255,255,255,0.13);
+
+      --border:
+        rgba(255,255,255,0.13);
 
       --text: #fff8f2;
       --text-soft: #f0d2c1;
@@ -51,8 +56,11 @@
       --primary-strong: #ef7d3c;
       --accent: #ffe1b8;
 
-      --user-bubble: rgba(255,255,255,0.10);
-      --ai-bubble: rgba(255,225,184,0.11);
+      --user-bubble:
+        rgba(255,255,255,0.10);
+
+      --ai-bubble:
+        rgba(255,225,184,0.11);
     }
 
     body[data-theme="hard"] {
@@ -60,7 +68,9 @@
       --bg-soft: #123f6c;
       --card: #164b79;
       --card-strong: #1c5a8e;
-      --border: rgba(255,255,255,0.11);
+
+      --border:
+        rgba(255,255,255,0.11);
 
       --text: #f7fbff;
       --text-soft: #bdd7ea;
@@ -70,8 +80,11 @@
       --primary-strong: #278fe4;
       --accent: #d7f5ff;
 
-      --user-bubble: rgba(255,255,255,0.09);
-      --ai-bubble: rgba(64,168,255,0.10);
+      --user-bubble:
+        rgba(255,255,255,0.09);
+
+      --ai-bubble:
+        rgba(64,168,255,0.10);
     }
 
     * {
@@ -86,6 +99,7 @@
 
     body {
       min-height: 100vh;
+
       font-family:
         Inter,
         ui-sans-serif,
@@ -108,6 +122,7 @@
         );
 
       color: var(--text);
+
       transition:
         background 0.35s ease,
         color 0.35s ease;
@@ -123,7 +138,12 @@
     }
 
     .page-shell {
-      width: min(1180px, calc(100% - 32px));
+      width:
+        min(
+          1180px,
+          calc(100% - 32px)
+        );
+
       margin: 0 auto;
     }
 
@@ -135,6 +155,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 18px;
 
       padding: 20px 0 10px;
     }
@@ -145,6 +166,7 @@
       gap: 11px;
 
       color: var(--text);
+
       font-weight: 700;
       letter-spacing: -0.02em;
     }
@@ -152,13 +174,28 @@
     .brand-dot {
       width: 12px;
       height: 12px;
+
       border-radius: 50%;
+
       background: var(--accent);
 
       box-shadow:
         0 0 0 5px rgba(255,255,255,0.05),
         0 0 20px rgba(217,255,63,0.18);
     }
+
+    .top-controls {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 10px;
+
+      flex-wrap: wrap;
+    }
+
+    /* =========================================================
+       Theme Switcher
+    ========================================================= */
 
     .theme-switcher {
       display: flex;
@@ -167,40 +204,275 @@
 
       padding: 5px;
 
-      background: rgba(0,0,0,0.13);
-      border: 1px solid var(--border);
+      background:
+        rgba(0,0,0,0.13);
+
+      border:
+        1px solid var(--border);
+
       border-radius: 999px;
 
-      backdrop-filter: blur(16px);
+      backdrop-filter:
+        blur(16px);
     }
 
     .theme-btn {
       border: none;
-      color: var(--text-soft);
-      background: transparent;
 
-      padding: 8px 13px;
-      border-radius: 999px;
+      color:
+        var(--text-soft);
 
-      font-size: 13px;
-      font-weight: 650;
+      background:
+        transparent;
 
-      transition: 0.22s ease;
+      padding:
+        8px 13px;
+
+      border-radius:
+        999px;
+
+      font-size:
+        13px;
+
+      font-weight:
+        650;
+
+      transition:
+        0.22s ease;
     }
 
     .theme-btn:hover {
-      color: var(--text);
-      background: rgba(255,255,255,0.06);
+      color:
+        var(--text);
+
+      background:
+        rgba(255,255,255,0.06);
     }
 
     .theme-btn.active {
-      color: #0e211b;
-      background: var(--accent);
+      color:
+        #0e211b;
+
+      background:
+        var(--accent);
     }
 
-    body[data-theme="clay"] .theme-btn.active,
-    body[data-theme="hard"] .theme-btn.active {
-      color: #0d2230;
+    body[data-theme="clay"]
+    .theme-btn.active,
+
+    body[data-theme="hard"]
+    .theme-btn.active {
+      color:
+        #0d2230;
+    }
+
+    /* =========================================================
+       Language Menu
+    ========================================================= */
+
+    .language-menu {
+      position: relative;
+    }
+
+    .language-trigger {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      min-height: 42px;
+
+      padding:
+        8px 13px;
+
+      border:
+        1px solid var(--border);
+
+      border-radius:
+        999px;
+
+      background:
+        rgba(0,0,0,0.13);
+
+      color:
+        var(--text-soft);
+
+      font-size:
+        13px;
+
+      font-weight:
+        650;
+
+      transition:
+        0.22s ease;
+
+      backdrop-filter:
+        blur(16px);
+    }
+
+    .language-trigger:hover {
+      color:
+        var(--text);
+
+      background:
+        rgba(255,255,255,0.06);
+    }
+
+    .language-globe {
+      font-size:
+        14px;
+    }
+
+    .language-chevron {
+      opacity:
+        0.65;
+
+      font-size:
+        10px;
+
+      transition:
+        transform 0.2s ease;
+    }
+
+    .language-menu.open
+    .language-chevron {
+      transform:
+        rotate(180deg);
+    }
+
+    .language-dropdown {
+      position:
+        absolute;
+
+      right:
+        0;
+
+      top:
+        calc(100% + 8px);
+
+      z-index:
+        50;
+
+      min-width:
+        190px;
+
+      padding:
+        7px;
+
+      border:
+        1px solid var(--border);
+
+      border-radius:
+        16px;
+
+      background:
+        rgba(16,32,28,0.96);
+
+      box-shadow:
+        0 20px 55px rgba(0,0,0,0.30);
+
+      backdrop-filter:
+        blur(20px);
+
+      opacity:
+        0;
+
+      visibility:
+        hidden;
+
+      transform:
+        translateY(-5px);
+
+      transition:
+        0.18s ease;
+    }
+
+    body[data-theme="clay"]
+    .language-dropdown {
+      background:
+        rgba(116,52,31,0.97);
+    }
+
+    body[data-theme="hard"]
+    .language-dropdown {
+      background:
+        rgba(9,42,76,0.97);
+    }
+
+    .language-menu.open
+    .language-dropdown {
+      opacity:
+        1;
+
+      visibility:
+        visible;
+
+      transform:
+        translateY(0);
+    }
+
+    .language-option {
+      width:
+        100%;
+
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      justify-content:
+        space-between;
+
+      border:
+        none;
+
+      border-radius:
+        11px;
+
+      background:
+        transparent;
+
+      color:
+        var(--text-soft);
+
+      padding:
+        10px 11px;
+
+      text-align:
+        left;
+
+      font-size:
+        13px;
+
+      transition:
+        0.18s ease;
+    }
+
+    .language-option:hover {
+      color:
+        var(--text);
+
+      background:
+        rgba(255,255,255,0.07);
+    }
+
+    .language-option.active {
+      color:
+        var(--text);
+
+      background:
+        rgba(255,255,255,0.08);
+    }
+
+    .language-option.active::after {
+      content:
+        "✓";
+
+      color:
+        var(--accent);
+
+      font-weight:
+        800;
     }
 
     /* =========================================================
@@ -208,59 +480,112 @@
     ========================================================= */
 
     .hero {
-      text-align: center;
-      padding: 56px 0 36px;
+      text-align:
+        center;
+
+      padding:
+        56px 0 36px;
     }
 
     .logo-wrap {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 18px;
+      display:
+        flex;
+
+      justify-content:
+        center;
+
+      margin-bottom:
+        18px;
     }
 
     .logo-wrap img {
-      width: 88px;
-      height: 88px;
-      object-fit: contain;
-      border-radius: 22px;
+      width:
+        88px;
 
-      box-shadow: var(--shadow);
+      height:
+        88px;
+
+      object-fit:
+        contain;
+
+      border-radius:
+        22px;
+
+      box-shadow:
+        var(--shadow);
     }
 
     .hero h1 {
-      font-size: clamp(38px, 7vw, 72px);
-      line-height: 1;
-      letter-spacing: -0.055em;
-      font-weight: 760;
+      font-size:
+        clamp(
+          38px,
+          7vw,
+          72px
+        );
+
+      line-height:
+        1;
+
+      letter-spacing:
+        -0.055em;
+
+      font-weight:
+        760;
     }
 
     .hero .subtitle {
-      margin-top: 14px;
+      margin-top:
+        14px;
 
-      color: var(--text-soft);
-      font-size: clamp(15px, 2vw, 19px);
-      letter-spacing: 0.01em;
+      color:
+        var(--text-soft);
+
+      font-size:
+        clamp(
+          15px,
+          2vw,
+          19px
+        );
+
+      letter-spacing:
+        0.01em;
     }
 
     .hero .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
+      display:
+        inline-flex;
 
-      margin-top: 22px;
+      align-items:
+        center;
 
-      padding: 8px 12px;
-      border-radius: 999px;
+      gap:
+        8px;
 
-      background: rgba(255,255,255,0.06);
-      border: 1px solid var(--border);
+      margin-top:
+        22px;
 
-      color: var(--text-soft);
-      font-size: 13px;
+      padding:
+        8px 12px;
+
+      border-radius:
+        999px;
+
+      background:
+        rgba(255,255,255,0.06);
+
+      border:
+        1px solid var(--border);
+
+      color:
+        var(--text-soft);
+
+      font-size:
+        13px;
     }
 
-    .hero .eyebrow span {
-      color: var(--accent);
+    .hero .eyebrow span:first-child {
+      color:
+        var(--accent);
     }
 
     /* =========================================================
@@ -268,14 +593,18 @@
     ========================================================= */
 
     .workspace {
-      display: grid;
+      display:
+        grid;
+
       grid-template-columns:
-        minmax(0, 1.25fr)
-        minmax(340px, 0.75fr);
+        minmax(0,1.25fr)
+        minmax(340px,0.75fr);
 
-      gap: 20px;
+      gap:
+        20px;
 
-      padding-bottom: 48px;
+      padding-bottom:
+        48px;
     }
 
     .panel {
@@ -286,12 +615,17 @@
           rgba(255,255,255,0.025)
         );
 
-      border: 1px solid var(--border);
-      border-radius: 28px;
+      border:
+        1px solid var(--border);
 
-      box-shadow: var(--shadow);
+      border-radius:
+        28px;
 
-      backdrop-filter: blur(18px);
+      box-shadow:
+        var(--shadow);
+
+      backdrop-filter:
+        blur(18px);
     }
 
     /* =========================================================
@@ -299,198 +633,340 @@
     ========================================================= */
 
     .chat-panel {
-      min-height: 640px;
+      min-height:
+        640px;
 
-      display: flex;
-      flex-direction: column;
-      overflow: hidden;
+      display:
+        flex;
+
+      flex-direction:
+        column;
+
+      overflow:
+        hidden;
     }
 
     .chat-head {
-      padding: 22px 24px 18px;
-      border-bottom: 1px solid var(--border);
+      padding:
+        22px 24px 18px;
+
+      border-bottom:
+        1px solid var(--border);
     }
 
     .chat-head h2 {
-      font-size: 17px;
-      letter-spacing: -0.02em;
+      font-size:
+        17px;
+
+      letter-spacing:
+        -0.02em;
     }
 
     .chat-head p {
-      margin-top: 5px;
-      color: var(--text-soft);
-      font-size: 13px;
+      margin-top:
+        5px;
+
+      color:
+        var(--text-soft);
+
+      font-size:
+        13px;
     }
 
     .messages {
-      flex: 1;
+      flex:
+        1;
 
-      display: flex;
-      flex-direction: column;
-      gap: 18px;
+      display:
+        flex;
 
-      padding: 24px;
-      overflow-y: auto;
+      flex-direction:
+        column;
+
+      gap:
+        18px;
+
+      padding:
+        24px;
+
+      overflow-y:
+        auto;
     }
 
     .message {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
+      display:
+        flex;
+
+      flex-direction:
+        column;
+
+      gap:
+        8px;
     }
 
     .message.user {
-      align-items: flex-end;
+      align-items:
+        flex-end;
     }
 
     .message.ai {
-      align-items: flex-start;
+      align-items:
+        flex-start;
     }
 
     .message-label {
-      font-size: 12px;
-      color: var(--text-faint);
-      font-weight: 650;
+      font-size:
+        12px;
+
+      color:
+        var(--text-faint);
+
+      font-weight:
+        650;
     }
 
     .bubble {
-      max-width: 82%;
-      padding: 15px 17px;
-      border-radius: 19px;
+      max-width:
+        82%;
 
-      line-height: 1.55;
-      font-size: 14px;
+      padding:
+        15px 17px;
 
-      border: 1px solid var(--border);
+      border-radius:
+        19px;
+
+      line-height:
+        1.55;
+
+      font-size:
+        14px;
+
+      border:
+        1px solid var(--border);
     }
 
     .message.user .bubble {
-      background: var(--user-bubble);
-      border-bottom-right-radius: 6px;
+      background:
+        var(--user-bubble);
+
+      border-bottom-right-radius:
+        6px;
     }
 
     .message.ai .bubble {
-      background: var(--ai-bubble);
-      border-bottom-left-radius: 6px;
+      background:
+        var(--ai-bubble);
+
+      border-bottom-left-radius:
+        6px;
     }
 
     .starter-block {
-      margin-top: auto;
-      padding: 0 24px 18px;
+      margin-top:
+        auto;
+
+      padding:
+        0 24px 18px;
     }
 
     .starter-title {
-      margin-bottom: 10px;
-      color: var(--text-soft);
-      font-size: 12px;
-      font-weight: 650;
+      margin-bottom:
+        10px;
+
+      color:
+        var(--text-soft);
+
+      font-size:
+        12px;
+
+      font-weight:
+        650;
     }
 
     .starter-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 8px;
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(2,1fr);
+
+      gap:
+        8px;
     }
 
     .starter-btn {
-      text-align: left;
+      text-align:
+        left;
 
-      padding: 12px 13px;
-      border-radius: 14px;
+      padding:
+        12px 13px;
 
-      border: 1px solid var(--border);
-      background: rgba(255,255,255,0.04);
+      border-radius:
+        14px;
 
-      color: var(--text-soft);
+      border:
+        1px solid var(--border);
 
-      font-size: 12px;
-      line-height: 1.35;
+      background:
+        rgba(255,255,255,0.04);
 
-      transition: 0.2s ease;
+      color:
+        var(--text-soft);
+
+      font-size:
+        12px;
+
+      line-height:
+        1.35;
+
+      transition:
+        0.2s ease;
     }
 
     .starter-btn:hover {
-      color: var(--text);
-      background: rgba(255,255,255,0.07);
-      transform: translateY(-1px);
+      color:
+        var(--text);
+
+      background:
+        rgba(255,255,255,0.07);
+
+      transform:
+        translateY(-1px);
     }
 
     /* =========================================================
-       Input
+       Composer
     ========================================================= */
 
     .composer {
-      padding: 16px;
-      border-top: 1px solid var(--border);
+      padding:
+        16px;
+
+      border-top:
+        1px solid var(--border);
     }
 
     .input-shell {
-      display: flex;
-      align-items: flex-end;
-      gap: 10px;
+      display:
+        flex;
 
-      padding: 10px 10px 10px 15px;
+      align-items:
+        flex-end;
 
-      background: rgba(0,0,0,0.14);
-      border: 1px solid var(--border);
-      border-radius: 20px;
+      gap:
+        10px;
+
+      padding:
+        10px 10px 10px 15px;
+
+      background:
+        rgba(0,0,0,0.14);
+
+      border:
+        1px solid var(--border);
+
+      border-radius:
+        20px;
     }
 
     textarea {
-      width: 100%;
-      min-height: 48px;
-      max-height: 160px;
+      width:
+        100%;
 
-      resize: none;
+      min-height:
+        48px;
 
-      border: none;
-      outline: none;
-      background: transparent;
+      max-height:
+        160px;
 
-      color: var(--text);
+      resize:
+        none;
 
-      line-height: 1.5;
-      font-size: 14px;
+      border:
+        none;
+
+      outline:
+        none;
+
+      background:
+        transparent;
+
+      color:
+        var(--text);
+
+      line-height:
+        1.5;
+
+      font-size:
+        14px;
     }
 
     textarea::placeholder {
-      color: var(--text-faint);
+      color:
+        var(--text-faint);
     }
 
     .send-btn {
-      flex: 0 0 auto;
+      flex:
+        0 0 auto;
 
-      height: 44px;
-      padding: 0 16px;
+      height:
+        44px;
 
-      border: none;
-      border-radius: 14px;
+      padding:
+        0 16px;
 
-      background: var(--primary);
-      color: #092217;
+      border:
+        none;
 
-      font-weight: 750;
-      font-size: 13px;
+      border-radius:
+        14px;
 
-      transition: 0.2s ease;
+      background:
+        var(--primary);
+
+      color:
+        #092217;
+
+      font-weight:
+        750;
+
+      font-size:
+        13px;
+
+      transition:
+        0.2s ease;
     }
 
-    body[data-theme="clay"] .send-btn,
-    body[data-theme="hard"] .send-btn {
-      color: #0d2230;
+    body[data-theme="clay"]
+    .send-btn,
+
+    body[data-theme="hard"]
+    .send-btn {
+      color:
+        #0d2230;
     }
 
     .send-btn:hover {
-      transform: translateY(-1px);
-      background: var(--primary-strong);
+      transform:
+        translateY(-1px);
+
+      background:
+        var(--primary-strong);
     }
 
     .composer-note {
-      margin-top: 9px;
-      text-align: center;
+      margin-top:
+        9px;
 
-      color: var(--text-faint);
-      font-size: 11px;
+      text-align:
+        center;
+
+      color:
+        var(--text-faint);
+
+      font-size:
+        11px;
     }
 
     /* =========================================================
@@ -498,86 +974,151 @@
     ========================================================= */
 
     .recommendation-panel {
-      padding: 22px;
-      align-self: start;
+      padding:
+        22px;
 
-      position: sticky;
-      top: 20px;
+      align-self:
+        start;
+
+      position:
+        sticky;
+
+      top:
+        20px;
     }
 
     .panel-kicker {
-      color: var(--accent);
-      font-size: 11px;
-      font-weight: 800;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
+      color:
+        var(--accent);
+
+      font-size:
+        11px;
+
+      font-weight:
+        800;
+
+      letter-spacing:
+        0.15em;
+
+      text-transform:
+        uppercase;
     }
 
     .recommendation-panel h2 {
-      margin-top: 8px;
+      margin-top:
+        8px;
 
-      font-size: 25px;
-      letter-spacing: -0.035em;
+      font-size:
+        25px;
+
+      letter-spacing:
+        -0.035em;
     }
 
     .recommendation-panel .intro {
-      margin-top: 8px;
-      color: var(--text-soft);
-      font-size: 13px;
-      line-height: 1.55;
+      margin-top:
+        8px;
+
+      color:
+        var(--text-soft);
+
+      font-size:
+        13px;
+
+      line-height:
+        1.55;
     }
 
     .confidence-card {
-      margin-top: 20px;
-      padding: 16px;
+      margin-top:
+        20px;
 
-      border: 1px solid var(--border);
-      border-radius: 18px;
+      padding:
+        16px;
 
-      background: rgba(0,0,0,0.11);
+      border:
+        1px solid var(--border);
+
+      border-radius:
+        18px;
+
+      background:
+        rgba(0,0,0,0.11);
     }
 
     .confidence-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      justify-content:
+        space-between;
     }
 
     .confidence-label {
-      font-size: 12px;
-      color: var(--text-soft);
+      font-size:
+        12px;
+
+      color:
+        var(--text-soft);
     }
 
     .confidence-value {
-      color: var(--accent);
-      font-size: 22px;
-      font-weight: 800;
+      color:
+        var(--accent);
+
+      font-size:
+        22px;
+
+      font-weight:
+        800;
     }
 
     .confidence-track {
-      height: 6px;
-      margin-top: 11px;
+      height:
+        6px;
 
-      background: rgba(255,255,255,0.08);
-      border-radius: 999px;
-      overflow: hidden;
+      margin-top:
+        11px;
+
+      background:
+        rgba(255,255,255,0.08);
+
+      border-radius:
+        999px;
+
+      overflow:
+        hidden;
     }
 
     .confidence-fill {
-      width: 82%;
-      height: 100%;
+      width:
+        82%;
 
-      background: var(--accent);
-      border-radius: 999px;
+      height:
+        100%;
+
+      background:
+        var(--accent);
+
+      border-radius:
+        999px;
     }
 
     .setup-card {
-      margin-top: 14px;
+      margin-top:
+        14px;
 
-      padding: 16px;
+      padding:
+        16px;
 
-      border: 1px solid var(--border);
-      border-radius: 18px;
+      border:
+        1px solid var(--border);
+
+      border-radius:
+        18px;
 
       background:
         linear-gradient(
@@ -588,139 +1129,227 @@
     }
 
     .setup-label {
-      color: var(--text-faint);
+      color:
+        var(--text-faint);
 
-      font-size: 10px;
-      font-weight: 800;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
+      font-size:
+        10px;
+
+      font-weight:
+        800;
+
+      letter-spacing:
+        0.12em;
+
+      text-transform:
+        uppercase;
     }
 
     .setup-value {
-      margin-top: 4px;
+      margin-top:
+        4px;
 
-      font-size: 16px;
-      font-weight: 720;
-      letter-spacing: -0.02em;
+      font-size:
+        16px;
+
+      font-weight:
+        720;
+
+      letter-spacing:
+        -0.02em;
     }
 
     .setup-sub {
-      margin-top: 3px;
+      margin-top:
+        3px;
 
-      color: var(--text-soft);
-      font-size: 12px;
+      color:
+        var(--text-soft);
+
+      font-size:
+        12px;
     }
 
     .setup-divider {
-      height: 1px;
+      height:
+        1px;
 
-      margin: 14px 0;
+      margin:
+        14px 0;
 
-      background: var(--border);
+      background:
+        var(--border);
     }
 
     .metric-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 8px;
+      display:
+        grid;
 
-      margin-top: 14px;
+      grid-template-columns:
+        repeat(3,1fr);
+
+      gap:
+        8px;
+
+      margin-top:
+        14px;
     }
 
     .metric {
-      padding: 12px 8px;
-      text-align: center;
+      padding:
+        12px 8px;
 
-      border-radius: 14px;
+      text-align:
+        center;
 
-      background: rgba(255,255,255,0.045);
-      border: 1px solid var(--border);
+      border-radius:
+        14px;
+
+      background:
+        rgba(255,255,255,0.045);
+
+      border:
+        1px solid var(--border);
     }
 
     .metric strong {
-      display: block;
+      display:
+        block;
 
-      font-size: 15px;
+      font-size:
+        15px;
     }
 
     .metric span {
-      display: block;
+      display:
+        block;
 
-      margin-top: 4px;
+      margin-top:
+        4px;
 
-      color: var(--text-faint);
-      font-size: 10px;
+      color:
+        var(--text-faint);
+
+      font-size:
+        10px;
     }
 
     .why-card,
     .alternative-card {
-      margin-top: 14px;
-      padding: 16px;
+      margin-top:
+        14px;
 
-      border: 1px solid var(--border);
-      border-radius: 18px;
+      padding:
+        16px;
 
-      background: rgba(255,255,255,0.035);
+      border:
+        1px solid var(--border);
+
+      border-radius:
+        18px;
+
+      background:
+        rgba(255,255,255,0.035);
     }
 
     .why-card h3,
     .alternative-card h3 {
-      font-size: 13px;
+      font-size:
+        13px;
     }
 
     .why-list {
-      margin-top: 10px;
+      margin-top:
+        10px;
 
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
+      display:
+        flex;
+
+      flex-direction:
+        column;
+
+      gap:
+        8px;
     }
 
     .why-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 8px;
+      display:
+        flex;
 
-      color: var(--text-soft);
+      align-items:
+        flex-start;
 
-      font-size: 12px;
-      line-height: 1.4;
+      gap:
+        8px;
+
+      color:
+        var(--text-soft);
+
+      font-size:
+        12px;
+
+      line-height:
+        1.4;
     }
 
     .why-dot {
-      width: 7px;
-      height: 7px;
+      width:
+        7px;
 
-      margin-top: 5px;
+      height:
+        7px;
 
-      flex: 0 0 auto;
+      margin-top:
+        5px;
 
-      border-radius: 50%;
+      flex:
+        0 0 auto;
 
-      background: var(--primary);
+      border-radius:
+        50%;
+
+      background:
+        var(--primary);
     }
 
     .alternative-row {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 7px;
+      display:
+        grid;
 
-      margin-top: 10px;
+      grid-template-columns:
+        repeat(3,1fr);
+
+      gap:
+        7px;
+
+      margin-top:
+        10px;
     }
 
     .alt-chip {
-      padding: 9px 7px;
+      padding:
+        9px 7px;
 
-      border: 1px solid var(--border);
-      border-radius: 12px;
+      border:
+        1px solid var(--border);
 
-      background: rgba(255,255,255,0.04);
+      border-radius:
+        12px;
 
-      color: var(--text-soft);
+      background:
+        rgba(255,255,255,0.04);
 
-      text-align: center;
-      font-size: 10px;
-      font-weight: 650;
+      color:
+        var(--text-soft);
+
+      text-align:
+        center;
+
+      font-size:
+        10px;
+
+      font-weight:
+        650;
     }
 
     /* =========================================================
@@ -728,124 +1357,307 @@
     ========================================================= */
 
     .footer {
-      padding: 8px 0 32px;
+      padding:
+        8px 0 32px;
 
-      text-align: center;
-      color: var(--text-faint);
-      font-size: 11px;
+      text-align:
+        center;
+
+      color:
+        var(--text-faint);
+
+      font-size:
+        11px;
     }
 
     /* =========================================================
        Responsive
     ========================================================= */
 
-    @media (max-width: 900px) {
+    @media (
+      max-width: 900px
+    ) {
       .workspace {
-        grid-template-columns: 1fr;
+        grid-template-columns:
+          1fr;
       }
 
       .recommendation-panel {
-        position: static;
+        position:
+          static;
       }
     }
 
-    @media (max-width: 640px) {
-      .page-shell {
-        width: min(100% - 20px, 1180px);
-      }
-
+    @media (
+      max-width: 700px
+    ) {
       .topbar {
-        padding-top: 13px;
+        align-items:
+          flex-start;
       }
 
-      .brand-mini span:last-child {
-        display: none;
+      .top-controls {
+        gap:
+          7px;
       }
 
       .theme-btn {
-        padding: 7px 10px;
-        font-size: 11px;
+        padding:
+          7px 10px;
+
+        font-size:
+          11px;
+      }
+
+      .language-trigger {
+        min-height:
+          37px;
+
+        padding:
+          7px 10px;
+
+        font-size:
+          11px;
+      }
+    }
+
+    @media (
+      max-width: 640px
+    ) {
+      .page-shell {
+        width:
+          min(
+            100% - 20px,
+            1180px
+          );
+      }
+
+      .topbar {
+        padding-top:
+          13px;
+      }
+
+      .brand-mini span:last-child {
+        display:
+          none;
       }
 
       .hero {
-        padding: 40px 0 28px;
+        padding:
+          40px 0 28px;
       }
 
       .hero h1 {
-        font-size: 46px;
+        font-size:
+          46px;
       }
 
       .logo-wrap img {
-        width: 72px;
-        height: 72px;
+        width:
+          72px;
+
+        height:
+          72px;
       }
 
       .workspace {
-        gap: 14px;
+        gap:
+          14px;
       }
 
       .panel {
-        border-radius: 22px;
+        border-radius:
+          22px;
       }
 
       .chat-panel {
-        min-height: 580px;
+        min-height:
+          580px;
       }
 
       .starter-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns:
+          1fr;
       }
 
       .bubble {
-        max-width: 92%;
+        max-width:
+          92%;
       }
 
       .metric-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns:
+          repeat(3,1fr);
+      }
+    }
+
+    @media (
+      max-width: 500px
+    ) {
+      .topbar {
+        flex-direction:
+          column;
+      }
+
+      .top-controls {
+        width:
+          100%;
+
+        justify-content:
+          space-between;
+      }
+
+      .language-menu {
+        margin-left:
+          auto;
       }
     }
   </style>
 </head>
+
 
 <body data-theme="grass">
 
   <div class="page-shell">
 
     <!-- ======================================================
-         Top Bar
+         Header
     ======================================================= -->
 
     <header class="topbar">
 
       <div class="brand-mini">
+
         <div class="brand-dot"></div>
-        <span>EveryCourtAI</span>
+
+        <span>
+          EveryCourtAI
+        </span>
+
       </div>
 
-      <div
-        class="theme-switcher"
-        aria-label="Court Theme"
-      >
-        <button
-          class="theme-btn active"
-          data-theme-button="grass"
-        >
-          Grass
-        </button>
 
-        <button
-          class="theme-btn"
-          data-theme-button="clay"
-        >
-          Clay
-        </button>
+      <div class="top-controls">
 
-        <button
-          class="theme-btn"
-          data-theme-button="hard"
+        <!-- ==================================================
+             Court Theme
+        =================================================== -->
+
+        <div
+          class="theme-switcher"
+          aria-label="Court Theme"
         >
-          Hard
-        </button>
+
+          <button
+            class="theme-btn active"
+            data-theme-button="grass"
+            data-i18n="theme.grass"
+          >
+            Grass
+          </button>
+
+          <button
+            class="theme-btn"
+            data-theme-button="clay"
+            data-i18n="theme.clay"
+          >
+            Clay
+          </button>
+
+          <button
+            class="theme-btn"
+            data-theme-button="hard"
+            data-i18n="theme.hard"
+          >
+            Hard
+          </button>
+
+        </div>
+
+
+        <!-- ==================================================
+             Language
+        =================================================== -->
+
+        <div
+          class="language-menu"
+          id="languageMenu"
+        >
+
+          <button
+            class="language-trigger"
+            id="languageTrigger"
+            type="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+
+            <span class="language-globe">
+              🌐
+            </span>
+
+            <span data-current-language>
+              English
+            </span>
+
+            <span class="language-chevron">
+              ▼
+            </span>
+
+          </button>
+
+
+          <div
+            class="language-dropdown"
+            id="languageDropdown"
+          >
+
+            <button
+              class="language-option"
+              data-language-button="en"
+            >
+              English
+            </button>
+
+            <button
+              class="language-option"
+              data-language-button="zh"
+            >
+              简体中文
+            </button>
+
+            <button
+              class="language-option"
+              data-language-button="zh-tc"
+            >
+              繁體中文
+            </button>
+
+            <button
+              class="language-option"
+              data-language-button="ja"
+            >
+              日本語
+            </button>
+
+            <button
+              class="language-option"
+              data-language-button="fr"
+            >
+              Français
+            </button>
+
+            <button
+              class="language-option"
+              data-language-button="es"
+            >
+              Español
+            </button>
+
+          </div>
+
+        </div>
+
       </div>
 
     </header>
@@ -858,22 +1670,43 @@
     <section class="hero">
 
       <div class="logo-wrap">
+
         <img
           src="assets/logo/ET-LOGO.png"
           alt="EveryCourtAI Logo"
         />
+
       </div>
 
-      <h1>EveryCourtAI</h1>
 
-      <div class="subtitle">
+      <h1
+        data-i18n="app.name"
+      >
+        EveryCourtAI
+      </h1>
+
+
+      <div
+        class="subtitle"
+        data-i18n="app.tagline"
+      >
         AI-powered Tennis Equipment Intelligence
       </div>
 
+
       <div class="eyebrow">
-        <span>●</span>
-        Tennis setup analysis powered by player profile,
-        equipment data and inference logic.
+
+        <span>
+          ●
+        </span>
+
+        <span
+          data-i18n="hero.badge"
+        >
+          Tennis setup analysis powered by player profile,
+          equipment data and inference logic.
+        </span>
+
       </div>
 
     </section>
@@ -886,20 +1719,26 @@
     <main class="workspace">
 
       <!-- ====================================================
-           Chat
+           Chat Panel
       ===================================================== -->
 
       <section class="panel chat-panel">
 
         <div class="chat-head">
-          <h2>
+
+          <h2
+            data-i18n="chat.title"
+          >
             What would you like to improve?
           </h2>
 
-          <p>
+          <p
+            data-i18n="chat.subtitle"
+          >
             Tell me about your racquet, strings,
             game style or what feels wrong.
           </p>
+
         </div>
 
 
@@ -908,13 +1747,22 @@
           id="messages"
         >
 
-          <div class="message ai">
+          <div
+            class="message ai"
+            id="welcomeMessage"
+          >
 
-            <div class="message-label">
+            <div
+              class="message-label"
+              data-i18n="system.assistant"
+            >
               EveryCourtAI
             </div>
 
-            <div class="bubble">
+            <div
+              class="bubble"
+              data-i18n="chat.welcome"
+            >
               Tell me what you are currently using and what
               you want to improve. You can write naturally —
               for example: “I use a Pure Drive and want more
@@ -926,38 +1774,53 @@
         </div>
 
 
+        <!-- ==================================================
+             Starter Prompts
+        =================================================== -->
+
         <div class="starter-block">
 
-          <div class="starter-title">
+          <div
+            class="starter-title"
+            data-i18n="chat.examples"
+          >
             Try an example
           </div>
+
 
           <div class="starter-grid">
 
             <button
               class="starter-btn"
-              data-prompt="I use a Wilson RF 01 Pro Classic and want more comfort without losing control."
+              data-prompt-key="rf01"
+              data-i18n="examples.rf01"
             >
               RF 01 Pro — more comfort
             </button>
 
+
             <button
               class="starter-btn"
-              data-prompt="I use a Babolat Pure Drive and want more directional control with a slightly lower launch."
+              data-prompt-key="pure_drive"
+              data-i18n="examples.pure_drive"
             >
               Pure Drive — more control
             </button>
 
+
             <button
               class="starter-btn"
-              data-prompt="My elbow gets uncomfortable after long sessions. What setup should I consider?"
+              data-prompt-key="elbow"
+              data-i18n="examples.elbow"
             >
               Elbow comfort setup
             </button>
 
+
             <button
               class="starter-btn"
-              data-prompt="I want more spin but I still want a predictable launch angle."
+              data-prompt-key="spin"
+              data-i18n="examples.spin"
             >
               More spin, controlled launch
             </button>
@@ -967,26 +1830,37 @@
         </div>
 
 
+        <!-- ==================================================
+             Composer
+        =================================================== -->
+
         <div class="composer">
 
           <div class="input-shell">
 
             <textarea
               id="promptInput"
+              data-i18n-placeholder="chat.placeholder"
               placeholder="Describe your setup or ask a tennis equipment question..."
               rows="1"
             ></textarea>
 
+
             <button
               class="send-btn"
               id="sendButton"
+              data-i18n="chat.button"
             >
               Analyze
             </button>
 
           </div>
 
-          <div class="composer-note">
+
+          <div
+            class="composer-note"
+            data-i18n="chat.note"
+          >
             UI prototype — real EveryCourtAI Engine connection comes next.
           </div>
 
@@ -996,30 +1870,47 @@
 
 
       <!-- ====================================================
-           Recommendation
+           Recommendation Panel
       ===================================================== -->
 
       <aside class="panel recommendation-panel">
 
-        <div class="panel-kicker">
+        <div
+          class="panel-kicker"
+          data-i18n="recommendation.title_small"
+        >
           Recommended Setup
         </div>
 
-        <h2>
+
+        <h2
+          data-i18n="recommendation.title"
+        >
           Best Overall Match
         </h2>
 
-        <p class="intro">
+
+        <p
+          class="intro"
+          data-i18n="recommendation.description"
+        >
           This card will later be populated directly by
           the EveryCourtAI recommendation engine.
         </p>
 
 
+        <!-- ==================================================
+             Confidence
+        =================================================== -->
+
         <div class="confidence-card">
 
           <div class="confidence-row">
 
-            <span class="confidence-label">
+            <span
+              class="confidence-label"
+              data-i18n="confidence.title"
+            >
               Confidence
             </span>
 
@@ -1032,27 +1923,43 @@
 
           </div>
 
+
           <div class="confidence-track">
+
             <div
               class="confidence-fill"
               id="confidenceFill"
             ></div>
+
           </div>
 
         </div>
 
 
+        <!-- ==================================================
+             Setup
+        =================================================== -->
+
         <div class="setup-card">
 
-          <div class="setup-label">
+          <div
+            class="setup-label"
+            data-i18n="setup.racquet"
+          >
             Racquet
           </div>
 
-          <div class="setup-value">
+          <div
+            class="setup-value"
+            id="recommendedRacquet"
+          >
             Wilson RF 01 Pro Classic
           </div>
 
-          <div class="setup-sub">
+          <div
+            class="setup-sub"
+            data-i18n="setup.current_frame"
+          >
             Keep current frame
           </div>
 
@@ -1060,15 +1967,24 @@
           <div class="setup-divider"></div>
 
 
-          <div class="setup-label">
+          <div
+            class="setup-label"
+            data-i18n="setup.string"
+          >
             String
           </div>
 
-          <div class="setup-value">
+          <div
+            class="setup-value"
+            id="recommendedString"
+          >
             Wilson Natural Gut 17
           </div>
 
-          <div class="setup-sub">
+          <div
+            class="setup-sub"
+            id="recommendedStringSetup"
+          >
             1.25 mm · Full Bed
           </div>
 
@@ -1076,34 +1992,89 @@
           <div class="setup-divider"></div>
 
 
-          <div class="setup-label">
+          <div
+            class="setup-label"
+            data-i18n="setup.tension"
+          >
             Tension
           </div>
 
-          <div class="setup-value">
+          <div
+            class="setup-value"
+            id="recommendedTension"
+          >
             53 lbs
           </div>
 
           <div class="setup-sub">
-            Working range: 51–55 lbs
+
+            <span
+              data-i18n="setup.working_range"
+            >
+              Working range
+            </span>
+
+            <span>
+              :
+            </span>
+
+            <span
+              id="recommendedTensionRange"
+            >
+              51–55 lbs
+            </span>
+
           </div>
 
+
+          <!-- ================================================
+               Metrics
+          ================================================= -->
 
           <div class="metric-grid">
 
             <div class="metric">
-              <strong>↑</strong>
-              <span>Comfort</span>
+
+              <strong>
+                ↑
+              </strong>
+
+              <span
+                data-i18n="metrics.comfort"
+              >
+                Comfort
+              </span>
+
             </div>
 
-            <div class="metric">
-              <strong>◎</strong>
-              <span>Control</span>
-            </div>
 
             <div class="metric">
-              <strong>○</strong>
-              <span>Power</span>
+
+              <strong>
+                ◎
+              </strong>
+
+              <span
+                data-i18n="metrics.control"
+              >
+                Control
+              </span>
+
+            </div>
+
+
+            <div class="metric">
+
+              <strong>
+                ○
+              </strong>
+
+              <span
+                data-i18n="metrics.power"
+              >
+                Power
+              </span>
+
             </div>
 
           </div>
@@ -1111,33 +2082,57 @@
         </div>
 
 
+        <!-- ==================================================
+             Why
+        =================================================== -->
+
         <div class="why-card">
 
-          <h3>
+          <h3
+            data-i18n="why.title"
+          >
             Why this setup
           </h3>
+
 
           <div class="why-list">
 
             <div class="why-item">
+
               <span class="why-dot"></span>
-              <span>
+
+              <span
+                data-i18n="why.item1"
+              >
                 Improves comfort without forcing an immediate racquet change.
               </span>
+
             </div>
 
+
             <div class="why-item">
+
               <span class="why-dot"></span>
-              <span>
+
+              <span
+                data-i18n="why.item2"
+              >
                 Preserves a connected response for an aggressive baseline game.
               </span>
+
             </div>
 
+
             <div class="why-item">
+
               <span class="why-dot"></span>
-              <span>
+
+              <span
+                data-i18n="why.item3"
+              >
                 Uses a moderate tension range rather than an excessively firm stringbed.
               </span>
+
             </div>
 
           </div>
@@ -1145,23 +2140,39 @@
         </div>
 
 
+        <!-- ==================================================
+             Alternatives
+        =================================================== -->
+
         <div class="alternative-card">
 
-          <h3>
+          <h3
+            data-i18n="alternatives.title"
+          >
             Alternatives
           </h3>
 
+
           <div class="alternative-row">
 
-            <div class="alt-chip">
+            <div
+              class="alt-chip"
+              data-i18n="alternatives.comfort"
+            >
               Comfort
             </div>
 
-            <div class="alt-chip">
+            <div
+              class="alt-chip"
+              data-i18n="alternatives.performance"
+            >
               Performance
             </div>
 
-            <div class="alt-chip">
+            <div
+              class="alt-chip"
+              data-i18n="alternatives.minimal"
+            >
               Minimal Change
             </div>
 
@@ -1174,100 +2185,35 @@
     </main>
 
 
-    <footer class="footer">
+    <!-- ======================================================
+         Footer
+    ======================================================= -->
+
+    <footer
+      class="footer"
+      data-i18n="app.slogan"
+    >
       Every Court Has a Story.
     </footer>
 
   </div>
 
 
-  <script>
-    /**
-     * ========================================================
-     * Court Theme Switcher
-     * ========================================================
-     */
+  <!-- ========================================================
+       UI-only JavaScript
+       Theme / Language logic already moved to Managers
+  ========================================================= -->
 
-    const themeButtons =
-      document.querySelectorAll(
-        "[data-theme-button]"
-      );
+  <script type="module">
 
-    themeButtons.forEach(
-      button => {
-
-        button.addEventListener(
-          "click",
-          () => {
-
-            const theme =
-              button.dataset.themeButton;
-
-            document.body.dataset.theme =
-              theme;
-
-            themeButtons.forEach(
-              item =>
-                item.classList.remove(
-                  "active"
-                )
-            );
-
-            button.classList.add(
-              "active"
-            );
-
-            localStorage.setItem(
-              "everycourt-theme",
-              theme
-            );
-          }
-        );
-      }
-    );
+    import {
+      t
+    } from "./scripts/language_manager.js";
 
 
     /**
      * ========================================================
-     * Restore Theme
-     * ========================================================
-     */
-
-    const savedTheme =
-      localStorage.getItem(
-        "everycourt-theme"
-      );
-
-    if (
-      [
-        "grass",
-        "clay",
-        "hard"
-      ].includes(
-        savedTheme
-      )
-    ) {
-
-      document.body.dataset.theme =
-        savedTheme;
-
-      themeButtons.forEach(
-        button => {
-
-          button.classList.toggle(
-            "active",
-            button.dataset.themeButton ===
-              savedTheme
-          );
-
-        }
-      );
-    }
-
-
-    /**
-     * ========================================================
-     * Chat Prototype
+     * Elements
      * ========================================================
      */
 
@@ -1286,12 +2232,95 @@
         "sendButton"
       );
 
+    const languageMenu =
+      document.getElementById(
+        "languageMenu"
+      );
+
+    const languageTrigger =
+      document.getElementById(
+        "languageTrigger"
+      );
+
+
+    /**
+     * ========================================================
+     * Language Dropdown
+     * ========================================================
+     */
+
+    languageTrigger.addEventListener(
+      "click",
+      event => {
+
+        event.stopPropagation();
+
+        const isOpen =
+          languageMenu.classList.toggle(
+            "open"
+          );
+
+        languageTrigger.setAttribute(
+          "aria-expanded",
+          isOpen
+            ? "true"
+            : "false"
+        );
+      }
+    );
+
+
+    document.addEventListener(
+      "click",
+      () => {
+
+        languageMenu.classList.remove(
+          "open"
+        );
+
+        languageTrigger.setAttribute(
+          "aria-expanded",
+          "false"
+        );
+      }
+    );
+
+
+    languageMenu
+      .querySelectorAll(
+        "[data-language-button]"
+      )
+      .forEach(
+        button => {
+
+          button.addEventListener(
+            "click",
+            () => {
+
+              languageMenu.classList.remove(
+                "open"
+              );
+
+              languageTrigger.setAttribute(
+                "aria-expanded",
+                "false"
+              );
+            }
+          );
+        }
+      );
+
+
+    /**
+     * ========================================================
+     * Chat Message Helper
+     * ========================================================
+     */
 
     function addMessage(
       role,
       text
     ) {
-
       const wrapper =
         document.createElement(
           "div"
@@ -1309,10 +2338,17 @@
       label.className =
         "message-label";
 
+
       label.textContent =
         role === "user"
-          ? "You"
-          : "EveryCourtAI";
+          ? t(
+              "system.you",
+              "You"
+            )
+          : t(
+              "system.assistant",
+              "EveryCourtAI"
+            );
 
 
       const bubble =
@@ -1345,10 +2381,16 @@
     }
 
 
-    function runPrototypeAnalysis() {
+    /**
+     * ========================================================
+     * Prototype Analysis
+     * ========================================================
+     */
 
+    function runPrototypeAnalysis() {
       const prompt =
         promptInput.value.trim();
+
 
       if (!prompt) {
         return;
@@ -1361,7 +2403,22 @@
       );
 
 
-      promptInput.value = "";
+      promptInput.value =
+        "";
+
+      promptInput.style.height =
+        "auto";
+
+
+      /**
+       * Loading message
+       */
+
+      const thinking =
+        t(
+          "system.thinking",
+          "Analyzing your equipment..."
+        );
 
 
       setTimeout(
@@ -1369,11 +2426,11 @@
 
           addMessage(
             "ai",
-            "I’ve received your setup. In the next integration step, this message will be sent to the EveryCourtAI Engine for player profiling, matching, conflict checks, ranking, recommendation and confidence scoring."
+            thinking
           );
 
         },
-        500
+        350
       );
     }
 
@@ -1392,7 +2449,6 @@
           event.key === "Enter" &&
           !event.shiftKey
         ) {
-
           event.preventDefault();
 
           runPrototypeAnalysis();
@@ -1404,12 +2460,15 @@
     /**
      * ========================================================
      * Starter Prompts
+     *
+     * 目前按钮显示文本直接作为输入内容。
+     * 后续可增加独立 prompt translation。
      * ========================================================
      */
 
     document
       .querySelectorAll(
-        "[data-prompt]"
+        "[data-prompt-key]"
       )
       .forEach(
         button => {
@@ -1419,9 +2478,16 @@
             () => {
 
               promptInput.value =
-                button.dataset.prompt;
+                button.textContent
+                  .trim();
 
               promptInput.focus();
+
+              promptInput.dispatchEvent(
+                new Event(
+                  "input"
+                )
+              );
             }
           );
         }
@@ -1430,7 +2496,7 @@
 
     /**
      * ========================================================
-     * Auto Resize Textarea
+     * Auto Resize
      * ========================================================
      */
 
@@ -1448,7 +2514,63 @@
           ) + "px";
       }
     );
+
+
+    /**
+     * ========================================================
+     * Language Change Event
+     *
+     * 动态聊天消息以后可根据需要重新渲染。
+     * ========================================================
+     */
+
+    window.addEventListener(
+      "everycourt:language-change",
+      event => {
+
+        console.log(
+          "EveryCourtAI language:",
+          event.detail.language
+        );
+
+      }
+    );
+
+
+    /**
+     * ========================================================
+     * Theme Change Event
+     * ========================================================
+     */
+
+    window.addEventListener(
+      "everycourt:theme-change",
+      event => {
+
+        console.log(
+          "EveryCourtAI theme:",
+          event.detail.theme
+        );
+
+      }
+    );
+
   </script>
+
+
+  <!-- ========================================================
+       Managers
+  ========================================================= -->
+
+  <script
+    type="module"
+    src="scripts/theme_manager.js"
+  ></script>
+
+  <script
+    type="module"
+    src="scripts/language_manager.js"
+  ></script>
 
 </body>
 </html>
