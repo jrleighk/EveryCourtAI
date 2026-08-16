@@ -1,0 +1,102 @@
+{
+  "app": {
+    "name": "EveryCourtAI",
+    "tagline": "AI 网球装备智能分析平台",
+    "slogan": "Every Court Has a Story."
+  },
+
+  "hero": {
+    "badge": "基于球员画像、装备数据库与 AI 推理引擎，为你提供专业网球装备分析。"
+  },
+
+  "theme": {
+    "grass": "草地",
+    "clay": "红土",
+    "hard": "硬地"
+  },
+
+  "chat": {
+    "title": "你希望改善什么？",
+    "subtitle": "告诉 EveryCourtAI 你目前使用的球拍、球线、打法，或遇到的问题。",
+
+    "welcome": "请告诉我你目前使用的球拍、球线，以及希望改善的地方。例如：『我正在使用 Babolat Pure Drive，希望提高控制，同时不要失去太多力量。』",
+
+    "placeholder": "请输入你的装备或提出任何网球装备相关的问题……",
+
+    "button": "开始分析",
+
+    "note": "目前为 UI 原型，下一阶段将连接 EveryCourtAI AI 引擎。",
+
+    "examples": "示例问题"
+  },
+
+  "examples": {
+    "rf01": "RF 01 Pro —— 提高舒适度",
+    "pure_drive": "Pure Drive —— 提高控制",
+    "elbow": "手肘舒适度推荐",
+    "spin": "提高旋转，同时保持稳定弹道"
+  },
+
+  "recommendation": {
+    "title_small": "推荐配置",
+    "title": "最佳综合方案",
+
+    "description": "未来这里将由 EveryCourtAI 推荐引擎自动生成分析结果。"
+  },
+
+  "confidence": {
+    "title": "推荐信心值"
+  },
+
+  "setup": {
+    "racquet": "球拍",
+    "string": "球线",
+    "tension": "磅数",
+
+    "current_frame": "建议继续使用当前球拍",
+
+    "working_range": "建议范围"
+  },
+
+  "metrics": {
+    "comfort": "舒适度",
+    "control": "控制",
+    "power": "力量"
+  },
+
+  "why": {
+    "title": "推荐原因",
+
+    "item1": "在不更换球拍的情况下，提高整体舒适度。",
+
+    "item2": "保持积极底线打法所需要的击球反馈。",
+
+    "item3": "采用适中的穿线磅数，避免过硬的线床。"
+  },
+
+  "alternatives": {
+    "title": "其它方案",
+
+    "comfort": "舒适型",
+
+    "performance": "竞技型",
+
+    "minimal": "最小改动"
+  },
+
+  "language": {
+    "english": "English",
+    "chinese": "简体中文"
+  },
+
+  "system": {
+    "you": "你",
+    "assistant": "EveryCourtAI",
+
+    "thinking": "正在分析你的装备……",
+
+    "loading": "正在加载……",
+
+    "error": "发生错误，请稍后重试。"
+  }
+}
