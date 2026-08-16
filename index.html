@@ -137,6 +137,11 @@
       cursor: pointer;
     }
 
+    button:disabled,
+    textarea:disabled {
+      cursor: default;
+    }
+
     .page-shell {
       width:
         min(
@@ -629,7 +634,7 @@
     }
 
     /* =========================================================
-       Chat Panel
+       Chat
     ========================================================= */
 
     .chat-panel {
@@ -760,6 +765,40 @@
       border-bottom-left-radius:
         6px;
     }
+
+    .thinking-bubble {
+      position:
+        relative;
+
+      opacity:
+        0.82;
+    }
+
+    .thinking-bubble::after {
+      content:
+        " •••";
+
+      animation:
+        thinkingPulse 1.2s infinite;
+    }
+
+    @keyframes thinkingPulse {
+      0% {
+        opacity: 0.3;
+      }
+
+      50% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0.3;
+      }
+    }
+
+    /* =========================================================
+       Starter Prompts
+    ========================================================= */
 
     .starter-block {
       margin-top:
@@ -947,7 +986,7 @@
         #0d2230;
     }
 
-    .send-btn:hover {
+    .send-btn:hover:not(:disabled) {
       transform:
         translateY(-1px);
 
@@ -970,7 +1009,7 @@
     }
 
     /* =========================================================
-       Recommendation Panel
+       Recommendation
     ========================================================= */
 
     .recommendation-panel {
@@ -1105,6 +1144,9 @@
 
       border-radius:
         999px;
+
+      transition:
+        width 0.35s ease;
     }
 
     .setup-card {
@@ -1484,11 +1526,6 @@
         max-width:
           92%;
       }
-
-      .metric-grid {
-        grid-template-columns:
-          repeat(3,1fr);
-      }
     }
 
     @media (
@@ -1539,9 +1576,7 @@
 
       <div class="top-controls">
 
-        <!-- ==================================================
-             Court Theme
-        =================================================== -->
+        <!-- Court Theme -->
 
         <div
           class="theme-switcher"
@@ -1575,9 +1610,7 @@
         </div>
 
 
-        <!-- ==================================================
-             Language
-        =================================================== -->
+        <!-- Language -->
 
         <div
           class="language-menu"
@@ -1718,9 +1751,7 @@
 
     <main class="workspace">
 
-      <!-- ====================================================
-           Chat Panel
-      ===================================================== -->
+      <!-- Chat -->
 
       <section class="panel chat-panel">
 
@@ -1774,9 +1805,7 @@
         </div>
 
 
-        <!-- ==================================================
-             Starter Prompts
-        =================================================== -->
+        <!-- Starter Prompts -->
 
         <div class="starter-block">
 
@@ -1830,9 +1859,7 @@
         </div>
 
 
-        <!-- ==================================================
-             Composer
-        =================================================== -->
+        <!-- Composer -->
 
         <div class="composer">
 
@@ -1869,9 +1896,7 @@
       </section>
 
 
-      <!-- ====================================================
-           Recommendation Panel
-      ===================================================== -->
+      <!-- Recommendation -->
 
       <aside class="panel recommendation-panel">
 
@@ -1899,9 +1924,7 @@
         </p>
 
 
-        <!-- ==================================================
-             Confidence
-        =================================================== -->
+        <!-- Confidence -->
 
         <div class="confidence-card">
 
@@ -1936,9 +1959,7 @@
         </div>
 
 
-        <!-- ==================================================
-             Setup
-        =================================================== -->
+        <!-- Setup -->
 
         <div class="setup-card">
 
@@ -2027,10 +2048,6 @@
           </div>
 
 
-          <!-- ================================================
-               Metrics
-          ================================================= -->
-
           <div class="metric-grid">
 
             <div class="metric">
@@ -2082,9 +2099,7 @@
         </div>
 
 
-        <!-- ==================================================
-             Why
-        =================================================== -->
+        <!-- Why -->
 
         <div class="why-card">
 
@@ -2140,9 +2155,7 @@
         </div>
 
 
-        <!-- ==================================================
-             Alternatives
-        =================================================== -->
+        <!-- Alternatives -->
 
         <div class="alternative-card">
 
@@ -2185,10 +2198,6 @@
     </main>
 
 
-    <!-- ======================================================
-         Footer
-    ======================================================= -->
-
     <footer
       class="footer"
       data-i18n="app.slogan"
@@ -2200,361 +2209,113 @@
 
 
   <!-- ========================================================
-       UI-only JavaScript
-       Theme / Language logic already moved to Managers
+       Small UI-only logic:
+       Language dropdown open / close
   ========================================================= -->
 
-  <script type="module">
-
-    import {
-      t
-    } from "./scripts/language_manager.js";
-
-
-    /**
-     * ========================================================
-     * Elements
-     * ========================================================
-     */
-
-    const messages =
-      document.getElementById(
-        "messages"
-      );
-
-    const promptInput =
-      document.getElementById(
-        "promptInput"
-      );
-
-    const sendButton =
-      document.getElementById(
-        "sendButton"
-      );
-
-    const languageMenu =
-      document.getElementById(
-        "languageMenu"
-      );
-
-    const languageTrigger =
-      document.getElementById(
-        "languageTrigger"
-      );
-
-
-    /**
-     * ========================================================
-     * Language Dropdown
-     * ========================================================
-     */
-
-    languageTrigger.addEventListener(
-      "click",
-      event => {
-
-        event.stopPropagation();
-
-        const isOpen =
-          languageMenu.classList.toggle(
-            "open"
-          );
-
-        languageTrigger.setAttribute(
-          "aria-expanded",
-          isOpen
-            ? "true"
-            : "false"
-        );
-      }
-    );
-
-
+  <script>
     document.addEventListener(
-      "click",
+      "DOMContentLoaded",
       () => {
 
-        languageMenu.classList.remove(
-          "open"
-        );
-
-        languageTrigger.setAttribute(
-          "aria-expanded",
-          "false"
-        );
-      }
-    );
-
-
-    languageMenu
-      .querySelectorAll(
-        "[data-language-button]"
-      )
-      .forEach(
-        button => {
-
-          button.addEventListener(
-            "click",
-            () => {
-
-              languageMenu.classList.remove(
-                "open"
-              );
-
-              languageTrigger.setAttribute(
-                "aria-expanded",
-                "false"
-              );
-            }
-          );
-        }
-      );
-
-
-    /**
-     * ========================================================
-     * Chat Message Helper
-     * ========================================================
-     */
-
-    function addMessage(
-      role,
-      text
-    ) {
-      const wrapper =
-        document.createElement(
-          "div"
-        );
-
-      wrapper.className =
-        `message ${role}`;
-
-
-      const label =
-        document.createElement(
-          "div"
-        );
-
-      label.className =
-        "message-label";
-
-
-      label.textContent =
-        role === "user"
-          ? t(
-              "system.you",
-              "You"
-            )
-          : t(
-              "system.assistant",
-              "EveryCourtAI"
-            );
-
-
-      const bubble =
-        document.createElement(
-          "div"
-        );
-
-      bubble.className =
-        "bubble";
-
-      bubble.textContent =
-        text;
-
-
-      wrapper.appendChild(
-        label
-      );
-
-      wrapper.appendChild(
-        bubble
-      );
-
-      messages.appendChild(
-        wrapper
-      );
-
-
-      messages.scrollTop =
-        messages.scrollHeight;
-    }
-
-
-    /**
-     * ========================================================
-     * Prototype Analysis
-     * ========================================================
-     */
-
-    function runPrototypeAnalysis() {
-      const prompt =
-        promptInput.value.trim();
-
-
-      if (!prompt) {
-        return;
-      }
-
-
-      addMessage(
-        "user",
-        prompt
-      );
-
-
-      promptInput.value =
-        "";
-
-      promptInput.style.height =
-        "auto";
-
-
-      /**
-       * Loading message
-       */
-
-      const thinking =
-        t(
-          "system.thinking",
-          "Analyzing your equipment..."
-        );
-
-
-      setTimeout(
-        () => {
-
-          addMessage(
-            "ai",
-            thinking
+        const languageMenu =
+          document.getElementById(
+            "languageMenu"
           );
 
-        },
-        350
-      );
-    }
+        const languageTrigger =
+          document.getElementById(
+            "languageTrigger"
+          );
 
-
-    sendButton.addEventListener(
-      "click",
-      runPrototypeAnalysis
-    );
-
-
-    promptInput.addEventListener(
-      "keydown",
-      event => {
 
         if (
-          event.key === "Enter" &&
-          !event.shiftKey
+          !languageMenu ||
+          !languageTrigger
         ) {
-          event.preventDefault();
-
-          runPrototypeAnalysis();
+          return;
         }
-      }
-    );
 
 
-    /**
-     * ========================================================
-     * Starter Prompts
-     *
-     * 目前按钮显示文本直接作为输入内容。
-     * 后续可增加独立 prompt translation。
-     * ========================================================
-     */
+        languageTrigger.addEventListener(
+          "click",
+          event => {
 
-    document
-      .querySelectorAll(
-        "[data-prompt-key]"
-      )
-      .forEach(
-        button => {
+            event.stopPropagation();
 
-          button.addEventListener(
-            "click",
-            () => {
+            const open =
+              languageMenu
+                .classList
+                .toggle(
+                  "open"
+                );
 
-              promptInput.value =
-                button.textContent
-                  .trim();
 
-              promptInput.focus();
+            languageTrigger.setAttribute(
+              "aria-expanded",
+              open
+                ? "true"
+                : "false"
+            );
+          }
+        );
 
-              promptInput.dispatchEvent(
-                new Event(
-                  "input"
-                )
+
+        languageMenu
+          .querySelectorAll(
+            "[data-language-button]"
+          )
+          .forEach(
+            button => {
+
+              button.addEventListener(
+                "click",
+                () => {
+
+                  languageMenu
+                    .classList
+                    .remove(
+                      "open"
+                    );
+
+                  languageTrigger
+                    .setAttribute(
+                      "aria-expanded",
+                      "false"
+                    );
+                }
               );
             }
           );
-        }
-      );
 
 
-    /**
-     * ========================================================
-     * Auto Resize
-     * ========================================================
-     */
+        document.addEventListener(
+          "click",
+          event => {
 
-    promptInput.addEventListener(
-      "input",
-      () => {
+            if (
+              !languageMenu.contains(
+                event.target
+              )
+            ) {
 
-        promptInput.style.height =
-          "auto";
+              languageMenu
+                .classList
+                .remove(
+                  "open"
+                );
 
-        promptInput.style.height =
-          Math.min(
-            promptInput.scrollHeight,
-            160
-          ) + "px";
-      }
-    );
-
-
-    /**
-     * ========================================================
-     * Language Change Event
-     *
-     * 动态聊天消息以后可根据需要重新渲染。
-     * ========================================================
-     */
-
-    window.addEventListener(
-      "everycourt:language-change",
-      event => {
-
-        console.log(
-          "EveryCourtAI language:",
-          event.detail.language
+              languageTrigger
+                .setAttribute(
+                  "aria-expanded",
+                  "false"
+                );
+            }
+          }
         );
 
       }
     );
-
-
-    /**
-     * ========================================================
-     * Theme Change Event
-     * ========================================================
-     */
-
-    window.addEventListener(
-      "everycourt:theme-change",
-      event => {
-
-        console.log(
-          "EveryCourtAI theme:",
-          event.detail.theme
-        );
-
-      }
-    );
-
   </script>
 
 
@@ -2570,6 +2331,11 @@
   <script
     type="module"
     src="scripts/language_manager.js"
+  ></script>
+
+  <script
+    type="module"
+    src="scripts/chat_manager.js"
   ></script>
 
 </body>
