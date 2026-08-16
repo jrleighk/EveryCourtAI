@@ -1,264 +1,901 @@
-/* ==========================================================
-   EveryCourtAI
-   Chat Manager
-   Version 2.0
-   Connected to Cloudflare Worker
-========================================================== */
+/**
+ * ============================================================
+ * EveryCourtAI
+ * Chat Manager
+ * Version: 2.1
+ * ============================================================
+ *
+ * 路径：
+ * scripts/chat_manager.js
+ *
+ * 功能：
+ * 1. 接收用户提问
+ * 2. 调用 api_client.js
+ * 3. POST 到 Cloudflare /ai
+ * 4. 显示 AI 回答
+ * 5. 动态更新右侧推荐卡
+ * 6. 支持当前语言
+ * 7. 保存聊天上下文
+ *
+ * ============================================================
+ */
 
-class ChatManager {
+import {
+    t,
+    getCurrentLanguage
+} from "./language_manager.js";
 
-    constructor() {
+import {
+    sendChatRequest
+} from "./api_client.js";
 
-        this.messages = [];
 
-        this.chatWindow =
-            document.getElementById("chatWindow");
+/**
+ * ============================================================
+ * 状态
+ * ============================================================
+ */
 
-        this.input =
-            document.getElementById("chatInput");
+let isProcessing = false;
 
-        this.sendButton =
-            document.getElementById("sendButton");
+let conversationHistory = [];
 
-        this.initialize();
 
+/**
+ * ============================================================
+ * DOM
+ * ============================================================
+ */
+
+let messagesElement = null;
+let promptInputElement = null;
+let sendButtonElement = null;
+
+
+/**
+ * ============================================================
+ * 工具
+ * ============================================================
+ */
+
+function safeString(value) {
+
+    if (
+        value === null ||
+        value === undefined
+    ) {
+        return "";
     }
 
-    initialize() {
+    return String(value).trim();
+}
 
-        if (this.sendButton) {
 
-            this.sendButton.addEventListener(
-                "click",
-                () => this.sendMessage()
-            );
+function scrollToBottom() {
 
-        }
-
-        if (this.input) {
-
-            this.input.addEventListener(
-                "keydown",
-                (event) => {
-
-                    if (
-                        event.key === "Enter" &&
-                        !event.shiftKey
-                    ) {
-
-                        event.preventDefault();
-
-                        this.sendMessage();
-
-                    }
-
-                }
-            );
-
-        }
-
+    if (!messagesElement) {
+        return;
     }
 
-    async sendMessage() {
+    messagesElement.scrollTo({
+        top: messagesElement.scrollHeight,
+        behavior: "smooth"
+    });
+}
 
-        const text =
-            this.input.value.trim();
 
-        if (!text) return;
+/**
+ * ============================================================
+ * Message
+ * ============================================================
+ */
 
-        this.addMessage(
-            "user",
-            text
+function createMessageElement(
+    role,
+    text,
+    {
+        thinking = false
+    } = {}
+) {
+
+    const wrapper =
+        document.createElement("div");
+
+    wrapper.className =
+        `message ${role === "user" ? "user" : "ai"}`;
+
+
+    const label =
+        document.createElement("div");
+
+    label.className =
+        "message-label";
+
+    label.textContent =
+        role === "user"
+            ? t("system.you", "You")
+            : t(
+                "system.assistant",
+                "EveryCourtAI"
+            );
+
+
+    const bubble =
+        document.createElement("div");
+
+    bubble.className =
+        "bubble";
+
+    if (thinking) {
+
+        bubble.classList.add(
+            "thinking-bubble"
         );
 
-        this.input.value = "";
-
-        this.showTyping();
-
-        try {
-
-            const language =
-                window.currentLanguage || "en";
-
-            const response =
-                await EveryCourtAPI.ask({
-
-                    prompt: text,
-
-                    language: language,
-
-                    conversation: this.messages
-
-                });
-
-            this.hideTyping();
-
-            if (!response.success) {
-
-                this.addMessage(
-
-                    "assistant",
-
-                    "Connection Error."
-
-                );
-
-                return;
-
-            }
-
-            this.addMessage(
-
-                "assistant",
-
-                response.answer
-
-            );
-
-            this.updateRecommendation(
-
-                response.recommendation
-
-            );
-
-        }
-
-        catch (error) {
-
-            console.error(error);
-
-            this.hideTyping();
-
-            this.addMessage(
-
-                "assistant",
-
-                "Network Error."
-
-            );
-
-        }
-
     }
 
-    addMessage(role, text) {
+    bubble.textContent =
+        text;
 
-        this.messages.push({
 
+    wrapper.appendChild(label);
+
+    wrapper.appendChild(bubble);
+
+
+    return wrapper;
+}
+
+
+export function addMessage(
+    role,
+    text,
+    {
+        saveToHistory = true
+    } = {}
+) {
+
+    const cleanText =
+        safeString(text);
+
+    if (
+        !messagesElement ||
+        !cleanText
+    ) {
+        return null;
+    }
+
+
+    const element =
+        createMessageElement(
             role,
+            cleanText
+        );
 
-            content: text
 
+    messagesElement.appendChild(
+        element
+    );
+
+
+    if (saveToHistory) {
+
+        conversationHistory.push({
+
+            role:
+                role === "ai"
+                    ? "assistant"
+                    : "user",
+
+            content:
+                cleanText
         });
 
-        if (!this.chatWindow) return;
+    }
 
-        const div =
-            document.createElement("div");
 
-        div.className =
-            role === "user"
-                ? "message user"
-                : "message assistant";
+    scrollToBottom();
 
-        div.innerHTML = text;
 
-        this.chatWindow.appendChild(div);
+    return element;
+}
 
-        this.chatWindow.scrollTop =
-            this.chatWindow.scrollHeight;
+
+/**
+ * ============================================================
+ * Thinking
+ * ============================================================
+ */
+
+function showThinking() {
+
+    if (!messagesElement) {
+        return null;
+    }
+
+
+    const element =
+        createMessageElement(
+            "ai",
+            t(
+                "system.thinking",
+                "Analyzing your equipment..."
+            ),
+            {
+                thinking: true
+            }
+        );
+
+
+    messagesElement.appendChild(
+        element
+    );
+
+
+    scrollToBottom();
+
+
+    return element;
+}
+
+
+function removeThinking(
+    element
+) {
+
+    if (element) {
+        element.remove();
+    }
+}
+
+
+/**
+ * ============================================================
+ * Processing State
+ * ============================================================
+ */
+
+function setProcessing(
+    value
+) {
+
+    isProcessing =
+        value;
+
+
+    if (sendButtonElement) {
+
+        sendButtonElement.disabled =
+            value;
+
+        sendButtonElement.style.opacity =
+            value
+                ? "0.6"
+                : "1";
 
     }
 
-    showTyping() {
 
-        if (!this.chatWindow) return;
+    if (promptInputElement) {
 
-        this.typing =
-            document.createElement("div");
+        promptInputElement.disabled =
+            value;
 
-        this.typing.className =
-            "message assistant typing";
+    }
+}
 
-        this.typing.innerHTML =
-            "EveryCourtAI is analysing your setup...";
 
-        this.chatWindow.appendChild(
+/**
+ * ============================================================
+ * Textarea
+ * ============================================================
+ */
 
-            this.typing
+function resizeTextarea() {
 
+    if (!promptInputElement) {
+        return;
+    }
+
+
+    promptInputElement.style.height =
+        "auto";
+
+
+    promptInputElement.style.height =
+        Math.min(
+            promptInputElement.scrollHeight,
+            160
+        ) + "px";
+}
+
+
+/**
+ * ============================================================
+ * Recommendation Card
+ * ============================================================
+ */
+
+export function updateRecommendationCard(
+    recommendation
+) {
+
+    if (!recommendation) {
+        return;
+    }
+
+
+    const racquetElement =
+        document.getElementById(
+            "recommendedRacquet"
+        );
+
+    const stringElement =
+        document.getElementById(
+            "recommendedString"
+        );
+
+    const stringSetupElement =
+        document.getElementById(
+            "recommendedStringSetup"
+        );
+
+    const tensionElement =
+        document.getElementById(
+            "recommendedTension"
+        );
+
+    const tensionRangeElement =
+        document.getElementById(
+            "recommendedTensionRange"
+        );
+
+    const confidenceValueElement =
+        document.getElementById(
+            "confidenceValue"
+        );
+
+    const confidenceFillElement =
+        document.getElementById(
+            "confidenceFill"
+        );
+
+
+    /**
+     * Racquet
+     */
+
+    if (
+        racquetElement &&
+        recommendation.racquet
+    ) {
+
+        racquetElement.textContent =
+            recommendation.racquet;
+
+    }
+
+
+    /**
+     * String
+     */
+
+    if (
+        stringElement &&
+        recommendation.string
+    ) {
+
+        stringElement.textContent =
+            recommendation.string;
+
+    }
+
+
+    /**
+     * Gauge + Setup
+     */
+
+    if (stringSetupElement) {
+
+        const parts = [];
+
+
+        if (
+            recommendation.gauge_mm !==
+            null &&
+            recommendation.gauge_mm !==
+            undefined
+        ) {
+
+            parts.push(
+                `${recommendation.gauge_mm} mm`
+            );
+
+        }
+
+
+        if (
+            recommendation.setup_type
+        ) {
+
+            parts.push(
+                recommendation.setup_type
+            );
+
+        }
+
+
+        if (
+            parts.length > 0
+        ) {
+
+            stringSetupElement.textContent =
+                parts.join(" · ");
+
+        }
+    }
+
+
+    /**
+     * Tension
+     */
+
+    if (
+        tensionElement &&
+        recommendation.tension_lbs !==
+        null &&
+        recommendation.tension_lbs !==
+        undefined
+    ) {
+
+        tensionElement.textContent =
+            `${recommendation.tension_lbs} lbs`;
+
+    }
+
+
+    /**
+     * Tension Range
+     */
+
+    if (
+        tensionRangeElement &&
+        recommendation.tension_range
+    ) {
+
+        tensionRangeElement.textContent =
+            recommendation.tension_range;
+
+    }
+
+
+    /**
+     * Confidence
+     */
+
+    if (
+        recommendation.confidence !==
+        null &&
+        recommendation.confidence !==
+        undefined
+    ) {
+
+        const confidence =
+            Math.max(
+                0,
+                Math.min(
+                    100,
+                    Number(
+                        recommendation.confidence
+                    )
+                )
+            );
+
+
+        if (
+            confidenceValueElement
+        ) {
+
+            confidenceValueElement.textContent =
+                `${confidence}%`;
+
+        }
+
+
+        if (
+            confidenceFillElement
+        ) {
+
+            confidenceFillElement.style.width =
+                `${confidence}%`;
+
+        }
+    }
+}
+
+
+/**
+ * ============================================================
+ * Submit
+ * ============================================================
+ */
+
+export async function submitCurrentPrompt() {
+
+    if (
+        isProcessing ||
+        !promptInputElement
+    ) {
+        return;
+    }
+
+
+    const prompt =
+        safeString(
+            promptInputElement.value
+        );
+
+
+    if (!prompt) {
+        return;
+    }
+
+
+    /**
+     * 1. User Message
+     */
+
+    addMessage(
+        "user",
+        prompt
+    );
+
+
+    promptInputElement.value =
+        "";
+
+    resizeTextarea();
+
+
+    /**
+     * 2. Processing
+     */
+
+    setProcessing(true);
+
+
+    /**
+     * 3. Thinking
+     */
+
+    const thinkingElement =
+        showThinking();
+
+
+    try {
+
+        /**
+         * 4. Cloudflare API
+         */
+
+        const result =
+            await sendChatRequest({
+
+                prompt,
+
+                language:
+                    getCurrentLanguage(),
+
+                history:
+                    conversationHistory
+            });
+
+
+        /**
+         * 5. Remove Thinking
+         */
+
+        removeThinking(
+            thinkingElement
+        );
+
+
+        /**
+         * 6. Error
+         */
+
+        if (
+            !result ||
+            result.success !== true
+        ) {
+
+            console.error(
+                "EveryCourtAI API Error:",
+                result
+            );
+
+
+            addMessage(
+                "ai",
+                t(
+                    "system.error",
+                    "Something went wrong."
+                )
+            );
+
+
+            return;
+        }
+
+
+        /**
+         * 7. AI Answer
+         */
+
+        if (
+            result.answer
+        ) {
+
+            addMessage(
+                "ai",
+                result.answer
+            );
+
+        }
+
+
+        /**
+         * 8. Recommendation
+         */
+
+        if (
+            result.recommendation
+        ) {
+
+            updateRecommendationCard(
+                result.recommendation
+            );
+
+        }
+
+
+    } catch (error) {
+
+        removeThinking(
+            thinkingElement
+        );
+
+
+        console.error(
+            "EveryCourtAI Chat Error:",
+            error
+        );
+
+
+        addMessage(
+            "ai",
+            t(
+                "system.error",
+                "Something went wrong."
+            )
+        );
+
+    } finally {
+
+        setProcessing(false);
+
+
+        if (
+            promptInputElement
+        ) {
+
+            promptInputElement.focus();
+
+        }
+    }
+}
+
+
+/**
+ * ============================================================
+ * Starter Prompts
+ * ============================================================
+ */
+
+function bindStarterPrompts() {
+
+    document
+        .querySelectorAll(
+            "[data-prompt-key]"
+        )
+        .forEach(
+            button => {
+
+                button.addEventListener(
+                    "click",
+                    () => {
+
+                        if (
+                            !promptInputElement
+                        ) {
+                            return;
+                        }
+
+
+                        promptInputElement.value =
+                            button.textContent.trim();
+
+
+                        resizeTextarea();
+
+
+                        promptInputElement.focus();
+                    }
+                );
+            }
+        );
+}
+
+
+/**
+ * ============================================================
+ * Events
+ * ============================================================
+ */
+
+function bindEvents() {
+
+    if (
+        sendButtonElement
+    ) {
+
+        sendButtonElement.addEventListener(
+            "click",
+            submitCurrentPrompt
         );
 
     }
 
-    hideTyping() {
 
-        if (
-            this.typing &&
-            this.typing.parentNode
-        ) {
+    if (
+        promptInputElement
+    ) {
 
-            this.typing.remove();
+        promptInputElement.addEventListener(
+            "keydown",
+            event => {
 
-        }
+                if (
+                    event.key === "Enter" &&
+                    !event.shiftKey
+                ) {
 
-    }
+                    event.preventDefault();
 
-    updateRecommendation(rec) {
+                    submitCurrentPrompt();
 
-        if (!rec) return;
+                }
+            }
+        );
 
-        const confidence =
-            document.getElementById(
-                "confidenceValue"
-            );
 
-        if (confidence) {
-
-            confidence.innerHTML =
-                rec.confidence + "%";
-
-        }
-
-        const racquet =
-            document.getElementById(
-                "recommendRacquet"
-            );
-
-        if (racquet) {
-
-            racquet.innerHTML =
-                rec.racquet;
-
-        }
-
-        const string =
-            document.getElementById(
-                "recommendString"
-            );
-
-        if (string) {
-
-            string.innerHTML =
-                rec.string;
-
-        }
-
-        const tension =
-            document.getElementById(
-                "recommendTension"
-            );
-
-        if (tension) {
-
-            tension.innerHTML =
-                rec.tension_lbs + " lbs";
-
-        }
+        promptInputElement.addEventListener(
+            "input",
+            resizeTextarea
+        );
 
     }
+
+
+    bindStarterPrompts();
+}
+
+
+/**
+ * ============================================================
+ * 初始化
+ * ============================================================
+ */
+
+export function initializeChatManager() {
+
+    messagesElement =
+        document.getElementById(
+            "messages"
+        );
+
+    promptInputElement =
+        document.getElementById(
+            "promptInput"
+        );
+
+    sendButtonElement =
+        document.getElementById(
+            "sendButton"
+        );
+
+
+    if (
+        !messagesElement ||
+        !promptInputElement ||
+        !sendButtonElement
+    ) {
+
+        console.error(
+            "EveryCourtAI Chat Manager: required DOM elements missing."
+        );
+
+
+        return {
+            success: false
+        };
+    }
+
+
+    bindEvents();
+
+    resizeTextarea();
+
+
+    console.log(
+        "EveryCourtAI Chat Manager connected."
+    );
+
+
+    return {
+        success: true,
+        version: "2.1"
+    };
+}
+
+
+/**
+ * ============================================================
+ * 自动启动
+ * ============================================================
+ */
+
+if (
+    document.readyState ===
+    "loading"
+) {
+
+    document.addEventListener(
+        "DOMContentLoaded",
+        initializeChatManager
+    );
+
+} else {
+
+    initializeChatManager();
 
 }
 
-window.chatManager =
-    new ChatManager();
+
+/**
+ * ============================================================
+ * Debug
+ * ============================================================
+ */
+
+window.EveryCourtChat = {
+
+    submitCurrentPrompt,
+
+    addMessage,
+
+    updateRecommendationCard,
+
+    getConversationHistory() {
+
+        return [
+            ...conversationHistory
+        ];
+    },
+
+    clearConversationHistory() {
+
+        conversationHistory = [];
+
+    }
+};
