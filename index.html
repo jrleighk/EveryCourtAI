@@ -1,223 +1,1454 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
 
-<title>EveryCourtAI</title>
+  <title>EveryCourtAI</title>
 
-<style>
+  <meta
+    name="description"
+    content="EveryCourtAI - AI-powered Tennis Equipment Intelligence"
+  />
 
-body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:#f5f5f5;
-    margin:0;
-}
+  <style>
+    :root {
+      --bg: #102a24;
+      --bg-soft: #15362f;
+      --card: #18342e;
+      --card-strong: #1f443b;
+      --border: rgba(255,255,255,0.10);
 
-.container{
-    max-width:900px;
-    margin:40px auto;
-    text-align:center;
-}
+      --text: #f5f7f6;
+      --text-soft: #afc4be;
+      --text-faint: #7f9992;
 
-.logo{
-    width:220px;
-    margin-bottom:20px;
-}
+      --primary: #47c77a;
+      --primary-strong: #31ac64;
+      --accent: #d9ff3f;
 
-h1{
-    margin:0;
-    font-size:48px;
-}
+      --user-bubble: rgba(255,255,255,0.08);
+      --ai-bubble: rgba(71,199,122,0.10);
 
-.subtitle{
-    color:#666;
-    margin-top:10px;
-    margin-bottom:35px;
-    font-size:22px;
-}
+      --shadow: 0 20px 60px rgba(0,0,0,0.22);
+    }
 
-textarea{
+    body[data-theme="clay"] {
+      --bg: #8e452b;
+      --bg-soft: #9d5032;
+      --card: #a45738;
+      --card-strong: #b76745;
+      --border: rgba(255,255,255,0.13);
 
-    width:100%;
-    height:180px;
+      --text: #fff8f2;
+      --text-soft: #f0d2c1;
+      --text-faint: #d6a991;
 
-    border:1px solid #ddd;
-    border-radius:12px;
+      --primary: #ff9d62;
+      --primary-strong: #ef7d3c;
+      --accent: #ffe1b8;
 
-    font-size:20px;
+      --user-bubble: rgba(255,255,255,0.10);
+      --ai-bubble: rgba(255,225,184,0.11);
+    }
 
-    padding:20px;
+    body[data-theme="hard"] {
+      --bg: #0d355f;
+      --bg-soft: #123f6c;
+      --card: #164b79;
+      --card-strong: #1c5a8e;
+      --border: rgba(255,255,255,0.11);
 
-    box-sizing:border-box;
+      --text: #f7fbff;
+      --text-soft: #bdd7ea;
+      --text-faint: #8bb2cc;
 
-    resize:none;
+      --primary: #40a8ff;
+      --primary-strong: #278fe4;
+      --accent: #d7f5ff;
 
-}
+      --user-bubble: rgba(255,255,255,0.09);
+      --ai-bubble: rgba(64,168,255,0.10);
+    }
 
-button{
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-    margin-top:30px;
+    html {
+      scroll-behavior: smooth;
+    }
 
-    background:#1769ff;
+    body {
+      min-height: 100vh;
+      font-family:
+        Inter,
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
 
-    color:white;
+      background:
+        radial-gradient(
+          circle at 50% -10%,
+          rgba(255,255,255,0.10),
+          transparent 32%
+        ),
+        linear-gradient(
+          180deg,
+          var(--bg-soft) 0%,
+          var(--bg) 42%,
+          var(--bg) 100%
+        );
 
-    border:none;
+      color: var(--text);
+      transition:
+        background 0.35s ease,
+        color 0.35s ease;
+    }
 
-    border-radius:10px;
+    button,
+    textarea {
+      font: inherit;
+    }
 
-    padding:18px 45px;
+    button {
+      cursor: pointer;
+    }
 
-    font-size:22px;
+    .page-shell {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+    }
 
-    cursor:pointer;
+    /* =========================================================
+       Header
+    ========================================================= */
 
-}
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
 
-button:hover{
+      padding: 20px 0 10px;
+    }
 
-    background:#0d5ae5;
+    .brand-mini {
+      display: flex;
+      align-items: center;
+      gap: 11px;
 
-}
+      color: var(--text);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
 
-.result{
+    .brand-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--accent);
 
-    margin-top:50px;
+      box-shadow:
+        0 0 0 5px rgba(255,255,255,0.05),
+        0 0 20px rgba(217,255,63,0.18);
+    }
 
-    background:white;
+    .theme-switcher {
+      display: flex;
+      align-items: center;
+      gap: 6px;
 
-    border-radius:12px;
+      padding: 5px;
 
-    padding:30px;
+      background: rgba(0,0,0,0.13);
+      border: 1px solid var(--border);
+      border-radius: 999px;
 
-    min-height:180px;
+      backdrop-filter: blur(16px);
+    }
 
-    text-align:left;
+    .theme-btn {
+      border: none;
+      color: var(--text-soft);
+      background: transparent;
 
-    font-size:20px;
+      padding: 8px 13px;
+      border-radius: 999px;
 
-    line-height:1.8;
+      font-size: 13px;
+      font-weight: 650;
 
-    box-shadow:0 0 10px rgba(0,0,0,.08);
+      transition: 0.22s ease;
+    }
 
-}
+    .theme-btn:hover {
+      color: var(--text);
+      background: rgba(255,255,255,0.06);
+    }
 
-.example{
+    .theme-btn.active {
+      color: #0e211b;
+      background: var(--accent);
+    }
 
-    margin-top:30px;
+    body[data-theme="clay"] .theme-btn.active,
+    body[data-theme="hard"] .theme-btn.active {
+      color: #0d2230;
+    }
 
-    text-align:left;
+    /* =========================================================
+       Hero
+    ========================================================= */
 
-    color:#666;
+    .hero {
+      text-align: center;
+      padding: 56px 0 36px;
+    }
 
-    line-height:2;
+    .logo-wrap {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 18px;
+    }
 
-}
+    .logo-wrap img {
+      width: 88px;
+      height: 88px;
+      object-fit: contain;
+      border-radius: 22px;
 
-</style>
+      box-shadow: var(--shadow);
+    }
 
+    .hero h1 {
+      font-size: clamp(38px, 7vw, 72px);
+      line-height: 1;
+      letter-spacing: -0.055em;
+      font-weight: 760;
+    }
+
+    .hero .subtitle {
+      margin-top: 14px;
+
+      color: var(--text-soft);
+      font-size: clamp(15px, 2vw, 19px);
+      letter-spacing: 0.01em;
+    }
+
+    .hero .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+
+      margin-top: 22px;
+
+      padding: 8px 12px;
+      border-radius: 999px;
+
+      background: rgba(255,255,255,0.06);
+      border: 1px solid var(--border);
+
+      color: var(--text-soft);
+      font-size: 13px;
+    }
+
+    .hero .eyebrow span {
+      color: var(--accent);
+    }
+
+    /* =========================================================
+       AI Workspace
+    ========================================================= */
+
+    .workspace {
+      display: grid;
+      grid-template-columns:
+        minmax(0, 1.25fr)
+        minmax(340px, 0.75fr);
+
+      gap: 20px;
+
+      padding-bottom: 48px;
+    }
+
+    .panel {
+      background:
+        linear-gradient(
+          180deg,
+          rgba(255,255,255,0.055),
+          rgba(255,255,255,0.025)
+        );
+
+      border: 1px solid var(--border);
+      border-radius: 28px;
+
+      box-shadow: var(--shadow);
+
+      backdrop-filter: blur(18px);
+    }
+
+    /* =========================================================
+       Chat Panel
+    ========================================================= */
+
+    .chat-panel {
+      min-height: 640px;
+
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .chat-head {
+      padding: 22px 24px 18px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .chat-head h2 {
+      font-size: 17px;
+      letter-spacing: -0.02em;
+    }
+
+    .chat-head p {
+      margin-top: 5px;
+      color: var(--text-soft);
+      font-size: 13px;
+    }
+
+    .messages {
+      flex: 1;
+
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+
+      padding: 24px;
+      overflow-y: auto;
+    }
+
+    .message {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .message.user {
+      align-items: flex-end;
+    }
+
+    .message.ai {
+      align-items: flex-start;
+    }
+
+    .message-label {
+      font-size: 12px;
+      color: var(--text-faint);
+      font-weight: 650;
+    }
+
+    .bubble {
+      max-width: 82%;
+      padding: 15px 17px;
+      border-radius: 19px;
+
+      line-height: 1.55;
+      font-size: 14px;
+
+      border: 1px solid var(--border);
+    }
+
+    .message.user .bubble {
+      background: var(--user-bubble);
+      border-bottom-right-radius: 6px;
+    }
+
+    .message.ai .bubble {
+      background: var(--ai-bubble);
+      border-bottom-left-radius: 6px;
+    }
+
+    .starter-block {
+      margin-top: auto;
+      padding: 0 24px 18px;
+    }
+
+    .starter-title {
+      margin-bottom: 10px;
+      color: var(--text-soft);
+      font-size: 12px;
+      font-weight: 650;
+    }
+
+    .starter-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+
+    .starter-btn {
+      text-align: left;
+
+      padding: 12px 13px;
+      border-radius: 14px;
+
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.04);
+
+      color: var(--text-soft);
+
+      font-size: 12px;
+      line-height: 1.35;
+
+      transition: 0.2s ease;
+    }
+
+    .starter-btn:hover {
+      color: var(--text);
+      background: rgba(255,255,255,0.07);
+      transform: translateY(-1px);
+    }
+
+    /* =========================================================
+       Input
+    ========================================================= */
+
+    .composer {
+      padding: 16px;
+      border-top: 1px solid var(--border);
+    }
+
+    .input-shell {
+      display: flex;
+      align-items: flex-end;
+      gap: 10px;
+
+      padding: 10px 10px 10px 15px;
+
+      background: rgba(0,0,0,0.14);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 48px;
+      max-height: 160px;
+
+      resize: none;
+
+      border: none;
+      outline: none;
+      background: transparent;
+
+      color: var(--text);
+
+      line-height: 1.5;
+      font-size: 14px;
+    }
+
+    textarea::placeholder {
+      color: var(--text-faint);
+    }
+
+    .send-btn {
+      flex: 0 0 auto;
+
+      height: 44px;
+      padding: 0 16px;
+
+      border: none;
+      border-radius: 14px;
+
+      background: var(--primary);
+      color: #092217;
+
+      font-weight: 750;
+      font-size: 13px;
+
+      transition: 0.2s ease;
+    }
+
+    body[data-theme="clay"] .send-btn,
+    body[data-theme="hard"] .send-btn {
+      color: #0d2230;
+    }
+
+    .send-btn:hover {
+      transform: translateY(-1px);
+      background: var(--primary-strong);
+    }
+
+    .composer-note {
+      margin-top: 9px;
+      text-align: center;
+
+      color: var(--text-faint);
+      font-size: 11px;
+    }
+
+    /* =========================================================
+       Recommendation Panel
+    ========================================================= */
+
+    .recommendation-panel {
+      padding: 22px;
+      align-self: start;
+
+      position: sticky;
+      top: 20px;
+    }
+
+    .panel-kicker {
+      color: var(--accent);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    .recommendation-panel h2 {
+      margin-top: 8px;
+
+      font-size: 25px;
+      letter-spacing: -0.035em;
+    }
+
+    .recommendation-panel .intro {
+      margin-top: 8px;
+      color: var(--text-soft);
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    .confidence-card {
+      margin-top: 20px;
+      padding: 16px;
+
+      border: 1px solid var(--border);
+      border-radius: 18px;
+
+      background: rgba(0,0,0,0.11);
+    }
+
+    .confidence-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .confidence-label {
+      font-size: 12px;
+      color: var(--text-soft);
+    }
+
+    .confidence-value {
+      color: var(--accent);
+      font-size: 22px;
+      font-weight: 800;
+    }
+
+    .confidence-track {
+      height: 6px;
+      margin-top: 11px;
+
+      background: rgba(255,255,255,0.08);
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .confidence-fill {
+      width: 82%;
+      height: 100%;
+
+      background: var(--accent);
+      border-radius: 999px;
+    }
+
+    .setup-card {
+      margin-top: 14px;
+
+      padding: 16px;
+
+      border: 1px solid var(--border);
+      border-radius: 18px;
+
+      background:
+        linear-gradient(
+          180deg,
+          var(--card-strong),
+          var(--card)
+        );
+    }
+
+    .setup-label {
+      color: var(--text-faint);
+
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .setup-value {
+      margin-top: 4px;
+
+      font-size: 16px;
+      font-weight: 720;
+      letter-spacing: -0.02em;
+    }
+
+    .setup-sub {
+      margin-top: 3px;
+
+      color: var(--text-soft);
+      font-size: 12px;
+    }
+
+    .setup-divider {
+      height: 1px;
+
+      margin: 14px 0;
+
+      background: var(--border);
+    }
+
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+
+      margin-top: 14px;
+    }
+
+    .metric {
+      padding: 12px 8px;
+      text-align: center;
+
+      border-radius: 14px;
+
+      background: rgba(255,255,255,0.045);
+      border: 1px solid var(--border);
+    }
+
+    .metric strong {
+      display: block;
+
+      font-size: 15px;
+    }
+
+    .metric span {
+      display: block;
+
+      margin-top: 4px;
+
+      color: var(--text-faint);
+      font-size: 10px;
+    }
+
+    .why-card,
+    .alternative-card {
+      margin-top: 14px;
+      padding: 16px;
+
+      border: 1px solid var(--border);
+      border-radius: 18px;
+
+      background: rgba(255,255,255,0.035);
+    }
+
+    .why-card h3,
+    .alternative-card h3 {
+      font-size: 13px;
+    }
+
+    .why-list {
+      margin-top: 10px;
+
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .why-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+
+      color: var(--text-soft);
+
+      font-size: 12px;
+      line-height: 1.4;
+    }
+
+    .why-dot {
+      width: 7px;
+      height: 7px;
+
+      margin-top: 5px;
+
+      flex: 0 0 auto;
+
+      border-radius: 50%;
+
+      background: var(--primary);
+    }
+
+    .alternative-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 7px;
+
+      margin-top: 10px;
+    }
+
+    .alt-chip {
+      padding: 9px 7px;
+
+      border: 1px solid var(--border);
+      border-radius: 12px;
+
+      background: rgba(255,255,255,0.04);
+
+      color: var(--text-soft);
+
+      text-align: center;
+      font-size: 10px;
+      font-weight: 650;
+    }
+
+    /* =========================================================
+       Footer
+    ========================================================= */
+
+    .footer {
+      padding: 8px 0 32px;
+
+      text-align: center;
+      color: var(--text-faint);
+      font-size: 11px;
+    }
+
+    /* =========================================================
+       Responsive
+    ========================================================= */
+
+    @media (max-width: 900px) {
+      .workspace {
+        grid-template-columns: 1fr;
+      }
+
+      .recommendation-panel {
+        position: static;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .page-shell {
+        width: min(100% - 20px, 1180px);
+      }
+
+      .topbar {
+        padding-top: 13px;
+      }
+
+      .brand-mini span:last-child {
+        display: none;
+      }
+
+      .theme-btn {
+        padding: 7px 10px;
+        font-size: 11px;
+      }
+
+      .hero {
+        padding: 40px 0 28px;
+      }
+
+      .hero h1 {
+        font-size: 46px;
+      }
+
+      .logo-wrap img {
+        width: 72px;
+        height: 72px;
+      }
+
+      .workspace {
+        gap: 14px;
+      }
+
+      .panel {
+        border-radius: 22px;
+      }
+
+      .chat-panel {
+        min-height: 580px;
+      }
+
+      .starter-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .bubble {
+        max-width: 92%;
+      }
+
+      .metric-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
 </head>
 
-<body>
+<body data-theme="grass">
 
-<div class="container">
+  <div class="page-shell">
 
-<img class="logo"
-src="assets/logo/ET-LOGO.png"
-alt="EveryCourtAI">
+    <!-- ======================================================
+         Top Bar
+    ======================================================= -->
 
-<h1>EveryCourtAI</h1>
+    <header class="topbar">
 
-<div class="subtitle">
+      <div class="brand-mini">
+        <div class="brand-dot"></div>
+        <span>EveryCourtAI</span>
+      </div>
 
-AI-powered Tennis Equipment Intelligence
+      <div
+        class="theme-switcher"
+        aria-label="Court Theme"
+      >
+        <button
+          class="theme-btn active"
+          data-theme-button="grass"
+        >
+          Grass
+        </button>
 
-</div>
+        <button
+          class="theme-btn"
+          data-theme-button="clay"
+        >
+          Clay
+        </button>
 
-<textarea
-id="question"
-placeholder="Describe your racket, playing style and what you want to improve..."></textarea>
+        <button
+          class="theme-btn"
+          data-theme-button="hard"
+        >
+          Hard
+        </button>
+      </div>
 
-<br>
+    </header>
 
-<button onclick="askAI()">
 
-Analyze My Setup
+    <!-- ======================================================
+         Hero
+    ======================================================= -->
 
-</button>
+    <section class="hero">
 
-<div class="example">
+      <div class="logo-wrap">
+        <img
+          src="assets/logo/ET-LOGO.png"
+          alt="EveryCourtAI Logo"
+        />
+      </div>
 
-<b>Example Questions</b>
+      <h1>EveryCourtAI</h1>
 
-<ul>
+      <div class="subtitle">
+        AI-powered Tennis Equipment Intelligence
+      </div>
 
-<li>Recommend a racket for an intermediate player.</li>
+      <div class="eyebrow">
+        <span>●</span>
+        Tennis setup analysis powered by player profile,
+        equipment data and inference logic.
+      </div>
 
-<li>Compare Wilson Blade 98 vs Head Speed MP.</li>
+    </section>
 
-<li>Best string for RF 01 Pro?</li>
 
-<li>My elbow hurts. Suggest a comfortable setup.</li>
+    <!-- ======================================================
+         Workspace
+    ======================================================= -->
 
-</ul>
+    <main class="workspace">
 
-</div>
+      <!-- ====================================================
+           Chat
+      ===================================================== -->
 
-<div id="answer" class="result">
+      <section class="panel chat-panel">
 
-AI Recommendation will appear here...
+        <div class="chat-head">
+          <h2>
+            What would you like to improve?
+          </h2>
 
-</div>
+          <p>
+            Tell me about your racquet, strings,
+            game style or what feels wrong.
+          </p>
+        </div>
 
-</div>
 
-<script>
+        <div
+          class="messages"
+          id="messages"
+        >
 
-async function askAI(){
+          <div class="message ai">
 
-const question=document.getElementById("question").value;
+            <div class="message-label">
+              EveryCourtAI
+            </div>
 
-document.getElementById("answer").innerHTML="Thinking...";
+            <div class="bubble">
+              Tell me what you are currently using and what
+              you want to improve. You can write naturally —
+              for example: “I use a Pure Drive and want more
+              control without losing too much power.”
+            </div>
 
-try{
+          </div>
 
-const response=await fetch("https://hook.eu1.make.com/xznem4uh7zg4v8m37a3flw98l17ephce",{
+        </div>
 
-method:"POST",
 
-headers:{
+        <div class="starter-block">
 
-"Content-Type":"application/json"
+          <div class="starter-title">
+            Try an example
+          </div>
 
-},
+          <div class="starter-grid">
 
-body:JSON.stringify({
+            <button
+              class="starter-btn"
+              data-prompt="I use a Wilson RF 01 Pro Classic and want more comfort without losing control."
+            >
+              RF 01 Pro — more comfort
+            </button>
 
-question:question
+            <button
+              class="starter-btn"
+              data-prompt="I use a Babolat Pure Drive and want more directional control with a slightly lower launch."
+            >
+              Pure Drive — more control
+            </button>
 
-})
+            <button
+              class="starter-btn"
+              data-prompt="My elbow gets uncomfortable after long sessions. What setup should I consider?"
+            >
+              Elbow comfort setup
+            </button>
 
-});
+            <button
+              class="starter-btn"
+              data-prompt="I want more spin but I still want a predictable launch angle."
+            >
+              More spin, controlled launch
+            </button>
 
-const data=await response.json();
+          </div>
 
-document.getElementById("answer").innerHTML=data.output;
+        </div>
 
-}
 
-catch(e){
+        <div class="composer">
 
-document.getElementById("answer").innerHTML="Connection Failed.";
+          <div class="input-shell">
 
-}
+            <textarea
+              id="promptInput"
+              placeholder="Describe your setup or ask a tennis equipment question..."
+              rows="1"
+            ></textarea>
 
-}
+            <button
+              class="send-btn"
+              id="sendButton"
+            >
+              Analyze
+            </button>
 
-</script>
+          </div>
+
+          <div class="composer-note">
+            UI prototype — real EveryCourtAI Engine connection comes next.
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- ====================================================
+           Recommendation
+      ===================================================== -->
+
+      <aside class="panel recommendation-panel">
+
+        <div class="panel-kicker">
+          Recommended Setup
+        </div>
+
+        <h2>
+          Best Overall Match
+        </h2>
+
+        <p class="intro">
+          This card will later be populated directly by
+          the EveryCourtAI recommendation engine.
+        </p>
+
+
+        <div class="confidence-card">
+
+          <div class="confidence-row">
+
+            <span class="confidence-label">
+              Confidence
+            </span>
+
+            <span
+              class="confidence-value"
+              id="confidenceValue"
+            >
+              82%
+            </span>
+
+          </div>
+
+          <div class="confidence-track">
+            <div
+              class="confidence-fill"
+              id="confidenceFill"
+            ></div>
+          </div>
+
+        </div>
+
+
+        <div class="setup-card">
+
+          <div class="setup-label">
+            Racquet
+          </div>
+
+          <div class="setup-value">
+            Wilson RF 01 Pro Classic
+          </div>
+
+          <div class="setup-sub">
+            Keep current frame
+          </div>
+
+
+          <div class="setup-divider"></div>
+
+
+          <div class="setup-label">
+            String
+          </div>
+
+          <div class="setup-value">
+            Wilson Natural Gut 17
+          </div>
+
+          <div class="setup-sub">
+            1.25 mm · Full Bed
+          </div>
+
+
+          <div class="setup-divider"></div>
+
+
+          <div class="setup-label">
+            Tension
+          </div>
+
+          <div class="setup-value">
+            53 lbs
+          </div>
+
+          <div class="setup-sub">
+            Working range: 51–55 lbs
+          </div>
+
+
+          <div class="metric-grid">
+
+            <div class="metric">
+              <strong>↑</strong>
+              <span>Comfort</span>
+            </div>
+
+            <div class="metric">
+              <strong>◎</strong>
+              <span>Control</span>
+            </div>
+
+            <div class="metric">
+              <strong>○</strong>
+              <span>Power</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="why-card">
+
+          <h3>
+            Why this setup
+          </h3>
+
+          <div class="why-list">
+
+            <div class="why-item">
+              <span class="why-dot"></span>
+              <span>
+                Improves comfort without forcing an immediate racquet change.
+              </span>
+            </div>
+
+            <div class="why-item">
+              <span class="why-dot"></span>
+              <span>
+                Preserves a connected response for an aggressive baseline game.
+              </span>
+            </div>
+
+            <div class="why-item">
+              <span class="why-dot"></span>
+              <span>
+                Uses a moderate tension range rather than an excessively firm stringbed.
+              </span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="alternative-card">
+
+          <h3>
+            Alternatives
+          </h3>
+
+          <div class="alternative-row">
+
+            <div class="alt-chip">
+              Comfort
+            </div>
+
+            <div class="alt-chip">
+              Performance
+            </div>
+
+            <div class="alt-chip">
+              Minimal Change
+            </div>
+
+          </div>
+
+        </div>
+
+      </aside>
+
+    </main>
+
+
+    <footer class="footer">
+      Every Court Has a Story.
+    </footer>
+
+  </div>
+
+
+  <script>
+    /**
+     * ========================================================
+     * Court Theme Switcher
+     * ========================================================
+     */
+
+    const themeButtons =
+      document.querySelectorAll(
+        "[data-theme-button]"
+      );
+
+    themeButtons.forEach(
+      button => {
+
+        button.addEventListener(
+          "click",
+          () => {
+
+            const theme =
+              button.dataset.themeButton;
+
+            document.body.dataset.theme =
+              theme;
+
+            themeButtons.forEach(
+              item =>
+                item.classList.remove(
+                  "active"
+                )
+            );
+
+            button.classList.add(
+              "active"
+            );
+
+            localStorage.setItem(
+              "everycourt-theme",
+              theme
+            );
+          }
+        );
+      }
+    );
+
+
+    /**
+     * ========================================================
+     * Restore Theme
+     * ========================================================
+     */
+
+    const savedTheme =
+      localStorage.getItem(
+        "everycourt-theme"
+      );
+
+    if (
+      [
+        "grass",
+        "clay",
+        "hard"
+      ].includes(
+        savedTheme
+      )
+    ) {
+
+      document.body.dataset.theme =
+        savedTheme;
+
+      themeButtons.forEach(
+        button => {
+
+          button.classList.toggle(
+            "active",
+            button.dataset.themeButton ===
+              savedTheme
+          );
+
+        }
+      );
+    }
+
+
+    /**
+     * ========================================================
+     * Chat Prototype
+     * ========================================================
+     */
+
+    const messages =
+      document.getElementById(
+        "messages"
+      );
+
+    const promptInput =
+      document.getElementById(
+        "promptInput"
+      );
+
+    const sendButton =
+      document.getElementById(
+        "sendButton"
+      );
+
+
+    function addMessage(
+      role,
+      text
+    ) {
+
+      const wrapper =
+        document.createElement(
+          "div"
+        );
+
+      wrapper.className =
+        `message ${role}`;
+
+
+      const label =
+        document.createElement(
+          "div"
+        );
+
+      label.className =
+        "message-label";
+
+      label.textContent =
+        role === "user"
+          ? "You"
+          : "EveryCourtAI";
+
+
+      const bubble =
+        document.createElement(
+          "div"
+        );
+
+      bubble.className =
+        "bubble";
+
+      bubble.textContent =
+        text;
+
+
+      wrapper.appendChild(
+        label
+      );
+
+      wrapper.appendChild(
+        bubble
+      );
+
+      messages.appendChild(
+        wrapper
+      );
+
+
+      messages.scrollTop =
+        messages.scrollHeight;
+    }
+
+
+    function runPrototypeAnalysis() {
+
+      const prompt =
+        promptInput.value.trim();
+
+      if (!prompt) {
+        return;
+      }
+
+
+      addMessage(
+        "user",
+        prompt
+      );
+
+
+      promptInput.value = "";
+
+
+      setTimeout(
+        () => {
+
+          addMessage(
+            "ai",
+            "I’ve received your setup. In the next integration step, this message will be sent to the EveryCourtAI Engine for player profiling, matching, conflict checks, ranking, recommendation and confidence scoring."
+          );
+
+        },
+        500
+      );
+    }
+
+
+    sendButton.addEventListener(
+      "click",
+      runPrototypeAnalysis
+    );
+
+
+    promptInput.addEventListener(
+      "keydown",
+      event => {
+
+        if (
+          event.key === "Enter" &&
+          !event.shiftKey
+        ) {
+
+          event.preventDefault();
+
+          runPrototypeAnalysis();
+        }
+      }
+    );
+
+
+    /**
+     * ========================================================
+     * Starter Prompts
+     * ========================================================
+     */
+
+    document
+      .querySelectorAll(
+        "[data-prompt]"
+      )
+      .forEach(
+        button => {
+
+          button.addEventListener(
+            "click",
+            () => {
+
+              promptInput.value =
+                button.dataset.prompt;
+
+              promptInput.focus();
+            }
+          );
+        }
+      );
+
+
+    /**
+     * ========================================================
+     * Auto Resize Textarea
+     * ========================================================
+     */
+
+    promptInput.addEventListener(
+      "input",
+      () => {
+
+        promptInput.style.height =
+          "auto";
+
+        promptInput.style.height =
+          Math.min(
+            promptInput.scrollHeight,
+            160
+          ) + "px";
+      }
+    );
+  </script>
 
 </body>
-
 </html>
