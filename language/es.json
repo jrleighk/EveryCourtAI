@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "EveryCourtAI",
+    "tagline": "Inteligencia Artificial para Equipamiento de Tenis",
+    "slogan": "Every Court Has a Story."
+  },
+
+  "hero": {
+    "badge": "Análisis de tu equipamiento de tenis basado en tu perfil de jugador, datos de productos y un motor de inferencia con IA."
+  },
+
+  "theme": {
+    "grass": "Hierba",
+    "clay": "Tierra Batida",
+    "hard": "Pista Dura"
+  },
+
+  "chat": {
+    "title": "¿Qué te gustaría mejorar?",
+    "subtitle": "Cuéntame qué raqueta, cordaje y estilo de juego utilizas, o qué problema quieres solucionar.",
+
+    "welcome": "Cuéntame qué raqueta y cordaje utilizas actualmente y qué te gustaría mejorar. Por ejemplo: «Uso una Pure Drive y quiero más control sin perder demasiada potencia.»",
+
+    "placeholder": "Describe tu configuración o haz una pregunta sobre equipamiento de tenis...",
+
+    "button": "Analizar",
+
+    "note": "Prototipo de la interfaz. La conexión con el motor EveryCourtAI llegará en la siguiente fase.",
+
+    "examples": "Prueba un ejemplo"
+  },
+
+  "examples": {
+    "rf01": "RF 01 Pro — más comodidad",
+    "pure_drive": "Pure Drive — más control",
+    "elbow": "Configuración para mayor comodidad del codo",
+    "spin": "Más efecto con una trayectoria controlada"
+  },
+
+  "recommendation": {
+    "title_small": "Configuración Recomendada",
+    "title": "La Mejor Configuración",
+
+    "description": "En el futuro, esta tarjeta será generada automáticamente por el motor de recomendaciones de EveryCourtAI."
+  },
+
+  "confidence": {
+    "title": "Nivel de Confianza"
+  },
+
+  "setup": {
+    "racquet": "Raqueta",
+    "string": "Cordaje",
+    "tension": "Tensión",
+
+    "current_frame": "Mantener la raqueta actual",
+
+    "working_range": "Rango recomendado"
+  },
+
+  "metrics": {
+    "comfort": "Comodidad",
+    "control": "Control",
+    "power": "Potencia"
+  },
+
+  "why": {
+    "title": "¿Por qué esta configuración?",
+
+    "item1": "Mejora la comodidad sin necesidad de cambiar inmediatamente de raqueta.",
+
+    "item2": "Mantiene una respuesta precisa para un juego agresivo desde el fondo de la pista.",
+
+    "item3": "Utiliza una tensión equilibrada en lugar de un encordado excesivamente rígido."
+  },
+
+  "alternatives": {
+    "title": "Alternativas",
+
+    "comfort": "Comodidad",
+
+    "performance": "Rendimiento",
+
+    "minimal": "Cambio Mínimo"
+  },
+
+  "language": {
+    "english": "English",
+    "simplified": "简体中文",
+    "traditional": "繁體中文",
+    "japanese": "日本語",
+    "french": "Français",
+    "spanish": "Español"
+  },
+
+  "system": {
+    "you": "Tú",
+    "assistant": "EveryCourtAI",
+
+    "thinking": "Analizando tu equipamiento...",
+
+    "loading": "Cargando...",
+
+    "error": "Ha ocurrido un error. Inténtalo de nuevo."
+  }
+}
