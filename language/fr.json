@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "EveryCourtAI",
+    "tagline": "Intelligence IA pour l’équipement de tennis",
+    "slogan": "Every Court Has a Story."
+  },
+
+  "hero": {
+    "badge": "Analyse de votre équipement de tennis basée sur votre profil de joueur, les données produits et le moteur d’inférence IA."
+  },
+
+  "theme": {
+    "grass": "Gazon",
+    "clay": "Terre battue",
+    "hard": "Dur"
+  },
+
+  "chat": {
+    "title": "Que souhaitez-vous améliorer ?",
+    "subtitle": "Parlez-moi de votre raquette, de vos cordages, de votre style de jeu ou de ce qui ne vous convient pas.",
+
+    "welcome": "Indiquez-moi votre raquette actuelle, vos cordages et ce que vous souhaitez améliorer. Par exemple : « J’utilise une Pure Drive et je veux plus de contrôle sans perdre trop de puissance. »",
+
+    "placeholder": "Décrivez votre configuration ou posez une question sur votre équipement de tennis…",
+
+    "button": "Analyser",
+
+    "note": "Prototype UI — la connexion au moteur EveryCourtAI arrive à l’étape suivante.",
+
+    "examples": "Essayer un exemple"
+  },
+
+  "examples": {
+    "rf01": "RF 01 Pro — plus de confort",
+    "pure_drive": "Pure Drive — plus de contrôle",
+    "elbow": "Configuration plus confortable pour le coude",
+    "spin": "Plus d’effet avec une trajectoire maîtrisée"
+  },
+
+  "recommendation": {
+    "title_small": "Configuration recommandée",
+    "title": "Meilleur choix global",
+
+    "description": "Cette carte sera ensuite alimentée directement par le moteur de recommandation EveryCourtAI."
+  },
+
+  "confidence": {
+    "title": "Niveau de confiance"
+  },
+
+  "setup": {
+    "racquet": "Raquette",
+    "string": "Cordage",
+    "tension": "Tension",
+
+    "current_frame": "Conserver la raquette actuelle",
+
+    "working_range": "Plage recommandée"
+  },
+
+  "metrics": {
+    "comfort": "Confort",
+    "control": "Contrôle",
+    "power": "Puissance"
+  },
+
+  "why": {
+    "title": "Pourquoi cette configuration",
+
+    "item1": "Améliore le confort sans imposer un changement immédiat de raquette.",
+
+    "item2": "Préserve une réponse directe et connectée adaptée à un jeu de fond de court agressif.",
+
+    "item3": "Utilise une tension modérée plutôt qu’un plan de cordage excessivement ferme."
+  },
+
+  "alternatives": {
+    "title": "Alternatives",
+
+    "comfort": "Confort",
+
+    "performance": "Performance",
+
+    "minimal": "Changement minimal"
+  },
+
+  "language": {
+    "english": "English",
+    "simplified": "简体中文",
+    "traditional": "繁體中文",
+    "japanese": "日本語",
+    "french": "Français",
+    "spanish": "Español"
+  },
+
+  "system": {
+    "you": "Vous",
+    "assistant": "EveryCourtAI",
+
+    "thinking": "Analyse de votre équipement en cours…",
+
+    "loading": "Chargement…",
+
+    "error": "Une erreur est survenue. Veuillez réessayer."
+  }
+}
