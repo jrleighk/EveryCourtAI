@@ -1,0 +1,102 @@
+{
+  "app": {
+    "name": "EveryCourtAI",
+    "tagline": "AI-powered Tennis Equipment Intelligence",
+    "slogan": "Every Court Has a Story."
+  },
+
+  "hero": {
+    "badge": "Tennis setup analysis powered by player profile, equipment data and inference logic."
+  },
+
+  "theme": {
+    "grass": "Grass",
+    "clay": "Clay",
+    "hard": "Hard"
+  },
+
+  "chat": {
+    "title": "What would you like to improve?",
+    "subtitle": "Tell me about your racquet, strings, game style or what feels wrong.",
+
+    "welcome": "Tell me what you are currently using and what you want to improve. You can write naturally — for example: \"I use a Pure Drive and want more control without losing too much power.\"",
+
+    "placeholder": "Describe your setup or ask a tennis equipment question...",
+
+    "button": "Analyze",
+
+    "note": "UI prototype — real EveryCourtAI Engine connection comes next.",
+
+    "examples": "Try an example"
+  },
+
+  "examples": {
+    "rf01": "RF 01 Pro — more comfort",
+    "pure_drive": "Pure Drive — more control",
+    "elbow": "Elbow comfort setup",
+    "spin": "More spin, controlled launch"
+  },
+
+  "recommendation": {
+    "title_small": "Recommended Setup",
+    "title": "Best Overall Match",
+
+    "description": "This card will later be populated directly by the EveryCourtAI recommendation engine."
+  },
+
+  "confidence": {
+    "title": "Confidence"
+  },
+
+  "setup": {
+    "racquet": "Racquet",
+    "string": "String",
+    "tension": "Tension",
+
+    "current_frame": "Keep current frame",
+
+    "working_range": "Working range"
+  },
+
+  "metrics": {
+    "comfort": "Comfort",
+    "control": "Control",
+    "power": "Power"
+  },
+
+  "why": {
+    "title": "Why this setup",
+
+    "item1": "Improves comfort without forcing an immediate racquet change.",
+
+    "item2": "Preserves a connected response for an aggressive baseline game.",
+
+    "item3": "Uses a moderate tension range rather than an excessively firm stringbed."
+  },
+
+  "alternatives": {
+    "title": "Alternatives",
+
+    "comfort": "Comfort",
+
+    "performance": "Performance",
+
+    "minimal": "Minimal Change"
+  },
+
+  "language": {
+    "english": "English",
+    "chinese": "简体中文"
+  },
+
+  "system": {
+    "you": "You",
+    "assistant": "EveryCourtAI",
+
+    "thinking": "Analyzing your equipment...",
+
+    "loading": "Loading...",
+
+    "error": "Something went wrong."
+  }
+}
