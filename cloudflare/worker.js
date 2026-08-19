@@ -2,35 +2,32 @@
  * ============================================================
  * EveryCourtAI
  * Cloudflare Worker
- * Version: 2.0
+ * Version: 2.2
  * ============================================================
  *
  * 文件路径：
  * cloudflare/worker.js
  *
- * 作用：
+ * 核心流程：
  *
- * 1. 提供 EveryCourtAI Cloudflare API
- * 2. 切换 Knowledge Runtime 为 Cloudflare
- * 3. 调用真正的 EveryCourtAI Recommendation Engine
- * 4. 返回 Recommendation / Confidence / Explanation
+ * Natural Language / Structured Input
+ * ↓
+ * Input Parser
+ * ↓
+ * EveryCourtAI Engine
+ * ↓
+ * Confidence Engine
+ * ↓
+ * Follow-up Engine
+ * ↓
+ * 信息不足？
  *
- * 当前版本：
+ * YES:
+ *   先追问
+ *   不把精准球线 / 磅数作为最终答案
  *
- * POST /ai
- *   接收结构化 player_input
- *   ↓
- *   Cloudflare Knowledge Loader
- *   ↓
- *   EveryCourtAI Engine
- *   ↓
- *   Recommendation
- *
- * GET /health
- *   API / Engine 健康检查
- *
- * GET /
- *   API 基础状态
+ * NO:
+ *   返回完整 Recommendation
  *
  * ============================================================
  */
@@ -54,9 +51,19 @@ import {
 } from "../utils/runtime_json_loader.js";
 
 
+import {
+    parsePlayerInput
+} from "../engine/input_parser.js";
+
+
+import {
+    runFollowUpEngine
+} from "../engine/follow_up_engine.js";
+
+
 /**
  * ============================================================
- * Worker Configuration
+ * Configuration
  * ============================================================
  */
 
@@ -65,12 +72,12 @@ const APP_NAME =
 
 
 const WORKER_VERSION =
-    "2.0";
+    "2.2";
 
 
 /**
  * ============================================================
- * Cloudflare Worker
+ * Worker
  * ============================================================
  */
 
@@ -89,22 +96,19 @@ export default {
 
 
         /**
-         * ====================================================
          * CORS
-         * ====================================================
          */
 
         if (
             request.method === "OPTIONS"
         ) {
+
             return handleOptions();
         }
 
 
         /**
-         * ====================================================
          * GET /
-         * ====================================================
          */
 
         if (
@@ -113,6 +117,7 @@ export default {
         ) {
 
             return jsonResponse({
+
                 success:
                     true,
 
@@ -125,11 +130,30 @@ export default {
                 worker_version:
                     WORKER_VERSION,
 
+                runtime:
+                    getKnowledgeRuntime(),
+
                 engine:
                     getEngineInfo(),
 
-                runtime:
-                    getKnowledgeRuntime(),
+                parser: {
+                    name:
+                        "EveryCourtAI Input Parser",
+
+                    version:
+                        "1.0",
+
+                    mode:
+                        "rule_based"
+                },
+
+                follow_up_engine: {
+                    name:
+                        "follow_up_engine",
+
+                    version:
+                        "1.0"
+                },
 
                 endpoints: {
                     health:
@@ -139,6 +163,11 @@ export default {
                         "/ai"
                 },
 
+                input_modes: [
+                    "message",
+                    "player_input"
+                ],
+
                 timestamp:
                     createTimestamp()
             });
@@ -146,9 +175,7 @@ export default {
 
 
         /**
-         * ====================================================
          * GET /health
-         * ====================================================
          */
 
         if (
@@ -161,9 +188,7 @@ export default {
 
 
         /**
-         * ====================================================
          * POST /ai
-         * ====================================================
          */
 
         if (
@@ -180,17 +205,17 @@ export default {
 
 
         /**
-         * ====================================================
          * 404
-         * ====================================================
          */
 
         return jsonResponse(
             {
+
                 success:
                     false,
 
                 error: {
+
                     type:
                         "not_found",
 
@@ -200,6 +225,7 @@ export default {
 
                 path:
                     url.pathname
+
             },
             404
         );
@@ -223,6 +249,7 @@ async function handleHealth() {
 
 
         return jsonResponse({
+
             success:
                 true,
 
@@ -244,9 +271,31 @@ async function handleHealth() {
             engine:
                 getEngineInfo(),
 
+            parser: {
+
+                name:
+                    "EveryCourtAI Input Parser",
+
+                version:
+                    "1.0",
+
+                mode:
+                    "rule_based"
+            },
+
+            follow_up_engine: {
+
+                name:
+                    "follow_up_engine",
+
+                version:
+                    "1.0"
+            },
+
             timestamp:
                 createTimestamp()
         });
+
 
     } catch (
         error
@@ -254,6 +303,7 @@ async function handleHealth() {
 
         return jsonResponse(
             {
+
                 success:
                     false,
 
@@ -261,6 +311,7 @@ async function handleHealth() {
                     "error",
 
                 error: {
+
                     type:
                         error?.name ??
                         "Error",
@@ -302,7 +353,7 @@ async function handleAI(
         /**
          * ====================================================
          * STEP 1
-         * Cloudflare Knowledge Runtime
+         * Runtime
          * ====================================================
          */
 
@@ -314,7 +365,7 @@ async function handleAI(
         /**
          * ====================================================
          * STEP 2
-         * Parse JSON Body
+         * Parse Request Body
          * ====================================================
          */
 
@@ -330,6 +381,7 @@ async function handleAI(
 
             return jsonResponse(
                 {
+
                     success:
                         false,
 
@@ -337,6 +389,7 @@ async function handleAI(
                         requestId,
 
                     error: {
+
                         type:
                             "invalid_json",
 
@@ -352,39 +405,129 @@ async function handleAI(
         /**
          * ====================================================
          * STEP 3
-         * Read Player Input
-         * ====================================================
-         *
-         * 当前正式 Engine 使用结构化 player_input。
-         *
-         * Example:
-         *
-         * {
-         *   "player_input": {
-         *     "current_racquet": {
-         *       "id": "wilson_rf_01_pro"
-         *     },
-         *     "primary_goal": "more_comfort",
-         *     "playing_style": "all_court",
-         *     "swing_speed": "medium"
-         *   }
-         * }
-         *
+         * Resolve Language
          * ====================================================
          */
 
-        const playerInput =
-            body?.player_input;
+        const language =
+            normalizeLanguage(
+                body?.language
+            );
 
+
+        /**
+         * ====================================================
+         * STEP 4
+         * Resolve Input
+         * ====================================================
+         */
+
+        let playerInput =
+            null;
+
+
+        let parserResult =
+            null;
+
+
+        let inputMode =
+            null;
+
+
+        /**
+         * Structured Player Input
+         */
 
         if (
-            !playerInput ||
-            typeof playerInput !== "object" ||
-            Array.isArray(playerInput)
+            body?.player_input &&
+            typeof body.player_input ===
+                "object" &&
+            !Array.isArray(
+                body.player_input
+            )
         ) {
+
+            playerInput =
+                body.player_input;
+
+
+            inputMode =
+                "player_input";
+        }
+
+
+        /**
+         * Natural Language
+         */
+
+        else if (
+            typeof body?.message ===
+                "string" &&
+            body.message.trim()
+        ) {
+
+            parserResult =
+                parsePlayerInput(
+                    body.message
+                );
+
+
+            if (
+                !parserResult ||
+                parserResult.success !==
+                    true
+            ) {
+
+                return jsonResponse(
+                    {
+
+                        success:
+                            false,
+
+                        request_id:
+                            requestId,
+
+                        error: {
+
+                            type:
+                                "parser_failure",
+
+                            message:
+                                parserResult
+                                    ?.error
+                                    ?.message ??
+                                "Unable to parse user message."
+                        },
+
+                        parser_result:
+                            parserResult ??
+                            null
+
+                    },
+                    400
+                );
+            }
+
+
+            playerInput =
+                parserResult
+                    .player_input;
+
+
+            inputMode =
+                "message";
+        }
+
+
+        /**
+         * No Input
+         */
+
+        else {
 
             return jsonResponse(
                 {
+
                     success:
                         false,
 
@@ -392,12 +535,14 @@ async function handleAI(
                         requestId,
 
                     error: {
+
                         type:
                             "validation",
 
                         message:
-                            "player_input must be a valid object."
+                            "Request must contain either a valid message or player_input object."
                     }
+
                 },
                 400
             );
@@ -406,8 +551,51 @@ async function handleAI(
 
         /**
          * ====================================================
-         * STEP 4
-         * Run EveryCourtAI
+         * STEP 5
+         * Validate Resolved Input
+         * ====================================================
+         */
+
+        if (
+            !playerInput ||
+            typeof playerInput !==
+                "object" ||
+            Array.isArray(
+                playerInput
+            )
+        ) {
+
+            return jsonResponse(
+                {
+
+                    success:
+                        false,
+
+                    request_id:
+                        requestId,
+
+                    error: {
+
+                        type:
+                            "validation",
+
+                        message:
+                            "Resolved player_input is invalid."
+                    },
+
+                    parser_result:
+                        parserResult
+
+                },
+                400
+            );
+        }
+
+
+        /**
+         * ====================================================
+         * STEP 6
+         * Run EveryCourtAI Engine
          * ====================================================
          */
 
@@ -417,20 +605,15 @@ async function handleAI(
             );
 
 
-        /**
-         * ====================================================
-         * STEP 5
-         * Engine Failure
-         * ====================================================
-         */
-
         if (
             !engineResult ||
-            engineResult.success !== true
+            engineResult.success !==
+                true
         ) {
 
             return jsonResponse(
                 {
+
                     success:
                         false,
 
@@ -440,11 +623,21 @@ async function handleAI(
                     runtime:
                         getKnowledgeRuntime(),
 
+                    input_mode:
+                        inputMode,
+
+                    player_input:
+                        playerInput,
+
+                    parser:
+                        parserResult,
+
                     engine_result:
                         engineResult ??
                         null,
 
                     error: {
+
                         type:
                             "engine_failure",
 
@@ -452,12 +645,13 @@ async function handleAI(
                             engineResult
                                 ?.error
                                 ?.message ??
-                            "EveryCourtAI Engine failed to generate a recommendation."
+                            "EveryCourtAI Engine failed."
                     },
 
                     processing_time_ms:
                         Date.now() -
                         startedAt
+
                 },
                 500
             );
@@ -466,12 +660,146 @@ async function handleAI(
 
         /**
          * ====================================================
-         * STEP 6
-         * Successful Response
+         * STEP 7
+         * Follow-up Engine
          * ====================================================
          */
 
+        const followUpResult =
+            runFollowUpEngine({
+
+                parserResult,
+
+                confidenceResult:
+                    engineResult
+                        ?.confidence,
+
+                playerInput,
+
+                maxQuestions:
+                    2
+            });
+
+
+        /**
+         * ====================================================
+         * STEP 8
+         * Follow-up Required
+         * ====================================================
+         */
+
+        if (
+            followUpResult
+                ?.requires_follow_up ===
+            true
+        ) {
+
+            const answer =
+                buildFollowUpAnswer(
+                    followUpResult,
+                    language
+                );
+
+
+            return jsonResponse({
+
+                success:
+                    true,
+
+                request_id:
+                    requestId,
+
+                app:
+                    APP_NAME,
+
+                worker_version:
+                    WORKER_VERSION,
+
+                runtime:
+                    getKnowledgeRuntime(),
+
+                input_mode:
+                    inputMode,
+
+                language,
+
+                message:
+                    typeof body?.message ===
+                        "string"
+                        ? body.message
+                        : null,
+
+                status:
+                    "follow_up_required",
+
+                answer,
+
+                parser:
+                    parserResult,
+
+                player_input:
+                    playerInput,
+
+                follow_up:
+                    followUpResult,
+
+                /**
+                 * 非最终推荐
+                 *
+                 * 不把具体产品与磅数作为正式 Recommendation 返回。
+                 */
+
+                recommendation:
+                    null,
+
+                recommendation_preview:
+                    buildGeneralDirection(
+                        engineResult
+                    ),
+
+                engine_result: {
+
+                    engine:
+                        engineResult
+                            ?.engine,
+
+                    confidence:
+                        engineResult
+                            ?.confidence
+                },
+
+                processing_time_ms:
+                    Date.now() -
+                    startedAt,
+
+                timestamp:
+                    createTimestamp()
+            });
+        }
+
+
+        /**
+         * ====================================================
+         * STEP 9
+         * Full Recommendation Allowed
+         * ====================================================
+         */
+
+        const answer =
+            buildFinalAnswer(
+                engineResult,
+                language
+            );
+
+
+        const webRecommendation =
+            buildWebRecommendation(
+                engineResult
+            );
+
+
         return jsonResponse({
+
             success:
                 true,
 
@@ -487,17 +815,52 @@ async function handleAI(
             runtime:
                 getKnowledgeRuntime(),
 
-            engine:
-                engineResult.engine,
+            input_mode:
+                inputMode,
+
+            language,
+
+            message:
+                typeof body?.message ===
+                    "string"
+                    ? body.message
+                    : null,
+
+            status:
+                "recommendation_ready",
+
+            answer,
+
+            parser:
+                parserResult,
+
+            player_input:
+                playerInput,
+
+            follow_up:
+                followUpResult,
 
             recommendation:
-                engineResult.recommendation,
+                webRecommendation,
 
-            confidence:
-                engineResult.confidence,
+            engine_result: {
 
-            explanation:
-                engineResult.explanation,
+                engine:
+                    engineResult
+                        ?.engine,
+
+                recommendation:
+                    engineResult
+                        ?.recommendation,
+
+                confidence:
+                    engineResult
+                        ?.confidence,
+
+                explanation:
+                    engineResult
+                        ?.explanation
+            },
 
             processing_time_ms:
                 Date.now() -
@@ -512,14 +875,9 @@ async function handleAI(
         error
     ) {
 
-        /**
-         * ====================================================
-         * Unexpected Error
-         * ====================================================
-         */
-
         return jsonResponse(
             {
+
                 success:
                     false,
 
@@ -530,6 +888,7 @@ async function handleAI(
                     getKnowledgeRuntime(),
 
                 error: {
+
                     type:
                         error?.name ??
                         "Error",
@@ -546,10 +905,440 @@ async function handleAI(
 
                 timestamp:
                     createTimestamp()
+
             },
             500
         );
     }
+}
+
+
+/**
+ * ============================================================
+ * General Direction Preview
+ * ============================================================
+ *
+ * 当 Confidence 不足时：
+ *
+ * 可以告诉用户总体方向，
+ * 但不把具体产品 / 精准磅数当成最终结果。
+ *
+ * ============================================================
+ */
+
+function buildGeneralDirection(
+    engineResult
+) {
+
+    const recommendation =
+        engineResult
+            ?.recommendation;
+
+
+    const confidence =
+        engineResult
+            ?.confidence;
+
+
+    return {
+
+        status:
+            "general_direction_only",
+
+        racquet_action:
+            recommendation
+                ?.racquet_decision
+                ?.action ??
+            null,
+
+        primary_goal:
+            recommendation
+                ?.player_context
+                ?.primary_goal ??
+            null,
+
+        setup_score:
+            recommendation
+                ?.setup_score ??
+            null,
+
+        confidence:
+            confidence
+                ?.score ??
+            null,
+
+        confidence_level:
+            confidence
+                ?.level ??
+            null,
+
+        note: {
+            en:
+                "Specific product and tension recommendations are temporarily withheld until the missing information is provided.",
+
+            zh:
+                "在补充关键缺失信息之前，暂不把具体球线和精准磅数作为最终推荐。"
+        }
+    };
+}
+
+
+/**
+ * ============================================================
+ * Follow-up Answer
+ * ============================================================
+ */
+
+function buildFollowUpAnswer(
+    followUpResult,
+    language
+) {
+
+    const questions =
+        followUpResult
+            ?.questions ??
+        [];
+
+
+    const normalizedLanguage =
+        normalizeLanguage(
+            language
+        );
+
+
+    /**
+     * 中文 / 繁体
+     */
+
+    if (
+        normalizedLanguage === "zh" ||
+        normalizedLanguage === "zh-cn" ||
+        normalizedLanguage === "zh-tc" ||
+        normalizedLanguage === "zh-tw"
+    ) {
+
+        const questionTexts =
+            questions
+                .map(
+                    (
+                        item,
+                        index
+                    ) => {
+
+                        const text =
+                            item
+                                ?.question
+                                ?.zh ??
+                            item
+                                ?.question
+                                ?.en ??
+                            "";
+
+                        return (
+                            `${index + 1}. ${text}`
+                        );
+                    }
+                )
+                .filter(
+                    Boolean
+                );
+
+
+        return [
+            "我已经完成了第一轮装备分析，但目前资料还不足以把具体球线和精准磅数作为最终推荐。",
+            "",
+            "为了提高推荐准确度，请再告诉我：",
+            ...questionTexts
+        ]
+            .join("\n");
+    }
+
+
+    /**
+     * English
+     */
+
+    const questionTexts =
+        questions
+            .map(
+                (
+                    item,
+                    index
+                ) => {
+
+                    const text =
+                        item
+                            ?.question
+                            ?.en ??
+                        item
+                            ?.question
+                            ?.zh ??
+                        "";
+
+                    return (
+                        `${index + 1}. ${text}`
+                    );
+                }
+            )
+            .filter(
+                Boolean
+            );
+
+
+    return [
+        "I have completed the first equipment analysis, but there is not yet enough information to treat a specific string and tension as the final setup.",
+        "",
+        "Please tell me:",
+        ...questionTexts
+    ]
+        .join("\n");
+}
+
+
+/**
+ * ============================================================
+ * Final Human Answer
+ * ============================================================
+ */
+
+function buildFinalAnswer(
+    engineResult,
+    language
+) {
+
+    const explanation =
+        engineResult
+            ?.explanation;
+
+
+    const normalizedLanguage =
+        normalizeLanguage(
+            language
+        );
+
+
+    if (
+        normalizedLanguage === "zh" ||
+        normalizedLanguage === "zh-cn"
+    ) {
+
+        return (
+            explanation
+                ?.summary
+                ?.zh ??
+            explanation
+                ?.summary
+                ?.en ??
+            "EveryCourtAI 已完成装备分析。"
+        );
+    }
+
+
+    if (
+        normalizedLanguage === "zh-tc" ||
+        normalizedLanguage === "zh-tw"
+    ) {
+
+        return (
+            explanation
+                ?.summary
+                ?.zh ??
+            explanation
+                ?.summary
+                ?.en ??
+            "EveryCourtAI 已完成裝備分析。"
+        );
+    }
+
+
+    return (
+        explanation
+            ?.summary
+            ?.en ??
+        explanation
+            ?.summary
+            ?.zh ??
+        "EveryCourtAI has completed the equipment analysis."
+    );
+}
+
+
+/**
+ * ============================================================
+ * Web Recommendation
+ * ============================================================
+ */
+
+function buildWebRecommendation(
+    engineResult
+) {
+
+    const recommendation =
+        engineResult
+            ?.recommendation;
+
+
+    const confidence =
+        engineResult
+            ?.confidence;
+
+
+    if (
+        !recommendation
+    ) {
+
+        return null;
+    }
+
+
+    const racquet =
+        recommendation
+            ?.racquet_decision
+            ?.recommended;
+
+
+    const mainString =
+        recommendation
+            ?.string_setup
+            ?.main;
+
+
+    const tension =
+        recommendation
+            ?.tension;
+
+
+    let tensionRange =
+        null;
+
+
+    if (
+        tension
+            ?.working_range_lbs
+            ?.minimum_lbs !==
+            undefined &&
+        tension
+            ?.working_range_lbs
+            ?.maximum_lbs !==
+            undefined
+    ) {
+
+        tensionRange =
+            `${tension.working_range_lbs.minimum_lbs}–${tension.working_range_lbs.maximum_lbs} lbs`;
+    }
+
+
+    return {
+
+        racquet:
+            racquet
+                ? `${racquet.brand ?? ""} ${racquet.model ?? ""}`
+                    .trim()
+                : null,
+
+        racquet_id:
+            racquet
+                ?.id ??
+            null,
+
+        racquet_action:
+            recommendation
+                ?.racquet_decision
+                ?.action ??
+            null,
+
+        string:
+            mainString
+                ? `${mainString.brand ?? ""} ${mainString.model ?? ""}`
+                    .trim()
+                : null,
+
+        string_id:
+            mainString
+                ?.id ??
+            null,
+
+        gauge_mm:
+            mainString
+                ?.gauge_mm ??
+            null,
+
+        setup_type:
+            recommendation
+                ?.string_setup
+                ?.type ??
+            null,
+
+        tension_lbs:
+            tension
+                ?.main_lbs ??
+            null,
+
+        tension_range:
+            tensionRange,
+
+        confidence:
+            confidence
+                ?.score ??
+            null,
+
+        confidence_level:
+            confidence
+                ?.level ??
+            null,
+
+        setup_score:
+            recommendation
+                ?.setup_score ??
+            null,
+
+        why:
+            recommendation
+                ?.primary_reasons ??
+            [],
+
+        tradeoffs:
+            recommendation
+                ?.tradeoffs ??
+            [],
+
+        alternatives:
+            recommendation
+                ?.alternatives ??
+            []
+    };
+}
+
+
+/**
+ * ============================================================
+ * Normalize Language
+ * ============================================================
+ */
+
+function normalizeLanguage(
+    language
+) {
+
+    if (
+        typeof language !==
+        "string"
+    ) {
+
+        return "en";
+    }
+
+
+    const normalized =
+        language
+            .trim()
+            .toLowerCase();
+
+
+    return (
+        normalized ||
+        "en"
+    );
 }
 
 
@@ -571,9 +1360,11 @@ function jsonResponse(
             2
         ),
         {
+
             status,
 
             headers: {
+
                 "Content-Type":
                     "application/json; charset=UTF-8",
 
@@ -596,7 +1387,7 @@ function jsonResponse(
 
 /**
  * ============================================================
- * CORS OPTIONS
+ * CORS
  * ============================================================
  */
 
@@ -605,10 +1396,12 @@ function handleOptions() {
     return new Response(
         null,
         {
+
             status:
                 204,
 
             headers: {
+
                 "Access-Control-Allow-Origin":
                     "*",
 
@@ -674,8 +1467,10 @@ function safeErrorMessage(
     if (
         error instanceof Error
     ) {
+
         return error.message;
     }
+
 
     return String(
         error
