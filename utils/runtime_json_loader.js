@@ -9,509 +9,127 @@
  * utils/runtime_json_loader.js
  *
  * 作用：
+ * 根据运行环境选择不同的 JSON Loader。
  *
- * 为 EveryCourtAI Engine 提供统一的数据读取接口。
+ * Local / Node:
+ *   json_loader.js
  *
- * Local / Codespaces:
+ * Cloudflare Worker:
+ *   cloudflare_json_loader.js
  *
- * runtime = "local"
- *      ↓
- * utils/json_loader.js
- *      ↓
- * node:fs
- *      ↓
- * knowledge/
- *
- *
- * Cloudflare:
- *
- * runtime = "cloudflare"
- *      ↓
- * utils/cloudflare_json_loader.js
- *      ↓
- * fetch()
- *      ↓
- * GitHub Raw
- *
- *
+ * Engine 层只调用本文件，
+ * 不需要知道底层运行环境。
  * ============================================================
  */
 
+let knowledgeRuntime = "local";
 
-/**
- * ============================================================
- * Runtime
- * ============================================================
- *
- * 默认一定使用 local。
- *
- * 这样可以保证目前：
- *
- * npm test
- *
- * 完全不受影响。
- * ============================================================
- */
-
-let currentRuntime =
-    "local";
-
-
-/**
- * ============================================================
- * 支持 Runtime
- * ============================================================
- */
-
-const SUPPORTED_RUNTIMES =
-    new Set([
-        "local",
-        "cloudflare"
-    ]);
-
-
-/**
- * ============================================================
- * Loader Cache
- * ============================================================
- *
- * 避免重复 dynamic import。
- * ============================================================
- */
-
-let localLoaderModule =
-    null;
-
-let cloudflareLoaderModule =
-    null;
-
-
-/**
- * ============================================================
- * Normalize Runtime
- * ============================================================
- */
-
-function normalizeRuntime(
-    runtime
-) {
-
-    if (
-        typeof runtime !== "string"
-    ) {
-
-        return null;
-
-    }
-
-
-    return runtime
-        .trim()
-        .toLowerCase();
-}
-
-
-/**
- * ============================================================
- * 设置 Runtime
- * ============================================================
- *
- * Local 默认无需调用。
- *
- * Cloudflare Worker 启动 /ai 前调用：
- *
- * setKnowledgeRuntime("cloudflare");
- *
- * ============================================================
- */
-
-export function setKnowledgeRuntime(
-    runtime
-) {
-
+export function setKnowledgeRuntime(runtime) {
     const normalized =
-        normalizeRuntime(
-            runtime
-        );
-
+        String(runtime ?? "")
+            .trim()
+            .toLowerCase();
 
     if (
-        !SUPPORTED_RUNTIMES.has(
-            normalized
-        )
+        normalized !== "local" &&
+        normalized !== "cloudflare"
     ) {
-
         throw new Error(
-            `EveryCourtAI Runtime Loader: unsupported runtime "${runtime}".`
+            `EveryCourtAI Runtime JSON Loader: unsupported runtime "${runtime}".`
         );
-
     }
 
-
-    currentRuntime =
-        normalized;
-
-
-    return {
-        success:
-            true,
-
-        runtime:
-            currentRuntime
-    };
+    knowledgeRuntime = normalized;
 }
-
-
-/**
- * ============================================================
- * 获取当前 Runtime
- * ============================================================
- */
 
 export function getKnowledgeRuntime() {
-
-    return currentRuntime;
-
+    return knowledgeRuntime;
 }
-
-
-/**
- * ============================================================
- * 是否为 Cloudflare
- * ============================================================
- */
-
-export function isCloudflareRuntime() {
-
-    return (
-        currentRuntime ===
-        "cloudflare"
-    );
-
-}
-
-
-/**
- * ============================================================
- * 是否为 Local
- * ============================================================
- */
-
-export function isLocalRuntime() {
-
-    return (
-        currentRuntime ===
-        "local"
-    );
-
-}
-
-
-/**
- * ============================================================
- * Local Loader
- * ============================================================
- */
-
-async function getLocalLoader() {
-
-    if (
-        localLoaderModule
-    ) {
-
-        return localLoaderModule;
-
-    }
-
-
-    /**
-     * 注意：
-     *
-     * 使用 Dynamic Import。
-     *
-     * Cloudflare Runtime 不执行这一条，
-     * 所以不会实际调用 Node fs Loader。
-     */
-
-    localLoaderModule =
-        await import(
-            "./json_loader.js"
-        );
-
-
-    return localLoaderModule;
-
-}
-
-
-/**
- * ============================================================
- * Cloudflare Loader
- * ============================================================
- */
-
-async function getCloudflareLoader() {
-
-    if (
-        cloudflareLoaderModule
-    ) {
-
-        return cloudflareLoaderModule;
-
-    }
-
-
-    cloudflareLoaderModule =
-        await import(
-            "./cloudflare_json_loader.js"
-        );
-
-
-    return cloudflareLoaderModule;
-
-}
-
-
-/**
- * ============================================================
- * 获取当前 Loader
- * ============================================================
- */
-
-async function getActiveLoader() {
-
-    if (
-        currentRuntime ===
-        "cloudflare"
-    ) {
-
-        return getCloudflareLoader();
-
-    }
-
-
-    return getLocalLoader();
-
-}
-
-
-/**
- * ============================================================
- * Load Knowledge Directory
- * ============================================================
- *
- * Matching Engine 最重要的接口。
- *
- * 使用方式保持：
- *
- * loadKnowledgeDirectory("racquets")
- *
- * loadKnowledgeDirectory("strings")
- *
- * ============================================================
- */
-
-export async function loadKnowledgeDirectory(
-    knowledgeDirectory,
-    options = {}
-) {
-
-    const loader =
-        await getActiveLoader();
-
-
-    if (
-        typeof loader
-            ?.loadKnowledgeDirectory !==
-        "function"
-    ) {
-
-        throw new Error(
-            `EveryCourtAI Runtime Loader: loadKnowledgeDirectory() is unavailable for runtime "${currentRuntime}".`
-        );
-
-    }
-
-
-    return loader
-        .loadKnowledgeDirectory(
-            knowledgeDirectory,
-            options
-        );
-
-}
-
-
-/**
- * ============================================================
- * Load Knowledge JSON
- * ============================================================
- */
 
 export async function loadKnowledgeJson(
     knowledgePath,
     options = {}
 ) {
-
-    const loader =
-        await getActiveLoader();
-
-
     if (
-        typeof loader
-            ?.loadKnowledgeJson !==
-        "function"
+        knowledgeRuntime === "cloudflare"
     ) {
+        const module =
+            await import(
+                "./cloudflare_json_loader.js"
+            );
 
-        throw new Error(
-            `EveryCourtAI Runtime Loader: loadKnowledgeJson() is unavailable for runtime "${currentRuntime}".`
-        );
-
-    }
-
-
-    return loader
-        .loadKnowledgeJson(
+        return module.loadKnowledgeJson(
             knowledgePath,
             options
         );
-
-}
-
-
-/**
- * ============================================================
- * Loader Information
- * ============================================================
- */
-
-export async function getRuntimeLoaderInfo() {
-
-    const loader =
-        await getActiveLoader();
-
-
-    let loaderInfo =
-        null;
-
-
-    if (
-        currentRuntime ===
-            "cloudflare" &&
-        typeof loader
-            ?.getCloudflareLoaderInfo ===
-            "function"
-    ) {
-
-        loaderInfo =
-            loader
-                .getCloudflareLoaderInfo();
-
     }
 
+    const module =
+        await import(
+            "./json_loader.js"
+        );
 
-    return {
-        adapter:
-            "runtime_json_loader",
-
-        version:
-            "1.0",
-
-        runtime:
-            currentRuntime,
-
-        loader_info:
-            loaderInfo
-    };
-
+    return module.loadKnowledgeJson(
+        knowledgePath,
+        options
+    );
 }
 
-
-/**
- * ============================================================
- * 清理 Cache
- * ============================================================
- */
-
-export async function clearRuntimeLoaderCache() {
-
-    /**
-     * Local
-     */
-
+export async function loadKnowledgeDirectory(
+    knowledgeDirectory,
+    options = {}
+) {
     if (
-        localLoaderModule &&
-        typeof localLoaderModule
-            ?.clearJsonCache ===
-            "function"
+        knowledgeRuntime === "cloudflare"
     ) {
+        const module =
+            await import(
+                "./cloudflare_json_loader.js"
+            );
 
-        localLoaderModule
-            .clearJsonCache();
-
+        return module.loadKnowledgeDirectory(
+            knowledgeDirectory,
+            options
+        );
     }
 
+    const module =
+        await import(
+            "./json_loader.js"
+        );
 
-    /**
-     * Cloudflare
-     */
-
-    if (
-        cloudflareLoaderModule &&
-        typeof cloudflareLoaderModule
-            ?.clearCloudflareJsonCache ===
-            "function"
-    ) {
-
-        cloudflareLoaderModule
-            .clearCloudflareJsonCache();
-
-    }
-
-
-    return {
-        success:
-            true,
-
-        runtime:
-            currentRuntime
-    };
-
+    return module.loadKnowledgeDirectory(
+        knowledgeDirectory,
+        options
+    );
 }
 
+export async function clearRuntimeJsonCache() {
+    if (
+        knowledgeRuntime === "cloudflare"
+    ) {
+        const module =
+            await import(
+                "./cloudflare_json_loader.js"
+            );
 
-/**
- * ============================================================
- * Runtime Status
- * ============================================================
- */
+        if (
+            typeof module.clearJsonCache === "function"
+        ) {
+            module.clearJsonCache();
+        }
 
-export function getRuntimeStatus() {
+        return;
+    }
 
-    return {
-        adapter:
-            "runtime_json_loader",
+    const module =
+        await import(
+            "./json_loader.js"
+        );
 
-        version:
-            "1.0",
-
-        runtime:
-            currentRuntime,
-
-        supported_runtimes:
-            [
-                ...SUPPORTED_RUNTIMES
-            ],
-
-        local_loader_loaded:
-            Boolean(
-                localLoaderModule
-            ),
-
-        cloudflare_loader_loaded:
-            Boolean(
-                cloudflareLoaderModule
-            )
-    };
-
+    if (
+        typeof module.clearJsonCache === "function"
+    ) {
+        module.clearJsonCache();
+    }
 }

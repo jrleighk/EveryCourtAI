@@ -1,46 +1,1828 @@
 {
-  "version": "1.0",
-
+  "metadata": {
+    "version": "1.0",
+    "generated_at": "2026-08-19T09:47:47.268Z",
+    "generator": "tools/build_product_lookup.js",
+    "counts": {
+      "racquets": 144,
+      "strings": 158,
+      "total": 302
+    }
+  },
   "racquets": {
-
-    "wilson_rf01_pro": {
-      "name": "Wilson RF 01 Pro",
-      "brand": "Wilson",
-      "category": "racquet",
-      "path": "knowledge/racquets/wilson/rf01_pro.json"
-    },
-
-    "wilson_blade_98_v10": {
-      "name": "Wilson Blade 98 V10",
-      "brand": "Wilson",
-      "category": "racquet",
-      "path": "knowledge/racquets/wilson/blade_98_v10.json"
-    },
-
-    "babolat_pure_drive_2026": {
-      "name": "Babolat Pure Drive 2026",
+    "babolat_evo_aero_2nd_gen_2026": {
+      "name": "EVO Aero 2nd Gen 2026",
       "brand": "Babolat",
       "category": "racquet",
-      "path": "knowledge/racquets/babolat/pure_drive_2026.json"
+      "path": "knowledge/racquets/babolat/babolat_evo_aero_2nd_gen_2026.json"
+    },
+    "babolat_pure_drive_spectra_edition_2026": {
+      "name": "Pure Drive Spectra Edition 2026",
+      "brand": "Babolat",
+      "category": "racquet",
+      "path": "knowledge/racquets/babolat/babolat_pure_drive_spectra_edition_2026.json"
+    },
+    "babolat_pure_drive_team_spectra_edition_2026": {
+      "name": "Pure Drive Team Spectra Edition 2026",
+      "brand": "Babolat",
+      "category": "racquet",
+      "path": "knowledge/racquets/babolat/babolat_pure_drive_team_spectra_edition_2026.json"
+    },
+    "babolat_pure_drive_wimbledon_2026": {
+      "name": "Pure Drive Wimbledon 2026",
+      "brand": "Babolat",
+      "category": "racquet",
+      "path": "knowledge/racquets/babolat/babolat_pure_drive_wimbledon_2026.json"
+    },
+    "babolat_pure_strike_100_16x20_carbon_grey_2025": {
+      "name": "Pure Strike 100 16x20 Carbon Grey 2025",
+      "brand": "Babolat",
+      "category": "racquet",
+      "path": "knowledge/racquets/babolat/babolat_pure_strike_100_16x20_carbon_grey_2025.json"
+    },
+    "babolat_pure_strike_98_18x20_carbon_grey_2025": {
+      "name": "Pure Strike 98 18x20 Carbon Grey 2025",
+      "brand": "Babolat",
+      "category": "racquet",
+      "path": "knowledge/racquets/babolat/babolat_pure_strike_98_18x20_carbon_grey_2025.json"
+    },
+    "babolat_pure_aero_2026": {
+      "name": "Pure Aero 2026",
+      "brand": "Babolat",
+      "category": "racquet",
+      "path": "knowledge/racquets/babolat/pure_aero_2026.json"
+    },
+    "babolat_pure_aero_98_2026": {
+      "name": "Pure Aero 98 2026",
+      "brand": "Babolat",
+      "category": "racquet",
+      "path": "knowledge/racquets/babolat/pure_aero_98_2026.json"
+    },
+    "babolat_pure_drive_98_2025": {
+      "name": "Pure Drive 98",
+      "brand": "Babolat",
+      "category": "racquet",
+      "path": "knowledge/racquets/babolat/pure_drive_98_2025.json"
+    },
+    "lacoste_l23_light": {
+      "name": "L23 Light",
+      "brand": "Lacoste",
+      "category": "racquet",
+      "path": "knowledge/racquets/collaborations/Tecnifibre_lacoste_l23_light.json"
+    },
+    "gucci_x_head_tennis_racket": {
+      "name": "Gucci x HEAD Tennis Racket",
+      "brand": "HEAD",
+      "category": "racquet",
+      "path": "knowledge/racquets/collaborations/gucci_x_head_tennis_racket.json"
+    },
+    "head_radical_mp_palm_tree_crew_2025": {
+      "name": "Radical MP Palm Tree Crew 2025",
+      "brand": "HEAD",
+      "category": "racquet",
+      "path": "knowledge/racquets/collaborations/head_radical_mp_palm_tree_crew_2025.json"
+    },
+    "wilson_kith_blade_98_16x19_v9": {
+      "name": "KITH x Wilson Blade 98 16x19 V9",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/collaborations/wilson_kith_blade_98_16x19_v9.json"
+    },
+    "wilson_kith_pro_staff_97_v14": {
+      "name": "KITH x Wilson Pro Staff 97 V14",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/collaborations/wilson_kith_pro_staff_97_v14.json"
+    },
+    "wilson_kith_shift_99_v1": {
+      "name": "KITH x Wilson Shift 99 V1",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/collaborations/wilson_kith_shift_99_v1.json"
+    },
+    "wilson_minions_clash_100_v2": {
+      "name": "Minions Clash 100 V2 Limited Edition",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/collaborations/wilson_minions_clash_100_v2.json"
+    },
+    "dunlop_cx200_2024": {
+      "name": "CX 200",
+      "brand": "Dunlop",
+      "category": "racquet",
+      "path": "knowledge/racquets/dunlop/dunlop_cx200_2024.json"
+    },
+    "dunlop_cx200_ls_2024": {
+      "name": "CX 200 LS",
+      "brand": "Dunlop",
+      "category": "racquet",
+      "path": "knowledge/racquets/dunlop/dunlop_cx200_ls_2024.json"
+    },
+    "dunlop_cx200_os_2024": {
+      "name": "CX 200 OS",
+      "brand": "Dunlop",
+      "category": "racquet",
+      "path": "knowledge/racquets/dunlop/dunlop_cx200_os_2024.json"
+    },
+    "dunlop_cx200_tour_16x19_2024": {
+      "name": "CX 200 TOUR 16x19",
+      "brand": "Dunlop",
+      "category": "racquet",
+      "path": "knowledge/racquets/dunlop/dunlop_cx200_tour_16x19_2024.json"
+    },
+    "dunlop_cx200_tour_18x20_2024": {
+      "name": "CX 200 TOUR 18x20",
+      "brand": "Dunlop",
+      "category": "racquet",
+      "path": "knowledge/racquets/dunlop/dunlop_cx200_tour_18x20_2024.json"
+    },
+    "dunlop_cx400_2024": {
+      "name": "CX 400",
+      "brand": "Dunlop",
+      "category": "racquet",
+      "path": "knowledge/racquets/dunlop/dunlop_cx400_2024.json"
+    },
+    "dunlop_cx400_tour_2024": {
+      "name": "CX 400 TOUR",
+      "brand": "Dunlop",
+      "category": "racquet",
+      "path": "knowledge/racquets/dunlop/dunlop_cx400_tour_2024.json"
+    },
+    "dunlop_fx500_2026": {
+      "name": "FX 500",
+      "brand": "Dunlop",
+      "category": "racquet",
+      "path": "knowledge/racquets/dunlop/dunlop_fx500_2026.json"
+    },
+    "dunlop_fx500_tour_2026": {
+      "name": "FX 500 Tour",
+      "brand": "Dunlop",
+      "category": "racquet",
+      "path": "knowledge/racquets/dunlop/dunlop_fx500_tour_2026.json"
+    },
+    "dunlop_sx300_2025": {
+      "name": "SX 300",
+      "brand": "Dunlop",
+      "category": "racquet",
+      "path": "knowledge/racquets/dunlop/dunlop_sx300_2025.json"
+    },
+    "dunlop_sx300_lite_2025": {
+      "name": "SX 300 LITE",
+      "brand": "Dunlop",
+      "category": "racquet",
+      "path": "knowledge/racquets/dunlop/dunlop_sx300_lite_2025.json"
+    },
+    "dunlop_sx300_ls_2025": {
+      "name": "SX 300 LS",
+      "brand": "Dunlop",
+      "category": "racquet",
+      "path": "knowledge/racquets/dunlop/dunlop_sx300_ls_2025.json"
+    },
+    "dunlop_sx300_tour_2025": {
+      "name": "SX 300 TOUR",
+      "brand": "Dunlop",
+      "category": "racquet",
+      "path": "knowledge/racquets/dunlop/dunlop_sx300_tour_2025.json"
+    },
+    "head_boom_mp_2026": {
+      "name": "Boom MP 2026",
+      "brand": "HEAD",
+      "category": "racquet",
+      "path": "knowledge/racquets/head/head_boom_mp_2026.json"
+    },
+    "head_boom_mp_alternate_2026": {
+      "name": "Boom MP Alternate 2026",
+      "brand": "HEAD",
+      "category": "racquet",
+      "path": "knowledge/racquets/head/head_boom_mp_alternate_2026.json"
+    },
+    "head_boom_mp_l_2026": {
+      "name": "Boom MP L 2026",
+      "brand": "HEAD",
+      "category": "racquet",
+      "path": "knowledge/racquets/head/head_boom_mp_l_2026.json"
+    },
+    "head_boom_mp_l_alternate_2026": {
+      "name": "Boom MP L Alternate 2026",
+      "brand": "HEAD",
+      "category": "racquet",
+      "path": "knowledge/racquets/head/head_boom_mp_l_alternate_2026.json"
+    },
+    "head_boom_mp_l_neon_2025": {
+      "name": "Boom MP L",
+      "brand": "Head",
+      "category": "racquet",
+      "path": "knowledge/racquets/head/head_boom_mp_l_neon_2025.json"
+    },
+    "head_boom_pro_2026": {
+      "name": "Boom Pro 2026",
+      "brand": "HEAD",
+      "category": "racquet",
+      "path": "knowledge/racquets/head/head_boom_pro_2026.json"
+    },
+    "head_extreme_mp_2026": {
+      "name": "Extreme MP 2026",
+      "brand": "HEAD",
+      "category": "racquet",
+      "path": "knowledge/racquets/head/head_extreme_mp_2026.json"
+    },
+    "head_extreme_mp_l_2026": {
+      "name": "Extreme MP L 2026",
+      "brand": "HEAD",
+      "category": "racquet",
+      "path": "knowledge/racquets/head/head_extreme_mp_l_2026.json"
+    },
+    "head_extreme_mp_ul_2026": {
+      "name": "Extreme MP UL 2026",
+      "brand": "HEAD",
+      "category": "racquet",
+      "path": "knowledge/racquets/head/head_extreme_mp_ul_2026.json"
+    },
+    "head_extreme_pro_2026": {
+      "name": "Extreme Pro 2026",
+      "brand": "HEAD",
+      "category": "racquet",
+      "path": "knowledge/racquets/head/head_extreme_pro_2026.json"
+    },
+    "head_gravity_mp_2025": {
+      "name": "Gravity MP",
+      "brand": "Head",
+      "category": "racquet",
+      "path": "knowledge/racquets/head/head_gravity_mp_2025.json"
+    },
+    "head_gravity_mp_l_2025": {
+      "name": "Gravity MP L",
+      "brand": "Head",
+      "category": "racquet",
+      "path": "knowledge/racquets/head/head_gravity_mp_l_2025.json"
+    },
+    "head_gravity_pro_2025": {
+      "name": "Gravity Pro",
+      "brand": "Head",
+      "category": "racquet",
+      "path": "knowledge/racquets/head/head_gravity_pro_2025.json"
+    },
+    "head_gravity_tour_2025": {
+      "name": "Gravity Tour",
+      "brand": "Head",
+      "category": "racquet",
+      "path": "knowledge/racquets/head/head_gravity_tour_2025.json"
+    },
+    "head_pwr_110_2026": {
+      "name": "PWR 110 2026",
+      "brand": "HEAD",
+      "category": "racquet",
+      "path": "knowledge/racquets/head/head_pwr_110_2026.json"
+    },
+    "head_radical_mp_auxetic": {
+      "name": "Radical MP",
+      "brand": "Head",
+      "category": "racquet",
+      "path": "knowledge/racquets/head/head_radical_mp_auxetic.json"
+    },
+    "head_radical_pro_2025": {
+      "name": "Radical Pro",
+      "brand": "Head",
+      "category": "racquet",
+      "path": "knowledge/racquets/head/head_radical_pro_2025.json"
+    },
+    "head_radical_pro_auxetic": {
+      "name": "Radical Pro",
+      "brand": "Head",
+      "category": "racquet",
+      "path": "knowledge/racquets/head/head_radical_pro_auxetic.json"
+    },
+    "head_radical_team_2025": {
+      "name": "Radical Team",
+      "brand": "Head",
+      "category": "racquet",
+      "path": "knowledge/racquets/head/head_radical_team_2025.json"
+    },
+    "head_speed_mp_2026": {
+      "name": "Speed MP 2026",
+      "brand": "HEAD",
+      "category": "racquet",
+      "path": "knowledge/racquets/head/head_speed_mp_2026.json"
+    },
+    "head_speed_mp_l_2026": {
+      "name": "Speed MP L 2026",
+      "brand": "HEAD",
+      "category": "racquet",
+      "path": "knowledge/racquets/head/head_speed_mp_l_2026.json"
+    },
+    "head_speed_mp_legend_2026": {
+      "name": "Speed MP Legend 2026",
+      "brand": "HEAD",
+      "category": "racquet",
+      "path": "knowledge/racquets/head/head_speed_mp_legend_2026.json"
+    },
+    "head_speed_pro_2026": {
+      "name": "Speed Pro 2026",
+      "brand": "HEAD",
+      "category": "racquet",
+      "path": "knowledge/racquets/head/head_speed_pro_2026.json"
+    },
+    "head_speed_pro_legend_2026": {
+      "name": "Speed Pro Legend 2026",
+      "brand": "HEAD",
+      "category": "racquet",
+      "path": "knowledge/racquets/head/head_speed_pro_legend_2026.json"
+    },
+    "head_speed_tour_2026": {
+      "name": "Speed Tour 2026",
+      "brand": "HEAD",
+      "category": "racquet",
+      "path": "knowledge/racquets/head/head_speed_tour_2026.json"
+    },
+    "head_squared_2026": {
+      "name": "Squared 2026",
+      "brand": "HEAD",
+      "category": "racquet",
+      "path": "knowledge/racquets/head/head_squared_2026.json"
+    },
+    "babolat_pure_aero_rafa_limited_edition": {
+      "name": "Pure Aero Rafa Limited Edition",
+      "brand": "Babolat",
+      "category": "racquet",
+      "path": "knowledge/racquets/special_editions/babolat_pure_aero_rafa_limited_edition.json"
+    },
+    "babolat_pure_drive_30th_anniversary": {
+      "name": "Pure Drive 30th Anniversary",
+      "brand": "Babolat",
+      "category": "racquet",
+      "path": "knowledge/racquets/special_editions/babolat_pure_drive_30th_anniversary.json"
+    },
+    "babolat_pure_drive_team_autograph_130th_anniversary_limited_edition": {
+      "name": "Pure Drive Team Autograph 130th Anniversary Limited Edition",
+      "brand": "Babolat",
+      "category": "racquet",
+      "path": "knowledge/racquets/special_editions/babolat_pure_drive_team_autograph_130th_anniversary_limited_edition.json"
+    },
+    "babolat_rafa_92_titles_collector_racquet": {
+      "name": "Rafa 92 Titles Collector Racquet",
+      "brand": "Babolat",
+      "category": "racquet",
+      "path": "knowledge/racquets/special_editions/babolat_rafa_92_titles_collector_racquet.json"
+    },
+    "wilson_pro_staff_rf97_limited_edition_box_set": {
+      "name": "Pro Staff RF97 Limited Edition Box Set",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/special_editions/player_legacy/wilson_pro_staff_rf97_limited_edition_box_set.json"
+    },
+    "wilson_rf_01_pro_hall_of_fame_whgo_2026": {
+      "name": "RF 01 Pro Hall of Fame WHGO 2026",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/special_editions/player_legacy/wilson_rf_01_pro_hall_of_fame_whgo_2026.json"
+    },
+    "wilson_roger_federer_grand_slam_volcanic_limited_edition": {
+      "name": "Roger Federer Grand Slam Volcanic Limited Edition",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/special_editions/player_legacy/wilson_roger_federer_grand_slam_volcanic_limited_edition.json"
+    },
+    "wilson_roger_federer_limited_edition_set": {
+      "name": "Roger Federer Limited Edition Tennis Set",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/special_editions/player_legacy/wilson_roger_federer_limited_edition_set.json"
+    },
+    "yonex_osaka_ezone_98_gold_purple_limited_edition": {
+      "name": "EZONE 98",
+      "brand": "Yonex",
+      "category": "racquet",
+      "path": "knowledge/racquets/special_editions/player_legacy/yonex_osaka_ezone_98_gold_purple_limited_edition.json"
+    },
+    "wilson_blade_98_16x19_v10_us_open_2026": {
+      "name": "Blade 98 16x19 V10 US Open Edition",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/special_editions/wilson_blade_98_16x19_v10_us_open_2026.json"
+    },
+    "wilson_clash_100_pro_v3_reverse_2026": {
+      "name": "Clash 100 Pro V3 Reverse 2026",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/special_editions/wilson_clash_100_pro_v3_reverse_2026.json"
+    },
+    "wilson_clash_100_v2_california_edition": {
+      "name": "Clash 100 V2 California Edition",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/special_editions/wilson_clash_100_v2_california_edition.json"
+    },
+    "wilson_clash_100_v3_reverse_2026": {
+      "name": "Clash 100 V3 Reverse 2026",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/special_editions/wilson_clash_100_v3_reverse_2026.json"
+    },
+    "wilson_clash_100l_v3_reverse_2026": {
+      "name": "Clash 100L V3 Reverse 2026",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/special_editions/wilson_clash_100l_v3_reverse_2026.json"
+    },
+    "wilson_clash_100l_v3_roland_garros_2026": {
+      "name": "Clash 100L V3 Roland Garros 2026",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/special_editions/wilson_clash_100l_v3_roland_garros_2026.json"
+    },
+    "wilson_clash_100l_v3_us_open_2026": {
+      "name": "Clash 100L V3 US Open Edition",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/special_editions/wilson_clash_100l_v3_us_open_2026.json"
+    },
+    "wilson_pro_staff_97_classic_2026": {
+      "name": "Pro Staff 97 Classic 2026",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/special_editions/wilson_pro_staff_97_classic_2026.json"
+    },
+    "wilson_pro_staff_97l_classic_2026": {
+      "name": "Pro Staff 97L Classic 2026",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/special_editions/wilson_pro_staff_97l_classic_2026.json"
+    },
+    "wilson_rf_01_laver_cup_2026_blue": {
+      "name": "RF 01 Laver Cup 2026 Blue Edition",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/special_editions/wilson_rf_01_laver_cup_2026_blue.json"
+    },
+    "wilson_rf_01_pro_classic": {
+      "name": "RF 01 Pro Classic",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/special_editions/wilson_rf_01_pro_classic.json"
+    },
+    "wilson_shift_99l_v1_110th_anniversary_chicago_2024": {
+      "name": "Shift 99L V1 110th Anniversary Chicago Limited Edition",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/special_editions/wilson_shift_99l_v1_110th_anniversary_chicago_2024.json"
+    },
+    "wilson_shift_99l_v1_year_of_the_horse": {
+      "name": "Shift 99L V1 Year Of The Horse Edition",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/special_editions/wilson_shift_99l_v1_year_of_the_horse.json"
+    },
+    "wilson_snake_year_limited_edition": {
+      "name": "Snake Year Limited Edition",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/special_editions/wilson_snake_year_limited_edition.json"
+    },
+    "wilson_ultra_100_v5_desert_2026": {
+      "name": "Ultra 100 V5 Desert 2026",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/special_editions/wilson_ultra_100_v5_desert_2026.json"
+    },
+    "wilson_ultra_100l_v5_desert_2026": {
+      "name": "Ultra 100L V5 Desert 2026",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/special_editions/wilson_ultra_100l_v5_desert_2026.json"
+    },
+    "wilson_ultra_100l_v5_roland_garros_2026": {
+      "name": "Ultra 100L V5 Roland Garros 2026",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/special_editions/wilson_ultra_100l_v5_roland_garros_2026.json"
+    },
+    "tecnifibre_fire_260_os": {
+      "name": "FIRE 260 OS",
+      "brand": "Tecnifibre",
+      "category": "racquet",
+      "path": "knowledge/racquets/tecnifibre/tecnifibre_fire_260_os.json"
+    },
+    "tecnifibre_fire_270": {
+      "name": "FIRE 270",
+      "brand": "Tecnifibre",
+      "category": "racquet",
+      "path": "knowledge/racquets/tecnifibre/tecnifibre_fire_270.json"
+    },
+    "tecnifibre_fire_285": {
+      "name": "FIRE 285",
+      "brand": "Tecnifibre",
+      "category": "racquet",
+      "path": "knowledge/racquets/tecnifibre/tecnifibre_fire_285.json"
+    },
+    "tecnifibre_fire_300": {
+      "name": "FIRE 300",
+      "brand": "Tecnifibre",
+      "category": "racquet",
+      "path": "knowledge/racquets/tecnifibre/tecnifibre_fire_300.json"
+    },
+    "tecnifibre_fire_305s": {
+      "name": "FIRE 305S",
+      "brand": "Tecnifibre",
+      "category": "racquet",
+      "path": "knowledge/racquets/tecnifibre/tecnifibre_fire_305s.json"
+    },
+    "tecnifibre_t_fight_300_ig": {
+      "name": "T-FIGHT 300 IG",
+      "brand": "Tecnifibre",
+      "category": "racquet",
+      "path": "knowledge/racquets/tecnifibre/tecnifibre_t_fight_300_ig.json"
+    },
+    "tecnifibre_t_fight_300s": {
+      "name": "T-FIGHT 300S",
+      "brand": "Tecnifibre",
+      "category": "racquet",
+      "path": "knowledge/racquets/tecnifibre/tecnifibre_t_fight_300s.json"
+    },
+    "tecnifibre_t_fight_300s_ig": {
+      "name": "T-FIGHT 300S IG",
+      "brand": "Tecnifibre",
+      "category": "racquet",
+      "path": "knowledge/racquets/tecnifibre/tecnifibre_t_fight_300s_ig.json"
+    },
+    "tecnifibre_t_fight_team": {
+      "name": "T-FIGHT TEAM",
+      "brand": "Tecnifibre",
+      "category": "racquet",
+      "path": "knowledge/racquets/tecnifibre/tecnifibre_t_fight_team.json"
+    },
+    "tecnifibre_t_fight_tour_26_2025": {
+      "name": "T-FIGHT TOUR 26",
+      "brand": "Tecnifibre",
+      "category": "racquet",
+      "path": "knowledge/racquets/tecnifibre/tecnifibre_t_fight_tour_26_2025.json"
+    },
+    "tecnifibre_tempo_265_v2": {
+      "name": "TEMPO 265 V2",
+      "brand": "Tecnifibre",
+      "category": "racquet",
+      "path": "knowledge/racquets/tecnifibre/tecnifibre_tempo_265_v2.json"
+    },
+    "tecnifibre_tempo_270_v2": {
+      "name": "TEMPO 270 V2",
+      "brand": "Tecnifibre",
+      "category": "racquet",
+      "path": "knowledge/racquets/tecnifibre/tecnifibre_tempo_270_v2.json"
+    },
+    "tecnifibre_tf40_290_16m_v3": {
+      "name": "TF-40 290 16M V3",
+      "brand": "Tecnifibre",
+      "category": "racquet",
+      "path": "knowledge/racquets/tecnifibre/tecnifibre_tf40_290_16m_v3.json"
+    },
+    "tecnifibre_tf40_305_16m_v3": {
+      "name": "TF-40 305 16M V3",
+      "brand": "Tecnifibre",
+      "category": "racquet",
+      "path": "knowledge/racquets/tecnifibre/tecnifibre_tf40_305_16m_v3.json"
+    },
+    "tecnifibre_tf40_305_18m_v3": {
+      "name": "TF-40 305 18M V3",
+      "brand": "Tecnifibre",
+      "category": "racquet",
+      "path": "knowledge/racquets/tecnifibre/tecnifibre_tf40_305_18m_v3.json"
+    },
+    "tecnifibre_tf40_315_16m_v3": {
+      "name": "TF-40 315 16M V3",
+      "brand": "Tecnifibre",
+      "category": "racquet",
+      "path": "knowledge/racquets/tecnifibre/tecnifibre_tf40_315_16m_v3.json"
+    },
+    "tecnifibre_tf40_315_18m_v3": {
+      "name": "TF-40 315 18M V3",
+      "brand": "Tecnifibre",
+      "category": "racquet",
+      "path": "knowledge/racquets/tecnifibre/tecnifibre_tf40_315_18m_v3.json"
+    },
+    "wilson_blade_100_pro_v10": {
+      "name": "Blade 100 Pro V10",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/wilson/wilson_blade_100_pro_v10.json"
+    },
+    "wilson_blade_100_v10": {
+      "name": "Blade 100 V10",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/wilson/wilson_blade_100_v10.json"
+    },
+    "wilson_blade_100ul_v10": {
+      "name": "Blade 100UL V10",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/wilson/wilson_blade_100ul_v10.json"
+    },
+    "wilson_blade_98_16x19_v10": {
+      "name": "Blade 98 16x19 V10",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/wilson/wilson_blade_98_16x19_v10.json"
+    },
+    "wilson_blade_98_18x20_v10": {
+      "name": "Blade 98 18x20 V10",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/wilson/wilson_blade_98_18x20_v10.json"
+    },
+    "wilson_blade_98s_v10": {
+      "name": "Blade 98S V10",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/wilson/wilson_blade_98s_v10.json"
+    },
+    "wilson_blade_pro_98_16x19_v10": {
+      "name": "Blade Pro 98 16x19 V10",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/wilson/wilson_blade_pro_98_16x19_v10.json"
+    },
+    "wilson_blade_pro_98_18x20_v10": {
+      "name": "Blade Pro 98 18x20 V10",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/wilson/wilson_blade_pro_98_18x20_v10.json"
+    },
+    "wilson_clash_100_pro_v3_2025": {
+      "name": "Clash 100 Pro V3",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/wilson/wilson_clash_100_pro_v3_2025.json"
+    },
+    "wilson_defy_100_v1": {
+      "name": "Defy 100 V1",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/wilson/wilson_defy_100_v1.json"
+    },
+    "wilson_defy_98_pro_v1": {
+      "name": "Defy 98 Pro V1",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/wilson/wilson_defy_98_pro_v1.json"
+    },
+    "wilson_pro_staff_97_v14": {
+      "name": "Pro Staff 97 V14",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/wilson/wilson_pro_staff_97_v14.json"
+    },
+    "wilson_pro_staff_97l_v14": {
+      "name": "Pro Staff 97L V14",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/wilson/wilson_pro_staff_97l_v14.json"
+    },
+    "wilson_pro_staff_97ul_2026": {
+      "name": "Pro Staff 97UL 2026",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/wilson/wilson_pro_staff_97ul_2026.json"
+    },
+    "wilson_pro_staff_97ul_v14": {
+      "name": "Pro Staff 97UL V14",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/wilson/wilson_pro_staff_97ul_v14.json"
+    },
+    "wilson_pro_staff_six_one_95_18x20_v14": {
+      "name": "Pro Staff Six.One 95 18x20 V14",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/wilson/wilson_pro_staff_six_one_95_18x20_v14.json"
+    },
+    "wilson_rf_01_2024": {
+      "name": "RF 01",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/wilson/wilson_rf_01_2024.json"
+    },
+    "wilson_rf_01_pro": {
+      "name": "RF 01 Pro",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/wilson/wilson_rf_01_pro.json"
+    },
+    "wilson_ultra_100_v5_2025": {
+      "name": "Ultra 100 V5 2025",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/wilson/wilson_ultra_100_v5_2025.json"
+    },
+    "wilson_ultra_95_qz_v5_2025": {
+      "name": "Ultra 95 QZ V5 2025",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/wilson/wilson_ultra_95_qz_v5_2025.json"
+    },
+    "wilson_ultra_98_tour_v5_2025": {
+      "name": "Ultra 98 Tour V5 2025",
+      "brand": "Wilson",
+      "category": "racquet",
+      "path": "knowledge/racquets/wilson/wilson_ultra_98_tour_v5_2025.json"
+    },
+    "yonex_ezone_98_tour_blast_blue_2025": {
+      "name": "EZONE 98 TOUR",
+      "brand": "Yonex",
+      "category": "racquet",
+      "path": "knowledge/racquets/yonex/yonex-ezone-98-tour-blast-blue-2025.json"
+    },
+    "yonex_ezone_100_blast_blue_2025": {
+      "name": "EZONE 100",
+      "brand": "Yonex",
+      "category": "racquet",
+      "path": "knowledge/racquets/yonex/yonex_ezone_100_blast_blue_2025.json"
+    },
+    "yonex_ezone_100l_blast_blue_2025": {
+      "name": "EZONE 100L",
+      "brand": "Yonex",
+      "category": "racquet",
+      "path": "knowledge/racquets/yonex/yonex_ezone_100l_blast_blue_2025.json"
+    },
+    "yonex_ezone_100sl_blast_blue_2025": {
+      "name": "EZONE 100SL",
+      "brand": "Yonex",
+      "category": "racquet",
+      "path": "knowledge/racquets/yonex/yonex_ezone_100sl_blast_blue_2025.json"
+    },
+    "yonex_ezone_98_blast_blue_2025": {
+      "name": "EZONE 98",
+      "brand": "Yonex",
+      "category": "racquet",
+      "path": "knowledge/racquets/yonex/yonex_ezone_98_blast_blue_2025.json"
+    },
+    "yonex_ezone_98l_blast_blue_2025": {
+      "name": "EZONE 98L",
+      "brand": "Yonex",
+      "category": "racquet",
+      "path": "knowledge/racquets/yonex/yonex_ezone_98l_blast_blue_2025.json"
+    },
+    "yonex_ezone_alpha_blast_blue_2025": {
+      "name": "EZONE Alpha",
+      "brand": "Yonex",
+      "category": "racquet",
+      "path": "knowledge/racquets/yonex/yonex_ezone_alpha_blast_blue_2025.json"
+    },
+    "yonex_muse_100": {
+      "name": "MUSE 100",
+      "brand": "Yonex",
+      "category": "racquet",
+      "path": "knowledge/racquets/yonex/yonex_muse_100.json"
+    },
+    "yonex_muse_100l_2026": {
+      "name": "MUSE 100L",
+      "brand": "Yonex",
+      "category": "racquet",
+      "path": "knowledge/racquets/yonex/yonex_muse_100l_2026.json"
+    },
+    "yonex_muse_100sl_2026": {
+      "name": "MUSE 100SL",
+      "brand": "Yonex",
+      "category": "racquet",
+      "path": "knowledge/racquets/yonex/yonex_muse_100sl_2026.json"
+    },
+    "yonex_percept_100_midnight_navy_2025": {
+      "name": "PERCEPT 100",
+      "brand": "Yonex",
+      "category": "racquet",
+      "path": "knowledge/racquets/yonex/yonex_percept_100_midnight_navy_2025.json"
+    },
+    "yonex_percept_100l_midnight_navy_2025": {
+      "name": "PERCEPT 100L",
+      "brand": "Yonex",
+      "category": "racquet",
+      "path": "knowledge/racquets/yonex/yonex_percept_100l_midnight_navy_2025.json"
+    },
+    "yonex_percept_97_midnight_navy_2025": {
+      "name": "PERCEPT 97",
+      "brand": "Yonex",
+      "category": "racquet",
+      "path": "knowledge/racquets/yonex/yonex_percept_97_midnight_navy_2025.json"
+    },
+    "yonex_percept_97d_midnight_navy_2025": {
+      "name": "PERCEPT 97D",
+      "brand": "Yonex",
+      "category": "racquet",
+      "path": "knowledge/racquets/yonex/yonex_percept_97d_midnight_navy_2025.json"
+    },
+    "yonex_percept_97d_olive_2025": {
+      "name": "PERCEPT 97D",
+      "brand": "Yonex",
+      "category": "racquet",
+      "path": "knowledge/racquets/yonex/yonex_percept_97d_olive_2025.json"
+    },
+    "yonex_percept_97h_olive_2025": {
+      "name": "PERCEPT 97H",
+      "brand": "Yonex",
+      "category": "racquet",
+      "path": "knowledge/racquets/yonex/yonex_percept_97h_olive_2025.json"
+    },
+    "yonex_vcore_100_plus_ruby_red_2026": {
+      "name": "VCORE 100+",
+      "brand": "Yonex",
+      "category": "racquet",
+      "path": "knowledge/racquets/yonex/yonex_vcore_100_plus_ruby_red_2026.json"
+    },
+    "yonex_vcore_100_ruby_red_2026": {
+      "name": "VCORE 100",
+      "brand": "Yonex",
+      "category": "racquet",
+      "path": "knowledge/racquets/yonex/yonex_vcore_100_ruby_red_2026.json"
+    },
+    "yonex_vcore_100d_ruby_red_2026": {
+      "name": "VCORE 100D",
+      "brand": "Yonex",
+      "category": "racquet",
+      "path": "knowledge/racquets/yonex/yonex_vcore_100d_ruby_red_2026.json"
+    },
+    "yonex_vcore_100l_ruby_red_2026": {
+      "name": "VCORE 100L",
+      "brand": "Yonex",
+      "category": "racquet",
+      "path": "knowledge/racquets/yonex/yonex_vcore_100l_ruby_red_2026.json"
+    },
+    "yonex_vcore_95_ruby_red_2026": {
+      "name": "VCORE 95",
+      "brand": "Yonex",
+      "category": "racquet",
+      "path": "knowledge/racquets/yonex/yonex_vcore_95_ruby_red_2026.json"
+    },
+    "yonex_vcore_98_plus_ruby_red_2026": {
+      "name": "VCORE 98+",
+      "brand": "Yonex",
+      "category": "racquet",
+      "path": "knowledge/racquets/yonex/yonex_vcore_98_plus_ruby_red_2026.json"
+    },
+    "yonex_vcore_98_ruby_red_2026": {
+      "name": "VCORE 98",
+      "brand": "Yonex",
+      "category": "racquet",
+      "path": "knowledge/racquets/yonex/yonex_vcore_98_ruby_red_2026.json"
+    },
+    "yonex_vcore_98_tour_ruby_red_2026": {
+      "name": "VCORE 98 TOUR",
+      "brand": "Yonex",
+      "category": "racquet",
+      "path": "knowledge/racquets/yonex/yonex_vcore_98_tour_ruby_red_2026.json"
+    },
+    "yonex_vcore_98l_ruby_red_2026": {
+      "name": "VCORE 98L",
+      "brand": "Yonex",
+      "category": "racquet",
+      "path": "knowledge/racquets/yonex/yonex_vcore_98l_ruby_red_2026.json"
     }
-
   },
-
   "strings": {
-
-    "luxilon_alu_power": {
-      "name": "Luxilon ALU Power",
+    "babolat_addixion_plus": {
+      "name": "AddiXion+",
+      "brand": "Babolat",
+      "category": "string",
+      "path": "knowledge/strings/babolat/babolat_addixion_plus.json"
+    },
+    "babolat_rpm_blast": {
+      "name": "RPM Blast",
+      "brand": "Babolat",
+      "category": "string",
+      "path": "knowledge/strings/babolat/babolat_rpm_blast.json"
+    },
+    "babolat_rpm_blast_125_touch_vs_130": {
+      "name": "RPM Blast 125 + Touch VS 130",
+      "brand": "Babolat",
+      "category": "string",
+      "path": "knowledge/strings/babolat/babolat_rpm_blast_125_touch_vs_130.json"
+    },
+    "babolat_rpm_hurricane": {
+      "name": "RPM Hurricane",
+      "brand": "Babolat",
+      "category": "string",
+      "path": "knowledge/strings/babolat/babolat_rpm_hurricane.json"
+    },
+    "babolat_rpm_power": {
+      "name": "RPM Power",
+      "brand": "Babolat",
+      "category": "string",
+      "path": "knowledge/strings/babolat/babolat_rpm_power.json"
+    },
+    "babolat_rpm_rough": {
+      "name": "RPM Rough",
+      "brand": "Babolat",
+      "category": "string",
+      "path": "knowledge/strings/babolat/babolat_rpm_rough.json"
+    },
+    "babolat_rpm_soft": {
+      "name": "RPM Soft",
+      "brand": "Babolat",
+      "category": "string",
+      "path": "knowledge/strings/babolat/babolat_rpm_soft.json"
+    },
+    "babolat_rpm_team": {
+      "name": "RPM Team",
+      "brand": "Babolat",
+      "category": "string",
+      "path": "knowledge/strings/babolat/babolat_rpm_team.json"
+    },
+    "babolat_touch_vs": {
+      "name": "Touch VS",
+      "brand": "Babolat",
+      "category": "string",
+      "path": "knowledge/strings/babolat/babolat_touch_vs.json"
+    },
+    "babolat_xalt": {
+      "name": "Xalt",
+      "brand": "Babolat",
+      "category": "string",
+      "path": "knowledge/strings/babolat/babolat_xalt.json"
+    },
+    "babolat_xplore": {
+      "name": "Xplore",
+      "brand": "Babolat",
+      "category": "string",
+      "path": "knowledge/strings/babolat/babolat_xplore.json"
+    },
+    "gamma_live_wire": {
+      "name": "Live Wire",
+      "brand": "Gamma",
+      "category": "string",
+      "path": "knowledge/strings/gamma/gamma_live_wire.json"
+    },
+    "gamma_live_wire_professional": {
+      "name": "Professional",
+      "brand": "GAMMA",
+      "category": "string",
+      "path": "knowledge/strings/gamma/gamma_live_wire_professional.json"
+    },
+    "gamma_moto": {
+      "name": "Moto",
+      "brand": "GAMMA",
+      "category": "string",
+      "path": "knowledge/strings/gamma/gamma_moto.json"
+    },
+    "gamma_synthetic_gut": {
+      "name": "Synthetic Gut",
+      "brand": "GAMMA",
+      "category": "string",
+      "path": "knowledge/strings/gamma/gamma_synthetic_gut.json"
+    },
+    "gamma_tnt2": {
+      "name": "TNT2",
+      "brand": "GAMMA",
+      "category": "string",
+      "path": "knowledge/strings/gamma/gamma_tnt2.json"
+    },
+    "gamma_tnt2_react_pro": {
+      "name": "TNT2 React Pro",
+      "brand": "GAMMA",
+      "category": "string",
+      "path": "knowledge/strings/gamma/gamma_tnt2_react_pro.json"
+    },
+    "gamma_verve_soft": {
+      "name": "Verve Soft",
+      "brand": "GAMMA",
+      "category": "string",
+      "path": "knowledge/strings/gamma/gamma_verve_soft.json"
+    },
+    "grapplesnake_alpha": {
+      "name": "Alpha",
+      "brand": "Grapplesnake",
+      "category": "string",
+      "path": "knowledge/strings/grapplesnake/grapplesnake_alpha.json"
+    },
+    "grapplesnake_aspera_triplum": {
+      "name": "Triplum",
+      "brand": "Grapplesnake",
+      "category": "string",
+      "path": "knowledge/strings/grapplesnake/grapplesnake_aspera_triplum.json"
+    },
+    "grapplesnake_ces_neon_dust_liquid_neon_dust_hybrid": {
+      "name": "CES Neon Dust / Liquid Neon Dust Hybrid",
+      "brand": "Grapplesnake",
+      "category": "string",
+      "path": "knowledge/strings/grapplesnake/grapplesnake_ces_neon_dust_liquid_neon_dust_hybrid.json"
+    },
+    "grapplesnake_paradox_pro": {
+      "name": "Paradox Pro",
+      "brand": "Grapplesnake",
+      "category": "string",
+      "path": "knowledge/strings/grapplesnake/grapplesnake_paradox_pro.json"
+    },
+    "grapplesnake_soldier": {
+      "name": "Soldier",
+      "brand": "Grapplesnake",
+      "category": "string",
+      "path": "knowledge/strings/grapplesnake/grapplesnake_soldier.json"
+    },
+    "grapplesnake_tour_m8": {
+      "name": "Tour M8",
+      "brand": "Grapplesnake",
+      "category": "string",
+      "path": "knowledge/strings/grapplesnake/grapplesnake_tour_m8.json"
+    },
+    "grapplesnake_tour_mako": {
+      "name": "Tour Mako",
+      "brand": "Grapplesnake",
+      "category": "string",
+      "path": "knowledge/strings/grapplesnake/grapplesnake_tour_mako.json"
+    },
+    "grapplesnake_tour_sniper": {
+      "name": "Tour Sniper",
+      "brand": "Grapplesnake",
+      "category": "string",
+      "path": "knowledge/strings/grapplesnake/grapplesnake_tour_sniper.json"
+    },
+    "head_hawk": {
+      "name": "HAWK",
+      "brand": "HEAD",
+      "category": "string",
+      "path": "knowledge/strings/head/head_hawk.json"
+    },
+    "head_hawk_touch": {
+      "name": "HAWK TOUCH",
+      "brand": "HEAD",
+      "category": "string",
+      "path": "knowledge/strings/head/head_hawk_touch.json"
+    },
+    "head_lynx": {
+      "name": "Lynx",
+      "brand": "HEAD",
+      "category": "string",
+      "path": "knowledge/strings/head/head_lynx.json"
+    },
+    "head_lynx_tour": {
+      "name": "Lynx Tour",
+      "brand": "HEAD",
+      "category": "string",
+      "path": "knowledge/strings/head/head_lynx_tour.json"
+    },
+    "kirschbaum_black_shark": {
+      "name": "Black Shark",
+      "brand": "Kirschbaum",
+      "category": "string",
+      "path": "knowledge/strings/kirschbaum/kirschbaum_black_shark.json"
+    },
+    "kirschbaum_competition": {
+      "name": "Competition",
+      "brand": "Kirschbaum",
+      "category": "string",
+      "path": "knowledge/strings/kirschbaum/kirschbaum_competition.json"
+    },
+    "kirschbaum_evolution": {
+      "name": "Evolution",
+      "brand": "Kirschbaum",
+      "category": "string",
+      "path": "knowledge/strings/kirschbaum/kirschbaum_evolution.json"
+    },
+    "kirschbaum_flash": {
+      "name": "Flash",
+      "brand": "Kirschbaum",
+      "category": "string",
+      "path": "knowledge/strings/kirschbaum/kirschbaum_flash.json"
+    },
+    "kirschbaum_gut_feeling": {
+      "name": "Gut Feeling",
+      "brand": "Kirschbaum",
+      "category": "string",
+      "path": "knowledge/strings/kirschbaum/kirschbaum_gut_feeling.json"
+    },
+    "kirschbaum_max_power": {
+      "name": "Max Power",
+      "brand": "Kirschbaum",
+      "category": "string",
+      "path": "knowledge/strings/kirschbaum/kirschbaum_max_power.json"
+    },
+    "kirschbaum_max_power_rough": {
+      "name": "Max Power Rough",
+      "brand": "Kirschbaum",
+      "category": "string",
+      "path": "knowledge/strings/kirschbaum/kirschbaum_max_power_rough.json"
+    },
+    "kirschbaum_orange": {
+      "name": "Orange",
+      "brand": "Kirschbaum",
+      "category": "string",
+      "path": "knowledge/strings/kirschbaum/kirschbaum_orange.json"
+    },
+    "kirschbaum_pro_line_black": {
+      "name": "Pro Line Black",
+      "brand": "Kirschbaum",
+      "category": "string",
+      "path": "knowledge/strings/kirschbaum/kirschbaum_pro_line_black.json"
+    },
+    "kirschbaum_pro_line_rough": {
+      "name": "Pro Line Rough",
+      "brand": "Kirschbaum",
+      "category": "string",
+      "path": "knowledge/strings/kirschbaum/kirschbaum_pro_line_rough.json"
+    },
+    "kirschbaum_pro_tour_control": {
+      "name": "Pro Tour Control",
+      "brand": "Kirschbaum",
+      "category": "string",
+      "path": "knowledge/strings/kirschbaum/kirschbaum_pro_tour_control.json"
+    },
+    "kirschbaum_synthetic_gut_premium": {
+      "name": "Synthetic Gut Premium",
+      "brand": "Kirschbaum",
+      "category": "string",
+      "path": "knowledge/strings/kirschbaum/kirschbaum_synthetic_gut_premium.json"
+    },
+    "kirschbaum_touch_multifibre": {
+      "name": "Touch Multifibre",
+      "brand": "Kirschbaum",
+      "category": "string",
+      "path": "knowledge/strings/kirschbaum/kirschbaum_touch_multifibre.json"
+    },
+    "kirschbaum_xplosive_speed": {
+      "name": "Xplosive Speed",
+      "brand": "Kirschbaum",
+      "category": "string",
+      "path": "knowledge/strings/kirschbaum/kirschbaum_xplosive_speed.json"
+    },
+    "luxilon_4g": {
+      "name": "4G",
       "brand": "Luxilon",
       "category": "string",
-      "path": "knowledge/strings/luxilon/alu_power.json"
+      "path": "knowledge/strings/luxilon/luxilon_4g.json"
     },
-
-    "rpm_blast": {
-      "name": "Babolat RPM Blast",
-      "brand": "Babolat",
+    "luxilon_4g_rough": {
+      "name": "4G Rough",
+      "brand": "Luxilon",
       "category": "string",
-      "path": "knowledge/strings/babolat/rpm_blast.json"
+      "path": "knowledge/strings/luxilon/luxilon_4g_rough.json"
+    },
+    "luxilon_4g_soft": {
+      "name": "4G Soft",
+      "brand": "Luxilon",
+      "category": "string",
+      "path": "knowledge/strings/luxilon/luxilon_4g_soft.json"
+    },
+    "luxilon_alu_power": {
+      "name": "ALU Power",
+      "brand": "Luxilon",
+      "category": "string",
+      "path": "knowledge/strings/luxilon/luxilon_alu_power.json"
+    },
+    "luxilon_alu_power_rough": {
+      "name": "ALU Power Rough",
+      "brand": "Luxilon",
+      "category": "string",
+      "path": "knowledge/strings/luxilon/luxilon_alu_power_rough.json"
+    },
+    "luxilon_eco_power": {
+      "name": "Eco Power",
+      "brand": "Luxilon",
+      "category": "string",
+      "path": "knowledge/strings/luxilon/luxilon_eco_power.json"
+    },
+    "luxilon_eco_rough": {
+      "name": "Eco Rough",
+      "brand": "Luxilon",
+      "category": "string",
+      "path": "knowledge/strings/luxilon/luxilon_eco_rough.json"
+    },
+    "luxilon_eco_spin": {
+      "name": "Eco Spin",
+      "brand": "Luxilon",
+      "category": "string",
+      "path": "knowledge/strings/luxilon/luxilon_eco_spin.json"
+    },
+    "luxilon_element": {
+      "name": "Element",
+      "brand": "Luxilon",
+      "category": "string",
+      "path": "knowledge/strings/luxilon/luxilon_element.json"
+    },
+    "luxilon_element_rough": {
+      "name": "Element Rough",
+      "brand": "Luxilon",
+      "category": "string",
+      "path": "knowledge/strings/luxilon/luxilon_element_rough.json"
+    },
+    "luxilon_natural_gut": {
+      "name": "Natural Gut",
+      "brand": "Luxilon",
+      "category": "string",
+      "path": "knowledge/strings/luxilon/luxilon_natural_gut.json"
+    },
+    "msv_bussard": {
+      "name": "Bussard",
+      "brand": "MSV",
+      "category": "string",
+      "path": "knowledge/strings/msv/msv_bussard.json"
+    },
+    "msv_co_focus": {
+      "name": "Co Focus",
+      "brand": "MSV",
+      "category": "string",
+      "path": "knowledge/strings/msv/msv_co_focus.json"
+    },
+    "msv_co_ultra": {
+      "name": "Co Ultra",
+      "brand": "MSV",
+      "category": "string",
+      "path": "knowledge/strings/msv/msv_co_ultra.json"
+    },
+    "msv_focus_hex": {
+      "name": "Focus Hex",
+      "brand": "MSV",
+      "category": "string",
+      "path": "knowledge/strings/msv/msv_focus_hex.json"
+    },
+    "msv_focus_hex_plus_25": {
+      "name": "Focus Hex Plus 25",
+      "brand": "MSV",
+      "category": "string",
+      "path": "knowledge/strings/msv/msv_focus_hex_plus_25.json"
+    },
+    "msv_focus_hex_plus_38": {
+      "name": "Focus Hex Plus 38",
+      "brand": "MSV",
+      "category": "string",
+      "path": "knowledge/strings/msv/msv_focus_hex_plus_38.json"
+    },
+    "msv_focus_hex_soft": {
+      "name": "Focus HEX Soft",
+      "brand": "MSV",
+      "category": "string",
+      "path": "knowledge/strings/msv/msv_focus_hex_soft.json"
+    },
+    "msv_focus_hex_ultra": {
+      "name": "Focus HEX Ultra",
+      "brand": "MSV",
+      "category": "string",
+      "path": "knowledge/strings/msv/msv_focus_hex_ultra.json"
+    },
+    "msv_hepta_twist": {
+      "name": "Hepta Twist",
+      "brand": "MSV",
+      "category": "string",
+      "path": "knowledge/strings/msv/msv_hepta_twist.json"
+    },
+    "msv_multi_q10": {
+      "name": "Multi Q10",
+      "brand": "MSV",
+      "category": "string",
+      "path": "knowledge/strings/msv/msv_multi_q10.json"
+    },
+    "msv_soft_touch": {
+      "name": "Soft Touch",
+      "brand": "MSV",
+      "category": "string",
+      "path": "knowledge/strings/msv/msv_soft_touch.json"
+    },
+    "msv_swift": {
+      "name": "Swift",
+      "brand": "MSV",
+      "category": "string",
+      "path": "knowledge/strings/msv/msv_swift.json"
+    },
+    "solinco_barb_wire": {
+      "name": "Barb Wire",
+      "brand": "Solinco",
+      "category": "string",
+      "path": "knowledge/strings/solinco/solinco_barb_wire.json"
+    },
+    "solinco_confidential": {
+      "name": "Confidential",
+      "brand": "Solinco",
+      "category": "string",
+      "path": "knowledge/strings/solinco/solinco_confidential.json"
+    },
+    "solinco_confidential_soft": {
+      "name": "Confidential Soft",
+      "brand": "Solinco",
+      "category": "string",
+      "path": "knowledge/strings/solinco/solinco_confidential_soft.json"
+    },
+    "solinco_hyper_g": {
+      "name": "Hyper-G",
+      "brand": "Solinco",
+      "category": "string",
+      "path": "knowledge/strings/solinco/solinco_hyper_g.json"
+    },
+    "solinco_hyper_g_hybrid_system": {
+      "name": "Hyper-G Hybrid System",
+      "brand": "Solinco",
+      "category": "string",
+      "path": "knowledge/strings/solinco/solinco_hyper_g_hybrid_system.json"
+    },
+    "solinco_hyper_g_round": {
+      "name": "Hyper-G Round",
+      "brand": "Solinco",
+      "category": "string",
+      "path": "knowledge/strings/solinco/solinco_hyper_g_round.json"
+    },
+    "solinco_hyper_g_soft": {
+      "name": "Hyper-G Soft",
+      "brand": "Solinco",
+      "category": "string",
+      "path": "knowledge/strings/solinco/solinco_hyper_g_soft.json"
+    },
+    "solinco_hyper_mach_bd": {
+      "name": "Hyper-Mach BD",
+      "brand": "Solinco",
+      "category": "string",
+      "path": "knowledge/strings/solinco/solinco_hyper_mach_bd.json"
+    },
+    "solinco_mach_10": {
+      "name": "Mach-10",
+      "brand": "Solinco",
+      "category": "string",
+      "path": "knowledge/strings/solinco/solinco_mach_10.json"
+    },
+    "solinco_outlast": {
+      "name": "Outlast",
+      "brand": "Solinco",
+      "category": "string",
+      "path": "knowledge/strings/solinco/solinco_outlast.json"
+    },
+    "solinco_revolution": {
+      "name": "Revolution",
+      "brand": "Solinco",
+      "category": "string",
+      "path": "knowledge/strings/solinco/solinco_revolution.json"
+    },
+    "solinco_tour_bite": {
+      "name": "Tour Bite",
+      "brand": "Solinco",
+      "category": "string",
+      "path": "knowledge/strings/solinco/solinco_tour_bite.json"
+    },
+    "solinco_tour_bite_diamond_rough": {
+      "name": "Tour Bite Diamond Rough",
+      "brand": "Solinco",
+      "category": "string",
+      "path": "knowledge/strings/solinco/solinco_tour_bite_diamond_rough.json"
+    },
+    "solinco_tour_bite_vanquish_hybrid": {
+      "name": "Tour Bite + Vanquish",
+      "brand": "Solinco",
+      "category": "string",
+      "path": "knowledge/strings/solinco/solinco_tour_bite_vanquish_hybrid.json"
+    },
+    "solinco_vanquish": {
+      "name": "Vanquish",
+      "brand": "Solinco",
+      "category": "string",
+      "path": "knowledge/strings/solinco/solinco_vanquish.json"
+    },
+    "tecnifibre_black_code": {
+      "name": "Black Code",
+      "brand": "Tecnifibre",
+      "category": "string",
+      "path": "knowledge/strings/tecnifibre/tecnifibre_black_code.json"
+    },
+    "tecnifibre_duramix": {
+      "name": "Duramix",
+      "brand": "Tecnifibre",
+      "category": "string",
+      "path": "knowledge/strings/tecnifibre/tecnifibre_duramix.json"
+    },
+    "tecnifibre_nrg2_natural_118": {
+      "name": "NRG² Natural",
+      "brand": "Tecnifibre",
+      "category": "string",
+      "path": "knowledge/strings/tecnifibre/tecnifibre_nrg2_natural_118.json"
+    },
+    "tecnifibre_razor_soft": {
+      "name": "Razor Soft",
+      "brand": "Tecnifibre",
+      "category": "string",
+      "path": "knowledge/strings/tecnifibre/tecnifibre_razor_soft_lime.json"
+    },
+    "tecnifibre_razor_spin_120": {
+      "name": "Razor Spin",
+      "brand": "Tecnifibre",
+      "category": "string",
+      "path": "knowledge/strings/tecnifibre/tecnifibre_razor_spin_120.json"
+    },
+    "tecnifibre_tgv": {
+      "name": "TGV",
+      "brand": "Tecnifibre",
+      "category": "string",
+      "path": "knowledge/strings/tecnifibre/tecnifibre_tgv_black.json"
+    },
+    "tecnifibre_triax_natural_128": {
+      "name": "Triax Natural",
+      "brand": "Tecnifibre",
+      "category": "string",
+      "path": "knowledge/strings/tecnifibre/tecnifibre_triax_natural_128.json"
+    },
+    "tecnifibre_x_one_biphase": {
+      "name": "X-One Biphase",
+      "brand": "Tecnifibre",
+      "category": "string",
+      "path": "knowledge/strings/tecnifibre/tecnifibre_x_one_biphase.json"
+    },
+    "tecnifibre_x_one_biphase_118": {
+      "name": "X-One Biphase",
+      "brand": "Tecnifibre",
+      "category": "string",
+      "path": "knowledge/strings/tecnifibre/tecnifibre_x_one_biphase_118.json"
+    },
+    "tecnifibre_x_one_biphase_black_124": {
+      "name": "X-One Biphase Black",
+      "brand": "Tecnifibre",
+      "category": "string",
+      "path": "knowledge/strings/tecnifibre/tecnifibre_x_one_biphase_black_124.json"
+    },
+    "tecnifibre_xr3": {
+      "name": "XR3 Natural",
+      "brand": "Tecnifibre",
+      "category": "string",
+      "path": "knowledge/strings/tecnifibre/tecnifibre_xr3.json"
+    },
+    "toroline_101_blend": {
+      "name": "101 Blend",
+      "brand": "Toroline",
+      "category": "string",
+      "path": "knowledge/strings/toroline/toroline_101_blend.json"
+    },
+    "toroline_a5": {
+      "name": "A5",
+      "brand": "Toroline",
+      "category": "string",
+      "path": "knowledge/strings/toroline/toroline_a5.json"
+    },
+    "toroline_absolute": {
+      "name": "Absolute",
+      "brand": "Toroline",
+      "category": "string",
+      "path": "knowledge/strings/toroline/toroline_absolute.json"
+    },
+    "toroline_cash": {
+      "name": "CASH",
+      "brand": "Toroline",
+      "category": "string",
+      "path": "knowledge/strings/toroline/toroline_cash.json"
+    },
+    "toroline_caviar": {
+      "name": "CAVIAR",
+      "brand": "Toroline",
+      "category": "string",
+      "path": "knowledge/strings/toroline/toroline_caviar.json"
+    },
+    "toroline_chef_conor_monthly_special": {
+      "name": "A5 Infrared 1.20 + Truffle X 1.30",
+      "brand": "Toroline",
+      "category": "string",
+      "path": "knowledge/strings/toroline/toroline_chef_conor_monthly_special.json"
+    },
+    "toroline_cole_blend": {
+      "name": "COLE Blend",
+      "brand": "Toroline",
+      "category": "string",
+      "path": "knowledge/strings/toroline/toroline_cole_blend.json"
+    },
+    "toroline_dreddy_blend": {
+      "name": "DREDDY",
+      "brand": "Toroline",
+      "category": "string",
+      "path": "knowledge/strings/toroline/toroline_dreddy_blend.json"
+    },
+    "toroline_enso_pro": {
+      "name": "ENSO PRO",
+      "brand": "Toroline",
+      "category": "string",
+      "path": "knowledge/strings/toroline/toroline_enso_pro.json"
+    },
+    "toroline_o_snap": {
+      "name": "O-SNAP",
+      "brand": "Toroline",
+      "category": "string",
+      "path": "knowledge/strings/toroline/toroline_o_snap.json"
+    },
+    "toroline_o_toro": {
+      "name": "O-TORO",
+      "brand": "Toroline",
+      "category": "string",
+      "path": "knowledge/strings/toroline/toroline_o_toro.json"
+    },
+    "toroline_o_toro_octa": {
+      "name": "O-TORO OCTA",
+      "brand": "Toroline",
+      "category": "string",
+      "path": "knowledge/strings/toroline/toroline_o_toro_octa.json"
+    },
+    "toroline_o_toro_snap": {
+      "name": "O-TORO SNAP",
+      "brand": "Toroline",
+      "category": "string",
+      "path": "knowledge/strings/toroline/toroline_o_toro_snap.json"
+    },
+    "toroline_o_toro_snap_regular": {
+      "name": "O-TORO SNAP",
+      "brand": "Toroline",
+      "category": "string",
+      "path": "knowledge/strings/toroline/toroline_o_toro_snap_regular.json"
+    },
+    "toroline_o_toro_spin": {
+      "name": "O-TORO Spin",
+      "brand": "Toroline",
+      "category": "string",
+      "path": "knowledge/strings/toroline/toroline_o_toro_spin.json"
+    },
+    "toroline_o_toro_tour": {
+      "name": "O-TORO TOUR",
+      "brand": "Toroline",
+      "category": "string",
+      "path": "knowledge/strings/toroline/toroline_o_toro_tour.json"
+    },
+    "toroline_snapaholic": {
+      "name": "SNAPAHOLIC",
+      "brand": "Toroline",
+      "category": "string",
+      "path": "knowledge/strings/toroline/toroline_snapaholic.json"
+    },
+    "toroline_snapper": {
+      "name": "Snapper",
+      "brand": "Toroline",
+      "category": "string",
+      "path": "knowledge/strings/toroline/toroline_snapper.json"
+    },
+    "toroline_stevie_blend_mint_gray": {
+      "name": "STEVIE MINT/GRAY",
+      "brand": "Toroline",
+      "category": "string",
+      "path": "knowledge/strings/toroline/toroline_stevie_blend_mint_gray.json"
+    },
+    "toroline_stevie_blend_mint_purple": {
+      "name": "STEVIE MINT/PURPLE",
+      "brand": "Toroline",
+      "category": "string",
+      "path": "knowledge/strings/toroline/toroline_stevie_blend_mint_purple.json"
+    },
+    "toroline_super_toro": {
+      "name": "SUPER TORO",
+      "brand": "Toroline",
+      "category": "string",
+      "path": "knowledge/strings/toroline/toroline_super_toro.json"
+    },
+    "toroline_toro_toro": {
+      "name": "TORO TORO",
+      "brand": "Toroline",
+      "category": "string",
+      "path": "knowledge/strings/toroline/toroline_toro_toro.json"
+    },
+    "toroline_truffle_x": {
+      "name": "Truffle X",
+      "brand": "Toroline",
+      "category": "string",
+      "path": "knowledge/strings/toroline/toroline_truffle_x.json"
+    },
+    "toroline_vamos": {
+      "name": "VAMOS",
+      "brand": "Toroline",
+      "category": "string",
+      "path": "knowledge/strings/toroline/toroline_vamos.json"
+    },
+    "toroline_wasabi": {
+      "name": "WASABI",
+      "brand": "Toroline",
+      "category": "string",
+      "path": "knowledge/strings/toroline/toroline_wasabi.json"
+    },
+    "toroline_wasabi_pro_hybrid": {
+      "name": "WASABI PRO HYBRID",
+      "brand": "Toroline",
+      "category": "string",
+      "path": "knowledge/strings/toroline/toroline_wasabi_pro_hybrid.json"
+    },
+    "toroline_wasabi_x": {
+      "name": "Wasabi X",
+      "brand": "Toroline",
+      "category": "string",
+      "path": "knowledge/strings/toroline/toroline_wasabi_x.json"
+    },
+    "wilson_champions_choice_duo": {
+      "name": "Champion's Choice Duo",
+      "brand": "Wilson",
+      "category": "string",
+      "path": "knowledge/strings/wilson/wilson_champions_choice_duo.json"
+    },
+    "wilson_duo_control": {
+      "name": "Duo Control",
+      "brand": "Wilson",
+      "category": "string",
+      "path": "knowledge/strings/wilson/wilson_duo_control.json"
+    },
+    "wilson_duo_feel": {
+      "name": "Duo Feel",
+      "brand": "Wilson",
+      "category": "string",
+      "path": "knowledge/strings/wilson/wilson_duo_feel.json"
+    },
+    "wilson_duo_power": {
+      "name": "Duo Power",
+      "brand": "Wilson",
+      "category": "string",
+      "path": "knowledge/strings/wilson/wilson_duo_power.json"
+    },
+    "wilson_natural_gut_17": {
+      "name": "Natural Gut 17",
+      "brand": "Wilson",
+      "category": "string",
+      "path": "knowledge/strings/wilson/wilson_natural_gut_17.json"
+    },
+    "wilson_nxt_16": {
+      "name": "NXT 16",
+      "brand": "Wilson",
+      "category": "string",
+      "path": "knowledge/strings/wilson/wilson_nxt_16.json"
+    },
+    "wilson_nxt_17": {
+      "name": "NXT 17",
+      "brand": "Wilson",
+      "category": "string",
+      "path": "knowledge/strings/wilson/wilson_nxt_17.json"
+    },
+    "wilson_nxt_control_16": {
+      "name": "NXT Control 16",
+      "brand": "Wilson",
+      "category": "string",
+      "path": "knowledge/strings/wilson/wilson_nxt_control_16.json"
+    },
+    "wilson_nxt_duo_ii": {
+      "name": "NXT Duo II",
+      "brand": "Wilson",
+      "category": "string",
+      "path": "knowledge/strings/wilson/wilson_nxt_duo_ii.json"
+    },
+    "wilson_nxt_duramax_15": {
+      "name": "NXT Duramax 15",
+      "brand": "Wilson",
+      "category": "string",
+      "path": "knowledge/strings/wilson/wilson_nxt_duramax_15.json"
+    },
+    "wilson_nxt_duramax_16": {
+      "name": "NXT Duramax 16",
+      "brand": "Wilson",
+      "category": "string",
+      "path": "knowledge/strings/wilson/wilson_nxt_duramax_16.json"
+    },
+    "wilson_nxt_power_16": {
+      "name": "NXT Power 16",
+      "brand": "Wilson",
+      "category": "string",
+      "path": "knowledge/strings/wilson/wilson_nxt_power_16.json"
+    },
+    "wilson_nxt_power_17": {
+      "name": "NXT Power 17",
+      "brand": "Wilson",
+      "category": "string",
+      "path": "knowledge/strings/wilson/wilson_nxt_power_17.json"
+    },
+    "wilson_nxt_power_18": {
+      "name": "NXT Power 18",
+      "brand": "Wilson",
+      "category": "string",
+      "path": "knowledge/strings/wilson/wilson_nxt_power_18.json"
+    },
+    "wilson_revolve_16": {
+      "name": "Revolve 16",
+      "brand": "Wilson",
+      "category": "string",
+      "path": "knowledge/strings/wilson/wilson_revolve_16.json"
+    },
+    "wilson_revolve_17": {
+      "name": "Revolve 17",
+      "brand": "Wilson",
+      "category": "string",
+      "path": "knowledge/strings/wilson/wilson_revolve_17.json"
+    },
+    "wilson_revolve_spin_16": {
+      "name": "Revolve Spin 16",
+      "brand": "Wilson",
+      "category": "string",
+      "path": "knowledge/strings/wilson/wilson_revolve_spin_16.json"
+    },
+    "wilson_revolve_spin_17": {
+      "name": "Revolve Spin 17",
+      "brand": "Wilson",
+      "category": "string",
+      "path": "knowledge/strings/wilson/wilson_revolve_spin_17.json"
+    },
+    "wilson_sensation_15": {
+      "name": "Sensation 15",
+      "brand": "Wilson",
+      "category": "string",
+      "path": "knowledge/strings/wilson/wilson_sensation_15.json"
+    },
+    "wilson_sensation_16": {
+      "name": "Sensation 16",
+      "brand": "Wilson",
+      "category": "string",
+      "path": "knowledge/strings/wilson/wilson_sensation_16.json"
+    },
+    "wilson_sensation_control_16": {
+      "name": "Sensation Control 16",
+      "brand": "Wilson",
+      "category": "string",
+      "path": "knowledge/strings/wilson/wilson_sensation_control_16.json"
+    },
+    "wilson_sensation_neon_16": {
+      "name": "Sensation Neon 16",
+      "brand": "Wilson",
+      "category": "string",
+      "path": "knowledge/strings/wilson/wilson_sensation_neon_16.json"
+    },
+    "wilson_spin_effect_hybrid": {
+      "name": "Spin Effect Hybrid",
+      "brand": "Wilson",
+      "category": "string",
+      "path": "knowledge/strings/wilson/wilson_spin_effect_hybrid.json"
+    },
+    "wilson_synthetic_gut_power_16": {
+      "name": "Synthetic Gut Power 16",
+      "brand": "Wilson",
+      "category": "string",
+      "path": "knowledge/strings/wilson/wilson_synthetic_gut_power_16.json"
+    },
+    "wilson_synthetic_gut_power_17": {
+      "name": "Synthetic Gut Power 17",
+      "brand": "Wilson",
+      "category": "string",
+      "path": "knowledge/strings/wilson/wilson_synthetic_gut_power_17.json"
+    },
+    "yonex_dynawire": {
+      "name": "Dynawire",
+      "brand": "Yonex",
+      "category": "string",
+      "path": "knowledge/strings/yonex/yonex_dynawire.json"
+    },
+    "yonex_polytour_air": {
+      "name": "PolyTour Air",
+      "brand": "Yonex",
+      "category": "string",
+      "path": "knowledge/strings/yonex/yonex_polytour_air.json"
+    },
+    "yonex_polytour_drive": {
+      "name": "PolyTour Drive 125",
+      "brand": "Yonex",
+      "category": "string",
+      "path": "knowledge/strings/yonex/yonex_polytour_drive.json"
+    },
+    "yonex_polytour_drive_soft": {
+      "name": "PolyTour Drive Soft",
+      "brand": "Yonex",
+      "category": "string",
+      "path": "knowledge/strings/yonex/yonex_polytour_drive_soft.json"
+    },
+    "yonex_polytour_fire": {
+      "name": "PolyTour Fire",
+      "brand": "Yonex",
+      "category": "string",
+      "path": "knowledge/strings/yonex/yonex_polytour_fire.json"
+    },
+    "yonex_polytour_force": {
+      "name": "PolyTour Force",
+      "brand": "Yonex",
+      "category": "string",
+      "path": "knowledge/strings/yonex/yonex_polytour_force.json"
+    },
+    "yonex_polytour_pro": {
+      "name": "PolyTour Pro",
+      "brand": "Yonex",
+      "category": "string",
+      "path": "knowledge/strings/yonex/yonex_polytour_pro.json"
+    },
+    "yonex_polytour_rev": {
+      "name": "PolyTour Rev",
+      "brand": "Yonex",
+      "category": "string",
+      "path": "knowledge/strings/yonex/yonex_polytour_rev.json"
+    },
+    "yonex_polytour_spin": {
+      "name": "PolyTour Spin",
+      "brand": "Yonex",
+      "category": "string",
+      "path": "knowledge/strings/yonex/yonex_polytour_spin.json"
+    },
+    "yonex_rexis_activate": {
+      "name": "REXIS Activate",
+      "brand": "Yonex",
+      "category": "string",
+      "path": "knowledge/strings/yonex/yonex_rexis_activate.json"
+    },
+    "yonex_rexis_comfort": {
+      "name": "REXIS Comfort",
+      "brand": "Yonex",
+      "category": "string",
+      "path": "knowledge/strings/yonex/yonex_rexis_comfort.json"
+    },
+    "yonex_rexis_feel": {
+      "name": "REXIS Feel",
+      "brand": "Yonex",
+      "category": "string",
+      "path": "knowledge/strings/yonex/yonex_rexis_feel.json"
+    },
+    "yonex_rexis_speed": {
+      "name": "REXIS Speed",
+      "brand": "Yonex",
+      "category": "string",
+      "path": "knowledge/strings/yonex/yonex_rexis_speed.json"
     }
-
   }
 }

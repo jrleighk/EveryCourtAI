@@ -9,20 +9,15 @@
  * utils/cloudflare_json_loader.js
  *
  * 作用：
- * Cloudflare Worker 专用 Knowledge Loader。
+ * Cloudflare Worker 专用 Knowledge Loader
  *
- * 与本地 utils/json_loader.js 的区别：
+ * 数据来源：
+ * GitHub Raw
  *
- * Local:
- *   node:fs → knowledge/
- *
- * Cloudflare:
- *   fetch → GitHub Raw → knowledge/
- *
- * 当前 V1 支持：
- *
- * loadKnowledgeDirectory("racquets")
- * loadKnowledgeDirectory("strings")
+ * 当前支持：
+ * - loadKnowledgeJson()
+ * - loadKnowledgeDirectory("racquets")
+ * - loadKnowledgeDirectory("strings")
  *
  * ============================================================
  */
@@ -66,22 +61,17 @@ const directoryCache =
 function normalizePath(
     value
 ) {
-
     return String(
         value ?? ""
     )
         .trim()
-        .replace(
-            /^\/+/,
-            ""
-        );
+        .replace(/^\/+/, "");
 }
 
 
 function cloneData(
     value
 ) {
-
     return structuredClone(
         value
     );
@@ -100,7 +90,6 @@ async function fetchJson(
         useCache = true
     } = {}
 ) {
-
     const normalizedPath =
         normalizePath(
             relativePath
@@ -110,11 +99,9 @@ async function fetchJson(
     if (
         !normalizedPath
     ) {
-
         throw new Error(
             "EveryCourtAI Cloudflare Loader: path is empty."
         );
-
     }
 
 
@@ -124,13 +111,11 @@ async function fetchJson(
             normalizedPath
         )
     ) {
-
         return cloneData(
             jsonCache.get(
                 normalizedPath
             )
         );
-
     }
 
 
@@ -154,11 +139,9 @@ async function fetchJson(
     if (
         !response.ok
     ) {
-
         throw new Error(
             `EveryCourtAI Cloudflare Loader: unable to fetch ${normalizedPath}. HTTP ${response.status}`
         );
-
     }
 
 
@@ -166,14 +149,11 @@ async function fetchJson(
 
 
     try {
-
         data =
             await response.json();
-
     } catch (
         error
     ) {
-
         throw new Error(
             `EveryCourtAI Cloudflare Loader: invalid JSON in ${normalizedPath}: ${
                 error instanceof Error
@@ -181,7 +161,6 @@ async function fetchJson(
                     : String(error)
             }`
         );
-
     }
 
 
@@ -204,15 +183,12 @@ async function fetchJson(
  */
 
 async function loadProductLookup() {
-
     if (
         lookupCache
     ) {
-
         return cloneData(
             lookupCache
         );
-
     }
 
 
@@ -234,7 +210,7 @@ async function loadProductLookup() {
 
 /**
  * ============================================================
- * 单文件 Knowledge Loader
+ * Load Single Knowledge JSON
  * ============================================================
  */
 
@@ -242,7 +218,6 @@ export async function loadKnowledgeJson(
     knowledgePath,
     options = {}
 ) {
-
     const normalized =
         normalizePath(
             knowledgePath
@@ -262,7 +237,7 @@ export async function loadKnowledgeJson(
 
 /**
  * ============================================================
- * 从索引提取路径
+ * 从 product_lookup.json 提取路径
  * ============================================================
  */
 
@@ -270,7 +245,6 @@ function extractPathsFromLookup(
     lookup,
     collectionName
 ) {
-
     const collection =
         lookup?.[
             collectionName
@@ -279,12 +253,9 @@ function extractPathsFromLookup(
 
     if (
         !collection ||
-        typeof collection !==
-            "object"
+        typeof collection !== "object"
     ) {
-
         return [];
-
     }
 
 
@@ -298,23 +269,19 @@ function extractPathsFromLookup(
             collection
         )
     ) {
-
         const path =
             item?.path;
 
 
         if (
-            typeof path ===
-                "string" &&
+            typeof path === "string" &&
             path.trim()
         ) {
-
             paths.push(
                 normalizePath(
                     path
                 )
             );
-
         }
     }
 
@@ -329,7 +296,7 @@ function extractPathsFromLookup(
 
 /**
  * ============================================================
- * 批量读取产品
+ * Load Indexed Collection
  * ============================================================
  */
 
@@ -340,7 +307,6 @@ async function loadIndexedCollection(
         includePath = true
     } = {}
 ) {
-
     const cacheKey =
         JSON.stringify({
             collectionName,
@@ -354,13 +320,11 @@ async function loadIndexedCollection(
             cacheKey
         )
     ) {
-
         return cloneData(
             directoryCache.get(
                 cacheKey
             )
         );
-
     }
 
 
@@ -379,10 +343,6 @@ async function loadIndexedCollection(
         [];
 
 
-    /**
-     * 分批加载，避免一次性产生过多请求
-     */
-
     const batchSize =
         10;
 
@@ -392,7 +352,6 @@ async function loadIndexedCollection(
         index < paths.length;
         index += batchSize
     ) {
-
         const batch =
             paths.slice(
                 index,
@@ -404,9 +363,7 @@ async function loadIndexedCollection(
             await Promise.all(
                 batch.map(
                     async path => {
-
                         try {
-
                             const data =
                                 await fetchJson(
                                     path,
@@ -419,7 +376,6 @@ async function loadIndexedCollection(
                             if (
                                 includePath
                             ) {
-
                                 return {
                                     path,
 
@@ -430,7 +386,6 @@ async function loadIndexedCollection(
 
                                     data
                                 };
-
                             }
 
 
@@ -439,18 +394,14 @@ async function loadIndexedCollection(
                         } catch (
                             error
                         ) {
-
                             console.warn(
                                 "EveryCourtAI Cloudflare Loader skipped:",
                                 path,
                                 error
                             );
 
-
                             return null;
-
                         }
-
                     }
                 )
             );
@@ -461,7 +412,6 @@ async function loadIndexedCollection(
                 Boolean
             )
         );
-
     }
 
 
@@ -479,9 +429,7 @@ async function loadIndexedCollection(
 
 /**
  * ============================================================
- * loadKnowledgeDirectory
- *
- * 与本地 Loader 保持相同函数名
+ * Load Knowledge Directory
  * ============================================================
  */
 
@@ -489,7 +437,6 @@ export async function loadKnowledgeDirectory(
     knowledgeDirectory,
     options = {}
 ) {
-
     const normalized =
         normalizePath(
             knowledgeDirectory
@@ -504,37 +451,23 @@ export async function loadKnowledgeDirectory(
             );
 
 
-    /**
-     * Racquets
-     */
-
     if (
-        normalized ===
-        "racquets"
+        normalized === "racquets"
     ) {
-
         return loadIndexedCollection(
             "racquets",
             options
         );
-
     }
 
 
-    /**
-     * Strings
-     */
-
     if (
-        normalized ===
-        "strings"
+        normalized === "strings"
     ) {
-
         return loadIndexedCollection(
             "strings",
             options
         );
-
     }
 
 
@@ -546,48 +479,27 @@ export async function loadKnowledgeDirectory(
 
 /**
  * ============================================================
- * Cache
+ * Cache Control
  * ============================================================
  */
 
-export function clearCloudflareJsonCache() {
-
+export function clearJsonCache() {
     lookupCache =
         null;
 
     jsonCache.clear();
 
     directoryCache.clear();
-
-}
-
-
-export function getCloudflareJsonCacheStats() {
-
-    return {
-        lookup_cached:
-            Boolean(
-                lookupCache
-            ),
-
-        json_files_cached:
-            jsonCache.size,
-
-        directories_cached:
-            directoryCache.size
-    };
-
 }
 
 
 /**
  * ============================================================
- * Debug
+ * Debug Info
  * ============================================================
  */
 
 export function getCloudflareLoaderInfo() {
-
     return {
         loader:
             "cloudflare_json_loader",
@@ -606,5 +518,4 @@ export function getCloudflareLoaderInfo() {
             "strings"
         ]
     };
-
 }

@@ -27,7 +27,7 @@
 
 import {
     loadKnowledgeJson
-} from "../utils/json_loader.js";
+} from "../utils/runtime_json_loader.js";
 
 import {
     validatePlayerProfile,
