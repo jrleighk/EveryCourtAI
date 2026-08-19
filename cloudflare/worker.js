@@ -2,7 +2,7 @@
  * ============================================================
  * EveryCourtAI
  * Cloudflare Worker
- * Version: 2.2
+ * Version: 2.3.1
  * ============================================================
  *
  * 文件路径：
@@ -14,6 +14,10 @@
  * ↓
  * Input Parser
  * ↓
+ * Conversation State Engine
+ * ↓
+ * Merge Previous + Current Player Input
+ * ↓
  * EveryCourtAI Engine
  * ↓
  * Confidence Engine
@@ -23,11 +27,19 @@
  * 信息不足？
  *
  * YES:
- *   先追问
- *   不把精准球线 / 磅数作为最终答案
+ *   返回追问
+ *   返回 conversation_state
+ *   等待下一轮补充
  *
  * NO:
  *   返回完整 Recommendation
+ *   返回 conversation_state
+ *
+ * V2.3.1 修复：
+ *
+ * Follow-up Engine 不再使用当前单轮 Parser 的 missing_fields，
+ * 而是根据 Conversation State 合并后的完整 player_input
+ * 重新判断真正缺失的信息。
  *
  * ============================================================
  */
@@ -61,6 +73,12 @@ import {
 } from "../engine/follow_up_engine.js";
 
 
+import {
+    runConversationStateEngine,
+    updatePendingFields
+} from "../engine/conversation_state_engine.js";
+
+
 /**
  * ============================================================
  * Configuration
@@ -72,7 +90,7 @@ const APP_NAME =
 
 
 const WORKER_VERSION =
-    "2.2";
+    "2.3.1";
 
 
 /**
@@ -141,10 +159,18 @@ export default {
                         "EveryCourtAI Input Parser",
 
                     version:
-                        "1.0",
+                        "1.1",
 
                     mode:
                         "rule_based"
+                },
+
+                conversation_state_engine: {
+                    name:
+                        "conversation_state_engine",
+
+                    version:
+                        "1.0"
                 },
 
                 follow_up_engine: {
@@ -167,6 +193,9 @@ export default {
                     "message",
                     "player_input"
                 ],
+
+                multi_turn:
+                    true,
 
                 timestamp:
                     createTimestamp()
@@ -277,10 +306,19 @@ async function handleHealth() {
                     "EveryCourtAI Input Parser",
 
                 version:
-                    "1.0",
+                    "1.1",
 
                 mode:
                     "rule_based"
+            },
+
+            conversation_state_engine: {
+
+                name:
+                    "conversation_state_engine",
+
+                version:
+                    "1.0"
             },
 
             follow_up_engine: {
@@ -291,6 +329,9 @@ async function handleHealth() {
                 version:
                     "1.0"
             },
+
+            multi_turn:
+                true,
 
             timestamp:
                 createTimestamp()
@@ -418,11 +459,26 @@ async function handleAI(
         /**
          * ====================================================
          * STEP 4
-         * Resolve Input
+         * Previous Conversation State
          * ====================================================
          */
 
-        let playerInput =
+        const previousConversationState =
+            isValidObject(
+                body?.conversation_state
+            )
+                ? body.conversation_state
+                : null;
+
+
+        /**
+         * ====================================================
+         * STEP 5
+         * Resolve Current Turn Input
+         * ====================================================
+         */
+
+        let currentTurnPlayerInput =
             null;
 
 
@@ -439,15 +495,12 @@ async function handleAI(
          */
 
         if (
-            body?.player_input &&
-            typeof body.player_input ===
-                "object" &&
-            !Array.isArray(
-                body.player_input
+            isValidObject(
+                body?.player_input
             )
         ) {
 
-            playerInput =
+            currentTurnPlayerInput =
                 body.player_input;
 
 
@@ -509,7 +562,7 @@ async function handleAI(
             }
 
 
-            playerInput =
+            currentTurnPlayerInput =
                 parserResult
                     .player_input;
 
@@ -551,17 +604,14 @@ async function handleAI(
 
         /**
          * ====================================================
-         * STEP 5
-         * Validate Resolved Input
+         * STEP 6
+         * Validate Current Turn Input
          * ====================================================
          */
 
         if (
-            !playerInput ||
-            typeof playerInput !==
-                "object" ||
-            Array.isArray(
-                playerInput
+            !isValidObject(
+                currentTurnPlayerInput
             )
         ) {
 
@@ -594,7 +644,85 @@ async function handleAI(
 
         /**
          * ====================================================
-         * STEP 6
+         * STEP 7
+         * Conversation State Engine
+         * ====================================================
+         */
+
+        const conversationResult =
+            runConversationStateEngine({
+
+                previousState:
+                    previousConversationState,
+
+                parserResult,
+
+                playerInput:
+                    inputMode ===
+                    "player_input"
+                        ? currentTurnPlayerInput
+                        : undefined,
+
+                message:
+                    typeof body?.message ===
+                        "string"
+                        ? body.message
+                        : null,
+
+                inputMode
+            });
+
+
+        /**
+         * Conversation State Engine
+         * 输出 merged_player_input。
+         */
+
+        const playerInput =
+            conversationResult
+                ?.merged_player_input;
+
+
+        if (
+            !isValidObject(
+                playerInput
+            )
+        ) {
+
+            return jsonResponse(
+                {
+
+                    success:
+                        false,
+
+                    request_id:
+                        requestId,
+
+                    error: {
+
+                        type:
+                            "conversation_state_failure",
+
+                        message:
+                            "Conversation State Engine did not produce a valid merged_player_input."
+                    },
+
+                    parser:
+                        parserResult,
+
+                    conversation:
+                        conversationResult ??
+                        null
+
+                },
+                500
+            );
+        }
+
+
+        /**
+         * ====================================================
+         * STEP 8
          * Run EveryCourtAI Engine
          * ====================================================
          */
@@ -632,6 +760,21 @@ async function handleAI(
                     parser:
                         parserResult,
 
+                    conversation_id:
+                        conversationResult
+                            ?.conversation_id ??
+                        null,
+
+                    turn:
+                        conversationResult
+                            ?.turn ??
+                        null,
+
+                    conversation_state:
+                        conversationResult
+                            ?.conversation_state ??
+                        null,
+
                     engine_result:
                         engineResult ??
                         null,
@@ -660,15 +803,50 @@ async function handleAI(
 
         /**
          * ====================================================
-         * STEP 7
+         * STEP 9
          * Follow-up Engine
          * ====================================================
+         *
+         * V2.3.1 修复：
+         *
+         * Follow-up Engine 必须以 Conversation State
+         * 合并后的 playerInput 为唯一事实来源。
+         *
+         * 不能继续使用当前单轮 Parser 的 missing_fields，
+         * 否则第二轮会重复询问第一轮已经回答过的问题。
+         * ====================================================
          */
+
+        const mergedParserMissingFields =
+            getMissingFieldsFromMergedPlayerInput(
+                playerInput
+            );
+
+
+        const mergedParserResult = {
+
+            ...(parserResult ?? {}),
+
+            success:
+                true,
+
+            player_input:
+                playerInput,
+
+            missing_fields:
+                mergedParserMissingFields,
+
+            requires_follow_up:
+                mergedParserMissingFields.length >
+                0
+        };
+
 
         const followUpResult =
             runFollowUpEngine({
 
-                parserResult,
+                parserResult:
+                    mergedParserResult,
 
                 confidenceResult:
                     engineResult
@@ -683,7 +861,57 @@ async function handleAI(
 
         /**
          * ====================================================
-         * STEP 8
+         * STEP 10
+         * Update Conversation Pending Fields
+         * ====================================================
+         */
+
+        let conversationState =
+            conversationResult
+                ?.conversation_state ??
+            null;
+
+
+        if (
+            followUpResult
+                ?.requires_follow_up ===
+                true &&
+            Array.isArray(
+                followUpResult
+                    ?.questions
+            )
+        ) {
+
+            const pendingFields =
+                followUpResult
+                    .questions
+                    .map(
+                        item =>
+                            item?.field
+                    )
+                    .filter(
+                        Boolean
+                    );
+
+
+            if (
+                pendingFields.length >
+                0 &&
+                conversationState
+            ) {
+
+                conversationState =
+                    updatePendingFields(
+                        conversationState,
+                        pendingFields
+                    );
+            }
+        }
+
+
+        /**
+         * ====================================================
+         * STEP 11
          * Follow-up Required
          * ====================================================
          */
@@ -737,17 +965,35 @@ async function handleAI(
                 parser:
                     parserResult,
 
+                current_turn_player_input:
+                    currentTurnPlayerInput,
+
                 player_input:
                     playerInput,
 
+                conversation_id:
+                    conversationResult
+                        ?.conversation_id ??
+                    null,
+
+                turn:
+                    conversationResult
+                        ?.turn ??
+                    null,
+
+                updated_fields:
+                    conversationResult
+                        ?.updated_fields ??
+                    [],
+
+                missing_fields:
+                    mergedParserMissingFields,
+
+                conversation_state:
+                    conversationState,
+
                 follow_up:
                     followUpResult,
-
-                /**
-                 * 非最终推荐
-                 *
-                 * 不把具体产品与磅数作为正式 Recommendation 返回。
-                 */
 
                 recommendation:
                     null,
@@ -780,7 +1026,7 @@ async function handleAI(
 
         /**
          * ====================================================
-         * STEP 9
+         * STEP 12
          * Full Recommendation Allowed
          * ====================================================
          */
@@ -834,8 +1080,32 @@ async function handleAI(
             parser:
                 parserResult,
 
+            current_turn_player_input:
+                currentTurnPlayerInput,
+
             player_input:
                 playerInput,
+
+            conversation_id:
+                conversationResult
+                    ?.conversation_id ??
+                null,
+
+            turn:
+                conversationResult
+                    ?.turn ??
+                null,
+
+            updated_fields:
+                conversationResult
+                    ?.updated_fields ??
+                [],
+
+            missing_fields:
+                mergedParserMissingFields,
+
+            conversation_state:
+                conversationState,
 
             follow_up:
                 followUpResult,
@@ -916,13 +1186,6 @@ async function handleAI(
 /**
  * ============================================================
  * General Direction Preview
- * ============================================================
- *
- * 当 Confidence 不足时：
- *
- * 可以告诉用户总体方向，
- * 但不把具体产品 / 精准磅数当成最终结果。
- *
  * ============================================================
  */
 
@@ -1006,10 +1269,6 @@ function buildFollowUpAnswer(
         );
 
 
-    /**
-     * 中文 / 繁体
-     */
-
     if (
         normalizedLanguage === "zh" ||
         normalizedLanguage === "zh-cn" ||
@@ -1053,10 +1312,6 @@ function buildFollowUpAnswer(
             .join("\n");
     }
 
-
-    /**
-     * English
-     */
 
     const questionTexts =
         questions
@@ -1307,6 +1562,131 @@ function buildWebRecommendation(
                 ?.alternatives ??
             []
     };
+}
+
+
+/**
+ * ============================================================
+ * Missing Fields From Merged Player Input
+ * ============================================================
+ *
+ * 这里检查的是 Conversation State 合并后的完整用户资料，
+ * 不是当前单轮 Parser 的资料。
+ *
+ * ============================================================
+ */
+
+function getMissingFieldsFromMergedPlayerInput(
+    playerInput
+) {
+
+    const missingFields =
+        [];
+
+
+    if (
+        !playerInput
+            ?.current_racquet
+    ) {
+
+        missingFields.push(
+            "current_racquet"
+        );
+    }
+
+
+    if (
+        !playerInput
+            ?.primary_goal
+    ) {
+
+        missingFields.push(
+            "primary_goal"
+        );
+    }
+
+
+    if (
+        !playerInput
+            ?.playing_style
+    ) {
+
+        missingFields.push(
+            "playing_style"
+        );
+    }
+
+
+    if (
+        !playerInput
+            ?.swing_speed
+    ) {
+
+        missingFields.push(
+            "swing_speed"
+        );
+    }
+
+
+    if (
+        !playerInput
+            ?.feel_preference
+    ) {
+
+        missingFields.push(
+            "feel_preference"
+        );
+    }
+
+
+    if (
+        !playerInput
+            ?.current_string
+    ) {
+
+        missingFields.push(
+            "current_string"
+        );
+    }
+
+
+    if (
+        playerInput
+            ?.current_tension ===
+            null ||
+        playerInput
+            ?.current_tension ===
+            undefined
+    ) {
+
+        missingFields.push(
+            "current_tension"
+        );
+    }
+
+
+    return missingFields;
+}
+
+
+/**
+ * ============================================================
+ * Object Validation
+ * ============================================================
+ */
+
+function isValidObject(
+    value
+) {
+
+    return (
+        value !== null &&
+        typeof value ===
+            "object" &&
+        !Array.isArray(
+            value
+        )
+    );
 }
 
 

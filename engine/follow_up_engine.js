@@ -2,7 +2,7 @@
  * ============================================================
  * EveryCourtAI
  * Follow-up Engine
- * Version: 1.0
+ * Version: 1.1
  * ============================================================
  *
  * 文件路径：
@@ -10,11 +10,32 @@
  *
  * 作用：
  *
- * 1. 检查 Player Profile / Parser 的缺失信息
- * 2. 检查 Confidence
- * 3. 决定是否需要追问
- * 4. 生成最有价值的 1–2 个追问
- * 5. 控制是否允许输出精准产品 / 磅数推荐
+ * 1. 接收 Parser 缺失字段
+ * 2. 接收 Confidence Engine 缺失字段
+ * 3. 接收 Conversation State 合并后的 playerInput
+ * 4. 合并所有候选 missing fields
+ * 5. 使用最终 playerInput 再次验证
+ * 6. 已经存在的资料绝不重复追问
+ * 7. 根据优先级选择最有价值的问题
+ * 8. 控制是否允许精准产品 / 磅数推荐
+ *
+ * V1.1 核心修复：
+ *
+ * Confidence Engine 可能仍然把已经补充的字段标记为 missing。
+ *
+ * 例如：
+ *
+ * playerInput.current_tension = 53
+ *
+ * 但：
+ *
+ * confidence.profile_status.missing_fields
+ * 仍然可能包含：
+ *
+ * current_tension
+ *
+ * V1.1 会以最终合并后的 playerInput 为事实来源，
+ * 自动删除这些错误的 missing fields。
  *
  * ============================================================
  */
@@ -22,64 +43,66 @@
 
 /**
  * ============================================================
- * 基础配置
+ * Configuration
  * ============================================================
  */
 
 const ENGINE_NAME =
     "follow_up_engine";
 
+
 const ENGINE_VERSION =
-    "1.0";
+    "1.1";
 
 
 /**
  * ============================================================
- * Confidence Thresholds
- * ============================================================
- */
-
-const MIN_CONFIDENCE_FOR_PRECISE_SETUP =
-    70;
-
-const MIN_CONFIDENCE_FOR_PRODUCT_RECOMMENDATION =
-    60;
-
-
-/**
- * ============================================================
- * Field Priority
+ * Question Priority
  * ============================================================
  *
  * 数字越小，优先级越高。
+ *
+ * 当前逻辑：
+ *
+ * 1. 当前球拍
+ * 2. 当前球线
+ * 3. 当前磅数
+ * 4. 主要目标
+ * 5. 挥拍速度
+ * 6. 打法
+ * 7. 手感偏好
+ *
  * ============================================================
  */
 
 const FIELD_PRIORITY = {
 
-    current_racquet: 1,
+    current_racquet:
+        10,
 
-    primary_goal: 2,
+    current_string:
+        20,
 
-    current_string: 3,
+    current_tension:
+        30,
 
-    current_tension: 4,
+    primary_goal:
+        40,
 
-    swing_speed: 5,
+    swing_speed:
+        50,
 
-    playing_style: 6,
+    playing_style:
+        60,
 
-    physical_profile: 7,
-
-    feel_preference: 8,
-
-    launch_preference: 9
+    feel_preference:
+        70
 };
 
 
 /**
  * ============================================================
- * Question Library
+ * Questions
  * ============================================================
  */
 
@@ -92,16 +115,6 @@ const QUESTION_LIBRARY = {
 
         zh:
             "你目前使用的是哪一款球拍？"
-    },
-
-
-    primary_goal: {
-
-        en:
-            "What would you most like to improve: control, power, spin, comfort, or feel?",
-
-        zh:
-            "你最希望改善的是哪一点：控制、力量、旋转、舒适性，还是手感？"
     },
 
 
@@ -125,6 +138,16 @@ const QUESTION_LIBRARY = {
     },
 
 
+    primary_goal: {
+
+        en:
+            "What would you most like to improve: control, power, spin, comfort, or feel?",
+
+        zh:
+            "你最希望改善的是哪一点：控制、力量、旋转、舒适性，还是手感？"
+    },
+
+
     swing_speed: {
 
         en:
@@ -138,526 +161,250 @@ const QUESTION_LIBRARY = {
     playing_style: {
 
         en:
-            "How would you describe your playing style: aggressive baseline, counterpuncher, grinder, all-court, or serve-and-volley?",
+            "How would you describe your playing style: baseline, all-court, aggressive, defensive, or serve-and-volley?",
 
         zh:
-            "你的主要打法更接近哪一种：进攻型底线、防守反击、底线相持、全场型，还是发球上网？"
-    },
-
-
-    physical_profile: {
-
-        en:
-            "Do you currently have any arm, elbow, wrist, shoulder, neck, back, hip, knee, or ankle discomfort?",
-
-        zh:
-            "你目前是否有手臂、手肘、手腕、肩部、颈部、腰背、髋、膝盖或脚踝方面的不适？"
+            "你的主要打法更接近哪一种：底线型、全场型、进攻型、防守型，还是发球上网型？"
     },
 
 
     feel_preference: {
 
         en:
-            "What kind of feel do you prefer: soft, plush, connected, crisp, firm, or muted?",
+            "What type of feel do you prefer: connected, crisp, soft, muted, or powerful?",
 
         zh:
-            "你更喜欢哪种手感：柔软、包裹感、连接感、清脆、偏硬，还是偏闷？"
-    },
-
-
-    launch_preference: {
-
-        en:
-            "Do you prefer a lower, medium, or higher launch angle?",
-
-        zh:
-            "你更偏好较低、中等还是较高的出球弹道？"
+            "你更喜欢哪种击球手感：直接连接感、清脆、柔和、过滤感，还是力量感？"
     }
 };
 
 
 /**
  * ============================================================
- * Normalize Missing Fields
+ * Main Engine
  * ============================================================
  */
 
-function normalizeMissingFields(
-    missingFields = []
-) {
+export function runFollowUpEngine({
 
-    if (
-        !Array.isArray(
-            missingFields
-        )
-    ) {
-        return [];
-    }
+    parserResult =
+        null,
 
+    confidenceResult =
+        null,
 
-    return [
-        ...new Set(
-            missingFields
-                .filter(
-                    item =>
-                        typeof item ===
-                        "string"
-                )
-                .map(
-                    item =>
-                        item
-                            .trim()
-                            .toLowerCase()
-                )
-                .filter(
-                    Boolean
-                )
-        )
-    ];
-}
+    playerInput =
+        null,
 
+    maxQuestions =
+        2
 
-/**
- * ============================================================
- * Map Engine Missing Fields
- * ============================================================
- *
- * 不同 Engine 可能使用不同字段名，
- * 这里统一成 Follow-up Engine 使用的标准字段。
- * ============================================================
- */
-
-function mapMissingField(
-    field
-) {
-
-    const mapping = {
-
-        current_racquet:
-            "current_racquet",
-
-        primary_goal:
-            "primary_goal",
-
-        current_string:
-            "current_string",
-
-        current_tension:
-            "current_tension",
-
-        playing_style:
-            "playing_style",
-
-        swing_speed:
-            "swing_speed",
-
-        feel_preference:
-            "feel_preference",
-
-        launch_preference:
-            "launch_preference"
-    };
-
-
-    return (
-        mapping[field] ??
-        field
-    );
-}
-
-
-/**
- * ============================================================
- * Detect Physical Information
- * ============================================================
- */
-
-function hasPhysicalInformation(
-    playerInput = {},
-    confidenceResult = {}
-) {
-
-    const physical =
-        playerInput
-            ?.physical;
-
-
-    if (
-        physical &&
-        typeof physical === "object" &&
-        Object.keys(
-            physical
-        ).length > 0
-    ) {
-        return true;
-    }
-
-
-    const activeConstraints =
-        confidenceResult
-            ?.profile_status
-            ?.active_physical_constraints;
-
-
-    return (
-        Array.isArray(
-            activeConstraints
-        ) &&
-        activeConstraints.length > 0
-    );
-}
-
-
-/**
- * ============================================================
- * Build Candidate Missing Fields
- * ============================================================
- */
-
-function buildMissingFields({
-    parserResult,
-    confidenceResult,
-    playerInput
-}) {
-
-    const missing = [];
-
+} = {}) {
 
     /**
+     * ========================================================
+     * STEP 1
      * Parser Missing Fields
+     * ========================================================
      */
 
-    const parserMissing =
-        normalizeMissingFields(
+    const parserMissingFields =
+        normalizeFieldArray(
             parserResult
                 ?.missing_fields
         );
 
 
-    for (
-        const field
-        of parserMissing
-    ) {
-
-        missing.push(
-            mapMissingField(
-                field
-            )
-        );
-    }
-
-
     /**
+     * ========================================================
+     * STEP 2
      * Confidence Missing Fields
+     * ========================================================
      */
 
-    const confidenceMissing =
-        normalizeMissingFields(
+    const confidenceMissingFields =
+        normalizeFieldArray(
             confidenceResult
                 ?.profile_status
                 ?.missing_fields
         );
 
 
-    for (
-        const field
-        of confidenceMissing
-    ) {
+    /**
+     * ========================================================
+     * STEP 3
+     * Merge Candidate Missing Fields
+     * ========================================================
+     */
 
-        missing.push(
-            mapMissingField(
-                field
-            )
-        );
-    }
+    const candidateMissingFields =
+        uniqueFields([
+            ...parserMissingFields,
+            ...confidenceMissingFields
+        ]);
 
 
     /**
-     * Physical Profile
+     * ========================================================
+     * STEP 4
+     * Validate Against Final Merged Player Input
+     * ========================================================
      *
-     * 如果完全没有身体信息，
-     * 可作为较低优先级追问。
-     */
-
-    if (
-        !hasPhysicalInformation(
-            playerInput,
-            confidenceResult
-        )
-    ) {
-
-        missing.push(
-            "physical_profile"
-        );
-    }
-
-
-    return [
-        ...new Set(
-            missing
-        )
-    ];
-}
-
-
-/**
- * ============================================================
- * Sort Missing Fields
- * ============================================================
- */
-
-function sortMissingFields(
-    fields = []
-) {
-
-    return [
-        ...fields
-    ].sort(
-        (
-            a,
-            b
-        ) => {
-
-            const aPriority =
-                FIELD_PRIORITY[a] ??
-                999;
-
-            const bPriority =
-                FIELD_PRIORITY[b] ??
-                999;
-
-
-            return (
-                aPriority -
-                bPriority
-            );
-        }
-    );
-}
-
-
-/**
- * ============================================================
- * Build Questions
- * ============================================================
- */
-
-function buildQuestions(
-    missingFields = [],
-    maxQuestions = 2
-) {
-
-    const output = [];
-
-
-    const sorted =
-        sortMissingFields(
-            missingFields
-        );
-
-
-    for (
-        const field
-        of sorted
-    ) {
-
-        const question =
-            QUESTION_LIBRARY[field];
-
-
-        if (
-            !question
-        ) {
-            continue;
-        }
-
-
-        output.push({
-
-            field,
-
-            question: {
-
-                en:
-                    question.en,
-
-                zh:
-                    question.zh
-            }
-        });
-
-
-        if (
-            output.length >=
-            maxQuestions
-        ) {
-            break;
-        }
-    }
-
-
-    return output;
-}
-
-
-/**
- * ============================================================
- * Build Gate Decision
- * ============================================================
- */
-
-function buildGateDecision({
-    confidenceScore,
-    missingFields,
-    confidenceResult
-}) {
-
-    const restrictions =
-        confidenceResult
-            ?.restrictions ??
-        {};
-
-
-    /**
-     * Precision Setup
-     */
-
-    const allowPreciseSetup =
-        (
-            confidenceScore >=
-            MIN_CONFIDENCE_FOR_PRECISE_SETUP
-        ) &&
-        (
-            restrictions
-                ?.allow_high_precision_setup !==
-            false
-        );
-
-
-    /**
-     * Specific Product
-     */
-
-    const allowSpecificProduct =
-        (
-            confidenceScore >=
-            MIN_CONFIDENCE_FOR_PRODUCT_RECOMMENDATION
-        ) &&
-        (
-            restrictions
-                ?.allow_specific_product_recommendation !==
-            false
-        );
-
-
-    /**
-     * Follow-up Required
-     */
-
-    const confidenceFollowUpRequired =
-        confidenceResult
-            ?.follow_up
-            ?.required ===
-        true;
-
-
-    const requiresFollowUp =
-        (
-            confidenceFollowUpRequired ||
-            confidenceScore <
-                MIN_CONFIDENCE_FOR_PRECISE_SETUP ||
-            missingFields.length > 0
-        );
-
-
-    return {
-
-        requires_follow_up:
-            requiresFollowUp,
-
-        allow_specific_product_recommendation:
-            allowSpecificProduct,
-
-        allow_precise_tension_recommendation:
-            allowPreciseSetup,
-
-        recommendation_mode:
-            allowPreciseSetup
-                ? "precise_setup"
-                : (
-                    allowSpecificProduct
-                        ? "product_direction"
-                        : "general_direction"
-                )
-    };
-}
-
-
-/**
- * ============================================================
- * Main Follow-up Engine
- * ============================================================
- */
-
-export function runFollowUpEngine({
-    parserResult = null,
-    confidenceResult = null,
-    playerInput = {},
-    maxQuestions = 2
-} = {}) {
-
-    /**
-     * Confidence Score
-     */
-
-    const confidenceScore =
-        Number(
-            confidenceResult
-                ?.score ??
-            0
-        );
-
-
-    /**
-     * Missing Fields
+     * 这是 V1.1 最关键的部分。
+     *
+     * Parser / Confidence 只能提供候选 missing fields。
+     *
+     * 最终是否真的 missing，
+     * 必须检查 Conversation State 合并后的 playerInput。
+     *
+     * ========================================================
      */
 
     const missingFields =
-        buildMissingFields({
-            parserResult,
+        candidateMissingFields
+            .filter(
+                field =>
+                    !hasPlayerField(
+                        playerInput,
+                        field
+                    )
+            );
+
+
+    /**
+     * ========================================================
+     * STEP 5
+     * Sort Missing Fields
+     * ========================================================
+     */
+
+    const sortedMissingFields =
+        [...missingFields]
+            .sort(
+                (
+                    a,
+                    b
+                ) => {
+
+                    const priorityA =
+                        FIELD_PRIORITY[a] ??
+                        999;
+
+
+                    const priorityB =
+                        FIELD_PRIORITY[b] ??
+                        999;
+
+
+                    return (
+                        priorityA -
+                        priorityB
+                    );
+                }
+            );
+
+
+    /**
+     * ========================================================
+     * STEP 6
+     * Confidence
+     * ========================================================
+     */
+
+    const confidenceScore =
+        normalizeNumber(
+            confidenceResult
+                ?.score
+        );
+
+
+    const confidenceLevel =
+        confidenceResult
+            ?.level ??
+        getConfidenceLevel(
+            confidenceScore
+        );
+
+
+    /**
+     * ========================================================
+     * STEP 7
+     * Recommendation Gate
+     * ========================================================
+     */
+
+    const recommendationGate =
+        buildRecommendationGate({
+
+            confidenceScore,
+
             confidenceResult,
+
+            missingFields:
+                sortedMissingFields,
+
             playerInput
         });
 
 
     /**
-     * Gate
+     * ========================================================
+     * STEP 8
+     * Determine Follow-up
+     * ========================================================
      */
 
-    const gate =
-        buildGateDecision({
+    const requiresFollowUp =
+        shouldRequireFollowUp({
+
+            missingFields:
+                sortedMissingFields,
+
             confidenceScore,
-            missingFields,
-            confidenceResult
+
+            recommendationGate
         });
 
 
     /**
-     * Questions
+     * ========================================================
+     * STEP 9
+     * Build Questions
+     * ========================================================
      */
 
-    const questions =
-        gate
-            .requires_follow_up
-            ? buildQuestions(
-                missingFields,
+    const safeMaxQuestions =
+        Number.isFinite(
+            Number(
                 maxQuestions
+            )
+        )
+            ? Math.max(
+                1,
+                Math.min(
+                    Number(
+                        maxQuestions
+                    ),
+                    3
+                )
+            )
+            : 2;
+
+
+    const questions =
+        requiresFollowUp
+            ? buildQuestions(
+                sortedMissingFields,
+                safeMaxQuestions
             )
             : [];
 
 
     /**
+     * ========================================================
+     * STEP 10
      * Best Missing Field
+     * ========================================================
      */
 
     const bestMissingField =
@@ -666,11 +413,18 @@ export function runFollowUpEngine({
                 0
             ]
             ?.field ??
+        sortedMissingFields
+            ?.[
+                0
+            ] ??
         null;
 
 
     /**
-     * Output
+     * ========================================================
+     * STEP 11
+     * Response
+     * ========================================================
      */
 
     return {
@@ -691,83 +445,829 @@ export function runFollowUpEngine({
                 confidenceScore,
 
             level:
-                confidenceResult
-                    ?.level ??
-                null
+                confidenceLevel
         },
 
         missing_fields:
-            missingFields,
+            sortedMissingFields,
 
         best_missing_field:
             bestMissingField,
 
         requires_follow_up:
-            gate
-                .requires_follow_up,
+            requiresFollowUp,
 
-        recommendation_gate: {
-
-            mode:
-                gate
-                    .recommendation_mode,
-
-            allow_specific_product_recommendation:
-                gate
-                    .allow_specific_product_recommendation,
-
-            allow_precise_tension_recommendation:
-                gate
-                    .allow_precise_tension_recommendation
-        },
+        recommendation_gate:
+            recommendationGate,
 
         questions,
 
-        summary: {
-
-            en:
-                gate
-                    .requires_follow_up
-                    ? "More information is recommended before presenting this as a precise final setup."
-                    : "The available information is sufficient for a precise equipment recommendation.",
-
-            zh:
-                gate
-                    .requires_follow_up
-                    ? "建议先补充关键资料，再把当前结果作为精准最终配置。"
-                    : "目前资料已经足够，可以生成较精准的装备推荐。"
-        }
+        summary:
+            buildSummary(
+                requiresFollowUp
+            )
     };
 }
 
 
 /**
  * ============================================================
- * Helper
+ * Player Field Validation
+ * ============================================================
+ *
+ * 判断某个字段是否已经存在于最终 playerInput。
+ *
+ * 这是整个 V1.1 防止重复提问的核心。
+ *
  * ============================================================
  */
 
-export function shouldAskFollowUp(
-    followUpResult
+function hasPlayerField(
+    playerInput,
+    field
 ) {
 
-    return (
-        followUpResult
-            ?.requires_follow_up ===
-        true
-    );
+    if (
+        !playerInput ||
+        typeof playerInput !==
+            "object"
+    ) {
+
+        return false;
+    }
+
+
+    switch (
+        field
+    ) {
+
+        /**
+         * Current Racquet
+         */
+
+        case "current_racquet":
+
+            return hasObjectValue(
+                playerInput
+                    ?.current_racquet
+            );
+
+
+        /**
+         * Current String
+         */
+
+        case "current_string":
+
+            return hasObjectValue(
+                playerInput
+                    ?.current_string
+            );
+
+
+        /**
+         * Current Tension
+         */
+
+        case "current_tension":
+
+            return hasNumericOrTextValue(
+                playerInput
+                    ?.current_tension
+            );
+
+
+        /**
+         * Primary Goal
+         */
+
+        case "primary_goal":
+
+            return hasTextValue(
+                playerInput
+                    ?.primary_goal
+            );
+
+
+        /**
+         * Playing Style
+         */
+
+        case "playing_style":
+
+            return hasTextValue(
+                playerInput
+                    ?.playing_style
+            );
+
+
+        /**
+         * Swing Speed
+         */
+
+        case "swing_speed":
+
+            return hasTextValue(
+                playerInput
+                    ?.swing_speed
+            );
+
+
+        /**
+         * Feel Preference
+         */
+
+        case "feel_preference":
+
+            return hasTextValue(
+                playerInput
+                    ?.feel_preference
+            );
+
+
+        /**
+         * Unknown Field
+         *
+         * 如果未来 Confidence Engine 新增字段，
+         * 尝试直接读取 playerInput[field]。
+         */
+
+        default:
+
+            return hasGenericValue(
+                playerInput
+                    ?.[field]
+            );
+    }
 }
 
 
 /**
  * ============================================================
- * Default Export
+ * Recommendation Gate
  * ============================================================
  */
 
-export default {
+function buildRecommendationGate({
 
-    runFollowUpEngine,
+    confidenceScore,
 
-    shouldAskFollowUp
-};
+    confidenceResult,
+
+    missingFields,
+
+    playerInput
+
+}) {
+
+    /**
+     * Confidence Engine 自己的限制。
+     */
+
+    const confidenceAllowsProduct =
+        confidenceResult
+            ?.restrictions
+            ?.allow_specific_product_recommendation;
+
+
+    const confidenceAllowsPrecision =
+        confidenceResult
+            ?.restrictions
+            ?.allow_high_precision_setup;
+
+
+    /**
+     * 核心资料
+     */
+
+    const hasRacquet =
+        hasPlayerField(
+            playerInput,
+            "current_racquet"
+        );
+
+
+    const hasGoal =
+        hasPlayerField(
+            playerInput,
+            "primary_goal"
+        );
+
+
+    const hasCurrentString =
+        hasPlayerField(
+            playerInput,
+            "current_string"
+        );
+
+
+    const hasCurrentTension =
+        hasPlayerField(
+            playerInput,
+            "current_tension"
+        );
+
+
+    /**
+     * 是否缺少关键资料。
+     */
+
+    const missingCriticalFields =
+        missingFields
+            .some(
+                field =>
+                    [
+                        "current_racquet",
+                        "primary_goal"
+                    ]
+                        .includes(
+                            field
+                        )
+            );
+
+
+    /**
+     * Product Recommendation
+     *
+     * Moderate confidence + 核心资料存在，
+     * 可以进入产品方向。
+     */
+
+    let allowSpecificProductRecommendation =
+        (
+            confidenceScore >=
+            60 &&
+            hasRacquet &&
+            hasGoal &&
+            !missingCriticalFields
+        );
+
+
+    /**
+     * 如果 Confidence Engine 明确禁止，
+     * 低 Confidence 时继续尊重限制。
+     */
+
+    if (
+        confidenceAllowsProduct ===
+            false &&
+        confidenceScore <
+            60
+    ) {
+
+        allowSpecificProductRecommendation =
+            false;
+    }
+
+
+    /**
+     * Precise Tension Recommendation
+     *
+     * 精准磅数要求更高：
+     *
+     * - Confidence >= 75
+     * - 已知当前球线
+     * - 已知当前磅数
+     * - 不缺关键资料
+     */
+
+    let allowPreciseTensionRecommendation =
+        (
+            confidenceScore >=
+            75 &&
+            hasCurrentString &&
+            hasCurrentTension &&
+            !missingCriticalFields
+        );
+
+
+    if (
+        confidenceAllowsPrecision ===
+            false &&
+        confidenceScore <
+            75
+    ) {
+
+        allowPreciseTensionRecommendation =
+            false;
+    }
+
+
+    /**
+     * Mode
+     */
+
+    let mode =
+        "general_direction";
+
+
+    if (
+        allowSpecificProductRecommendation
+    ) {
+
+        mode =
+            "product_direction";
+    }
+
+
+    if (
+        allowPreciseTensionRecommendation
+    ) {
+
+        mode =
+            "precise_setup";
+    }
+
+
+    return {
+
+        mode,
+
+        allow_specific_product_recommendation:
+            allowSpecificProductRecommendation,
+
+        allow_precise_tension_recommendation:
+            allowPreciseTensionRecommendation
+    };
+}
+
+
+/**
+ * ============================================================
+ * Should Require Follow-up
+ * ============================================================
+ */
+
+function shouldRequireFollowUp({
+
+    missingFields,
+
+    confidenceScore,
+
+    recommendationGate
+
+}) {
+
+    /**
+     * 没有任何缺失字段。
+     */
+
+    if (
+        missingFields.length ===
+        0
+    ) {
+
+        return false;
+    }
+
+
+    /**
+     * Confidence 很低。
+     */
+
+    if (
+        confidenceScore <
+        60
+    ) {
+
+        return true;
+    }
+
+
+    /**
+     * 如果还不能给具体产品方向，
+     * 必须继续追问。
+     */
+
+    if (
+        recommendationGate
+            ?.allow_specific_product_recommendation !==
+        true
+    ) {
+
+        return true;
+    }
+
+
+    /**
+     * 如果还不能进入精准配置，
+     * 且仍有影响配置的重要字段，
+     * 继续追问。
+     */
+
+    const precisionRelevantFields =
+        [
+            "current_string",
+            "current_tension",
+            "swing_speed",
+            "playing_style"
+        ];
+
+
+    const hasPrecisionMissingField =
+        missingFields
+            .some(
+                field =>
+                    precisionRelevantFields
+                        .includes(
+                            field
+                        )
+            );
+
+
+    if (
+        hasPrecisionMissingField
+    ) {
+
+        return true;
+    }
+
+
+    return false;
+}
+
+
+/**
+ * ============================================================
+ * Build Questions
+ * ============================================================
+ */
+
+function buildQuestions(
+    missingFields,
+    maxQuestions
+) {
+
+    return missingFields
+        .filter(
+            field =>
+                QUESTION_LIBRARY[
+                    field
+                ]
+        )
+        .slice(
+            0,
+            maxQuestions
+        )
+        .map(
+            field => ({
+
+                field,
+
+                question:
+                    QUESTION_LIBRARY[
+                        field
+                    ]
+            })
+        );
+}
+
+
+/**
+ * ============================================================
+ * Summary
+ * ============================================================
+ */
+
+function buildSummary(
+    requiresFollowUp
+) {
+
+    if (
+        requiresFollowUp
+    ) {
+
+        return {
+
+            en:
+                "More information is recommended before presenting this as a precise final setup.",
+
+            zh:
+                "建议先补充关键资料，再把当前结果作为精准最终配置。"
+        };
+    }
+
+
+    return {
+
+        en:
+            "Enough information is available to continue with the recommendation.",
+
+        zh:
+            "目前资料已经足够，可以继续生成推荐结果。"
+    };
+}
+
+
+/**
+ * ============================================================
+ * Normalize Field Array
+ * ============================================================
+ */
+
+function normalizeFieldArray(
+    fields
+) {
+
+    if (
+        !Array.isArray(
+            fields
+        )
+    ) {
+
+        return [];
+    }
+
+
+    return fields
+        .filter(
+            field =>
+                typeof field ===
+                    "string"
+        )
+        .map(
+            field =>
+                field.trim()
+        )
+        .filter(
+            Boolean
+        );
+}
+
+
+/**
+ * ============================================================
+ * Unique Fields
+ * ============================================================
+ */
+
+function uniqueFields(
+    fields
+) {
+
+    return [
+        ...new Set(
+            fields
+        )
+    ];
+}
+
+
+/**
+ * ============================================================
+ * Value Helpers
+ * ============================================================
+ */
+
+function hasObjectValue(
+    value
+) {
+
+    if (
+        !value ||
+        typeof value !==
+            "object" ||
+        Array.isArray(
+            value
+        )
+    ) {
+
+        return false;
+    }
+
+
+    return (
+        hasTextValue(
+            value?.id
+        ) ||
+        hasTextValue(
+            value?.model
+        ) ||
+        hasTextValue(
+            value?.brand
+        )
+    );
+}
+
+
+function hasTextValue(
+    value
+) {
+
+    return (
+        typeof value ===
+            "string" &&
+        value.trim()
+            .length >
+            0
+    );
+}
+
+
+function hasNumericOrTextValue(
+    value
+) {
+
+    if (
+        typeof value ===
+            "number"
+    ) {
+
+        return Number.isFinite(
+            value
+        );
+    }
+
+
+    return hasTextValue(
+        value
+    );
+}
+
+
+function hasGenericValue(
+    value
+) {
+
+    if (
+        value ===
+            null ||
+        value ===
+            undefined
+    ) {
+
+        return false;
+    }
+
+
+    if (
+        typeof value ===
+            "string"
+    ) {
+
+        return (
+            value.trim()
+                .length >
+            0
+        );
+    }
+
+
+    if (
+        typeof value ===
+            "number"
+    ) {
+
+        return Number.isFinite(
+            value
+        );
+    }
+
+
+    if (
+        typeof value ===
+            "boolean"
+    ) {
+
+        return true;
+    }
+
+
+    if (
+        Array.isArray(
+            value
+        )
+    ) {
+
+        return (
+            value.length >
+            0
+        );
+    }
+
+
+    if (
+        typeof value ===
+            "object"
+    ) {
+
+        return (
+            Object.keys(
+                value
+            )
+                .length >
+            0
+        );
+    }
+
+
+    return false;
+}
+
+
+/**
+ * ============================================================
+ * Normalize Number
+ * ============================================================
+ */
+
+function normalizeNumber(
+    value
+) {
+
+    const number =
+        Number(
+            value
+        );
+
+
+    if (
+        !Number.isFinite(
+            number
+        )
+    ) {
+
+        return 0;
+    }
+
+
+    return number;
+}
+
+
+/**
+ * ============================================================
+ * Confidence Level
+ * ============================================================
+ */
+
+function getConfidenceLevel(
+    score
+) {
+
+    if (
+        score >=
+        85
+    ) {
+
+        return "High";
+    }
+
+
+    if (
+        score >=
+        60
+    ) {
+
+        return "Moderate";
+    }
+
+
+    return "Low";
+}
+
+
+/**
+ * ============================================================
+ * Engine Info
+ * ============================================================
+ */
+
+export function getFollowUpEngineInfo() {
+
+    return {
+
+        name:
+            ENGINE_NAME,
+
+        version:
+            ENGINE_VERSION,
+
+        capabilities: [
+
+            "parser_missing_field_merge",
+
+            "confidence_missing_field_merge",
+
+            "conversation_state_validation",
+
+            "merged_player_input_validation",
+
+            "duplicate_question_prevention",
+
+            "question_priority",
+
+            "recommendation_gate",
+
+            "specific_product_gate",
+
+            "precise_tension_gate",
+
+            "multi_turn_follow_up",
+
+            "chinese_questions",
+
+            "english_questions"
+        ]
+    };
+}

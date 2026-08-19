@@ -1,88 +1,69 @@
 /**
  * ============================================================
  * EveryCourtAI
- * Natural Language Input Parser
- * Version: 1.0
+ * Input Parser
+ * Version: 1.2
  * ============================================================
  *
  * 文件路径：
  * engine/input_parser.js
  *
- * 功能：
- * 将用户自然语言转换为 EveryCourtAI Engine 可以理解的
- * player_input 结构。
+ * V1.2 新增：
+ * 1. 强化中文 swing_speed 识别
+ * 2. 支持：
+ *    - 挥拍速度中等
+ *    - 挥拍中等
+ *    - 中等挥拍
+ *    - 速度中等
+ * 3. 保留 V1.1 的球线 / 磅数 / 多轮补充能力
  *
- * 第一阶段：
- * - 不依赖 OpenRouter
- * - 不依赖外部 AI
- * - 使用确定性规则解析
- * - 支持中文 / 英文
- *
- * 后续阶段：
- * - 接入 OpenRouter
- * - AI 语义解析
- * - 多轮对话补充资料
- * - Product Lookup 自动产品识别
  * ============================================================
  */
 
+const PARSER_NAME =
+    "EveryCourtAI Input Parser";
 
-/**
- * ------------------------------------------------------------
- * 基础工具
- * ------------------------------------------------------------
- */
-
-function normalizeText(value) {
-    if (typeof value !== "string") {
-        return "";
-    }
-
-    return value
-        .trim()
-        .toLowerCase()
-        .replace(/[’']/g, "")
-        .replace(/\s+/g, " ");
-}
-
-
-function includesAny(text, keywords = []) {
-    return keywords.some((keyword) =>
-        text.includes(normalizeText(keyword))
-    );
-}
+const PARSER_VERSION =
+    "1.2";
 
 
 /**
- * ------------------------------------------------------------
- * 球拍识别
- * ------------------------------------------------------------
- *
- * 第一版先覆盖当前测试最重要的型号。
- * 后续会改成直接读取 product_lookup.json。
- * ------------------------------------------------------------
+ * ============================================================
+ * Racquet Dictionary
+ * ============================================================
  */
 
-const RACQUET_RULES = [
+const RACQUET_PATTERNS = [
 
     {
-        id: "wilson_rf_01_pro_classic",
-        brand: "Wilson",
-        model: "RF 01 Pro Classic",
-        keywords: [
+        id:
+            "wilson_rf_01_pro_classic",
+
+        brand:
+            "Wilson",
+
+        model:
+            "RF 01 Pro Classic",
+
+        patterns: [
             "wilson rf 01 pro classic",
             "rf 01 pro classic",
             "rf01 pro classic",
-            "rf01 classic",
-            "rf 01 classic"
+            "rf01pro classic"
         ]
     },
 
     {
-        id: "wilson_rf_01_pro",
-        brand: "Wilson",
-        model: "RF 01 Pro",
-        keywords: [
+        id:
+            "wilson_rf_01_pro",
+
+        brand:
+            "Wilson",
+
+        model:
+            "RF 01 Pro",
+
+        patterns: [
             "wilson rf 01 pro",
             "rf 01 pro",
             "rf01 pro"
@@ -90,10 +71,16 @@ const RACQUET_RULES = [
     },
 
     {
-        id: "wilson_rf_01_2024",
-        brand: "Wilson",
-        model: "RF 01",
-        keywords: [
+        id:
+            "wilson_rf_01",
+
+        brand:
+            "Wilson",
+
+        model:
+            "RF 01",
+
+        patterns: [
             "wilson rf 01",
             "rf 01",
             "rf01"
@@ -101,35 +88,53 @@ const RACQUET_RULES = [
     },
 
     {
-        id: "babolat_pure_drive_spectra_edition_2026",
-        brand: "Babolat",
-        model: "Pure Drive Spectra Edition 2026",
-        keywords: [
+        id:
+            "babolat_pure_drive_spectra_edition_2026",
+
+        brand:
+            "Babolat",
+
+        model:
+            "Pure Drive Spectra Edition 2026",
+
+        patterns: [
+            "pure drive spectra edition 2026",
             "pure drive spectra",
-            "pure drive spectra edition",
-            "babolat pure drive spectra",
-            "pd spectra"
+            "babolat pure drive spectra"
         ]
     },
 
     {
-        id: "babolat_pure_drive_98_2025",
-        brand: "Babolat",
-        model: "Pure Drive 98 2025",
-        keywords: [
-            "pure drive 98",
-            "babolat pure drive 98"
+        id:
+            "babolat_pure_drive_98_2025",
+
+        brand:
+            "Babolat",
+
+        model:
+            "Pure Drive 98 2025",
+
+        patterns: [
+            "pure drive 98 2025",
+            "babolat pure drive 98",
+            "pure drive 98"
         ]
     },
 
     {
-        id: "head_speed_mp_2026",
-        brand: "HEAD",
-        model: "Speed MP 2026",
-        keywords: [
-            "head speed mp",
-            "speed mp 2026",
-            "speed mp"
+        id:
+            "babolat_pure_aero_98_2026",
+
+        brand:
+            "Babolat",
+
+        model:
+            "Pure Aero 98 2026",
+
+        patterns: [
+            "pure aero 98 2026",
+            "babolat pure aero 98",
+            "pure aero 98"
         ]
     }
 
@@ -137,120 +142,688 @@ const RACQUET_RULES = [
 
 
 /**
- * ------------------------------------------------------------
- * 当前球拍解析
- * ------------------------------------------------------------
+ * ============================================================
+ * String Dictionary
+ * ============================================================
  */
 
-function detectCurrentRacquet(text) {
+const STRING_PATTERNS = [
 
-    for (const racquet of RACQUET_RULES) {
+    {
+        id:
+            "wilson_natural_gut_17",
 
-        if (includesAny(text, racquet.keywords)) {
+        brand:
+            "Wilson",
 
-            return {
-                id: racquet.id,
-                brand: racquet.brand,
-                model: racquet.model
-            };
+        model:
+            "Natural Gut 17",
 
-        }
+        gauge_mm:
+            1.25,
 
+        patterns: [
+            "wilson natural gut 17",
+            "natural gut 17",
+            "natural gut",
+            "wilson natural gut",
+            "牛肠 17",
+            "牛肠线 17",
+            "wilson 牛肠",
+            "wilson牛肠"
+        ]
+    },
+
+    {
+        id:
+            "wilson_revolve_17",
+
+        brand:
+            "Wilson",
+
+        model:
+            "Revolve 17",
+
+        gauge_mm:
+            1.25,
+
+        patterns: [
+            "wilson revolve 17",
+            "revolve 17",
+            "wilson revolve",
+            "revolve"
+        ]
+    },
+
+    {
+        id:
+            "wilson_revolve_spin_17",
+
+        brand:
+            "Wilson",
+
+        model:
+            "Revolve Spin 17",
+
+        gauge_mm:
+            1.25,
+
+        patterns: [
+            "wilson revolve spin 17",
+            "revolve spin 17",
+            "revolve spin"
+        ]
+    },
+
+    {
+        id:
+            "babolat_rpm_blast_125",
+
+        brand:
+            "Babolat",
+
+        model:
+            "RPM Blast 1.25",
+
+        gauge_mm:
+            1.25,
+
+        patterns: [
+            "babolat rpm blast 1.25",
+            "rpm blast 1.25",
+            "rpm blast 125",
+            "rpm blast"
+        ]
+    },
+
+    {
+        id:
+            "luxilon_alu_power_125",
+
+        brand:
+            "Luxilon",
+
+        model:
+            "ALU Power 1.25",
+
+        gauge_mm:
+            1.25,
+
+        patterns: [
+            "luxilon alu power 1.25",
+            "alu power 1.25",
+            "alu power 125",
+            "alu power"
+        ]
+    },
+
+    {
+        id:
+            "solinco_hyper_g_125",
+
+        brand:
+            "Solinco",
+
+        model:
+            "Hyper-G 1.25",
+
+        gauge_mm:
+            1.25,
+
+        patterns: [
+            "solinco hyper-g 1.25",
+            "solinco hyper g 1.25",
+            "hyper-g 1.25",
+            "hyper g 1.25",
+            "hyper-g",
+            "hyper g"
+        ]
+    },
+
+    {
+        id:
+            "yonex_poly_tour_pro_125",
+
+        brand:
+            "Yonex",
+
+        model:
+            "Poly Tour Pro 1.25",
+
+        gauge_mm:
+            1.25,
+
+        patterns: [
+            "yonex poly tour pro 1.25",
+            "poly tour pro 1.25",
+            "poly tour pro"
+        ]
     }
+
+];
+
+
+/**
+ * ============================================================
+ * Main Parser
+ * ============================================================
+ */
+
+export function parsePlayerInput(
+    message
+) {
+
+    const originalMessage =
+        typeof message ===
+            "string"
+            ? message.trim()
+            : "";
+
+
+    const normalizedMessage =
+        normalizeText(
+            originalMessage
+        );
+
+
+    const currentRacquet =
+        detectRacquet(
+            normalizedMessage
+        );
+
+
+    const currentString =
+        detectString(
+            normalizedMessage
+        );
+
+
+    const currentTension =
+        detectTension(
+            originalMessage
+        );
+
+
+    const primaryGoal =
+        detectPrimaryGoal(
+            normalizedMessage
+        );
+
+
+    const playingStyle =
+        detectPlayingStyle(
+            normalizedMessage
+        );
+
+
+    const swingSpeed =
+        detectSwingSpeed(
+            normalizedMessage
+        );
+
+
+    const feelPreference =
+        detectFeelPreference(
+            normalizedMessage
+        );
+
+
+    const physical =
+        detectPhysicalConstraints(
+            normalizedMessage
+        );
+
+
+    const playerInput = {
+
+        current_racquet:
+            currentRacquet,
+
+        current_string:
+            currentString,
+
+        current_tension:
+            currentTension,
+
+        primary_goal:
+            primaryGoal,
+
+        playing_style:
+            playingStyle,
+
+        swing_speed:
+            swingSpeed,
+
+        feel_preference:
+            feelPreference,
+
+        physical
+    };
+
+
+    const missingFields =
+        detectMissingFields(
+            playerInput
+        );
+
+
+    return {
+
+        success:
+            true,
+
+        parser: {
+
+            name:
+                PARSER_NAME,
+
+            version:
+                PARSER_VERSION,
+
+            mode:
+                "rule_based"
+        },
+
+        original_message:
+            originalMessage,
+
+        player_input:
+            playerInput,
+
+        missing_fields:
+            missingFields,
+
+        requires_follow_up:
+            missingFields.length >
+            0
+    };
+}
+
+
+/**
+ * ============================================================
+ * Detect Racquet
+ * ============================================================
+ */
+
+function detectRacquet(
+    message
+) {
+
+    const sortedPatterns =
+        [...RACQUET_PATTERNS]
+            .sort(
+                (
+                    a,
+                    b
+                ) =>
+                    longestPatternLength(
+                        b.patterns
+                    ) -
+                    longestPatternLength(
+                        a.patterns
+                    )
+            );
+
+
+    for (
+        const racquet
+        of sortedPatterns
+    ) {
+
+        const patterns =
+            [...racquet.patterns]
+                .sort(
+                    (
+                        a,
+                        b
+                    ) =>
+                        b.length -
+                        a.length
+                );
+
+
+        for (
+            const pattern
+            of patterns
+        ) {
+
+            if (
+                message.includes(
+                    normalizeText(
+                        pattern
+                    )
+                )
+            ) {
+
+                return {
+
+                    id:
+                        racquet.id,
+
+                    brand:
+                        racquet.brand,
+
+                    model:
+                        racquet.model
+                };
+            }
+        }
+    }
+
 
     return null;
 }
 
 
 /**
- * ------------------------------------------------------------
- * Primary Goal
- * 主要目标解析
- * ------------------------------------------------------------
+ * ============================================================
+ * Detect String
+ * ============================================================
  */
 
-function detectPrimaryGoal(text) {
+function detectString(
+    message
+) {
 
-    /*
-     * 舒适性优先
-     */
+    const candidates =
+        [];
+
+
+    for (
+        const stringItem
+        of STRING_PATTERNS
+    ) {
+
+        for (
+            const pattern
+            of stringItem.patterns
+        ) {
+
+            const normalizedPattern =
+                normalizeText(
+                    pattern
+                );
+
+
+            if (
+                message.includes(
+                    normalizedPattern
+                )
+            ) {
+
+                candidates.push({
+
+                    item:
+                        stringItem,
+
+                    matchedPattern:
+                        normalizedPattern,
+
+                    score:
+                        normalizedPattern.length
+                });
+            }
+        }
+    }
+
 
     if (
-        includesAny(text, [
-            "more comfort",
-            "more comfortable",
-            "comfort",
-            "less harsh",
-            "softer",
-            "less fatigue",
-            "fatigue",
-            "舒服",
-            "舒适",
-            "更舒服",
-            "减少疲劳",
-            "容易累",
-            "打久了累",
-            "手臂累",
-            "肩膀累"
-        ])
+        candidates.length ===
+        0
     ) {
+
+        return null;
+    }
+
+
+    candidates.sort(
+        (
+            a,
+            b
+        ) =>
+            b.score -
+            a.score
+    );
+
+
+    const best =
+        candidates[0]
+            .item;
+
+
+    return {
+
+        id:
+            best.id,
+
+        brand:
+            best.brand,
+
+        model:
+            best.model,
+
+        gauge_mm:
+            best.gauge_mm ??
+            null
+    };
+}
+
+
+/**
+ * ============================================================
+ * Detect Tension
+ * ============================================================
+ */
+
+function detectTension(
+    message
+) {
+
+    if (
+        typeof message !==
+        "string"
+    ) {
+
+        return null;
+    }
+
+
+    const text =
+        message
+            .toLowerCase()
+            .trim();
+
+
+    /**
+     * Pounds
+     */
+
+    const poundsMatch =
+        text.match(
+            /(\d{1,2}(?:\.\d+)?)\s*(?:磅|lbs?|pounds?)/i
+        );
+
+
+    if (
+        poundsMatch
+    ) {
+
+        const value =
+            Number(
+                poundsMatch[1]
+            );
+
+
+        if (
+            isReasonableTensionLbs(
+                value
+            )
+        ) {
+
+            return roundTension(
+                value
+            );
+        }
+    }
+
+
+    /**
+     * Kilograms
+     */
+
+    const kgMatch =
+        text.match(
+            /(\d{1,2}(?:\.\d+)?)\s*(?:kg|公斤|千克)/i
+        );
+
+
+    if (
+        kgMatch
+    ) {
+
+        const kg =
+            Number(
+                kgMatch[1]
+            );
+
+
+        if (
+            Number.isFinite(
+                kg
+            ) &&
+            kg >=
+                10 &&
+            kg <=
+                40
+        ) {
+
+            const lbs =
+                kg *
+                2.2046226218;
+
+
+            return roundTension(
+                lbs
+            );
+        }
+    }
+
+
+    return null;
+}
+
+
+/**
+ * ============================================================
+ * Primary Goal
+ * ============================================================
+ */
+
+function detectPrimaryGoal(
+    message
+) {
+
+    const comfortPatterns = [
+
+        "more comfort",
+        "more comfortable",
+        "comfort",
+        "comfortable",
+
+        "更舒服",
+        "舒服一点",
+        "更舒适",
+        "舒适一点",
+        "提高舒适",
+        "增加舒适",
+        "减少疲劳",
+        "不那么累",
+        "容易累",
+        "有点累"
+    ];
+
+
+    if (
+        includesAny(
+            message,
+            comfortPatterns
+        )
+    ) {
+
         return "more_comfort";
     }
 
 
-    /*
-     * 控制
-     */
+    const controlPatterns = [
+
+        "more control",
+        "better control",
+        "control",
+
+        "更多控制",
+        "更好控制",
+        "提高控制",
+        "加强控制",
+        "更精准",
+        "精准一点"
+    ];
+
 
     if (
-        includesAny(text, [
-            "more control",
-            "better control",
-            "control",
-            "precision",
-            "精准",
-            "控制",
-            "更多控制",
-            "提高控制"
-        ])
+        includesAny(
+            message,
+            controlPatterns
+        )
     ) {
+
         return "more_control";
     }
 
 
-    /*
-     * 旋转
-     */
+    const spinPatterns = [
+
+        "more spin",
+        "spin",
+
+        "更多旋转",
+        "增加旋转",
+        "加强旋转",
+        "旋转更多"
+    ];
+
 
     if (
-        includesAny(text, [
-            "more spin",
-            "spin",
-            "topspin",
-            "旋转",
-            "上旋",
-            "更多旋转"
-        ])
+        includesAny(
+            message,
+            spinPatterns
+        )
     ) {
+
         return "more_spin";
     }
 
 
-    /*
-     * 力量
-     */
+    const powerPatterns = [
+
+        "more power",
+        "power",
+        "easy power",
+
+        "更多力量",
+        "更有力量",
+        "增加力量",
+        "更容易借力"
+    ];
+
 
     if (
-        includesAny(text, [
-            "more power",
-            "power",
-            "easy power",
-            "力量",
-            "借力",
-            "更有力量",
-            "增加力量"
-        ])
+        includesAny(
+            message,
+            powerPatterns
+        )
     ) {
+
         return "more_power";
     }
 
@@ -260,58 +833,82 @@ function detectPrimaryGoal(text) {
 
 
 /**
- * ------------------------------------------------------------
+ * ============================================================
  * Playing Style
- * 打法类型
- * ------------------------------------------------------------
+ * ============================================================
  */
 
-function detectPlayingStyle(text) {
+function detectPlayingStyle(
+    message
+) {
 
     if (
-        includesAny(text, [
-            "all court",
-            "all-court",
-            "全场型",
-            "全场打法"
-        ])
+        includesAny(
+            message,
+            [
+                "all court",
+                "all-court",
+
+                "全场型",
+                "全场打法",
+                "打法偏全场",
+                "偏全场型"
+            ]
+        )
     ) {
+
         return "all_court";
     }
 
 
     if (
-        includesAny(text, [
-            "baseline",
-            "baseliner",
-            "底线",
-            "底线型"
-        ])
+        includesAny(
+            message,
+            [
+                "baseline",
+                "baseliner",
+
+                "底线型",
+                "底线打法",
+                "底线球员",
+                "偏底线"
+            ]
+        )
     ) {
+
         return "baseline";
     }
 
 
     if (
-        includesAny(text, [
-            "serve and volley",
-            "serve-and-volley",
-            "发球上网",
-            "上网型"
-        ])
+        includesAny(
+            message,
+            [
+                "serve and volley",
+                "serve-and-volley",
+
+                "发球上网",
+                "上网型"
+            ]
+        )
     ) {
+
         return "serve_volley";
     }
 
 
     if (
-        includesAny(text, [
-            "aggressive",
-            "attacking",
-            "攻击型",
-            "进攻型"
-        ])
+        includesAny(
+            message,
+            [
+                "aggressive",
+
+                "进攻型",
+                "攻击型"
+            ]
+        )
     ) {
+
         return "aggressive";
     }
 
@@ -321,47 +918,100 @@ function detectPlayingStyle(text) {
 
 
 /**
- * ------------------------------------------------------------
+ * ============================================================
  * Swing Speed
- * 挥拍速度
- * ------------------------------------------------------------
+ * ============================================================
+ *
+ * V1.2 重点升级区域。
+ * ============================================================
  */
 
-function detectSwingSpeed(text) {
+function detectSwingSpeed(
+    message
+) {
+
+    /**
+     * Fast
+     */
 
     if (
-        includesAny(text, [
-            "fast swing",
-            "fast swing speed",
-            "快速挥拍",
-            "挥拍快"
-        ])
+        includesAny(
+            message,
+            [
+                "fast swing",
+                "high swing speed",
+                "swing speed fast",
+
+                "挥拍快",
+                "挥速快",
+                "快速挥拍",
+                "挥拍速度快",
+                "挥拍速度很快",
+                "挥拍较快",
+                "速度快"
+            ]
+        )
     ) {
+
         return "fast";
     }
 
 
+    /**
+     * Medium
+     */
+
     if (
-        includesAny(text, [
-            "medium swing",
-            "medium swing speed",
-            "moderate swing",
-            "中速挥拍",
-            "挥拍中等"
-        ])
+        includesAny(
+            message,
+            [
+                "medium swing",
+                "medium swing speed",
+                "moderate swing",
+                "moderate swing speed",
+
+                "中速挥拍",
+                "中等挥拍",
+                "挥拍中等",
+                "挥拍速度中等",
+                "挥拍速度适中",
+                "挥拍速度一般",
+                "挥速中等",
+                "中等挥速",
+                "中等速度",
+                "速度中等",
+                "速度适中",
+                "挥拍适中"
+            ]
+        )
     ) {
+
         return "medium";
     }
 
 
+    /**
+     * Slow
+     */
+
     if (
-        includesAny(text, [
-            "slow swing",
-            "slow swing speed",
-            "挥拍慢",
-            "慢速挥拍"
-        ])
+        includesAny(
+            message,
+            [
+                "slow swing",
+                "low swing speed",
+                "swing speed slow",
+
+                "挥拍慢",
+                "挥速慢",
+                "慢速挥拍",
+                "挥拍速度慢",
+                "挥拍较慢",
+                "速度慢"
+            ]
+        )
     ) {
+
         return "slow";
     }
 
@@ -371,49 +1021,82 @@ function detectSwingSpeed(text) {
 
 
 /**
- * ------------------------------------------------------------
+ * ============================================================
  * Feel Preference
- * 手感偏好
- * ------------------------------------------------------------
+ * ============================================================
  */
 
-function detectFeelPreference(text) {
+function detectFeelPreference(
+    message
+) {
 
     if (
-        includesAny(text, [
-            "connected feel",
-            "connected",
-            "direct feel",
-            "直接手感",
-            "连接感",
-            "扎实手感"
-        ])
+        includesAny(
+            message,
+            [
+                "connected feel",
+                "connected",
+
+                "直接感",
+                "连接感",
+                "扎实感"
+            ]
+        )
     ) {
+
         return "connected";
     }
 
 
     if (
-        includesAny(text, [
-            "soft feel",
-            "plush feel",
-            "柔软手感",
-            "柔和手感"
-        ])
+        includesAny(
+            message,
+            [
+                "soft feel",
+                "softer feel",
+
+                "柔和手感",
+                "更柔和",
+                "柔软手感"
+            ]
+        )
     ) {
+
         return "soft";
     }
 
 
     if (
-        includesAny(text, [
-            "crisp feel",
-            "crisp",
-            "清脆",
-            "脆"
-        ])
+        includesAny(
+            message,
+            [
+                "crisp feel",
+                "crisp",
+
+                "清脆手感",
+                "清脆"
+            ]
+        )
     ) {
+
         return "crisp";
+    }
+
+
+    if (
+        includesAny(
+            message,
+            [
+                "muted feel",
+                "muted",
+
+                "减震感",
+                "柔化反馈"
+            ]
+        )
+    ) {
+
+        return "muted";
     }
 
 
@@ -422,196 +1105,160 @@ function detectFeelPreference(text) {
 
 
 /**
- * ------------------------------------------------------------
+ * ============================================================
  * Physical Constraints
- * 身体限制
- * ------------------------------------------------------------
+ * ============================================================
  */
 
-function detectPhysical(text) {
+function detectPhysicalConstraints(
+    message
+) {
 
-    const physical = {};
+    const physical =
+        {};
 
 
-    /*
-     * 肩部
+    /**
+     * Shoulder
      */
 
     if (
-        includesAny(text, [
-    "shoulder pain",
-    "shoulder discomfort",
-    "shoulder fatigue",
-    "shoulder sensitive",
-    "shoulder sensitivity",
-    "shoulder tired",
-
-    "肩膀痛",
-    "肩痛",
-    "肩膀不舒服",
-    "肩部不适",
-    "肩膀累",
-    "肩膀有点累",
-    "肩部疲劳",
-    "肩膀疲劳",
-    "打久了肩膀累",
-    "打久了肩膀有点累",
-    "肩部敏感"
-])
+        includesAny(
+            message,
+            [
+                "shoulder",
+                "肩膀",
+                "肩部"
+            ]
+        )
     ) {
 
         physical.shoulder = {
-            active: true,
-            severity: "mild"
-        };
 
+            active:
+                true,
+
+            severity:
+                detectSeverity(
+                    message
+                )
+        };
     }
 
 
-    /*
-     * 手肘
+    /**
+     * Elbow
      */
 
     if (
-        includesAny(text, [
-            "elbow pain",
-            "elbow discomfort",
-            "tennis elbow",
-            "elbow sensitive",
-            "elbow sensitivity",
-            "手肘痛",
-            "肘痛",
-            "网球肘",
-            "手肘不舒服",
-            "肘部敏感"
-        ])
+        includesAny(
+            message,
+            [
+                "elbow",
+                "tennis elbow",
+                "肘",
+                "手肘",
+                "网球肘"
+            ]
+        )
     ) {
 
         physical.elbow = {
-            active: true,
-            severity: "mild"
-        };
 
+            active:
+                true,
+
+            severity:
+                detectSeverity(
+                    message
+                )
+        };
     }
 
 
-    /*
-     * 手腕
+    /**
+     * Wrist
      */
 
     if (
-        includesAny(text, [
-            "wrist pain",
-            "wrist discomfort",
-            "wrist sensitive",
-            "wrist sensitivity",
-            "手腕痛",
-            "腕痛",
-            "手腕不舒服",
-            "手腕敏感"
-        ])
+        includesAny(
+            message,
+            [
+                "wrist",
+                "手腕",
+                "腕部"
+            ]
+        )
     ) {
 
         physical.wrist = {
-            active: true,
-            severity: "mild"
-        };
 
+            active:
+                true,
+
+            severity:
+                detectSeverity(
+                    message
+                )
+        };
     }
 
 
-    /*
-     * 下背
+    /**
+     * Lower Back
      */
 
     if (
-        includesAny(text, [
-            "lower back pain",
-            "lower back discomfort",
-            "lower back sensitive",
-            "腰痛",
-            "腰部不适",
-            "下背痛",
-            "下背部敏感"
-        ])
+        includesAny(
+            message,
+            [
+                "lower back",
+                "back pain",
+                "腰",
+                "腰部",
+                "下背"
+            ]
+        )
     ) {
 
         physical.lower_back = {
-            active: true,
-            severity: "mild"
-        };
 
+            active:
+                true,
+
+            severity:
+                detectSeverity(
+                    message
+                )
+        };
     }
 
 
-    /*
-     * 膝盖
+    /**
+     * Knee
      */
 
     if (
-        includesAny(text, [
-            "knee pain",
-            "knee discomfort",
-            "knee sensitive",
-            "膝盖痛",
-            "膝痛",
-            "膝盖不舒服",
-            "膝盖敏感"
-        ])
+        includesAny(
+            message,
+            [
+                "knee",
+                "膝盖",
+                "膝部"
+            ]
+        )
     ) {
 
         physical.knee = {
-            active: true,
-            severity: "mild"
+
+            active:
+                true,
+
+            severity:
+                detectSeverity(
+                    message
+                )
         };
-
-    }
-
-
-    /*
-     * 脚踝
-     */
-
-    if (
-        includesAny(text, [
-            "ankle pain",
-            "ankle discomfort",
-            "ankle sensitive",
-            "脚踝痛",
-            "脚踝不舒服",
-            "脚踝敏感"
-        ])
-    ) {
-
-        physical.ankle = {
-            active: true,
-            severity: "mild"
-        };
-
-    }
-
-
-    /*
-     * 颈部
-     */
-
-    if (
-        includesAny(text, [
-            "neck pain",
-            "neck discomfort",
-            "neck sensitive",
-            "颈部痛",
-            "脖子痛",
-            "颈部不适",
-            "颈部敏感"
-        ])
-    ) {
-
-        physical.neck = {
-            active: true,
-            severity: "mild"
-        };
-
     }
 
 
@@ -620,35 +1267,48 @@ function detectPhysical(text) {
 
 
 /**
- * ------------------------------------------------------------
- * 严重程度
- * ------------------------------------------------------------
+ * ============================================================
+ * Severity
+ * ============================================================
  */
 
-function detectSeverity(text) {
+function detectSeverity(
+    message
+) {
 
     if (
-        includesAny(text, [
-            "severe",
-            "very painful",
-            "serious pain",
-            "严重",
-            "很痛",
-            "非常痛"
-        ])
+        includesAny(
+            message,
+            [
+                "severe",
+                "very painful",
+                "very bad",
+
+                "严重",
+                "很痛",
+                "非常痛"
+            ]
+        )
     ) {
+
         return "severe";
     }
 
 
     if (
-        includesAny(text, [
-            "moderate",
-            "moderately",
-            "中等",
-            "比较明显"
-        ])
+        includesAny(
+            message,
+            [
+                "moderate",
+                "medium pain",
+
+                "明显疼",
+                "比较疼",
+                "中度"
+            ]
+        )
     ) {
+
         return "moderate";
     }
 
@@ -658,59 +1318,71 @@ function detectSeverity(text) {
 
 
 /**
- * ------------------------------------------------------------
- * 将严重程度应用到身体限制
- * ------------------------------------------------------------
- */
-
-function applyPhysicalSeverity(physical, text) {
-
-    const severity = detectSeverity(text);
-
-    for (const key of Object.keys(physical)) {
-
-        physical[key].severity = severity;
-
-    }
-
-    return physical;
-}
-
-
-/**
- * ------------------------------------------------------------
+ * ============================================================
  * Missing Fields
- * 缺失资料
- * ------------------------------------------------------------
+ * ============================================================
  */
 
-function detectMissingFields(playerInput) {
+function detectMissingFields(
+    playerInput
+) {
 
-    const missing = [];
+    const missing =
+        [];
 
 
-    if (!playerInput.current_racquet) {
-        missing.push("current_racquet");
+    if (
+        !playerInput
+            .current_racquet
+    ) {
+
+        missing.push(
+            "current_racquet"
+        );
     }
 
 
-    if (!playerInput.primary_goal) {
-        missing.push("primary_goal");
+    if (
+        !playerInput
+            .primary_goal
+    ) {
+
+        missing.push(
+            "primary_goal"
+        );
     }
 
 
-    if (!playerInput.playing_style) {
-        missing.push("playing_style");
+    if (
+        !playerInput
+            .playing_style
+    ) {
+
+        missing.push(
+            "playing_style"
+        );
     }
 
 
-    if (!playerInput.swing_speed) {
-        missing.push("swing_speed");
+    if (
+        !playerInput
+            .swing_speed
+    ) {
+
+        missing.push(
+            "swing_speed"
+        );
     }
 
 
-    if (!playerInput.feel_preference) {
-        missing.push("feel_preference");
+    if (
+        !playerInput
+            .feel_preference
+    ) {
+
+        missing.push(
+            "feel_preference"
+        );
     }
 
 
@@ -719,99 +1391,156 @@ function detectMissingFields(playerInput) {
 
 
 /**
- * ------------------------------------------------------------
- * Parser 主函数
- * ------------------------------------------------------------
+ * ============================================================
+ * Helpers
+ * ============================================================
  */
 
-export function parsePlayerInput(message) {
+function normalizeText(
+    value
+) {
 
     if (
-        typeof message !== "string" ||
-        message.trim().length === 0
+        typeof value !==
+        "string"
     ) {
 
-        return {
-            success: false,
-
-            error: {
-                type: "validation",
-                message: "message must be a non-empty string."
-            },
-
-            player_input: null,
-
-            missing_fields: []
-        };
-
+        return "";
     }
 
 
-    const text = normalizeText(message);
+    return value
+        .toLowerCase()
+        .replace(
+            /[，。！？、；：,.!?;:()[\]{}]/g,
+            " "
+        )
+        .replace(
+            /\s+/g,
+            " "
+        )
+        .trim();
+}
 
 
-    let physical = detectPhysical(text);
+function includesAny(
+    message,
+    patterns
+) {
 
-    physical = applyPhysicalSeverity(
-        physical,
-        text
+    return patterns.some(
+        pattern =>
+            message.includes(
+                normalizeText(
+                    pattern
+                )
+            )
     );
+}
 
 
-    const playerInput = {
+function longestPatternLength(
+    patterns = []
+) {
 
-        current_racquet:
-            detectCurrentRacquet(text),
+    if (
+        !Array.isArray(
+            patterns
+        ) ||
+        patterns.length ===
+            0
+    ) {
 
-        primary_goal:
-            detectPrimaryGoal(text),
-
-        playing_style:
-            detectPlayingStyle(text),
-
-        swing_speed:
-            detectSwingSpeed(text),
-
-        feel_preference:
-            detectFeelPreference(text),
-
-        physical
-    };
+        return 0;
+    }
 
 
-    const missingFields =
-        detectMissingFields(playerInput);
+    return Math.max(
+        ...patterns.map(
+            item =>
+                String(
+                    item
+                )
+                    .length
+        )
+    );
+}
 
 
-    return {
+function isReasonableTensionLbs(
+    value
+) {
 
-        success: true,
+    return (
+        Number.isFinite(
+            value
+        ) &&
+        value >=
+            25 &&
+        value <=
+            80
+    );
+}
 
-        parser: {
-            name: "EveryCourtAI Input Parser",
-            version: "1.0",
-            mode: "rule_based"
-        },
 
-        original_message: message,
+function roundTension(
+    value
+) {
 
-        player_input: playerInput,
-
-        missing_fields: missingFields,
-
-        requires_follow_up:
-            missingFields.length > 0
-    };
-
+    return (
+        Math.round(
+            value *
+            10
+        ) /
+        10
+    );
 }
 
 
 /**
- * ------------------------------------------------------------
- * 默认导出
- * ------------------------------------------------------------
+ * ============================================================
+ * Parser Info
+ * ============================================================
  */
 
-export default {
-    parsePlayerInput
-};
+export function getInputParserInfo() {
+
+    return {
+
+        name:
+            PARSER_NAME,
+
+        version:
+            PARSER_VERSION,
+
+        mode:
+            "rule_based",
+
+        capabilities: [
+
+            "racquet_recognition",
+
+            "string_recognition",
+
+            "tension_recognition",
+
+            "goal_recognition",
+
+            "playing_style_recognition",
+
+            "swing_speed_recognition",
+
+            "feel_recognition",
+
+            "physical_constraint_recognition",
+
+            "chinese_input",
+
+            "english_input",
+
+            "multi_turn_supplement_input",
+
+            "chinese_medium_swing_recognition"
+        ]
+    };
+}
