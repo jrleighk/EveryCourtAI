@@ -638,11 +638,12 @@ export async function buildPlayerProfile(
      */
 
     const mainTension =
-        toNumber(
-            playerInput.current_tension_lbs ??
-            playerInput?.current_setup?.string?.tension?.main_lbs ??
-            rawStringSetup?.tension?.main_lbs
-        );
+    toNumber(
+        playerInput.current_tension_lbs ??
+        playerInput.current_tension ??
+        playerInput?.current_setup?.string?.tension?.main_lbs ??
+        rawStringSetup?.tension?.main_lbs
+    );
 
     const crossTension =
         toNumber(
