@@ -1502,6 +1502,42 @@ function buildWebRecommendation(
                 ?.action ??
             null,
 
+        string_action:
+            recommendation
+                ?.string_decision
+                ?.action ??
+            null,
+
+        tension_action:
+            recommendation
+                ?.tension_decision
+                ?.action ??
+            null,
+
+        change_strategy:
+            recommendation
+                ?.change_strategy
+                ?.strategy ??
+            null,
+
+        change_principle:
+            recommendation
+                ?.change_strategy
+                ?.principle ??
+            null,
+
+        recommended_change_count:
+            recommendation
+                ?.change_strategy
+                ?.recommended_change_count ??
+            null,
+
+        tension_delta_lbs:
+            recommendation
+                ?.change_strategy
+                ?.tension_delta_lbs ??
+            null,
+
         string:
             mainString
                 ? `${mainString.brand ?? ""} ${mainString.model ?? ""}`
