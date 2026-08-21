@@ -2,7 +2,7 @@
  * ============================================================
  * EveryCourtAI
  * Recommendation Engine
- * Version: 1.0
+ * Version: 1.1
  * ============================================================
  *
  * 文件路径：
@@ -11,13 +11,38 @@
  * 作用：
  * 1. 接收 Ranking Engine + Alternative Engine 结果
  * 2. 决定保留还是更换球拍
- * 3. 决定 Full Bed / Hybrid
- * 4. 决定 Main / Cross
- * 5. 决定 Gauge
- * 6. 计算建议磅数范围
- * 7. 生成 Primary Recommendation
- * 8. 生成 Alternative Summary
- * 9. 输出 App 可直接使用的结构化 Setup
+ * 3. 决定保留还是更换球线
+ * 4. 决定是否调整穿线磅数
+ * 5. 执行 Minimum Effective Change 决策
+ * 6. 决定 Full Bed / Hybrid
+ * 7. 决定 Main / Cross
+ * 8. 决定 Gauge
+ * 9. 计算建议磅数范围
+ * 10. 生成 Primary Recommendation
+ * 11. 生成 Alternative Summary
+ * 12. 输出 App 可直接使用的结构化 Setup
+ *
+ * V1.1 核心：
+ *
+ * Minimum Effective Change
+ *
+ * 当前装备仍适合
+ * ↓
+ * 尽量 KEEP
+ * ↓
+ * 优先做最小必要调整
+ *
+ * 例如：
+ *
+ * Racquet = keep
+ * String = keep
+ * Tension 53 → 52 lbs
+ *
+ * Strategy:
+ * maintain_or_minor_tension_adjustment
+ *
+ * 而不是为了 1 lbs 的差距，
+ * 把它定义为必须更换整个 Setup。
  *
  * 注意：
  * - 本文件不负责最终自然语言解释
@@ -43,7 +68,7 @@ import {
  * ============================================================
  */
 
-const ENGINE_VERSION = "1.0";
+const ENGINE_VERSION = "1.1";
 
 const DEFAULT_POLY_TENSION = 50;
 const DEFAULT_MULTI_TENSION = 54;
@@ -353,6 +378,402 @@ function determineRacquetAction(
         keep_current: false,
         reason:
             "Alternative racquet provides a better overall fit."
+    };
+}
+
+
+/**
+ * ============================================================
+ * String Decision
+ * ============================================================
+ */
+
+function determineStringAction(
+    primaryString,
+    playerProfile
+) {
+    if (!primaryString) {
+        return {
+            action: "unknown",
+            keep_current: null,
+            reason:
+                "No string candidate available."
+        };
+    }
+
+    const currentId =
+        getCurrentStringId(
+            playerProfile
+        );
+
+    const recommendedId =
+        normalizeKey(
+            primaryString.id
+        );
+
+    if (
+        currentId &&
+        currentId === recommendedId
+    ) {
+        return {
+            action: "keep",
+            keep_current: true,
+            reason:
+                "Current string remains the best overall match."
+        };
+    }
+
+    const adaptationCost =
+        safeNumber(
+            primaryString
+                ?.ranking
+                ?.adaptation_cost
+        );
+
+    if (
+        adaptationCost !== null &&
+        adaptationCost >= 8
+    ) {
+        return {
+            action: "optional_change",
+            keep_current: false,
+            reason:
+                "Recommended string offers benefits but requires meaningful adaptation."
+        };
+    }
+
+    return {
+        action: "change",
+        keep_current: false,
+        reason:
+            "Alternative string provides a better overall fit."
+    };
+}
+
+
+/**
+ * ============================================================
+ * Tension Decision
+ * ============================================================
+ */
+
+function determineTensionAction(
+    recommendedTension,
+    playerProfile
+) {
+    const currentTension =
+        getCurrentMainTension(
+            playerProfile
+        );
+
+    const targetTension =
+        safeNumber(
+            recommendedTension
+        );
+
+    if (
+        currentTension === null ||
+        targetTension === null
+    ) {
+        return {
+            action: "unknown",
+
+            current_tension_lbs:
+                currentTension,
+
+            recommended_tension_lbs:
+                targetTension,
+
+            delta_lbs:
+                null,
+
+            reason:
+                "Current or recommended tension is unavailable."
+        };
+    }
+
+    const delta =
+        Number(
+            (
+                targetTension -
+                currentTension
+            ).toFixed(1)
+        );
+
+    const absoluteDelta =
+        Math.abs(
+            delta
+        );
+
+    if (
+        absoluteDelta === 0
+    ) {
+        return {
+            action: "keep",
+
+            current_tension_lbs:
+                currentTension,
+
+            recommended_tension_lbs:
+                targetTension,
+
+            delta_lbs:
+                delta,
+
+            reason:
+                "Current tension already matches the recommended target."
+        };
+    }
+
+    /**
+     * 1 lbs 以内：
+     *
+     * 不定义成正式修改。
+     *
+     * 穿线误差、机器差异、环境变化
+     * 都可能覆盖这一级别的变化。
+     */
+
+    if (
+        absoluteDelta <= 1
+    ) {
+        return {
+            action:
+                "optional_adjust",
+
+            current_tension_lbs:
+                currentTension,
+
+            recommended_tension_lbs:
+                targetTension,
+
+            delta_lbs:
+                delta,
+
+            reason:
+                "The recommended tension differs only slightly from the current setup."
+        };
+    }
+
+    /**
+     * 2–3 lbs：
+     * 明确但仍属于常规调整。
+     */
+
+    if (
+        absoluteDelta <= 3
+    ) {
+        return {
+            action:
+                "adjust",
+
+            current_tension_lbs:
+                currentTension,
+
+            recommended_tension_lbs:
+                targetTension,
+
+            delta_lbs:
+                delta,
+
+            reason:
+                "A moderate tension adjustment is recommended."
+        };
+    }
+
+    /**
+     * > 3 lbs：
+     * meaningful adjustment
+     */
+
+    return {
+        action:
+            "meaningful_adjust",
+
+        current_tension_lbs:
+            currentTension,
+
+        recommended_tension_lbs:
+            targetTension,
+
+        delta_lbs:
+            delta,
+
+        reason:
+            "A meaningful tension change is recommended."
+    };
+}
+
+
+/**
+ * ============================================================
+ * Minimum Effective Change
+ * ============================================================
+ */
+
+function determineMinimumEffectiveChange(
+    racquetDecision,
+    stringDecision,
+    tensionDecision
+) {
+    const racquetAction =
+        racquetDecision?.action ??
+        "unknown";
+
+    const stringAction =
+        stringDecision?.action ??
+        "unknown";
+
+    const tensionAction =
+        tensionDecision?.action ??
+        "unknown";
+
+
+    let strategy =
+        "review_setup";
+
+    let changeCount =
+        0;
+
+
+    /**
+     * ========================================================
+     * Count meaningful changes
+     * ========================================================
+     *
+     * optional_change / optional_adjust
+     * 不计入正式 change count。
+     *
+     * 这是 Minimum Effective Change
+     * 的核心设计。
+     */
+
+    if (
+        racquetAction === "change"
+    ) {
+        changeCount += 1;
+    }
+
+    if (
+        stringAction === "change"
+    ) {
+        changeCount += 1;
+    }
+
+    if (
+        tensionAction === "adjust" ||
+        tensionAction ===
+            "meaningful_adjust"
+    ) {
+        changeCount += 1;
+    }
+
+
+    /**
+     * ========================================================
+     * Strategy
+     * ========================================================
+     */
+
+    if (
+        racquetAction === "keep" &&
+        stringAction === "keep" &&
+        tensionAction === "keep"
+    ) {
+        strategy =
+            "keep_current_setup";
+    }
+
+    else if (
+        racquetAction === "keep" &&
+        stringAction === "keep" &&
+        tensionAction ===
+            "optional_adjust"
+    ) {
+        strategy =
+            "maintain_or_minor_tension_adjustment";
+    }
+
+    else if (
+        racquetAction === "keep" &&
+        stringAction === "keep" &&
+        (
+            tensionAction === "adjust" ||
+            tensionAction ===
+                "meaningful_adjust"
+        )
+    ) {
+        strategy =
+            "tension_only";
+    }
+
+    else if (
+        racquetAction === "keep" &&
+        stringAction === "change"
+    ) {
+        strategy =
+            "string_first";
+    }
+
+    else if (
+        racquetAction === "change" &&
+        stringAction === "keep"
+    ) {
+        strategy =
+            "racquet_only";
+    }
+
+    else if (
+        racquetAction === "change" &&
+        stringAction === "change"
+    ) {
+        strategy =
+            "full_setup_change";
+    }
+
+    else if (
+        racquetAction ===
+            "optional_change" ||
+        stringAction ===
+            "optional_change"
+    ) {
+        strategy =
+            "optional_equipment_change";
+    }
+
+
+    return {
+        principle:
+            "minimum_effective_change",
+
+        strategy,
+
+        racquet_action:
+            racquetAction,
+
+        string_action:
+            stringAction,
+
+        tension_action:
+            tensionAction,
+
+        recommended_change_count:
+            changeCount,
+
+        current_tension_lbs:
+            tensionDecision
+                ?.current_tension_lbs ??
+            null,
+
+        recommended_tension_lbs:
+            tensionDecision
+                ?.recommended_tension_lbs ??
+            null,
+
+        tension_delta_lbs:
+            tensionDecision
+                ?.delta_lbs ??
+            null
     };
 }
 
@@ -1381,6 +1802,20 @@ export async function generateRecommendation(
 
     /**
      * ----------------------------------
+     * STEP 6B
+     * String Action
+     * ----------------------------------
+     */
+
+    const stringDecision =
+        determineStringAction(
+            primaryString,
+            playerProfile
+        );
+
+
+    /**
+     * ----------------------------------
      * STEP 7
      * Setup Type
      * ----------------------------------
@@ -1476,6 +1911,35 @@ export async function generateRecommendation(
                 );
         }
     }
+
+
+    /**
+     * ----------------------------------
+     * STEP 10B
+     * Tension Decision
+     * ----------------------------------
+     */
+
+    const tensionDecision =
+        determineTensionAction(
+            tensions.main_lbs,
+            playerProfile
+        );
+
+
+    /**
+     * ----------------------------------
+     * STEP 10C
+     * Minimum Effective Change
+     * ----------------------------------
+     */
+
+    const minimumEffectiveChange =
+        determineMinimumEffectiveChange(
+            racquetDecision,
+            stringDecision,
+            tensionDecision
+        );
 
 
     /**
@@ -1662,6 +2126,12 @@ export async function generateRecommendation(
         setup_score:
             setupScore,
 
+        /**
+         * ====================================================
+         * Racquet Decision
+         * ====================================================
+         */
+
         racquet_decision: {
             action:
                 racquetDecision.action,
@@ -1693,6 +2163,64 @@ export async function generateRecommendation(
                 }
                 : null
         },
+
+        /**
+         * ====================================================
+         * String Decision
+         * ====================================================
+         */
+
+        string_decision: {
+            action:
+                stringDecision.action,
+
+            keep_current:
+                stringDecision.keep_current,
+
+            reason:
+                stringDecision.reason
+        },
+
+        /**
+         * ====================================================
+         * Tension Decision
+         * ====================================================
+         */
+
+        tension_decision: {
+            action:
+                tensionDecision.action,
+
+            current_tension_lbs:
+                tensionDecision
+                    .current_tension_lbs,
+
+            recommended_tension_lbs:
+                tensionDecision
+                    .recommended_tension_lbs,
+
+            delta_lbs:
+                tensionDecision
+                    .delta_lbs,
+
+            reason:
+                tensionDecision.reason
+        },
+
+        /**
+         * ====================================================
+         * Minimum Effective Change
+         * ====================================================
+         */
+
+        change_strategy:
+            minimumEffectiveChange,
+
+        /**
+         * ====================================================
+         * String Setup
+         * ====================================================
+         */
 
         string_setup: {
             type:
@@ -1790,7 +2318,21 @@ export const recommendationHelpers = {
 
     getActivePhysicalConstraints,
 
+    getCurrentRacquetId,
+
+    getCurrentStringId,
+
+    getCurrentMainTension,
+
+    getCurrentCrossTension,
+
     determineRacquetAction,
+
+    determineStringAction,
+
+    determineTensionAction,
+
+    determineMinimumEffectiveChange,
 
     determineGauge,
 
