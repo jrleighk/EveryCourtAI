@@ -2,29 +2,20 @@
  * ============================================================
  * EveryCourtAI
  * API Client
- * Version: 1.0
+ * Version: 1.1
  * ============================================================
  *
  * 文件路径：
  * scripts/api_client.js
  *
- * 作用：
- * 1. 负责 Web App 与 Cloudflare Worker 通讯
- * 2. 发送用户问题
- * 3. 发送当前语言
- * 4. 发送聊天历史
- * 5. 接收 EveryCourtAI Engine 结果
- * 6. 标准化 API Response
- * 7. 处理网络错误 / 超时 / JSON 错误
- * 8. 为未来 Streaming API 预留结构
+ * V1.1：
  *
- * 当前阶段：
- * - API Client 架构完成
- * - Cloudflare API URL 可配置
- *
- * 下一阶段：
- * - 建立 / 更新 Cloudflare everycourt-api
- * - chat_manager.js 改为调用本文件
+ * 1. 对接 Cloudflare Worker V2.3.1
+ * 2. prompt → message
+ * 3. 支持 conversation_state
+ * 4. 支持多轮 Conversation ID / Turn
+ * 5. 保留聊天 history 作为前端 metadata
+ * 6. 标准化 Follow-up / Recommendation Response
  *
  * ============================================================
  */
@@ -32,43 +23,21 @@
 
 /**
  * ============================================================
- * 基础配置
+ * Configuration
  * ============================================================
  */
 
 const API_CLIENT_VERSION =
-    "1.0";
+    "1.1";
 
-
-/**
- * ============================================================
- * Cloudflare API
- *
- * 下一阶段请把这里换成真正 Worker URL。
- *
- * 例如：
- *
- * https://everycourt-api.xxxxx.workers.dev
- *
- * 如果 Worker 使用 /ai：
- *
- * https://everycourt-api.xxxxx.workers.dev/ai
- *
- * ============================================================
- */
 
 let API_ENDPOINT =
     "https://everycourt-api.jrleighk.workers.dev/ai";
 
 
-/**
- * ============================================================
- * 请求配置
- * ============================================================
- */
-
 const DEFAULT_TIMEOUT_MS =
     30000;
+
 
 const MAX_HISTORY_MESSAGES =
     20;
@@ -76,7 +45,7 @@ const MAX_HISTORY_MESSAGES =
 
 /**
  * ============================================================
- * 内部状态
+ * Internal State
  * ============================================================
  */
 
@@ -86,53 +55,84 @@ let lastRequestId =
 
 /**
  * ============================================================
- * 通用工具
+ * Utilities
  * ============================================================
  */
 
 function safeString(
     value
 ) {
+
     if (
         value === null ||
         value === undefined
     ) {
+
         return "";
     }
 
-    return String(value)
-        .trim();
+
+    return String(
+        value
+    ).trim();
 }
 
 
 function safeNumber(
     value
 ) {
+
     if (
         value === null ||
         value === undefined ||
         value === ""
     ) {
+
         return null;
     }
 
-    const number =
-        Number(value);
 
-    return Number.isFinite(number)
+    const number =
+        Number(
+            value
+        );
+
+
+    return Number.isFinite(
+        number
+    )
         ? number
         : null;
 }
 
 
-function createRequestId() {
+function isPlainObject(
+    value
+) {
+
     return (
-        "eca_" +
+        value !== null &&
+        typeof value ===
+            "object" &&
+        !Array.isArray(
+            value
+        )
+    );
+}
+
+
+function createRequestId() {
+
+    return (
+        "eca_web_" +
         Date.now() +
         "_" +
         Math.random()
             .toString(36)
-            .slice(2, 10)
+            .slice(
+                2,
+                10
+            )
     );
 }
 
@@ -146,15 +146,22 @@ function createRequestId() {
 export function setApiEndpoint(
     endpoint
 ) {
+
     const value =
         safeString(
             endpoint
         );
 
 
-    if (!value) {
+    if (
+        !value
+    ) {
+
         return {
-            success: false,
+
+            success:
+                false,
+
             error:
                 "API endpoint cannot be empty."
         };
@@ -166,7 +173,10 @@ export function setApiEndpoint(
 
 
     return {
-        success: true,
+
+        success:
+            true,
+
         endpoint:
             API_ENDPOINT
     };
@@ -174,19 +184,17 @@ export function setApiEndpoint(
 
 
 export function getApiEndpoint() {
+
     return API_ENDPOINT;
 }
 
 
-/**
- * ============================================================
- * 检查 API 是否已经配置
- * ============================================================
- */
-
 export function isApiConfigured() {
+
     return (
-        API_ENDPOINT &&
+        Boolean(
+            API_ENDPOINT
+        ) &&
         !API_ENDPOINT.includes(
             "YOUR-EVERYCOURT-WORKER"
         )
@@ -196,18 +204,20 @@ export function isApiConfigured() {
 
 /**
  * ============================================================
- * History 标准化
+ * History
  * ============================================================
  */
 
 function normalizeHistory(
     history = []
 ) {
+
     if (
         !Array.isArray(
             history
         )
     ) {
+
         return [];
     }
 
@@ -220,19 +230,22 @@ function normalizeHistory(
             message => {
 
                 const role =
-                    message?.role === "ai"
+                    message?.role ===
+                        "assistant" ||
+                    message?.role ===
+                        "ai"
                         ? "assistant"
-                        : message?.role === "assistant"
-                            ? "assistant"
-                            : "user";
+                        : "user";
 
 
                 return {
+
                     role,
 
                     content:
                         safeString(
-                            message?.content
+                            message
+                                ?.content
                         )
                 };
             }
@@ -248,16 +261,55 @@ function normalizeHistory(
 
 /**
  * ============================================================
+ * Conversation State
+ * ============================================================
+ */
+
+function normalizeConversationState(
+    conversationState
+) {
+
+    if (
+        !isPlainObject(
+            conversationState
+        )
+    ) {
+
+        return null;
+    }
+
+
+    /**
+     * 不在前端重新解释 State。
+     *
+     * Worker 返回什么，
+     * 下一轮就原样带回。
+     */
+
+    return conversationState;
+}
+
+
+/**
+ * ============================================================
  * Request Payload
  * ============================================================
  */
 
 function buildRequestPayload({
+
     prompt,
+
     language = "en",
+
     history = [],
+
+    conversationState = null,
+
     metadata = {}
+
 }) {
+
     const requestId =
         createRequestId();
 
@@ -266,11 +318,13 @@ function buildRequestPayload({
         requestId;
 
 
-    return {
+    const payload = {
+
         request_id:
             requestId,
 
         client: {
+
             name:
                 "EveryCourtAI Web App",
 
@@ -278,50 +332,105 @@ function buildRequestPayload({
                 API_CLIENT_VERSION
         },
 
-        language:
-            safeString(
-                language
-            ) || "en",
 
-        prompt:
+        /**
+         * Worker V2.3.1 使用 message，
+         * 不再使用 prompt。
+         */
+
+        message:
             safeString(
                 prompt
             ),
 
-        conversation:
-            normalizeHistory(
-                history
+
+        language:
+            safeString(
+                language
+            ) ||
+            "en",
+
+
+        /**
+         * 多轮对话关键字段。
+         */
+
+        conversation_state:
+            normalizeConversationState(
+                conversationState
             ),
 
+
+        /**
+         * History 暂时作为 metadata。
+         *
+         * Worker 当前主要依赖 conversation_state，
+         * 而不是 history。
+         */
+
         metadata: {
+
             timestamp:
                 new Date()
                     .toISOString(),
 
             page_url:
-                window.location.href,
+                typeof window !==
+                    "undefined"
+                    ? window.location.href
+                    : null,
 
             user_agent:
-                navigator.userAgent,
+                typeof navigator !==
+                    "undefined"
+                    ? navigator.userAgent
+                    : null,
+
+            conversation_history:
+                normalizeHistory(
+                    history
+                ),
 
             ...metadata
         }
     };
+
+
+    /**
+     * 第一轮没有 conversation_state 时，
+     * 直接删除字段。
+     */
+
+    if (
+        !payload.conversation_state
+    ) {
+
+        delete payload
+            .conversation_state;
+    }
+
+
+    return payload;
 }
 
 
 /**
  * ============================================================
- * Timeout Fetch
+ * Fetch with Timeout
  * ============================================================
  */
 
 async function fetchWithTimeout(
+
     url,
+
     options = {},
+
     timeoutMs =
         DEFAULT_TIMEOUT_MS
+
 ) {
+
     const controller =
         new AbortController();
 
@@ -342,6 +451,7 @@ async function fetchWithTimeout(
         return await fetch(
             url,
             {
+
                 ...options,
 
                 signal:
@@ -360,75 +470,63 @@ async function fetchWithTimeout(
 
 /**
  * ============================================================
- * Recommendation 标准化
- *
- * 这里兼容不同 Worker 返回格式。
- *
+ * Recommendation Normalization
  * ============================================================
  */
 
 function normalizeRecommendation(
     data
 ) {
+
     const recommendation =
         data?.recommendation ??
         data?.result?.recommendation ??
         null;
 
 
-    if (!recommendation) {
+    /**
+     * Follow-up 阶段 recommendation === null。
+     */
+
+    if (
+        !recommendation
+    ) {
+
         return null;
     }
 
 
     /**
-     * ----------------------------------
-     * 兼容 Main Engine 当前结构
-     * ----------------------------------
-     */
-
-    const racquet =
-        recommendation
-            ?.racquet_decision
-            ?.recommended;
-
-
-    const mainString =
-        recommendation
-            ?.string_setup
-            ?.main;
-
-
-    const tension =
-        recommendation
-            ?.tension;
-
-
-    const confidence =
-        data?.confidence?.score ??
-        data?.result?.confidence?.score ??
-        recommendation?.confidence ??
-        null;
-
-
-    /**
-     * ----------------------------------
-     * 如果 API 已经直接返回前端格式
-     * ----------------------------------
+     * Worker V2.3.1 已经直接返回 Web 格式。
      */
 
     if (
         recommendation.racquet ||
         recommendation.string ||
-        recommendation.tension_lbs
+        recommendation.tension_lbs !==
+            undefined
     ) {
+
         return {
+
             racquet:
                 recommendation.racquet ??
                 null,
 
+            racquet_id:
+                recommendation.racquet_id ??
+                null,
+
+            racquet_action:
+                recommendation.racquet_action ??
+                null,
+
             string:
                 recommendation.string ??
+                null,
+
+            string_id:
+                recommendation.string_id ??
                 null,
 
             gauge_mm:
@@ -451,26 +549,75 @@ function normalizeRecommendation(
 
             confidence:
                 safeNumber(
-                    recommendation.confidence ??
-                    confidence
+                    recommendation.confidence
+                ),
+
+            confidence_level:
+                recommendation.confidence_level ??
+                null,
+
+            setup_score:
+                safeNumber(
+                    recommendation.setup_score
                 ),
 
             why:
-                recommendation.why ??
-                [],
+                Array.isArray(
+                    recommendation.why
+                )
+                    ? recommendation.why
+                    : [],
+
+            tradeoffs:
+                Array.isArray(
+                    recommendation.tradeoffs
+                )
+                    ? recommendation.tradeoffs
+                    : [],
 
             alternatives:
-                recommendation.alternatives ??
-                []
+                Array.isArray(
+                    recommendation.alternatives
+                )
+                    ? recommendation.alternatives
+                    : []
         };
     }
 
 
     /**
-     * ----------------------------------
-     * EveryCourtAI Engine 原始格式
-     * ----------------------------------
+     * ========================================================
+     * Legacy Engine Format Compatibility
+     * ========================================================
      */
+
+    const racquet =
+        recommendation
+            ?.racquet_decision
+            ?.recommended;
+
+
+    const mainString =
+        recommendation
+            ?.string_setup
+            ?.main;
+
+
+    const tension =
+        recommendation
+            ?.tension;
+
+
+    const confidence =
+        data
+            ?.confidence
+            ?.score ??
+        data
+            ?.engine_result
+            ?.confidence
+            ?.score ??
+        null;
+
 
     let tensionRange =
         null;
@@ -486,17 +633,29 @@ function normalizeRecommendation(
             ?.maximum_lbs !==
             undefined
     ) {
+
         tensionRange =
             `${tension.working_range_lbs.minimum_lbs}–${tension.working_range_lbs.maximum_lbs} lbs`;
     }
 
 
     return {
+
         racquet:
             racquet
                 ? `${racquet.brand ?? ""} ${racquet.model ?? ""}`
                     .trim()
                 : null,
+
+        racquet_id:
+            racquet?.id ??
+            null,
+
+        racquet_action:
+            recommendation
+                ?.racquet_decision
+                ?.action ??
+            null,
 
         string:
             mainString
@@ -504,9 +663,14 @@ function normalizeRecommendation(
                     .trim()
                 : null,
 
+        string_id:
+            mainString?.id ??
+            null,
+
         gauge_mm:
             safeNumber(
-                mainString?.gauge_mm
+                mainString
+                    ?.gauge_mm
             ),
 
         setup_type:
@@ -517,7 +681,8 @@ function normalizeRecommendation(
 
         tension_lbs:
             safeNumber(
-                tension?.main_lbs
+                tension
+                    ?.main_lbs
             ),
 
         tension_range:
@@ -528,9 +693,30 @@ function normalizeRecommendation(
                 confidence
             ),
 
+        confidence_level:
+            data
+                ?.confidence
+                ?.level ??
+            data
+                ?.engine_result
+                ?.confidence
+                ?.level ??
+            null,
+
+        setup_score:
+            safeNumber(
+                recommendation
+                    ?.setup_score
+            ),
+
         why:
             recommendation
                 ?.primary_reasons ??
+            [],
+
+        tradeoffs:
+            recommendation
+                ?.tradeoffs ??
             [],
 
         alternatives:
@@ -543,28 +729,29 @@ function normalizeRecommendation(
 
 /**
  * ============================================================
- * AI Answer 标准化
+ * Answer Normalization
  * ============================================================
  */
 
 function normalizeAnswer(
     data
 ) {
+
     const candidates = [
+
         data?.answer,
-        data?.message,
-        data?.response,
-        data?.text,
 
         data
             ?.result
             ?.answer,
 
         data
-            ?.result
-            ?.message,
+            ?.explanation
+            ?.summary
+            ?.en,
 
         data
+            ?.engine_result
             ?.explanation
             ?.summary
             ?.en,
@@ -581,13 +768,17 @@ function normalizeAnswer(
         const candidate
         of candidates
     ) {
+
         const value =
             safeString(
                 candidate
             );
 
 
-        if (value) {
+        if (
+            value
+        ) {
+
             return value;
         }
     }
@@ -599,7 +790,7 @@ function normalizeAnswer(
 
 /**
  * ============================================================
- * API Response 标准化
+ * API Response Normalization
  * ============================================================
  */
 
@@ -607,18 +798,83 @@ function normalizeApiResponse(
     data,
     httpStatus
 ) {
+
     const success =
-        data?.success !== false &&
-        httpStatus >= 200 &&
-        httpStatus < 300;
+        data?.success !==
+            false &&
+        httpStatus >=
+            200 &&
+        httpStatus <
+            300;
 
 
     return {
+
         success,
 
         request_id:
             data?.request_id ??
             lastRequestId,
+
+
+        /**
+         * Worker Conversation Status
+         */
+
+        status:
+            data?.status ??
+            null,
+
+        conversation_id:
+            data?.conversation_id ??
+            data
+                ?.conversation_state
+                ?.conversation_id ??
+            null,
+
+        turn:
+            safeNumber(
+                data?.turn ??
+                data
+                    ?.conversation_state
+                    ?.turn
+            ),
+
+
+        /**
+         * 关键：
+         * 将 State 暴露给 chat_manager.js。
+         */
+
+        conversation_state:
+            isPlainObject(
+                data
+                    ?.conversation_state
+            )
+                ? data.conversation_state
+                : null,
+
+
+        missing_fields:
+            Array.isArray(
+                data
+                    ?.missing_fields
+            )
+                ? data.missing_fields
+                : [],
+
+
+        pending_fields:
+            Array.isArray(
+                data
+                    ?.conversation_state
+                    ?.pending_fields
+            )
+                ? data
+                    .conversation_state
+                    .pending_fields
+                : [],
+
 
         answer:
             normalizeAnswer(
@@ -630,14 +886,35 @@ function normalizeApiResponse(
                 data
             ),
 
+        recommendation_preview:
+            data
+                ?.recommendation_preview ??
+            null,
+
+        follow_up:
+            data
+                ?.follow_up ??
+            null,
+
         confidence:
-            data?.confidence ??
-            data?.result?.confidence ??
+            data
+                ?.engine_result
+                ?.confidence ??
+            data
+                ?.confidence ??
             null,
 
         explanation:
-            data?.explanation ??
-            data?.result?.explanation ??
+            data
+                ?.engine_result
+                ?.explanation ??
+            data
+                ?.explanation ??
+            null,
+
+        player_input:
+            data
+                ?.player_input ??
             null,
 
         raw:
@@ -648,18 +925,21 @@ function normalizeApiResponse(
 
 /**
  * ============================================================
- * Error 标准化
+ * Error Normalization
  * ============================================================
  */
 
 function normalizeError(
     error
 ) {
+
     if (
         error?.name ===
-        "AbortError"
+            "AbortError"
     ) {
+
         return {
+
             type:
                 "timeout",
 
@@ -670,31 +950,44 @@ function normalizeError(
 
 
     return {
+
         type:
             "network",
 
         message:
-            error instanceof Error
+            error instanceof
+                Error
                 ? error.message
-                : String(error)
+                : String(
+                    error
+                )
     };
 }
 
 
 /**
  * ============================================================
- * Main API Request
+ * Main Chat Request
  * ============================================================
  */
 
 export async function sendChatRequest({
+
     prompt,
+
     language = "en",
+
     history = [],
+
+    conversationState = null,
+
     metadata = {},
+
     timeoutMs =
         DEFAULT_TIMEOUT_MS
+
 }) {
+
     const cleanPrompt =
         safeString(
             prompt
@@ -702,16 +995,20 @@ export async function sendChatRequest({
 
 
     /**
-     * ----------------------------------
      * Validate
-     * ----------------------------------
      */
 
-    if (!cleanPrompt) {
+    if (
+        !cleanPrompt
+    ) {
+
         return {
-            success: false,
+
+            success:
+                false,
 
             error: {
+
                 type:
                     "validation",
 
@@ -723,18 +1020,20 @@ export async function sendChatRequest({
 
 
     /**
-     * ----------------------------------
-     * API 未配置
-     * ----------------------------------
+     * API Configuration
      */
 
     if (
         !isApiConfigured()
     ) {
+
         return {
-            success: false,
+
+            success:
+                false,
 
             error: {
+
                 type:
                     "configuration",
 
@@ -747,6 +1046,7 @@ export async function sendChatRequest({
 
     const payload =
         buildRequestPayload({
+
             prompt:
                 cleanPrompt,
 
@@ -754,27 +1054,26 @@ export async function sendChatRequest({
 
             history,
 
+            conversationState,
+
             metadata
         });
 
 
     try {
 
-        /**
-         * ----------------------------------
-         * Fetch
-         * ----------------------------------
-         */
-
         const response =
             await fetchWithTimeout(
+
                 API_ENDPOINT,
 
                 {
+
                     method:
                         "POST",
 
                     headers: {
+
                         "Content-Type":
                             "application/json",
 
@@ -795,12 +1094,6 @@ export async function sendChatRequest({
             );
 
 
-        /**
-         * ----------------------------------
-         * Response Text
-         * ----------------------------------
-         */
-
         const responseText =
             await response.text();
 
@@ -812,6 +1105,7 @@ export async function sendChatRequest({
         if (
             responseText
         ) {
+
             try {
 
                 data =
@@ -822,12 +1116,16 @@ export async function sendChatRequest({
             } catch {
 
                 return {
-                    success: false,
+
+                    success:
+                        false,
 
                     request_id:
-                        payload.request_id,
+                        payload
+                            .request_id,
 
                     error: {
+
                         type:
                             "invalid_json",
 
@@ -843,21 +1141,24 @@ export async function sendChatRequest({
 
 
         /**
-         * ----------------------------------
          * HTTP Error
-         * ----------------------------------
          */
 
         if (
             !response.ok
         ) {
+
             return {
-                success: false,
+
+                success:
+                    false,
 
                 request_id:
-                    payload.request_id,
+                    payload
+                        .request_id,
 
                 error: {
+
                     type:
                         "http",
 
@@ -865,8 +1166,11 @@ export async function sendChatRequest({
                         response.status,
 
                     message:
-                        data?.error?.message ??
-                        data?.message ??
+                        data
+                            ?.error
+                            ?.message ??
+                        data
+                            ?.message ??
                         `HTTP ${response.status}`
                 },
 
@@ -876,26 +1180,24 @@ export async function sendChatRequest({
         }
 
 
-        /**
-         * ----------------------------------
-         * Success
-         * ----------------------------------
-         */
-
         return normalizeApiResponse(
             data,
             response.status
         );
+
 
     } catch (
         error
     ) {
 
         return {
-            success: false,
+
+            success:
+                false,
 
             request_id:
-                payload.request_id,
+                payload
+                    .request_id,
 
             error:
                 normalizeError(
@@ -909,18 +1211,17 @@ export async function sendChatRequest({
 /**
  * ============================================================
  * Health Check
- *
- * Cloudflare 后面可以做：
- *
- * GET /health
- *
  * ============================================================
  */
 
 export async function checkApiHealth({
+
     endpoint = null,
+
     timeoutMs = 8000
+
 } = {}) {
+
     const base =
         safeString(
             endpoint
@@ -934,19 +1235,17 @@ export async function checkApiHealth({
             "YOUR-EVERYCOURT-WORKER"
         )
     ) {
+
         return {
-            success: false,
+
+            success:
+                false,
 
             status:
                 "not_configured"
         };
     }
 
-
-    /**
-     * 如果 endpoint 是 /ai，
-     * 自动尝试替换成 /health
-     */
 
     const healthEndpoint =
         base.endsWith(
@@ -955,27 +1254,34 @@ export async function checkApiHealth({
             ? base.slice(
                 0,
                 -3
-            ) + "/health"
+            ) +
+                "/health"
             : base.replace(
                 /\/$/,
                 ""
-            ) + "/health";
+            ) +
+                "/health";
 
 
     try {
 
         const response =
             await fetchWithTimeout(
+
                 healthEndpoint,
+
                 {
+
                     method:
                         "GET",
 
                     headers: {
+
                         "Accept":
                             "application/json"
                     }
                 },
+
                 timeoutMs
             );
 
@@ -989,19 +1295,23 @@ export async function checkApiHealth({
 
 
         try {
+
             data =
                 text
                     ? JSON.parse(
                         text
                     )
                     : null;
+
         } catch {
+
             data =
                 text;
         }
 
 
         return {
+
             success:
                 response.ok,
 
@@ -1014,12 +1324,15 @@ export async function checkApiHealth({
             data
         };
 
+
     } catch (
         error
     ) {
 
         return {
-            success: false,
+
+            success:
+                false,
 
             endpoint:
                 healthEndpoint,
@@ -1040,7 +1353,9 @@ export async function checkApiHealth({
  */
 
 export function getApiClientInfo() {
+
     return {
+
         version:
             API_CLIENT_VERSION,
 
@@ -1057,7 +1372,13 @@ export function getApiClientInfo() {
             MAX_HISTORY_MESSAGES,
 
         last_request_id:
-            lastRequestId
+            lastRequestId,
+
+        multi_turn:
+            true,
+
+        worker_contract:
+            "2.3.1"
     };
 }
 
@@ -1065,23 +1386,20 @@ export function getApiClientInfo() {
 /**
  * ============================================================
  * Browser Debug API
- *
- * Console:
- *
- * EveryCourtAPI.getApiClientInfo()
- *
- * EveryCourtAPI.setApiEndpoint(
- *   "https://xxx.workers.dev/ai"
- * )
- *
  * ============================================================
  */
 
 window.EveryCourtAPI = {
+
     sendChatRequest,
+
     checkApiHealth,
+
     setApiEndpoint,
+
     getApiEndpoint,
+
     isApiConfigured,
+
     getApiClientInfo
 };

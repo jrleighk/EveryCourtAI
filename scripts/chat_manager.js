@@ -2,7 +2,7 @@
  * ============================================================
  * EveryCourtAI
  * Chat Manager
- * Version: 2.1
+ * Version: 2.2
  * ============================================================
  *
  * 路径：
@@ -16,6 +16,22 @@
  * 5. 动态更新右侧推荐卡
  * 6. 支持当前语言
  * 7. 保存聊天上下文
+ * 8. 保存 Conversation State
+ * 9. 自动支持多轮对话
+ *
+ * V2.2 核心：
+ *
+ * Turn 1
+ * ↓
+ * Worker 返回 conversation_state
+ * ↓
+ * 浏览器保存
+ *
+ * Turn 2
+ * ↓
+ * 自动带回 conversation_state
+ * ↓
+ * Worker 继续同一个 conversation
  *
  * ============================================================
  */
@@ -32,13 +48,38 @@ import {
 
 /**
  * ============================================================
- * 状态
+ * State
  * ============================================================
  */
 
-let isProcessing = false;
+let isProcessing =
+    false;
 
-let conversationHistory = [];
+
+let conversationHistory =
+    [];
+
+
+/**
+ * Worker Conversation State
+ *
+ * 这是多轮对话真正的状态。
+ */
+
+let conversationState =
+    null;
+
+
+/**
+ * 当前 Conversation Metadata
+ */
+
+let conversationId =
+    null;
+
+
+let conversationTurn =
+    0;
 
 
 /**
@@ -47,39 +88,76 @@ let conversationHistory = [];
  * ============================================================
  */
 
-let messagesElement = null;
-let promptInputElement = null;
-let sendButtonElement = null;
+let messagesElement =
+    null;
+
+
+let promptInputElement =
+    null;
+
+
+let sendButtonElement =
+    null;
 
 
 /**
  * ============================================================
- * 工具
+ * Utilities
  * ============================================================
  */
 
-function safeString(value) {
+function safeString(
+    value
+) {
 
     if (
         value === null ||
         value === undefined
     ) {
+
         return "";
     }
 
-    return String(value).trim();
+
+    return String(
+        value
+    ).trim();
+}
+
+
+function isPlainObject(
+    value
+) {
+
+    return (
+        value !== null &&
+        typeof value ===
+            "object" &&
+        !Array.isArray(
+            value
+        )
+    );
 }
 
 
 function scrollToBottom() {
 
-    if (!messagesElement) {
+    if (
+        !messagesElement
+    ) {
+
         return;
     }
 
+
     messagesElement.scrollTo({
-        top: messagesElement.scrollHeight,
-        behavior: "smooth"
+
+        top:
+            messagesElement
+                .scrollHeight,
+
+        behavior:
+            "smooth"
     });
 }
 
@@ -91,29 +169,48 @@ function scrollToBottom() {
  */
 
 function createMessageElement(
+
     role,
+
     text,
+
     {
         thinking = false
     } = {}
+
 ) {
 
     const wrapper =
-        document.createElement("div");
+        document.createElement(
+            "div"
+        );
+
 
     wrapper.className =
-        `message ${role === "user" ? "user" : "ai"}`;
+        `message ${
+            role === "user"
+                ? "user"
+                : "ai"
+        }`;
 
 
     const label =
-        document.createElement("div");
+        document.createElement(
+            "div"
+        );
+
 
     label.className =
         "message-label";
 
+
     label.textContent =
-        role === "user"
-            ? t("system.you", "You")
+        role ===
+            "user"
+            ? t(
+                "system.you",
+                "You"
+            )
             : t(
                 "system.assistant",
                 "EveryCourtAI"
@@ -121,26 +218,37 @@ function createMessageElement(
 
 
     const bubble =
-        document.createElement("div");
+        document.createElement(
+            "div"
+        );
+
 
     bubble.className =
         "bubble";
 
-    if (thinking) {
+
+    if (
+        thinking
+    ) {
 
         bubble.classList.add(
             "thinking-bubble"
         );
-
     }
+
 
     bubble.textContent =
         text;
 
 
-    wrapper.appendChild(label);
+    wrapper.appendChild(
+        label
+    );
 
-    wrapper.appendChild(bubble);
+
+    wrapper.appendChild(
+        bubble
+    );
 
 
     return wrapper;
@@ -148,20 +256,29 @@ function createMessageElement(
 
 
 export function addMessage(
+
     role,
+
     text,
+
     {
-        saveToHistory = true
+        saveToHistory =
+            true
     } = {}
+
 ) {
 
     const cleanText =
-        safeString(text);
+        safeString(
+            text
+        );
+
 
     if (
         !messagesElement ||
         !cleanText
     ) {
+
         return null;
     }
 
@@ -173,24 +290,27 @@ export function addMessage(
         );
 
 
-    messagesElement.appendChild(
-        element
-    );
+    messagesElement
+        .appendChild(
+            element
+        );
 
 
-    if (saveToHistory) {
+    if (
+        saveToHistory
+    ) {
 
         conversationHistory.push({
 
             role:
-                role === "ai"
+                role ===
+                    "ai"
                     ? "assistant"
                     : "user",
 
             content:
                 cleanText
         });
-
     }
 
 
@@ -209,27 +329,35 @@ export function addMessage(
 
 function showThinking() {
 
-    if (!messagesElement) {
+    if (
+        !messagesElement
+    ) {
+
         return null;
     }
 
 
     const element =
         createMessageElement(
+
             "ai",
+
             t(
                 "system.thinking",
                 "Analyzing your equipment..."
             ),
+
             {
-                thinking: true
+                thinking:
+                    true
             }
         );
 
 
-    messagesElement.appendChild(
-        element
-    );
+    messagesElement
+        .appendChild(
+            element
+        );
 
 
     scrollToBottom();
@@ -243,7 +371,10 @@ function removeThinking(
     element
 ) {
 
-    if (element) {
+    if (
+        element
+    ) {
+
         element.remove();
     }
 }
@@ -263,24 +394,29 @@ function setProcessing(
         value;
 
 
-    if (sendButtonElement) {
+    if (
+        sendButtonElement
+    ) {
 
         sendButtonElement.disabled =
             value;
 
-        sendButtonElement.style.opacity =
+
+        sendButtonElement
+            .style
+            .opacity =
             value
                 ? "0.6"
                 : "1";
-
     }
 
 
-    if (promptInputElement) {
+    if (
+        promptInputElement
+    ) {
 
         promptInputElement.disabled =
             value;
-
     }
 }
 
@@ -293,20 +429,29 @@ function setProcessing(
 
 function resizeTextarea() {
 
-    if (!promptInputElement) {
+    if (
+        !promptInputElement
+    ) {
+
         return;
     }
 
 
-    promptInputElement.style.height =
+    promptInputElement
+        .style
+        .height =
         "auto";
 
 
-    promptInputElement.style.height =
+    promptInputElement
+        .style
+        .height =
         Math.min(
-            promptInputElement.scrollHeight,
+            promptInputElement
+                .scrollHeight,
             160
-        ) + "px";
+        ) +
+        "px";
 }
 
 
@@ -320,7 +465,10 @@ export function updateRecommendationCard(
     recommendation
 ) {
 
-    if (!recommendation) {
+    if (
+        !recommendation
+    ) {
+
         return;
     }
 
@@ -330,30 +478,36 @@ export function updateRecommendationCard(
             "recommendedRacquet"
         );
 
+
     const stringElement =
         document.getElementById(
             "recommendedString"
         );
+
 
     const stringSetupElement =
         document.getElementById(
             "recommendedStringSetup"
         );
 
+
     const tensionElement =
         document.getElementById(
             "recommendedTension"
         );
+
 
     const tensionRangeElement =
         document.getElementById(
             "recommendedTensionRange"
         );
 
+
     const confidenceValueElement =
         document.getElementById(
             "confidenceValue"
         );
+
 
     const confidenceFillElement =
         document.getElementById(
@@ -370,9 +524,10 @@ export function updateRecommendationCard(
         recommendation.racquet
     ) {
 
-        racquetElement.textContent =
-            recommendation.racquet;
-
+        racquetElement
+            .textContent =
+            recommendation
+                .racquet;
     }
 
 
@@ -385,9 +540,10 @@ export function updateRecommendationCard(
         recommendation.string
     ) {
 
-        stringElement.textContent =
-            recommendation.string;
-
+        stringElement
+            .textContent =
+            recommendation
+                .string;
     }
 
 
@@ -395,43 +551,51 @@ export function updateRecommendationCard(
      * Gauge + Setup
      */
 
-    if (stringSetupElement) {
+    if (
+        stringSetupElement
+    ) {
 
-        const parts = [];
+        const parts =
+            [];
 
 
         if (
-            recommendation.gauge_mm !==
-            null &&
-            recommendation.gauge_mm !==
-            undefined
+            recommendation
+                .gauge_mm !==
+                null &&
+            recommendation
+                .gauge_mm !==
+                undefined
         ) {
 
             parts.push(
                 `${recommendation.gauge_mm} mm`
             );
-
         }
 
 
         if (
-            recommendation.setup_type
+            recommendation
+                .setup_type
         ) {
 
             parts.push(
-                recommendation.setup_type
+                recommendation
+                    .setup_type
             );
-
         }
 
 
         if (
-            parts.length > 0
+            parts.length >
+            0
         ) {
 
-            stringSetupElement.textContent =
-                parts.join(" · ");
-
+            stringSetupElement
+                .textContent =
+                parts.join(
+                    " · "
+                );
         }
     }
 
@@ -442,15 +606,17 @@ export function updateRecommendationCard(
 
     if (
         tensionElement &&
-        recommendation.tension_lbs !==
-        null &&
-        recommendation.tension_lbs !==
-        undefined
+        recommendation
+            .tension_lbs !==
+            null &&
+        recommendation
+            .tension_lbs !==
+            undefined
     ) {
 
-        tensionElement.textContent =
+        tensionElement
+            .textContent =
             `${recommendation.tension_lbs} lbs`;
-
     }
 
 
@@ -460,12 +626,14 @@ export function updateRecommendationCard(
 
     if (
         tensionRangeElement &&
-        recommendation.tension_range
+        recommendation
+            .tension_range
     ) {
 
-        tensionRangeElement.textContent =
-            recommendation.tension_range;
-
+        tensionRangeElement
+            .textContent =
+            recommendation
+                .tension_range;
     }
 
 
@@ -474,10 +642,12 @@ export function updateRecommendationCard(
      */
 
     if (
-        recommendation.confidence !==
-        null &&
-        recommendation.confidence !==
-        undefined
+        recommendation
+            .confidence !==
+            null &&
+        recommendation
+            .confidence !==
+            undefined
     ) {
 
         const confidence =
@@ -486,7 +656,8 @@ export function updateRecommendationCard(
                 Math.min(
                     100,
                     Number(
-                        recommendation.confidence
+                        recommendation
+                            .confidence
                     )
                 )
             );
@@ -496,9 +667,9 @@ export function updateRecommendationCard(
             confidenceValueElement
         ) {
 
-            confidenceValueElement.textContent =
+            confidenceValueElement
+                .textContent =
                 `${confidence}%`;
-
         }
 
 
@@ -506,11 +677,129 @@ export function updateRecommendationCard(
             confidenceFillElement
         ) {
 
-            confidenceFillElement.style.width =
+            confidenceFillElement
+                .style
+                .width =
                 `${confidence}%`;
-
         }
     }
+}
+
+
+/**
+ * ============================================================
+ * Conversation State
+ * ============================================================
+ */
+
+function updateConversationStateFromResult(
+    result
+) {
+
+    /**
+     * Worker 有返回 State 时才更新。
+     */
+
+    if (
+        isPlainObject(
+            result
+                ?.conversation_state
+        )
+    ) {
+
+        conversationState =
+            result
+                .conversation_state;
+    }
+
+
+    if (
+        safeString(
+            result
+                ?.conversation_id
+        )
+    ) {
+
+        conversationId =
+            result
+                .conversation_id;
+    }
+
+
+    if (
+        Number.isFinite(
+            Number(
+                result
+                    ?.turn
+            )
+        )
+    ) {
+
+        conversationTurn =
+            Number(
+                result
+                    .turn
+            );
+    }
+
+
+    console.log(
+        "EveryCourtAI Conversation:",
+        {
+            conversation_id:
+                conversationId,
+
+            turn:
+                conversationTurn,
+
+            status:
+                result
+                    ?.status ??
+                null,
+
+            pending_fields:
+                result
+                    ?.pending_fields ??
+                []
+        }
+    );
+}
+
+
+/**
+ * ============================================================
+ * Reset Conversation
+ * ============================================================
+ */
+
+export function resetConversationState() {
+
+    conversationState =
+        null;
+
+
+    conversationId =
+        null;
+
+
+    conversationTurn =
+        0;
+
+
+    conversationHistory =
+        [];
+
+
+    console.log(
+        "EveryCourtAI conversation reset."
+    );
+
+
+    return {
+
+        success:
+            true
+    };
 }
 
 
@@ -526,17 +815,22 @@ export async function submitCurrentPrompt() {
         isProcessing ||
         !promptInputElement
     ) {
+
         return;
     }
 
 
     const prompt =
         safeString(
-            promptInputElement.value
+            promptInputElement
+                .value
         );
 
 
-    if (!prompt) {
+    if (
+        !prompt
+    ) {
+
         return;
     }
 
@@ -554,6 +848,7 @@ export async function submitCurrentPrompt() {
     promptInputElement.value =
         "";
 
+
     resizeTextarea();
 
 
@@ -561,7 +856,9 @@ export async function submitCurrentPrompt() {
      * 2. Processing
      */
 
-    setProcessing(true);
+    setProcessing(
+        true
+    );
 
 
     /**
@@ -575,7 +872,18 @@ export async function submitCurrentPrompt() {
     try {
 
         /**
+         * ====================================================
          * 4. Cloudflare API
+         * ====================================================
+         *
+         * 多轮核心：
+         *
+         * conversationState 在第一轮为 null。
+         *
+         * Worker 返回以后保存。
+         *
+         * 第二轮开始自动带回。
+         * ====================================================
          */
 
         const result =
@@ -587,7 +895,9 @@ export async function submitCurrentPrompt() {
                     getCurrentLanguage(),
 
                 history:
-                    conversationHistory
+                    conversationHistory,
+
+                conversationState
             });
 
 
@@ -606,7 +916,8 @@ export async function submitCurrentPrompt() {
 
         if (
             !result ||
-            result.success !== true
+            result.success !==
+                true
         ) {
 
             console.error(
@@ -629,7 +940,18 @@ export async function submitCurrentPrompt() {
 
 
         /**
-         * 7. AI Answer
+         * ====================================================
+         * 7. Save Conversation State
+         * ====================================================
+         */
+
+        updateConversationStateFromResult(
+            result
+        );
+
+
+        /**
+         * 8. AI Answer
          */
 
         if (
@@ -640,26 +962,41 @@ export async function submitCurrentPrompt() {
                 "ai",
                 result.answer
             );
-
         }
 
 
         /**
-         * 8. Recommendation
+         * ====================================================
+         * 9. Recommendation
+         * ====================================================
+         *
+         * Follow-up 阶段：
+         *
+         * recommendation = null
+         *
+         * 所以不会错误更新右侧卡片。
+         *
+         * recommendation_ready：
+         *
+         * 才更新推荐。
+         * ====================================================
          */
 
         if (
-            result.recommendation
+            result
+                .recommendation
         ) {
 
             updateRecommendationCard(
-                result.recommendation
+                result
+                    .recommendation
             );
-
         }
 
 
-    } catch (error) {
+    } catch (
+        error
+    ) {
 
         removeThinking(
             thinkingElement
@@ -680,17 +1017,20 @@ export async function submitCurrentPrompt() {
             )
         );
 
+
     } finally {
 
-        setProcessing(false);
+        setProcessing(
+            false
+        );
 
 
         if (
             promptInputElement
         ) {
 
-            promptInputElement.focus();
-
+            promptInputElement
+                .focus();
         }
     }
 }
@@ -718,18 +1058,23 @@ function bindStarterPrompts() {
                         if (
                             !promptInputElement
                         ) {
+
                             return;
                         }
 
 
-                        promptInputElement.value =
-                            button.textContent.trim();
+                        promptInputElement
+                            .value =
+                            button
+                                .textContent
+                                .trim();
 
 
                         resizeTextarea();
 
 
-                        promptInputElement.focus();
+                        promptInputElement
+                            .focus();
                     }
                 );
             }
@@ -749,11 +1094,11 @@ function bindEvents() {
         sendButtonElement
     ) {
 
-        sendButtonElement.addEventListener(
-            "click",
-            submitCurrentPrompt
-        );
-
+        sendButtonElement
+            .addEventListener(
+                "click",
+                submitCurrentPrompt
+            );
     }
 
 
@@ -761,29 +1106,31 @@ function bindEvents() {
         promptInputElement
     ) {
 
-        promptInputElement.addEventListener(
-            "keydown",
-            event => {
+        promptInputElement
+            .addEventListener(
+                "keydown",
+                event => {
 
-                if (
-                    event.key === "Enter" &&
-                    !event.shiftKey
-                ) {
+                    if (
+                        event.key ===
+                            "Enter" &&
+                        !event.shiftKey
+                    ) {
 
-                    event.preventDefault();
+                        event.preventDefault();
 
-                    submitCurrentPrompt();
 
+                        submitCurrentPrompt();
+                    }
                 }
-            }
-        );
+            );
 
 
-        promptInputElement.addEventListener(
-            "input",
-            resizeTextarea
-        );
-
+        promptInputElement
+            .addEventListener(
+                "input",
+                resizeTextarea
+            );
     }
 
 
@@ -793,7 +1140,7 @@ function bindEvents() {
 
 /**
  * ============================================================
- * 初始化
+ * Initialization
  * ============================================================
  */
 
@@ -804,10 +1151,12 @@ export function initializeChatManager() {
             "messages"
         );
 
+
     promptInputElement =
         document.getElementById(
             "promptInput"
         );
+
 
     sendButtonElement =
         document.getElementById(
@@ -827,37 +1176,47 @@ export function initializeChatManager() {
 
 
         return {
-            success: false
+
+            success:
+                false
         };
     }
 
 
     bindEvents();
 
+
     resizeTextarea();
 
 
     console.log(
-        "EveryCourtAI Chat Manager connected."
+        "EveryCourtAI Chat Manager V2.2 connected."
     );
 
 
     return {
-        success: true,
-        version: "2.1"
+
+        success:
+            true,
+
+        version:
+            "2.2",
+
+        multi_turn:
+            true
     };
 }
 
 
 /**
  * ============================================================
- * 自动启动
+ * Auto Start
  * ============================================================
  */
 
 if (
     document.readyState ===
-    "loading"
+        "loading"
 ) {
 
     document.addEventListener(
@@ -868,7 +1227,6 @@ if (
 } else {
 
     initializeChatManager();
-
 }
 
 
@@ -886,6 +1244,9 @@ window.EveryCourtChat = {
 
     updateRecommendationCard,
 
+    resetConversationState,
+
+
     getConversationHistory() {
 
         return [
@@ -893,9 +1254,40 @@ window.EveryCourtChat = {
         ];
     },
 
+
+    getConversationState() {
+
+        return conversationState;
+    },
+
+
+    getConversationInfo() {
+
+        return {
+
+            conversation_id:
+                conversationId,
+
+            turn:
+                conversationTurn,
+
+            has_state:
+                Boolean(
+                    conversationState
+                )
+        };
+    },
+
+
     clearConversationHistory() {
 
-        conversationHistory = [];
+        conversationHistory =
+            [];
+    },
 
+
+    clearConversation() {
+
+        resetConversationState();
     }
 };
