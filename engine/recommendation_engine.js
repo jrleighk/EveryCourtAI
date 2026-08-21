@@ -660,10 +660,21 @@ function determineMinimumEffectiveChange(
         changeCount += 1;
     }
 
+    /**
+     * Tension only counts as a separate change
+     * when the current string is being kept.
+     *
+     * If the string itself is being changed,
+     * the new tension is part of that string setup
+     * and should not be counted twice.
+     */
     if (
-        tensionAction === "adjust" ||
-        tensionAction ===
-            "meaningful_adjust"
+        stringAction !== "change" &&
+        (
+            tensionAction === "adjust" ||
+            tensionAction ===
+                "meaningful_adjust"
+        )
     ) {
         changeCount += 1;
     }

@@ -555,7 +555,16 @@ function extractStringData(raw) {
                 ? String(model).trim()
                 : null,
 
+        category:
+            raw?.category ??
+            null,
+
         material,
+
+        string_family:
+            raw?.string_family ??
+            raw?.specifications?.string_family ??
+            null,
 
         gauges_mm:
             Array.isArray(gauges)
@@ -575,6 +584,22 @@ function extractStringData(raw) {
 
         stiffness:
             normalizeDnaValue(stiffness),
+
+        specifications:
+            raw?.specifications ??
+            null,
+
+        design_profile:
+            raw?.design_profile ??
+            null,
+
+        ai_rating:
+            raw?.ai_rating ??
+            null,
+
+        performance_profile:
+            raw?.performance_profile ??
+            null,
 
         dna,
 
@@ -907,6 +932,166 @@ function keywordBonus(
 
 /**
  * ============================================================
+ * Structured String Physical Traits
+ * ============================================================
+ */
+
+function getStructuredStringPhysicalTraits(
+    stringCandidate
+) {
+    const designProfile =
+        stringCandidate?.design_profile ?? {};
+
+    const aiRating =
+        stringCandidate?.ai_rating ?? {};
+
+    const performanceProfile =
+        stringCandidate?.performance_profile ?? {};
+
+    const specifications =
+        stringCandidate?.specifications ?? {};
+
+    const structuralText =
+        [
+            safeString(
+                stringCandidate?.category
+            ),
+
+            safeString(
+                stringCandidate?.material
+            ),
+
+            safeString(
+                stringCandidate?.string_family
+            ),
+
+            safeString(
+                specifications?.construction
+            ),
+
+            safeString(
+                designProfile?.string_type
+            )
+        ]
+            .filter(Boolean)
+            .join(" ");
+
+    const stiffnessText =
+        safeString(
+            performanceProfile
+                ?.string_stiffness
+        );
+
+    const comfortScore =
+        safeNumber(
+            aiRating?.comfort
+        );
+
+    const armFriendlinessScore =
+        safeNumber(
+            performanceProfile
+                ?.arm_friendliness
+        );
+
+    const naturalGut =
+        structuralText.includes(
+            "natural gut"
+        );
+
+    const multifilament =
+        structuralText.includes(
+            "multifilament"
+        );
+
+    const polyester =
+        (
+            structuralText.includes(
+                "polyester"
+            ) ||
+            structuralText.includes(
+                "co-poly"
+            ) ||
+            structuralText.includes(
+                "co poly"
+            )
+        );
+
+    const firm =
+        (
+            stiffnessText.includes(
+                "firm"
+            ) ||
+            stiffnessText.includes(
+                "stiff"
+            )
+        );
+
+    const soft =
+        (
+            stiffnessText.includes(
+                "soft"
+            ) &&
+            !firm
+        );
+
+    const explicitArmFriendly =
+        designProfile
+            ?.arm_friendly;
+
+    const armFriendly =
+        explicitArmFriendly === true
+            ? true
+            : (
+                explicitArmFriendly === false
+                    ? false
+                    : (
+                        armFriendlinessScore !== null &&
+                        armFriendlinessScore >= 8
+                    )
+            );
+
+    const comfortOriented =
+        naturalGut ||
+        multifilament ||
+        soft ||
+        armFriendly ||
+        (
+            comfortScore !== null &&
+            comfortScore >= 9
+        );
+
+    return {
+        natural_gut:
+            naturalGut,
+
+        multifilament,
+
+        polyester,
+
+        firm,
+
+        soft,
+
+        arm_friendly:
+            armFriendly,
+
+        comfort_oriented:
+            comfortOriented,
+
+        comfort_score:
+            comfortScore,
+
+        arm_friendliness_score:
+            armFriendlinessScore,
+
+        stiffness_text:
+            stiffnessText
+    };
+}
+
+
+/**
+ * ============================================================
  * Physical 球线限制
  * ============================================================
  */
@@ -933,15 +1118,12 @@ function evaluateStringPhysicalCompatibility(
         };
     }
 
-    const text =
-        stringCandidate.search_text;
 
-    const stiffness =
-        stringCandidate.stiffness ??
-        readDna(
-            stringCandidate,
-            "stiffness"
+    const traits =
+        getStructuredStringPhysicalTraits(
+            stringCandidate
         );
+
 
     const hasModerateOrHigh =
         physicalConstraints.some(
@@ -950,11 +1132,13 @@ function evaluateStringPhysicalCompatibility(
                 item.severity === "high"
         );
 
+
     const hasHigh =
         physicalConstraints.some(
             item =>
                 item.severity === "high"
         );
+
 
     const upperBodyRegions = [
         "arm",
@@ -964,6 +1148,7 @@ function evaluateStringPhysicalCompatibility(
         "neck"
     ];
 
+
     const hasUpperBodyConstraint =
         physicalConstraints.some(
             item =>
@@ -972,86 +1157,103 @@ function evaluateStringPhysicalCompatibility(
                 )
         );
 
+
     if (
         hasUpperBodyConstraint
     ) {
 
         if (
-            text.includes(
-                "natural gut"
-            ) ||
-            text.includes(
-                "multifilament"
-            ) ||
-            text.includes(
-                "soft"
-            ) ||
-            text.includes(
-                "comfort"
-            )
+            traits.comfort_oriented
         ) {
             scoreAdjustment += 8;
 
             reasons.push(
-                "Comfort-oriented construction supports active physical constraints."
+                "Comfort-oriented string construction supports active physical constraints."
             );
         }
+
 
         if (
-            stiffness !== null &&
-            stiffness >= 8
+            traits.polyester &&
+            traits.firm
         ) {
-            scoreAdjustment -= 15;
+            scoreAdjustment -=
+                hasModerateOrHigh
+                    ? 18
+                    : 8;
 
             riskFlags.push(
-                "High string stiffness with upper-body sensitivity."
+                "Firm polyester may reduce comfort for upper-body sensitivity."
             );
+        }
+
+
+        if (
+            traits.arm_friendliness_score !== null &&
+            traits.arm_friendliness_score <= 6
+        ) {
+            scoreAdjustment -=
+                hasModerateOrHigh
+                    ? 8
+                    : 4;
+
+            riskFlags.push(
+                "Low arm-friendliness rating reduces physical compatibility."
+            );
+        }
+
+
+        if (
+            traits.natural_gut
+        ) {
+            scoreAdjustment += 4;
+        }
+
+
+        if (
+            traits.arm_friendly
+        ) {
+            scoreAdjustment += 3;
         }
     }
 
-    if (
-        hasModerateOrHigh &&
-        text.includes(
-            "firm polyester"
-        )
-    ) {
-        scoreAdjustment -= 20;
-
-        riskFlags.push(
-            "Firm polyester may conflict with moderate/high physical sensitivity."
-        );
-    }
 
     if (
         hasHigh &&
-        stiffness !== null &&
-        stiffness >= 9
+        traits.polyester &&
+        traits.firm &&
+        traits.arm_friendly !== true
     ) {
         return {
             adjustment:
                 -100,
 
-            excluded: true,
+            excluded:
+                true,
 
             reasons,
 
             risk_flags: [
                 ...riskFlags,
-                "Excluded because very firm string conflicts with high physical sensitivity."
+                "Excluded because firm polyester conflicts with high upper-body sensitivity."
             ]
         };
     }
+
 
     return {
         adjustment:
             scoreAdjustment,
 
-        excluded: false,
+        excluded:
+            false,
 
         reasons,
 
         risk_flags:
-            riskFlags
+            uniqueArray(
+                riskFlags
+            )
     };
 }
 
@@ -2212,6 +2414,56 @@ function scoreString(
 
             shape:
                 stringCandidate.shape,
+
+            /**
+             * =================================================
+             * Structured Product Data
+             * =================================================
+             *
+             * Ranking Engine 需要真实产品属性，
+             * 不能只依赖精简 candidate。
+             *
+             * 这些字段来自原始 Knowledge JSON，
+             * 用于后续：
+             *
+             * - material family
+             * - stiffness
+             * - comfort
+             * - arm friendliness
+             * - performance traits
+             *
+             * =================================================
+             */
+
+            product_data: {
+                category:
+                    stringCandidate.category ??
+                    null,
+
+                material:
+                    stringCandidate.material ??
+                    null,
+
+                string_family:
+                    stringCandidate.string_family ??
+                    null,
+
+                specifications:
+                    stringCandidate.specifications ??
+                    null,
+
+                design_profile:
+                    stringCandidate.design_profile ??
+                    null,
+
+                ai_rating:
+                    stringCandidate.ai_rating ??
+                    null,
+
+                performance_profile:
+                    stringCandidate.performance_profile ??
+                    null
+            },
 
             score_breakdown:
                 scoreBreakdown,

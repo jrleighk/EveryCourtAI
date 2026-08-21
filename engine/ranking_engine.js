@@ -282,58 +282,526 @@ function buildCandidateText(
 function detectStringTraits(
     candidate
 ) {
-    const text =
-        buildCandidateText(
-            candidate
+    /**
+     * ========================================================
+     * String Trait Normalization V2
+     * ========================================================
+     *
+     * 核心原则：
+     *
+     * 1. 优先使用结构化知识字段
+     * 2. 不再 JSON.stringify(candidate) 后全文找关键词
+     * 3. 避免 comparison / alternatives / description
+     *    中出现 "soft", "natural gut" 等词造成误判
+     * 4. 保留旧 Ranking Engine 所需要的 trait contract
+     *
+     * ========================================================
+     */
+
+
+    /**
+     * ========================================================
+     * Structured Source
+     * ========================================================
+     *
+     * Matching Engine V2 会把原始产品关键字段保存在
+     * candidate.product_data。
+     *
+     * 如果直接测试原始 JSON，则回退到 candidate 本身。
+     *
+     * ========================================================
+     */
+
+    const source =
+        candidate
+            ?.product_data ??
+        candidate ??
+        {};
+
+
+    const specifications =
+        source
+            ?.specifications ??
+        {};
+
+
+    const designProfile =
+        source
+            ?.design_profile ??
+        {};
+
+
+    const aiRating =
+        source
+            ?.ai_rating ??
+        {};
+
+
+    const performanceProfile =
+        source
+            ?.performance_profile ??
+        {};
+
+
+    /**
+     * ========================================================
+     * Trusted Structural Text
+     * ========================================================
+     */
+
+    const category =
+        safeString(
+            source
+                ?.category
         );
 
-    return {
-        polyester:
-            text.includes("polyester") ||
-            text.includes("co-poly"),
 
-        multifilament:
-            text.includes("multifilament"),
+    const construction =
+        safeString(
+            specifications
+                ?.construction
+        );
+
+
+    const stringType =
+        safeString(
+            designProfile
+                ?.string_type
+        );
+
+
+    const material =
+        safeString(
+            source
+                ?.material ??
+            specifications
+                ?.material
+        );
+
+
+    const stringFamily =
+        safeString(
+            source
+                ?.string_family ??
+            specifications
+                ?.string_family
+        );
+
+
+    const structuralText =
+        [
+            category,
+            construction,
+            stringType,
+            material,
+            stringFamily
+        ]
+            .filter(
+                Boolean
+            )
+            .join(
+                " "
+            );
+
+
+    /**
+     * ========================================================
+     * Numeric Structured Ratings
+     * ========================================================
+     */
+
+    const comfortScore =
+        safeNumber(
+            aiRating
+                ?.comfort
+        );
+
+
+    const armFriendlinessScore =
+        safeNumber(
+            performanceProfile
+                ?.arm_friendliness
+        );
+
+
+    const powerScore =
+        safeNumber(
+            aiRating
+                ?.power
+        );
+
+
+    const controlScore =
+        safeNumber(
+            aiRating
+                ?.control
+        );
+
+
+    const spinScore =
+        safeNumber(
+            aiRating
+                ?.spin
+        );
+
+
+    const feelScore =
+        safeNumber(
+            aiRating
+                ?.feel
+        );
+
+
+    const durabilityScore =
+        safeNumber(
+            aiRating
+                ?.durability
+        );
+
+
+    /**
+     * ========================================================
+     * Material Family
+     * ========================================================
+     */
+
+    const naturalGut =
+        structuralText.includes(
+            "natural gut"
+        );
+
+
+    const multifilament =
+        structuralText.includes(
+            "multifilament"
+        );
+
+
+    const polyester =
+        (
+            structuralText.includes(
+                "polyester"
+            ) ||
+            structuralText.includes(
+                "co-poly"
+            ) ||
+            structuralText.includes(
+                "co poly"
+            ) ||
+            structuralText.includes(
+                "co_poly"
+            )
+        );
+
+
+    /**
+     * ========================================================
+     * Stiffness
+     * ========================================================
+     */
+
+    const stiffness =
+        safeString(
+            performanceProfile
+                ?.string_stiffness
+        );
+
+
+    const verySoft =
+        (
+            stiffness.includes(
+                "very soft"
+            ) ||
+            stiffness.includes(
+                "ultra soft"
+            ) ||
+            stiffness.includes(
+                "extremely soft"
+            )
+        );
+
+
+    const soft =
+        (
+            verySoft ||
+            (
+                stiffness.includes(
+                    "soft"
+                ) &&
+                !stiffness.includes(
+                    "medium-firm"
+                ) &&
+                !stiffness.includes(
+                    "medium firm"
+                ) &&
+                !stiffness.includes(
+                    "firm"
+                )
+            )
+        );
+
+
+    const firm =
+        (
+            stiffness.includes(
+                "firm"
+            ) ||
+            stiffness.includes(
+                "stiff"
+            )
+        );
+
+
+    /**
+     * ========================================================
+     * Shape
+     * ========================================================
+     */
+
+    const shape =
+        safeString(
+            specifications
+                ?.shape ??
+            specifications
+                ?.cross_section
+        );
+
+
+    const shaped =
+        (
+            shape.includes(
+                "shaped"
+            ) ||
+            shape.includes(
+                "pentagon"
+            ) ||
+            shape.includes(
+                "hexagon"
+            ) ||
+            shape.includes(
+                "octagon"
+            ) ||
+            shape.includes(
+                "square"
+            ) ||
+            shape.includes(
+                "twisted"
+            )
+        );
+
+
+    const round =
+        shape.includes(
+            "round"
+        );
+
+
+    /**
+     * ========================================================
+     * Structured Performance Traits
+     * ========================================================
+     */
+
+    const control =
+        (
+            designProfile
+                ?.control_focus === true
+        ) ||
+        (
+            controlScore !== null &&
+            controlScore >= 8
+        );
+
+
+    const spin =
+        (
+            designProfile
+                ?.spin_focus === true
+        ) ||
+        (
+            spinScore !== null &&
+            spinScore >= 8
+        );
+
+
+    const power =
+        (
+            designProfile
+                ?.power_focus === true
+        ) ||
+        (
+            powerScore !== null &&
+            powerScore >= 8
+        );
+
+
+    const comfort =
+        (
+            designProfile
+                ?.comfort_focus === true
+        ) ||
+        (
+            comfortScore !== null &&
+            comfortScore >= 8
+        );
+
+
+    const feel =
+        (
+            designProfile
+                ?.feel_focus === true
+        ) ||
+        (
+            feelScore !== null &&
+            feelScore >= 8
+        );
+
+
+    const durable =
+        (
+            designProfile
+                ?.durability_focus === true
+        ) ||
+        (
+            durabilityScore !== null &&
+            durabilityScore >= 8
+        );
+
+
+    /**
+     * ========================================================
+     * Arm Friendliness
+     * ========================================================
+     */
+
+    const explicitArmFriendly =
+        designProfile
+            ?.arm_friendly;
+
+
+    let armFriendly =
+        false;
+
+
+    if (
+        explicitArmFriendly === true
+    ) {
+        armFriendly =
+            true;
+    }
+
+    else if (
+        explicitArmFriendly === false
+    ) {
+        /**
+         * Explicit false has priority.
+         *
+         * Example:
+         * HEAD HAWK TOUCH
+         * arm_friendly: false
+         *
+         * 即使 arm_friendliness 数值为 7，
+         * 也不能把它升级成真正 arm-friendly。
+         */
+
+        armFriendly =
+            false;
+    }
+
+    else if (
+        armFriendlinessScore !== null &&
+        armFriendlinessScore >= 8
+    ) {
+        armFriendly =
+            true;
+    }
+
+
+    /**
+     * ========================================================
+     * Output
+     * ========================================================
+     *
+     * 保留 Ranking Engine V1 所依赖的字段：
+     *
+     * polyester
+     * multifilament
+     * natural_gut
+     * soft
+     * firm
+     * shaped
+     * round
+     * control
+     * spin
+     * power
+     * comfort
+     * feel
+     * durable
+     *
+     * 同时增加 V2 structured metadata。
+     *
+     * ========================================================
+     */
+
+    return {
+        polyester,
+
+        multifilament,
 
         natural_gut:
-            text.includes("natural gut"),
+            naturalGut,
 
-        soft:
-            text.includes("soft"),
+        soft,
 
-        firm:
-            text.includes("firm"),
+        very_soft:
+            verySoft,
 
-        shaped:
-            text.includes("shaped") ||
-            text.includes("pentagon") ||
-            text.includes("hexagon") ||
-            text.includes("octagon"),
+        firm,
 
-        round:
-            text.includes("round"),
+        shaped,
 
-        control:
-            text.includes("control"),
+        round,
 
-        spin:
-            text.includes("spin"),
+        control,
 
-        power:
-            text.includes("power"),
+        spin,
 
-        comfort:
-            text.includes("comfort"),
+        power,
 
-        feel:
-            text.includes("feel"),
+        comfort,
 
-        durable:
-            text.includes("durable") ||
-            text.includes("durability")
+        feel,
+
+        durable,
+
+        arm_friendly:
+            armFriendly,
+
+        comfort_score:
+            comfortScore,
+
+        arm_friendliness_score:
+            armFriendlinessScore,
+
+        stiffness:
+            stiffness ||
+            null,
+
+        material_family: {
+            polyester,
+            multifilament,
+            natural_gut:
+                naturalGut
+        }
     };
 }
 
+
+/**
+ * ============================================================
+ * Racquet Traits
+ * ============================================================
+ */
 
 function detectRacquetTraits(
     candidate
@@ -2743,6 +3211,8 @@ export async function rankRecommendations(
  */
 
 export const rankingHelpers = {
+    detectStringTraits,
+
     calculatePhysicalScore,
 
     calculateGoalAlignment,
