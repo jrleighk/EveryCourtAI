@@ -521,6 +521,34 @@ function normalizeRecommendation(
                 recommendation.racquet_action ??
                 null,
 
+            string_action:
+                recommendation.string_action ??
+                null,
+
+            tension_action:
+                recommendation.tension_action ??
+                null,
+
+            change_strategy:
+                recommendation.change_strategy ??
+                null,
+
+            change_principle:
+                recommendation.change_principle ??
+                null,
+
+            recommended_change_count:
+                safeNumber(
+                    recommendation
+                        .recommended_change_count
+                ),
+
+            tension_delta_lbs:
+                safeNumber(
+                    recommendation
+                        .tension_delta_lbs
+                ),
+
             string:
                 recommendation.string ??
                 null,

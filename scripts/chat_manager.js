@@ -524,10 +524,36 @@ export function updateRecommendationCard(
         recommendation.racquet
     ) {
 
+        const racquetAction =
+            String(
+                recommendation
+                    .racquet_action ??
+                ""
+            )
+                .trim()
+                .toLowerCase();
+
+
+        const racquetActionLabel =
+            racquetAction === "keep"
+                ? "KEEP · 保留"
+                : (
+                    racquetAction === "change"
+                        ? "CHANGE · 更换"
+                        : (
+                            racquetAction ===
+                                "optional_change"
+                                ? "OPTIONAL · 可选更换"
+                                : null
+                        )
+                );
+
+
         racquetElement
             .textContent =
-            recommendation
-                .racquet;
+            racquetActionLabel
+                ? `${racquetActionLabel} · ${recommendation.racquet}`
+                : recommendation.racquet;
     }
 
 
@@ -540,10 +566,36 @@ export function updateRecommendationCard(
         recommendation.string
     ) {
 
+        const stringAction =
+            String(
+                recommendation
+                    .string_action ??
+                ""
+            )
+                .trim()
+                .toLowerCase();
+
+
+        const stringActionLabel =
+            stringAction === "keep"
+                ? "KEEP · 保留"
+                : (
+                    stringAction === "change"
+                        ? "CHANGE · 更换"
+                        : (
+                            stringAction ===
+                                "optional_change"
+                                ? "OPTIONAL · 可选更换"
+                                : null
+                        )
+                );
+
+
         stringElement
             .textContent =
-            recommendation
-                .string;
+            stringActionLabel
+                ? `${stringActionLabel} · ${recommendation.string}`
+                : recommendation.string;
     }
 
 
@@ -580,9 +632,101 @@ export function updateRecommendationCard(
         ) {
 
             parts.push(
-                recommendation
-                    .setup_type
+                String(
+                    recommendation
+                        .setup_type
+                )
+                    .replace(
+                        /_/g,
+                        " "
+                    )
             );
+        }
+
+
+        if (
+            recommendation
+                .change_strategy
+        ) {
+
+            const rawStrategy =
+                String(
+                    recommendation
+                        .change_strategy
+                )
+                    .trim()
+                    .toLowerCase();
+
+
+            const strategyMap = {
+                string_first:
+                    "STRING FIRST · 优先换线",
+
+                tension_only:
+                    "TENSION ONLY · 仅调磅数",
+
+                keep_current_setup:
+                    "KEEP SETUP · 保持当前配置",
+
+                maintain_or_minor_tension_adjustment:
+                    "MINOR ADJUSTMENT · 小幅调整",
+
+                full_setup_change:
+                    "FULL SETUP CHANGE · 整体调整"
+            };
+
+
+            const strategyLabel =
+                strategyMap[
+                    rawStrategy
+                ] ??
+                rawStrategy
+                    .replace(
+                        /_/g,
+                        " "
+                    )
+                    .replace(
+                        /\b\w/g,
+                        character =>
+                            character
+                                .toUpperCase()
+                    );
+
+
+            parts.push(
+                strategyLabel
+            );
+        }
+
+
+        if (
+            recommendation
+                .recommended_change_count !==
+                null &&
+            recommendation
+                .recommended_change_count !==
+                undefined
+        ) {
+
+            const changeCount =
+                Number(
+                    recommendation
+                        .recommended_change_count
+                );
+
+
+            if (
+                Number.isFinite(
+                    changeCount
+                )
+            ) {
+
+                parts.push(
+                    changeCount === 1
+                        ? "1 MAIN CHANGE · 1 个主要调整"
+                        : `${changeCount} MAIN CHANGES · ${changeCount} 个主要调整`
+                );
+            }
         }
 
 
@@ -614,9 +758,45 @@ export function updateRecommendationCard(
             undefined
     ) {
 
-        tensionElement
-            .textContent =
-            `${recommendation.tension_lbs} lbs`;
+        const recommendedTension =
+            Number(
+                recommendation
+                    .tension_lbs
+            );
+
+
+        const tensionDelta =
+            Number(
+                recommendation
+                    .tension_delta_lbs
+            );
+
+
+        if (
+            Number.isFinite(
+                recommendedTension
+            ) &&
+            Number.isFinite(
+                tensionDelta
+            ) &&
+            tensionDelta !== 0
+        ) {
+
+            const currentTension =
+                recommendedTension -
+                tensionDelta;
+
+
+            tensionElement
+                .textContent =
+                `${currentTension} lbs → ${recommendedTension} lbs`;
+
+        } else {
+
+            tensionElement
+                .textContent =
+                `${recommendation.tension_lbs} lbs`;
+        }
     }
 
 
@@ -667,9 +847,20 @@ export function updateRecommendationCard(
             confidenceValueElement
         ) {
 
+            const confidenceLevel =
+                String(
+                    recommendation
+                        .confidence_level ??
+                    ""
+                )
+                    .trim();
+
+
             confidenceValueElement
                 .textContent =
-                `${confidence}%`;
+                confidenceLevel
+                    ? `${confidence}% · ${confidenceLevel}`
+                    : `${confidence}%`;
         }
 
 

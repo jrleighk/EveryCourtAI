@@ -832,11 +832,27 @@ function detectPrimaryGoal(
         "more power",
         "power",
         "easy power",
+        "easier power",
+        "more depth",
+        "easier depth",
 
         "更多力量",
         "更有力量",
         "增加力量",
-        "更容易借力"
+        "增加一些力量",
+        "轻松的力量",
+        "轻松力量",
+        "更轻松的力量",
+        "更容易借力",
+        "更容易发力",
+        "更容易打深",
+        "球更容易打深",
+        "打得更深",
+        "增加深度",
+        "更省力",
+        "省力一点",
+        "出球更轻松",
+        "更容易出球"
     ];
 
 
@@ -1437,6 +1453,17 @@ function normalizeText(
         .replace(
             /[，。！？、；：,.!?;:()[\]{}]/g,
             " "
+        )
+        /**
+         * Remove accidental spaces between Chinese characters.
+         *
+         * Examples:
+         * "希 望增加力量" -> "希望增加力量"
+         * "更 舒服" -> "更舒服"
+         */
+        .replace(
+            /([\u4e00-\u9fff])\s+(?=[\u4e00-\u9fff])/g,
+            "$1"
         )
         .replace(
             /\s+/g,
