@@ -678,6 +678,91 @@
         13px;
     }
 
+
+    /* ========================================================
+       Player Profile
+    ======================================================== */
+
+    .player-profile {
+      margin: 0 20px 20px;
+      padding: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.10);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.035);
+    }
+
+    .player-profile-head {
+      margin-bottom: 14px;
+    }
+
+    .player-profile-title {
+      margin: 0;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .player-profile-subtitle {
+      margin-top: 5px;
+      font-size: 12px;
+      opacity: 0.68;
+    }
+
+    .player-profile-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .profile-field {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .profile-field label {
+      font-size: 11px;
+      font-weight: 600;
+      opacity: 0.72;
+    }
+
+    .profile-field input,
+    .profile-field select {
+      width: 100%;
+      min-height: 40px;
+      box-sizing: border-box;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 11px;
+      padding: 0 11px;
+      color: inherit;
+      background: rgba(255, 255, 255, 0.055);
+      outline: none;
+      font: inherit;
+    }
+
+    .profile-field input:focus,
+    .profile-field select:focus {
+      border-color: rgba(255, 255, 255, 0.30);
+      background: rgba(255, 255, 255, 0.075);
+    }
+
+    .profile-field select option {
+      color: #111;
+    }
+
+    @media (max-width: 760px) {
+      .player-profile-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 480px) {
+      .player-profile-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+
     .messages {
       flex:
         1;
@@ -1773,6 +1858,144 @@
         </div>
 
 
+        <!-- Player Profile -->
+
+        <section
+          class="player-profile"
+          id="playerProfile"
+        >
+
+          <div class="player-profile-head">
+
+            <h3 class="player-profile-title">
+              Player Profile / 球员资料
+            </h3>
+
+            <div class="player-profile-subtitle">
+              Basic information for more personalized equipment analysis.
+            </div>
+
+          </div>
+
+
+          <div class="player-profile-grid">
+
+            <div class="profile-field">
+              <label for="playerName">
+                Name / 名字
+              </label>
+
+              <input
+                id="playerName"
+                type="text"
+                placeholder="Name"
+                autocomplete="name"
+              />
+            </div>
+
+
+            <div class="profile-field">
+              <label for="playerGender">
+                Gender / 性别
+              </label>
+
+              <select id="playerGender">
+                <option value="">
+                  Select / 请选择
+                </option>
+
+                <option value="male">
+                  Male / 男
+                </option>
+
+                <option value="female">
+                  Female / 女
+                </option>
+
+                <option value="prefer_not_to_say">
+                  Prefer not to say / 不愿透露
+                </option>
+              </select>
+            </div>
+
+
+            <div class="profile-field">
+              <label for="playerAge">
+                Age / 年龄
+              </label>
+
+              <input
+                id="playerAge"
+                type="number"
+                min="6"
+                max="100"
+                step="1"
+                placeholder="Age"
+              />
+            </div>
+
+
+            <div class="profile-field">
+              <label for="playerHeight">
+                Height / 身高
+              </label>
+
+              <input
+                id="playerHeight"
+                type="number"
+                min="100"
+                max="230"
+                step="1"
+                placeholder="cm"
+              />
+            </div>
+
+
+            <div class="profile-field">
+              <label for="playerWeight">
+                Weight / 体重
+              </label>
+
+              <input
+                id="playerWeight"
+                type="number"
+                min="25"
+                max="200"
+                step="0.1"
+                placeholder="kg"
+              />
+            </div>
+
+
+            <div class="profile-field">
+              <label for="playerDominantHand">
+                Dominant Hand / 惯用手
+              </label>
+
+              <select id="playerDominantHand">
+                <option value="">
+                  Select / 请选择
+                </option>
+
+                <option value="right">
+                  Right / 右手
+                </option>
+
+                <option value="left">
+                  Left / 左手
+                </option>
+
+                <option value="ambidextrous">
+                  Ambidextrous / 双手均可
+                </option>
+              </select>
+            </div>
+
+          </div>
+
+        </section>
+
+
         <div
           class="messages"
           id="messages"
@@ -1879,6 +2102,14 @@
               data-i18n="chat.button"
             >
               Analyze
+            </button>
+
+            <button
+              class="send-btn"
+              id="newAnalysisButton"
+              type="button"
+            >
+              New Analysis / 新分析
             </button>
 
           </div>
