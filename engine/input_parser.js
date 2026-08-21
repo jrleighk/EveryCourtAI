@@ -151,6 +151,29 @@ const STRING_PATTERNS = [
 
     {
         id:
+            "head_hawk_touch",
+
+        brand:
+            "HEAD",
+
+        model:
+            "HAWK TOUCH",
+
+        gauge_mm:
+            1.25,
+
+        patterns: [
+            "head hawk touch 1.25",
+            "head hawk touch",
+            "hawk touch 1.25",
+            "hawk touch",
+            "head hawk touch 125",
+            "hawk touch 125"
+        ]
+    },
+
+    {
+        id:
             "wilson_natural_gut_17",
 
         brand:
