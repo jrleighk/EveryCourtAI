@@ -491,29 +491,19 @@ async function handleAI(
 
 
         /**
-         * Structured Player Input
+         * Natural Language + Optional Structured Player Input
+         *
+         * If message exists, always parse it first.
+         * Optional body.player_input is merged into the parser result.
+         *
+         * This allows:
+         * - Player Profile form data
+         * - Natural-language equipment input
+         *
+         * to work in the same request.
          */
 
         if (
-            isValidObject(
-                body?.player_input
-            )
-        ) {
-
-            currentTurnPlayerInput =
-                body.player_input;
-
-
-            inputMode =
-                "player_input";
-        }
-
-
-        /**
-         * Natural Language
-         */
-
-        else if (
             typeof body?.message ===
                 "string" &&
             body.message.trim()
@@ -607,6 +597,27 @@ async function handleAI(
 
             inputMode =
                 "message";
+        }
+
+
+        /**
+         * Structured Player Input Only
+         *
+         * Used only when there is no natural-language message.
+         */
+
+        else if (
+            isValidObject(
+                body?.player_input
+            )
+        ) {
+
+            currentTurnPlayerInput =
+                body.player_input;
+
+
+            inputMode =
+                "player_input";
         }
 
 
