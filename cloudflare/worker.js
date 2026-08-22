@@ -562,9 +562,47 @@ async function handleAI(
             }
 
 
-            currentTurnPlayerInput =
-                parserResult
-                    .player_input;
+            const structuredPlayerInput =
+                isValidObject(
+                    body?.player_input
+                )
+                    ? body.player_input
+                    : {};
+
+
+            currentTurnPlayerInput = {
+                ...structuredPlayerInput,
+                ...parserResult.player_input,
+
+                basic: {
+                    ...(
+                        isValidObject(
+                            structuredPlayerInput
+                                ?.basic
+                        )
+                            ? structuredPlayerInput.basic
+                            : {}
+                    ),
+
+                    ...(
+                        isValidObject(
+                            parserResult
+                                ?.player_input
+                                ?.basic
+                        )
+                            ? parserResult.player_input.basic
+                            : {}
+                    )
+                }
+            };
+
+
+            parserResult = {
+                ...parserResult,
+
+                player_input:
+                    currentTurnPlayerInput
+            };
 
 
             inputMode =

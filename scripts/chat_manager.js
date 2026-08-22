@@ -996,6 +996,127 @@ export function resetConversationState() {
 
 /**
  * ============================================================
+ * Player Profile Form
+ * ============================================================
+ */
+
+function readPlayerProfileForm() {
+
+    const nameElement =
+        document.getElementById(
+            "playerName"
+        );
+
+    const genderElement =
+        document.getElementById(
+            "playerGender"
+        );
+
+    const ageElement =
+        document.getElementById(
+            "playerAge"
+        );
+
+    const heightElement =
+        document.getElementById(
+            "playerHeight"
+        );
+
+    const weightElement =
+        document.getElementById(
+            "playerWeight"
+        );
+
+    const handElement =
+        document.getElementById(
+            "playerDominantHand"
+        );
+
+
+    const basic = {};
+
+
+    const name =
+        String(
+            nameElement?.value ?? ""
+        ).trim();
+
+    const gender =
+        String(
+            genderElement?.value ?? ""
+        ).trim();
+
+    const age =
+        Number(
+            ageElement?.value
+        );
+
+    const height =
+        Number(
+            heightElement?.value
+        );
+
+    const weight =
+        Number(
+            weightElement?.value
+        );
+
+    const dominantHand =
+        String(
+            handElement?.value ?? ""
+        ).trim();
+
+
+    if (name) {
+        basic.name =
+            name;
+    }
+
+    if (gender) {
+        basic.gender =
+            gender;
+    }
+
+    if (
+        Number.isFinite(age) &&
+        age > 0
+    ) {
+        basic.age =
+            age;
+    }
+
+    if (
+        Number.isFinite(height) &&
+        height > 0
+    ) {
+        basic.height_cm =
+            height;
+    }
+
+    if (
+        Number.isFinite(weight) &&
+        weight > 0
+    ) {
+        basic.weight_kg =
+            weight;
+    }
+
+    if (dominantHand) {
+        basic.dominant_hand =
+            dominantHand;
+    }
+
+
+    return Object.keys(basic).length > 0
+        ? {
+            basic
+        }
+        : null;
+}
+
+
+/**
+ * ============================================================
  * Submit
  * ============================================================
  */
@@ -1077,6 +1198,10 @@ export async function submitCurrentPrompt() {
          * ====================================================
          */
 
+        const playerInput =
+            readPlayerProfileForm();
+
+
         const result =
             await sendChatRequest({
 
@@ -1088,7 +1213,9 @@ export async function submitCurrentPrompt() {
                 history:
                     conversationHistory,
 
-                conversationState
+                conversationState,
+
+                playerInput
             });
 
 
@@ -1480,5 +1607,180 @@ window.EveryCourtChat = {
     clearConversation() {
 
         resetConversationState();
+
+
+        const messagesElement =
+            document.getElementById(
+                "messages"
+            );
+
+
+        const promptInputElement =
+            document.getElementById(
+                "promptInput"
+            );
+
+
+        const racquetElement =
+            document.getElementById(
+                "recommendedRacquet"
+            );
+
+
+        const stringElement =
+            document.getElementById(
+                "recommendedString"
+            );
+
+
+        const stringSetupElement =
+            document.getElementById(
+                "recommendedStringSetup"
+            );
+
+
+        const tensionElement =
+            document.getElementById(
+                "recommendedTension"
+            );
+
+
+        const tensionRangeElement =
+            document.getElementById(
+                "recommendedTensionRange"
+            );
+
+
+        const confidenceValueElement =
+            document.getElementById(
+                "confidenceValue"
+            );
+
+
+        const confidenceFillElement =
+            document.getElementById(
+                "confidenceFill"
+            );
+
+
+        if (
+            messagesElement
+        ) {
+
+            messagesElement.innerHTML =
+                "";
+        }
+
+
+        if (
+            promptInputElement
+        ) {
+
+            promptInputElement.value =
+                "";
+
+            promptInputElement.style.height =
+                "auto";
+        }
+
+
+        if (
+            racquetElement
+        ) {
+
+            racquetElement.textContent =
+                "—";
+        }
+
+
+        if (
+            stringElement
+        ) {
+
+            stringElement.textContent =
+                "—";
+        }
+
+
+        if (
+            stringSetupElement
+        ) {
+
+            stringSetupElement.textContent =
+                "—";
+        }
+
+
+        if (
+            tensionElement
+        ) {
+
+            tensionElement.textContent =
+                "—";
+        }
+
+
+        if (
+            tensionRangeElement
+        ) {
+
+            tensionRangeElement.textContent =
+                "—";
+        }
+
+
+        if (
+            confidenceValueElement
+        ) {
+
+            confidenceValueElement.textContent =
+                "—";
+        }
+
+
+        if (
+            confidenceFillElement
+        ) {
+
+            confidenceFillElement
+                .style
+                .width =
+                "0%";
+        }
+
+
+        return {
+            success:
+                true
+        };
     }
 };
+
+/**
+ * ============================================================
+ * New Analysis Button
+ * ============================================================
+ */
+
+const newAnalysisButton =
+    document.getElementById(
+        "newAnalysisButton"
+    );
+
+
+if (
+    newAnalysisButton
+) {
+
+    newAnalysisButton
+        .addEventListener(
+            "click",
+            () => {
+
+                window
+                    ?.EveryCourtChat
+                    ?.clearConversation
+                    ?.();
+            }
+        );
+}

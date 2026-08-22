@@ -306,6 +306,8 @@ function buildRequestPayload({
 
     conversationState = null,
 
+    playerInput = null,
+
     metadata = {}
 
 }) {
@@ -362,6 +364,18 @@ function buildRequestPayload({
 
 
         /**
+         * Optional structured Player Profile.
+         */
+
+        player_input:
+            isPlainObject(
+                playerInput
+            )
+                ? playerInput
+                : null,
+
+
+        /**
          * History 暂时作为 metadata。
          *
          * Worker 当前主要依赖 conversation_state，
@@ -407,6 +421,15 @@ function buildRequestPayload({
 
         delete payload
             .conversation_state;
+    }
+
+
+    if (
+        !payload.player_input
+    ) {
+
+        delete payload
+            .player_input;
     }
 
 
@@ -1009,6 +1032,8 @@ export async function sendChatRequest({
 
     conversationState = null,
 
+    playerInput = null,
+
     metadata = {},
 
     timeoutMs =
@@ -1083,6 +1108,8 @@ export async function sendChatRequest({
             history,
 
             conversationState,
+
+            playerInput,
 
             metadata
         });

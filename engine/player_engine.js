@@ -713,6 +713,34 @@ export async function buildPlayerProfile(
             null,
 
         basic: {
+            name:
+                playerInput?.basic?.name ??
+                playerInput.name ??
+                null,
+
+            gender:
+                playerInput?.basic?.gender ??
+                playerInput.gender ??
+                null,
+
+            age:
+                toNumber(
+                    playerInput?.basic?.age ??
+                    playerInput.age
+                ),
+
+            height_cm:
+                toNumber(
+                    playerInput?.basic?.height_cm ??
+                    playerInput.height_cm
+                ),
+
+            weight_kg:
+                toNumber(
+                    playerInput?.basic?.weight_kg ??
+                    playerInput.weight_kg
+                ),
+
             age_group:
                 playerInput?.basic?.age_group ??
                 playerInput.age_group ??
