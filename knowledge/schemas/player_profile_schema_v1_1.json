@@ -1,0 +1,304 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "player_profile_schema_v1_1",
+  "title": "EveryCourtAI Player Profile Schema V1.1",
+  "description": "Validation schema for EveryCourtAI Player Profile V1.1, including swing speed as a first-class recommendation input.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "profile_version",
+    "playing_level",
+    "primary_goal"
+  ],
+  "properties": {
+    "profile_version": {
+      "type": "string",
+      "const": "1.1"
+    },
+    "playing_level": {
+      "type": "string",
+      "enum": [
+        "beginner",
+        "recreational",
+        "intermediate",
+        "advanced",
+        "competitive"
+      ]
+    },
+    "playing_style": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "baseline",
+          "aggressive_baseline",
+          "all_court",
+          "serve_and_volley",
+          "counterpuncher",
+          "spin_heavy",
+          "flat_hitter"
+        ]
+      },
+      "default": []
+    },
+    "primary_goal": {
+      "type": "string",
+      "enum": [
+        "comfort",
+        "control",
+        "spin",
+        "power",
+        "feel",
+        "stability",
+        "maneuverability"
+      ]
+    },
+    "secondary_goals": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "comfort",
+          "control",
+          "spin",
+          "power",
+          "feel",
+          "stability",
+          "maneuverability"
+        ]
+      },
+      "default": []
+    },
+    "current_setup": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "racquet_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "string_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "tension_lbs": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 30,
+          "maximum": 70
+        },
+        "string_setup_type": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "full_bed",
+            "hybrid",
+            null
+          ]
+        }
+      },
+      "default": {}
+    },
+    "physical_condition": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "shoulder_sensitivity": {
+          "$ref": "#/$defs/physicalSeverity"
+        },
+        "elbow_sensitivity": {
+          "$ref": "#/$defs/physicalSeverity"
+        },
+        "wrist_sensitivity": {
+          "$ref": "#/$defs/physicalSeverity"
+        },
+        "lower_back_sensitivity": {
+          "$ref": "#/$defs/physicalSeverity"
+        },
+        "hip_sensitivity": {
+          "$ref": "#/$defs/physicalSeverity"
+        },
+        "knee_sensitivity": {
+          "$ref": "#/$defs/physicalSeverity"
+        },
+        "ankle_sensitivity": {
+          "$ref": "#/$defs/physicalSeverity"
+        },
+        "neck_sensitivity": {
+          "$ref": "#/$defs/physicalSeverity"
+        }
+      },
+      "default": {}
+    },
+    "playing_load": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "weekly_frequency": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 14
+        },
+        "session_duration_minutes": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 15,
+          "maximum": 360
+        },
+        "fatigue_level": {
+          "type": "string",
+          "enum": [
+            "none",
+            "low",
+            "moderate",
+            "high"
+          ],
+          "default": "none"
+        },
+        "fatigue_timing": {
+          "type": "string",
+          "enum": [
+            "none",
+            "early",
+            "mid",
+            "late",
+            "post_session"
+          ],
+          "default": "none"
+        }
+      },
+      "default": {}
+    },
+    "preferences": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "preferred_racquet_weight": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "light",
+            "medium",
+            "heavy",
+            "no_preference",
+            null
+          ]
+        },
+        "preferred_string_feel": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "soft",
+              "crisp",
+              "firm",
+              "connected",
+              "muted"
+            ]
+          },
+          "default": []
+        },
+        "change_tolerance": {
+          "type": "string",
+          "enum": [
+            "minimal",
+            "moderate",
+            "open"
+          ],
+          "default": "moderate"
+        }
+      },
+      "default": {}
+    },
+    "swing_speed": {
+      "type": "string",
+      "enum": [
+        "slow",
+        "medium",
+        "fast"
+      ],
+      "default": "medium"
+    }
+  },
+  "$defs": {
+    "physicalSeverity": {
+      "type": "string",
+      "enum": [
+        "none",
+        "mild",
+        "moderate",
+        "high",
+        "severe"
+      ],
+      "default": "none"
+    }
+  },
+  "examples": [
+    {
+      "profile_version": "1.1",
+      "playing_level": "intermediate",
+      "playing_style": [
+        "all_court"
+      ],
+      "primary_goal": "comfort",
+      "secondary_goals": [
+        "feel"
+      ],
+      "current_setup": {
+        "racquet_id": "wilson_rf_01_pro_classic",
+        "string_id": "head_hawk_touch",
+        "tension_lbs": 52,
+        "string_setup_type": "full_bed"
+      },
+      "physical_condition": {
+        "shoulder_sensitivity": "moderate",
+        "elbow_sensitivity": "none",
+        "wrist_sensitivity": "none",
+        "lower_back_sensitivity": "none",
+        "hip_sensitivity": "none",
+        "knee_sensitivity": "none",
+        "ankle_sensitivity": "none",
+        "neck_sensitivity": "none"
+      },
+      "playing_load": {
+        "weekly_frequency": 3,
+        "session_duration_minutes": 120,
+        "fatigue_level": "moderate",
+        "fatigue_timing": "late"
+      },
+      "preferences": {
+        "preferred_racquet_weight": "medium",
+        "preferred_string_feel": [
+          "soft",
+          "connected"
+        ],
+        "change_tolerance": "minimal"
+      },
+      "swing_speed": "medium"
+    }
+  ],
+  "metadata": {
+    "platform": "EveryCourtAI",
+    "schema_version": "1.1",
+    "status": "active",
+    "compatible_profile_definition": "knowledge/profiles/player_profile_v1_1.json"
+  }
+}
