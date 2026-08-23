@@ -480,6 +480,216 @@ export function setCommerceRecommendation(
 }
 
 
+
+function renderCheckout(
+  offer
+) {
+
+  const checkoutElement =
+    document.getElementById(
+      "commerceCheckout"
+    );
+
+
+  if (
+    !checkoutElement ||
+    !offer
+  ) {
+
+    return;
+  }
+
+
+  checkoutElement.hidden =
+    false;
+
+
+  checkoutElement.innerHTML =
+    "";
+
+
+  const wrapper =
+    document.createElement(
+      "div"
+    );
+
+
+  wrapper.className =
+    "commerce-offer-card";
+
+
+  const title =
+    document.createElement(
+      "div"
+    );
+
+
+  title.className =
+    "commerce-offer-title";
+
+
+  title.textContent =
+    "Order Summary / 订单确认";
+
+
+  const store =
+    document.createElement(
+      "div"
+    );
+
+
+  store.className =
+    "commerce-offer-meta";
+
+
+  store.textContent =
+    `${offer?.store?.name ?? ""} · ${offer?.store?.city ?? ""}`;
+
+
+  const setup =
+    document.createElement(
+      "div"
+    );
+
+
+  setup.className =
+    "commerce-offer-meta";
+
+
+  setup.textContent =
+    [
+      offer?.product?.product_id,
+      offer?.product?.gauge_mm
+        ? `${offer.product.gauge_mm} mm`
+        : null,
+      offer?.setup?.tension_lbs
+        ? `${offer.setup.tension_lbs} lbs`
+        : null,
+      offer?.service?.name
+    ]
+      .filter(Boolean)
+      .join(" · ");
+
+
+  const price =
+    document.createElement(
+      "div"
+    );
+
+
+  price.className =
+    "commerce-offer-price";
+
+
+  price.textContent =
+    formatMoney(
+      offer.total,
+      offer.currency
+    );
+
+
+  const payButton =
+    document.createElement(
+      "button"
+    );
+
+
+  payButton.type =
+    "button";
+
+
+  payButton.className =
+    "commerce-offer-btn";
+
+
+  payButton.id =
+    "commerceDemoPayButton";
+
+
+  payButton.textContent =
+    "Demo Pay / 模拟付款";
+
+
+  payButton.addEventListener(
+    "click",
+    () => {
+
+      window.dispatchEvent(
+        new CustomEvent(
+          "everycourt:commerce-demo-pay",
+          {
+            detail: {
+              offer,
+              recommendation:
+                currentRecommendation
+            }
+          }
+        )
+      );
+    }
+  );
+
+
+  wrapper.appendChild(
+    title
+  );
+
+  wrapper.appendChild(
+    store
+  );
+
+  wrapper.appendChild(
+    setup
+  );
+
+  wrapper.appendChild(
+    price
+  );
+
+  wrapper.appendChild(
+    payButton
+  );
+
+
+  checkoutElement.appendChild(
+    wrapper
+  );
+
+
+  checkoutElement.scrollIntoView({
+    behavior:
+      "smooth",
+
+    block:
+      "nearest"
+  });
+}
+
+
+function handleCommerceOfferSelected(
+  event
+) {
+
+  const offer =
+    event
+      ?.detail
+      ?.offer;
+
+
+  if (
+    !offer
+  ) {
+
+    return;
+  }
+
+
+  renderCheckout(
+    offer
+  );
+}
+
+
 export function initializeCommerceDemo() {
 
   const button =
@@ -502,6 +712,12 @@ export function initializeCommerceDemo() {
   button.addEventListener(
     "click",
     handleFindStores
+  );
+
+
+  window.addEventListener(
+    "everycourt:commerce-offer-selected",
+    handleCommerceOfferSelected
   );
 
 
