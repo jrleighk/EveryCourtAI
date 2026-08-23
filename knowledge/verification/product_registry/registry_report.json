@@ -1,0 +1,172 @@
+{
+  "registry": "EveryCourtAI Product Registry Report",
+  "version": "1.0",
+  "generated_at": "2026-08-22T06:08:46.371Z",
+  "counts": {
+    "racquet_json_files": 144,
+    "racquet_registry_products": 144,
+    "string_json_files": 158,
+    "string_registry_products": 158,
+    "total_products": 302
+  },
+  "collisions": {
+    "racquets": [
+      {
+        "pattern": "head radical pro",
+        "matches": [
+          {
+            "id": "head_radical_pro_2025",
+            "brand": "Head",
+            "model": "Radical Pro"
+          },
+          {
+            "id": "head_radical_pro_auxetic",
+            "brand": "Head",
+            "model": "Radical Pro"
+          }
+        ]
+      },
+      {
+        "pattern": "radical pro",
+        "matches": [
+          {
+            "id": "head_radical_pro_2025",
+            "brand": "Head",
+            "model": "Radical Pro"
+          },
+          {
+            "id": "head_radical_pro_auxetic",
+            "brand": "Head",
+            "model": "Radical Pro"
+          }
+        ]
+      },
+      {
+        "pattern": "yonex ezone 98",
+        "matches": [
+          {
+            "id": "yonex_osaka_ezone_98_gold_purple_limited_edition",
+            "brand": "Yonex",
+            "model": "EZONE 98"
+          },
+          {
+            "id": "yonex_ezone_98_blast_blue_2025",
+            "brand": "Yonex",
+            "model": "EZONE 98"
+          }
+        ]
+      },
+      {
+        "pattern": "ezone 98",
+        "matches": [
+          {
+            "id": "yonex_osaka_ezone_98_gold_purple_limited_edition",
+            "brand": "Yonex",
+            "model": "EZONE 98"
+          },
+          {
+            "id": "yonex_ezone_98_blast_blue_2025",
+            "brand": "Yonex",
+            "model": "EZONE 98"
+          }
+        ]
+      },
+      {
+        "pattern": "yonex percept 97d",
+        "matches": [
+          {
+            "id": "yonex_percept_97d_midnight_navy_2025",
+            "brand": "Yonex",
+            "model": "PERCEPT 97D"
+          },
+          {
+            "id": "yonex_percept_97d_olive_2025",
+            "brand": "Yonex",
+            "model": "PERCEPT 97D"
+          }
+        ]
+      },
+      {
+        "pattern": "percept 97d",
+        "matches": [
+          {
+            "id": "yonex_percept_97d_midnight_navy_2025",
+            "brand": "Yonex",
+            "model": "PERCEPT 97D"
+          },
+          {
+            "id": "yonex_percept_97d_olive_2025",
+            "brand": "Yonex",
+            "model": "PERCEPT 97D"
+          }
+        ]
+      }
+    ],
+    "strings": [
+      {
+        "pattern": "tecnifibre x one biphase",
+        "matches": [
+          {
+            "id": "tecnifibre_x_one_biphase",
+            "brand": "Tecnifibre",
+            "model": "X-One Biphase"
+          },
+          {
+            "id": "tecnifibre_x_one_biphase_118",
+            "brand": "Tecnifibre",
+            "model": "X-One Biphase"
+          }
+        ]
+      },
+      {
+        "pattern": "x one biphase",
+        "matches": [
+          {
+            "id": "tecnifibre_x_one_biphase",
+            "brand": "Tecnifibre",
+            "model": "X-One Biphase"
+          },
+          {
+            "id": "tecnifibre_x_one_biphase_118",
+            "brand": "Tecnifibre",
+            "model": "X-One Biphase"
+          }
+        ]
+      },
+      {
+        "pattern": "toroline o toro snap",
+        "matches": [
+          {
+            "id": "toroline_o_toro_snap",
+            "brand": "Toroline",
+            "model": "O-TORO SNAP"
+          },
+          {
+            "id": "toroline_o_toro_snap_regular",
+            "brand": "Toroline",
+            "model": "O-TORO SNAP"
+          }
+        ]
+      },
+      {
+        "pattern": "o toro snap",
+        "matches": [
+          {
+            "id": "toroline_o_toro_snap",
+            "brand": "Toroline",
+            "model": "O-TORO SNAP"
+          },
+          {
+            "id": "toroline_o_toro_snap_regular",
+            "brand": "Toroline",
+            "model": "O-TORO SNAP"
+          }
+        ]
+      }
+    ]
+  },
+  "collision_counts": {
+    "racquets": 6,
+    "strings": 4
+  }
+}

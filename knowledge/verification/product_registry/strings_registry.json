@@ -1,0 +1,4879 @@
+{
+  "registry": "EveryCourtAI String Product Registry",
+  "version": "1.0",
+  "generated_at": "2026-08-22T06:08:46.371Z",
+  "count": 158,
+  "products": [
+    {
+      "id": "babolat_addixion_plus",
+      "product_type": "string",
+      "brand": "Babolat",
+      "model": "AddiXion+",
+      "series": "AddiXion+",
+      "category": "String",
+      "gauges_mm": [
+        1.25
+      ],
+      "source_file": "knowledge/strings/babolat/babolat_addixion_plus.json",
+      "recognition": {
+        "strong_patterns": [
+          "Babolat AddiXion+",
+          "AddiXion+",
+          "babolat addixion plus"
+        ],
+        "weak_patterns": [
+          "AddiXion+",
+          "Babolat AddiXion+"
+        ],
+        "normalized_strong_patterns": [
+          "babolat addixion+",
+          "addixion+",
+          "babolat addixion plus"
+        ],
+        "normalized_weak_patterns": [
+          "addixion+",
+          "babolat addixion+"
+        ]
+      }
+    },
+    {
+      "id": "babolat_rpm_blast",
+      "product_type": "string",
+      "brand": "Babolat",
+      "model": "RPM Blast",
+      "series": "RPM",
+      "category": "String",
+      "gauges_mm": [
+        1.25
+      ],
+      "source_file": "knowledge/strings/babolat/babolat_rpm_blast.json",
+      "recognition": {
+        "strong_patterns": [
+          "Babolat RPM Blast",
+          "RPM Blast"
+        ],
+        "weak_patterns": [
+          "RPM",
+          "Babolat RPM"
+        ],
+        "normalized_strong_patterns": [
+          "babolat rpm blast",
+          "rpm blast"
+        ],
+        "normalized_weak_patterns": [
+          "rpm",
+          "babolat rpm"
+        ]
+      }
+    },
+    {
+      "id": "babolat_rpm_blast_125_touch_vs_130",
+      "product_type": "string",
+      "brand": "Babolat",
+      "model": "RPM Blast 125 + Touch VS 130",
+      "series": "RPM Blast + Touch VS",
+      "category": "Hybrid String Set",
+      "gauges_mm": [],
+      "source_file": "knowledge/strings/babolat/babolat_rpm_blast_125_touch_vs_130.json",
+      "recognition": {
+        "strong_patterns": [
+          "Babolat RPM Blast 125 + Touch VS 130",
+          "RPM Blast 125 + Touch VS 130",
+          "babolat rpm blast 125 touch vs 130"
+        ],
+        "weak_patterns": [
+          "RPM Blast + Touch VS",
+          "Babolat RPM Blast + Touch VS"
+        ],
+        "normalized_strong_patterns": [
+          "babolat rpm blast 125 + touch vs 130",
+          "rpm blast 125 + touch vs 130",
+          "babolat rpm blast 125 touch vs 130"
+        ],
+        "normalized_weak_patterns": [
+          "rpm blast + touch vs",
+          "babolat rpm blast + touch vs"
+        ]
+      }
+    },
+    {
+      "id": "babolat_rpm_hurricane",
+      "product_type": "string",
+      "brand": "Babolat",
+      "model": "RPM Hurricane",
+      "series": "RPM",
+      "category": "String",
+      "gauges_mm": [
+        1.3
+      ],
+      "source_file": "knowledge/strings/babolat/babolat_rpm_hurricane.json",
+      "recognition": {
+        "strong_patterns": [
+          "Babolat RPM Hurricane",
+          "RPM Hurricane"
+        ],
+        "weak_patterns": [
+          "RPM",
+          "Babolat RPM"
+        ],
+        "normalized_strong_patterns": [
+          "babolat rpm hurricane",
+          "rpm hurricane"
+        ],
+        "normalized_weak_patterns": [
+          "rpm",
+          "babolat rpm"
+        ]
+      }
+    },
+    {
+      "id": "babolat_rpm_power",
+      "product_type": "string",
+      "brand": "Babolat",
+      "model": "RPM Power",
+      "series": "RPM",
+      "category": "String",
+      "gauges_mm": [
+        1.3
+      ],
+      "source_file": "knowledge/strings/babolat/babolat_rpm_power.json",
+      "recognition": {
+        "strong_patterns": [
+          "Babolat RPM Power",
+          "RPM Power"
+        ],
+        "weak_patterns": [
+          "RPM",
+          "Babolat RPM"
+        ],
+        "normalized_strong_patterns": [
+          "babolat rpm power",
+          "rpm power"
+        ],
+        "normalized_weak_patterns": [
+          "rpm",
+          "babolat rpm"
+        ]
+      }
+    },
+    {
+      "id": "babolat_rpm_rough",
+      "product_type": "string",
+      "brand": "Babolat",
+      "model": "RPM Rough",
+      "series": "RPM",
+      "category": "String",
+      "gauges_mm": [
+        1.25
+      ],
+      "source_file": "knowledge/strings/babolat/babolat_rpm_rough.json",
+      "recognition": {
+        "strong_patterns": [
+          "Babolat RPM Rough",
+          "RPM Rough"
+        ],
+        "weak_patterns": [
+          "RPM",
+          "Babolat RPM"
+        ],
+        "normalized_strong_patterns": [
+          "babolat rpm rough",
+          "rpm rough"
+        ],
+        "normalized_weak_patterns": [
+          "rpm",
+          "babolat rpm"
+        ]
+      }
+    },
+    {
+      "id": "babolat_rpm_soft",
+      "product_type": "string",
+      "brand": "Babolat",
+      "model": "RPM Soft",
+      "series": "RPM",
+      "category": "String",
+      "gauges_mm": [
+        1.25
+      ],
+      "source_file": "knowledge/strings/babolat/babolat_rpm_soft.json",
+      "recognition": {
+        "strong_patterns": [
+          "Babolat RPM Soft",
+          "RPM Soft"
+        ],
+        "weak_patterns": [
+          "RPM",
+          "Babolat RPM"
+        ],
+        "normalized_strong_patterns": [
+          "babolat rpm soft",
+          "rpm soft"
+        ],
+        "normalized_weak_patterns": [
+          "rpm",
+          "babolat rpm"
+        ]
+      }
+    },
+    {
+      "id": "babolat_rpm_team",
+      "product_type": "string",
+      "brand": "Babolat",
+      "model": "RPM Team",
+      "series": "RPM",
+      "category": "String",
+      "gauges_mm": [
+        1.25
+      ],
+      "source_file": "knowledge/strings/babolat/babolat_rpm_team.json",
+      "recognition": {
+        "strong_patterns": [
+          "Babolat RPM Team",
+          "RPM Team"
+        ],
+        "weak_patterns": [
+          "RPM",
+          "Babolat RPM"
+        ],
+        "normalized_strong_patterns": [
+          "babolat rpm team",
+          "rpm team"
+        ],
+        "normalized_weak_patterns": [
+          "rpm",
+          "babolat rpm"
+        ]
+      }
+    },
+    {
+      "id": "babolat_touch_vs",
+      "product_type": "string",
+      "brand": "Babolat",
+      "model": "Touch VS",
+      "series": "Touch VS",
+      "category": "String",
+      "gauges_mm": [
+        1.3
+      ],
+      "source_file": "knowledge/strings/babolat/babolat_touch_vs.json",
+      "recognition": {
+        "strong_patterns": [
+          "Babolat Touch VS",
+          "Touch VS"
+        ],
+        "weak_patterns": [
+          "Touch VS",
+          "Babolat Touch VS"
+        ],
+        "normalized_strong_patterns": [
+          "babolat touch vs",
+          "touch vs"
+        ],
+        "normalized_weak_patterns": [
+          "touch vs",
+          "babolat touch vs"
+        ]
+      }
+    },
+    {
+      "id": "babolat_xalt",
+      "product_type": "string",
+      "brand": "Babolat",
+      "model": "Xalt",
+      "series": "Xalt",
+      "category": "String",
+      "gauges_mm": [
+        1.25
+      ],
+      "source_file": "knowledge/strings/babolat/babolat_xalt.json",
+      "recognition": {
+        "strong_patterns": [
+          "Babolat Xalt",
+          "Xalt"
+        ],
+        "weak_patterns": [
+          "Xalt",
+          "Babolat Xalt"
+        ],
+        "normalized_strong_patterns": [
+          "babolat xalt",
+          "xalt"
+        ],
+        "normalized_weak_patterns": [
+          "xalt",
+          "babolat xalt"
+        ]
+      }
+    },
+    {
+      "id": "babolat_xplore",
+      "product_type": "string",
+      "brand": "Babolat",
+      "model": "Xplore",
+      "series": "Xplore",
+      "category": "String",
+      "gauges_mm": [
+        1.3
+      ],
+      "source_file": "knowledge/strings/babolat/babolat_xplore.json",
+      "recognition": {
+        "strong_patterns": [
+          "Babolat Xplore",
+          "Xplore"
+        ],
+        "weak_patterns": [
+          "Xplore",
+          "Babolat Xplore"
+        ],
+        "normalized_strong_patterns": [
+          "babolat xplore",
+          "xplore"
+        ],
+        "normalized_weak_patterns": [
+          "xplore",
+          "babolat xplore"
+        ]
+      }
+    },
+    {
+      "id": "gamma_live_wire",
+      "product_type": "string",
+      "brand": "Gamma",
+      "model": "Live Wire",
+      "series": null,
+      "category": "Tennis String",
+      "gauges_mm": [],
+      "source_file": "knowledge/strings/gamma/gamma_live_wire.json",
+      "recognition": {
+        "strong_patterns": [
+          "Gamma Live Wire",
+          "Live Wire"
+        ],
+        "weak_patterns": [],
+        "normalized_strong_patterns": [
+          "gamma live wire",
+          "live wire"
+        ],
+        "normalized_weak_patterns": []
+      }
+    },
+    {
+      "id": "gamma_live_wire_professional",
+      "product_type": "string",
+      "brand": "GAMMA",
+      "model": "Professional",
+      "series": "Live Wire Professional",
+      "category": "String",
+      "gauges_mm": [
+        1.22,
+        1.27,
+        1.32
+      ],
+      "source_file": "knowledge/strings/gamma/gamma_live_wire_professional.json",
+      "recognition": {
+        "strong_patterns": [
+          "GAMMA Professional",
+          "Professional",
+          "gamma live wire professional"
+        ],
+        "weak_patterns": [
+          "Live Wire Professional",
+          "GAMMA Live Wire Professional"
+        ],
+        "normalized_strong_patterns": [
+          "gamma professional",
+          "professional",
+          "gamma live wire professional"
+        ],
+        "normalized_weak_patterns": [
+          "live wire professional",
+          "gamma live wire professional"
+        ]
+      }
+    },
+    {
+      "id": "gamma_moto",
+      "product_type": "string",
+      "brand": "GAMMA",
+      "model": "Moto",
+      "series": "Moto",
+      "category": "String",
+      "gauges_mm": [
+        1.24,
+        1.29
+      ],
+      "source_file": "knowledge/strings/gamma/gamma_moto.json",
+      "recognition": {
+        "strong_patterns": [
+          "GAMMA Moto",
+          "Moto"
+        ],
+        "weak_patterns": [
+          "Moto",
+          "GAMMA Moto"
+        ],
+        "normalized_strong_patterns": [
+          "gamma moto",
+          "moto"
+        ],
+        "normalized_weak_patterns": [
+          "moto",
+          "gamma moto"
+        ]
+      }
+    },
+    {
+      "id": "gamma_synthetic_gut",
+      "product_type": "string",
+      "brand": "GAMMA",
+      "model": "Synthetic Gut",
+      "series": "Synthetic Gut",
+      "category": "String",
+      "gauges_mm": [],
+      "source_file": "knowledge/strings/gamma/gamma_synthetic_gut.json",
+      "recognition": {
+        "strong_patterns": [
+          "GAMMA Synthetic Gut",
+          "Synthetic Gut"
+        ],
+        "weak_patterns": [
+          "Synthetic Gut",
+          "GAMMA Synthetic Gut"
+        ],
+        "normalized_strong_patterns": [
+          "gamma synthetic gut",
+          "synthetic gut"
+        ],
+        "normalized_weak_patterns": [
+          "synthetic gut",
+          "gamma synthetic gut"
+        ]
+      }
+    },
+    {
+      "id": "gamma_tnt2",
+      "product_type": "string",
+      "brand": "GAMMA",
+      "model": "TNT2",
+      "series": "TNT2",
+      "category": "String",
+      "gauges_mm": [
+        1.22,
+        1.29
+      ],
+      "source_file": "knowledge/strings/gamma/gamma_tnt2.json",
+      "recognition": {
+        "strong_patterns": [
+          "GAMMA TNT2",
+          "TNT2"
+        ],
+        "weak_patterns": [
+          "TNT2",
+          "GAMMA TNT2"
+        ],
+        "normalized_strong_patterns": [
+          "gamma tnt2",
+          "tnt2"
+        ],
+        "normalized_weak_patterns": [
+          "tnt2",
+          "gamma tnt2"
+        ]
+      }
+    },
+    {
+      "id": "gamma_tnt2_react_pro",
+      "product_type": "string",
+      "brand": "GAMMA",
+      "model": "TNT2 React Pro",
+      "series": "TNT2",
+      "category": "String",
+      "gauges_mm": [
+        1.27,
+        1.32
+      ],
+      "source_file": "knowledge/strings/gamma/gamma_tnt2_react_pro.json",
+      "recognition": {
+        "strong_patterns": [
+          "GAMMA TNT2 React Pro",
+          "TNT2 React Pro"
+        ],
+        "weak_patterns": [
+          "TNT2",
+          "GAMMA TNT2"
+        ],
+        "normalized_strong_patterns": [
+          "gamma tnt2 react pro",
+          "tnt2 react pro"
+        ],
+        "normalized_weak_patterns": [
+          "tnt2",
+          "gamma tnt2"
+        ]
+      }
+    },
+    {
+      "id": "gamma_verve_soft",
+      "product_type": "string",
+      "brand": "GAMMA",
+      "model": "Verve Soft",
+      "series": "Verve",
+      "category": "String",
+      "gauges_mm": [
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/gamma/gamma_verve_soft.json",
+      "recognition": {
+        "strong_patterns": [
+          "GAMMA Verve Soft",
+          "Verve Soft"
+        ],
+        "weak_patterns": [
+          "Verve",
+          "GAMMA Verve"
+        ],
+        "normalized_strong_patterns": [
+          "gamma verve soft",
+          "verve soft"
+        ],
+        "normalized_weak_patterns": [
+          "verve",
+          "gamma verve"
+        ]
+      }
+    },
+    {
+      "id": "grapplesnake_alpha",
+      "product_type": "string",
+      "brand": "Grapplesnake",
+      "model": "Alpha",
+      "series": "Tour",
+      "category": "String",
+      "gauges_mm": [
+        1.25
+      ],
+      "source_file": "knowledge/strings/grapplesnake/grapplesnake_alpha.json",
+      "recognition": {
+        "strong_patterns": [
+          "Grapplesnake Alpha",
+          "Alpha"
+        ],
+        "weak_patterns": [
+          "Tour",
+          "Grapplesnake Tour"
+        ],
+        "normalized_strong_patterns": [
+          "grapplesnake alpha",
+          "alpha"
+        ],
+        "normalized_weak_patterns": [
+          "tour",
+          "grapplesnake tour"
+        ]
+      }
+    },
+    {
+      "id": "grapplesnake_aspera_triplum",
+      "product_type": "string",
+      "brand": "Grapplesnake",
+      "model": "Triplum",
+      "series": "Aspera",
+      "category": "String",
+      "gauges_mm": [],
+      "source_file": "knowledge/strings/grapplesnake/grapplesnake_aspera_triplum.json",
+      "recognition": {
+        "strong_patterns": [
+          "Grapplesnake Triplum",
+          "Triplum",
+          "grapplesnake aspera triplum"
+        ],
+        "weak_patterns": [
+          "Aspera",
+          "Grapplesnake Aspera"
+        ],
+        "normalized_strong_patterns": [
+          "grapplesnake triplum",
+          "triplum",
+          "grapplesnake aspera triplum"
+        ],
+        "normalized_weak_patterns": [
+          "aspera",
+          "grapplesnake aspera"
+        ]
+      }
+    },
+    {
+      "id": "grapplesnake_ces_neon_dust_liquid_neon_dust_hybrid",
+      "product_type": "string",
+      "brand": "Grapplesnake",
+      "model": "CES Neon Dust / Liquid Neon Dust Hybrid",
+      "series": "CES / Liquid",
+      "category": "Hybrid String Set",
+      "gauges_mm": [],
+      "source_file": "knowledge/strings/grapplesnake/grapplesnake_ces_neon_dust_liquid_neon_dust_hybrid.json",
+      "recognition": {
+        "strong_patterns": [
+          "Grapplesnake CES Neon Dust / Liquid Neon Dust Hybrid",
+          "CES Neon Dust / Liquid Neon Dust Hybrid",
+          "grapplesnake ces neon dust liquid neon dust hybrid"
+        ],
+        "weak_patterns": [
+          "CES / Liquid",
+          "Grapplesnake CES / Liquid"
+        ],
+        "normalized_strong_patterns": [
+          "grapplesnake ces neon dust / liquid neon dust hybrid",
+          "ces neon dust / liquid neon dust hybrid",
+          "grapplesnake ces neon dust liquid neon dust hybrid"
+        ],
+        "normalized_weak_patterns": [
+          "ces / liquid",
+          "grapplesnake ces / liquid"
+        ]
+      }
+    },
+    {
+      "id": "grapplesnake_paradox_pro",
+      "product_type": "string",
+      "brand": "Grapplesnake",
+      "model": "Paradox Pro",
+      "series": "Paradox",
+      "category": "String",
+      "gauges_mm": [
+        1.26,
+        1.29
+      ],
+      "source_file": "knowledge/strings/grapplesnake/grapplesnake_paradox_pro.json",
+      "recognition": {
+        "strong_patterns": [
+          "Grapplesnake Paradox Pro",
+          "Paradox Pro"
+        ],
+        "weak_patterns": [
+          "Paradox",
+          "Grapplesnake Paradox"
+        ],
+        "normalized_strong_patterns": [
+          "grapplesnake paradox pro",
+          "paradox pro"
+        ],
+        "normalized_weak_patterns": [
+          "paradox",
+          "grapplesnake paradox"
+        ]
+      }
+    },
+    {
+      "id": "grapplesnake_soldier",
+      "product_type": "string",
+      "brand": "Grapplesnake",
+      "model": "Soldier",
+      "series": "Soldier",
+      "category": "String",
+      "gauges_mm": [
+        1.25
+      ],
+      "source_file": "knowledge/strings/grapplesnake/grapplesnake_soldier.json",
+      "recognition": {
+        "strong_patterns": [
+          "Grapplesnake Soldier",
+          "Soldier"
+        ],
+        "weak_patterns": [
+          "Soldier",
+          "Grapplesnake Soldier"
+        ],
+        "normalized_strong_patterns": [
+          "grapplesnake soldier",
+          "soldier"
+        ],
+        "normalized_weak_patterns": [
+          "soldier",
+          "grapplesnake soldier"
+        ]
+      }
+    },
+    {
+      "id": "grapplesnake_tour_m8",
+      "product_type": "string",
+      "brand": "Grapplesnake",
+      "model": "Tour M8",
+      "series": "Tour",
+      "category": "String",
+      "gauges_mm": [
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/grapplesnake/grapplesnake_tour_m8.json",
+      "recognition": {
+        "strong_patterns": [
+          "Grapplesnake Tour M8",
+          "Tour M8"
+        ],
+        "weak_patterns": [
+          "Tour",
+          "Grapplesnake Tour"
+        ],
+        "normalized_strong_patterns": [
+          "grapplesnake tour m8",
+          "tour m8"
+        ],
+        "normalized_weak_patterns": [
+          "tour",
+          "grapplesnake tour"
+        ]
+      }
+    },
+    {
+      "id": "grapplesnake_tour_mako",
+      "product_type": "string",
+      "brand": "Grapplesnake",
+      "model": "Tour Mako",
+      "series": "Tour",
+      "category": "String",
+      "gauges_mm": [],
+      "source_file": "knowledge/strings/grapplesnake/grapplesnake_tour_mako.json",
+      "recognition": {
+        "strong_patterns": [
+          "Grapplesnake Tour Mako",
+          "Tour Mako"
+        ],
+        "weak_patterns": [
+          "Tour",
+          "Grapplesnake Tour"
+        ],
+        "normalized_strong_patterns": [
+          "grapplesnake tour mako",
+          "tour mako"
+        ],
+        "normalized_weak_patterns": [
+          "tour",
+          "grapplesnake tour"
+        ]
+      }
+    },
+    {
+      "id": "grapplesnake_tour_sniper",
+      "product_type": "string",
+      "brand": "Grapplesnake",
+      "model": "Tour Sniper",
+      "series": "Tour",
+      "category": "String",
+      "gauges_mm": [
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/grapplesnake/grapplesnake_tour_sniper.json",
+      "recognition": {
+        "strong_patterns": [
+          "Grapplesnake Tour Sniper",
+          "Tour Sniper"
+        ],
+        "weak_patterns": [
+          "Tour",
+          "Grapplesnake Tour"
+        ],
+        "normalized_strong_patterns": [
+          "grapplesnake tour sniper",
+          "tour sniper"
+        ],
+        "normalized_weak_patterns": [
+          "tour",
+          "grapplesnake tour"
+        ]
+      }
+    },
+    {
+      "id": "head_hawk",
+      "product_type": "string",
+      "brand": "HEAD",
+      "model": "HAWK",
+      "series": "HAWK",
+      "category": "String",
+      "gauges_mm": [
+        1.2,
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/head/head_hawk.json",
+      "recognition": {
+        "strong_patterns": [
+          "HEAD HAWK",
+          "HAWK"
+        ],
+        "weak_patterns": [
+          "HAWK",
+          "HEAD HAWK"
+        ],
+        "normalized_strong_patterns": [
+          "head hawk",
+          "hawk"
+        ],
+        "normalized_weak_patterns": [
+          "hawk",
+          "head hawk"
+        ]
+      }
+    },
+    {
+      "id": "head_hawk_touch",
+      "product_type": "string",
+      "brand": "HEAD",
+      "model": "HAWK TOUCH",
+      "series": "HAWK",
+      "category": "String",
+      "gauges_mm": [
+        1.15,
+        1.2,
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/head/head_hawk_touch.json",
+      "recognition": {
+        "strong_patterns": [
+          "HEAD HAWK TOUCH",
+          "HAWK TOUCH"
+        ],
+        "weak_patterns": [
+          "HAWK",
+          "HEAD HAWK"
+        ],
+        "normalized_strong_patterns": [
+          "head hawk touch",
+          "hawk touch"
+        ],
+        "normalized_weak_patterns": [
+          "hawk",
+          "head hawk"
+        ]
+      }
+    },
+    {
+      "id": "head_lynx",
+      "product_type": "string",
+      "brand": "HEAD",
+      "model": "Lynx",
+      "series": "Lynx",
+      "category": "String",
+      "gauges_mm": [
+        1.2,
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/head/head_lynx.json",
+      "recognition": {
+        "strong_patterns": [
+          "HEAD Lynx",
+          "Lynx"
+        ],
+        "weak_patterns": [
+          "Lynx",
+          "HEAD Lynx"
+        ],
+        "normalized_strong_patterns": [
+          "head lynx",
+          "lynx"
+        ],
+        "normalized_weak_patterns": [
+          "lynx",
+          "head lynx"
+        ]
+      }
+    },
+    {
+      "id": "head_lynx_tour",
+      "product_type": "string",
+      "brand": "HEAD",
+      "model": "Lynx Tour",
+      "series": "Lynx",
+      "category": "String",
+      "gauges_mm": [
+        1.2,
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/head/head_lynx_tour.json",
+      "recognition": {
+        "strong_patterns": [
+          "HEAD Lynx Tour",
+          "Lynx Tour"
+        ],
+        "weak_patterns": [
+          "Lynx",
+          "HEAD Lynx"
+        ],
+        "normalized_strong_patterns": [
+          "head lynx tour",
+          "lynx tour"
+        ],
+        "normalized_weak_patterns": [
+          "lynx",
+          "head lynx"
+        ]
+      }
+    },
+    {
+      "id": "kirschbaum_black_shark",
+      "product_type": "string",
+      "brand": "Kirschbaum",
+      "model": "Black Shark",
+      "series": "Black Shark",
+      "category": "String",
+      "gauges_mm": [
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/kirschbaum/kirschbaum_black_shark.json",
+      "recognition": {
+        "strong_patterns": [
+          "Kirschbaum Black Shark",
+          "Black Shark"
+        ],
+        "weak_patterns": [
+          "Black Shark",
+          "Kirschbaum Black Shark"
+        ],
+        "normalized_strong_patterns": [
+          "kirschbaum black shark",
+          "black shark"
+        ],
+        "normalized_weak_patterns": [
+          "black shark",
+          "kirschbaum black shark"
+        ]
+      }
+    },
+    {
+      "id": "kirschbaum_competition",
+      "product_type": "string",
+      "brand": "Kirschbaum",
+      "model": "Competition",
+      "series": "Competition",
+      "category": "String",
+      "gauges_mm": [
+        1.2,
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/kirschbaum/kirschbaum_competition.json",
+      "recognition": {
+        "strong_patterns": [
+          "Kirschbaum Competition",
+          "Competition"
+        ],
+        "weak_patterns": [
+          "Competition",
+          "Kirschbaum Competition"
+        ],
+        "normalized_strong_patterns": [
+          "kirschbaum competition",
+          "competition"
+        ],
+        "normalized_weak_patterns": [
+          "competition",
+          "kirschbaum competition"
+        ]
+      }
+    },
+    {
+      "id": "kirschbaum_evolution",
+      "product_type": "string",
+      "brand": "Kirschbaum",
+      "model": "Evolution",
+      "series": "Evolution",
+      "category": "String",
+      "gauges_mm": [
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/kirschbaum/kirschbaum_evolution.json",
+      "recognition": {
+        "strong_patterns": [
+          "Kirschbaum Evolution",
+          "Evolution"
+        ],
+        "weak_patterns": [
+          "Evolution",
+          "Kirschbaum Evolution"
+        ],
+        "normalized_strong_patterns": [
+          "kirschbaum evolution",
+          "evolution"
+        ],
+        "normalized_weak_patterns": [
+          "evolution",
+          "kirschbaum evolution"
+        ]
+      }
+    },
+    {
+      "id": "kirschbaum_flash",
+      "product_type": "string",
+      "brand": "Kirschbaum",
+      "model": "Flash",
+      "series": "Flash",
+      "category": "String",
+      "gauges_mm": [
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/kirschbaum/kirschbaum_flash.json",
+      "recognition": {
+        "strong_patterns": [
+          "Kirschbaum Flash",
+          "Flash"
+        ],
+        "weak_patterns": [
+          "Flash",
+          "Kirschbaum Flash"
+        ],
+        "normalized_strong_patterns": [
+          "kirschbaum flash",
+          "flash"
+        ],
+        "normalized_weak_patterns": [
+          "flash",
+          "kirschbaum flash"
+        ]
+      }
+    },
+    {
+      "id": "kirschbaum_gut_feeling",
+      "product_type": "string",
+      "brand": "Kirschbaum",
+      "model": "Gut Feeling",
+      "series": "Gut Feeling",
+      "category": "String",
+      "gauges_mm": [
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/kirschbaum/kirschbaum_gut_feeling.json",
+      "recognition": {
+        "strong_patterns": [
+          "Kirschbaum Gut Feeling",
+          "Gut Feeling"
+        ],
+        "weak_patterns": [
+          "Gut Feeling",
+          "Kirschbaum Gut Feeling"
+        ],
+        "normalized_strong_patterns": [
+          "kirschbaum gut feeling",
+          "gut feeling"
+        ],
+        "normalized_weak_patterns": [
+          "gut feeling",
+          "kirschbaum gut feeling"
+        ]
+      }
+    },
+    {
+      "id": "kirschbaum_max_power",
+      "product_type": "string",
+      "brand": "Kirschbaum",
+      "model": "Max Power",
+      "series": "Max Power",
+      "category": "String",
+      "gauges_mm": [
+        1.2,
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/kirschbaum/kirschbaum_max_power.json",
+      "recognition": {
+        "strong_patterns": [
+          "Kirschbaum Max Power",
+          "Max Power"
+        ],
+        "weak_patterns": [
+          "Max Power",
+          "Kirschbaum Max Power"
+        ],
+        "normalized_strong_patterns": [
+          "kirschbaum max power",
+          "max power"
+        ],
+        "normalized_weak_patterns": [
+          "max power",
+          "kirschbaum max power"
+        ]
+      }
+    },
+    {
+      "id": "kirschbaum_max_power_rough",
+      "product_type": "string",
+      "brand": "Kirschbaum",
+      "model": "Max Power Rough",
+      "series": "Max Power",
+      "category": "String",
+      "gauges_mm": [
+        1.2,
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/kirschbaum/kirschbaum_max_power_rough.json",
+      "recognition": {
+        "strong_patterns": [
+          "Kirschbaum Max Power Rough",
+          "Max Power Rough"
+        ],
+        "weak_patterns": [
+          "Max Power",
+          "Kirschbaum Max Power"
+        ],
+        "normalized_strong_patterns": [
+          "kirschbaum max power rough",
+          "max power rough"
+        ],
+        "normalized_weak_patterns": [
+          "max power",
+          "kirschbaum max power"
+        ]
+      }
+    },
+    {
+      "id": "kirschbaum_orange",
+      "product_type": "string",
+      "brand": "Kirschbaum",
+      "model": "Orange",
+      "series": "Orange",
+      "category": "String",
+      "gauges_mm": [
+        1.23,
+        1.28
+      ],
+      "source_file": "knowledge/strings/kirschbaum/kirschbaum_orange.json",
+      "recognition": {
+        "strong_patterns": [
+          "Kirschbaum Orange",
+          "Orange"
+        ],
+        "weak_patterns": [
+          "Orange",
+          "Kirschbaum Orange"
+        ],
+        "normalized_strong_patterns": [
+          "kirschbaum orange",
+          "orange"
+        ],
+        "normalized_weak_patterns": [
+          "orange",
+          "kirschbaum orange"
+        ]
+      }
+    },
+    {
+      "id": "kirschbaum_pro_line_black",
+      "product_type": "string",
+      "brand": "Kirschbaum",
+      "model": "Pro Line Black",
+      "series": "Pro Line",
+      "category": "String",
+      "gauges_mm": [
+        1.15,
+        1.2,
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/kirschbaum/kirschbaum_pro_line_black.json",
+      "recognition": {
+        "strong_patterns": [
+          "Kirschbaum Pro Line Black",
+          "Pro Line Black"
+        ],
+        "weak_patterns": [
+          "Pro Line",
+          "Kirschbaum Pro Line"
+        ],
+        "normalized_strong_patterns": [
+          "kirschbaum pro line black",
+          "pro line black"
+        ],
+        "normalized_weak_patterns": [
+          "pro line",
+          "kirschbaum pro line"
+        ]
+      }
+    },
+    {
+      "id": "kirschbaum_pro_line_rough",
+      "product_type": "string",
+      "brand": "Kirschbaum",
+      "model": "Pro Line Rough",
+      "series": "Pro Line",
+      "category": "String",
+      "gauges_mm": [
+        1.2,
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/kirschbaum/kirschbaum_pro_line_rough.json",
+      "recognition": {
+        "strong_patterns": [
+          "Kirschbaum Pro Line Rough",
+          "Pro Line Rough"
+        ],
+        "weak_patterns": [
+          "Pro Line",
+          "Kirschbaum Pro Line"
+        ],
+        "normalized_strong_patterns": [
+          "kirschbaum pro line rough",
+          "pro line rough"
+        ],
+        "normalized_weak_patterns": [
+          "pro line",
+          "kirschbaum pro line"
+        ]
+      }
+    },
+    {
+      "id": "kirschbaum_pro_tour_control",
+      "product_type": "string",
+      "brand": "Kirschbaum",
+      "model": "Pro Tour Control",
+      "series": "Pro Tour",
+      "category": "String",
+      "gauges_mm": [
+        1.23,
+        1.28
+      ],
+      "source_file": "knowledge/strings/kirschbaum/kirschbaum_pro_tour_control.json",
+      "recognition": {
+        "strong_patterns": [
+          "Kirschbaum Pro Tour Control",
+          "Pro Tour Control"
+        ],
+        "weak_patterns": [
+          "Pro Tour",
+          "Kirschbaum Pro Tour"
+        ],
+        "normalized_strong_patterns": [
+          "kirschbaum pro tour control",
+          "pro tour control"
+        ],
+        "normalized_weak_patterns": [
+          "pro tour",
+          "kirschbaum pro tour"
+        ]
+      }
+    },
+    {
+      "id": "kirschbaum_synthetic_gut_premium",
+      "product_type": "string",
+      "brand": "Kirschbaum",
+      "model": "Synthetic Gut Premium",
+      "series": "Synthetic Gut",
+      "category": "String",
+      "gauges_mm": [
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/kirschbaum/kirschbaum_synthetic_gut_premium.json",
+      "recognition": {
+        "strong_patterns": [
+          "Kirschbaum Synthetic Gut Premium",
+          "Synthetic Gut Premium"
+        ],
+        "weak_patterns": [
+          "Synthetic Gut",
+          "Kirschbaum Synthetic Gut"
+        ],
+        "normalized_strong_patterns": [
+          "kirschbaum synthetic gut premium",
+          "synthetic gut premium"
+        ],
+        "normalized_weak_patterns": [
+          "synthetic gut",
+          "kirschbaum synthetic gut"
+        ]
+      }
+    },
+    {
+      "id": "kirschbaum_touch_multifibre",
+      "product_type": "string",
+      "brand": "Kirschbaum",
+      "model": "Touch Multifibre",
+      "series": "Touch",
+      "category": "String",
+      "gauges_mm": [
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/kirschbaum/kirschbaum_touch_multifibre.json",
+      "recognition": {
+        "strong_patterns": [
+          "Kirschbaum Touch Multifibre",
+          "Touch Multifibre"
+        ],
+        "weak_patterns": [
+          "Touch",
+          "Kirschbaum Touch"
+        ],
+        "normalized_strong_patterns": [
+          "kirschbaum touch multifibre",
+          "touch multifibre"
+        ],
+        "normalized_weak_patterns": [
+          "touch",
+          "kirschbaum touch"
+        ]
+      }
+    },
+    {
+      "id": "kirschbaum_xplosive_speed",
+      "product_type": "string",
+      "brand": "Kirschbaum",
+      "model": "Xplosive Speed",
+      "series": "Xplosive",
+      "category": "String",
+      "gauges_mm": [
+        1.13,
+        1.18,
+        1.23,
+        1.28,
+        1.33
+      ],
+      "source_file": "knowledge/strings/kirschbaum/kirschbaum_xplosive_speed.json",
+      "recognition": {
+        "strong_patterns": [
+          "Kirschbaum Xplosive Speed",
+          "Xplosive Speed"
+        ],
+        "weak_patterns": [
+          "Xplosive",
+          "Kirschbaum Xplosive"
+        ],
+        "normalized_strong_patterns": [
+          "kirschbaum xplosive speed",
+          "xplosive speed"
+        ],
+        "normalized_weak_patterns": [
+          "xplosive",
+          "kirschbaum xplosive"
+        ]
+      }
+    },
+    {
+      "id": "luxilon_4g",
+      "product_type": "string",
+      "brand": "Luxilon",
+      "model": "4G",
+      "series": "4G",
+      "category": "String",
+      "gauges_mm": [
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/luxilon/luxilon_4g.json",
+      "recognition": {
+        "strong_patterns": [
+          "Luxilon 4G",
+          "4G"
+        ],
+        "weak_patterns": [
+          "4G",
+          "Luxilon 4G"
+        ],
+        "normalized_strong_patterns": [
+          "luxilon 4g",
+          "4g"
+        ],
+        "normalized_weak_patterns": [
+          "4g",
+          "luxilon 4g"
+        ]
+      }
+    },
+    {
+      "id": "luxilon_4g_rough",
+      "product_type": "string",
+      "brand": "Luxilon",
+      "model": "4G Rough",
+      "series": "4G",
+      "category": "String",
+      "gauges_mm": [
+        1.25
+      ],
+      "source_file": "knowledge/strings/luxilon/luxilon_4g_rough.json",
+      "recognition": {
+        "strong_patterns": [
+          "Luxilon 4G Rough",
+          "4G Rough"
+        ],
+        "weak_patterns": [
+          "4G",
+          "Luxilon 4G"
+        ],
+        "normalized_strong_patterns": [
+          "luxilon 4g rough",
+          "4g rough"
+        ],
+        "normalized_weak_patterns": [
+          "4g",
+          "luxilon 4g"
+        ]
+      }
+    },
+    {
+      "id": "luxilon_4g_soft",
+      "product_type": "string",
+      "brand": "Luxilon",
+      "model": "4G Soft",
+      "series": "4G",
+      "category": "String",
+      "gauges_mm": [
+        1.25
+      ],
+      "source_file": "knowledge/strings/luxilon/luxilon_4g_soft.json",
+      "recognition": {
+        "strong_patterns": [
+          "Luxilon 4G Soft",
+          "4G Soft"
+        ],
+        "weak_patterns": [
+          "4G",
+          "Luxilon 4G"
+        ],
+        "normalized_strong_patterns": [
+          "luxilon 4g soft",
+          "4g soft"
+        ],
+        "normalized_weak_patterns": [
+          "4g",
+          "luxilon 4g"
+        ]
+      }
+    },
+    {
+      "id": "luxilon_alu_power",
+      "product_type": "string",
+      "brand": "Luxilon",
+      "model": "ALU Power",
+      "series": "ALU Power",
+      "category": "String",
+      "gauges_mm": [
+        1.15,
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/luxilon/luxilon_alu_power.json",
+      "recognition": {
+        "strong_patterns": [
+          "Luxilon ALU Power",
+          "ALU Power"
+        ],
+        "weak_patterns": [
+          "ALU Power",
+          "Luxilon ALU Power"
+        ],
+        "normalized_strong_patterns": [
+          "luxilon alu power",
+          "alu power"
+        ],
+        "normalized_weak_patterns": [
+          "alu power",
+          "luxilon alu power"
+        ]
+      }
+    },
+    {
+      "id": "luxilon_alu_power_rough",
+      "product_type": "string",
+      "brand": "Luxilon",
+      "model": "ALU Power Rough",
+      "series": "ALU Power",
+      "category": "String",
+      "gauges_mm": [
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/luxilon/luxilon_alu_power_rough.json",
+      "recognition": {
+        "strong_patterns": [
+          "Luxilon ALU Power Rough",
+          "ALU Power Rough"
+        ],
+        "weak_patterns": [
+          "ALU Power",
+          "Luxilon ALU Power"
+        ],
+        "normalized_strong_patterns": [
+          "luxilon alu power rough",
+          "alu power rough"
+        ],
+        "normalized_weak_patterns": [
+          "alu power",
+          "luxilon alu power"
+        ]
+      }
+    },
+    {
+      "id": "luxilon_eco_power",
+      "product_type": "string",
+      "brand": "Luxilon",
+      "model": "Eco Power",
+      "series": "Eco",
+      "category": "String",
+      "gauges_mm": [
+        1.25
+      ],
+      "source_file": "knowledge/strings/luxilon/luxilon_eco_power.json",
+      "recognition": {
+        "strong_patterns": [
+          "Luxilon Eco Power",
+          "Eco Power"
+        ],
+        "weak_patterns": [
+          "Eco",
+          "Luxilon Eco"
+        ],
+        "normalized_strong_patterns": [
+          "luxilon eco power",
+          "eco power"
+        ],
+        "normalized_weak_patterns": [
+          "eco",
+          "luxilon eco"
+        ]
+      }
+    },
+    {
+      "id": "luxilon_eco_rough",
+      "product_type": "string",
+      "brand": "Luxilon",
+      "model": "Eco Rough",
+      "series": "Eco",
+      "category": "String",
+      "gauges_mm": [
+        1.25
+      ],
+      "source_file": "knowledge/strings/luxilon/luxilon_eco_rough.json",
+      "recognition": {
+        "strong_patterns": [
+          "Luxilon Eco Rough",
+          "Eco Rough"
+        ],
+        "weak_patterns": [
+          "Eco",
+          "Luxilon Eco"
+        ],
+        "normalized_strong_patterns": [
+          "luxilon eco rough",
+          "eco rough"
+        ],
+        "normalized_weak_patterns": [
+          "eco",
+          "luxilon eco"
+        ]
+      }
+    },
+    {
+      "id": "luxilon_eco_spin",
+      "product_type": "string",
+      "brand": "Luxilon",
+      "model": "Eco Spin",
+      "series": "Eco",
+      "category": "String",
+      "gauges_mm": [
+        1.25
+      ],
+      "source_file": "knowledge/strings/luxilon/luxilon_eco_spin.json",
+      "recognition": {
+        "strong_patterns": [
+          "Luxilon Eco Spin",
+          "Eco Spin"
+        ],
+        "weak_patterns": [
+          "Eco",
+          "Luxilon Eco"
+        ],
+        "normalized_strong_patterns": [
+          "luxilon eco spin",
+          "eco spin"
+        ],
+        "normalized_weak_patterns": [
+          "eco",
+          "luxilon eco"
+        ]
+      }
+    },
+    {
+      "id": "luxilon_element",
+      "product_type": "string",
+      "brand": "Luxilon",
+      "model": "Element",
+      "series": "Element",
+      "category": "String",
+      "gauges_mm": [
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/luxilon/luxilon_element.json",
+      "recognition": {
+        "strong_patterns": [
+          "Luxilon Element",
+          "Element"
+        ],
+        "weak_patterns": [
+          "Element",
+          "Luxilon Element"
+        ],
+        "normalized_strong_patterns": [
+          "luxilon element",
+          "element"
+        ],
+        "normalized_weak_patterns": [
+          "element",
+          "luxilon element"
+        ]
+      }
+    },
+    {
+      "id": "luxilon_element_rough",
+      "product_type": "string",
+      "brand": "Luxilon",
+      "model": "Element Rough",
+      "series": "Element",
+      "category": "String",
+      "gauges_mm": [
+        1.3
+      ],
+      "source_file": "knowledge/strings/luxilon/luxilon_element_rough.json",
+      "recognition": {
+        "strong_patterns": [
+          "Luxilon Element Rough",
+          "Element Rough"
+        ],
+        "weak_patterns": [
+          "Element",
+          "Luxilon Element"
+        ],
+        "normalized_strong_patterns": [
+          "luxilon element rough",
+          "element rough"
+        ],
+        "normalized_weak_patterns": [
+          "element",
+          "luxilon element"
+        ]
+      }
+    },
+    {
+      "id": "luxilon_natural_gut",
+      "product_type": "string",
+      "brand": "Luxilon",
+      "model": "Natural Gut",
+      "series": "Natural Gut",
+      "category": "String",
+      "gauges_mm": [
+        1.2,
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/luxilon/luxilon_natural_gut.json",
+      "recognition": {
+        "strong_patterns": [
+          "Luxilon Natural Gut",
+          "Natural Gut"
+        ],
+        "weak_patterns": [
+          "Natural Gut",
+          "Luxilon Natural Gut"
+        ],
+        "normalized_strong_patterns": [
+          "luxilon natural gut",
+          "natural gut"
+        ],
+        "normalized_weak_patterns": [
+          "natural gut",
+          "luxilon natural gut"
+        ]
+      }
+    },
+    {
+      "id": "msv_bussard",
+      "product_type": "string",
+      "brand": "MSV",
+      "model": "Bussard",
+      "series": "Bussard",
+      "category": "String",
+      "gauges_mm": [
+        1.2,
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/msv/msv_bussard.json",
+      "recognition": {
+        "strong_patterns": [
+          "MSV Bussard",
+          "Bussard"
+        ],
+        "weak_patterns": [
+          "Bussard",
+          "MSV Bussard"
+        ],
+        "normalized_strong_patterns": [
+          "msv bussard",
+          "bussard"
+        ],
+        "normalized_weak_patterns": [
+          "bussard",
+          "msv bussard"
+        ]
+      }
+    },
+    {
+      "id": "msv_co_focus",
+      "product_type": "string",
+      "brand": "MSV",
+      "model": "Co Focus",
+      "series": "Co Focus",
+      "category": "String",
+      "gauges_mm": [
+        1.18,
+        1.23,
+        1.27
+      ],
+      "source_file": "knowledge/strings/msv/msv_co_focus.json",
+      "recognition": {
+        "strong_patterns": [
+          "MSV Co Focus",
+          "Co Focus"
+        ],
+        "weak_patterns": [
+          "Co Focus",
+          "MSV Co Focus"
+        ],
+        "normalized_strong_patterns": [
+          "msv co focus",
+          "co focus"
+        ],
+        "normalized_weak_patterns": [
+          "co focus",
+          "msv co focus"
+        ]
+      }
+    },
+    {
+      "id": "msv_co_ultra",
+      "product_type": "string",
+      "brand": "MSV",
+      "model": "Co Ultra",
+      "series": "Co Ultra",
+      "category": "String",
+      "gauges_mm": [
+        1.2,
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/msv/msv_co_ultra.json",
+      "recognition": {
+        "strong_patterns": [
+          "MSV Co Ultra",
+          "Co Ultra"
+        ],
+        "weak_patterns": [
+          "Co Ultra",
+          "MSV Co Ultra"
+        ],
+        "normalized_strong_patterns": [
+          "msv co ultra",
+          "co ultra"
+        ],
+        "normalized_weak_patterns": [
+          "co ultra",
+          "msv co ultra"
+        ]
+      }
+    },
+    {
+      "id": "msv_focus_hex",
+      "product_type": "string",
+      "brand": "MSV",
+      "model": "Focus Hex",
+      "series": "Focus Hex",
+      "category": "String",
+      "gauges_mm": [
+        1.1,
+        1.18,
+        1.23,
+        1.27,
+        1.33
+      ],
+      "source_file": "knowledge/strings/msv/msv_focus_hex.json",
+      "recognition": {
+        "strong_patterns": [
+          "MSV Focus Hex",
+          "Focus Hex"
+        ],
+        "weak_patterns": [
+          "Focus Hex",
+          "MSV Focus Hex"
+        ],
+        "normalized_strong_patterns": [
+          "msv focus hex",
+          "focus hex"
+        ],
+        "normalized_weak_patterns": [
+          "focus hex",
+          "msv focus hex"
+        ]
+      }
+    },
+    {
+      "id": "msv_focus_hex_plus_25",
+      "product_type": "string",
+      "brand": "MSV",
+      "model": "Focus Hex Plus 25",
+      "series": "Focus Hex",
+      "category": "String",
+      "gauges_mm": [
+        1.2,
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/msv/msv_focus_hex_plus_25.json",
+      "recognition": {
+        "strong_patterns": [
+          "MSV Focus Hex Plus 25",
+          "Focus Hex Plus 25"
+        ],
+        "weak_patterns": [
+          "Focus Hex",
+          "MSV Focus Hex"
+        ],
+        "normalized_strong_patterns": [
+          "msv focus hex plus 25",
+          "focus hex plus 25"
+        ],
+        "normalized_weak_patterns": [
+          "focus hex",
+          "msv focus hex"
+        ]
+      }
+    },
+    {
+      "id": "msv_focus_hex_plus_38",
+      "product_type": "string",
+      "brand": "MSV",
+      "model": "Focus Hex Plus 38",
+      "series": "Focus Hex",
+      "category": "String",
+      "gauges_mm": [
+        1.15,
+        1.2,
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/msv/msv_focus_hex_plus_38.json",
+      "recognition": {
+        "strong_patterns": [
+          "MSV Focus Hex Plus 38",
+          "Focus Hex Plus 38"
+        ],
+        "weak_patterns": [
+          "Focus Hex",
+          "MSV Focus Hex"
+        ],
+        "normalized_strong_patterns": [
+          "msv focus hex plus 38",
+          "focus hex plus 38"
+        ],
+        "normalized_weak_patterns": [
+          "focus hex",
+          "msv focus hex"
+        ]
+      }
+    },
+    {
+      "id": "msv_focus_hex_soft",
+      "product_type": "string",
+      "brand": "MSV",
+      "model": "Focus HEX Soft",
+      "series": "Focus Hex",
+      "category": "String",
+      "gauges_mm": [
+        1.15,
+        1.2,
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/msv/msv_focus_hex_soft.json",
+      "recognition": {
+        "strong_patterns": [
+          "MSV Focus HEX Soft",
+          "Focus HEX Soft"
+        ],
+        "weak_patterns": [
+          "Focus Hex",
+          "MSV Focus Hex"
+        ],
+        "normalized_strong_patterns": [
+          "msv focus hex soft",
+          "focus hex soft"
+        ],
+        "normalized_weak_patterns": [
+          "focus hex",
+          "msv focus hex"
+        ]
+      }
+    },
+    {
+      "id": "msv_focus_hex_ultra",
+      "product_type": "string",
+      "brand": "MSV",
+      "model": "Focus HEX Ultra",
+      "series": "Focus Hex",
+      "category": "String",
+      "gauges_mm": [
+        1.1,
+        1.15,
+        1.2,
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/msv/msv_focus_hex_ultra.json",
+      "recognition": {
+        "strong_patterns": [
+          "MSV Focus HEX Ultra",
+          "Focus HEX Ultra"
+        ],
+        "weak_patterns": [
+          "Focus Hex",
+          "MSV Focus Hex"
+        ],
+        "normalized_strong_patterns": [
+          "msv focus hex ultra",
+          "focus hex ultra"
+        ],
+        "normalized_weak_patterns": [
+          "focus hex",
+          "msv focus hex"
+        ]
+      }
+    },
+    {
+      "id": "msv_hepta_twist",
+      "product_type": "string",
+      "brand": "MSV",
+      "model": "Hepta Twist",
+      "series": "Hepta Twist",
+      "category": "String",
+      "gauges_mm": [
+        1.15,
+        1.2,
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/msv/msv_hepta_twist.json",
+      "recognition": {
+        "strong_patterns": [
+          "MSV Hepta Twist",
+          "Hepta Twist"
+        ],
+        "weak_patterns": [
+          "Hepta Twist",
+          "MSV Hepta Twist"
+        ],
+        "normalized_strong_patterns": [
+          "msv hepta twist",
+          "hepta twist"
+        ],
+        "normalized_weak_patterns": [
+          "hepta twist",
+          "msv hepta twist"
+        ]
+      }
+    },
+    {
+      "id": "msv_multi_q10",
+      "product_type": "string",
+      "brand": "MSV",
+      "model": "Multi Q10",
+      "series": "Multi Q10",
+      "category": "String",
+      "gauges_mm": [
+        1.3
+      ],
+      "source_file": "knowledge/strings/msv/msv_multi_q10.json",
+      "recognition": {
+        "strong_patterns": [
+          "MSV Multi Q10",
+          "Multi Q10"
+        ],
+        "weak_patterns": [
+          "Multi Q10",
+          "MSV Multi Q10"
+        ],
+        "normalized_strong_patterns": [
+          "msv multi q10",
+          "multi q10"
+        ],
+        "normalized_weak_patterns": [
+          "multi q10",
+          "msv multi q10"
+        ]
+      }
+    },
+    {
+      "id": "msv_soft_touch",
+      "product_type": "string",
+      "brand": "MSV",
+      "model": "Soft Touch",
+      "series": "Soft Touch",
+      "category": "String",
+      "gauges_mm": [
+        1.25,
+        1.3,
+        1.35
+      ],
+      "source_file": "knowledge/strings/msv/msv_soft_touch.json",
+      "recognition": {
+        "strong_patterns": [
+          "MSV Soft Touch",
+          "Soft Touch"
+        ],
+        "weak_patterns": [
+          "Soft Touch",
+          "MSV Soft Touch"
+        ],
+        "normalized_strong_patterns": [
+          "msv soft touch",
+          "soft touch"
+        ],
+        "normalized_weak_patterns": [
+          "soft touch",
+          "msv soft touch"
+        ]
+      }
+    },
+    {
+      "id": "msv_swift",
+      "product_type": "string",
+      "brand": "MSV",
+      "model": "Swift",
+      "series": "Swift",
+      "category": "String",
+      "gauges_mm": [
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/msv/msv_swift.json",
+      "recognition": {
+        "strong_patterns": [
+          "MSV Swift",
+          "Swift"
+        ],
+        "weak_patterns": [
+          "Swift",
+          "MSV Swift"
+        ],
+        "normalized_strong_patterns": [
+          "msv swift",
+          "swift"
+        ],
+        "normalized_weak_patterns": [
+          "swift",
+          "msv swift"
+        ]
+      }
+    },
+    {
+      "id": "solinco_barb_wire",
+      "product_type": "string",
+      "brand": "Solinco",
+      "model": "Barb Wire",
+      "series": "Barb Wire",
+      "category": "String",
+      "gauges_mm": [
+        1.2,
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/solinco/solinco_barb_wire.json",
+      "recognition": {
+        "strong_patterns": [
+          "Solinco Barb Wire",
+          "Barb Wire"
+        ],
+        "weak_patterns": [
+          "Barb Wire",
+          "Solinco Barb Wire"
+        ],
+        "normalized_strong_patterns": [
+          "solinco barb wire",
+          "barb wire"
+        ],
+        "normalized_weak_patterns": [
+          "barb wire",
+          "solinco barb wire"
+        ]
+      }
+    },
+    {
+      "id": "solinco_confidential",
+      "product_type": "string",
+      "brand": "Solinco",
+      "model": "Confidential",
+      "series": "Confidential",
+      "category": "String",
+      "gauges_mm": [
+        1.15,
+        1.2,
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/solinco/solinco_confidential.json",
+      "recognition": {
+        "strong_patterns": [
+          "Solinco Confidential",
+          "Confidential"
+        ],
+        "weak_patterns": [
+          "Confidential",
+          "Solinco Confidential"
+        ],
+        "normalized_strong_patterns": [
+          "solinco confidential",
+          "confidential"
+        ],
+        "normalized_weak_patterns": [
+          "confidential",
+          "solinco confidential"
+        ]
+      }
+    },
+    {
+      "id": "solinco_confidential_soft",
+      "product_type": "string",
+      "brand": "Solinco",
+      "model": "Confidential Soft",
+      "series": "Confidential",
+      "category": "String",
+      "gauges_mm": [
+        1.15,
+        1.2,
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/solinco/solinco_confidential_soft.json",
+      "recognition": {
+        "strong_patterns": [
+          "Solinco Confidential Soft",
+          "Confidential Soft"
+        ],
+        "weak_patterns": [
+          "Confidential",
+          "Solinco Confidential"
+        ],
+        "normalized_strong_patterns": [
+          "solinco confidential soft",
+          "confidential soft"
+        ],
+        "normalized_weak_patterns": [
+          "confidential",
+          "solinco confidential"
+        ]
+      }
+    },
+    {
+      "id": "solinco_hyper_g",
+      "product_type": "string",
+      "brand": "Solinco",
+      "model": "Hyper-G",
+      "series": "Hyper-G",
+      "category": "String",
+      "gauges_mm": [
+        1.05,
+        1.1,
+        1.15,
+        1.2,
+        1.25,
+        1.3,
+        1.35
+      ],
+      "source_file": "knowledge/strings/solinco/solinco_hyper_g.json",
+      "recognition": {
+        "strong_patterns": [
+          "Solinco Hyper-G",
+          "Hyper-G"
+        ],
+        "weak_patterns": [
+          "Hyper-G",
+          "Solinco Hyper-G"
+        ],
+        "normalized_strong_patterns": [
+          "solinco hyper g",
+          "hyper g"
+        ],
+        "normalized_weak_patterns": [
+          "hyper g",
+          "solinco hyper g"
+        ]
+      }
+    },
+    {
+      "id": "solinco_hyper_g_hybrid_system",
+      "product_type": "string",
+      "brand": "Solinco",
+      "model": "Hyper-G Hybrid System",
+      "series": "Hyper-G",
+      "category": "Hybrid String Set",
+      "gauges_mm": [
+        1.2,
+        1.25
+      ],
+      "source_file": "knowledge/strings/solinco/solinco_hyper_g_hybrid_system.json",
+      "recognition": {
+        "strong_patterns": [
+          "Solinco Hyper-G Hybrid System",
+          "Hyper-G Hybrid System"
+        ],
+        "weak_patterns": [
+          "Hyper-G",
+          "Solinco Hyper-G"
+        ],
+        "normalized_strong_patterns": [
+          "solinco hyper g hybrid system",
+          "hyper g hybrid system"
+        ],
+        "normalized_weak_patterns": [
+          "hyper g",
+          "solinco hyper g"
+        ]
+      }
+    },
+    {
+      "id": "solinco_hyper_g_round",
+      "product_type": "string",
+      "brand": "Solinco",
+      "model": "Hyper-G Round",
+      "series": "Hyper-G",
+      "category": "String",
+      "gauges_mm": [
+        1.15,
+        1.2,
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/solinco/solinco_hyper_g_round.json",
+      "recognition": {
+        "strong_patterns": [
+          "Solinco Hyper-G Round",
+          "Hyper-G Round"
+        ],
+        "weak_patterns": [
+          "Hyper-G",
+          "Solinco Hyper-G"
+        ],
+        "normalized_strong_patterns": [
+          "solinco hyper g round",
+          "hyper g round"
+        ],
+        "normalized_weak_patterns": [
+          "hyper g",
+          "solinco hyper g"
+        ]
+      }
+    },
+    {
+      "id": "solinco_hyper_g_soft",
+      "product_type": "string",
+      "brand": "Solinco",
+      "model": "Hyper-G Soft",
+      "series": "Hyper-G",
+      "category": "String",
+      "gauges_mm": [
+        1.15,
+        1.2,
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/solinco/solinco_hyper_g_soft.json",
+      "recognition": {
+        "strong_patterns": [
+          "Solinco Hyper-G Soft",
+          "Hyper-G Soft"
+        ],
+        "weak_patterns": [
+          "Hyper-G",
+          "Solinco Hyper-G"
+        ],
+        "normalized_strong_patterns": [
+          "solinco hyper g soft",
+          "hyper g soft"
+        ],
+        "normalized_weak_patterns": [
+          "hyper g",
+          "solinco hyper g"
+        ]
+      }
+    },
+    {
+      "id": "solinco_hyper_mach_bd",
+      "product_type": "string",
+      "brand": "Solinco",
+      "model": "Hyper-Mach BD",
+      "series": "Hyper-Mach",
+      "category": "Hybrid String Set",
+      "gauges_mm": [
+        1.2
+      ],
+      "source_file": "knowledge/strings/solinco/solinco_hyper_mach_bd.json",
+      "recognition": {
+        "strong_patterns": [
+          "Solinco Hyper-Mach BD",
+          "Hyper-Mach BD"
+        ],
+        "weak_patterns": [
+          "Hyper-Mach",
+          "Solinco Hyper-Mach"
+        ],
+        "normalized_strong_patterns": [
+          "solinco hyper mach bd",
+          "hyper mach bd"
+        ],
+        "normalized_weak_patterns": [
+          "hyper mach",
+          "solinco hyper mach"
+        ]
+      }
+    },
+    {
+      "id": "solinco_mach_10",
+      "product_type": "string",
+      "brand": "Solinco",
+      "model": "Mach-10",
+      "series": "Mach",
+      "category": "String",
+      "gauges_mm": [
+        1.15,
+        1.2,
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/solinco/solinco_mach_10.json",
+      "recognition": {
+        "strong_patterns": [
+          "Solinco Mach-10",
+          "Mach-10"
+        ],
+        "weak_patterns": [
+          "Mach",
+          "Solinco Mach"
+        ],
+        "normalized_strong_patterns": [
+          "solinco mach 10",
+          "mach 10"
+        ],
+        "normalized_weak_patterns": [
+          "mach",
+          "solinco mach"
+        ]
+      }
+    },
+    {
+      "id": "solinco_outlast",
+      "product_type": "string",
+      "brand": "Solinco",
+      "model": "Outlast",
+      "series": "Outlast",
+      "category": "String",
+      "gauges_mm": [
+        1.15,
+        1.2,
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/solinco/solinco_outlast.json",
+      "recognition": {
+        "strong_patterns": [
+          "Solinco Outlast",
+          "Outlast"
+        ],
+        "weak_patterns": [
+          "Outlast",
+          "Solinco Outlast"
+        ],
+        "normalized_strong_patterns": [
+          "solinco outlast",
+          "outlast"
+        ],
+        "normalized_weak_patterns": [
+          "outlast",
+          "solinco outlast"
+        ]
+      }
+    },
+    {
+      "id": "solinco_revolution",
+      "product_type": "string",
+      "brand": "Solinco",
+      "model": "Revolution",
+      "series": "Revolution",
+      "category": "String",
+      "gauges_mm": [
+        1.15,
+        1.2,
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/solinco/solinco_revolution.json",
+      "recognition": {
+        "strong_patterns": [
+          "Solinco Revolution",
+          "Revolution"
+        ],
+        "weak_patterns": [
+          "Revolution",
+          "Solinco Revolution"
+        ],
+        "normalized_strong_patterns": [
+          "solinco revolution",
+          "revolution"
+        ],
+        "normalized_weak_patterns": [
+          "revolution",
+          "solinco revolution"
+        ]
+      }
+    },
+    {
+      "id": "solinco_tour_bite",
+      "product_type": "string",
+      "brand": "Solinco",
+      "model": "Tour Bite",
+      "series": "Tour Bite",
+      "category": "String",
+      "gauges_mm": [
+        1.05,
+        1.1,
+        1.15,
+        1.2,
+        1.25,
+        1.3,
+        1.35
+      ],
+      "source_file": "knowledge/strings/solinco/solinco_tour_bite.json",
+      "recognition": {
+        "strong_patterns": [
+          "Solinco Tour Bite",
+          "Tour Bite"
+        ],
+        "weak_patterns": [
+          "Tour Bite",
+          "Solinco Tour Bite"
+        ],
+        "normalized_strong_patterns": [
+          "solinco tour bite",
+          "tour bite"
+        ],
+        "normalized_weak_patterns": [
+          "tour bite",
+          "solinco tour bite"
+        ]
+      }
+    },
+    {
+      "id": "solinco_tour_bite_diamond_rough",
+      "product_type": "string",
+      "brand": "Solinco",
+      "model": "Tour Bite Diamond Rough",
+      "series": "Tour Bite",
+      "category": "String",
+      "gauges_mm": [
+        1.2,
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/solinco/solinco_tour_bite_diamond_rough.json",
+      "recognition": {
+        "strong_patterns": [
+          "Solinco Tour Bite Diamond Rough",
+          "Tour Bite Diamond Rough"
+        ],
+        "weak_patterns": [
+          "Tour Bite",
+          "Solinco Tour Bite"
+        ],
+        "normalized_strong_patterns": [
+          "solinco tour bite diamond rough",
+          "tour bite diamond rough"
+        ],
+        "normalized_weak_patterns": [
+          "tour bite",
+          "solinco tour bite"
+        ]
+      }
+    },
+    {
+      "id": "solinco_tour_bite_vanquish_hybrid",
+      "product_type": "string",
+      "brand": "Solinco",
+      "model": "Tour Bite + Vanquish",
+      "series": "Tour Bite Hybrid",
+      "category": "Hybrid String Set",
+      "gauges_mm": [],
+      "source_file": "knowledge/strings/solinco/solinco_tour_bite_vanquish_hybrid.json",
+      "recognition": {
+        "strong_patterns": [
+          "Solinco Tour Bite + Vanquish",
+          "Tour Bite + Vanquish",
+          "solinco tour bite vanquish hybrid"
+        ],
+        "weak_patterns": [
+          "Tour Bite Hybrid",
+          "Solinco Tour Bite Hybrid"
+        ],
+        "normalized_strong_patterns": [
+          "solinco tour bite + vanquish",
+          "tour bite + vanquish",
+          "solinco tour bite vanquish hybrid"
+        ],
+        "normalized_weak_patterns": [
+          "tour bite hybrid",
+          "solinco tour bite hybrid"
+        ]
+      }
+    },
+    {
+      "id": "solinco_vanquish",
+      "product_type": "string",
+      "brand": "Solinco",
+      "model": "Vanquish",
+      "series": "Vanquish",
+      "category": "String",
+      "gauges_mm": [
+        1.2,
+        1.3,
+        1.35
+      ],
+      "source_file": "knowledge/strings/solinco/solinco_vanquish.json",
+      "recognition": {
+        "strong_patterns": [
+          "Solinco Vanquish",
+          "Vanquish"
+        ],
+        "weak_patterns": [
+          "Vanquish",
+          "Solinco Vanquish"
+        ],
+        "normalized_strong_patterns": [
+          "solinco vanquish",
+          "vanquish"
+        ],
+        "normalized_weak_patterns": [
+          "vanquish",
+          "solinco vanquish"
+        ]
+      }
+    },
+    {
+      "id": "tecnifibre_black_code",
+      "product_type": "string",
+      "brand": "Tecnifibre",
+      "model": "Black Code",
+      "series": "Black Code",
+      "category": "String",
+      "gauges_mm": [
+        1.18,
+        1.24,
+        1.28,
+        1.32
+      ],
+      "source_file": "knowledge/strings/tecnifibre/tecnifibre_black_code.json",
+      "recognition": {
+        "strong_patterns": [
+          "Tecnifibre Black Code",
+          "Black Code"
+        ],
+        "weak_patterns": [
+          "Black Code",
+          "Tecnifibre Black Code"
+        ],
+        "normalized_strong_patterns": [
+          "tecnifibre black code",
+          "black code"
+        ],
+        "normalized_weak_patterns": [
+          "black code",
+          "tecnifibre black code"
+        ]
+      }
+    },
+    {
+      "id": "tecnifibre_duramix",
+      "product_type": "string",
+      "brand": "Tecnifibre",
+      "model": "Duramix",
+      "series": "Duramix",
+      "category": "String",
+      "gauges_mm": [
+        1.25,
+        1.3,
+        1.35
+      ],
+      "source_file": "knowledge/strings/tecnifibre/tecnifibre_duramix.json",
+      "recognition": {
+        "strong_patterns": [
+          "Tecnifibre Duramix",
+          "Duramix"
+        ],
+        "weak_patterns": [
+          "Duramix",
+          "Tecnifibre Duramix"
+        ],
+        "normalized_strong_patterns": [
+          "tecnifibre duramix",
+          "duramix"
+        ],
+        "normalized_weak_patterns": [
+          "duramix",
+          "tecnifibre duramix"
+        ]
+      }
+    },
+    {
+      "id": "tecnifibre_nrg2_natural_118",
+      "product_type": "string",
+      "brand": "Tecnifibre",
+      "model": "NRG² Natural",
+      "series": "NRG²",
+      "category": "String",
+      "gauges_mm": [],
+      "source_file": "knowledge/strings/tecnifibre/tecnifibre_nrg2_natural_118.json",
+      "recognition": {
+        "strong_patterns": [
+          "Tecnifibre NRG² Natural",
+          "NRG² Natural",
+          "tecnifibre nrg2 natural 118"
+        ],
+        "weak_patterns": [
+          "NRG²",
+          "Tecnifibre NRG²"
+        ],
+        "normalized_strong_patterns": [
+          "tecnifibre nrg² natural",
+          "nrg² natural",
+          "tecnifibre nrg2 natural 118"
+        ],
+        "normalized_weak_patterns": [
+          "nrg²",
+          "tecnifibre nrg²"
+        ]
+      }
+    },
+    {
+      "id": "tecnifibre_razor_soft",
+      "product_type": "string",
+      "brand": "Tecnifibre",
+      "model": "Razor Soft",
+      "series": "Razor",
+      "category": "String",
+      "gauges_mm": [
+        1.2,
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/tecnifibre/tecnifibre_razor_soft_lime.json",
+      "recognition": {
+        "strong_patterns": [
+          "Tecnifibre Razor Soft",
+          "Razor Soft",
+          "tecnifibre razor soft lime"
+        ],
+        "weak_patterns": [
+          "Razor",
+          "Tecnifibre Razor"
+        ],
+        "normalized_strong_patterns": [
+          "tecnifibre razor soft",
+          "razor soft",
+          "tecnifibre razor soft lime"
+        ],
+        "normalized_weak_patterns": [
+          "razor",
+          "tecnifibre razor"
+        ]
+      }
+    },
+    {
+      "id": "tecnifibre_razor_spin_120",
+      "product_type": "string",
+      "brand": "Tecnifibre",
+      "model": "Razor Spin",
+      "series": "Razor",
+      "category": "String",
+      "gauges_mm": [],
+      "source_file": "knowledge/strings/tecnifibre/tecnifibre_razor_spin_120.json",
+      "recognition": {
+        "strong_patterns": [
+          "Tecnifibre Razor Spin",
+          "Razor Spin",
+          "tecnifibre razor spin 120"
+        ],
+        "weak_patterns": [
+          "Razor",
+          "Tecnifibre Razor"
+        ],
+        "normalized_strong_patterns": [
+          "tecnifibre razor spin",
+          "razor spin",
+          "tecnifibre razor spin 120"
+        ],
+        "normalized_weak_patterns": [
+          "razor",
+          "tecnifibre razor"
+        ]
+      }
+    },
+    {
+      "id": "tecnifibre_tgv",
+      "product_type": "string",
+      "brand": "Tecnifibre",
+      "model": "TGV",
+      "series": "TGV",
+      "category": "String",
+      "gauges_mm": [
+        1.25,
+        1.3,
+        1.35
+      ],
+      "source_file": "knowledge/strings/tecnifibre/tecnifibre_tgv_black.json",
+      "recognition": {
+        "strong_patterns": [
+          "Tecnifibre TGV",
+          "TGV",
+          "tecnifibre tgv black"
+        ],
+        "weak_patterns": [
+          "TGV",
+          "Tecnifibre TGV"
+        ],
+        "normalized_strong_patterns": [
+          "tecnifibre tgv",
+          "tgv",
+          "tecnifibre tgv black"
+        ],
+        "normalized_weak_patterns": [
+          "tgv",
+          "tecnifibre tgv"
+        ]
+      }
+    },
+    {
+      "id": "tecnifibre_triax_natural_128",
+      "product_type": "string",
+      "brand": "Tecnifibre",
+      "model": "Triax Natural",
+      "series": "Triax",
+      "category": "String",
+      "gauges_mm": [],
+      "source_file": "knowledge/strings/tecnifibre/tecnifibre_triax_natural_128.json",
+      "recognition": {
+        "strong_patterns": [
+          "Tecnifibre Triax Natural",
+          "Triax Natural",
+          "tecnifibre triax natural 128"
+        ],
+        "weak_patterns": [
+          "Triax",
+          "Tecnifibre Triax"
+        ],
+        "normalized_strong_patterns": [
+          "tecnifibre triax natural",
+          "triax natural",
+          "tecnifibre triax natural 128"
+        ],
+        "normalized_weak_patterns": [
+          "triax",
+          "tecnifibre triax"
+        ]
+      }
+    },
+    {
+      "id": "tecnifibre_x_one_biphase",
+      "product_type": "string",
+      "brand": "Tecnifibre",
+      "model": "X-One Biphase",
+      "series": "X-One Biphase",
+      "category": "String",
+      "gauges_mm": [
+        1.18,
+        1.24,
+        1.3,
+        1.34
+      ],
+      "source_file": "knowledge/strings/tecnifibre/tecnifibre_x_one_biphase.json",
+      "recognition": {
+        "strong_patterns": [
+          "Tecnifibre X-One Biphase",
+          "X-One Biphase"
+        ],
+        "weak_patterns": [
+          "X-One Biphase",
+          "Tecnifibre X-One Biphase"
+        ],
+        "normalized_strong_patterns": [
+          "tecnifibre x one biphase",
+          "x one biphase"
+        ],
+        "normalized_weak_patterns": [
+          "x one biphase",
+          "tecnifibre x one biphase"
+        ]
+      }
+    },
+    {
+      "id": "tecnifibre_x_one_biphase_118",
+      "product_type": "string",
+      "brand": "Tecnifibre",
+      "model": "X-One Biphase",
+      "series": "X-One Biphase",
+      "category": "String",
+      "gauges_mm": [],
+      "source_file": "knowledge/strings/tecnifibre/tecnifibre_x_one_biphase_118.json",
+      "recognition": {
+        "strong_patterns": [
+          "Tecnifibre X-One Biphase",
+          "X-One Biphase",
+          "tecnifibre x one biphase 118"
+        ],
+        "weak_patterns": [
+          "X-One Biphase",
+          "Tecnifibre X-One Biphase"
+        ],
+        "normalized_strong_patterns": [
+          "tecnifibre x one biphase",
+          "x one biphase",
+          "tecnifibre x one biphase 118"
+        ],
+        "normalized_weak_patterns": [
+          "x one biphase",
+          "tecnifibre x one biphase"
+        ]
+      }
+    },
+    {
+      "id": "tecnifibre_x_one_biphase_black_124",
+      "product_type": "string",
+      "brand": "Tecnifibre",
+      "model": "X-One Biphase Black",
+      "series": "X-One Biphase",
+      "category": "String",
+      "gauges_mm": [],
+      "source_file": "knowledge/strings/tecnifibre/tecnifibre_x_one_biphase_black_124.json",
+      "recognition": {
+        "strong_patterns": [
+          "Tecnifibre X-One Biphase Black",
+          "X-One Biphase Black",
+          "tecnifibre x one biphase black 124"
+        ],
+        "weak_patterns": [
+          "X-One Biphase",
+          "Tecnifibre X-One Biphase"
+        ],
+        "normalized_strong_patterns": [
+          "tecnifibre x one biphase black",
+          "x one biphase black",
+          "tecnifibre x one biphase black 124"
+        ],
+        "normalized_weak_patterns": [
+          "x one biphase",
+          "tecnifibre x one biphase"
+        ]
+      }
+    },
+    {
+      "id": "tecnifibre_xr3",
+      "product_type": "string",
+      "brand": "Tecnifibre",
+      "model": "XR3 Natural",
+      "series": "XR3",
+      "category": "String",
+      "gauges_mm": [
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/tecnifibre/tecnifibre_xr3.json",
+      "recognition": {
+        "strong_patterns": [
+          "Tecnifibre XR3 Natural",
+          "XR3 Natural",
+          "tecnifibre xr3"
+        ],
+        "weak_patterns": [
+          "XR3",
+          "Tecnifibre XR3"
+        ],
+        "normalized_strong_patterns": [
+          "tecnifibre xr3 natural",
+          "xr3 natural",
+          "tecnifibre xr3"
+        ],
+        "normalized_weak_patterns": [
+          "xr3",
+          "tecnifibre xr3"
+        ]
+      }
+    },
+    {
+      "id": "toroline_101_blend",
+      "product_type": "string",
+      "brand": "Toroline",
+      "model": "101 Blend",
+      "series": "101 Blend",
+      "category": "Hybrid String Set",
+      "gauges_mm": [],
+      "source_file": "knowledge/strings/toroline/toroline_101_blend.json",
+      "recognition": {
+        "strong_patterns": [
+          "Toroline 101 Blend",
+          "101 Blend"
+        ],
+        "weak_patterns": [
+          "101 Blend",
+          "Toroline 101 Blend"
+        ],
+        "normalized_strong_patterns": [
+          "toroline 101 blend",
+          "101 blend"
+        ],
+        "normalized_weak_patterns": [
+          "101 blend",
+          "toroline 101 blend"
+        ]
+      }
+    },
+    {
+      "id": "toroline_a5",
+      "product_type": "string",
+      "brand": "Toroline",
+      "model": "A5",
+      "series": "A5",
+      "category": "String",
+      "gauges_mm": [
+        1.2,
+        1.25
+      ],
+      "source_file": "knowledge/strings/toroline/toroline_a5.json",
+      "recognition": {
+        "strong_patterns": [
+          "Toroline A5",
+          "A5"
+        ],
+        "weak_patterns": [
+          "A5",
+          "Toroline A5"
+        ],
+        "normalized_strong_patterns": [
+          "toroline a5",
+          "a5"
+        ],
+        "normalized_weak_patterns": [
+          "a5",
+          "toroline a5"
+        ]
+      }
+    },
+    {
+      "id": "toroline_absolute",
+      "product_type": "string",
+      "brand": "Toroline",
+      "model": "Absolute",
+      "series": "Absolute",
+      "category": "String",
+      "gauges_mm": [
+        1.2
+      ],
+      "source_file": "knowledge/strings/toroline/toroline_absolute.json",
+      "recognition": {
+        "strong_patterns": [
+          "Toroline Absolute",
+          "Absolute"
+        ],
+        "weak_patterns": [
+          "Absolute",
+          "Toroline Absolute"
+        ],
+        "normalized_strong_patterns": [
+          "toroline absolute",
+          "absolute"
+        ],
+        "normalized_weak_patterns": [
+          "absolute",
+          "toroline absolute"
+        ]
+      }
+    },
+    {
+      "id": "toroline_cash",
+      "product_type": "string",
+      "brand": "Toroline",
+      "model": "CASH",
+      "series": "CASH",
+      "category": "String",
+      "gauges_mm": [
+        1.25
+      ],
+      "source_file": "knowledge/strings/toroline/toroline_cash.json",
+      "recognition": {
+        "strong_patterns": [
+          "Toroline CASH",
+          "CASH"
+        ],
+        "weak_patterns": [
+          "CASH",
+          "Toroline CASH"
+        ],
+        "normalized_strong_patterns": [
+          "toroline cash",
+          "cash"
+        ],
+        "normalized_weak_patterns": [
+          "cash",
+          "toroline cash"
+        ]
+      }
+    },
+    {
+      "id": "toroline_caviar",
+      "product_type": "string",
+      "brand": "Toroline",
+      "model": "CAVIAR",
+      "series": "CAVIAR",
+      "category": "String",
+      "gauges_mm": [
+        1.16,
+        1.2,
+        1.24
+      ],
+      "source_file": "knowledge/strings/toroline/toroline_caviar.json",
+      "recognition": {
+        "strong_patterns": [
+          "Toroline CAVIAR",
+          "CAVIAR"
+        ],
+        "weak_patterns": [
+          "CAVIAR",
+          "Toroline CAVIAR"
+        ],
+        "normalized_strong_patterns": [
+          "toroline caviar",
+          "caviar"
+        ],
+        "normalized_weak_patterns": [
+          "caviar",
+          "toroline caviar"
+        ]
+      }
+    },
+    {
+      "id": "toroline_chef_conor_monthly_special",
+      "product_type": "string",
+      "brand": "Toroline",
+      "model": "A5 Infrared 1.20 + Truffle X 1.30",
+      "series": "Chef Conor's Monthly Special",
+      "category": "Hybrid String Set",
+      "gauges_mm": [],
+      "source_file": "knowledge/strings/toroline/toroline_chef_conor_monthly_special.json",
+      "recognition": {
+        "strong_patterns": [
+          "Toroline A5 Infrared 1.20 + Truffle X 1.30",
+          "A5 Infrared 1.20 + Truffle X 1.30",
+          "toroline chef conor monthly special"
+        ],
+        "weak_patterns": [
+          "Chef Conor's Monthly Special",
+          "Toroline Chef Conor's Monthly Special"
+        ],
+        "normalized_strong_patterns": [
+          "toroline a5 infrared 1 20 + truffle x 1 30",
+          "a5 infrared 1 20 + truffle x 1 30",
+          "toroline chef conor monthly special"
+        ],
+        "normalized_weak_patterns": [
+          "chef conor s monthly special",
+          "toroline chef conor s monthly special"
+        ]
+      }
+    },
+    {
+      "id": "toroline_cole_blend",
+      "product_type": "string",
+      "brand": "Toroline",
+      "model": "COLE Blend",
+      "series": "COLE Blend",
+      "category": "Hybrid String Set",
+      "gauges_mm": [],
+      "source_file": "knowledge/strings/toroline/toroline_cole_blend.json",
+      "recognition": {
+        "strong_patterns": [
+          "Toroline COLE Blend",
+          "COLE Blend"
+        ],
+        "weak_patterns": [
+          "COLE Blend",
+          "Toroline COLE Blend"
+        ],
+        "normalized_strong_patterns": [
+          "toroline cole blend",
+          "cole blend"
+        ],
+        "normalized_weak_patterns": [
+          "cole blend",
+          "toroline cole blend"
+        ]
+      }
+    },
+    {
+      "id": "toroline_dreddy_blend",
+      "product_type": "string",
+      "brand": "Toroline",
+      "model": "DREDDY",
+      "series": "DREDDY Blend",
+      "category": "Hybrid String Set",
+      "gauges_mm": [],
+      "source_file": "knowledge/strings/toroline/toroline_dreddy_blend.json",
+      "recognition": {
+        "strong_patterns": [
+          "Toroline DREDDY",
+          "DREDDY",
+          "toroline dreddy blend"
+        ],
+        "weak_patterns": [
+          "DREDDY Blend",
+          "Toroline DREDDY Blend"
+        ],
+        "normalized_strong_patterns": [
+          "toroline dreddy",
+          "dreddy",
+          "toroline dreddy blend"
+        ],
+        "normalized_weak_patterns": [
+          "dreddy blend",
+          "toroline dreddy blend"
+        ]
+      }
+    },
+    {
+      "id": "toroline_enso_pro",
+      "product_type": "string",
+      "brand": "Toroline",
+      "model": "ENSO PRO",
+      "series": "ENSO PRO",
+      "category": "String",
+      "gauges_mm": [
+        1.24,
+        1.25
+      ],
+      "source_file": "knowledge/strings/toroline/toroline_enso_pro.json",
+      "recognition": {
+        "strong_patterns": [
+          "Toroline ENSO PRO",
+          "ENSO PRO"
+        ],
+        "weak_patterns": [
+          "ENSO PRO",
+          "Toroline ENSO PRO"
+        ],
+        "normalized_strong_patterns": [
+          "toroline enso pro",
+          "enso pro"
+        ],
+        "normalized_weak_patterns": [
+          "enso pro",
+          "toroline enso pro"
+        ]
+      }
+    },
+    {
+      "id": "toroline_o_snap",
+      "product_type": "string",
+      "brand": "Toroline",
+      "model": "O-SNAP",
+      "series": "O-SNAP",
+      "category": "Hybrid String Set",
+      "gauges_mm": [],
+      "source_file": "knowledge/strings/toroline/toroline_o_snap.json",
+      "recognition": {
+        "strong_patterns": [
+          "Toroline O-SNAP",
+          "O-SNAP"
+        ],
+        "weak_patterns": [
+          "O-SNAP",
+          "Toroline O-SNAP"
+        ],
+        "normalized_strong_patterns": [
+          "toroline o snap",
+          "o snap"
+        ],
+        "normalized_weak_patterns": [
+          "o snap",
+          "toroline o snap"
+        ]
+      }
+    },
+    {
+      "id": "toroline_o_toro",
+      "product_type": "string",
+      "brand": "Toroline",
+      "model": "O-TORO",
+      "series": "O-TORO",
+      "category": "String",
+      "gauges_mm": [
+        1.23
+      ],
+      "source_file": "knowledge/strings/toroline/toroline_o_toro.json",
+      "recognition": {
+        "strong_patterns": [
+          "Toroline O-TORO",
+          "O-TORO"
+        ],
+        "weak_patterns": [
+          "O-TORO",
+          "Toroline O-TORO"
+        ],
+        "normalized_strong_patterns": [
+          "toroline o toro",
+          "o toro"
+        ],
+        "normalized_weak_patterns": [
+          "o toro",
+          "toroline o toro"
+        ]
+      }
+    },
+    {
+      "id": "toroline_o_toro_octa",
+      "product_type": "string",
+      "brand": "Toroline",
+      "model": "O-TORO OCTA",
+      "series": "O-TORO",
+      "category": "String",
+      "gauges_mm": [
+        1.25
+      ],
+      "source_file": "knowledge/strings/toroline/toroline_o_toro_octa.json",
+      "recognition": {
+        "strong_patterns": [
+          "Toroline O-TORO OCTA",
+          "O-TORO OCTA"
+        ],
+        "weak_patterns": [
+          "O-TORO",
+          "Toroline O-TORO"
+        ],
+        "normalized_strong_patterns": [
+          "toroline o toro octa",
+          "o toro octa"
+        ],
+        "normalized_weak_patterns": [
+          "o toro",
+          "toroline o toro"
+        ]
+      }
+    },
+    {
+      "id": "toroline_o_toro_snap",
+      "product_type": "string",
+      "brand": "Toroline",
+      "model": "O-TORO SNAP",
+      "series": "O-TORO",
+      "category": "String",
+      "gauges_mm": [
+        1.25
+      ],
+      "source_file": "knowledge/strings/toroline/toroline_o_toro_snap.json",
+      "recognition": {
+        "strong_patterns": [
+          "Toroline O-TORO SNAP",
+          "O-TORO SNAP"
+        ],
+        "weak_patterns": [
+          "O-TORO",
+          "Toroline O-TORO"
+        ],
+        "normalized_strong_patterns": [
+          "toroline o toro snap",
+          "o toro snap"
+        ],
+        "normalized_weak_patterns": [
+          "o toro",
+          "toroline o toro"
+        ]
+      }
+    },
+    {
+      "id": "toroline_o_toro_snap_regular",
+      "product_type": "string",
+      "brand": "Toroline",
+      "model": "O-TORO SNAP",
+      "series": "O-TORO",
+      "category": "String",
+      "gauges_mm": [
+        1.25
+      ],
+      "source_file": "knowledge/strings/toroline/toroline_o_toro_snap_regular.json",
+      "recognition": {
+        "strong_patterns": [
+          "Toroline O-TORO SNAP",
+          "O-TORO SNAP",
+          "toroline o toro snap regular"
+        ],
+        "weak_patterns": [
+          "O-TORO",
+          "Toroline O-TORO"
+        ],
+        "normalized_strong_patterns": [
+          "toroline o toro snap",
+          "o toro snap",
+          "toroline o toro snap regular"
+        ],
+        "normalized_weak_patterns": [
+          "o toro",
+          "toroline o toro"
+        ]
+      }
+    },
+    {
+      "id": "toroline_o_toro_spin",
+      "product_type": "string",
+      "brand": "Toroline",
+      "model": "O-TORO Spin",
+      "series": "O-TORO",
+      "category": "String",
+      "gauges_mm": [
+        1.23
+      ],
+      "source_file": "knowledge/strings/toroline/toroline_o_toro_spin.json",
+      "recognition": {
+        "strong_patterns": [
+          "Toroline O-TORO Spin",
+          "O-TORO Spin"
+        ],
+        "weak_patterns": [
+          "O-TORO",
+          "Toroline O-TORO"
+        ],
+        "normalized_strong_patterns": [
+          "toroline o toro spin",
+          "o toro spin"
+        ],
+        "normalized_weak_patterns": [
+          "o toro",
+          "toroline o toro"
+        ]
+      }
+    },
+    {
+      "id": "toroline_o_toro_tour",
+      "product_type": "string",
+      "brand": "Toroline",
+      "model": "O-TORO TOUR",
+      "series": "O-TORO",
+      "category": "String",
+      "gauges_mm": [
+        1.2,
+        1.23
+      ],
+      "source_file": "knowledge/strings/toroline/toroline_o_toro_tour.json",
+      "recognition": {
+        "strong_patterns": [
+          "Toroline O-TORO TOUR",
+          "O-TORO TOUR"
+        ],
+        "weak_patterns": [
+          "O-TORO",
+          "Toroline O-TORO"
+        ],
+        "normalized_strong_patterns": [
+          "toroline o toro tour",
+          "o toro tour"
+        ],
+        "normalized_weak_patterns": [
+          "o toro",
+          "toroline o toro"
+        ]
+      }
+    },
+    {
+      "id": "toroline_snapaholic",
+      "product_type": "string",
+      "brand": "Toroline",
+      "model": "SNAPAHOLIC",
+      "series": "Chef's Choice",
+      "category": "Hybrid String Set",
+      "gauges_mm": [],
+      "source_file": "knowledge/strings/toroline/toroline_snapaholic.json",
+      "recognition": {
+        "strong_patterns": [
+          "Toroline SNAPAHOLIC",
+          "SNAPAHOLIC"
+        ],
+        "weak_patterns": [
+          "Chef's Choice",
+          "Toroline Chef's Choice"
+        ],
+        "normalized_strong_patterns": [
+          "toroline snapaholic",
+          "snapaholic"
+        ],
+        "normalized_weak_patterns": [
+          "chef s choice",
+          "toroline chef s choice"
+        ]
+      }
+    },
+    {
+      "id": "toroline_snapper",
+      "product_type": "string",
+      "brand": "Toroline",
+      "model": "Snapper",
+      "series": "Snapper",
+      "category": "String",
+      "gauges_mm": [
+        1.23
+      ],
+      "source_file": "knowledge/strings/toroline/toroline_snapper.json",
+      "recognition": {
+        "strong_patterns": [
+          "Toroline Snapper",
+          "Snapper"
+        ],
+        "weak_patterns": [
+          "Snapper",
+          "Toroline Snapper"
+        ],
+        "normalized_strong_patterns": [
+          "toroline snapper",
+          "snapper"
+        ],
+        "normalized_weak_patterns": [
+          "snapper",
+          "toroline snapper"
+        ]
+      }
+    },
+    {
+      "id": "toroline_stevie_blend_mint_gray",
+      "product_type": "string",
+      "brand": "Toroline",
+      "model": "STEVIE MINT/GRAY",
+      "series": "STEVIE Blend",
+      "category": "Hybrid String Set",
+      "gauges_mm": [],
+      "source_file": "knowledge/strings/toroline/toroline_stevie_blend_mint_gray.json",
+      "recognition": {
+        "strong_patterns": [
+          "Toroline STEVIE MINT/GRAY",
+          "STEVIE MINT/GRAY",
+          "toroline stevie blend mint gray"
+        ],
+        "weak_patterns": [
+          "STEVIE Blend",
+          "Toroline STEVIE Blend"
+        ],
+        "normalized_strong_patterns": [
+          "toroline stevie mint/gray",
+          "stevie mint/gray",
+          "toroline stevie blend mint gray"
+        ],
+        "normalized_weak_patterns": [
+          "stevie blend",
+          "toroline stevie blend"
+        ]
+      }
+    },
+    {
+      "id": "toroline_stevie_blend_mint_purple",
+      "product_type": "string",
+      "brand": "Toroline",
+      "model": "STEVIE MINT/PURPLE",
+      "series": "STEVIE Blend",
+      "category": "Hybrid String Set",
+      "gauges_mm": [],
+      "source_file": "knowledge/strings/toroline/toroline_stevie_blend_mint_purple.json",
+      "recognition": {
+        "strong_patterns": [
+          "Toroline STEVIE MINT/PURPLE",
+          "STEVIE MINT/PURPLE",
+          "toroline stevie blend mint purple"
+        ],
+        "weak_patterns": [
+          "STEVIE Blend",
+          "Toroline STEVIE Blend"
+        ],
+        "normalized_strong_patterns": [
+          "toroline stevie mint/purple",
+          "stevie mint/purple",
+          "toroline stevie blend mint purple"
+        ],
+        "normalized_weak_patterns": [
+          "stevie blend",
+          "toroline stevie blend"
+        ]
+      }
+    },
+    {
+      "id": "toroline_super_toro",
+      "product_type": "string",
+      "brand": "Toroline",
+      "model": "SUPER TORO",
+      "series": "SUPER TORO",
+      "category": "String",
+      "gauges_mm": [
+        1.23
+      ],
+      "source_file": "knowledge/strings/toroline/toroline_super_toro.json",
+      "recognition": {
+        "strong_patterns": [
+          "Toroline SUPER TORO",
+          "SUPER TORO"
+        ],
+        "weak_patterns": [
+          "SUPER TORO",
+          "Toroline SUPER TORO"
+        ],
+        "normalized_strong_patterns": [
+          "toroline super toro",
+          "super toro"
+        ],
+        "normalized_weak_patterns": [
+          "super toro",
+          "toroline super toro"
+        ]
+      }
+    },
+    {
+      "id": "toroline_toro_toro",
+      "product_type": "string",
+      "brand": "Toroline",
+      "model": "TORO TORO",
+      "series": "TORO TORO",
+      "category": "String",
+      "gauges_mm": [
+        1.23
+      ],
+      "source_file": "knowledge/strings/toroline/toroline_toro_toro.json",
+      "recognition": {
+        "strong_patterns": [
+          "Toroline TORO TORO",
+          "TORO TORO"
+        ],
+        "weak_patterns": [
+          "TORO TORO",
+          "Toroline TORO TORO"
+        ],
+        "normalized_strong_patterns": [
+          "toroline toro toro",
+          "toro toro"
+        ],
+        "normalized_weak_patterns": [
+          "toro toro",
+          "toroline toro toro"
+        ]
+      }
+    },
+    {
+      "id": "toroline_truffle_x",
+      "product_type": "string",
+      "brand": "Toroline",
+      "model": "Truffle X",
+      "series": "Truffle X",
+      "category": "String",
+      "gauges_mm": [
+        1.3
+      ],
+      "source_file": "knowledge/strings/toroline/toroline_truffle_x.json",
+      "recognition": {
+        "strong_patterns": [
+          "Toroline Truffle X",
+          "Truffle X"
+        ],
+        "weak_patterns": [
+          "Truffle X",
+          "Toroline Truffle X"
+        ],
+        "normalized_strong_patterns": [
+          "toroline truffle x",
+          "truffle x"
+        ],
+        "normalized_weak_patterns": [
+          "truffle x",
+          "toroline truffle x"
+        ]
+      }
+    },
+    {
+      "id": "toroline_vamos",
+      "product_type": "string",
+      "brand": "Toroline",
+      "model": "VAMOS",
+      "series": "VAMOS",
+      "category": "String",
+      "gauges_mm": [
+        1.23
+      ],
+      "source_file": "knowledge/strings/toroline/toroline_vamos.json",
+      "recognition": {
+        "strong_patterns": [
+          "Toroline VAMOS",
+          "VAMOS"
+        ],
+        "weak_patterns": [
+          "VAMOS",
+          "Toroline VAMOS"
+        ],
+        "normalized_strong_patterns": [
+          "toroline vamos",
+          "vamos"
+        ],
+        "normalized_weak_patterns": [
+          "vamos",
+          "toroline vamos"
+        ]
+      }
+    },
+    {
+      "id": "toroline_wasabi",
+      "product_type": "string",
+      "brand": "Toroline",
+      "model": "WASABI",
+      "series": "WASABI",
+      "category": "String",
+      "gauges_mm": [
+        1.23
+      ],
+      "source_file": "knowledge/strings/toroline/toroline_wasabi.json",
+      "recognition": {
+        "strong_patterns": [
+          "Toroline WASABI",
+          "WASABI"
+        ],
+        "weak_patterns": [
+          "WASABI",
+          "Toroline WASABI"
+        ],
+        "normalized_strong_patterns": [
+          "toroline wasabi",
+          "wasabi"
+        ],
+        "normalized_weak_patterns": [
+          "wasabi",
+          "toroline wasabi"
+        ]
+      }
+    },
+    {
+      "id": "toroline_wasabi_pro_hybrid",
+      "product_type": "string",
+      "brand": "Toroline",
+      "model": "WASABI PRO HYBRID",
+      "series": "WASABI PRO HYBRID",
+      "category": "Hybrid String Set",
+      "gauges_mm": [],
+      "source_file": "knowledge/strings/toroline/toroline_wasabi_pro_hybrid.json",
+      "recognition": {
+        "strong_patterns": [
+          "Toroline WASABI PRO HYBRID",
+          "WASABI PRO HYBRID"
+        ],
+        "weak_patterns": [
+          "WASABI PRO HYBRID",
+          "Toroline WASABI PRO HYBRID"
+        ],
+        "normalized_strong_patterns": [
+          "toroline wasabi pro hybrid",
+          "wasabi pro hybrid"
+        ],
+        "normalized_weak_patterns": [
+          "wasabi pro hybrid",
+          "toroline wasabi pro hybrid"
+        ]
+      }
+    },
+    {
+      "id": "toroline_wasabi_x",
+      "product_type": "string",
+      "brand": "Toroline",
+      "model": "Wasabi X",
+      "series": "WASABI",
+      "category": "String",
+      "gauges_mm": [
+        1.23
+      ],
+      "source_file": "knowledge/strings/toroline/toroline_wasabi_x.json",
+      "recognition": {
+        "strong_patterns": [
+          "Toroline Wasabi X",
+          "Wasabi X"
+        ],
+        "weak_patterns": [
+          "WASABI",
+          "Toroline WASABI"
+        ],
+        "normalized_strong_patterns": [
+          "toroline wasabi x",
+          "wasabi x"
+        ],
+        "normalized_weak_patterns": [
+          "wasabi",
+          "toroline wasabi"
+        ]
+      }
+    },
+    {
+      "id": "wilson_champions_choice_duo",
+      "product_type": "string",
+      "brand": "Wilson",
+      "model": "Champion's Choice Duo",
+      "series": "Champion's Choice",
+      "category": "Hybrid String Set",
+      "gauges_mm": [],
+      "source_file": "knowledge/strings/wilson/wilson_champions_choice_duo.json",
+      "recognition": {
+        "strong_patterns": [
+          "Wilson Champion's Choice Duo",
+          "Champion's Choice Duo",
+          "wilson champions choice duo"
+        ],
+        "weak_patterns": [
+          "Champion's Choice",
+          "Wilson Champion's Choice"
+        ],
+        "normalized_strong_patterns": [
+          "wilson champion s choice duo",
+          "champion s choice duo",
+          "wilson champions choice duo"
+        ],
+        "normalized_weak_patterns": [
+          "champion s choice",
+          "wilson champion s choice"
+        ]
+      }
+    },
+    {
+      "id": "wilson_duo_control",
+      "product_type": "string",
+      "brand": "Wilson",
+      "model": "Duo Control",
+      "series": "Duo",
+      "category": "Hybrid String Set",
+      "gauges_mm": [],
+      "source_file": "knowledge/strings/wilson/wilson_duo_control.json",
+      "recognition": {
+        "strong_patterns": [
+          "Wilson Duo Control",
+          "Duo Control"
+        ],
+        "weak_patterns": [
+          "Duo",
+          "Wilson Duo"
+        ],
+        "normalized_strong_patterns": [
+          "wilson duo control",
+          "duo control"
+        ],
+        "normalized_weak_patterns": [
+          "duo",
+          "wilson duo"
+        ]
+      }
+    },
+    {
+      "id": "wilson_duo_feel",
+      "product_type": "string",
+      "brand": "Wilson",
+      "model": "Duo Feel",
+      "series": "Duo",
+      "category": "Hybrid String Set",
+      "gauges_mm": [],
+      "source_file": "knowledge/strings/wilson/wilson_duo_feel.json",
+      "recognition": {
+        "strong_patterns": [
+          "Wilson Duo Feel",
+          "Duo Feel"
+        ],
+        "weak_patterns": [
+          "Duo",
+          "Wilson Duo"
+        ],
+        "normalized_strong_patterns": [
+          "wilson duo feel",
+          "duo feel"
+        ],
+        "normalized_weak_patterns": [
+          "duo",
+          "wilson duo"
+        ]
+      }
+    },
+    {
+      "id": "wilson_duo_power",
+      "product_type": "string",
+      "brand": "Wilson",
+      "model": "Duo Power",
+      "series": "Duo",
+      "category": "Hybrid String Set",
+      "gauges_mm": [],
+      "source_file": "knowledge/strings/wilson/wilson_duo_power.json",
+      "recognition": {
+        "strong_patterns": [
+          "Wilson Duo Power",
+          "Duo Power"
+        ],
+        "weak_patterns": [
+          "Duo",
+          "Wilson Duo"
+        ],
+        "normalized_strong_patterns": [
+          "wilson duo power",
+          "duo power"
+        ],
+        "normalized_weak_patterns": [
+          "duo",
+          "wilson duo"
+        ]
+      }
+    },
+    {
+      "id": "wilson_natural_gut_17",
+      "product_type": "string",
+      "brand": "Wilson",
+      "model": "Natural Gut 17",
+      "series": "Natural Gut",
+      "category": "Natural Gut",
+      "gauges_mm": [
+        1.25
+      ],
+      "source_file": "knowledge/strings/wilson/wilson_natural_gut_17.json",
+      "recognition": {
+        "strong_patterns": [
+          "Wilson Natural Gut 17",
+          "Natural Gut 17"
+        ],
+        "weak_patterns": [
+          "Natural Gut",
+          "Wilson Natural Gut"
+        ],
+        "normalized_strong_patterns": [
+          "wilson natural gut 17",
+          "natural gut 17"
+        ],
+        "normalized_weak_patterns": [
+          "natural gut",
+          "wilson natural gut"
+        ]
+      }
+    },
+    {
+      "id": "wilson_nxt_16",
+      "product_type": "string",
+      "brand": "Wilson",
+      "model": "NXT 16",
+      "series": "NXT",
+      "category": "String",
+      "gauges_mm": [
+        1.3
+      ],
+      "source_file": "knowledge/strings/wilson/wilson_nxt_16.json",
+      "recognition": {
+        "strong_patterns": [
+          "Wilson NXT 16",
+          "NXT 16"
+        ],
+        "weak_patterns": [
+          "NXT",
+          "Wilson NXT"
+        ],
+        "normalized_strong_patterns": [
+          "wilson nxt 16",
+          "nxt 16"
+        ],
+        "normalized_weak_patterns": [
+          "nxt",
+          "wilson nxt"
+        ]
+      }
+    },
+    {
+      "id": "wilson_nxt_17",
+      "product_type": "string",
+      "brand": "Wilson",
+      "model": "NXT 17",
+      "series": "NXT",
+      "category": "String",
+      "gauges_mm": [
+        1.24
+      ],
+      "source_file": "knowledge/strings/wilson/wilson_nxt_17.json",
+      "recognition": {
+        "strong_patterns": [
+          "Wilson NXT 17",
+          "NXT 17"
+        ],
+        "weak_patterns": [
+          "NXT",
+          "Wilson NXT"
+        ],
+        "normalized_strong_patterns": [
+          "wilson nxt 17",
+          "nxt 17"
+        ],
+        "normalized_weak_patterns": [
+          "nxt",
+          "wilson nxt"
+        ]
+      }
+    },
+    {
+      "id": "wilson_nxt_control_16",
+      "product_type": "string",
+      "brand": "Wilson",
+      "model": "NXT Control 16",
+      "series": "NXT Control",
+      "category": "String",
+      "gauges_mm": [
+        1.32
+      ],
+      "source_file": "knowledge/strings/wilson/wilson_nxt_control_16.json",
+      "recognition": {
+        "strong_patterns": [
+          "Wilson NXT Control 16",
+          "NXT Control 16"
+        ],
+        "weak_patterns": [
+          "NXT Control",
+          "Wilson NXT Control"
+        ],
+        "normalized_strong_patterns": [
+          "wilson nxt control 16",
+          "nxt control 16"
+        ],
+        "normalized_weak_patterns": [
+          "nxt control",
+          "wilson nxt control"
+        ]
+      }
+    },
+    {
+      "id": "wilson_nxt_duo_ii",
+      "product_type": "string",
+      "brand": "Wilson",
+      "model": "NXT Duo II",
+      "series": "NXT Duo",
+      "category": "Hybrid String Set",
+      "gauges_mm": [],
+      "source_file": "knowledge/strings/wilson/wilson_nxt_duo_ii.json",
+      "recognition": {
+        "strong_patterns": [
+          "Wilson NXT Duo II",
+          "NXT Duo II"
+        ],
+        "weak_patterns": [
+          "NXT Duo",
+          "Wilson NXT Duo"
+        ],
+        "normalized_strong_patterns": [
+          "wilson nxt duo ii",
+          "nxt duo ii"
+        ],
+        "normalized_weak_patterns": [
+          "nxt duo",
+          "wilson nxt duo"
+        ]
+      }
+    },
+    {
+      "id": "wilson_nxt_duramax_15",
+      "product_type": "string",
+      "brand": "Wilson",
+      "model": "NXT Duramax 15",
+      "series": "NXT Duramax",
+      "category": "String",
+      "gauges_mm": [
+        1.4
+      ],
+      "source_file": "knowledge/strings/wilson/wilson_nxt_duramax_15.json",
+      "recognition": {
+        "strong_patterns": [
+          "Wilson NXT Duramax 15",
+          "NXT Duramax 15"
+        ],
+        "weak_patterns": [
+          "NXT Duramax",
+          "Wilson NXT Duramax"
+        ],
+        "normalized_strong_patterns": [
+          "wilson nxt duramax 15",
+          "nxt duramax 15"
+        ],
+        "normalized_weak_patterns": [
+          "nxt duramax",
+          "wilson nxt duramax"
+        ]
+      }
+    },
+    {
+      "id": "wilson_nxt_duramax_16",
+      "product_type": "string",
+      "brand": "Wilson",
+      "model": "NXT Duramax 16",
+      "series": "NXT Duramax",
+      "category": "String",
+      "gauges_mm": [
+        1.32
+      ],
+      "source_file": "knowledge/strings/wilson/wilson_nxt_duramax_16.json",
+      "recognition": {
+        "strong_patterns": [
+          "Wilson NXT Duramax 16",
+          "NXT Duramax 16"
+        ],
+        "weak_patterns": [
+          "NXT Duramax",
+          "Wilson NXT Duramax"
+        ],
+        "normalized_strong_patterns": [
+          "wilson nxt duramax 16",
+          "nxt duramax 16"
+        ],
+        "normalized_weak_patterns": [
+          "nxt duramax",
+          "wilson nxt duramax"
+        ]
+      }
+    },
+    {
+      "id": "wilson_nxt_power_16",
+      "product_type": "string",
+      "brand": "Wilson",
+      "model": "NXT Power 16",
+      "series": "NXT Power",
+      "category": "String",
+      "gauges_mm": [
+        1.3
+      ],
+      "source_file": "knowledge/strings/wilson/wilson_nxt_power_16.json",
+      "recognition": {
+        "strong_patterns": [
+          "Wilson NXT Power 16",
+          "NXT Power 16"
+        ],
+        "weak_patterns": [
+          "NXT Power",
+          "Wilson NXT Power"
+        ],
+        "normalized_strong_patterns": [
+          "wilson nxt power 16",
+          "nxt power 16"
+        ],
+        "normalized_weak_patterns": [
+          "nxt power",
+          "wilson nxt power"
+        ]
+      }
+    },
+    {
+      "id": "wilson_nxt_power_17",
+      "product_type": "string",
+      "brand": "Wilson",
+      "model": "NXT Power 17",
+      "series": "NXT Power",
+      "category": "String",
+      "gauges_mm": [
+        1.26
+      ],
+      "source_file": "knowledge/strings/wilson/wilson_nxt_power_17.json",
+      "recognition": {
+        "strong_patterns": [
+          "Wilson NXT Power 17",
+          "NXT Power 17"
+        ],
+        "weak_patterns": [
+          "NXT Power",
+          "Wilson NXT Power"
+        ],
+        "normalized_strong_patterns": [
+          "wilson nxt power 17",
+          "nxt power 17"
+        ],
+        "normalized_weak_patterns": [
+          "nxt power",
+          "wilson nxt power"
+        ]
+      }
+    },
+    {
+      "id": "wilson_nxt_power_18",
+      "product_type": "string",
+      "brand": "Wilson",
+      "model": "NXT Power 18",
+      "series": "NXT Power",
+      "category": "String",
+      "gauges_mm": [
+        1.21
+      ],
+      "source_file": "knowledge/strings/wilson/wilson_nxt_power_18.json",
+      "recognition": {
+        "strong_patterns": [
+          "Wilson NXT Power 18",
+          "NXT Power 18"
+        ],
+        "weak_patterns": [
+          "NXT Power",
+          "Wilson NXT Power"
+        ],
+        "normalized_strong_patterns": [
+          "wilson nxt power 18",
+          "nxt power 18"
+        ],
+        "normalized_weak_patterns": [
+          "nxt power",
+          "wilson nxt power"
+        ]
+      }
+    },
+    {
+      "id": "wilson_revolve_16",
+      "product_type": "string",
+      "brand": "Wilson",
+      "model": "Revolve 16",
+      "series": "Revolve",
+      "category": "Co-Polyester",
+      "gauges_mm": [
+        1.3
+      ],
+      "source_file": "knowledge/strings/wilson/wilson_revolve_16.json",
+      "recognition": {
+        "strong_patterns": [
+          "Wilson Revolve 16",
+          "Revolve 16"
+        ],
+        "weak_patterns": [
+          "Revolve",
+          "Wilson Revolve"
+        ],
+        "normalized_strong_patterns": [
+          "wilson revolve 16",
+          "revolve 16"
+        ],
+        "normalized_weak_patterns": [
+          "revolve",
+          "wilson revolve"
+        ]
+      }
+    },
+    {
+      "id": "wilson_revolve_17",
+      "product_type": "string",
+      "brand": "Wilson",
+      "model": "Revolve 17",
+      "series": "Revolve",
+      "category": "Co-Polyester",
+      "gauges_mm": [
+        1.25
+      ],
+      "source_file": "knowledge/strings/wilson/wilson_revolve_17.json",
+      "recognition": {
+        "strong_patterns": [
+          "Wilson Revolve 17",
+          "Revolve 17"
+        ],
+        "weak_patterns": [
+          "Revolve",
+          "Wilson Revolve"
+        ],
+        "normalized_strong_patterns": [
+          "wilson revolve 17",
+          "revolve 17"
+        ],
+        "normalized_weak_patterns": [
+          "revolve",
+          "wilson revolve"
+        ]
+      }
+    },
+    {
+      "id": "wilson_revolve_spin_16",
+      "product_type": "string",
+      "brand": "Wilson",
+      "model": "Revolve Spin 16",
+      "series": "Revolve",
+      "category": "Co-Polyester",
+      "gauges_mm": [
+        1.3
+      ],
+      "source_file": "knowledge/strings/wilson/wilson_revolve_spin_16.json",
+      "recognition": {
+        "strong_patterns": [
+          "Wilson Revolve Spin 16",
+          "Revolve Spin 16"
+        ],
+        "weak_patterns": [
+          "Revolve",
+          "Wilson Revolve"
+        ],
+        "normalized_strong_patterns": [
+          "wilson revolve spin 16",
+          "revolve spin 16"
+        ],
+        "normalized_weak_patterns": [
+          "revolve",
+          "wilson revolve"
+        ]
+      }
+    },
+    {
+      "id": "wilson_revolve_spin_17",
+      "product_type": "string",
+      "brand": "Wilson",
+      "model": "Revolve Spin 17",
+      "series": "Revolve",
+      "category": "Co-Polyester",
+      "gauges_mm": [
+        1.25
+      ],
+      "source_file": "knowledge/strings/wilson/wilson_revolve_spin_17.json",
+      "recognition": {
+        "strong_patterns": [
+          "Wilson Revolve Spin 17",
+          "Revolve Spin 17"
+        ],
+        "weak_patterns": [
+          "Revolve",
+          "Wilson Revolve"
+        ],
+        "normalized_strong_patterns": [
+          "wilson revolve spin 17",
+          "revolve spin 17"
+        ],
+        "normalized_weak_patterns": [
+          "revolve",
+          "wilson revolve"
+        ]
+      }
+    },
+    {
+      "id": "wilson_sensation_15",
+      "product_type": "string",
+      "brand": "Wilson",
+      "model": "Sensation 15",
+      "series": "Sensation",
+      "category": "String",
+      "gauges_mm": [
+        1.35
+      ],
+      "source_file": "knowledge/strings/wilson/wilson_sensation_15.json",
+      "recognition": {
+        "strong_patterns": [
+          "Wilson Sensation 15",
+          "Sensation 15"
+        ],
+        "weak_patterns": [
+          "Sensation",
+          "Wilson Sensation"
+        ],
+        "normalized_strong_patterns": [
+          "wilson sensation 15",
+          "sensation 15"
+        ],
+        "normalized_weak_patterns": [
+          "sensation",
+          "wilson sensation"
+        ]
+      }
+    },
+    {
+      "id": "wilson_sensation_16",
+      "product_type": "string",
+      "brand": "Wilson",
+      "model": "Sensation 16",
+      "series": "Sensation",
+      "category": "String",
+      "gauges_mm": [
+        1.3
+      ],
+      "source_file": "knowledge/strings/wilson/wilson_sensation_16.json",
+      "recognition": {
+        "strong_patterns": [
+          "Wilson Sensation 16",
+          "Sensation 16"
+        ],
+        "weak_patterns": [
+          "Sensation",
+          "Wilson Sensation"
+        ],
+        "normalized_strong_patterns": [
+          "wilson sensation 16",
+          "sensation 16"
+        ],
+        "normalized_weak_patterns": [
+          "sensation",
+          "wilson sensation"
+        ]
+      }
+    },
+    {
+      "id": "wilson_sensation_control_16",
+      "product_type": "string",
+      "brand": "Wilson",
+      "model": "Sensation Control 16",
+      "series": "Sensation Control",
+      "category": "String",
+      "gauges_mm": [
+        1.3
+      ],
+      "source_file": "knowledge/strings/wilson/wilson_sensation_control_16.json",
+      "recognition": {
+        "strong_patterns": [
+          "Wilson Sensation Control 16",
+          "Sensation Control 16"
+        ],
+        "weak_patterns": [
+          "Sensation Control",
+          "Wilson Sensation Control"
+        ],
+        "normalized_strong_patterns": [
+          "wilson sensation control 16",
+          "sensation control 16"
+        ],
+        "normalized_weak_patterns": [
+          "sensation control",
+          "wilson sensation control"
+        ]
+      }
+    },
+    {
+      "id": "wilson_sensation_neon_16",
+      "product_type": "string",
+      "brand": "Wilson",
+      "model": "Sensation Neon 16",
+      "series": "Sensation",
+      "category": "String",
+      "gauges_mm": [
+        1.3
+      ],
+      "source_file": "knowledge/strings/wilson/wilson_sensation_neon_16.json",
+      "recognition": {
+        "strong_patterns": [
+          "Wilson Sensation Neon 16",
+          "Sensation Neon 16"
+        ],
+        "weak_patterns": [
+          "Sensation",
+          "Wilson Sensation"
+        ],
+        "normalized_strong_patterns": [
+          "wilson sensation neon 16",
+          "sensation neon 16"
+        ],
+        "normalized_weak_patterns": [
+          "sensation",
+          "wilson sensation"
+        ]
+      }
+    },
+    {
+      "id": "wilson_spin_effect_hybrid",
+      "product_type": "string",
+      "brand": "Wilson",
+      "model": "Spin Effect Hybrid",
+      "series": "Spin Effect",
+      "category": "Hybrid String Set",
+      "gauges_mm": [],
+      "source_file": "knowledge/strings/wilson/wilson_spin_effect_hybrid.json",
+      "recognition": {
+        "strong_patterns": [
+          "Wilson Spin Effect Hybrid",
+          "Spin Effect Hybrid"
+        ],
+        "weak_patterns": [
+          "Spin Effect",
+          "Wilson Spin Effect"
+        ],
+        "normalized_strong_patterns": [
+          "wilson spin effect hybrid",
+          "spin effect hybrid"
+        ],
+        "normalized_weak_patterns": [
+          "spin effect",
+          "wilson spin effect"
+        ]
+      }
+    },
+    {
+      "id": "wilson_synthetic_gut_power_16",
+      "product_type": "string",
+      "brand": "Wilson",
+      "model": "Synthetic Gut Power 16",
+      "series": "Synthetic Gut",
+      "category": "Synthetic Gut",
+      "gauges_mm": [
+        1.3
+      ],
+      "source_file": "knowledge/strings/wilson/wilson_synthetic_gut_power_16.json",
+      "recognition": {
+        "strong_patterns": [
+          "Wilson Synthetic Gut Power 16",
+          "Synthetic Gut Power 16"
+        ],
+        "weak_patterns": [
+          "Synthetic Gut",
+          "Wilson Synthetic Gut"
+        ],
+        "normalized_strong_patterns": [
+          "wilson synthetic gut power 16",
+          "synthetic gut power 16"
+        ],
+        "normalized_weak_patterns": [
+          "synthetic gut",
+          "wilson synthetic gut"
+        ]
+      }
+    },
+    {
+      "id": "wilson_synthetic_gut_power_17",
+      "product_type": "string",
+      "brand": "Wilson",
+      "model": "Synthetic Gut Power 17",
+      "series": "Synthetic Gut",
+      "category": "Synthetic Gut",
+      "gauges_mm": [
+        1.25
+      ],
+      "source_file": "knowledge/strings/wilson/wilson_synthetic_gut_power_17.json",
+      "recognition": {
+        "strong_patterns": [
+          "Wilson Synthetic Gut Power 17",
+          "Synthetic Gut Power 17"
+        ],
+        "weak_patterns": [
+          "Synthetic Gut",
+          "Wilson Synthetic Gut"
+        ],
+        "normalized_strong_patterns": [
+          "wilson synthetic gut power 17",
+          "synthetic gut power 17"
+        ],
+        "normalized_weak_patterns": [
+          "synthetic gut",
+          "wilson synthetic gut"
+        ]
+      }
+    },
+    {
+      "id": "yonex_dynawire",
+      "product_type": "string",
+      "brand": "Yonex",
+      "model": "Dynawire",
+      "series": "Dynawire",
+      "category": "Synthetic Gut",
+      "gauges_mm": [
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/yonex/yonex_dynawire.json",
+      "recognition": {
+        "strong_patterns": [
+          "Yonex Dynawire",
+          "Dynawire"
+        ],
+        "weak_patterns": [
+          "Dynawire",
+          "Yonex Dynawire"
+        ],
+        "normalized_strong_patterns": [
+          "yonex dynawire",
+          "dynawire"
+        ],
+        "normalized_weak_patterns": [
+          "dynawire",
+          "yonex dynawire"
+        ]
+      }
+    },
+    {
+      "id": "yonex_polytour_air",
+      "product_type": "string",
+      "brand": "Yonex",
+      "model": "PolyTour Air",
+      "series": "PolyTour",
+      "category": "Co-Polyester",
+      "gauges_mm": [
+        1.25
+      ],
+      "source_file": "knowledge/strings/yonex/yonex_polytour_air.json",
+      "recognition": {
+        "strong_patterns": [
+          "Yonex PolyTour Air",
+          "PolyTour Air"
+        ],
+        "weak_patterns": [
+          "PolyTour",
+          "Yonex PolyTour"
+        ],
+        "normalized_strong_patterns": [
+          "yonex polytour air",
+          "polytour air"
+        ],
+        "normalized_weak_patterns": [
+          "polytour",
+          "yonex polytour"
+        ]
+      }
+    },
+    {
+      "id": "yonex_polytour_drive",
+      "product_type": "string",
+      "brand": "Yonex",
+      "model": "PolyTour Drive 125",
+      "series": "PolyTour",
+      "category": "Co-Polyester",
+      "gauges_mm": [
+        1.25
+      ],
+      "source_file": "knowledge/strings/yonex/yonex_polytour_drive.json",
+      "recognition": {
+        "strong_patterns": [
+          "Yonex PolyTour Drive 125",
+          "PolyTour Drive 125",
+          "yonex polytour drive"
+        ],
+        "weak_patterns": [
+          "PolyTour",
+          "Yonex PolyTour"
+        ],
+        "normalized_strong_patterns": [
+          "yonex polytour drive 125",
+          "polytour drive 125",
+          "yonex polytour drive"
+        ],
+        "normalized_weak_patterns": [
+          "polytour",
+          "yonex polytour"
+        ]
+      }
+    },
+    {
+      "id": "yonex_polytour_drive_soft",
+      "product_type": "string",
+      "brand": "Yonex",
+      "model": "PolyTour Drive Soft",
+      "series": "PolyTour",
+      "category": "Co-Polyester",
+      "gauges_mm": [
+        1.25
+      ],
+      "source_file": "knowledge/strings/yonex/yonex_polytour_drive_soft.json",
+      "recognition": {
+        "strong_patterns": [
+          "Yonex PolyTour Drive Soft",
+          "PolyTour Drive Soft"
+        ],
+        "weak_patterns": [
+          "PolyTour",
+          "Yonex PolyTour"
+        ],
+        "normalized_strong_patterns": [
+          "yonex polytour drive soft",
+          "polytour drive soft"
+        ],
+        "normalized_weak_patterns": [
+          "polytour",
+          "yonex polytour"
+        ]
+      }
+    },
+    {
+      "id": "yonex_polytour_fire",
+      "product_type": "string",
+      "brand": "Yonex",
+      "model": "PolyTour Fire",
+      "series": "PolyTour",
+      "category": "Co-Polyester",
+      "gauges_mm": [
+        1.2,
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/yonex/yonex_polytour_fire.json",
+      "recognition": {
+        "strong_patterns": [
+          "Yonex PolyTour Fire",
+          "PolyTour Fire"
+        ],
+        "weak_patterns": [
+          "PolyTour",
+          "Yonex PolyTour"
+        ],
+        "normalized_strong_patterns": [
+          "yonex polytour fire",
+          "polytour fire"
+        ],
+        "normalized_weak_patterns": [
+          "polytour",
+          "yonex polytour"
+        ]
+      }
+    },
+    {
+      "id": "yonex_polytour_force",
+      "product_type": "string",
+      "brand": "Yonex",
+      "model": "PolyTour Force",
+      "series": "PolyTour",
+      "category": "Co-Polyester",
+      "gauges_mm": [
+        1.2,
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/yonex/yonex_polytour_force.json",
+      "recognition": {
+        "strong_patterns": [
+          "Yonex PolyTour Force",
+          "PolyTour Force"
+        ],
+        "weak_patterns": [
+          "PolyTour",
+          "Yonex PolyTour"
+        ],
+        "normalized_strong_patterns": [
+          "yonex polytour force",
+          "polytour force"
+        ],
+        "normalized_weak_patterns": [
+          "polytour",
+          "yonex polytour"
+        ]
+      }
+    },
+    {
+      "id": "yonex_polytour_pro",
+      "product_type": "string",
+      "brand": "Yonex",
+      "model": "PolyTour Pro",
+      "series": "PolyTour",
+      "category": "Co-Polyester",
+      "gauges_mm": [
+        1.15,
+        1.2,
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/yonex/yonex_polytour_pro.json",
+      "recognition": {
+        "strong_patterns": [
+          "Yonex PolyTour Pro",
+          "PolyTour Pro"
+        ],
+        "weak_patterns": [
+          "PolyTour",
+          "Yonex PolyTour"
+        ],
+        "normalized_strong_patterns": [
+          "yonex polytour pro",
+          "polytour pro"
+        ],
+        "normalized_weak_patterns": [
+          "polytour",
+          "yonex polytour"
+        ]
+      }
+    },
+    {
+      "id": "yonex_polytour_rev",
+      "product_type": "string",
+      "brand": "Yonex",
+      "model": "PolyTour Rev",
+      "series": "PolyTour",
+      "category": "Co-Polyester",
+      "gauges_mm": [
+        1.2,
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/yonex/yonex_polytour_rev.json",
+      "recognition": {
+        "strong_patterns": [
+          "Yonex PolyTour Rev",
+          "PolyTour Rev"
+        ],
+        "weak_patterns": [
+          "PolyTour",
+          "Yonex PolyTour"
+        ],
+        "normalized_strong_patterns": [
+          "yonex polytour rev",
+          "polytour rev"
+        ],
+        "normalized_weak_patterns": [
+          "polytour",
+          "yonex polytour"
+        ]
+      }
+    },
+    {
+      "id": "yonex_polytour_spin",
+      "product_type": "string",
+      "brand": "Yonex",
+      "model": "PolyTour Spin",
+      "series": "PolyTour",
+      "category": "Co-Polyester",
+      "gauges_mm": [
+        1.2,
+        1.25
+      ],
+      "source_file": "knowledge/strings/yonex/yonex_polytour_spin.json",
+      "recognition": {
+        "strong_patterns": [
+          "Yonex PolyTour Spin",
+          "PolyTour Spin"
+        ],
+        "weak_patterns": [
+          "PolyTour",
+          "Yonex PolyTour"
+        ],
+        "normalized_strong_patterns": [
+          "yonex polytour spin",
+          "polytour spin"
+        ],
+        "normalized_weak_patterns": [
+          "polytour",
+          "yonex polytour"
+        ]
+      }
+    },
+    {
+      "id": "yonex_rexis_activate",
+      "product_type": "string",
+      "brand": "Yonex",
+      "model": "REXIS Activate",
+      "series": "REXIS",
+      "category": "Multifilament",
+      "gauges_mm": [
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/yonex/yonex_rexis_activate.json",
+      "recognition": {
+        "strong_patterns": [
+          "Yonex REXIS Activate",
+          "REXIS Activate"
+        ],
+        "weak_patterns": [
+          "REXIS",
+          "Yonex REXIS"
+        ],
+        "normalized_strong_patterns": [
+          "yonex rexis activate",
+          "rexis activate"
+        ],
+        "normalized_weak_patterns": [
+          "rexis",
+          "yonex rexis"
+        ]
+      }
+    },
+    {
+      "id": "yonex_rexis_comfort",
+      "product_type": "string",
+      "brand": "Yonex",
+      "model": "REXIS Comfort",
+      "series": "REXIS",
+      "category": "Multifilament",
+      "gauges_mm": [
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/yonex/yonex_rexis_comfort.json",
+      "recognition": {
+        "strong_patterns": [
+          "Yonex REXIS Comfort",
+          "REXIS Comfort"
+        ],
+        "weak_patterns": [
+          "REXIS",
+          "Yonex REXIS"
+        ],
+        "normalized_strong_patterns": [
+          "yonex rexis comfort",
+          "rexis comfort"
+        ],
+        "normalized_weak_patterns": [
+          "rexis",
+          "yonex rexis"
+        ]
+      }
+    },
+    {
+      "id": "yonex_rexis_feel",
+      "product_type": "string",
+      "brand": "Yonex",
+      "model": "REXIS Feel",
+      "series": "REXIS",
+      "category": "Multifilament",
+      "gauges_mm": [
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/yonex/yonex_rexis_feel.json",
+      "recognition": {
+        "strong_patterns": [
+          "Yonex REXIS Feel",
+          "REXIS Feel"
+        ],
+        "weak_patterns": [
+          "REXIS",
+          "Yonex REXIS"
+        ],
+        "normalized_strong_patterns": [
+          "yonex rexis feel",
+          "rexis feel"
+        ],
+        "normalized_weak_patterns": [
+          "rexis",
+          "yonex rexis"
+        ]
+      }
+    },
+    {
+      "id": "yonex_rexis_speed",
+      "product_type": "string",
+      "brand": "Yonex",
+      "model": "REXIS Speed",
+      "series": "REXIS",
+      "category": "Multifilament",
+      "gauges_mm": [
+        1.25,
+        1.3
+      ],
+      "source_file": "knowledge/strings/yonex/yonex_rexis_speed.json",
+      "recognition": {
+        "strong_patterns": [
+          "Yonex REXIS Speed",
+          "REXIS Speed"
+        ],
+        "weak_patterns": [
+          "REXIS",
+          "Yonex REXIS"
+        ],
+        "normalized_strong_patterns": [
+          "yonex rexis speed",
+          "rexis speed"
+        ],
+        "normalized_weak_patterns": [
+          "rexis",
+          "yonex rexis"
+        ]
+      }
+    }
+  ]
+}

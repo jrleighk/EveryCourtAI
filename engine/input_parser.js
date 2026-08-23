@@ -20,11 +20,17 @@
  * ============================================================
  */
 
+import {
+    resolveRacquet,
+    resolveString
+} from "./product_resolver.js";
+
+
 const PARSER_NAME =
     "EveryCourtAI Input Parser";
 
 const PARSER_VERSION =
-    "1.2";
+    "1.3";
 
 
 /**
@@ -473,6 +479,50 @@ function detectRacquet(
     message
 ) {
 
+    /**
+     * ========================================================
+     * Product Resolver V1
+     * ========================================================
+     */
+
+    const resolved =
+        resolveRacquet(
+            message
+        );
+
+
+    if (
+        resolved
+            ?.status ===
+            "resolved" &&
+        resolved
+            ?.match
+            ?.id
+    ) {
+
+        return {
+
+            id:
+                resolved.match.id,
+
+            brand:
+                resolved.match.brand,
+
+            model:
+                resolved.match.model
+        };
+    }
+
+
+    /**
+     * ========================================================
+     * Legacy Dictionary Fallback
+     * ========================================================
+     *
+     * Kept temporarily for backward compatibility.
+     * ========================================================
+     */
+
     const sortedPatterns =
         [...RACQUET_PATTERNS]
             .sort(
@@ -548,6 +598,53 @@ function detectRacquet(
 function detectString(
     message
 ) {
+
+    /**
+     * ========================================================
+     * Product Resolver V1
+     * ========================================================
+     */
+
+    const resolved =
+        resolveString(
+            message
+        );
+
+
+    if (
+        resolved
+            ?.status ===
+            "resolved" &&
+        resolved
+            ?.match
+            ?.id
+    ) {
+
+        return {
+
+            id:
+                resolved.match.id,
+
+            brand:
+                resolved.match.brand,
+
+            model:
+                resolved.match.model,
+
+            gauge_mm:
+                resolved
+                    ?.match
+                    ?.gauge_mm ??
+                null
+        };
+    }
+
+
+    /**
+     * ========================================================
+     * Legacy Dictionary Fallback
+     * ========================================================
+     */
 
     const candidates =
         [];

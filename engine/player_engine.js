@@ -33,6 +33,17 @@ const ALLOWED_PLAYING_STYLES = [
     "serve_volley"
 ];
 
+const PLAYING_STYLE_ALIASES = {
+    baseline: "baseline_grinder",
+    aggressive_baseline: "baseline_aggressive",
+    baseline_aggressive: "baseline_aggressive",
+    counterpuncher: "baseline_counterpuncher",
+    baseline_counterpuncher: "baseline_counterpuncher",
+    serve_and_volley: "serve_volley",
+    serve_volley: "serve_volley",
+    all_court: "all_court"
+};
+
 const ALLOWED_SWING_SPEEDS = [
     "slow",
     "medium",
@@ -117,6 +128,33 @@ function validateAllowedValue(value, allowedValues) {
     return allowedValues.includes(normalized)
         ? normalized
         : null;
+}
+
+function normalizePlayingStyleAlias(value) {
+    if (!value) {
+        return null;
+    }
+
+    const rawValue =
+        typeof value === "object"
+            ? value?.primary
+            : value;
+
+    const normalized =
+        normalizeText(
+            rawValue
+        );
+
+    if (!normalized) {
+        return null;
+    }
+
+    return (
+        PLAYING_STYLE_ALIASES[
+            normalized
+        ] ??
+        normalized
+    );
 }
 
 /**
@@ -533,8 +571,12 @@ export async function buildPlayerProfile(
 
     const primaryPlayingStyle =
         validateAllowedValue(
-            playerInput.playing_style ??
-            playerInput?.playing_style?.primary,
+            normalizePlayingStyleAlias(
+                playerInput.playing_style ??
+                playerInput
+                    ?.playing_style
+                    ?.primary
+            ),
             ALLOWED_PLAYING_STYLES
         );
 

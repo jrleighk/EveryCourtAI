@@ -560,9 +560,48 @@ async function handleAI(
                     : {};
 
 
+            const parserPlayerInput =
+                isValidObject(
+                    parserResult?.player_input
+                )
+                    ? Object.fromEntries(
+                        Object.entries(
+                            parserResult.player_input
+                        ).filter(
+                            ([key, value]) =>
+                                key === "basic" ||
+                                (
+                                    value !== null &&
+                                    value !== undefined &&
+                                    value !== ""
+                                )
+                        )
+                    )
+                    : {};
+
+
+            const parserBasic =
+                isValidObject(
+                    parserResult
+                        ?.player_input
+                        ?.basic
+                )
+                    ? Object.fromEntries(
+                        Object.entries(
+                            parserResult.player_input.basic
+                        ).filter(
+                            ([, value]) =>
+                                value !== null &&
+                                value !== undefined &&
+                                value !== ""
+                        )
+                    )
+                    : {};
+
+
             currentTurnPlayerInput = {
                 ...structuredPlayerInput,
-                ...parserResult.player_input,
+                ...parserPlayerInput,
 
                 basic: {
                     ...(
@@ -574,15 +613,7 @@ async function handleAI(
                             : {}
                     ),
 
-                    ...(
-                        isValidObject(
-                            parserResult
-                                ?.player_input
-                                ?.basic
-                        )
-                            ? parserResult.player_input.basic
-                            : {}
-                    )
+                    ...parserBasic
                 }
             };
 
