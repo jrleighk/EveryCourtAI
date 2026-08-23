@@ -1,0 +1,32 @@
+{
+  "version": "0.1",
+  "services": [
+    {
+      "store_id": "store_demo_001",
+      "service_id": "stringing_standard",
+      "service_type": "stringing_service",
+      "name": "Professional Stringing",
+      "price": 18,
+      "currency": "SGD",
+      "active": true
+    },
+    {
+      "store_id": "store_demo_002",
+      "service_id": "stringing_standard",
+      "service_type": "stringing_service",
+      "name": "Professional Stringing",
+      "price": 80,
+      "currency": "CNY",
+      "active": true
+    },
+    {
+      "store_id": "store_demo_003",
+      "service_id": "stringing_standard",
+      "service_type": "stringing_service",
+      "name": "Professional Stringing",
+      "price": 2200,
+      "currency": "JPY",
+      "active": true
+    }
+  ]
+}

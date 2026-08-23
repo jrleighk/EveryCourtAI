@@ -1,0 +1,85 @@
+{
+  "version": "0.1",
+  "stores": [
+    {
+      "id": "store_demo_001",
+      "name": "EveryCourt Tennis Store A",
+      "country_code": "SG",
+      "country": "Singapore",
+      "city": "Singapore",
+      "currency": "SGD",
+      "location": {
+        "latitude": 1.3048,
+        "longitude": 103.8318
+      },
+      "store_type": [
+        "tennis_shop",
+        "stringing_service"
+      ],
+      "brands": [
+        "Wilson",
+        "Babolat",
+        "HEAD",
+        "Yonex"
+      ],
+      "capabilities": [
+        "racquet_sales",
+        "string_sales",
+        "stringing_service"
+      ],
+      "active": true
+    },
+    {
+      "id": "store_demo_002",
+      "name": "EveryCourt Tennis Store B",
+      "country_code": "CN",
+      "country": "China",
+      "city": "Shanghai",
+      "currency": "CNY",
+      "location": {
+        "latitude": 31.2304,
+        "longitude": 121.4737
+      },
+      "store_type": [
+        "tennis_shop",
+        "stringing_service"
+      ],
+      "brands": [
+        "Wilson",
+        "HEAD",
+        "Tecnifibre"
+      ],
+      "capabilities": [
+        "racquet_sales",
+        "string_sales",
+        "stringing_service"
+      ],
+      "active": true
+    },
+    {
+      "id": "store_demo_003",
+      "name": "EveryCourt Tennis Store C",
+      "country_code": "JP",
+      "country": "Japan",
+      "city": "Tokyo",
+      "currency": "JPY",
+      "location": {
+        "latitude": 35.6762,
+        "longitude": 139.6503
+      },
+      "store_type": [
+        "tennis_shop"
+      ],
+      "brands": [
+        "Yonex",
+        "Wilson",
+        "Babolat"
+      ],
+      "capabilities": [
+        "racquet_sales",
+        "string_sales"
+      ],
+      "active": true
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "version": "0.1",
+  "inventory": [
+    {
+      "store_id": "store_demo_001",
+      "product_id": "head_hawk_touch",
+      "product_type": "string",
+      "gauge_mm": 1.25,
+      "price": 27,
+      "currency": "SGD",
+      "stock_status": "in_stock",
+      "quantity": 12
+    },
+    {
+      "store_id": "store_demo_001",
+      "product_id": "wilson_natural_gut_17",
+      "product_type": "string",
+      "gauge_mm": 1.25,
+      "price": 62,
+      "currency": "SGD",
+      "stock_status": "in_stock",
+      "quantity": 4
+    },
+    {
+      "store_id": "store_demo_002",
+      "product_id": "head_hawk_touch",
+      "product_type": "string",
+      "gauge_mm": 1.25,
+      "price": 198,
+      "currency": "CNY",
+      "stock_status": "in_stock",
+      "quantity": 8
+    },
+    {
+      "store_id": "store_demo_002",
+      "product_id": "wilson_rf_01_pro_classic",
+      "product_type": "racquet",
+      "price": 2199,
+      "currency": "CNY",
+      "stock_status": "in_stock",
+      "quantity": 2
+    },
+    {
+      "store_id": "store_demo_003",
+      "product_id": "wilson_rf_01_pro_classic",
+      "product_type": "racquet",
+      "price": 44900,
+      "currency": "JPY",
+      "stock_status": "in_stock",
+      "quantity": 1
+    }
+  ]
+}
