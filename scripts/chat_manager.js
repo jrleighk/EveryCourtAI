@@ -1002,69 +1002,54 @@ export function resetConversationState() {
 
 function readPlayerProfileForm() {
 
-    const nameElement =
-        document.getElementById(
-            "playerName"
-        );
-
-    const genderElement =
-        document.getElementById(
-            "playerGender"
-        );
-
-    const ageElement =
-        document.getElementById(
-            "playerAge"
-        );
-
-    const heightElement =
-        document.getElementById(
-            "playerHeight"
-        );
-
-    const weightElement =
-        document.getElementById(
-            "playerWeight"
-        );
-
-    const handElement =
-        document.getElementById(
-            "playerDominantHand"
-        );
+    const getValue =
+        id =>
+            String(
+                document
+                    .getElementById(id)
+                    ?.value ??
+                ""
+            ).trim();
 
 
     const basic = {};
 
 
     const name =
-        String(
-            nameElement?.value ?? ""
-        ).trim();
+        getValue(
+            "playerName"
+        );
 
     const gender =
-        String(
-            genderElement?.value ?? ""
-        ).trim();
+        getValue(
+            "playerGender"
+        );
 
     const age =
         Number(
-            ageElement?.value
+            getValue(
+                "playerAge"
+            )
         );
 
     const height =
         Number(
-            heightElement?.value
+            getValue(
+                "playerHeight"
+            )
         );
 
     const weight =
         Number(
-            weightElement?.value
+            getValue(
+                "playerWeight"
+            )
         );
 
     const dominantHand =
-        String(
-            handElement?.value ?? ""
-        ).trim();
+        getValue(
+            "playerDominantHand"
+        );
 
 
     if (name) {
@@ -1107,10 +1092,104 @@ function readPlayerProfileForm() {
     }
 
 
-    return Object.keys(basic).length > 0
-        ? {
-            basic
-        }
+    const playerInput = {};
+
+
+    if (
+        Object.keys(basic)
+            .length > 0
+    ) {
+        playerInput.basic =
+            basic;
+    }
+
+
+    const currentRacquet =
+        getValue(
+            "playerCurrentRacquet"
+        );
+
+    const currentString =
+        getValue(
+            "playerCurrentString"
+        );
+
+    const tensionRaw =
+        getValue(
+            "playerCurrentTension"
+        );
+
+    const currentTension =
+        Number(
+            tensionRaw
+        );
+
+    const primaryGoal =
+        getValue(
+            "playerPrimaryGoal"
+        );
+
+    const playingStyle =
+        getValue(
+            "playerPlayingStyle"
+        );
+
+    const swingSpeed =
+        getValue(
+            "playerSwingSpeed"
+        );
+
+    const feelPreference =
+        getValue(
+            "playerFeelPreference"
+        );
+
+
+    if (currentRacquet) {
+        playerInput.current_racquet =
+            currentRacquet;
+    }
+
+    if (currentString) {
+        playerInput.current_string =
+            currentString;
+    }
+
+    if (
+        tensionRaw &&
+        Number.isFinite(
+            currentTension
+        )
+    ) {
+        playerInput.current_tension =
+            currentTension;
+    }
+
+    if (primaryGoal) {
+        playerInput.primary_goal =
+            primaryGoal;
+    }
+
+    if (playingStyle) {
+        playerInput.playing_style =
+            playingStyle;
+    }
+
+    if (swingSpeed) {
+        playerInput.swing_speed =
+            swingSpeed;
+    }
+
+    if (feelPreference) {
+        playerInput.feel_preference =
+            feelPreference;
+    }
+
+
+    return Object.keys(
+        playerInput
+    ).length > 0
+        ? playerInput
         : null;
 }
 
