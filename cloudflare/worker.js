@@ -79,6 +79,11 @@ import {
 } from "../engine/conversation_state_engine.js";
 
 
+import {
+    normalizeStructuredProductInput
+} from "../engine/structured_product_input.js";
+
+
 /**
  * ============================================================
  * Configuration
@@ -556,7 +561,9 @@ async function handleAI(
                 isValidObject(
                     body?.player_input
                 )
-                    ? body.player_input
+                    ? normalizeStructuredProductInput(
+                        body.player_input
+                    )
                     : {};
 
 
