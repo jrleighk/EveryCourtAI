@@ -690,6 +690,208 @@ function handleCommerceOfferSelected(
 }
 
 
+
+function renderPaymentSuccess(
+  offer
+) {
+
+  const checkoutElement =
+    document.getElementById(
+      "commerceCheckout"
+    );
+
+
+  if (
+    !checkoutElement ||
+    !offer
+  ) {
+
+    return;
+  }
+
+
+  const voucherToken =
+    `ECA-${Date.now()}-${Math.random()
+      .toString(36)
+      .slice(2, 10)
+      .toUpperCase()}`;
+
+
+  checkoutElement.innerHTML =
+    "";
+
+
+  const card =
+    document.createElement(
+      "div"
+    );
+
+
+  card.className =
+    "commerce-offer-card";
+
+
+  const title =
+    document.createElement(
+      "div"
+    );
+
+
+  title.className =
+    "commerce-offer-title";
+
+
+  title.textContent =
+    "Payment Successful / 支付成功";
+
+
+  const store =
+    document.createElement(
+      "div"
+    );
+
+
+  store.className =
+    "commerce-offer-meta";
+
+
+  store.textContent =
+    `${offer?.store?.name ?? ""} · ${offer?.store?.city ?? ""}`;
+
+
+  const setup =
+    document.createElement(
+      "div"
+    );
+
+
+  setup.className =
+    "commerce-offer-meta";
+
+
+  setup.textContent =
+    [
+      offer?.product?.product_id,
+      offer?.product?.gauge_mm
+        ? `${offer.product.gauge_mm} mm`
+        : null,
+      offer?.setup?.tension_lbs
+        ? `${offer.setup.tension_lbs} lbs`
+        : null,
+      offer?.service?.name
+    ]
+      .filter(Boolean)
+      .join(" · ");
+
+
+  const price =
+    document.createElement(
+      "div"
+    );
+
+
+  price.className =
+    "commerce-offer-price";
+
+
+  price.textContent =
+    formatMoney(
+      offer.total,
+      offer.currency
+    );
+
+
+  const voucher =
+    document.createElement(
+      "div"
+    );
+
+
+  voucher.className =
+    "commerce-offer-card";
+
+
+  voucher.style.marginTop =
+    "12px";
+
+
+  voucher.innerHTML =
+    `
+      <div class="commerce-kicker">
+        QR Voucher / 核销凭证
+      </div>
+
+      <div
+        style="
+          margin-top:10px;
+          font-size:12px;
+          word-break:break-all;
+        "
+      >
+        ${voucherToken}
+      </div>
+
+      <div
+        class="commerce-offer-meta"
+        style="margin-top:10px;"
+      >
+        Show this voucher at the store.
+        / 到店出示此核销凭证。
+      </div>
+    `;
+
+
+  card.appendChild(
+    title
+  );
+
+  card.appendChild(
+    store
+  );
+
+  card.appendChild(
+    setup
+  );
+
+  card.appendChild(
+    price
+  );
+
+
+  checkoutElement.appendChild(
+    card
+  );
+
+  checkoutElement.appendChild(
+    voucher
+  );
+}
+
+
+function handleCommerceDemoPay(
+  event
+) {
+
+  const offer =
+    event
+      ?.detail
+      ?.offer;
+
+
+  if (
+    !offer
+  ) {
+
+    return;
+  }
+
+
+  renderPaymentSuccess(
+    offer
+  );
+}
+
+
 export function initializeCommerceDemo() {
 
   const button =
@@ -718,6 +920,12 @@ export function initializeCommerceDemo() {
   window.addEventListener(
     "everycourt:commerce-offer-selected",
     handleCommerceOfferSelected
+  );
+
+
+  window.addEventListener(
+    "everycourt:commerce-demo-pay",
+    handleCommerceDemoPay
   );
 
 
