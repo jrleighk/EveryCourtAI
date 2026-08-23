@@ -1189,6 +1189,105 @@
         1.55;
     }
 
+    .commerce-demo {
+      margin-top: 16px;
+    }
+
+    .commerce-find-btn {
+      width: 100%;
+      min-height: 44px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 0 14px;
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--text);
+      font: inherit;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    .commerce-find-btn:hover {
+      background: rgba(255, 255, 255, 0.10);
+      transform: translateY(-1px);
+    }
+
+    .commerce-panel {
+      margin-top: 12px;
+      padding: 14px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: rgba(0, 0, 0, 0.12);
+    }
+
+    .commerce-panel-head h3 {
+      margin: 4px 0 0;
+      font-size: 15px;
+    }
+
+    .commerce-kicker {
+      color: var(--accent);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .commerce-offers {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .commerce-offer-card {
+      padding: 12px;
+      border: 1px solid var(--border);
+      border-radius: 13px;
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .commerce-offer-title {
+      font-size: 13px;
+      font-weight: 750;
+    }
+
+    .commerce-offer-meta {
+      margin-top: 5px;
+      color: var(--text-soft);
+      font-size: 11px;
+      line-height: 1.45;
+    }
+
+    .commerce-offer-price {
+      margin-top: 8px;
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--accent);
+    }
+
+    .commerce-offer-btn {
+      width: 100%;
+      min-height: 38px;
+      margin-top: 10px;
+      border: 0;
+      border-radius: 10px;
+      background: var(--primary);
+      color: #0d2230;
+      font: inherit;
+      font-size: 12px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .commerce-checkout {
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+    }
+
+
     .confidence-card {
       margin-top:
         20px;
@@ -2625,6 +2724,64 @@
 
         </div>
 
+
+        <!-- Commerce Demo -->
+
+        <div
+          class="commerce-demo"
+          id="commerceDemo"
+        >
+
+          <button
+            type="button"
+            class="commerce-find-btn"
+            id="findNearbyStoreButton"
+          >
+            Find Nearby Store / 查找附近门店
+          </button>
+
+
+          <div
+            class="commerce-panel"
+            id="commercePanel"
+            hidden
+          >
+
+            <div class="commerce-panel-head">
+
+              <div>
+
+                <div class="commerce-kicker">
+                  Commerce
+                </div>
+
+                <h3>
+                  Nearby Store Offers / 附近门店方案
+                </h3>
+
+              </div>
+
+            </div>
+
+
+            <div
+              class="commerce-offers"
+              id="commerceOffers"
+            >
+            </div>
+
+
+            <div
+              class="commerce-checkout"
+              id="commerceCheckout"
+              hidden
+            >
+            </div>
+
+          </div>
+
+        </div>
+
       </aside>
 
     </main>
@@ -2773,6 +2930,11 @@
   <script
     type="module"
     src="scripts/equipment_selector.js"
+  ></script>
+
+  <script
+    type="module"
+    src="scripts/commerce_demo.js"
   ></script>
 
 </body>

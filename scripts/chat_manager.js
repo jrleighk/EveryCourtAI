@@ -1418,6 +1418,15 @@ export async function submitCurrentPrompt() {
                 result
                     .recommendation
             );
+
+
+            window
+                ?.EveryCourtCommerceDemo
+                ?.setCommerceRecommendation
+                ?.(
+                    result
+                        .recommendation
+                );
         }
 
 
