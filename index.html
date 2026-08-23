@@ -750,6 +750,42 @@
       color: #111;
     }
 
+    .equipment-selector-dropdown {
+      position: absolute;
+      top: calc(100% + 6px);
+      left: 0;
+      right: 0;
+      z-index: 60;
+      max-height: 280px;
+      overflow-y: auto;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 12px;
+      background: rgba(20, 20, 24, 0.98);
+      box-shadow: 0 14px 36px rgba(0, 0, 0, 0.30);
+      padding: 6px;
+    }
+
+    .equipment-selector-option {
+      display: block;
+      width: 100%;
+      border: 0;
+      border-radius: 9px;
+      padding: 10px 11px;
+      background: transparent;
+      color: inherit;
+      text-align: left;
+      font: inherit;
+      font-size: 12px;
+      line-height: 1.35;
+      cursor: pointer;
+    }
+
+    .equipment-selector-option:hover,
+    .equipment-selector-option:focus {
+      background: rgba(255, 255, 255, 0.08);
+      outline: none;
+    }
+
     @media (max-width: 760px) {
       .player-profile-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2732,6 +2768,11 @@
   <script
     type="module"
     src="scripts/chat_manager.js"
+  ></script>
+
+  <script
+    type="module"
+    src="scripts/equipment_selector.js"
   ></script>
 
 </body>

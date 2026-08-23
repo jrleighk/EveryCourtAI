@@ -1104,15 +1104,45 @@ function readPlayerProfileForm() {
     }
 
 
-    const currentRacquet =
+    const currentRacquetText =
         getValue(
             "playerCurrentRacquet"
         );
 
-    const currentString =
+    const currentStringText =
         getValue(
             "playerCurrentString"
         );
+
+
+    const selectedRacquet =
+        window
+            ?.EveryCourtEquipmentSelector
+            ?.getSelectedEquipmentProduct
+            ?.(
+                "playerCurrentRacquet"
+            ) ??
+        null;
+
+
+    const selectedString =
+        window
+            ?.EveryCourtEquipmentSelector
+            ?.getSelectedEquipmentProduct
+            ?.(
+                "playerCurrentString"
+            ) ??
+        null;
+
+
+    const currentRacquet =
+        selectedRacquet ??
+        currentRacquetText;
+
+
+    const currentString =
+        selectedString ??
+        currentStringText;
 
     const tensionRaw =
         getValue(
