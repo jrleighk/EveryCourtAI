@@ -1,0 +1,632 @@
+{
+  "schema_version": "1.0",
+  "profile_type": "player_profile",
+  "id": "player_profile_v1",
+
+  "name": {
+    "en": "Player Profile",
+    "zh": "球员画像"
+  },
+
+  "description": {
+    "en": "Core player profile definition used by EveryCourtAI to evaluate equipment compatibility, performance goals, physical constraints and playing workload.",
+    "zh": "EveryCourtAI 的核心球员画像定义，用于评估装备适配性、性能目标、身体限制以及打球负荷。"
+  },
+
+  "sections": {
+    "player_identity": {
+      "name": {
+        "en": "Player Information",
+        "zh": "球员信息"
+      },
+
+      "fields": {
+        "playing_level": {
+          "name": {
+            "en": "Playing Level",
+            "zh": "网球水平"
+          },
+
+          "type": "enum",
+          "required": true,
+
+          "options": [
+            {
+              "id": "beginner",
+              "en": "Beginner",
+              "zh": "初学者"
+            },
+            {
+              "id": "recreational",
+              "en": "Recreational",
+              "zh": "休闲球员"
+            },
+            {
+              "id": "intermediate",
+              "en": "Intermediate",
+              "zh": "中级球员"
+            },
+            {
+              "id": "advanced",
+              "en": "Advanced",
+              "zh": "高级球员"
+            },
+            {
+              "id": "competitive",
+              "en": "Competitive",
+              "zh": "竞技球员"
+            }
+          ]
+        },
+
+        "playing_style": {
+          "name": {
+            "en": "Playing Style",
+            "zh": "打法类型"
+          },
+
+          "type": "multi_enum",
+          "required": false,
+
+          "options": [
+            {
+              "id": "baseline",
+              "en": "Baseline",
+              "zh": "底线型"
+            },
+            {
+              "id": "aggressive_baseline",
+              "en": "Aggressive Baseline",
+              "zh": "进攻型底线"
+            },
+            {
+              "id": "all_court",
+              "en": "All-Court",
+              "zh": "全场型"
+            },
+            {
+              "id": "serve_and_volley",
+              "en": "Serve and Volley",
+              "zh": "发球上网型"
+            },
+            {
+              "id": "counterpuncher",
+              "en": "Counterpuncher",
+              "zh": "防守反击型"
+            },
+            {
+              "id": "spin_heavy",
+              "en": "Spin-Heavy",
+              "zh": "强旋转型"
+            },
+            {
+              "id": "flat_hitter",
+              "en": "Flat Hitter",
+              "zh": "平击型"
+            }
+          ]
+        }
+      }
+    },
+
+    "performance_goals": {
+      "name": {
+        "en": "Performance Goals",
+        "zh": "性能目标"
+      },
+
+      "fields": {
+        "primary_goal": {
+          "name": {
+            "en": "Primary Goal",
+            "zh": "主要目标"
+          },
+
+          "type": "enum",
+          "required": true,
+
+          "options": [
+            {
+              "id": "comfort",
+              "en": "Comfort",
+              "zh": "舒适性"
+            },
+            {
+              "id": "control",
+              "en": "Control",
+              "zh": "控制"
+            },
+            {
+              "id": "spin",
+              "en": "Spin",
+              "zh": "旋转"
+            },
+            {
+              "id": "power",
+              "en": "Power",
+              "zh": "力量"
+            },
+            {
+              "id": "feel",
+              "en": "Feel",
+              "zh": "手感"
+            },
+            {
+              "id": "stability",
+              "en": "Stability",
+              "zh": "稳定性"
+            },
+            {
+              "id": "maneuverability",
+              "en": "Maneuverability",
+              "zh": "灵活性"
+            }
+          ]
+        },
+
+        "secondary_goals": {
+          "name": {
+            "en": "Secondary Goals",
+            "zh": "次要目标"
+          },
+
+          "type": "multi_enum",
+          "required": false,
+          "options_reference": "performance_goals.primary_goal"
+        }
+      }
+    },
+
+    "current_setup": {
+      "name": {
+        "en": "Current Setup",
+        "zh": "当前装备"
+      },
+
+      "fields": {
+        "racquet_id": {
+          "name": {
+            "en": "Current Racquet",
+            "zh": "当前球拍"
+          },
+
+          "type": "product_reference",
+          "product_type": "racquet",
+          "required": false
+        },
+
+        "string_id": {
+          "name": {
+            "en": "Current String",
+            "zh": "当前球线"
+          },
+
+          "type": "product_reference",
+          "product_type": "string",
+          "required": false
+        },
+
+        "tension_lbs": {
+          "name": {
+            "en": "Current Tension",
+            "zh": "当前磅数"
+          },
+
+          "type": "number",
+          "unit": "lbs",
+          "required": false,
+          "min": 30,
+          "max": 70
+        },
+
+        "string_setup_type": {
+          "name": {
+            "en": "String Setup Type",
+            "zh": "球线配置类型"
+          },
+
+          "type": "enum",
+          "required": false,
+
+          "options": [
+            {
+              "id": "full_bed",
+              "en": "Full Bed",
+              "zh": "全床单一球线"
+            },
+            {
+              "id": "hybrid",
+              "en": "Hybrid",
+              "zh": "混合穿线"
+            }
+          ]
+        }
+      }
+    },
+
+    "physical_condition": {
+      "name": {
+        "en": "Physical Condition",
+        "zh": "身体状态"
+      },
+
+      "description": {
+        "en": "Physical sensitivity levels that may influence racquet, string and tension recommendations.",
+        "zh": "可能影响球拍、球线以及磅数推荐的身体敏感程度。"
+      },
+
+      "severity_scale": [
+        {
+          "id": "none",
+          "score": 0,
+          "en": "None",
+          "zh": "无"
+        },
+        {
+          "id": "mild",
+          "score": 1,
+          "en": "Mild",
+          "zh": "轻度"
+        },
+        {
+          "id": "moderate",
+          "score": 2,
+          "en": "Moderate",
+          "zh": "中度"
+        },
+        {
+          "id": "high",
+          "score": 3,
+          "en": "High",
+          "zh": "较高"
+        },
+        {
+          "id": "severe",
+          "score": 4,
+          "en": "Severe",
+          "zh": "严重"
+        }
+      ],
+
+      "fields": {
+        "shoulder_sensitivity": {
+          "name": {
+            "en": "Shoulder Sensitivity",
+            "zh": "肩部敏感"
+          },
+          "type": "severity"
+        },
+
+        "elbow_sensitivity": {
+          "name": {
+            "en": "Elbow Sensitivity",
+            "zh": "肘部敏感"
+          },
+          "type": "severity"
+        },
+
+        "wrist_sensitivity": {
+          "name": {
+            "en": "Wrist Sensitivity",
+            "zh": "手腕敏感"
+          },
+          "type": "severity"
+        },
+
+        "lower_back_sensitivity": {
+          "name": {
+            "en": "Lower Back Sensitivity",
+            "zh": "下背部敏感"
+          },
+          "type": "severity"
+        },
+
+        "hip_sensitivity": {
+          "name": {
+            "en": "Hip Sensitivity",
+            "zh": "髋部敏感"
+          },
+          "type": "severity"
+        },
+
+        "knee_sensitivity": {
+          "name": {
+            "en": "Knee Sensitivity",
+            "zh": "膝部敏感"
+          },
+          "type": "severity"
+        },
+
+        "ankle_sensitivity": {
+          "name": {
+            "en": "Ankle Sensitivity",
+            "zh": "脚踝敏感"
+          },
+          "type": "severity"
+        },
+
+        "neck_sensitivity": {
+          "name": {
+            "en": "Neck Sensitivity",
+            "zh": "颈部敏感"
+          },
+          "type": "severity"
+        }
+      }
+    },
+
+    "playing_load": {
+      "name": {
+        "en": "Playing Load",
+        "zh": "打球负荷"
+      },
+
+      "fields": {
+        "weekly_frequency": {
+          "name": {
+            "en": "Weekly Playing Frequency",
+            "zh": "每周打球频率"
+          },
+
+          "type": "number",
+          "unit": "sessions_per_week",
+          "required": false,
+          "min": 0,
+          "max": 14
+        },
+
+        "session_duration_minutes": {
+          "name": {
+            "en": "Session Duration",
+            "zh": "单次打球时长"
+          },
+
+          "type": "number",
+          "unit": "minutes",
+          "required": false,
+          "min": 15,
+          "max": 360
+        },
+
+        "fatigue_level": {
+          "name": {
+            "en": "Fatigue Level",
+            "zh": "疲劳程度"
+          },
+
+          "type": "enum",
+          "required": false,
+
+          "options": [
+            {
+              "id": "none",
+              "score": 0,
+              "en": "None",
+              "zh": "无"
+            },
+            {
+              "id": "low",
+              "score": 1,
+              "en": "Low",
+              "zh": "较低"
+            },
+            {
+              "id": "moderate",
+              "score": 2,
+              "en": "Moderate",
+              "zh": "中等"
+            },
+            {
+              "id": "high",
+              "score": 3,
+              "en": "High",
+              "zh": "较高"
+            }
+          ]
+        },
+
+        "fatigue_timing": {
+          "name": {
+            "en": "Fatigue Timing",
+            "zh": "疲劳出现时间"
+          },
+
+          "type": "enum",
+          "required": false,
+
+          "options": [
+            {
+              "id": "none",
+              "en": "No Significant Fatigue",
+              "zh": "无明显疲劳"
+            },
+            {
+              "id": "early",
+              "en": "Early Session",
+              "zh": "打球前段"
+            },
+            {
+              "id": "mid",
+              "en": "Mid Session",
+              "zh": "打球中段"
+            },
+            {
+              "id": "late",
+              "en": "Late Session",
+              "zh": "打球后段"
+            },
+            {
+              "id": "post_session",
+              "en": "After Playing",
+              "zh": "打球结束后"
+            }
+          ]
+        }
+      }
+    },
+
+    "preferences": {
+      "name": {
+        "en": "Equipment Preferences",
+        "zh": "装备偏好"
+      },
+
+      "fields": {
+        "preferred_racquet_weight": {
+          "name": {
+            "en": "Preferred Racquet Weight",
+            "zh": "偏好球拍重量"
+          },
+
+          "type": "enum",
+          "required": false,
+
+          "options": [
+            {
+              "id": "light",
+              "en": "Light",
+              "zh": "轻量"
+            },
+            {
+              "id": "medium",
+              "en": "Medium",
+              "zh": "中等"
+            },
+            {
+              "id": "heavy",
+              "en": "Heavy",
+              "zh": "偏重"
+            },
+            {
+              "id": "no_preference",
+              "en": "No Preference",
+              "zh": "无特别偏好"
+            }
+          ]
+        },
+
+        "preferred_string_feel": {
+          "name": {
+            "en": "Preferred String Feel",
+            "zh": "偏好球线手感"
+          },
+
+          "type": "multi_enum",
+          "required": false,
+
+          "options": [
+            {
+              "id": "soft",
+              "en": "Soft",
+              "zh": "柔软"
+            },
+            {
+              "id": "crisp",
+              "en": "Crisp",
+              "zh": "清脆"
+            },
+            {
+              "id": "firm",
+              "en": "Firm",
+              "zh": "偏硬"
+            },
+            {
+              "id": "connected",
+              "en": "Connected",
+              "zh": "击球连接感"
+            },
+            {
+              "id": "muted",
+              "en": "Muted",
+              "zh": "柔和减震感"
+            }
+          ]
+        },
+
+        "change_tolerance": {
+          "name": {
+            "en": "Equipment Change Tolerance",
+            "zh": "装备调整接受程度"
+          },
+
+          "description": {
+            "en": "Defines how aggressively EveryCourtAI should alter the player's current setup.",
+            "zh": "定义 EveryCourtAI 在推荐时可以多大程度改变球员当前装备配置。"
+          },
+
+          "type": "enum",
+          "required": false,
+          "default": "moderate",
+
+          "options": [
+            {
+              "id": "minimal",
+              "en": "Minimal Change",
+              "zh": "尽量少改"
+            },
+            {
+              "id": "moderate",
+              "en": "Moderate Change",
+              "zh": "适度调整"
+            },
+            {
+              "id": "open",
+              "en": "Open to Major Changes",
+              "zh": "接受较大调整"
+            }
+          ]
+        }
+      }
+    }
+  },
+
+  "recommendation_mapping": {
+    "primary_inputs": [
+      "playing_level",
+      "primary_goal",
+      "racquet_id",
+      "string_id",
+      "tension_lbs"
+    ],
+
+    "physical_inputs": [
+      "shoulder_sensitivity",
+      "elbow_sensitivity",
+      "wrist_sensitivity",
+      "lower_back_sensitivity",
+      "hip_sensitivity",
+      "knee_sensitivity",
+      "ankle_sensitivity",
+      "neck_sensitivity"
+    ],
+
+    "load_inputs": [
+      "weekly_frequency",
+      "session_duration_minutes",
+      "fatigue_level",
+      "fatigue_timing"
+    ],
+
+    "preference_inputs": [
+      "preferred_racquet_weight",
+      "preferred_string_feel",
+      "change_tolerance"
+    ]
+  },
+
+  "defaults": {
+    "physical_severity": "none",
+    "fatigue_level": "none",
+    "change_tolerance": "moderate"
+  },
+
+  "metadata": {
+    "status": "active",
+    "version": "1.0",
+    "language_support": [
+      "en",
+      "zh"
+    ],
+    "platform": "EveryCourtAI"
+  }
+}
