@@ -14,8 +14,8 @@
  */
 
 import {
-  buildStringingOffers
-} from "../commerce/offer_service.js";
+  buildBrowserStringingOffers
+} from "./commerce_client.js";
 
 
 let currentRecommendation =
@@ -375,7 +375,7 @@ function openCommercePanel() {
 }
 
 
-function handleFindStores() {
+async function handleFindStores() {
 
   openCommercePanel();
 
@@ -409,26 +409,43 @@ function handleFindStores() {
   }
 
 
-  const offers =
-    buildStringingOffers({
-      string_id:
-        stringId,
+  try {
 
-      gauge_mm:
-        currentRecommendation
-          ?.gauge_mm ??
-        null,
+    const offers =
+      await buildBrowserStringingOffers({
+        string_id:
+          stringId,
 
-      tension_lbs:
-        currentRecommendation
-          ?.tension_lbs ??
-        null
-    });
+        gauge_mm:
+          currentRecommendation
+            ?.gauge_mm ??
+          null,
+
+        tension_lbs:
+          currentRecommendation
+            ?.tension_lbs ??
+          null
+      });
 
 
-  renderOffers(
-    offers
-  );
+    renderOffers(
+      offers
+    );
+
+  } catch (
+    error
+  ) {
+
+    console.error(
+      "EveryCourtAI Commerce Demo Error:",
+      error
+    );
+
+
+    renderEmptyState(
+      "Unable to load store offers. / 暂时无法加载门店方案。"
+    );
+  }
 }
 
 
