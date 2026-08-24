@@ -84,11 +84,53 @@ function safeNumber(value) {
         return null;
     }
 
-    const parsed = Number(value);
 
-    return Number.isFinite(parsed)
-        ? parsed
-        : null;
+    const direct =
+        Number(
+            value
+        );
+
+
+    if (
+        Number.isFinite(
+            direct
+        )
+    ) {
+        return direct;
+    }
+
+
+    if (
+        typeof value ===
+            "string"
+    ) {
+
+        const match =
+            value.match(
+                /-?\d+(?:\.\d+)?/
+            );
+
+
+        if (
+            match
+        ) {
+
+            const parsed =
+                Number(
+                    match[0]
+                );
+
+
+            return Number.isFinite(
+                parsed
+            )
+                ? parsed
+                : null;
+        }
+    }
+
+
+    return null;
 }
 
 
@@ -318,7 +360,8 @@ function extractRacquetData(raw) {
                     "specs.weight_g",
                     "specs.unstrung_weight_g",
                     "specifications.weight_g",
-                    "specifications.unstrung_weight_g"
+                    "specifications.unstrung_weight_g",
+                    "specifications.weight_unstrung.value"
                 ]
             )
         );
@@ -332,7 +375,8 @@ function extractRacquetData(raw) {
                     "head_size",
                     "specs.head_size_sq_in",
                     "specs.head_size",
-                    "specifications.head_size_sq_in"
+                    "specifications.head_size_sq_in",
+                    "specifications.head_size.value"
                 ]
             )
         );
@@ -345,7 +389,8 @@ function extractRacquetData(raw) {
                     "swingweight",
                     "swing_weight",
                     "specs.swingweight",
-                    "specifications.swingweight"
+                    "specifications.swingweight",
+                    "specifications.swing_weight.value"
                 ]
             )
         );
@@ -359,7 +404,9 @@ function extractRacquetData(raw) {
                     "ra",
                     "specs.stiffness",
                     "specs.ra",
-                    "specifications.ra"
+                    "specifications.ra",
+                    "specifications.stiffness.value",
+                    "specifications.ra.value"
                 ]
             )
         );
@@ -371,6 +418,7 @@ function extractRacquetData(raw) {
                 "string_pattern",
                 "pattern",
                 "specs.string_pattern",
+                "specifications.string_pattern.value",
                 "specifications.string_pattern"
             ]
         );
@@ -382,6 +430,7 @@ function extractRacquetData(raw) {
                 "balance",
                 "balance_point",
                 "specs.balance",
+                "specifications.balance.value",
                 "specifications.balance"
             ]
         );
@@ -2044,6 +2093,9 @@ function scoreRacquet(
                 balance:
                     racquet.balance
             },
+
+            product_data:
+                racquet.raw,
 
             score_breakdown:
                 scoreBreakdown,

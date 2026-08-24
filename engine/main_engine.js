@@ -62,6 +62,10 @@ import {
 } from "./recommendation_engine.js";
 
 import {
+    generateSetupScenarios
+} from "./setup_scenario_engine.js";
+
+import {
     calculateConfidence
 } from "./confidence_engine.js";
 
@@ -138,6 +142,10 @@ function createPipelineStatus() {
         },
 
         recommendation_engine: {
+            status: "pending"
+        },
+
+        setup_scenario_engine: {
             status: "pending"
         },
 
@@ -546,6 +554,32 @@ export async function runEveryCourtAI(
         /**
          * ====================================================
          * STEP 7
+         * Setup Scenario Engine
+         * ====================================================
+         */
+
+        const setupScenarioResult =
+            generateSetupScenarios({
+                playerProfile,
+                matchingResult,
+                recommendationResult
+            });
+
+
+        pipeline.setup_scenario_engine = {
+            status: "completed",
+
+            scenario_count:
+                setupScenarioResult
+                    ?.scenarios
+                    ?.length ??
+                0
+        };
+
+
+        /**
+         * ====================================================
+         * STEP 8
          * Confidence Engine
          * ====================================================
          */
