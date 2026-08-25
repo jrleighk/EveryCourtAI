@@ -1,0 +1,370 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://everycourt.ai/schemas/normalized_string_schema_v1.json",
+
+  "title": "EveryCourtAI Normalized String Schema V1",
+  "description": "Canonical normalized string data contract used by EveryCourtAI engines.",
+
+  "type": "object",
+  "additionalProperties": false,
+
+  "required": [
+    "schema_version",
+    "product_type",
+    "id",
+    "identity",
+    "specifications",
+    "core_dna",
+    "advanced_dna",
+    "design_dna",
+    "extended_traits",
+    "data_quality"
+  ],
+
+  "properties": {
+
+    "schema_version": {
+      "const": "1.0"
+    },
+
+    "product_type": {
+      "const": "string"
+    },
+
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+
+      "required": [
+        "brand",
+        "model",
+        "release_year"
+      ],
+
+      "properties": {
+
+        "brand": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+
+        "model": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+
+        "release_year": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1900,
+          "maximum": 2100
+        }
+      }
+    },
+
+    "specifications": {
+      "type": "object",
+      "additionalProperties": false,
+
+      "required": [
+        "material",
+        "available_gauges_mm"
+      ],
+
+      "properties": {
+
+        "material": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+
+        "available_gauges_mm": {
+          "type": "array",
+
+          "items": {
+            "type": "number",
+            "minimum": 0.8,
+            "maximum": 2.0
+          },
+
+          "uniqueItems": true
+        }
+      }
+    },
+
+    "core_dna": {
+      "type": "object",
+      "additionalProperties": false,
+
+      "required": [
+        "power",
+        "control",
+        "spin",
+        "comfort",
+        "feel",
+        "durability",
+        "tension_maintenance"
+      ],
+
+      "properties": {
+
+        "power": {
+          "$ref": "#/$defs/rating"
+        },
+
+        "control": {
+          "$ref": "#/$defs/rating"
+        },
+
+        "spin": {
+          "$ref": "#/$defs/rating"
+        },
+
+        "comfort": {
+          "$ref": "#/$defs/rating"
+        },
+
+        "feel": {
+          "$ref": "#/$defs/rating"
+        },
+
+        "durability": {
+          "$ref": "#/$defs/rating"
+        },
+
+        "tension_maintenance": {
+          "$ref": "#/$defs/rating"
+        }
+      }
+    },
+
+    "advanced_dna": {
+      "type": "object",
+      "additionalProperties": false,
+
+      "required": [
+        "string_stiffness",
+        "snapback",
+        "ball_pocketing",
+        "tension_stability",
+        "predictability",
+        "string_movement",
+        "arm_friendliness",
+        "spin_window",
+        "directional_precision"
+      ],
+
+      "properties": {
+
+        "string_stiffness": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+
+        "snapback": {
+          "$ref": "#/$defs/rating"
+        },
+
+        "ball_pocketing": {
+          "$ref": "#/$defs/rating"
+        },
+
+        "tension_stability": {
+          "$ref": "#/$defs/rating"
+        },
+
+        "predictability": {
+          "$ref": "#/$defs/rating"
+        },
+
+        "string_movement": {
+          "$ref": "#/$defs/rating"
+        },
+
+        "arm_friendliness": {
+          "$ref": "#/$defs/rating"
+        },
+
+        "spin_window": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+
+        "directional_precision": {
+          "$ref": "#/$defs/rating"
+        }
+      }
+    },
+
+    "design_dna": {
+      "type": "object",
+      "additionalProperties": false,
+
+      "required": [
+        "string_type",
+        "target_player",
+        "arm_friendly",
+        "spin_focus",
+        "control_focus",
+        "power_focus",
+        "comfort_focus",
+        "durability_focus",
+        "feel_focus",
+        "tension_stability_focus",
+        "response_focus"
+      ],
+
+      "properties": {
+
+        "string_type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+
+        "target_player": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+
+        "arm_friendly": {
+          "$ref": "#/$defs/booleanOrNull"
+        },
+
+        "spin_focus": {
+          "$ref": "#/$defs/booleanOrNull"
+        },
+
+        "control_focus": {
+          "$ref": "#/$defs/booleanOrNull"
+        },
+
+        "power_focus": {
+          "$ref": "#/$defs/booleanOrNull"
+        },
+
+        "comfort_focus": {
+          "$ref": "#/$defs/booleanOrNull"
+        },
+
+        "durability_focus": {
+          "$ref": "#/$defs/booleanOrNull"
+        },
+
+        "feel_focus": {
+          "$ref": "#/$defs/booleanOrNull"
+        },
+
+        "tension_stability_focus": {
+          "$ref": "#/$defs/booleanOrNull"
+        },
+
+        "response_focus": {
+          "$ref": "#/$defs/booleanOrNull"
+        }
+      }
+    },
+
+    "extended_traits": {
+      "type": "object",
+      "additionalProperties": true
+    },
+
+    "data_quality": {
+      "type": "object",
+      "additionalProperties": true,
+
+      "properties": {
+
+        "specification_completeness": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+
+        "core_dna_completeness": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+
+        "advanced_dna_completeness": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+
+        "design_dna_completeness": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+
+        "source_file": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+
+        "warnings": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+
+  "$defs": {
+
+    "rating": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 10
+    },
+
+    "booleanOrNull": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    }
+  }
+}

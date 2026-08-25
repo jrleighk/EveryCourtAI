@@ -1,0 +1,269 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://everycourt.ai/schemas/normalized_racquet_schema_v1.json",
+
+  "title": "EveryCourtAI Normalized Racquet Schema V1",
+  "description": "Canonical normalized racquet data contract used by EveryCourtAI engines.",
+
+  "type": "object",
+  "additionalProperties": false,
+
+  "required": [
+    "schema_version",
+    "product_type",
+    "id",
+    "identity",
+    "specifications",
+    "core_dna",
+    "extended_traits",
+    "data_quality"
+  ],
+
+  "properties": {
+
+    "schema_version": {
+      "const": "1.0"
+    },
+
+    "product_type": {
+      "const": "racquet"
+    },
+
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+
+      "required": [
+        "brand",
+        "model",
+        "release_year"
+      ],
+
+      "properties": {
+
+        "brand": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+
+        "model": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+
+        "release_year": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1900,
+          "maximum": 2100
+        }
+      }
+    },
+
+    "specifications": {
+      "type": "object",
+      "additionalProperties": false,
+
+      "required": [
+        "head_size_sq_in",
+        "weight_unstrung_g",
+        "weight_strung_g",
+        "balance_unstrung_mm",
+        "balance_strung_mm",
+        "length_in",
+        "string_pattern",
+        "swingweight",
+        "stiffness_ra",
+        "beam_mm"
+      ],
+
+      "properties": {
+
+        "head_size_sq_in": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+
+        "weight_unstrung_g": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+
+        "weight_strung_g": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+
+        "balance_unstrung_mm": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+
+        "balance_strung_mm": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+
+        "length_in": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+
+        "string_pattern": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+
+        "swingweight": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+
+        "stiffness_ra": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+
+        "beam_mm": {
+          "type": [
+            "string",
+            "number",
+            "null"
+          ]
+        }
+      }
+    },
+
+    "core_dna": {
+      "type": "object",
+      "additionalProperties": false,
+
+      "required": [
+        "power",
+        "control",
+        "spin",
+        "comfort",
+        "stability",
+        "maneuverability",
+        "forgiveness"
+      ],
+
+      "properties": {
+
+        "power": {
+          "$ref": "#/$defs/rating"
+        },
+
+        "control": {
+          "$ref": "#/$defs/rating"
+        },
+
+        "spin": {
+          "$ref": "#/$defs/rating"
+        },
+
+        "comfort": {
+          "$ref": "#/$defs/rating"
+        },
+
+        "stability": {
+          "$ref": "#/$defs/rating"
+        },
+
+        "maneuverability": {
+          "$ref": "#/$defs/rating"
+        },
+
+        "forgiveness": {
+          "$ref": "#/$defs/rating"
+        }
+      }
+    },
+
+    "extended_traits": {
+      "type": "object",
+      "additionalProperties": true
+    },
+
+    "data_quality": {
+      "type": "object",
+      "additionalProperties": true,
+
+      "properties": {
+
+        "specification_completeness": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+
+        "performance_completeness": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+
+        "source_file": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+
+        "warnings": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+
+  "$defs": {
+
+    "rating": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 10
+    }
+  }
+}
