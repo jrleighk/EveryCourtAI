@@ -176,6 +176,45 @@
     "knowledge_path":
     "knowledge/racquets/babolat/babolat_pure_drive_spectra_edition_2026.json"
 
+  },
+
+
+  "performance": {
+    "power": {
+      "rating": 9,
+      "cn": "力量输出：9/10"
+    },
+    "control": {
+      "rating": 7,
+      "cn": "控制性能：7/10"
+    },
+    "spin": {
+      "rating": 8,
+      "cn": "旋转能力：8/10"
+    },
+    "comfort": {
+      "rating": 8,
+      "cn": "舒适性：8/10"
+    },
+    "forgiveness": {
+      "rating": 9,
+      "cn": "容错性：9/10"
+    }
+  },
+
+  "performance_provenance": {
+    "source_type": "family_derived",
+    "source_product_id": "babolat_pure_drive_wimbledon_2026",
+    "derivation_basis": "same_core_platform_specifications",
+    "matched_specifications": {
+      "head_size_sq_in": 100,
+      "weight_unstrung_g": 300,
+      "balance_unstrung_mm": 320,
+      "string_pattern": "16x19"
+    },
+    "confidence": "high",
+    "note_en": "Performance DNA inherited from the Pure Drive Wimbledon 2026 record because both products share the same core racquet platform specifications.",
+    "note_cn": "性能 DNA 继承自 Pure Drive Wimbledon 2026。两款球拍具有相同的核心拍框规格，因此作为同平台数据继承。"
   }
 
 }

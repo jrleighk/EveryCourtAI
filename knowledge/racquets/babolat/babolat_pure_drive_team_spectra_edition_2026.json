@@ -167,6 +167,46 @@
     "knowledge_path":
     "knowledge/racquets/babolat/babolat_pure_drive_team_spectra_edition_2026.json"
 
+  },
+
+
+  "performance": {
+    "power": {
+      "rating": 8,
+      "cn": "力量输出：8/10"
+    },
+    "control": {
+      "rating": 7,
+      "cn": "控制性能：7/10"
+    },
+    "spin": {
+      "rating": 8,
+      "cn": "旋转能力：8/10"
+    },
+    "comfort": {
+      "rating": 9,
+      "cn": "舒适性：9/10"
+    },
+    "maneuverability": {
+      "rating": 10,
+      "cn": "挥拍灵活性：10/10"
+    }
+  },
+
+  "performance_provenance": {
+    "source_type": "family_derived",
+    "source_product_id": "babolat_pure_drive_team_autograph_130th_anniversary_limited_edition",
+    "derivation_basis": "same_base_model_and_core_platform_specifications",
+    "matched_specifications": {
+      "head_size_sq_in": 100,
+      "weight_unstrung_g": 285,
+      "balance_unstrung_mm": 330,
+      "length_in": 27,
+      "string_pattern": "16x19"
+    },
+    "confidence": "high",
+    "note_en": "Performance DNA inherited from the Pure Drive Team Autograph 130th Anniversary Limited Edition record. Both products are based on the Pure Drive Team platform and share the same core racquet specifications.",
+    "note_cn": "性能 DNA 继承自 Pure Drive Team Autograph 130周年限量版。两款球拍均基于 Pure Drive Team 平台，且核心规格一致。"
   }
 
 }
