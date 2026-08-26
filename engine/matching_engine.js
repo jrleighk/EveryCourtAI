@@ -56,6 +56,46 @@ const STRING_CANDIDATE_LIMIT = 40;
 
 /**
  * ============================================================
+ * String Recommendation Priority Model V1
+ *
+ * Recommendation Quality V1
+ *
+ * Matching Engine should rank product suitability.
+ *
+ * Current-equipment continuity is handled downstream by the
+ * Setup Scenario Engine, especially the minimal_change
+ * scenario. Current candidates are separately preserved after
+ * Top-N truncation.
+ * ============================================================
+ */
+
+const STRING_PRIORITY_MODEL_V1 = {
+
+    goal:
+        1.50,
+
+    playing_style:
+        1.00,
+
+    swing_speed:
+        0.75,
+
+    gauge:
+        0.40,
+
+    feel:
+        1.00,
+
+    launch:
+        1.00,
+
+    physical:
+        1.00
+};
+
+
+/**
+ * ============================================================
  * 通用工具
  * ============================================================
  */
@@ -2599,10 +2639,16 @@ function scoreString(
                 );
         }
 
-        score += adjustment;
+        const weightedAdjustment =
+            adjustment *
+            STRING_PRIORITY_MODEL_V1
+                .goal;
+
+        score +=
+            weightedAdjustment;
 
         scoreBreakdown.goal =
-            adjustment;
+            weightedAdjustment;
 
         if (
             adjustment > 2
@@ -2643,11 +2689,17 @@ function scoreString(
                 )
                 : 0;
 
-        score += adjustment;
+        const weightedAdjustment =
+            adjustment *
+            STRING_PRIORITY_MODEL_V1
+                .playing_style;
+
+        score +=
+            weightedAdjustment;
 
         scoreBreakdown
             .playing_style =
-            adjustment;
+            weightedAdjustment;
     }
 
 
@@ -2736,11 +2788,17 @@ function scoreString(
         }
 
 
-        score += adjustment;
+        const weightedAdjustment =
+            adjustment *
+            STRING_PRIORITY_MODEL_V1
+                .swing_speed;
+
+        score +=
+            weightedAdjustment;
 
         scoreBreakdown
             .swing_speed =
-            adjustment;
+            weightedAdjustment;
     }
 
 
@@ -2754,11 +2812,16 @@ function scoreString(
             playerProfile
         );
 
+    const weightedGaugeAdjustment =
+        gaugeFit.adjustment *
+        STRING_PRIORITY_MODEL_V1
+            .gauge;
+
     score +=
-        gaugeFit.adjustment;
+        weightedGaugeAdjustment;
 
     scoreBreakdown.gauge =
-        gaugeFit.adjustment;
+        weightedGaugeAdjustment;
 
 
     /**
@@ -2843,14 +2906,12 @@ function scoreString(
             currentStringId
     ) {
 
-        score += 3;
-
         scoreBreakdown
             .current_setup_continuity =
-            3;
+            0;
 
         reasons.push(
-            "Current string receives continuity bonus."
+            "Current string preserved for downstream scenario continuity evaluation."
         );
     }
 
