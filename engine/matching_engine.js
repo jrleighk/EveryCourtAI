@@ -525,6 +525,414 @@ function extractRacquetData(raw) {
  * ============================================================
  */
 
+/**
+ * ============================================================
+ * Canonical String DNA Adapter V1
+ *
+ * Recommendation Quality V1
+ *
+ * Product-level matching source priority:
+ *
+ * 1. ai_rating
+ * 2. specifications.available_gauges[] average
+ * 3. legacy DNA structures
+ *
+ * Gauge-specific optimization remains downstream.
+ * ============================================================
+ */
+
+function buildCanonicalStringDna(
+    raw
+) {
+
+    const coreFields = [
+        "power",
+        "control",
+        "spin",
+        "comfort",
+        "feel",
+        "durability",
+        "tension_maintenance"
+    ];
+
+
+    let dna = {};
+
+
+    /**
+     * ========================================================
+     * Source 1:
+     * Product-Level AI Rating
+     * ========================================================
+     */
+
+    const aiRating =
+        raw?.ai_rating;
+
+
+    if (
+        aiRating &&
+        typeof aiRating === "object" &&
+        !Array.isArray(aiRating)
+    ) {
+
+        for (
+            const field
+            of coreFields
+        ) {
+
+            const value =
+                normalizeDnaValue(
+                    aiRating[field]
+                );
+
+
+            if (
+                value !== null
+            ) {
+                dna[field] =
+                    value;
+            }
+        }
+    }
+
+
+    /**
+     * ========================================================
+     * Source 2:
+     * Gauge-Level Average Fallback
+     *
+     * Only used when no usable product-level AI rating exists.
+     * ========================================================
+     */
+
+    if (
+        Object.keys(dna).length === 0
+    ) {
+
+        const gauges =
+            raw
+                ?.specifications
+                ?.available_gauges;
+
+
+        if (
+            Array.isArray(gauges)
+        ) {
+
+            const availableGauges =
+                gauges.filter(
+                    gauge =>
+                        gauge &&
+                        gauge.available !== false
+                );
+
+
+            for (
+                const field
+                of coreFields
+            ) {
+
+                const values =
+                    availableGauges
+                        .map(
+                            gauge =>
+                                normalizeDnaValue(
+                                    gauge[field]
+                                )
+                        )
+                        .filter(
+                            value =>
+                                value !== null
+                        );
+
+
+                if (
+                    values.length === 0
+                ) {
+                    continue;
+                }
+
+
+                dna[field] =
+                    values.reduce(
+                        (sum, value) =>
+                            sum + value,
+                        0
+                    ) /
+                    values.length;
+            }
+        }
+    }
+
+
+    /**
+     * ========================================================
+     * Source 3:
+     * Legacy DNA Fallback
+     * ========================================================
+     */
+
+    if (
+        Object.keys(dna).length === 0
+    ) {
+
+        const legacyDna =
+            getFirstValue(
+                raw,
+                [
+                    "dna",
+                    "performance_dna",
+                    "string_dna",
+                    "ratings",
+                    "performance"
+                ]
+            );
+
+
+        if (
+            legacyDna &&
+            typeof legacyDna === "object" &&
+            !Array.isArray(legacyDna)
+        ) {
+            dna = {
+                ...legacyDna
+            };
+        }
+    }
+
+
+    /**
+     * ========================================================
+     * Extended Performance DNA
+     *
+     * These dimensions come from performance_profile and
+     * complement the canonical core DNA.
+     * ========================================================
+     */
+
+    const performanceProfile =
+        raw?.performance_profile ??
+        {};
+
+
+    const extendedFields = [
+        "snapback",
+        "ball_pocketing",
+        "predictability",
+        "arm_friendliness",
+        "directional_precision",
+        "ball_bite"
+    ];
+
+
+    for (
+        const field
+        of extendedFields
+    ) {
+
+        if (
+            dna[field] !== undefined
+        ) {
+            continue;
+        }
+
+
+        const value =
+            normalizeDnaValue(
+                performanceProfile[field]
+            );
+
+
+        if (
+            value !== null
+        ) {
+            dna[field] =
+                value;
+        }
+    }
+
+
+    return dna;
+}
+
+
+/**
+ * ============================================================
+ * Canonical String Gauge Adapter V1
+ *
+ * Recommendation Quality V1
+ *
+ * Normalizes string gauge data from multiple schema formats
+ * into one canonical array:
+ *
+ *     gauges_mm: number[]
+ *
+ * Source priority is not exclusive. All valid gauge sources
+ * are merged and deduplicated.
+ *
+ * Supported sources:
+ *
+ * 1. gauges_mm
+ * 2. gauge_mm
+ * 3. gauge
+ * 4. specs.gauge_mm
+ * 5. specifications.gauge_mm
+ * 6. specifications.available_gauges[].gauge_mm
+ *
+ * ============================================================
+ */
+
+function buildCanonicalStringGauges(
+    raw
+) {
+
+    const values = [];
+
+
+    function addGauge(
+        value
+    ) {
+
+        if (
+            value === null ||
+            value === undefined
+        ) {
+            return;
+        }
+
+
+        if (
+            Array.isArray(value)
+        ) {
+
+            for (
+                const item
+                of value
+            ) {
+                addGauge(
+                    item
+                );
+            }
+
+            return;
+        }
+
+
+        const numeric =
+            Number(
+                value
+            );
+
+
+        if (
+            !Number.isFinite(numeric)
+        ) {
+            return;
+        }
+
+
+        /**
+         * Sanity range for tennis string gauges.
+         */
+
+        if (
+            numeric < 0.8 ||
+            numeric > 2.0
+        ) {
+            return;
+        }
+
+
+        values.push(
+            numeric
+        );
+    }
+
+
+    /**
+     * Legacy / direct gauge sources
+     */
+
+    addGauge(
+        raw?.gauges_mm
+    );
+
+    addGauge(
+        raw?.gauge_mm
+    );
+
+    addGauge(
+        raw?.gauge
+    );
+
+    addGauge(
+        raw?.specs?.gauge_mm
+    );
+
+    addGauge(
+        raw
+            ?.specifications
+            ?.gauge_mm
+    );
+
+
+    /**
+     * Structured available gauge source
+     */
+
+    const availableGauges =
+        raw
+            ?.specifications
+            ?.available_gauges;
+
+
+    if (
+        Array.isArray(
+            availableGauges
+        )
+    ) {
+
+        for (
+            const gauge
+            of availableGauges
+        ) {
+
+            if (
+                !gauge ||
+                gauge.available === false
+            ) {
+                continue;
+            }
+
+
+            addGauge(
+                gauge.gauge_mm
+            );
+        }
+    }
+
+
+    /**
+     * Deduplicate and sort.
+     */
+
+    return [
+        ...new Set(
+            values.map(
+                value =>
+                    Number(
+                        value.toFixed(3)
+                    )
+            )
+        )
+    ].sort(
+        (a, b) =>
+            a - b
+    );
+}
+
+
 function extractStringData(raw) {
 
     const id =
@@ -568,15 +976,8 @@ function extractStringData(raw) {
         );
 
     const gauges =
-        getFirstValue(
-            raw,
-            [
-                "gauges_mm",
-                "gauge_mm",
-                "gauge",
-                "specs.gauge_mm",
-                "specifications.gauge_mm"
-            ]
+        buildCanonicalStringGauges(
+            raw
         );
 
     const shape =
@@ -601,16 +1002,9 @@ function extractStringData(raw) {
         );
 
     const dna =
-        getFirstValue(
-            raw,
-            [
-                "dna",
-                "performance_dna",
-                "string_dna",
-                "ratings",
-                "performance"
-            ]
-        ) ?? {};
+        buildCanonicalStringDna(
+            raw
+        );
 
     return {
         raw,
