@@ -2965,6 +2965,238 @@ function extractTensionContext(
 
 /**
  * ============================================================
+ * Scenario Explanation V0.1
+ * ============================================================
+ */
+
+const SCENARIO_REASON_MESSAGES = {
+
+    preserve_current_setup: {
+        en:
+            "Keep the current racquet and string setup.",
+        zh:
+            "保留目前的球拍与球线配置。"
+    },
+
+    preserve_current_racquet: {
+        en:
+            "Keep the current racquet to minimize unnecessary equipment changes.",
+        zh:
+            "保留目前球拍，尽量减少不必要的装备调整。"
+    },
+
+    replace_string_for_better_fit: {
+        en:
+            "Change the string to improve overall fit while preserving the familiar racquet.",
+        zh:
+            "更换球线以改善整体适配，同时保留熟悉的球拍。"
+    },
+
+    preserve_current_string: {
+        en:
+            "Keep the current string while adjusting the racquet.",
+        zh:
+            "保留目前球线，同时调整球拍。"
+    },
+
+    replace_racquet_for_better_fit: {
+        en:
+            "Change the racquet to improve overall equipment fit.",
+        zh:
+            "更换球拍以改善整体装备适配。"
+    },
+
+    replace_racquet_and_string_for_better_fit: {
+        en:
+            "Change both racquet and string to achieve a more suitable setup.",
+        zh:
+            "同时调整球拍和球线，以获得更合适的整体配置。"
+    },
+
+    current_racquet_continuity: {
+        en:
+            "The current racquet is preserved to reduce adaptation cost.",
+        zh:
+            "保留当前球拍，以减少适应成本。"
+    },
+
+    current_string_continuity: {
+        en:
+            "The current string is preserved to reduce unnecessary change.",
+        zh:
+            "保留当前球线，以减少不必要的调整。"
+    }
+};
+
+
+
+function buildScenarioExplanation({
+    strategy,
+    racquet,
+    string,
+    currentRacquetId,
+    currentStringId
+}) {
+
+    const reasons = [];
+    const tradeoffs = [];
+
+
+    if (
+        strategy ===
+        "keep_both"
+    ) {
+        reasons.push(
+            "preserve_current_setup"
+        );
+    }
+
+
+    if (
+        strategy ===
+        "change_string_only"
+    ) {
+        reasons.push(
+            "preserve_current_racquet"
+        );
+
+        reasons.push(
+            "replace_string_for_better_fit"
+        );
+    }
+
+
+    if (
+        strategy ===
+        "change_racquet_only"
+    ) {
+        reasons.push(
+            "preserve_current_string"
+        );
+
+        reasons.push(
+            "replace_racquet_for_better_fit"
+        );
+    }
+
+
+    if (
+        strategy ===
+        "change_both"
+    ) {
+        reasons.push(
+            "replace_racquet_and_string_for_better_fit"
+        );
+    }
+
+
+    if (
+        getCandidateId(
+            racquet
+        ) ===
+        currentRacquetId
+    ) {
+        reasons.push(
+            "current_racquet_continuity"
+        );
+    }
+
+
+    if (
+        getCandidateId(
+            string
+        ) ===
+        currentStringId
+    ) {
+        reasons.push(
+            "current_string_continuity"
+        );
+    }
+
+
+    if (
+        Array.isArray(
+            racquet?.risk_flags
+        )
+    ) {
+
+        for (
+            const risk
+            of racquet.risk_flags
+        ) {
+
+            tradeoffs.push({
+                component:
+                    "racquet",
+
+                message:
+                    risk
+            });
+        }
+    }
+
+
+    if (
+        Array.isArray(
+            string?.risk_flags
+        )
+    ) {
+
+        for (
+            const risk
+            of string.risk_flags
+        ) {
+
+            tradeoffs.push({
+                component:
+                    "string",
+
+                message:
+                    risk
+            });
+        }
+    }
+
+
+    const uniqueReasons =
+        [...new Set(reasons)];
+
+
+    const reasonDetails =
+        uniqueReasons.map(
+            code => ({
+                code,
+
+                en:
+                    SCENARIO_REASON_MESSAGES[
+                        code
+                    ]?.en ??
+                    code,
+
+                zh:
+                    SCENARIO_REASON_MESSAGES[
+                        code
+                    ]?.zh ??
+                    code
+            })
+        );
+
+
+    return {
+        reasons:
+            uniqueReasons,
+
+        reason_details:
+            reasonDetails,
+
+        tradeoffs
+    };
+}
+
+
+
+/**
+ * ============================================================
  * Build Scenario
  * ============================================================
  */
@@ -3089,6 +3321,53 @@ function buildScenario({
             });
 
 
+    const selectedRacquetId =
+        getCandidateId(
+            racquet
+        );
+
+
+    const selectedStringId =
+        getCandidateId(
+            string
+        );
+
+
+    const changeCount =
+        selected?.changes ??
+        (
+            selectedRacquetId !==
+                currentRacquetId
+                    ? 1
+                    : 0
+        ) +
+        (
+            selectedStringId !==
+                currentStringId
+                    ? 1
+                    : 0
+        );
+
+
+    const strategy =
+        selected?.strategy ??
+        (
+            changeCount === 0
+                ? "keep_both"
+                : (
+                    selectedRacquetId ===
+                        currentRacquetId
+                        ? "change_string_only"
+                        : (
+                            selectedStringId ===
+                                currentStringId
+                                ? "change_racquet_only"
+                                : "change_both"
+                        )
+                )
+        );
+
+
     return {
 
         type,
@@ -3100,6 +3379,35 @@ function buildScenario({
         score:
             selected
                 .pair_score,
+
+        decision: {
+
+            strategy,
+
+            change_count:
+                changeCount,
+
+            physical_improvement:
+                selected?.improvement ??
+                null,
+
+            physical_improvement_per_change:
+                selected?.improvementPerChange ??
+                null,
+
+            unsafe_components:
+                selected?.unsafe ??
+                null
+        },
+
+        explanation:
+            buildScenarioExplanation({
+                strategy,
+                racquet,
+                string,
+                currentRacquetId,
+                currentStringId
+            }),
 
         racquet: {
 
