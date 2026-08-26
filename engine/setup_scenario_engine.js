@@ -1540,6 +1540,774 @@ function calculatePairCompatibility(
 
 /**
  * ============================================================
+ * Minimal Effective Change V0.1
+ *
+ * Minimal Change must not mean maximum continuity when the
+ * player's current equipment carries meaningful physical cost.
+ *
+ * Strategy:
+ *
+ * mild:
+ * - continuity remains dominant
+ *
+ * moderate:
+ * - prefer the strongest physical improvement per change
+ * - one-component intervention is preferred when effective
+ *
+ * high:
+ * - safety becomes dominant
+ * - an absent known current component is treated as unavailable
+ *   after upstream matching / physical filtering
+ * ============================================================
+ */
+
+function getCandidatePhysicalScore(
+    candidate
+) {
+
+    return safeNumber(
+        candidate
+            ?.score_breakdown
+            ?.physical,
+        0
+    );
+}
+
+
+function getCandidateRiskCount(
+    candidate
+) {
+
+    return Array.isArray(
+        candidate?.risk_flags
+    )
+        ? candidate.risk_flags.length
+        : 0;
+}
+
+
+function findRankedCandidateById(
+    rankedCandidates,
+    candidateId
+) {
+
+    if (
+        !candidateId
+    ) {
+
+        return null;
+    }
+
+
+    return (
+        rankedCandidates.find(
+            entry =>
+                getCandidateId(
+                    entry?.candidate
+                ) ===
+                candidateId
+        ) ??
+        null
+    );
+}
+
+
+function getHighestPhysicalSeverity(
+    physicalConstraints
+) {
+
+    if (
+        !Array.isArray(
+            physicalConstraints
+        ) ||
+        physicalConstraints.length === 0
+    ) {
+
+        return null;
+    }
+
+
+    const weights = {
+
+        mild:
+            1,
+
+        moderate:
+            2,
+
+        high:
+            3
+    };
+
+
+    let selected =
+        null;
+
+    let selectedWeight =
+        0;
+
+
+    for (
+        const constraint
+        of physicalConstraints
+    ) {
+
+        const severity =
+            normalizeText(
+                constraint?.severity
+            );
+
+
+        const weight =
+            weights[
+                severity
+            ] ??
+            0;
+
+
+        if (
+            weight >
+            selectedWeight
+        ) {
+
+            selected =
+                severity;
+
+            selectedWeight =
+                weight;
+        }
+    }
+
+
+    return selected;
+}
+
+
+function buildMinimalChangeOption({
+    strategy,
+    racquetEntry,
+    stringEntry,
+    currentRacquetId,
+    currentStringId,
+    baselinePhysical,
+    scenarioType
+}) {
+
+    if (
+        !racquetEntry ||
+        !stringEntry
+    ) {
+
+        return null;
+    }
+
+
+    const racquetId =
+        getCandidateId(
+            racquetEntry
+                .candidate
+        );
+
+
+    const stringId =
+        getCandidateId(
+            stringEntry
+                .candidate
+        );
+
+
+    const changes =
+        (
+            racquetId !==
+            currentRacquetId
+                ? 1
+                : 0
+        ) +
+        (
+            stringId !==
+            currentStringId
+                ? 1
+                : 0
+        );
+
+
+    const racquetPhysical =
+        getCandidatePhysicalScore(
+            racquetEntry
+                .candidate
+        );
+
+
+    const stringPhysical =
+        getCandidatePhysicalScore(
+            stringEntry
+                .candidate
+        );
+
+
+    const totalPhysical =
+        racquetPhysical +
+        stringPhysical;
+
+
+    const improvement =
+        totalPhysical -
+        baselinePhysical;
+
+
+    const improvementPerChange =
+        changes > 0
+            ? improvement / changes
+            : improvement;
+
+
+    const unsafe =
+        (
+            getCandidateRiskCount(
+                racquetEntry
+                    .candidate
+            ) >
+            0
+                ? 1
+                : 0
+        ) +
+        (
+            getCandidateRiskCount(
+                stringEntry
+                    .candidate
+            ) >
+            0
+                ? 1
+                : 0
+        );
+
+
+    const pairKey =
+        `${racquetId ?? "unknown"}::${stringId ?? "unknown"}`;
+
+
+    return {
+
+        strategy,
+
+        racquetEntry,
+
+        stringEntry,
+
+        pairKey,
+
+        changes,
+
+        unsafe,
+
+        racquetPhysical,
+
+        stringPhysical,
+
+        totalPhysical,
+
+        improvement,
+
+        improvementPerChange,
+
+        pair_score:
+            calculatePairCompatibility(
+                racquetEntry,
+                stringEntry,
+                scenarioType
+            )
+    };
+}
+
+
+function selectMinimalEffectivePair({
+    rankedRacquets,
+    rankedStrings,
+    currentRacquetId,
+    currentStringId,
+    physicalConstraints
+}) {
+
+    const severity =
+        getHighestPhysicalSeverity(
+            physicalConstraints
+        );
+
+
+    /**
+     * --------------------------------------------------------
+     * Mild / no meaningful physical constraint
+     *
+     * Preserve existing continuity-first Minimal Change.
+     * --------------------------------------------------------
+     */
+
+    if (
+        severity !==
+            "moderate" &&
+        severity !==
+            "high"
+    ) {
+
+        return selectDistinctPair(
+            rankedRacquets,
+            rankedStrings,
+            new Set(),
+            SETUP_SCENARIO_TYPES
+                .MINIMAL_CHANGE
+        );
+    }
+
+
+    const currentRacquetEntry =
+        findRankedCandidateById(
+            rankedRacquets,
+            currentRacquetId
+        );
+
+
+    const currentStringEntry =
+        findRankedCandidateById(
+            rankedStrings,
+            currentStringId
+        );
+
+
+    /**
+     * A known current component missing from the Matching
+     * candidate pool is treated as unavailable for safety-aware
+     * Minimal Change selection.
+     */
+
+    const currentRacquetAvailable =
+        Boolean(
+            currentRacquetEntry
+        );
+
+
+    const currentStringAvailable =
+        Boolean(
+            currentStringEntry
+        );
+
+
+    const baselinePhysical =
+        (
+            currentRacquetAvailable
+                ? getCandidatePhysicalScore(
+                    currentRacquetEntry
+                        .candidate
+                )
+                : -50
+        ) +
+        (
+            currentStringAvailable
+                ? getCandidatePhysicalScore(
+                    currentStringEntry
+                        .candidate
+                )
+                : -50
+        );
+
+
+    const racquetPool =
+        rankedRacquets
+            .slice(
+                0,
+                12
+            );
+
+
+    const stringPool =
+        rankedStrings
+            .slice(
+                0,
+                12
+            );
+
+
+    const options =
+        [];
+
+
+    /**
+     * --------------------------------------------------------
+     * Keep Both
+     * --------------------------------------------------------
+     */
+
+    if (
+        currentRacquetAvailable &&
+        currentStringAvailable
+    ) {
+
+        const option =
+            buildMinimalChangeOption({
+
+                strategy:
+                    "keep_both",
+
+                racquetEntry:
+                    currentRacquetEntry,
+
+                stringEntry:
+                    currentStringEntry,
+
+                currentRacquetId,
+
+                currentStringId,
+
+                baselinePhysical,
+
+                scenarioType:
+                    SETUP_SCENARIO_TYPES
+                        .MINIMAL_CHANGE
+            });
+
+
+        if (
+            option
+        ) {
+
+            options.push(
+                option
+            );
+        }
+    }
+
+
+    /**
+     * --------------------------------------------------------
+     * Change String Only
+     * --------------------------------------------------------
+     */
+
+    if (
+        currentRacquetAvailable
+    ) {
+
+        for (
+            const stringEntry
+            of stringPool
+        ) {
+
+            if (
+                getCandidateId(
+                    stringEntry
+                        .candidate
+                ) ===
+                currentStringId
+            ) {
+
+                continue;
+            }
+
+
+            const option =
+                buildMinimalChangeOption({
+
+                    strategy:
+                        "change_string_only",
+
+                    racquetEntry:
+                        currentRacquetEntry,
+
+                    stringEntry,
+
+                    currentRacquetId,
+
+                    currentStringId,
+
+                    baselinePhysical,
+
+                    scenarioType:
+                        SETUP_SCENARIO_TYPES
+                            .MINIMAL_CHANGE
+                });
+
+
+            if (
+                option
+            ) {
+
+                options.push(
+                    option
+                );
+            }
+        }
+    }
+
+
+    /**
+     * --------------------------------------------------------
+     * Change Racquet Only
+     * --------------------------------------------------------
+     */
+
+    if (
+        currentStringAvailable
+    ) {
+
+        for (
+            const racquetEntry
+            of racquetPool
+        ) {
+
+            if (
+                getCandidateId(
+                    racquetEntry
+                        .candidate
+                ) ===
+                currentRacquetId
+            ) {
+
+                continue;
+            }
+
+
+            const option =
+                buildMinimalChangeOption({
+
+                    strategy:
+                        "change_racquet_only",
+
+                    racquetEntry,
+
+                    stringEntry:
+                        currentStringEntry,
+
+                    currentRacquetId,
+
+                    currentStringId,
+
+                    baselinePhysical,
+
+                    scenarioType:
+                        SETUP_SCENARIO_TYPES
+                            .MINIMAL_CHANGE
+                });
+
+
+            if (
+                option
+            ) {
+
+                options.push(
+                    option
+                );
+            }
+        }
+    }
+
+
+    /**
+     * --------------------------------------------------------
+     * Change Both
+     * --------------------------------------------------------
+     */
+
+    for (
+        const racquetEntry
+        of racquetPool
+    ) {
+
+        if (
+            getCandidateId(
+                racquetEntry
+                    .candidate
+            ) ===
+            currentRacquetId
+        ) {
+
+            continue;
+        }
+
+
+        for (
+            const stringEntry
+            of stringPool
+        ) {
+
+            if (
+                getCandidateId(
+                    stringEntry
+                        .candidate
+                ) ===
+                currentStringId
+            ) {
+
+                continue;
+            }
+
+
+            const option =
+                buildMinimalChangeOption({
+
+                    strategy:
+                        "change_both",
+
+                    racquetEntry,
+
+                    stringEntry,
+
+                    currentRacquetId,
+
+                    currentStringId,
+
+                    baselinePhysical,
+
+                    scenarioType:
+                        SETUP_SCENARIO_TYPES
+                            .MINIMAL_CHANGE
+                });
+
+
+            if (
+                option
+            ) {
+
+                options.push(
+                    option
+                );
+            }
+        }
+    }
+
+
+    if (
+        options.length ===
+        0
+    ) {
+
+        return null;
+    }
+
+
+    /**
+     * --------------------------------------------------------
+     * HIGH
+     *
+     * Safety floor first:
+     * 1. fewer unsafe components
+     * 2. stronger total physical result
+     * 3. fewer changes
+     * 4. pair compatibility
+     * --------------------------------------------------------
+     */
+
+    if (
+        severity ===
+        "high"
+    ) {
+
+        options.sort(
+            (
+                a,
+                b
+            ) =>
+
+                a.unsafe -
+                    b.unsafe ||
+
+                b.totalPhysical -
+                    a.totalPhysical ||
+
+                a.changes -
+                    b.changes ||
+
+                b.pair_score -
+                    a.pair_score
+        );
+
+
+        return (
+            options[0] ??
+            null
+        );
+    }
+
+
+    /**
+     * --------------------------------------------------------
+     * MODERATE
+     *
+     * Minimum Effective Change:
+     *
+     * Prefer a one-component intervention when it provides
+     * meaningful physical improvement.
+     * --------------------------------------------------------
+     */
+
+    const effectiveOneChange =
+        options
+            .filter(
+                option =>
+                    option.changes ===
+                        1 &&
+                    option.improvement >
+                        0
+            )
+            .sort(
+                (
+                    a,
+                    b
+                ) =>
+
+                    b.improvementPerChange -
+                        a.improvementPerChange ||
+
+                    b.improvement -
+                        a.improvement ||
+
+                    a.unsafe -
+                        b.unsafe ||
+
+                    b.pair_score -
+                        a.pair_score
+            );
+
+
+    if (
+        effectiveOneChange.length >
+        0
+    ) {
+
+        return (
+            effectiveOneChange[0]
+        );
+    }
+
+
+    options.sort(
+        (
+            a,
+            b
+        ) =>
+
+            a.unsafe -
+                b.unsafe ||
+
+            b.improvementPerChange -
+                a.improvementPerChange ||
+
+            a.changes -
+                b.changes ||
+
+            b.pair_score -
+                a.pair_score
+    );
+
+
+    return (
+        options[0] ??
+        null
+    );
+}
+
+
+
+/**
+ * ============================================================
  * Find Distinct Pair
  *
  * Prevent every scenario from returning exactly the same
@@ -2212,6 +2980,7 @@ function buildScenario({
     currentGaugeMm,
     currentTensionLbs,
     recommendationResult,
+    physicalConstraints,
     usedPairs
 }) {
 
@@ -2236,12 +3005,18 @@ function buildScenario({
             SETUP_SCENARIO_TYPES
                 .MINIMAL_CHANGE
 
-            ? selectDistinctPair(
+            ? selectMinimalEffectivePair({
+
                 rankedRacquets,
+
                 rankedStrings,
-                new Set(),
-                type
-            )
+
+                currentRacquetId,
+
+                currentStringId,
+
+                physicalConstraints
+            })
 
             : selectDistinctPair(
                 rankedRacquets,
@@ -2446,6 +3221,18 @@ export function generateSetupScenarios({
         );
 
 
+    const physicalConstraints =
+        Array.isArray(
+            matchingResult
+                ?.player_context
+                ?.physical_constraints
+        )
+            ? matchingResult
+                .player_context
+                .physical_constraints
+            : [];
+
+
     const usedPairs =
         new Set();
 
@@ -2525,6 +3312,8 @@ export function generateSetupScenarios({
 
                         recommendationResult,
 
+                        physicalConstraints,
+
                         usedPairs
                     })
             )
@@ -2585,6 +3374,16 @@ export const setupScenarioHelpers = {
     getCandidateId,
 
     getCandidateName,
+
+    getCandidatePhysicalScore,
+
+    getCandidateRiskCount,
+
+    getHighestPhysicalSeverity,
+
+    buildMinimalChangeOption,
+
+    selectMinimalEffectivePair,
 
     getBaseMatchScore,
 
