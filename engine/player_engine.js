@@ -909,7 +909,16 @@ export async function buildPlayerProfile(
             avoid_brands:
                 normalizeArray(
                     playerInput?.preferences?.avoid_brands
-                )
+                ),
+
+            change_tolerance:
+                playerInput?.preferences?.change_tolerance ??
+                playerInput?.change_tolerance ??
+                "moderate",
+
+            change_intent:
+                playerInput?.change_intent ??
+                null
         },
 
         current_setup: {

@@ -363,7 +363,8 @@ export function parsePlayerInput(
 
     const currentString =
         detectString(
-            normalizedMessage
+            normalizedMessage,
+            originalMessage
         );
 
 
@@ -403,6 +404,12 @@ export function parsePlayerInput(
         );
 
 
+    const changeIntent =
+        detectChangeIntent(
+            normalizedMessage
+        );
+
+
     const playerInput = {
 
         current_racquet:
@@ -426,7 +433,16 @@ export function parsePlayerInput(
         feel_preference:
             feelPreference,
 
-        physical
+        physical,
+
+        preferences: {
+            change_tolerance:
+                changeIntent?.change_tolerance ??
+                "moderate"
+        },
+
+        change_intent:
+            changeIntent
     };
 
 
@@ -591,12 +607,110 @@ function detectRacquet(
 
 /**
  * ============================================================
+ * Detect Explicit String Gauge
+ * ============================================================
+ *
+ * Product Resolver resolves product identity first, but the
+ * canonical product match may not contain the gauge explicitly
+ * written in the user's message.
+ *
+ * Keep gauge extraction separate from product identity.
+ * ============================================================
+ */
+
+function detectExplicitStringGauge(
+    message
+) {
+
+    if (
+        typeof message !== "string" ||
+        !message
+    ) {
+        return null;
+    }
+
+
+    /**
+     * Standard tennis string gauge in millimeters.
+     *
+     * Examples:
+     * 1.20
+     * 1.25
+     * 1.30
+     * 1.35
+     *
+     * Keep this independent from product identity.
+     */
+    const decimalMatch =
+        message.match(
+            /(?:^|[^0-9])(1\.(?:20|25|30|35))(?![0-9])/
+        );
+
+
+    if (
+        decimalMatch?.[1]
+    ) {
+
+        const value =
+            Number(
+                decimalMatch[1]
+            );
+
+
+        if (
+            Number.isFinite(
+                value
+            )
+        ) {
+
+            return value;
+        }
+    }
+
+
+    /**
+     * Compact gauge notation.
+     *
+     * Examples:
+     * HAWK TOUCH 125
+     * RPM Blast 130
+     *
+     * Require numeric boundaries so years / tensions /
+     * product numbers are not partially matched.
+     */
+    const compactMatch =
+        message.match(
+            /(?:^|[^0-9])(120|125|130|135)(?![0-9])/
+        );
+
+
+    if (
+        compactMatch?.[1]
+    ) {
+
+        return (
+            Number(
+                compactMatch[1]
+            ) /
+            100
+        );
+    }
+
+
+    return null;
+}
+
+
+
+/**
+ * ============================================================
  * Detect String
  * ============================================================
  */
 
 function detectString(
-    message
+    message,
+    originalMessage = message
 ) {
 
     /**
@@ -632,6 +746,9 @@ function detectString(
                 resolved.match.model,
 
             gauge_mm:
+                detectExplicitStringGauge(
+                    originalMessage
+                ) ??
                 resolved
                     ?.match
                     ?.gauge_mm ??
@@ -724,6 +841,9 @@ function detectString(
             best.model,
 
         gauge_mm:
+            detectExplicitStringGauge(
+                originalMessage
+            ) ??
             best.gauge_mm ??
             null
     };
@@ -836,6 +956,120 @@ function detectTension(
 
 /**
  * ============================================================
+ * Change Intent V1
+ * ============================================================
+ */
+
+function detectChangeIntent(
+    message
+) {
+
+    const tensionOnly =
+        includesAny(
+            message,
+            [
+                "只想调整磅数",
+                "只调整磅数",
+                "只想调磅数",
+                "只调磅数",
+                "只改磅数",
+                "only adjust the tension",
+                "adjust tension only",
+                "tension only"
+            ]
+        );
+
+
+    if (tensionOnly) {
+
+        return {
+            change_tolerance:
+                "minimal",
+
+            preserve_racquet:
+                true,
+
+            preserve_string:
+                true,
+
+            preferred_change:
+                "tension_only"
+        };
+    }
+
+
+    const minimalChange =
+        includesAny(
+            message,
+            [
+                "尽量少改",
+                "尽量少换",
+                "少改装备",
+                "最少改动",
+                "minimal change",
+                "change as little as possible"
+            ]
+        );
+
+
+    if (minimalChange) {
+
+        return {
+            change_tolerance:
+                "minimal",
+
+            preserve_racquet:
+                false,
+
+            preserve_string:
+                false,
+
+            preferred_change:
+                "minimal_change"
+        };
+    }
+
+
+    const openChange =
+        includesAny(
+            message,
+            [
+                "愿意换球拍和球线",
+                "可以换球拍和球线",
+                "都可以换",
+                "效果最好",
+                "best setup",
+                "best result",
+                "open to changing"
+            ]
+        );
+
+
+    if (openChange) {
+
+        return {
+            change_tolerance:
+                "open",
+
+            preserve_racquet:
+                false,
+
+            preserve_string:
+                false,
+
+            preferred_change:
+                "best_overall"
+        };
+    }
+
+
+    return null;
+}
+
+
+
+/**
+ * ============================================================
  * Primary Goal
  * ============================================================
  */
@@ -884,6 +1118,7 @@ function detectPrimaryGoal(
         "更多控制",
         "更好控制",
         "提高控制",
+        "增加控制",
         "加强控制",
         "更精准",
         "精准一点"
@@ -1007,6 +1242,9 @@ function detectPlayingStyle(
                 "底线型",
                 "底线打法",
                 "底线球员",
+                "底线为主",
+                "主要打底线",
+                "以底线为主",
                 "偏底线"
             ]
         )

@@ -3546,6 +3546,116 @@ function buildScenario({
 }
 
 
+
+/**
+ * ============================================================
+ * Explicit Change Intent Constraints V1
+ * ============================================================
+ *
+ * Explicit preserve instructions are hard constraints.
+ *
+ * Example:
+ * "Keep my racquet and string, only adjust the tension."
+ *
+ * In that case all scenario types must preserve the current
+ * racquet and current string. Scenario objectives may still
+ * produce different tension recommendations.
+ * ============================================================
+ */
+
+function applyChangeIntentConstraints({
+    racquetCandidates = [],
+    stringCandidates = [],
+    currentRacquetId = null,
+    currentStringId = null,
+    changeIntent = null
+}) {
+
+    let constrainedRacquets =
+        Array.isArray(racquetCandidates)
+            ? racquetCandidates
+            : [];
+
+    let constrainedStrings =
+        Array.isArray(stringCandidates)
+            ? stringCandidates
+            : [];
+
+
+    if (
+        !changeIntent ||
+        typeof changeIntent !== "object"
+    ) {
+
+        return {
+            racquetCandidates:
+                constrainedRacquets,
+
+            stringCandidates:
+                constrainedStrings,
+
+            applied:
+                false
+        };
+    }
+
+
+    if (
+        changeIntent.preserve_racquet === true &&
+        currentRacquetId
+    ) {
+
+        const preserved =
+            constrainedRacquets.filter(
+                entry =>
+                    getCandidateId(entry) ===
+                    currentRacquetId
+            );
+
+
+        if (preserved.length > 0) {
+
+            constrainedRacquets =
+                preserved;
+        }
+    }
+
+
+    if (
+        changeIntent.preserve_string === true &&
+        currentStringId
+    ) {
+
+        const preserved =
+            constrainedStrings.filter(
+                entry =>
+                    getCandidateId(entry) ===
+                    currentStringId
+            );
+
+
+        if (preserved.length > 0) {
+
+            constrainedStrings =
+                preserved;
+        }
+    }
+
+
+    return {
+        racquetCandidates:
+            constrainedRacquets,
+
+        stringCandidates:
+            constrainedStrings,
+
+        applied:
+            changeIntent.preserve_racquet === true ||
+            changeIntent.preserve_string === true
+    };
+}
+
+
 /**
  * ============================================================
  * Main
@@ -3614,6 +3724,28 @@ export function generateSetupScenarios({
             : [];
 
 
+    const changeIntent =
+        playerProfile
+            ?.preferences
+            ?.change_intent ??
+        null;
+
+
+    const constrainedCandidates =
+        applyChangeIntentConstraints({
+
+            racquetCandidates,
+
+            stringCandidates,
+
+            currentRacquetId,
+
+            currentStringId,
+
+            changeIntent
+        });
+
+
     const usedPairs =
         new Set();
 
@@ -3679,9 +3811,13 @@ export function generateSetupScenarios({
 
                         ...definition,
 
-                        racquetCandidates,
+                        racquetCandidates:
+                            constrainedCandidates
+                                .racquetCandidates,
 
-                        stringCandidates,
+                        stringCandidates:
+                            constrainedCandidates
+                                .stringCandidates,
 
                         currentRacquetId,
 
