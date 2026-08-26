@@ -69,6 +69,11 @@ import {
 
 
 import {
+    detectQuestionIntent
+} from "../engine/question_intent_engine.js";
+
+
+import {
     runFollowUpEngine
 } from "../engine/follow_up_engine.js";
 
@@ -491,6 +496,10 @@ async function handleAI(
             null;
 
 
+        let questionIntentResult =
+            null;
+
+
         let inputMode =
             null;
 
@@ -513,6 +522,12 @@ async function handleAI(
                 "string" &&
             body.message.trim()
         ) {
+
+            questionIntentResult =
+                detectQuestionIntent(
+                    body.message
+                );
+
 
             parserResult =
                 parsePlayerInput(
@@ -847,6 +862,9 @@ async function handleAI(
                     parser:
                         parserResult,
 
+                    question_intent:
+                        questionIntentResult,
+
                     conversation_id:
                         conversationResult
                             ?.conversation_id ??
@@ -1052,6 +1070,9 @@ async function handleAI(
                 parser:
                     parserResult,
 
+                question_intent:
+                    questionIntentResult,
+
                 current_turn_player_input:
                     currentTurnPlayerInput,
 
@@ -1166,6 +1187,9 @@ async function handleAI(
 
             parser:
                 parserResult,
+
+            question_intent:
+                questionIntentResult,
 
             current_turn_player_input:
                 currentTurnPlayerInput,
