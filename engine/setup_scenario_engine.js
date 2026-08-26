@@ -2978,6 +2978,13 @@ const SCENARIO_REASON_MESSAGES = {
             "保留目前的球拍与球线配置。"
     },
 
+    adjust_tension_only: {
+        en:
+            "Keep the current racquet and string, and adjust only the tension.",
+        zh:
+            "保留当前球拍和球线，仅调整穿线磅数。"
+    },
+
     preserve_current_racquet: {
         en:
             "Keep the current racquet to minimize unnecessary equipment changes.",
@@ -3048,6 +3055,16 @@ function buildScenarioExplanation({
     ) {
         reasons.push(
             "preserve_current_setup"
+        );
+    }
+
+
+    if (
+        strategy ===
+        "adjust_tension_only"
+    ) {
+        reasons.push(
+            "adjust_tension_only"
         );
     }
 
@@ -3349,7 +3366,7 @@ function buildScenario({
         );
 
 
-    const strategy =
+    const baseStrategy =
         selected?.strategy ??
         (
             changeCount === 0
@@ -3365,6 +3382,44 @@ function buildScenario({
                                 : "change_both"
                         )
                 )
+        );
+
+
+    const recommendedTensionLbs =
+        tension?.recommended_lbs ??
+        null;
+
+
+    const tensionChanged =
+        currentTensionLbs !== null &&
+        recommendedTensionLbs !== null &&
+        recommendedTensionLbs !==
+            currentTensionLbs;
+
+
+    const tensionDeltaLbs =
+        tensionChanged
+            ? recommendedTensionLbs -
+                currentTensionLbs
+            : 0;
+
+
+    const strategy =
+        baseStrategy ===
+            "keep_both" &&
+        tensionChanged
+
+            ? "adjust_tension_only"
+
+            : baseStrategy;
+
+
+    const setupChangeCount =
+        changeCount +
+        (
+            tensionChanged
+                ? 1
+                : 0
         );
 
 
@@ -3385,7 +3440,13 @@ function buildScenario({
             strategy,
 
             change_count:
+                setupChangeCount,
+
+            equipment_change_count:
                 changeCount,
+
+            setup_change_count:
+                setupChangeCount,
 
             physical_improvement:
                 selected?.improvement ??
@@ -3397,7 +3458,19 @@ function buildScenario({
 
             unsafe_components:
                 selected?.unsafe ??
-                null
+                null,
+
+            tension_changed:
+                tensionChanged,
+
+            tension_delta_lbs:
+                tensionDeltaLbs,
+
+            current_tension_lbs:
+                currentTensionLbs,
+
+            recommended_tension_lbs:
+                recommendedTensionLbs
         },
 
         explanation:

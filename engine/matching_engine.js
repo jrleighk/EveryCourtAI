@@ -1094,12 +1094,20 @@ function extractStringData(raw) {
         stiffness:
             normalizeDnaValue(stiffness),
 
+        manufacturer_data:
+            raw?.manufacturer_data ??
+            null,
+
         specifications:
             raw?.specifications ??
             null,
 
         design_profile:
             raw?.design_profile ??
+            null,
+
+        playing_characteristics:
+            raw?.playing_characteristics ??
             null,
 
         ai_rating:
@@ -1457,8 +1465,24 @@ function getStructuredStringPhysicalTraits(
     const performanceProfile =
         stringCandidate?.performance_profile ?? {};
 
+    const playingCharacteristics =
+        stringCandidate?.playing_characteristics ?? {};
+
+    const manufacturerData =
+        stringCandidate?.manufacturer_data ?? {};
+
     const specifications =
         stringCandidate?.specifications ?? {};
+
+    const gaugeProfiles =
+        Array.isArray(
+            specifications?.available_gauges
+        )
+            ? specifications.available_gauges
+            : [];
+
+    const primaryGaugeProfile =
+        gaugeProfiles[0] ?? {};
 
     const structuralText =
         [
@@ -1468,6 +1492,10 @@ function getStructuredStringPhysicalTraits(
 
             safeString(
                 stringCandidate?.material
+            ),
+
+            safeString(
+                manufacturerData?.material
             ),
 
             safeString(
@@ -1493,7 +1521,15 @@ function getStructuredStringPhysicalTraits(
 
     const comfortScore =
         safeNumber(
-            aiRating?.comfort
+            aiRating?.comfort ??
+            playingCharacteristics?.comfort ??
+            primaryGaugeProfile?.comfort
+        );
+
+    const elasticityScore =
+        safeNumber(
+            playingCharacteristics?.elasticity ??
+            primaryGaugeProfile?.elasticity
         );
 
     const armFriendlinessScore =
@@ -1590,6 +1626,9 @@ function getStructuredStringPhysicalTraits(
         comfort_score:
             comfortScore,
 
+        elasticity_score:
+            elasticityScore,
+
         arm_friendliness_score:
             armFriendlinessScore,
 
@@ -1667,6 +1706,13 @@ function evaluateStringPhysicalCompatibility(
         );
 
 
+    const lowComfortPolyester =
+        traits.polyester &&
+        traits.arm_friendly === false &&
+        traits.comfort_score !== null &&
+        traits.comfort_score <= 6;
+
+
     if (
         hasUpperBodyConstraint
     ) {
@@ -1684,7 +1730,10 @@ function evaluateStringPhysicalCompatibility(
 
         if (
             traits.polyester &&
-            traits.firm
+            (
+                traits.firm ||
+                lowComfortPolyester
+            )
         ) {
             scoreAdjustment -=
                 hasModerateOrHigh
@@ -1692,7 +1741,9 @@ function evaluateStringPhysicalCompatibility(
                     : 8;
 
             riskFlags.push(
-                "Firm polyester may reduce comfort for upper-body sensitivity."
+                traits.firm
+                    ? "Firm polyester may reduce comfort for upper-body sensitivity."
+                    : "Low-comfort polyester may reduce physical compatibility for upper-body sensitivity."
             );
         }
 
@@ -1730,7 +1781,10 @@ function evaluateStringPhysicalCompatibility(
     if (
         hasHigh &&
         traits.polyester &&
-        traits.firm &&
+        (
+            traits.firm ||
+            lowComfortPolyester
+        ) &&
         traits.arm_friendly !== true
     ) {
         return {
