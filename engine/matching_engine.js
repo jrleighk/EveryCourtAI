@@ -258,6 +258,32 @@ function getFirstValue(
  */
 
 function normalizeDnaValue(value) {
+
+    /**
+     * Structured Performance DNA
+     *
+     * Newer racquet knowledge records may store ratings as:
+     *
+     * power: {
+     *     rating: 9,
+     *     cn: "力量输出：9/10"
+     * }
+     *
+     * Preserve compatibility with legacy scalar DNA values.
+     */
+    if (
+        value &&
+        typeof value === "object" &&
+        !Array.isArray(value)
+    ) {
+        value =
+            value?.rating ??
+            value?.score ??
+            value?.value ??
+            null;
+    }
+
+
     if (
         typeof value === "number" &&
         Number.isFinite(value)
