@@ -2680,6 +2680,90 @@ async function loadMatchingKnowledge() {
 
 /**
  * ============================================================
+ * Preserve Current Equipment Candidate
+ *
+ * Recommendation Quality V1:
+ *
+ * Preserve the player's current product after Top-N
+ * truncation when that product remains otherwise eligible.
+ *
+ * This does NOT:
+ * - restore physically excluded products
+ * - modify candidate scores
+ * - modify configured Top-N limits
+ *
+ * It may add at most one candidate beyond the normal limit.
+ * ============================================================
+ */
+
+function preserveCurrentCandidate(
+    limitedCandidates,
+    allEligibleCandidates,
+    currentProductId
+) {
+
+    if (
+        !Array.isArray(
+            limitedCandidates
+        ) ||
+        !Array.isArray(
+            allEligibleCandidates
+        ) ||
+        !currentProductId
+    ) {
+        return limitedCandidates;
+    }
+
+
+    const normalizedCurrentId =
+        normalizeKey(
+            currentProductId
+        );
+
+
+    const alreadyPresent =
+        limitedCandidates.some(
+            candidate =>
+                normalizeKey(
+                    candidate?.id
+                ) ===
+                normalizedCurrentId
+        );
+
+
+    if (
+        alreadyPresent
+    ) {
+        return limitedCandidates;
+    }
+
+
+    const currentCandidate =
+        allEligibleCandidates.find(
+            candidate =>
+                normalizeKey(
+                    candidate?.id
+                ) ===
+                normalizedCurrentId
+        );
+
+
+    if (
+        !currentCandidate
+    ) {
+        return limitedCandidates;
+    }
+
+
+    return [
+        ...limitedCandidates,
+        currentCandidate
+    ];
+}
+
+
+/**
+ * ============================================================
  * Main Matching Engine
  * ============================================================
  */
@@ -2812,24 +2896,55 @@ export async function runMatchingEngine(
      * ----------------------------------
      */
 
-    const topRacquets =
+    const rankedRacquets =
         sortByMatchScore(
             racquetCandidates
-        )
+        );
+
+
+    const rankedStrings =
+        sortByMatchScore(
+            stringCandidates
+        );
+
+
+    const limitedRacquets =
+        rankedRacquets
             .slice(
                 0,
                 RACQUET_CANDIDATE_LIMIT
             );
 
 
-    const topStrings =
-        sortByMatchScore(
-            stringCandidates
-        )
+    const limitedStrings =
+        rankedStrings
             .slice(
                 0,
                 STRING_CANDIDATE_LIMIT
             );
+
+
+    const topRacquets =
+        preserveCurrentCandidate(
+            limitedRacquets,
+            rankedRacquets,
+            playerProfile
+                ?.current_setup
+                ?.racquet
+                ?.id
+        );
+
+
+    const topStrings =
+        preserveCurrentCandidate(
+            limitedStrings,
+            rankedStrings,
+            playerProfile
+                ?.current_setup
+                ?.string
+                ?.main
+                ?.id
+        );
 
 
     /**
