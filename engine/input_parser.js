@@ -438,7 +438,7 @@ export function parsePlayerInput(
         preferences: {
             change_tolerance:
                 changeIntent?.change_tolerance ??
-                "moderate"
+                null
         },
 
         change_intent:
@@ -963,6 +963,72 @@ function detectTension(
 function detectChangeIntent(
     message
 ) {
+
+    const preserveRacquetOnly =
+        includesAny(
+            message,
+            [
+                "球拍不换，但球线可以换",
+                "球拍不换，球线可以换",
+                "保留球拍，球线可以换",
+                "球拍保留，球线可以换",
+                "keep my racquet, but you can change the string",
+                "keep my racquet but change the string",
+                "keep the racquet, change the string"
+            ]
+        );
+
+
+    if (preserveRacquetOnly) {
+
+        return {
+            change_tolerance:
+                "minimal",
+
+            preserve_racquet:
+                true,
+
+            preserve_string:
+                false,
+
+            preferred_change:
+                "string_first"
+        };
+    }
+
+
+    const preserveStringOnly =
+        includesAny(
+            message,
+            [
+                "球拍可以换，但是球线不要换",
+                "球拍可以换，但球线不换",
+                "球拍可以换，球线保留",
+                "保留球线，球拍可以换",
+                "i can change the racquet, but keep my string",
+                "change the racquet but keep my string",
+                "change the racquet, keep the string"
+            ]
+        );
+
+
+    if (preserveStringOnly) {
+
+        return {
+            change_tolerance:
+                "minimal",
+
+            preserve_racquet:
+                false,
+
+            preserve_string:
+                true,
+
+            preferred_change:
+                "racquet_first"
+        };
+    }
+
 
     const tensionOnly =
         includesAny(
