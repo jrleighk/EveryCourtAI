@@ -89,6 +89,11 @@ import {
 } from "../engine/comparison_clarification_resolver_v1.js";
 
 
+import {
+    buildComparisonViewModel
+} from "../engine/comparison_view_model_v1.js";
+
+
 
 
 import {
@@ -1099,6 +1104,13 @@ async function handleAI(
                             );
 
 
+                    const comparisonView =
+                        buildComparisonViewModel(
+                            resolvedComparisonResult,
+                            language
+                        );
+
+
                     const clearedConversationState =
                         clearPendingComparisonContext(
                             conversationResult
@@ -1173,6 +1185,9 @@ async function handleAI(
 
                         comparison:
                             resolvedComparisonResult,
+
+                        comparison_view:
+                            comparisonView,
 
                         comparison_clarification:
                             clarificationResult,
@@ -1500,6 +1515,13 @@ async function handleAI(
                         );
 
 
+                const comparisonView =
+                    buildComparisonViewModel(
+                        comparisonResult,
+                        language
+                    );
+
+
                 return jsonResponse({
 
                     success:
@@ -1572,6 +1594,9 @@ async function handleAI(
 
                     comparison:
                         comparisonResult,
+
+                    comparison_view:
+                        comparisonView,
 
                     recommendation:
                         null,
