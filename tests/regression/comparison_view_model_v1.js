@@ -43,6 +43,42 @@ const invalidView =
     );
 
 
+const playerAwareComparison =
+    await runComparisonOrchestrator({
+
+        message:
+            "比较 Babolat Pure Drive Spectra Edition 2026 和 Wilson RF 01 Pro Classic",
+
+        language:
+            "zh",
+
+        playerProfile: {
+
+            primary_goal:
+                "more_comfort",
+
+            playing_style: [
+                "all_court"
+            ],
+
+            swing_speed:
+                "medium",
+
+            physical_condition: {
+                shoulder_sensitivity:
+                    "moderate"
+            }
+        }
+    });
+
+
+const playerAwareView =
+    buildComparisonViewModel(
+        playerAwareComparison,
+        "zh"
+    );
+
+
 const assertions = [
 
     {
@@ -215,6 +251,150 @@ const assertions = [
             !Object.prototype.hasOwnProperty.call(
                 view,
                 "semantics"
+            )
+    },
+
+    {
+        id: "player_signal_contract_available",
+        pass:
+            playerAwareView
+                ?.player_fit
+                ?.available ===
+            true
+    },
+
+    {
+        id: "player_a_swing_signal",
+        pass:
+            playerAwareView
+                ?.player_fit
+                ?.product_a
+                ?.signals
+                ?.swing_compatibility ===
+            "strong"
+    },
+
+    {
+        id: "player_b_swing_signal",
+        pass:
+            playerAwareView
+                ?.player_fit
+                ?.product_b
+                ?.signals
+                ?.swing_compatibility ===
+            "moderate"
+    },
+
+    {
+        id: "player_a_weight_signal",
+        pass:
+            playerAwareView
+                ?.player_fit
+                ?.product_a
+                ?.signals
+                ?.weight_compatibility ===
+            "strong"
+    },
+
+    {
+        id: "player_b_weight_signal",
+        pass:
+            playerAwareView
+                ?.player_fit
+                ?.product_b
+                ?.signals
+                ?.weight_compatibility ===
+            "moderate"
+    },
+
+    {
+        id: "player_a_physical_signal",
+        pass:
+            playerAwareView
+                ?.player_fit
+                ?.product_a
+                ?.signals
+                ?.physical_demand ===
+            "low" &&
+            playerAwareView
+                ?.player_fit
+                ?.product_a
+                ?.signals
+                ?.physical_risk ===
+            false
+    },
+
+    {
+        id: "player_b_physical_signal",
+        pass:
+            playerAwareView
+                ?.player_fit
+                ?.product_b
+                ?.signals
+                ?.physical_demand ===
+            "high" &&
+            playerAwareView
+                ?.player_fit
+                ?.product_b
+                ?.signals
+                ?.physical_risk ===
+            true
+    },
+
+    {
+        id: "player_goal_alignment_preserved",
+        pass:
+            playerAwareView
+                ?.player_fit
+                ?.product_a
+                ?.signals
+                ?.goal_alignment ===
+                "positive" &&
+            playerAwareView
+                ?.player_fit
+                ?.product_b
+                ?.signals
+                ?.goal_alignment ===
+                "positive"
+    },
+
+    {
+        id: "player_score_breakdown_hidden",
+        pass:
+            !Object.prototype.hasOwnProperty.call(
+                playerAwareView
+                    ?.player_fit
+                    ?.product_a ??
+                {},
+                "score_breakdown"
+            ) &&
+            !Object.prototype.hasOwnProperty.call(
+                playerAwareView
+                    ?.player_fit
+                    ?.product_b ??
+                {},
+                "score_breakdown"
+            )
+    },
+
+    {
+        id: "player_signal_evidence_hidden",
+        pass:
+            !Object.prototype.hasOwnProperty.call(
+                playerAwareView
+                    ?.player_fit
+                    ?.product_a
+                    ?.signals ??
+                {},
+                "evidence"
+            ) &&
+            !Object.prototype.hasOwnProperty.call(
+                playerAwareView
+                    ?.player_fit
+                    ?.product_b
+                    ?.signals ??
+                {},
+                "evidence"
             )
     },
 

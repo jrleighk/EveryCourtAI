@@ -399,6 +399,55 @@ function buildPreferenceSummary(
 }
 
 
+function buildPlayerFitSignalSummary(
+    signal
+) {
+
+    if (
+        !signal ||
+        typeof signal !==
+            "object"
+    ) {
+
+        return null;
+    }
+
+
+    return {
+
+        swing_compatibility:
+            signal
+                ?.swing_compatibility
+                ?.status ??
+            null,
+
+        weight_compatibility:
+            signal
+                ?.weight_compatibility
+                ?.status ??
+            null,
+
+        physical_demand:
+            signal
+                ?.physical_demand
+                ?.status ??
+            null,
+
+        physical_risk:
+            signal
+                ?.physical_demand
+                ?.risk ===
+            true,
+
+        goal_alignment:
+            signal
+                ?.goal_alignment
+                ?.status ??
+            null
+    };
+}
+
+
 function buildPlayerFitSummary(
     playerFit
 ) {
@@ -486,7 +535,14 @@ function buildPlayerFitSummary(
                             .product_a
                             .risk_flags
                     ]
-                    : []
+                    : [],
+
+            signals:
+                buildPlayerFitSignalSummary(
+                    analysis
+                        ?.player_fit_signals
+                        ?.product_a
+                )
         },
 
         product_b: {
@@ -535,7 +591,14 @@ function buildPlayerFitSummary(
                             .product_b
                             .risk_flags
                     ]
-                    : []
+                    : [],
+
+            signals:
+                buildPlayerFitSignalSummary(
+                    analysis
+                        ?.player_fit_signals
+                        ?.product_b
+                )
         },
 
         performance_preference:

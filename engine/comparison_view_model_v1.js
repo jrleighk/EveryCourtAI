@@ -852,7 +852,53 @@ export function buildComparisonViewModel(
                                 ? playerFit
                                     .product_a
                                     .risk_flags
-                                : []
+                                : [],
+
+                        signals:
+                            playerFit
+                                .product_a
+                                .signals &&
+                            typeof playerFit
+                                .product_a
+                                .signals ===
+                                "object"
+                                ? {
+                                    swing_compatibility:
+                                        playerFit
+                                            .product_a
+                                            .signals
+                                            .swing_compatibility ??
+                                        null,
+
+                                    weight_compatibility:
+                                        playerFit
+                                            .product_a
+                                            .signals
+                                            .weight_compatibility ??
+                                        null,
+
+                                    physical_demand:
+                                        playerFit
+                                            .product_a
+                                            .signals
+                                            .physical_demand ??
+                                        null,
+
+                                    physical_risk:
+                                        playerFit
+                                            .product_a
+                                            .signals
+                                            .physical_risk ===
+                                        true,
+
+                                    goal_alignment:
+                                        playerFit
+                                            .product_a
+                                            .signals
+                                            .goal_alignment ??
+                                        null
+                                }
+                                : null
                     }
                     : null,
 
@@ -897,7 +943,53 @@ export function buildComparisonViewModel(
                                 ? playerFit
                                     .product_b
                                     .risk_flags
-                                : []
+                                : [],
+
+                        signals:
+                            playerFit
+                                .product_b
+                                .signals &&
+                            typeof playerFit
+                                .product_b
+                                .signals ===
+                                "object"
+                                ? {
+                                    swing_compatibility:
+                                        playerFit
+                                            .product_b
+                                            .signals
+                                            .swing_compatibility ??
+                                        null,
+
+                                    weight_compatibility:
+                                        playerFit
+                                            .product_b
+                                            .signals
+                                            .weight_compatibility ??
+                                        null,
+
+                                    physical_demand:
+                                        playerFit
+                                            .product_b
+                                            .signals
+                                            .physical_demand ??
+                                        null,
+
+                                    physical_risk:
+                                        playerFit
+                                            .product_b
+                                            .signals
+                                            .physical_risk ===
+                                        true,
+
+                                    goal_alignment:
+                                        playerFit
+                                            .product_b
+                                            .signals
+                                            .goal_alignment ??
+                                        null
+                                }
+                                : null
                     }
                     : null
         },

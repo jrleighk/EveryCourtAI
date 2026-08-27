@@ -29,6 +29,310 @@ const ENGINE_VERSION =
     "1.0";
 
 
+/**
+ * ============================================================
+ * Player Fit Semantic Signals V1
+ * ============================================================
+ *
+ * Purpose:
+ *
+ * Translate matching-engine mathematical evidence into a
+ * stable semantic contract for downstream comparison layers.
+ *
+ * This layer does NOT:
+ *
+ * - modify matching scores
+ * - create recommendation mathematics
+ * - change player comparison preference
+ *
+ * It only interprets existing scoring evidence.
+ * ============================================================
+ */
+
+function classifySwingCompatibility(
+    value
+) {
+
+    if (
+        !Number.isFinite(
+            value
+        )
+    ) {
+        return "unknown";
+    }
+
+
+    if (
+        value >= 7
+    ) {
+        return "strong";
+    }
+
+
+    if (
+        value >= 4
+    ) {
+        return "moderate";
+    }
+
+
+    return "weak";
+}
+
+
+function classifyWeightCompatibility(
+    staticWeightFit,
+    swingweightFit
+) {
+
+    const staticValue =
+        Number.isFinite(
+            staticWeightFit
+        )
+            ? staticWeightFit
+            : 0;
+
+
+    const swingValue =
+        Number.isFinite(
+            swingweightFit
+        )
+            ? swingweightFit
+            : 0;
+
+
+    if (
+        staticValue < 0 ||
+        swingValue <= -3
+    ) {
+        return "demanding";
+    }
+
+
+    if (
+        swingValue < 0 ||
+        staticValue === 0
+    ) {
+        return "moderate";
+    }
+
+
+    if (
+        staticValue > 0 &&
+        swingValue > 0
+    ) {
+        return "strong";
+    }
+
+
+    return "neutral";
+}
+
+
+function classifyPhysicalDemand(
+    physicalAdjustment,
+    riskFlags
+) {
+
+    const adjustment =
+        Number.isFinite(
+            physicalAdjustment
+        )
+            ? physicalAdjustment
+            : 0;
+
+
+    const hasRisk =
+        Array.isArray(
+            riskFlags
+        ) &&
+        riskFlags.length > 0;
+
+
+    if (
+        adjustment <= -15 ||
+        hasRisk
+    ) {
+        return "high";
+    }
+
+
+    if (
+        adjustment < 0
+    ) {
+        return "moderate";
+    }
+
+
+    return "low";
+}
+
+
+function classifyGoalAlignment(
+    goalAdjustment
+) {
+
+    if (
+        !Number.isFinite(
+            goalAdjustment
+        )
+    ) {
+        return "unknown";
+    }
+
+
+    if (
+        goalAdjustment > 2
+    ) {
+        return "positive";
+    }
+
+
+    if (
+        goalAdjustment < 0
+    ) {
+        return "negative";
+    }
+
+
+    return "neutral";
+}
+
+
+function buildPlayerFitSignals(
+    product
+) {
+
+    if (
+        !product ||
+        typeof product !== "object"
+    ) {
+        return null;
+    }
+
+
+    const breakdown =
+        product.score_breakdown ?? {};
+
+
+    const riskFlags =
+        Array.isArray(
+            product.risk_flags
+        )
+            ? product.risk_flags
+            : [];
+
+
+    const swingCompatibility =
+        breakdown
+            .swing_compatibility_raw;
+
+
+    const staticWeightFit =
+        breakdown
+            .static_weight_fit;
+
+
+    const swingweightFit =
+        breakdown
+            .swingweight_fit;
+
+
+    const physicalAdjustment =
+        breakdown.physical;
+
+
+    const goalAdjustment =
+        breakdown.goal;
+
+
+    return {
+
+        swing_compatibility: {
+            status:
+                classifySwingCompatibility(
+                    swingCompatibility
+                ),
+
+            evidence: {
+                raw:
+                    Number.isFinite(
+                        swingCompatibility
+                    )
+                        ? swingCompatibility
+                        : null
+            }
+        },
+
+
+        weight_compatibility: {
+            status:
+                classifyWeightCompatibility(
+                    staticWeightFit,
+                    swingweightFit
+                ),
+
+            evidence: {
+                static_weight_fit:
+                    Number.isFinite(
+                        staticWeightFit
+                    )
+                        ? staticWeightFit
+                        : null,
+
+                swingweight_fit:
+                    Number.isFinite(
+                        swingweightFit
+                    )
+                        ? swingweightFit
+                        : null
+            }
+        },
+
+
+        physical_demand: {
+            status:
+                classifyPhysicalDemand(
+                    physicalAdjustment,
+                    riskFlags
+                ),
+
+            risk:
+                riskFlags.length > 0,
+
+            evidence: {
+                adjustment:
+                    Number.isFinite(
+                        physicalAdjustment
+                    )
+                        ? physicalAdjustment
+                        : null,
+
+                risk_flags:
+                    [...riskFlags]
+            }
+        },
+
+
+        goal_alignment: {
+            status:
+                classifyGoalAlignment(
+                    goalAdjustment
+                ),
+
+            evidence: {
+                adjustment:
+                    Number.isFinite(
+                        goalAdjustment
+                    )
+                        ? goalAdjustment
+                        : null
+            }
+        }
+    };
+}
+
+
 function safeNumber(
     value
 ) {
@@ -403,6 +707,18 @@ export function analyzePlayerRacquetComparison(
                 performance_fit_score:
                     fitB
             },
+
+        player_fit_signals: {
+            product_a:
+                buildPlayerFitSignals(
+                    candidateA
+                ),
+
+            product_b:
+                buildPlayerFitSignals(
+                    candidateB
+                )
+        },
 
         preferred_product:
             preference.preferred,
