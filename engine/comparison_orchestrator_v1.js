@@ -177,114 +177,34 @@ async function loadMatchingRacquet(
 
 /**
  * ============================================================
- * Public Runtime API
+ * Resolved Comparison Runtime API
+ * ============================================================
+ *
+ * Used when both comparison product identities have already
+ * been resolved.
+ *
+ * Primary use case:
+ *
+ * multi-turn comparison clarification.
+ *
+ * This entry skips:
+ *
+ * - target extraction
+ * - target resolution
+ *
+ * and reuses the exact same downstream Comparison V1 pipeline.
+ *
  * ============================================================
  */
 
-export async function runComparisonOrchestrator({
-  message = "",
+export async function runResolvedComparisonOrchestrator({
+  productAId = null,
+  productBId = null,
   playerProfile = null,
-  language = "en"
+  language = "en",
+  extraction = null,
+  resolution = null
 } = {}) {
-
-  const text =
-    typeof message === "string"
-      ? message.trim()
-      : "";
-
-
-  /**
-   * ==========================================================
-   * STEP 0
-   * Input
-   * ==========================================================
-   */
-
-  if (!text) {
-
-    return buildNotReady(
-      "comparison_orchestrator_invalid_input",
-      "input"
-    );
-  }
-
-
-  /**
-   * ==========================================================
-   * STEP 1
-   * Comparison Target Extraction
-   * ==========================================================
-   */
-
-  const extraction =
-    extractComparisonTargets(
-      text
-    );
-
-
-  if (
-    !extraction ||
-    extraction.detected !== true
-  ) {
-
-    return buildNotReady(
-      "comparison_not_detected",
-      "target_extraction",
-      {
-        extraction:
-          extraction ?? null
-      }
-    );
-  }
-
-
-  /**
-   * ==========================================================
-   * STEP 2
-   * Comparison Target Resolution
-   * ==========================================================
-   */
-
-  const resolution =
-    resolveComparisonTargets(
-      extraction
-    );
-
-
-  if (
-    !resolution ||
-    resolution.ready !== true ||
-    resolution.status !==
-      "comparison_ready"
-  ) {
-
-    return buildNotReady(
-      resolution?.status ??
-        "comparison_targets_not_ready",
-      "target_resolution",
-      {
-        extraction,
-
-        resolution:
-          resolution ?? null
-      }
-    );
-  }
-
-
-  const productAId =
-    resolution
-      ?.product_a
-      ?.id ??
-    null;
-
-
-  const productBId =
-    resolution
-      ?.product_b
-      ?.id ??
-    null;
-
 
   if (
     !productAId ||
@@ -293,10 +213,32 @@ export async function runComparisonOrchestrator({
 
     return buildNotReady(
       "comparison_product_ids_unavailable",
-      "target_resolution",
+      "resolved_pair_input",
       {
-        extraction,
-        resolution
+        extraction:
+          extraction ?? null,
+
+        resolution:
+          resolution ?? null
+      }
+    );
+  }
+
+
+  if (
+    productAId ===
+    productBId
+  ) {
+
+    return buildNotReady(
+      "comparison_products_must_be_distinct",
+      "resolved_pair_input",
+      {
+        product_a_id:
+          productAId,
+
+        product_b_id:
+          productBId
       }
     );
   }
@@ -595,6 +537,152 @@ export async function runComparisonOrchestrator({
         playerDecisionNarrative
     }
   };
+}
+
+
+/**
+ * ============================================================
+ * Public Runtime API
+ * ============================================================
+ */
+
+export async function runComparisonOrchestrator({
+  message = "",
+  playerProfile = null,
+  language = "en"
+} = {}) {
+
+  const text =
+    typeof message === "string"
+      ? message.trim()
+      : "";
+
+
+  /**
+   * ==========================================================
+   * STEP 0
+   * Input
+   * ==========================================================
+   */
+
+  if (!text) {
+
+    return buildNotReady(
+      "comparison_orchestrator_invalid_input",
+      "input"
+    );
+  }
+
+
+  /**
+   * ==========================================================
+   * STEP 1
+   * Comparison Target Extraction
+   * ==========================================================
+   */
+
+  const extraction =
+    extractComparisonTargets(
+      text
+    );
+
+
+  if (
+    !extraction ||
+    extraction.detected !== true
+  ) {
+
+    return buildNotReady(
+      "comparison_not_detected",
+      "target_extraction",
+      {
+        extraction:
+          extraction ?? null
+      }
+    );
+  }
+
+
+  /**
+   * ==========================================================
+   * STEP 2
+   * Comparison Target Resolution
+   * ==========================================================
+   */
+
+  const resolution =
+    resolveComparisonTargets(
+      extraction
+    );
+
+
+  if (
+    !resolution ||
+    resolution.ready !== true ||
+    resolution.status !==
+      "comparison_ready"
+  ) {
+
+    return buildNotReady(
+      resolution?.status ??
+        "comparison_targets_not_ready",
+      "target_resolution",
+      {
+        extraction,
+
+        resolution:
+          resolution ?? null
+      }
+    );
+  }
+
+
+  const productAId =
+    resolution
+      ?.product_a
+      ?.id ??
+    null;
+
+
+  const productBId =
+    resolution
+      ?.product_b
+      ?.id ??
+    null;
+
+
+  if (
+    !productAId ||
+    !productBId
+  ) {
+
+    return buildNotReady(
+      "comparison_product_ids_unavailable",
+      "target_resolution",
+      {
+        extraction,
+        resolution
+      }
+    );
+  }
+
+
+  /**
+   * ==========================================================
+   * STEP 3+
+   * Delegate To Resolved Pair Runtime
+   * ==========================================================
+   */
+
+  return runResolvedComparisonOrchestrator({
+    productAId,
+    productBId,
+    playerProfile,
+    language,
+    extraction,
+    resolution
+  });
+
 }
 
 

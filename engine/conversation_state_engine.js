@@ -117,6 +117,9 @@ export function createConversationState(
         last_recommendation_context:
             null,
 
+        pending_comparison_context:
+            null,
+
         history:
             [],
 
@@ -420,6 +423,17 @@ export function runConversationStateEngine(
                 )
                 : null,
 
+        pending_comparison_context:
+            isPlainObject(
+                baseState
+                    ?.pending_comparison_context
+            )
+                ? cloneValue(
+                    baseState
+                        .pending_comparison_context
+                )
+                : null,
+
         history:
             limitedHistory,
 
@@ -691,6 +705,155 @@ export function updateRecommendationContext(
 
 /**
  * ============================================================
+ * Update Pending Comparison Context
+ * ============================================================
+ *
+ * Stores an unfinished comparison task so a later turn can
+ * resolve only the missing product target.
+ *
+ * This function does NOT:
+ *
+ * - resolve products
+ * - run comparison engines
+ * - determine intent
+ * - modify recommendation context
+ *
+ * ============================================================
+ */
+
+export function updatePendingComparisonContext(
+    conversationState,
+    {
+        comparisonSubtype = null,
+        products = [],
+        unresolvedTargets = [],
+        sourceMessage = null,
+        sourceTurn = null,
+        createdAt = null
+    } = {}
+) {
+
+    const state =
+        normalizeConversationState(
+            conversationState
+        );
+
+
+    const normalizedProducts =
+        Array.isArray(
+            products
+        )
+            ? cloneValue(
+                products
+            )
+            : [];
+
+
+    const normalizedUnresolvedTargets =
+        Array.isArray(
+            unresolvedTargets
+        )
+            ? cloneValue(
+                unresolvedTargets
+            )
+            : [];
+
+
+    if (
+        normalizedUnresolvedTargets.length ===
+        0
+    ) {
+
+        return {
+            ...state,
+
+            pending_comparison_context:
+                null
+        };
+    }
+
+
+    return {
+
+        ...state,
+
+        pending_comparison_context: {
+
+            active:
+                true,
+
+            source_turn:
+                Number.isFinite(
+                    Number(
+                        sourceTurn
+                    )
+                )
+                    ? Number(
+                        sourceTurn
+                    )
+                    : state.turn,
+
+            comparison_subtype:
+                comparisonSubtype ??
+                null,
+
+            products:
+                normalizedProducts,
+
+            unresolved_targets:
+                normalizedUnresolvedTargets,
+
+            source_message:
+                typeof sourceMessage ===
+                    "string"
+                    ? sourceMessage
+                    : null,
+
+            created_at:
+                createdAt ??
+                createTimestamp(),
+
+            updated_at:
+                createTimestamp()
+        },
+
+        updated_at:
+            createTimestamp()
+    };
+}
+
+
+/**
+ * ============================================================
+ * Clear Pending Comparison Context
+ * ============================================================
+ */
+
+export function clearPendingComparisonContext(
+    conversationState
+) {
+
+    const state =
+        normalizeConversationState(
+            conversationState
+        );
+
+
+    return {
+
+        ...state,
+
+        pending_comparison_context:
+            null,
+
+        updated_at:
+            createTimestamp()
+    };
+}
+
+
+/**
+ * ============================================================
  * Complete Conversation
  * ============================================================
  */
@@ -859,6 +1022,17 @@ function normalizeConversationState(
                 ? cloneValue(
                     state
                         .last_recommendation_context
+                )
+                : null,
+
+        pending_comparison_context:
+            isPlainObject(
+                state
+                    ?.pending_comparison_context
+            )
+                ? cloneValue(
+                    state
+                        .pending_comparison_context
                 )
                 : null,
 

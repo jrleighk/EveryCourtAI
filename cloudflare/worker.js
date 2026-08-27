@@ -79,8 +79,14 @@ import {
 
 
 import {
-    runComparisonOrchestrator
+    runComparisonOrchestrator,
+    runResolvedComparisonOrchestrator
 } from "../engine/comparison_orchestrator_v1.js";
+
+
+import {
+    resolveComparisonClarification
+} from "../engine/comparison_clarification_resolver_v1.js";
 
 
 
@@ -93,7 +99,9 @@ import {
 import {
     runConversationStateEngine,
     updatePendingFields,
-    updateRecommendationContext
+    updateRecommendationContext,
+    updatePendingComparisonContext,
+    clearPendingComparisonContext
 } from "../engine/conversation_state_engine.js";
 
 
@@ -837,6 +845,470 @@ async function handleAI(
 
         /**
          * ====================================================
+         * Comparison Clarification Continuation Gate V1
+         * ====================================================
+         *
+         * A pending comparison has priority over normal
+         * question-intent routing.
+         *
+         * Example:
+         *
+         * Turn 1:
+         * "Pure Drive 和 RF 01 Pro Classic 哪个更适合我？"
+         *
+         * Turn 2:
+         * "Spectra Edition 2026"
+         *
+         * Turn 2 does NOT need to be independently classified
+         * as compare_products.
+         *
+         * ====================================================
+         */
+
+        const pendingComparisonContext =
+            previousConversationState
+                ?.pending_comparison_context;
+
+
+        const shouldResolvePendingComparison =
+            pendingComparisonContext
+                ?.active ===
+                true &&
+            typeof body?.message ===
+                "string" &&
+            body.message.trim().length >
+                0;
+
+
+        if (
+            shouldResolvePendingComparison
+        ) {
+
+            const clarificationResult =
+                resolveComparisonClarification({
+
+                    pendingContext:
+                        pendingComparisonContext,
+
+                    message:
+                        body.message
+                });
+
+
+            /**
+             * ------------------------------------------------
+             * Clarification Resolved
+             * ------------------------------------------------
+             */
+
+            if (
+                clarificationResult
+                    ?.success ===
+                    true &&
+                clarificationResult
+                    ?.ready ===
+                    true &&
+                clarificationResult
+                    ?.status ===
+                    "comparison_clarification_resolved"
+            ) {
+
+                const resolvedComparisonResult =
+                    await runResolvedComparisonOrchestrator({
+
+                        productAId:
+                            clarificationResult
+                                ?.product_a
+                                ?.id ??
+                            null,
+
+                        productBId:
+                            clarificationResult
+                                ?.product_b
+                                ?.id ??
+                            null,
+
+                        playerProfile:
+                            playerInput,
+
+                        language,
+
+                        resolution: {
+                            ready:
+                                true,
+
+                            status:
+                                "comparison_ready",
+
+                            comparison_subtype:
+                                clarificationResult
+                                    ?.comparison_subtype ??
+                                null,
+
+                            products:
+                                clarificationResult
+                                    ?.products ??
+                                [],
+
+                            product_a:
+                                clarificationResult
+                                    ?.product_a ??
+                                null,
+
+                            product_b:
+                                clarificationResult
+                                    ?.product_b ??
+                                null,
+
+                            unresolved_targets:
+                                []
+                        }
+                    });
+
+
+                if (
+                    resolvedComparisonResult
+                        ?.success ===
+                        true &&
+                    resolvedComparisonResult
+                        ?.ready ===
+                        true &&
+                    resolvedComparisonResult
+                        ?.status ===
+                        "comparison_orchestrator_ready"
+                ) {
+
+                    const playerDecision =
+                        resolvedComparisonResult
+                            ?.interpretation
+                            ?.player_decision_narrative;
+
+
+                    const objectiveNarrative =
+                        resolvedComparisonResult
+                            ?.interpretation
+                            ?.narrative;
+
+
+                    const deterministicLanguage =
+                        resolvedComparisonResult
+                            ?.interpretation
+                            ?.language;
+
+
+                    const normalizedLanguage =
+                        normalizeLanguage(
+                            language
+                        );
+
+
+                    const isChinese =
+                        normalizedLanguage ===
+                            "zh" ||
+                        normalizedLanguage ===
+                            "zh-cn" ||
+                        normalizedLanguage ===
+                            "zh-tc" ||
+                        normalizedLanguage ===
+                            "zh-tw";
+
+
+                    const narrativeBlocks =
+                        isChinese
+                            ? (
+                                objectiveNarrative
+                                    ?.cn
+                                    ?.blocks ??
+                                []
+                            )
+                            : (
+                                objectiveNarrative
+                                    ?.en
+                                    ?.blocks ??
+                                []
+                            );
+
+
+                    const objectiveAnswer =
+                        Array.isArray(
+                            narrativeBlocks
+                        )
+                            ? narrativeBlocks
+                                .map(
+                                    item =>
+                                        item
+                                            ?.text ??
+                                        null
+                                )
+                                .filter(
+                                    Boolean
+                                )
+                                .join(
+                                    "\n\n"
+                                )
+                            : "";
+
+
+                    const playerDecisionAnswer =
+                        playerDecision
+                            ?.available ===
+                            true
+                            ? (
+                                isChinese
+                                    ? playerDecision.cn
+                                    : playerDecision.en
+                            )
+                            : null;
+
+
+                    const fallbackTitle =
+                        isChinese
+                            ? deterministicLanguage
+                                ?.cn
+                                ?.title
+                            : deterministicLanguage
+                                ?.en
+                                ?.title;
+
+
+                    const answerParts = [
+                        fallbackTitle ??
+                            null,
+
+                        objectiveAnswer ||
+                            null,
+
+                        playerDecisionAnswer ??
+                            null
+                    ]
+                        .filter(
+                            Boolean
+                        );
+
+
+                    const answer =
+                        answerParts.length >
+                            0
+                            ? answerParts.join(
+                                "\n\n"
+                            )
+                            : (
+                                isChinese
+                                    ? "EveryCourtAI 已完成球拍对比。"
+                                    : "EveryCourtAI completed the racquet comparison."
+                            );
+
+
+                    const clearedConversationState =
+                        clearPendingComparisonContext(
+                            conversationResult
+                                ?.conversation_state
+                        );
+
+
+                    return jsonResponse({
+
+                        success:
+                            true,
+
+                        request_id:
+                            requestId,
+
+                        app:
+                            APP_NAME,
+
+                        worker_version:
+                            WORKER_VERSION,
+
+                        runtime:
+                            getKnowledgeRuntime(),
+
+                        input_mode:
+                            inputMode,
+
+                        language,
+
+                        message:
+                            body.message,
+
+                        status:
+                            "comparison_ready",
+
+                        answer,
+
+                        parser:
+                            parserResult,
+
+                        question_intent:
+                            questionIntentResult,
+
+                        current_turn_player_input:
+                            currentTurnPlayerInput,
+
+                        player_input:
+                            playerInput,
+
+                        conversation_id:
+                            conversationResult
+                                ?.conversation_id ??
+                            null,
+
+                        turn:
+                            conversationResult
+                                ?.turn ??
+                            null,
+
+                        updated_fields:
+                            conversationResult
+                                ?.updated_fields ??
+                            [],
+
+                        missing_fields:
+                            conversationResult
+                                ?.missing_fields ??
+                            [],
+
+                        conversation_state:
+                            clearedConversationState,
+
+                        comparison:
+                            resolvedComparisonResult,
+
+                        comparison_clarification:
+                            clarificationResult,
+
+                        recommendation:
+                            null,
+
+                        follow_up:
+                            null,
+
+                        processing_time_ms:
+                            Date.now() -
+                            startedAt,
+
+                        timestamp:
+                            createTimestamp()
+                    });
+                }
+            }
+
+
+            /**
+             * ------------------------------------------------
+             * Clarification Still Required
+             * ------------------------------------------------
+             *
+             * Preserve pending context.
+             * Do not fall through to recommendation routing.
+             */
+
+            if (
+                clarificationResult
+                    ?.ready !==
+                    true
+            ) {
+
+                return jsonResponse({
+
+                    success:
+                        true,
+
+                    request_id:
+                        requestId,
+
+                    app:
+                        APP_NAME,
+
+                    worker_version:
+                        WORKER_VERSION,
+
+                    runtime:
+                        getKnowledgeRuntime(),
+
+                    input_mode:
+                        inputMode,
+
+                    language,
+
+                    message:
+                        body.message,
+
+                    status:
+                        "comparison_clarification_required",
+
+                    answer:
+                        normalizeLanguage(
+                            language
+                        )
+                            .startsWith(
+                                "zh"
+                            )
+                            ? "我仍然不能唯一确定这支球拍，请再提供品牌、完整型号或年份。"
+                            : "I still cannot uniquely identify the racquet. Please provide the brand, full model, or year.",
+
+                    parser:
+                        parserResult,
+
+                    question_intent:
+                        questionIntentResult,
+
+                    current_turn_player_input:
+                        currentTurnPlayerInput,
+
+                    player_input:
+                        playerInput,
+
+                    conversation_id:
+                        conversationResult
+                            ?.conversation_id ??
+                        null,
+
+                    turn:
+                        conversationResult
+                            ?.turn ??
+                        null,
+
+                    updated_fields:
+                        conversationResult
+                            ?.updated_fields ??
+                        [],
+
+                    missing_fields:
+                        conversationResult
+                            ?.missing_fields ??
+                        [],
+
+                    conversation_state:
+                        conversationResult
+                            ?.conversation_state ??
+                        null,
+
+                    comparison:
+                        null,
+
+                    comparison_clarification:
+                        clarificationResult,
+
+                    recommendation:
+                        null,
+
+                    follow_up:
+                        null,
+
+                    processing_time_ms:
+                        Date.now() -
+                        startedAt,
+
+                    timestamp:
+                        createTimestamp()
+                });
+            }
+        }
+
+
+        /**
+         * ====================================================
          * Comparison Runtime Gate V1
          * ====================================================
          *
@@ -1129,6 +1601,51 @@ async function handleAI(
                     "clarification_required"
             ) {
 
+                const comparisonResolution =
+                    comparisonResult
+                        ?.resolution ??
+                    comparisonResult
+                        ?.comparison
+                        ?.resolution ??
+                    null;
+
+
+                const pendingConversationState =
+                    updatePendingComparisonContext(
+
+                        conversationResult
+                            ?.conversation_state,
+
+                        {
+                            comparisonSubtype:
+                                comparisonResolution
+                                    ?.comparison_subtype ??
+                                null,
+
+                            products:
+                                comparisonResolution
+                                    ?.products ??
+                                [],
+
+                            unresolvedTargets:
+                                comparisonResolution
+                                    ?.unresolved_targets ??
+                                [],
+
+                            sourceMessage:
+                                typeof body?.message ===
+                                    "string"
+                                    ? body.message
+                                    : null,
+
+                            sourceTurn:
+                                conversationResult
+                                    ?.turn ??
+                                null
+                        }
+                    );
+
+
                 return jsonResponse({
 
                     success:
@@ -1198,9 +1715,7 @@ async function handleAI(
                         [],
 
                     conversation_state:
-                        conversationResult
-                            ?.conversation_state ??
-                        null,
+                        pendingConversationState,
 
                     comparison:
                         comparisonResult,
