@@ -166,6 +166,31 @@ function detectComparisonIntent(
 
 
     /**
+     * Bare Chinese comparison command:
+     *
+     * 比较 A 和 B
+     * 比较 A 与 B
+     * 比较 A 跟 B
+     * 比较 A vs B
+     *
+     * Important:
+     *
+     * Require an explicit two-target separator so phrases such
+     * as "比较舒服" / "比较硬" / "比较直接" are NOT treated
+     * as comparison tasks.
+     */
+
+    if (
+        /^比较\s*.+(?:和|与|跟|\s+vs\.?\s+|\s+versus\s+).+/i.test(
+            text
+        )
+    ) {
+
+        return true;
+    }
+
+
+    /**
      * Chinese comparative structure:
      *
      * A 比 B 更...
