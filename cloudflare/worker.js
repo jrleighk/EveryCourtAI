@@ -74,6 +74,11 @@ import {
 
 
 import {
+    buildIntentResponse
+} from "../engine/intent_response_engine_v1.js";
+
+
+import {
     runFollowUpEngine
 } from "../engine/follow_up_engine.js";
 
@@ -966,6 +971,32 @@ async function handleAI(
 
         /**
          * ====================================================
+         * Intent-Aware Follow-up Gate V1
+         * ====================================================
+         *
+         * A general setup recommendation may still require
+         * additional profile information.
+         *
+         * However, when the user explicitly asks for tension
+         * guidance and the Follow-up Engine already confirms
+         * that a precise tension recommendation is allowed,
+         * non-critical missing fields must not block the
+         * tension-focused answer.
+         * ====================================================
+         */
+
+        const allowIntentResponseDespiteFollowUp =
+            questionIntentResult
+                ?.primary_intent ===
+                "adjust_tension" &&
+            followUpResult
+                ?.recommendation_gate
+                ?.allow_precise_tension_recommendation ===
+                true;
+
+
+        /**
+         * ====================================================
          * STEP 10
          * Update Conversation Pending Fields
          * ====================================================
@@ -980,6 +1011,8 @@ async function handleAI(
         if (
             followUpResult
                 ?.requires_follow_up ===
+                true &&
+            allowIntentResponseDespiteFollowUp !==
                 true &&
             Array.isArray(
                 followUpResult
@@ -1024,7 +1057,9 @@ async function handleAI(
         if (
             followUpResult
                 ?.requires_follow_up ===
-            true
+                true &&
+            allowIntentResponseDespiteFollowUp !==
+                true
         ) {
 
             const answer =
@@ -1139,11 +1174,28 @@ async function handleAI(
          * ====================================================
          */
 
-        const answer =
-            buildFinalAnswer(
+        const intentResponse =
+            buildIntentResponse({
+
+                questionIntentResult,
+
                 engineResult,
+
                 language
-            );
+            });
+
+
+        const answer =
+            intentResponse
+                ?.handled ===
+                true
+
+                ? intentResponse.answer
+
+                : buildFinalAnswer(
+                    engineResult,
+                    language
+                );
 
 
         const webRecommendation =
@@ -1190,6 +1242,9 @@ async function handleAI(
 
             question_intent:
                 questionIntentResult,
+
+            intent_response:
+                intentResponse,
 
             current_turn_player_input:
                 currentTurnPlayerInput,
