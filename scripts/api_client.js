@@ -942,6 +942,54 @@ function normalizeApiResponse(
                 ?.recommendation_preview ??
             null,
 
+
+        /**
+         * ====================================================
+         * Comparison Runtime V1
+         * ====================================================
+         *
+         * Preserve the stable frontend comparison contract.
+         *
+         * comparison_view is consumed directly by
+         * chat_manager.js → renderComparisonView().
+         *
+         * Do not reinterpret comparison data here.
+         * ====================================================
+         */
+
+        comparison:
+            isPlainObject(
+                data
+                    ?.comparison
+            )
+                ? data.comparison
+                : null,
+
+        comparison_view:
+            isPlainObject(
+                data
+                    ?.comparison_view
+            )
+                ? data.comparison_view
+                : null,
+
+        comparison_clarification:
+            isPlainObject(
+                data
+                    ?.comparison_clarification
+            )
+                ? data.comparison_clarification
+                : null,
+
+        question_intent:
+            isPlainObject(
+                data
+                    ?.question_intent
+            )
+                ? data.question_intent
+                : null,
+
+
         follow_up:
             data
                 ?.follow_up ??

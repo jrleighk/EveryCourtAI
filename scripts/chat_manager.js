@@ -323,6 +323,694 @@ export function addMessage(
 
 /**
  * ============================================================
+ * Comparison View Renderer V1
+ * ============================================================
+ *
+ * Source:
+ *
+ * result.comparison_view
+ *
+ * This renderer does NOT interpret comparison data.
+ * It only renders the frontend-oriented comparison contract
+ * produced by comparison_view_model_v1.js.
+ *
+ * ============================================================
+ */
+
+function createComparisonMetricRow(
+    item
+) {
+
+    if (
+        !item ||
+        item.available !==
+            true
+    ) {
+
+        return null;
+    }
+
+
+    const row =
+        document.createElement(
+            "div"
+        );
+
+
+    row.className =
+        "comparison-row";
+
+
+    const label =
+        document.createElement(
+            "div"
+        );
+
+
+    label.className =
+        "comparison-row-label";
+
+
+    label.textContent =
+        safeString(
+            item.label ??
+            item.key
+        );
+
+
+    const valueA =
+        document.createElement(
+            "div"
+        );
+
+
+    valueA.className =
+        "comparison-row-value";
+
+
+    valueA.textContent =
+        item.product_a ===
+            null ||
+        item.product_a ===
+            undefined
+            ? "—"
+            : String(
+                item.product_a
+            );
+
+
+    const valueB =
+        document.createElement(
+            "div"
+        );
+
+
+    valueB.className =
+        "comparison-row-value";
+
+
+    valueB.textContent =
+        item.product_b ===
+            null ||
+        item.product_b ===
+            undefined
+            ? "—"
+            : String(
+                item.product_b
+            );
+
+
+    if (
+        item.higher_product ===
+            "a"
+    ) {
+
+        valueA.classList.add(
+            "comparison-row-advantage"
+        );
+    }
+
+
+    if (
+        item.higher_product ===
+            "b"
+    ) {
+
+        valueB.classList.add(
+            "comparison-row-advantage"
+        );
+    }
+
+
+    row.appendChild(
+        label
+    );
+
+
+    row.appendChild(
+        valueA
+    );
+
+
+    row.appendChild(
+        valueB
+    );
+
+
+    return row;
+}
+
+
+function createComparisonSection(
+    title,
+    items,
+    productAName,
+    productBName
+) {
+
+    if (
+        !Array.isArray(
+            items
+        ) ||
+        items.length ===
+            0
+    ) {
+
+        return null;
+    }
+
+
+    const availableItems =
+        items.filter(
+            item =>
+                item?.available ===
+                true
+        );
+
+
+    if (
+        availableItems.length ===
+            0
+    ) {
+
+        return null;
+    }
+
+
+    const section =
+        document.createElement(
+            "section"
+        );
+
+
+    section.className =
+        "comparison-section";
+
+
+    const heading =
+        document.createElement(
+            "div"
+        );
+
+
+    heading.className =
+        "comparison-section-title";
+
+
+    heading.textContent =
+        title;
+
+
+    const table =
+        document.createElement(
+            "div"
+        );
+
+
+    table.className =
+        "comparison-table";
+
+
+    const header =
+        document.createElement(
+            "div"
+        );
+
+
+    header.className =
+        "comparison-row comparison-row-header";
+
+
+    const empty =
+        document.createElement(
+            "div"
+        );
+
+
+    empty.textContent =
+        "";
+
+
+    const productA =
+        document.createElement(
+            "div"
+        );
+
+
+    productA.textContent =
+        productAName;
+
+
+    const productB =
+        document.createElement(
+            "div"
+        );
+
+
+    productB.textContent =
+        productBName;
+
+
+    header.appendChild(
+        empty
+    );
+
+
+    header.appendChild(
+        productA
+    );
+
+
+    header.appendChild(
+        productB
+    );
+
+
+    table.appendChild(
+        header
+    );
+
+
+    for (
+        const item
+        of availableItems
+    ) {
+
+        const row =
+            createComparisonMetricRow(
+                item
+            );
+
+
+        if (
+            row
+        ) {
+
+            table.appendChild(
+                row
+            );
+        }
+    }
+
+
+    section.appendChild(
+        heading
+    );
+
+
+    section.appendChild(
+        table
+    );
+
+
+    return section;
+}
+
+
+export function renderComparisonView(
+    comparisonView
+) {
+
+    console.log(
+        "[ECA 8K RENDERER ENTER]",
+        {
+            messagesElement:
+                Boolean(
+                    messagesElement
+                ),
+
+            view:
+                comparisonView
+        }
+    );
+
+
+    if (
+        !messagesElement ||
+        !isPlainObject(
+            comparisonView
+        ) ||
+        comparisonView.success !==
+            true ||
+        comparisonView.available !==
+            true ||
+        comparisonView.status !==
+            "comparison_view_ready"
+    ) {
+
+        return null;
+    }
+
+
+    const productA =
+        comparisonView
+            ?.products
+            ?.product_a;
+
+
+    const productB =
+        comparisonView
+            ?.products
+            ?.product_b;
+
+
+    if (
+        !productA ||
+        !productB
+    ) {
+
+        return null;
+    }
+
+
+    const productAName =
+        safeString(
+            productA.model ??
+            productA.display_name ??
+            productA.id
+        );
+
+
+    const productBName =
+        safeString(
+            productB.model ??
+            productB.display_name ??
+            productB.id
+        );
+
+
+    if (
+        !productAName ||
+        !productBName
+    ) {
+
+        return null;
+    }
+
+
+    const wrapper =
+        document.createElement(
+            "div"
+        );
+
+
+    wrapper.className =
+        "message ai comparison-message";
+
+
+    const label =
+        document.createElement(
+            "div"
+        );
+
+
+    label.className =
+        "message-label";
+
+
+    label.textContent =
+        t(
+            "system.assistant",
+            "EveryCourtAI"
+        );
+
+
+    const card =
+        document.createElement(
+            "div"
+        );
+
+
+    card.className =
+        "comparison-card";
+
+
+    /**
+     * Product Header
+     */
+
+    const products =
+        document.createElement(
+            "div"
+        );
+
+
+    products.className =
+        "comparison-products";
+
+
+    const productAElement =
+        document.createElement(
+            "div"
+        );
+
+
+    productAElement.className =
+        "comparison-product";
+
+
+    productAElement.textContent =
+        productAName;
+
+
+    const versus =
+        document.createElement(
+            "div"
+        );
+
+
+    versus.className =
+        "comparison-vs";
+
+
+    versus.textContent =
+        "VS";
+
+
+    const productBElement =
+        document.createElement(
+            "div"
+        );
+
+
+    productBElement.className =
+        "comparison-product";
+
+
+    productBElement.textContent =
+        productBName;
+
+
+    products.appendChild(
+        productAElement
+    );
+
+
+    products.appendChild(
+        versus
+    );
+
+
+    products.appendChild(
+        productBElement
+    );
+
+
+    card.appendChild(
+        products
+    );
+
+
+    /**
+     * Performance Dimensions
+     */
+
+    const language =
+        safeString(
+            comparisonView.language
+        )
+            .toLowerCase();
+
+
+    const isChinese =
+        language === "zh" ||
+        language === "zh-cn" ||
+        language === "zh-tw" ||
+        language === "zh-tc";
+
+
+    const dimensionsSection =
+        createComparisonSection(
+
+            isChinese
+                ? "性能对比"
+                : "Performance",
+
+            comparisonView.dimensions,
+
+            productAName,
+
+            productBName
+        );
+
+
+    if (
+        dimensionsSection
+    ) {
+
+        card.appendChild(
+            dimensionsSection
+        );
+    }
+
+
+    /**
+     * Specifications
+     */
+
+    const specificationsSection =
+        createComparisonSection(
+
+            isChinese
+                ? "规格"
+                : "Specifications",
+
+            comparisonView.specifications,
+
+            productAName,
+
+            productBName
+        );
+
+
+    if (
+        specificationsSection
+    ) {
+
+        card.appendChild(
+            specificationsSection
+        );
+    }
+
+
+    /**
+     * Narrative
+     */
+
+    const narrative =
+        comparisonView
+            ?.summary
+            ?.narrative;
+
+
+    if (
+        Array.isArray(
+            narrative
+        ) &&
+        narrative.length >
+            0
+    ) {
+
+        const narrativeSection =
+            document.createElement(
+                "section"
+            );
+
+
+        narrativeSection.className =
+            "comparison-section comparison-narrative";
+
+
+        const narrativeTitle =
+            document.createElement(
+                "div"
+            );
+
+
+        narrativeTitle.className =
+            "comparison-section-title";
+
+
+        narrativeTitle.textContent =
+            isChinese
+                ? "核心差异"
+                : "Key Differences";
+
+
+        narrativeSection.appendChild(
+            narrativeTitle
+        );
+
+
+        for (
+            const item
+            of narrative
+        ) {
+
+            const text =
+                safeString(
+                    item?.text
+                );
+
+
+            if (
+                !text
+            ) {
+
+                continue;
+            }
+
+
+            const paragraph =
+                document.createElement(
+                    "p"
+                );
+
+
+            paragraph.className =
+                "comparison-narrative-item";
+
+
+            paragraph.textContent =
+                text;
+
+
+            narrativeSection.appendChild(
+                paragraph
+            );
+        }
+
+
+        card.appendChild(
+            narrativeSection
+        );
+    }
+
+
+    wrapper.appendChild(
+        label
+    );
+
+
+    wrapper.appendChild(
+        card
+    );
+
+
+    messagesElement.appendChild(
+        wrapper
+    );
+
+
+    scrollToBottom();
+
+
+    return wrapper;
+}
+
+
+/**
+ * ============================================================
  * Thinking
  * ============================================================
  */
@@ -1394,7 +2082,89 @@ export async function submitCurrentPrompt() {
 
         /**
          * ====================================================
-         * 9. Recommendation
+         * 9. Comparison View
+         * ====================================================
+         *
+         * Comparison is rendered only when the Worker returns
+         * the stable frontend comparison_view contract.
+         *
+         * This does NOT replace the text answer.
+         * It adds the structured visual comparison immediately
+         * after the AI answer.
+         * ====================================================
+         */
+
+        console.log(
+            "[ECA 8K COMPARISON ROUTE]",
+            {
+                status:
+                    result?.status ?? null,
+
+                has_comparison_view:
+                    Boolean(
+                        result?.comparison_view
+                    ),
+
+                comparison_view_status:
+                    result
+                        ?.comparison_view
+                        ?.status ??
+                    null,
+
+                comparison_view_success:
+                    result
+                        ?.comparison_view
+                        ?.success ??
+                    null,
+
+                comparison_view_available:
+                    result
+                        ?.comparison_view
+                        ?.available ??
+                    null
+            }
+        );
+
+
+        if (
+            result.status ===
+                "comparison_ready" &&
+            result
+                ?.comparison_view
+                ?.success ===
+                true &&
+            result
+                ?.comparison_view
+                ?.available ===
+                true &&
+            result
+                ?.comparison_view
+                ?.status ===
+                "comparison_view_ready"
+        ) {
+
+            console.log(
+                "[ECA 8K CALLING RENDERER]"
+            );
+
+
+            const renderedComparison =
+                renderComparisonView(
+                    result
+                        .comparison_view
+                );
+
+
+            console.log(
+                "[ECA 8K RENDER RESULT]",
+                renderedComparison
+            );
+        }
+
+
+        /**
+         * ====================================================
+         * 10. Recommendation
          * ====================================================
          *
          * Follow-up 阶段：
