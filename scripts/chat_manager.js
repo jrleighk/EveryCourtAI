@@ -631,20 +631,6 @@ export function renderComparisonView(
     comparisonView
 ) {
 
-    console.log(
-        "[ECA 8K RENDERER ENTER]",
-        {
-            messagesElement:
-                Boolean(
-                    messagesElement
-                ),
-
-            view:
-                comparisonView
-        }
-    );
-
-
     if (
         !messagesElement ||
         !isPlainObject(
@@ -2066,67 +2052,24 @@ export async function submitCurrentPrompt() {
 
 
         /**
-         * 8. AI Answer
-         */
-
-        if (
-            result.answer
-        ) {
-
-            addMessage(
-                "ai",
-                result.answer
-            );
-        }
-
-
-        /**
          * ====================================================
-         * 9. Comparison View
+         * 8. Answer / Comparison View
          * ====================================================
          *
-         * Comparison is rendered only when the Worker returns
-         * the stable frontend comparison_view contract.
+         * comparison_ready:
          *
-         * This does NOT replace the text answer.
-         * It adds the structured visual comparison immediately
-         * after the AI answer.
+         * The structured Comparison Card is the primary UI.
+         * Do not render the long text answer first because the
+         * same comparison narrative already exists inside
+         * comparison_view.
+         *
+         * Other response modes:
+         *
+         * Continue rendering result.answer normally.
          * ====================================================
          */
 
-        console.log(
-            "[ECA 8K COMPARISON ROUTE]",
-            {
-                status:
-                    result?.status ?? null,
-
-                has_comparison_view:
-                    Boolean(
-                        result?.comparison_view
-                    ),
-
-                comparison_view_status:
-                    result
-                        ?.comparison_view
-                        ?.status ??
-                    null,
-
-                comparison_view_success:
-                    result
-                        ?.comparison_view
-                        ?.success ??
-                    null,
-
-                comparison_view_available:
-                    result
-                        ?.comparison_view
-                        ?.available ??
-                    null
-            }
-        );
-
-
-        if (
+        const hasComparisonView =
             result.status ===
                 "comparison_ready" &&
             result
@@ -2140,24 +2083,25 @@ export async function submitCurrentPrompt() {
             result
                 ?.comparison_view
                 ?.status ===
-                "comparison_view_ready"
+                "comparison_view_ready";
+
+
+        if (
+            hasComparisonView
         ) {
 
-            console.log(
-                "[ECA 8K CALLING RENDERER]"
+            renderComparisonView(
+                result
+                    .comparison_view
             );
 
+        } else if (
+            result.answer
+        ) {
 
-            const renderedComparison =
-                renderComparisonView(
-                    result
-                        .comparison_view
-                );
-
-
-            console.log(
-                "[ECA 8K RENDER RESULT]",
-                renderedComparison
+            addMessage(
+                "ai",
+                result.answer
             );
         }
 
