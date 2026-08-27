@@ -69,6 +69,45 @@ const STRING_CANDIDATE_LIMIT = 40;
  * ============================================================
  */
 
+
+/**
+ * ============================================================
+ * Racquet Swing Compatibility Model V1
+ * ============================================================
+ *
+ * Swing compatibility combines:
+ *
+ * 1. Performance DNA × swing-speed fit
+ * 2. Static weight fit
+ * 3. Swingweight fit
+ *
+ * Static weight is intentionally lower-weighted because
+ * swingweight is the more direct dynamic-load signal.
+ *
+ * Final aggregate is bounded so swing compatibility cannot
+ * dominate primary goal and total player fit.
+ * ============================================================
+ */
+
+const RACQUET_SWING_COMPATIBILITY_V1 = {
+
+    dna:
+        1.00,
+
+    static_weight:
+        0.40,
+
+    swingweight:
+        0.60,
+
+    minimum:
+        -8,
+
+    maximum:
+        9
+};
+
+
 const STRING_PRIORITY_MODEL_V1 = {
 
     goal:
@@ -385,6 +424,122 @@ function buildSearchText(data) {
  * ============================================================
  */
 
+
+/**
+ * ============================================================
+ * Racquet Measurement Compatibility V1
+ * ============================================================
+ *
+ * Racquet knowledge currently contains both:
+ *
+ * Object format:
+ *
+ * {
+ *   value: 320,
+ *   unit: "g"
+ * }
+ *
+ * and scalar string format:
+ *
+ * "300 g"
+ * "100 sq in"
+ * "around 290"
+ *
+ * This helper normalizes only racquet measurement fields.
+ *
+ * Do NOT broaden global safeNumber() behavior here.
+ * ============================================================
+ */
+
+function parseRacquetMeasurement(
+    value
+) {
+
+    if (
+        value === null ||
+        value === undefined ||
+        value === ""
+    ) {
+
+        return null;
+    }
+
+
+    /**
+     * Structured measurement object.
+     */
+
+    if (
+        typeof value === "object" &&
+        !Array.isArray(
+            value
+        )
+    ) {
+
+        return parseRacquetMeasurement(
+            value?.value ??
+            null
+        );
+    }
+
+
+    /**
+     * Existing numeric value.
+     */
+
+    if (
+        typeof value === "number" &&
+        Number.isFinite(
+            value
+        )
+    ) {
+
+        return value;
+    }
+
+
+    /**
+     * Numeric strings and human-readable measurements:
+     *
+     * "300 g"
+     * "100 sq in"
+     * "around 290"
+     * "65 RA"
+     */
+
+    if (
+        typeof value === "string"
+    ) {
+
+        const match =
+            value.match(
+                /-?\d+(?:\.\d+)?/
+            );
+
+
+        if (
+            match
+        ) {
+
+            const parsed =
+                Number(
+                    match[0]
+                );
+
+
+            return Number.isFinite(
+                parsed
+            )
+                ? parsed
+                : null;
+        }
+    }
+
+
+    return null;
+}
+
+
 function extractRacquetData(raw) {
 
     const id =
@@ -417,7 +572,7 @@ function extractRacquetData(raw) {
         );
 
     const weight =
-        safeNumber(
+        parseRacquetMeasurement(
             getFirstValue(
                 raw,
                 [
@@ -427,13 +582,14 @@ function extractRacquetData(raw) {
                     "specs.unstrung_weight_g",
                     "specifications.weight_g",
                     "specifications.unstrung_weight_g",
-                    "specifications.weight_unstrung.value"
+                    "specifications.weight_unstrung.value",
+                    "specifications.weight_unstrung"
                 ]
             )
         );
 
     const headSize =
-        safeNumber(
+        parseRacquetMeasurement(
             getFirstValue(
                 raw,
                 [
@@ -442,13 +598,14 @@ function extractRacquetData(raw) {
                     "specs.head_size_sq_in",
                     "specs.head_size",
                     "specifications.head_size_sq_in",
-                    "specifications.head_size.value"
+                    "specifications.head_size.value",
+                    "specifications.head_size"
                 ]
             )
         );
 
     const swingweight =
-        safeNumber(
+        parseRacquetMeasurement(
             getFirstValue(
                 raw,
                 [
@@ -456,13 +613,14 @@ function extractRacquetData(raw) {
                     "swing_weight",
                     "specs.swingweight",
                     "specifications.swingweight",
-                    "specifications.swing_weight.value"
+                    "specifications.swing_weight.value",
+                    "specifications.swing_weight"
                 ]
             )
         );
 
     const stiffness =
-        safeNumber(
+        parseRacquetMeasurement(
             getFirstValue(
                 raw,
                 [
@@ -472,6 +630,7 @@ function extractRacquetData(raw) {
                     "specs.ra",
                     "specifications.ra",
                     "specifications.stiffness.value",
+                    "specifications.stiffness",
                     "specifications.ra.value"
                 ]
             )
@@ -2014,6 +2173,160 @@ function evaluateRacquetPhysicalCompatibility(
  * ============================================================
  */
 
+
+/**
+ * ============================================================
+ * Racquet Swingweight Fit V1
+ * ============================================================
+ *
+ * Purpose:
+ *
+ * Evaluate dynamic racquet load against player swing speed.
+ *
+ * Static weight and swingweight are intentionally scored
+ * separately because two racquets with the same static weight
+ * can have very different swing demands.
+ *
+ * V1 uses conservative adjustments so this signal complements
+ * rather than dominates DNA compatibility.
+ * ============================================================
+ */
+
+function evaluateRacquetSwingweightFit(
+    racquet,
+    swingSpeed
+) {
+
+    const swingweight =
+        safeNumber(
+            racquet?.swingweight
+        );
+
+
+    if (
+        swingweight === null ||
+        !swingSpeed
+    ) {
+
+        return 0;
+    }
+
+
+    /**
+     * Slow swing
+     *
+     * Prefer easier dynamic handling.
+     */
+
+    if (
+        swingSpeed === "slow"
+    ) {
+
+        if (
+            swingweight <= 295
+        ) {
+            return 3;
+        }
+
+        if (
+            swingweight <= 310
+        ) {
+            return 1;
+        }
+
+        if (
+            swingweight <= 325
+        ) {
+            return -2;
+        }
+
+        return -5;
+    }
+
+
+    /**
+     * Medium swing
+     *
+     * Broad usable window with moderate preference for
+     * manageable swingweight.
+     */
+
+    if (
+        swingSpeed === "medium"
+    ) {
+
+        if (
+            swingweight < 285
+        ) {
+            return 1;
+        }
+
+        if (
+            swingweight <= 310
+        ) {
+            return 3;
+        }
+
+        if (
+            swingweight <= 325
+        ) {
+            return 2;
+        }
+
+        if (
+            swingweight <= 335
+        ) {
+            return -1;
+        }
+
+        return -3;
+    }
+
+
+    /**
+     * Fast swing
+     *
+     * Higher swingweight can support stability and plow-through,
+     * while extremely low swingweight may feel underpowered or
+     * unstable for aggressive acceleration.
+     */
+
+    if (
+        swingSpeed === "fast"
+    ) {
+
+        if (
+            swingweight < 285
+        ) {
+            return -2;
+        }
+
+        if (
+            swingweight <= 305
+        ) {
+            return 1;
+        }
+
+        if (
+            swingweight <= 330
+        ) {
+            return 3;
+        }
+
+        if (
+            swingweight <= 345
+        ) {
+            return 2;
+        }
+
+        return -1;
+    }
+
+
+    return 0;
+}
+
+
 function evaluateRacquetWeightFit(
     racquet,
     swingSpeed
@@ -2461,15 +2774,81 @@ function scoreRacquet(
                 swingSpeed
             );
 
+
+        const swingweightAdjustment =
+            evaluateRacquetSwingweightFit(
+                racquet,
+                swingSpeed
+            );
+
+
+        const weightedDnaAdjustment =
+            dnaAdjustment *
+            RACQUET_SWING_COMPATIBILITY_V1
+                .dna;
+
+
+        const weightedStaticWeightAdjustment =
+            weightAdjustment *
+            RACQUET_SWING_COMPATIBILITY_V1
+                .static_weight;
+
+
+        const weightedSwingweightAdjustment =
+            swingweightAdjustment *
+            RACQUET_SWING_COMPATIBILITY_V1
+                .swingweight;
+
+
+        const rawSwingCompatibility =
+            weightedDnaAdjustment +
+            weightedStaticWeightAdjustment +
+            weightedSwingweightAdjustment;
+
+
         const totalAdjustment =
-            dnaAdjustment +
-            weightAdjustment;
+            clamp(
+                rawSwingCompatibility,
+                RACQUET_SWING_COMPATIBILITY_V1
+                    .minimum,
+                RACQUET_SWING_COMPATIBILITY_V1
+                    .maximum
+            );
+
 
         score +=
             totalAdjustment;
 
+
+        /**
+         * Preserve the aggregate field for backward
+         * compatibility while exposing raw and weighted
+         * components for explanation and regression.
+         */
+
         scoreBreakdown.swing_speed =
             totalAdjustment;
+
+        scoreBreakdown.swing_dna =
+            dnaAdjustment;
+
+        scoreBreakdown.static_weight_fit =
+            weightAdjustment;
+
+        scoreBreakdown.swingweight_fit =
+            swingweightAdjustment;
+
+        scoreBreakdown.swing_dna_weighted =
+            weightedDnaAdjustment;
+
+        scoreBreakdown.static_weight_fit_weighted =
+            weightedStaticWeightAdjustment;
+
+        scoreBreakdown.swingweight_fit_weighted =
+            weightedSwingweightAdjustment;
+
+        scoreBreakdown.swing_compatibility_raw =
+            rawSwingCompatibility;
     }
 
 
@@ -3563,6 +3942,60 @@ export async function runMatchingEngine(
 }
 
 
+
+/**
+ * ============================================================
+ * Public Single Racquet Player Scoring V1
+ * ============================================================
+ *
+ * Purpose:
+ *
+ * Allow other reasoning layers such as personalized comparison
+ * to evaluate one racquet with the exact same scoring logic
+ * used by the Matching Engine.
+ *
+ * Important:
+ *
+ * This wrapper does NOT define new scoring rules.
+ * scoreRacquet() remains the single source of truth.
+ * ============================================================
+ */
+
+export function scoreRacquetForPlayer(
+    racquet,
+    playerProfile
+) {
+
+    const profileValidation =
+        validatePlayerProfile(
+            playerProfile
+        );
+
+
+    if (
+        !profileValidation.valid
+    ) {
+
+        throw new Error(
+            "EveryCourtAI Matching Engine: invalid player profile."
+        );
+    }
+
+
+    const physicalConstraints =
+        getActivePhysicalConstraints(
+            playerProfile
+        );
+
+
+    return scoreRacquet(
+        racquet,
+        playerProfile,
+        physicalConstraints
+    );
+}
+
+
 /**
  * ============================================================
  * Optional Exports
@@ -3573,6 +4006,8 @@ export async function runMatchingEngine(
 
 export const matchingHelpers = {
 
+    scoreRacquetForPlayer,
+
     extractRacquetData,
 
     extractStringData,
@@ -3580,6 +4015,8 @@ export const matchingHelpers = {
     calculateDnaMatch,
 
     evaluateRacquetWeightFit,
+
+    evaluateRacquetSwingweightFit,
 
     evaluateStringGaugeFit,
 
