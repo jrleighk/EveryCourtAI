@@ -114,6 +114,9 @@ export function createConversationState(
         last_input_mode:
             null,
 
+        last_recommendation_context:
+            null,
+
         history:
             [],
 
@@ -406,6 +409,17 @@ export function runConversationStateEngine(
             inputMode ??
             null,
 
+        last_recommendation_context:
+            isPlainObject(
+                baseState
+                    ?.last_recommendation_context
+            )
+                ? cloneValue(
+                    baseState
+                        .last_recommendation_context
+                )
+                : null,
+
         history:
             limitedHistory,
 
@@ -575,6 +589,108 @@ export function updatePendingFields(
 
 /**
  * ============================================================
+ * Update Recommendation Context
+ * ============================================================
+ *
+ * Stores only the most recent successful recommendation
+ * context required by multi-turn explanation / follow-up
+ * behavior.
+ *
+ * This does NOT run recommendation engines.
+ * ============================================================
+ */
+
+export function updateRecommendationContext(
+    conversationState,
+    {
+        recommendation = null,
+        explanation = null,
+        confidence = null,
+        sourceTurn = null,
+        generatedAt = null
+    } = {}
+) {
+
+    const state =
+        normalizeConversationState(
+            conversationState
+        );
+
+
+    const hasRecommendation =
+        isPlainObject(
+            recommendation
+        );
+
+
+    const hasExplanation =
+        isPlainObject(
+            explanation
+        );
+
+
+    if (
+        !hasRecommendation &&
+        !hasExplanation
+    ) {
+
+        return state;
+    }
+
+
+    return {
+
+        ...state,
+
+        last_recommendation_context: {
+
+            source_turn:
+                Number.isFinite(
+                    Number(
+                        sourceTurn
+                    )
+                )
+                    ? Number(
+                        sourceTurn
+                    )
+                    : state.turn,
+
+            recommendation:
+                hasRecommendation
+                    ? cloneValue(
+                        recommendation
+                    )
+                    : null,
+
+            explanation:
+                hasExplanation
+                    ? cloneValue(
+                        explanation
+                    )
+                    : null,
+
+            confidence:
+                isPlainObject(
+                    confidence
+                )
+                    ? cloneValue(
+                        confidence
+                    )
+                    : null,
+
+            generated_at:
+                generatedAt ??
+                createTimestamp()
+        },
+
+        updated_at:
+            createTimestamp()
+    };
+}
+
+
+/**
+ * ============================================================
  * Complete Conversation
  * ============================================================
  */
@@ -734,6 +850,17 @@ function normalizeConversationState(
         last_input_mode:
             state.last_input_mode ??
             null,
+
+        last_recommendation_context:
+            isPlainObject(
+                state
+                    ?.last_recommendation_context
+            )
+                ? cloneValue(
+                    state
+                        .last_recommendation_context
+                )
+                : null,
 
         history:
             Array.isArray(

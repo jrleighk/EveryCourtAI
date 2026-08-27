@@ -4,7 +4,8 @@ import {
 } from "./intent_response_router_v1.js";
 
 import {
-  buildTensionFocusedAnswer
+  buildTensionFocusedAnswer,
+  buildExplanationFocusedAnswer
 } from "./intent_answer_builder_v1.js";
 
 const ENGINE_NAME = "intent_response_engine";
@@ -47,6 +48,42 @@ export function buildIntentResponse({
         focused
     };
   }
+
+  if (
+    routing.response_mode ===
+    RESPONSE_MODES.EXPLANATION_FOCUSED
+  ) {
+
+    const focused =
+      buildExplanationFocusedAnswer(
+        engineResult,
+        routing.context
+          ?.explanation_target ??
+          null,
+        language
+      );
+
+    return {
+      engine: ENGINE_NAME,
+      version: ENGINE_VERSION,
+      handled:
+        focused.available === true,
+      routing,
+      response_mode:
+        routing.response_mode,
+      answer:
+        focused.answer,
+      data:
+        focused.data,
+      builder:
+        focused,
+      reason:
+        focused.available === true
+          ? null
+          : "explanation_unavailable"
+    };
+  }
+
 
   if (
     routing.capability_status ===

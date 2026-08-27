@@ -435,6 +435,653 @@ export function buildTensionFocusedAnswer(
 }
 
 
+
+/**
+ * ============================================================
+ * Explanation Focused Answer
+ * ============================================================
+ */
+
+export function buildExplanationFocusedAnswer(
+    engineResult,
+    explanationTarget = null,
+    language = "en"
+) {
+
+    const explanation =
+        engineResult
+            ?.explanation ??
+        {};
+
+
+    const normalizedLanguage =
+        normalizeLanguage(
+            language
+        );
+
+
+    const useEnglish =
+        normalizedLanguage ===
+        "en";
+
+
+    const target =
+        [
+            "racquet",
+            "string",
+            "tension",
+            "setup"
+        ]
+            .includes(
+                explanationTarget
+            )
+                ? explanationTarget
+                : null;
+
+
+    /**
+     * ========================================================
+     * Racquet Explanation
+     * ========================================================
+     */
+
+    if (
+        target ===
+        "racquet"
+    ) {
+
+        const section =
+            explanation
+                ?.recommendation
+                ?.racquet;
+
+
+        const reason =
+            useEnglish
+                ? section
+                    ?.reason
+                    ?.en
+                : section
+                    ?.reason
+                    ?.zh;
+
+
+        if (
+            !section ||
+            !reason
+        ) {
+
+            return buildExplanationUnavailable(
+                target,
+                normalizedLanguage
+            );
+        }
+
+
+        const productName =
+            [
+                section
+                    ?.product
+                    ?.brand,
+
+                section
+                    ?.product
+                    ?.model
+            ]
+                .filter(
+                    Boolean
+                )
+                .join(
+                    " "
+                );
+
+
+        const answer =
+            useEnglish
+
+                ? [
+                    productName
+                        ? `Racquet: ${productName}.`
+                        : null,
+
+                    `Reason: ${reason}`
+                ]
+                    .filter(
+                        Boolean
+                    )
+                    .join(
+                        "\n"
+                    )
+
+                : [
+                    productName
+                        ? `球拍：${productName}。`
+                        : null,
+
+                    `原因：${reason}`
+                ]
+                    .filter(
+                        Boolean
+                    )
+                    .join(
+                        "\n"
+                    );
+
+
+        return {
+            engine:
+                ENGINE_NAME,
+
+            version:
+                ENGINE_VERSION,
+
+            response_mode:
+                "explanation_focused",
+
+            available:
+                true,
+
+            target,
+
+            answer,
+
+            data: {
+                target,
+
+                action:
+                    section
+                        ?.action ??
+                    null,
+
+                product:
+                    section
+                        ?.product ??
+                    null,
+
+                reason
+            }
+        };
+    }
+
+
+    /**
+     * ========================================================
+     * String Explanation
+     * ========================================================
+     */
+
+    if (
+        target ===
+        "string"
+    ) {
+
+        const section =
+            explanation
+                ?.recommendation
+                ?.string;
+
+
+        const reason =
+            useEnglish
+                ? section
+                    ?.reason
+                    ?.en
+                : section
+                    ?.reason
+                    ?.zh;
+
+
+        if (
+            !section ||
+            !reason
+        ) {
+
+            return buildExplanationUnavailable(
+                target,
+                normalizedLanguage
+            );
+        }
+
+
+        const stringName =
+            [
+                section
+                    ?.main
+                    ?.brand,
+
+                section
+                    ?.main
+                    ?.model
+            ]
+                .filter(
+                    Boolean
+                )
+                .join(
+                    " "
+                );
+
+
+        const gauge =
+            section
+                ?.main
+                ?.gauge_mm ??
+            null;
+
+
+        const answer =
+            useEnglish
+
+                ? [
+                    stringName
+                        ? `String: ${stringName}${gauge ? ` ${gauge} mm` : ""}.`
+                        : null,
+
+                    `Reason: ${reason}`
+                ]
+                    .filter(
+                        Boolean
+                    )
+                    .join(
+                        "\n"
+                    )
+
+                : [
+                    stringName
+                        ? `球线：${stringName}${gauge ? ` ${gauge} mm` : ""}。`
+                        : null,
+
+                    `原因：${reason}`
+                ]
+                    .filter(
+                        Boolean
+                    )
+                    .join(
+                        "\n"
+                    );
+
+
+        return {
+            engine:
+                ENGINE_NAME,
+
+            version:
+                ENGINE_VERSION,
+
+            response_mode:
+                "explanation_focused",
+
+            available:
+                true,
+
+            target,
+
+            answer,
+
+            data: {
+                target,
+
+                setup_type:
+                    section
+                        ?.setup_type ??
+                    null,
+
+                main:
+                    section
+                        ?.main ??
+                    null,
+
+                cross:
+                    section
+                        ?.cross ??
+                    null,
+
+                reason
+            }
+        };
+    }
+
+
+    /**
+     * ========================================================
+     * Tension Explanation
+     * ========================================================
+     */
+
+    if (
+        target ===
+        "tension"
+    ) {
+
+        const section =
+            explanation
+                ?.recommendation
+                ?.tension;
+
+
+        const reason =
+            useEnglish
+                ? section
+                    ?.reason
+                    ?.en
+                : section
+                    ?.reason
+                    ?.zh;
+
+
+        if (
+            !section ||
+            section
+                ?.main_lbs ===
+                null ||
+            section
+                ?.main_lbs ===
+                undefined ||
+            !reason
+        ) {
+
+            return buildExplanationUnavailable(
+                target,
+                normalizedLanguage
+            );
+        }
+
+
+        const range =
+            section
+                ?.working_range_lbs;
+
+
+        const lines =
+            useEnglish
+
+                ? [
+                    `Recommended tension: ${section.main_lbs} lbs.`,
+
+                    (
+                        range
+                            ?.minimum_lbs !==
+                            null &&
+                        range
+                            ?.minimum_lbs !==
+                            undefined &&
+                        range
+                            ?.maximum_lbs !==
+                            null &&
+                        range
+                            ?.maximum_lbs !==
+                            undefined
+                    )
+                        ? `Working range: ${range.minimum_lbs}–${range.maximum_lbs} lbs.`
+                        : null,
+
+                    `Reason: ${reason}`
+                ]
+
+                : [
+                    `建议磅数：${section.main_lbs} lbs。`,
+
+                    (
+                        range
+                            ?.minimum_lbs !==
+                            null &&
+                        range
+                            ?.minimum_lbs !==
+                            undefined &&
+                        range
+                            ?.maximum_lbs !==
+                            null &&
+                        range
+                            ?.maximum_lbs !==
+                            undefined
+                    )
+                        ? `建议工作区间：${range.minimum_lbs}–${range.maximum_lbs} lbs。`
+                        : null,
+
+                    `原因：${reason}`
+                ];
+
+
+        return {
+            engine:
+                ENGINE_NAME,
+
+            version:
+                ENGINE_VERSION,
+
+            response_mode:
+                "explanation_focused",
+
+            available:
+                true,
+
+            target,
+
+            answer:
+                lines
+                    .filter(
+                        Boolean
+                    )
+                    .join(
+                        "\n"
+                    ),
+
+            data: {
+                target,
+
+                main_lbs:
+                    section.main_lbs,
+
+                cross_lbs:
+                    section
+                        ?.cross_lbs ??
+                    null,
+
+                working_range_lbs:
+                    range ??
+                    null,
+
+                reason
+            }
+        };
+    }
+
+
+    /**
+     * ========================================================
+     * Setup Explanation
+     * ========================================================
+     */
+
+    if (
+        target ===
+        "setup"
+    ) {
+
+        const reasons =
+            Array.isArray(
+                explanation
+                    ?.why_this_setup
+            )
+                ? explanation
+                    .why_this_setup
+                : [];
+
+
+        const localizedReasons =
+            reasons
+                .map(
+                    item =>
+                        useEnglish
+                            ? item?.en
+                            : item?.zh
+                )
+                .filter(
+                    Boolean
+                );
+
+
+        if (
+            localizedReasons.length ===
+            0
+        ) {
+
+            return buildExplanationUnavailable(
+                target,
+                normalizedLanguage
+            );
+        }
+
+
+        const heading =
+            useEnglish
+                ? "Why this setup:"
+                : "为什么推荐这套配置：";
+
+
+        const answer =
+            [
+                heading,
+
+                ...localizedReasons
+                    .map(
+                        (
+                            reason,
+                            index
+                        ) =>
+                            `${index + 1}. ${reason}`
+                    )
+            ]
+                .join(
+                    "\n"
+                );
+
+
+        return {
+            engine:
+                ENGINE_NAME,
+
+            version:
+                ENGINE_VERSION,
+
+            response_mode:
+                "explanation_focused",
+
+            available:
+                true,
+
+            target,
+
+            answer,
+
+            data: {
+                target,
+
+                reasons:
+                    localizedReasons
+            }
+        };
+    }
+
+
+    /**
+     * ========================================================
+     * Overall Explanation Fallback
+     * ========================================================
+     */
+
+    const summary =
+        useEnglish
+            ? explanation
+                ?.summary
+                ?.en
+            : explanation
+                ?.summary
+                ?.zh;
+
+
+    if (
+        !summary
+    ) {
+
+        return buildExplanationUnavailable(
+            null,
+            normalizedLanguage
+        );
+    }
+
+
+    return {
+        engine:
+            ENGINE_NAME,
+
+        version:
+            ENGINE_VERSION,
+
+        response_mode:
+            "explanation_focused",
+
+        available:
+            true,
+
+        target:
+            null,
+
+        answer:
+            summary,
+
+        data: {
+            target:
+                null,
+
+            summary
+        }
+    };
+}
+
+
+/**
+ * ============================================================
+ * Explanation Unavailable
+ * ============================================================
+ */
+
+function buildExplanationUnavailable(
+    target,
+    language
+) {
+
+    return {
+        engine:
+            ENGINE_NAME,
+
+        version:
+            ENGINE_VERSION,
+
+        response_mode:
+            "explanation_focused",
+
+        available:
+            false,
+
+        target:
+            target ??
+            null,
+
+        answer:
+            language === "en"
+                ? "A focused explanation is not available yet."
+                : "目前还没有足够信息提供这一部分的具体解释。",
+
+        data: {
+            target:
+                target ??
+                null
+        }
+    };
+}
+
+
 export default {
-    buildTensionFocusedAnswer
+    buildTensionFocusedAnswer,
+    buildExplanationFocusedAnswer
 };

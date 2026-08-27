@@ -85,7 +85,8 @@ import {
 
 import {
     runConversationStateEngine,
-    updatePendingFields
+    updatePendingFields,
+    updateRecommendationContext
 } from "../engine/conversation_state_engine.js";
 
 
@@ -829,6 +830,202 @@ async function handleAI(
 
         /**
          * ====================================================
+         * Previous Recommendation Recall V1
+         * ====================================================
+         *
+         * Explanation-only follow-up questions must explain
+         * the previously completed recommendation.
+         *
+         * They must NOT:
+         *
+         * - rerun Recommendation Engine
+         * - regenerate recommendation reasoning
+         * - overwrite recommendation_context
+         * - change recommendation source_turn
+         *
+         * Conversation State has already advanced the current
+         * conversation turn before this gate.
+         * ====================================================
+         */
+
+        const previousRecommendationContext =
+            previousConversationState
+                ?.last_recommendation_context ??
+            null;
+
+
+        const shouldRecallPreviousRecommendation =
+            questionIntentResult
+                ?.primary_intent ===
+                "explain_current_setup" &&
+            previousRecommendationContext
+                ?.explanation;
+
+
+        if (
+            shouldRecallPreviousRecommendation
+        ) {
+
+            const recalledEngineResult = {
+
+                success:
+                    true,
+
+                recommendation:
+                    previousRecommendationContext
+                        ?.recommendation ??
+                    null,
+
+                explanation:
+                    previousRecommendationContext
+                        ?.explanation ??
+                    null,
+
+                confidence:
+                    previousRecommendationContext
+                        ?.confidence ??
+                    null
+            };
+
+
+            const recalledIntentResponse =
+                buildIntentResponse({
+
+                    questionIntentResult,
+
+                    engineResult:
+                        recalledEngineResult,
+
+                    language
+                });
+
+
+            if (
+                recalledIntentResponse
+                    ?.handled ===
+                    true
+            ) {
+
+                return jsonResponse({
+
+                    success:
+                        true,
+
+                    request_id:
+                        requestId,
+
+                    app:
+                        APP_NAME,
+
+                    worker_version:
+                        WORKER_VERSION,
+
+                    runtime:
+                        getKnowledgeRuntime(),
+
+                    input_mode:
+                        inputMode,
+
+                    language,
+
+                    message:
+                        typeof body?.message ===
+                            "string"
+                            ? body.message
+                            : null,
+
+                    status:
+                        "recommendation_ready",
+
+                    answer:
+                        recalledIntentResponse
+                            .answer,
+
+                    parser:
+                        parserResult,
+
+                    question_intent:
+                        questionIntentResult,
+
+                    intent_response:
+                        recalledIntentResponse,
+
+                    current_turn_player_input:
+                        currentTurnPlayerInput,
+
+                    player_input:
+                        playerInput,
+
+                    conversation_id:
+                        conversationResult
+                            ?.conversation_id ??
+                        null,
+
+                    turn:
+                        conversationResult
+                            ?.turn ??
+                        null,
+
+                    updated_fields:
+                        conversationResult
+                            ?.updated_fields ??
+                        [],
+
+                    missing_fields:
+                        conversationResult
+                            ?.missing_fields ??
+                        [],
+
+                    conversation_state:
+                        conversationResult
+                            ?.conversation_state ??
+                        null,
+
+                    follow_up:
+                        null,
+
+                    recommendation:
+                        null,
+
+                    engine_result: {
+
+                        recommendation:
+                            recalledEngineResult
+                                .recommendation,
+
+                        confidence:
+                            recalledEngineResult
+                                .confidence,
+
+                        explanation:
+                            recalledEngineResult
+                                .explanation
+                    },
+
+                    recall: {
+
+                        used:
+                            true,
+
+                        source_turn:
+                            previousRecommendationContext
+                                ?.source_turn ??
+                            null
+                    },
+
+                    processing_time_ms:
+                        Date.now() -
+                        startedAt,
+
+                    timestamp:
+                        createTimestamp()
+                });
+            }
+        }
+
+
+        /**
+         * ====================================================
          * STEP 8
          * Run EveryCourtAI Engine
          * ====================================================
@@ -1202,6 +1399,54 @@ async function handleAI(
             buildWebRecommendation(
                 engineResult
             );
+
+
+        /**
+         * ====================================================
+         * Recommendation Context V1
+         * ====================================================
+         *
+         * Persist the latest completed recommendation so that
+         * later turns such as:
+         *
+         * "Why this string?"
+         * "Why this racquet?"
+         * "Why this tension?"
+         *
+         * can explain the previous recommendation without
+         * recalculating or losing its original reasoning.
+         *
+         * Only recommendation_ready reaches this point.
+         * ====================================================
+         */
+
+        if (
+            conversationState
+        ) {
+
+            conversationState =
+                updateRecommendationContext(
+                    conversationState,
+                    {
+                        recommendation:
+                            engineResult
+                                ?.recommendation,
+
+                        explanation:
+                            engineResult
+                                ?.explanation,
+
+                        confidence:
+                            engineResult
+                                ?.confidence,
+
+                        sourceTurn:
+                            conversationResult
+                                ?.turn ??
+                            null
+                    }
+                );
+        }
 
 
         return jsonResponse({

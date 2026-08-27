@@ -81,6 +81,279 @@ function containsAny(
 
 /**
  * ============================================================
+ * Comparison Intent V1
+ * ============================================================
+ *
+ * Important:
+ *
+ * Chinese "比较" can also mean "relatively":
+ *
+ * - 比较舒服
+ * - 比较直接
+ * - 比较硬
+ *
+ * Those are NOT comparison tasks.
+ *
+ * Likewise, the single character "比" must not be treated as
+ * a comparison signal without comparative structure.
+ * ============================================================
+ */
+
+function detectComparisonIntent(
+    text
+) {
+
+    /**
+     * Strong explicit comparison signals.
+     */
+
+    if (
+        containsAny(
+            text,
+            [
+                "对比",
+                "区别",
+                "哪个好",
+                "哪一个好",
+                "哪个更好",
+                "哪一个更好",
+                "哪个更适合我",
+                "哪一个更适合我",
+                "哪个更适合",
+                "哪一个更适合",
+                "有什么区别",
+                "有何区别",
+                "vs",
+                "versus",
+                "compare",
+                "comparison",
+                "difference between",
+                "which is better"
+            ]
+        )
+    ) {
+
+        return true;
+    }
+
+
+    /**
+     * Explicit Chinese "compare" task wording.
+     *
+     * Do NOT match:
+     *
+     * - 比较舒服
+     * - 比较直接
+     * - 比较硬
+     */
+
+    if (
+        containsAny(
+            text,
+            [
+                "请比较",
+                "帮我比较",
+                "麻烦比较",
+                "比较一下",
+                "我想比较",
+                "想比较"
+            ]
+        )
+    ) {
+
+        return true;
+    }
+
+
+    /**
+     * Chinese comparative structure:
+     *
+     * A 比 B 更...
+     *
+     * Example:
+     * Pure Drive 比 RF01 更适合我
+     *
+     * This does not match "比较舒服" because there is no
+     * separate A 比 B 更... structure.
+     */
+
+    if (
+        /.+比.+更.+/.test(
+            text
+        )
+    ) {
+
+        return true;
+    }
+
+
+    return false;
+}
+
+
+/**
+ * ============================================================
+ * Tension Intent V1
+ * ============================================================
+ *
+ * A tension value appearing in the user's current setup is
+ * context, not automatically a tension-adjustment task.
+ *
+ * Examples:
+ *
+ * "HAWK TOUCH 54磅"
+ * → setup information
+ *
+ * "我应该拉多少磅？"
+ * → tension task
+ *
+ * "帮我降低2磅"
+ * → tension task
+ *
+ * Bare words such as:
+ *
+ * - 磅
+ * - lbs
+ * - pounds
+ *
+ * must NOT independently trigger adjust_tension.
+ * ============================================================
+ */
+
+function detectTensionIntent(
+    text
+) {
+
+    /**
+     * Chinese explicit tension questions / actions.
+     */
+
+    if (
+        containsAny(
+            text,
+            [
+                "拉多少磅",
+                "拉多少",
+                "多少磅",
+                "应该拉多少",
+                "应该用多少磅",
+                "用多少磅",
+                "建议多少磅",
+                "建议拉多少",
+                "磅数怎么调",
+                "磅数怎么调整",
+                "怎么调磅数",
+                "怎么调整磅数",
+                "调整磅数",
+                "调低磅数",
+                "调高磅数",
+                "降低磅数",
+                "提高磅数",
+                "降磅",
+                "升磅",
+                "加磅",
+                "减磅",
+                "张力怎么调",
+                "调整张力"
+            ]
+        )
+    ) {
+
+        return true;
+    }
+
+
+    /**
+     * More natural Chinese action wording:
+     *
+     * "帮我把现在的磅数调低一点"
+     * "把54磅降低到52磅"
+     */
+
+    if (
+        /磅数.*(调低|调高|降低|提高|调整)/.test(
+            text
+        ) ||
+        /(调低|调高|降低|提高|调整).*(磅数|磅)/.test(
+            text
+        ) ||
+        /(磅数|磅|张力).*(太高|太低|过高|过低)/.test(
+            text
+        ) ||
+        /(太高|太低|过高|过低).*(磅数|张力)/.test(
+            text
+        )
+    ) {
+
+        return true;
+    }
+
+
+    /**
+     * English explicit tension questions / actions.
+     *
+     * Bare "54 lbs" is intentionally NOT enough.
+     */
+
+    if (
+        containsAny(
+            text,
+            [
+                "what tension",
+                "which tension",
+                "what string tension",
+                "how much tension",
+                "how many lbs",
+                "what lbs",
+                "adjust tension",
+                "change tension",
+                "lower tension",
+                "lower the tension",
+                "raise tension",
+                "raise the tension",
+                "increase tension",
+                "increase the tension",
+                "decrease tension",
+                "decrease the tension",
+                "reduce tension",
+                "reduce the tension",
+                "tension should i use",
+                "tension should i string",
+                "what tension should i use"
+            ]
+        )
+    ) {
+
+        return true;
+    }
+
+
+    /**
+     * Natural English tension evaluation:
+     *
+     * - Is 54 lbs too high?
+     * - Is this tension too low?
+     */
+
+    if (
+        /(lbs|pounds|tension).*(too high|too low)/.test(
+            text
+        ) ||
+        /(too high|too low).*(tension)/.test(
+            text
+        )
+    ) {
+
+        return true;
+    }
+
+
+    return false;
+}
+
+
+/**
+ * ============================================================
  * Main Intent Detection
  * ============================================================
  */
@@ -145,27 +418,8 @@ export function detectQuestionIntent(
             ),
 
         comparison:
-            containsAny(
-                text,
-                [
-                    "比较",
-                    "对比",
-                    "区别",
-                    "哪个好",
-                    "哪一个好",
-                    "哪个更好",
-                    "哪个更适合我",
-                    "哪一个更适合我",
-                    "哪个更适合",
-                    "哪一个更适合",
-                    "比",
-                    "vs",
-                    "versus",
-                    "compare",
-                    "comparison",
-                    "difference between",
-                    "which is better"
-                ]
+            detectComparisonIntent(
+                text
             ),
 
         explanation_requested:
@@ -178,6 +432,11 @@ export function detectQuestionIntent(
                     "why",
                     "explain"
                 ]
+            ),
+
+        explanation_target:
+            detectExplanationTarget(
+                text
             ),
 
         preserve_racquet:
@@ -238,20 +497,8 @@ export function detectQuestionIntent(
 
 
     const tensionRequested =
-        containsAny(
-            text,
-            [
-                "磅数",
-                "磅",
-                "张力",
-                "拉多少",
-                "多少磅",
-                "调低",
-                "调高",
-                "tension",
-                "lbs",
-                "pounds"
-            ]
+        detectTensionIntent(
+            text
         );
 
 
@@ -347,21 +594,6 @@ export function detectQuestionIntent(
 
 
     /**
-     * Explicit tension request remains tension-specific.
-     */
-
-    if (
-        tensionRequested
-    ) {
-        return buildResult(
-            QUESTION_INTENTS.ADJUST_TENSION,
-            0.9,
-            context
-        );
-    }
-
-
-    /**
      * Explicit explanation request.
      *
      * Comparison has already been resolved above, so:
@@ -369,10 +601,13 @@ export function detectQuestionIntent(
      * "Why is A better than B?"
      * remains compare_products + explanation context.
      *
-     * But:
+     * Explanation also takes priority over a tension keyword:
      *
-     * "Why are you recommending natural gut?"
-     * is an explanation task, not a new recommendation request.
+     * "Why this tension?"
+     * is an explanation task.
+     *
+     * "What tension should I use?"
+     * remains an adjust_tension task.
      */
 
     if (
@@ -380,6 +615,23 @@ export function detectQuestionIntent(
     ) {
         return buildResult(
             QUESTION_INTENTS.EXPLAIN_CURRENT_SETUP,
+            0.9,
+            context
+        );
+    }
+
+
+    /**
+     * Explicit tension request remains tension-specific
+     * when the user is asking for a tension decision rather
+     * than an explanation of an existing recommendation.
+     */
+
+    if (
+        tensionRequested
+    ) {
+        return buildResult(
+            QUESTION_INTENTS.ADJUST_TENSION,
             0.9,
             context
         );
@@ -469,6 +721,89 @@ export function detectQuestionIntent(
 
 /**
  * ============================================================
+ * Explanation Target V1
+ * ============================================================
+ */
+
+function detectExplanationTarget(
+    text
+) {
+
+    if (
+        containsAny(
+            text,
+            [
+                "球线",
+                "线",
+                "string",
+                "natural gut",
+                "poly",
+                "polyester"
+            ]
+        )
+    ) {
+
+        return "string";
+    }
+
+
+    if (
+        containsAny(
+            text,
+            [
+                "球拍",
+                "拍子",
+                "racquet",
+                "racket",
+                "frame"
+            ]
+        )
+    ) {
+
+        return "racquet";
+    }
+
+
+    if (
+        containsAny(
+            text,
+            [
+                "磅数",
+                "磅",
+                "张力",
+                "tension",
+                "lbs",
+                "pounds"
+            ]
+        )
+    ) {
+
+        return "tension";
+    }
+
+
+    if (
+        containsAny(
+            text,
+            [
+                "配置",
+                "整套",
+                "setup",
+                "combination"
+            ]
+        )
+    ) {
+
+        return "setup";
+    }
+
+
+    return null;
+}
+
+
+/**
+ * ============================================================
  * Context Builder
  * ============================================================
  */
@@ -483,6 +818,9 @@ function createEmptyContext() {
 
         explanation_requested:
             false,
+
+        explanation_target:
+            null,
 
         preserve_racquet:
             false,

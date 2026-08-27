@@ -88,7 +88,7 @@ const cases = [
 
   {
     id:
-      "explanation_passthrough",
+      "explanation_unavailable",
 
     intent:
       "explain_current_setup",
@@ -100,7 +100,7 @@ const cases = [
       false,
 
     expected_reason:
-      "specialized_builder_not_connected"
+      "explanation_unavailable"
   },
 
   {
