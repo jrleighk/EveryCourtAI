@@ -79,6 +79,13 @@ import {
 
 
 import {
+    runComparisonOrchestrator
+} from "../engine/comparison_orchestrator_v1.js";
+
+
+
+
+import {
     runFollowUpEngine
 } from "../engine/follow_up_engine.js";
 
@@ -825,6 +832,464 @@ async function handleAI(
                 },
                 500
             );
+        }
+
+
+        /**
+         * ====================================================
+         * Comparison Runtime Gate V1
+         * ====================================================
+         *
+         * Comparison is an independent runtime task.
+         *
+         * It must execute after Conversation State has produced
+         * the merged player profile, but before:
+         *
+         * - Previous Recommendation Recall
+         * - Recommendation Engine
+         * - Follow-up Engine
+         *
+         * The Comparison Orchestrator remains the single source
+         * of truth for:
+         *
+         * - target extraction
+         * - target resolution
+         * - objective comparison
+         * - player-aware comparison
+         * - semantic interpretation
+         * - comparison narrative
+         *
+         * Worker only routes and transports the result.
+         * ====================================================
+         */
+
+        const shouldRunComparison =
+            questionIntentResult
+                ?.primary_intent ===
+                "compare_products";
+
+
+        if (
+            shouldRunComparison
+        ) {
+
+            const comparisonResult =
+                await runComparisonOrchestrator({
+
+                    message:
+                        typeof body?.message ===
+                            "string"
+                            ? body.message
+                            : "",
+
+                    playerProfile:
+                        playerInput,
+
+                    language
+                });
+
+
+            /**
+             * ------------------------------------------------
+             * Comparison Ready
+             * ------------------------------------------------
+             */
+
+            if (
+                comparisonResult
+                    ?.success ===
+                    true &&
+                comparisonResult
+                    ?.ready ===
+                    true &&
+                comparisonResult
+                    ?.status ===
+                    "comparison_orchestrator_ready"
+            ) {
+
+                const playerDecision =
+                    comparisonResult
+                        ?.interpretation
+                        ?.player_decision_narrative;
+
+
+                const objectiveNarrative =
+                    comparisonResult
+                        ?.interpretation
+                        ?.narrative;
+
+
+                const deterministicLanguage =
+                    comparisonResult
+                        ?.interpretation
+                        ?.language;
+
+
+                const normalizedLanguage =
+                    normalizeLanguage(
+                        language
+                    );
+
+
+                const isChinese =
+                    normalizedLanguage ===
+                        "zh" ||
+                    normalizedLanguage ===
+                        "zh-cn" ||
+                    normalizedLanguage ===
+                        "zh-tc" ||
+                    normalizedLanguage ===
+                        "zh-tw";
+
+
+                const narrativeBlocks =
+                    isChinese
+                        ? (
+                            objectiveNarrative
+                                ?.cn
+                                ?.blocks ??
+                            []
+                        )
+                        : (
+                            objectiveNarrative
+                                ?.en
+                                ?.blocks ??
+                            []
+                        );
+
+
+                const objectiveAnswer =
+                    Array.isArray(
+                        narrativeBlocks
+                    )
+                        ? narrativeBlocks
+                            .map(
+                                item =>
+                                    item
+                                        ?.text ??
+                                    null
+                            )
+                            .filter(
+                                Boolean
+                            )
+                            .join(
+                                "\n\n"
+                            )
+                        : "";
+
+
+                const playerDecisionAnswer =
+                    playerDecision
+                        ?.available ===
+                        true
+                        ? (
+                            isChinese
+                                ? playerDecision.cn
+                                : playerDecision.en
+                        )
+                        : null;
+
+
+                const fallbackTitle =
+                    isChinese
+                        ? deterministicLanguage
+                            ?.cn
+                            ?.title
+                        : deterministicLanguage
+                            ?.en
+                            ?.title;
+
+
+                const answerParts = [
+                    fallbackTitle ??
+                        null,
+
+                    objectiveAnswer ||
+                        null,
+
+                    playerDecisionAnswer ??
+                        null
+                ]
+                    .filter(
+                        Boolean
+                    );
+
+
+                const answer =
+                    answerParts.length >
+                        0
+                        ? answerParts.join(
+                            "\n\n"
+                        )
+                        : (
+                            isChinese
+                                ? "EveryCourtAI 已完成球拍对比。"
+                                : "EveryCourtAI completed the racquet comparison."
+                        );
+
+
+                return jsonResponse({
+
+                    success:
+                        true,
+
+                    request_id:
+                        requestId,
+
+                    app:
+                        APP_NAME,
+
+                    worker_version:
+                        WORKER_VERSION,
+
+                    runtime:
+                        getKnowledgeRuntime(),
+
+                    input_mode:
+                        inputMode,
+
+                    language,
+
+                    message:
+                        typeof body?.message ===
+                            "string"
+                            ? body.message
+                            : null,
+
+                    status:
+                        "comparison_ready",
+
+                    answer,
+
+                    parser:
+                        parserResult,
+
+                    question_intent:
+                        questionIntentResult,
+
+                    current_turn_player_input:
+                        currentTurnPlayerInput,
+
+                    player_input:
+                        playerInput,
+
+                    conversation_id:
+                        conversationResult
+                            ?.conversation_id ??
+                        null,
+
+                    turn:
+                        conversationResult
+                            ?.turn ??
+                        null,
+
+                    updated_fields:
+                        conversationResult
+                            ?.updated_fields ??
+                        [],
+
+                    missing_fields:
+                        conversationResult
+                            ?.missing_fields ??
+                        [],
+
+                    conversation_state:
+                        conversationResult
+                            ?.conversation_state ??
+                        null,
+
+                    comparison:
+                        comparisonResult,
+
+                    recommendation:
+                        null,
+
+                    follow_up:
+                        null,
+
+                    processing_time_ms:
+                        Date.now() -
+                        startedAt,
+
+                    timestamp:
+                        createTimestamp()
+                });
+            }
+
+
+            /**
+             * ------------------------------------------------
+             * Clarification Required
+             * ------------------------------------------------
+             */
+
+            if (
+                comparisonResult
+                    ?.status ===
+                    "clarification_required"
+            ) {
+
+                return jsonResponse({
+
+                    success:
+                        true,
+
+                    request_id:
+                        requestId,
+
+                    app:
+                        APP_NAME,
+
+                    worker_version:
+                        WORKER_VERSION,
+
+                    runtime:
+                        getKnowledgeRuntime(),
+
+                    input_mode:
+                        inputMode,
+
+                    language,
+
+                    message:
+                        typeof body?.message ===
+                            "string"
+                            ? body.message
+                            : null,
+
+                    status:
+                        "comparison_clarification_required",
+
+                    answer:
+                        normalizeLanguage(
+                            language
+                        )
+                            .startsWith(
+                                "zh"
+                            )
+                            ? "我还不能唯一确定你要比较的两支球拍，请提供更完整的型号。"
+                            : "I cannot uniquely identify both racquets yet. Please provide the full model names.",
+
+                    parser:
+                        parserResult,
+
+                    question_intent:
+                        questionIntentResult,
+
+                    current_turn_player_input:
+                        currentTurnPlayerInput,
+
+                    player_input:
+                        playerInput,
+
+                    conversation_id:
+                        conversationResult
+                            ?.conversation_id ??
+                        null,
+
+                    turn:
+                        conversationResult
+                            ?.turn ??
+                        null,
+
+                    updated_fields:
+                        conversationResult
+                            ?.updated_fields ??
+                        [],
+
+                    conversation_state:
+                        conversationResult
+                            ?.conversation_state ??
+                        null,
+
+                    comparison:
+                        comparisonResult,
+
+                    recommendation:
+                        null,
+
+                    follow_up:
+                        null,
+
+                    processing_time_ms:
+                        Date.now() -
+                        startedAt,
+
+                    timestamp:
+                        createTimestamp()
+                });
+            }
+
+
+            /**
+             * ------------------------------------------------
+             * Comparison Not Ready
+             * ------------------------------------------------
+             */
+
+            return jsonResponse({
+
+                success:
+                    false,
+
+                request_id:
+                    requestId,
+
+                app:
+                    APP_NAME,
+
+                worker_version:
+                    WORKER_VERSION,
+
+                runtime:
+                    getKnowledgeRuntime(),
+
+                input_mode:
+                    inputMode,
+
+                language,
+
+                message:
+                    typeof body?.message ===
+                        "string"
+                        ? body.message
+                        : null,
+
+                status:
+                    "comparison_not_ready",
+
+                answer:
+                    normalizeLanguage(
+                        language
+                    )
+                        .startsWith(
+                            "zh"
+                        )
+                        ? "目前无法完成这次球拍对比，请确认两支球拍的完整型号。"
+                        : "The racquet comparison could not be completed. Please confirm both full model names.",
+
+                parser:
+                    parserResult,
+
+                question_intent:
+                    questionIntentResult,
+
+                comparison:
+                    comparisonResult,
+
+                recommendation:
+                    null,
+
+                follow_up:
+                    null,
+
+                processing_time_ms:
+                    Date.now() -
+                    startedAt,
+
+                timestamp:
+                    createTimestamp()
+            });
         }
 
 

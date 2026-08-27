@@ -195,7 +195,11 @@ for (const test of cases) {
     body?.status ===
       "follow_up_required" ||
     body?.status ===
-      "recommendation_ready";
+      "recommendation_ready" ||
+    body?.status ===
+      "comparison_ready" ||
+    body?.status ===
+      "comparison_clarification_required";
 
 
   const pass =
