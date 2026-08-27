@@ -75,6 +75,10 @@ import {
 } from "./comparison_player_decision_narrative_v1.js";
 
 import {
+  adaptComparisonPlayerProfile
+} from "./comparison_player_profile_adapter_v1.js";
+
+import {
   RACQUET_PRODUCT_REGISTRY
 } from "./product_registry.generated.js";
 
@@ -300,11 +304,36 @@ export async function runResolvedComparisonOrchestrator({
   /**
    * ==========================================================
    * STEP 4
-   * Matching Representation
+   * Player Profile Normalization + Matching Representation
    *
-   * Only required for player-aware comparison.
+   * Comparison Runtime may receive:
+   *
+   * - conversation-state player input
+   * - Player Profile V1 style input
+   * - already canonical matching-engine input
+   *
+   * Normalize once here before player-fit scoring.
    * ==========================================================
    */
+
+  const adaptedPlayerProfile =
+    playerProfile
+      ? adaptComparisonPlayerProfile(
+          playerProfile
+        )
+      : null;
+
+
+  const comparisonPlayerProfile =
+    adaptedPlayerProfile
+        ?.success === true &&
+    adaptedPlayerProfile
+        ?.status ===
+        "comparison_player_profile_ready"
+      ? adaptedPlayerProfile
+          .player_profile
+      : null;
+
 
   let matchingRacquetA =
     null;
@@ -314,7 +343,7 @@ export async function runResolvedComparisonOrchestrator({
 
 
   if (
-    playerProfile
+    comparisonPlayerProfile
   ) {
 
     [
@@ -346,7 +375,7 @@ export async function runResolvedComparisonOrchestrator({
       productB,
       matchingRacquetA,
       matchingRacquetB,
-      playerProfile
+      comparisonPlayerProfile
     );
 
 
