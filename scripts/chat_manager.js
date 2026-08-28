@@ -2336,6 +2336,11 @@ function readPlayerProfileForm() {
             "playerFeelPreference"
         );
 
+    const shoulderSensitivity =
+        getValue(
+            "playerShoulderSensitivity"
+        );
+
 
     if (currentRacquet) {
         playerInput.current_racquet =
@@ -2375,6 +2380,13 @@ function readPlayerProfileForm() {
     if (feelPreference) {
         playerInput.feel_preference =
             feelPreference;
+    }
+
+    if (shoulderSensitivity) {
+        playerInput.physical_condition = {
+            shoulder_sensitivity:
+                shoulderSensitivity
+        };
     }
 
 

@@ -322,6 +322,59 @@ const checks = [
         "goal_alignment"
       )
   }
+,
+
+  {
+    id:
+      "physical_profile_shoulder_field_exists",
+
+    pass:
+      indexHtml.includes(
+        'id="playerShoulderSensitivity"'
+      ) &&
+      indexHtml.includes(
+        'value="moderate"'
+      )
+  },
+
+  {
+    id:
+      "physical_profile_shoulder_reader_exists",
+
+    pass:
+      chatManager.includes(
+        '"playerShoulderSensitivity"'
+      ) &&
+      chatManager.includes(
+        "shoulderSensitivity"
+      )
+  },
+
+  {
+    id:
+      "physical_profile_condition_payload_exists",
+
+    pass:
+      chatManager.includes(
+        "playerInput.physical_condition"
+      ) &&
+      chatManager.includes(
+        "shoulder_sensitivity"
+      )
+  },
+
+  {
+    id:
+      "physical_profile_condition_uses_selected_value",
+
+    pass:
+      chatManager.includes(
+        "shoulder_sensitivity:"
+      ) &&
+      chatManager.includes(
+        "shoulderSensitivity"
+      )
+  }
 
 ];
 
