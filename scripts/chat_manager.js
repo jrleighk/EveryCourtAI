@@ -880,6 +880,433 @@ export function renderComparisonView(
 
 
     /**
+     * Personalized Player Fit
+     */
+
+    const playerFit =
+        comparisonView
+            ?.player_fit;
+
+
+    if (
+        playerFit?.available ===
+            true &&
+        playerFit?.product_a &&
+        playerFit?.product_b
+    ) {
+
+        const signalsA =
+            playerFit
+                .product_a
+                .signals ?? {};
+
+
+        const signalsB =
+            playerFit
+                .product_b
+                .signals ?? {};
+
+
+        const formatPlayerFitSignal =
+            (
+                value,
+                type
+            ) => {
+
+                const normalized =
+                    safeString(
+                        value
+                    )
+                        .toLowerCase();
+
+
+                const labels = {
+
+                    strong: {
+                        zh: "强",
+                        en: "Strong"
+                    },
+
+                    moderate: {
+                        zh: "中等",
+                        en: "Moderate"
+                    },
+
+                    weak: {
+                        zh: "弱",
+                        en: "Weak"
+                    },
+
+                    demanding: {
+                        zh: "负担较高",
+                        en: "Demanding"
+                    },
+
+                    neutral: {
+                        zh: "中性",
+                        en: "Neutral"
+                    },
+
+                    low: {
+                        zh: "低",
+                        en: "Low"
+                    },
+
+                    high: {
+                        zh: "高",
+                        en: "High"
+                    },
+
+                    positive: {
+                        zh: "符合",
+                        en: "Positive"
+                    },
+
+                    negative: {
+                        zh: "不符合",
+                        en: "Negative"
+                    },
+
+                    unknown: {
+                        zh: "未知",
+                        en: "Unknown"
+                    }
+
+                };
+
+
+                const label =
+                    labels[
+                        normalized
+                    ];
+
+
+                if (
+                    label
+                ) {
+
+                    return isChinese
+                        ? label.zh
+                        : label.en;
+                }
+
+
+                if (
+                    type ===
+                        "physical"
+                ) {
+
+                    return isChinese
+                        ? "未知"
+                        : "Unknown";
+                }
+
+
+                return normalized
+                    ? normalized
+                    : (
+                        isChinese
+                            ? "未知"
+                            : "Unknown"
+                    );
+            };
+
+
+        const playerFitSection =
+            document.createElement(
+                "section"
+            );
+
+
+        playerFitSection.className =
+            "comparison-section comparison-player-fit";
+
+
+        const playerFitTitle =
+            document.createElement(
+                "div"
+            );
+
+
+        playerFitTitle.className =
+            "comparison-section-title";
+
+
+        playerFitTitle.textContent =
+            isChinese
+                ? "更适合你 · Player Fit"
+                : "Personalized For You · Player Fit";
+
+
+        playerFitSection.appendChild(
+            playerFitTitle
+        );
+
+
+        const table =
+            document.createElement(
+                "div"
+            );
+
+
+        table.className =
+            "comparison-table comparison-player-fit-table";
+
+
+        const header =
+            document.createElement(
+                "div"
+            );
+
+
+        header.className =
+            "comparison-row comparison-row-header";
+
+
+        const headerLabel =
+            document.createElement(
+                "div"
+            );
+
+
+        headerLabel.textContent =
+            isChinese
+                ? "个人匹配"
+                : "Player Fit";
+
+
+        const headerA =
+            document.createElement(
+                "div"
+            );
+
+
+        headerA.textContent =
+            productAName;
+
+
+        const headerB =
+            document.createElement(
+                "div"
+            );
+
+
+        headerB.textContent =
+            productBName;
+
+
+        header.appendChild(
+            headerLabel
+        );
+
+
+        header.appendChild(
+            headerA
+        );
+
+
+        header.appendChild(
+            headerB
+        );
+
+
+        table.appendChild(
+            header
+        );
+
+
+        const rows = [
+
+            {
+                label:
+                    isChinese
+                        ? "挥拍匹配"
+                        : "Swing Match",
+
+                valueA:
+                    formatPlayerFitSignal(
+                        signalsA
+                            .swing_compatibility,
+                        "swing"
+                    ),
+
+                valueB:
+                    formatPlayerFitSignal(
+                        signalsB
+                            .swing_compatibility,
+                        "swing"
+                    )
+            },
+
+            {
+                label:
+                    isChinese
+                        ? "重量匹配"
+                        : "Weight Match",
+
+                valueA:
+                    formatPlayerFitSignal(
+                        signalsA
+                            .weight_compatibility,
+                        "weight"
+                    ),
+
+                valueB:
+                    formatPlayerFitSignal(
+                        signalsB
+                            .weight_compatibility,
+                        "weight"
+                    )
+            },
+
+            {
+                label:
+                    isChinese
+                        ? "身体负担"
+                        : "Physical Demand",
+
+                valueA:
+                    formatPlayerFitSignal(
+                        signalsA
+                            .physical_demand,
+                        "physical"
+                    ) +
+                    (
+                        signalsA
+                            .physical_risk ===
+                        true
+                            ? " ⚠"
+                            : ""
+                    ),
+
+                valueB:
+                    formatPlayerFitSignal(
+                        signalsB
+                            .physical_demand,
+                        "physical"
+                    ) +
+                    (
+                        signalsB
+                            .physical_risk ===
+                        true
+                            ? " ⚠"
+                            : ""
+                    )
+            },
+
+            {
+                label:
+                    isChinese
+                        ? "目标匹配"
+                        : "Goal Match",
+
+                valueA:
+                    formatPlayerFitSignal(
+                        signalsA
+                            .goal_alignment,
+                        "goal"
+                    ),
+
+                valueB:
+                    formatPlayerFitSignal(
+                        signalsB
+                            .goal_alignment,
+                        "goal"
+                    )
+            }
+        ];
+
+
+        for (
+            const row
+            of rows
+        ) {
+
+            const rowElement =
+                document.createElement(
+                    "div"
+                );
+
+
+            rowElement.className =
+                "comparison-row comparison-player-fit-row";
+
+
+            const rowLabel =
+                document.createElement(
+                    "div"
+                );
+
+
+            rowLabel.className =
+                "comparison-row-label";
+
+
+            rowLabel.textContent =
+                row.label;
+
+
+            const valueA =
+                document.createElement(
+                    "div"
+                );
+
+
+            valueA.className =
+                "comparison-row-value";
+
+
+            valueA.textContent =
+                row.valueA;
+
+
+            const valueB =
+                document.createElement(
+                    "div"
+                );
+
+
+            valueB.className =
+                "comparison-row-value";
+
+
+            valueB.textContent =
+                row.valueB;
+
+
+            rowElement.appendChild(
+                rowLabel
+            );
+
+
+            rowElement.appendChild(
+                valueA
+            );
+
+
+            rowElement.appendChild(
+                valueB
+            );
+
+
+            table.appendChild(
+                rowElement
+            );
+        }
+
+
+        playerFitSection.appendChild(
+            table
+        );
+
+
+        card.appendChild(
+            playerFitSection
+        );
+    }
+
+
+    /**
      * Narrative
      */
 

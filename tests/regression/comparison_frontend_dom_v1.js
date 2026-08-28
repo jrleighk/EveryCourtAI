@@ -151,6 +151,121 @@ const checks = [
       indexHtml.includes(
         "width:\n          100%;"
       )
+  },
+
+
+
+  {
+    id:
+      "player_fit_renderer_exists",
+
+    pass:
+      chatManager.includes(
+        "comparison-player-fit"
+      )
+  },
+
+  {
+    id:
+      "player_fit_available_gate",
+
+    pass:
+      chatManager.includes(
+        "playerFit?.available"
+      )
+  },
+
+  {
+    id:
+      "player_fit_swing_signal",
+
+    pass:
+      chatManager.includes(
+        "swing_compatibility"
+      )
+  },
+
+  {
+    id:
+      "player_fit_weight_signal",
+
+    pass:
+      chatManager.includes(
+        "weight_compatibility"
+      )
+  },
+
+  {
+    id:
+      "player_fit_physical_signal",
+
+    pass:
+      chatManager.includes(
+        "physical_demand"
+      )
+  },
+
+  {
+    id:
+      "player_fit_physical_risk",
+
+    pass:
+      chatManager.includes(
+        "physical_risk"
+      )
+  },
+
+  {
+    id:
+      "player_fit_goal_signal",
+
+    pass:
+      chatManager.includes(
+        "goal_alignment"
+      )
+  },
+
+  {
+    id:
+      "player_fit_css_exists",
+
+    pass:
+      indexHtml.includes(
+        ".comparison-player-fit {"
+      ) &&
+      indexHtml.includes(
+        ".comparison-player-fit-table {"
+      )
+  },
+
+  {
+    id:
+      "player_fit_mobile_css_exists",
+
+    pass:
+      indexHtml.includes(
+        ".comparison-player-fit-row {"
+      )
+  },
+
+  {
+    id:
+      "player_fit_no_score_breakdown",
+
+    pass:
+      !chatManager.includes(
+        "score_breakdown"
+      )
+  },
+
+  {
+    id:
+      "player_fit_no_internal_evidence",
+
+    pass:
+      !chatManager.includes(
+        ".evidence"
+      )
   }
 
 ];
