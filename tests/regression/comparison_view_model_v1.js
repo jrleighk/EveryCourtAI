@@ -264,6 +264,24 @@ const assertions = [
     },
 
     {
+        id: "player_fit_personalized_true",
+        pass:
+            playerAwareView
+                ?.player_fit
+                ?.personalized ===
+            true
+    },
+
+    {
+        id: "player_fit_personalized_false_without_profile",
+        pass:
+            view
+                ?.player_fit
+                ?.personalized ===
+            false
+    },
+
+    {
         id: "player_a_swing_signal",
         pass:
             playerAwareView

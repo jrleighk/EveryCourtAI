@@ -811,6 +811,52 @@ export function buildComparisonViewModel(
                 playerFit.available ===
                 true,
 
+            personalized:
+                (
+                    playerFit.available ===
+                        true &&
+                    typeof playerFit
+                        ?.product_a
+                        ?.signals
+                        ?.swing_compatibility ===
+                        "string" &&
+                    typeof playerFit
+                        ?.product_b
+                        ?.signals
+                        ?.swing_compatibility ===
+                        "string" &&
+                    typeof playerFit
+                        ?.product_a
+                        ?.signals
+                        ?.goal_alignment ===
+                        "string" &&
+                    typeof playerFit
+                        ?.product_b
+                        ?.signals
+                        ?.goal_alignment ===
+                        "string" &&
+                    playerFit
+                        .product_a
+                        .signals
+                        .swing_compatibility !==
+                        "unknown" &&
+                    playerFit
+                        .product_b
+                        .signals
+                        .swing_compatibility !==
+                        "unknown" &&
+                    playerFit
+                        .product_a
+                        .signals
+                        .goal_alignment !==
+                        "unknown" &&
+                    playerFit
+                        .product_b
+                        .signals
+                        .goal_alignment !==
+                        "unknown"
+                ),
+
             product_a:
                 playerFit.product_a
                     ? {

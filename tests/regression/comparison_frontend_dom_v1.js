@@ -266,6 +266,61 @@ const checks = [
       !chatManager.includes(
         ".evidence"
       )
+  },
+
+  {
+    id:
+      "player_fit_personalized_gate",
+
+    pass:
+      chatManager.includes(
+        "playerFit?.personalized"
+      )
+  },
+
+  {
+    id:
+      "player_fit_profile_prompt_exists",
+
+    pass:
+      chatManager.includes(
+        "comparison-player-fit-prompt"
+      ) &&
+      chatManager.includes(
+        "获得你的个性化匹配"
+      ) &&
+      chatManager.includes(
+        "Complete your player profile"
+      )
+  },
+
+  {
+    id:
+      "player_fit_profile_prompt_css",
+
+    pass:
+      indexHtml.includes(
+        ".comparison-player-fit-prompt {"
+      ) &&
+      indexHtml.includes(
+        ".comparison-player-fit-prompt-text {"
+      )
+  },
+
+  {
+    id:
+      "player_fit_table_still_exists",
+
+    pass:
+      chatManager.includes(
+        "comparison-player-fit-table"
+      ) &&
+      chatManager.includes(
+        "swing_compatibility"
+      ) &&
+      chatManager.includes(
+        "goal_alignment"
+      )
   }
 
 ];

@@ -891,6 +891,8 @@ export function renderComparisonView(
     if (
         playerFit?.available ===
             true &&
+        playerFit?.personalized ===
+            true &&
         playerFit?.product_a &&
         playerFit?.product_b
     ) {
@@ -1302,6 +1304,65 @@ export function renderComparisonView(
 
         card.appendChild(
             playerFitSection
+        );
+    }
+
+    else {
+
+        const playerFitPrompt =
+            document.createElement(
+                "section"
+            );
+
+
+        playerFitPrompt.className =
+            "comparison-section comparison-player-fit comparison-player-fit-prompt";
+
+
+        const promptTitle =
+            document.createElement(
+                "div"
+            );
+
+
+        promptTitle.className =
+            "comparison-section-title";
+
+
+        promptTitle.textContent =
+            isChinese
+                ? "获得你的个性化匹配"
+                : "Get Your Personalized Fit";
+
+
+        const promptText =
+            document.createElement(
+                "div"
+            );
+
+
+        promptText.className =
+            "comparison-player-fit-prompt-text";
+
+
+        promptText.textContent =
+            isChinese
+                ? "完善运动档案后，可进一步判断两支球拍与你的挥拍方式、重量承受、身体负担和目标的匹配程度。"
+                : "Complete your player profile to compare how each racquet fits your swing, weight tolerance, physical demand and goals.";
+
+
+        playerFitPrompt.appendChild(
+            promptTitle
+        );
+
+
+        playerFitPrompt.appendChild(
+            promptText
+        );
+
+
+        card.appendChild(
+            playerFitPrompt
         );
     }
 
