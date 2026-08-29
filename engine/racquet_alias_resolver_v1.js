@@ -79,7 +79,8 @@ function findCanonicalProduct(
 
 function buildSeriesCandidates(
     canonicalSeries,
-    registry
+    registry,
+    year = null
 ) {
     if (
         !canonicalSeries ||
@@ -97,11 +98,31 @@ function buildSeriesCandidates(
 
     return registry
         .filter(
-            product =>
-                normalizeAliasText(
-                    product?.series
+            product => {
+                const seriesMatches =
+                    normalizeAliasText(
+                        product?.series
+                    ) ===
+                    normalizedSeries;
+
+                if (
+                    !seriesMatches
+                ) {
+                    return false;
+                }
+
+                if (
+                    year ===
+                    null
+                ) {
+                    return true;
+                }
+
+                return Number(
+                    product?.release_year
                 ) ===
-                normalizedSeries
+                    year;
+            }
         )
         .map(
             product => ({
@@ -148,7 +169,7 @@ export function resolveRacquetAlias(
     }
 
 
-    const alias =
+    let alias =
         RACQUET_ALIAS_REGISTRY.find(
             item =>
                 normalizeAliasText(
@@ -156,6 +177,59 @@ export function resolveRacquetAlias(
                 ) ===
                 normalized
         );
+
+    let qualifiedYear =
+        null;
+
+    /**
+     * Composable abbreviation + year qualifier.
+     *
+     * Examples:
+     * PD 2026
+     * PA 2026
+     *
+     * Safety:
+     * - curated aliases only
+     * - abbreviation aliases only
+     * - explicit 4-digit year qualifier only
+     * - ambiguous family aliases only
+     * - no player association
+     * - no relative-generation inference
+     */
+    if (
+        !alias
+    ) {
+        const qualifiedMatch =
+            normalized.match(
+                /^(.+?)\s+(20\d{2})$/
+            );
+
+        if (
+            qualifiedMatch
+        ) {
+            const aliasText =
+                qualifiedMatch[1];
+
+            qualifiedYear =
+                Number(
+                    qualifiedMatch[2]
+                );
+
+            alias =
+                RACQUET_ALIAS_REGISTRY.find(
+                    item =>
+                        item?.status ===
+                            "ambiguous" &&
+                        item?.alias_type ===
+                            "abbreviation" &&
+                        normalizeAliasText(
+                            item.alias
+                        ) ===
+                            aliasText
+                ) ??
+                null;
+        }
+    }
 
 
     if (
@@ -195,7 +269,8 @@ export function resolveRacquetAlias(
             candidates:
                 buildSeriesCandidates(
                     alias.canonical_series,
-                    registry
+                    registry,
+                    qualifiedYear
                 ),
 
             alias: {
