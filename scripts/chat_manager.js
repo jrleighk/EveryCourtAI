@@ -342,7 +342,8 @@ export function addMessage(
  */
 
 function createComparisonMetricRow(
-    item
+    item,
+    rowLabels = {}
 ) {
 
     if (
@@ -375,8 +376,15 @@ function createComparisonMetricRow(
         "comparison-row-label";
 
 
+    const localizedRowLabel =
+        rowLabels?.[
+            item.key
+        ];
+
+
     label.textContent =
         safeString(
+            localizedRowLabel ??
             item.label ??
             item.key
         );
@@ -469,7 +477,8 @@ function createComparisonSection(
     title,
     items,
     productAName,
-    productBName
+    productBName,
+    rowLabels = {}
 ) {
 
     if (
@@ -602,7 +611,8 @@ function createComparisonSection(
 
         const row =
             createComparisonMetricRow(
-                item
+                item,
+                rowLabels
             );
 
 
@@ -841,7 +851,10 @@ export function renderComparisonView(
 
             productAName,
 
-            productBName
+            productBName,
+
+            comparisonI18n
+                .row_labels
         );
 
 
@@ -869,7 +882,10 @@ export function renderComparisonView(
 
             productAName,
 
-            productBName
+            productBName,
+
+            comparisonI18n
+                .row_labels
         );
 
 

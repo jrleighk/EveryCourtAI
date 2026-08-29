@@ -21,6 +21,19 @@
 
 const COMPARISON_I18N = {
     en: {
+
+        row_labels: {
+            power: "Power",
+            control: "Control",
+            spin: "Spin",
+            comfort: "Comfort",
+            head_size_sq_in: "Head Size",
+            weight_unstrung_g: "Unstrung Weight",
+            weight_strung_g: "Strung Weight",
+            balance_unstrung_mm: "Unstrung Balance",
+            length_in: "Length",
+            string_pattern: "String Pattern"
+        },
         performance: "Performance",
         specifications: "Specifications",
         personalized_for_you: "Personalized For You · Player Fit",
@@ -47,6 +60,19 @@ const COMPARISON_I18N = {
     },
 
     "zh-CN": {
+
+        row_labels: {
+            power: "力量",
+            control: "控制",
+            spin: "旋转",
+            comfort: "舒适",
+            head_size_sq_in: "拍面大小",
+            weight_unstrung_g: "未穿线重量",
+            weight_strung_g: "穿线后重量",
+            balance_unstrung_mm: "未穿线平衡点",
+            length_in: "长度",
+            string_pattern: "线床规格"
+        },
         performance: "性能对比",
         specifications: "规格",
         personalized_for_you: "更适合你 · 球员匹配",
@@ -73,6 +99,19 @@ const COMPARISON_I18N = {
     },
 
     "zh-HK": {
+
+        row_labels: {
+            power: "力量",
+            control: "控制",
+            spin: "旋轉",
+            comfort: "舒適",
+            head_size_sq_in: "拍面大小",
+            weight_unstrung_g: "未穿線重量",
+            weight_strung_g: "穿線後重量",
+            balance_unstrung_mm: "未穿線平衡點",
+            length_in: "長度",
+            string_pattern: "線床規格"
+        },
         performance: "性能比較",
         specifications: "規格",
         personalized_for_you: "更適合你 · 球員匹配",
@@ -99,6 +138,19 @@ const COMPARISON_I18N = {
     },
 
     fr: {
+
+        row_labels: {
+            power: "Puissance",
+            control: "Contrôle",
+            spin: "Effet",
+            comfort: "Confort",
+            head_size_sq_in: "Taille du tamis",
+            weight_unstrung_g: "Poids non cordée",
+            weight_strung_g: "Poids cordée",
+            balance_unstrung_mm: "Équilibre non cordée",
+            length_in: "Longueur",
+            string_pattern: "Plan de cordage"
+        },
         performance: "Performances",
         specifications: "Caractéristiques",
         personalized_for_you: "Adapté à votre jeu · Profil joueur",
@@ -125,6 +177,19 @@ const COMPARISON_I18N = {
     },
 
     es: {
+
+        row_labels: {
+            power: "Potencia",
+            control: "Control",
+            spin: "Efecto",
+            comfort: "Comodidad",
+            head_size_sq_in: "Tamaño de cabeza",
+            weight_unstrung_g: "Peso sin encordar",
+            weight_strung_g: "Peso encordada",
+            balance_unstrung_mm: "Balance sin encordar",
+            length_in: "Longitud",
+            string_pattern: "Patrón de encordado"
+        },
         performance: "Rendimiento",
         specifications: "Especificaciones",
         personalized_for_you: "Adaptado a ti · Perfil del jugador",
@@ -151,6 +216,19 @@ const COMPARISON_I18N = {
     },
 
     ja: {
+
+        row_labels: {
+            power: "パワー",
+            control: "コントロール",
+            spin: "スピン",
+            comfort: "快適性",
+            head_size_sq_in: "フェイスサイズ",
+            weight_unstrung_g: "未張り重量",
+            weight_strung_g: "張り上がり重量",
+            balance_unstrung_mm: "未張りバランス",
+            length_in: "長さ",
+            string_pattern: "ストリングパターン"
+        },
         performance: "パフォーマンス比較",
         specifications: "スペック",
         personalized_for_you: "あなたへの適合度 · プレイヤーフィット",
