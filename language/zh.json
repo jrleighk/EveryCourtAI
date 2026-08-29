@@ -19,7 +19,8 @@
     "placeholder": "请输入你的装备或提出任何网球装备相关的问题……",
     "button": "开始分析",
     "note": "目前为 UI 原型，下一阶段将连接 EveryCourtAI AI 引擎。",
-    "examples": "示例问题"
+    "examples": "示例问题",
+    "new_analysis": "新分析"
   },
   "examples": {
     "rf01": "RF 01 Pro —— 提高舒适度",

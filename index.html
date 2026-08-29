@@ -3373,34 +3373,40 @@
         </section>
 
 
-        <div
-          class="messages"
-          id="messages"
-        >
+        <!-- Composer -->
 
-          <div
-            class="message ai"
-            id="welcomeMessage"
-          >
+        <div class="composer">
 
-            <div
-              class="message-label"
-              data-i18n="system.assistant"
+          <div class="input-shell">
+
+            <textarea
+              id="promptInput"
+              data-i18n-placeholder="chat.placeholder"
+              placeholder="Describe your setup or ask a tennis equipment question..."
+              rows="1"
+            ></textarea>
+
+
+            <button
+              class="send-btn"
+              id="sendButton"
+              data-i18n="chat.button"
             >
-              EveryCourtAI
-            </div>
+              Analyze
+            </button>
 
-            <div
-              class="bubble"
-              data-i18n="chat.welcome"
+            <button
+              class="send-btn"
+              id="newAnalysisButton"
+              type="button"
+              data-i18n="chat.new_analysis"
+              hidden
             >
-              Tell me what you are currently using and what
-              you want to improve. You can write naturally —
-              for example: “I use a Pure Drive and want more
-              control without losing too much power.”
-            </div>
+              New Analysis
+            </button>
 
           </div>
+
 
         </div>
 
@@ -3459,47 +3465,37 @@
         </div>
 
 
-        <!-- Composer -->
-
-        <div class="composer">
-
-          <div class="input-shell">
-
-            <textarea
-              id="promptInput"
-              data-i18n-placeholder="chat.placeholder"
-              placeholder="Describe your setup or ask a tennis equipment question..."
-              rows="1"
-            ></textarea>
-
-
-            <button
-              class="send-btn"
-              id="sendButton"
-              data-i18n="chat.button"
-            >
-              Analyze
-            </button>
-
-            <button
-              class="send-btn"
-              id="newAnalysisButton"
-              type="button"
-            >
-              New Analysis / 新分析
-            </button>
-
-          </div>
-
+        <div
+          class="messages"
+          id="messages"
+        >
 
           <div
-            class="composer-note"
-            data-i18n="chat.note"
+            class="message ai"
+            id="welcomeMessage"
           >
-            UI prototype — real EveryCourtAI Engine connection comes next.
+
+            <div
+              class="message-label"
+              data-i18n="system.assistant"
+            >
+              EveryCourtAI
+            </div>
+
+            <div
+              class="bubble"
+              data-i18n="chat.welcome"
+            >
+              Tell me what you are currently using and what
+              you want to improve. You can write naturally —
+              for example: “I use a Pure Drive and want more
+              control without losing too much power.”
+            </div>
+
           </div>
 
         </div>
+
 
       </section>
 

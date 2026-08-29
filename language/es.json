@@ -19,7 +19,8 @@
     "placeholder": "Describe tu configuración o haz una pregunta sobre equipamiento de tenis...",
     "button": "Analizar",
     "note": "Prototipo de la interfaz. La conexión con el motor EveryCourtAI llegará en la siguiente fase.",
-    "examples": "Prueba un ejemplo"
+    "examples": "Prueba un ejemplo",
+    "new_analysis": "Nuevo análisis"
   },
   "examples": {
     "rf01": "RF 01 Pro — más comodidad",

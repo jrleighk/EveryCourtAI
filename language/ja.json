@@ -19,7 +19,8 @@
     "placeholder": "現在のセッティング、またはテニス用品について質問してください…",
     "button": "分析する",
     "note": "現在はUIプロトタイプです。次のステップでEveryCourtAIエンジンと接続されます。",
-    "examples": "質問例"
+    "examples": "質問例",
+    "new_analysis": "新しい分析"
   },
   "examples": {
     "rf01": "RF 01 Pro ― 快適性を向上",

@@ -19,7 +19,8 @@
     "placeholder": "Décrivez votre configuration ou posez une question sur votre équipement de tennis…",
     "button": "Analyser",
     "note": "Prototype UI — la connexion au moteur EveryCourtAI arrive à l’étape suivante.",
-    "examples": "Essayer un exemple"
+    "examples": "Essayer un exemple",
+    "new_analysis": "Nouvelle analyse"
   },
   "examples": {
     "rf01": "RF 01 Pro — plus de confort",

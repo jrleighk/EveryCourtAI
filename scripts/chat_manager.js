@@ -168,6 +168,35 @@ function scrollToBottom() {
 
 /**
  * ============================================================
+ * New Analysis Visibility
+ * ============================================================
+ */
+
+function setNewAnalysisButtonVisible(
+    visible
+) {
+
+    const button =
+        document.getElementById(
+            "newAnalysisButton"
+        );
+
+
+    if (
+        !button
+    ) {
+
+        return;
+    }
+
+
+    button.hidden =
+        !visible;
+}
+
+
+/**
+ * ============================================================
  * Message
  * ============================================================
  */
@@ -2794,6 +2823,17 @@ export async function submitCurrentPrompt() {
 
 
         /**
+         * A successful response means an analysis session now
+         * exists. The reset action becomes available from this
+         * point onward.
+         */
+
+        setNewAnalysisButtonVisible(
+            true
+        );
+
+
+        /**
          * ====================================================
          * 8. Answer / Comparison View
          * ====================================================
@@ -3286,7 +3326,36 @@ window.EveryCourtChat = {
 
             messagesElement.innerHTML =
                 "";
+
+
+            const welcomeElement =
+                createMessageElement(
+                    "ai",
+                    t(
+                        "chat.welcome",
+                        "Tell me what you are currently using and what you want to improve."
+                    )
+                );
+
+
+            welcomeElement.id =
+                "welcomeMessage";
+
+
+            messagesElement.appendChild(
+                welcomeElement
+            );
         }
+
+
+        setNewAnalysisButtonVisible(
+            false
+        );
+
+
+        setRecommendationPanelVisible(
+            true
+        );
 
 
         if (
