@@ -23,6 +23,10 @@ import {
     PRODUCT_REGISTRY_COUNTS
 } from "./product_registry.generated.js";
 
+import {
+    resolveProductEntity
+} from "./product_entity_matcher_v1.js";
+
 
 const RESOLVER_VERSION =
     "1.0";
@@ -927,11 +931,130 @@ function resolveFromRegistry(
 export function resolveRacquet(
     message
 ) {
-    return resolveFromRegistry(
-        message,
-        RACQUET_PRODUCT_REGISTRY,
-        "racquet"
-    );
+    /**
+     * Stage 1:
+     * Preserve established registry resolution.
+     *
+     * Existing exact / strong-pattern matches remain
+     * authoritative.
+     */
+    const registryResolution =
+        resolveFromRegistry(
+            message,
+            RACQUET_PRODUCT_REGISTRY,
+            "racquet"
+        );
+
+
+    if (
+        registryResolution.status ===
+            "resolved"
+    ) {
+        return registryResolution;
+    }
+
+
+    /**
+     * Stage 2:
+     * Natural-language Product Entity fallback.
+     *
+     * This layer handles useful product language that does not
+     * exactly match generated registry patterns.
+     *
+     * Examples:
+     * Pure Drive Spectra 2026
+     * Pure Drive 2026 Spectra
+     * Pure Drive Spectra
+     *
+     * Generic family phrases remain ambiguous rather than
+     * silently selecting a SKU.
+     */
+    const entityResolution =
+        resolveProductEntity(
+            message,
+            RACQUET_PRODUCT_REGISTRY
+        );
+
+
+    if (
+        entityResolution.status ===
+            "resolved"
+    ) {
+        return {
+            status:
+                "resolved",
+
+            product_type:
+                "racquet",
+
+            confidence:
+                entityResolution
+                    .confidence,
+
+            match: {
+                ...entityResolution.match,
+
+                resolution_source:
+                    "entity_matcher_v1"
+            },
+
+            candidates:
+                entityResolution
+                    .candidates,
+
+            context:
+                registryResolution
+                    .context ??
+                null,
+
+            resolution_source:
+                "entity_matcher_v1"
+        };
+    }
+
+
+    /**
+     * Entity ambiguity is useful information.
+     *
+     * Example:
+     * "Pure Drive"
+     *
+     * means the family is understood, but a specific SKU
+     * cannot safely be selected.
+     */
+    if (
+        entityResolution.status ===
+            "ambiguous"
+    ) {
+        return {
+            status:
+                "ambiguous",
+
+            product_type:
+                "racquet",
+
+            match:
+                null,
+
+            candidates:
+                entityResolution
+                    .candidates,
+
+            context:
+                registryResolution
+                    .context ??
+                null,
+
+            resolution_source:
+                "entity_matcher_v1"
+        };
+    }
+
+
+    /**
+     * Entity matching could not improve the established result.
+     */
+    return registryResolution;
 }
 
 
