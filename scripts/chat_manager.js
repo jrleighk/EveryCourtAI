@@ -811,18 +811,17 @@ export function renderComparisonView(
      * Performance Dimensions
      */
 
-    const language =
+    const locale =
         safeString(
+            comparisonView.locale ??
             comparisonView.language
-        )
-            .toLowerCase();
+        );
 
 
     const isChinese =
-        language === "zh" ||
-        language === "zh-cn" ||
-        language === "zh-tw" ||
-        language === "zh-tc";
+        locale === "zh-CN" ||
+        locale === "zh-HK" ||
+        locale === "zh-TW";
 
 
     const dimensionsSection =

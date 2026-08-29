@@ -101,9 +101,9 @@ const assertions = [
     },
 
     {
-        id: "language_zh",
+        id: "language_zh_cn",
         pass:
-            view.language === "zh"
+            view.language === "zh-CN"
     },
 
     {

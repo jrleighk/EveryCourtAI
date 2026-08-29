@@ -19,6 +19,44 @@ const checks = [
 
   {
     id:
+      "comparison_frontend_uses_canonical_locale_identity",
+
+    pass:
+      chatManager.includes(
+        "comparisonView.locale ??"
+      ) &&
+      chatManager.includes(
+        'locale === "zh-CN"'
+      ) &&
+      chatManager.includes(
+        'locale === "zh-HK"'
+      ) &&
+      chatManager.includes(
+        'locale === "zh-TW"'
+      )
+  },
+
+  {
+    id:
+      "comparison_frontend_legacy_locale_checks_removed",
+
+    pass:
+      !chatManager.includes(
+        'language === "zh"'
+      ) &&
+      !chatManager.includes(
+        'language === "zh-cn"'
+      ) &&
+      !chatManager.includes(
+        'language === "zh-tw"'
+      ) &&
+      !chatManager.includes(
+        'language === "zh-tc"'
+      )
+  },
+
+  {
+    id:
       "renderer_exists",
 
     pass:

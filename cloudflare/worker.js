@@ -1009,13 +1009,11 @@ async function handleAI(
 
                     const isChinese =
                         normalizedLanguage ===
-                            "zh" ||
+                            "zh-CN" ||
                         normalizedLanguage ===
-                            "zh-cn" ||
+                            "zh-HK" ||
                         normalizedLanguage ===
-                            "zh-tc" ||
-                        normalizedLanguage ===
-                            "zh-tw";
+                            "zh-TW";
 
 
                     const narrativeBlocks =
@@ -1420,13 +1418,11 @@ async function handleAI(
 
                 const isChinese =
                     normalizedLanguage ===
-                        "zh" ||
+                        "zh-CN" ||
                     normalizedLanguage ===
-                        "zh-cn" ||
+                        "zh-HK" ||
                     normalizedLanguage ===
-                        "zh-tc" ||
-                    normalizedLanguage ===
-                        "zh-tw";
+                        "zh-TW";
 
 
                 const narrativeBlocks =

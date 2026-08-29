@@ -27,6 +27,13 @@
  * ============================================================
  */
 
+import {
+    resolveComparisonLocale,
+    selectComparisonLocalizedBranch,
+    selectComparisonLocalizedValue
+} from "./comparison_locale_adapter_v1.js";
+
+
 const ENGINE_NAME =
     "comparison_view_model";
 
@@ -38,20 +45,9 @@ function normalizeLanguage(
     language
 ) {
 
-    const value =
-        String(
-            language ??
-            "en"
-        )
-            .trim()
-            .toLowerCase();
-
-
-    return value.startsWith(
-        "zh"
-    )
-        ? "zh"
-        : "en";
+    return resolveComparisonLocale(
+        language
+    );
 }
 
 
@@ -70,18 +66,10 @@ function getLocalizedLabel(
     }
 
 
-    return language ===
-        "zh"
-        ? (
-            label.cn ??
-            label.en ??
-            null
-        )
-        : (
-            label.en ??
-            label.cn ??
-            null
-        );
+    return selectComparisonLocalizedValue(
+        label,
+        language
+    );
 }
 
 
@@ -203,10 +191,10 @@ function buildNarrativeBlocks(
 
 
     const blockContainer =
-        language ===
-            "zh"
-            ? narrative?.cn
-            : narrative?.en;
+        selectComparisonLocalizedBranch(
+            narrative,
+            language
+        );
 
 
     const blocks =
@@ -251,15 +239,17 @@ function buildSummary(
             ?.language;
 
 
+    const localizedComparisonLanguage =
+        selectComparisonLocalizedBranch(
+            comparisonLanguage,
+            language
+        );
+
+
     const title =
-        language ===
-            "zh"
-            ? comparisonLanguage
-                ?.cn
-                ?.title
-            : comparisonLanguage
-                ?.en
-                ?.title;
+        localizedComparisonLanguage
+            ?.title ??
+        null;
 
 
     const narrativeBlocks =
@@ -279,11 +269,9 @@ function buildSummary(
         playerDecision
             ?.available ===
             true
-            ? (
-                language ===
-                    "zh"
-                    ? playerDecision.cn
-                    : playerDecision.en
+            ? selectComparisonLocalizedValue(
+                playerDecision,
+                language
             )
             : null;
 
@@ -657,12 +645,22 @@ export function buildComparisonViewModel(
     }
 
 
-    const normalizedLanguage =
+    const localeContract =
         normalizeLanguage(
             language ??
             orchestratorResult
                 ?.language
         );
+
+
+    const normalizedLanguage =
+        localeContract
+            .source_language;
+
+
+    const canonicalLocale =
+        localeContract
+            .locale;
 
 
     const comparisonAnswer =
@@ -780,7 +778,23 @@ export function buildComparisonViewModel(
             "comparison_view_ready",
 
         language:
-            normalizedLanguage,
+            canonicalLocale,
+
+        locale: {
+            code:
+                canonicalLocale,
+
+            source_language:
+                normalizedLanguage,
+
+            fallback:
+                localeContract
+                    .fallback,
+
+            fallback_locale:
+                localeContract
+                    .fallback_locale
+        },
 
         products: {
 
