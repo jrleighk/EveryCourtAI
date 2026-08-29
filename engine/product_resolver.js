@@ -27,6 +27,10 @@ import {
     resolveProductEntity
 } from "./product_entity_matcher_v1.js";
 
+import {
+    resolveRacquetAlias
+} from "./racquet_alias_resolver_v1.js";
+
 
 const RESOLVER_VERSION =
     "1.0";
@@ -956,6 +960,30 @@ export function resolveRacquet(
 
     /**
      * Stage 2:
+     * Explicit Racquet Alias Knowledge.
+     *
+     * Curated aliases are resolved before fuzzy entity
+     * matching. Ambiguous aliases must remain ambiguous.
+     */
+    const aliasResolution =
+        resolveRacquetAlias(
+            message,
+            RACQUET_PRODUCT_REGISTRY
+        );
+
+
+    if (
+        aliasResolution.status ===
+            "resolved" ||
+        aliasResolution.status ===
+            "ambiguous"
+    ) {
+        return aliasResolution;
+    }
+
+
+    /**
+     * Stage 3:
      * Natural-language Product Entity fallback.
      *
      * This layer handles useful product language that does not

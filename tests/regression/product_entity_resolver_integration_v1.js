@@ -106,6 +106,62 @@ const racquetCases = [
 
     {
         id:
+            "pd_alias_remains_ambiguous",
+
+        query:
+            "PD",
+
+        expected_status:
+            "ambiguous",
+
+        expected_id:
+            null
+    },
+
+    {
+        id:
+            "spectra_pd_simplified_alias",
+
+        query:
+            "光谱PD",
+
+        expected_status:
+            "resolved",
+
+        expected_id:
+            "babolat_pure_drive_spectra_edition_2026"
+    },
+
+    {
+        id:
+            "spectra_pd_traditional_alias",
+
+        query:
+            "光譜PD",
+
+        expected_status:
+            "resolved",
+
+        expected_id:
+            "babolat_pure_drive_spectra_edition_2026"
+    },
+
+    {
+        id:
+            "pure_drive_spectra_cn_alias",
+
+        query:
+            "Pure Drive 光谱",
+
+        expected_status:
+            "resolved",
+
+        expected_id:
+            "babolat_pure_drive_spectra_edition_2026"
+    },
+
+    {
+        id:
             "pure_drive_remains_ambiguous",
 
         query:
