@@ -1641,6 +1641,50 @@ export function renderComparisonView(
             }
 
 
+            const itemContainer =
+                document.createElement(
+                    "div"
+                );
+
+
+            itemContainer.className =
+                "comparison-narrative-item";
+
+
+            const itemLabel =
+                safeString(
+                    comparisonI18n
+                        ?.narrative_labels
+                        ?.[
+                            item?.id
+                        ]
+                );
+
+
+            if (
+                itemLabel
+            ) {
+
+                const labelElement =
+                    document.createElement(
+                        "div"
+                    );
+
+
+                labelElement.className =
+                    "comparison-narrative-label";
+
+
+                labelElement.textContent =
+                    itemLabel;
+
+
+                itemContainer.appendChild(
+                    labelElement
+                );
+            }
+
+
             const paragraph =
                 document.createElement(
                     "p"
@@ -1648,15 +1692,20 @@ export function renderComparisonView(
 
 
             paragraph.className =
-                "comparison-narrative-item";
+                "comparison-narrative-text";
 
 
             paragraph.textContent =
                 text;
 
 
-            narrativeSection.appendChild(
+            itemContainer.appendChild(
                 paragraph
+            );
+
+
+            narrativeSection.appendChild(
+                itemContainer
             );
         }
 

@@ -1433,6 +1433,37 @@
 
       background:
         rgba(255,255,255,0.025);
+    }
+
+    .comparison-narrative-label {
+      margin:
+        0 0 5px;
+
+      color:
+        var(--text);
+
+      font-size:
+        10px;
+
+      font-weight:
+        700;
+
+      line-height:
+        1.25;
+
+      letter-spacing:
+        0.055em;
+
+      text-transform:
+        uppercase;
+
+      opacity:
+        0.72;
+    }
+
+    .comparison-narrative-text {
+      margin:
+        0;
 
       color:
         var(--text-soft);
@@ -1441,13 +1472,43 @@
         12px;
 
       line-height:
-        1.6;
+        1.55;
     }
 
     .comparison-narrative-item +
     .comparison-narrative-item {
       margin-top:
-        8px;
+        7px;
+    }
+
+    @media (max-width: 760px) {
+
+      .comparison-narrative-item {
+        padding:
+          9px 10px;
+      }
+
+      .comparison-narrative-label {
+        margin-bottom:
+          4px;
+
+        font-size:
+          9px;
+      }
+
+      .comparison-narrative-text {
+        font-size:
+          11.5px;
+
+        line-height:
+          1.48;
+      }
+
+      .comparison-narrative-item +
+      .comparison-narrative-item {
+        margin-top:
+          6px;
+      }
     }
 
 

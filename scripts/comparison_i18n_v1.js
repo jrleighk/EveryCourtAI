@@ -46,6 +46,18 @@ const COMPARISON_I18N = {
         personalized_prompt_text:
             "Complete your player profile to compare how each racquet fits your swing, weight tolerance, physical demand and goals.",
         key_differences: "Key Differences",
+
+        narrative_labels: {
+            ease_and_demand:
+                "Swing Demand",
+            forgiveness:
+                "Forgiveness",
+            stability_and_plow:
+                "Stability & Plow",
+            performance_identity:
+                "Playing Style"
+        },
+
         unknown: "Unknown",
 
         strong: "Strong",
@@ -85,6 +97,18 @@ const COMPARISON_I18N = {
         personalized_prompt_text:
             "完善运动档案后，可进一步判断两支球拍与你的挥拍方式、重量承受、身体负担和目标的匹配程度。",
         key_differences: "核心差异",
+
+        narrative_labels: {
+            ease_and_demand:
+                "挥拍负担",
+            forgiveness:
+                "容错",
+            stability_and_plow:
+                "稳定与质量感",
+            performance_identity:
+                "球拍取向"
+        },
+
         unknown: "未知",
 
         strong: "强",
@@ -124,6 +148,18 @@ const COMPARISON_I18N = {
         personalized_prompt_text:
             "完善運動檔案後，可進一步判斷兩支球拍與你的揮拍方式、重量承受、身體負擔及目標的匹配程度。",
         key_differences: "核心差異",
+
+        narrative_labels: {
+            ease_and_demand:
+                "揮拍負擔",
+            forgiveness:
+                "容錯",
+            stability_and_plow:
+                "穩定與質量感",
+            performance_identity:
+                "球拍取向"
+        },
+
         unknown: "未知",
 
         strong: "強",
@@ -163,6 +199,18 @@ const COMPARISON_I18N = {
         personalized_prompt_text:
             "Complétez votre profil joueur pour comparer l'adéquation de chaque raquette à votre swing, votre tolérance au poids, vos contraintes physiques et vos objectifs.",
         key_differences: "Différences clés",
+
+        narrative_labels: {
+            ease_and_demand:
+                "Exigence du swing",
+            forgiveness:
+                "Tolérance",
+            stability_and_plow:
+                "Stabilité et inertie",
+            performance_identity:
+                "Style de jeu"
+        },
+
         unknown: "Inconnu",
 
         strong: "Forte",
@@ -202,6 +250,18 @@ const COMPARISON_I18N = {
         personalized_prompt_text:
             "Completa tu perfil de jugador para comparar cómo se adapta cada raqueta a tu swing, tolerancia al peso, exigencia física y objetivos.",
         key_differences: "Diferencias clave",
+
+        narrative_labels: {
+            ease_and_demand:
+                "Exigencia de swing",
+            forgiveness:
+                "Tolerancia",
+            stability_and_plow:
+                "Estabilidad e inercia",
+            performance_identity:
+                "Estilo de juego"
+        },
+
         unknown: "Desconocido",
 
         strong: "Alta",
@@ -241,6 +301,18 @@ const COMPARISON_I18N = {
         personalized_prompt_text:
             "プレイヤープロフィールを完成すると、スイング、重量への適応、身体への負担、目標の観点から各ラケットとの適合度を比較できます。",
         key_differences: "主な違い",
+
+        narrative_labels: {
+            ease_and_demand:
+                "スイング負荷",
+            forgiveness:
+                "寛容性",
+            stability_and_plow:
+                "安定性と質量感",
+            performance_identity:
+                "プレースタイル"
+        },
+
         unknown: "不明",
 
         strong: "高い",
