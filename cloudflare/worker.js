@@ -94,6 +94,11 @@ import {
 } from "../engine/comparison_view_model_v1.js";
 
 
+import {
+    buildComparisonClarificationAnswer
+} from "../engine/comparison_clarification_answer_builder_v1.js";
+
+
 
 
 import {
@@ -1251,14 +1256,17 @@ async function handleAI(
                         "comparison_clarification_required",
 
                     answer:
-                        normalizeLanguage(
-                            language
-                        )
-                            .startsWith(
-                                "zh"
-                            )
-                            ? "我仍然不能唯一确定这支球拍，请再提供品牌、完整型号或年份。"
-                            : "I still cannot uniquely identify the racquet. Please provide the brand, full model, or year.",
+                        buildComparisonClarificationAnswer({
+                            unresolvedTargets:
+                                clarificationResult
+                                    ?.unresolved_targets ??
+                                pendingComparisonContext
+                                    ?.unresolved_targets ??
+                                [],
+
+                            locale:
+                                language
+                        }).answer,
 
                     parser:
                         parserResult,
@@ -1699,14 +1707,15 @@ async function handleAI(
                         "comparison_clarification_required",
 
                     answer:
-                        normalizeLanguage(
-                            language
-                        )
-                            .startsWith(
-                                "zh"
-                            )
-                            ? "我还不能唯一确定你要比较的两支球拍，请提供更完整的型号。"
-                            : "I cannot uniquely identify both racquets yet. Please provide the full model names.",
+                        buildComparisonClarificationAnswer({
+                            unresolvedTargets:
+                                comparisonResolution
+                                    ?.unresolved_targets ??
+                                [],
+
+                            locale:
+                                language
+                        }).answer,
 
                     parser:
                         parserResult,
