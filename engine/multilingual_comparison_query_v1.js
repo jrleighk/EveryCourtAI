@@ -335,7 +335,7 @@ export function normalizeMultilingualComparisonQuery(
 
     const japanese =
         text.match(
-            /^(.+?)\s*と\s*(.+?)\s*(?:を)?(?:比較(?:して)?|比べて)(?:ください)?[。！？!?]*$/i
+            /^(.+?)\s*と\s*(.+?)\s*(?:を)?(?:比較(?:する|して)?|比べて)(?:ください)?[。！？!?]*$/i
         );
 
 

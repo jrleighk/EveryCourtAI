@@ -119,6 +119,28 @@ const cases = [
 
         message:
             "Pure Drive Spectra 2026 と RF01 Pro Classic を比べて"
+    },
+
+    {
+        id:
+            "japanese_compare_suru_browser",
+
+        locale:
+            "ja",
+
+        message:
+            "Pure Drive Spectra 2026とRF01 Pro Classicを比較する"
+    },
+
+    {
+        id:
+            "japanese_compare_shite_no_spaces",
+
+        locale:
+            "ja",
+
+        message:
+            "Pure Drive Spectra 2026とRF01 Pro Classicを比較して"
     }
 ];
 
