@@ -43,6 +43,16 @@ check(
 );
 
 check(
+    "profile_hidden_css_contract",
+    html.includes(
+        ".player-profile-grid[hidden]"
+    ) &&
+    /\.player-profile-grid\[hidden\]\s*\{[\s\S]*?display:\s*none/.test(
+        html
+    )
+);
+
+check(
     "profile_default_collapsed",
     /id="playerProfileFields"[\s\S]*?hidden/.test(
         html
