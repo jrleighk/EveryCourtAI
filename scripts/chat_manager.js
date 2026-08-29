@@ -2336,10 +2336,44 @@ function readPlayerProfileForm() {
             "playerFeelPreference"
         );
 
-    const shoulderSensitivity =
-        getValue(
-            "playerShoulderSensitivity"
-        );
+    const physicalSensitivityFields = {
+        shoulder_sensitivity:
+            "playerShoulderSensitivity",
+        elbow_sensitivity:
+            "playerElbowSensitivity",
+        wrist_sensitivity:
+            "playerWristSensitivity",
+        neck_sensitivity:
+            "playerNeckSensitivity",
+        lower_back_sensitivity:
+            "playerLowerBackSensitivity",
+        hip_sensitivity:
+            "playerHipSensitivity",
+        knee_sensitivity:
+            "playerKneeSensitivity",
+        ankle_sensitivity:
+            "playerAnkleSensitivity"
+    };
+
+    const physicalCondition = {};
+
+    for (
+        const [
+            field,
+            elementId
+        ]
+        of Object.entries(
+            physicalSensitivityFields
+        )
+    ) {
+        const value =
+            getValue(elementId);
+
+        if (value) {
+            physicalCondition[field] =
+                value;
+        }
+    }
 
 
     if (currentRacquet) {
@@ -2382,11 +2416,13 @@ function readPlayerProfileForm() {
             feelPreference;
     }
 
-    if (shoulderSensitivity) {
-        playerInput.physical_condition = {
-            shoulder_sensitivity:
-                shoulderSensitivity
-        };
+    if (
+        Object.keys(
+            physicalCondition
+        ).length > 0
+    ) {
+        playerInput.physical_condition =
+            physicalCondition;
     }
 
 

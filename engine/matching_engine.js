@@ -625,9 +625,12 @@ function extractRacquetData(raw) {
                 raw,
                 [
                     "stiffness",
+                    "stiffness_ra",
                     "ra",
                     "specs.stiffness",
+                    "specs.stiffness_ra",
                     "specs.ra",
+                    "specifications.stiffness_ra",
                     "specifications.ra",
                     "specifications.stiffness.value",
                     "specifications.stiffness",
@@ -2026,11 +2029,13 @@ function evaluateRacquetPhysicalCompatibility(
             constraint.severity;
 
         const severe =
-            severity === "high";
+            severity === "high" ||
+            severity === "severe";
 
         const moderateOrHigh =
             severity === "moderate" ||
-            severity === "high";
+            severity === "high" ||
+            severity === "severe";
 
         switch (
             constraint.region

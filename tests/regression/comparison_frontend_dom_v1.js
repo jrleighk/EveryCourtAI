@@ -326,53 +326,86 @@ const checks = [
 
   {
     id:
-      "physical_profile_shoulder_field_exists",
+      "physical_profile_all_region_fields_exist",
 
     pass:
-      indexHtml.includes(
-        'id="playerShoulderSensitivity"'
-      ) &&
-      indexHtml.includes(
-        'value="moderate"'
+      [
+        "playerShoulderSensitivity",
+        "playerElbowSensitivity",
+        "playerWristSensitivity",
+        "playerNeckSensitivity",
+        "playerLowerBackSensitivity",
+        "playerHipSensitivity",
+        "playerKneeSensitivity",
+        "playerAnkleSensitivity"
+      ].every(
+        (id) =>
+          indexHtml.includes(
+            `id="${id}"`
+          )
       )
   },
 
   {
     id:
-      "physical_profile_shoulder_reader_exists",
+      "physical_profile_all_region_readers_exist",
 
     pass:
-      chatManager.includes(
-        '"playerShoulderSensitivity"'
-      ) &&
-      chatManager.includes(
-        "shoulderSensitivity"
+      [
+        "playerShoulderSensitivity",
+        "playerElbowSensitivity",
+        "playerWristSensitivity",
+        "playerNeckSensitivity",
+        "playerLowerBackSensitivity",
+        "playerHipSensitivity",
+        "playerKneeSensitivity",
+        "playerAnkleSensitivity"
+      ].every(
+        (id) =>
+          chatManager.includes(
+            `"${id}"`
+          )
       )
   },
 
   {
     id:
-      "physical_profile_condition_payload_exists",
+      "physical_profile_all_canonical_fields_exist",
 
     pass:
+      [
+        "shoulder_sensitivity",
+        "elbow_sensitivity",
+        "wrist_sensitivity",
+        "neck_sensitivity",
+        "lower_back_sensitivity",
+        "hip_sensitivity",
+        "knee_sensitivity",
+        "ankle_sensitivity"
+      ].every(
+        (field) =>
+          chatManager.includes(
+            field
+          )
+      )
+  },
+
+  {
+    id:
+      "physical_profile_dynamic_payload_exists",
+
+    pass:
+      chatManager.includes(
+        "physicalSensitivityFields"
+      ) &&
+      chatManager.includes(
+        "physicalCondition"
+      ) &&
+      chatManager.includes(
+        "Object.entries"
+      ) &&
       chatManager.includes(
         "playerInput.physical_condition"
-      ) &&
-      chatManager.includes(
-        "shoulder_sensitivity"
-      )
-  },
-
-  {
-    id:
-      "physical_profile_condition_uses_selected_value",
-
-    pass:
-      chatManager.includes(
-        "shoulder_sensitivity:"
-      ) &&
-      chatManager.includes(
-        "shoulderSensitivity"
       )
   }
 
