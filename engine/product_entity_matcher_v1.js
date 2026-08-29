@@ -628,6 +628,235 @@ function resolveProductEntity(
 
 
     /**
+     * Missing variant discriminator guard.
+     *
+     * A high numerical score must not manufacture product
+     * specificity that the user did not provide.
+     *
+     * Example:
+     *
+     * Blade 98 V10
+     *
+     * may still describe:
+     * - Blade 98S V10
+     * - Blade 98 16x19 V10
+     * - Blade 98 18x20 V10
+     *
+     * The best candidate therefore remains ambiguous when its
+     * remaining identity is one of several competing variants.
+     *
+     * Standard products remain resolvable when the best candidate
+     * has no residual variant identity after common family metadata
+     * and generation tokens are removed.
+     */
+
+    const matchedSignature =
+        values =>
+            [
+                ...new Set(
+                    values ??
+                    []
+                )
+            ]
+                .sort()
+                .join(
+                    "|"
+                );
+
+
+    const generationTokens =
+        product => {
+            const normalizedModel =
+                normalizeEntityText(
+                    product?.model ??
+                    ""
+                );
+
+            const match =
+                normalizedModel.match(
+                    /\bv\s+(\d+)\b/
+                );
+
+            return new Set(
+                match
+                    ? [
+                        "v",
+                        match[1]
+                    ]
+                    : []
+            );
+        };
+
+
+    const residualMissingTokens =
+        item => {
+            const generations =
+                generationTokens(
+                    item?.product
+                );
+
+            return (
+                item
+                    ?.missing_discriminators ??
+                []
+            ).filter(
+                token =>
+                    !generations.has(
+                        token
+                    )
+            );
+        };
+
+
+    const bestMatchedSignature =
+        matchedSignature(
+            best
+                .matched_discriminators
+        );
+
+    const queryYear =
+        extractYearToken(
+            query
+        );
+
+
+    const variantPeers =
+        ranked.filter(
+            item =>
+                item?.product?.series ===
+                    best?.product?.series &&
+                item.coverage >=
+                    0.95 &&
+                matchedSignature(
+                    item
+                        .matched_discriminators
+                ) ===
+                    bestMatchedSignature &&
+                (
+                    queryYear ===
+                        null ||
+                    item.year_match ===
+                        best.year_match
+                )
+        );
+
+
+    if (
+        variantPeers.length >
+        1
+    ) {
+        const residualSets =
+            variantPeers.map(
+                item =>
+                    new Set(
+                        residualMissingTokens(
+                            item
+                        )
+                    )
+            );
+
+        const commonResidualTokens =
+            residualSets.length >
+            0
+                ? [
+                    ...residualSets[0]
+                ].filter(
+                    token =>
+                        residualSets.every(
+                            set =>
+                                set.has(
+                                    token
+                                )
+                        )
+                )
+                : [];
+
+
+        const commonResidualSet =
+            new Set(
+                commonResidualTokens
+            );
+
+
+        const effectiveResidual =
+            item =>
+                residualMissingTokens(
+                    item
+                ).filter(
+                    token =>
+                        !commonResidualSet.has(
+                            token
+                        )
+                );
+
+
+        const bestResidual =
+            effectiveResidual(
+                best
+            );
+
+
+        const bestResidualSignature =
+            matchedSignature(
+                bestResidual
+            );
+
+
+        const hasCompetingVariant =
+            bestResidual.length >
+                0 &&
+            variantPeers.some(
+                item => {
+                    if (
+                        item ===
+                        best
+                    ) {
+                        return false;
+                    }
+
+                    const peerResidual =
+                        effectiveResidual(
+                            item
+                        );
+
+                    return (
+                        peerResidual.length >
+                            0 &&
+                        matchedSignature(
+                            peerResidual
+                        ) !==
+                            bestResidualSignature
+                    );
+                }
+            );
+
+
+        if (
+            hasCompetingVariant
+        ) {
+            return {
+                status:
+                    "ambiguous",
+
+                confidence:
+                    null,
+
+                match:
+                    null,
+
+                candidates:
+                    ranked.slice(
+                        0,
+                        5
+                    ),
+
+                margin
+            };
+        }
+    }
+
+
+    /**
      * Generic family phrases must not silently select a SKU.
      *
      * Example:
