@@ -101,6 +101,56 @@ const cases = [
 
     {
         id:
+            "and_en",
+
+        message:
+            "Compare Babolat Pure Drive Spectra Edition 2026 and Wilson RF 01 Pro Classic",
+
+        expected_detected:
+            true,
+
+        expected_count:
+            2,
+
+        expected_ids: [
+            "babolat_pure_drive_spectra_edition_2026",
+            "wilson_rf_01_pro_classic"
+        ],
+
+        expected_subtype:
+            "direct_comparison",
+
+        expected_ready:
+            true
+    },
+
+    {
+        id:
+            "with_en",
+
+        message:
+            "Compare Babolat Pure Drive Spectra Edition 2026 with Wilson RF 01 Pro Classic",
+
+        expected_detected:
+            true,
+
+        expected_count:
+            2,
+
+        expected_ids: [
+            "babolat_pure_drive_spectra_edition_2026",
+            "wilson_rf_01_pro_classic"
+        ],
+
+        expected_subtype:
+            "direct_comparison",
+
+        expected_ready:
+            true
+    },
+
+    {
+        id:
             "comparative_explanation_full_cn",
 
         message:

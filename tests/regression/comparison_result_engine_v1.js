@@ -274,12 +274,21 @@ tests.push(
 
 tests.push(
   createTest(
-    "rf01_higher_swingweight",
+    "swingweight_basis_unverified",
+    playerResult.objective_analysis
+      ?.specifications
+      ?.swingweight
+      ?.available === false &&
     playerResult.objective_analysis
       ?.specifications
       ?.swingweight
       ?.relation ===
-        "b_higher"
+        "unavailable" &&
+    playerResult.objective_analysis
+      ?.specifications
+      ?.swingweight
+      ?.reason ===
+        "measurement_basis_unverified"
   )
 );
 

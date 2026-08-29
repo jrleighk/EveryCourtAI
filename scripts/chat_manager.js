@@ -45,6 +45,10 @@ import {
     sendChatRequest
 } from "./api_client.js";
 
+import {
+    getComparisonPresentation
+} from "./comparison_i18n_v1.js";
+
 
 /**
  * ============================================================
@@ -811,25 +815,27 @@ export function renderComparisonView(
      * Performance Dimensions
      */
 
-    const locale =
+    const localeCode =
         safeString(
-            comparisonView.locale ??
-            comparisonView.language
+            comparisonView
+                ?.locale
+                ?.code ??
+            comparisonView
+                ?.language
         );
 
 
-    const isChinese =
-        locale === "zh-CN" ||
-        locale === "zh-HK" ||
-        locale === "zh-TW";
+    const comparisonI18n =
+        getComparisonPresentation(
+            localeCode
+        );
 
 
     const dimensionsSection =
         createComparisonSection(
 
-            isChinese
-                ? "性能对比"
-                : "Performance",
+            comparisonI18n
+                .performance,
 
             comparisonView.dimensions,
 
@@ -856,9 +862,8 @@ export function renderComparisonView(
     const specificationsSection =
         createComparisonSection(
 
-            isChinese
-                ? "规格"
-                : "Specifications",
+            comparisonI18n
+                .specifications,
 
             comparisonView.specifications,
 
@@ -921,95 +926,21 @@ export function renderComparisonView(
                         .toLowerCase();
 
 
-                const labels = {
-
-                    strong: {
-                        zh: "强",
-                        en: "Strong"
-                    },
-
-                    moderate: {
-                        zh: "中等",
-                        en: "Moderate"
-                    },
-
-                    weak: {
-                        zh: "弱",
-                        en: "Weak"
-                    },
-
-                    demanding: {
-                        zh: "负担较高",
-                        en: "Demanding"
-                    },
-
-                    neutral: {
-                        zh: "中性",
-                        en: "Neutral"
-                    },
-
-                    low: {
-                        zh: "低",
-                        en: "Low"
-                    },
-
-                    high: {
-                        zh: "高",
-                        en: "High"
-                    },
-
-                    positive: {
-                        zh: "符合",
-                        en: "Positive"
-                    },
-
-                    negative: {
-                        zh: "不符合",
-                        en: "Negative"
-                    },
-
-                    unknown: {
-                        zh: "未知",
-                        en: "Unknown"
-                    }
-
-                };
-
-
-                const label =
-                    labels[
+                const localizedSignal =
+                    comparisonI18n[
                         normalized
                     ];
 
 
                 if (
-                    label
+                    localizedSignal
                 ) {
-
-                    return isChinese
-                        ? label.zh
-                        : label.en;
+                    return localizedSignal;
                 }
 
 
-                if (
-                    type ===
-                        "physical"
-                ) {
-
-                    return isChinese
-                        ? "未知"
-                        : "Unknown";
-                }
-
-
-                return normalized
-                    ? normalized
-                    : (
-                        isChinese
-                            ? "未知"
-                            : "Unknown"
-                    );
+                return comparisonI18n
+                    .unknown;
             };
 
 
@@ -1034,9 +965,8 @@ export function renderComparisonView(
 
 
         playerFitTitle.textContent =
-            isChinese
-                ? "更适合你 · Player Fit"
-                : "Personalized For You · Player Fit";
+            comparisonI18n
+                .personalized_for_you;
 
 
         playerFitSection.appendChild(
@@ -1071,9 +1001,8 @@ export function renderComparisonView(
 
 
         headerLabel.textContent =
-            isChinese
-                ? "个人匹配"
-                : "Player Fit";
+            comparisonI18n
+                .player_fit;
 
 
         const headerA =
@@ -1120,9 +1049,8 @@ export function renderComparisonView(
 
             {
                 label:
-                    isChinese
-                        ? "挥拍匹配"
-                        : "Swing Match",
+                    comparisonI18n
+                        .swing_match,
 
                 valueA:
                     formatPlayerFitSignal(
@@ -1141,9 +1069,8 @@ export function renderComparisonView(
 
             {
                 label:
-                    isChinese
-                        ? "重量匹配"
-                        : "Weight Match",
+                    comparisonI18n
+                        .weight_match,
 
                 valueA:
                     formatPlayerFitSignal(
@@ -1162,9 +1089,8 @@ export function renderComparisonView(
 
             {
                 label:
-                    isChinese
-                        ? "身体负担"
-                        : "Physical Demand",
+                    comparisonI18n
+                        .physical_demand,
 
                 valueA:
                     formatPlayerFitSignal(
@@ -1197,9 +1123,8 @@ export function renderComparisonView(
 
             {
                 label:
-                    isChinese
-                        ? "目标匹配"
-                        : "Goal Match",
+                    comparisonI18n
+                        .goal_match,
 
                 valueA:
                     formatPlayerFitSignal(
@@ -1329,9 +1254,8 @@ export function renderComparisonView(
 
 
         promptTitle.textContent =
-            isChinese
-                ? "获得你的个性化匹配"
-                : "Get Your Personalized Fit";
+            comparisonI18n
+                .personalized_prompt_title;
 
 
         const promptText =
@@ -1345,9 +1269,8 @@ export function renderComparisonView(
 
 
         promptText.textContent =
-            isChinese
-                ? "完善运动档案后，可进一步判断两支球拍与你的挥拍方式、重量承受、身体负担和目标的匹配程度。"
-                : "Complete your player profile to compare how each racquet fits your swing, weight tolerance, physical demand and goals.";
+            comparisonI18n
+                .personalized_prompt_text;
 
 
         playerFitPrompt.appendChild(
@@ -1405,9 +1328,8 @@ export function renderComparisonView(
 
 
         narrativeTitle.textContent =
-            isChinese
-                ? "核心差异"
-                : "Key Differences";
+            comparisonI18n
+                .key_differences;
 
 
         narrativeSection.appendChild(
@@ -1613,6 +1535,35 @@ function resizeTextarea() {
             160
         ) +
         "px";
+}
+
+
+/**
+ * ============================================================
+ * Recommendation Panel Visibility
+ * ============================================================
+ */
+
+function setRecommendationPanelVisible(
+    visible
+) {
+
+    const panel =
+        document.querySelector(
+            ".recommendation-panel"
+        );
+
+
+    if (
+        !panel
+    ) {
+
+        return;
+    }
+
+
+    panel.hidden =
+        !visible;
 }
 
 
@@ -2625,6 +2576,11 @@ export async function submitCurrentPrompt() {
             hasComparisonView
         ) {
 
+            setRecommendationPanelVisible(
+                false
+            );
+
+
             renderComparisonView(
                 result
                     .comparison_view
@@ -2662,6 +2618,11 @@ export async function submitCurrentPrompt() {
             result
                 .recommendation
         ) {
+
+            setRecommendationPanelVisible(
+                true
+            );
+
 
             updateRecommendationCard(
                 result

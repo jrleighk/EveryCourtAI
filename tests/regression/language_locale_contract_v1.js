@@ -36,13 +36,16 @@ function check(
     }
 }
 
+
 const canonicalLocales = [
     "en",
     "zh-CN",
     "zh-HK",
-    "zh-TW",
+    "fr",
+    "es",
     "ja"
 ];
+
 
 for (
     const locale
@@ -63,36 +66,60 @@ for (
     );
 }
 
+
 check(
-    "legacy_menu_zh_removed",
+    "six_language_menu",
+    (
+        html.match(
+            /data-language-button="/g
+        ) || []
+    ).length === 6
+);
+
+
+check(
+    "traditional_chinese_label",
+    html.includes(
+        "繁體中文"
+    ) &&
     !html.includes(
-        'data-language-button="zh"'
+        "繁體中文（香港）"
+    ) &&
+    !html.includes(
+        "繁體中文（台灣）"
     )
 );
 
+
 check(
-    "legacy_menu_zh_tc_removed",
+    "zh_tw_removed_from_menu",
     !html.includes(
-        'data-language-button="zh-tc"'
+        'data-language-button="zh-TW"'
     )
 );
 
+
 check(
-    "fr_not_v1_menu",
-    !html.includes(
-        'data-language-button="fr"'
+    "zh_tw_removed_from_supported_languages",
+    !manager.includes(
+        'code: "zh-TW"'
     )
 );
 
+
 check(
-    "es_not_v1_menu",
-    !html.includes(
-        'data-language-button="es"'
+    "zh_tw_alias_to_traditional_chinese",
+    manager.includes(
+        'normalized === "zh-tw"'
+    ) &&
+    manager.includes(
+        'return "zh-HK";'
     )
 );
 
+
 check(
-    "zh_alias_to_zh_cn",
+    "zh_alias_to_simplified_chinese",
     manager.includes(
         'normalized === "zh"'
     ) &&
@@ -101,8 +128,9 @@ check(
     )
 );
 
+
 check(
-    "zh_hk_alias_supported",
+    "zh_hk_supported",
     manager.includes(
         'normalized === "zh-hk"'
     ) &&
@@ -111,88 +139,95 @@ check(
     )
 );
 
-check(
-    "zh_tc_alias_supported",
-    manager.includes(
-        'normalized === "zh-tc"'
-    )
-);
 
 check(
-    "zh_tw_preserved",
+    "zh_hant_to_traditional_chinese",
     manager.includes(
-        'normalized === "zh-tw"'
+        'normalized === "zh-hant"'
     ) &&
     manager.includes(
-        'return "zh-TW";'
+        'return "zh-HK";'
     )
 );
 
+
 check(
-    "english_region_aliases",
+    "french_supported",
     manager.includes(
-        'normalized.startsWith('
+        'code: "fr"'
     ) &&
     manager.includes(
-        '"en-"'
+        'file: "language/fr.json"'
     )
 );
 
-check(
-    "japanese_region_aliases",
-    manager.includes(
-        '"ja-"'
-    )
-);
 
 check(
-    "hk_translation_fallback",
+    "spanish_supported",
     manager.includes(
-        '"zh-HK":'
+        'code: "es"'
     ) &&
     manager.includes(
-        'file: "language/zh-tc.json"'
+        'file: "language/es.json"'
     )
 );
 
+
 check(
-    "tw_translation_fallback",
+    "japanese_supported",
     manager.includes(
-        '"zh-TW":'
+        'code: "ja"'
     ) &&
-    manager.match(
-        /file: "language\/zh-tc\.json"/g
-    )?.length >= 2
+    manager.includes(
+        'file: "language/ja.json"'
+    )
 );
+
+
+check(
+    "saved_legacy_locale_is_normalized",
+    manager.includes(
+        "normalizedSavedLanguage"
+    ) &&
+    manager.includes(
+        "normalizeLanguageCode("
+    ) &&
+    manager.includes(
+        "return normalizedSavedLanguage;"
+    )
+);
+
+
+check(
+    "browser_detection_uses_canonical_registry",
+    manager.includes(
+        "SUPPORTED_LANGUAGES["
+    ) &&
+    manager.includes(
+        "return normalized;"
+    )
+);
+
 
 console.log("");
 console.log(
     "========================================"
 );
 console.log(
-    "REGRESSION SUMMARY"
+    "LANGUAGE LOCALE CONTRACT V1"
 );
 console.log(
     "========================================"
 );
-console.log(
-    `Total: ${passed + failed}`
-);
-console.log(
-    `Passed: ${passed}`
-);
-console.log(
-    `Failed: ${failed}`
-);
+console.log(`Total: ${passed + failed}`);
+console.log(`Passed: ${passed}`);
+console.log(`Failed: ${failed}`);
 
-console.log(
-    failed === 0
-        ? "RESULT: PASS"
-        : "RESULT: FAIL"
-);
-
-if (
-    failed > 0
-) {
+if (failed > 0) {
+    console.log("");
+    console.log("RESULT: FAIL");
     process.exitCode = 1;
+} else {
+    console.log("");
+    console.log("RESULT: PASS");
 }

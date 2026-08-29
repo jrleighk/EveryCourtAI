@@ -530,10 +530,70 @@ function getRacquetSwingweight(
 ) {
     return normalizeNumericField(
         raw?.specifications
+            ?.swingweight_unstrung ??
+        raw?.specifications
+            ?.swing_weight_unstrung ??
+        raw?.specifications
+            ?.swingweight_strung ??
+        raw?.specifications
+            ?.swing_weight_strung ??
+        raw?.specifications
             ?.swing_weight ??
         raw?.specifications
             ?.swingweight
     );
+}
+
+
+function getRacquetSwingweightBasis(
+    raw
+) {
+
+    const specifications =
+        raw?.specifications ??
+        {};
+
+
+    if (
+        specifications
+            ?.swingweight_unstrung !==
+            undefined ||
+        specifications
+            ?.swing_weight_unstrung !==
+            undefined
+    ) {
+
+        return "unstrung";
+    }
+
+
+    if (
+        specifications
+            ?.swingweight_strung !==
+            undefined ||
+        specifications
+            ?.swing_weight_strung !==
+            undefined
+    ) {
+
+        return "strung";
+    }
+
+
+    if (
+        specifications
+            ?.swing_weight !==
+            undefined ||
+        specifications
+            ?.swingweight !==
+            undefined
+    ) {
+
+        return "unknown";
+    }
+
+
+    return null;
 }
 
 
@@ -614,6 +674,11 @@ export function normalizeRacquetRecord(
 
         swingweight:
             getRacquetSwingweight(
+                raw
+            ),
+
+        swingweight_basis:
+            getRacquetSwingweightBasis(
                 raw
             ),
 

@@ -19,20 +19,20 @@ const checks = [
 
   {
     id:
-      "comparison_frontend_uses_canonical_locale_identity",
+      "comparison_frontend_uses_locale_object_contract",
 
     pass:
       chatManager.includes(
-        "comparisonView.locale ??"
+        "?.locale"
       ) &&
       chatManager.includes(
-        'locale === "zh-CN"'
+        "?.code ??"
       ) &&
       chatManager.includes(
-        'locale === "zh-HK"'
+        "getComparisonPresentation"
       ) &&
       chatManager.includes(
-        'locale === "zh-TW"'
+        "comparisonI18n"
       )
   },
 
@@ -325,10 +325,10 @@ const checks = [
         "comparison-player-fit-prompt"
       ) &&
       chatManager.includes(
-        "获得你的个性化匹配"
+        ".personalized_prompt_title"
       ) &&
       chatManager.includes(
-        "Complete your player profile"
+        ".personalized_prompt_text"
       )
   },
 

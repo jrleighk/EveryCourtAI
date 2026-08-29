@@ -158,19 +158,29 @@ async function run() {
 
         {
             id:
-                "swingweight_delta",
+                "swingweight_basis_unverified",
 
             pass:
                 result.specifications
                     ?.swingweight
-                    ?.available === true &&
+                    ?.available === false &&
                 result.specifications
                     ?.swingweight
-                    ?.delta === -45 &&
+                    ?.value_a === 290 &&
+                result.specifications
+                    ?.swingweight
+                    ?.value_b === 335 &&
+                result.specifications
+                    ?.swingweight
+                    ?.delta === null &&
                 result.specifications
                     ?.swingweight
                     ?.relation ===
-                    "b_higher"
+                    "unavailable" &&
+                result.specifications
+                    ?.swingweight
+                    ?.reason ===
+                    "measurement_basis_unverified"
         },
 
         {

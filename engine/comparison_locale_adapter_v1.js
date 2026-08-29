@@ -88,7 +88,7 @@ export function normalizeComparisonLocale(
     if (
         normalized === "zh-tw"
     ) {
-        return "zh-TW";
+        return "zh-HK";
     }
 
 
@@ -109,6 +109,24 @@ export function normalizeComparisonLocale(
         )
     ) {
         return "ja";
+    }
+
+    if (
+        normalized === "fr" ||
+        normalized.startsWith(
+            "fr-"
+        )
+    ) {
+        return "fr";
+    }
+
+    if (
+        normalized === "es" ||
+        normalized.startsWith(
+            "es-"
+        )
+    ) {
+        return "es";
     }
 
 
@@ -162,19 +180,35 @@ export function resolveComparisonLocale(
             };
 
 
-        case "zh-TW":
+        case "fr":
             return {
                 locale:
-                    "zh-TW",
+                    "fr",
 
                 source_language:
-                    "cn",
+                    "en",
 
                 fallback:
-                    false,
+                    true,
 
                 fallback_locale:
-                    null
+                    "en"
+            };
+
+
+        case "es":
+            return {
+                locale:
+                    "es",
+
+                source_language:
+                    "en",
+
+                fallback:
+                    true,
+
+                fallback_locale:
+                    "en"
             };
 
 

@@ -130,6 +130,95 @@ function compareNumeric(
 }
 
 
+function compareSwingweight(
+    productA,
+    productB
+) {
+
+    const valueA =
+        productA
+            ?.specifications
+            ?.swingweight;
+
+    const valueB =
+        productB
+            ?.specifications
+            ?.swingweight;
+
+    const basisA =
+        productA
+            ?.specifications
+            ?.swingweight_basis ??
+        null;
+
+    const basisB =
+        productB
+            ?.specifications
+            ?.swingweight_basis ??
+        null;
+
+
+    const basisComparable =
+        (
+            basisA === "unstrung" ||
+            basisA === "strung"
+        ) &&
+        basisA ===
+            basisB;
+
+
+    if (
+        !basisComparable
+    ) {
+
+        return {
+            available:
+                false,
+
+            value_a:
+                valueA ??
+                null,
+
+            value_b:
+                valueB ??
+                null,
+
+            delta:
+                null,
+
+            relation:
+                "unavailable",
+
+            basis_a:
+                basisA,
+
+            basis_b:
+                basisB,
+
+            reason:
+                "measurement_basis_unverified"
+        };
+    }
+
+
+    return {
+        ...compareNumeric(
+            valueA,
+            valueB
+        ),
+
+        basis_a:
+            basisA,
+
+        basis_b:
+            basisB,
+
+        reason:
+            null
+    };
+}
+
+
 function compareText(
     valueA,
     valueB
@@ -331,6 +420,21 @@ export function analyzeRacquetComparison(
         const field
         of NUMERIC_SPEC_FIELDS
     ) {
+
+        if (
+            field ===
+            "swingweight"
+        ) {
+
+            specifications[field] =
+                compareSwingweight(
+                    productA,
+                    productB
+                );
+
+            continue;
+        }
+
 
         specifications[field] =
             compareNumeric(

@@ -238,7 +238,7 @@ const cases = [
     "specification_row_count",
     answer.objective
       ?.specifications
-      ?.length === 7
+      ?.length === 6
   ),
 
   test(
@@ -317,15 +317,14 @@ test(
   ),
 
   test(
-    "swingweight_row",
+    "swingweight_row_suppressed",
     answer.objective
       ?.specifications
-      ?.find(
+      ?.some(
         item =>
           item.key ===
             "swingweight"
-      )
-      ?.higher_product === "b"
+      ) === false
   ),
 
   test(

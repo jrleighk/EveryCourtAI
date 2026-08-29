@@ -91,6 +91,18 @@ const en =
         "en"
     );
 
+const fr =
+    buildComparisonViewModel(
+        comparison,
+        "fr"
+    );
+
+const es =
+    buildComparisonViewModel(
+        comparison,
+        "es"
+    );
+
 const ja =
     buildComparisonViewModel(
         comparison,
@@ -179,11 +191,11 @@ check(
 );
 
 check(
-    "zh_tw_locale_identity",
+    "zh_tw_aliases_to_zh_hk",
     zhTW?.language ===
-        "zh-TW" &&
+        "zh-HK" &&
     zhTW?.locale?.code ===
-        "zh-TW"
+        "zh-HK"
 );
 
 check(
@@ -228,6 +240,68 @@ check(
     "en_no_fallback",
     en?.locale?.fallback ===
         false
+);
+
+
+/**
+ * ============================================================
+ * French Temporary Fallback
+ * ============================================================
+ */
+
+check(
+    "fr_view_ready",
+    fr?.available === true
+);
+
+check(
+    "fr_locale_identity_preserved",
+    fr?.language === "fr" &&
+    fr?.locale?.code === "fr"
+);
+
+check(
+    "fr_uses_en_source",
+    fr?.locale?.source_language ===
+        "en"
+);
+
+check(
+    "fr_fallback_enabled",
+    fr?.locale?.fallback === true &&
+    fr?.locale?.fallback_locale ===
+        "en"
+);
+
+
+/**
+ * ============================================================
+ * Spanish Temporary Fallback
+ * ============================================================
+ */
+
+check(
+    "es_view_ready",
+    es?.available === true
+);
+
+check(
+    "es_locale_identity_preserved",
+    es?.language === "es" &&
+    es?.locale?.code === "es"
+);
+
+check(
+    "es_uses_en_source",
+    es?.locale?.source_language ===
+        "en"
+);
+
+check(
+    "es_fallback_enabled",
+    es?.locale?.fallback === true &&
+    es?.locale?.fallback_locale ===
+        "en"
 );
 
 
@@ -284,6 +358,18 @@ check(
 );
 
 check(
+    "french_currently_matches_en_fallback",
+    fr?.summary?.title ===
+        en?.summary?.title
+);
+
+check(
+    "spanish_currently_matches_en_fallback",
+    es?.summary?.title ===
+        en?.summary?.title
+);
+
+check(
     "japanese_currently_matches_en_fallback",
     ja?.summary?.title ===
         en?.summary?.title
@@ -297,9 +383,11 @@ check(
  */
 
 check(
-    "hk_tw_locale_identity_distinct",
-    zhHK?.language !==
-        zhTW?.language
+    "hk_tw_locale_identity_unified",
+    zhHK?.language ===
+        zhTW?.language &&
+    zhHK?.locale?.code ===
+        zhTW?.locale?.code
 );
 
 check(

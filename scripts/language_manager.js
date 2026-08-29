@@ -54,14 +54,20 @@ export const SUPPORTED_LANGUAGES = {
 
     "zh-HK": {
         code: "zh-HK",
-        label: "繁體中文（香港）",
+        label: "繁體中文",
         file: "language/zh-tc.json"
     },
 
-    "zh-TW": {
-        code: "zh-TW",
-        label: "繁體中文（台灣）",
-        file: "language/zh-tc.json"
+    fr: {
+        code: "fr",
+        label: "Français",
+        file: "language/fr.json"
+    },
+
+    es: {
+        code: "es",
+        label: "Español",
+        file: "language/es.json"
     },
 
     ja: {
@@ -130,7 +136,7 @@ export function normalizeLanguageCode(
     if (
         normalized === "zh-tw"
     ) {
-        return "zh-TW";
+        return "zh-HK";
     }
 
     if (
@@ -155,6 +161,24 @@ export function normalizeLanguageCode(
         )
     ) {
         return "ja";
+    }
+
+    if (
+        normalized === "fr" ||
+        normalized.startsWith(
+            "fr-"
+        )
+    ) {
+        return "fr";
+    }
+
+    if (
+        normalized === "es" ||
+        normalized.startsWith(
+            "es-"
+        )
+    ) {
+        return "es";
     }
 
     return normalized;
@@ -186,105 +210,12 @@ function detectBrowserLanguage() {
             );
 
 
-        /**
-         * ----------------------------------
-         * 简体中文
-         * ----------------------------------
-         */
-
         if (
-            normalized === "zh-cn" ||
-            normalized === "zh-sg" ||
-            normalized === "zh-hans" ||
-            normalized === "zh"
+            SUPPORTED_LANGUAGES[
+                normalized
+            ]
         ) {
-            return "zh-CN";
-        }
-
-
-        /**
-         * ----------------------------------
-         * 繁体中文
-         * ----------------------------------
-         */
-
-        if (
-            normalized === "zh-tw" ||
-            normalized === "zh-hk" ||
-            normalized === "zh-mo" ||
-            normalized === "zh-hant"
-        ) {
-            if (
-                normalized === "zh-tw"
-            ) {
-                return "zh-TW";
-            }
-
-            return "zh-HK";
-        }
-
-
-        /**
-         * ----------------------------------
-         * 日语
-         * ----------------------------------
-         */
-
-        if (
-            normalized === "ja" ||
-            normalized.startsWith(
-                "ja-"
-            )
-        ) {
-            return "ja";
-        }
-
-
-        /**
-         * ----------------------------------
-         * 法语
-         * ----------------------------------
-         */
-
-        if (
-            normalized === "fr" ||
-            normalized.startsWith(
-                "fr-"
-            )
-        ) {
-            return "fr";
-        }
-
-
-        /**
-         * ----------------------------------
-         * 西班牙语
-         * ----------------------------------
-         */
-
-        if (
-            normalized === "es" ||
-            normalized.startsWith(
-                "es-"
-            )
-        ) {
-            return "es";
-        }
-
-
-        /**
-         * ----------------------------------
-         * 英语
-         * ----------------------------------
-         */
-
-        if (
-            normalized === "en" ||
-            normalized.startsWith(
-                "en-"
-            )
-        ) {
-            return "en";
+            return normalized;
         }
     }
 
@@ -307,12 +238,21 @@ function getInitialLanguage() {
 
 
     if (
-        savedLanguage &&
-        SUPPORTED_LANGUAGES[
-            savedLanguage
-        ]
+        savedLanguage
     ) {
-        return savedLanguage;
+        const normalizedSavedLanguage =
+            normalizeLanguageCode(
+                savedLanguage
+            );
+
+
+        if (
+            SUPPORTED_LANGUAGES[
+                normalizedSavedLanguage
+            ]
+        ) {
+            return normalizedSavedLanguage;
+        }
     }
 
 

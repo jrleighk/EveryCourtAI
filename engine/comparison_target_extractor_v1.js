@@ -184,6 +184,10 @@ function detectComparisonSubtype(
         /(?:请|帮我)?比较/i
             .test(
                 text
+            ) ||
+        /\bcompare\b[\s\S]+?\b(?:and|with)\b/i
+            .test(
+                text
             )
     ) {
 
@@ -292,7 +296,7 @@ function splitComparisonTargets(
     const parts =
         stripped
             .split(
-                /\s+(?:vs\.?|versus)\s+|(?:和|与|跟|对比|相比)/i
+                /\s+(?:vs\.?|versus|and|with)\s+|(?:和|与|跟|对比|相比)/i
             )
             .map(
                 cleanSegment
