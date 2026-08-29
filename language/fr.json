@@ -155,6 +155,8 @@
         "moderate": "Modérée",
         "severe": "Importante"
       }
-    }
+    },
+    "expand": "Compléter le profil",
+    "collapse": "Masquer le profil"
   }
 }

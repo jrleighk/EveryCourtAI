@@ -692,7 +692,14 @@
     }
 
     .player-profile-head {
-      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .player-profile-heading {
+      min-width: 0;
     }
 
     .player-profile-title {
@@ -708,7 +715,40 @@
       opacity: 0.68;
     }
 
+    .player-profile-toggle {
+      flex: 0 0 auto;
+      min-height: 38px;
+      padding: 0 13px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 11px;
+      background: rgba(255, 255, 255, 0.055);
+      color: inherit;
+      font: inherit;
+      font-size: 12px;
+      font-weight: 650;
+      cursor: pointer;
+    }
+
+    .player-profile-toggle:hover {
+      background: rgba(255, 255, 255, 0.085);
+    }
+
+    .player-profile-toggle-collapse {
+      display: none;
+    }
+
+    .player-profile-toggle[aria-expanded="true"]
+    .player-profile-toggle-expand {
+      display: none;
+    }
+
+    .player-profile-toggle[aria-expanded="true"]
+    .player-profile-toggle-collapse {
+      display: inline;
+    }
+
     .player-profile-grid {
+      margin-top: 14px;
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 12px;
@@ -793,6 +833,15 @@
     }
 
     @media (max-width: 480px) {
+      .player-profile-head {
+        align-items: flex-start;
+      }
+
+      .player-profile-toggle {
+        min-height: 36px;
+        padding: 0 11px;
+      }
+
       .player-profile-grid {
         grid-template-columns: 1fr;
       }
@@ -2689,24 +2738,55 @@
 
           <div class="player-profile-head">
 
-            <h3
-              class="player-profile-title"
-              data-i18n="profile.title"
-            >
-              Player Profile
-            </h3>
+            <div class="player-profile-heading">
 
-            <div
-              class="player-profile-subtitle"
-              data-i18n="profile.subtitle"
-            >
-              Basic information for more personalized equipment analysis.
+              <h3
+                class="player-profile-title"
+                data-i18n="profile.title"
+              >
+                Player Profile
+              </h3>
+
+              <div
+                class="player-profile-subtitle"
+                data-i18n="profile.subtitle"
+              >
+                Basic information for more personalized equipment analysis.
+              </div>
+
             </div>
+
+
+            <button
+              class="player-profile-toggle"
+              id="playerProfileToggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="playerProfileFields"
+            >
+              <span
+                class="player-profile-toggle-expand"
+                data-i18n="profile.expand"
+              >
+                Complete profile
+              </span>
+
+              <span
+                class="player-profile-toggle-collapse"
+                data-i18n="profile.collapse"
+              >
+                Hide profile
+              </span>
+            </button>
 
           </div>
 
 
-          <div class="player-profile-grid">
+          <div
+            class="player-profile-grid"
+            id="playerProfileFields"
+            hidden
+          >
 
             <div class="profile-field">
               <label

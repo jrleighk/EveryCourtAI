@@ -154,6 +154,8 @@
         "moderate": "中等",
         "severe": "明顯"
       }
-    }
+    },
+    "expand": "完善資料",
+    "collapse": "收起資料"
   }
 }

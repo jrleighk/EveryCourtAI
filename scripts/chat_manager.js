@@ -3444,6 +3444,58 @@ window.EveryCourtChat = {
 
 /**
  * ============================================================
+ * Player Profile Disclosure
+ * ============================================================
+ */
+
+const playerProfileToggle =
+    document.getElementById(
+        "playerProfileToggle"
+    );
+
+
+const playerProfileFields =
+    document.getElementById(
+        "playerProfileFields"
+    );
+
+
+if (
+    playerProfileToggle &&
+    playerProfileFields
+) {
+
+    playerProfileToggle
+        .addEventListener(
+            "click",
+            () => {
+
+                const expanded =
+                    playerProfileToggle
+                        .getAttribute(
+                            "aria-expanded"
+                        ) ===
+                        "true";
+
+
+                playerProfileToggle
+                    .setAttribute(
+                        "aria-expanded",
+                        String(
+                            !expanded
+                        )
+                    );
+
+
+                playerProfileFields.hidden =
+                    expanded;
+            }
+        );
+}
+
+
+/**
+ * ============================================================
  * New Analysis Button
  * ============================================================
  */
