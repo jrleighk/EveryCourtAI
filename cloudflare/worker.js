@@ -2686,10 +2686,9 @@ function buildFollowUpAnswer(
 
 
     if (
-        normalizedLanguage === "zh" ||
-        normalizedLanguage === "zh-cn" ||
-        normalizedLanguage === "zh-tc" ||
-        normalizedLanguage === "zh-tw"
+        normalizedLanguage === "zh-CN" ||
+        normalizedLanguage === "zh-HK" ||
+        normalizedLanguage === "zh-TW"
     ) {
 
         const questionTexts =
@@ -2789,8 +2788,7 @@ function buildFinalAnswer(
 
 
     if (
-        normalizedLanguage === "zh" ||
-        normalizedLanguage === "zh-cn"
+        normalizedLanguage === "zh-CN"
     ) {
 
         return (
@@ -2806,8 +2804,8 @@ function buildFinalAnswer(
 
 
     if (
-        normalizedLanguage === "zh-tc" ||
-        normalizedLanguage === "zh-tw"
+        normalizedLanguage === "zh-HK" ||
+        normalizedLanguage === "zh-TW"
     ) {
 
         return (
@@ -3164,7 +3162,67 @@ function normalizeLanguage(
     const normalized =
         language
             .trim()
-            .toLowerCase();
+            .toLowerCase()
+            .replace(/_/g, "-");
+
+
+    if (
+        normalized === "zh" ||
+        normalized === "zh-cn" ||
+        normalized === "zh-sg" ||
+        normalized === "zh-hans"
+    ) {
+
+        return "zh-CN";
+    }
+
+
+    if (
+        normalized === "zh-hk" ||
+        normalized === "zh-mo" ||
+        normalized === "zh-tc"
+    ) {
+
+        return "zh-HK";
+    }
+
+
+    if (
+        normalized === "zh-tw"
+    ) {
+
+        return "zh-TW";
+    }
+
+
+    if (
+        normalized === "zh-hant"
+    ) {
+
+        return "zh-HK";
+    }
+
+
+    if (
+        normalized === "en" ||
+        normalized.startsWith(
+            "en-"
+        )
+    ) {
+
+        return "en";
+    }
+
+
+    if (
+        normalized === "ja" ||
+        normalized.startsWith(
+            "ja-"
+        )
+    ) {
+
+        return "ja";
+    }
 
 
     return (

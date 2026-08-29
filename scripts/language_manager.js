@@ -46,15 +46,21 @@ export const SUPPORTED_LANGUAGES = {
         file: "language/en.json"
     },
 
-    zh: {
-        code: "zh",
+    "zh-CN": {
+        code: "zh-CN",
         label: "简体中文",
         file: "language/zh.json"
     },
 
-    "zh-tc": {
-        code: "zh-tc",
-        label: "繁體中文",
+    "zh-HK": {
+        code: "zh-HK",
+        label: "繁體中文（香港）",
+        file: "language/zh-tc.json"
+    },
+
+    "zh-TW": {
+        code: "zh-TW",
+        label: "繁體中文（台灣）",
         file: "language/zh-tc.json"
     },
 
@@ -62,18 +68,6 @@ export const SUPPORTED_LANGUAGES = {
         code: "ja",
         label: "日本語",
         file: "language/ja.json"
-    },
-
-    fr: {
-        code: "fr",
-        label: "Français",
-        file: "language/fr.json"
-    },
-
-    es: {
-        code: "es",
-        label: "Español",
-        file: "language/es.json"
     }
 };
 
@@ -100,7 +94,7 @@ const translationCache =
  * ============================================================
  */
 
-function normalizeLanguageCode(
+export function normalizeLanguageCode(
     languageCode
 ) {
     if (
@@ -110,10 +104,60 @@ function normalizeLanguageCode(
         return DEFAULT_LANGUAGE;
     }
 
-    return languageCode
-        .trim()
-        .toLowerCase()
-        .replace("_", "-");
+    const normalized =
+        languageCode
+            .trim()
+            .toLowerCase()
+            .replace(/_/g, "-");
+
+    if (
+        normalized === "zh" ||
+        normalized === "zh-cn" ||
+        normalized === "zh-sg" ||
+        normalized === "zh-hans"
+    ) {
+        return "zh-CN";
+    }
+
+    if (
+        normalized === "zh-hk" ||
+        normalized === "zh-mo" ||
+        normalized === "zh-tc"
+    ) {
+        return "zh-HK";
+    }
+
+    if (
+        normalized === "zh-tw"
+    ) {
+        return "zh-TW";
+    }
+
+    if (
+        normalized === "zh-hant"
+    ) {
+        return "zh-HK";
+    }
+
+    if (
+        normalized === "en" ||
+        normalized.startsWith(
+            "en-"
+        )
+    ) {
+        return "en";
+    }
+
+    if (
+        normalized === "ja" ||
+        normalized.startsWith(
+            "ja-"
+        )
+    ) {
+        return "ja";
+    }
+
+    return normalized;
 }
 
 
@@ -154,7 +198,7 @@ function detectBrowserLanguage() {
             normalized === "zh-hans" ||
             normalized === "zh"
         ) {
-            return "zh";
+            return "zh-CN";
         }
 
 
@@ -170,7 +214,13 @@ function detectBrowserLanguage() {
             normalized === "zh-mo" ||
             normalized === "zh-hant"
         ) {
-            return "zh-tc";
+            if (
+                normalized === "zh-tw"
+            ) {
+                return "zh-TW";
+            }
+
+            return "zh-HK";
         }
 
 
