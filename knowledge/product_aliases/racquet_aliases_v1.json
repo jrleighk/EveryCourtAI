@@ -57,6 +57,196 @@
       "canonical_series": "Pure Drive",
       "confidence": "high",
       "source": "product_name_variant"
+    },
+    {
+      "alias": "Pure Aero",
+      "locale": "global",
+      "alias_type": "series_name",
+      "status": "ambiguous",
+      "canonical_id": null,
+      "canonical_series": "Pure Aero",
+      "confidence": "high",
+      "source": "canonical_series"
+    },
+    {
+      "alias": "Pure Strike",
+      "locale": "global",
+      "alias_type": "series_name",
+      "status": "ambiguous",
+      "canonical_id": null,
+      "canonical_series": "Pure Strike",
+      "confidence": "high",
+      "source": "canonical_series"
+    },
+    {
+      "alias": "PA",
+      "locale": "global",
+      "alias_type": "abbreviation",
+      "status": "ambiguous",
+      "canonical_id": null,
+      "canonical_series": "Pure Aero",
+      "confidence": "medium",
+      "source": "tennis_community_usage"
+    },
+    {
+      "alias": "Blade",
+      "locale": "global",
+      "alias_type": "series_name",
+      "status": "ambiguous",
+      "canonical_id": null,
+      "canonical_series": "Blade",
+      "confidence": "high",
+      "source": "canonical_series"
+    },
+    {
+      "alias": "Pro Staff",
+      "locale": "global",
+      "alias_type": "series_name",
+      "status": "ambiguous",
+      "canonical_id": null,
+      "canonical_series": "Pro Staff",
+      "confidence": "high",
+      "source": "canonical_series"
+    },
+    {
+      "alias": "Ultra",
+      "locale": "global",
+      "alias_type": "series_name",
+      "status": "ambiguous",
+      "canonical_id": null,
+      "canonical_series": "Ultra",
+      "confidence": "high",
+      "source": "canonical_series"
+    },
+    {
+      "alias": "Clash",
+      "locale": "global",
+      "alias_type": "series_name",
+      "status": "ambiguous",
+      "canonical_id": null,
+      "canonical_series": "Clash",
+      "confidence": "high",
+      "source": "canonical_series"
+    },
+    {
+      "alias": "Shift",
+      "locale": "global",
+      "alias_type": "series_name",
+      "status": "ambiguous",
+      "canonical_id": null,
+      "canonical_series": "Shift",
+      "confidence": "high",
+      "source": "canonical_series"
+    },
+    {
+      "alias": "Defy",
+      "locale": "global",
+      "alias_type": "series_name",
+      "status": "ambiguous",
+      "canonical_id": null,
+      "canonical_series": "Defy",
+      "confidence": "high",
+      "source": "canonical_series"
+    },
+    {
+      "alias": "RF",
+      "locale": "global",
+      "alias_type": "abbreviation",
+      "status": "ambiguous",
+      "canonical_id": null,
+      "canonical_series": "RF",
+      "confidence": "high",
+      "source": "product_family_abbreviation"
+    },
+    {
+      "alias": "Speed",
+      "locale": "global",
+      "alias_type": "series_name",
+      "status": "ambiguous",
+      "canonical_id": null,
+      "canonical_series": "Speed",
+      "confidence": "high",
+      "source": "canonical_series"
+    },
+    {
+      "alias": "Boom",
+      "locale": "global",
+      "alias_type": "series_name",
+      "status": "ambiguous",
+      "canonical_id": null,
+      "canonical_series": "Boom",
+      "confidence": "high",
+      "source": "canonical_series"
+    },
+    {
+      "alias": "Extreme",
+      "locale": "global",
+      "alias_type": "series_name",
+      "status": "ambiguous",
+      "canonical_id": null,
+      "canonical_series": "Extreme",
+      "confidence": "high",
+      "source": "canonical_series"
+    },
+    {
+      "alias": "Gravity",
+      "locale": "global",
+      "alias_type": "series_name",
+      "status": "ambiguous",
+      "canonical_id": null,
+      "canonical_series": "Gravity",
+      "confidence": "high",
+      "source": "canonical_series"
+    },
+    {
+      "alias": "Radical",
+      "locale": "global",
+      "alias_type": "series_name",
+      "status": "ambiguous",
+      "canonical_id": null,
+      "canonical_series": "Radical",
+      "confidence": "high",
+      "source": "canonical_series"
+    },
+    {
+      "alias": "EZONE",
+      "locale": "global",
+      "alias_type": "series_name",
+      "status": "ambiguous",
+      "canonical_id": null,
+      "canonical_series": "EZONE",
+      "confidence": "high",
+      "source": "canonical_series"
+    },
+    {
+      "alias": "VCORE",
+      "locale": "global",
+      "alias_type": "series_name",
+      "status": "ambiguous",
+      "canonical_id": null,
+      "canonical_series": "VCORE",
+      "confidence": "high",
+      "source": "canonical_series"
+    },
+    {
+      "alias": "PERCEPT",
+      "locale": "global",
+      "alias_type": "series_name",
+      "status": "ambiguous",
+      "canonical_id": null,
+      "canonical_series": "PERCEPT",
+      "confidence": "high",
+      "source": "canonical_series"
+    },
+    {
+      "alias": "MUSE",
+      "locale": "global",
+      "alias_type": "series_name",
+      "status": "ambiguous",
+      "canonical_id": null,
+      "canonical_series": "MUSE",
+      "confidence": "high",
+      "source": "canonical_series"
     }
   ]
 }
