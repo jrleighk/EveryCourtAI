@@ -1227,6 +1227,20 @@ async function handleAI(
                     true
             ) {
 
+                const clarificationPresentation =
+                    buildComparisonClarificationAnswer({
+                        unresolvedTargets:
+                            clarificationResult
+                                ?.unresolved_targets ??
+                            pendingComparisonContext
+                                ?.unresolved_targets ??
+                            [],
+
+                        locale:
+                            language
+                    });
+
+
                 return jsonResponse({
 
                     success:
@@ -1256,17 +1270,11 @@ async function handleAI(
                         "comparison_clarification_required",
 
                     answer:
-                        buildComparisonClarificationAnswer({
-                            unresolvedTargets:
-                                clarificationResult
-                                    ?.unresolved_targets ??
-                                pendingComparisonContext
-                                    ?.unresolved_targets ??
-                                [],
+                        clarificationPresentation
+                            .answer,
 
-                            locale:
-                                language
-                        }).answer,
+                    comparison_clarification:
+                        clarificationPresentation,
 
                     parser:
                         parserResult,
@@ -1675,6 +1683,18 @@ async function handleAI(
                     );
 
 
+                const clarificationPresentation =
+                    buildComparisonClarificationAnswer({
+                        unresolvedTargets:
+                            comparisonResolution
+                                ?.unresolved_targets ??
+                            [],
+
+                        locale:
+                            language
+                    });
+
+
                 return jsonResponse({
 
                     success:
@@ -1707,15 +1727,11 @@ async function handleAI(
                         "comparison_clarification_required",
 
                     answer:
-                        buildComparisonClarificationAnswer({
-                            unresolvedTargets:
-                                comparisonResolution
-                                    ?.unresolved_targets ??
-                                [],
+                        clarificationPresentation
+                            .answer,
 
-                            locale:
-                                language
-                        }).answer,
+                    comparison_clarification:
+                        clarificationPresentation,
 
                     parser:
                         parserResult,

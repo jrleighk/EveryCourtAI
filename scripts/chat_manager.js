@@ -327,6 +327,246 @@ export function addMessage(
 
 /**
  * ============================================================
+ * Comparison Clarification Renderer V1
+ * ============================================================
+ *
+ * Source:
+ *
+ * result.comparison_clarification
+ *
+ * Candidate selection deliberately reuses the normal prompt
+ * submission path. This preserves conversationState and lets
+ * the existing backend clarification resolver complete the
+ * pending comparison.
+ *
+ * ============================================================
+ */
+
+export function renderComparisonClarification(
+    clarification
+) {
+
+    if (
+        !messagesElement ||
+        !isPlainObject(
+            clarification
+        ) ||
+        clarification.available !==
+            true
+    ) {
+
+        return null;
+    }
+
+
+    const candidates =
+        Array.isArray(
+            clarification.candidates
+        )
+            ? clarification.candidates
+            : [];
+
+
+    if (
+        candidates.length ===
+            0
+    ) {
+
+        return null;
+    }
+
+
+    const wrapper =
+        document.createElement(
+            "div"
+        );
+
+
+    wrapper.className =
+        "message ai comparison-clarification-message";
+
+
+    const label =
+        document.createElement(
+            "div"
+        );
+
+
+    label.className =
+        "message-label";
+
+
+    label.textContent =
+        "EveryCourtAI";
+
+
+    const card =
+        document.createElement(
+            "div"
+        );
+
+
+    card.className =
+        "comparison-clarification-card";
+
+
+    const prompt =
+        document.createElement(
+            "div"
+        );
+
+
+    prompt.className =
+        "comparison-clarification-prompt";
+
+
+    prompt.textContent =
+        safeString(
+            clarification.answer
+        );
+
+
+    card.appendChild(
+        prompt
+    );
+
+
+    const candidateList =
+        document.createElement(
+            "div"
+        );
+
+
+    candidateList.className =
+        "comparison-clarification-candidates";
+
+
+    candidates.forEach(
+        candidate => {
+
+            const candidateLabel =
+                safeString(
+                    candidate?.label ??
+                    candidate?.model ??
+                    candidate?.id
+                );
+
+
+            if (
+                !candidateLabel
+            ) {
+
+                return;
+            }
+
+
+            const button =
+                document.createElement(
+                    "button"
+                );
+
+
+            button.type =
+                "button";
+
+
+            button.className =
+                "comparison-clarification-candidate";
+
+
+            button.textContent =
+                candidateLabel;
+
+
+            button.dataset.productId =
+                safeString(
+                    candidate?.id
+                );
+
+
+            button.addEventListener(
+                "click",
+                async () => {
+
+                    if (
+                        isProcessing ||
+                        !promptInputElement
+                    ) {
+
+                        return;
+                    }
+
+
+                    candidateList
+                        .querySelectorAll(
+                            "button"
+                        )
+                        .forEach(
+                            item => {
+
+                                item.disabled =
+                                    true;
+                            }
+                        );
+
+
+                    promptInputElement.value =
+                        candidateLabel;
+
+
+                    resizeTextarea();
+
+
+                    await submitCurrentPrompt();
+                }
+            );
+
+
+            candidateList.appendChild(
+                button
+            );
+        }
+    );
+
+
+    if (
+        candidateList.children.length ===
+            0
+    ) {
+
+        return null;
+    }
+
+
+    card.appendChild(
+        candidateList
+    );
+
+
+    wrapper.appendChild(
+        label
+    );
+
+
+    wrapper.appendChild(
+        card
+    );
+
+
+    messagesElement.appendChild(
+        wrapper
+    );
+
+
+    scrollToBottom();
+
+
+    return wrapper;
+}
+
+
+/**
+ * ============================================================
  * Comparison View Renderer V1
  * ============================================================
  *
@@ -2588,6 +2828,25 @@ export async function submitCurrentPrompt() {
                 "comparison_view_ready";
 
 
+        const hasComparisonClarification =
+            result.status ===
+                "comparison_clarification_required" &&
+            result
+                ?.comparison_clarification
+                ?.available ===
+                true &&
+            Array.isArray(
+                result
+                    ?.comparison_clarification
+                    ?.candidates
+            ) &&
+            result
+                .comparison_clarification
+                .candidates
+                .length >
+                0;
+
+
         if (
             hasComparisonView
         ) {
@@ -2600,6 +2859,20 @@ export async function submitCurrentPrompt() {
             renderComparisonView(
                 result
                     .comparison_view
+            );
+
+        } else if (
+            hasComparisonClarification
+        ) {
+
+            setRecommendationPanelVisible(
+                false
+            );
+
+
+            renderComparisonClarification(
+                result
+                    .comparison_clarification
             );
 
         } else if (

@@ -95,6 +95,28 @@ function normalizeLocale(
 
 
     if (
+        normalized === "fr" ||
+        normalized.startsWith(
+            "fr-"
+        )
+    ) {
+
+        return "fr";
+    }
+
+
+    if (
+        normalized === "es" ||
+        normalized.startsWith(
+            "es-"
+        )
+    ) {
+
+        return "es";
+    }
+
+
+    if (
         normalized === "ja" ||
         normalized.startsWith(
             "ja-"
@@ -239,6 +261,114 @@ function buildCandidateLabel(
 }
 
 
+function getClarificationCandidatePriority(
+    candidate
+) {
+
+    const product =
+        extractCandidateProduct(
+            candidate
+        );
+
+
+    const id =
+        safeString(
+            product?.id
+        ).toLowerCase();
+
+
+    const model =
+        safeString(
+            product?.model
+        ).toLowerCase();
+
+
+    const identity =
+        `${id} ${model}`;
+
+
+    /*
+     * Tier 3
+     * Special editions / collaborations.
+     *
+     * Presentation priority only.
+     * This does NOT change resolver confidence or identity.
+     */
+
+    const specialSignals = [
+        "limited",
+        "special edition",
+        "collector",
+        "anniversary",
+        "laver cup",
+        "wimbledon",
+        "us open",
+        "roland garros",
+        "osaka",
+        "kith",
+        "gucci",
+        "minions",
+        "legend",
+        "hall of fame",
+        "autograph",
+        "reverse",
+        "collaboration"
+    ];
+
+
+    if (
+        specialSignals.some(
+            signal =>
+                identity.includes(
+                    signal
+                )
+        )
+    ) {
+
+        return 300;
+    }
+
+
+    /*
+     * Tier 2
+     * Standard product variants.
+     */
+
+    const variantSignals = [
+        " pro ",
+        " tour ",
+        " mp l",
+        "100l",
+        "100ul",
+        "98l",
+        "100sl",
+        " alpha",
+        "98s"
+    ];
+
+
+    if (
+        variantSignals.some(
+            signal =>
+                ` ${identity} `.includes(
+                    signal
+                )
+        )
+    ) {
+
+        return 200;
+    }
+
+
+    /*
+     * Tier 1
+     * Core / standard production model.
+     */
+
+    return 100;
+}
+
+
 function normalizeCandidateList(
     unresolvedTarget,
     locale,
@@ -250,7 +380,20 @@ function normalizeCandidateList(
             unresolvedTarget
                 ?.candidates
         )
-            ? unresolvedTarget.candidates
+            ? [
+                ...unresolvedTarget.candidates
+            ].sort(
+                (
+                    left,
+                    right
+                ) =>
+                    getClarificationCandidatePriority(
+                        left
+                    ) -
+                    getClarificationCandidatePriority(
+                        right
+                    )
+            )
             : [];
 
 
@@ -304,7 +447,22 @@ function normalizeCandidateList(
 
         candidates.push({
             id,
-            label
+
+            label,
+
+            brand:
+                safeString(
+                    product?.brand
+                ),
+
+            model:
+                safeString(
+                    product?.model
+                ),
+
+            release_year:
+                product?.release_year ??
+                null
         });
 
 
@@ -334,10 +492,152 @@ export function buildComparisonClarificationAnswer({
         );
 
 
-    const chinese =
-        isChineseLocale(
+    const presentation = {
+        en: {
+            multiple:
+                rawText =>
+                    rawText
+                        ? `I found multiple possible “${rawText}” models. Which one do you mean?`
+                        : "I found multiple possible models. Which one do you mean?",
+
+            reply:
+                example =>
+                    example
+                        ? `Reply with the model name above, for example “${example}”.`
+                        : "Reply with the model name above.",
+
+            not_found:
+                rawText =>
+                    rawText
+                        ? `I still cannot identify “${rawText}”. Please provide the brand, full model, or year.`
+                        : "I still cannot identify the racquet. Please provide the brand, full model, or year.",
+
+            unidentified:
+                "I cannot uniquely identify the racquet yet. Please provide a more complete model name."
+        },
+
+        "zh-CN": {
+            multiple:
+                rawText =>
+                    rawText
+                        ? `我找到了多个可能的“${rawText}”型号。你指的是哪一款？`
+                        : "我找到了多个可能的型号。你指的是哪一款？",
+
+            reply:
+                example =>
+                    example
+                        ? `直接回复上面的型号即可，例如“${example}”。`
+                        : "直接回复上面的型号即可。",
+
+            not_found:
+                rawText =>
+                    rawText
+                        ? `我还无法识别“${rawText}”。请提供品牌、完整型号或年份。`
+                        : "我还无法识别这支球拍。请提供品牌、完整型号或年份。",
+
+            unidentified:
+                "我还不能唯一确定你要比较的球拍，请提供更完整的型号。"
+        },
+
+        "zh-HK": {
+            multiple:
+                rawText =>
+                    rawText
+                        ? `我找到多個可能的「${rawText}」型號。你指的是哪一款？`
+                        : "我找到多個可能的型號。你指的是哪一款？",
+
+            reply:
+                example =>
+                    example
+                        ? `直接回覆上面的型號即可，例如「${example}」。`
+                        : "直接回覆上面的型號即可。",
+
+            not_found:
+                rawText =>
+                    rawText
+                        ? `我仍無法識別「${rawText}」。請提供品牌、完整型號或年份。`
+                        : "我仍無法識別這支球拍。請提供品牌、完整型號或年份。",
+
+            unidentified:
+                "我還不能唯一確定你要比較的球拍，請提供更完整的型號。"
+        },
+
+        fr: {
+            multiple:
+                rawText =>
+                    rawText
+                        ? `J’ai trouvé plusieurs modèles possibles pour « ${rawText} ». Lequel voulez-vous dire ?`
+                        : "J’ai trouvé plusieurs modèles possibles. Lequel voulez-vous dire ?",
+
+            reply:
+                example =>
+                    example
+                        ? `Répondez simplement avec le modèle ci-dessus, par exemple « ${example} ».`
+                        : "Répondez simplement avec le modèle ci-dessus.",
+
+            not_found:
+                rawText =>
+                    rawText
+                        ? `Je ne parviens pas encore à identifier « ${rawText} ». Indiquez la marque, le modèle complet ou l’année.`
+                        : "Je ne parviens pas encore à identifier cette raquette. Indiquez la marque, le modèle complet ou l’année.",
+
+            unidentified:
+                "Je ne peux pas encore identifier précisément la raquette. Indiquez un nom de modèle plus complet."
+        },
+
+        es: {
+            multiple:
+                rawText =>
+                    rawText
+                        ? `He encontrado varios modelos posibles para «${rawText}». ¿A cuál te refieres?`
+                        : "He encontrado varios modelos posibles. ¿A cuál te refieres?",
+
+            reply:
+                example =>
+                    example
+                        ? `Responde con el modelo de arriba, por ejemplo «${example}».`
+                        : "Responde con el modelo de arriba.",
+
+            not_found:
+                rawText =>
+                    rawText
+                        ? `Todavía no puedo identificar «${rawText}». Indica la marca, el modelo completo o el año.`
+                        : "Todavía no puedo identificar la raqueta. Indica la marca, el modelo completo o el año.",
+
+            unidentified:
+                "Todavía no puedo identificar con precisión la raqueta. Indica un nombre de modelo más completo."
+        },
+
+        ja: {
+            multiple:
+                rawText =>
+                    rawText
+                        ? `「${rawText}」には複数の候補があります。どのモデルですか？`
+                        : "複数の候補があります。どのモデルですか？",
+
+            reply:
+                example =>
+                    example
+                        ? `上のモデル名をそのまま返信してください。例：「${example}」`
+                        : "上のモデル名をそのまま返信してください。",
+
+            not_found:
+                rawText =>
+                    rawText
+                        ? `「${rawText}」をまだ特定できません。ブランド、正式なモデル名、または年式を入力してください。`
+                        : "ラケットをまだ特定できません。ブランド、正式なモデル名、または年式を入力してください。",
+
+            unidentified:
+                "比較するラケットをまだ一意に特定できません。より詳しいモデル名を入力してください。"
+        }
+    };
+
+
+    const copy =
+        presentation[
             normalizedLocale
-        );
+        ] ??
+        presentation.en;
 
 
     const unresolved =
@@ -370,9 +670,7 @@ export function buildComparisonClarificationAnswer({
                 normalizedLocale,
 
             answer:
-                chinese
-                    ? "我还不能唯一确定你要比较的球拍，请提供更完整的型号。"
-                    : "I cannot uniquely identify the racquet yet. Please provide a more complete model name.",
+                copy.unidentified,
 
             target:
                 null,
@@ -422,17 +720,9 @@ export function buildComparisonClarificationAnswer({
                 normalizedLocale,
 
             answer:
-                chinese
-                    ? (
-                        rawText
-                            ? `我还无法识别“${rawText}”。请提供品牌、完整型号或年份。`
-                            : "我还无法识别这支球拍。请提供品牌、完整型号或年份。"
-                    )
-                    : (
-                        rawText
-                            ? `I still cannot identify “${rawText}”. Please provide the brand, full model, or year.`
-                            : "I still cannot identify the racquet. Please provide the brand, full model, or year."
-                    ),
+                copy.not_found(
+                    rawText
+                ),
 
             target: {
                 raw_text:
@@ -458,30 +748,26 @@ export function buildComparisonClarificationAnswer({
         );
 
 
+    const example =
+        candidates[0]
+            ?.label ??
+        "";
+
+
     const answer =
-        chinese
-            ? [
+        [
+            copy.multiple(
                 rawText
-                    ? `我找到了多个可能的“${rawText}”型号。你指的是哪一款？`
-                    : "我找到了多个可能的型号。你指的是哪一款？",
-                "",
-                ...lines,
-                "",
-                "你可以直接回复型号关键词，例如“Spectra 2026”或“Pure Drive 98”。"
-            ].join(
-                "\n"
+            ),
+            "",
+            ...lines,
+            "",
+            copy.reply(
+                example
             )
-            : [
-                rawText
-                    ? `I found multiple possible “${rawText}” models. Which one do you mean?`
-                    : "I found multiple possible models. Which one do you mean?",
-                "",
-                ...lines,
-                "",
-                "You can reply with a model keyword, for example “Spectra 2026” or “Pure Drive 98”."
-            ].join(
-                "\n"
-            );
+        ].join(
+            "\n"
+        );
 
 
     return {
