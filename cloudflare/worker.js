@@ -74,6 +74,11 @@ import {
 
 
 import {
+    understandTennisQuery
+} from "../engine/query_understanding_v2.js";
+
+
+import {
     buildIntentResponse
 } from "../engine/intent_response_engine_v1.js";
 
@@ -851,6 +856,53 @@ async function handleAI(
                 500
             );
         }
+
+
+        /**
+         * ====================================================
+         * STEP 8
+         * Query Understanding V2 — Shadow Integration
+         * ====================================================
+         *
+         * Shadow-only contract:
+         *
+         * - runs after Conversation State
+         * - uses accumulated conversation_state context
+         * - does NOT control routing
+         * - does NOT alter Question Intent
+         * - does NOT alter Comparison behavior
+         * - does NOT alter Recommendation behavior
+         * - is NOT exposed in the API response yet
+         *
+         * This allows production Worker behavior to remain
+         * unchanged while Query Understanding V2 is exercised
+         * against real Worker requests.
+         * ====================================================
+         */
+
+        const queryUnderstandingShadow =
+            typeof body?.message ===
+                "string" &&
+            body.message.trim()
+                ? understandTennisQuery(
+                    body.message,
+                    {
+                        conversationState:
+                            conversationResult
+                                ?.conversation_state
+                    }
+                )
+                : null;
+
+
+        /**
+         * Explicitly preserve shadow-only behavior.
+         *
+         * The value is intentionally not consumed by routing
+         * during 8O-C2A.
+         */
+
+        void queryUnderstandingShadow;
 
 
         /**
