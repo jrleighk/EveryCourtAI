@@ -812,7 +812,7 @@ export function buildComparisonViewModel(
         summary:
             buildSummary(
                 orchestratorResult,
-                normalizedLanguage
+                canonicalLocale
             ),
 
         dimensions,

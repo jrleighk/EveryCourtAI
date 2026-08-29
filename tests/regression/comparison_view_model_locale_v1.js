@@ -245,7 +245,7 @@ check(
 
 /**
  * ============================================================
- * French Temporary Fallback
+ * French Native Locale
  * ============================================================
  */
 
@@ -261,22 +261,22 @@ check(
 );
 
 check(
-    "fr_uses_en_source",
+    "fr_uses_native_source",
     fr?.locale?.source_language ===
-        "en"
+        "fr"
 );
 
 check(
-    "fr_fallback_enabled",
-    fr?.locale?.fallback === true &&
+    "fr_no_fallback",
+    fr?.locale?.fallback === false &&
     fr?.locale?.fallback_locale ===
-        "en"
+        null
 );
 
 
 /**
  * ============================================================
- * Spanish Temporary Fallback
+ * Spanish Native Locale
  * ============================================================
  */
 
@@ -292,22 +292,22 @@ check(
 );
 
 check(
-    "es_uses_en_source",
+    "es_uses_native_source",
     es?.locale?.source_language ===
-        "en"
+        "es"
 );
 
 check(
-    "es_fallback_enabled",
-    es?.locale?.fallback === true &&
+    "es_no_fallback",
+    es?.locale?.fallback === false &&
     es?.locale?.fallback_locale ===
-        "en"
+        null
 );
 
 
 /**
  * ============================================================
- * Japanese Fallback
+ * Japanese Native Locale
  * ============================================================
  */
 
@@ -323,23 +323,23 @@ check(
 );
 
 check(
-    "ja_uses_en_source",
+    "ja_uses_native_source",
     ja?.locale
         ?.source_language ===
-        "en"
+        "ja"
 );
 
 check(
-    "ja_fallback_enabled",
+    "ja_no_fallback",
     ja?.locale?.fallback ===
-        true
+        false
 );
 
 check(
-    "ja_fallback_locale_en",
+    "ja_fallback_locale_null",
     ja?.locale
         ?.fallback_locale ===
-        "en"
+        null
 );
 
 
@@ -358,21 +358,21 @@ check(
 );
 
 check(
-    "french_currently_matches_en_fallback",
-    fr?.summary?.title ===
-        en?.summary?.title
+    "french_locale_view_available",
+    typeof fr?.summary?.title ===
+        "string"
 );
 
 check(
-    "spanish_currently_matches_en_fallback",
-    es?.summary?.title ===
-        en?.summary?.title
+    "spanish_locale_view_available",
+    typeof es?.summary?.title ===
+        "string"
 );
 
 check(
-    "japanese_currently_matches_en_fallback",
-    ja?.summary?.title ===
-        en?.summary?.title
+    "japanese_locale_view_available",
+    typeof ja?.summary?.title ===
+        "string"
 );
 
 
@@ -395,6 +395,141 @@ check(
     zhCN?.language !==
         zhHK?.language
 );
+
+
+/**
+ * ============================================================
+ * Native Narrative Content Contract
+ * ============================================================
+ */
+
+const getNarrativeText = (
+    view
+) =>
+    Array.isArray(
+        view
+            ?.summary
+            ?.narrative
+    )
+        ? view
+            .summary
+            .narrative
+            .map(
+                item =>
+                    item?.text ?? ""
+            )
+            .join(" ")
+        : "";
+
+
+const zhCNNarrative =
+    getNarrativeText(
+        zhCN
+    );
+
+const zhHKNarrative =
+    getNarrativeText(
+        zhHK
+    );
+
+const enNarrative =
+    getNarrativeText(
+        en
+    );
+
+const frNarrative =
+    getNarrativeText(
+        fr
+    );
+
+const esNarrative =
+    getNarrativeText(
+        es
+    );
+
+const jaNarrative =
+    getNarrativeText(
+        ja
+    );
+
+
+check(
+    "zh_cn_narrative_is_chinese",
+    /[\u4e00-\u9fff]/.test(
+        zhCNNarrative
+    ) &&
+    !zhCNNarrative.includes(
+        "is lighter in static weight"
+    )
+);
+
+
+check(
+    "zh_hk_narrative_uses_chinese_source",
+    /[\u4e00-\u9fff]/.test(
+        zhHKNarrative
+    ) &&
+    !zhHKNarrative.includes(
+        "is lighter in static weight"
+    )
+);
+
+
+check(
+    "en_narrative_is_english",
+    enNarrative.includes(
+        "is lighter in static weight"
+    ) ||
+    enNarrative.includes(
+        "has the larger head size"
+    ) ||
+    enNarrative.includes(
+        "leans more toward"
+    )
+);
+
+
+check(
+    "fr_narrative_is_native",
+    frNarrative.includes(
+        "plus légère"
+    ) ||
+    frNarrative.includes(
+        "tamis"
+    ) ||
+    frNarrative.includes(
+        "privilégie"
+    )
+);
+
+
+check(
+    "es_narrative_is_native",
+    esNarrative.includes(
+        "más ligera"
+    ) ||
+    esNarrative.includes(
+        "cabeza más grande"
+    ) ||
+    esNarrative.includes(
+        "se orienta"
+    )
+);
+
+
+check(
+    "ja_narrative_is_native",
+    /[\u3040-\u30ff]/.test(
+        jaNarrative
+    ) ||
+    jaNarrative.includes(
+        "安定"
+    ) ||
+    jaNarrative.includes(
+        "パワー"
+    )
+);
+
 
 
 /**

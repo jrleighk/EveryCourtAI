@@ -108,7 +108,7 @@ check(
     "normalize_zh_tw",
     normalizeComparisonLocale(
         "zh-TW"
-    ) === "zh-TW"
+    ) === "zh-HK"
 );
 
 
@@ -211,9 +211,9 @@ check(
 
 
 check(
-    "ja_uses_en_source",
+    "ja_uses_native_source",
     ja.source_language ===
-        "en"
+        "ja"
 );
 
 
@@ -240,7 +240,7 @@ check(
 check(
     "zh_tw_identity_preserved",
     zhTW.locale ===
-        "zh-TW"
+        "zh-HK"
 );
 
 
@@ -286,16 +286,16 @@ check(
 
 
 check(
-    "ja_is_fallback",
+    "ja_not_fallback",
     ja.fallback ===
-        true
+        false
 );
 
 
 check(
-    "ja_fallback_locale_en",
+    "ja_fallback_locale_null",
     ja.fallback_locale ===
-        "en"
+        null
 );
 
 
@@ -348,7 +348,7 @@ check(
 
 
 check(
-    "ja_selects_en_fallback",
+    "ja_selects_native_branch",
     selectComparisonLocalizedValue(
         bilingualValue,
         "ja"

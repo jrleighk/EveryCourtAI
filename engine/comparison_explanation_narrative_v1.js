@@ -179,6 +179,96 @@ function buildEaseDemandNarrative(
 
 
     if (
+        language === "fr"
+    ) {
+
+        if (
+            hasWeight &&
+            hasSwingweight
+        ) {
+            return `${easierName} combine un poids statique et un swingweight plus faibles, ce qui facilite le déclenchement et les accélérations répétées ; ${demandingName} demande davantage de préparation et d'effort dans le swing.`;
+        }
+
+
+        if (
+            hasSwingweight
+        ) {
+            return `${easierName} possède un swingweight plus faible et demande donc moins d'effort dynamique ; ${demandingName} exige davantage d'effort dans la durée.`;
+        }
+
+
+        if (
+            hasWeight
+        ) {
+            return `${easierName} est plus légère et plus facile à accélérer ; ${demandingName} offre davantage de masse globale.`;
+        }
+
+
+        return null;
+    }
+
+
+    if (
+        language === "es"
+    ) {
+
+        if (
+            hasWeight &&
+            hasSwingweight
+        ) {
+            return `${easierName} combina menor peso estático y menor swingweight, por lo que resulta más fácil iniciar y acelerar repetidamente; ${demandingName} exige más preparación y esfuerzo de swing.`;
+        }
+
+
+        if (
+            hasSwingweight
+        ) {
+            return `${easierName} tiene un swingweight menor y, por tanto, una exigencia dinámica más baja; ${demandingName} requiere más esfuerzo continuado.`;
+        }
+
+
+        if (
+            hasWeight
+        ) {
+            return `${easierName} es más ligera y más fácil de acelerar; ${demandingName} aporta una mayor sensación de masa.`;
+        }
+
+
+        return null;
+    }
+
+
+    if (
+        language === "ja"
+    ) {
+
+        if (
+            hasWeight &&
+            hasSwingweight
+        ) {
+            return `${easierName}は静的重量とスイングウェイトの両方が低く、振り出しや連続した加速がしやすい一方、${demandingName}はより大きな準備とスイング出力を必要とします。`;
+        }
+
+
+        if (
+            hasSwingweight
+        ) {
+            return `${easierName}はスイングウェイトが低く、動的な負担が小さめです。一方、${demandingName}はより持続的なスイング出力を必要とします。`;
+        }
+
+
+        if (
+            hasWeight
+        ) {
+            return `${easierName}は静的重量が軽く、加速しやすい設計です。一方、${demandingName}はより大きな質量感があります。`;
+        }
+
+
+        return null;
+    }
+
+
+    if (
         hasWeight &&
         hasSwingweight
     ) {
@@ -280,6 +370,96 @@ function buildForgivenessNarrative(
             hasForgivenessDna
         ) {
             return `${primaryName}的容错评分更高，对击球点偏差更宽容。`;
+        }
+
+
+        return null;
+    }
+
+
+    if (
+        language === "fr"
+    ) {
+
+        if (
+            hasHeadSize &&
+            hasForgivenessDna
+        ) {
+            return `${primaryName} bénéficie à la fois d'un tamis plus grand et d'une meilleure tolérance, ce qui aide davantage sur les frappes décentrées.`;
+        }
+
+
+        if (
+            hasHeadSize
+        ) {
+            return `${primaryName} possède un tamis plus grand, offrant une zone de frappe efficace plus importante et davantage de potentiel de tolérance.`;
+        }
+
+
+        if (
+            hasForgivenessDna
+        ) {
+            return `${primaryName} affiche un niveau de tolérance supérieur et pardonne davantage les contacts imparfaits.`;
+        }
+
+
+        return null;
+    }
+
+
+    if (
+        language === "es"
+    ) {
+
+        if (
+            hasHeadSize &&
+            hasForgivenessDna
+        ) {
+            return `${primaryName} presenta ventaja tanto en tamaño de cabeza como en tolerancia, ofreciendo más margen en impactos descentrados.`;
+        }
+
+
+        if (
+            hasHeadSize
+        ) {
+            return `${primaryName} tiene una cabeza más grande, lo que amplía la zona efectiva de golpeo y el potencial de tolerancia.`;
+        }
+
+
+        if (
+            hasForgivenessDna
+        ) {
+            return `${primaryName} tiene una valoración de tolerancia superior y perdona mejor los contactos imperfectos.`;
+        }
+
+
+        return null;
+    }
+
+
+    if (
+        language === "ja"
+    ) {
+
+        if (
+            hasHeadSize &&
+            hasForgivenessDna
+        ) {
+            return `${primaryName}はフェイスサイズと寛容性の両面で優位があり、オフセンター時にもより安定した結果を得やすいです。`;
+        }
+
+
+        if (
+            hasHeadSize
+        ) {
+            return `${primaryName}はより大きなフェイスを持ち、有効打球エリアと寛容性の余裕が大きくなります。`;
+        }
+
+
+        if (
+            hasForgivenessDna
+        ) {
+            return `${primaryName}は寛容性の評価が高く、打点のずれに対してより許容度があります。`;
         }
 
 
@@ -403,6 +583,96 @@ function buildStabilityPlowNarrative(
 
 
     if (
+        language === "fr"
+    ) {
+
+        if (
+            hasSwingweight &&
+            hasWeight
+        ) {
+            return `${stableName} possède davantage de masse globale et de swingweight, ce qui favorise la stabilité et la traversée de balle ; ${lighterName ?? "l'autre raquette"} privilégie davantage la facilité d'accélération.`;
+        }
+
+
+        if (
+            hasStability
+        ) {
+            return `${stableName} présente le profil de stabilité le plus élevé et devrait mieux maintenir la face de raquette face aux balles rapides.`;
+        }
+
+
+        if (
+            hasSwingweight
+        ) {
+            return `${stableName} possède un swingweight plus élevé, apportant davantage de masse dynamique, de stabilité et de traversée de balle.`;
+        }
+
+
+        return null;
+    }
+
+
+    if (
+        language === "es"
+    ) {
+
+        if (
+            hasSwingweight &&
+            hasWeight
+        ) {
+            return `${stableName} tiene más masa total y swingweight, lo que aporta mayor estabilidad y capacidad de atravesar la bola; ${lighterName ?? "la otra raqueta"} está más orientada a una aceleración sencilla.`;
+        }
+
+
+        if (
+            hasStability
+        ) {
+            return `${stableName} presenta el perfil de estabilidad más sólido y debería mantener mejor la cara de la raqueta ante bolas con ritmo.`;
+        }
+
+
+        if (
+            hasSwingweight
+        ) {
+            return `${stableName} tiene un swingweight más alto, aportando mayor masa dinámica, estabilidad y capacidad de atravesar la bola.`;
+        }
+
+
+        return null;
+    }
+
+
+    if (
+        language === "ja"
+    ) {
+
+        if (
+            hasSwingweight &&
+            hasWeight
+        ) {
+            return `${stableName}は全体質量とスイングウェイトが高く、安定性と押し込みの強さにつながります。一方、${lighterName ?? "もう一方のラケット"}はより加速しやすい方向です。`;
+        }
+
+
+        if (
+            hasStability
+        ) {
+            return `${stableName}は安定性の評価が高く、速いボールに対してもラケット面をより安定して保ちやすいです。`;
+        }
+
+
+        if (
+            hasSwingweight
+        ) {
+            return `${stableName}はスイングウェイトが高く、より大きな動的質量によって安定性と押し込みの強さを得やすいです。`;
+        }
+
+
+        return null;
+    }
+
+
+    if (
         hasSwingweight &&
         hasWeight
     ) {
@@ -518,6 +788,42 @@ function buildPerformanceIdentityNarrative(
     };
 
 
+    const labelsFr = {
+        power:
+            "puissance",
+        control:
+            "contrôle",
+        spin:
+            "effets",
+        comfort:
+            "confort"
+    };
+
+
+    const labelsEs = {
+        power:
+            "potencia",
+        control:
+            "control",
+        spin:
+            "efecto",
+        comfort:
+            "comodidad"
+    };
+
+
+    const labelsJa = {
+        power:
+            "パワー",
+        control:
+            "コントロール",
+        spin:
+            "スピン",
+        comfort:
+            "快適性"
+    };
+
+
     const mapLabels = (
         values,
         labels
@@ -568,6 +874,132 @@ function buildPerformanceIdentityNarrative(
         return (
             parts.length > 0
                 ? `${parts.join("；")}。`
+                : null
+        );
+    }
+
+
+    if (
+        language === "fr"
+    ) {
+
+        const parts = [];
+
+
+        if (
+            higherA.length > 0
+        ) {
+            parts.push(
+                `${nameA} privilégie davantage ${higherA.map(key => labelsFr[key] ?? key).join(" et ")}`
+            );
+        }
+
+
+        if (
+            higherB.length > 0
+        ) {
+            parts.push(
+                `${nameB} privilégie davantage ${higherB.map(key => labelsFr[key] ?? key).join(" et ")}`
+            );
+        }
+
+
+        if (
+            equal.length > 0
+        ) {
+            parts.push(
+                `les deux sont proches en ${equal.map(key => labelsFr[key] ?? key).join(" et ")}`
+            );
+        }
+
+
+        return (
+            parts.length > 0
+                ? `${parts.join(" ; ")}.`
+                : null
+        );
+    }
+
+
+    if (
+        language === "es"
+    ) {
+
+        const parts = [];
+
+
+        if (
+            higherA.length > 0
+        ) {
+            parts.push(
+                `${nameA} se orienta más hacia ${higherA.map(key => labelsEs[key] ?? key).join(" y ")}`
+            );
+        }
+
+
+        if (
+            higherB.length > 0
+        ) {
+            parts.push(
+                `${nameB} se orienta más hacia ${higherB.map(key => labelsEs[key] ?? key).join(" y ")}`
+            );
+        }
+
+
+        if (
+            equal.length > 0
+        ) {
+            parts.push(
+                `ambas son similares en ${equal.map(key => labelsEs[key] ?? key).join(" y ")}`
+            );
+        }
+
+
+        return (
+            parts.length > 0
+                ? `${parts.join("; ")}.`
+                : null
+        );
+    }
+
+
+    if (
+        language === "ja"
+    ) {
+
+        const parts = [];
+
+
+        if (
+            higherA.length > 0
+        ) {
+            parts.push(
+                `${nameA}は${higherA.map(key => labelsJa[key] ?? key).join("・")}寄り`
+            );
+        }
+
+
+        if (
+            higherB.length > 0
+        ) {
+            parts.push(
+                `${nameB}は${higherB.map(key => labelsJa[key] ?? key).join("・")}寄り`
+            );
+        }
+
+
+        if (
+            equal.length > 0
+        ) {
+            parts.push(
+                `両者は${equal.map(key => labelsJa[key] ?? key).join("・")}で近い`
+            );
+        }
+
+
+        return (
+            parts.length > 0
+                ? `${parts.join("。")}。`
                 : null
         );
     }
@@ -735,6 +1167,24 @@ export function buildComparisonExplanationNarrative(
             buildLanguageBlock(
                 synthesis,
                 "en"
+            ),
+
+        fr:
+            buildLanguageBlock(
+                synthesis,
+                "fr"
+            ),
+
+        es:
+            buildLanguageBlock(
+                synthesis,
+                "es"
+            ),
+
+        ja:
+            buildLanguageBlock(
+                synthesis,
+                "ja"
             )
     };
 }

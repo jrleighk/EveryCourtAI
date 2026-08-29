@@ -429,6 +429,87 @@ test(
 );
 
 
+test(
+  "fr_native_blocks",
+  Array.isArray(
+    result.fr?.blocks
+  ) &&
+  result.fr.blocks.length > 0 &&
+  result.fr.blocks.some(
+    item =>
+      typeof item?.text === "string" &&
+      (
+        item.text.includes("stabilité") ||
+        item.text.includes("puissance") ||
+        item.text.includes("tolérance") ||
+        item.text.includes("swingweight")
+      )
+  )
+);
+
+
+test(
+  "es_native_blocks",
+  Array.isArray(
+    result.es?.blocks
+  ) &&
+  result.es.blocks.length > 0 &&
+  result.es.blocks.some(
+    item =>
+      typeof item?.text === "string" &&
+      (
+        item.text.includes("estabilidad") ||
+        item.text.includes("potencia") ||
+        item.text.includes("tolerancia") ||
+        item.text.includes("swingweight")
+      )
+  )
+);
+
+
+test(
+  "ja_native_blocks",
+  Array.isArray(
+    result.ja?.blocks
+  ) &&
+  result.ja.blocks.length > 0 &&
+  result.ja.blocks.some(
+    item =>
+      typeof item?.text === "string" &&
+      (
+        item.text.includes("安定") ||
+        item.text.includes("パワー") ||
+        item.text.includes("寛容") ||
+        item.text.includes("スイングウェイト")
+      )
+  )
+);
+
+
+test(
+  "native_product_names_preserved",
+  [
+    result.fr,
+    result.es,
+    result.ja
+  ].every(
+    languageResult =>
+      languageResult
+        ?.blocks
+        ?.some(
+          item =>
+            item.text.includes(
+              "Pure Drive Spectra Edition 2026"
+            ) ||
+            item.text.includes(
+              "RF 01 Pro Classic"
+            )
+        )
+  )
+);
+
+
+
 const invalid =
   buildComparisonExplanationNarrative(
     null

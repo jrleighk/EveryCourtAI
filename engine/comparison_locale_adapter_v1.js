@@ -6,21 +6,25 @@
  *
  * Purpose:
  *
- * Bridge canonical public locales to the existing internal
- * comparison source-language contract.
+ * Bridge canonical public locales to comparison presentation
+ * source languages.
  *
- * Public locales:
+ * Canonical public locales:
  *
  * - en
  * - zh-CN
  * - zh-HK
- * - zh-TW
+ * - fr
+ * - es
  * - ja
  *
- * Internal comparison source languages:
+ * Comparison source languages:
  *
- * - cn
  * - en
+ * - cn
+ * - fr
+ * - es
+ * - ja
  *
  * Important:
  *
@@ -30,11 +34,11 @@
  *
  * 1. normalizes locale aliases
  * 2. preserves canonical locale identity
- * 3. selects the current internal source language
- * 4. exposes whether fallback is being used
+ * 3. selects the matching comparison source language
+ * 4. exposes whether locale fallback is being used
  *
- * Japanese currently falls back to English until dedicated
- * Japanese comparison presentation is implemented.
+ * Traditional Chinese currently shares the canonical Chinese
+ * comparison narrative source. zh-TW remains an alias of zh-HK.
  *
  * ============================================================
  */
@@ -79,13 +83,7 @@ export function normalizeComparisonLocale(
         normalized === "zh-hk" ||
         normalized === "zh-mo" ||
         normalized === "zh-tc" ||
-        normalized === "zh-hant"
-    ) {
-        return "zh-HK";
-    }
-
-
-    if (
+        normalized === "zh-hant" ||
         normalized === "zh-tw"
     ) {
         return "zh-HK";
@@ -103,15 +101,6 @@ export function normalizeComparisonLocale(
 
 
     if (
-        normalized === "ja" ||
-        normalized.startsWith(
-            "ja-"
-        )
-    ) {
-        return "ja";
-    }
-
-    if (
         normalized === "fr" ||
         normalized.startsWith(
             "fr-"
@@ -120,6 +109,7 @@ export function normalizeComparisonLocale(
         return "fr";
     }
 
+
     if (
         normalized === "es" ||
         normalized.startsWith(
@@ -127,6 +117,16 @@ export function normalizeComparisonLocale(
         )
     ) {
         return "es";
+    }
+
+
+    if (
+        normalized === "ja" ||
+        normalized.startsWith(
+            "ja-"
+        )
+    ) {
+        return "ja";
     }
 
 
@@ -186,13 +186,13 @@ export function resolveComparisonLocale(
                     "fr",
 
                 source_language:
-                    "en",
+                    "fr",
 
                 fallback:
-                    true,
+                    false,
 
                 fallback_locale:
-                    "en"
+                    null
             };
 
 
@@ -202,13 +202,13 @@ export function resolveComparisonLocale(
                     "es",
 
                 source_language:
-                    "en",
+                    "es",
 
                 fallback:
-                    true,
+                    false,
 
                 fallback_locale:
-                    "en"
+                    null
             };
 
 
@@ -218,13 +218,13 @@ export function resolveComparisonLocale(
                     "ja",
 
                 source_language:
-                    "en",
+                    "ja",
 
                 fallback:
-                    true,
+                    false,
 
                 fallback_locale:
-                    "en"
+                    null
             };
 
 
@@ -244,6 +244,22 @@ export function resolveComparisonLocale(
                     null
             };
     }
+}
+
+
+function buildComparisonLanguagePriority(
+    sourceLanguage
+) {
+
+    return Array.from(
+        new Set(
+            [
+                sourceLanguage,
+                "en",
+                "cn"
+            ]
+        )
+    );
 }
 
 
@@ -267,39 +283,33 @@ export function selectComparisonLocalizedBranch(
         );
 
 
-    const primary =
-        localizedValue[
+    const languages =
+        buildComparisonLanguagePriority(
             resolved.source_language
-        ];
+        );
 
 
-    if (
-        primary !== null &&
-        primary !== undefined
+    for (
+        const language
+        of languages
     ) {
-        return primary;
+
+        const value =
+            localizedValue[
+                language
+            ];
+
+
+        if (
+            value !== null &&
+            value !== undefined
+        ) {
+            return value;
+        }
     }
 
 
-    const secondaryLanguage =
-        resolved.source_language ===
-            "cn"
-            ? "en"
-            : "cn";
-
-
-    const secondary =
-        localizedValue[
-            secondaryLanguage
-        ];
-
-
-    return (
-        secondary !== null &&
-        secondary !== undefined
-    )
-        ? secondary
-        : null;
+    return null;
 }
 
 
@@ -329,38 +339,30 @@ export function selectComparisonLocalizedValue(
         );
 
 
-    const primary =
-        localizedValue[
+    const languages =
+        buildComparisonLanguagePriority(
             resolved.source_language
-        ];
+        );
 
 
-    if (
-        typeof primary === "string" &&
-        primary.trim()
+    for (
+        const language
+        of languages
     ) {
-        return primary;
-    }
+
+        const value =
+            localizedValue[
+                language
+            ];
 
 
-    const secondaryLanguage =
-        resolved.source_language ===
-            "cn"
-            ? "en"
-            : "cn";
-
-
-    const secondary =
-        localizedValue[
-            secondaryLanguage
-        ];
-
-
-    if (
-        typeof secondary === "string" &&
-        secondary.trim()
-    ) {
-        return secondary;
+        if (
+            typeof value ===
+                "string" &&
+            value.trim()
+        ) {
+            return value;
+        }
     }
 
 

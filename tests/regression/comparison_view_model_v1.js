@@ -146,7 +146,37 @@ const assertions = [
             view
                 .summary
                 .narrative
-                .length >= 4
+                .length >= 1 &&
+            view
+                .summary
+                .narrative
+                .every(
+                    item =>
+                        typeof item
+                            ?.text ===
+                            "string" &&
+                        item.text
+                            .length >
+                            0
+                ) &&
+            view
+                .summary
+                .narrative
+                .some(
+                    item =>
+                        /[\u4e00-\u9fff]/.test(
+                            item.text
+                        )
+                ) &&
+            !view
+                .summary
+                .narrative
+                .some(
+                    item =>
+                        /is lighter in static weight|has the larger head size|leans more toward/.test(
+                            item.text
+                        )
+                )
     },
 
     {
