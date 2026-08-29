@@ -1316,9 +1316,6 @@ async function handleAI(
                     comparison:
                         null,
 
-                    comparison_clarification:
-                        clarificationResult,
-
                     recommendation:
                         null,
 
