@@ -4,86 +4,61 @@
     "tagline": "AIテニス用品インテリジェンス",
     "slogan": "Every Court Has a Story."
   },
-
   "hero": {
     "badge": "選手データ、テニス用品データベース、AI推論エンジンを活用し、最適なテニス用品を分析・提案します。"
   },
-
   "theme": {
     "grass": "グラス",
     "clay": "クレー",
     "hard": "ハード"
   },
-
   "chat": {
     "title": "何を改善したいですか？",
     "subtitle": "現在使用しているラケット、ストリング、プレースタイル、または気になる問題を教えてください。",
-
     "welcome": "現在使用しているラケット、ストリング、そして改善したいポイントを教えてください。例えば「Pure Driveを使っています。パワーを大きく失わずにコントロール性能を高めたいです。」のように入力してください。",
-
     "placeholder": "現在のセッティング、またはテニス用品について質問してください…",
-
     "button": "分析する",
-
     "note": "現在はUIプロトタイプです。次のステップでEveryCourtAIエンジンと接続されます。",
-
     "examples": "質問例"
   },
-
   "examples": {
     "rf01": "RF 01 Pro ― 快適性を向上",
     "pure_drive": "Pure Drive ― コントロールを向上",
     "elbow": "肘への負担を軽減したい",
     "spin": "スピンを増やしながら安定した弾道を維持"
   },
-
   "recommendation": {
     "title_small": "おすすめセッティング",
     "title": "最適な組み合わせ",
-
     "description": "このカードには、今後EveryCourtAIの推奨エンジンによる分析結果が表示されます。"
   },
-
   "confidence": {
     "title": "推奨信頼度"
   },
-
   "setup": {
     "racquet": "ラケット",
     "string": "ストリング",
     "tension": "テンション",
-
     "current_frame": "現在のラケットを継続使用",
-
     "working_range": "推奨範囲"
   },
-
   "metrics": {
     "comfort": "快適性",
     "control": "コントロール",
     "power": "パワー"
   },
-
   "why": {
     "title": "推奨理由",
-
     "item1": "ラケットを変更せずに快適性を向上させます。",
-
     "item2": "アグレッシブなベースラインプレーに必要な打球感を維持します。",
-
     "item3": "硬すぎるストリングベッドを避けるため、適切なテンションを提案します。"
   },
-
   "alternatives": {
     "title": "その他の選択肢",
-
     "comfort": "快適性重視",
-
     "performance": "パフォーマンス重視",
-
     "minimal": "最小限の変更"
   },
-
   "language": {
     "english": "English",
     "simplified": "简体中文",
@@ -91,15 +66,93 @@
     "japanese": "日本語",
     "spanish": "Español"
   },
-
   "system": {
     "you": "あなた",
     "assistant": "EveryCourtAI",
-
     "thinking": "セッティングを分析しています…",
-
     "loading": "読み込み中…",
-
     "error": "エラーが発生しました。もう一度お試しください。"
+  },
+  "profile": {
+    "title": "プレーヤープロフィール",
+    "subtitle": "よりパーソナライズされた用具分析のための基本情報です。",
+    "fields": {
+      "name": "名前",
+      "gender": "性別",
+      "age": "年齢",
+      "height": "身長",
+      "weight": "体重",
+      "dominant_hand": "利き手",
+      "current_racquet": "現在のラケット",
+      "current_string": "現在のストリング",
+      "current_tension": "現在のテンション",
+      "primary_goal": "主な目標",
+      "playing_style": "プレースタイル",
+      "swing_speed": "スイング速度",
+      "feel_preference": "打球感の好み",
+      "shoulder": "肩",
+      "elbow": "肘",
+      "wrist": "手首",
+      "neck": "首",
+      "lower_back": "腰",
+      "hip": "股関節",
+      "knee": "膝",
+      "ankle": "足首"
+    },
+    "placeholders": {
+      "name": "名前",
+      "age": "年齢",
+      "height": "cm",
+      "weight": "kg",
+      "current_racquet": "例：Wilson RF 01 Pro Classic",
+      "current_string": "例：HEAD HAWK TOUCH",
+      "current_tension": "lbs"
+    },
+    "options": {
+      "select": "選択",
+      "gender": {
+        "male": "男性",
+        "female": "女性",
+        "prefer_not_to_say": "回答しない"
+      },
+      "hand": {
+        "right": "右利き",
+        "left": "左利き",
+        "ambidextrous": "両利き"
+      },
+      "goal": {
+        "comfort": "快適性",
+        "control": "コントロール",
+        "spin": "スピン",
+        "power": "パワー",
+        "feel": "打球感"
+      },
+      "playing_style": {
+        "baseline": "ベースライン",
+        "aggressive_baseline": "攻撃的ベースライン",
+        "all_court": "オールコート",
+        "serve_and_volley": "サーブ＆ボレー",
+        "counterpuncher": "カウンターパンチャー"
+      },
+      "swing_speed": {
+        "slow": "遅い",
+        "medium": "普通",
+        "fast": "速い"
+      },
+      "feel": {
+        "soft": "柔らかい",
+        "connected": "ダイレクト",
+        "crisp": "シャープ",
+        "firm": "硬め",
+        "muted": "マイルド"
+      },
+      "physical": {
+        "not_specified": "未入力",
+        "none": "違和感なし",
+        "mild": "軽度",
+        "moderate": "中程度",
+        "severe": "強い"
+      }
+    }
   }
 }

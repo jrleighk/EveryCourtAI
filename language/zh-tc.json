@@ -4,86 +4,61 @@
     "tagline": "AI 網球裝備智慧分析平台",
     "slogan": "Every Court Has a Story."
   },
-
   "hero": {
     "badge": "結合球員資料、裝備知識庫與 AI 推理引擎，提供專業網球裝備分析。"
   },
-
   "theme": {
     "grass": "草地",
     "clay": "紅土",
     "hard": "硬地"
   },
-
   "chat": {
     "title": "你希望改善什麼？",
     "subtitle": "告訴 EveryCourtAI 你目前使用的球拍、球線、打法，或遇到的問題。",
-
     "welcome": "請告訴我你目前使用的球拍、球線，以及希望改善的地方。例如：「我目前使用 Babolat Pure Drive，希望提升控制，同時不要失去太多力量。」",
-
     "placeholder": "請輸入你的裝備，或提出任何網球裝備相關問題……",
-
     "button": "開始分析",
-
     "note": "目前為 UI 原型，下一階段將連接 EveryCourtAI AI 引擎。",
-
     "examples": "範例問題"
   },
-
   "examples": {
     "rf01": "RF 01 Pro —— 提升舒適度",
     "pure_drive": "Pure Drive —— 提升控制",
     "elbow": "手肘舒適度推薦",
     "spin": "提升旋轉，同時保持穩定彈道"
   },
-
   "recommendation": {
     "title_small": "推薦配置",
     "title": "最佳整體方案",
-
     "description": "未來此區將由 EveryCourtAI 推薦引擎自動產生分析結果。"
   },
-
   "confidence": {
     "title": "推薦信心值"
   },
-
   "setup": {
     "racquet": "球拍",
     "string": "球線",
     "tension": "磅數",
-
     "current_frame": "建議繼續使用目前球拍",
-
     "working_range": "建議範圍"
   },
-
   "metrics": {
     "comfort": "舒適度",
     "control": "控制",
     "power": "力量"
   },
-
   "why": {
     "title": "推薦原因",
-
     "item1": "在不更換球拍的情況下，提高整體舒適度。",
-
     "item2": "保留積極底線打法所需要的擊球回饋。",
-
     "item3": "採用適中的穿線磅數，避免過硬的線床。"
   },
-
   "alternatives": {
     "title": "其他方案",
-
     "comfort": "舒適型",
-
     "performance": "競技型",
-
     "minimal": "最小變更"
   },
-
   "language": {
     "english": "English",
     "simplified": "简体中文",
@@ -91,15 +66,93 @@
     "japanese": "日本語",
     "spanish": "Español"
   },
-
   "system": {
     "you": "你",
     "assistant": "EveryCourtAI",
-
     "thinking": "正在分析你的裝備……",
-
     "loading": "載入中……",
-
     "error": "發生錯誤，請稍後再試。"
+  },
+  "profile": {
+    "title": "球員資料",
+    "subtitle": "填寫基本資料，以獲得更個人化的裝備分析。",
+    "fields": {
+      "name": "名字",
+      "gender": "性別",
+      "age": "年齡",
+      "height": "身高",
+      "weight": "體重",
+      "dominant_hand": "慣用手",
+      "current_racquet": "目前球拍",
+      "current_string": "目前球線",
+      "current_tension": "目前磅數",
+      "primary_goal": "主要目標",
+      "playing_style": "打法",
+      "swing_speed": "揮拍速度",
+      "feel_preference": "手感偏好",
+      "shoulder": "肩部狀態",
+      "elbow": "肘部狀態",
+      "wrist": "手腕狀態",
+      "neck": "頸部狀態",
+      "lower_back": "下背狀態",
+      "hip": "髖部狀態",
+      "knee": "膝部狀態",
+      "ankle": "腳踝狀態"
+    },
+    "placeholders": {
+      "name": "名字",
+      "age": "年齡",
+      "height": "cm",
+      "weight": "kg",
+      "current_racquet": "例如 Wilson RF 01 Pro Classic",
+      "current_string": "例如 HEAD HAWK TOUCH",
+      "current_tension": "lbs"
+    },
+    "options": {
+      "select": "請選擇",
+      "gender": {
+        "male": "男",
+        "female": "女",
+        "prefer_not_to_say": "不願透露"
+      },
+      "hand": {
+        "right": "右手",
+        "left": "左手",
+        "ambidextrous": "雙手皆可"
+      },
+      "goal": {
+        "comfort": "舒適",
+        "control": "控制",
+        "spin": "旋轉",
+        "power": "力量",
+        "feel": "手感"
+      },
+      "playing_style": {
+        "baseline": "底線型",
+        "aggressive_baseline": "進攻型底線",
+        "all_court": "全場型",
+        "serve_and_volley": "發球上網",
+        "counterpuncher": "防守反擊"
+      },
+      "swing_speed": {
+        "slow": "較慢",
+        "medium": "中等",
+        "fast": "較快"
+      },
+      "feel": {
+        "soft": "柔軟",
+        "connected": "連結感",
+        "crisp": "清脆",
+        "firm": "偏硬",
+        "muted": "柔和減震"
+      },
+      "physical": {
+        "not_specified": "未填寫",
+        "none": "無不適",
+        "mild": "輕微",
+        "moderate": "中等",
+        "severe": "明顯"
+      }
+    }
   }
 }

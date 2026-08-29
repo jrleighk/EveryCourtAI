@@ -27,6 +27,12 @@ import {
 } from "./product_resolver.js";
 
 
+import {
+    normalizeMultilingualComparisonQuery,
+    isExplicitMultilingualComparisonQuery
+} from "./multilingual_comparison_query_v1.js";
+
+
 const EXTRACTOR_NAME =
     "comparison_target_extractor";
 
@@ -148,6 +154,15 @@ function detectComparisonSubtype(
     }
 
 
+    if (
+        isExplicitMultilingualComparisonQuery(
+            text
+        )
+    ) {
+        return "direct_comparison";
+    }
+
+
     /**
      * Comparative explanation:
      *
@@ -229,6 +244,23 @@ function splitComparisonTargets(
 
     if (!original) {
         return [];
+    }
+
+
+    const multilingual =
+        normalizeMultilingualComparisonQuery(
+            original
+        );
+
+
+    if (
+        multilingual.detected ===
+            true &&
+        multilingual.targets.length ===
+            2
+    ) {
+
+        return multilingual.targets;
     }
 
 

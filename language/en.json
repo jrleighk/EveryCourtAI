@@ -4,99 +4,152 @@
     "tagline": "AI-powered Tennis Equipment Intelligence",
     "slogan": "Every Court Has a Story."
   },
-
   "hero": {
     "badge": "Tennis setup analysis powered by player profile, equipment data and inference logic."
   },
-
   "theme": {
     "grass": "Grass",
     "clay": "Clay",
     "hard": "Hard"
   },
-
   "chat": {
     "title": "What would you like to improve?",
     "subtitle": "Tell me about your racquet, strings, game style or what feels wrong.",
-
     "welcome": "Tell me what you are currently using and what you want to improve. You can write naturally — for example: \"I use a Pure Drive and want more control without losing too much power.\"",
-
     "placeholder": "Describe your setup or ask a tennis equipment question...",
-
     "button": "Analyze",
-
     "note": "UI prototype — real EveryCourtAI Engine connection comes next.",
-
     "examples": "Try an example"
   },
-
   "examples": {
     "rf01": "RF 01 Pro — more comfort",
     "pure_drive": "Pure Drive — more control",
     "elbow": "Elbow comfort setup",
     "spin": "More spin, controlled launch"
   },
-
   "recommendation": {
     "title_small": "Recommended Setup",
     "title": "Best Overall Match",
-
     "description": "This card will later be populated directly by the EveryCourtAI recommendation engine."
   },
-
   "confidence": {
     "title": "Confidence"
   },
-
   "setup": {
     "racquet": "Racquet",
     "string": "String",
     "tension": "Tension",
-
     "current_frame": "Keep current frame",
-
     "working_range": "Working range"
   },
-
   "metrics": {
     "comfort": "Comfort",
     "control": "Control",
     "power": "Power"
   },
-
   "why": {
     "title": "Why this setup",
-
     "item1": "Improves comfort without forcing an immediate racquet change.",
-
     "item2": "Preserves a connected response for an aggressive baseline game.",
-
     "item3": "Uses a moderate tension range rather than an excessively firm stringbed."
   },
-
   "alternatives": {
     "title": "Alternatives",
-
     "comfort": "Comfort",
-
     "performance": "Performance",
-
     "minimal": "Minimal Change"
   },
-
   "language": {
     "english": "English",
     "chinese": "简体中文"
   },
-
   "system": {
     "you": "You",
     "assistant": "EveryCourtAI",
-
     "thinking": "Analyzing your equipment...",
-
     "loading": "Loading...",
-
     "error": "Something went wrong."
+  },
+  "profile": {
+    "title": "Player Profile",
+    "subtitle": "Basic information for more personalized equipment analysis.",
+    "fields": {
+      "name": "Name",
+      "gender": "Gender",
+      "age": "Age",
+      "height": "Height",
+      "weight": "Weight",
+      "dominant_hand": "Dominant Hand",
+      "current_racquet": "Current Racquet",
+      "current_string": "Current String",
+      "current_tension": "Current Tension",
+      "primary_goal": "Primary Goal",
+      "playing_style": "Playing Style",
+      "swing_speed": "Swing Speed",
+      "feel_preference": "Feel Preference",
+      "shoulder": "Shoulder",
+      "elbow": "Elbow",
+      "wrist": "Wrist",
+      "neck": "Neck",
+      "lower_back": "Lower Back",
+      "hip": "Hip",
+      "knee": "Knee",
+      "ankle": "Ankle"
+    },
+    "placeholders": {
+      "name": "Name",
+      "age": "Age",
+      "height": "cm",
+      "weight": "kg",
+      "current_racquet": "e.g. Wilson RF 01 Pro Classic",
+      "current_string": "e.g. HEAD HAWK TOUCH",
+      "current_tension": "lbs"
+    },
+    "options": {
+      "select": "Select",
+      "gender": {
+        "male": "Male",
+        "female": "Female",
+        "prefer_not_to_say": "Prefer not to say"
+      },
+      "hand": {
+        "right": "Right",
+        "left": "Left",
+        "ambidextrous": "Ambidextrous"
+      },
+      "goal": {
+        "comfort": "Comfort",
+        "control": "Control",
+        "spin": "Spin",
+        "power": "Power",
+        "feel": "Feel"
+      },
+      "playing_style": {
+        "baseline": "Baseline",
+        "aggressive_baseline": "Aggressive Baseline",
+        "all_court": "All-Court",
+        "serve_and_volley": "Serve & Volley",
+        "counterpuncher": "Counterpuncher"
+      },
+      "swing_speed": {
+        "slow": "Slow",
+        "medium": "Medium",
+        "fast": "Fast"
+      },
+      "feel": {
+        "soft": "Soft",
+        "connected": "Connected",
+        "crisp": "Crisp",
+        "firm": "Firm",
+        "muted": "Muted"
+      },
+      "physical": {
+        "not_specified": "Not specified",
+        "none": "None",
+        "mild": "Mild",
+        "moderate": "Moderate",
+        "severe": "Severe"
+      }
+    }
   }
 }

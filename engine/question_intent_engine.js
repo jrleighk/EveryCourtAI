@@ -20,6 +20,11 @@
  * ============================================================
  */
 
+import {
+    isExplicitMultilingualComparisonQuery
+} from "./multilingual_comparison_query_v1.js";
+
+
 const ENGINE_NAME =
     "question_intent_engine";
 
@@ -102,6 +107,23 @@ function containsAny(
 function detectComparisonIntent(
     text
 ) {
+
+    /**
+     * Explicit multilingual comparison command.
+     *
+     * This shared gate keeps the Question Intent Engine and the
+     * Comparison Target Extractor aligned across all supported
+     * frontend locales.
+     */
+
+    if (
+        isExplicitMultilingualComparisonQuery(
+            text
+        )
+    ) {
+        return true;
+    }
+
 
     /**
      * Strong explicit comparison signals.

@@ -2474,11 +2474,17 @@
 
           <div class="player-profile-head">
 
-            <h3 class="player-profile-title">
-              Player Profile / 球员资料
+            <h3
+              class="player-profile-title"
+              data-i18n="profile.title"
+            >
+              Player Profile
             </h3>
 
-            <div class="player-profile-subtitle">
+            <div
+              class="player-profile-subtitle"
+              data-i18n="profile.subtitle"
+            >
               Basic information for more personalized equipment analysis.
             </div>
 
@@ -2488,8 +2494,11 @@
           <div class="player-profile-grid">
 
             <div class="profile-field">
-              <label for="playerName">
-                Name / 名字
+              <label
+                for="playerName"
+                data-i18n="profile.fields.name"
+              >
+                profile.fields.name
               </label>
 
               <input
@@ -2497,38 +2506,57 @@
                 type="text"
                 placeholder="Name"
                 autocomplete="name"
-              />
+              /
+                data-i18n-placeholder="profile.placeholders.name">
             </div>
 
 
             <div class="profile-field">
-              <label for="playerGender">
-                Gender / 性别
+              <label
+                for="playerGender"
+                data-i18n="profile.fields.gender"
+              >
+                profile.fields.gender
               </label>
 
               <select id="playerGender">
-                <option value="">
-                  Select / 请选择
+                <option
+                  value=""
+                  data-i18n="profile.options.select"
+                >
+                  profile.options.select
                 </option>
 
-                <option value="male">
-                  Male / 男
+                <option
+                  value="male"
+                  data-i18n="profile.options.gender.male"
+                >
+                  profile.options.gender.male
                 </option>
 
-                <option value="female">
-                  Female / 女
+                <option
+                  value="female"
+                  data-i18n="profile.options.gender.female"
+                >
+                  profile.options.gender.female
                 </option>
 
-                <option value="prefer_not_to_say">
-                  Prefer not to say / 不愿透露
+                <option
+                  value="prefer_not_to_say"
+                  data-i18n="profile.options.gender.prefer_not_to_say"
+                >
+                  profile.options.gender.prefer_not_to_say
                 </option>
               </select>
             </div>
 
 
             <div class="profile-field">
-              <label for="playerAge">
-                Age / 年龄
+              <label
+                for="playerAge"
+                data-i18n="profile.fields.age"
+              >
+                profile.fields.age
               </label>
 
               <input
@@ -2538,13 +2566,17 @@
                 max="100"
                 step="1"
                 placeholder="Age"
-              />
+              /
+                data-i18n-placeholder="profile.placeholders.age">
             </div>
 
 
             <div class="profile-field">
-              <label for="playerHeight">
-                Height / 身高
+              <label
+                for="playerHeight"
+                data-i18n="profile.fields.height"
+              >
+                profile.fields.height
               </label>
 
               <input
@@ -2554,13 +2586,17 @@
                 max="230"
                 step="1"
                 placeholder="cm"
-              />
+              /
+                data-i18n-placeholder="profile.placeholders.height">
             </div>
 
 
             <div class="profile-field">
-              <label for="playerWeight">
-                Weight / 体重
+              <label
+                for="playerWeight"
+                data-i18n="profile.fields.weight"
+              >
+                profile.fields.weight
               </label>
 
               <input
@@ -2570,63 +2606,90 @@
                 max="200"
                 step="0.1"
                 placeholder="kg"
-              />
+              /
+                data-i18n-placeholder="profile.placeholders.weight">
             </div>
 
 
             <div class="profile-field">
-              <label for="playerDominantHand">
-                Dominant Hand / 惯用手
+              <label
+                for="playerDominantHand"
+                data-i18n="profile.fields.dominant_hand"
+              >
+                profile.fields.dominant_hand
               </label>
 
               <select id="playerDominantHand">
-                <option value="">
-                  Select / 请选择
+                <option
+                  value=""
+                  data-i18n="profile.options.select"
+                >
+                  profile.options.select
                 </option>
 
-                <option value="right">
-                  Right / 右手
+                <option
+                  value="right"
+                  data-i18n="profile.options.hand.right"
+                >
+                  profile.options.hand.right
                 </option>
 
-                <option value="left">
-                  Left / 左手
+                <option
+                  value="left"
+                  data-i18n="profile.options.hand.left"
+                >
+                  profile.options.hand.left
                 </option>
 
-                <option value="ambidextrous">
-                  Ambidextrous / 双手均可
+                <option
+                  value="ambidextrous"
+                  data-i18n="profile.options.hand.ambidextrous"
+                >
+                  profile.options.hand.ambidextrous
                 </option>
               </select>
             </div>
 
             <div class="profile-field">
-              <label for="playerCurrentRacquet">
-                Current Racquet / 当前球拍
+              <label
+                for="playerCurrentRacquet"
+                data-i18n="profile.fields.current_racquet"
+              >
+                profile.fields.current_racquet
               </label>
 
               <input
                 id="playerCurrentRacquet"
                 type="text"
                 placeholder="e.g. Wilson RF 01 Pro Classic"
-              />
+              /
+                data-i18n-placeholder="profile.placeholders.current_racquet">
             </div>
 
 
             <div class="profile-field">
-              <label for="playerCurrentString">
-                Current String / 当前球线
+              <label
+                for="playerCurrentString"
+                data-i18n="profile.fields.current_string"
+              >
+                profile.fields.current_string
               </label>
 
               <input
                 id="playerCurrentString"
                 type="text"
                 placeholder="e.g. HEAD HAWK TOUCH"
-              />
+              /
+                data-i18n-placeholder="profile.placeholders.current_string">
             </div>
 
 
             <div class="profile-field">
-              <label for="playerCurrentTension">
-                Current Tension / 当前磅数
+              <label
+                for="playerCurrentTension"
+                data-i18n="profile.fields.current_tension"
+              >
+                profile.fields.current_tension
               </label>
 
               <input
@@ -2636,256 +2699,549 @@
                 max="70"
                 step="0.5"
                 placeholder="lbs"
-              />
+              /
+                data-i18n-placeholder="profile.placeholders.current_tension">
             </div>
 
 
             <div class="profile-field">
-              <label for="playerPrimaryGoal">
-                Primary Goal / 主要目标
+              <label
+                for="playerPrimaryGoal"
+                data-i18n="profile.fields.primary_goal"
+              >
+                profile.fields.primary_goal
               </label>
 
               <select id="playerPrimaryGoal">
-                <option value="">
-                  Select / 请选择
+                <option
+                  value=""
+                  data-i18n="profile.options.select"
+                >
+                  profile.options.select
                 </option>
 
-                <option value="more_comfort">
-                  Comfort / 舒适
+                <option
+                  value="more_comfort"
+                  data-i18n="profile.options.goal.comfort"
+                >
+                  profile.options.goal.comfort
                 </option>
 
-                <option value="more_control">
-                  Control / 控制
+                <option
+                  value="more_control"
+                  data-i18n="profile.options.goal.control"
+                >
+                  profile.options.goal.control
                 </option>
 
-                <option value="more_spin">
-                  Spin / 旋转
+                <option
+                  value="more_spin"
+                  data-i18n="profile.options.goal.spin"
+                >
+                  profile.options.goal.spin
                 </option>
 
-                <option value="more_power">
-                  Power / 力量
+                <option
+                  value="more_power"
+                  data-i18n="profile.options.goal.power"
+                >
+                  profile.options.goal.power
                 </option>
 
-                <option value="more_feel">
-                  Feel / 手感
+                <option
+                  value="more_feel"
+                  data-i18n="profile.options.goal.feel"
+                >
+                  profile.options.goal.feel
                 </option>
               </select>
             </div>
 
 
             <div class="profile-field">
-              <label for="playerPlayingStyle">
-                Playing Style / 打法
+              <label
+                for="playerPlayingStyle"
+                data-i18n="profile.fields.playing_style"
+              >
+                profile.fields.playing_style
               </label>
 
               <select id="playerPlayingStyle">
-                <option value="">
-                  Select / 请选择
+                <option
+                  value=""
+                  data-i18n="profile.options.select"
+                >
+                  profile.options.select
                 </option>
 
-                <option value="baseline">
-                  Baseline / 底线型
+                <option
+                  value="baseline"
+                  data-i18n="profile.options.playing_style.baseline"
+                >
+                  profile.options.playing_style.baseline
                 </option>
 
-                <option value="aggressive_baseline">
-                  Aggressive Baseline / 进攻型底线
+                <option
+                  value="aggressive_baseline"
+                  data-i18n="profile.options.playing_style.aggressive_baseline"
+                >
+                  profile.options.playing_style.aggressive_baseline
                 </option>
 
-                <option value="all_court">
-                  All-Court / 全场型
+                <option
+                  value="all_court"
+                  data-i18n="profile.options.playing_style.all_court"
+                >
+                  profile.options.playing_style.all_court
                 </option>
 
-                <option value="serve_and_volley">
-                  Serve & Volley / 发球上网
+                <option
+                  value="serve_and_volley"
+                  data-i18n="profile.options.playing_style.serve_and_volley"
+                >
+                  profile.options.playing_style.serve_and_volley
                 </option>
 
-                <option value="counterpuncher">
-                  Counterpuncher / 防守反击
+                <option
+                  value="counterpuncher"
+                  data-i18n="profile.options.playing_style.counterpuncher"
+                >
+                  profile.options.playing_style.counterpuncher
                 </option>
               </select>
             </div>
 
 
             <div class="profile-field">
-              <label for="playerSwingSpeed">
-                Swing Speed / 挥拍速度
+              <label
+                for="playerSwingSpeed"
+                data-i18n="profile.fields.swing_speed"
+              >
+                profile.fields.swing_speed
               </label>
 
               <select id="playerSwingSpeed">
-                <option value="">
-                  Select / 请选择
+                <option
+                  value=""
+                  data-i18n="profile.options.select"
+                >
+                  profile.options.select
                 </option>
 
-                <option value="slow">
-                  Slow / 较慢
+                <option
+                  value="slow"
+                  data-i18n="profile.options.swing_speed.slow"
+                >
+                  profile.options.swing_speed.slow
                 </option>
 
-                <option value="medium">
-                  Medium / 中等
+                <option
+                  value="medium"
+                  data-i18n="profile.options.swing_speed.medium"
+                >
+                  profile.options.swing_speed.medium
                 </option>
 
-                <option value="fast">
-                  Fast / 较快
+                <option
+                  value="fast"
+                  data-i18n="profile.options.swing_speed.fast"
+                >
+                  profile.options.swing_speed.fast
                 </option>
               </select>
             </div>
 
 
             <div class="profile-field">
-              <label for="playerFeelPreference">
-                Feel Preference / 手感偏好
+              <label
+                for="playerFeelPreference"
+                data-i18n="profile.fields.feel_preference"
+              >
+                profile.fields.feel_preference
               </label>
 
               <select id="playerFeelPreference">
-                <option value="">
-                  Select / 请选择
+                <option
+                  value=""
+                  data-i18n="profile.options.select"
+                >
+                  profile.options.select
                 </option>
 
-                <option value="soft">
-                  Soft / 柔软
+                <option
+                  value="soft"
+                  data-i18n="profile.options.feel.soft"
+                >
+                  profile.options.feel.soft
                 </option>
 
-                <option value="connected">
-                  Connected / 连接感
+                <option
+                  value="connected"
+                  data-i18n="profile.options.feel.connected"
+                >
+                  profile.options.feel.connected
                 </option>
 
-                <option value="crisp">
-                  Crisp / 清脆
+                <option
+                  value="crisp"
+                  data-i18n="profile.options.feel.crisp"
+                >
+                  profile.options.feel.crisp
                 </option>
 
-                <option value="firm">
-                  Firm / 偏硬
+                <option
+                  value="firm"
+                  data-i18n="profile.options.feel.firm"
+                >
+                  profile.options.feel.firm
                 </option>
 
-                <option value="muted">
-                  Muted / 柔和减震
+                <option
+                  value="muted"
+                  data-i18n="profile.options.feel.muted"
+                >
+                  profile.options.feel.muted
                 </option>
               </select>
             </div>
 
             <div class="profile-field">
-              <label for="playerShoulderSensitivity">
-                Shoulder · 肩部状态
+              <label
+                for="playerShoulderSensitivity"
+                data-i18n="profile.fields.shoulder"
+              >
+                profile.fields.shoulder
               </label>
 
               <select id="playerShoulderSensitivity">
-                <option value="">
-                  Not specified · 未填写
+                <option
+                  value=""
+                  data-i18n="profile.options.physical.not_specified"
+                >
+                  profile.options.physical.not_specified
                 </option>
 
-                <option value="none">
-                  None · 无不适
+                <option
+                  value="none"
+                  data-i18n="profile.options.physical.none"
+                >
+                  profile.options.physical.none
                 </option>
 
-                <option value="mild">
-                  Mild · 轻微
+                <option
+                  value="mild"
+                  data-i18n="profile.options.physical.mild"
+                >
+                  profile.options.physical.mild
                 </option>
 
-                <option value="moderate">
-                  Moderate · 中等
+                <option
+                  value="moderate"
+                  data-i18n="profile.options.physical.moderate"
+                >
+                  profile.options.physical.moderate
                 </option>
 
-                <option value="severe">
-                  Severe · 明显
+                <option
+                  value="severe"
+                  data-i18n="profile.options.physical.severe"
+                >
+                  profile.options.physical.severe
                 </option>
               </select>
             </div>
 
             <div class="profile-field">
-              <label for="playerElbowSensitivity">
-                Elbow · 肘部状态
+              <label
+                for="playerElbowSensitivity"
+                data-i18n="profile.fields.elbow"
+              >
+                profile.fields.elbow
               </label>
 
               <select id="playerElbowSensitivity">
-                <option value="">Not specified · 未填写</option>
-                <option value="none">None · 无不适</option>
-                <option value="mild">Mild · 轻微</option>
-                <option value="moderate">Moderate · 中等</option>
-                <option value="severe">Severe · 明显</option>
+                <option
+                  value=""
+                  data-i18n="profile.options.physical.not_specified"
+                >
+                  profile.options.physical.not_specified
+                </option>
+                <option
+                  value="none"
+                  data-i18n="profile.options.physical.none"
+                >
+                  profile.options.physical.none
+                </option>
+                <option
+                  value="mild"
+                  data-i18n="profile.options.physical.mild"
+                >
+                  profile.options.physical.mild
+                </option>
+                <option
+                  value="moderate"
+                  data-i18n="profile.options.physical.moderate"
+                >
+                  profile.options.physical.moderate
+                </option>
+                <option
+                  value="severe"
+                  data-i18n="profile.options.physical.severe"
+                >
+                  profile.options.physical.severe
+                </option>
               </select>
             </div>
 
             <div class="profile-field">
-              <label for="playerWristSensitivity">
-                Wrist · 手腕状态
+              <label
+                for="playerWristSensitivity"
+                data-i18n="profile.fields.wrist"
+              >
+                profile.fields.wrist
               </label>
 
               <select id="playerWristSensitivity">
-                <option value="">Not specified · 未填写</option>
-                <option value="none">None · 无不适</option>
-                <option value="mild">Mild · 轻微</option>
-                <option value="moderate">Moderate · 中等</option>
-                <option value="severe">Severe · 明显</option>
+                <option
+                  value=""
+                  data-i18n="profile.options.physical.not_specified"
+                >
+                  profile.options.physical.not_specified
+                </option>
+                <option
+                  value="none"
+                  data-i18n="profile.options.physical.none"
+                >
+                  profile.options.physical.none
+                </option>
+                <option
+                  value="mild"
+                  data-i18n="profile.options.physical.mild"
+                >
+                  profile.options.physical.mild
+                </option>
+                <option
+                  value="moderate"
+                  data-i18n="profile.options.physical.moderate"
+                >
+                  profile.options.physical.moderate
+                </option>
+                <option
+                  value="severe"
+                  data-i18n="profile.options.physical.severe"
+                >
+                  profile.options.physical.severe
+                </option>
               </select>
             </div>
 
             <div class="profile-field">
-              <label for="playerNeckSensitivity">
-                Neck · 颈部状态
+              <label
+                for="playerNeckSensitivity"
+                data-i18n="profile.fields.neck"
+              >
+                profile.fields.neck
               </label>
 
               <select id="playerNeckSensitivity">
-                <option value="">Not specified · 未填写</option>
-                <option value="none">None · 无不适</option>
-                <option value="mild">Mild · 轻微</option>
-                <option value="moderate">Moderate · 中等</option>
-                <option value="severe">Severe · 明显</option>
+                <option
+                  value=""
+                  data-i18n="profile.options.physical.not_specified"
+                >
+                  profile.options.physical.not_specified
+                </option>
+                <option
+                  value="none"
+                  data-i18n="profile.options.physical.none"
+                >
+                  profile.options.physical.none
+                </option>
+                <option
+                  value="mild"
+                  data-i18n="profile.options.physical.mild"
+                >
+                  profile.options.physical.mild
+                </option>
+                <option
+                  value="moderate"
+                  data-i18n="profile.options.physical.moderate"
+                >
+                  profile.options.physical.moderate
+                </option>
+                <option
+                  value="severe"
+                  data-i18n="profile.options.physical.severe"
+                >
+                  profile.options.physical.severe
+                </option>
               </select>
             </div>
 
             <div class="profile-field">
-              <label for="playerLowerBackSensitivity">
-                Lower Back · 下背状态
+              <label
+                for="playerLowerBackSensitivity"
+                data-i18n="profile.fields.lower_back"
+              >
+                profile.fields.lower_back
               </label>
 
               <select id="playerLowerBackSensitivity">
-                <option value="">Not specified · 未填写</option>
-                <option value="none">None · 无不适</option>
-                <option value="mild">Mild · 轻微</option>
-                <option value="moderate">Moderate · 中等</option>
-                <option value="severe">Severe · 明显</option>
+                <option
+                  value=""
+                  data-i18n="profile.options.physical.not_specified"
+                >
+                  profile.options.physical.not_specified
+                </option>
+                <option
+                  value="none"
+                  data-i18n="profile.options.physical.none"
+                >
+                  profile.options.physical.none
+                </option>
+                <option
+                  value="mild"
+                  data-i18n="profile.options.physical.mild"
+                >
+                  profile.options.physical.mild
+                </option>
+                <option
+                  value="moderate"
+                  data-i18n="profile.options.physical.moderate"
+                >
+                  profile.options.physical.moderate
+                </option>
+                <option
+                  value="severe"
+                  data-i18n="profile.options.physical.severe"
+                >
+                  profile.options.physical.severe
+                </option>
               </select>
             </div>
 
             <div class="profile-field">
-              <label for="playerHipSensitivity">
-                Hip · 髋部状态
+              <label
+                for="playerHipSensitivity"
+                data-i18n="profile.fields.hip"
+              >
+                profile.fields.hip
               </label>
 
               <select id="playerHipSensitivity">
-                <option value="">Not specified · 未填写</option>
-                <option value="none">None · 无不适</option>
-                <option value="mild">Mild · 轻微</option>
-                <option value="moderate">Moderate · 中等</option>
-                <option value="severe">Severe · 明显</option>
+                <option
+                  value=""
+                  data-i18n="profile.options.physical.not_specified"
+                >
+                  profile.options.physical.not_specified
+                </option>
+                <option
+                  value="none"
+                  data-i18n="profile.options.physical.none"
+                >
+                  profile.options.physical.none
+                </option>
+                <option
+                  value="mild"
+                  data-i18n="profile.options.physical.mild"
+                >
+                  profile.options.physical.mild
+                </option>
+                <option
+                  value="moderate"
+                  data-i18n="profile.options.physical.moderate"
+                >
+                  profile.options.physical.moderate
+                </option>
+                <option
+                  value="severe"
+                  data-i18n="profile.options.physical.severe"
+                >
+                  profile.options.physical.severe
+                </option>
               </select>
             </div>
 
             <div class="profile-field">
-              <label for="playerKneeSensitivity">
-                Knee · 膝部状态
+              <label
+                for="playerKneeSensitivity"
+                data-i18n="profile.fields.knee"
+              >
+                profile.fields.knee
               </label>
 
               <select id="playerKneeSensitivity">
-                <option value="">Not specified · 未填写</option>
-                <option value="none">None · 无不适</option>
-                <option value="mild">Mild · 轻微</option>
-                <option value="moderate">Moderate · 中等</option>
-                <option value="severe">Severe · 明显</option>
+                <option
+                  value=""
+                  data-i18n="profile.options.physical.not_specified"
+                >
+                  profile.options.physical.not_specified
+                </option>
+                <option
+                  value="none"
+                  data-i18n="profile.options.physical.none"
+                >
+                  profile.options.physical.none
+                </option>
+                <option
+                  value="mild"
+                  data-i18n="profile.options.physical.mild"
+                >
+                  profile.options.physical.mild
+                </option>
+                <option
+                  value="moderate"
+                  data-i18n="profile.options.physical.moderate"
+                >
+                  profile.options.physical.moderate
+                </option>
+                <option
+                  value="severe"
+                  data-i18n="profile.options.physical.severe"
+                >
+                  profile.options.physical.severe
+                </option>
               </select>
             </div>
 
             <div class="profile-field">
-              <label for="playerAnkleSensitivity">
-                Ankle · 脚踝状态
+              <label
+                for="playerAnkleSensitivity"
+                data-i18n="profile.fields.ankle"
+              >
+                profile.fields.ankle
               </label>
 
               <select id="playerAnkleSensitivity">
-                <option value="">Not specified · 未填写</option>
-                <option value="none">None · 无不适</option>
-                <option value="mild">Mild · 轻微</option>
-                <option value="moderate">Moderate · 中等</option>
-                <option value="severe">Severe · 明显</option>
+                <option
+                  value=""
+                  data-i18n="profile.options.physical.not_specified"
+                >
+                  profile.options.physical.not_specified
+                </option>
+                <option
+                  value="none"
+                  data-i18n="profile.options.physical.none"
+                >
+                  profile.options.physical.none
+                </option>
+                <option
+                  value="mild"
+                  data-i18n="profile.options.physical.mild"
+                >
+                  profile.options.physical.mild
+                </option>
+                <option
+                  value="moderate"
+                  data-i18n="profile.options.physical.moderate"
+                >
+                  profile.options.physical.moderate
+                </option>
+                <option
+                  value="severe"
+                  data-i18n="profile.options.physical.severe"
+                >
+                  profile.options.physical.severe
+                </option>
               </select>
             </div>
 

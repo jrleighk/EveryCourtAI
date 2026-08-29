@@ -4,86 +4,61 @@
     "tagline": "Inteligencia Artificial para Equipamiento de Tenis",
     "slogan": "Every Court Has a Story."
   },
-
   "hero": {
     "badge": "Análisis de tu equipamiento de tenis basado en tu perfil de jugador, datos de productos y un motor de inferencia con IA."
   },
-
   "theme": {
     "grass": "Hierba",
     "clay": "Tierra Batida",
     "hard": "Pista Dura"
   },
-
   "chat": {
     "title": "¿Qué te gustaría mejorar?",
     "subtitle": "Cuéntame qué raqueta, cordaje y estilo de juego utilizas, o qué problema quieres solucionar.",
-
     "welcome": "Cuéntame qué raqueta y cordaje utilizas actualmente y qué te gustaría mejorar. Por ejemplo: «Uso una Pure Drive y quiero más control sin perder demasiada potencia.»",
-
     "placeholder": "Describe tu configuración o haz una pregunta sobre equipamiento de tenis...",
-
     "button": "Analizar",
-
     "note": "Prototipo de la interfaz. La conexión con el motor EveryCourtAI llegará en la siguiente fase.",
-
     "examples": "Prueba un ejemplo"
   },
-
   "examples": {
     "rf01": "RF 01 Pro — más comodidad",
     "pure_drive": "Pure Drive — más control",
     "elbow": "Configuración para mayor comodidad del codo",
     "spin": "Más efecto con una trayectoria controlada"
   },
-
   "recommendation": {
     "title_small": "Configuración Recomendada",
     "title": "La Mejor Configuración",
-
     "description": "En el futuro, esta tarjeta será generada automáticamente por el motor de recomendaciones de EveryCourtAI."
   },
-
   "confidence": {
     "title": "Nivel de Confianza"
   },
-
   "setup": {
     "racquet": "Raqueta",
     "string": "Cordaje",
     "tension": "Tensión",
-
     "current_frame": "Mantener la raqueta actual",
-
     "working_range": "Rango recomendado"
   },
-
   "metrics": {
     "comfort": "Comodidad",
     "control": "Control",
     "power": "Potencia"
   },
-
   "why": {
     "title": "¿Por qué esta configuración?",
-
     "item1": "Mejora la comodidad sin necesidad de cambiar inmediatamente de raqueta.",
-
     "item2": "Mantiene una respuesta precisa para un juego agresivo desde el fondo de la pista.",
-
     "item3": "Utiliza una tensión equilibrada en lugar de un encordado excesivamente rígido."
   },
-
   "alternatives": {
     "title": "Alternativas",
-
     "comfort": "Comodidad",
-
     "performance": "Rendimiento",
-
     "minimal": "Cambio Mínimo"
   },
-
   "language": {
     "english": "English",
     "simplified": "简体中文",
@@ -92,15 +67,93 @@
     "french": "Français",
     "spanish": "Español"
   },
-
   "system": {
     "you": "Tú",
     "assistant": "EveryCourtAI",
-
     "thinking": "Analizando tu equipamiento...",
-
     "loading": "Cargando...",
-
     "error": "Ha ocurrido un error. Inténtalo de nuevo."
+  },
+  "profile": {
+    "title": "Perfil del jugador",
+    "subtitle": "Información básica para un análisis de equipamiento más personalizado.",
+    "fields": {
+      "name": "Nombre",
+      "gender": "Género",
+      "age": "Edad",
+      "height": "Altura",
+      "weight": "Peso",
+      "dominant_hand": "Mano dominante",
+      "current_racquet": "Raqueta actual",
+      "current_string": "Cordaje actual",
+      "current_tension": "Tensión actual",
+      "primary_goal": "Objetivo principal",
+      "playing_style": "Estilo de juego",
+      "swing_speed": "Velocidad de swing",
+      "feel_preference": "Preferencia de sensación",
+      "shoulder": "Hombro",
+      "elbow": "Codo",
+      "wrist": "Muñeca",
+      "neck": "Cuello",
+      "lower_back": "Zona lumbar",
+      "hip": "Cadera",
+      "knee": "Rodilla",
+      "ankle": "Tobillo"
+    },
+    "placeholders": {
+      "name": "Nombre",
+      "age": "Edad",
+      "height": "cm",
+      "weight": "kg",
+      "current_racquet": "p. ej. Wilson RF 01 Pro Classic",
+      "current_string": "p. ej. HEAD HAWK TOUCH",
+      "current_tension": "lbs"
+    },
+    "options": {
+      "select": "Seleccionar",
+      "gender": {
+        "male": "Hombre",
+        "female": "Mujer",
+        "prefer_not_to_say": "Prefiero no decirlo"
+      },
+      "hand": {
+        "right": "Derecha",
+        "left": "Izquierda",
+        "ambidextrous": "Ambidiestro"
+      },
+      "goal": {
+        "comfort": "Comodidad",
+        "control": "Control",
+        "spin": "Efecto",
+        "power": "Potencia",
+        "feel": "Sensación"
+      },
+      "playing_style": {
+        "baseline": "Fondo de pista",
+        "aggressive_baseline": "Fondo agresivo",
+        "all_court": "Toda la pista",
+        "serve_and_volley": "Saque y volea",
+        "counterpuncher": "Contraatacante"
+      },
+      "swing_speed": {
+        "slow": "Lenta",
+        "medium": "Media",
+        "fast": "Rápida"
+      },
+      "feel": {
+        "soft": "Suave",
+        "connected": "Directa",
+        "crisp": "Nítida",
+        "firm": "Firme",
+        "muted": "Amortiguada"
+      },
+      "physical": {
+        "not_specified": "No especificado",
+        "none": "Sin molestias",
+        "mild": "Leve",
+        "moderate": "Moderada",
+        "severe": "Importante"
+      }
+    }
   }
 }
