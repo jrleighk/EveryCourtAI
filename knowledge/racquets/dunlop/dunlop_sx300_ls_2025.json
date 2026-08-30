@@ -20,9 +20,9 @@
     "balance_mm_unstrung": 325,
     "balance_description": "Head Light",
     "string_pattern": "16x19",
-    "beam_mm": null,
-    "stiffness_ra": null,
-    "swingweight": null,
+    "beam_mm": "23-26-23",
+    "stiffness_ra": 68,
+    "swingweight": 315,
 
     "grip_sizes": [
       "L1",

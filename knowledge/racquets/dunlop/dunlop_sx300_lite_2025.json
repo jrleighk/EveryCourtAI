@@ -19,10 +19,10 @@
     "weight_g_unstrung": 270,
     "balance_mm_unstrung": 330,
     "balance_description": "Head Light",
-    "string_pattern": "16x19",
-    "beam_mm": null,
-    "stiffness_ra": null,
-    "swingweight": null,
+    "string_pattern": "16x18",
+    "beam_mm": "23-26-23",
+    "stiffness_ra": 65,
+    "swingweight": 302,
 
     "grip_sizes": [
       "L0",
