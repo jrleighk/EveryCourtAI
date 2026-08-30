@@ -400,6 +400,50 @@ check(
 
 
 /**
+ * ------------------------------------------------------------
+ * Case E
+ * Rich setup + goal should be upgraded by Query Understanding
+ * without changing the existing recommendation-ready behavior.
+ * ------------------------------------------------------------
+ */
+
+const richSetupGoal =
+    await send({
+        message:
+            "我现在使用 Wilson RF 01 Pro Classic，HEAD HAWK TOUCH 1.25，54磅。中级，全场型打法，挥拍速度中等，想要更多控制。",
+        language:
+            "zh"
+    });
+
+
+check(
+    "rich_setup_goal_http_200",
+    richSetupGoal.http === 200
+);
+
+
+check(
+    "rich_setup_goal_recommendation_ready",
+    richSetupGoal?.body?.status ===
+        "recommendation_ready"
+);
+
+
+check(
+    "rich_setup_goal_old_intent_general",
+    richSetupGoal?.body?.question_intent?.primary_intent ===
+        "general_tennis_question"
+);
+
+
+check(
+    "rich_setup_goal_v2_intent_recommend_setup",
+    richSetupGoal?.body?.query_understanding?.intent?.primary ===
+        "recommend_setup"
+);
+
+
+/**
  * ============================================================
  * Result
  * ============================================================
@@ -419,11 +463,11 @@ console.log(
 );
 
 console.log(
-    `Total: ${22}`
+    `Total: ${26}`
 );
 
 console.log(
-    `Passed: ${22 - failures.length}`
+    `Passed: ${26 - failures.length}`
 );
 
 console.log(
