@@ -2481,6 +2481,8 @@ async function handleAI(
 
                 questionIntentResult,
 
+                effectiveIntent,
+
                 engineResult,
 
                 language
