@@ -14,9 +14,9 @@
     "weight_g_unstrung": 320,
     "balance_mm_unstrung": 310,
     "string_pattern": "18x20",
-    "beam_mm": null,
-    "stiffness_ra": null,
-    "swingweight": null,
+    "beam_mm": 21,
+    "stiffness_ra": 62,
+    "swingweight": 329,
 
     "grip_sizes": [
       "L1",
@@ -152,6 +152,10 @@
 
   "verification": {
     "status": "verified",
-    "last_updated": "2026-08-12"
+    "last_updated": "2026-08-12",
+    "dynamic_specs_source": "Inherited from verified PERCEPT 97D Midnight Navy equivalent specification",
+    "swingweight_basis": "strung",
+    "dynamic_specs_verified": true,
+    "dynamic_specs_last_updated": "2026-08-30"
   }
 }
