@@ -25,9 +25,9 @@
     "balance_mm_unstrung": 320,
     "balance_description": "Slightly Head Light",
     "string_pattern": null,
-    "beam_mm": null,
-    "stiffness_ra": null,
-    "swingweight": null,
+    "beam_mm": "23",
+    "stiffness_ra": 66,
+    "swingweight": 317,
 
     "grip_sizes": [
       "L1",
