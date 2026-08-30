@@ -549,6 +549,19 @@ function getRacquetSwingweightBasis(
     raw
 ) {
 
+    const explicitBasis =
+        raw?.verification
+            ?.swingweight_basis;
+
+    if (
+        explicitBasis === "strung" ||
+        explicitBasis === "unstrung" ||
+        explicitBasis === "unknown"
+    ) {
+        return explicitBasis;
+    }
+
+
     const specifications =
         raw?.specifications ??
         {};
