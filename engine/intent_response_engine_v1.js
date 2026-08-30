@@ -13,13 +13,15 @@ const ENGINE_VERSION = "1.0";
 
 export function buildIntentResponse({
   questionIntentResult = null,
+  effectiveIntent = null,
   engineResult = null,
   language = "en"
 } = {}) {
 
   const routing =
     routeQuestionIntent(
-      questionIntentResult
+      questionIntentResult,
+      effectiveIntent
     );
 
   if (

@@ -161,6 +161,26 @@ const cases = [
 
   {
     id:
+      "effective_intent_override",
+
+    intent:
+      "general_tennis_question",
+
+    effective_intent:
+      "recommend_setup",
+
+    expected_primary_intent:
+      "recommend_setup",
+
+    expected_mode:
+      "full_recommendation",
+
+    expected_capability:
+      "available"
+  },
+
+  {
+    id:
       "unsupported_future_intent",
 
     intent:
@@ -204,7 +224,8 @@ for (const test of cases) {
 
   const result =
     routeQuestionIntent(
-      input
+      input,
+      test.effective_intent ?? null
     );
 
 
@@ -221,6 +242,7 @@ for (const test of cases) {
   const primaryIntentPass =
     result.primary_intent ===
     (
+      test.expected_primary_intent ??
       test.intent ??
       test.legacy_intent
     );

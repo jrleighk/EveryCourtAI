@@ -94,10 +94,12 @@ const INTENT_TO_RESPONSE_MODE =
 
 
 export function routeQuestionIntent(
-    questionIntentResult = null
+    questionIntentResult = null,
+    effectiveIntent = null
 ) {
 
     const primaryIntent =
+        effectiveIntent ??
         questionIntentResult
             ?.primary_intent ??
         questionIntentResult
