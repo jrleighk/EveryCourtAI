@@ -1,3 +1,5 @@
+import adaptPlayerProfileV1 from "../src/adapters/player_profile_adapter_v1.js";
+
 export const SETUP_DIAGNOSIS_VERSION = "1.0";
 
 export function diagnoseCurrentSetup({
@@ -22,15 +24,38 @@ export function diagnoseCurrentSetup({
     const decision =
         minimal?.decision ?? null;
 
+    const adaptedProfile =
+        playerProfile
+            ? adaptPlayerProfileV1(playerProfile)
+            : null;
+
+    const physicalContext =
+        adaptedProfile?.physical ?? null;
+
+    const playingLoad =
+        adaptedProfile?.playing_load ?? null;
+
     const unsafeComponents =
         Number(decision?.unsafe_components ?? 0);
 
     const strategy =
         decision?.strategy ?? "unknown";
 
+    const highestPhysical =
+        physicalContext?.highest_constraint ?? null;
+
+    const physicalSeverity =
+        highestPhysical?.severity ?? "none";
+
+    const fatigueLevel =
+        playingLoad?.fatigue_level ?? "none";
+
     const severity =
         unsafeComponents > 0
             ? "high"
+            : physicalSeverity === "high" ||
+              physicalSeverity === "severe"
+                ? "high"
             : strategy === "change_both" ||
               strategy === "change_racquet_only" ||
               strategy === "change_string_only"
@@ -47,6 +72,18 @@ export function diagnoseCurrentSetup({
 
     if (decision?.tension_changed) {
         riskFlags.push("tension_mismatch");
+    }
+
+    if (
+        physicalSeverity !== "none"
+    ) {
+        riskFlags.push("physical_constraint");
+    }
+
+    if (
+        fatigueLevel !== "none"
+    ) {
+        riskFlags.push("fatigue_load");
     }
 
     const findings =
@@ -72,6 +109,16 @@ export function diagnoseCurrentSetup({
 
         version:
             SETUP_DIAGNOSIS_VERSION,
+
+        player_context: {
+            physical: physicalContext,
+            fatigue: {
+                level:
+                    playingLoad?.fatigue_level ?? "none",
+                timing:
+                    playingLoad?.fatigue_timing ?? "none"
+            }
+        },
 
         current_setup: {
             racquet_id:
@@ -116,6 +163,15 @@ export function diagnoseCurrentSetup({
         },
 
         findings,
+
+        physical_context: {
+            body_part:
+                highestPhysical?.body_part ?? null,
+            severity:
+                physicalSeverity,
+            fatigue_level:
+                fatigueLevel
+        },
 
         severity,
 

@@ -5,10 +5,12 @@ import {
 function runCase({
     id,
     decision,
-    expected
+    expected,
+    playerProfile = null
 }) {
     const result =
         diagnoseCurrentSetup({
+            playerProfile,
             scenarioResult: {
                 current_equipment: {
                     racquet_id:
@@ -35,7 +37,19 @@ function runCase({
         result.findings.length === expected.findings,
         result.risk_flags.includes(
             expected.risk_flag
-        ) === Boolean(expected.risk_flag)
+        ) === Boolean(expected.risk_flag),
+
+        expected.body_part === undefined ||
+            result.physical_context.body_part ===
+                expected.body_part,
+
+        expected.physical_severity === undefined ||
+            result.physical_context.severity ===
+                expected.physical_severity,
+
+        expected.fatigue_level === undefined ||
+            result.physical_context.fatigue_level ===
+                expected.fatigue_level
     ];
 
     return {
@@ -94,6 +108,52 @@ const results = [
             severity: "moderate",
             findings: 1,
             risk_flag: null
+        }
+    }),
+
+    runCase({
+        id: "physical_fatigue_context",
+        playerProfile: {
+            profile_version: "1.0",
+            playing_level: "intermediate",
+            primary_goal: "more_comfort",
+
+            physical_condition: {
+                shoulder_sensitivity:
+                    "moderate"
+            },
+            playing_load: {
+                fatigue_level:
+                    "moderate",
+                fatigue_timing:
+                    "late_session"
+            }
+        },
+        decision: {
+            strategy:
+                "change_string_only",
+            setup_change_count:
+                1,
+            unsafe_components:
+                0,
+            tension_changed:
+                false
+        },
+        expected: {
+            next_action:
+                "change_string_only",
+            severity:
+                "moderate",
+            findings:
+                1,
+            risk_flag:
+                "physical_constraint",
+            body_part:
+                "shoulder",
+            physical_severity:
+                "moderate",
+            fatigue_level:
+                "moderate"
         }
     }),
 
