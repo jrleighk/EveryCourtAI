@@ -25,9 +25,9 @@
     "balance_mm_unstrung": 320,
     "balance_description": "Slightly Head Light",
     "string_pattern": null,
-    "beam_mm": null,
-    "stiffness_ra": null,
-    "swingweight": null,
+    "beam_mm": "23-26-23",
+    "stiffness_ra": 69,
+    "swingweight": 318,
 
     "grip_sizes": [
       "L1",
@@ -173,6 +173,10 @@
   "verification": {
     "status": "verified_from_supplied_product_information",
     "last_updated": "2026-08-13",
+    "dynamic_specs_source": "Tennis Warehouse / TWU",
+    "swingweight_basis": "strung",
+    "dynamic_specs_verified": true,
+    "dynamic_specs_last_updated": "2026-08-30",
     "unverified_fields": [
       "length_in",
       "string_pattern",
