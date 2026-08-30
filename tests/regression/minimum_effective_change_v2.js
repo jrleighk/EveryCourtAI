@@ -76,3 +76,30 @@ console.log(
 if (passed !== cases.length) {
     process.exit(1);
 }
+
+const insufficient =
+    buildMinimumEffectiveChangeDecision({
+        scenarioDecision: {
+            strategy: "change_both",
+            unsafe_components: 0,
+            physical_improvement: null
+        }
+    });
+
+if (
+    insufficient.assessment_status !==
+        "insufficient_baseline" ||
+    insufficient.effective_at_current_level !==
+        null ||
+    insufficient.stop_here !==
+        false
+) {
+    console.log(
+        "FAIL insufficient_baseline_contract"
+    );
+    process.exit(1);
+}
+
+console.log(
+    "PASS insufficient_baseline_contract"
+);
