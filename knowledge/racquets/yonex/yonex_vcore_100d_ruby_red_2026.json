@@ -11,12 +11,12 @@
   "specifications": {
     "head_size_sq_in": 100,
     "length_in": 27.0,
-    "weight_g_unstrung": 300,
-    "balance_mm_unstrung": 320,
-    "string_pattern": "18x19",
-    "beam_mm": null,
-    "stiffness_ra": null,
-    "swingweight": null,
+    "weight_g_unstrung": 305,
+    "balance_mm_unstrung": 315,
+    "string_pattern": "16x20",
+    "beam_mm": "24-26-23",
+    "stiffness_ra": 66,
+    "swingweight": 328,
 
     "grip_sizes": [
       "L2",
@@ -135,6 +135,10 @@
 
   "verification": {
     "status": "verified",
-    "last_updated": "2026-08-12"
+    "last_updated": "2026-08-12",
+    "dynamic_specs_source": "Tennis Warehouse / TWU",
+    "swingweight_basis": "strung",
+    "dynamic_specs_verified": true,
+    "dynamic_specs_last_updated": "2026-08-30"
   }
 }
