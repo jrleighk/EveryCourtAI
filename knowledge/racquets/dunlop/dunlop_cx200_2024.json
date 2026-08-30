@@ -15,9 +15,9 @@
     "balance_mm_unstrung": 315,
     "balance_description": "Head Light",
     "string_pattern": null,
-    "beam_mm": null,
-    "stiffness_ra": null,
-    "swingweight": null,
+    "beam_mm": "21.5",
+    "stiffness_ra": 64,
+    "swingweight": 314,
 
     "grip_sizes": [
       "L2",
@@ -160,6 +160,10 @@
   "verification": {
     "status": "verified_from_supplied_product_information",
     "last_updated": "2026-08-13",
+    "dynamic_specs_source": "Tennis Warehouse / TWU",
+    "swingweight_basis": "strung",
+    "dynamic_specs_verified": true,
+    "dynamic_specs_last_updated": "2026-08-30",
     "unverified_fields": [
       "string_pattern",
       "beam_mm",
