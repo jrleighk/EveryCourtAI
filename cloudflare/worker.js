@@ -118,6 +118,7 @@ import {
     updatePendingComparisonContext,
     clearPendingComparisonContext
 } from "../engine/conversation_state_engine.js";
+import { buildPlayerEquipmentFeedbackLoop } from "../engine/player_equipment_feedback_loop_v1.js";
 
 
 import {
@@ -1259,6 +1260,7 @@ async function handleAI(
                         recommendation:
                             null,
 
+
                         follow_up:
                             null,
 
@@ -1382,6 +1384,7 @@ async function handleAI(
 
                     recommendation:
                         null,
+
 
                     follow_up:
                         null,
@@ -1677,6 +1680,7 @@ async function handleAI(
                     recommendation:
                         null,
 
+
                     follow_up:
                         null,
 
@@ -1836,6 +1840,7 @@ async function handleAI(
                     recommendation:
                         null,
 
+
                     follow_up:
                         null,
 
@@ -1910,6 +1915,7 @@ async function handleAI(
 
                 recommendation:
                     null,
+
 
                 follow_up:
                     null,
@@ -2079,6 +2085,7 @@ async function handleAI(
                         conversationResult
                             ?.conversation_state ??
                         null,
+
 
                     follow_up:
                         null,
@@ -2437,6 +2444,7 @@ async function handleAI(
                 conversation_state:
                     conversationState,
 
+
                 follow_up:
                     followUpResult,
 
@@ -2526,6 +2534,14 @@ async function handleAI(
          * Only recommendation_ready reaches this point.
          * ====================================================
          */
+        const feedbackLoopResult = currentTurnPlayerInput?.equipment_change_feedback
+            ? buildPlayerEquipmentFeedbackLoop({
+                recommendation: previousRecommendationContext?.recommendation ?? null,
+                userAction: currentTurnPlayerInput.equipment_change_feedback,
+                feedback: currentTurnPlayerInput.equipment_change_feedback
+            })
+            : null;
+
 
         if (
             conversationState
@@ -2628,6 +2644,8 @@ async function handleAI(
             conversation_state:
                 conversationState,
 
+            feedback_loop:
+                feedbackLoopResult,
             follow_up:
                 followUpResult,
 
