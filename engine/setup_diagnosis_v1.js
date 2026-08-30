@@ -24,9 +24,22 @@ export function diagnoseCurrentSetup({
     const decision =
         minimal?.decision ?? null;
 
-    const adaptedProfile =
+    const adapterProfile =
         playerProfile
-            ? adaptPlayerProfileV1(playerProfile)
+            ? {
+                ...playerProfile,
+                playing_level:
+                    playerProfile.playing_level ??
+                    playerProfile?.level?.id,
+                physical_condition:
+                    playerProfile.physical_condition ??
+                    playerProfile.physical
+            }
+            : null;
+
+    const adaptedProfile =
+        adapterProfile
+            ? adaptPlayerProfileV1(adapterProfile)
             : null;
 
     const physicalContext =

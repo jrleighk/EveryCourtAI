@@ -66,6 +66,10 @@ import {
 } from "./setup_scenario_engine.js";
 
 import {
+    diagnoseCurrentSetup
+} from "./setup_diagnosis_v1.js";
+
+import {
     calculateConfidence
 } from "./confidence_engine.js";
 
@@ -577,6 +581,18 @@ export async function runEveryCourtAI(
         };
 
 
+        const setupDiagnosisResult =
+            diagnoseCurrentSetup({
+                playerProfile,
+                scenarioResult:
+                    setupScenarioResult
+            });
+
+        pipeline.setup_diagnosis_v1 = {
+            status: "completed"
+        };
+
+
         /**
          * ====================================================
          * STEP 8
@@ -683,6 +699,9 @@ export async function runEveryCourtAI(
 
             explanation:
                 explanationResult,
+
+            setup_diagnosis:
+                setupDiagnosisResult,
 
             player_profile:
                 playerProfile,
@@ -898,7 +917,10 @@ export async function runQuickRecommendation(
             result.confidence,
 
         explanation:
-            result.explanation
+            result.explanation,
+
+        setup_diagnosis:
+            result.setup_diagnosis
     };
 }
 
