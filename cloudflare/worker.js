@@ -902,7 +902,13 @@ async function handleAI(
          * during 8O-C2A.
          */
 
+        const effectiveIntent =
+            queryUnderstandingShadow?.intent?.primary ??
+            questionIntentResult?.primary_intent ??
+            null;
+
         void queryUnderstandingShadow;
+        void effectiveIntent;
 
 
         /**
