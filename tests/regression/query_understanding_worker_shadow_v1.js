@@ -110,12 +110,9 @@ check(
  */
 
 check(
-    "not_exposed_as_response_field",
-    !workerSource.includes(
+    "exposed_as_response_field",
+    workerSource.includes(
         "query_understanding:"
-    ) &&
-    !workerSource.includes(
-        "query_understanding_shadow:"
     )
 );
 

@@ -1209,6 +1209,9 @@ async function handleAI(
                         question_intent:
                             questionIntentResult,
 
+                        query_understanding:
+                            queryUnderstandingShadow,
+
                         current_turn_player_input:
                             currentTurnPlayerInput,
 
@@ -1333,6 +1336,9 @@ async function handleAI(
 
                     question_intent:
                         questionIntentResult,
+
+                    query_understanding:
+                        queryUnderstandingShadow,
 
                     current_turn_player_input:
                         currentTurnPlayerInput,
@@ -1622,6 +1628,9 @@ async function handleAI(
                     question_intent:
                         questionIntentResult,
 
+                    query_understanding:
+                        queryUnderstandingShadow,
+
                     current_turn_player_input:
                         currentTurnPlayerInput,
 
@@ -1788,6 +1797,9 @@ async function handleAI(
                     question_intent:
                         questionIntentResult,
 
+                    query_understanding:
+                        queryUnderstandingShadow,
+
                     current_turn_player_input:
                         currentTurnPlayerInput,
 
@@ -1883,6 +1895,9 @@ async function handleAI(
 
                 question_intent:
                     questionIntentResult,
+
+                query_understanding:
+                    queryUnderstandingShadow,
 
                 comparison:
                     comparisonResult,
@@ -2022,6 +2037,9 @@ async function handleAI(
                     question_intent:
                         questionIntentResult,
 
+                    query_understanding:
+                        queryUnderstandingShadow,
+
                     intent_response:
                         recalledIntentResponse,
 
@@ -2141,6 +2159,9 @@ async function handleAI(
 
                     question_intent:
                         questionIntentResult,
+
+                    query_understanding:
+                        queryUnderstandingShadow,
 
                     conversation_id:
                         conversationResult
@@ -2380,6 +2401,9 @@ async function handleAI(
                 question_intent:
                     questionIntentResult,
 
+                query_understanding:
+                    queryUnderstandingShadow,
+
                 current_turn_player_input:
                     currentTurnPlayerInput,
 
@@ -2562,6 +2586,9 @@ async function handleAI(
 
             question_intent:
                 questionIntentResult,
+
+            query_understanding:
+                queryUnderstandingShadow,
 
             intent_response:
                 intentResponse,
