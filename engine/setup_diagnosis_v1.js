@@ -1,4 +1,7 @@
 import adaptPlayerProfileV1 from "../src/adapters/player_profile_adapter_v1.js";
+import {
+    buildMinimumEffectiveChangeDecision
+} from "./minimum_effective_change_v2.js";
 
 export const SETUP_DIAGNOSIS_VERSION = "1.0";
 
@@ -99,6 +102,12 @@ export function diagnoseCurrentSetup({
         riskFlags.push("fatigue_load");
     }
 
+    const minimumEffectiveChange =
+        buildMinimumEffectiveChangeDecision({
+            scenarioDecision:
+                decision
+        });
+
     const findings =
         strategy === "keep_both"
             ? []
@@ -174,6 +183,9 @@ export function diagnoseCurrentSetup({
                     ?.physical_improvement ??
                 null
         },
+
+        minimum_effective_change:
+            minimumEffectiveChange,
 
         findings,
 

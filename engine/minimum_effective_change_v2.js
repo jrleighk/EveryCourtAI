@@ -26,25 +26,37 @@ export function buildMinimumEffectiveChangeDecision({
             0
         );
 
+    const physicalImprovementRaw =
+        scenarioDecision?.physical_improvement;
+
+    const hasPhysicalBaseline =
+        physicalImprovementRaw !== null &&
+        physicalImprovementRaw !== undefined;
+
     const physicalImprovement =
-        Number(
-            scenarioDecision?.physical_improvement ??
-            0
-        );
+        hasPhysicalBaseline
+            ? Number(physicalImprovementRaw)
+            : null;
 
     const effective =
         strategy === "keep_both"
             ? unsafeComponents === 0
-            : (
-                unsafeComponents === 0 &&
-                (
-                    physicalImprovement > 0 ||
-                    strategy === "adjust_tension_only"
-                )
-            );
+            : strategy === "adjust_tension_only"
+                ? unsafeComponents === 0
+                : !hasPhysicalBaseline
+                    ? null
+                    : (
+                        unsafeComponents === 0 &&
+                        physicalImprovement > 0
+                    );
 
     const escalationRequired =
         unsafeComponents > 0;
+
+    const assessmentStatus =
+        effective === null
+            ? "insufficient_baseline"
+            : "assessed";
 
     return {
         engine:
@@ -58,11 +70,14 @@ export function buildMinimumEffectiveChangeDecision({
         intervention_level:
             interventionLevel,
 
+        assessment_status:
+            assessmentStatus,
+
         effective_at_current_level:
             effective,
 
         stop_here:
-            effective &&
+            effective === true &&
             !escalationRequired,
 
         escalation_required:
