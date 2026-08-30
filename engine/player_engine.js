@@ -381,6 +381,36 @@ function normalizePhysicalProfile(rawPhysical = {}) {
  * ============================================================
  */
 
+function normalizeEquipmentChangeFeedback(rawFeedback = {}) {
+    return {
+        status:
+            rawFeedback.status ?? "not_reported",
+
+        changes_made:
+            normalizeArray(
+                rawFeedback.changes_made
+            ),
+
+        outcome:
+            rawFeedback.outcome ?? "unknown",
+
+        likes:
+            normalizeArray(
+                rawFeedback.likes
+            ),
+
+        dislikes:
+            normalizeArray(
+                rawFeedback.dislikes
+            ),
+
+        free_text:
+            typeof rawFeedback.free_text === "string"
+                ? rawFeedback.free_text.trim()
+                : null
+    };
+}
+
 function normalizeCurrentSetupFeedback(rawFeedback = {}) {
     return {
         likes: normalizeArray(
@@ -736,6 +766,12 @@ export async function buildPlayerProfile(
             playerInput.current_setup_feedback ??
             {}
         );
+    const equipmentChangeFeedback =
+        normalizeEquipmentChangeFeedback(
+            playerInput.equipment_change_feedback ??
+            {}
+        );
+
 
     /**
      * ----------------------------------
@@ -949,6 +985,9 @@ export async function buildPlayerProfile(
 
         current_setup_feedback:
             currentSetupFeedback,
+        equipment_change_feedback:
+            equipmentChangeFeedback,
+
 
         environment: {
             primary_court_surface:
