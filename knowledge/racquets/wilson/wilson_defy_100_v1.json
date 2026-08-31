@@ -126,12 +126,24 @@
 
     "beam": {
 
-      "value": "24 mm",
+      "value": "23.8-25-23 mm",
 
       "cn": "中等厚度拍框"
 
     }
+,
 
+    "swing_weight": {
+      "value": 326,
+      "unit": "strung",
+      "cn": "穿线挥重326"
+    },
+
+    "stiffness": {
+      "value": 66,
+      "unit": "RA",
+      "cn": "刚度66 RA"
+    }
   },
 
 
