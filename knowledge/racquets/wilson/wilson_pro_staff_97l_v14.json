@@ -128,7 +128,7 @@
 
     "beam": {
 
-      "value": "23 mm",
+      "value": "23.5 mm",
 
       "cn": "经典Pro Staff薄框设计"
 
@@ -137,10 +137,17 @@
 
     "swing_weight": {
 
-      "value": "around 315",
+      "value": 313,
+      "unit": "strung",
 
-      "cn": "挥重约315"
+      "cn": "穿线挥重313"
 
+    },
+
+    "stiffness": {
+      "value": 68,
+      "unit": "RA",
+      "cn": "刚度68 RA"
     }
 
   },

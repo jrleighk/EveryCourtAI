@@ -151,10 +151,17 @@
 
     "swing_weight": {
 
-      "value": "around 320",
+      "value": 325,
+      "unit": "strung",
 
-      "cn": "挥重约320"
+      "cn": "穿线挥重325"
 
+    },
+
+    "stiffness": {
+      "value": 66,
+      "unit": "RA",
+      "cn": "刚度66 RA"
     }
 
   },
