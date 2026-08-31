@@ -124,21 +124,21 @@
 
     "weight_unstrung": {
 
-      "value": 257,
+      "value": 275,
 
       "unit": "g approx",
 
-      "cn": "预计空拍约257克"
+      "cn": "预计空拍约275克"
 
     },
 
     "weight_strung": {
 
-      "value": 275,
+      "value": 289,
 
       "unit": "g",
 
-      "cn": "穿线后275克（官方）"
+      "cn": "穿线后约289克"
 
     },
 
@@ -171,11 +171,20 @@
     },
 
     "beam": {
+      "value": "23-24-22 mm",
+      "cn": "23-24-22毫米拍框"
+    },
 
-      "value": "24 mm",
+    "swing_weight": {
+      "value": 305,
+      "unit": "strung",
+      "cn": "穿线挥重305"
+    },
 
-      "cn": "待官方确认"
-
+    "stiffness": {
+      "value": 63,
+      "unit": "RA",
+      "cn": "硬度RA 63"
     },
 
     "material": {
@@ -302,7 +311,7 @@
 
     "Alternate 特别配色",
 
-    "275克穿线重量，挥拍轻松",
+    "275克空拍重量，挥拍轻松",
 
     "100平方英寸甜区宽容",
 
@@ -430,7 +439,7 @@
 
     "100",
 
-    "275g",
+    "275g unstrung",
 
     "16x19",
 
@@ -440,7 +449,7 @@
 
   ],
 
-  "ai_summary_cn": "HEAD Boom MP L Alternate 2026 是 Boom MP L 2026 的 Alternate 特别配色版本，采用100平方英寸拍面、275克穿线重量和16×19开放式线床设计。该版本与标准版拥有完全相同的性能，仅采用不同外观设计，适合希望兼顾实战与收藏价值的球员。",
+  "ai_summary_cn": "HEAD Boom MP L Alternate 2026 是 Boom MP L 2026 的 Alternate 特别配色版本，采用100平方英寸拍面、275克空拍重量和16×19开放式线床设计。该版本与标准版拥有完全相同的性能，仅采用不同外观设计，适合希望兼顾实战与收藏价值的球员。",
 
   "variants": [
 
@@ -456,7 +465,7 @@
 
     "verified_specs": {
 
-      "weight_strung": "275 g",
+      "weight_unstrung": "275 g",
 
       "head_size": "100 sq in",
 
@@ -465,6 +474,11 @@
       "string_pattern": "16x19"
 
     },
+
+    "dynamic_specs_source": "Inherited from corresponding Boom 2026 base model; Tennis Warehouse / TWU",
+    "swingweight_basis": "strung",
+    "dynamic_specs_verified": true,
+    "dynamic_specs_last_updated": "2026-08-31",
 
     "knowledge_path": "knowledge/racquets/head/head_boom_mp_l_alternate_2026.json"
 
