@@ -3009,8 +3009,9 @@ export async function submitCurrentPrompt() {
 
 
             updateHealthRecoveryCard(
-                result
-                    .recovery
+                result.recovery,
+                result.health_baseline,
+                result.health_baseline_adjustment
             );
 
 
@@ -3585,7 +3586,9 @@ if (
  */
 
 export function updateHealthRecoveryCard(
-    recovery
+    recovery,
+    baseline = null,
+    baselineAdjustment = null
 ) {
     const anchor =
         document.getElementById(
@@ -3694,6 +3697,101 @@ export function updateHealthRecoveryCard(
                 )
             );
 
+    const deviations =
+        baseline?.deviations ?? {};
+
+    const baselineMetrics = [
+        {
+            key: "hrv",
+            label: "HRV",
+            value: deviations.hrv_percent,
+            inverse: false
+        },
+        {
+            key: "resting_hr",
+            label: "Resting HR",
+            value: deviations.resting_heart_rate_percent,
+            inverse: true
+        },
+        {
+            key: "sleep",
+            label: "Sleep",
+            value: deviations.sleep_percent,
+            inverse: false
+        },
+        {
+            key: "load",
+            label: "7-Day Load",
+            value: deviations.training_load_7d_percent,
+            inverse: true
+        }
+    ];
+
+    const baselineAvailable =
+        baseline?.baseline_available === true;
+
+    const baselineStatus =
+        baselineAdjustment?.baseline_status ??
+        "insufficient_data";
+
+    const metricReadiness =
+        baselineMetrics.map(metric => {
+            if (typeof metric.value !== "number") {
+                return {
+                    ...metric,
+                    readiness: null
+                };
+            }
+
+            const directional =
+                metric.inverse
+                    ? -metric.value
+                    : metric.value;
+
+            return {
+                ...metric,
+                readiness: Math.max(
+                    0,
+                    Math.min(
+                        100,
+                        100 + directional
+                    )
+                )
+            };
+        });
+
+    const radarValues =
+        metricReadiness.map(metric =>
+            metric.readiness ?? 0
+        );
+
+    const radarPoint = (
+        value,
+        index,
+        total = 4
+    ) => {
+        const angle =
+            (-Math.PI / 2) +
+            (index * 2 * Math.PI / total);
+
+        const radius =
+            58 * (value / 100);
+
+        return [
+            80 + Math.cos(angle) * radius,
+            80 + Math.sin(angle) * radius
+        ];
+    };
+
+    const radarPoints =
+        radarValues
+            .map((value, index) =>
+                radarPoint(value, index)
+                    .map(n => n.toFixed(1))
+                    .join(",")
+            )
+            .join(" ");
+
     card.hidden = false;
 
     card.innerHTML = `
@@ -3746,6 +3844,73 @@ export function updateHealthRecoveryCard(
                 ></div>
             </div>
         </div>
+
+        ${
+            baselineAvailable
+                ? `
+        <div class="health-radar">
+            <div class="health-recovery-kicker">
+                BASELINE BALANCE
+            </div>
+
+            <svg
+                viewBox="0 0 160 160"
+                role="img"
+                aria-label="Personal health baseline radar"
+            >
+                <polygon
+                    class="health-radar-grid"
+                    points="80,22 138,80 80,138 22,80"
+                />
+                <polygon
+                    class="health-radar-grid"
+                    points="80,51 109,80 80,109 51,80"
+                />
+                <line class="health-radar-axis" x1="80" y1="22" x2="80" y2="138"/>
+                <line class="health-radar-axis" x1="22" y1="80" x2="138" y2="80"/>
+
+                <polygon
+                    class="health-radar-value"
+                    points="${radarPoints}"
+                />
+            </svg>
+
+            <div class="health-radar-labels">
+                <span>HRV</span>
+                <span>Resting HR</span>
+                <span>Sleep</span>
+                <span>7-Day Load</span>
+            </div>
+        </div>
+
+        <div class="health-baseline-section">
+            <div class="health-recovery-kicker">
+                PERSONAL BASELINE · ${baselineStatus}
+            </div>
+
+            ${metricReadiness.map(metric => `
+                <div class="health-status-row">
+                    <div class="health-status-label">
+                        <span>${metric.label}</span>
+                        <span>${
+                            typeof metric.value === "number"
+                                ? `${metric.value > 0 ? "+" : ""}${metric.value}%`
+                                : "—"
+                        }</span>
+                    </div>
+
+                    <div class="health-status-track">
+                        <div
+                            class="health-status-fill"
+                            style="width:${metric.readiness ?? 0}%"
+                        ></div>
+                    </div>
+                </div>
+            `).join("")}
+        </div>
+                `
+                : ""
+        }
 
         <div class="health-status-row">
             <div class="health-status-label">

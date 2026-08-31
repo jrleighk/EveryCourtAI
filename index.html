@@ -2089,6 +2089,53 @@
       transition: width .3s ease;
     }
 
+    .health-baseline-section {
+      margin-top: 18px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(255,255,255,.07);
+    }
+
+    .health-radar {
+      margin-top: 18px;
+      padding: 14px;
+      border-radius: 14px;
+      background: rgba(255,255,255,.025);
+    }
+
+    .health-radar svg {
+      display: block;
+      width: 100%;
+      max-width: 220px;
+      margin: 8px auto 0;
+    }
+
+    .health-radar-grid,
+    .health-radar-axis {
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1;
+      opacity: .14;
+    }
+
+    .health-radar-value {
+      fill: currentColor;
+      fill-opacity: .12;
+      stroke: currentColor;
+      stroke-width: 2;
+      stroke-linejoin: round;
+      opacity: .8;
+    }
+
+    .health-radar-labels {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 4px;
+      margin-top: 4px;
+      font-size: 10px;
+      text-align: center;
+      opacity: .6;
+    }
+
     @media (max-width: 640px) {
       .health-recovery-card {
         padding: 14px;
@@ -2110,6 +2157,18 @@
 
       .health-recovery-score {
         font-size: 26px;
+      }
+
+      .health-radar {
+        padding: 10px;
+      }
+
+      .health-radar svg {
+        max-width: 190px;
+      }
+
+      .health-radar-labels {
+        font-size: 9px;
       }
     }
 
