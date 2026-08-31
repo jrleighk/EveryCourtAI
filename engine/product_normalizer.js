@@ -504,10 +504,18 @@ function normalizeAvailableGauges(
         raw?.specifications
             ?.available_gauges,
 
+        raw?.specifications
+            ?.available_gauges_mm,
+
         raw?.available_gauges,
 
+        raw?.gauges,
+
         raw?.manufacturer_data
-            ?.available_gauges
+            ?.available_gauges,
+
+        raw?.manufacturer_data
+            ?.diameter_mm
     ];
 
     const gauges = [];
@@ -546,6 +554,8 @@ function normalizeAvailableGauges(
     const directCandidates = [
         raw?.gauge_mm,
         raw?.specifications
+            ?.gauge_mm,
+        raw?.manufacturer_data
             ?.gauge_mm
     ];
 
@@ -564,6 +574,52 @@ function normalizeAvailableGauges(
             gauges.push(
                 gauge
             );
+        }
+    }
+
+
+    const componentCandidates = [
+        raw?.specifications?.mains?.gauge_mm,
+        raw?.specifications?.crosses?.gauge_mm,
+        raw?.hybrid_components?.polyester_string?.gauge_mm,
+        raw?.hybrid_components?.natural_gut_string?.gauge_mm,
+        raw?.manufacturer_data?.composition?.mains?.diameter_mm,
+        raw?.manufacturer_data?.composition?.crosses?.diameter_mm,
+        raw?.default_configuration?.mains?.gauge_mm,
+        raw?.default_configuration?.crosses?.gauge_mm
+    ];
+
+    for (const candidate of componentCandidates) {
+        const gauge =
+            normalizeGaugeValue(
+                candidate
+            );
+
+        if (gauge !== null) {
+            gauges.push(gauge);
+        }
+    }
+
+    const components =
+        raw?.specifications
+            ?.components;
+
+    if (
+        components &&
+        typeof components === "object"
+    ) {
+        for (
+            const component
+            of Object.values(components)
+        ) {
+            const gauge =
+                normalizeGaugeValue(
+                    component?.gauge_mm
+                );
+
+            if (gauge !== null) {
+                gauges.push(gauge);
+            }
         }
     }
 
