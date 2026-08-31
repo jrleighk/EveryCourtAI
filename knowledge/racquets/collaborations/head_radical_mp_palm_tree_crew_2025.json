@@ -83,27 +83,21 @@
     },
 
     "weight_unstrung": {
-      "value": null,
+      "value": 300,
       "unit": "g",
-      "cn": "空拍重量待确认"
+      "cn": "空拍重量300克"
     },
 
     "weight_strung": {
-      "value": 300,
+      "value": 318,
       "unit": "g",
-      "cn": "穿线后300克"
+      "cn": "穿线后318克"
     },
 
     "balance_unstrung": {
-      "value": null,
-      "unit": "mm",
-      "cn": "空拍平衡点待确认"
-    },
-
-    "balance_strung": {
       "value": 320,
       "unit": "mm",
-      "cn": "穿线后平衡点320毫米"
+      "cn": "空拍平衡点320毫米"
     },
 
     "length": {
@@ -118,15 +112,21 @@
     },
 
     "beam": {
-      "value": null,
+      "value": "20-23-21",
       "unit": "mm",
-      "cn": "拍框厚度待确认"
+      "cn": "拍框厚度20-23-21毫米"
     },
 
     "stiffness": {
-      "value": null,
+      "value": 66,
       "unit": "RA",
-      "cn": "刚度待确认"
+      "cn": "刚度66 RA"
+    },
+
+    "swing_weight": {
+      "value": 323,
+      "unit": "strung",
+      "cn": "穿线挥重323"
     },
 
     "material": {
@@ -270,8 +270,9 @@
     "verified": true,
 
     "verified_specs": {
-      "weight_strung": "300 g",
-      "balance_strung": "320 mm",
+      "weight_unstrung": "300 g",
+      "weight_strung": "318 g",
+      "balance_unstrung": "320 mm",
       "head_size": "98 sq in",
       "length": "27 in",
       "string_pattern": "16x19",
@@ -280,13 +281,14 @@
     },
 
     "unverified_specs": [
-      "weight_unstrung",
-      "balance_unstrung",
-      "beam",
-      "stiffness",
       "material",
       "technology"
     ],
+
+    "dynamic_specs_source": "Tennis Warehouse Europe / TWU",
+    "swingweight_basis": "strung",
+    "dynamic_specs_verified": true,
+    "dynamic_specs_last_updated": "2026-08-31",
 
     "knowledge_path": "knowledge/racquets/collaborations/head_radical_mp_palm_tree_crew_2025.json"
   }
