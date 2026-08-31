@@ -1999,6 +1999,120 @@
         width 0.35s ease;
     }
 
+    /* Health Recovery V1 */
+
+    .health-recovery-card {
+      margin-top: 16px;
+      padding: 18px;
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 18px;
+      background: rgba(255,255,255,.035);
+    }
+
+    .health-recovery-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    .health-recovery-kicker {
+      font-size: 11px;
+      letter-spacing: .12em;
+      opacity: .55;
+    }
+
+    .health-recovery-title {
+      margin-top: 4px;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .health-recovery-score {
+      font-size: 30px;
+      font-weight: 800;
+    }
+
+    .health-recovery-bento {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .health-metric {
+      min-height: 82px;
+      padding: 13px;
+      border-radius: 14px;
+      background: rgba(255,255,255,.045);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .health-metric span {
+      font-size: 12px;
+      opacity: .6;
+    }
+
+    .health-metric strong {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    .health-status-row {
+      margin-top: 12px;
+    }
+
+    .health-status-label {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 6px;
+      font-size: 12px;
+      opacity: .75;
+    }
+
+    .health-status-track {
+      height: 7px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: rgba(255,255,255,.08);
+    }
+
+    .health-status-fill {
+      height: 100%;
+      border-radius: inherit;
+      background: currentColor;
+      opacity: .75;
+      transition: width .3s ease;
+    }
+
+    @media (max-width: 640px) {
+      .health-recovery-card {
+        padding: 14px;
+        border-radius: 16px;
+      }
+
+      .health-recovery-bento {
+        gap: 8px;
+      }
+
+      .health-metric {
+        min-height: 72px;
+        padding: 11px;
+      }
+
+      .health-recovery-title {
+        font-size: 16px;
+      }
+
+      .health-recovery-score {
+        font-size: 26px;
+      }
+    }
+
     .setup-card {
       margin-top:
         14px;

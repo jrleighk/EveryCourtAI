@@ -70,6 +70,18 @@ import {
 } from "./setup_diagnosis_v1.js";
 
 import {
+    normalizeHealthData
+} from "./health_data_adapter_v1.js";
+
+import {
+    analyzeTennisRecovery
+} from "./tennis_recovery_engine_v1.js";
+
+import {
+    buildHealthRecommendationContext
+} from "./health_recommendation_context_v1.js";
+
+import {
     calculateConfidence
 } from "./confidence_engine.js";
 
@@ -659,6 +671,39 @@ export async function runEveryCourtAI(
             startedAt;
 
 
+        const healthInput =
+            playerInput
+                ?.health_data;
+
+        const hasHealthData =
+            healthInput &&
+            typeof healthInput === "object" &&
+            Object.keys(
+                healthInput
+            ).length > 0;
+
+        const normalizedHealthData =
+            hasHealthData
+                ? normalizeHealthData(
+                    healthInput
+                )
+                : null;
+
+        const recoveryResult =
+            normalizedHealthData
+                ? analyzeTennisRecovery(
+                    normalizedHealthData
+                )
+                : null;
+
+        const healthContext =
+            recoveryResult
+                ? buildHealthRecommendationContext(
+                    recoveryResult
+                )
+                : null;
+
+
         const summary =
             buildResultSummary({
                 playerProfile,
@@ -702,6 +747,15 @@ export async function runEveryCourtAI(
 
             setup_diagnosis:
                 setupDiagnosisResult,
+
+            health_data:
+                normalizedHealthData,
+
+            recovery:
+                recoveryResult,
+
+            health_context:
+                healthContext,
 
             player_profile:
                 playerProfile,

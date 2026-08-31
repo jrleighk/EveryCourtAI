@@ -3008,6 +3008,12 @@ export async function submitCurrentPrompt() {
             );
 
 
+            updateHealthRecoveryCard(
+                result
+                    .recovery
+            );
+
+
             window
                 ?.EveryCourtCommerceDemo
                 ?.setCommerceRecommendation
@@ -3570,4 +3576,188 @@ if (
                     ?.();
             }
         );
+}
+
+/**
+ * ============================================================
+ * Health Recovery Card V1
+ * ============================================================
+ */
+
+export function updateHealthRecoveryCard(
+    recovery
+) {
+    const anchor =
+        document.getElementById(
+            "recommendedRacquet"
+        );
+
+    if (!anchor) return;
+
+    const setupCard =
+        anchor.closest(
+            ".setup-card"
+        );
+
+    if (!setupCard) return;
+
+    let card =
+        document.getElementById(
+            "healthRecoveryCard"
+        );
+
+    if (!recovery) {
+        if (card) card.hidden = true;
+        return;
+    }
+
+    if (!card) {
+        card =
+            document.createElement(
+                "section"
+            );
+
+        card.id =
+            "healthRecoveryCard";
+
+        card.className =
+            "health-recovery-card";
+
+        setupCard.insertAdjacentElement(
+            "afterend",
+            card
+        );
+    }
+
+    const score =
+        typeof recovery.recovery_score ===
+        "number"
+            ? Math.max(
+                0,
+                Math.min(
+                    100,
+                    recovery.recovery_score
+                )
+            )
+            : null;
+
+    const status =
+        recovery.recovery_status ??
+        "unknown";
+
+    const statusLabel = {
+        ready:
+            "Ready · 状态良好",
+
+        caution:
+            "Caution · 注意负荷",
+
+        recovery_priority:
+            "Recovery Priority · 优先恢复",
+
+        unknown:
+            "Insufficient Data · 数据不足"
+    }[status] ??
+        "Insufficient Data · 数据不足";
+
+    const guidanceLabel = {
+        normal_training:
+            "正常训练",
+
+        moderate_load:
+            "适度降低负荷",
+
+        reduce_intensity:
+            "降低训练强度",
+
+        insufficient_data:
+            "需要更多数据"
+    }[
+        recovery
+            .next_session_guidance
+    ] ??
+        "需要更多数据";
+
+    const load =
+        typeof recovery.session_load ===
+        "number"
+            ? recovery.session_load
+            : null;
+
+    const loadPercent =
+        load === null
+            ? 0
+            : Math.min(
+                100,
+                Math.round(
+                    load / 12
+                )
+            );
+
+    card.hidden = false;
+
+    card.innerHTML = `
+        <div class="health-recovery-header">
+            <div>
+                <div class="health-recovery-kicker">
+                    RECOVERY INTELLIGENCE
+                </div>
+                <div class="health-recovery-title">
+                    ${statusLabel}
+                </div>
+            </div>
+
+            <div class="health-recovery-score">
+                ${score ?? "—"}
+            </div>
+        </div>
+
+        <div class="health-recovery-bento">
+            <div class="health-metric">
+                <span>Recovery</span>
+                <strong>${score === null ? "—" : `${score}%`}</strong>
+            </div>
+
+            <div class="health-metric">
+                <span>Session Load</span>
+                <strong>${load ?? "—"}</strong>
+            </div>
+
+            <div class="health-metric">
+                <span>Fatigue Risk</span>
+                <strong>${recovery.fatigue_risk ?? "unknown"}</strong>
+            </div>
+
+            <div class="health-metric">
+                <span>Next Session</span>
+                <strong>${guidanceLabel}</strong>
+            </div>
+        </div>
+
+        <div class="health-status-row">
+            <div class="health-status-label">
+                <span>Recovery Readiness</span>
+                <span>${score === null ? "—" : `${score}%`}</span>
+            </div>
+            <div class="health-status-track">
+                <div
+                    class="health-status-fill"
+                    style="width:${score ?? 0}%"
+                ></div>
+            </div>
+        </div>
+
+        <div class="health-status-row">
+            <div class="health-status-label">
+                <span>Training Load</span>
+                <span>${load ?? "—"}</span>
+            </div>
+            <div class="health-status-track">
+                <div
+                    class="health-status-fill"
+                    style="width:${loadPercent}%"
+                ></div>
+            </div>
+        </div>
+    `;
 }
