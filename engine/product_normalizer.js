@@ -1045,6 +1045,31 @@ export function normalizeStringRecord(
             : {};
 
 
+    const playingCharacteristics =
+        isPlainObject(
+            raw?.playing_characteristics
+        )
+            ? raw.playing_characteristics
+            : {};
+
+
+    const playability =
+        isPlainObject(
+            raw?.playability
+        )
+            ? Object.fromEntries(
+                Object.entries(raw.playability).map(
+                    ([key, value]) => [
+                        key,
+                        typeof value === "number"
+                            ? value / 10
+                            : value
+                    ]
+                )
+            )
+            : {};
+
+
     const designProfile =
         isPlainObject(
             raw?.design_profile
@@ -1069,37 +1094,53 @@ export function normalizeStringRecord(
     const coreDna = {
         power:
             normalizeRating(
-                aiRating.power
+                aiRating.power ??
+                playingCharacteristics.power ??
+                playability.power
             ),
 
         control:
             normalizeRating(
-                aiRating.control
+                aiRating.control ??
+                playingCharacteristics.control ??
+                playability.control
             ),
 
         spin:
             normalizeRating(
-                aiRating.spin
+                aiRating.spin ??
+                playingCharacteristics.spin ??
+                playability.spin
             ),
 
         comfort:
             normalizeRating(
-                aiRating.comfort
+                aiRating.comfort ??
+                playingCharacteristics.comfort ??
+                playability.comfort
             ),
 
         feel:
             normalizeRating(
-                aiRating.feel
+                aiRating.feel ??
+                playingCharacteristics.feel ??
+                playability.feel
             ),
 
         durability:
             normalizeRating(
-                aiRating.durability
+                aiRating.durability ??
+                playingCharacteristics.durability ??
+                playability.durability
             ),
 
         tension_maintenance:
             normalizeRating(
                 aiRating
+                    .tension_maintenance ??
+                playingCharacteristics
+                    .tension_maintenance ??
+                playability
                     .tension_maintenance
             )
     };
