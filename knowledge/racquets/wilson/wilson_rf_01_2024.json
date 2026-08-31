@@ -149,7 +149,7 @@
 
     "beam": {
 
-      "value": "22.5 mm",
+      "value": "23.2-23-22 mm",
 
       "cn": "竞技型薄框设计"
 
@@ -158,10 +158,17 @@
 
     "swing_weight": {
 
-      "value": "around 315",
+      "value": 319,
+      "unit": "strung",
 
-      "cn": "挥重约315"
+      "cn": "穿线挥重319"
 
+    },
+
+    "stiffness": {
+      "value": 64,
+      "unit": "RA",
+      "cn": "刚度64 RA"
     }
 
   },
