@@ -96,8 +96,15 @@
 
 
     "swing_weight": {
-      "value": "around 325",
-      "cn": "挥重约325"
+      "value": 322,
+      "unit": "strung",
+      "cn": "穿线挥重322"
+    },
+
+    "stiffness": {
+      "value": 66,
+      "unit": "RA",
+      "cn": "刚度66 RA"
     }
 
   },
@@ -339,6 +346,11 @@
     "status": "official",
 
     "verified": true,
+
+    "dynamic_specs_source": "Tennis Warehouse / TWU",
+    "swingweight_basis": "strung",
+    "dynamic_specs_verified": true,
+    "dynamic_specs_last_updated": "2026-08-31",
 
 
     "knowledge_path":

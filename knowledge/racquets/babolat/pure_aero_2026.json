@@ -96,8 +96,15 @@
 
 
     "swing_weight": {
-      "value": "around 290-295",
-      "cn": "挥重约290-295"
+      "value": 320,
+      "unit": "strung",
+      "cn": "穿线挥重320"
+    },
+
+    "stiffness": {
+      "value": 66,
+      "unit": "RA",
+      "cn": "刚度66 RA"
     }
 
   },
@@ -279,6 +286,11 @@
     "status": "official",
 
     "verified": true,
+
+    "dynamic_specs_source": "Tennis Warehouse / TWU",
+    "swingweight_basis": "strung",
+    "dynamic_specs_verified": true,
+    "dynamic_specs_last_updated": "2026-08-31",
 
     "knowledge_path":
     "knowledge/racquets/babolat/pure_aero_2026.json"
