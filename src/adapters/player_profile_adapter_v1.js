@@ -251,7 +251,16 @@ function validateRequiredProfileFields(
     );
   }
 
-  if (!profile.playing_level) {
+  const playingLevel =
+    profile.playing_level ??
+    profile?.level?.id ??
+    (
+      typeof profile.level === "string"
+        ? profile.level
+        : null
+    );
+
+  if (!playingLevel) {
     throw new Error(
       "Missing required field: playing_level."
     );
@@ -262,6 +271,8 @@ function validateRequiredProfileFields(
       "Missing required field: primary_goal."
     );
   }
+
+  return playingLevel;
 }
 
 /**
@@ -274,7 +285,8 @@ function validateRequiredProfileFields(
 export function adaptPlayerProfileV1(
   profile
 ) {
-  validateRequiredProfileFields(profile);
+  const playingLevel =
+    validateRequiredProfileFields(profile);
 
   const currentSetup =
     normalizeCurrentSetup(
@@ -333,7 +345,7 @@ export function adaptPlayerProfileV1(
 
     player: {
       playing_level:
-        profile.playing_level,
+        playingLevel,
 
       playing_style:
         Array.isArray(
