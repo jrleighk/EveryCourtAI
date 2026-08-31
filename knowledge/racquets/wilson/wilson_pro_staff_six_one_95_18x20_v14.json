@@ -139,7 +139,7 @@
 
     "beam": {
 
-      "value": "22 mm",
+      "value": "21 mm",
 
       "cn": "经典薄框设计"
 
@@ -148,10 +148,17 @@
 
     "swing_weight": {
 
-      "value": "around 330",
+      "value": 325,
+      "unit": "strung",
 
-      "cn": "挥重约330"
+      "cn": "穿线挥重325"
 
+    },
+
+    "stiffness": {
+      "value": 64,
+      "unit": "RA",
+      "cn": "刚度64 RA"
     }
 
   },
