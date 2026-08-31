@@ -3008,13 +3008,6 @@ export async function submitCurrentPrompt() {
             );
 
 
-            updateHealthRecoveryCard(
-                result.recovery,
-                result.health_baseline,
-                result.health_baseline_adjustment
-            );
-
-
             window
                 ?.EveryCourtCommerceDemo
                 ?.setCommerceRecommendation
@@ -3023,6 +3016,12 @@ export async function submitCurrentPrompt() {
                         .recommendation
                 );
         }
+
+        updateHealthRecoveryCard(
+            result?.recovery ?? null,
+            result?.health_baseline ?? null,
+            result?.health_baseline_adjustment ?? null
+        );
 
 
     } catch (
