@@ -60,7 +60,13 @@
     "string_pattern_cn": "16×19线床",
 
     "beam": "23-26-23 mm",
-    "beam_cn": "23-26-23毫米拍框"
+    "beam_cn": "23-26-23毫米拍框",
+
+    "swing_weight": 308,
+    "swing_weight_cn": "穿线挥重308",
+
+    "stiffness": 69,
+    "stiffness_cn": "刚度69 RA"
   },
 
 
@@ -163,6 +169,11 @@
     "status": "official",
 
     "verified": true,
+
+    "dynamic_specs_source": "Tennis Warehouse / Racquet Finder",
+    "swingweight_basis": "strung",
+    "dynamic_specs_verified": true,
+    "dynamic_specs_last_updated": "2026-08-31",
 
     "knowledge_path":
     "knowledge/racquets/babolat/babolat_pure_drive_team_spectra_edition_2026.json"
