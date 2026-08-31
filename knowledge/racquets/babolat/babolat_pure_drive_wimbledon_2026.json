@@ -109,6 +109,24 @@
     "string_pattern": {
       "value": "16x19",
       "cn": "16×19开放式线床"
+    },
+
+    "swing_weight": {
+      "value": 317,
+      "unit": "strung",
+      "cn": "穿线挥重317"
+    },
+
+    "stiffness": {
+      "value": 69,
+      "unit": "RA",
+      "cn": "刚度69 RA"
+    },
+
+    "beam": {
+      "value": "23-26-23",
+      "unit": "mm",
+      "cn": "拍框厚度23-26-23毫米"
     }
 
   },
@@ -248,6 +266,11 @@
     "verified": true,
 
     "product_year_checked": 2026,
+
+    "dynamic_specs_source": "Tennis Warehouse / TWU",
+    "swingweight_basis": "strung",
+    "dynamic_specs_verified": true,
+    "dynamic_specs_last_updated": "2026-08-31",
 
     "knowledge_path":
     "knowledge/racquets/special_editions/babolat_pure_drive_wimbledon_2026.json"
