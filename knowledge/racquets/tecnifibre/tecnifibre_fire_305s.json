@@ -40,8 +40,8 @@
       "throat": 22.5
     },
 
-    "stiffness_ra": null,
-    "swingweight": null,
+    "stiffness_ra": 66,
+    "swingweight": 325,
     "twistweight": null,
     "vibration_hz": null,
 
