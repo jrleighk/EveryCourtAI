@@ -2451,6 +2451,18 @@ async function handleAI(
                 recommendation:
                     null,
 
+                recovery:
+                    engineResult?.recovery ?? null,
+
+                health_baseline:
+                    engineResult?.health_baseline ?? null,
+
+                health_baseline_adjustment:
+                    engineResult?.health_baseline_adjustment ?? null,
+
+                health_context:
+                    engineResult?.health_context ?? null,
+
                 recommendation_preview:
                     buildGeneralDirection(
                         engineResult
