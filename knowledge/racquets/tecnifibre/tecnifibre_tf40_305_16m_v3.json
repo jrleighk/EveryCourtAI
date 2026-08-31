@@ -29,9 +29,9 @@
     "weight_g_unstrung": 305,
     "balance_mm_unstrung": null,
     "string_pattern": "16x19",
-    "beam_mm": null,
-    "stiffness_ra": null,
-    "swingweight": null,
+    "beam_mm": 22.0,
+    "stiffness_ra": 64,
+    "swingweight": 320,
     "twistweight": null,
     "vibration_hz": null,
 
