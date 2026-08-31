@@ -65,22 +65,16 @@
       "cn": "100平方英寸"
     },
 
-    "weight_strung": {
+    "weight_unstrung": {
       "value": 295,
       "unit": "g",
-      "cn": "穿线后295克"
-    },
-
-    "weight_unstrung": {
-      "value": 277,
-      "unit": "g approx",
-      "cn": "预计空拍约277克"
+      "cn": "空拍重量295克"
     },
 
     "balance": {
       "value": 295,
       "unit": "mm",
-      "cn": "穿线后平衡点295毫米"
+      "cn": "空拍平衡点295毫米"
     },
 
     "length": {
@@ -92,7 +86,11 @@
     "string_pattern": {
       "value": "16x18",
       "cn": "16×18开放式线床"
-    }
+    },
+
+    "beam": {"value": "23-25-24", "unit": "mm"},
+    "stiffness": {"value": 60, "unit": "RA"},
+    "swing_weight": {"value": 291, "unit": "strung"}
 
   },
 
@@ -238,7 +236,7 @@
 
   ],
 
-  "ai_summary_cn": "HEAD Squared 2026 是一款面向中级球员的现代旋转型球拍，采用100平方英寸拍面、16×18开放式线床和约295克穿线重量设计，强调快速挥拍、强烈旋转和良好的容错性，适合希望提升上旋能力和底线进攻表现的球员。",
+  "ai_summary_cn": "HEAD Squared 2026 是一款面向中级球员的现代旋转型球拍，采用100平方英寸拍面、16×18开放式线床和295克空拍重量设计，强调快速挥拍、强烈旋转和良好的容错性，适合希望提升上旋能力和底线进攻表现的球员。",
 
   "variants": [],
 
@@ -250,11 +248,16 @@
 
     "verified_specs": {
       "head_size": "100 sq in",
-      "weight_strung": "295 g",
-      "balance_strung": "295 mm",
+      "weight_unstrung": "295 g",
+      "balance_unstrung": "295 mm",
       "length": "27 in",
       "string_pattern": "16x18"
     },
+
+    "dynamic_specs_source": "Tennis Warehouse / TWU",
+    "swingweight_basis": "strung",
+    "dynamic_specs_verified": true,
+    "dynamic_specs_last_updated": "2026-08-31",
 
     "knowledge_path": "knowledge/racquets/head/head_squared_2026.json"
 

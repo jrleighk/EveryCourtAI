@@ -72,27 +72,15 @@
     },
 
     "weight_unstrung": {
-      "value": null,
-      "unit": "g",
-      "cn": "空拍重量待官方确认"
-    },
-
-    "weight_strung": {
       "value": 265,
       "unit": "g",
-      "cn": "穿线后265克（官方）"
+      "cn": "空拍重量265克（官方）"
     },
 
     "balance_unstrung": {
-      "value": null,
-      "unit": "mm",
-      "cn": "空拍平衡点待官方确认"
-    },
-
-    "balance_strung": {
       "value": 345,
       "unit": "mm",
-      "cn": "穿线后平衡点345毫米（官方）"
+      "cn": "空拍平衡点345毫米（官方）"
     },
 
     "length": {
@@ -107,15 +95,21 @@
     },
 
     "beam": {
-      "value": null,
+      "value": "26-25-23",
       "unit": "mm",
-      "cn": "拍框厚度待官方确认"
+      "cn": "拍框厚度26-25-23毫米"
     },
 
     "stiffness": {
-      "value": null,
+      "value": 65,
       "unit": "RA",
-      "cn": "刚度待官方确认"
+      "cn": "刚度65 RA"
+    },
+
+    "swing_weight": {
+      "value": 315,
+      "unit": "strung",
+      "cn": "穿线挥重315"
     },
 
     "material": {
@@ -165,7 +159,7 @@
 
     "110平方英寸超大甜区",
 
-    "265克穿线重量非常轻松",
+    "265克空拍重量非常轻松",
 
     "27.4英寸加长设计提升发球和底线力量",
 
@@ -291,7 +285,7 @@
 
   ],
 
-  "ai_summary_cn": "HEAD PWR 110 2026 是一款专为初学者和休闲球员设计的易打型球拍，采用110平方英寸拍面、27.4英寸加长拍身、265克穿线重量和345毫米穿线平衡点设计，提供极高的容错率、轻松发力和舒适击球体验，非常适合作为入门或娱乐型球拍。",
+  "ai_summary_cn": "HEAD PWR 110 2026 是一款专为初学者和休闲球员设计的易打型球拍，采用110平方英寸拍面、27.4英寸加长拍身、265克空拍重量和345毫米空拍平衡点设计，提供极高的容错率、轻松发力和舒适击球体验，非常适合作为入门或娱乐型球拍。",
 
   "variants": [],
 
@@ -303,8 +297,8 @@
 
     "verified_specs": {
 
-      "weight_strung": "265 g",
-      "balance_strung": "345 mm",
+      "weight_unstrung": "265 g",
+      "balance_unstrung": "345 mm",
       "head_size": "110 sq in",
       "length": "27.4 in",
       "string_pattern": "16x19",
@@ -323,6 +317,11 @@
       "technology"
 
     ],
+
+    "dynamic_specs_source": "Tennis Warehouse / TWU",
+    "swingweight_basis": "strung",
+    "dynamic_specs_verified": true,
+    "dynamic_specs_last_updated": "2026-08-31",
 
     "knowledge_path": "knowledge/racquets/head/head_pwr_110_2026.json"
 
