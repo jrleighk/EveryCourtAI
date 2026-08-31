@@ -123,9 +123,15 @@
     },
 
     "stiffness": {
-      "value": 66,
+      "value": 60,
       "unit": "RA",
-      "cn": "刚度66 RA"
+      "cn": "刚度60 RA"
+    },
+
+    "swing_weight": {
+      "value": 320,
+      "unit": "strung",
+      "cn": "穿线挥重320"
     },
 
     "material": {
@@ -339,6 +345,11 @@
     "status": "official",
 
     "verified": true,
+
+    "dynamic_specs_source": "Tennis Warehouse / TWU",
+    "swingweight_basis": "strung",
+    "dynamic_specs_verified": true,
+    "dynamic_specs_last_updated": "2026-08-31",
 
     "knowledge_path": "knowledge/racquets/special_editions/babolat_pure_strike_100_16x20_carbon_grey_2025.json"
 

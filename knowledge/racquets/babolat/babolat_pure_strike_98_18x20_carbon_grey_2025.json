@@ -123,9 +123,15 @@
     },
 
     "stiffness": {
-      "value": 66,
+      "value": 63,
       "unit": "RA",
-      "cn": "刚度66 RA"
+      "cn": "刚度63 RA"
+    },
+
+    "swing_weight": {
+      "value": 332,
+      "unit": "strung",
+      "cn": "穿线挥重332"
     },
 
     "material": {
@@ -341,6 +347,11 @@
     "status": "official",
 
     "verified": true,
+
+    "dynamic_specs_source": "Tennis Warehouse / TWU",
+    "swingweight_basis": "strung",
+    "dynamic_specs_verified": true,
+    "dynamic_specs_last_updated": "2026-08-31",
 
     "knowledge_path": "knowledge/racquets/special_editions/babolat_pure_strike_98_18x20_carbon_grey_2025.json"
 
