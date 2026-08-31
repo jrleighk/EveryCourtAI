@@ -82,6 +82,14 @@ import {
 } from "./health_recommendation_context_v1.js";
 
 import {
+    analyzeHealthBaseline
+} from "./health_baseline_engine_v1.js";
+
+import {
+    buildBaselineRecoveryAdjustment
+} from "./health_baseline_adjustment_v1.js";
+
+import {
     calculateConfidence
 } from "./confidence_engine.js";
 
@@ -689,12 +697,85 @@ export async function runEveryCourtAI(
                 )
                 : null;
 
-        const recoveryResult =
+        const healthBaseline =
+            playerInput
+                ?.health_baseline;
+
+        const hasHealthBaseline =
+            healthBaseline &&
+            typeof healthBaseline === "object" &&
+            Object.keys(
+                healthBaseline
+            ).length > 0;
+
+        const baselineAnalysis =
+            normalizedHealthData &&
+            hasHealthBaseline
+                ? analyzeHealthBaseline(
+                    normalizedHealthData,
+                    healthBaseline
+                )
+                : null;
+
+        const baselineAdjustment =
+            baselineAnalysis
+                ? buildBaselineRecoveryAdjustment(
+                    baselineAnalysis
+                )
+                : null;
+
+        const rawRecoveryResult =
             normalizedHealthData
                 ? analyzeTennisRecovery(
                     normalizedHealthData
                 )
                 : null;
+
+        const recoveryResult =
+            rawRecoveryResult
+                ? {
+                    ...rawRecoveryResult,
+                    recovery_score:
+                        typeof rawRecoveryResult.recovery_score === "number"
+                            ? Math.max(
+                                0,
+                                rawRecoveryResult.recovery_score +
+                                (
+                                    baselineAdjustment?.recovery_adjustment ?? 0
+                                )
+                            )
+                            : null
+                }
+                : null;
+
+        if (
+            recoveryResult &&
+            typeof recoveryResult.recovery_score === "number"
+        ) {
+            const score =
+                recoveryResult.recovery_score;
+
+            recoveryResult.recovery_status =
+                score >= 80
+                    ? "ready"
+                    : score >= 60
+                        ? "caution"
+                        : "recovery_priority";
+
+            recoveryResult.fatigue_risk =
+                recoveryResult.recovery_status === "ready"
+                    ? "low"
+                    : recoveryResult.recovery_status === "caution"
+                        ? "moderate"
+                        : "high";
+
+            recoveryResult.next_session_guidance =
+                recoveryResult.recovery_status === "ready"
+                    ? "normal_training"
+                    : recoveryResult.recovery_status === "caution"
+                        ? "moderate_load"
+                        : "reduce_intensity";
+        }
 
         const healthContext =
             recoveryResult
@@ -753,6 +834,12 @@ export async function runEveryCourtAI(
 
             recovery:
                 recoveryResult,
+
+            health_baseline:
+                baselineAnalysis,
+
+            health_baseline_adjustment:
+                baselineAdjustment,
 
             health_context:
                 healthContext,

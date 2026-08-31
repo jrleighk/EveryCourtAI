@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EveryCourtAI Health Baseline V1",
+  "type": "object",
+  "required": [
+    "schema_version"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "baseline_window_days": {
+      "type": ["number", "null"],
+      "minimum": 1
+    },
+    "resting_heart_rate_bpm": {
+      "type": ["number", "null"],
+      "minimum": 20,
+      "maximum": 180
+    },
+    "hrv_ms": {
+      "type": ["number", "null"],
+      "minimum": 0
+    },
+    "sleep_duration_hours": {
+      "type": ["number", "null"],
+      "minimum": 0,
+      "maximum": 24
+    },
+    "training_load_7d": {
+      "type": ["number", "null"],
+      "minimum": 0
+    }
+  },
+  "additionalProperties": false
+}
