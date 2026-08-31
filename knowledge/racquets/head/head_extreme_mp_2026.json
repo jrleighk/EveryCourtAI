@@ -106,9 +106,15 @@
     },
 
     "stiffness": {
-      "value": 65,
+      "value": 67,
       "unit": "RA",
-      "cn": "约65 RA"
+      "cn": "约67 RA"
+    },
+
+    "swing_weight": {
+      "value": 318,
+      "unit": "strung",
+      "cn": "穿线挥重318"
     },
 
     "material": {
@@ -343,6 +349,11 @@
     "status": "official",
 
     "verified": true,
+
+    "dynamic_specs_source": "Tennis Warehouse / TWU",
+    "swingweight_basis": "strung",
+    "dynamic_specs_verified": true,
+    "dynamic_specs_last_updated": "2026-08-31",
 
     "knowledge_path": "knowledge/racquets/head/head_extreme_mp_2026.json"
 
