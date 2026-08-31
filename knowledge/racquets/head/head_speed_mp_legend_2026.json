@@ -117,16 +117,18 @@
     },
 
     "beam": {
-      "value": null,
+      "value": "23-23-23",
       "unit": "mm",
       "cn": "拍框厚度待官方确认"
     },
 
     "stiffness": {
-      "value": null,
+      "value": 60,
       "unit": "RA",
       "cn": "刚度待官方确认"
     },
+
+    "swing_weight": { "value": 329, "unit": "strung", "cn": "穿线后挥重329（继承基础型号）" },
 
     "material": {
       "value": null,
