@@ -66,15 +66,15 @@
     },
 
     "weight_unstrung": {
-      "value": 277,
-      "unit": "g approx",
-      "cn": "预计空拍约277克"
+      "value": 295,
+      "unit": "g",
+      "cn": "空拍重量295克"
     },
 
     "weight_strung": {
-      "value": 295,
+      "value": 312,
       "unit": "g",
-      "cn": "穿线后295克（官方）"
+      "cn": "穿线后约312克"
     },
 
     "balance": {
@@ -301,7 +301,7 @@
 
     "100",
 
-    "295g",
+    "295g unstrung",
 
     "16x19",
 
@@ -311,7 +311,7 @@
 
   ],
 
-  "ai_summary_cn": "HEAD Boom MP 2026 是 Boom 系列主力型号，采用100平方英寸拍面、295克穿线重量和16×19开放式线床设计，定位中高级球员。它拥有优秀的力量输出、舒适击球手感和宽容性，非常适合现代底线打法和希望轻松发力的球员。",
+  "ai_summary_cn": "HEAD Boom MP 2026 是 Boom 系列主力型号，采用100平方英寸拍面、295克空拍重量和16×19开放式线床设计，定位中高级球员。它拥有优秀的力量输出、舒适击球手感和宽容性，非常适合现代底线打法和希望轻松发力的球员。",
 
   "variants": [
 
@@ -329,7 +329,7 @@
 
     "verified_specs": {
 
-      "weight_strung": "295 g",
+      "weight_unstrung": "295 g",
       "head_size": "100 sq in",
       "length": "27 in",
       "string_pattern": "16x19"
