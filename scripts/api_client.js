@@ -1016,6 +1016,26 @@ function normalizeApiResponse(
                 ?.player_input ??
             null,
 
+        recovery:
+            data
+                ?.recovery ??
+            null,
+
+        health_baseline:
+            data
+                ?.health_baseline ??
+            null,
+
+        health_baseline_adjustment:
+            data
+                ?.health_baseline_adjustment ??
+            null,
+
+        health_context:
+            data
+                ?.health_context ??
+            null,
+
         raw:
             data
     };
