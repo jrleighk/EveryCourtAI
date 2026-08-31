@@ -3778,6 +3778,67 @@
               </select>
             </div>
 
+            <!-- Health / Recovery V1 -->
+            <div class="profile-field">
+              <label for="healthSessionDuration" data-i18n="profile.health.session_duration">Tennis session duration</label>
+              <input id="healthSessionDuration" type="number" min="0" step="1" placeholder="minutes" data-i18n-placeholder="profile.health.minutes">
+            </div>
+
+            <div class="profile-field">
+              <label for="healthSleepDuration" data-i18n="profile.health.sleep_duration">Sleep duration</label>
+              <input id="healthSleepDuration" type="number" min="0" max="24" step="0.1" placeholder="hours" data-i18n-placeholder="profile.health.hours">
+            </div>
+
+            <div class="profile-field">
+              <label for="healthFatigueLevel" data-i18n="profile.health.fatigue">Current fatigue</label>
+              <select id="healthFatigueLevel">
+                <option value="" data-i18n="profile.options.select">Select</option>
+                <option value="none" data-i18n="profile.health.none">None</option>
+                <option value="low" data-i18n="profile.health.low">Low</option>
+                <option value="moderate" data-i18n="profile.health.moderate">Moderate</option>
+                <option value="high" data-i18n="profile.health.high">High</option>
+              </select>
+            </div>
+
+            <div class="profile-field">
+              <label for="healthRpe" data-i18n="profile.health.rpe">Perceived exertion (0–10)</label>
+              <input id="healthRpe" type="number" min="0" max="10" step="1" placeholder="0–10">
+            </div>
+
+            <div class="profile-field">
+              <label for="healthHrv" data-i18n="profile.health.hrv">Current HRV</label>
+              <input id="healthHrv" type="number" min="0" step="1" placeholder="ms">
+            </div>
+
+            <div class="profile-field">
+              <label for="healthRestingHr" data-i18n="profile.health.resting_hr">Resting heart rate</label>
+              <input id="healthRestingHr" type="number" min="20" max="180" step="1" placeholder="bpm">
+            </div>
+
+            <div class="profile-field">
+              <label for="healthRecentLoad" data-i18n="profile.health.recent_load">7-day training load</label>
+              <input id="healthRecentLoad" type="number" min="0" step="1">
+            </div>
+
+            <div class="profile-field">
+              <label for="healthBaselineHrv" data-i18n="profile.health.baseline_hrv">Baseline HRV</label>
+              <input id="healthBaselineHrv" type="number" min="0" step="1" placeholder="ms">
+            </div>
+
+            <div class="profile-field">
+              <label for="healthBaselineRestingHr" data-i18n="profile.health.baseline_resting_hr">Baseline resting HR</label>
+              <input id="healthBaselineRestingHr" type="number" min="20" max="180" step="1" placeholder="bpm">
+            </div>
+
+            <div class="profile-field">
+              <label for="healthBaselineSleep" data-i18n="profile.health.baseline_sleep">Baseline sleep</label>
+              <input id="healthBaselineSleep" type="number" min="0" max="24" step="0.1" placeholder="hours" data-i18n-placeholder="profile.health.hours">
+            </div>
+
+            <div class="profile-field">
+              <label for="healthBaselineLoad" data-i18n="profile.health.baseline_load">Baseline 7-day load</label>
+              <input id="healthBaselineLoad" type="number" min="0" step="1">
+            </div>
           </div>
 
         </section>

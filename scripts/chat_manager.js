@@ -2550,6 +2550,80 @@ function readPlayerProfileForm() {
     }
 
 
+
+    const optionalNumber = id => {
+        const raw = getValue(id);
+
+        if (
+            raw === null ||
+            raw === undefined ||
+            String(raw).trim() === ""
+        ) {
+            return null;
+        }
+
+        const value = Number(raw);
+        return Number.isFinite(value) ? value : null;
+    };
+
+
+    const healthData = {
+        source: "manual",
+        session: {
+            sport: "tennis",
+            duration_minutes: optionalNumber("healthSessionDuration")
+        },
+        training_load: {
+            recent_load_7d: optionalNumber("healthRecentLoad")
+        },
+        recovery: {
+            sleep_duration_hours: optionalNumber("healthSleepDuration"),
+            resting_heart_rate_bpm: optionalNumber("healthRestingHr"),
+            hrv_ms: optionalNumber("healthHrv")
+        },
+        subjective_feedback: {
+            fatigue_level: getValue("healthFatigueLevel") || null,
+            perceived_exertion: optionalNumber("healthRpe")
+        }
+    };
+
+
+    if (
+        [
+            healthData.session.duration_minutes,
+            healthData.training_load.recent_load_7d,
+            healthData.recovery.sleep_duration_hours,
+            healthData.recovery.resting_heart_rate_bpm,
+            healthData.recovery.hrv_ms,
+            healthData.subjective_feedback.fatigue_level,
+            healthData.subjective_feedback.perceived_exertion
+        ].some(value => value !== null && value !== undefined && value !== "")
+    ) {
+        playerInput.health_data = healthData;
+    }
+
+
+    const healthBaseline = {
+        schema_version: "1.0",
+        hrv_ms: optionalNumber("healthBaselineHrv"),
+        resting_heart_rate_bpm: optionalNumber("healthBaselineRestingHr"),
+        sleep_duration_hours: optionalNumber("healthBaselineSleep"),
+        training_load_7d: optionalNumber("healthBaselineLoad")
+    };
+
+
+    if (
+        [
+            healthBaseline.hrv_ms,
+            healthBaseline.resting_heart_rate_bpm,
+            healthBaseline.sleep_duration_hours,
+            healthBaseline.training_load_7d
+        ].some(value => value !== null && value !== undefined)
+    ) {
+        playerInput.health_baseline = healthBaseline;
+    }
+
+
     const currentRacquetText =
         getValue(
             "playerCurrentRacquet"

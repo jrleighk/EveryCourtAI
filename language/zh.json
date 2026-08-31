@@ -153,6 +153,25 @@
       }
     },
     "expand": "完善资料",
-    "collapse": "收起资料"
+    "collapse": "收起资料",
+    "health": {
+      "session_duration": "本次网球时长",
+      "minutes": "分钟",
+      "sleep_duration": "睡眠时长",
+      "hours": "小时",
+      "fatigue": "当前疲劳程度",
+      "none": "无",
+      "low": "低",
+      "moderate": "中等",
+      "high": "高",
+      "rpe": "主观运动强度（0–10）",
+      "hrv": "当前 HRV",
+      "resting_hr": "静息心率",
+      "recent_load": "近 7 天训练负荷",
+      "baseline_hrv": "个人基准 HRV",
+      "baseline_resting_hr": "基准静息心率",
+      "baseline_sleep": "基准睡眠",
+      "baseline_load": "基准 7 天训练负荷"
+    }
   }
 }

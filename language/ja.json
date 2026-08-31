@@ -156,6 +156,25 @@
       }
     },
     "expand": "プロフィールを入力",
-    "collapse": "プロフィールを閉じる"
+    "collapse": "プロフィールを閉じる",
+    "health": {
+      "session_duration": "今回のテニス時間",
+      "minutes": "分",
+      "sleep_duration": "睡眠時間",
+      "hours": "時間",
+      "fatigue": "現在の疲労度",
+      "none": "なし",
+      "low": "低い",
+      "moderate": "中程度",
+      "high": "高い",
+      "rpe": "自覚的運動強度（0–10）",
+      "hrv": "現在の HRV",
+      "resting_hr": "安静時心拍数",
+      "recent_load": "直近7日間のトレーニング負荷",
+      "baseline_hrv": "個人基準 HRV",
+      "baseline_resting_hr": "基準安静時心拍数",
+      "baseline_sleep": "基準睡眠時間",
+      "baseline_load": "基準7日間トレーニング負荷"
+    }
   }
 }

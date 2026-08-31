@@ -153,6 +153,25 @@
       }
     },
     "expand": "Complete profile",
-    "collapse": "Hide profile"
+    "collapse": "Hide profile",
+    "health": {
+      "session_duration": "Tennis session duration",
+      "minutes": "minutes",
+      "sleep_duration": "Sleep duration",
+      "hours": "hours",
+      "fatigue": "Current fatigue",
+      "none": "None",
+      "low": "Low",
+      "moderate": "Moderate",
+      "high": "High",
+      "rpe": "Perceived exertion (0–10)",
+      "hrv": "Current HRV",
+      "resting_hr": "Resting heart rate",
+      "recent_load": "7-day training load",
+      "baseline_hrv": "Personal baseline HRV",
+      "baseline_resting_hr": "Baseline resting HR",
+      "baseline_sleep": "Baseline sleep",
+      "baseline_load": "Baseline 7-day load"
+    }
   }
 }

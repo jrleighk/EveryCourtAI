@@ -156,6 +156,25 @@
       }
     },
     "expand": "完善資料",
-    "collapse": "收起資料"
+    "collapse": "收起資料",
+    "health": {
+      "session_duration": "本次網球時長",
+      "minutes": "分鐘",
+      "sleep_duration": "睡眠時長",
+      "hours": "小時",
+      "fatigue": "目前疲勞程度",
+      "none": "無",
+      "low": "低",
+      "moderate": "中等",
+      "high": "高",
+      "rpe": "主觀運動強度（0–10）",
+      "hrv": "目前 HRV",
+      "resting_hr": "靜息心率",
+      "recent_load": "近 7 天訓練負荷",
+      "baseline_hrv": "個人基準 HRV",
+      "baseline_resting_hr": "基準靜息心率",
+      "baseline_sleep": "基準睡眠",
+      "baseline_load": "基準 7 天訓練負荷"
+    }
   }
 }

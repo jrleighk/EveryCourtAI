@@ -157,6 +157,25 @@
       }
     },
     "expand": "Compléter le profil",
-    "collapse": "Masquer le profil"
+    "collapse": "Masquer le profil",
+    "health": {
+      "session_duration": "Durée de la séance de tennis",
+      "minutes": "minutes",
+      "sleep_duration": "Durée du sommeil",
+      "hours": "heures",
+      "fatigue": "Fatigue actuelle",
+      "none": "Aucune",
+      "low": "Faible",
+      "moderate": "Modérée",
+      "high": "Élevée",
+      "rpe": "Effort perçu (0–10)",
+      "hrv": "VFC actuelle",
+      "resting_hr": "Fréquence cardiaque au repos",
+      "recent_load": "Charge d’entraînement sur 7 jours",
+      "baseline_hrv": "VFC de référence personnelle",
+      "baseline_resting_hr": "FC au repos de référence",
+      "baseline_sleep": "Sommeil de référence",
+      "baseline_load": "Charge de référence sur 7 jours"
+    }
   }
 }
