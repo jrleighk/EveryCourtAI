@@ -185,6 +185,91 @@ function normalizeStringField(
 }
 
 
+function resolveStringMaterial(
+    raw = {}
+) {
+    const direct =
+        normalizeStringField(
+            raw?.specifications
+                ?.material ??
+            raw?.manufacturer_data
+                ?.material ??
+            raw?.manufacturer_data
+                ?.composition ??
+            raw?.science_metrics
+                ?.material_class ??
+            raw?.string_type
+        );
+
+    if (direct) {
+        return direct;
+    }
+
+    const mains =
+        normalizeStringField(
+            raw?.specifications
+                ?.mains
+                ?.material ??
+            raw?.hybrid_configuration
+                ?.mains
+                ?.material
+        );
+
+    const crosses =
+        normalizeStringField(
+            raw?.specifications
+                ?.crosses
+                ?.material ??
+            raw?.hybrid_configuration
+                ?.crosses
+                ?.material
+        );
+
+    if (mains && crosses) {
+        return mains === crosses
+            ? mains
+            : `${mains} / ${crosses}`;
+    }
+
+    const construction =
+        normalizeStringField(
+            raw?.manufacturer_data
+                ?.construction ??
+            raw?.specifications
+                ?.construction
+        );
+
+    if (
+        construction &&
+        /dual-poly/i.test(construction)
+    ) {
+        return "Co-Polyester";
+    }
+
+    if (
+        construction &&
+        /multifilament.*co-polyester|co-polyester.*multifilament/i.test(construction)
+    ) {
+        return "Multifilament / Co-Polyester";
+    }
+
+    const type =
+        normalizeStringField(
+            raw?.design_profile
+                ?.string_type
+        );
+
+    if (
+        type &&
+        /natural gut|synthetic gut|co-polyester|polyester|multifilament/i.test(type)
+    ) {
+        return type;
+    }
+
+    return null;
+}
+
+
 function normalizeRating(
     value
 ) {
@@ -914,10 +999,8 @@ export function normalizeStringRecord(
 
     const specifications = {
         material:
-            normalizeStringField(
-                raw?.specifications
-                    ?.material ??
-                raw?.string_type
+            resolveStringMaterial(
+                raw
             ),
 
         available_gauges_mm:
