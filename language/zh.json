@@ -95,7 +95,8 @@
       "lower_back": "下背状态",
       "hip": "髋部状态",
       "knee": "膝部状态",
-      "ankle": "脚踝状态"
+      "ankle": "脚踝状态",
+      "level": "球员水平"
     },
     "placeholders": {
       "name": "名字",
@@ -150,6 +151,12 @@
         "mild": "轻微",
         "moderate": "中等",
         "severe": "明显"
+      },
+      "level": {
+        "beginner": "初学",
+        "intermediate": "中级",
+        "advanced": "高级",
+        "competitive": "竞技"
       }
     },
     "expand": "完善资料",

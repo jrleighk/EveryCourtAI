@@ -98,7 +98,8 @@
       "lower_back": "下背狀態",
       "hip": "髖部狀態",
       "knee": "膝部狀態",
-      "ankle": "腳踝狀態"
+      "ankle": "腳踝狀態",
+      "level": "球員水平"
     },
     "placeholders": {
       "name": "名字",
@@ -153,6 +154,12 @@
         "mild": "輕微",
         "moderate": "中等",
         "severe": "明顯"
+      },
+      "level": {
+        "beginner": "初學",
+        "intermediate": "中級",
+        "advanced": "高級",
+        "competitive": "競技"
       }
     },
     "expand": "完善資料",

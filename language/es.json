@@ -99,7 +99,8 @@
       "lower_back": "Zona lumbar",
       "hip": "Cadera",
       "knee": "Rodilla",
-      "ankle": "Tobillo"
+      "ankle": "Tobillo",
+      "level": "Nivel de juego"
     },
     "placeholders": {
       "name": "Nombre",
@@ -154,6 +155,12 @@
         "mild": "Leve",
         "moderate": "Moderada",
         "severe": "Importante"
+      },
+      "level": {
+        "beginner": "Principiante",
+        "intermediate": "Intermedio",
+        "advanced": "Avanzado",
+        "competitive": "Competición"
       }
     },
     "expand": "Completar perfil",

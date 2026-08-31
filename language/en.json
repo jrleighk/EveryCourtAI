@@ -95,7 +95,8 @@
       "lower_back": "Lower Back",
       "hip": "Hip",
       "knee": "Knee",
-      "ankle": "Ankle"
+      "ankle": "Ankle",
+      "level": "Playing level"
     },
     "placeholders": {
       "name": "Name",
@@ -150,6 +151,12 @@
         "mild": "Mild",
         "moderate": "Moderate",
         "severe": "Severe"
+      },
+      "level": {
+        "beginner": "Beginner",
+        "intermediate": "Intermediate",
+        "advanced": "Advanced",
+        "competitive": "Competitive"
       }
     },
     "expand": "Complete profile",

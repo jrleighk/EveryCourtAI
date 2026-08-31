@@ -98,7 +98,8 @@
       "lower_back": "腰",
       "hip": "股関節",
       "knee": "膝",
-      "ankle": "足首"
+      "ankle": "足首",
+      "level": "プレーレベル"
     },
     "placeholders": {
       "name": "名前",
@@ -153,6 +154,12 @@
         "mild": "軽度",
         "moderate": "中程度",
         "severe": "強い"
+      },
+      "level": {
+        "beginner": "初級",
+        "intermediate": "中級",
+        "advanced": "上級",
+        "competitive": "競技"
       }
     },
     "expand": "プロフィールを入力",

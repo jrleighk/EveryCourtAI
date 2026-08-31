@@ -99,7 +99,8 @@
       "lower_back": "Bas du dos",
       "hip": "Hanche",
       "knee": "Genou",
-      "ankle": "Cheville"
+      "ankle": "Cheville",
+      "level": "Niveau de jeu"
     },
     "placeholders": {
       "name": "Nom",
@@ -154,6 +155,12 @@
         "mild": "Légère",
         "moderate": "Modérée",
         "severe": "Importante"
+      },
+      "level": {
+        "beginner": "Débutant",
+        "intermediate": "Intermédiaire",
+        "advanced": "Avancé",
+        "competitive": "Compétition"
       }
     },
     "expand": "Compléter le profil",

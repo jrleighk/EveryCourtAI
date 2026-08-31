@@ -2624,6 +2624,20 @@ function readPlayerProfileForm() {
     }
 
 
+    const playerLevel =
+        getValue(
+            "playerLevel"
+        );
+
+
+    if (
+        playerLevel
+    ) {
+        playerInput.level =
+            playerLevel;
+    }
+
+
     const currentRacquetText =
         getValue(
             "playerCurrentRacquet"
