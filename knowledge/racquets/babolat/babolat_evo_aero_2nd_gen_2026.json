@@ -90,8 +90,20 @@
 
 
     "beam": {
-      "value": "23-26 mm",
-      "cn": "23-26毫米拍框"
+      "value": "23-26-23 mm",
+      "cn": "23-26-23毫米拍框"
+    },
+
+    "swing_weight": {
+      "value": 307,
+      "unit": "strung",
+      "cn": "穿线挥重307"
+    },
+
+    "stiffness": {
+      "value": 59,
+      "unit": "RA",
+      "cn": "刚度59 RA"
     }
 
   },
@@ -290,6 +302,11 @@
     "status": "official",
 
     "verified": true,
+
+    "dynamic_specs_source": "Tennis Warehouse / TWU",
+    "swingweight_basis": "strung",
+    "dynamic_specs_verified": true,
+    "dynamic_specs_last_updated": "2026-08-31",
 
     "knowledge_path":
     "knowledge/racquets/babolat/babolat_evo_aero_2nd_gen_2026.json"
