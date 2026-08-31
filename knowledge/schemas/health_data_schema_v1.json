@@ -1,0 +1,204 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "health_data_schema_v1",
+  "title": "EveryCourtAI Health Data Schema V1",
+  "description": "Canonical health and wearable data contract for tennis session load, fatigue and recovery intelligence.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "source",
+    "recorded_at"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "source": {
+      "type": "string",
+      "enum": [
+        "manual",
+        "apple_health",
+        "health_connect",
+        "other"
+      ]
+    },
+    "recorded_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "session": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "sport": {
+          "type": "string",
+          "enum": [
+            "tennis",
+            "other"
+          ]
+        },
+        "duration_minutes": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "active_energy_kcal": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        }
+      },
+      "default": {}
+    },
+    "heart_rate": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "average_bpm": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 20,
+          "maximum": 240
+        },
+        "max_bpm": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 20,
+          "maximum": 240
+        },
+        "zone_minutes": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "zone1": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "zone2": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "zone3": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "zone4": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "zone5": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0
+            }
+          },
+          "default": {}
+        }
+      },
+      "default": {}
+    },
+    "training_load": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "session_load": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "recent_load_7d": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        }
+      },
+      "default": {}
+    },
+    "recovery": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "sleep_duration_hours": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 24
+        },
+        "resting_heart_rate_bpm": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 20,
+          "maximum": 180
+        },
+        "hrv_ms": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        }
+      },
+      "default": {}
+    },
+    "subjective_feedback": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "fatigue_level": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "none",
+            "low",
+            "moderate",
+            "high",
+            null
+          ]
+        },
+        "perceived_exertion": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 10
+        }
+      },
+      "default": {}
+    }
+  }
+}

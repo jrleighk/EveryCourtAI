@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "health_adapter_contract_v1",
+  "title": "EveryCourtAI Health Adapter Contract V1",
+  "description": "Contract for mapping external health and wearable sources into the canonical EveryCourtAI health schema.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "adapter_version",
+    "source",
+    "canonical_schema"
+  ],
+  "properties": {
+    "adapter_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "source": {
+      "type": "string",
+      "enum": [
+        "manual",
+        "apple_health",
+        "health_connect",
+        "other"
+      ]
+    },
+    "canonical_schema": {
+      "type": "string",
+      "const": "health_data_schema_v1"
+    },
+    "supported_inputs": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "workout_duration",
+          "active_energy",
+          "average_heart_rate",
+          "max_heart_rate",
+          "heart_rate_zones",
+          "sleep_duration",
+          "resting_heart_rate",
+          "hrv",
+          "subjective_fatigue",
+          "perceived_exertion"
+        ]
+      },
+      "default": []
+    },
+    "normalization_rules": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "duration_unit": {
+          "type": "string",
+          "const": "minutes"
+        },
+        "energy_unit": {
+          "type": "string",
+          "const": "kcal"
+        },
+        "heart_rate_unit": {
+          "type": "string",
+          "const": "bpm"
+        },
+        "hrv_unit": {
+          "type": "string",
+          "const": "ms"
+        },
+        "perceived_exertion_scale": {
+          "type": "string",
+          "const": "0-10"
+        }
+      },
+      "default": {}
+    }
+  }
+}
