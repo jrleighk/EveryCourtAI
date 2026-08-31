@@ -14,9 +14,9 @@
     "weight_g_unstrung": 305,
     "balance_mm_unstrung": 320,
     "string_pattern": "16x19",
-    "beam_mm": null,
-    "stiffness_ra": null,
-    "swingweight": null,
+    "beam_mm": 22,
+    "stiffness_ra": 59,
+    "swingweight": 328,
 
     "grip_sizes": [
       "L2",
@@ -89,6 +89,10 @@
 
   "verification": {
     "status": "verified",
+    "dynamic_specs_source": "Tennis Warehouse / TWU",
+    "swingweight_basis": "strung",
+    "dynamic_specs_verified": true,
+    "dynamic_specs_last_updated": "2026-08-31",
     "last_updated": "2026-08-12"
   }
 }
