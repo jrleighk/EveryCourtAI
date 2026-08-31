@@ -1061,7 +1061,22 @@ export async function runQuickRecommendation(
             result.explanation,
 
         setup_diagnosis:
-            result.setup_diagnosis
+            result.setup_diagnosis,
+
+        health_data:
+            result.health_data,
+
+        recovery:
+            result.recovery,
+
+        health_baseline:
+            result.health_baseline,
+
+        health_baseline_adjustment:
+            result.health_baseline_adjustment,
+
+        health_context:
+            result.health_context
     };
 }
 

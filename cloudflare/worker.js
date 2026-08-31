@@ -2652,6 +2652,18 @@ async function handleAI(
             recommendation:
                 webRecommendation,
 
+            recovery:
+                engineResult?.recovery ?? null,
+
+            health_baseline:
+                engineResult?.health_baseline ?? null,
+
+            health_baseline_adjustment:
+                engineResult?.health_baseline_adjustment ?? null,
+
+            health_context:
+                engineResult?.health_context ?? null,
+
             engine_result: {
 
                 engine:
