@@ -14,9 +14,9 @@
     "weight_g_unstrung": 300,
     "balance_mm_unstrung": 330,
     "string_pattern": "16x19",
-    "beam_mm": null,
-    "stiffness_ra": null,
-    "swingweight": null,
+    "beam_mm": "24-26-23 mm",
+    "stiffness_ra": 65,
+    "swingweight": 341,
 
     "grip_sizes": [
       "L2",
